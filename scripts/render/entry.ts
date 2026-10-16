@@ -8,7 +8,7 @@
  */
 import { Box3, Group, PerspectiveCamera, Scene, Vector3, WebGLRenderer, type MeshBasicMaterial } from 'three';
 import type { Shape } from '../../src/lib/pack-shapes';
-import { createPackKit, TINT, type Tint } from '../../src/scripts/three/packs';
+import { CATEGORY_TINT, createPackKit, TINT, type Tint } from '../../src/scripts/three/packs';
 import { setupStudio } from '../../src/scripts/three/studio';
 import { HERO_FRAME, mountHero } from '../../src/scripts/hero-scene';
 
@@ -34,7 +34,7 @@ function freshCanvas(w: number, h: number) {
 
 const frame = () => new Promise<void>((r) => requestAnimationFrame(() => requestAnimationFrame(() => r())));
 
-async function shoot(items: GroupItem[], tint: Tint | undefined, w: number, h: number, opts: { fill: number; elev: number }) {
+async function shoot(items: GroupItem[], tint: Tint | undefined, w: number, h: number, opts: { fill: number; elev: number; lift?: number }) {
   const c = freshCanvas(w, h);
   const disposables: { dispose(): void }[] = [];
   const keep = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
@@ -71,7 +71,7 @@ async function shoot(items: GroupItem[], tint: Tint | undefined, w: number, h: n
   const dist = Math.max(halfH / tan, halfW / (tan * camera.aspect));
   const elev = (opts.elev * Math.PI) / 180;
   camera.position.set(centre.x, centre.y + Math.sin(elev) * dist, centre.z + Math.cos(elev) * dist);
-  camera.lookAt(centre.x, centre.y - size.y * 0.04, centre.z);
+  camera.lookAt(centre.x, centre.y - size.y * (0.04 + (opts.lift ?? 0)), centre.z);
 
   setupStudio(renderer, scene, keep, {
     aim: { x: centre.x, y: centre.y },
@@ -87,15 +87,18 @@ async function shoot(items: GroupItem[], tint: Tint | undefined, w: number, h: n
 }
 
 const api = {
-  async renderShape(shape: Shape, w: number, h: number) {
+  /** One pack; `category` tints it in that category's colours instead of the shape's default. */
+  async renderShape(shape: Shape, w: number, h: number, category?: string) {
     const flat = shape.startsWith('bar') || shape === 'tub';
-    await shoot([{ shape, x: 0, z: 0, yaw: flat ? 0.55 : 0.32, lift: 0.02, shadow: flat ? 2.6 : 1.9 }], undefined, w, h, {
+    const tint = category ? CATEGORY_TINT[category] : undefined;
+    await shoot([{ shape, x: 0, z: 0, yaw: flat ? 0.55 : 0.32, lift: 0.02, shadow: flat ? 2.6 : 1.9 }], tint, w, h, {
       fill: flat ? 0.74 : 0.66,
       elev: flat ? 24 : 9,
     });
   },
   async renderGroup(items: GroupItem[], tint: keyof typeof TINT, w: number, h: number, fill = 0.7) {
-    await shoot(items, TINT[tint], w, h, { fill, elev: 10 });
+    // lift: the group sits in the upper part of the frame, leaving room for the tile's label below
+    await shoot(items, TINT[tint], w, h, { fill, elev: 10, lift: 0.22 });
   },
   async renderHero() {
     const c = freshCanvas(HERO_FRAME.width, HERO_FRAME.height);

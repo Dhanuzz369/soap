@@ -11,6 +11,7 @@ writeFileSync(join(root, 'public/images/products/floor-cleaner.webp'), '');
 writeFileSync(join(root, 'public/images/renders/jug.webp'), '');
 writeFileSync(join(root, 'public/images/renders/jug-600.webp'), '');
 writeFileSync(join(root, 'public/images/renders/spray.webp'), '');
+writeFileSync(join(root, 'public/images/renders/jug--surface-home-cleaners.webp'), '');
 afterAll(() => rmSync(root, { recursive: true, force: true }));
 
 describe('productImagePath', () => {
@@ -24,7 +25,7 @@ describe('productImagePath', () => {
 
 describe('productPicture', () => {
   it("prefers the product's own photo over the render", () => {
-    expect(productPicture('floor-cleaner', 'jug', root)).toEqual({
+    expect(productPicture('floor-cleaner', 'jug', undefined, root)).toEqual({
       kind: 'photo',
       src: '/images/products/floor-cleaner.webp',
       width: 1200,
@@ -32,7 +33,7 @@ describe('productPicture', () => {
     });
   });
   it('falls back to the studio render of the pack shape, with both sizes', () => {
-    expect(productPicture('fabric-softener', 'jug', root)).toEqual({
+    expect(productPicture('fabric-softener', 'jug', 'laundry-care', root)).toEqual({
       kind: 'render',
       src: '/images/renders/jug.webp',
       srcset: '/images/renders/jug-600.webp 600w, /images/renders/jug.webp 1200w',
@@ -40,10 +41,17 @@ describe('productPicture', () => {
       height: 1500,
     });
   });
+  it("uses the render in the product's category colours when that variant exists", () => {
+    expect(productPicture('floor-cleaner-x', 'jug', 'surface-home-cleaners', root)).toMatchObject({
+      kind: 'render',
+      src: '/images/renders/jug--surface-home-cleaners.webp',
+      srcset: '/images/renders/jug--surface-home-cleaners.webp 1200w',
+    });
+  });
   it('lists only the sizes that exist', () => {
-    expect(productPicture('glass-cleaner', 'spray', root)).toMatchObject({ kind: 'render', srcset: '/images/renders/spray.webp 1200w' });
+    expect(productPicture('glass-cleaner', 'spray', 'surface-home-cleaners', root)).toMatchObject({ kind: 'render', srcset: '/images/renders/spray.webp 1200w' });
   });
   it('returns undefined when neither a photo nor a render exists', () => {
-    expect(productPicture('soap-noodles', 'sack', root)).toBeUndefined();
+    expect(productPicture('soap-noodles', 'sack', 'industrial-raw-materials', root)).toBeUndefined();
   });
 });

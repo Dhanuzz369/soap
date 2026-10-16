@@ -92,8 +92,24 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
     <script is:inline>
       // Scroll reveal: only blocks still below the fold are held back, so nothing on the first
       // screen flickers, and without JS (or with reduced motion) everything is simply visible.
+      // [data-step] items are marked .is-lit as they reach the middle of the screen.
       (function () {
-        if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        if (!('IntersectionObserver' in window)) return;
+        var lit = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (e.isIntersecting) {
+                e.target.classList.add('is-lit');
+                lit.unobserve(e.target);
+              }
+            });
+          },
+          { rootMargin: '0px 0px -35% 0px' },
+        );
+        document.querySelectorAll('[data-step]').forEach(function (el) {
+          lit.observe(el);
+        });
+        if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         var els = document.querySelectorAll('[data-reveal]');
         var io = new IntersectionObserver(
           function (entries) {
@@ -104,10 +120,10 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
               }
             });
           },
-          { rootMargin: '0px 0px -8% 0px' },
+          { rootMargin: '0px 0px -10% 0px' },
         );
         els.forEach(function (el) {
-          if (el.getBoundingClientRect().top > innerHeight * 0.92) {
+          if (el.getBoundingClientRect().top > innerHeight * 0.9) {
             el.classList.add('is-pending');
             io.observe(el);
           }

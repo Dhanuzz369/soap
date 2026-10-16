@@ -20,7 +20,7 @@ interface Props {
 
 const { slug, title, category, size, eager = size === 'hero' } = Astro.props;
 const shape = shapeFor(slug, category);
-const pic = productPicture(slug, shape);
+const pic = productPicture(slug, shape, category);
 const sizes = size === 'hero' ? '(max-width: 860px) 92vw, 560px' : '(max-width: 640px) 92vw, (max-width: 1100px) 46vw, 400px';
 const svg = shapes[shape];
 ---

@@ -41,6 +41,15 @@ export const TINT = {
 } as const;
 export type Tint = (typeof TINT)[keyof typeof TINT];
 
+/** The tint for each product category (category slug → tint). */
+export const CATEGORY_TINT: Record<string, Tint> = {
+  'bath-personal-soaps': TINT.soaps,
+  'laundry-care': TINT.laundry,
+  'kitchen-care': TINT.kitchen,
+  'surface-home-cleaners': TINT.surface,
+  'industrial-raw-materials': TINT.raw,
+};
+
 /** Which tint each shape takes when it stands alone (its most typical category). */
 export const SHAPE_TINT: Record<Shape, Tint> = {
   squeeze: TINT.kitchen,
@@ -54,7 +63,7 @@ export const SHAPE_TINT: Record<Shape, Tint> = {
   'bar-long': TINT.laundry,
   tub: TINT.kitchen,
   pouch: TINT.laundry,
-  carboy: TINT.surface,
+  carboy: TINT.raw,
   drum: TINT.raw,
   sack: TINT.raw,
 };

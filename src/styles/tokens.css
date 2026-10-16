@@ -32,6 +32,7 @@
   --forest-700: #1f4a3c;
   --on-dark: #eef4ef;
   --on-dark-soft: #a9c2b5;
+  --on-dark-2: #c6d8cd; /* running text on the forest-800 cards (8.4:1) */
   --mint: #bfe3cf;
 
   /* actions */
@@ -61,7 +62,7 @@
   --step-body: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
   --step-lead: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
   --step-h3: clamp(1.25rem, 1.1rem + 0.6vw, 1.875rem);
-  --step-head: clamp(2.125rem, 1.35rem + 2.6vw, 3.75rem);
+  --step-head: clamp(2.25rem, 1.5rem + 2.2vw, 3.5rem);
   --step-statement: clamp(2.25rem, 1.1rem + 3.9vw, 4.5rem);
   --step-display: clamp(2.875rem, 1.1rem + 5.5vw, 6rem);
   --lh-tight: 0.92;

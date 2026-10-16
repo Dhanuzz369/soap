@@ -6,6 +6,8 @@
  * builders, studio lights and hero scene), drives it with Playwright in an installed Chrome,
  * and writes WebP files to public/images/renders/:
  *   <shape>.webp (1200×1500) and <shape>-600.webp (600×750)   one per pack shape
+ *   <shape>--<category>.webp (+ -600)                          the same pack in another category's
+ *                                                            colours, where a product needs it
  *   category-<slug>.webp                                     a small group per category (bento tiles)
  *   range-hero.webp (1600×1000)                              the home hero still and LCP image
  *
@@ -14,7 +16,8 @@
  *
  * Needs Google Chrome (or set CHROME_PATH to a Chromium-based browser).
  */
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import matter from 'gray-matter';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { createServer } from 'vite';
@@ -106,6 +109,28 @@ try {
     const shot = png(await grab());
     await save(shape, shot, 1200, 1500);
     await save(`${shape}-600`, shot, 600, 750);
+  }
+
+  // Tint variants: a shape used by a product in a category other than the shape's default tint.
+  const { bySlug, shapeFor } = await server.ssrLoadModule('/src/lib/pack-shapes.ts');
+  const { SHAPE_TINT, CATEGORY_TINT } = await server.ssrLoadModule('/src/scripts/three/packs.ts');
+  const productDir = path.join(root, 'src/content/products');
+  const variants = new Set();
+  for (const f of await readdir(productDir)) {
+    if (!f.endsWith('.md')) continue;
+    const { data } = matter(await readFile(path.join(productDir, f), 'utf8'));
+    const shape = shapeFor(data.slug, data.category);
+    if (CATEGORY_TINT[data.category] && CATEGORY_TINT[data.category] !== SHAPE_TINT[shape]) variants.add(`${shape}--${data.category}`);
+  }
+  void bySlug;
+  console.log('Tint variants');
+  for (const v of [...variants].sort()) {
+    if (!want(v)) continue;
+    const [shape, category] = v.split('--');
+    await page.evaluate(([s, c]) => window.renderShape(s, 1200, 1500, c), [shape, category]);
+    const shot = png(await grab());
+    await save(v, shot, 1200, 1500);
+    await save(`${v}-600`, shot, 600, 750);
   }
 
   console.log('Category groups');

@@ -18,15 +18,23 @@ export type ProductPicture =
   | { kind: 'render'; src: string; srcset: string; width: number; height: number };
 
 /**
- * The product's own photo when present; otherwise the studio render of its pack shape
- * (`public/images/renders/<shape>.webp`, made by `npm run renders`); undefined when neither exists,
- * so the caller can fall back to the flat SVG drawing.
+ * The product's own photo when present; otherwise the studio render of its pack shape, in its
+ * category's colours when that variant exists (`public/images/renders/<shape>--<category>.webp`),
+ * else the shape's default render (`<shape>.webp`), all made by `npm run renders`.
+ * Undefined when there is no picture at all, so the caller can fall back to the flat SVG drawing.
  */
-export function productPicture(slug: string, shape: string, root: string = process.cwd()): ProductPicture | undefined {
+export function productPicture(
+  slug: string,
+  shape: string,
+  category?: string,
+  root: string = process.cwd(),
+): ProductPicture | undefined {
   const photo = productImagePath(slug, root);
   if (photo) return { kind: 'photo', src: photo, width: 1200, height: 1200 };
-  const big = `/images/renders/${shape}.webp`;
-  const small = `/images/renders/${shape}-600.webp`;
+  const variant = category ? `${shape}--${category}` : '';
+  const name = variant && exists(root, `/images/renders/${variant}.webp`) ? variant : shape;
+  const big = `/images/renders/${name}.webp`;
+  const small = `/images/renders/${name}-600.webp`;
   if (!exists(root, big)) return undefined;
   return {
     kind: 'render',
