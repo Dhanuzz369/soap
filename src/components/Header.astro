@@ -1,0 +1,62 @@
+---
+import site from '../config/site';
+
+interface Props {
+  path?: string;
+}
+const { path = '/' } = Astro.props;
+
+const nav = [
+  { label: 'Products', href: '/products/' },
+  { label: 'Private Label', href: '/private-label/' },
+  { label: 'Export Process', href: '/export-process/' },
+  { label: 'Blog', href: '/blog/' },
+  { label: 'About', href: '/about/' },
+];
+const isCurrent = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+---
+
+<header class="site-header">
+  <div class="bar">
+    <a class="wordmark" href="/" aria-label={`${site.name}, home`}>
+      <svg class="wordmark-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 2.5c6 3 7.4 12.2 0 19-7.4-6.8-6-16 0-19Z" />
+        <path class="wordmark-rib" d="M11.2 7h1.6v12h-1.6z" />
+      </svg>
+      <span>GoodBiz <span class="wordmark-sub">Hygiene</span></span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Main">
+      <ul>
+        {
+          nav.map((n) => (
+            <li>
+              <a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>
+                {n.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <a class="btn btn--sm nav-cta" href="/contact/">Request a Quote</a>
+
+    <details class="nav-mobile">
+      <summary aria-label="Menu"><span>Menu</span></summary>
+      <nav aria-label="Main (mobile)">
+        <ul>
+          {
+            nav.map((n) => (
+              <li>
+                <a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>
+                  {n.label}
+                </a>
+              </li>
+            ))
+          }
+          <li><a class="btn" href="/contact/">Request a Quote</a></li>
+        </ul>
+      </nav>
+    </details>
+  </div>
+</header>

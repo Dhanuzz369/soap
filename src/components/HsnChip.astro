@@ -1,0 +1,13 @@
+---
+/** HSN chip: shows the 6-digit code as "HSN 3402 50". Pass `withNote` to add the ITC-HS note. */
+interface Props {
+  code: string;
+  withNote?: boolean;
+}
+const { code, withNote = false } = Astro.props;
+---
+
+<span class="hsn">
+  <span class="chip chip--hsn"><abbr title="Harmonized System of Nomenclature">HSN</abbr>&nbsp;{code}</span>
+  {withNote && <span class="hsn-note">8-digit ITC-HS code confirmed per order</span>}
+</span>

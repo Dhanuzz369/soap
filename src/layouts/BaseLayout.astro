@@ -1,0 +1,83 @@
+---
+import '../styles/tokens.css';
+import '../styles/global.css';
+import site from '../config/site';
+import { absoluteUrl, pageTitle, organizationJsonLd, websiteJsonLd, breadcrumbJsonLd } from '../lib/seo';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import WhatsAppFab from '../components/WhatsAppFab.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  ogImage?: string;
+  jsonLd?: Record<string, unknown>[];
+  breadcrumbs?: { name: string; url: string }[];
+}
+
+const { title, description, path, ogImage = '/og-default.png', jsonLd = [], breadcrumbs } = Astro.props;
+
+const fullTitle = pageTitle(title);
+const canonical = absoluteUrl(path);
+const ogUrl = absoluteUrl(ogImage);
+const schemas: Record<string, unknown>[] = [
+  organizationJsonLd(),
+  websiteJsonLd(),
+  ...(breadcrumbs && breadcrumbs.length > 1 ? [breadcrumbJsonLd(breadcrumbs)] : []),
+  ...jsonLd,
+];
+// Escape "<" so JSON-LD can never close the script element early.
+const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {!site.launchReady && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="en" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f5f8f2" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogUrl} />
+    <meta property="og:locale" content="en" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogUrl} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+    />
+
+    {schemas.map((s) => <script type="application/ld+json" set:html={ld(s)} />)}
+    <slot name="head" />
+  </head>
+  <body id="top">
+    <a class="skip" href="#main">Skip to content</a>
+    <Header path={path} />
+    <main id="main">
+      {breadcrumbs && breadcrumbs.length > 1 && (
+        <div class="wrap crumbs-wrap"><Breadcrumbs items={breadcrumbs} /></div>
+      )}
+      <slot />
+    </main>
+    <Footer />
+    <WhatsAppFab />
+  </body>
+</html>

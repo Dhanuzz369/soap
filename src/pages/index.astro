@@ -1,0 +1,57 @@
+---
+// TEMPORARY (Task 3): exercises the layout and shared components. Replaced by the real home page later.
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import ProductVisual from '../components/ProductVisual.astro';
+import SpecTable from '../components/SpecTable.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import HsnChip from '../components/HsnChip.astro';
+import site from '../config/site';
+
+const all = (await getCollection('products')).sort((a, b) => a.data.order - b.data.order);
+const pick = ['dish-wash-liquid', 'toilet-bath-soap', 'labsa'];
+const three = pick.map((s) => all.find((p) => p.data.slug === s)!).filter(Boolean);
+const sample = three[2] ?? all[0];
+---
+
+<BaseLayout
+  title="Soaps & Home-Care Products Exporter & Supplier from India"
+  description={site.tagline}
+  path="/"
+  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Component preview', url: '/' }]}
+>
+  <section class="wrap section">
+    <h1>Home care, from India</h1>
+    <p class="lead" style="margin-top:24px">Component preview for Task 3. This page is replaced by the real home page.</p>
+    <p style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px"><a class="btn" href="/contact/">Request a Quote</a> <a class="btn btn--soft" href="/products/">View Products</a></p>
+  </section>
+
+  <section class="wrap section" aria-labelledby="cards-h">
+    <h2 id="cards-h">Three product cards</h2>
+    <div class="grid-cards" style="margin-top:48px">
+      {three.map((p) => <ProductCard product={p} />)}
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="all-h">
+    <h2 id="all-h">Every placeholder visual</h2>
+    <div class="grid-cards" style="margin-top:48px;grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr))">
+      {all.map((p) => <ProductVisual slug={p.data.slug} title={p.data.title} category={p.data.category.id} size="card" />)}
+    </div>
+    <div style="max-width:560px;margin-top:48px">
+      <ProductVisual slug="fabric-softener" title="Fabric Softener / Conditioner" category="laundry-care" size="hero" />
+    </div>
+  </section>
+
+  <section class="wrap section" aria-labelledby="spec-h">
+    <h2 id="spec-h">{sample.data.title}</h2>
+    <p style="margin-block:16px 32px"><HsnChip code={sample.data.hsn} withNote /></p>
+    <SpecTable specs={sample.data.specs} />
+  </section>
+
+  <div class="wrap"><Faq faqs={sample.data.faqs} /></div>
+
+  <CtaBand secondary={{ label: 'Chat on WhatsApp', href: '/contact/' }} />
+</BaseLayout>

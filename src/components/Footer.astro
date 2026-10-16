@@ -1,0 +1,65 @@
+---
+import { getCollection } from 'astro:content';
+import site from '../config/site';
+import { buildWhatsAppUrl } from '../lib/enquiry';
+
+const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
+const company = [
+  { label: 'Private Label', href: '/private-label/' },
+  { label: 'Export Process', href: '/export-process/' },
+  { label: 'About', href: '/about/' },
+  { label: 'Blog', href: '/blog/' },
+  { label: 'FAQ', href: '/faq/' },
+  { label: 'Contact', href: '/contact/' },
+];
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-name" aria-hidden="true">GoodBiz Hygiene</p>
+
+    <div class="footer-row">
+      <div class="footer-reach">
+        <p class="footer-lede">
+          Soaps and home-care products, sourced from vetted Indian manufacturers and exported by
+          GoodBiz Hygiene, a {site.parentName} company.
+        </p>
+        <ul class="footer-places">
+          <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
+          <li><a href={buildWhatsAppUrl(site.contact.whatsapp, {})} rel="noopener" target="_blank">WhatsApp {site.contact.phone}</a></li>
+        </ul>
+        <p class="footer-address">{site.contact.address}</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <div>
+          <h2>Products</h2>
+          <ul>
+            <li><a href="/products/">All products</a></li>
+            {categories.map((c) => <li><a href={`/categories/${c.data.slug}/`}>{c.data.title}</a></li>)}
+          </ul>
+        </div>
+        <div>
+          <h2>Company</h2>
+          <ul>
+            {company.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+          </ul>
+        </div>
+        <div>
+          <h2>Export terms</h2>
+          <ul class="footer-terms">
+            <li>{site.exportTerms.incoterms}</li>
+            <li>{site.exportTerms.port}</li>
+            <li>{site.exportTerms.leadTime}</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer-legal">
+      <p>© {year} {site.name}, a {site.parentName} company. Merchant exporter from India.</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </div>
+</footer>

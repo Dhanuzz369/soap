@@ -1,0 +1,132 @@
+/*
+  GoodBiz Hygiene — art direction (taste-skill v2, direction "Colour chapters", seed 1107668279)
+
+  IDEA
+  The five product categories become five colour chapters. Each category owns one pale green field
+  (mint for bath soaps, eucalyptus-blue for laundry, leaf-sage for kitchen, eucalyptus for surfaces,
+  stone-sage for raw materials). The field meets the page edge to edge with no rule or shadow,
+  and every product drawn inside it is tinted from that same chapter. A buyer learns the catalogue
+  by colour. The page ends on one deep forest-green field: the footer and the call to action.
+
+  FONTS (Google Fonts, display=swap)
+  - Display: Newsreader 400/500 (optical sizes on). A calm, refined serif, set large and tight
+    (tracking -0.03em, leading 0.95). It is used for H1-H2 and the footer name.
+  - Text: Albert Sans 400/500/600. A clean, legible grotesk for body copy, UI, chips and tables.
+    Two faces only. No italics as emphasis. No uppercase tracked labels.
+  Redraws: the dealt type (Epilogue 900, then Hanken Grotesk) were replaced, because spec §9 asks for a
+  refined display face plus a legible sans. The dealt palette (ultramarine and yellow) was replaced,
+  because spec §9 fixes greens on off-white. Its proportions are kept: one ground, one ink, one action,
+  and a few full-strength fields.
+
+  COLOUR TOKENS (all text pairs are checked to WCAG AA; see the task-3 report)
+  ground  --paper       #F5F8F2   off-white with a breath of green
+          --paper-2     #EAF0E6   one tone step, used for surfaces and bands
+  ink     --ink         #12352A   deep forest, used for all running text
+          --ink-soft    #3F5E50   secondary notes only (6.7:1 on paper, >= 5.3:1 on every field)
+  action  --action      #1D5A42   primary buttons and links; --action-hover #154533; --on-action #F5F8F2
+  deep    --forest      #173F31   closing field (CTA, footer), with --on-forest #EEF5EC and --forest-accent #BFE6CC
+  accent  --accent      #CDEFD8   the one soft accent: chips, selection, the active nav underline field
+  fields  --field-soaps #DCEFE2  --field-laundry #D4E8E7  --field-kitchen #E2E9CF
+          --field-surface #CFE3D9  --field-raw #E0E5DA
+
+  HERO COMPOSITION (built in a later task; spec §14)
+  "Mosaic masthead, title on axis". The top ~52% of the first screen is a gutterless mosaic band of
+  6 columns × 2 rows. The tiles are flat chapter colours. One 2×2 cell holds the Three.js "range shelf"
+  (a <canvas> that lies over the static SVG range composition, which is the LCP element and the
+  fallback), and the other tiles carry single ProductVisual drawings (bottle, bar, can). Below the band,
+  on paper: a one-sentence standfirst on the left margin (max 30ch), and, starting at 42% of the
+  width, the H1 on two lines at --step-display. "Request a Quote" (filled pill) and "View Products"
+  (text link) sit under the H1. On phones the band becomes 3×2 at about 38svh, the H1 moves to the
+  left margin, and the buttons stack.
+  Signature motion: masked headline rise (900ms ease-out), reduced-motion safe.
+*/
+
+:root {
+  /* colour */
+  --paper: #f5f8f2;
+  --paper-2: #eaf0e6;
+  --ink: #12352a;
+  --ink-soft: #3f5e50;
+  --action: #1d5a42;
+  --action-hover: #154533;
+  --on-action: #f5f8f2;
+  --forest: #173f31;
+  --on-forest: #eef5ec;
+  --forest-accent: #bfe6cc;
+  --accent: #cdefd8;
+  --focus: #1d5a42;
+
+  /* chapter fields, one per category */
+  --field-soaps: #dcefe2;
+  --field-laundry: #d4e8e7;
+  --field-kitchen: #e2e9cf;
+  --field-surface: #cfe3d9;
+  --field-raw: #e0e5da;
+
+  /* type */
+  --font-display: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --font-text: 'Albert Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2.125rem, 1.4rem + 3.2vw, 4rem);
+  --step-display: clamp(2.75rem, 1.2rem + 6.4vw, 7.5rem);
+  --lh-tight: 0.95;
+  --lh-text: 1.55;
+  --track-display: -0.03em;
+
+  /* space */
+  --gutter: clamp(16px, 1rem + 1.2vw, 32px);
+  --gap: clamp(16px, 0.75rem + 1vw, 28px);
+  --section: clamp(88px, 4rem + 8vw, 200px);
+  --max: 1440px;
+  --measure: 66ch;
+
+  /* shape: media is square-cornered; every button and chip is a full pill */
+  --radius: 0;
+  --pill: 999px;
+  --tap: 44px;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur: 320ms;
+  --dur-slow: 900ms;
+
+  /* ProductVisual default tint (overridden per category) */
+  --pv-field: var(--field-surface);
+  --pv-body: #8fc0aa;
+  --pv-dark: #3f7a62;
+  --pv-light: #f1f8f4;
+}
+
+[data-cat='bath-personal-soaps'] {
+  --pv-field: var(--field-soaps);
+  --pv-body: #a9d9bd;
+  --pv-dark: #3f7d5e;
+  --pv-light: #f2faf5;
+}
+[data-cat='laundry-care'] {
+  --pv-field: var(--field-laundry);
+  --pv-body: #9ccbca;
+  --pv-dark: #39716f;
+  --pv-light: #f0f8f8;
+}
+[data-cat='kitchen-care'] {
+  --pv-field: var(--field-kitchen);
+  --pv-body: #bfd396;
+  --pv-dark: #5b7339;
+  --pv-light: #f6f9ee;
+}
+[data-cat='surface-home-cleaners'] {
+  --pv-field: var(--field-surface);
+  --pv-body: #8fc0aa;
+  --pv-dark: #3a6f5a;
+  --pv-light: #eef7f2;
+}
+[data-cat='industrial-raw-materials'] {
+  --pv-field: var(--field-raw);
+  --pv-body: #b6c0ad;
+  --pv-dark: #56634f;
+  --pv-light: #f4f6f1;
+}

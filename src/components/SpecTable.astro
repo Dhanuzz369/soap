@@ -1,0 +1,24 @@
+---
+/** Specification table. Drafted values are "typical", so the caption says so by default. */
+interface Props {
+  specs: { label: string; value: string }[];
+  caption?: string;
+}
+const { specs, caption = 'Typical specifications. Final values are confirmed per order.' } = Astro.props;
+---
+
+<div class="spec-wrap">
+  <table class="spec">
+    <caption>{caption}</caption>
+    <tbody>
+      {
+        specs.map((s) => (
+          <tr>
+            <th scope="row">{s.label}</th>
+            <td>{s.value}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

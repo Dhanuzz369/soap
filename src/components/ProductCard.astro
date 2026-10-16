@@ -1,0 +1,25 @@
+---
+import type { ProductEntry } from '../lib/products';
+import ProductVisual from './ProductVisual.astro';
+import HsnChip from './HsnChip.astro';
+
+interface Props {
+  product: ProductEntry;
+}
+const { product } = Astro.props;
+const d = product.data;
+const href = `/products/${d.slug}/`;
+const varieties = d.variants.slice(0, 3);
+---
+
+<article class="pcard" data-cat={d.category.id}>
+  <ProductVisual slug={d.slug} title={d.title} category={d.category.id} size="card" />
+  <div class="pcard-body">
+    <h3 class="pcard-title"><a href={href}>{d.title}</a></h3>
+    <HsnChip code={d.hsn} />
+    <ul class="chips" aria-label="Varieties">
+      {varieties.map((v) => <li class="chip">{v}</li>)}
+    </ul>
+    <span class="pcard-more" aria-hidden="true">View details</span>
+  </div>
+</article>
