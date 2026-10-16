@@ -29,7 +29,7 @@ Other useful commands:
 | `npm run preview` | Shows the built `dist/` site at <http://localhost:4321>, exactly as visitors will see it. |
 | `npm test` | Runs the automatic checks on the site's logic. |
 | `npm run test:build` | Runs checks on the built pages (run `npm run build` first). |
-| `npm run check:placeholders` | Lists any `PLACEHOLDER` text still left on the site. |
+| `npm run check:placeholders` | Lists placeholder contact details still left on the site (`PLACEHOLDER` text, the all-zero WhatsApp number, `contactIsPlaceholder: true`). |
 
 ---
 
@@ -49,9 +49,11 @@ contact: {
 In the same file:
 
 - `url`: your website address (see the launch checklist).
-- `exportTerms`: the export terms text shown on product pages and the footer.
+- `exportTerms`: the export terms text shown in the footer, contact, FAQ, export-process and private-label pages. See the note below: some product and blog texts repeat these terms in their own words.
 - `facts`: optional extras (`city`, `iec`, `founded`, `parentUrl`, `agroUrl`). Only fill these in with **true, checkable** information. Leave them out rather than guess.
-- `contactIsPlaceholder`: set this to `false` once the contact details are real.
+- `contactIsPlaceholder`: a safety switch. It is `true` while the contact details above are dummies; **set it to `false` once real details are in.** While it is `true`, `npm run check:placeholders` will not pass at launch.
+
+**Note on export terms.** Most pages read the terms from `site.ts`, but the product files and buyer guides also mention them inside normal sentences (for example "FOB, CIF and CFR available; payment terms agreed per order (T/T or LC)" and "3–5 weeks after order confirmation"). If you change `incoterms` or `leadTime`, run `npm test`. The check called "export terms repeated in content files" fails and lists every file in `src/content/` that still has the old wording. Edit those sentences, run `npm test` again, and it passes. (It ignores capital letters, the dash style and small words like "are", and for the lead time it only compares the figure, such as "3–5 weeks after order confirmation".)
 
 ---
 
@@ -65,7 +67,7 @@ To add a real photo:
 2. Save it in **WebP** format (most image editors can do this, or use <https://squoosh.app>, which is free). Aim for under 150 KB.
 3. Name it exactly after the product's **slug** (the list is below) and put it in `public/images/products/`. You may need to create that folder.
    Example: `public/images/products/dish-wash-liquid.webp`
-4. Run `npm run build`. The photo replaces the illustration on the product page, the category page and the product cards.
+4. Run `npm run build`. The photo replaces the illustration on the product page, the category page and the product cards, and it becomes the product's image in social-media previews and in the data Google reads.
 
 **Product slugs** (file name = slug + `.webp`):
 
@@ -102,6 +104,8 @@ Tips:
 
 To **add a new product**, copy an existing file in the same category, give it a new file name and `slug`, and change the content. The category is set with `category:` (one of `bath-personal-soaps`, `laundry-care`, `kitchen-care`, `surface-home-cleaners`, `industrial-raw-materials`).
 
+Adding products is safe: the automatic checks find every file in `src/content/products/` and apply the same rules to the new one. They check that the file name matches the `slug`, the HSN code looks like `3402 50`, `metaDescription` is 120 to 160 characters, there are 4 to 6 FAQs, every slug in `related` exists, the description is at least 350 words, and the text does not claim GoodBiz manufactures anything. Rewrite the copied text in your own words: the checks also fail if the same long sentence appears in more than 3 product files, or two products share a `metaDescription` or `answer`. The new product appears on its category page, in the product list and in `llms.txt` automatically.
+
 ---
 
 ## 5. Add a blog post
@@ -125,6 +129,8 @@ faqs:                                                         # optional
 
 Then write the article underneath in plain paragraphs. Use `## ` for headings, `- ` for bullet points, and `[link text](/products/liquid-detergent/)` for links to your own pages. Run `npm run build` to check it, and `npm run preview` to read it on the page.
 
+Adding posts is safe too. The checks look at every file in `src/content/blog/` and ask for: at least 600 words, a 120 to 160 character `description` that no other post uses, at least 2 `relatedProducts` that exist, and at least 2 links to product pages that exist. Each product named in `relatedProducts` automatically lists the post under "Buyer guides for this product" on its page.
+
 ---
 
 ## 6. Launch checklist
@@ -140,9 +146,13 @@ Do these in order before the site goes public:
    npm run build
    npm run check:placeholders
    ```
-   It must say **"No PLACEHOLDER values found."** If it lists anything, fix those lines and run it again.
-6. **Flip the switch:** in `src/config/site.ts` change `launchReady: false` to `launchReady: true`. This removes the "do not index" tag, opens `robots.txt` to search engines and creates the sitemap. (`npm run check:placeholders` will refuse to pass if placeholders remain while this is `true`.)
-7. Run `npm run build && npm test && npm run test:build`. Everything must pass. Then deploy (section 7).
+   It must say **"No PLACEHOLDER values found."** If it lists anything (leftover `PLACEHOLDER` text, the WhatsApp number still `910000000000`, or `contactIsPlaceholder` still `true`), fix it and run it again.
+6. **Flip the switch:** in `src/config/site.ts` change `launchReady: false` to `launchReady: true`. This removes the "do not index" tag, opens `robots.txt` to search engines and creates the sitemap. (`npm run check:placeholders` will refuse to pass if any placeholder remains while this is `true`.)
+7. Run the launch gate. Everything must pass:
+   ```bash
+   npm test && npm run build && npm run test:build && npm run check:placeholders
+   ```
+   Then deploy (section 7).
 8. After it is live, add the site to **Google Search Console** and **Bing Webmaster Tools** and submit `https://your-domain/sitemap-index.xml`.
 
 ---
