@@ -68,7 +68,7 @@ export const faqGroups: { id: string; heading: string; faqs: QA[] }[] = [
       },
       {
         q: 'Do you ship to my country?',
-        a: 'GoodBiz Hygiene quotes for importers, distributors and private-label brands in any country. Destination rules, such as labelling language or registration, are checked with you before the order is confirmed.',
+        a: 'GoodBiz Hygiene quotes for importers, distributors and private-label brands in most countries. Destination rules, such as labelling language or registration, are checked with you before the order is confirmed.',
       },
     ],
   },

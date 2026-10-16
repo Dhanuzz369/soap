@@ -66,10 +66,21 @@ type Item = {
 
 export function mountHero(canvas: HTMLCanvasElement): () => void {
   const disposables: { dispose(): void }[] = [];
+  const renderer = new WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'low-power' });
+  try {
+    return buildScene(canvas, renderer, disposables);
+  } catch (err) {
+    // Construction failed part-way: release what exists and leave the static composition in place.
+    for (const d of disposables) d.dispose();
+    renderer.dispose();
+    throw err;
+  }
+}
+
+function buildScene(canvas: HTMLCanvasElement, renderer: WebGLRenderer, disposables: { dispose(): void }[]): () => void {
   const keep = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
 
   /* ---------- renderer, scene, camera ---------- */
-  const renderer = new WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'low-power' });
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
   renderer.outputColorSpace = SRGBColorSpace;
   renderer.toneMapping = NeutralToneMapping;
@@ -385,20 +396,21 @@ export function mountHero(canvas: HTMLCanvasElement): () => void {
   let inView = true;
   let first = true;
   let disposed = false;
+  let lost = false; // a lost context is not restored; the static composition takes over for good
 
   const frame = (now: number) => {
     raf = 0;
-    if (disposed) return;
+    if (disposed || lost) return;
     pose(now);
     renderer.render(scene, camera);
     if (first) {
       first = false;
       canvas.dataset.live = '';
     }
-    if (inView && !document.hidden) raf = requestAnimationFrame(frame);
+    if (inView && !lost && !document.hidden) raf = requestAnimationFrame(frame);
   };
   const resume = () => {
-    if (!raf && !disposed && inView && !document.hidden) raf = requestAnimationFrame(frame);
+    if (!raf && !disposed && !lost && inView && !document.hidden) raf = requestAnimationFrame(frame);
   };
   const pause = () => {
     if (raf) cancelAnimationFrame(raf);
@@ -411,7 +423,7 @@ export function mountHero(canvas: HTMLCanvasElement): () => void {
     if (!w || !h) return;
     renderer.setSize(w, h, false);
     fit(w, h);
-    if (!raf && !disposed) {
+    if (!raf && !disposed && !lost) {
       pose(performance.now());
       renderer.render(scene, camera);
     }
@@ -430,10 +442,12 @@ export function mountHero(canvas: HTMLCanvasElement): () => void {
   const onVisibility = () => (document.hidden ? pause() : resume());
   document.addEventListener('visibilitychange', onVisibility);
 
-  const onLost = (e: Event) => {
-    e.preventDefault();
+  // No preventDefault: we do not ask for a restore. Rendering stops for good and the
+  // static composition underneath shows again.
+  const onLost = () => {
+    lost = true;
     pause();
-    delete canvas.dataset.live; // the static composition shows again
+    delete canvas.dataset.live;
   };
   canvas.addEventListener('webglcontextlost', onLost);
 

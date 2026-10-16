@@ -159,6 +159,9 @@ a:hover {
 .skip:focus {
   top: 12px;
 }
+[hidden] {
+  display: none !important;
+}
 .nowrap {
   white-space: nowrap;
 }

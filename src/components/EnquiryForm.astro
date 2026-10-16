@@ -104,12 +104,12 @@ const waPlain = buildWhatsAppUrl(site.contact.whatsapp, {});
   <div class="enq-actions">
     <button class="btn" type="submit">Send enquiry</button>
     <p class="note enq-hint" data-enquiry-hint>
-      This opens your email app with the enquiry filled in. Prefer WhatsApp?
+      This opens your email app with the enquiry filled in. Prefer WhatsApp?{' '}
       <a href={waPlain} rel="noopener" target="_blank">Message us on WhatsApp</a>.
     </p>
   </div>
 
-  <div class="enq-send" data-enquiry-send hidden tabindex="-1" aria-labelledby="enq-send-h">
+  <div class="enq-send" data-enquiry-send hidden tabindex="-1" role="region" aria-labelledby="enq-send-h">
     <p id="enq-send-h" class="enq-send-h">Your enquiry is ready. How would you like to send it?</p>
     <div class="enq-send-actions">
       <a class="btn" data-send-whatsapp href={waPlain} target="_blank" rel="noopener">Send via WhatsApp</a>
