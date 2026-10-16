@@ -5,7 +5,8 @@
  * The transparent still `range-cutout.webp` (`npm run renders`) is the LCP element (preloaded by
  * the home page). CSS pops it in on load (opacity, scale .9 → 1.05, rotate -8° → 0, 1.4s,
  * cubic-bezier(.16,1,.3,1), 300ms delay) and drifts it with scroll (`animation-timeline:
- * scroll()`, or src/scripts/scroll-fallback.ts). It is absolutely positioned and sized by its
+ * scroll()`, or src/scripts/scroll-fallback.ts). The pop is a transition started once the image
+ * has painted, so the cut-out stays the LCP element. It is absolutely positioned and sized by its
  * aspect ratio before it loads (CLS 0), and overflows into the next section.
  *
  * A tiny loader checks reduced motion, WebGL and data saver, then imports the Three.js scene only
@@ -17,13 +18,17 @@
 import Bubbles from './Bubbles.astro';
 ---
 
+<script is:inline>
+  // Before the first paint: hold the object in its starting pose until it has painted (see home.css).
+  document.documentElement.classList.add('hero-js');
+</script>
 <div class="hero-object" data-drift="hero">
   <div class="hero-object-pop">
     <img
       class="hero-cutout"
       src="/images/renders/range-cutout.webp"
       srcset="/images/renders/range-cutout-800.webp 800w, /images/renders/range-cutout.webp 1600w"
-      sizes="(max-width: 759px) 112vw, 62vw"
+      sizes="(max-width: 759px) 100vw, 62vw"
       width="1600"
       height="1280"
       alt="Illustration of the GoodBiz Hygiene range in typical export packs: a dish wash bottle, a fabric softener jug, a spray cleaner, a hand wash pump, a detergent pouch, a raw-material drum, a jerrycan and soap bars"
@@ -33,6 +38,30 @@ import Bubbles from './Bubbles.astro';
     <canvas class="hero-canvas" aria-hidden="true"></canvas>
   </div>
 </div>
+<script is:inline>
+  // Pop the object in once the cut-out has painted (two frames after load), or after 2.5s anyway.
+  (function () {
+    var pop = document.querySelector('.hero-object-pop');
+    var img = pop && pop.querySelector('img');
+    if (!pop || !img) return;
+    var done = false;
+    var go = function () {
+      if (done) return;
+      done = true;
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          pop.classList.add('is-in');
+        });
+      });
+    };
+    if (img.complete) go();
+    else {
+      img.addEventListener('load', go, { once: true });
+      img.addEventListener('error', go, { once: true });
+    }
+    setTimeout(go, 2500);
+  })();
+</script>
 <Bubbles set="hero" />
 
 <script>
