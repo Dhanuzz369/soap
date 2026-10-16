@@ -3,69 +3,79 @@
    Section order follows docs/superpowers/specs/2026-10-16-floria-restyle-direction.md.
    ========================================================================== */
 
-/* ---------- 1. hero: forest field, the live range on the right, fade into the ground ---------- */
+/* ---------- 1. hero: forest field, the range as a glossy object on the right, fade into the ground ----------
+   The object (HeroScene) is absolutely positioned and sized by its aspect ratio before the image
+   loads (CLS 0). It sits above the hero's fade and overflows into The Range, like Floria's bouquet.
+   The field has depth: a mint glow behind the packs, a vignette and fine grain (floria.css). */
 .hero {
+  --glow-x: 72%;
+  --glow-y: 58%;
   position: relative;
+  z-index: 1;
   isolation: isolate;
   min-height: 100svh;
   min-height: 100dvh;
   display: grid;
   align-items: center;
-  overflow: hidden;
-  background: var(--forest-950);
+  /* clip sideways only: the object still overflows downward into The Range */
+  overflow-x: clip;
+  background-color: var(--forest-950);
   color: var(--on-dark);
 }
-.stage {
-  --still-x: 0.5;
-  --still-y: 0.5;
+.hero-object {
   position: absolute;
-  inset: 0;
-  z-index: -2;
+  z-index: 1;
+  right: -3vw;
+  /* the bottom runs ~12vh past the hero into the next section */
+  top: calc(100% + 12vh - min(62vw, 1120px) * 0.8);
+  width: min(62vw, 1120px);
+  aspect-ratio: 5 / 4;
+  pointer-events: none;
+  transform-origin: 50% 70%;
 }
-.stage-still,
-.stage-canvas {
+.hero-object-pop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 75%;
+}
+.hero-cutout,
+.hero-canvas {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
 }
-.stage-still {
-  object-fit: cover;
-  object-position: calc(var(--still-x) * 100%) calc(var(--still-y) * 100%);
-}
-.stage-canvas {
+/* Live hand-off: the canvas lands on the still, fades in; the still fades out just behind it. */
+.hero-canvas {
   opacity: 0;
-  transition: opacity 1200ms var(--ease-out);
+  transition: opacity 700ms var(--ease-out);
 }
-.stage-canvas[data-live] {
+.hero-cutout {
+  transition: opacity 300ms ease 600ms;
+}
+.hero-canvas[data-live] {
   opacity: 1;
 }
-/* A neutral scrim under the copy, and the reference's fade from the dark field into the ground. */
-.hero::before,
+.hero-object-pop:has(.hero-canvas[data-live]) .hero-cutout {
+  opacity: 0;
+}
+/* A neutral fade from the dark field into the ground (under the object). */
 .hero::after {
   content: '';
   position: absolute;
   z-index: -1;
   pointer-events: none;
-}
-.hero::before {
-  inset: 0 auto 0 0;
-  width: 58%;
-  background: linear-gradient(90deg, var(--forest-950) 0%, rgb(11 33 26 / 0.85) 45%, rgb(11 33 26 / 0) 100%); /* taste-skill-ignore: neutral scrim under the hero copy */
-}
-.hero::after {
   inset: auto 0 0 0;
   height: 24%;
   background: linear-gradient(180deg, rgb(245 248 242 / 0) 0%, rgb(245 248 242 / 0.55) 55%, var(--paper) 100%); /* taste-skill-ignore: hero fade into the ground, allowed by the Floria direction */
 }
-/* On wide screens the range sits a little further right, clear of the headline. */
-@media (min-width: 760px) {
-  .stage {
-    left: 8%;
-    --still-x: 0.2;
-  }
+.hero > .bubbles {
+  z-index: 2;
 }
 .hero-copy {
+  position: relative;
+  z-index: 2;
   padding-top: 112px;
   padding-bottom: clamp(120px, 16vh, 200px);
 }
@@ -125,29 +135,22 @@
 }
 @media (max-width: 759.98px) {
   .hero {
+    --glow-x: 55%;
+    --glow-y: 26%;
     align-items: end;
   }
-  .stage {
-    --still-x: 0.8;
-    inset: 0 0 auto 0;
-    height: 58svh;
+  .hero-object {
+    top: 64px;
+    right: auto;
+    left: -6vw;
+    width: 112vw;
   }
-  .stage::after {
-    content: '';
-    position: absolute;
-    inset: auto 0 0 0;
-    height: 40%;
-    background: linear-gradient(180deg, rgb(11 33 26 / 0) 0%, var(--forest-950) 100%); /* taste-skill-ignore: scrim at the foot of the phone hero picture */
-  }
-  .hero::before {
-    display: none;
+  .hero-copy {
+    padding-top: calc(64px + 112vw * 0.8 - 40px);
+    padding-bottom: 104px;
   }
   .hero::after {
     height: 72px;
-  }
-  .hero-copy {
-    padding-top: 46svh;
-    padding-bottom: 104px;
   }
   .hero-h {
     margin-top: 18px;
@@ -442,7 +445,43 @@
   .hero-h .line-in,
   .hero-eyebrow,
   .hero-text,
-  .hero-actions {
+  .hero-actions,
+  .hero-object-pop {
     animation: fade-in 200ms ease-out both;
+  }
+  .hero-object-pop {
+    transform: scale(1.05);
+  }
+}
+
+/* The hero object (Floria's bouquet, adapted): it arrives, then answers the scroll.
+   Pop: opacity 0 → 1, scale .9 → 1.05, rotate -8° → 0, 1.4s, Floria's ease, 300ms in.
+   Drift: over the first 100vh it rises 12vh, turns +6° and settles to .94 (HERO_DRIFT in
+   src/lib/hero-motion.ts; scroll-fallback.ts writes the same values where timelines are missing). */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-object-pop {
+    animation: object-pop 1400ms var(--ease-floria) 300ms both;
+  }
+  @supports (animation-timeline: scroll()) {
+    .hero-object {
+      animation: hero-drift linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 100vh;
+    }
+  }
+}
+@keyframes object-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.9) rotate(-8deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.05) rotate(0deg);
+  }
+}
+@keyframes hero-drift {
+  to {
+    transform: translateY(-12vh) rotate(6deg) scale(0.94);
   }
 }

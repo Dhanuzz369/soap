@@ -25,7 +25,7 @@ interface Props {
    */
   dark?: boolean;
   /** Extra <link rel="preload"> for the first screen's image (the LCP element). */
-  preloadImage?: { href: string; type?: string };
+  preloadImage?: { href: string; type?: string; srcset?: string; sizes?: string };
 }
 
 const { title, description, path, ogImage = '/og-default.png', jsonLd = [], breadcrumbs, noindex = false, dark = false, preloadImage } = Astro.props;
@@ -77,7 +77,19 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
 
     <link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/newsreader-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin />
-    {preloadImage && <link rel="preload" href={preloadImage.href} as="image" type={preloadImage.type ?? 'image/webp'} fetchpriority="high" />}
+    {
+      preloadImage && (
+        <link
+          rel="preload"
+          href={preloadImage.href}
+          as="image"
+          type={preloadImage.type ?? 'image/webp'}
+          imagesrcset={preloadImage.srcset}
+          imagesizes={preloadImage.sizes}
+          fetchpriority="high"
+        />
+      )
+    }
 
     {schemas.map((s) => <script type="application/ld+json" set:html={ld(s)} />)}
     <slot name="head" />

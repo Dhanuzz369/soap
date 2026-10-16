@@ -1,0 +1,50 @@
+---
+/**
+ * Glossy soap bubbles (glossy & motion audit): CSS spheres with a radial highlight and a thin
+ * iridescent rim, drifting slowly upward, with scroll parallax. Decorative only (aria-hidden).
+ * At most 10 on a page (hero 6 + quote card 4); none under 480px; none with reduced motion.
+ * Each bubble: an outer span for the scroll parallax (`--par`, CSS scroll/view timeline, or the
+ * fallback in src/scripts/scroll-fallback.ts) and an inner span for the float.
+ */
+interface Props {
+  set: 'hero' | 'quote';
+}
+const { set } = Astro.props;
+
+type B = { x: string; y: string; s: number; par: number; d: number; delay: number; sway: number; i: number };
+const SETS: Record<Props['set'], B[]> = {
+  // around the range on the right of the hero
+  hero: [
+    { x: '66%', y: '27%', s: 54, par: 70, d: 13, delay: -2, sway: 14, i: 0 },
+    { x: '61%', y: '13%', s: 26, par: 110, d: 11, delay: -6, sway: -10, i: 1 },
+    { x: '86%', y: '20%', s: 72, par: 50, d: 15, delay: -4, sway: 12, i: 2 },
+    { x: '93%', y: '48%', s: 30, par: 120, d: 12, delay: -8, sway: -8, i: 3 },
+    { x: '46%', y: '74%', s: 22, par: 140, d: 10, delay: -1, sway: 10, i: 4 },
+    { x: '75%', y: '9%', s: 40, par: 90, d: 14, delay: -5, sway: -12, i: 5 },
+  ],
+  // in the corners of the quote card, clear of the heading and the field
+  quote: [
+    { x: '9%', y: '22%', s: 58, par: 40, d: 14, delay: -3, sway: 12, i: 0 },
+    { x: '17%', y: '70%', s: 24, par: 70, d: 11, delay: -7, sway: -8, i: 1 },
+    { x: '86%', y: '18%', s: 34, par: 60, d: 12, delay: -2, sway: -10, i: 2 },
+    { x: '91%', y: '64%', s: 64, par: 36, d: 15, delay: -9, sway: 10, i: 3 },
+  ],
+};
+const bubbles = SETS[set];
+const mode = set === 'hero' ? 'page' : 'view';
+---
+
+<div class:list={['bubbles', `bubbles--${set}`]} aria-hidden="true">
+  {
+    bubbles.map((b) => (
+      <span
+        class="bubble-par"
+        data-par={b.par}
+        data-par-mode={mode}
+        style={`--x: ${b.x}; --y: ${b.y}; --s: ${b.s}px; --par: ${b.par}px; --i: ${b.i}`}
+      >
+        <span class="bubble" style={`--d: ${b.d}s; --delay: ${b.delay}s; --sway: ${b.sway}px`} />
+      </span>
+    ))
+  }
+</div>

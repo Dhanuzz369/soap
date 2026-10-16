@@ -4,6 +4,8 @@
  * input. It is a GET form to /contact/; the contact form reads ?message= (and ?product=) and
  * prefills itself (parseEnquiryParams in src/lib/enquiry.ts).
  */
+import Bubbles from './Bubbles.astro';
+
 interface Props {
   heading?: string;
   text?: string;
@@ -24,6 +26,7 @@ const {
 <section class="wrap quote" aria-labelledby={`${id}-h`}>
   <div class="quote-card" data-reveal>
     <img class="quote-plate" src="/images/found/lemon-plate.webp" width="1600" height="880" alt="" loading="lazy" decoding="async" />
+    <Bubbles set="quote" />
     <div class="quote-inner">
       <h2 id={`${id}-h`}>{heading}</h2>
       <p>{text}</p>
@@ -36,3 +39,8 @@ const {
     </div>
   </div>
 </section>
+
+<script>
+  // Bubble parallax without scroll timelines (no-op where CSS runs it, or with reduced motion).
+  import '../scripts/scroll-fallback';
+</script>

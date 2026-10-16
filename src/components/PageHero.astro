@@ -21,6 +21,12 @@ export type HeroMedia = {
   mode: 'bleed' | 'card' | 'plate';
   /** CSS object-position for the crop, e.g. '90% 60%'. */
   position?: string;
+  /**
+   * A transparent studio cut-out (public/images/renders): shown whole (contain), it pops in on
+   * load (scale .92 → 1, rotate -6° → 0, no opacity change so it stays the LCP) and drifts
+   * lightly with scroll (src/lib/hero-motion.ts BAND_DRIFT).
+   */
+  cutout?: boolean;
 };
 
 interface Props {
@@ -41,7 +47,7 @@ const { breadcrumbs, l1, sub, l2, lead, media, size = 'title', scale = 's', id =
 <section class:list={['ph', `ph--${size}`, media && `ph--media-${media.mode}`]} aria-labelledby={id}>
   {
     media && (
-      <div class="ph-media">
+      <div class:list={['ph-media', media.cutout && 'ph-media--object']} data-drift={media.cutout ? 'band' : undefined}>
         <img
           src={media.src}
           srcset={media.srcset}
@@ -67,3 +73,8 @@ const { breadcrumbs, l1, sub, l2, lead, media, size = 'title', scale = 's', id =
     <slot />
   </div>
 </section>
+
+<script>
+  // Scroll drift without scroll timelines (a no-op where CSS runs it, or with reduced motion).
+  import '../scripts/scroll-fallback';
+</script>

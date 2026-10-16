@@ -316,6 +316,8 @@
   background: rgb(11 33 26 / 0.8);
 }
 .quote-inner {
+  position: relative;
+  z-index: 1;
   display: grid;
   justify-items: center;
   gap: 20px;
@@ -1360,4 +1362,144 @@
   line-height: 1.05;
   max-width: 16ch;
   margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   GLOSS AND DEPTH (glossy & motion audit, 2026-10-16)
+   ========================================================================== */
+
+/* ---------- dark fields: a soft mint glow, a vignette and very fine grain ----------
+   Static background layers (no extra elements, nothing animates). The glow sits where each
+   field's object is (--glow-x/--glow-y); 8–12% mint. Grain: a 160px tile at ~3% (grain.png). */
+.hero,
+.ph,
+.process,
+.answers,
+.site-footer {
+  background-image:
+    url('/images/grain.png'),
+    radial-gradient(130% 100% at 50% 40%, rgb(2 10 7 / 0) 58%, rgb(2 10 7 / 0.42) 100%), /* taste-skill-ignore: vignette on the dark field (audit: depth) */
+    radial-gradient(var(--glow-r, 40vw) circle at var(--glow-x, 70%) var(--glow-y, 45%), rgb(191 227 207 / var(--glow-a, 0.1)), rgb(191 227 207 / 0) 100%); /* taste-skill-ignore: mint glow behind the object (audit: depth) */
+  background-size: 160px 160px, auto, auto;
+}
+.ph {
+  --glow-x: 76%;
+  --glow-y: 50%;
+}
+.process {
+  --glow-x: 74%;
+  --glow-y: 46%;
+  --glow-a: 0.13;
+  --glow-r: 44vw;
+}
+.answers {
+  --glow-x: 50%;
+  --glow-y: 30%;
+  --glow-a: 0.08;
+  --glow-r: 60vw;
+}
+.site-footer {
+  --glow-x: 18%;
+  --glow-y: 0%;
+  --glow-a: 0.07;
+}
+@media (max-width: 759.98px) {
+  .ph {
+    --glow-x: 55%;
+    --glow-y: 22%;
+    --glow-r: 70vw;
+  }
+}
+
+/* ---------- soap bubbles (Bubbles.astro): glossy CSS spheres ----------
+   A radial specular highlight, a faint body, and a thin iridescent rim (a conic gradient masked to
+   a 1.5px ring). They float slowly upward and parallax with the scroll. Decorative: none under
+   480px and none with reduced motion. At most 10 on any page. */
+.bubbles {
+  display: none;
+}
+@media (min-width: 480px) and (prefers-reduced-motion: no-preference) {
+  .bubbles {
+    display: block;
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+}
+.bubble-par {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--s);
+  height: var(--s);
+}
+.bubble {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 28%, rgb(255 255 255 / 0.92) 0, rgb(255 255 255 / 0.5) 7%, rgb(255 255 255 / 0) 18%),
+    radial-gradient(circle at 70% 76%, rgb(255 255 255 / 0.3) 0, rgb(255 255 255 / 0) 13%),
+    radial-gradient(circle, rgb(191 227 207 / 0) 50%, rgb(191 227 207 / 0.07) 74%, rgb(238 244 239 / 0.3) 100%); /* taste-skill-ignore: soap-bubble sphere shading (audit: bubbles) */
+}
+.bubble::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(from 200deg, #ff9ad5, #9ad8ff, #b4ffd0, #fff3a0, #ffc6a0, #ff9ad5); /* taste-skill-ignore: iridescent bubble rim (audit: bubbles) */
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 1.6px), #000 calc(100% - 1px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 1.6px), #000 calc(100% - 1px));
+  opacity: 0.62;
+}
+@media (min-width: 480px) and (prefers-reduced-motion: no-preference) {
+  .bubble {
+    animation: bubble-float var(--d) ease-in-out var(--delay) infinite alternate;
+  }
+  .bubble-par {
+    animation: bubble-in 1200ms var(--ease-floria) calc(700ms + var(--i) * 120ms) both;
+  }
+  @supports (animation-timeline: scroll()) {
+    .bubbles--hero .bubble-par {
+      animation:
+        bubble-in 1200ms var(--ease-floria) calc(700ms + var(--i) * 120ms) both,
+        bubble-par linear both;
+      animation-timeline: auto, scroll(root block);
+      animation-range: normal, 0 100vh;
+    }
+    .bubbles--quote .bubble-par {
+      animation:
+        bubble-in 1200ms var(--ease-floria) calc(var(--i) * 120ms) both,
+        bubble-par linear both;
+      animation-timeline: auto, view();
+      animation-range: normal, cover;
+    }
+  }
+}
+@keyframes bubble-float {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(var(--sway), -42px, 0);
+  }
+}
+/* the `translate` property, so it composes with the entrance's `scale` and the float's transform */
+@keyframes bubble-par {
+  from {
+    translate: 0 var(--par);
+  }
+  to {
+    translate: 0 calc(var(--par) * -1);
+  }
+}
+@keyframes bubble-in {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
 }
