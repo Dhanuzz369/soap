@@ -1,0 +1,170 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductVisual from '../../components/ProductVisual.astro';
+import HsnChip from '../../components/HsnChip.astro';
+import SpecTable from '../../components/SpecTable.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import { getRelated, type ProductEntry } from '../../lib/products';
+import { productJsonLd, faqJsonLd } from '../../lib/seo';
+import { absoluteUrl } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  const cats = await getCollection('categories');
+  return Promise.all(
+    products.map(async (product) => ({
+      params: { slug: product.data.slug },
+      props: {
+        product,
+        category: cats.find((c) => c.id === product.data.category.id)!,
+        related: await getRelated(product, 3),
+      },
+    })),
+  );
+}
+
+interface Props {
+  product: ProductEntry;
+  category: { data: { title: string; slug: string } };
+  related: ProductEntry[];
+}
+const { product, category, related } = Astro.props;
+const d = product.data;
+const { Content } = await render(product);
+const url = `/products/${d.slug}/`;
+const catId = d.category.id;
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Products', url: '/products/' },
+  { name: category.data.title, url: `/categories/${category.data.slug}/` },
+  { name: d.title, url: url },
+];
+---
+
+<BaseLayout
+  title={d.metaTitle}
+  description={d.metaDescription}
+  path={url}
+  ogImage={d.image}
+  breadcrumbs={breadcrumbs}
+  jsonLd={[productJsonLd({ ...d, category: catId }, absoluteUrl(url)), faqJsonLd(d.faqs)]}
+>
+  <header class="field prod-hero" data-cat={catId}>
+    <div class="wrap prod-hero-grid">
+      <div class="prod-hero-copy">
+        <h1 class="prod-title">{d.title} Exporter &amp; Supplier from India</h1>
+        <p class="lead">{d.answer}</p>
+        <div class="prod-actions">
+          <a class="btn" href={`/contact/?product=${d.slug}`}>Request a Quote</a>
+          <a class="btn btn--soft" href="#faq">Read the FAQ</a>
+        </div>
+      </div>
+      <div class="prod-hero-visual">
+        <ProductVisual slug={d.slug} title={d.title} category={catId} size="hero" />
+      </div>
+    </div>
+  </header>
+
+  <section class="wrap prod-facts" aria-labelledby="facts-h">
+    <h2 id="facts-h" class="h-sub">Key facts for buyers</h2>
+    <dl class="facts">
+      <div>
+        <dt>HSN code</dt>
+        <dd>
+          <HsnChip code={d.hsn} withNote />
+          {d.hsnNote && <p class="note">{d.hsnNote}</p>}
+        </dd>
+      </div>
+      <div>
+        <dt>Minimum order quantity</dt>
+        <dd>{d.moq}</dd>
+      </div>
+      <div>
+        <dt>Private label</dt>
+        <dd>
+          {d.privateLabel.available ? 'Available.' : 'Not offered for this product.'}
+          {d.privateLabel.available && d.privateLabel.options.length > 0 && (
+            <span> {d.privateLabel.options.join('; ')}.</span>
+          )}
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="wrap prod-block" aria-labelledby="var-h">
+    <h2 id="var-h" class="h-sub">Available varieties</h2>
+    <ul class="chips chips--lg" aria-label="Varieties">
+      {d.variants.map((v) => <li class="chip">{v}</li>)}
+    </ul>
+  </section>
+
+  <section class="wrap prod-block" aria-labelledby="pack-h">
+    <h2 id="pack-h" class="h-sub">Pack sizes &amp; packaging</h2>
+    <div class="pack-grid">
+      <div>
+        <h3 class="h-mini">Pack sizes</h3>
+        <ul class="chips chips--lg" aria-label="Pack sizes">
+          {d.packSizes.map((v) => <li class="chip">{v}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h3 class="h-mini">Packaging options</h3>
+        <ul class="plain-list">
+          {d.packaging.map((v) => <li>{v}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap prod-block" aria-labelledby="spec-h">
+    <h2 id="spec-h" class="h-sub">What are the typical specifications of {d.title}?</h2>
+    <SpecTable specs={d.specs} />
+  </section>
+
+  <section class="wrap prod-block">
+    <div class="prose"><Content /></div>
+  </section>
+
+  {
+    d.containerLoad && (
+      <section class="wrap prod-block" aria-labelledby="load-h">
+        <h2 id="load-h" class="h-sub">Container loading (approx.)</h2>
+        <dl class="facts facts--two">
+          <div>
+            <dt>20 ft container</dt>
+            <dd>{d.containerLoad.ft20}</dd>
+          </div>
+          <div>
+            <dt>40 ft container</dt>
+            <dd>{d.containerLoad.ft40}</dd>
+          </div>
+        </dl>
+        <p class="note" style="margin-top:12px">Approximate figures; the final loading plan is confirmed per order.</p>
+      </section>
+    )
+  }
+
+  <div class="wrap prod-block">
+    <Faq faqs={d.faqs} heading={`${d.title}: questions buyers ask`} />
+  </div>
+
+  <CtaBand
+    heading={`Request a quote for ${d.title}`}
+    text="Tell us the variety, pack size, quantity and destination port. We reply with prices, specifications and lead time."
+    primary={{ label: 'Request a Quote', href: `/contact/?product=${d.slug}` }}
+  />
+
+  {
+    related.length > 0 && (
+      <section class="wrap section" aria-labelledby="rel-h">
+        <h2 id="rel-h" class="h-sub">Related products</h2>
+        <div class="grid-cards" style="margin-top:32px">
+          {related.map((p) => <ProductCard product={p} />)}
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>

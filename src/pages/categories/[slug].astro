@@ -1,0 +1,62 @@
+---
+import { getProductsByCategory, type CategoryEntry, type ProductEntry } from '../../lib/products';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { faqJsonLd } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const groups = await getProductsByCategory();
+  return groups.map((g) => ({
+    params: { slug: g.category.data.slug },
+    props: { category: g.category, products: g.products },
+  }));
+}
+
+interface Props {
+  category: CategoryEntry;
+  products: ProductEntry[];
+}
+const { category, products } = Astro.props;
+const c = category.data;
+const url = `/categories/${c.slug}/`;
+const faqs = products.slice(0, 6).map((p) => p.data.faqs[0]);
+---
+
+<BaseLayout
+  title={`${c.title} Exporter & Supplier from India`}
+  description={c.summary}
+  path={url}
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Products', url: '/products/' },
+    { name: c.title, url },
+  ]}
+  jsonLd={faqs.length ? [faqJsonLd(faqs)] : []}
+>
+  <header class="field cat-hero" data-cat={c.slug}>
+    <div class="wrap">
+      <h1 class="cat-title">{c.title} Exporter &amp; Supplier from India</h1>
+      <p class="lead">{c.intro}</p>
+      <p class="note" style="margin-top:20px">HSN range {c.hsnRange}. The 8-digit ITC-HS code is confirmed per order.</p>
+    </div>
+  </header>
+
+  <section class="wrap section" aria-labelledby="cat-products-h">
+    <h2 id="cat-products-h" class="h-sub">Which {c.title.toLowerCase()} products do we supply?</h2>
+    <div class="grid-cards" style="margin-top:40px">
+      {products.map((p) => <ProductCard product={p} />)}
+    </div>
+  </section>
+
+  {
+    faqs.length > 0 && (
+      <div class="wrap prod-block">
+        <Faq faqs={faqs} heading={`${c.title}: questions buyers ask`} />
+      </div>
+    )
+  }
+
+  <CtaBand heading={`Quote ${c.title.toLowerCase()} for your market`} />
+</BaseLayout>

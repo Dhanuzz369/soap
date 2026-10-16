@@ -1,0 +1,70 @@
+---
+import { getProductsByCategory } from '../../lib/products';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import site from '../../config/site';
+
+const groups = await getProductsByCategory();
+const total = groups.reduce((n, g) => n + g.products.length, 0);
+---
+
+<BaseLayout
+  title="Soap & Home-Care Products Exporter & Supplier from India"
+  description={`Browse ${total} soap, laundry, kitchen, surface-cleaner and raw-material products sourced from vetted Indian manufacturers, with HSN codes and private label options.`}
+  path="/products/"
+  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Products', url: '/products/' }]}
+>
+  <header class="wrap cat-hero-plain">
+    <h1 class="cat-title">Soap &amp; Home-Care Products Exporter &amp; Supplier from India</h1>
+    <p class="lead">
+      {total} products in five ranges, sourced from vetted Indian manufacturers and supplied with private label options. Choose a range, or open any product for specifications, pack sizes and HSN codes.
+    </p>
+  </header>
+
+  {
+    groups.map((g) => (
+      <section class="field chapter" data-cat={g.category.data.slug} aria-labelledby={`c-${g.category.data.slug}`}>
+        <div class="wrap">
+          <h2 id={`c-${g.category.data.slug}`} class="h-sub">
+            <a class="plain-link" href={`/categories/${g.category.data.slug}/`}>{g.category.data.title}</a>
+          </h2>
+          <p class="lead chapter-intro">{g.category.data.summary}</p>
+          <div class="grid-cards" style="margin-top:40px">
+            {g.products.map((p) => <ProductCard product={p} />)}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+
+  <section class="wrap section" aria-labelledby="hsn-h">
+    <h2 id="hsn-h" class="h-sub">Which HSN code applies to each product?</h2>
+    <p class="note" style="margin:16px 0 28px">
+      Codes are shown at 6 digits. The 8-digit ITC-HS code is confirmed per order, and a few products have alternative classifications (see each product page).
+    </p>
+    <div class="spec-wrap">
+      <table class="spec spec--cols">
+        <caption>HSN overview by product, grouped by range</caption>
+        <thead>
+          <tr><th scope="col">Product</th><th scope="col">Range</th><th scope="col">HSN (6 digits)</th></tr>
+        </thead>
+        <tbody>
+          {
+            groups.flatMap((g) =>
+              g.products.map((p) => (
+                <tr>
+                  <th scope="row"><a href={`/products/${p.data.slug}/`}>{p.data.title}</a></th>
+                  <td>{g.category.data.title}</td>
+                  <td class="num">{p.data.hsn}</td>
+                </tr>
+              )),
+            )
+          }
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <CtaBand />
+</BaseLayout>

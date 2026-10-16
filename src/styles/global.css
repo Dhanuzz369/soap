@@ -852,3 +852,202 @@ a:hover {
     transform: none;
   }
 }
+
+/* ---------- product, category and listing pages ---------- */
+.h-sub {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 1.2rem + 1.8vw, 2.75rem);
+  line-height: 1.05;
+  letter-spacing: var(--track-display);
+  text-wrap: balance;
+}
+.h-mini {
+  font-size: var(--step-body);
+  margin-bottom: 12px;
+}
+.plain-link {
+  color: inherit;
+  text-decoration: none;
+}
+.plain-link:hover {
+  color: var(--action-hover);
+  text-decoration: underline;
+}
+.prod-title,
+.cat-title {
+  font-size: clamp(2.25rem, 1.3rem + 3.6vw, 4.75rem);
+  overflow-wrap: anywhere;
+}
+.prod-hero,
+.cat-hero {
+  padding-block: clamp(40px, 2rem + 4vw, 104px);
+}
+.cat-hero .lead,
+.cat-hero-plain .lead {
+  margin-top: 24px;
+  max-width: 52ch;
+}
+.cat-hero-plain {
+  padding-block: clamp(40px, 2rem + 4vw, 104px) clamp(32px, 2rem + 2vw, 64px);
+}
+.prod-hero-grid {
+  display: grid;
+  gap: clamp(32px, 4vw, 72px);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: center;
+}
+.prod-hero-copy .lead {
+  margin-top: 24px;
+  font-size: var(--step-body);
+  line-height: 1.5;
+  max-width: 58ch;
+}
+.prod-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+.prod-hero-visual {
+  min-width: 0;
+}
+@media (max-width: 859.98px) {
+  .prod-hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .prod-hero-visual {
+    max-width: 480px;
+  }
+}
+.prod-facts,
+.prod-block {
+  padding-top: clamp(40px, 2rem + 3vw, 88px);
+}
+.prod-facts {
+  padding-top: clamp(40px, 2rem + 3vw, 88px);
+}
+.prod-block > .faq,
+.prod-block.wrap > .faq {
+  margin: 0;
+}
+.facts {
+  display: grid;
+  gap: var(--gap);
+  margin-top: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+.facts > div {
+  background: var(--paper-2);
+  padding: clamp(18px, 2vw, 28px);
+  min-width: 0;
+}
+.facts dt {
+  font-size: var(--step-small);
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+}
+.facts dd {
+  font-size: var(--step-body);
+  overflow-wrap: anywhere;
+}
+.facts dd .note {
+  margin-top: 10px;
+}
+.chips--lg {
+  margin-top: 20px;
+  gap: 8px;
+}
+.chips--lg .chip {
+  font-size: var(--step-body);
+  padding: 0.35em 1em;
+}
+.pack-grid {
+  display: grid;
+  gap: clamp(28px, 4vw, 64px);
+  margin-top: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+.pack-grid .chips--lg {
+  margin-top: 0;
+}
+.plain-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.plain-list li {
+  padding-left: 1.1em;
+  position: relative;
+}
+.plain-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--action);
+}
+#spec-h + .spec-wrap,
+.prod-block .spec-wrap {
+  margin-top: 24px;
+}
+.prose {
+  max-width: var(--measure);
+}
+.prose h2 {
+  font-size: clamp(1.75rem, 1.2rem + 1.8vw, 2.75rem);
+  line-height: 1.05;
+  margin: clamp(40px, 5vw, 64px) 0 16px;
+}
+.prose h2:first-child {
+  margin-top: 0;
+}
+.prose p + p {
+  margin-top: 1em;
+}
+.prose ul,
+.prose ol {
+  margin: 1em 0 1em 1.2em;
+}
+.chapter {
+  padding-block: clamp(48px, 3rem + 4vw, 112px);
+}
+.chapter-intro {
+  margin-top: 16px;
+  max-width: 52ch;
+}
+.spec--cols th,
+.spec--cols td {
+  width: auto;
+}
+.spec--cols thead th {
+  font-size: var(--step-small);
+  color: var(--ink-soft);
+  font-weight: 500;
+  border-bottom: 2px solid var(--paper-2);
+}
+.spec--cols .num {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+@media (max-width: 479.98px) {
+  .spec--cols thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+}
+
+/* keep the fixed WhatsApp button clear of the last footer content on phones */
+@media (max-width: 559.98px) {
+  .site-footer {
+    padding-bottom: calc(56px + 32px + env(safe-area-inset-bottom));
+  }
+}
