@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
-import ProductCard from '../components/ProductCard.astro';
+import CardGrid from '../components/CardGrid.astro';
 import site from '../config/site';
 import { buildWhatsAppUrl } from '../lib/enquiry';
 import { getProductsByCategory } from '../lib/products';
@@ -73,7 +73,7 @@ const often = ['dish-wash-liquid', 'fabric-softener', 'toilet-bath-soap']
       <div class="contact-dark">
         <h2>Export terms</h2>
         <p>{site.exportTerms.incoterms}.</p>
-        <p class="note" style="margin-top:8px;color:var(--on-dark-soft)">{site.exportTerms.port}. {site.exportTerms.leadTime}.</p>
+        <p style="margin-top:8px;color:var(--on-dark-soft)">{site.exportTerms.port}. {site.exportTerms.leadTime}.</p>
       </div>
     </aside>
   </div>
@@ -86,14 +86,6 @@ const often = ['dish-wash-liquid', 'fabric-softener', 'toilet-bath-soap']
       </div>
       <a class="link-arrow" href="/products/">All products <span class="arr" aria-hidden="true">↗</span></a>
     </div>
-    <ul class="cards-stagger">
-      {
-        often.map((p, i) => (
-          <li data-reveal style={`--i: ${i}`}>
-            <ProductCard product={p} />
-          </li>
-        ))
-      }
-    </ul>
+    <CardGrid products={often} />
   </section>
 </BaseLayout>

@@ -473,6 +473,11 @@
 .ph--product .ph-title--l {
   font-size: clamp(1.375rem, 0.75rem + 2.3vw, 2.75rem);
 }
+.ph--post.ph--media-bleed {
+  min-height: min(92svh, 880px);
+  display: grid;
+  align-items: center;
+}
 .ph--post .ph-title {
   font-size: clamp(1.5rem, 0.95rem + 1.6vw, 2.5rem);
   line-height: 1.05;
@@ -596,7 +601,8 @@
   .ph--media-card {
     padding-top: 0;
   }
-  .ph--product {
+  .ph--product,
+  .ph--post.ph--media-bleed {
     min-height: 0;
     display: block;
   }
@@ -1074,32 +1080,75 @@
   }
 }
 
-/* ---------- product cards: tall, rounded, staggered ---------- */
+/* ---------- product cards: tall, rounded, staggered (CardGrid) ---------- */
 .cards-stagger {
+  --cols: 3;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
   gap: 40px 32px;
   align-items: start;
 }
-.cards-stagger > :nth-child(3n + 2) {
+.cards-stagger--2 {
+  --cols: 2;
+}
+.cards-stagger--4 {
+  --cols: 4;
+  gap: 40px 24px;
+}
+/* the reference's gentle offsets: 0 / 96 / 48 (and 144 in a fourth column) */
+.cards-stagger--3 > :nth-child(3n + 2),
+.cards-stagger--2 > :nth-child(2n) {
   margin-top: 96px;
 }
-.cards-stagger > :nth-child(3n) {
+.cards-stagger--3 > :nth-child(3n) {
   margin-top: 48px;
 }
-.cards-stagger--two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.cards-stagger--4 > :nth-child(4n + 2) {
+  margin-top: 72px;
 }
-.cards-stagger--two > :nth-child(3n) {
-  margin-top: 0;
+.cards-stagger--4 > :nth-child(4n + 3) {
+  margin-top: 36px;
 }
-.cards-stagger--two > :nth-child(2n) {
-  margin-top: 96px;
+.cards-stagger--4 > :nth-child(4n) {
+  margin-top: 108px;
+}
+.cards-note {
+  display: grid;
+  align-content: end;
+  gap: 14px;
+  aspect-ratio: 4 / 5;
+  padding: clamp(24px, 2.6vw, 36px);
+  border-radius: var(--radius-card);
+  background: var(--forest-950);
+  color: var(--on-dark-soft);
+}
+.cards-note-h {
+  color: var(--on-dark);
+  font-size: var(--step-h3);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+.cards-note .link-arrow {
+  color: var(--on-dark);
+}
+.cards-note :focus-visible {
+  outline-color: var(--mint);
+}
+@media (max-width: 1099.98px) {
+  .cards-stagger--4 {
+    --cols: 2;
+  }
+  .cards-stagger--4 > :nth-child(n) {
+    margin-top: 0;
+  }
+  .cards-stagger--4 > :nth-child(2n) {
+    margin-top: 72px;
+  }
 }
 @media (max-width: 899.98px) {
-  .cards-stagger,
-  .cards-stagger--two {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .cards-stagger {
+    --cols: 2;
     gap: 32px 16px;
   }
   .cards-stagger > :nth-child(n) {
@@ -1108,11 +1157,13 @@
   .cards-stagger > :nth-child(2n) {
     margin-top: 56px;
   }
+  .cards-note {
+    aspect-ratio: auto;
+  }
 }
 @media (max-width: 519.98px) {
-  .cards-stagger,
-  .cards-stagger--two {
-    grid-template-columns: 1fr;
+  .cards-stagger {
+    --cols: 1;
     gap: 40px;
   }
   .cards-stagger > :nth-child(n) {

@@ -1,0 +1,43 @@
+---
+/**
+ * Tall rounded product cards in a staggered grid. The column count is chosen so no row ends
+ * with one lonely card (src/lib/card-grid.ts); a single gap is filled with a "mix in one
+ * container" note that links to the enquiry form.
+ */
+import type { ProductEntry } from '../lib/products';
+import ProductCard from './ProductCard.astro';
+import { cardGrid } from '../lib/card-grid';
+
+interface Props {
+  products: ProductEntry[];
+  details?: boolean;
+  noteText?: string;
+}
+const {
+  products,
+  details = true,
+  noteText = 'Combine these with products from other ranges in one 20ft or 40ft container. We confirm the mix when we quote.',
+} = Astro.props;
+const g = cardGrid(products.length);
+---
+
+<ul class:list={['cards-stagger', `cards-stagger--${g.cols}`]}>
+  {
+    products.map((p, i) => (
+      <li data-reveal style={`--i: ${i % g.cols}`}>
+        <ProductCard product={p} details={details} />
+      </li>
+    ))
+  }
+  {
+    g.note && (
+      <li class="cards-note" data-reveal style={`--i: ${products.length % g.cols}`}>
+        <p class="cards-note-h">Mix it in one container.</p>
+        <p>{noteText}</p>
+        <a class="link-arrow" href="/contact/">
+          Request a Quote <span class="arr" aria-hidden="true">→</span>
+        </a>
+      </li>
+    )
+  }
+</ul>

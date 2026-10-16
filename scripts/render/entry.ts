@@ -98,7 +98,7 @@ const api = {
   },
   async renderGroup(items: GroupItem[], tint: keyof typeof TINT, w: number, h: number, fill = 0.7) {
     // lift: the group sits in the upper part of the frame, leaving room for the tile's label below
-    await shoot(items, TINT[tint], w, h, { fill, elev: 10, lift: 0.22 });
+    await shoot(items, TINT[tint], w, h, { fill, elev: 10, lift: 0.12 });
   },
   async renderHero() {
     const c = freshCanvas(HERO_FRAME.width, HERO_FRAME.height);

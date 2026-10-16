@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero, { type HeroMedia } from '../../components/PageHero.astro';
-import ProductCard from '../../components/ProductCard.astro';
+import CardGrid from '../../components/CardGrid.astro';
 import Faq from '../../components/Faq.astro';
 import QuoteCard from '../../components/QuoteCard.astro';
 import { render, getCollection } from 'astro:content';
@@ -89,13 +89,7 @@ const media: HeroMedia | undefined =
             All guides <span class="arr" aria-hidden="true">↗</span>
           </a>
         </div>
-        <ul class:list={['cards-stagger', related.length === 2 && 'cards-stagger--two']}>
-          {related.map((p, i) => (
-            <li data-reveal style={`--i: ${i % 3}`}>
-              <ProductCard product={p} />
-            </li>
-          ))}
-        </ul>
+        <CardGrid products={related} />
       </section>
     )
   }

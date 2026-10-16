@@ -785,7 +785,7 @@ main {
 .footer-terms {
   margin-top: 16px;
   max-width: 46ch;
-  font-size: var(--step-small);
+  font-size: 1rem;
   color: var(--on-dark-soft);
 }
 .footer-links {
@@ -835,7 +835,7 @@ main {
 .footer-credits {
   margin-top: clamp(56px, 7vw, 96px);
   max-width: 64ch;
-  font-size: var(--step-small);
+  font-size: 1rem;
   line-height: 1.6;
   color: var(--on-dark-soft);
 }
@@ -1091,7 +1091,7 @@ main {
   border-radius: var(--pill);
   background: var(--paper);
   font-weight: 500;
-  font-size: var(--step-small);
+  font-size: 1rem;
   line-height: 1.25;
   cursor: pointer;
   transition: background-color var(--dur-fast) ease;
@@ -1146,6 +1146,7 @@ main {
 }
 .enq-hint {
   max-width: 48ch;
+  font-size: 1rem;
 }
 .enq-send {
   border-radius: 28px;

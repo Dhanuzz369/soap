@@ -2,7 +2,7 @@
 import { getProductsByCategory } from '../../lib/products';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
-import ProductCard from '../../components/ProductCard.astro';
+import CardGrid from '../../components/CardGrid.astro';
 import QuoteCard from '../../components/QuoteCard.astro';
 
 const groups = await getProductsByCategory();
@@ -84,13 +84,7 @@ const breadcrumbs = [
             The range in full <span class="arr" aria-hidden="true">↗</span>
           </a>
         </div>
-        <ul class="cards-stagger">
-          {g.products.map((p, i) => (
-            <li data-reveal style={`--i: ${i % 3}`}>
-              <ProductCard product={p} />
-            </li>
-          ))}
-        </ul>
+        <CardGrid products={g.products} />
       </section>
     ))
   }
