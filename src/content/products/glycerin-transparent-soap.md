@@ -1,0 +1,99 @@
+---
+title: "Glycerin / Transparent Soap"
+slug: glycerin-transparent-soap
+category: bath-personal-soaps
+order: 3
+hsn: "3401 11"
+metaTitle: "Glycerin & Transparent Soap Exporter & Supplier from India | GoodBiz Hygiene"
+metaDescription: "Glycerin and transparent bath soap from vetted Indian manufacturers: 75 g to 125 g clear bars in aloe, honey and rose, with private label for importers."
+answer: "Glycerin soap, also sold as transparent soap, is a clear or translucent bath bar made with a high level of glycerin and solvents so the bar looks like glass or amber. It is valued for a smooth feel and premium look. GoodBiz Hygiene sources it from vetted Indian manufacturers for export and private label."
+variants:
+  - "Aloe vera"
+  - "Honey and glycerin"
+  - "Rose"
+  - "Lemon and cucumber"
+  - "Sandalwood"
+  - "Sea mineral blue"
+packSizes:
+  - "75 g"
+  - "100 g"
+  - "125 g"
+  - "3 x 75 g multipack"
+packaging:
+  - "Individual carton with window or printed panel"
+  - "Shrink wrap to protect the clear surface"
+  - "Multipacks of 3 shrink-wrapped"
+  - "Master cartons of 48 to 96 bars"
+specs:
+  - label: "Form"
+    value: "Translucent moulded bar"
+  - label: "Total Fatty Matter (TFM)"
+    value: "Typical 45-60% (lower than opaque soap by design)"
+  - label: "Glycerin content"
+    value: "Typical 5-15%, declared per formulation"
+  - label: "pH (1% solution)"
+    value: "Typical 9.0-10.0"
+  - label: "Shelf life"
+    value: "Typical 24 months, sealed in shrink wrap"
+moq: "Typically 1 x 20 ft container; mixed fragrance loads are possible within a single design family."
+privateLabel:
+  available: true
+  options:
+    - "Own brand, logo and carton artwork"
+    - "Colour, fragrance and added ingredients"
+    - "Bar weight and shape within available moulds"
+    - "Embedded botanical or colour effects on request"
+containerLoad:
+  ft20: "Approx. 900 to 1,200 master cartons (100 g bars, carton of 72), varies with pack"
+  ft40: "Approx. 1,900 to 2,500 master cartons (100 g bars, carton of 72), varies with pack"
+uses:
+  - "Daily bathing with a gentle, premium feel"
+  - "Retail beauty and personal-care shelves"
+  - "Hotel and spa amenities"
+  - "Gift sets"
+markets:
+  - "Middle East"
+  - "Europe"
+  - "Africa"
+  - "South-East Asia"
+faqs:
+  - q: "Why is the TFM lower than regular soap?"
+    a: "Transparent soap needs added glycerin, sugar and solvents to stay clear, so the fatty-matter percentage is lower by design. Typical TFM is around 45-60%. A lower TFM figure does not mean a lower quality product in this category."
+  - q: "Can the bars be shipped in hot climates?"
+    a: "Yes, but glycerin soap can attract moisture and sweat in humid or hot conditions. Shrink wrap and cartons are used to protect it, and we advise cool, dry storage at the destination."
+  - q: "What fragrances and colours can I choose?"
+    a: "Aloe, honey, rose, lemon and cucumber, sandalwood and sea mineral are common. Colour is chosen to suit the fragrance and your brand. Final options depend on the manufacturer's current range."
+  - q: "What is the minimum order?"
+    a: "Typically one 20 ft container. Several fragrances can be combined in one load, subject to a minimum run per design."
+  - q: "Is a sample available before ordering?"
+    a: "Samples can be arranged. Courier cost is usually charged to the buyer, and private-label samples are produced against your approved artwork."
+related:
+  - herbal-ayurvedic-soap
+  - toilet-bath-soap
+  - hotel-guest-soap
+  - body-wash-shower-gel
+---
+
+## Product overview
+
+Glycerin or transparent soap stands out because you can see through it. The clear, amber or tinted finish signals a gentle, premium product, and the glycerin gives a smooth, soft feel in use. It sells well in beauty-led retail, spa and hotel amenity channels, and it makes an attractive gift when packed in a window carton.
+
+GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. Transparent soap needs specialised processing, so we source it only from vetted Indian manufacturers who run dedicated transparent lines, and we manage specification, documentation and shipment on your behalf.
+
+## Grades and formulations
+
+Clarity comes from glycerin, sugar and solvents combined with a soap base, so typical TFM sits lower than opaque bars, around 45-60%, with glycerin typically in the 5-15% range. Popular variants include aloe vera in green, honey in amber, rose in pink, lemon and cucumber in pale yellow-green, sandalwood in warm brown, and a sea mineral bar in blue. Embedded effects such as a botanical or a colour swirl are available from some producers.
+
+Because transparent soap is sensitive to moisture, finish quality matters. We ask manufacturers for pre-shipment photographs so you can see bar clarity and surface before cartons are sealed.
+
+## Packaging for export
+
+Every bar is shrink-wrapped to protect the surface, then placed in a printed carton, often with a window so the colour is visible on shelf. Multipacks of three suit supermarkets. Master cartons hold 48 to 96 bars. Because bars are lower in density than some opaque soaps, container counts differ, and a loading plan accompanies each quotation.
+
+## Private label options
+
+You can build your own transparent soap brand with your name, logo, carton design, colour and fragrance. Weight and shape depend on the moulds the manufacturer holds, and new moulds, where needed, may require a higher minimum. A pre-production sample is approved before bulk production. Lead time is typically 3-5 weeks after confirmation, depending on private-label requirements.
+
+## Why source through GoodBiz Hygiene
+
+You deal with one export partner instead of qualifying several factories. Documentation, quality follow-up and port logistics are included in the process. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code is shown at 6-digit level and the 8-digit ITC-HS code is confirmed per order. Send us your preferred bar weight and fragrance, and we will return a quotation.

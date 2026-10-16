@@ -1,0 +1,99 @@
+---
+title: "Antibacterial / Medicated Soap"
+slug: antibacterial-soap
+category: bath-personal-soaps
+order: 4
+hsn: "3401 11"
+metaTitle: "Antibacterial & Medicated Soap Exporter & Supplier from India | GoodBiz Hygiene"
+metaDescription: "Antibacterial and medicated bath soaps from vetted Indian manufacturers: 75 g to 150 g bars, TFM 70%+, private label and mixed container loads for importers."
+answer: "Antibacterial or medicated soap is a bath bar that adds an active ingredient, such as triclocarban, chloroxylenol (PCMX) or a botanical like neem, to help reduce skin bacteria during washing. It is used for daily hygiene at home and in institutions. GoodBiz Hygiene sources it from vetted Indian manufacturers for export."
+variants:
+  - "Active-agent antibacterial bar (fresh)"
+  - "Neem and tea tree medicated"
+  - "Lemon protect"
+  - "Carbolic style"
+  - "Sulphur skin-care bar"
+  - "Unperfumed sensitive"
+packSizes:
+  - "75 g"
+  - "100 g"
+  - "125 g"
+  - "150 g"
+packaging:
+  - "Printed carton per bar"
+  - "Flow wrap for economy lines"
+  - "Multipacks of 3 or 4"
+  - "Master cartons of 48 to 144 bars"
+specs:
+  - label: "Form"
+    value: "Solid milled bar"
+  - label: "Total Fatty Matter (TFM)"
+    value: "Typical 70-75%"
+  - label: "pH (1% solution)"
+    value: "Typical 9.5-10.5"
+  - label: "Antibacterial agent"
+    value: "Type and percentage declared per formulation and market regulation"
+  - label: "Shelf life"
+    value: "Typical 24-36 months in sealed pack"
+moq: "Typically 1 x 20 ft container; mixed variants with other soaps are possible."
+privateLabel:
+  available: true
+  options:
+    - "Own brand, logo and carton artwork"
+    - "Choice of antibacterial or botanical active, subject to market rules"
+    - "Fragrance, colour and bar weight"
+    - "Claim wording aligned to your regulator"
+containerLoad:
+  ft20: "Approx. 1,200 to 1,500 master cartons (100 g bars, carton of 72), varies with pack"
+  ft40: "Approx. 2,500 to 3,000 master cartons (100 g bars, carton of 72), varies with pack"
+uses:
+  - "Daily family hygiene"
+  - "Schools, hostels and workplaces"
+  - "Healthcare-adjacent and clinic washrooms"
+  - "General trade and pharmacy retail"
+markets:
+  - "Middle East"
+  - "Africa"
+  - "South Asia and South-East Asia"
+  - "Latin America"
+faqs:
+  - q: "Which antibacterial agents are used?"
+    a: "Actives vary by manufacturer and by what your market permits. Triclocarban, PCMX (chloroxylenol) and botanical agents such as neem or tea tree are typical choices. Some regions restrict certain actives, so tell us your destination and we will confirm what can be supplied."
+  - q: "Can the carton make a germ-kill claim?"
+    a: "Claim wording must match both the formula and your local regulator. We do not supply lab claims we cannot document, so please share the wording you need and we will check what the manufacturer can support with test data."
+  - q: "What is the MOQ?"
+    a: "Typically one 20 ft container. Mixed loads that include other bath soaps are possible, with a minimum run per design."
+  - q: "Do you provide product registration support?"
+    a: "We can supply specifications, ingredient lists, a COA and an MSDS on request. Registration with your local authority remains your responsibility, and we confirm which documents the manufacturer can provide."
+  - q: "Is private label available?"
+    a: "Yes. You choose the name, artwork, fragrance, colour and bar weight, subject to the active ingredient rules for your market."
+related:
+  - toilet-bath-soap
+  - liquid-hand-wash
+  - herbal-ayurvedic-soap
+  - hotel-guest-soap
+---
+
+## Product overview
+
+Antibacterial and medicated soaps remain in steady demand wherever households and institutions place a high value on hygiene. Schools, hostels, workplaces and homes use them for daily washing, and buyers often choose them over standard toilet soap in warm climates. The category covers a range of products, from a general antibacterial bar with a fresh scent to carbolic-style and sulphur bars with a medicated profile.
+
+GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run soap lines. These bars are sourced from vetted Indian manufacturers, and we handle the specification check, documentation and shipment.
+
+## Grades and formulations
+
+The soap base is usually high-TFM, around 70-75%, which gives a firm, long-lasting bar. The active ingredient is what separates the product. Common choices include triclocarban, PCMX (chloroxylenol) and botanical actives such as neem and tea tree. Because rules differ by country, we ask early which agents your regulator allows and which claims you plan to put on the carton.
+
+Variants range from a fresh antibacterial bar and a lemon protect bar to a carbolic-style bar with a traditional medicated scent, a sulphur bar for skin-care positioning, and an unperfumed bar for sensitive skin. All values for TFM, pH and active content are typical and are confirmed on the specification for your order.
+
+## Packaging for export
+
+Cartons are printed with the claim wording you approve. Economy lines can use flow wrap, while premium lines use a printed carton. Multipacks of three or four are available, and master cartons hold 48 to 144 bars. A container loading plan is provided with each quotation.
+
+## Private label options
+
+You can set the name, logo, artwork, fragrance, colour and bar weight. The active ingredient and the claim text on the pack must suit your market, so we align these with you before artwork is finalised. A sample is approved before bulk production, and lead time is typically 3-5 weeks after confirmation, depending on private-label requirements.
+
+## Why source through GoodBiz Hygiene
+
+You work with one export partner for sourcing, quality follow-up, documents and shipping. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code is shown at 6-digit level, and the 8-digit ITC-HS code is confirmed per order. Share your market, preferred active and bar weight, and we will return a quotation.
