@@ -195,3 +195,73 @@ What still falls short:
 - The prose column on product pages is centred, while the other blocks are left-aligned, which adds a third left edge.
 - The Straight-answers wall repeats identical cards (`card-rows`).
 - Several categories share similar render compositions.
+
+
+---
+
+# Glossy & motion (2026-10-16)
+
+Branch `feat/glossy-motion`. Implements `docs/superpowers/specs/2026-10-16-glossy-motion-audit.md`. Evidence: `docs/superpowers/screens/glossy/`.
+
+## Audit rows
+| Audit row | Status | Notes |
+|---|---|---|
+| Hero cut-out pops in, overflows into The Range | Done, with one change | `range-cutout.webp` (1600×1280, 86 KB) + `-800` (45 KB), preloaded with `imagesrcset`. Pop: opacity 0→1, scale .9→1.05, rotate −8°→0, 1.4s, `cubic-bezier(.16,1,.3,1)`. **Deviation:** it is a CSS *transition* started two frames after the image has painted (inline script; 2.5s safety), and the pre-pop opacity is 0.01, not 0. Chrome drops LCP candidates painted at opacity 0 or under a running pop animation; with the keyframe version the LCP fell back to the wordmark. Without JS the object just sits in its final pose. Total delay ≈ 150ms after paint (Floria: 300ms after mount). The bottom runs ~12vh into The Range; `overflow-x: clip` on the hero stops sideways scroll. |
+| Scroll drift: rise 12vh, +6°, scale .94 over 100vh | Done | `animation-timeline: scroll(root)` with `animation-range: 0 100vh`. Fallback `src/scripts/scroll-fallback.ts` writes the same transform from `src/lib/hero-motion.ts` (`HERO_DRIFT`), rAF-throttled, transform only, off under reduced motion. |
+| Live Three.js: first frame on the still, then fan/turn on scroll | Done | It still waits for the first interaction. The canvas sits inside the same transformed box as the cut-out and uses the same camera (`frameBox` in `hero-scene.ts`). It renders on a transparent canvas with the same reflection and shadows, and its rest pose equals the still. The still fades out 600ms after the canvas fades in. Scroll fans the packs apart (`fanPose`) and turns them, eased with a frame-rate-independent `approach()`. Rendering pauses off-screen and on hidden tabs. Verified in Chrome: the pose matches. The live materials are the light runtime set, so the shading differs slightly (no transmission or strip lights); the room is brighter (env 0.34) to narrow the gap. |
+| Glossy re-render | Done | Glossy quality in `packs.ts`: PET transmission .42 + thickness 1.3 + attenuation; caps clearcoat 1; clearcoated labels. Strip softboxes (`scripts/render/strips.ts`, never shipped) plus mint rim lights, contact shadows and a faint floor reflection (`three/reflection.ts`, a mirrored copy fading with depth). Alpha comes from two passes per still (colour on the field + white coverage matte); the field is divided out, so shadows and reflections stay semi-transparent. All 14 shapes, 5 tint variants and 5 category groups are now alpha cut-outs, 23–86 KB each (limit 180 KB). `range-hero.webp` is retired; `/products/` and `/export-process/` use the cut-out. |
+| Product cards: pop, sheen, pill, press | Done | On hover, the cut-out lifts −10px and scales 1.06 (600ms ease-out). One sheen pass runs (700ms; it resets instantly on leave). "Add to enquiry" slides up from `translateY(100%)` in 300ms. `:active` scale .98. Hover is gated to fine pointers; the pill is always shown on touch. A mint studio glow sits behind the render. |
+| Process: neem-leaf cut-out + glow | Done | `public/images/found/neem-leaves.webp` is the 1873 public-domain plate already in the repo and credited in the footer, with the paper removed (ink→alpha, mint line work, 101 KB). It slides in from x −100px over 1.2s, under a radial mask, in lighten blend at 20% (14% on phones), placed bottom-left away from the copy so text contrast holds. The large mint glow is a static radial layer behind the steps (no animated blur). Applies on home, private label and export process. |
+| Straight answers: glass cards | Done | forest-800 at 40%, `backdrop-filter: blur(8px)`, 1px white edge 6%→12% on hover (200ms), and a faint large "?" in Newsreader italic (`content: '?' / ''`, hidden from AT). Cards rise 40px, 100ms apart. |
+| Soap bubbles | Done | `Bubbles.astro`: 6 in the hero + 4 in the quote card (≤10 per page), with a radial highlight and an iridescent conic rim masked to a 1.5px ring. Each floats on its own loop, with an entrance stagger and scroll parallax (the `translate` property, so it composes with the float). None under 480px, none with reduced motion. On portrait screens the hero bubble near the actions is dropped. |
+| Statement band choreography | Done | Leaf scale .8→1 + opacity; heading rises 30px at 200ms; paragraph fades only at 400ms. |
+| Dark-field depth | Done | Hero, page bands, process, answers and footer get a mint radial glow (8–13%, placed per field), a vignette and a 160px grain tile (`public/images/grain.png`, 5 KB, ~2.7% alpha). All are static background layers. |
+| Buttons | Done | 1px inset top highlight (white 25%); one-pass hover sheen behind the label (fine pointers); press scale .97/160ms kept. |
+| Category tiles | Done | Render floats up 8px + scale 1.05, label lifts 4px, a deeper scrim fades in over 200ms; the tile has a studio glow. The products-index category strip uses the same float. |
+| Inner-page hero renders | Done | All render bands (27 products, 5 categories, /products/, export process, private label, posts, 404) pop in: scale .92→1, rotate −6°→0, 1.2s, with **no opacity change**, so they stay the LCP. They drift lightly with scroll (`BAND_DRIFT`: 6vh, 2°, .97), with the same fallback. Photos and plates do not move. |
+| Reduced motion | Done | Verified in Chrome with `reducedMotion: 'reduce'`: only 200ms opacity fades run; there are no bubbles, drift, sheens, leaf travel or 3D; the object sits at its final pose. |
+
+## Tests and checks
+- `npm run build && npm test && npm run test:build && npm run check:placeholders`: 49 pages; unit **203 passed** (+12 new in `tests/unit/hero-motion.test.ts`: `scrollProgress`, `viewProgress`, `driftTransform`, `parallaxTransform`, `fanPose`, `approach`, `clamp01`); build 58 passed; placeholders warn only (launchReady false). `astro check` 0/0/0. No assertion changed.
+- All 49 built pages at 360px: 0 horizontal scroll, 0 console errors (`dist` sweep, scrolled through each page).
+
+## Lighthouse (mobile, `astro preview`, Lighthouse 13.5; two runs each)
+| Page | Performance | Accessibility | LCP | TBT | CLS | LCP element |
+|---|---|---|---|---|---|---|
+| `/` | 97 / 97 | 100 | 2.6s | 0 | 0 | `img.hero-cutout` |
+| `/products/dish-wash-liquid/` | 99 / 99 | 100 | 2.0–2.1s | 0 | 0 | the squeeze cut-out |
+
+Best practices 100. SEO 69 is still only the intended `noindex` while `launchReady` is false. One earlier cold run of home scored 73 because of a 1.5s unattributable long task; it did not reproduce in four later runs. Home LCP is 0.6s slower than the old 2.0s, because the 1600w cut-out was chosen on phones. Phones now pick the 800w file via `sizes`.
+
+## Inspector and lint
+- `lint.mjs src/pages src/components src/styles src/layouts`: **0 FAIL, 0 WARN**. The audit's devices carry `taste-skill-ignore` with the reason.
+- `inspect.mjs … --allow eyebrow,numbering,gradient,glass,pill-nav,mixed-font-headline,shadow,button-fx`. `button-fx` is new: it is the audit's required inset highlight on the pills.
+  | Page | FAIL | WARN |
+  |---|---|---|
+  | home | 0 | card-rows, no-footage |
+  | `/products/dish-wash-liquid/` | 0 | card-rows, size-count, no-footage |
+  | `/categories/kitchen-care/` | 0 | no-footage |
+
+  The warnings are unchanged from part 2.
+
+## Critique (references/critique.md)
+| Round | Design | Usability | Creativity | Content | Overall | Fixes made |
+|---|---|---|---|---|---|---|
+| 1 | 7.5 | 8.5 | 7.5 | 7.5 | 7.8 | a hero bubble sat on the h1 → moved; `?` glyph cropped into a hook → set inside the card; 66px sideways overflow from the object → hero `overflow-x: clip` |
+| 2 | 7.5 | 8.5 | 7.5 | 7.5 | 7.8 | portrait tablets pushed the object below the fold → object above the copy; bubble by the actions on portrait → dropped; hero fade over the CTA on tablets → shorter fade |
+| 3 | 8.0 | 8.5 | 7.5 | 7.5 | 8.0 | phone bento labels over the packs → taller tiles, group lifted; hover scrim too heavy → lighter; live 3D shading too flat next to the still → brighter room |
+
+As before, the house-rule caps (eyebrow, 01/02/03, gradients, glass, pill nav, and now glows and button highlights) would hold the overall at 6.5. These are the Floria devices that the direction and audit require, so they are kept.
+
+## Evidence (`docs/superpowers/screens/glossy/`)
+- Hero pop at 1440: `hero-pop-0000ms`, `-0300ms`, `-0700ms`, `-1500ms`. These were taken by pausing every document-timeline animation and transition and stepping them together, so the frames are exact.
+- Scroll at 1440: `hero-scroll-000px`, `-450px`, `-900px`.
+- First screen and full page at 1440 and 390: `home-*`, `product-dish-wash-liquid-*`, `category-kitchen-care-*`.
+
+## Concerns
+- **LCP workaround:** the pre-pop opacity is 0.01 rather than 0, and the pop is a post-paint transition. Visually it is the same, but it depends on Chrome's current LCP rules. If Chrome starts counting opacity-0 elements, the keyframe version could return.
+- **Live-scene look:** the live scene is cheaper than the stills (no transmission or strip lights). After the cross-fade the packs look a little less glossy. Moving those features into runtime would cost phone performance.
+- **Transmission:** it is baked against the forest field. Where the cut-out overflows onto the light ground, bottle interiors keep a forest tint, and the clear glycerin bar reads dark green. This shows mainly on the 404, bar-clear cards and the overflow edge.
+- **Range cards:** Fabric Softener and Floor Cleaner still share the jug shape, in two close tints.
+- **Portrait tablets:** the 1024-wide landscape desktop places the object low, in the lower right (Floria-like). Portrait tablets switch to the phone order.
+- **Unverified browsers:** the rAF fallback (no scroll timelines) was not exercised in Safari or Firefox here. Its maths is unit-tested and shared with the CSS.

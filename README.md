@@ -30,7 +30,7 @@ Other useful commands:
 | `npm test` | Runs the automatic checks on the site's logic. |
 | `npm run test:build` | Runs checks on the built pages (run `npm run build` first). |
 | `npm run check:placeholders` | Lists placeholder contact details still left on the site (`PLACEHOLDER` text, the all-zero WhatsApp number, `contactIsPlaceholder: true`). |
-| `npm run renders` | Re-draws the studio pictures of each pack shape and the home hero still into `public/images/renders/` (needs Google Chrome). Run it after changing the 3D pack models in `src/scripts/three/`. |
+| `npm run renders` | Re-draws the glossy studio cut-outs (transparent WebP) of each pack shape, the category groups and the home hero object (`range-cutout.webp`) into `public/images/renders/`, plus the neem-leaf cut-out (needs Google Chrome). Run it after changing the 3D pack models in `src/scripts/three/`. |
 
 ---
 
@@ -201,4 +201,4 @@ Settings to enter on any of them:
 | `public/fonts/` | Self-hosted fonts (Geist, and Newsreader italic for accents; SIL Open Font License) |
 | `tests/` | Automatic checks |
 
-The site is built with [Astro](https://astro.build). The home page hero shows a studio picture of the range (`public/images/renders/range-hero.webp`); a live Three.js version of the same scene fades in over it once the visitor first moves, touches or scrolls. It is skipped for visitors who prefer reduced motion or are using data saver.
+The site is built with [Astro](https://astro.build). The home page hero shows a transparent studio cut-out of the range (`public/images/renders/range-cutout.webp`) that pops in and drifts with scroll; a live Three.js version of the same scene, framed identically, cross-fades over it once the visitor first moves, touches or scrolls. It is skipped for visitors who prefer reduced motion or are using data saver.
