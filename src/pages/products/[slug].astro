@@ -49,7 +49,7 @@ const breadcrumbs = [
   path={url}
   ogImage={d.image}
   breadcrumbs={breadcrumbs}
-  jsonLd={[productJsonLd({ ...d, category: catId }, absoluteUrl(url)), faqJsonLd(d.faqs)]}
+  jsonLd={[productJsonLd({ ...d, category: category.data.title }, absoluteUrl(url)), faqJsonLd(d.faqs)]}
 >
   <header class="field prod-hero" data-cat={catId}>
     <div class="wrap prod-hero-grid">

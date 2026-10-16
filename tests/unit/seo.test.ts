@@ -9,10 +9,10 @@ import site from '../../src/config/site';
 const BASE = site.url.replace(/\/$/, '');
 
 const sampleProduct: ProductData = {
-  title: 'Dish Wash Liquid', slug: 'dish-wash-liquid', category: 'home-care', order: 1,
+  title: 'Dish Wash Liquid', slug: 'dish-wash-liquid', category: 'Kitchen Care', order: 1,
   hsn: '3402 50', metaTitle: 'Dish Wash Liquid Exporter & Supplier from India',
   metaDescription: 'Dish wash liquid sourced from vetted Indian manufacturers.',
-  answer: 'Dish wash liquid exported from India.', variants: ['Lemon'], packSizes: ['500 ml'],
+  answer: 'Dish wash liquid exported from India.', variants: ['Lemon', 'Lime'], packSizes: ['500 ml', '5 L'],
   packaging: ['Bottle'], specs: [{ label: 'pH', value: 'typical 7' }], moq: '1 x 20ft',
   privateLabel: { available: true, options: ['Custom label'] }, uses: ['Kitchen'],
   markets: ['UAE'], faqs: [], related: [],
@@ -37,6 +37,12 @@ describe('seo', () => {
     expect(p).not.toHaveProperty('review');
     expect(p.brand).toMatchObject({ name: 'GoodBiz Hygiene' });
     expect(p.additionalProperty).toContainEqual({ '@type': 'PropertyValue', name: 'HSN Code', value: '3402 50' });
+  });
+  it('product carries category title, variants and pack sizes', () => {
+    const p: any = productJsonLd(sampleProduct, `${BASE}/products/dish-wash-liquid/`);
+    expect(p.category).toBe('Kitchen Care');
+    expect(p.additionalProperty).toContainEqual({ '@type': 'PropertyValue', name: 'Variants', value: 'Lemon, Lime' });
+    expect(p.additionalProperty).toContainEqual({ '@type': 'PropertyValue', name: 'Pack sizes', value: '500 ml, 5 L' });
   });
   it('faq', () => {
     const f: any = faqJsonLd([{ q: 'Q?', a: 'A.' }]);

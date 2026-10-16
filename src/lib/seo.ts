@@ -58,6 +58,7 @@ export function faqJsonLd(faqs: { q: string; a: string }[]) {
   };
 }
 
+/** `p.category` should be the category's display title (it becomes schema.org `category`). */
 export function productJsonLd(p: ProductData, url: string): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
@@ -66,9 +67,12 @@ export function productJsonLd(p: ProductData, url: string): Record<string, unkno
     description: p.metaDescription,
     url,
     brand: { '@type': 'Brand', name: site.name },
+    ...(p.category ? { category: p.category } : {}),
     ...(p.image ? { image: absoluteUrl(p.image) } : {}),
     additionalProperty: [
       { '@type': 'PropertyValue', name: 'HSN Code', value: p.hsn },
+      ...(p.variants.length ? [{ '@type': 'PropertyValue', name: 'Variants', value: p.variants.join(', ') }] : []),
+      ...(p.packSizes.length ? [{ '@type': 'PropertyValue', name: 'Pack sizes', value: p.packSizes.join(', ') }] : []),
       ...p.specs.map((s) => ({ '@type': 'PropertyValue', name: s.label, value: s.value })),
     ],
   };
