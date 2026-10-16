@@ -1,49 +1,111 @@
 ---
 import { getProductsByCategory } from '../../lib/products';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import CtaBand from '../../components/CtaBand.astro';
-import site from '../../config/site';
+import QuoteCard from '../../components/QuoteCard.astro';
 
 const groups = await getProductsByCategory();
 const total = groups.reduce((n, g) => n + g.products.length, 0);
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Products', url: '/products/' },
+];
 ---
 
 <BaseLayout
   title="Soap, Detergent & Cleaning Products Exporter & Supplier from India"
   description={`Browse ${total} soap, laundry, kitchen, surface-cleaner and raw-material products sourced from vetted Indian manufacturers, with HSN codes and private label options.`}
   path="/products/"
-  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Products', url: '/products/' }]}
+  breadcrumbs={breadcrumbs}
+  dark
 >
-  <header class="wrap cat-hero-plain">
-    <h1 class="cat-title">Soap, Detergent &amp; Cleaning Products Exporter &amp; Supplier from India</h1>
-    <p class="lead">
-      {total} products in five ranges, sourced from vetted Indian manufacturers and supplied with private label options. Choose a range, or open any product for specifications, pack sizes and HSN codes.
-    </p>
-  </header>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1="All products."
+    l2="Soaps, detergents & cleaners."
+    lead={`${total} products in five ranges, sourced from vetted Indian manufacturers and supplied with private label options. Choose a range, or open any product for specifications, pack sizes and HSN codes.`}
+    size="product"
+    media={{
+      src: '/images/renders/range-hero.webp',
+      width: 1600,
+      height: 1000,
+      alt: 'Illustration of the GoodBiz Hygiene range in typical export packs',
+      mode: 'bleed',
+      position: '96% 60%',
+    }}
+  >
+    <div class="ph-actions">
+      <a class="btn btn--light" href="/contact/">Request a Quote</a>
+      <a class="link-arrow" href="#hsn">HSN codes by product <span class="arr" aria-hidden="true">↓</span></a>
+    </div>
+  </PageHero>
+
+  <nav class="wrap sec" aria-label="The five ranges">
+    <ul class="cat-strip">
+      {
+        groups.map((g, i) => (
+          <li data-reveal style={`--i: ${i}`}>
+            <a class="cat-chip" href={`#c-${g.category.data.slug}`}>
+              <span class="cat-chip-media">
+                <img
+                  src={`/images/renders/category-${g.category.data.slug}.webp`}
+                  width="760"
+                  height="950"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </span>
+              <span class="cat-chip-title">
+                {g.category.data.title}
+                <span class="cat-chip-meta">
+                  {g.products.length} products · HSN {g.category.data.hsnRange}
+                </span>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
 
   {
     groups.map((g) => (
-      <section class="field chapter" data-cat={g.category.data.slug} aria-labelledby={`c-${g.category.data.slug}`}>
-        <div class="wrap">
-          <h2 id={`c-${g.category.data.slug}`} class="h-sub">
-            <a class="plain-link" href={`/categories/${g.category.data.slug}/`}>{g.category.data.title}</a>
-          </h2>
-          <p class="lead chapter-intro">{g.category.data.summary}</p>
-          <div class="grid-cards" style="margin-top:40px">
-            {g.products.map((p) => <ProductCard product={p} />)}
+      <section class="wrap chapter" id={`c-${g.category.data.slug}`} aria-labelledby={`c-${g.category.data.slug}-h`}>
+        <div class="sec-head" data-reveal>
+          <div>
+            <h2 id={`c-${g.category.data.slug}-h`}>
+              <a href={`/categories/${g.category.data.slug}/`}>{g.category.data.title}</a>
+            </h2>
+            <p>{g.category.data.summary}</p>
           </div>
+          <a class="link-arrow" href={`/categories/${g.category.data.slug}/`}>
+            The range in full <span class="arr" aria-hidden="true">↗</span>
+          </a>
         </div>
+        <ul class="cards-stagger">
+          {g.products.map((p, i) => (
+            <li data-reveal style={`--i: ${i % 3}`}>
+              <ProductCard product={p} />
+            </li>
+          ))}
+        </ul>
       </section>
     ))
   }
 
-  <section class="wrap section" aria-labelledby="hsn-h">
-    <h2 id="hsn-h" class="h-sub">Which HSN code applies to each product?</h2>
-    <p class="note" style="margin:16px 0 28px">
-      Codes are shown at 6 digits. The 8-digit ITC-HS code is confirmed per order, and a few products have alternative classifications (see each product page).
-    </p>
-    <div class="spec-wrap">
+  <section class="wrap sec hsn-sec" id="hsn" aria-labelledby="hsn-h">
+    <div class="sec-head" data-reveal>
+      <div>
+        <h2 id="hsn-h">Which HSN code applies to each product?</h2>
+        <p>
+          Codes are shown at 6 digits. The 8-digit ITC-HS code is confirmed per order, and a few products have alternative classifications
+          (see each product page).
+        </p>
+      </div>
+    </div>
+    <div class="spec-wrap" data-reveal style="--i: 1">
       <table class="spec spec--cols">
         <caption>HSN overview by product, grouped by range</caption>
         <thead>
@@ -66,5 +128,5 @@ const total = groups.reduce((n, g) => n + g.products.length, 0);
     </div>
   </section>
 
-  <CtaBand />
+  <QuoteCard />
 </BaseLayout>

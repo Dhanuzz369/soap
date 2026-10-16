@@ -1,45 +1,33 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import CtaBand from '../../components/CtaBand.astro';
-import { getPosts, readingMinutes, fmtDate } from '../../lib/blog';
+import PageHero from '../../components/PageHero.astro';
+import GuideRows from '../../components/GuideRows.astro';
+import QuoteCard from '../../components/QuoteCard.astro';
+import { getPosts } from '../../lib/blog';
 
 const posts = await getPosts();
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Blog', url: '/blog/' },
+];
 ---
 
 <BaseLayout
   title="Export Guides for Soap & Cleaning Product Buyers"
   description="Practical guides for importers of soaps, detergents and home-care products from India: HSN codes, MOQ, documents, private label and shipping."
   path="/blog/"
-  breadcrumbs={[
-    { name: 'Home', url: '/' },
-    { name: 'Blog', url: '/blog/' },
-  ]}
+  breadcrumbs={breadcrumbs}
+  dark
 >
-  <header class="field cat-hero" data-cat="laundry-care">
-    <div class="wrap">
-      <h1 class="cat-title">Buyer guides for importing soaps &amp; home-care products</h1>
-      <p class="lead">Plain-English notes for importers and distributors: classification, costs, documents and choosing products.</p>
-    </div>
-  </header>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1="Buyer guides."
+    l2="For importing soaps & home care."
+    lead="Plain-English notes for importers and distributors: classification, costs, documents and choosing products."
+    media={{ src: '/images/found/neem-plate.webp', width: 1100, height: 682, alt: '', mode: 'plate' }}
+  />
 
-  <section class="wrap section" aria-labelledby="posts-h">
-    <h2 id="posts-h" class="h-sub">Latest articles</h2>
-    <ul class="post-list">
-      {
-        posts.map((p) => (
-          <li class="post-item">
-            <p class="post-meta note">
-              <time datetime={p.data.date.toISOString().slice(0, 10)}>{fmtDate(p.data.date)}</time> · {readingMinutes(p.body ?? '')} min read
-            </p>
-            <h3 class="post-title">
-              <a class="plain-link" href={`/blog/${p.id}/`}>{p.data.title}</a>
-            </h3>
-            <p>{p.data.description}</p>
-          </li>
-        ))
-      }
-    </ul>
-  </section>
+  <GuideRows posts={posts} heading="Latest articles" id="posts" large />
 
-  <CtaBand />
+  <QuoteCard />
 </BaseLayout>

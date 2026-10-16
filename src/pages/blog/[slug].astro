@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero, { type HeroMedia } from '../../components/PageHero.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import Faq from '../../components/Faq.astro';
-import CtaBand from '../../components/CtaBand.astro';
+import QuoteCard from '../../components/QuoteCard.astro';
 import { render, getCollection } from 'astro:content';
 import { getPosts, readingMinutes, fmtDate, type BlogEntry } from '../../lib/blog';
 import { articleJsonLd, faqJsonLd } from '../../lib/seo';
+import { splitPostTitle } from '../../lib/heading';
+import { productPicture } from '../../lib/product-image';
+import { shapeFor } from '../../lib/pack-shapes';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -14,77 +18,87 @@ export async function getStaticPaths() {
     const related = post.data.relatedProducts
       .map((s) => products.find((p) => p.data.slug === s))
       .filter((p): p is NonNullable<typeof p> => !!p);
-    return {
-    params: { slug: post.id },
-    props: {
-      post,
-      related,
-      cat: related[0]?.data.category.id ?? 'laundry-care',
-    },
-    };
+    return { params: { slug: post.id }, props: { post, related } };
   });
 }
 
 interface Props {
   post: BlogEntry;
   related: Awaited<ReturnType<typeof getCollection<'products'>>>;
-  cat: string;
 }
-const { post, related, cat } = Astro.props;
+const { post, related } = Astro.props;
 const d = post.data;
 const url = `/blog/${post.id}/`;
 const { Content } = await render(post);
 const faqs = d.faqs ?? [];
 const iso = d.date.toISOString().slice(0, 10);
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Blog', url: '/blog/' },
+  { name: d.title, url },
+];
+const t = splitPostTitle(d.title);
+const lead = related[0];
+const pic = lead ? productPicture(lead.data.slug, shapeFor(lead.data.slug, lead.data.category.id), lead.data.category.id) : undefined;
+const media: HeroMedia | undefined =
+  pic && pic.kind === 'render'
+    ? {
+        src: pic.src,
+        srcset: pic.srcset,
+        sizes: '(max-width: 759px) 100vw, 54vw',
+        width: pic.width,
+        height: pic.height,
+        alt: `Illustration of ${lead!.data.title.toLowerCase()} in a typical export pack`,
+        mode: 'bleed',
+      }
+    : undefined;
 ---
 
 <BaseLayout
   title={d.title}
   description={d.description}
   path={url}
-  breadcrumbs={[
-    { name: 'Home', url: '/' },
-    { name: 'Blog', url: '/blog/' },
-    { name: d.title, url },
-  ]}
+  breadcrumbs={breadcrumbs}
   jsonLd={[
     { ...articleJsonLd({ title: d.title, description: d.description, date: d.date, url, type: 'BlogPosting' }), ...(d.updated ? { dateModified: d.updated.toISOString() } : {}) },
     ...(faqs.length ? [faqJsonLd(faqs)] : []),
   ]}
+  dark
 >
-  <header class="field cat-hero" data-cat={cat}>
-    <div class="wrap">
-      <h1 class="cat-title post-h1">{d.title}</h1>
-      <p class="post-meta note">
-        <time datetime={iso}>{fmtDate(d.date)}</time> · {readingMinutes(post.body ?? '')} min read · GoodBiz Hygiene
-      </p>
-    </div>
-  </header>
+  <PageHero breadcrumbs={breadcrumbs} l1={t.l1} l2={t.l2} size="post" media={media}>
+    <p class="ph-meta">
+      <time datetime={iso}>{fmtDate(d.date)}</time> · {readingMinutes(post.body ?? '')} min read · GoodBiz Hygiene
+    </p>
+    <p class="ph-lead">{d.description}</p>
+  </PageHero>
 
-  <div class="wrap section">
-    <article class="post-body">
+  <div class="wrap sec post-layout">
+    <article class="prose post-body">
       <Content />
     </article>
   </div>
 
-  {
-    faqs.length > 0 && (
-      <div class="wrap prod-block">
-        <Faq faqs={faqs} heading="Quick answers" id="post-faq" />
-      </div>
-    )
-  }
+  {faqs.length > 0 && <Faq faqs={faqs} heading="Quick answers" id="post-faq" split />}
 
   {
     related.length > 0 && (
-      <section class="wrap section" aria-labelledby="rel-h">
-        <h2 id="rel-h" class="h-sub">Products mentioned in this guide</h2>
-        <div class="grid-cards post-related">
-          {related.map((p) => <ProductCard product={p} />)}
+      <section class="wrap sec" aria-labelledby="rel-h">
+        <div class="sec-head" data-reveal>
+          <h2 id="rel-h">Products mentioned in this guide</h2>
+          <a class="link-arrow" href="/blog/">
+            All guides <span class="arr" aria-hidden="true">↗</span>
+          </a>
         </div>
+        <ul class:list={['cards-stagger', related.length === 2 && 'cards-stagger--two']}>
+          {related.map((p, i) => (
+            <li data-reveal style={`--i: ${i % 3}`}>
+              <ProductCard product={p} />
+            </li>
+          ))}
+        </ul>
       </section>
     )
   }
 
-  <CtaBand heading="Planning an order? Ask for a quote" secondary={{ label: 'All guides', href: '/blog/' }} />
+  <QuoteCard heading="Planning an order?" text="Tell us what you need in one line. The enquiry form opens with it written in, ready for your products, quantity and port." />
 </BaseLayout>
