@@ -1,6 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, resolve } from 'node:path';
+import site from '../../src/config/site';
+
+const NOINDEX = '<meta name="robots" content="noindex, nofollow">';
 
 const DIST = resolve(process.cwd(), 'dist');
 const read = (p: string) => readFileSync(join(DIST, p), 'utf8');
@@ -37,13 +40,15 @@ describe('built pages', () => {
       expect(html).toMatch(/<meta name="description" content=".{50,}"/);
       expect(html).toMatch(/<link rel="canonical" href="https:\/\/www\.goodbizhygiene\.com\//);
       expect(html).toMatch(/<html lang="en"/);
-      expect(html).toContain('<meta name="robots" content="noindex, nofollow">');
+      if (site.launchReady) expect(html).not.toContain(NOINDEX);
+      else expect(html).toContain(NOINDEX);
       for (const block of jsonLdBlocks(html)) expect(() => JSON.parse(block)).not.toThrow();
     });
   }
 
-  it('has a 404 page that is noindexed', () => {
-    expect(read('404.html')).toContain('<meta name="robots" content="noindex, nofollow">');
+  it('has a 404 page with the expected robots meta', () => {
+    const has = read('404.html').includes(NOINDEX);
+    expect(has).toBe(!site.launchReady);
   });
 
   it('has unique titles and descriptions', () => {
@@ -61,11 +66,17 @@ describe('built pages', () => {
 });
 
 describe('robots.txt and llms.txt', () => {
-  it('robots.txt blocks everything while launchReady is false', () => {
+  it('robots.txt matches launchReady', () => {
     const robots = read('robots.txt');
     expect(robots).toContain('User-agent: *');
-    expect(robots).toContain('Disallow: /');
-    expect(robots).not.toContain('Sitemap:');
+    if (site.launchReady) {
+      expect(robots).not.toContain('Disallow: /');
+      expect(robots).toContain('Sitemap: https://www.goodbizhygiene.com/sitemap-index.xml');
+      expect(existsSync(join(DIST, 'sitemap-index.xml'))).toBe(true);
+    } else {
+      expect(robots).toContain('Disallow: /');
+      expect(robots).not.toContain('Sitemap:');
+    }
   });
 
   it('llms.txt lists products, guides and company pages with absolute URLs', () => {
@@ -75,7 +86,7 @@ describe('robots.txt and llms.txt', () => {
     expect(llms).toContain('## Guides');
     expect(llms).toContain('## Company');
     expect(llms).toContain('https://www.goodbizhygiene.com/products/dish-wash-liquid/');
-    expect(llms).toMatch(/HSN 3402 50/);
+    expect(llms).toMatch(/HSN 3402 50: /);
     expect(count(llms, /\]\(https:\/\/www\.goodbizhygiene\.com\/products\/[^/)]+\/\)/g)).toBe(27);
     expect(count(llms, /\]\(https:\/\/www\.goodbizhygiene\.com\/blog\/[^/)]+\/\)/g)).toBe(8);
   });

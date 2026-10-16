@@ -4,7 +4,7 @@ import { absoluteUrl } from '../lib/seo';
 import { getProductsByCategory } from '../lib/products';
 import { getPosts } from '../lib/blog';
 
-const firstSentence = (s: string) => (s.match(/^.*?[.!?](?=\s|$)/)?.[0] ?? s).trim();
+const firstSentence = (s: string) => (s.match(/^.*?[.!?](?=\s+[A-Z]|\s*$)/s)?.[0] ?? s).trim();
 
 export const GET: APIRoute = async () => {
   const groups = await getProductsByCategory();
@@ -22,7 +22,7 @@ export const GET: APIRoute = async () => {
     lines.push(`### ${category.data.title}`, '');
     for (const p of products) {
       lines.push(
-        `- [${p.data.title}](${absoluteUrl(`/products/${p.data.slug}/`)}): HSN ${p.data.hsn}, ${firstSentence(p.data.answer)}`,
+        `- [${p.data.title}](${absoluteUrl(`/products/${p.data.slug}/`)}): HSN ${p.data.hsn}: ${firstSentence(p.data.answer)}`,
       );
     }
     lines.push('');

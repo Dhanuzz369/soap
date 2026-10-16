@@ -13,7 +13,7 @@ const walk = (dir) =>
   });
 
 const files = [configPath];
-if (existsSync(distPath)) files.push(...walk(distPath).filter((f) => f.endsWith('.html')));
+if (existsSync(distPath)) files.push(...walk(distPath).filter((f) => f.endsWith('.html') || f.endsWith('llms.txt')));
 else console.warn('dist/ not found; run `npm run build` to scan built pages too.');
 
 const hits = [];
@@ -28,7 +28,8 @@ for (const f of files) {
     });
 }
 
-const launchReady = /launchReady:\s*true/.test(readFileSync(configPath, 'utf8'));
+const stripped = readFileSync(configPath, 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').replace(/\/\/.*$/gm, '');
+const launchReady = /^\s*launchReady\s*:\s*true\b/m.test(stripped);
 
 if (hits.length) {
   console.log(`${hits.length} ${TOKEN} occurrence(s):`);
