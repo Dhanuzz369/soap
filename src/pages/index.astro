@@ -9,8 +9,10 @@ import { getProductsByCategory } from '../lib/products';
 import { faqJsonLd } from '../lib/seo';
 import { homeFaqs } from '../lib/faqs';
 import { shapes, byCategory } from '../lib/pack-shapes';
+import { getPosts, fmtDate } from '../lib/blog';
 
 const groups = await getProductsByCategory();
+const latestPosts = (await getPosts()).slice(0, 3);
 const allProducts = groups.flatMap((g) => g.products);
 const total = allProducts.length;
 
@@ -201,6 +203,30 @@ const container = `<g>
     <Faq faqs={homeFaqs} heading="Questions importers ask first" id="home-faq" />
     <p class="home-faq-more"><a href="/faq/">More answers on the FAQ page</a></p>
   </div>
+
+  {
+    latestPosts.length > 0 && (
+      <section class="wrap section home-blog" aria-labelledby="blog-h">
+        <div class="featured-head" data-reveal>
+          <h2 id="blog-h">Buyer guides</h2>
+          <a class="featured-all" href="/blog/">All guides</a>
+        </div>
+        <ul class="home-blog-grid">
+          {latestPosts.map((p, i) => (
+            <li class="home-blog-item" data-reveal style={`--d:${i * 80}ms`}>
+              <p class="note">
+                <time datetime={p.data.date.toISOString().slice(0, 10)}>{fmtDate(p.data.date)}</time>
+              </p>
+              <h3 class="post-title">
+                <a class="plain-link" href={`/blog/${p.id}/`}>{p.data.title}</a>
+              </h3>
+              <p>{p.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 
   <CtaBand
     heading="Ready to quote your first container?"

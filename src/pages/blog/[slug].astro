@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import Faq from '../../components/Faq.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { render, getCollection } from 'astro:content';
+import { getPosts, readingMinutes, fmtDate, type BlogEntry } from '../../lib/blog';
+import { articleJsonLd, faqJsonLd } from '../../lib/seo';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  const products = await getCollection('products');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: {
+      post,
+      related: post.data.relatedProducts
+        .map((s) => products.find((p) => p.data.slug === s))
+        .filter((p): p is NonNullable<typeof p> => !!p),
+    },
+  }));
+}
+
+interface Props {
+  post: BlogEntry;
+  related: Awaited<ReturnType<typeof getCollection<'products'>>>;
+}
+const { post, related } = Astro.props;
+const d = post.data;
+const url = `/blog/${post.id}/`;
+const { Content } = await render(post);
+const faqs = d.faqs ?? [];
+const iso = d.date.toISOString().slice(0, 10);
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  path={url}
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Blog', url: '/blog/' },
+    { name: d.title, url },
+  ]}
+  jsonLd={[
+    { ...articleJsonLd({ title: d.title, description: d.description, date: d.date, url, type: 'BlogPosting' }), ...(d.updated ? { dateModified: d.updated.toISOString() } : {}) },
+    ...(faqs.length ? [faqJsonLd(faqs)] : []),
+  ]}
+>
+  <header class="field cat-hero" data-cat="laundry-care">
+    <div class="wrap">
+      <h1 class="cat-title post-h1">{d.title}</h1>
+      <p class="post-meta note">
+        <time datetime={iso}>{fmtDate(d.date)}</time> · {readingMinutes(post.body ?? '')} min read · GoodBiz Hygiene
+      </p>
+    </div>
+  </header>
+
+  <div class="wrap section">
+    <article class="post-body">
+      <Content />
+    </article>
+  </div>
+
+  {
+    faqs.length > 0 && (
+      <div class="wrap prod-block">
+        <Faq faqs={faqs} heading="Quick answers" id="post-faq" />
+      </div>
+    )
+  }
+
+  {
+    related.length > 0 && (
+      <section class="wrap section" aria-labelledby="rel-h">
+        <h2 id="rel-h" class="h-sub">Products mentioned in this guide</h2>
+        <div class="grid-cards" style="margin-top:40px">
+          {related.map((p) => <ProductCard product={p} />)}
+        </div>
+      </section>
+    )
+  }
+
+  <CtaBand heading="Planning an order? Ask for a quote" secondary={{ label: 'All guides', href: '/blog/' }} />
+</BaseLayout>

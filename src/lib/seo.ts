@@ -80,10 +80,11 @@ export function articleJsonLd(a: {
   date: Date;
   url: string;
   image?: string;
+  type?: 'Article' | 'BlogPosting';
 }): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': a.type ?? 'Article',
     headline: a.title,
     description: a.description,
     datePublished: a.date.toISOString(),
