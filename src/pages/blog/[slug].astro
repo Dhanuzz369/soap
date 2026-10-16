@@ -10,22 +10,27 @@ import { articleJsonLd, faqJsonLd } from '../../lib/seo';
 export async function getStaticPaths() {
   const posts = await getPosts();
   const products = await getCollection('products');
-  return posts.map((post) => ({
+  return posts.map((post) => {
+    const related = post.data.relatedProducts
+      .map((s) => products.find((p) => p.data.slug === s))
+      .filter((p): p is NonNullable<typeof p> => !!p);
+    return {
     params: { slug: post.id },
     props: {
       post,
-      related: post.data.relatedProducts
-        .map((s) => products.find((p) => p.data.slug === s))
-        .filter((p): p is NonNullable<typeof p> => !!p),
+      related,
+      cat: related[0]?.data.category.id ?? 'laundry-care',
     },
-  }));
+    };
+  });
 }
 
 interface Props {
   post: BlogEntry;
   related: Awaited<ReturnType<typeof getCollection<'products'>>>;
+  cat: string;
 }
-const { post, related } = Astro.props;
+const { post, related, cat } = Astro.props;
 const d = post.data;
 const url = `/blog/${post.id}/`;
 const { Content } = await render(post);
@@ -47,7 +52,7 @@ const iso = d.date.toISOString().slice(0, 10);
     ...(faqs.length ? [faqJsonLd(faqs)] : []),
   ]}
 >
-  <header class="field cat-hero" data-cat="laundry-care">
+  <header class="field cat-hero" data-cat={cat}>
     <div class="wrap">
       <h1 class="cat-title post-h1">{d.title}</h1>
       <p class="post-meta note">
@@ -74,7 +79,7 @@ const iso = d.date.toISOString().slice(0, 10);
     related.length > 0 && (
       <section class="wrap section" aria-labelledby="rel-h">
         <h2 id="rel-h" class="h-sub">Products mentioned in this guide</h2>
-        <div class="grid-cards" style="margin-top:40px">
+        <div class="grid-cards post-related">
           {related.map((p) => <ProductCard product={p} />)}
         </div>
       </section>

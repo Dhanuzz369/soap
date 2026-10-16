@@ -1972,3 +1972,6 @@ a:hover {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+.post-related {
+  margin-top: 40px;
+}

@@ -43,7 +43,7 @@ The values below are commonly used reference figures for minimum TFM, not guaran
 | Grade 2 | About 70% | Mainstream quality |
 | Grade 3 | About 60% | Economy, price-led markets |
 
-You will also hear suppliers use "premium" and "economy" without a number. That language is loose. Always ask for the TFM percentage in writing. Our [toilet and bath soap](/products/toilet-bath-soap/) page lists typical ranges for premium and economy bars, which are indicative and can differ slightly from the reference thresholds above depending on the manufacturer's formulation.
+You will also hear suppliers use "premium" and "economy" without a number. That language is loose. Always ask for the TFM percentage in writing. Our [toilet and bath soap](/products/toilet-bath-soap/) page lists typical ranges for premium and economy bars, which follow the same reference tiers as above and are confirmed per order.
 
 ## Why TFM is not the whole story
 
@@ -79,7 +79,7 @@ In price-sensitive markets, especially where soap is sold by weight or in small 
 
 ### Hotels and institutions
 
-Hospitality buyers care about small weights, consistent appearance and branding, so the grade is often secondary to bar size and wrapping. Our range includes hotel guest soap for this segment.
+Hospitality buyers care about small weights, consistent appearance and branding, so the grade is often secondary to bar size and wrapping. Our range includes [hotel guest soap](/products/hotel-guest-soap/) for this segment.
 
 ### Herbal and medicated bars
 
