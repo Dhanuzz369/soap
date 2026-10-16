@@ -274,7 +274,8 @@
   overflow: hidden;
   isolation: isolate;
   border-radius: var(--radius-tile);
-  background: var(--forest-950);
+  background-color: var(--forest-950);
+  background-image: radial-gradient(65% 55% at 50% 38%, rgb(191 227 207 / 0.12), rgb(191 227 207 / 0) 100%); /* taste-skill-ignore: studio glow behind the group (audit: depth) */
   color: var(--on-dark);
   text-decoration: none;
   transition: transform var(--dur-press) var(--ease-out);
@@ -289,15 +290,24 @@
   object-position: 50% 30%;
   transition: transform var(--dur-media) var(--ease-out);
 }
-/* a neutral dark scrim under the label */
-.tile-link::after {
+/* a neutral dark scrim under the label; ::before is a deeper one that fades in on hover */
+.tile-link::after,
+.tile-link::before {
   content: '';
   position: absolute;
   inset: 40% 0 0 0;
   z-index: -1;
+  pointer-events: none;
   background: linear-gradient(180deg, rgb(11 33 26 / 0) 0%, rgb(11 33 26 / 0.7) 45%, rgb(11 33 26 / 0.94) 100%); /* taste-skill-ignore: neutral scrim under the tile label */
 }
+.tile-link::before {
+  inset: 20% 0 0 0;
+  background: linear-gradient(180deg, rgb(11 33 26 / 0) 0%, rgb(11 33 26 / 0.55) 60%, rgb(11 33 26 / 0.8) 100%); /* taste-skill-ignore: neutral scrim under the tile label */
+  opacity: 0;
+  transition: opacity var(--dur-fast) ease;
+}
 .tile-label {
+  transition: transform var(--dur) var(--ease-out);
   position: absolute;
   left: clamp(20px, 2.8vw, 40px);
   right: clamp(20px, 2.8vw, 40px);
@@ -326,9 +336,23 @@
   outline: 3px solid var(--focus);
   outline-offset: 4px;
 }
+/* the tile's render floats up out of the field; the label lifts, the scrim deepens */
 @media (hover: hover) and (pointer: fine) {
   .tile-link:hover img {
-    transform: scale(1.04);
+    transform: translateY(-8px) scale(1.05);
+  }
+  .tile-link:hover .tile-label {
+    transform: translateY(-4px);
+  }
+  .tile-link:hover::before {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tile-link:hover img,
+  .tile-link:hover .tile-label,
+  .tile-link:active {
+    transform: none !important;
   }
 }
 @media (max-width: 859.98px) {
@@ -402,6 +426,30 @@
   font-size: var(--step-lead);
   line-height: 1.6;
   color: var(--ink);
+}
+
+/* Statement: the leaf icon grows in (scale .8 → 1 + opacity), the heading rises 30px 200ms
+   later, the paragraph only fades, 400ms in (the reference's choreography). */
+@media (prefers-reduced-motion: no-preference) {
+  .statement-leaf[data-reveal] {
+    --d: 0ms;
+    transition-timing-function: var(--ease-floria);
+  }
+  .statement-leaf[data-reveal].is-pending {
+    transform: scale(0.8);
+  }
+  .statement h2[data-reveal] {
+    --d: 200ms;
+  }
+  .statement h2[data-reveal].is-pending {
+    transform: translateY(30px);
+  }
+  .statement p[data-reveal] {
+    --d: 400ms;
+  }
+  .statement p[data-reveal].is-pending {
+    transform: none;
+  }
 }
 
 /* ==========================================================================

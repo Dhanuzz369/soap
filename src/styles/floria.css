@@ -21,9 +21,45 @@
 
 /* ---------- 3. how export orders work: sticky heading, port photo, three steps ---------- */
 .process {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   background: var(--forest-950);
   color: var(--on-dark-soft);
   padding-block: clamp(104px, 3rem + 8vw, 160px);
+}
+/* Botanical cut-out (neem, 1873, public domain): bottom left, clear of the copy, faint, in
+   lighten blend under a radial mask; it slides in from x -100px over 1.2s (reveal below). */
+.process-leaves {
+  position: absolute;
+  z-index: -1;
+  left: -6vw;
+  bottom: -4%;
+  width: min(62vw, 980px);
+  max-width: none;
+  opacity: 0.2;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(closest-side, #000 45%, transparent 100%); /* taste-skill-ignore: soft oval mask on the botanical cut-out (audit) */
+  mask-image: radial-gradient(closest-side, #000 45%, transparent 100%); /* taste-skill-ignore: soft oval mask on the botanical cut-out (audit) */
+}
+@media (prefers-reduced-motion: no-preference) {
+  .process-leaves[data-reveal] {
+    transition:
+      opacity 1200ms var(--ease-floria),
+      transform 1200ms var(--ease-floria);
+  }
+  .process-leaves[data-reveal].is-pending {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}
+@media (max-width: 899.98px) {
+  .process-leaves {
+    width: 120vw;
+    left: -30vw;
+    opacity: 0.14;
+  }
 }
 .process-grid {
   display: grid;
@@ -155,11 +191,49 @@
   column-gap: 24px;
 }
 .answer {
+  position: relative;
+  overflow: hidden;
   break-inside: avoid;
   margin-bottom: 24px;
   padding: clamp(28px, 3vw, 40px);
   border-radius: var(--radius-card);
-  background: var(--forest-800);
+  /* glass: forest-800 at 40% over the field's glow, blurred, with a faint white edge */
+  background: rgb(22 58 47 / 0.4);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px); /* taste-skill-ignore: glass answer cards (audit: straight answers) */
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.06); /* taste-skill-ignore: glass card edge (audit) */
+  transition: box-shadow var(--dur-fast) ease;
+}
+/* a faint large question mark, top right (hidden from assistive tech) */
+.answer::before {
+  content: '?' / '';
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  z-index: -1;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 6.5rem;
+  line-height: 0.8;
+  color: rgb(238 244 239 / 0.06);
+  pointer-events: none;
+}
+.answer {
+  isolation: isolate;
+}
+@media (hover: hover) and (pointer: fine) {
+  .answer:hover {
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.12); /* taste-skill-ignore: glass card edge (audit) */
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  /* each card rises 40px, 100ms apart */
+  .answer[data-reveal] {
+    --d: calc(var(--i, 0) * 100ms);
+  }
+  .answer[data-reveal].is-pending {
+    transform: translateY(40px);
+  }
 }
 .answer-q {
   color: var(--on-dark);
@@ -1221,7 +1295,7 @@
 }
 @media (hover: hover) and (pointer: fine) {
   .cat-chip:hover img {
-    transform: scale(1.04);
+    transform: translateY(-6px) scale(1.05);
   }
 }
 @media (max-width: 899.98px) {
@@ -1501,5 +1575,32 @@
   from {
     opacity: 0;
     scale: 0.6;
+  }
+}
+
+/* ---------- inner-page hero renders: the same pop as the home object, lighter ----------
+   The cut-out pops in (scale .92 → 1, rotate -6° → 0, 1.2s, no opacity change: it stays the
+   LCP) and the band's render drifts lightly with scroll (BAND_DRIFT, scroll-fallback.ts). */
+@media (prefers-reduced-motion: no-preference) {
+  .ph-media--object img {
+    transform-origin: 50% 70%;
+    animation: band-pop 1200ms var(--ease-floria) 120ms both;
+  }
+  @supports (animation-timeline: scroll()) {
+    .ph-media--object {
+      animation: band-drift linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0 100vh;
+    }
+  }
+}
+@keyframes band-pop {
+  from {
+    transform: scale(0.92) rotate(-6deg);
+  }
+}
+@keyframes band-drift {
+  to {
+    transform: translateY(-6vh) rotate(2deg) scale(0.97);
   }
 }

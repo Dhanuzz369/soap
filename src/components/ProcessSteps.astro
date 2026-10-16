@@ -3,6 +3,8 @@
  * The dark numbered process: a sticky heading (italic second line), an intro, optionally the
  * Kochi port photograph and a link; on the right the steps in 01/02/03 circles that fill mint
  * as each reaches mid-screen (BaseLayout script, [data-step]).
+ * Behind it, the neem leaves (a cut-out of the 1873 public-domain plate credited in the footer)
+ * slide in from the left, masked to a soft oval, in lighten blend.
  */
 import { foundPictures } from '../data/found-pictures';
 
@@ -20,6 +22,16 @@ const port = foundPictures.find((p) => p.file.includes('kochi'))!;
 ---
 
 <section class="process" aria-labelledby={`${id}-h`}>
+  <img
+    class="process-leaves"
+    src="/images/found/neem-leaves.webp"
+    width="1100"
+    height="682"
+    alt=""
+    loading="lazy"
+    decoding="async"
+    data-reveal
+  />
   <div class="wrap process-grid">
     <div class="process-head">
       <div class="process-sticky">
