@@ -30,6 +30,7 @@ Other useful commands:
 | `npm test` | Runs the automatic checks on the site's logic. |
 | `npm run test:build` | Runs checks on the built pages (run `npm run build` first). |
 | `npm run check:placeholders` | Lists placeholder contact details still left on the site (`PLACEHOLDER` text, the all-zero WhatsApp number, `contactIsPlaceholder: true`). |
+| `npm run renders` | Re-draws the studio pictures of each pack shape and the home hero still into `public/images/renders/` (needs Google Chrome). Run it after changing the 3D pack models in `src/scripts/three/`. |
 
 ---
 
@@ -59,7 +60,7 @@ In the same file:
 
 ## 3. Add product photos
 
-Until a photo is added, each product shows a clean drawn illustration, so nothing looks broken.
+Until a photo is added, each product shows a studio illustration of its pack type (from `public/images/renders/`), so nothing looks broken.
 
 To add a real photo:
 

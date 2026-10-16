@@ -1,44 +1,53 @@
 ---
 /**
  * ProductVisual
- * Renders /images/products/<slug>.webp when that file exists at build time.
- * Otherwise it draws a flat SVG pack silhouette, chosen by product (then by category),
- * tinted from the category's chapter colours (see tokens.css [data-cat]).
+ * 1. The product's own photo, /images/products/<slug>.webp, when that file exists at build time.
+ * 2. Otherwise the studio render of its pack shape, /images/renders/<shape>.webp (`npm run renders`).
+ *    Renders are illustrations of the pack format, so the alt text says "Illustration of …".
+ * 3. If neither exists, the flat SVG pack drawing, tinted from the category's chapter colours.
  */
 import { shapes, shapeFor } from '../lib/pack-shapes';
-import { productImagePath } from '../lib/product-image';
+import { productPicture } from '../lib/product-image';
 
 interface Props {
   slug: string;
   title: string;
   category: string;
   size: 'card' | 'hero';
+  /** Load eagerly (above the fold). Cards default to lazy, the product hero to eager. */
+  eager?: boolean;
 }
 
-const { slug, title, category, size } = Astro.props;
-
-const imgSrc = productImagePath(slug);
-const hasImage = !!imgSrc;
-
+const { slug, title, category, size, eager = size === 'hero' } = Astro.props;
 const shape = shapeFor(slug, category);
-
+const pic = productPicture(slug, shape);
+const sizes = size === 'hero' ? '(max-width: 860px) 92vw, 560px' : '(max-width: 640px) 92vw, (max-width: 1100px) 46vw, 400px';
 const svg = shapes[shape];
 ---
 
-<figure class:list={['pv', `pv--${size}`]} data-cat={category} data-shape={hasImage ? 'photo' : shape}>
+<figure class:list={['pv', `pv--${size}`]} data-cat={category} data-shape={pic?.kind === 'photo' ? 'photo' : shape}>
   {
-    hasImage ? (
-      <img
-        src={imgSrc}
-        alt={title}
-        width={size === 'hero' ? 1200 : 600}
-        height={size === 'hero' ? 1200 : 600}
-        loading={size === 'hero' ? 'eager' : 'lazy'}
-        decoding="async"
-      />
-    ) : (
-      <svg viewBox="0 0 240 240" role="img" aria-label={`${title} (illustration)`} set:html={`<title>${title.replace(/[<&>]/g, '')}</title>${svg}`} />
+    pic?.kind === 'photo' && (
+      <img src={pic.src} alt={title} width={pic.width} height={pic.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
     )
   }
-  {size === 'hero' && !hasImage && <figcaption class="pv-caption">{title}</figcaption>}
+  {
+    pic?.kind === 'render' && (
+      <img
+        src={pic.src}
+        srcset={pic.srcset}
+        sizes={sizes}
+        alt={`Illustration of ${title.toLowerCase()} in a typical export pack`}
+        width={pic.width}
+        height={pic.height}
+        loading={eager ? 'eager' : 'lazy'}
+        decoding="async"
+      />
+    )
+  }
+  {
+    !pic && (
+      <svg viewBox="0 0 240 240" role="img" aria-label={`Illustration of ${title.toLowerCase()}`} set:html={`<title>${title.replace(/[<&>]/g, '')}</title>${svg}`} />
+    )
+  }
 </figure>
