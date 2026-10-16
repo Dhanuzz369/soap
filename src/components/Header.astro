@@ -1,29 +1,40 @@
 ---
+/**
+ * Floating header. At the top of the page it is a plain transparent bar; once the page scrolls
+ * past 40px it becomes a centred floating pill (translucent, blurred). Only opacity and transform
+ * animate. Without JS it simply stays a pill. `tone="dark"` is for pages that open on a dark
+ * field (the home hero): the bar's text is light until it turns into the pill.
+ * Phones get a <details> menu that works without JS.
+ */
 import site from '../config/site';
 
 interface Props {
   path?: string;
+  tone?: 'light' | 'dark';
 }
-const { path = '/' } = Astro.props;
+const { path = '/', tone = 'light' } = Astro.props;
 
 const nav = [
   { label: 'Products', href: '/products/' },
   { label: 'Private Label', href: '/private-label/' },
   { label: 'Export Process', href: '/export-process/' },
-  { label: 'Blog', href: '/blog/' },
+  { label: 'Buyer Guides', href: '/blog/' },
+];
+const more = [
   { label: 'About', href: '/about/' },
+  { label: 'FAQ', href: '/faq/' },
 ];
 const isCurrent = (href: string) => path === href || (href !== '/' && path.startsWith(href));
 ---
 
-<header class="site-header">
+<header class="site-header" data-header data-tone={tone}>
   <div class="bar">
     <a class="wordmark" href="/" aria-label={`${site.name}, home`}>
       <svg class="wordmark-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path d="M12 2.5c6 3 7.4 12.2 0 19-7.4-6.8-6-16 0-19Z" />
         <path class="wordmark-rib" d="M11.2 7h1.6v12h-1.6z" />
       </svg>
-      <span>GoodBiz <span class="wordmark-sub">Hygiene</span></span>
+      <span>GoodBiz Hygiene</span>
     </a>
 
     <nav class="nav-desktop" aria-label="Main">
@@ -42,11 +53,13 @@ const isCurrent = (href: string) => path === href || (href !== '/' && path.start
     <a class="btn btn--sm nav-cta" href="/contact/">Request a Quote</a>
 
     <details class="nav-mobile">
-      <summary aria-label="Menu"><span>Menu</span></summary>
-      <nav aria-label="Main (mobile)">
+      <summary aria-label="Menu">
+        <span class="nav-burger" aria-hidden="true"></span>
+      </summary>
+      <nav class="nav-panel" aria-label="Main (mobile)">
         <ul>
           {
-            nav.map((n) => (
+            [...nav, ...more].map((n) => (
               <li>
                 <a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>
                   {n.label}
@@ -54,9 +67,47 @@ const isCurrent = (href: string) => path === href || (href !== '/' && path.start
               </li>
             ))
           }
-          <li><a class="btn" href="/contact/">Request a Quote</a></li>
         </ul>
+        <a class="btn nav-panel-cta" href="/contact/">Request a Quote</a>
       </nav>
     </details>
   </div>
 </header>
+<script is:inline>
+  // Runs before first paint: mark the header as "at the top" so it starts transparent,
+  // then flip to the floating pill once the page has scrolled past 40px.
+  (function () {
+    var h = document.querySelector('[data-header]');
+    if (!h) return;
+    var ticking = false;
+    var set = function () {
+      ticking = false;
+      if (window.scrollY > 40) h.removeAttribute('data-top');
+      else h.setAttribute('data-top', '');
+    };
+    set();
+    addEventListener(
+      'scroll',
+      function () {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(set);
+        }
+      },
+      { passive: true },
+    );
+    // Close the phone menu after choosing a same-page link, or on Escape.
+    var menu = h.querySelector('details');
+    if (menu) {
+      menu.addEventListener('click', function (e) {
+        if (e.target instanceof HTMLAnchorElement) menu.open = false;
+      });
+      addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && menu.open) {
+          menu.open = false;
+          menu.querySelector('summary').focus();
+        }
+      });
+    }
+  })();
+</script>

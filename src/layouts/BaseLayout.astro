@@ -18,9 +18,13 @@ interface Props {
   breadcrumbs?: { name: string; url: string }[];
   /** Always noindex this page and leave out the canonical/hreflang links (e.g. the 404 page). */
   noindex?: boolean;
+  /** The page opens on a dark field (home hero): the header starts light-on-dark and the main area runs under it. */
+  dark?: boolean;
+  /** Extra <link rel="preload"> for the first screen's image (the LCP element). */
+  preloadImage?: { href: string; type?: string };
 }
 
-const { title, description, path, ogImage = '/og-default.png', jsonLd = [], breadcrumbs, noindex = false } = Astro.props;
+const { title, description, path, ogImage = '/og-default.png', jsonLd = [], breadcrumbs, noindex = false, dark = false, preloadImage } = Astro.props;
 
 const fullTitle = pageTitle(title);
 const canonical = absoluteUrl(path);
@@ -53,7 +57,7 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
       )
     }
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <meta name="theme-color" content="#f5f8f2" />
+    <meta name="theme-color" content={dark ? '#0b211a' : '#f5f8f2'} />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={site.name} />
@@ -69,13 +73,14 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
 
     <link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/newsreader-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin />
+    {preloadImage && <link rel="preload" href={preloadImage.href} as="image" type={preloadImage.type ?? 'image/webp'} fetchpriority="high" />}
 
     {schemas.map((s) => <script type="application/ld+json" set:html={ld(s)} />)}
     <slot name="head" />
   </head>
-  <body id="top">
+  <body id="top" class:list={{ 'page-dark': dark }}>
     <a class="skip" href="#main">Skip to content</a>
-    <Header path={path} />
+    <Header path={path} tone={dark ? 'dark' : 'light'} />
     <main id="main">
       {breadcrumbs && breadcrumbs.length > 1 && (
         <div class="wrap crumbs-wrap"><Breadcrumbs items={breadcrumbs} /></div>

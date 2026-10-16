@@ -2,34 +2,36 @@
 import { getCollection } from 'astro:content';
 import site from '../config/site';
 import { buildWhatsAppUrl } from '../lib/enquiry';
+import { foundPictures } from '../data/found-pictures';
 
 const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
 const company = [
   { label: 'Private Label', href: '/private-label/' },
   { label: 'Export Process', href: '/export-process/' },
   { label: 'About', href: '/about/' },
-  { label: 'Blog', href: '/blog/' },
+  { label: 'Buyer Guides', href: '/blog/' },
   { label: 'FAQ', href: '/faq/' },
-  { label: 'Contact', href: '/contact/' },
+  { label: 'Request a Quote', href: '/contact/' },
 ];
 const year = new Date().getFullYear();
+const tel = site.contact.phone.replace(/[^+\d]/g, '');
 ---
 
 <footer class="site-footer">
-  <div class="footer-inner">
-    <p class="footer-name" aria-hidden="true">GoodBiz Hygiene</p>
+  <svg class="footer-ghost" viewBox="0 0 1000 190" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+    <text x="500" y="168" text-anchor="middle">GOODBIZ</text>
+  </svg>
 
-    <div class="footer-row">
-      <div class="footer-reach">
+  <div class="wrap footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <p class="footer-name">GoodBiz Hygiene.</p>
+        <p class="footer-tag">Clean, from India</p>
         <p class="footer-lede">
-          Soaps and home-care products, sourced from vetted Indian manufacturers and exported by
-          GoodBiz Hygiene, a {site.parentName} company.
+          Soaps and home-care products, sourced from vetted Indian manufacturers and exported by GoodBiz Hygiene, a
+          {site.parentName} company.
         </p>
-        <ul class="footer-places">
-          <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
-          <li><a href={buildWhatsAppUrl(site.contact.whatsapp, {})} rel="noopener" target="_blank">WhatsApp {site.contact.phone}</a></li>
-        </ul>
-        <p class="footer-address">{site.contact.address}</p>
+        <p class="footer-terms">{site.exportTerms.incoterms}. {site.exportTerms.port}. {site.exportTerms.leadTime}.</p>
       </div>
 
       <nav class="footer-links" aria-label="Footer">
@@ -47,15 +49,29 @@ const year = new Date().getFullYear();
           </ul>
         </div>
         <div>
-          <h2>Export terms</h2>
-          <ul class="footer-terms">
-            <li>{site.exportTerms.incoterms}</li>
-            <li>{site.exportTerms.port}</li>
-            <li>{site.exportTerms.leadTime}</li>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
+            <li><a href={buildWhatsAppUrl(site.contact.whatsapp, {})} rel="noopener" target="_blank">WhatsApp</a></li>
+            <li><a href={`tel:${tel}`}>{site.contact.phone}</a></li>
+            <li>{site.contact.address}</li>
           </ul>
         </div>
       </nav>
     </div>
+
+    <p class="footer-credits">
+      Pictures from open collections, showing the world around our trade, not our own premises or products:{' '}
+      {
+        foundPictures.map((p, i) => (
+          <>
+            <a href={p.page} rel="noopener">“{p.title}”</a> by {p.creator}, <a href={p.licenseUrl} rel="noopener">{p.license}</a>, via {p.via}
+            {i < foundPictures.length - 1 ? '; ' : '. '}
+          </>
+        ))
+      }
+      Pack pictures are studio illustrations of typical export packs, not product photographs.
+    </p>
 
     <div class="footer-legal">
       <p>© {year} {site.name}, a {site.parentName} company. Merchant exporter from India.</p>
