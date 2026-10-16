@@ -710,7 +710,8 @@ a:hover {
 .footer-name {
   max-width: none;
   font-family: var(--font-display);
-  font-size: clamp(3rem, 11.2vw, 10.5rem);
+  /* the 2.25rem floor keeps the wordmark inside the gutter down to 320px phones */
+  font-size: clamp(2.25rem, 11.2vw, 10.5rem);
   line-height: 0.9;
   letter-spacing: -0.04em;
   white-space: nowrap;

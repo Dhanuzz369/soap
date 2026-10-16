@@ -1,4 +1,5 @@
 ---
+import '../styles/fonts.css';
 import '../styles/tokens.css';
 import '../styles/global.css';
 import site from '../config/site';
@@ -58,12 +59,8 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogUrl} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
-    />
+    <link rel="preload" href="/fonts/albert-sans-latin-wght.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/newsreader-latin-opsz.woff2" as="font" type="font/woff2" crossorigin />
 
     {schemas.map((s) => <script type="application/ld+json" set:html={ld(s)} />)}
     <slot name="head" />
