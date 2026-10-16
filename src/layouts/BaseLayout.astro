@@ -2,6 +2,7 @@
 import '../styles/fonts.css';
 import '../styles/tokens.css';
 import '../styles/global.css';
+import '../styles/floria.css';
 import site from '../config/site';
 import { absoluteUrl, pageTitle, organizationJsonLd, websiteJsonLd, breadcrumbJsonLd } from '../lib/seo';
 import Header from '../components/Header.astro';
@@ -18,7 +19,10 @@ interface Props {
   breadcrumbs?: { name: string; url: string }[];
   /** Always noindex this page and leave out the canonical/hreflang links (e.g. the 404 page). */
   noindex?: boolean;
-  /** The page opens on a dark field (home hero): the header starts light-on-dark and the main area runs under it. */
+  /**
+   * The page opens on a dark field (home hero, PageHero bands): the header starts light-on-dark, the
+   * main area runs under it, and the page's band shows the breadcrumbs itself.
+   */
   dark?: boolean;
   /** Extra <link rel="preload"> for the first screen's image (the LCP element). */
   preloadImage?: { href: string; type?: string };
@@ -82,7 +86,7 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
     <a class="skip" href="#main">Skip to content</a>
     <Header path={path} tone={dark ? 'dark' : 'light'} />
     <main id="main">
-      {breadcrumbs && breadcrumbs.length > 1 && (
+      {!dark && breadcrumbs && breadcrumbs.length > 1 && (
         <div class="wrap crumbs-wrap"><Breadcrumbs items={breadcrumbs} /></div>
       )}
       <slot />

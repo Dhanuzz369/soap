@@ -1,0 +1,76 @@
+---
+/**
+ * The dark numbered process: a sticky heading (italic second line), an intro, optionally the
+ * Kochi port photograph and a link; on the right the steps in 01/02/03 circles that fill mint
+ * as each reaches mid-screen (BaseLayout script, [data-step]).
+ */
+import { foundPictures } from '../data/found-pictures';
+
+interface Props {
+  l1: string;
+  l2: string;
+  intro: string;
+  steps: { name: string; text: string }[];
+  photo?: boolean;
+  link?: { href: string; label: string };
+  id?: string;
+}
+const { l1, l2, intro, steps, photo = false, link, id = 'process' } = Astro.props;
+const port = foundPictures.find((p) => p.file.includes('kochi'))!;
+---
+
+<section class="process" aria-labelledby={`${id}-h`}>
+  <div class="wrap process-grid">
+    <div class="process-head">
+      <div class="process-sticky">
+        <h2 id={`${id}-h`} data-reveal>{l1} <span class="serif-i">{l2}</span></h2>
+        <p class="process-intro" data-reveal style="--i: 1">{intro}</p>
+        {
+          photo && (
+            <figure class="process-photo" data-reveal style="--i: 2">
+              <div class="process-photo-frame">
+                <img
+                  src="/images/found/kochi-port-night-600.webp"
+                  srcset="/images/found/kochi-port-night-600.webp 600w, /images/found/kochi-port-night.webp 1200w"
+                  sizes="(max-width: 900px) 92vw, 480px"
+                  width="1200"
+                  height="900"
+                  alt="Gantry cranes loading a container ship at night at the International Container Transshipment Terminal in Kochi, India"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <figcaption>
+                Container terminal, Kochi. Photo: {port.creator}, {port.license}.
+              </figcaption>
+            </figure>
+          )
+        }
+        {
+          link && (
+            <p data-reveal style="--i: 3">
+              <a class="link-arrow process-link" href={link.href}>
+                {link.label} <span class="arr" aria-hidden="true">→</span>
+              </a>
+            </p>
+          )
+        }
+      </div>
+    </div>
+    <ol class="steps">
+      {
+        steps.map((s, i) => (
+          <li class={`step step--${(i % 3) + 1}`} data-step>
+            <span class="step-num" aria-hidden="true">
+              {String(i + 1).padStart(2, '0') /* taste-skill-ignore: 01/02/03 circles, allowed by the direction */}
+            </span>
+            <div class="step-body">
+              <h3>{s.name}</h3>
+              <p>{s.text}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>

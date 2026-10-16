@@ -1,0 +1,69 @@
+---
+/**
+ * Dark forest title band for inner pages (Floria restyle). One h1 with up to three parts:
+ *   l1  the main line (Geist, large)
+ *   sub an optional small descriptor kept inside the h1 (e.g. a chemical's full name)
+ *   l2  the italic Newsreader second line
+ * The h1's text reads as one phrase ("LABSA (Linear Alkyl …) Exporter & Supplier from India").
+ * Breadcrumbs sit at the top of the band (the BreadcrumbList JSON-LD comes from BaseLayout).
+ * Media: `bleed` (a studio render on the forest field, running off the right edge),
+ * `card` (a photo in a rounded card), or `plate` (a botanical plate, inverted and faint).
+ */
+import Breadcrumbs from './Breadcrumbs.astro';
+
+export type HeroMedia = {
+  src: string;
+  srcset?: string;
+  sizes?: string;
+  width: number;
+  height: number;
+  alt: string;
+  mode: 'bleed' | 'card' | 'plate';
+  /** CSS object-position for the crop, e.g. '90% 60%'. */
+  position?: string;
+};
+
+interface Props {
+  breadcrumbs?: { name: string; url: string }[];
+  l1: string;
+  sub?: string;
+  l2?: string;
+  lead?: string;
+  media?: HeroMedia;
+  size?: 'product' | 'title' | 'post';
+  /** Long names step the type down (see splitName in src/lib/heading.ts). */
+  scale?: 's' | 'm' | 'l';
+  id?: string;
+}
+const { breadcrumbs, l1, sub, l2, lead, media, size = 'title', scale = 's', id = 'page-h' } = Astro.props;
+---
+
+<section class:list={['ph', `ph--${size}`, media && `ph--media-${media.mode}`]} aria-labelledby={id}>
+  {
+    media && (
+      <div class="ph-media">
+        <img
+          src={media.src}
+          srcset={media.srcset}
+          sizes={media.sizes}
+          width={media.width}
+          height={media.height}
+          alt={media.mode === 'plate' ? '' : media.alt}
+          fetchpriority={media.mode === 'plate' ? undefined : 'high'}
+          decoding="async"
+          style={media.position ? `object-position: ${media.position}` : undefined}
+        />
+      </div>
+    )
+  }
+  <div class="wrap ph-copy">
+    {breadcrumbs && breadcrumbs.length > 1 && <Breadcrumbs items={breadcrumbs} />}
+    <h1 id={id} class:list={['ph-title', `ph-title--${scale}`]}>
+      <span class="ph-l1">{l1}</span>
+      {sub && <span class="ph-sub"> {sub}</span>}
+      {l2 && <span class="ph-l2 serif-i"> {l2}</span>}
+    </h1>
+    {lead && <p class="ph-lead">{lead}</p>}
+    <slot />
+  </div>
+</section>

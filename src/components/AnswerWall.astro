@@ -1,0 +1,39 @@
+---
+/**
+ * "Straight answers": questions set like quotes on dark rounded cards, signed "Buyer FAQ"
+ * (no names, no ratings). The page passes the matching FAQPage JSON-LD itself.
+ */
+interface Props {
+  faqs: { q: string; a: string }[];
+  heading?: string;
+  id?: string;
+  more?: { href: string; label: string };
+}
+const { faqs, heading = 'Straight answers.', id = 'answers', more } = Astro.props;
+---
+
+<section class="answers" id={id} aria-labelledby={`${id}-h`}>
+  <div class="wrap">
+    <h2 id={`${id}-h`} class="answers-h serif-i" data-reveal>{heading}</h2>
+    <ul class:list={['answer-wall', faqs.length < 3 && 'answer-wall--few']}>
+      {
+        faqs.map((f, i) => (
+          <li class="answer" data-reveal style={`--i: ${i % 3}`}>
+            <h3 class="answer-q">{f.q}</h3>
+            <p class="answer-a">{f.a}</p>
+            <p class="answer-sign">Buyer FAQ</p>
+          </li>
+        ))
+      }
+    </ul>
+    {
+      more && (
+        <p class="answers-more" data-reveal>
+          <a class="link-arrow" href={more.href}>
+            {more.label} <span class="arr" aria-hidden="true">→</span>
+          </a>
+        </p>
+      )
+    }
+  </div>
+</section>

@@ -12,8 +12,11 @@ import site from '../config/site';
 import { getProductsByCategory } from '../lib/products';
 import { faqJsonLd } from '../lib/seo';
 import { homeFaqs } from '../lib/faqs';
-import { getPosts, fmtDate } from '../lib/blog';
-import { foundPictures } from '../data/found-pictures';
+import { getPosts } from '../lib/blog';
+import ProcessSteps from '../components/ProcessSteps.astro';
+import AnswerWall from '../components/AnswerWall.astro';
+import GuideRows from '../components/GuideRows.astro';
+import QuoteCard from '../components/QuoteCard.astro';
 
 const groups = await getProductsByCategory();
 const latestPosts = (await getPosts()).slice(0, 3);
@@ -53,7 +56,6 @@ const tiles = tileOrder
     return { g, slug, size, w: dims[0], h: dims[1] };
   });
 
-const port = foundPictures.find((p) => p.file.includes('kochi'))!;
 ---
 
 <BaseLayout
@@ -109,54 +111,14 @@ const port = foundPictures.find((p) => p.file.includes('kochi'))!;
   </section>
 
   <!-- 3. How export orders work -->
-  <section class="process" aria-labelledby="process-h">
-    <div class="wrap process-grid">
-      <div class="process-head">
-        <div class="process-sticky">
-          <h2 id="process-h" data-reveal>
-            How export <span class="serif-i">orders work.</span>
-          </h2>
-          <p class="process-intro" data-reveal style="--i: 1">
-            One merchant exporter between you and the manufacturer: the quote, the samples, the paperwork and the shipment, from the first
-            message to the bill of lading.
-          </p>
-          <figure class="process-photo" data-reveal style="--i: 2">
-            <div class="process-photo-frame">
-            <img
-              src="/images/found/kochi-port-night-600.webp"
-              srcset="/images/found/kochi-port-night-600.webp 600w, /images/found/kochi-port-night.webp 1200w"
-              sizes="(max-width: 900px) 92vw, 480px"
-              width="1200"
-              height="900"
-              alt="Gantry cranes loading a container ship at night at the International Container Transshipment Terminal in Kochi, India"
-              loading="lazy"
-              decoding="async"
-            />
-            </div>
-            <figcaption>Container terminal, Kochi. Photo: {port.creator}, {port.license}.</figcaption>
-          </figure>
-          <p data-reveal style="--i: 3">
-            <a class="link-arrow process-link" href="/export-process/">The export process in full <span class="arr" aria-hidden="true">→</span></a>
-          </p>
-        </div>
-      </div>
-      <ol class="steps">
-        {
-          steps.map((s, i) => (
-            <li class={`step step--${i + 1}`} data-step>
-              <span class="step-num" aria-hidden="true">
-                {String(i + 1).padStart(2, '0') /* taste-skill-ignore: 01/02/03 circles, allowed by the direction */}
-              </span>
-              <div class="step-body">
-                <h3>{s.name}</h3>
-                <p>{s.text}</p>
-              </div>
-            </li>
-          ))
-        }
-      </ol>
-    </div>
-  </section>
+  <ProcessSteps
+    l1="How export"
+    l2="orders work."
+    intro="One merchant exporter between you and the manufacturer: the quote, the samples, the paperwork and the shipment, from the first message to the bill of lading."
+    steps={steps}
+    photo
+    link={{ href: '/export-process/', label: 'The export process in full' }}
+  />
 
   <!-- 4. The Categories -->
   <section class="wrap cats" aria-labelledby="cats-h">
@@ -191,25 +153,7 @@ const port = foundPictures.find((p) => p.file.includes('kochi'))!;
   </section>
 
   <!-- 5. Straight answers -->
-  <section class="answers" aria-labelledby="answers-h">
-    <div class="wrap">
-      <h2 id="answers-h" class="answers-h serif-i" data-reveal>Straight answers.</h2>
-      <ul class="answer-wall">
-        {
-          homeFaqs.map((f, i) => (
-            <li class="answer" data-reveal style={`--i: ${i % 3}`}>
-              <h3 class="answer-q">{f.q}</h3>
-              <p class="answer-a">{f.a}</p>
-              <p class="answer-sign">Buyer FAQ</p>
-            </li>
-          ))
-        }
-      </ul>
-      <p class="answers-more" data-reveal>
-        <a class="link-arrow" href="/faq/">More answers on the FAQ page <span class="arr" aria-hidden="true">→</span></a>
-      </p>
-    </div>
-  </section>
+  <AnswerWall faqs={homeFaqs} more={{ href: '/faq/', label: 'More answers on the FAQ page' }} />
 
   <!-- 6. Statement -->
   <section class="statement" aria-labelledby="statement-h">
@@ -227,56 +171,8 @@ const port = foundPictures.find((p) => p.file.includes('kochi'))!;
   </section>
 
   <!-- 7. Buyer guides -->
-  {
-    latestPosts.length > 0 && (
-      <section class="wrap guides" aria-labelledby="guides-h">
-        <div class="guides-head" data-reveal>
-          <h2 id="guides-h">Buyer guides</h2>
-          <a class="link-arrow" href="/blog/">
-            All guides <span class="arr" aria-hidden="true">↗</span>
-          </a>
-        </div>
-        <ul class="guide-rows">
-          {latestPosts.map((p, i) => (
-            <li class="guide" data-reveal style={`--i: ${i}`}>
-              <time class="guide-date" datetime={p.data.date.toISOString().slice(0, 10)}>
-                {fmtDate(p.data.date)}
-              </time>
-              <h3 class="guide-title">
-                <a href={`/blog/${p.id}/`}>{p.data.title}</a>
-              </h3>
-              <p class="guide-desc">{p.data.description}</p>
-              <span class="guide-arrow" aria-hidden="true">
-                ↗
-              </span>
-            </li>
-          ))}
-        </ul>
-      </section>
-    )
-  }
+  {latestPosts.length > 0 && <GuideRows posts={latestPosts} heading="Buyer guides" all />}
 
   <!-- 8. The quote card: the one live thing -->
-  <section class="wrap quote" aria-labelledby="quote-h">
-    <div class="quote-card" data-reveal>
-      <img class="quote-plate" src="/images/found/lemon-plate.webp" width="1600" height="880" alt="" loading="lazy" decoding="async" />
-      <div class="quote-inner">
-        <h2 id="quote-h">Request a quote.</h2>
-        <p>Tell us what you need in one line. The enquiry form opens with it written in, ready for your products, quantity and port.</p>
-        <form class="quote-form" action="/contact/" method="get">
-          <label class="visually-hidden" for="quote-msg">What do you need?</label>
-          <input
-            id="quote-msg"
-            name="message"
-            type="text"
-            maxlength="500"
-            autocomplete="off"
-            placeholder="e.g. 1×20ft dish wash, lemon, 500 ml"
-            required
-          />
-          <button class="btn btn--light" type="submit">Start enquiry <span aria-hidden="true">→</span></button>
-        </form>
-      </div>
-    </div>
-  </section>
+  <QuoteCard />
 </BaseLayout>

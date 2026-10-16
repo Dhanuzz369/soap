@@ -1,16 +1,24 @@
 ---
-/** FAQ list as <details>/<summary> bands. The page passes the FAQPage JSON-LD itself. */
+/**
+ * FAQ as Floria accordion rows (<details>/<summary>, works without JS). With `split`, the heading
+ * sits on the left and the questions on the right. The page passes the FAQPage JSON-LD itself.
+ */
 interface Props {
   faqs: { q: string; a: string }[];
   heading?: string;
   id?: string;
+  split?: boolean;
+  intro?: string;
 }
-const { faqs, heading = 'Questions buyers ask', id = 'faq' } = Astro.props;
+const { faqs, heading = 'Questions buyers ask', id = 'faq', split = false, intro } = Astro.props;
 ---
 
-<section class="faq" aria-labelledby={`${id}-h`}>
-  <h2 id={`${id}-h`} class="faq-h">{heading}</h2>
-  <div class="faq-list">
+<section class:list={['faq', 'wrap', 'sec', split && 'split']} id={id} aria-labelledby={`${id}-h`}>
+  <div class:list={[split && 'split-head']} data-reveal>
+    <h2 id={`${id}-h`} class="faq-h">{heading}</h2>
+    {intro && <p>{intro}</p>}
+  </div>
+  <div class="faq-list" data-reveal style="--i: 1">
     {
       faqs.map((f) => (
         <details class="faq-item">

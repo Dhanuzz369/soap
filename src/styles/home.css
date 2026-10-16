@@ -162,15 +162,16 @@
 
 /* ---------- section rhythm ---------- */
 .range,
-.cats,
-.guides,
-.quote {
+.cats {
   padding-block: clamp(96px, 3rem + 5vw, 128px);
 }
 
 /* ---------- 2. the range: three tall staggered cards ---------- */
-.range-head,
-.guides-head {
+.statement + .guides,
+.guides + .quote {
+  padding-top: 0;
+}
+.range-head {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
@@ -178,8 +179,7 @@
   gap: 20px 40px;
 }
 .range-head h2,
-.cats-head h2,
-.guides-head h2 {
+.cats-head h2 {
   font-size: var(--step-head);
   letter-spacing: -0.045em;
 }
@@ -246,124 +246,6 @@
   }
   .range-card--3 {
     margin-right: 12%;
-  }
-}
-
-/* ---------- 3. how export orders work: sticky heading, port photo, three steps ---------- */
-.process {
-  background: var(--forest-950);
-  color: var(--on-dark-soft);
-  padding-block: clamp(104px, 3rem + 8vw, 160px);
-}
-.process-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-  gap: 48px clamp(32px, 6vw, 112px);
-  align-items: start;
-}
-.process-sticky {
-  position: sticky;
-  top: 112px;
-  display: grid;
-  gap: 24px;
-  justify-items: start;
-}
-.process h2 {
-  color: var(--on-dark);
-  font-size: var(--step-head);
-  letter-spacing: -0.045em;
-  line-height: 1;
-}
-.process h2 .serif-i {
-  color: var(--mint);
-  letter-spacing: -0.03em;
-}
-.process-intro {
-  max-width: 40ch;
-  font-size: var(--step-lead);
-  line-height: 1.55;
-}
-.process-photo {
-  width: min(100%, 480px);
-}
-.process-photo img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: var(--radius-card);
-}
-.process-photo figcaption {
-  margin-top: 10px;
-  font-size: var(--step-small);
-  color: var(--on-dark-soft);
-}
-.process-link {
-  color: var(--on-dark);
-}
-.process :focus-visible {
-  outline-color: var(--mint);
-}
-.steps {
-  display: grid;
-  gap: clamp(56px, 7vw, 112px);
-  padding-top: 8px;
-}
-.step {
-  display: grid;
-  grid-template-columns: 52px minmax(0, 1fr);
-  gap: 28px;
-  max-width: 34rem;
-}
-.step--2 {
-  margin-left: clamp(0px, 6vw, 96px);
-}
-.step-num {
-  display: grid;
-  place-items: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: var(--forest-800);
-  color: var(--on-dark);
-  font-size: var(--step-small);
-  font-weight: 500;
-  font-variant-numeric: tabular-nums;
-  transition:
-    background-color 500ms var(--ease-out),
-    color 500ms var(--ease-out);
-}
-.step.is-lit .step-num {
-  background: var(--mint);
-  color: var(--forest-950);
-}
-.step h3 {
-  color: var(--on-dark);
-  font-size: var(--step-h3);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.2;
-}
-.step p {
-  margin-top: 14px;
-  line-height: 1.65;
-}
-@media (max-width: 899.98px) {
-  .process-grid {
-    grid-template-columns: 1fr;
-  }
-  .process-sticky {
-    position: static;
-  }
-  .step--2 {
-    margin-left: 0;
-  }
-  .step {
-    grid-template-columns: 44px minmax(0, 1fr);
-    gap: 20px;
-  }
-  .step-num {
-    width: 44px;
-    height: 44px;
   }
 }
 
@@ -471,70 +353,6 @@
   }
 }
 
-/* ---------- 5. straight answers: a wall of dark cards ---------- */
-.answers {
-  background: var(--forest-950);
-  color: var(--on-dark-soft);
-  padding-block: clamp(112px, 4rem + 8vw, 192px) clamp(48px, 2rem + 3vw, 80px);
-}
-.answers-h {
-  text-align: center;
-  color: var(--on-dark);
-  font-size: var(--step-statement);
-  line-height: 1;
-}
-.answer-wall {
-  margin-top: clamp(56px, 6vw, 96px);
-  columns: 3 300px;
-  column-gap: 24px;
-}
-.answer {
-  break-inside: avoid;
-  margin-bottom: 24px;
-  padding: clamp(28px, 3vw, 40px);
-  border-radius: var(--radius-card);
-  background: var(--forest-800);
-}
-.answer-q {
-  color: var(--on-dark);
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  line-height: 1.3;
-}
-.answer-a {
-  margin-top: 16px;
-  color: var(--on-dark-2);
-  font-size: 1rem;
-  line-height: 1.65;
-}
-.answer-sign {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 24px;
-  color: var(--on-dark);
-  font-size: var(--step-small);
-  font-weight: 500;
-}
-.answer-sign::before {
-  content: '';
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--mint);
-}
-.answers-more {
-  margin: 40px auto 0;
-  text-align: center;
-}
-.answers-more a {
-  color: var(--on-dark);
-}
-.answers :focus-visible {
-  outline-color: var(--mint);
-}
-
 /* ---------- 6. statement: from the dark field into the ground, a neem plate behind ---------- */
 .statement {
   position: relative;
@@ -583,184 +401,6 @@
   color: var(--ink);
 }
 
-/* ---------- 7. buyer guides: compact text rows ---------- */
-.guides {
-  padding-top: 0;
-}
-.guides-head a {
-  color: var(--ink);
-}
-.guide-rows {
-  margin-top: 40px;
-  display: grid;
-  gap: 8px;
-}
-.guide {
-  position: relative;
-  display: grid;
-  grid-template-columns: 9rem minmax(0, 5fr) minmax(0, 6fr) 2rem;
-  gap: 8px 32px;
-  align-items: baseline;
-  padding: 28px clamp(20px, 2.4vw, 32px);
-  border-radius: 24px;
-  background: var(--paper-2);
-  transition:
-    background-color var(--dur-fast) ease,
-    transform var(--dur-press) var(--ease-out);
-}
-.guide-date {
-  font-size: var(--step-small);
-  color: var(--ink-soft);
-  font-variant-numeric: tabular-nums;
-}
-.guide-title {
-  font-size: 1.25rem;
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  line-height: 1.3;
-}
-.guide-title a {
-  color: var(--ink);
-  text-decoration: none;
-}
-.guide-title a::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-}
-.guide-title a:focus-visible {
-  outline: none;
-}
-.guide:has(a:focus-visible) {
-  outline: 3px solid var(--focus);
-  outline-offset: 3px;
-}
-.guide-desc {
-  font-size: 1rem;
-  color: var(--ink-soft);
-}
-.guide-arrow {
-  justify-self: end;
-  color: var(--ink);
-  transition: transform var(--dur-fast) var(--ease-out);
-}
-.guide:active {
-  transform: scale(0.99);
-}
-@media (hover: hover) and (pointer: fine) {
-  .guide:hover {
-    background: var(--paper-3);
-  }
-  .guide:hover .guide-arrow {
-    transform: translate(3px, -3px);
-  }
-}
-@media (max-width: 859.98px) {
-  .guide {
-    grid-template-columns: minmax(0, 1fr) 2rem;
-  }
-  .guide-date {
-    grid-column: 1 / -1;
-  }
-  .guide-desc {
-    grid-column: 1 / 2;
-  }
-  .guide-arrow {
-    grid-row: 2;
-    grid-column: 2;
-  }
-}
-
-/* ---------- 8. the quote card: botanical plate under a forest scrim, one input ---------- */
-.quote {
-  padding-top: 0;
-}
-.quote-card {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  border-radius: clamp(28px, 1rem + 2vw, 48px);
-  background: var(--forest-900);
-  color: var(--on-dark);
-  text-align: center;
-}
-.quote-plate {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.quote-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: rgb(11 33 26 / 0.8);
-}
-.quote-inner {
-  display: grid;
-  justify-items: center;
-  gap: 20px;
-  padding: clamp(72px, 3rem + 6vw, 128px) clamp(20px, 5vw, 80px);
-}
-.quote h2 {
-  color: var(--on-dark);
-  font-size: var(--step-head);
-  letter-spacing: -0.05em;
-}
-.quote-inner > p {
-  max-width: 40ch;
-  color: var(--on-dark);
-  font-size: var(--step-lead);
-  line-height: 1.55;
-}
-.quote-form {
-  margin-top: 16px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  width: min(100%, 640px);
-}
-.quote-form input {
-  flex: 1 1 300px;
-  min-width: 0;
-  min-height: 56px;
-  padding: 0 24px;
-  border: 0;
-  border-radius: var(--pill);
-  background: rgb(238 244 239 / 0.1);
-  box-shadow: inset 0 0 0 1px rgb(238 244 239 / 0.35); /* taste-skill-ignore: a real form field keeps its outline */
-  color: var(--on-dark);
-  font-size: 1rem;
-  transition:
-    box-shadow var(--dur-fast) ease,
-    background-color var(--dur-fast) ease;
-}
-.quote-form input::placeholder {
-  color: var(--on-dark-soft);
-  opacity: 1;
-}
-.quote-form input:focus {
-  outline: none;
-  background: rgb(238 244 239 / 0.16);
-  box-shadow: inset 0 0 0 2px var(--mint); /* taste-skill-ignore: a real form field keeps its outline */
-}
-.quote-form .btn {
-  min-height: 56px;
-}
-.quote :focus-visible {
-  outline-color: var(--mint);
-}
-@media (max-width: 519.98px) {
-  .quote-form .btn {
-    width: 100%;
-  }
-}
-
 /* ==========================================================================
    MOTION (Emil Kowalski): custom ease-out, transform and opacity only, once.
    ========================================================================== */
@@ -786,22 +426,6 @@
   .hero-actions {
     animation-delay: 320ms;
   }
-  /* The one moving photograph: the port drifts slowly as it crosses the screen. */
-  @supports (animation-timeline: view()) {
-    .process-photo img {
-      animation: photo-drift linear both;
-      animation-timeline: view();
-    }
-  }
-  .step-num {
-    transition:
-      background-color 500ms var(--ease-out),
-      color 500ms var(--ease-out),
-      transform 500ms var(--ease-out);
-  }
-  .step.is-lit .step-num {
-    transform: scale(1.06);
-  }
 }
 @keyframes line-up {
   from {
@@ -813,18 +437,6 @@
     opacity: 0;
     transform: translateY(24px);
   }
-}
-@keyframes photo-drift {
-  from {
-    transform: scale(1.12) translateY(-3%);
-  }
-  to {
-    transform: scale(1.02) translateY(2%);
-  }
-}
-.process-photo-frame {
-  overflow: hidden;
-  border-radius: var(--radius-card);
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-h .line-in,

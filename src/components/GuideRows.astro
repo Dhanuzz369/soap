@@ -1,0 +1,47 @@
+---
+/** Buyer guides as large rows (date, title, description, arrow). The whole row is the link. */
+import { fmtDate, readingMinutes, type BlogEntry } from '../lib/blog';
+
+interface Props {
+  posts: BlogEntry[];
+  heading: string;
+  id?: string;
+  all?: boolean;
+  large?: boolean;
+  /** Render the heading visually hidden (the page already has a title band). */
+  hideHeading?: boolean;
+}
+const { posts, heading, id = 'guides', all = false, large = false, hideHeading = false } = Astro.props;
+---
+
+<section class:list={['wrap', 'guides', large && 'guides--large']} aria-labelledby={`${id}-h`}>
+  <div class:list={['guides-head', hideHeading && 'visually-hidden']} data-reveal>
+    <h2 id={`${id}-h`}>{heading}</h2>
+    {
+      all && (
+        <a class="link-arrow" href="/blog/">
+          All guides <span class="arr" aria-hidden="true">↗</span>
+        </a>
+      )
+    }
+  </div>
+  <ul class="guide-rows">
+    {
+      posts.map((p, i) => (
+        <li class="guide" data-reveal style={`--i: ${i % 3}`}>
+          <p class="guide-date">
+            <time datetime={p.data.date.toISOString().slice(0, 10)}>{fmtDate(p.data.date)}</time>
+            {large && <span> · {readingMinutes(p.body ?? '')} min read</span>}
+          </p>
+          <h3 class="guide-title">
+            <a href={`/blog/${p.id}/`}>{p.data.title}</a>
+          </h3>
+          <p class="guide-desc">{p.data.description}</p>
+          <span class="guide-arrow" aria-hidden="true">
+            ↗
+          </span>
+        </li>
+      ))
+    }
+  </ul>
+</section>
