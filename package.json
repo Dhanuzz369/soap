@@ -18,7 +18,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "gray-matter": "^4.0.3",
-    "typescript": "^7.0.2",
+    "typescript": "^6.0.3",
     "vitest": "^5.0.5"
   }
 }
