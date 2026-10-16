@@ -75,3 +75,32 @@ export function fieldsFromEntries(entries: Iterable<[string, FormDataEntryValue 
   }
   return f;
 }
+
+/** The longest message accepted from the URL (the home quote card caps its input at 500). */
+export const MAX_URL_MESSAGE = 1000;
+
+/**
+ * Reads what other pages pass to the contact form in the query string:
+ * - `product`: product slugs to tick, comma-separated or repeated (`?product=a,b&product=c`);
+ * - `message`: text to prefill the message box (the home "Request a quote" card sends it).
+ * Slugs are kept only if they look like slugs; the message is trimmed, has control characters
+ * (other than line breaks) removed, and is capped at MAX_URL_MESSAGE characters.
+ */
+export function parseEnquiryParams(search: string): { products: string[]; message: string } {
+  const params = new URLSearchParams(search);
+  const products = [
+    ...new Set(
+      params
+        .getAll('product')
+        .flatMap((v) => v.split(','))
+        .map((s) => s.trim().toLowerCase())
+        .filter((s) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(s)),
+    ),
+  ];
+  const message = (params.get('message') ?? '')
+    // eslint-disable-next-line no-control-regex
+    .replace(/[\u0000-\u0009\u000B\u000C\u000E-\u001F\u007F]/g, '')
+    .trim()
+    .slice(0, MAX_URL_MESSAGE);
+  return { products, message };
+}

@@ -24,15 +24,15 @@ type Placement = { shape: Shape; x: number; z: number; yaw: number; lift?: numbe
 
 /** The range, grouped on the right of the frame so the copy sits on the open field at the left. */
 export const HERO_LAYOUT: Placement[] = [
-  { shape: 'jug', x: 0.5, z: -1.3, yaw: 0.45, shadow: 2.0 },
-  { shape: 'drum', x: 2.9, z: -1.9, yaw: 0.1, shadow: 2.0 },
-  { shape: 'spray', x: 1.75, z: -0.5, yaw: -0.5, shadow: 1.5 },
-  { shape: 'carboy', x: 4.05, z: -0.35, yaw: -0.35, shadow: 2.1 },
-  { shape: 'squeeze', x: -0.25, z: 0.8, yaw: -0.25, shadow: 1.4 },
-  { shape: 'pump', x: 1.05, z: 1.25, yaw: 0.3, shadow: 1.5 },
-  { shape: 'pouch', x: 2.55, z: 0.75, yaw: -0.35, shadow: 1.6 },
-  { shape: 'bar', x: -0.15, z: 2.45, yaw: 0.35, shadow: 1.9, lift: 0.14 },
-  { shape: 'bar-duo', x: 3.35, z: 2.1, yaw: -0.5, shadow: 2.0, lift: 0.14 },
+  { shape: 'jug', x: 1.65, z: -1.3, yaw: 0.45, shadow: 2.0 },
+  { shape: 'drum', x: 3.33, z: -2.0, yaw: 0.1, shadow: 2.0 },
+  { shape: 'spray', x: 2.51, z: -0.45, yaw: -0.5, shadow: 1.5 },
+  { shape: 'carboy', x: 4.23, z: -0.25, yaw: -0.35, shadow: 2.1 },
+  { shape: 'squeeze', x: 0.99, z: 0.8, yaw: -0.25, shadow: 1.4 },
+  { shape: 'pump', x: 1.98, z: 1.25, yaw: 0.3, shadow: 1.5 },
+  { shape: 'pouch', x: 3.12, z: 0.85, yaw: -0.35, shadow: 1.6 },
+  { shape: 'bar', x: 1.07, z: 2.5, yaw: 0.35, shadow: 1.9, lift: 0.14 },
+  { shape: 'bar-duo', x: 3.33, z: 2.3, yaw: -0.5, shadow: 2.0, lift: 0.14 },
 ];
 
 type Item = { obj: Group; shadow: Mesh; p: Placement; phase: number; kind: 'bottle' | 'bar' };
@@ -74,8 +74,8 @@ function buildScene(
   setupStudio(renderer, scene, keep, { aim: { x: 2.0, y: 1.0 }, glow: { x: 2.2, y: 1.8, w: 13, h: 9, strength: 0.9 } });
 
   const camera = new PerspectiveCamera(HERO_FRAME.fov, HERO_FRAME.width / HERO_FRAME.height, 0.1, 100);
-  camera.position.set(0, 2.9, 11.5);
-  camera.lookAt(0.2, 1.15, 0);
+  camera.position.set(0, 3.0, 12.6);
+  camera.lookAt(0.2, 1.2, 0);
 
   /* ---------- the range ---------- */
   const kit = createPackKit(renderer, keep);
@@ -120,7 +120,8 @@ function buildScene(
   const pose = (now: number) => {
     if (start < 0) start = now;
     const t = (now - start) / 1000;
-    const ramp = MathUtils.smoothstep(t, 0, 2.4); // ease motion in from the still's pose
+    // Hold the still's pose while the canvas fades in over it (1.2s), then ease the motion in.
+    const ramp = MathUtils.smoothstep(t, 1.2, 3.6);
     eased.x += (pointer.x - eased.x) * 0.045;
     eased.y += (pointer.y - eased.y) * 0.045;
     world.rotation.y = eased.x * 0.08;

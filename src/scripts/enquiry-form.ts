@@ -1,21 +1,16 @@
 /**
  * Progressive enhancement for EnquiryForm.astro.
  * - Pre-selects products named in ?product=<slug> (comma-separated or repeated).
+ * - Prefills the message from ?message=<text> (sent by the home page's quote card).
  * - On submit, validates natively, then reveals "Send via WhatsApp" / "Send via Email"
  *   links built with the same pure helpers the tests cover.
  * Without this script the form posts to mailto: as normal.
  */
-import { buildMailtoUrl, buildWhatsAppUrl, fieldsFromEntries } from '../lib/enquiry';
+import { buildMailtoUrl, buildWhatsAppUrl, fieldsFromEntries, parseEnquiryParams } from '../lib/enquiry';
 
 export function initEnquiryForms(root: ParentNode = document): void {
-  const params = new URLSearchParams(location.search);
-  const wanted = new Set(
-    params
-      .getAll('product')
-      .flatMap((v) => v.split(','))
-      .map((s) => s.trim())
-      .filter(Boolean),
-  );
+  const { products, message } = parseEnquiryParams(location.search);
+  const wanted = new Set(products);
 
   root.querySelectorAll<HTMLFormElement>('form[data-enquiry]').forEach((form) => {
     const email = form.dataset.email ?? '';
@@ -33,6 +28,9 @@ export function initEnquiryForms(root: ParentNode = document): void {
       }
     });
     if (first) (first as HTMLInputElement).closest('.enq-range')?.setAttribute('data-preselected', '');
+
+    const msg = form.querySelector<HTMLTextAreaElement>('textarea[data-message]');
+    if (msg && message && !msg.value) msg.value = message;
 
     if (!panel || !wa || !mail) return;
     if (hint) hint.textContent = 'Next, choose to send it by WhatsApp or by email.';

@@ -1,85 +1,59 @@
 ---
+/**
+ * Home (Floria-style restyle; docs/superpowers/specs/2026-10-16-floria-restyle-direction.md).
+ * Dark hero with the live range → The Range → how export orders work → The Categories →
+ * Straight answers → statement → buyer guides → the quote card → footer.
+ */
 import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/home.css';
 import HeroScene from '../components/HeroScene.astro';
 import ProductCard from '../components/ProductCard.astro';
-import Faq from '../components/Faq.astro';
-import CtaBand from '../components/CtaBand.astro';
 import site from '../config/site';
 import { getProductsByCategory } from '../lib/products';
 import { faqJsonLd } from '../lib/seo';
 import { homeFaqs } from '../lib/faqs';
-import { shapes, byCategory } from '../lib/pack-shapes';
 import { getPosts, fmtDate } from '../lib/blog';
+import { foundPictures } from '../data/found-pictures';
 
 const groups = await getProductsByCategory();
 const latestPosts = (await getPosts()).slice(0, 3);
 const allProducts = groups.flatMap((g) => g.products);
 const total = allProducts.length;
 
-const featuredSlugs = ['dish-wash-liquid', 'fabric-softener', 'toilet-bath-soap', 'floor-cleaner', 'detergent-powder', 'soap-noodles'];
-const featured = featuredSlugs
+const rangeSlugs = ['dish-wash-liquid', 'fabric-softener', 'floor-cleaner'];
+const range = rangeSlugs
   .map((s) => allProducts.find((p) => p.data.slug === s))
   .filter((p): p is NonNullable<typeof p> => !!p);
-
-const tile = (shape: keyof typeof shapes) => `<svg viewBox="0 0 240 240" aria-hidden="true" focusable="false">${shapes[shape]}</svg>`;
-
-const reasons = [
-  {
-    title: 'Private label, arranged for you',
-    text: 'Your artwork on the label, carton or wrapper, with fragrance, colour and pack choices agreed with the manufacturer. Artwork and a sample are approved before bulk production.',
-    shape: 'bar' as const,
-    cat: 'bath-personal-soaps',
-    link: { href: '/private-label/', label: 'How private label works' },
-  },
-  {
-    title: 'Pack sizes that suit your shelf',
-    text: 'Retail bottles, pouches and bars for supermarkets, refill cans for distributors, and bulk drums and bags for institutions and manufacturers. Each product page lists its typical packs.',
-    shape: 'pouch' as const,
-    cat: 'laundry-care',
-  },
-  {
-    title: 'Export documents prepared',
-    text: 'Commercial invoice, packing list, certificate of origin and product documents such as COA and MSDS, prepared for each shipment, with destination requirements confirmed per order.',
-    shape: 'carboy' as const,
-    cat: 'surface-home-cleaners',
-    link: { href: '/export-process/', label: 'See the export process' },
-  },
-  {
-    title: 'Mixed containers from one supplier',
-    text: 'Combine soaps, detergents and cleaners from several ranges in one 20ft or 40ft container, so you can trial a range without filling a container per product.',
-    shape: 'drum' as const,
-    cat: 'kitchen-care',
-  },
-];
 
 const t = site.exportTerms;
 const steps = [
   {
-    name: 'Quote',
-    text: 'Tell us the products, pack sizes, quantity and destination port. We reply with prices, typical specifications and lead times.',
-    shape: 'squeeze' as const,
-    cat: 'kitchen-care',
+    name: 'Specification and samples',
+    text: 'Send the products, pack sizes, quantity and destination port. We quote prices per pack with typical specifications and lead times, and arrange samples for your approval.',
   },
   {
-    name: 'Sample and confirm',
-    text: `Approve samples and, for private label, your artwork. ${t.incoterms}.`,
-    shape: 'carboy' as const,
-    cat: 'bath-personal-soaps',
+    name: 'Sourcing and private label',
+    text: 'We match your brief to a vetted Indian manufacturer. For private label, your artwork, fragrance and pack choices are approved before bulk production.',
   },
   {
-    name: 'Ship',
-    text: `The manufacturer produces and packs your order while we prepare the documents. ${t.port}. ${t.leadTime}.`,
-    shape: 'container' as const,
-    cat: 'laundry-care',
+    name: 'Documents and shipping',
+    text: `The manufacturer produces and packs the order while we prepare the invoice, packing list, certificate of origin, COA and MSDS. ${t.port}. ${t.leadTime}.`,
   },
 ];
-const container = `<g>
-  <ellipse class="pv-g" cx="120" cy="196" rx="104" ry="6"/>
-  <rect class="pv-d" x="18" y="92" width="204" height="100"/>
-  <g class="pv-b">${Array.from({ length: 11 }, (_, i) => `<rect x="${26 + i * 17.6}" y="100" width="11" height="84"/>`).join('')}</g>
-  <rect class="pv-l" x="150" y="112" width="56" height="34"/>
-  <g transform="translate(178 126) scale(.8)"><path class="pv-d" d="M0-11C9-7 9 6 0 11C-9 6-9-7 0-11Z"/><path class="pv-l" d="M-.9-7h1.8v16h-1.8z"/></g>
-</g>`;
+
+/* The bento: bath soaps large, raw materials tall, the other three small. */
+const tileOrder = ['bath-personal-soaps', 'industrial-raw-materials', 'laundry-care', 'kitchen-care', 'surface-home-cleaners'];
+const tiles = tileOrder
+  .map((slug) => groups.find((g) => g.category.data.slug === slug))
+  .filter((g): g is NonNullable<typeof g> => !!g)
+  .map((g) => {
+    const slug = g.category.data.slug;
+    const size = slug === 'bath-personal-soaps' ? 'large' : slug === 'industrial-raw-materials' ? 'tall' : 'small';
+    const dims = size === 'large' ? [1440, 1200] : size === 'tall' ? [760, 1200] : [1000, 800];
+    return { g, slug, size, w: dims[0], h: dims[1] };
+  });
+
+const port = foundPictures.find((p) => p.file.includes('kochi'))!;
 ---
 
 <BaseLayout
@@ -87,111 +61,94 @@ const container = `<g>
   description="GoodBiz Hygiene, a GoodBiz Global company, exports soaps, detergents and home-care products from vetted Indian manufacturers, with private label and mixed containers."
   path="/"
   jsonLd={[faqJsonLd(homeFaqs)]}
+  dark
+  preloadImage={{ href: '/images/renders/range-hero.webp' }}
 >
+  <!-- 1. Hero -->
   <section class="hero" aria-labelledby="hero-h">
-    <div class="mosaic">
-      <div class="mosaic-stage"><HeroScene /></div>
-      <div class="mosaic-tile mt-a" data-cat="kitchen-care" set:html={tile('squeeze')} />
-      <div class="mosaic-tile mt-b" data-cat="bath-personal-soaps" set:html={tile('bar-clear')} />
-      <div class="mosaic-tile mt-c" data-cat="industrial-raw-materials" set:html={tile('sack')} />
-    </div>
+    <HeroScene />
     <div class="wrap hero-copy">
-      <h1 id="hero-h" class="hero-h">GoodBiz Hygiene, soap &amp; <span class="nowrap">home-care</span> exporter &amp; supplier from India</h1>
-      <p class="hero-stand">
-        Soaps, detergents and cleaners from vetted Indian manufacturers, with private label and mixed containers for importers worldwide.
+      <p class="hero-eyebrow">Soaps · Detergents · Home care</p>
+      <h1 id="hero-h" class="hero-h">
+        <span class="line"><span class="line-in">Soap &amp; Home Care</span></span>
+        <span class="line"><span class="line-in serif-i">Exported from India.</span></span>
+      </h1>
+      <p class="hero-text">
+        GoodBiz Hygiene is a merchant exporter: we source soaps, detergents and cleaners from vetted Indian manufacturers, with
+        private label and mixed containers.
       </p>
       <div class="hero-actions">
-        <a class="btn" href="/contact/">Request a Quote</a>
-        <a class="btn btn--soft" href="/products/">View Products</a>
+        <a class="btn btn--light" href="/products/">View Products</a>
+        <a class="link-arrow hero-link" href="/contact/">Request a Quote <span class="arr" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
 
-  <section class="ranges" aria-labelledby="ranges-h">
-    <div class="wrap ranges-head" data-reveal>
-      <h2 id="ranges-h">Five ranges to fill one container</h2>
-      <p class="lead">{total} products under HSN 3401, 3402 and closely related headings.</p>
+  <!-- 2. The Range -->
+  <section class="wrap range" aria-labelledby="range-h">
+    <div class="range-head">
+      <div data-reveal>
+        <h2 id="range-h">The Range.</h2>
+        <p class="range-intro">
+          Three of {total} products. Each has its own page with typical specifications, pack sizes and private-label options.
+        </p>
+      </div>
+      <a class="range-all link-arrow" href="/products/" data-reveal style="--i: 1">
+        View all {total} products <span class="arr" aria-hidden="true">↗</span>
+      </a>
     </div>
-    <ul class="range-strip">
+    <ul class="range-cards">
       {
-        groups.map((g, i) => (
-          <li class="range-tile" data-cat={g.category.data.slug} data-reveal style={`--d:${i * 70}ms`}>
-            <div class="range-art" set:html={tile(byCategory[g.category.data.slug] ?? 'squeeze')} />
-            <h3 class="range-name">
-              <a href={`/categories/${g.category.data.slug}/`}>{g.category.data.title}</a>
-            </h3>
-            <p class="range-meta">
-              {g.products.length} products · HSN {g.category.data.hsnRange}
-            </p>
+        range.map((p, i) => (
+          <li class={`range-card range-card--${i + 1}`} data-reveal style={`--i: ${i + 1}`}>
+            <ProductCard product={p} details={false} />
           </li>
         ))
       }
     </ul>
   </section>
 
-  <section class="wrap section featured" aria-labelledby="featured-h">
-    <div class="featured-head" data-reveal>
-      <h2 id="featured-h">From the range</h2>
-      <a class="featured-all" href="/products/">All {total} products</a>
-    </div>
-    <div class="grid-cards featured-grid">
-      {
-        featured.map((p, i) => (
-          <div data-reveal style={`--d:${(i % 3) * 80}ms`}>
-            <ProductCard product={p} />
-          </div>
-        ))
-      }
-    </div>
-  </section>
-
-  <section class="why" aria-labelledby="why-h">
-    <div class="wrap why-grid">
-      <div class="why-head" data-reveal>
-        <h2 id="why-h">Why source through GoodBiz Hygiene</h2>
-        <p class="lead">
-          One merchant exporter between you and India’s soap and detergent makers: we match your brief to the right manufacturer, then
-          handle the quote, the paperwork and the shipment.
-        </p>
+  <!-- 3. How export orders work -->
+  <section class="process" aria-labelledby="process-h">
+    <div class="wrap process-grid">
+      <div class="process-head">
+        <div class="process-sticky">
+          <h2 id="process-h" data-reveal>
+            How export <span class="serif-i">orders work.</span>
+          </h2>
+          <p class="process-intro" data-reveal style="--i: 1">
+            One merchant exporter between you and the manufacturer: the quote, the samples, the paperwork and the shipment, from the first
+            message to the bill of lading.
+          </p>
+          <figure class="process-photo" data-reveal style="--i: 2">
+            <img
+              src="/images/found/kochi-port-night-600.webp"
+              srcset="/images/found/kochi-port-night-600.webp 600w, /images/found/kochi-port-night.webp 1200w"
+              sizes="(max-width: 900px) 92vw, 480px"
+              width="1200"
+              height="900"
+              alt="Gantry cranes loading a container ship at night at the International Container Transshipment Terminal in Kochi, India"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Container terminal, Kochi. Photo: {port.creator}, {port.license}.</figcaption>
+          </figure>
+          <p data-reveal style="--i: 3">
+            <a class="link-arrow process-link" href="/export-process/">The export process in full <span class="arr" aria-hidden="true">→</span></a>
+          </p>
+        </div>
       </div>
-      <ul class="why-list">
-        {
-          reasons.map((r, i) => (
-            <li class="why-item" data-reveal style={`--d:${i * 60}ms`}>
-              <div class="why-art" data-cat={r.cat} set:html={tile(r.shape)} />
-              <div>
-                <h3>{r.title}</h3>
-                <p>{r.text}</p>
-                {r.link && (
-                  <p class="why-link">
-                    <a href={r.link.href}>{r.link.label}</a>
-                  </p>
-                )}
-              </div>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-  </section>
-
-  <section class="wrap section steps" aria-labelledby="steps-h">
-    <div class="steps-row">
-      <div class="steps-intro" data-reveal>
-        <h2 id="steps-h">From enquiry to port</h2>
-        <p><a href="/export-process/">How export orders work, in full</a></p>
-      </div>
-      <ol class="steps-list">
+      <ol class="steps">
         {
           steps.map((s, i) => (
-            <li class={`step step--${i + 1}`} data-reveal style={`--d:${i * 90}ms`}>
-              <div
-                class="step-tile"
-                data-cat={s.cat}
-                set:html={`<svg viewBox="0 0 240 240" aria-hidden="true" focusable="false">${s.shape === 'container' ? container : shapes[s.shape]}</svg>`}
-              />
-              <h3 class="step-name">{s.name}</h3>
-              <p class="step-text">{s.text}</p>
+            <li class={`step step--${i + 1}`} data-step>
+              <span class="step-num" aria-hidden="true">
+                {String(i + 1).padStart(2, '0')}
+              </span>
+              <div class="step-body">
+                <h3>{s.name}</h3>
+                <p>{s.text}</p>
+              </div>
             </li>
           ))
         }
@@ -199,28 +156,97 @@ const container = `<g>
     </div>
   </section>
 
-  <div class="wrap home-faq" data-reveal>
-    <Faq faqs={homeFaqs} heading="Questions importers ask first" id="home-faq" />
-    <p class="home-faq-more"><a href="/faq/">More answers on the FAQ page</a></p>
-  </div>
+  <!-- 4. The Categories -->
+  <section class="wrap cats" aria-labelledby="cats-h">
+    <div class="cats-head" data-reveal>
+      <h2 id="cats-h">The Categories.</h2>
+      <p>Five ranges under HSN 3401 and 3402. Mix them in one 20ft or 40ft container.</p>
+    </div>
+    <ul class="bento">
+      {
+        tiles.map(({ g, slug, size, w, h }, i) => (
+          <li class={`tile tile--${size}`} data-reveal style={`--i: ${i % 3}`}>
+            <a class="tile-link" href={`/categories/${slug}/`}>
+              <img
+                src={`/images/renders/category-${slug}.webp`}
+                width={w}
+                height={h}
+                alt={`Illustration of typical ${g.category.data.title.toLowerCase()} packs`}
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="tile-label">
+                <h3 class="tile-title">{g.category.data.title}</h3>
+                <span class="tile-meta">
+                  {g.products.length} products · HSN {g.category.data.hsnRange}
+                </span>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 
+  <!-- 5. Straight answers -->
+  <section class="answers" aria-labelledby="answers-h">
+    <div class="wrap">
+      <h2 id="answers-h" class="answers-h serif-i" data-reveal>Straight answers.</h2>
+      <ul class="answer-wall">
+        {
+          homeFaqs.map((f, i) => (
+            <li class="answer" data-reveal style={`--i: ${i % 3}`}>
+              <h3 class="answer-q">{f.q}</h3>
+              <p class="answer-a">{f.a}</p>
+              <p class="answer-sign">Buyer FAQ</p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="answers-more" data-reveal>
+        <a class="link-arrow" href="/faq/">More answers on the FAQ page <span class="arr" aria-hidden="true">→</span></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 6. Statement -->
+  <section class="statement" aria-labelledby="statement-h">
+    <img class="statement-plate" src="/images/found/neem-plate.webp" width="1100" height="682" alt="" loading="lazy" decoding="async" />
+    <div class="wrap statement-inner">
+      <svg class="statement-leaf" viewBox="0 0 48 48" aria-hidden="true" focusable="false" data-reveal>
+        <path d="M40 8C22 8 10 18 10 31c0 3 .7 5.6 2 8M40 8c0 17-9.5 29-24 29-1.5 0-2.8-.2-4-.5M40 8 15 34" />
+      </svg>
+      <h2 id="statement-h" data-reveal style="--i: 1">Never a generic supplier.</h2>
+      <p data-reveal style="--i: 2">
+        GoodBiz Hygiene does not manufacture. We match each brief to a vetted Indian maker, publish typical specifications, and confirm
+        every grade, pack and port in writing on the quote.
+      </p>
+    </div>
+  </section>
+
+  <!-- 7. Buyer guides -->
   {
     latestPosts.length > 0 && (
-      <section class="wrap section home-blog" aria-labelledby="blog-h">
-        <div class="featured-head" data-reveal>
-          <h2 id="blog-h">Buyer guides</h2>
-          <a class="featured-all" href="/blog/">All guides</a>
+      <section class="wrap guides" aria-labelledby="guides-h">
+        <div class="guides-head" data-reveal>
+          <h2 id="guides-h">Buyer guides</h2>
+          <a class="link-arrow" href="/blog/">
+            All guides <span class="arr" aria-hidden="true">↗</span>
+          </a>
         </div>
-        <ul class="home-blog-grid">
+        <ul class="guide-rows">
           {latestPosts.map((p, i) => (
-            <li class="home-blog-item" data-reveal style={`--d:${i * 80}ms`}>
-              <p class="note">
-                <time datetime={p.data.date.toISOString().slice(0, 10)}>{fmtDate(p.data.date)}</time>
-              </p>
-              <h3 class="post-title">
-                <a class="plain-link" href={`/blog/${p.id}/`}>{p.data.title}</a>
+            <li class="guide" data-reveal style={`--i: ${i}`}>
+              <time class="guide-date" datetime={p.data.date.toISOString().slice(0, 10)}>
+                {fmtDate(p.data.date)}
+              </time>
+              <h3 class="guide-title">
+                <a href={`/blog/${p.id}/`}>{p.data.title}</a>
               </h3>
-              <p>{p.data.description}</p>
+              <p class="guide-desc">{p.data.description}</p>
+              <span class="guide-arrow" aria-hidden="true">
+                ↗
+              </span>
             </li>
           ))}
         </ul>
@@ -228,8 +254,27 @@ const container = `<g>
     )
   }
 
-  <CtaBand
-    heading="Ready to quote your first container?"
-    secondary={{ label: 'See private label options', href: '/private-label/' }}
-  />
+  <!-- 8. The quote card: the one live thing -->
+  <section class="wrap quote" aria-labelledby="quote-h">
+    <div class="quote-card" data-reveal>
+      <img class="quote-plate" src="/images/found/lemon-plate.webp" width="1600" height="880" alt="" loading="lazy" decoding="async" />
+      <div class="quote-inner">
+        <h2 id="quote-h">Request a quote.</h2>
+        <p>Tell us what you need in one line. The enquiry form opens with it written in, ready for your products, quantity and port.</p>
+        <form class="quote-form" action="/contact/" method="get">
+          <label class="visually-hidden" for="quote-msg">What do you need?</label>
+          <input
+            id="quote-msg"
+            name="message"
+            type="text"
+            maxlength="500"
+            autocomplete="off"
+            placeholder="e.g. 1×20ft dish wash, lemon, 500 ml"
+            required
+          />
+          <button class="btn btn--light" type="submit">Start enquiry <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

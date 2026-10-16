@@ -1,40 +1,22 @@
 ---
 /**
- * HeroScene: the home page "range shelf" (spec §14).
- * Renders a static SVG composition of the range first (LCP-safe, and the fallback),
- * with a <canvas> above it. A tiny loader checks reduced motion, WebGL and data saver,
- * then imports the Three.js scene only when the stage is visible and the browser is idle.
+ * HeroScene: the range photographed in a dark studio (spec §14, restyle direction §1).
+ * The pre-rendered still (`npm run renders`, the same scene at t = 0) paints first: it is the
+ * LCP element and the fallback. A tiny loader checks reduced motion, WebGL and data saver, then
+ * imports the Three.js scene only once the stage is visible and the browser is idle; the canvas
+ * fades in over the still. Both are cropped the same way, so the still simply comes alive.
  */
-import { shapes, type Shape } from '../lib/pack-shapes';
-
-// Same arrangement as the 3D scene: back row first, then the front row.
-// [shape, category, centre x, ground y, scale]; the frame is cropped to 960 × 420.
-const packs: [Shape, string, number, number, number][] = [
-  ['jug', 'laundry-care', 250, 400, 1.15],
-  ['spray', 'surface-home-cleaners', 530, 392, 1.1],
-  ['drum', 'industrial-raw-materials', 790, 386, 1.08],
-  ['bar', 'bath-personal-soaps', 120, 470, 1.0],
-  ['squeeze', 'kitchen-care', 390, 470, 1.3],
-  ['pump', 'bath-personal-soaps', 660, 474, 1.22],
-  ['bar-duo', 'bath-personal-soaps', 860, 486, 0.98],
-];
-const composition = packs
-  .map(([shape, cat, cx, gy, s]) => {
-    const x = cx - 120 * s;
-    const y = gy - 214 * s;
-    return `<g data-cat="${cat}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${s})">${shapes[shape]}</g>`;
-  })
-  .join('');
 ---
 
 <div class="stage" data-hero-stage>
-  <svg
+  <img
     class="stage-still"
-    viewBox="0 110 960 420"
-    preserveAspectRatio="xMidYMid meet"
-    role="img"
-    aria-label="The GoodBiz Hygiene range: a fabric softener jug, a spray cleaner, a raw-material drum, soap bars, a dish wash bottle and a hand wash pump bottle"
-    set:html={composition}
+    src="/images/renders/range-hero.webp"
+    width="1600"
+    height="1000"
+    alt="Illustration of the GoodBiz Hygiene range in typical export packs: a dish wash bottle, a fabric softener jug, a spray cleaner, a hand wash pump, a detergent pouch, a raw-material drum, a jerrycan and soap bars"
+    fetchpriority="high"
+    decoding="async"
   />
   <canvas class="stage-canvas" aria-hidden="true"></canvas>
 </div>
@@ -47,7 +29,7 @@ const composition = packs
 
   if (stage && canvas && shouldRun3D(detectHeroEnv())) {
     const idle = (cb: () => void) =>
-      'requestIdleCallback' in window ? window.requestIdleCallback(cb, { timeout: 2500 }) : setTimeout(cb, 600);
+      'requestIdleCallback' in window ? window.requestIdleCallback(cb, { timeout: 3000 }) : setTimeout(cb, 800);
 
     let started = false;
     const start = () => {
@@ -59,16 +41,21 @@ const composition = packs
           window.addEventListener('pagehide', (e) => !e.persisted && dispose(), { once: true });
         })
         .catch(() => {
-          /* the static composition stays */
+          /* the still stays */
         });
     };
 
-    const io = new IntersectionObserver((entries) => {
-      if (entries.some((e) => e.isIntersecting)) {
-        io.disconnect();
-        idle(start);
-      }
-    });
-    io.observe(stage);
+    // Wait for the page to finish loading first, so the scene never competes with the first paint.
+    const begin = () => {
+      const io = new IntersectionObserver((entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          idle(start);
+        }
+      });
+      io.observe(stage);
+    };
+    if (document.readyState === 'complete') begin();
+    else window.addEventListener('load', begin, { once: true });
   }
 </script>
