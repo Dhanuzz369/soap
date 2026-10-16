@@ -1,10 +1,12 @@
 ---
 import { getProductsByCategory, type CategoryEntry, type ProductEntry } from '../../lib/products';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import Faq from '../../components/Faq.astro';
-import CtaBand from '../../components/CtaBand.astro';
+import AnswerWall from '../../components/AnswerWall.astro';
+import QuoteCard from '../../components/QuoteCard.astro';
 import { faqJsonLd } from '../../lib/seo';
+import { splitName } from '../../lib/heading';
 
 export async function getStaticPaths() {
   const groups = await getProductsByCategory();
@@ -22,41 +24,72 @@ const { category, products } = Astro.props;
 const c = category.data;
 const url = `/categories/${c.slug}/`;
 const faqs = products.slice(0, 6).map((p) => p.data.faqs[0]).filter((f) => !!f);
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Products', url: '/products/' },
+  { name: c.title, url },
+];
+// Category group renders (npm run renders): sizes as made by scripts/render-packs.mjs.
+const dims: Record<string, [number, number]> = {
+  'bath-personal-soaps': [1440, 1200],
+  'industrial-raw-materials': [760, 1200],
+};
+const [w, h] = dims[c.slug] ?? [1000, 800];
+const name = splitName(c.title);
 ---
 
 <BaseLayout
   title={`${c.title} Exporter & Supplier from India`}
   description={c.summary}
   path={url}
-  breadcrumbs={[
-    { name: 'Home', url: '/' },
-    { name: 'Products', url: '/products/' },
-    { name: c.title, url },
-  ]}
+  breadcrumbs={breadcrumbs}
   jsonLd={faqs.length ? [faqJsonLd(faqs)] : []}
+  dark
 >
-  <header class="field cat-hero" data-cat={c.slug}>
-    <div class="wrap">
-      <h1 class="cat-title">{c.title} Exporter &amp; Supplier from India</h1>
-      <p class="lead">{c.intro}</p>
-      <p class="note" style="margin-top:20px">HSN range {c.hsnRange}. The 8-digit ITC-HS code is confirmed per order.</p>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1={name.l1}
+    l2="Exporter & Supplier from India"
+    scale={name.scale}
+    lead={c.summary}
+    size="product"
+    media={{
+      src: `/images/renders/category-${c.slug}.webp`,
+      width: w,
+      height: h,
+      alt: `Illustration of typical ${c.title.toLowerCase()} packs`,
+      mode: 'bleed',
+    }}
+  >
+    <p class="ph-hsn">
+      <span class="pill">HSN {c.hsnRange}</span>
+      <span>{products.length} products · 8-digit ITC-HS code confirmed per order</span>
+    </p>
+    <div class="ph-actions">
+      <a class="btn btn--light" href="/contact/">Request a Quote</a>
+      <a class="link-arrow" href="#cat-products">See the {products.length} products <span class="arr" aria-hidden="true">↓</span></a>
     </div>
-  </header>
+  </PageHero>
 
-  <section class="wrap section" aria-labelledby="cat-products-h">
-    <h2 id="cat-products-h" class="h-sub">Which {c.title.toLowerCase()} products do we supply?</h2>
-    <div class="grid-cards" style="margin-top:40px">
-      {products.map((p) => <ProductCard product={p} />)}
+  <section class="wrap sec" id="cat-products" aria-labelledby="cat-products-h">
+    <div class="sec-head" data-reveal>
+      <div>
+        <h2 id="cat-products-h">Which {c.title.toLowerCase()} products do we supply?</h2>
+        <p>{c.intro}</p>
+      </div>
     </div>
+    <ul class="cards-stagger">
+      {
+        products.map((p, i) => (
+          <li data-reveal style={`--i: ${i % 3}`}>
+            <ProductCard product={p} />
+          </li>
+        ))
+      }
+    </ul>
   </section>
 
-  {
-    faqs.length > 0 && (
-      <div class="wrap prod-block">
-        <Faq faqs={faqs} heading={`${c.title}: questions buyers ask`} />
-      </div>
-    )
-  }
+  {faqs.length > 0 && <AnswerWall faqs={faqs} heading="Straight answers." id="faq" />}
 
-  <CtaBand heading={`Quote ${c.title.toLowerCase()} for your market`} />
+  <QuoteCard heading={`Quote ${c.title.toLowerCase()}.`} />
 </BaseLayout>

@@ -1,16 +1,18 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProductVisual from '../../components/ProductVisual.astro';
-import HsnChip from '../../components/HsnChip.astro';
+import PageHero, { type HeroMedia } from '../../components/PageHero.astro';
 import SpecTable from '../../components/SpecTable.astro';
-import Faq from '../../components/Faq.astro';
-import CtaBand from '../../components/CtaBand.astro';
+import AnswerWall from '../../components/AnswerWall.astro';
+import GuideRows from '../../components/GuideRows.astro';
+import QuoteCard from '../../components/QuoteCard.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import { getRelated, type ProductEntry } from '../../lib/products';
 import { getPosts, type BlogEntry } from '../../lib/blog';
 import { productJsonLd, faqJsonLd, absoluteUrl } from '../../lib/seo';
-import { productImagePath } from '../../lib/product-image';
+import { productImagePath, productPicture } from '../../lib/product-image';
+import { shapeFor } from '../../lib/pack-shapes';
+import { splitName } from '../../lib/heading';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -48,6 +50,21 @@ const breadcrumbs = [
   { name: category.data.title, url: `/categories/${category.data.slug}/` },
   { name: d.title, url: url },
 ];
+const name = splitName(d.title);
+const pic = productPicture(d.slug, shapeFor(d.slug, catId), catId);
+const media: HeroMedia | undefined = pic
+  ? pic.kind === 'photo'
+    ? { src: pic.src, width: pic.width, height: pic.height, alt: d.title, mode: 'card' }
+    : {
+        src: pic.src,
+        srcset: pic.srcset,
+        sizes: '(max-width: 759px) 100vw, 54vw',
+        width: pic.width,
+        height: pic.height,
+        alt: `Illustration of ${d.title.toLowerCase()} in a typical export pack`,
+        mode: 'bleed',
+      }
+  : undefined;
 ---
 
 <BaseLayout
@@ -57,31 +74,29 @@ const breadcrumbs = [
   ogImage={image}
   breadcrumbs={breadcrumbs}
   jsonLd={[productJsonLd({ ...d, category: category.data.title, image }, absoluteUrl(url)), faqJsonLd(d.faqs)]}
+  dark
 >
-  <header class="field prod-hero" data-cat={catId}>
-    <div class="wrap prod-hero-grid">
-      <div class="prod-hero-copy">
-        <h1 class="prod-title">{d.title} Exporter &amp; Supplier from India</h1>
-        <p class="lead">{d.answer}</p>
-        <div class="prod-actions">
-          <a class="btn" href={`/contact/?product=${d.slug}`}>Request a Quote</a>
-          <a class="btn btn--soft" href="#faq">Read the FAQ</a>
-        </div>
-      </div>
-      <div class="prod-hero-visual">
-        <ProductVisual slug={d.slug} title={d.title} category={catId} size="hero" />
-      </div>
+  <PageHero breadcrumbs={breadcrumbs} l1={name.l1} sub={name.sub} l2="Exporter & Supplier from India" scale={name.scale} lead={d.answer} media={media} size="product">
+    <p class="ph-hsn">
+      <span class="pill"><abbr title="Harmonized System of Nomenclature">HSN</abbr>&nbsp;{d.hsn}</span>
+      <span>{d.hsnNote ? 'Alternative classification noted below' : '8-digit ITC-HS code confirmed per order'}</span>
+    </p>
+    <div class="ph-actions">
+      <a class="btn btn--light" href={`/contact/?product=${d.slug}`}>Request a Quote</a>
+      <a class="link-arrow" href="#faq">Read the FAQ <span class="arr" aria-hidden="true">→</span></a>
     </div>
-  </header>
+  </PageHero>
 
-  <section class="wrap prod-facts" aria-labelledby="facts-h">
-    <h2 id="facts-h" class="h-sub">Key facts for buyers</h2>
-    <dl class="facts">
+  <section class="wrap sec" aria-labelledby="facts-h">
+    <div class="sec-head" data-reveal>
+      <h2 id="facts-h">Key facts for buyers</h2>
+    </div>
+    <dl class="facts" data-reveal style="--i: 1">
       <div>
         <dt>HSN code</dt>
         <dd>
-          <HsnChip code={d.hsn} withNote={!d.hsnNote} />
-          {d.hsnNote && <p class="note">{d.hsnNote}</p>}
+          {d.hsn}
+          <p class="note">{d.hsnNote ?? 'The 8-digit ITC-HS code is confirmed per order.'}</p>
         </dd>
       </div>
       <div>
@@ -92,32 +107,31 @@ const breadcrumbs = [
         <dt>Private label</dt>
         <dd>
           {d.privateLabel.available ? 'Available.' : 'Not offered for this product.'}
-          {d.privateLabel.available && d.privateLabel.options.length > 0 && (
-            <span> {d.privateLabel.options.join('; ')}.</span>
-          )}
+          {d.privateLabel.available && d.privateLabel.options.length > 0 && <span> {d.privateLabel.options.join('; ')}.</span>}
         </dd>
       </div>
     </dl>
   </section>
 
-  <section class="wrap prod-block" aria-labelledby="var-h">
-    <h2 id="var-h" class="h-sub">Available varieties</h2>
-    <ul class="chips chips--lg" aria-label="Varieties">
-      {d.variants.map((v) => <li class="chip">{v}</li>)}
-    </ul>
-  </section>
-
-  <section class="wrap prod-block" aria-labelledby="pack-h">
-    <h2 id="pack-h" class="h-sub">Pack sizes &amp; packaging</h2>
-    <div class="pack-grid">
-      <div>
-        <h3 class="h-mini">Pack sizes</h3>
+  <section class="wrap sec" aria-labelledby="var-h">
+    <div class="sec-head" data-reveal>
+      <h2 id="var-h">Varieties, pack sizes and packaging</h2>
+    </div>
+    <div class="chip-groups">
+      <div data-reveal>
+        <h3>Available varieties</h3>
+        <ul class="chips chips--lg" aria-label="Varieties">
+          {d.variants.map((v) => <li class="chip">{v}</li>)}
+        </ul>
+      </div>
+      <div data-reveal style="--i: 1">
+        <h3>Pack sizes</h3>
         <ul class="chips chips--lg" aria-label="Pack sizes">
           {d.packSizes.map((v) => <li class="chip">{v}</li>)}
         </ul>
       </div>
-      <div>
-        <h3 class="h-mini">Packaging options</h3>
+      <div data-reveal style="--i: 2">
+        <h3>Packaging options</h3>
         <ul class="plain-list">
           {d.packaging.map((v) => <li>{v}</li>)}
         </ul>
@@ -125,20 +139,30 @@ const breadcrumbs = [
     </div>
   </section>
 
-  <section class="wrap prod-block" aria-labelledby="spec-h">
-    <h2 id="spec-h" class="h-sub">What are the typical specifications of {d.title}?</h2>
-    <SpecTable specs={d.specs} />
+  <section class="wrap sec split" aria-labelledby="spec-h">
+    <div class="split-head" data-reveal>
+      <h2 id="spec-h">What are the typical specifications?</h2>
+      <p class="note">{d.title}: typical values for export grades. Final values are confirmed with the manufacturer per order.</p>
+    </div>
+    <div data-reveal style="--i: 1">
+      <SpecTable specs={d.specs} />
+    </div>
   </section>
 
-  <section class="wrap prod-block">
+  <section class="wrap sec post-layout" aria-label={`About ${d.title}`}>
     <div class="prose"><Content /></div>
   </section>
 
   {
     d.containerLoad && (
-      <section class="wrap prod-block" aria-labelledby="load-h">
-        <h2 id="load-h" class="h-sub">Container loading (approx.)</h2>
-        <dl class="facts facts--two">
+      <section class="wrap sec" aria-labelledby="load-h">
+        <div class="sec-head" data-reveal>
+          <div>
+            <h2 id="load-h">Container loading (approx.)</h2>
+            <p>Approximate figures; the final loading plan is confirmed per order.</p>
+          </div>
+        </div>
+        <dl class="facts facts--two" data-reveal style="--i: 1">
           <div>
             <dt>20 ft container</dt>
             <dd>{d.containerLoad.ft20}</dd>
@@ -148,26 +172,27 @@ const breadcrumbs = [
             <dd>{d.containerLoad.ft40}</dd>
           </div>
         </dl>
-        <p class="note" style="margin-top:12px">Approximate figures; the final loading plan is confirmed per order.</p>
       </section>
     )
   }
 
-  <div class="wrap prod-block">
-    <Faq faqs={d.faqs} heading={`${d.title}: questions buyers ask`} />
-  </div>
+  <AnswerWall faqs={d.faqs} heading="Straight answers." id="faq" />
+
+  {guides.length > 0 && <GuideRows posts={guides} heading="Buyer guides for this product" id="guides" />}
 
   {
-    guides.length > 0 && (
-      <section class="wrap prod-block" aria-labelledby="guides-h">
-        <h2 id="guides-h" class="h-sub">Buyer guides for this product</h2>
-        <ul class="post-list post-list--compact">
-          {guides.map((g) => (
-            <li class="post-item">
-              <h3 class="post-title">
-                <a class="plain-link" href={`/blog/${g.id}/`}>{g.data.title}</a>
-              </h3>
-              <p>{g.data.description}</p>
+    related.length > 0 && (
+      <section class="wrap sec" aria-labelledby="rel-h">
+        <div class="sec-head" data-reveal>
+          <h2 id="rel-h">Related products</h2>
+          <a class="link-arrow" href={`/categories/${category.data.slug}/`}>
+            All {category.data.title.toLowerCase()} <span class="arr" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <ul class="cards-stagger">
+          {related.map((p, i) => (
+            <li data-reveal style={`--i: ${i % 3}`}>
+              <ProductCard product={p} details={false} />
             </li>
           ))}
         </ul>
@@ -175,20 +200,9 @@ const breadcrumbs = [
     )
   }
 
-  <CtaBand
-    heading={`Request a quote for ${d.title}`}
-    text="Tell us the variety, pack size, quantity and destination port. We reply with prices, specifications and lead time."
-    primary={{ label: 'Request a Quote', href: `/contact/?product=${d.slug}` }}
+  <QuoteCard
+    heading="Quote this product."
+    text={`Tell us the ${d.title.toLowerCase()} variety, pack size, quantity and destination port in one line. The enquiry form opens with it written in.`}
+    product={d.slug}
   />
-
-  {
-    related.length > 0 && (
-      <section class="wrap section" aria-labelledby="rel-h">
-        <h2 id="rel-h" class="h-sub">Related products</h2>
-        <div class="grid-cards" style="margin-top:32px">
-          {related.map((p) => <ProductCard product={p} />)}
-        </div>
-      </section>
-    )
-  }
 </BaseLayout>
