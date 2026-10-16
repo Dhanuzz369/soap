@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { faqJsonLd } from '../lib/seo';
+import site from '../config/site';
+
+const options = [
+  {
+    title: 'Your brand on the pack',
+    text: 'Label, sleeve, carton or wrapper printed with your artwork. We send your files to the manufacturer and return a proof for approval before printing.',
+  },
+  {
+    title: 'Fragrance and colour',
+    text: 'Choose from the fragrances and colours each product is typically made in, such as lemon, lavender, rose or neem. Changes outside the standard range are checked with the manufacturer first.',
+  },
+  {
+    title: 'Pack sizes and formats',
+    text: 'Retail bottles, refills, pouches, bars and bulk cans or drums, chosen to suit your shelf and your price point. Each product page lists its typical pack sizes.',
+  },
+  {
+    title: 'Grade and specification',
+    text: 'Pick the grade your market expects, for example TFM for bath soap or active matter for detergents. Typical values are shown on product pages and the final values are stated on your quotation.',
+  },
+];
+
+const steps = [
+  { title: 'Share your brief', text: 'Products, pack sizes, fragrances, target market and an estimate of quantity.' },
+  { title: 'Quotation and manufacturer match', text: 'We match the brief to a vetted Indian manufacturer and quote per pack, with incoterms and lead time.' },
+  { title: 'Samples and artwork', text: 'You approve a product sample and a printed proof of your artwork. Nothing goes into production before both are approved.' },
+  { title: 'Production and packing', text: 'The manufacturer produces and packs your order under your brand, marked for export.' },
+  { title: 'Documents and shipment', text: `We prepare the export documents and book the shipment. ${site.exportTerms.port}.` },
+];
+
+const faqs = [
+  {
+    q: 'What is the minimum order for private label?',
+    a: 'It depends on the product and the pack. Most products are typically quoted per 20ft container, and a private-label design may carry its own minimum for printed labels or cartons. Each product page lists its typical MOQ.',
+  },
+  {
+    q: 'Who owns the artwork and the brand?',
+    a: 'You do. Your artwork is used only for your orders. GoodBiz Hygiene coordinates printing with the manufacturer.',
+  },
+  {
+    q: 'Can I mix private-label and standard products in one container?',
+    a: 'Yes. Private-label lines can share a container with other products from the GoodBiz Hygiene range, subject to packing and compatibility rules confirmed at quotation.',
+  },
+  {
+    q: 'How long does a private-label order take?',
+    a: `${site.exportTerms.leadTime}. A first order includes time to approve samples and artwork; repeat orders are usually quicker.`,
+  },
+  {
+    q: 'Does GoodBiz Hygiene manufacture the products?',
+    a: 'No. GoodBiz Hygiene is a merchant exporter from India. Products are made by vetted Indian manufacturers and GoodBiz Hygiene manages the brief, approvals, documents and shipping.',
+  },
+];
+---
+
+<BaseLayout
+  title="Private Label Soaps & Cleaning Products: Exporter & Supplier from India"
+  description="Private label soaps, detergents and cleaners from India: your artwork, fragrance, colour and pack sizes, made by vetted Indian manufacturers and exported by GoodBiz Hygiene."
+  path="/private-label/"
+  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Private Label', url: '/private-label/' }]}
+  jsonLd={[faqJsonLd(faqs)]}
+>
+  <header class="field page-hero" data-cat="bath-personal-soaps">
+    <div class="wrap">
+      <h1 class="page-title">Private label soaps and cleaning products from India</h1>
+      <p class="lead">
+        Sell soaps, detergents and cleaners under your own brand. GoodBiz Hygiene matches your brief to a vetted Indian manufacturer, manages
+        samples and artwork, and ships the finished goods to your port.
+      </p>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="pl-options-h">
+    <div class="wrap" data-reveal>
+      <h2 id="pl-options-h" class="h-sub">What can be customised?</h2>
+    </div>
+    <div class="band-list" style="margin-top:40px">
+      {
+        options.map((o) => (
+          <div class="band" data-reveal>
+            <h3>{o.title}</h3>
+            <p>{o.text}</p>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="wrap split-section" aria-labelledby="pl-steps-h">
+    <div data-reveal>
+      <h2 id="pl-steps-h">How does a private-label order run?</h2>
+    </div>
+    <ol class="plain-list" data-reveal>
+      {
+        steps.map((s) => (
+          <li>
+            <strong>{s.title}.</strong> {s.text}
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <div class="wrap prod-block" data-reveal>
+    <Faq faqs={faqs} heading="Private label: questions buyers ask" />
+  </div>
+
+  <CtaBand heading="Start your private-label brief" text="Send the products, packs and market you have in mind. We reply with options, prices and lead times." />
+</BaseLayout>

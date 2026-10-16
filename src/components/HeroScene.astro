@@ -1,0 +1,74 @@
+---
+/**
+ * HeroScene: the home page "range shelf" (spec §14).
+ * Renders a static SVG composition of the range first (LCP-safe, and the fallback),
+ * with a <canvas> above it. A tiny loader checks reduced motion, WebGL and data saver,
+ * then imports the Three.js scene only when the stage is visible and the browser is idle.
+ */
+import { shapes, type Shape } from '../lib/pack-shapes';
+
+// Same arrangement as the 3D scene: back row first, then the front row.
+// [shape, category, centre x, ground y, scale]; the frame is cropped to 960 × 420.
+const packs: [Shape, string, number, number, number][] = [
+  ['jug', 'laundry-care', 250, 400, 1.15],
+  ['spray', 'surface-home-cleaners', 530, 392, 1.1],
+  ['drum', 'industrial-raw-materials', 790, 386, 1.08],
+  ['bar', 'bath-personal-soaps', 120, 470, 1.0],
+  ['squeeze', 'kitchen-care', 390, 470, 1.3],
+  ['pump', 'bath-personal-soaps', 660, 474, 1.22],
+  ['bar-duo', 'bath-personal-soaps', 860, 486, 0.98],
+];
+const composition = packs
+  .map(([shape, cat, cx, gy, s]) => {
+    const x = cx - 120 * s;
+    const y = gy - 214 * s;
+    return `<g data-cat="${cat}" transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${s})">${shapes[shape]}</g>`;
+  })
+  .join('');
+---
+
+<div class="stage" data-hero-stage>
+  <svg
+    class="stage-still"
+    viewBox="0 110 960 420"
+    preserveAspectRatio="xMidYMid meet"
+    role="img"
+    aria-label="The GoodBiz Hygiene range: a fabric softener jug, a spray cleaner, a raw-material drum, soap bars, a dish wash bottle and a hand wash pump bottle"
+    set:html={composition}
+  />
+  <canvas class="stage-canvas" aria-hidden="true"></canvas>
+</div>
+
+<script>
+  import { shouldRun3D, detectHeroEnv } from '../scripts/hero-env';
+
+  const stage = document.querySelector<HTMLElement>('[data-hero-stage]');
+  const canvas = stage?.querySelector<HTMLCanvasElement>('canvas');
+
+  if (stage && canvas && shouldRun3D(detectHeroEnv())) {
+    const idle = (cb: () => void) =>
+      'requestIdleCallback' in window ? window.requestIdleCallback(cb, { timeout: 2500 }) : setTimeout(cb, 600);
+
+    let started = false;
+    const start = () => {
+      if (started) return;
+      started = true;
+      import('../scripts/hero-scene')
+        .then(({ mountHero }) => {
+          const dispose = mountHero(canvas);
+          window.addEventListener('pagehide', (e) => !e.persisted && dispose(), { once: true });
+        })
+        .catch(() => {
+          /* the static composition stays */
+        });
+    };
+
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) {
+        io.disconnect();
+        idle(start);
+      }
+    });
+    io.observe(stage);
+  }
+</script>

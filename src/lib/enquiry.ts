@@ -37,3 +37,41 @@ export function buildWhatsAppUrl(number: string, f: EnquiryFields): string {
 export function buildMailtoUrl(email: string, f: EnquiryFields): string {
   return `mailto:${email}?subject=${encodeURIComponent(SUBJECT)}&body=${encodeURIComponent(enquiryText(f))}`;
 }
+
+/**
+ * The enquiry form's field names. They double as the labels in the native
+ * mailto (enctype="text/plain") body, so they are written for people.
+ */
+export const FORM_FIELDS = {
+  name: 'Name',
+  company: 'Company',
+  country: 'Country',
+  email: 'Email',
+  phone: 'Phone',
+  products: 'Products',
+  quantity: 'Quantity',
+  privateLabel: 'Private label',
+  message: 'Message',
+} as const;
+
+type TextKey = Exclude<keyof EnquiryFields, 'products' | 'privateLabel'>;
+const TEXT_KEYS: TextKey[] = ['name', 'company', 'country', 'email', 'phone', 'quantity', 'message'];
+
+/** Reads form entries (e.g. `new FormData(form)`) into EnquiryFields. */
+export function fieldsFromEntries(entries: Iterable<[string, FormDataEntryValue | string]>): EnquiryFields {
+  const f: EnquiryFields = { products: [] };
+  for (const [key, raw] of entries) {
+    if (typeof raw !== 'string') continue;
+    const value = raw.trim();
+    if (key === FORM_FIELDS.products) {
+      if (value) f.products!.push(value);
+    } else if (key === FORM_FIELDS.privateLabel) {
+      if (value === 'Yes') f.privateLabel = true;
+      else if (value === 'No') f.privateLabel = false;
+    } else {
+      const k = TEXT_KEYS.find((t) => FORM_FIELDS[t] === key);
+      if (k) f[k] = value;
+    }
+  }
+  return f;
+}

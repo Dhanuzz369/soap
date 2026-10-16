@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { faqJsonLd } from '../lib/seo';
+import { faqGroups, allFaqs } from '../lib/faqs';
+---
+
+<BaseLayout
+  title="FAQ: Soap & Home-Care Exporter & Supplier from India"
+  description="Answers for importers buying soaps, detergents and cleaners from India through GoodBiz Hygiene: sourcing, private label, MOQ, incoterms, documents and lead times."
+  path="/faq/"
+  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'FAQ', url: '/faq/' }]}
+  jsonLd={[faqJsonLd(allFaqs)]}
+>
+  <header class="wrap page-hero">
+    <h1 class="page-title">Questions importers ask</h1>
+    <p class="lead">
+      How GoodBiz Hygiene sources, quotes and ships soaps and home-care products from India. Product-specific questions are answered on each
+      product page.
+    </p>
+  </header>
+
+  {
+    faqGroups.map((g) => (
+      <div class="wrap prod-block" data-reveal>
+        <Faq faqs={g.faqs} heading={g.heading} id={g.id} />
+      </div>
+    ))
+  }
+
+  <CtaBand heading="Have a question we did not answer?" text="Send it with your enquiry and we reply with the details for your products and market." />
+</BaseLayout>

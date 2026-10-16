@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
+import site from '../config/site';
+import { buildWhatsAppUrl } from '../lib/enquiry';
+
+const wa = buildWhatsAppUrl(site.contact.whatsapp, {});
+const tel = site.contact.phone.replace(/[^+\d]/g, '');
+---
+
+<BaseLayout
+  title="Request a Quote: Soap & Home-Care Exporter & Supplier from India"
+  description="Request a quote from GoodBiz Hygiene for soaps, detergents and home-care products from India. Send your products, pack sizes and port by email or WhatsApp."
+  path="/contact/"
+  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact/' }]}
+>
+  <header class="wrap page-hero">
+    <h1 class="page-title">Request a quote</h1>
+    <p class="lead">
+      Tell us what you need: the products, pack sizes, quantity and destination port. GoodBiz Hygiene replies with prices, typical
+      specifications and lead times.
+    </p>
+  </header>
+
+  <div class="wrap contact-grid">
+    <section aria-labelledby="form-h">
+      <h2 id="form-h" class="visually-hidden">Enquiry form</h2>
+      <EnquiryForm />
+    </section>
+
+    <aside class="contact-aside" aria-label="Other ways to reach us">
+      <div>
+        <h2>Email</h2>
+        <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+      </div>
+      <div>
+        <h2>WhatsApp</h2>
+        <a href={wa} target="_blank" rel="noopener">Message us on WhatsApp</a>
+      </div>
+      <div>
+        <h2>Phone</h2>
+        <a href={`tel:${tel}`}>{site.contact.phone}</a>
+      </div>
+      <div>
+        <h2>Office</h2>
+        <p>{site.contact.address}</p>
+      </div>
+      <div>
+        <h2>Export terms</h2>
+        <p>{site.exportTerms.incoterms}.</p>
+        <p class="note" style="margin-top:8px">{site.exportTerms.port}. {site.exportTerms.leadTime}.</p>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>

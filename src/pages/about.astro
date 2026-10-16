@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaBand from '../components/CtaBand.astro';
+import site from '../config/site';
+import { getProductsByCategory } from '../lib/products';
+
+const groups = await getProductsByCategory();
+const f = site.facts;
+const facts = [
+  f.city && { label: 'Based in', value: f.city },
+  f.founded && { label: 'Founded', value: f.founded },
+  f.iec && { label: 'Importer Exporter Code (IEC)', value: f.iec },
+].filter((x): x is { label: string; value: string } => !!x);
+---
+
+<BaseLayout
+  title="About GoodBiz Hygiene: Soap & Home-Care Exporter & Supplier from India"
+  description="GoodBiz Hygiene is the home-care and hygiene export division of GoodBiz Global, a merchant exporter from India, and a sister brand of GoodBiz Agro."
+  path="/about/"
+  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'About', url: '/about/' }]}
+>
+  <header class="field page-hero" data-cat="surface-home-cleaners">
+    <div class="wrap">
+      <h1 class="page-title">About GoodBiz Hygiene</h1>
+      <p class="lead">
+        GoodBiz Hygiene is the home-care and hygiene export division of {site.parentName}, a merchant exporter from India, and a sister
+        brand of GoodBiz Agro.
+      </p>
+    </div>
+  </header>
+
+  <section class="wrap split-section" aria-labelledby="what-h">
+    <h2 id="what-h" data-reveal>What does GoodBiz Hygiene do?</h2>
+    <div class="prose" data-reveal>
+      <p>
+        GoodBiz Hygiene supplies soaps, detergents and home-care products to importers, distributors, wholesalers, supermarket chains and
+        private-label brands outside India. It does not own a factory. Products are sourced from vetted Indian manufacturers, and GoodBiz
+        Hygiene handles quotation, private-label coordination, export documents and shipping.
+      </p>
+      <p>
+        The range covers products classified under HSN 3401 (soaps) and HSN 3402 (detergents and washing or cleaning preparations), plus
+        closely related items such as herbal phenol, in five ranges:
+      </p>
+      <ul>
+        {
+          groups.map((g) => (
+            <li>
+              <a href={`/categories/${g.category.data.slug}/`}>{g.category.data.title}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap split-section" aria-labelledby="family-h">
+    <h2 id="family-h" data-reveal>Part of GoodBiz Global</h2>
+    <div class="prose" data-reveal>
+      <p>
+        {site.parentName} runs GoodBiz Agro for agricultural exports and GoodBiz Hygiene for soaps and home care.
+        {f.parentUrl && <> Visit <a href={f.parentUrl}>{site.parentName}</a>.</>}
+        {f.agroUrl && <> Visit <a href={f.agroUrl}>GoodBiz Agro</a>.</>}
+      </p>
+    </div>
+  </section>
+
+  {
+    facts.length > 0 && (
+      <section class="wrap split-section" aria-labelledby="facts-h">
+        <h2 id="facts-h">Company details</h2>
+        <dl class="facts">
+          {facts.map((x) => (
+            <div>
+              <dt>{x.label}</dt>
+              <dd>{x.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+    )
+  }
+
+  <CtaBand />
+</BaseLayout>

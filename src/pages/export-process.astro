@@ -1,0 +1,100 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { faqJsonLd } from '../lib/seo';
+import site from '../config/site';
+
+const t = site.exportTerms;
+
+const steps = [
+  { title: 'Enquiry', text: 'Send the products, pack sizes, quantity, destination port and any private-label needs, using the enquiry form, email or WhatsApp.' },
+  { title: 'Quotation', text: `We quote prices per pack with typical specifications, the incoterm you need and the lead time. ${t.incoterms}.` },
+  { title: 'Samples and approvals', text: 'Product samples and, for private label, artwork proofs are approved before the order is confirmed.' },
+  { title: 'Proforma invoice and payment', text: 'A proforma invoice confirms products, quantities, packing, incoterm and payment terms (T/T or LC).' },
+  { title: 'Production and packing', text: 'The manufacturer produces and packs the order, marked for export and for your market.' },
+  { title: 'Documents and shipping', text: `We prepare the export documents and book the shipment. ${t.port}.` },
+];
+
+const documents = [
+  'Commercial invoice',
+  'Packing list',
+  'Certificate of origin',
+  'Bill of lading (sea freight)',
+  'Certificate of analysis (COA)',
+  'Material safety data sheet (MSDS)',
+];
+
+const faqs = [
+  { q: 'Which incoterms do you offer?', a: `${t.incoterms}.` },
+  { q: 'Which port do shipments leave from?', a: `${t.port}. The port is chosen by product, manufacturer location and your destination, and stated on the quotation.` },
+  { q: 'What is the lead time?', a: `${t.leadTime}.` },
+  {
+    q: 'Which documents are included?',
+    a: `Shipments normally travel with ${documents.slice(0, 4).join(', ').toLowerCase()}, plus a COA and MSDS where the product needs them. Your country may need more, such as a health certificate or legalised invoice; this is agreed per order.`,
+  },
+  {
+    q: 'Which HSN code goes on the invoice?',
+    a: 'The site shows HSN codes at 6 digits, for example 3402 50. The 8-digit ITC-HS code is confirmed per order. Fabric softener and herbal phenol can fall under alternative classifications (3809 91 and 3808 94).',
+  },
+];
+---
+
+<BaseLayout
+  title="Export Process: Soap & Home-Care Exporter & Supplier from India"
+  description="How GoodBiz Hygiene exports soaps, detergents and cleaners from India: quotation, samples, incoterms, payment terms, documents, ports and typical lead times."
+  path="/export-process/"
+  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Export Process', url: '/export-process/' }]}
+  jsonLd={[faqJsonLd(faqs)]}
+>
+  <header class="field page-hero" data-cat="laundry-care">
+    <div class="wrap">
+      <h1 class="page-title">How export orders work</h1>
+      <p class="lead">
+        From the first enquiry to the bill of lading: the steps, terms and documents for buying soaps and home-care products from India
+        through GoodBiz Hygiene.
+      </p>
+    </div>
+  </header>
+
+  <section class="wrap section" aria-labelledby="terms-h">
+    <h2 id="terms-h" class="h-sub" data-reveal>What are the export terms?</h2>
+    <dl class="terms" data-reveal>
+      <div data-cat="kitchen-care"><dt>Incoterms and payment</dt><dd>{t.incoterms}</dd></div>
+      <div data-cat="surface-home-cleaners"><dt>Port</dt><dd>{t.port}</dd></div>
+      <div data-cat="bath-personal-soaps"><dt>Lead time</dt><dd>{t.leadTime}</dd></div>
+    </dl>
+  </section>
+
+  <section aria-labelledby="steps-h">
+    <div class="wrap" data-reveal>
+      <h2 id="steps-h" class="h-sub">What are the steps from enquiry to shipment?</h2>
+    </div>
+    <ol class="band-list" style="margin-top:40px">
+      {
+        steps.map((s) => (
+          <li class="band" data-reveal>
+            <h3>{s.title}</h3>
+            <p>{s.text}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="wrap split-section" aria-labelledby="docs-h">
+    <div data-reveal>
+      <h2 id="docs-h">Which documents come with a shipment?</h2>
+      <p style="margin-top:16px">The exact set depends on your country and is confirmed per order.</p>
+    </div>
+    <ul class="plain-list" data-reveal>
+      {documents.map((d) => <li>{d}</li>)}
+    </ul>
+  </section>
+
+  <div class="wrap prod-block" data-reveal>
+    <Faq faqs={faqs} heading="Export process: questions buyers ask" />
+  </div>
+
+  <CtaBand />
+</BaseLayout>
