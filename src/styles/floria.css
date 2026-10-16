@@ -505,7 +505,7 @@
 }
 .ph-l2 {
   margin-top: 0.22em;
-  font-size: 0.62em;
+  font-size: max(0.62em, 1.125rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
   color: var(--mint);
