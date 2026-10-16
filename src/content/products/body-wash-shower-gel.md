@@ -83,7 +83,7 @@ related:
 
 Body wash and shower gel have taken a large share of the personal wash market from bar soap, particularly in urban households, hotels and fitness centres. Consumers like the rich lather, the wide choice of fragrances and the hygienic pump dispenser. For importers, the category offers a good margin on private label and a strong link to hospitality supply, where the same fragrance can be sold in retail bottles and hotel refill formats.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not blend or fill products ourselves. Body wash is sourced from vetted Indian manufacturers, and we manage specification, documentation and shipment.
+GoodBiz Hygiene, a GoodBiz Global company and merchant exporter from India, sources shower gels from manufacturers that blend and fill them. We do not blend or fill products ourselves. Body wash is sourced from vetted Indian manufacturers, and we manage specification, documentation and shipment.
 
 ## Grades and formulations
 
@@ -93,12 +93,12 @@ Fragrance sets the positioning. Ocean fresh and citrus appeal to a younger sport
 
 ## Packaging for export
 
-Retail bottles come in 250 ml, 500 ml and 750 ml with flip-top or pump closures. A 1 L refill pouch and 5 L can serve households and institutions, and 100 ml bottles or tubes suit travel and hotel use. Cartons hold 12 to 24 units. A container loading plan is provided with each quotation because bottle shape and carton size change the numbers.
+Retail bottles come in 250 ml, 500 ml and 750 ml with flip-top or pump closures, and 100 ml bottles or tubes serve travel and hotel use. A 1 L refill pouch and a 5 L can cover households and spas. Cartons hold 12 to 24 units. Gels are heavy for their volume, so container weight limits apply, and a loading plan can be arranged once your size mix is set.
 
 ## Private label options
 
-You can create your own brand with a custom label, fragrance, colour, pearlescent finish and closure. Bottles are typically chosen from the manufacturer's available stock, which avoids mould cost. Hotel mini bottles can carry the property logo. A liquid sample and label proof are approved before production, and lead time is typically 3-5 weeks after order confirmation, depending on private-label requirements.
+Body wash brands compete on fragrance story and bottle look, so buyers usually choose from the manufacturer's stock bottles and then customise label, colour, pearlescence and closure. Hotel groups can add small bottles with the property logo that match a retail fragrance. A liquid sample and label proof are approved first, and lead time is typically 3-5 weeks after order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-One export partner covers sourcing, follow-up, documents and shipping. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is at 6-digit level, and the 8-digit ITC-HS code is confirmed per order. Tell us your preferred fragrances and pack sizes, and we will return a quotation and loading plan.
+Shower gel is often bought by buyers who also need hotel amenities, and keeping both in one fragrance saves a second supplier search. GoodBiz Hygiene can quote retail bottles, mini bottles and bulk refills as one project. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your preferred fragrances and pack sizes and we will return a quotation.

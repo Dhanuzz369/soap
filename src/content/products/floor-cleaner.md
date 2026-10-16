@@ -70,7 +70,7 @@ faqs:
   - q: "What is the minimum order quantity?"
     a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
   - q: "How is floor cleaner packed for sea freight?"
-    a: "Bottles are capped, induction-sealed where specified, and packed in shrink-wrapped cartons. Cans are palletised and stretch-wrapped. A loading plan is shared with each quotation so you can see the carton count per container."
+    a: "Bottles are capped, induction-sealed where specified, and packed in shrink-wrapped cartons. Cans are palletised and stretch-wrapped. A loading plan can be arranged on request so you can see the carton count per container."
 related:
   - multi-surface-cleaner
   - bathroom-tile-cleaner
@@ -83,7 +83,7 @@ related:
 
 Floor cleaner is one of the highest-volume household cleaning products in many import markets, because hard floors such as ceramic tile, marble and vinyl are standard in homes, shops and hotels. A good floor cleaner lifts everyday dirt and light grease in a single mop pass, dries without heavy streaks and leaves a fresh scent that lasts for a while in the room. Buyers usually judge it on three things: how well it cleans, how pleasant the fragrance is, and how many mopping rounds a bottle gives.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run production lines ourselves. Instead we source floor cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene is a GoodBiz Global company and a merchant exporter from India that sources floor cleaners from vetted manufacturers. We do not run production lines ourselves. Instead we source floor cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Fragrances and grades
 
@@ -93,12 +93,12 @@ Grades differ mainly in active matter. Economy grades typically carry a lower pe
 
 ## Packaging for export
 
-Retail bottles of 500 ml, 1 L and 2 L are packed in shrink-wrapped cartons of 6 to 24 units. Institutional buyers often prefer 5 L cans or 20 L jerry cans. Pouch refills are available for markets that want a lower-cost retail option. Container load figures vary with pack size and pallet use, so a loading plan accompanies every quotation.
+Floor cleaner ships in PET or HDPE bottles of 500 ml to 2 L with a shrink sleeve or label, with 5 L and 20 L jerry cans for facility cleaners and pouch refills for retail. Cartons hold 6 to 24 bottles depending on size. The product is mostly water, so containers load heavy, and a plan can be arranged for your size mix.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, label artwork, fragrance, colour and concentration, and select a bottle from the manufacturer's stock moulds. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Floor cleaner brands choose a scent family, such as lavender, rose, jasmine or pine, with a matching colour, then decide between economy and concentrated strength. Bottles come from stock moulds. Concentrate lines suit buyers who want to cut freight per wash. Production follows sample approval, usually 3-5 weeks after order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, pack size and fragrance preference and we will return a quotation with pack options.
+Floor cleaners are sold on fragrance and on how far a bottle dilutes. GoodBiz Hygiene can quote economy and concentrated strength with the dilution ratio stated, so you can compare cost per mop bucket. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your fragrance range, strength and pack sizes and we will return a quotation.

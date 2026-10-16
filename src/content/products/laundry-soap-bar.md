@@ -4,7 +4,7 @@ slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "Laundry Soap & Detergent Bar Exporter from India | GoodBiz Hygiene"
+metaTitle: "Laundry Soap & Detergent Bar Exporter & Supplier from India | GoodBiz Hygiene"
 metaDescription: "Laundry soap and detergent bars from vetted Indian manufacturers: 100 g to 250 g bars, TFM 54-72% grades, private label and container loads for importers."
 answer: "A laundry soap bar is a solid cake of soap or soap-detergent blend made for scrubbing and washing clothes by hand. Bars range from true soap with high Total Fatty Matter (TFM) to lower-cost detergent bars with fillers and builders. GoodBiz Hygiene sources laundry bars in several grades from vetted Indian manufacturers for export."
 variants:
@@ -50,7 +50,7 @@ privateLabel:
     - "Printed master carton design"
 containerLoad:
   ft20: "Approx. 1,100 to 1,400 master cartons (200 g bars, carton of 48), varies with pack"
-  ft40: "Approx. 2,400 to 2,800 master cartons (200 g bars, carton of 48), varies with pack"
+  ft40: "Approx. 2,000 to 2,500 master cartons (200 g bars, carton of 48), varies with pack"
 uses:
   - "Hand washing of everyday clothing"
   - "Scrubbing collars, cuffs and heavily soiled garments"
@@ -84,7 +84,7 @@ related:
 
 The laundry bar is still the everyday washing product in many homes where clothes are scrubbed by hand, at a river, in a basin or at a communal tap. It is compact, cheap per wash, easy to carry and needs no measuring. For importers and distributors in these markets, a reliable laundry bar is a high-turnover line that sells all year round.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run soap lines ourselves. Instead we source laundry soap and detergent bars from vetted Indian manufacturers, check each specification against your requirements, and handle export documentation and shipping through a single point of contact.
+GoodBiz Hygiene is a GoodBiz Global company and a merchant exporter from India that arranges laundry bar supply from vetted soap makers. We do not run soap lines ourselves. Instead we source laundry soap and detergent bars from vetted Indian manufacturers, check each specification against your requirements, and handle export documentation and shipping through a single point of contact.
 
 ## Grades and formulations
 
@@ -94,12 +94,12 @@ Colour and fragrance help a bar stand out on a crowded shelf. The classic blue b
 
 ## Packaging for export
 
-Bars are normally wrapped in printed flow wrap, or boxed for premium lines, then packed in master cartons of 48 to 144 bars depending on weight. Because bars are dense, container weight limits can matter as much as volume, so a loading plan is shared with each quotation. Container figures vary with bar size and carton type. Unwrapped bulk bars can be supplied if you prefer to wrap locally.
+Laundry bars travel in printed flow wrap or, for premium lines, a carton, packed 48 to 144 to a master carton. A 200 g bar is heavy, so a container of laundry soap is limited by payload rather than space. Bulk unwrapped bars in cartons are available for buyers who wrap locally, and a loading plan can be arranged once bar weights are chosen.
 
 ## Private label options
 
-Private label is available for importers who want their own brand. You can specify the name, logo, wrapper artwork, bar weight, colour and perfume. An embossed logo on the bar is possible where the manufacturer can cut a die. A pre-production sample is shared for approval before bulk production begins. Production typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Distributors in hand-washing markets often want a recognisable bar colour, such as blue or yellow, with their own wrapper and a stamped brand name. Bar weight and colour come from the manufacturer's moulds, and embossing needs a die with its own cost. A sample bar is approved first. Lead time is typically 3-5 weeks after order confirmation, depending on wrapper artwork.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available, and payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, bar weight and colour preference and we will return a quotation with pack options.
+Laundry bars are a high-turnover, price-led line, where a few cents per bar decides the order. GoodBiz Hygiene can quote soap-rich and detergent-bar grades side by side so you can see what a lower TFM saves you. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your target market, bar weight and colour preference and we will return grade options.

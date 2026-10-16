@@ -82,7 +82,7 @@ related:
 
 Toilet soap is the most widely traded personal wash product in the world, and demand stays steady in markets where bar soap remains the main way families bathe. A good toilet soap lathers quickly, rinses clean, leaves the skin comfortable and keeps its shape through the shower. These qualities come from the soap base, the quality of fragrance and the finishing process, which together decide whether a bar sits at the economy, mid-range or premium shelf.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run soap lines ourselves. Instead we source toilet and bath soap from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter from India that places toilet soap orders with vetted manufacturers. We do not run soap lines ourselves. Instead we source toilet and bath soap from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Grades and formulations
 
@@ -92,12 +92,12 @@ Fragrance is the biggest differentiator at the shelf. Popular choices include ro
 
 ## Packaging for export
 
-Bars are normally wrapped individually in printed flow wrap or placed in a printed carton, then grouped in multipacks of three or four. Master cartons hold 48 to 144 bars depending on weight. Cartons are palletised or floor-loaded, and container load figures vary with bar size, so a loading plan is shared with each quotation. Unwrapped bulk bars can be supplied if you prefer to pack locally.
+Bars normally leave the line in printed flow wrap or a folding carton, then travel as three- or four-bar multipacks for supermarket shelves. Master cartons hold 48 to 144 bars depending on bar weight. Because the bar is dense, a 20 ft container tends to reach its weight limit before its volume limit, so the container counts above are conservative. Unwrapped bars in bulk cartons can be supplied if you have your own wrapping machines, and a loading plan can be arranged once pack sizes are fixed.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, logo, wrapper artwork, fragrance, colour and bar weight. An embossed logo on the bar is possible where the manufacturer can cut a die. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+A distributor with its own bath-soap brand can choose the wrapper design, bar weight, fragrance and colour from the manufacturer's current range. Embossing the brand on the bar needs a die, so it carries a one-time cost and a higher minimum run. Most buyers first approve a hand-made sample, then a wrapped pre-production bar, before bulk starts. Lead time is typically 3-5 weeks after order confirmation, longer if new printed film is needed.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs, and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, bar weight and fragrance preference and we will return a quotation with pack options.
+For a toilet soap programme the real work is matching TFM grade, fragrance and bar weight to a shelf price, and that comparison is easier through one export partner than through several factory quotations. GoodBiz Hygiene can line up two or three TFM grades side by side so you can see what each price point buys. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your target retail price, bar weight and preferred scents and we will come back with grade options.

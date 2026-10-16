@@ -79,7 +79,7 @@ related:
 
 Bathroom and tile cleaner is bought for one reason: bathrooms collect soap scum, limescale and water marks faster than any other room, and ordinary all-purpose cleaners often struggle with them. A dedicated bathroom product uses mild acids and surfactants together, so it dissolves mineral deposits and lifts soapy residue from tiles, taps, sinks and shower glass with little scrubbing. In hard-water regions it is a strong repeat purchase, and buyers often keep it alongside a toilet bowl cleaner in the same range.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run production lines ourselves. Instead we source bathroom and tile cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+A merchant exporter from India and GoodBiz Global company, GoodBiz Hygiene sources bathroom cleaners from vetted Indian formulators. We do not run production lines ourselves. Instead we source bathroom and tile cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Types and formulations
 
@@ -89,12 +89,12 @@ Typical pH and active matter are provided in the specification sheet before samp
 
 ## Packaging for export
 
-Retail packs are a 500 ml or 750 ml bottle with a trigger spray head, packed in shrink-wrapped cartons of 12 to 24. Refill bottles of 1 L, 5 L cans and 20 L jerry cans are available for refill and institutional buyers. Trigger heads are checked for leakage in transit. Container load figures vary with pack size, so a loading plan accompanies every quotation.
+Bathroom cleaner ships in 500 ml and 750 ml trigger-spray bottles, 1 L and 5 L refills, and 20 L jerry cans for hotels. Cartons hold 12 to 24 bottles, shrink-wrapped. Descaling grades are acidic, so closures are chosen to resist corrosion, and a container plan can be arranged.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, label artwork, fragrance, colour and strength, and choose a bottle and trigger head from the manufacturer's stock formats. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Bathroom cleaner brands choose between a mild, chrome-safe acid and a heavy-duty descaler, then colour and scent such as lemon, pine, ocean or rose. Sprayer and bottle come from stock. A sample tested on a limescale tile is the best proof. Lead time is typically 3-5 weeks after order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, pack size and preferred strength and we will return a quotation with pack options.
+Bathroom cleaners are judged on limescale removal and on tap and chrome safety. GoodBiz Hygiene can ask the manufacturer for both a mild and a heavy-duty sample so you can test on your water type. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your water hardness, pack sizes and scents and we will return a quotation.

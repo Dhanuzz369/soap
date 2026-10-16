@@ -13,6 +13,16 @@ const EXPECTED_SLUGS = [
   'multi-surface-cleaner', 'car-wash-shampoo',
   'soap-noodles', 'labsa', 'sles', 'bulk-institutional-cleaners',
 ];
+const EXPECTED_HSN: Record<string, string> = {
+  'toilet-bath-soap': '3401 11', 'herbal-ayurvedic-soap': '3401 11', 'glycerin-transparent-soap': '3401 11',
+  'antibacterial-soap': '3401 11', 'hotel-guest-soap': '3401 11', 'liquid-hand-wash': '3401 30', 'body-wash-shower-gel': '3401 30',
+  'laundry-soap-bar': '3401 19', 'detergent-powder': '3402 50', 'liquid-detergent': '3402 50', 'fabric-softener': '3402 50',
+  'fabric-whitener-stain-remover': '3402 50', 'dish-wash-liquid': '3402 50', 'dish-wash-bar': '3401 19',
+  'dish-wash-powder': '3402 50', 'kitchen-degreaser': '3402 50', 'floor-cleaner': '3402 50', 'herbal-phenol': '3402 50',
+  'glass-cleaner': '3402 50', 'toilet-bowl-cleaner': '3402 50', 'bathroom-tile-cleaner': '3402 50',
+  'multi-surface-cleaner': '3402 50', 'car-wash-shampoo': '3402 50', 'soap-noodles': '3401 20', 'labsa': '3402 31',
+  'sles': '3402 39', 'bulk-institutional-cleaners': '3402 90',
+};
 const CATEGORY_SLUGS = ['bath-personal-soaps', 'laundry-care', 'kitchen-care', 'surface-home-cleaners', 'industrial-raw-materials'];
 
 const dir = (p: string) => join(process.cwd(), 'src/content', p);
@@ -52,6 +62,8 @@ describe('products content', () => {
       });
       it('has valid structured data', () => {
         expect(p.hsn).toMatch(/^\d{4} \d{2}$/);
+        expect(p.hsn).toBe(EXPECTED_HSN[p.slug]);
+        expect(p.metaTitle).toContain('Exporter & Supplier from India');
         expect(p.metaDescription.length).toBeGreaterThanOrEqual(120);
         expect(p.metaDescription.length).toBeLessThanOrEqual(160);
         expect(p.faqs.length).toBeGreaterThanOrEqual(4);
@@ -71,6 +83,22 @@ describe('products content', () => {
   it('has unique meta descriptions and answers', () => {
     expect(new Set(products.map((p) => p.metaDescription)).size).toBe(products.length);
     expect(new Set(products.map((p) => p.answer)).size).toBe(products.length);
+  });
+
+  it('does not repeat templated sentences across more than 3 products', () => {
+    const ALLOWED = ['FOB, CIF and CFR', 'ITC-HS code'];
+    const seen = new Map<string, Set<string>>();
+    for (const p of products) {
+      const sentences = p.body.replace(/\s+/g, ' ').split(/(?<=[.!?])\s+/);
+      for (const raw of sentences) {
+        const s = raw.trim();
+        if (s.split(' ').length < 12 || ALLOWED.some((a) => s.includes(a))) continue;
+        if (!seen.has(s)) seen.set(s, new Set());
+        seen.get(s)!.add(p.slug);
+      }
+    }
+    const repeated = [...seen].filter(([, f]) => f.size > 3).map(([s, f]) => `${f.size}x: ${s}`);
+    expect(repeated).toEqual([]);
   });
 
   it('notes alternative classifications', () => {

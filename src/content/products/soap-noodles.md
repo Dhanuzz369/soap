@@ -74,7 +74,7 @@ related:
 
 Soap noodles are the starting material for most solid soap made around the world. Fats and oils are saponified, dried and extruded into noodles, which soap makers then mix with fragrance, colour, titanium dioxide and other additives, mill, plod and stamp into finished bars. Buying noodles lets a soap maker skip the capital-heavy saponification step and focus on finishing and branding.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not make the noodles ourselves. We source them from vetted Indian manufacturers, confirm the grade against your requirement and manage documentation and shipping as a single point of contact.
+GoodBiz Hygiene, a merchant exporter from India and a GoodBiz Global company, sources soap noodles from vetted Indian oleochemical producers. We do not make the noodles ourselves. We source them from vetted Indian manufacturers, confirm the grade against your requirement and manage documentation and shipping as a single point of contact.
 
 ## Grades and specifications
 
@@ -84,7 +84,7 @@ Figures shown in the specification table are typical values and are confirmed on
 
 ## Packaging for export
 
-Noodles ship in 25 kg and 50 kg woven bags with a moisture-barrier liner. Bags are palletised and stretch-wrapped for sea freight. A 20 ft container typically carries around 18 to 20 tonnes, and a 40 ft container around 24 to 26 tonnes, depending on bag size and palletising. Loading plans are shared with each quotation.
+Soap noodles go into 25 kg or 50 kg woven polypropylene or HDPE bags with an inner liner, palletised and stretch-wrapped. A 20 ft container holds around 18 to 20 tonnes. The liner keeps moisture in or out, which protects the moisture figure that soap makers rely on. Jumbo bags can be arranged for larger orders.
 
 ## Who buys soap noodles
 
@@ -92,4 +92,4 @@ Typical buyers are soap manufacturers who finish their own bars, contract soap p
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding and qualifying individual manufacturers. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available, and payment terms such as T/T or LC are agreed per order. Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your target TFM, fatty blend and monthly volume, and we will return a quotation with packing options.
+Soap makers buy noodles on fatty-matter ratio, moisture and colour, and a small shift in any of these changes their finished bar. GoodBiz Hygiene can obtain a sample and a certificate of analysis for trial milling before you place a container order. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your palm to palm kernel ratio, TFM target and monthly tonnage and we will return a quotation.

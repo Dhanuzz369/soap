@@ -78,7 +78,7 @@ related:
 
 Glass cleaner is a small but steady line in the household cleaning aisle. Shoppers buy it for windows, mirrors, glass tables, shower screens and car windows, and they expect one thing above all: a clear finish with no streaks or film. Because the product is light and mostly water, it must be formulated carefully, with the right solvent and surfactant balance, so that it cleans fingerprints and dust, then dries evenly.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run production lines ourselves. Instead we source glass cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter from India that sources glass cleaners from vetted Indian blenders. We do not run production lines ourselves. Instead we source glass cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Types and formulations
 
@@ -88,12 +88,12 @@ Specifications such as pH and active matter are shared on a typical basis in the
 
 ## Packaging for export
 
-Retail packs are normally a PET bottle with a trigger spray head, in 500 ml or 750 ml, packed in shrink-wrapped cartons of 12 to 24. For lower freight cost per litre, refill bottles, pouches, 5 L cans and 20 L jerry cans are available, and many importers combine them with spray bottles in a mixed load. Trigger heads are tested for leakage in transit, and container loads vary with pack size, so a loading plan is shared with each quotation.
+Glass cleaner is almost always sold in 500 ml or 750 ml trigger-spray bottles, with 1 L refills and 5 L cans for offices and cleaners. Cartons hold 12 to 24 sprays. Trigger heads are the most common failure, so assembly checks matter, and a loading plan can be arranged once your bottle size is chosen.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, label artwork, colour, fragrance and formulation type, and select a bottle and trigger head from the manufacturer's stock formats. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+A glass cleaner brand chooses ammonia-free or ammonia-based formula, a blue or clear tint, and a lemon or lavender scent. Sprayer and bottle come from the manufacturer's stock. A sample sprayed on a mirror is the best check. Lead time is typically 3-5 weeks after order confirmation, depending on label printing.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, pack size and preferred formulation and we will return a quotation with pack options.
+Glass cleaner buyers care about streak-free results and sprayer quality. GoodBiz Hygiene can ask the manufacturer for sample bottles so you can test both before ordering. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your spray bottle size and ammonia preference and we will return a quotation.

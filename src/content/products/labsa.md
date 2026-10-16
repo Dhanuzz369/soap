@@ -57,7 +57,7 @@ faqs:
   - q: "Is LABSA a dangerous good for shipping?"
     a: "Yes. LABSA is corrosive and normally shipped as a hazardous (DG) cargo under the IMDG Code, so drums, IBCs or flexitanks must be approved for the class and declared to the shipping line. We arrange the DG paperwork and the shipping lines that accept it for each order."
   - q: "Do you provide an MSDS?"
-    a: "Yes. A Material Safety Data Sheet (MSDS) is provided with every quotation and with the shipment, along with the product specification. A certificate of analysis (COA) per batch can be requested."
+    a: "Yes. A Material Safety Data Sheet (MSDS) is available on request, along with the product specification. A certificate of analysis (COA) per batch can be requested."
   - q: "Which packaging is best for LABSA?"
     a: "HDPE drums of 200 to 235 kg suit smaller or mixed orders and are easy to handle. IBCs of 1,000 L save drum cost, and flexitanks give the lowest cost per tonne for bulk buyers who have tank storage and pumping."
   - q: "How should LABSA be handled and stored?"
@@ -74,7 +74,7 @@ related:
 
 LABSA is the workhorse surfactant of the detergent industry. It is a sulphonated linear alkylbenzene that, once neutralised, becomes sodium linear alkylbenzene sulphonate, the active ingredient behind the foam and cleaning power in most washing powders, liquid detergents and household cleaners. Its low cost, strong cleaning performance and compatibility with builders make it the default anionic choice for high-volume detergent making.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not make LABSA ourselves. We source it from vetted Indian manufacturers, confirm the grade and packing against your formulation and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter from India that sources LABSA from vetted chemical manufacturers. We do not make LABSA ourselves. We source it from vetted Indian manufacturers, confirm the grade and packing against your formulation and handle export documentation and shipping as a single point of contact.
 
 ## Grades and specifications
 
@@ -82,7 +82,7 @@ Two grades are common. LABSA 90% is the standard grade for detergent powder slur
 
 ## Packaging and shipping
 
-LABSA is packed in 200 to 235 kg HDPE drums, 1,000 L IBCs, or flexitanks of about 20 tonnes in a 20 ft container. Drums are palletised and a 20 ft container typically holds around 16 to 18 tonnes. Because the acid is corrosive, it moves as dangerous goods. Packaging must carry the right UN marking, and shipping lines accept it only with correct declarations. We coordinate this and share an MSDS with every offer.
+LABSA is packed in 200 to 235 kg HDPE drums, 1,000 L IBCs, or flexitanks of about 20 tonnes. A 20 ft container typically holds around 16 to 18 tonnes in drums. Because the acid is corrosive, it moves as dangerous goods, with the correct UN marking and declarations. We coordinate this, and an MSDS is available on request.
 
 ## Handling and storage
 
@@ -90,4 +90,4 @@ LABSA is corrosive, so use acid-resistant equipment, gloves and eye protection. 
 
 ## Why source through GoodBiz Hygiene
 
-You get one partner for sourcing, DG documentation and booking, with pre-shipment photographs and consolidated paperwork. FOB, CIF and CFR are available, and payment terms such as T/T or LC are agreed per order. Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your grade, packing preference and monthly volume and we will return a quotation.
+LABSA buyers are detergent blenders who need consistent active matter and low free oil. GoodBiz Hygiene can arrange a sample and certificate of analysis from the manufacturer so you can test in your own slurry before the first container. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your grade, packing preference and monthly volume and we will return a quotation.

@@ -46,8 +46,8 @@ privateLabel:
     - "Bar weight from 10 g to 40 g"
     - "Embossed logo on bar (subject to die cost)"
 containerLoad:
-  ft20: "Approx. 1,500 to 2,200 master cartons (20 g bars, carton of 500 pcs), varies with pack"
-  ft40: "Approx. 3,200 to 4,500 master cartons (20 g bars, carton of 500 pcs), varies with pack"
+  ft20: "Approx. 800 to 1,000 master cartons (20 g bars, carton of 500 pcs), varies with pack"
+  ft40: "Approx. 1,800 to 2,100 master cartons (20 g bars, carton of 500 pcs), varies with pack"
 uses:
   - "Hotel and resort room amenities"
   - "Guest houses and serviced apartments"
@@ -68,7 +68,7 @@ faqs:
   - q: "What is the MOQ for custom branding?"
     a: "Typically one 20 ft container for custom-printed bars. Stock designs with a standard wrapper can sometimes be ordered in smaller lots."
   - q: "How is the soap protected during sea freight?"
-    a: "Each bar is wrapped individually and packed in sealed master cartons. Cartons are palletised or floor-loaded to avoid crushing, and a loading plan is shared before shipment."
+    a: "Each bar is wrapped individually and packed in sealed master cartons. Cartons are palletised or floor-loaded to avoid crushing, and a loading plan can be arranged before shipment."
 related:
   - toilet-bath-soap
   - liquid-hand-wash
@@ -80,7 +80,7 @@ related:
 
 Mini soap bars are one of the simplest ways for a hotel to reinforce its brand in the guest room. A 15 g to 30 g bar, wrapped in the property's own colours, sits beside the basin and is often taken home by guests. For hospitality buyers the priorities are consistent quality, reliable bar weight, attractive wrapping, and a supply that arrives on schedule in the quantities needed for each property.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run soap lines ourselves. Mini bars are sourced from vetted Indian manufacturers who run small-format moulds and wrapping machines, and we manage the specification, documentation and shipment.
+GoodBiz Hygiene, a merchant exporter from India and a GoodBiz Global company, supplies hospitality buyers with mini bars from small-format soap lines. We do not run soap lines ourselves. Mini bars are sourced from vetted Indian manufacturers who run small-format moulds and wrapping machines, and we manage the specification, documentation and shipment.
 
 ## Grades and formulations
 
@@ -90,12 +90,12 @@ Bar weight is a trade-off between guest perception and cost. Many budget hotels 
 
 ## Packaging for export
 
-The wrapper is the main branding surface. Options include printed paper wraps, colour flow wraps and printed cartons for premium lines. Master cartons usually hold 500 to 1,000 pieces. Because small bars pack very densely, a container holds a large number of units, and the exact count depends on bar size and carton design. A loading plan is shared with each quotation.
+The wrapper is the branding surface, so the choice is between printed paper wrap, colour flow wrap, and a printed carton for premium lines. Master cartons usually hold 500 to 1,000 pieces. Small bars pack densely, but cartons are still bulky relative to their weight, so a 20 ft container is limited by volume. Plan on roughly 800 to 1,000 master cartons per 20 ft of 20 g bars, and a loading plan can be arranged for your actual carton size.
 
 ## Private label options
 
-You can supply your hotel or amenity brand name and logo, choose wrapper colours, select a fragrance and set the bar weight. Embossing a logo on the bar is possible where a die can be made. Wrapper artwork and a bar sample are approved before bulk production, and lead time is typically 3-5 weeks after order confirmation, depending on private-label requirements.
+A hotel group or amenity distributor supplies its logo and brand colours and chooses fragrance and bar weight, typically 15 g to 30 g. Embossing a logo on the bar is possible where a die can be cut. Wrapper artwork and a sample bar are approved before bulk production. Lead time is typically 3-5 weeks after order confirmation, depending on wrapper printing.
 
 ## Why source through GoodBiz Hygiene
 
-Hospitality buyers and amenity distributors value a single supplier who can coordinate branding, production and shipping. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is at 6-digit level, with the 8-digit ITC-HS code confirmed for each order. Tell us your annual room-night volume, preferred bar weight and brand artwork, and we will return a quotation.
+Hotels buy by room-night volume and need amenities that arrive before a property opens or a season starts. GoodBiz Hygiene plans shipments backwards from your delivery date, and can help source matching shower gel and hand wash from the same supplier network. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your annual room-night volume, preferred bar weight and brand artwork and we will return a quotation.

@@ -80,7 +80,7 @@ related:
 
 Herbal and Ayurvedic soaps combine an ordinary soap base with plant ingredients that carry a long tradition of use in Indian personal care. Neem, turmeric and sandalwood are the best known, and consumers abroad often recognise them as markers of a natural, heritage-driven product. For importers this makes herbal soap a useful way to stand apart from standard toilet soap on the shelf and to reach customers who look for plant-based cues.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. These soaps are sourced from vetted Indian manufacturers who run herbal ranges, and we handle the specification check, documentation and shipment for you.
+As a merchant exporter from India and a GoodBiz Global company, GoodBiz Hygiene sources herbal soaps from manufacturers with dedicated herbal ranges. These soaps are sourced from vetted Indian manufacturers who run herbal ranges, and we handle the specification check, documentation and shipment for you.
 
 ## Grades and formulations
 
@@ -90,12 +90,12 @@ Because ingredient claims differ between markets, we ask for your regulatory req
 
 ## Packaging for export
 
-Most herbal bars are sold in printed cartons with an ingredient panel, since shoppers often read the label. Premium paper wraps suit boutique and gift channels. Multipacks of three bars work well for supermarkets. Master cartons hold 48 to 96 bars, and a container loading plan is provided with the quotation because bar weight and carton size change the count.
+Shoppers read herbal soap cartons closely, so the printed folding carton is the main pack, with the ingredient panel and usage claims on the back. Premium paper wraps suit boutique and gift channels, while three-bar multipacks work for supermarkets. Master cartons hold 48 to 96 bars. Heavier cartons are kept to a safe stacking height, and a container plan can be arranged for your chosen bar weight.
 
 ## Private label options
 
-You can create your own herbal brand by choosing the name, logo, herbal combination, fragrance, colour and bar shape. Ingredient panels can be printed in the language of your market. A sample is produced for approval before bulk manufacturing starts. Lead time is typically 3-5 weeks after order confirmation, depending on private-label requirements.
+An importer building a natural-care brand typically picks two or three herbal profiles, for example neem and tulsi plus turmeric and sandalwood, and gives each its own colour code on the carton. The ingredient panel can be printed in your market's language, using wording you have checked with your regulator. A sample bar is approved before production starts. Lead time is typically 3-5 weeks after order confirmation, depending on carton printing.
 
 ## Why source through GoodBiz Hygiene
 
-We act as your single point of contact for sourcing, quality follow-up, documentation and shipping from Indian ports. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). The HSN code shown is the 6-digit level, with the 8-digit ITC-HS code confirmed for each order. Tell us your target positioning and bar weight, and we will propose herbal variants and pack options with pricing.
+Herbal ranges are often marketed on ingredient claims, which is where mistakes cost most. GoodBiz Hygiene asks each manufacturer for the ingredient list behind a claim before it goes on your carton, so the pack does not promise more than the formula delivers. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your intended positioning and the claims you need to make and we will propose matching herbal variants.

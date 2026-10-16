@@ -85,7 +85,7 @@ related:
 
 Dish wash liquid is one of the fastest-moving household cleaning products, because it is bought again and again and used every day. A good product produces stable foam, removes cooking oil without long scrubbing, rinses cleanly and stays gentle on hands. Buyers also judge it by look and feel: the colour, the fragrance on the sponge and how far a small squeeze goes.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run blending plants ourselves. Instead we source dish wash liquid and gel from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+A GoodBiz Global company and merchant exporter from India, GoodBiz Hygiene sources dish wash liquid from vetted Indian blenders. We do not run blending plants ourselves. Instead we source dish wash liquid and gel from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Grades and formulations
 
@@ -95,12 +95,12 @@ Fragrance is the main shelf differentiator. Lemon and lime remain the most reque
 
 ## Packaging for export
 
-Retail bottles range from 250 ml to 1 L, with flip-top or screw caps and either printed labels or full shrink sleeves. Refill pouches reduce plastic and shipping weight and sell well where price is the main driver. For restaurants and hotels, 5 L cans are packed two or four per carton, and 20 L and 50 L carboys and 200 L drums serve institutional users and importers who bottle locally. Container loads vary with bottle shape and carton size, so a loading plan is shared with each quotation.
+Dish wash liquid ships in PET or HDPE bottles of 250 ml to 1 L, refill pouches, and 5 L jerry cans, with 20 L carboys and 200 L drums for restaurants and re-packers. Retail cartons hold 12 bottles, and 5 L cans go two or four to a carton. Bottles are light, so volume limits the container, while carboys and drums are payload-limited.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own range. You can specify the name, logo, label artwork, fragrance, colour, texture and active matter level. Bottle and cap choices come from the manufacturer's existing moulds, which keeps tooling cost low. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Retail dish wash brands usually choose a bottle shape from stock, a shrink sleeve or label, and a lemon or lime scent, then decide between a liquid or gel texture and active-matter level. Refill pouches under the same label cut your packaging cost. Label proofs and a liquid sample are approved first. Lead time is typically 3-5 weeks after confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs, and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, bottle size and fragrance preference and we will return a quotation with pack options.
+Dish wash buyers split into supermarkets that want branded bottles and caterers that want 20 L carboys. GoodBiz Hygiene can quote both from the same formula to keep supply simple. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your active-matter target, fragrance and pack mix and we will return a quotation.

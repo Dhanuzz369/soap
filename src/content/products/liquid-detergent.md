@@ -4,7 +4,7 @@ slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Liquid Laundry Detergent Exporter from India | GoodBiz Hygiene"
+metaTitle: "Liquid Laundry Detergent Exporter & Supplier from India | GoodBiz Hygiene"
 metaDescription: "Liquid laundry detergent from vetted Indian manufacturers: 500 ml to 20 L packs, hand-wash and machine grades, private label and mixed container loads."
 answer: "Liquid detergent is a pourable laundry cleaner that combines surfactants, water and additives and dissolves easily in cold or warm water. It suits both hand washing and washing machines, and is sold as a more convenient, premium alternative to powder. GoodBiz Hygiene sources liquid detergent from vetted Indian manufacturers in retail and bulk packs for export."
 variants:
@@ -85,7 +85,7 @@ related:
 
 Liquid detergent has grown steadily wherever washing machines are spreading and shoppers are trading up from powder. It dissolves instantly in cold water, leaves no residue, pours cleanly and can be dosed more precisely. It also carries a higher price per litre, which makes it an attractive premium line for importers and retailers.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run blending plants ourselves. Instead we source liquid detergent from vetted Indian manufacturers, check the formulation against your requirements and handle export documentation and shipping through a single point of contact.
+GoodBiz Hygiene is a merchant exporter from India, a GoodBiz Global company, and arranges liquid detergent supply from established blenders. We do not run blending plants ourselves. Instead we source liquid detergent from vetted Indian manufacturers, check the formulation against your requirements and handle export documentation and shipping through a single point of contact.
 
 ## Grades and formulations
 
@@ -95,12 +95,12 @@ Use also splits the range. Top-load liquids foam freely and work for hand washin
 
 ## Packaging for export
 
-Retail liquid is filled in PET or HDPE bottles with screw or flip caps and packed in cartons of six to twelve. Pouch refills, with or without a spout, offer a lower-cost, lower-plastic option. For distributors who re-bottle, 5 L cans, 20 L jerrycans, 200 L drums and 1,000 L IBCs are possible. Since liquid is heavy, container payload limits often decide the load before volume does, and a loading plan is provided with each quotation.
+Liquid detergent is sold in PET or HDPE bottles of 500 ml to 3 L, stand-up spout pouches for refills, and 5 L cans or 20 L jerrycans for bulk. Master cartons hold 6 to 20 units. Because the product is dense and heavy, container payload usually limits the load before volume does. A loading plan can be arranged for your chosen size mix.
 
 ## Private label options
 
-Private label is available for importers building their own brand. You can specify the name, logo, label or sleeve artwork, fragrance, colour and bottle shape from the manufacturer's available moulds. A pre-production sample and a label proof are approved before bulk production begins. Production typically takes 3-5 weeks after order confirmation, depending on artwork and packaging.
+Liquid detergent brands often add a refill pouch that matches the bottle label, since refills lower the cost per wash. Fragrance, colour and viscosity can be adjusted within the formula range, and bottles come from the manufacturer's available moulds. A liquid sample and label proof are approved first. Lead time is typically 3-5 weeks after order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available, and payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, pack size and fragrance preference and we will return a quotation with pack options.
+Machine-wash liquids and hand-wash liquids need different foam control, and getting this wrong creates complaints. GoodBiz Hygiene confirms the intended wash method with the manufacturer before a grade is quoted. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us whether the product is for top-load, front-load or hand washing, plus your pack sizes, and we will return a quotation.

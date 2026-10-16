@@ -81,7 +81,7 @@ related:
 
 Multi-surface cleaner is the general-purpose workhorse of the cleaning cupboard. One bottle is used on kitchen counters, tables, appliance exteriors, painted walls, plastic furniture and many other hard surfaces, which makes it an easy product for shoppers to understand and for importers to range. It removes everyday grease, fingerprints, spills and dust, and a good formulation rinses or wipes off without leaving a sticky film.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run production lines ourselves. Instead we source multi-surface cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene, a merchant exporter from India within GoodBiz Global, sources all-purpose cleaners from vetted formulators. We do not run production lines ourselves. Instead we source multi-surface cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Formulations and fragrances
 
@@ -91,12 +91,12 @@ Colour is usually yellow, green or purple to suit the scent, though a clear prod
 
 ## Packaging for export
 
-Retail packs use a 500 ml or 750 ml bottle with a trigger spray head, in shrink-wrapped cartons of 12 to 24. Refill pouches and bottles lower the cost per litre, and 5 L and 20 L cans suit concentrates and institutional buyers. Container load figures vary with pack size and palletisation, so a loading plan accompanies every quotation.
+Multi-surface cleaner is usually a 500 ml or 750 ml trigger spray, with 1 L refills and 5 L or 20 L cans for concentrate. Cartons hold 12 to 24 bottles. The same bottle carries the product through kitchens, offices and living rooms, so a clear label with surface guidance helps, and a loading plan can be arranged.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, label artwork, fragrance, colour and formulation type, and choose a bottle and trigger head from the manufacturer's stock formats. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+A multi-surface brand chooses between ready-to-use and concentrate formats, then scent and tint, such as citrus, lavender, fresh breeze or apple. Bottles and sprayers come from the manufacturer's stock. The label should list the surfaces it is safe on. Sample approval comes first, and typical lead time is 3-5 weeks from order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, pack size and fragrance preference and we will return a quotation with pack options.
+A multi-purpose cleaner must be gentle enough for many surfaces, so claims on the label should match testing. GoodBiz Hygiene asks the manufacturer which surfaces the formula has been checked on. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your surface list and format preference and we will return a quotation.

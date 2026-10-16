@@ -78,22 +78,22 @@ related:
 
 Glycerin or transparent soap stands out because you can see through it. The clear, amber or tinted finish signals a gentle, premium product, and the glycerin gives a smooth, soft feel in use. It sells well in beauty-led retail, spa and hotel amenity channels, and it makes an attractive gift when packed in a window carton.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. Transparent soap needs specialised processing, so we source it only from vetted Indian manufacturers who run dedicated transparent lines, and we manage specification, documentation and shipment on your behalf.
+GoodBiz Hygiene is a GoodBiz Global company and a merchant exporter from India, and it places clear-soap orders only with specialist lines. Transparent soap needs specialised processing, so we source it only from vetted Indian manufacturers who run dedicated transparent lines, and we manage specification, documentation and shipment on your behalf.
 
 ## Grades and formulations
 
 Clarity comes from glycerin, sugar and solvents combined with a soap base, so typical TFM sits lower than opaque bars, around 45-60%, with glycerin typically in the 5-15% range. Popular variants include aloe vera in green, honey in amber, rose in pink, lemon and cucumber in pale yellow-green, sandalwood in warm brown, and a sea mineral bar in blue. Embedded effects such as a botanical or a colour swirl are available from some producers.
 
-Because transparent soap is sensitive to moisture, finish quality matters. We ask manufacturers for pre-shipment photographs so you can see bar clarity and surface before cartons are sealed.
+Because transparent soap is sensitive to moisture, finish quality matters. Pre-shipment photographs can be arranged so you can see bar clarity and surface before cartons are sealed.
 
 ## Packaging for export
 
-Every bar is shrink-wrapped to protect the surface, then placed in a printed carton, often with a window so the colour is visible on shelf. Multipacks of three suit supermarkets. Master cartons hold 48 to 96 bars. Because bars are lower in density than some opaque soaps, container counts differ, and a loading plan accompanies each quotation.
+Clear soap is sensitive to humidity, so each bar is first sealed in tight shrink film and then placed in a printed carton, often with a window so the colour shows on the shelf. Three-bar multipacks suit supermarkets. Master cartons hold 48 to 96 bars. Cartons are kept dry and off the container floor, and a desiccant or extra liner can be discussed for monsoon-season or tropical routes.
 
 ## Private label options
 
-You can build your own transparent soap brand with your name, logo, carton design, colour and fragrance. Weight and shape depend on the moulds the manufacturer holds, and new moulds, where needed, may require a higher minimum. A pre-production sample is approved before bulk production. Lead time is typically 3-5 weeks after confirmation, depending on private-label requirements.
+Transparent soap brands usually differentiate by colour and visible inclusions, so buyers choose a tint, a fragrance and sometimes an embedded botanical or swirl. Bar shape depends on moulds the manufacturer already holds, and a new mould, where needed, raises the minimum run. A sample and carton proof are approved first, and lead time is typically 3-5 weeks after confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-You deal with one export partner instead of qualifying several factories. Documentation, quality follow-up and port logistics are included in the process. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code is shown at 6-digit level and the 8-digit ITC-HS code is confirmed per order. Send us your preferred bar weight and fragrance, and we will return a quotation.
+Transparent soap needs dedicated processing, so GoodBiz Hygiene works only with manufacturers that run clear-soap lines. Photographs of bar clarity and surface finish can be arranged before cartons are sealed, which helps you catch cloudiness or sweating early. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your preferred bar weight, tint and fragrance and we will return a quotation.

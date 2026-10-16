@@ -85,7 +85,7 @@ related:
 
 Detergent powder remains the most widely sold form of laundry product across Africa, South Asia and the Middle East. It is cheap to make, easy to ship, simple to store in small homes and can be sold in anything from a 20 g sachet to a 25 kg sack. For importers, it is a volume line where the grade, fragrance and price tier decide the shelf position.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run detergent plants ourselves. Instead we source detergent powder from vetted Indian manufacturers, match the formulation to your requirements and handle export documentation and shipping through a single point of contact.
+GoodBiz Hygiene is a GoodBiz Global company and a merchant exporter from India, sourcing washing powder from vetted spray-drying and dry-mix plants. We do not run detergent plants ourselves. Instead we source detergent powder from vetted Indian manufacturers, match the formulation to your requirements and handle export documentation and shipping through a single point of contact.
 
 ## Grades and formulations
 
@@ -95,12 +95,12 @@ Fragrance and colour help a brand stand out. Lemon is widely popular, floral and
 
 ## Packaging for export
 
-Retail packs use laminated pouches, with printed cartons for some 1 kg and 2 kg lines. Larger packs of 5 kg and 10 kg use pouches or woven sacks, and 25 kg sacks serve distributors who re-pack locally. Sachets are available for price-sensitive channels. Because powder density differs widely, container loads are calculated for each order, and a loading plan is shared with the quotation.
+Retail powder goes in laminated pouches and printed cartons of 500 g to 2 kg, while 10 kg and 25 kg woven or paper sacks serve wholesalers and laundries. Small sachets are popular in general trade where buyers purchase one wash at a time. Powder density affects how a container fills, so some loads are volume-limited and others weight-limited, and a plan can be arranged for your pack mix.
 
 ## Private label options
 
-Private label is available for importers building their own brand. You can specify the brand name, logo, pouch artwork, fragrance, colour speckles and pack size. A pre-production sample and a print proof are approved before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Importers branding their own powder usually choose the pouch design, fragrance, speckle colour and whether it is positioned for hand wash or machine wash. A machine-wash powder needs a lower-foam formula than a hand-wash one, so that choice is made early. A sample is approved before production. Lead time is typically 3-5 weeks after order confirmation, depending on pouch printing.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available, and payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, pack size and fragrance preference and we will return a quotation with pack options.
+Powder buyers range from sachet distributors in general trade to supermarket chains, and each needs a different grade and pack. GoodBiz Hygiene can quote economy and premium powders with matching pack formats in one offer. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your target price per kilogram, pack sizes and wash method and we will suggest suitable grades.

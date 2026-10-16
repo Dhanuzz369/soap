@@ -83,7 +83,7 @@ related:
 
 Dish wash powder is an old and trusted format that keeps a loyal following in many markets, particularly where shoppers want a cheap, compact product that works hard on greasy and burnt pots. Because the product is dry and dense, freight per wash is low and the packs are light to carry from the market. Powder also keeps well in a warm kitchen and does not spill like a bottle.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run powder plants ourselves. Instead we source dish wash powder from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene is a merchant exporter from India and part of GoodBiz Global, sourcing scouring powders from vetted manufacturers. We do not run powder plants ourselves. Instead we source dish wash powder from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Grades and formulations
 
@@ -93,12 +93,12 @@ Fragrance choices are lemon, lime and orange, with an unscented option for buyer
 
 ## Packaging for export
 
-Retail packs are laminated pouches from 200 g to 1 kg, packed in cartons of 12 to 48. Stand-up zipper pouches and lidded tubs give a premium look for 500 g to 2 kg. Buckets or poly bags of 5 kg suit hostels and canteens, while 25 kg woven polypropylene bags with an inner liner serve bulk buyers and those who re-pack locally. Container load figures vary with pack and density, so a loading plan is shared with each quotation.
+Powder ships in laminated pouches of 200 g to 1 kg, stand-up zipper pouches or HDPE tubs, 5 kg buckets, and 25 kg woven polypropylene bags with an inner liner for bulk. Cartons of 24 pouches are common. Dry powder is sensitive to damp, so liners and sealed cartons matter, and a container plan can be arranged for your pack mix.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, logo, pouch artwork, fragrance, speckle colour and pack size. Particle size and active level can be chosen within the manufacturer's range. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Powder brands choose pouch design, speckle colour, fragrance and the level of abrasive in the formula. A lemon version is the usual lead product, with an oxy-bleach version for stained pans. Tubs and buckets give a premium look. A sample and pouch proof are approved first. Lead time is typically 3-5 weeks after order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs, and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, pack size and fragrance preference and we will return a quotation with pack options.
+Dish wash powder serves price-led markets, where hostels and canteens buy 25 kg bags. GoodBiz Hygiene can offer retail pouches and bulk bags together to share one container. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your pack sizes, fragrance and abrasive preference and we will return a quotation.

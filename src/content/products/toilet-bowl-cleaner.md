@@ -80,7 +80,7 @@ related:
 
 Toilet bowl cleaner is a core product in the household and facility cleaning range because limescale, rust rings and urine stains are a daily problem in regions with hard water. The product is designed to be thick enough to cling to the porcelain under the rim, giving the active ingredients time to loosen deposits before the toilet is brushed and flushed. Buyers compare brands on thickness, cleaning power, fragrance and the design of the angled bottle neck.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run production lines ourselves. Instead we source toilet bowl cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+As a GoodBiz Global company and merchant exporter from India, GoodBiz Hygiene sources toilet cleaners from vetted Indian manufacturers. We do not run production lines ourselves. Instead we source toilet bowl cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Grades and fragrances
 
@@ -94,12 +94,12 @@ Because toilet bowl cleaners are often acidic, the label needs hazard wording th
 
 ## Packaging for export
 
-Retail bottles of 500 ml, 750 ml and 1 L have an angled neck and are packed in shrink-wrapped cartons of 12 to 24. Institutional buyers can take 5 L cans. Container load figures vary with pack size, so a loading plan accompanies every quotation.
+Toilet bowl cleaner goes in HDPE bottles with an angled neck, usually 500 ml to 1 L, with 5 L cans for institutions. Cartons hold 12 to 24 bottles. Acid-based grades carry hazard labelling that differs by country, so bottles and caps are chosen to suit, and a loading plan can be arranged.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, label artwork, colour, fragrance, acid strength and thickness, and choose an angled bottle from the manufacturer's stock formats. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Toilet cleaner brands choose acid strength, a thick or thin gel, a blue, green or clear colour and a pine, lemon or ocean scent. Hazard symbols and safety wording are set for your market. Production follows sample approval, usually 3-5 weeks after order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order.
+Toilet cleaners carry hazard labelling and, in some markets, child-resistant caps. GoodBiz Hygiene confirms the safety wording and closure type needed for your market before label artwork starts. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your destination and preferred strength and we will return a quotation.

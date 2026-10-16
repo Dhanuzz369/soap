@@ -6,9 +6,9 @@ order: 4
 hsn: "3401 11"
 metaTitle: "Antibacterial & Medicated Soap Exporter & Supplier from India | GoodBiz Hygiene"
 metaDescription: "Antibacterial and medicated bath soaps from vetted Indian manufacturers: 75 g to 150 g bars, TFM 70%+, private label and mixed container loads for importers."
-answer: "Antibacterial or medicated soap is a bath bar that adds an active ingredient, such as triclocarban, chloroxylenol (PCMX) or a botanical like neem, to help reduce skin bacteria during washing. It is used for daily hygiene at home and in institutions. GoodBiz Hygiene sources it from vetted Indian manufacturers for export."
+answer: "Antibacterial or medicated soap is a bath bar that adds an active ingredient, such as chloroxylenol (PCMX) or a botanical like neem (and, where permitted, triclocarban), to help reduce skin bacteria during washing. It is used for daily hygiene at home and in institutions. GoodBiz Hygiene sources it from vetted Indian manufacturers for export."
 variants:
-  - "Active-agent antibacterial bar (fresh)"
+  - "PCMX antibacterial bar (fresh)"
   - "Neem and tea tree medicated"
   - "Lemon protect"
   - "Carbolic style"
@@ -58,7 +58,7 @@ markets:
   - "Latin America"
 faqs:
   - q: "Which antibacterial agents are used?"
-    a: "Actives vary by manufacturer and by what your market permits. Triclocarban, PCMX (chloroxylenol) and botanical agents such as neem or tea tree are typical choices. Some regions restrict certain actives, so tell us your destination and we will confirm what can be supplied."
+    a: "Actives vary by manufacturer and by what your market permits. PCMX (chloroxylenol) and botanical agents such as neem or tea tree are typical choices, and triclocarban only where it is permitted. Some regions restrict certain actives, so tell us your destination and we will confirm what can be supplied."
   - q: "Can the carton make a germ-kill claim?"
     a: "Claim wording must match both the formula and your local regulator. We do not supply lab claims we cannot document, so please share the wording you need and we will check what the manufacturer can support with test data."
   - q: "What is the MOQ?"
@@ -78,22 +78,22 @@ related:
 
 Antibacterial and medicated soaps remain in steady demand wherever households and institutions place a high value on hygiene. Schools, hostels, workplaces and homes use them for daily washing, and buyers often choose them over standard toilet soap in warm climates. The category covers a range of products, from a general antibacterial bar with a fresh scent to carbolic-style and sulphur bars with a medicated profile.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run soap lines. These bars are sourced from vetted Indian manufacturers, and we handle the specification check, documentation and shipment.
+GoodBiz Hygiene, a merchant exporter from India and a GoodBiz Global company, sources medicated bars from vetted Indian soap manufacturers. We do not run soap lines. These bars are sourced from vetted Indian manufacturers, and we handle the specification check, documentation and shipment.
 
 ## Grades and formulations
 
-The soap base is usually high-TFM, around 70-75%, which gives a firm, long-lasting bar. The active ingredient is what separates the product. Common choices include triclocarban, PCMX (chloroxylenol) and botanical actives such as neem and tea tree. Because rules differ by country, we ask early which agents your regulator allows and which claims you plan to put on the carton.
+The soap base is usually high-TFM, around 70-75%, which gives a firm, long-lasting bar. The active ingredient is what separates the product. Common choices include PCMX (chloroxylenol) and botanical actives such as neem and tea tree, with triclocarban only where it is permitted. Because rules differ by country, we ask early which agents your regulator allows and which claims you plan to put on the carton.
 
 Variants range from a fresh antibacterial bar and a lemon protect bar to a carbolic-style bar with a traditional medicated scent, a sulphur bar for skin-care positioning, and an unperfumed bar for sensitive skin. All values for TFM, pH and active content are typical and are confirmed on the specification for your order.
 
 ## Packaging for export
 
-Cartons are printed with the claim wording you approve. Economy lines can use flow wrap, while premium lines use a printed carton. Multipacks of three or four are available, and master cartons hold 48 to 144 bars. A container loading plan is provided with each quotation.
+Cartons carry the claim wording you have approved, so artwork proofs matter more here than on a plain bath soap. Economy lines can use flow wrap, while premium lines use a printed carton. Three- and four-bar multipacks are available, and master cartons hold 48 to 144 bars. A loading plan can be arranged when pack sizes are final.
 
 ## Private label options
 
-You can set the name, logo, artwork, fragrance, colour and bar weight. The active ingredient and the claim text on the pack must suit your market, so we align these with you before artwork is finalised. A sample is approved before bulk production, and lead time is typically 3-5 weeks after confirmation, depending on private-label requirements.
+The active ingredient and the claim on the pack must suit your market, so these are agreed before artwork is finalised. Buyers choose the name, artwork, fragrance, colour and bar weight on top of that. A sample is approved before bulk production, and lead time is typically 3-5 weeks after confirmation, depending on carton printing.
 
 ## Why source through GoodBiz Hygiene
 
-You work with one export partner for sourcing, quality follow-up, documents and shipping. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code is shown at 6-digit level, and the 8-digit ITC-HS code is confirmed per order. Share your market, preferred active and bar weight, and we will return a quotation.
+Antibacterial soap sits under tighter rules than plain bath soap, and the permitted active differs by country. GoodBiz Hygiene confirms with the manufacturer which actives and test data are available before you commit to claim wording. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your destination market, preferred active and bar weight and we will confirm what can be supplied.

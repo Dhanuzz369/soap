@@ -81,7 +81,7 @@ related:
 
 Car wash shampoo is an automotive aftermarket product that sits comfortably beside household cleaners in an importer's range. Drivers want a thick, lubricating foam that lifts road film and dust without scratching the paint or stripping the wax. Because the product is sold as a concentrate, one bottle washes many vehicles, so buyers compare brands on foam, rinsing, fragrance and how far the product dilutes.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run production lines ourselves. Instead we source car wash shampoo from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene, part of GoodBiz Global, is a merchant exporter from India that sources car shampoo from vetted automotive-care formulators. We do not run production lines ourselves. Instead we source car wash shampoo from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Types and formulations
 
@@ -91,12 +91,12 @@ Typical pH, active matter and dilution ratios are shared on the specification sh
 
 ## Packaging for export
 
-Retail bottles of 250 ml, 500 ml and 1 L are packed in shrink-wrapped cartons of 12 to 24. Workshops and car wash centres usually buy 5 L or 20 L cans, and 200 L drums are available for importers who re-pack locally. Container load figures vary with pack size, so a loading plan accompanies every quotation.
+Car shampoo is sold in 250 ml to 1 L bottles with flip or screw caps, plus 5 L and 20 L cans for workshops and 200 L drums for re-packers. Cartons hold 12 to 24 bottles. Concentrate packs are used by dilution, so cap sealing and label wording on dilution rates matter.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, label artwork, fragrance, colour and formulation, and choose a bottle and cap from the manufacturer's stock formats. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Car care brands choose between standard concentrate, wash-and-wax, and a foam-lance grade for pressure washers, then a strawberry, cherry or ocean scent and a bright tint. Bottles and caps come from stock. The label should state the dilution ratio. Sample approval comes first, and typical lead time is 3-5 weeks from order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, pack size and fragrance preference and we will return a quotation with pack options.
+Car wash centres buy by the 20 L can, while retail shops want colourful 500 ml bottles. GoodBiz Hygiene can quote both from one formula, which simplifies supply for an automotive distributor. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your foam lance or bucket use, scent choice and pack sizes and we will return a quotation.

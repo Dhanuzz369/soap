@@ -82,7 +82,7 @@ related:
 
 Herbal phenol, widely called phenyl in South Asia, is a staple floor and drain cleaner in homes, schools and workplaces across many import markets. It is sold as a concentrate that the user dilutes in a bucket, turning milky white and releasing a strong, clean scent that many buyers associate with a freshly mopped room. Because it is diluted heavily, a single bottle goes a long way, which makes it attractive for value-driven retail and for institutional supply.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run production lines ourselves. Instead we source herbal phenol from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter from India that sources phenyl from established disinfectant manufacturers. We do not run production lines ourselves. Instead we source herbal phenol from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Herbal profiles and grades
 
@@ -96,12 +96,12 @@ Herbal phenol is often classified under HSN 3808 94 as a disinfectant, depending
 
 ## Packaging for export
 
-Retail bottles of 500 ml and 1 L are packed in shrink-wrapped cartons of 12 to 24. Institutional buyers often take 5 L cans or 20 L jerry cans, and 200 L drums are available for importers who re-pack locally. Container load figures vary with pack size, so a loading plan accompanies every quotation.
+Phenyl goes in HDPE bottles with screw caps, 5 L and 20 L jerry cans with tamper seals, and 200 L drums for re-packers. Cartons of 12 to 24 bottles are shrink-wrapped. The strong smell means caps and liners must seal well, so leak testing before loading is worth requesting, and a container plan can be arranged.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, label artwork, herbal oil blend, strength and bottle size. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Phenyl brands compete on herbal oil blend and milky appearance. Buyers choose neem, pine, eucalyptus, lemongrass, jasmine or rose profiles, plus economy or concentrated strength. Labels must carry correct hazard wording for your country. Once the sample is signed off, bulk production typically takes 3-5 weeks.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. Send us your target market, pack size and fragrance preference and we will return a quotation with pack options.
+Phenyl is sold in markets where disinfectant claims are regulated, so what the label may say varies. GoodBiz Hygiene checks with the manufacturer which classification and claims apply before you finalise artwork. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your destination, preferred herbal oil and pack sizes and we will return a quotation.

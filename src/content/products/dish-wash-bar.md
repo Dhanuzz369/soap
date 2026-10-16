@@ -50,7 +50,7 @@ privateLabel:
     - "Printed carton and master carton design"
 containerLoad:
   ft20: "Approx. 1,000 to 1,400 master cartons (200 g bars, carton of 72), varies with pack"
-  ft40: "Approx. 2,200 to 2,800 master cartons (200 g bars, carton of 72), varies with pack"
+  ft40: "Approx. 1,500 to 1,800 master cartons (200 g bars, carton of 72), limited by payload; varies with pack"
 uses:
   - "Daily washing of utensils in households"
   - "Price-led retail and general trade"
@@ -84,7 +84,7 @@ related:
 
 The dish wash bar is a staple in many markets where shoppers buy by the unit and every cent counts. A bar is easy to store and handle, and a single cake can last for several weeks of daily use. Compared with a bottle of liquid, it uses less packaging and lighter freight, which suits distributors who sell into rural areas or smaller shops.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run detergent lines ourselves. Instead we source dish wash bars from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene, part of GoodBiz Global, is a merchant exporter from India that sources dish bars from vetted bar-soap manufacturers. We do not run detergent lines ourselves. Instead we source dish wash bars from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Grades and formulations
 
@@ -94,12 +94,12 @@ Lemon and lime are the best sellers, usually in a green or yellow colour that te
 
 ## Packaging for export
 
-Bars are wrapped individually in printed flow wrap or sold in a printed carton, then packed in multipacks of three or four. Tub packs of 200 g to 300 g come with a lid and sometimes a scrub pad, which gives a premium look on the shelf. Master cartons hold 48 to 144 bars depending on weight. Container load figures vary with bar size and carton, so a loading plan is shared with each quotation.
+Dish wash bars come as a flow-wrapped bar, a bar with a scouring pad, or a bar in a lidded plastic tub of 200 g to 300 g. Multipacks of three or four bars suit supermarkets, and master cartons hold 48 to 144 bars. The bars are heavy, so payload limits a container, and a loading plan can be arranged for your pack type.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, logo, wrapper or tub artwork, fragrance, colour and bar weight. Bar shape comes from the manufacturer's existing moulds. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+Brands choose between bar only, bar with scrub pad and tub pack, each at a different price point. Colour and scent, usually lemon, lime or green lime, come from the manufacturer's range, and bar weights follow its moulds. Tub artwork needs a carton proof and a sample before production. Lead time is typically 3-5 weeks after order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs, and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, bar weight and fragrance preference and we will return a quotation with pack options.
+Dish bars are bought on price, so buyers compare cost per wash rather than cost per bar. GoodBiz Hygiene can quote several bar weights and pack types so you can pick the best fit for your market. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your bar weight, pack type and target price and we will return a quotation.

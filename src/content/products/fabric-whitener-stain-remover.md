@@ -4,7 +4,7 @@ slug: fabric-whitener-stain-remover
 category: laundry-care
 order: 5
 hsn: "3402 50"
-metaTitle: "Fabric Whitener & Stain Remover Exporter from India | GoodBiz Hygiene"
+metaTitle: "Fabric Whitener & Stain Remover Exporter & Supplier from India | GoodBiz Hygiene"
 metaDescription: "Fabric whitener, laundry blue and stain remover from vetted Indian manufacturers: powder and liquid, 100 g to 20 L packs, private label for importers."
 answer: "A fabric whitener or stain remover is a laundry additive that brightens whites and lifts stains that ordinary detergent leaves behind. Products work through optical brighteners, laundry blue, oxygen bleach or targeted stain-lifting agents. GoodBiz Hygiene sources these additives in powder and liquid form from vetted Indian manufacturers for export."
 variants:
@@ -84,7 +84,7 @@ related:
 
 Even a good detergent leaves yellowing on white cottons and stubborn marks on collars, cuffs and kitchen linen. Fabric whiteners and stain removers solve those problems, either as a boost during the wash or as a pre-treatment. They are inexpensive add-ons that shoppers buy repeatedly, and they sit well alongside detergent and softener on the same shelf.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run blending or packing lines ourselves. Instead we source whiteners and stain removers from vetted Indian manufacturers, check each specification against your requirements and handle export documentation and shipping through a single point of contact.
+GoodBiz Hygiene, a GoodBiz Global company and merchant exporter from India, sources whiteners and stain removers from vetted manufacturers. We do not run blending or packing lines ourselves. Instead we source whiteners and stain removers from vetted Indian manufacturers, check each specification against your requirements and handle export documentation and shipping through a single point of contact.
 
 ## Formats and formulations
 
@@ -94,12 +94,12 @@ Powder boosters are the cheapest to ship and store, and can be sold in sachets. 
 
 ## Packaging for export
 
-Powders go in laminated pouches or tubs and liquids in PET or HDPE bottles with pour or spray caps. Larger cans of 5 L and jerrycans of 20 L serve distributors and laundries. Master cartons usually hold 12 to 24 retail units. Oxygen powders need dry, sealed packaging, and a loading plan is shared with each quotation. Shipping classification depends on the formulation and is confirmed before dispatch.
+This category spans powder boosters, liquids and pre-wash gels, so the packing differs by format. Powders go in laminated pouches or tubs of 400 g to 1 kg, liquids in bottles with a pour or spray cap, and bulk liquid in 5 L cans or 20 L jerrycans. Master cartons hold 12 to 24 retail units. Oxygen-active powders must be kept dry in transit.
 
 ## Private label options
 
-Private label is available for importers building their own brand. You can specify the name, logo, pack artwork, product format, fragrance and pack size. A pre-production sample and a print proof are approved before bulk production begins. Production typically takes 3-5 weeks after order confirmation, depending on artwork and packaging.
+Whitener and stain-remover brands choose between powder, liquid and gel, then pick the pack size, fragrance or an unperfumed finish. Sachets work in general trade, where buyers purchase single doses. Pack artwork is approved with a sample before production starts. Lead time is typically 3-5 weeks after order confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs and consolidated documentation. FOB, CIF and CFR are available, and payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, format and pack size and we will return a quotation with options.
+Stain products live or die on a visible result, so claims must be matched to a tested formula. GoodBiz Hygiene can ask the manufacturer for a demonstration-wash comparison so your marketing does not overstate performance. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us which stains and fabrics your customers deal with and we will suggest suitable formats.

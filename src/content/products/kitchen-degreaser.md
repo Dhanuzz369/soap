@@ -70,7 +70,7 @@ faqs:
   - q: "What is the minimum order quantity?"
     a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene products can often be arranged, though each private-label design may carry its own minimum."
   - q: "Are there any shipping restrictions for strongly alkaline grades?"
-    a: "Heavy-duty grades with high pH may be classed as corrosive for transport, which affects labelling and packing. The classification is checked against the specification for your order, and the correct shipping documents and MSDS are supplied."
+    a: "Heavy-duty grades with high pH may be classed as corrosive for transport, which affects labelling and packing. The classification is checked against the specification for your order, and the correct shipping documents are supplied, with an MSDS on request."
 related:
   - dish-wash-liquid
   - dish-wash-powder
@@ -83,7 +83,7 @@ related:
 
 Cooking leaves a film of oil on almost every kitchen surface, and over time that film hardens into a sticky, brown layer that ordinary cleaners barely touch. A kitchen degreaser is built for this task. It breaks the grease into small droplets that can be wiped away, and a good one does this without long soaking or heavy scrubbing. Demand is steady in households that cook with oil daily and in the commercial kitchens that serve them.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run blending plants ourselves. Instead we source kitchen degreasers from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter from India that sources degreasers from vetted formulators. We do not run blending plants ourselves. Instead we source kitchen degreasers from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
 
 ## Grades and formulations
 
@@ -93,12 +93,12 @@ Scent matters because kitchen smells linger. Lemon and orange citrus are the usu
 
 ## Packaging for export
 
-Retail sprays come in 500 ml and 750 ml bottles with trigger heads, packed in cartons of 12. Concentrates are sold in 1 L bottles for retail or in 5 L cans, with 20 L and 50 L carboys and 200 L drums for institutional buyers and contract cleaners. Higher-pH grades may need transport labelling, so packing and documents are confirmed per order. A loading plan is shared with each quotation, since container load figures vary with bottle shape and carton size.
+Retail degreaser goes in 500 ml and 750 ml trigger-spray bottles, with 1 L concentrate bottles for dilution. Restaurants and caterers buy 5 L jerry cans, 20 L carboys and 200 L drums. Master cartons hold 12 sprays or two to four cans. Heavy-duty alkaline grades may be classed for transport, which changes labelling and packing.
 
 ## Private label options
 
-Private label is available for importers and distributors building their own brand. You can specify the name, logo, label artwork, fragrance, colour, format and strength. Bottle and spray head choices come from the manufacturer's existing stock, which keeps tooling cost low. A pre-production sample is shared for approval before bulk production begins. Production for private-label orders typically takes 3-5 weeks after order confirmation, depending on artwork and packaging requirements.
+A degreaser brand picks between ready-to-use spray and heavy-duty concentrate, then colour and a lemon or orange scent. Alkaline strength changes the hazard label, so wording is agreed with the manufacturer first. Trigger heads and bottles come from stock. A sample and label proof are approved before production, and lead time is typically 3-5 weeks after confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-Working with one export partner removes the work of finding, qualifying and following up with individual factories. You receive a clear specification, pre-shipment photographs, and consolidated documentation. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send us your target market, pack format and fragrance preference and we will return a quotation with pack options.
+Degreasers are bought by cooks and cleaners who judge them in seconds on a greasy hob. GoodBiz Hygiene can arrange samples of ready-to-use and concentrate grades for a side-by-side trial. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us whether you need retail sprays or institutional concentrate and we will return a quotation.

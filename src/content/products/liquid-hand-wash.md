@@ -81,7 +81,7 @@ related:
 
 Liquid hand wash has replaced bar soap at most sinks in offices, restaurants, clinics and public washrooms, and it continues to grow in households too. It is easy to dispense, hygienic to share, and available in a wide range of fragrances. For importers, it works both as a retail product in pump bottles and as a bulk institutional line in 5 L cans and larger refill containers.
 
-GoodBiz Hygiene is a merchant exporter from India and a GoodBiz Global company. We do not run filling lines ourselves. Liquid hand wash is sourced from vetted Indian manufacturers who blend and fill it, and we manage specification, documentation and shipment.
+GoodBiz Hygiene is a merchant exporter from India, part of GoodBiz Global, and arranges hand wash supply from established liquid blenders. We do not run filling lines ourselves. Liquid hand wash is sourced from vetted Indian manufacturers who blend and fill it, and we manage specification, documentation and shipment.
 
 ## Grades and formulations
 
@@ -91,12 +91,12 @@ Common variants include an antibacterial fresh grade, aloe vera for a moisturisi
 
 ## Packaging for export
 
-Retail packs are PET bottles with pump dispensers in 250 ml and 500 ml, with refill pouches in 1 L. Institutional packs include HDPE cans of 5 L and jerrycans of 20 L with tamper seals. Cartons hold 12 or 24 bottles or 4 cans, and a container plan is supplied with each quotation because carton size and mix change the count.
+Retail packs are PET bottles with pump dispensers in 250 ml and 500 ml, with 1 L refill pouches for households. Offices and washrooms use 5 L cans and 20 L jerrycans with tamper seals. Cartons hold 12 or 24 bottles or 4 cans, and shipping weight is dominated by the liquid, so a 20 ft container is often payload-limited with 5 L cans. A container plan can be arranged for your mix.
 
 ## Private label options
 
-You can create your own brand by choosing a label design, fragrance, colour, pearlescent finish and closure type. Bottle shapes are normally selected from what the manufacturer already stocks, which keeps tooling cost low. Label artwork and a liquid sample are approved before production. Lead time is typically 3-5 weeks after order confirmation, depending on private-label requirements.
+Most hand wash brands start from the manufacturer's stock bottles and pumps, which keeps tooling cost at zero, and then differentiate by label, colour, pearlescent finish and fragrance. Institutional brands often add a matching 5 L refill with the same label. A liquid sample and label proof are approved before production, and lead time is typically 3-5 weeks after confirmation.
 
 ## Why source through GoodBiz Hygiene
 
-One export partner covers sourcing, quality follow-up, documentation and shipping. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is at 6-digit level, and the 8-digit ITC-HS code is confirmed per order. Send us your target pack sizes and fragrance preferences, and we will return a quotation and loading plan.
+Hand wash is bought both as a retail product and as a refill for dispensers, and the two have very different pack and price needs. GoodBiz Hygiene can quote the retail and institutional sizes together so both ship in one container. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your target pack sizes, fragrance preferences and any antibacterial claim you need and we will return a quotation.
