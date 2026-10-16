@@ -197,7 +197,7 @@ Settings to enter on any of them:
 | `src/pages/` | Page templates (home, about, contact, FAQ, etc.) |
 | `src/styles/` | Colours, fonts and layout |
 | `public/images/products/` | Product photos (`<slug>.webp`) |
-| `public/fonts/` | Self-hosted fonts (Newsreader and Albert Sans, SIL Open Font License) |
+| `public/fonts/` | Self-hosted fonts (Geist, and Newsreader italic for accents; SIL Open Font License) |
 | `tests/` | Automatic checks |
 
 The site is built with [Astro](https://astro.build). The home page's 3D product shelf uses Three.js. It loads only after the page has appeared, and it is skipped for visitors who prefer reduced motion or are using data saver.

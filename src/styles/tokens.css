@@ -1,62 +1,52 @@
 /*
-  GoodBiz Hygiene — art direction (taste-skill v2, direction "Colour chapters", seed 1107668279)
+  GoodBiz Hygiene — tokens (Floria-style restyle, 2026-10-16)
+  Art direction: docs/superpowers/specs/2026-10-16-floria-restyle-direction.md
 
-  IDEA
-  The five product categories become five colour chapters. Each category owns one pale green field
-  (mint for bath soaps, eucalyptus-blue for laundry, leaf-sage for kitchen, eucalyptus for surfaces,
-  stone-sage for raw materials). The field meets the page edge to edge with no rule or shadow,
-  and every product drawn inside it is tinted from that same chapter. A buyer learns the catalogue
-  by colour. The page ends on one deep forest-green field: the footer and the call to action.
+  The page alternates a light green-white ground with deep forest fields, the way the reference
+  alternates stone with near-black. The brand's greens are kept: dark = forest, never black.
 
-  FONTS (Google Fonts, display=swap)
-  - Display: Newsreader 400/500 (optical sizes on). A calm, refined serif, set large and tight
-    (tracking -0.03em, leading 0.95). It is used for H1-H2 and the footer name.
-  - Text: Albert Sans 400/500/600. A clean, legible grotesk for body copy, UI, chips and tables.
-    Two faces only. No italics as emphasis. No uppercase tracked labels.
-  Redraws: the dealt type (Epilogue 900, then Hanken Grotesk) were replaced, because spec §9 asks for a
-  refined display face plus a legible sans. The dealt palette (ultramarine and yellow) was replaced,
-  because spec §9 fixes greens on off-white. Its proportions are kept: one ground, one ink, one action,
-  and a few full-strength fields.
+  FONTS
+  - Geist (variable, self-hosted) sets everything: display 700 tight, text 400/500.
+  - Newsreader italic only for the italic second line of a few headings and the footer tagline.
 
-  COLOUR TOKENS (all text pairs are checked to WCAG AA; see the task-3 report)
-  ground  --paper       #F5F8F2   off-white with a breath of green
-          --paper-2     #EAF0E6   one tone step, used for surfaces and bands
-  ink     --ink         #12352A   deep forest, used for all running text
-          --ink-soft    #3F5E50   secondary notes only (6.7:1 on paper, >= 5.3:1 on every field)
-  action  --action      #1D5A42   primary buttons and links; --action-hover #154533; --on-action #F5F8F2
-  deep    --forest      #173F31   closing field (CTA, footer), with --on-forest #EEF5EC and --forest-accent #BFE6CC
-  accent  --accent      #CDEFD8   the one soft accent: chips, selection, the active nav underline field
-  fields  --field-soaps #DCEFE2  --field-laundry #D4E8E7  --field-kitchen #E2E9CF
-          --field-surface #CFE3D9  --field-raw #E0E5DA
-
-  HERO COMPOSITION (built in a later task; spec §14)
-  "Mosaic masthead, title on axis". The top ~52% of the first screen is a gutterless mosaic band of
-  6 columns × 2 rows. The tiles are flat chapter colours. One 2×2 cell holds the Three.js "range shelf"
-  (a <canvas> that lies over the static SVG range composition, which is the LCP element and the
-  fallback), and the other tiles carry single ProductVisual drawings (bottle, bar, can). Below the band,
-  on paper: a one-sentence standfirst on the left margin (max 30ch), and, starting at 42% of the
-  width, the H1 on two lines at --step-display. "Request a Quote" (filled pill) and "View Products"
-  (text link) sit under the H1. On phones the band becomes 3×2 at about 38svh, the H1 moves to the
-  left margin, and the buttons stack.
-  Signature motion: masked headline rise (900ms ease-out), reduced-motion safe.
+  COLOUR (all text pairs checked to WCAG AA)
+  light ground  --paper #F5F8F2, --paper-2 #EAF0E6 (one tone step), ink #12352A, ink-soft #3F5E50
+  dark fields   --forest-950 #0B211A (hero, footer), --forest-900 #0F2A22, --forest-800 #163A2F (cards)
+  on dark       --on-dark #EEF4EF, --on-dark-soft #A9C2B5 (8.6:1 on forest-950)
+  action        on light: forest pill (--action) with off-white text; on dark: off-white pill, forest text
+  accent        --mint #BFE3CF, sparingly (step circles, chips, focus on dark)
 */
 
 :root {
-  /* colour */
+  /* light ground */
   --paper: #f5f8f2;
   --paper-2: #eaf0e6;
+  --paper-3: #dfe8da;
   --ink: #12352a;
   --ink-soft: #3f5e50;
+
+  /* dark fields */
+  --forest-950: #0b211a;
+  --forest-900: #0f2a22;
+  --forest-800: #163a2f;
+  --forest-700: #1f4a3c;
+  --on-dark: #eef4ef;
+  --on-dark-soft: #a9c2b5;
+  --mint: #bfe3cf;
+
+  /* actions */
   --action: #1d5a42;
   --action-hover: #154533;
   --on-action: #f5f8f2;
-  --forest: #173f31;
-  --on-forest: #eef5ec;
-  --forest-accent: #bfe6cc;
+
+  /* older names, kept so inner pages read the new palette */
+  --forest: var(--forest-900);
+  --on-forest: var(--on-dark);
+  --forest-accent: var(--mint);
   --accent: #cdefd8;
   --focus: #1d5a42;
 
-  /* chapter fields, one per category */
+  /* chapter fields, one per category (light tints for drawings and chips) */
   --field-soaps: #dcefe2;
   --field-laundry: #d4e8e7;
   --field-kitchen: #e2e9cf;
@@ -64,34 +54,44 @@
   --field-raw: #e0e5da;
 
   /* type */
-  --font-display: 'Newsreader', 'Iowan Old Style', Georgia, serif;
-  --font-text: 'Albert Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
-  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
-  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
-  --step-head: clamp(2.125rem, 1.4rem + 3.2vw, 4rem);
-  --step-display: clamp(2.75rem, 1.2rem + 6.4vw, 7.5rem);
-  --lh-tight: 0.95;
-  --lh-text: 1.55;
-  --track-display: -0.03em;
+  --font-display: 'Geist', 'Geist Fallback', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-text: var(--font-display);
+  --font-serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --step-small: 0.875rem;
+  --step-body: clamp(1rem, 0.96rem + 0.18vw, 1.125rem);
+  --step-lead: clamp(1.125rem, 1.05rem + 0.35vw, 1.25rem);
+  --step-h3: clamp(1.25rem, 1.1rem + 0.6vw, 1.875rem);
+  --step-head: clamp(2.125rem, 1.35rem + 2.6vw, 3.75rem);
+  --step-statement: clamp(2.25rem, 1.1rem + 3.9vw, 4.5rem);
+  --step-display: clamp(2.875rem, 1.1rem + 5.5vw, 6rem);
+  --lh-tight: 0.92;
+  --lh-text: 1.6;
+  --track-display: -0.045em;
+  --track-head: -0.035em;
 
   /* space */
   --gutter: clamp(16px, 1rem + 1.2vw, 32px);
-  --gap: clamp(16px, 0.75rem + 1vw, 28px);
-  --section: clamp(88px, 4rem + 8vw, 200px);
-  --max: 1440px;
-  --measure: 66ch;
+  --gap: clamp(16px, 0.75rem + 1vw, 32px);
+  --section: clamp(96px, 3rem + 7vw, 192px);
+  --max: 1280px; /* 1216px of content at 1440, like the reference */
+  --measure: 62ch;
 
-  /* shape: media is square-cornered; every button and chip is a full pill */
+  /* shape: media cards are rounded (the reference's 32px), buttons and chips are full pills */
   --radius: 0;
+  --radius-card: clamp(20px, 1rem + 1vw, 32px);
+  --radius-tile: clamp(20px, 1rem + 1.4vw, 40px);
   --pill: 999px;
   --tap: 44px;
 
-  /* motion */
-  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-  --dur-fast: 160ms;
-  --dur: 320ms;
-  --dur-slow: 900ms;
+  /* motion (Emil Kowalski) */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --dur-press: 160ms;
+  --dur-fast: 200ms;
+  --dur: 300ms;
+  --dur-media: 600ms;
+  --dur-enter: 700ms;
+  --stagger: 70ms;
 
   /* ProductVisual default tint (overridden per category) */
   --pv-field: var(--field-surface);
