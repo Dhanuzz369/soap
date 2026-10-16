@@ -68,9 +68,11 @@ describe('built pages', () => {
     expect(product.category.length).toBeGreaterThan(0);
   });
 
-  it('has a 404 page with the expected robots meta', () => {
-    const has = read('404.html').includes(NOINDEX);
-    expect(has).toBe(!site.launchReady);
+  it('has a 404 page that is always noindex and has no canonical', () => {
+    const html = read('404.html');
+    expect(html).toContain(NOINDEX);
+    expect(html).not.toContain('rel="canonical"');
+    expect(html).not.toContain('hreflang=');
   });
 
   it('has unique titles and descriptions', () => {

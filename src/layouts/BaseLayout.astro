@@ -16,9 +16,11 @@ interface Props {
   ogImage?: string;
   jsonLd?: Record<string, unknown>[];
   breadcrumbs?: { name: string; url: string }[];
+  /** Always noindex this page and leave out the canonical/hreflang links (e.g. the 404 page). */
+  noindex?: boolean;
 }
 
-const { title, description, path, ogImage = '/og-default.png', jsonLd = [], breadcrumbs } = Astro.props;
+const { title, description, path, ogImage = '/og-default.png', jsonLd = [], breadcrumbs, noindex = false } = Astro.props;
 
 const fullTitle = pageTitle(title);
 const canonical = absoluteUrl(path);
@@ -40,10 +42,16 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    {!site.launchReady && <meta name="robots" content="noindex, nofollow" />}
-    <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="en" href={canonical} />
-    <link rel="alternate" hreflang="x-default" href={canonical} />
+    {(noindex || !site.launchReady) && <meta name="robots" content="noindex, nofollow" />}
+    {
+      !noindex && (
+        <>
+          <link rel="canonical" href={canonical} />
+          <link rel="alternate" hreflang="en" href={canonical} />
+          <link rel="alternate" hreflang="x-default" href={canonical} />
+        </>
+      )
+    }
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta name="theme-color" content="#f5f8f2" />
 
