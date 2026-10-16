@@ -32,20 +32,25 @@ const load = (p: string) =>
     return { file: f, ...(data as any), body: content } as any;
   });
 
+// Everything below is checked against the files actually on disk, so adding a product
+// (or a category) is safe. EXPECTED_SLUGS / EXPECTED_HSN only pin the original range.
 const products = load('products');
 const categories = load('categories');
 const bySlug: Record<string, any> = Object.fromEntries(products.map((p) => [p.slug, p]));
-const slugs = new Set(EXPECTED_SLUGS);
+const slugs = new Set<string>(products.map((p) => p.slug));
+const categorySlugs = categories.map((c) => c.slug);
 
 describe('products content', () => {
-  it('has all 27 products with unique slugs', () => {
-    expect(products).toHaveLength(27);
-    expect(new Set(products.map((p) => p.slug)).size).toBe(27);
-    expect([...products.map((p) => p.slug)].sort()).toEqual([...EXPECTED_SLUGS].sort());
+  it('has unique slugs and still includes the original 27 products', () => {
+    expect(slugs.size).toBe(products.length);
+    expect(products.length).toBeGreaterThanOrEqual(EXPECTED_SLUGS.length);
+    const missing = EXPECTED_SLUGS.filter((s) => !slugs.has(s));
+    expect(missing).toEqual([]);
   });
 
-  it('has 5 categories', () => {
-    expect(categories.map((c) => c.slug).sort()).toEqual([...CATEGORY_SLUGS].sort());
+  it('has the 5 original categories, each with at least one product', () => {
+    for (const c of CATEGORY_SLUGS) expect(categorySlugs).toContain(c);
+    for (const c of categorySlugs) expect(products.filter((p) => p.category === c).length, c).toBeGreaterThanOrEqual(1);
     for (const c of categories) {
       expect(c.summary.length).toBeLessThanOrEqual(160);
       expect(c.hsnRange).toBeTruthy();
@@ -57,12 +62,11 @@ describe('products content', () => {
     describe(p.slug, () => {
       it('file name matches slug and category is valid', () => {
         expect(p.file).toBe(`${p.slug}.md`);
-        expect(CATEGORY_SLUGS).toContain(p.category);
-        expect(slugs.has(p.slug)).toBe(true);
+        expect(categorySlugs).toContain(p.category);
       });
       it('has valid structured data', () => {
         expect(p.hsn).toMatch(/^\d{4} \d{2}$/);
-        expect(p.hsn).toBe(EXPECTED_HSN[p.slug]);
+        if (p.slug in EXPECTED_HSN) expect(p.hsn).toBe(EXPECTED_HSN[p.slug]);
         expect(p.metaTitle).toContain('Exporter & Supplier from India');
         expect(p.metaDescription.length).toBeGreaterThanOrEqual(120);
         expect(p.metaDescription.length).toBeLessThanOrEqual(160);

@@ -4,6 +4,9 @@ import {
   productJsonLd, articleJsonLd, pageTitle, absoluteUrl,
 } from '../../src/lib/seo';
 import type { ProductData } from '../../src/lib/types';
+import site from '../../src/config/site';
+
+const BASE = site.url.replace(/\/$/, '');
 
 const sampleProduct: ProductData = {
   title: 'Dish Wash Liquid', slug: 'dish-wash-liquid', category: 'home-care', order: 1,
@@ -27,7 +30,7 @@ describe('seo', () => {
     expect(websiteJsonLd()['@type']).toBe('WebSite');
   });
   it('product has no offers/aggregateRating and carries HSN', () => {
-    const p: any = productJsonLd(sampleProduct, 'https://www.goodbizhygiene.com/products/dish-wash-liquid/');
+    const p: any = productJsonLd(sampleProduct, `${BASE}/products/dish-wash-liquid/`);
     expect(p['@type']).toBe('Product');
     expect(p).not.toHaveProperty('offers');
     expect(p).not.toHaveProperty('aggregateRating');
@@ -42,7 +45,7 @@ describe('seo', () => {
   it('breadcrumb positions and absolute urls', () => {
     const b: any = breadcrumbJsonLd([{ name: 'Home', url: '/' }, { name: 'X', url: '/x/' }]);
     expect(b.itemListElement[1].position).toBe(2);
-    expect(b.itemListElement[1].item).toBe('https://www.goodbizhygiene.com/x/');
+    expect(b.itemListElement[1].item).toBe(`${BASE}/x/`);
   });
   it('article', () => {
     const a: any = articleJsonLd({ title: 'T', description: 'D', date: new Date('2026-01-02T00:00:00Z'), url: '/blog/t/' });
@@ -55,7 +58,7 @@ describe('seo', () => {
     expect(pageTitle('Contact | GoodBiz Hygiene')).toBe('Contact | GoodBiz Hygiene');
   });
   it('absoluteUrl', () => {
-    expect(absoluteUrl('/products/')).toBe('https://www.goodbizhygiene.com/products/');
+    expect(absoluteUrl('/products/')).toBe(`${BASE}/products/`);
     expect(absoluteUrl('https://x.com/a')).toBe('https://x.com/a');
   });
 });

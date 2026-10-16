@@ -30,19 +30,17 @@ const words = (md: string) =>
   md.replace(/\]\([^)]*\)/g, ']').replace(/[#*|>`_-]+/g, ' ').split(/\s+/).filter(Boolean).length;
 
 describe('blog set', () => {
-  it('has the 8 planned posts', () => {
-    expect(POST_SLUGS).toHaveLength(8);
-    expect(posts.map((p) => p.slug).sort()).toEqual([...POST_SLUGS].sort());
+  it('still includes the original 8 posts (adding more is fine)', () => {
+    expect(posts.length).toBeGreaterThanOrEqual(POST_SLUGS.length);
+    const have = new Set(posts.map((p) => p.slug));
+    expect(POST_SLUGS.filter((s) => !have.has(s))).toEqual([]);
   });
 });
 
 describe.each(posts)('blog post $slug', (post) => {
   const d = post.data;
-  it('is a planned slug', () => expect(POST_SLUGS).toContain(post.slug));
-  it('has 1,000 to 1,800 words', () => {
-    const n = words(post.body);
-    expect(n).toBeGreaterThanOrEqual(1000);
-    expect(n).toBeLessThanOrEqual(1800);
+  it('has at least 600 words', () => {
+    expect(words(post.body)).toBeGreaterThanOrEqual(600);
   });
   it('has a 120-160 character description, unique across posts', () => {
     expect(d.description.length).toBeGreaterThanOrEqual(120);

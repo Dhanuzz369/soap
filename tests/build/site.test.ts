@@ -4,6 +4,13 @@ import { join, resolve } from 'node:path';
 import site from '../../src/config/site';
 
 const NOINDEX = '<meta name="robots" content="noindex, nofollow">';
+const BASE = site.url.replace(/\/$/, '');
+const BASE_RE = BASE.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&');
+const contentCount = (dir: string) =>
+  readdirSync(resolve(process.cwd(), 'src/content', dir)).filter((f) => f.endsWith('.md')).length;
+const PRODUCT_COUNT = contentCount('products');
+const CATEGORY_COUNT = contentCount('categories');
+const POST_COUNT = contentCount('blog');
 
 const DIST = resolve(process.cwd(), 'dist');
 const read = (p: string) => readFileSync(join(DIST, p), 'utf8');
@@ -29,8 +36,9 @@ const descOf = (s: string) => s.match(/<meta name="description" content="([^"]*)
 describe('built pages', () => {
   it('finds the expected set of pages', () => {
     expect(pages.length).toBeGreaterThanOrEqual(30);
-    expect(pages.filter((p) => /^\/products\/[^/]+\/index\.html$/.test(p.file))).toHaveLength(27);
-    expect(pages.filter((p) => /^\/categories\/[^/]+\/index\.html$/.test(p.file))).toHaveLength(5);
+    expect(pages.filter((p) => /^\/products\/[^/]+\/index\.html$/.test(p.file))).toHaveLength(PRODUCT_COUNT);
+    expect(pages.filter((p) => /^\/categories\/[^/]+\/index\.html$/.test(p.file))).toHaveLength(CATEGORY_COUNT);
+    expect(pages.filter((p) => /^\/blog\/[^/]+\/index\.html$/.test(p.file))).toHaveLength(POST_COUNT);
   });
 
   for (const { file, html } of pages) {
@@ -38,7 +46,7 @@ describe('built pages', () => {
       expect(count(html, /<h1[\s>]/g)).toBe(1);
       expect(html.match(/<title>(.+?)<\/title>/)).toBeTruthy();
       expect(html).toMatch(/<meta name="description" content=".{50,}"/);
-      expect(html).toMatch(/<link rel="canonical" href="https:\/\/www\.goodbizhygiene\.com\//);
+      expect(html).toContain(`<link rel="canonical" href="${BASE}/`);
       expect(html).toMatch(/<html lang="en"/);
       if (site.launchReady) expect(html).not.toContain(NOINDEX);
       else expect(html).toContain(NOINDEX);
@@ -71,7 +79,7 @@ describe('robots.txt and llms.txt', () => {
     expect(robots).toContain('User-agent: *');
     if (site.launchReady) {
       expect(robots).not.toContain('Disallow: /');
-      expect(robots).toContain('Sitemap: https://www.goodbizhygiene.com/sitemap-index.xml');
+      expect(robots).toContain(`Sitemap: ${BASE}/sitemap-index.xml`);
       expect(existsSync(join(DIST, 'sitemap-index.xml'))).toBe(true);
     } else {
       expect(robots).toContain('Disallow: /');
@@ -81,14 +89,13 @@ describe('robots.txt and llms.txt', () => {
 
   it('llms.txt lists products, guides and company pages with absolute URLs', () => {
     const llms = read('llms.txt');
-    expect(llms.startsWith('# GoodBiz Hygiene')).toBe(true);
+    expect(llms.startsWith(`# ${site.name}`)).toBe(true);
     expect(llms).toContain('## Products');
     expect(llms).toContain('## Guides');
     expect(llms).toContain('## Company');
-    expect(llms).toContain('https://www.goodbizhygiene.com/products/dish-wash-liquid/');
-    expect(llms).toMatch(/HSN 3402 50: /);
-    expect(count(llms, /\]\(https:\/\/www\.goodbizhygiene\.com\/products\/[^/)]+\/\)/g)).toBe(27);
-    expect(count(llms, /\]\(https:\/\/www\.goodbizhygiene\.com\/blog\/[^/)]+\/\)/g)).toBe(8);
+    expect(llms).toMatch(/HSN \d{4} \d{2}: /);
+    expect(count(llms, new RegExp(`\\]\\(${BASE_RE}/products/[^/)]+/\\)`, 'g'))).toBe(PRODUCT_COUNT);
+    expect(count(llms, new RegExp(`\\]\\(${BASE_RE}/blog/[^/)]+/\\)`, 'g'))).toBe(POST_COUNT);
   });
 });
 

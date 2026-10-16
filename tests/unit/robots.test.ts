@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import { buildRobots, AI_BOTS } from '../../src/lib/robots';
+import site from '../../src/config/site';
 
-const URL = 'https://www.goodbizhygiene.com';
+const URL = site.url.replace(/\/$/, '');
 
 describe('buildRobots', () => {
   it('blocks everything before launch', () => {
@@ -17,10 +18,10 @@ describe('buildRobots', () => {
     for (const bot of ['GPTBot', 'PerplexityBot', 'Google-Extended', 'ClaudeBot', 'OAI-SearchBot']) {
       expect(out).toContain(`User-agent: ${bot}\nAllow: /`);
     }
-    expect(out).toContain('Sitemap: https://www.goodbizhygiene.com/sitemap-index.xml');
+    expect(out).toContain(`Sitemap: ${URL}/sitemap-index.xml`);
   });
 
   it('tolerates a trailing slash on the url', () => {
-    expect(buildRobots(URL + '/', true)).toContain('Sitemap: https://www.goodbizhygiene.com/sitemap-index.xml');
+    expect(buildRobots(URL + '/', true)).toContain(`Sitemap: ${URL}/sitemap-index.xml`);
   });
 });
