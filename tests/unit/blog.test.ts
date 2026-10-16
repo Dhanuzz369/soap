@@ -4,9 +4,19 @@ import { join } from 'node:path';
 import matter from 'gray-matter';
 
 const root = process.cwd();
-const slugList = (p: string) => readFileSync(join(root, p), 'utf8').split('\n').map((s) => s.trim()).filter(Boolean);
-const POST_SLUGS = slugList('.superpowers/sdd/2026-10-16-goodbiz-hygiene-website/blog-slugs.txt');
-const PRODUCT_SLUGS = new Set(slugList('.superpowers/sdd/2026-10-16-goodbiz-hygiene-website/slugs.txt'));
+// The original eight guides. Posts added later are welcome; these must stay.
+const POST_SLUGS = [
+  'bath-soap-grades-tfm-explained', 'detergent-powder-vs-liquid-detergent', 'export-documents-cleaning-products',
+  'fabric-softener-buying-guide-importers', 'herbal-phenol-vs-chemical-disinfectants', 'hsn-code-3401-vs-3402-soaps-detergents',
+  'import-dish-wash-liquid-from-india', 'private-label-cleaning-products-guide',
+];
+// Product slugs are read from the product files on disk, so new products resolve automatically.
+const productDir = join(root, 'src/content/products');
+const PRODUCT_SLUGS = new Set(
+  readdirSync(productDir)
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => (matter(readFileSync(join(productDir, f), 'utf8')).data as any).slug as string),
+);
 
 const blogDir = join(root, 'src/content/blog');
 const posts = readdirSync(blogDir)
