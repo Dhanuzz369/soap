@@ -59,7 +59,8 @@ export function setupStudio(
   const room = new RoomEnvironment();
   const envRT = pmrem.fromScene(room, 0.04);
   scene.environment = envRT.texture;
-  scene.environmentIntensity = opts.glossy ? 0.42 : 0.24;
+  // The live hero gets a brighter room than before so its clearcoat reads closer to the glossy still.
+  scene.environmentIntensity = opts.glossy ? 0.42 : 0.34;
   room.dispose();
   pmrem.dispose();
   keep(envRT);
