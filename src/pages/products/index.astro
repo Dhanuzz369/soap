@@ -55,8 +55,8 @@ const total = groups.reduce((n, g) => n + g.products.length, 0);
               g.products.map((p) => (
                 <tr>
                   <th scope="row"><a href={`/products/${p.data.slug}/`}>{p.data.title}</a></th>
-                  <td>{g.category.data.title}</td>
-                  <td class="num">{p.data.hsn}</td>
+                  <td data-label="Range">{g.category.data.title}</td>
+                  <td class="num" data-label="HSN (6 digits)">{p.data.hsn}</td>
                 </tr>
               )),
             )

@@ -1043,6 +1043,11 @@ a:hover {
     overflow: hidden;
     clip: rect(0 0 0 0);
   }
+  .spec--cols td[data-label]::before {
+    content: attr(data-label) ': ';
+    color: var(--ink-soft);
+    font-size: var(--step-small);
+  }
 }
 
 /* keep the fixed WhatsApp button clear of the last footer content on phones */

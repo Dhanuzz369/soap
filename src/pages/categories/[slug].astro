@@ -21,7 +21,7 @@ interface Props {
 const { category, products } = Astro.props;
 const c = category.data;
 const url = `/categories/${c.slug}/`;
-const faqs = products.slice(0, 6).map((p) => p.data.faqs[0]);
+const faqs = products.slice(0, 6).map((p) => p.data.faqs[0]).filter((f) => !!f);
 ---
 
 <BaseLayout

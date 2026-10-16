@@ -8,8 +8,7 @@ import Faq from '../../components/Faq.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import { getRelated, type ProductEntry } from '../../lib/products';
-import { productJsonLd, faqJsonLd } from '../../lib/seo';
-import { absoluteUrl } from '../../lib/seo';
+import { productJsonLd, faqJsonLd, absoluteUrl } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -74,7 +73,7 @@ const breadcrumbs = [
       <div>
         <dt>HSN code</dt>
         <dd>
-          <HsnChip code={d.hsn} withNote />
+          <HsnChip code={d.hsn} withNote={!d.hsnNote} />
           {d.hsnNote && <p class="note">{d.hsnNote}</p>}
         </dd>
       </div>
