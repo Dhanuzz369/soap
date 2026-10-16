@@ -39,9 +39,9 @@ The values below are commonly used reference figures for minimum TFM, not guaran
 
 | Grade | Commonly used minimum TFM | Typical positioning |
 |---|---|---|
-| Grade 1 | About 76% | Premium, long lasting, rich lather |
-| Grade 2 | About 70% | Mainstream quality |
-| Grade 3 | About 60% | Economy, price-led markets |
+| Grade 1 | 76% min | Premium, long lasting, rich lather |
+| Grade 2 | 70% min | Mainstream quality |
+| Grade 3 | 60% min | Economy, price-led markets |
 
 You will also hear suppliers use "premium" and "economy" without a number. That language is loose. Always ask for the TFM percentage in writing. Our [toilet and bath soap](/products/toilet-bath-soap/) page lists typical ranges for premium and economy bars, which follow the same reference tiers as above and are confirmed per order.
 
@@ -115,7 +115,7 @@ We ask for your target market, preferred bar weight, grade and pack format, then
 ## Key takeaways
 
 - TFM shows how much of the bar is true fatty matter, and it largely drives lather, hardness and cost.
-- Grades are shorthand for TFM bands. Reference minimums are commonly about 76%, 70% and 60%, but always confirm them per order.
+- Grades are shorthand for TFM bands. Reference minimums are commonly 76% min, 70% min and 60% min, but always confirm them per order.
 - Ask for the actual TFM percentage and test method, not just the words "premium" or "Grade 1".
 - Check moisture, pH, free alkali and bar weight alongside TFM.
 - Choose the grade for your customer and price point rather than assuming the highest is best.

@@ -30,7 +30,7 @@ specs:
   - label: "Form"
     value: "Solid milled bar, round or rectangular"
   - label: "Total Fatty Matter (TFM)"
-    value: "Typical ≥76% (Grade 1 / premium), ≥70% (Grade 2), ≥60% (Grade 3 / economy); confirmed per order"
+    value: "Typical 76% min (Grade 1 / premium), 70% min (Grade 2), 60% min (Grade 3 / economy); confirmed per order"
   - label: "pH (1% solution)"
     value: "Typical 9.5-10.5"
   - label: "Colour"
