@@ -68,6 +68,21 @@ describe('built pages', () => {
     expect(product.category.length).toBeGreaterThan(0);
   });
 
+  it('uses a product photo for og:image and JSON-LD when one exists', () => {
+    for (const p of pages.filter((x) => /^\/products\/[^/]+\/index\.html$/.test(x.file))) {
+      const slug = p.file.split('/')[2];
+      const photo = `/images/products/${slug}.webp`;
+      const og = p.html.match(/<meta property="og:image" content="([^"]*)"/)![1];
+      const product = jsonLdBlocks(p.html).map((b) => JSON.parse(b)).find((o) => o['@type'] === 'Product');
+      if (existsSync(resolve(process.cwd(), 'public' + photo))) {
+        expect(og, slug).toBe(BASE + photo);
+        expect(product.image, slug).toBe(BASE + photo);
+      } else {
+        expect(og, slug).toBe(`${BASE}/og-default.png`);
+      }
+    }
+  });
+
   it('has a 404 page that is always noindex and has no canonical', () => {
     const html = read('404.html');
     expect(html).toContain(NOINDEX);

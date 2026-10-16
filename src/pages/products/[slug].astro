@@ -10,6 +10,7 @@ import ProductCard from '../../components/ProductCard.astro';
 import { getRelated, type ProductEntry } from '../../lib/products';
 import { getPosts, type BlogEntry } from '../../lib/blog';
 import { productJsonLd, faqJsonLd, absoluteUrl } from '../../lib/seo';
+import { productImagePath } from '../../lib/product-image';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -39,6 +40,8 @@ const d = product.data;
 const { Content } = await render(product);
 const url = `/products/${d.slug}/`;
 const catId = d.category.id;
+// A photo in public/images/products/<slug>.webp is used for social previews and JSON-LD.
+const image = d.image ?? productImagePath(d.slug);
 const breadcrumbs = [
   { name: 'Home', url: '/' },
   { name: 'Products', url: '/products/' },
@@ -51,9 +54,9 @@ const breadcrumbs = [
   title={d.metaTitle}
   description={d.metaDescription}
   path={url}
-  ogImage={d.image}
+  ogImage={image}
   breadcrumbs={breadcrumbs}
-  jsonLd={[productJsonLd({ ...d, category: category.data.title }, absoluteUrl(url)), faqJsonLd(d.faqs)]}
+  jsonLd={[productJsonLd({ ...d, category: category.data.title, image }, absoluteUrl(url)), faqJsonLd(d.faqs)]}
 >
   <header class="field prod-hero" data-cat={catId}>
     <div class="wrap prod-hero-grid">

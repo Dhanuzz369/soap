@@ -5,9 +5,8 @@
  * Otherwise it draws a flat SVG pack silhouette, chosen by product (then by category),
  * tinted from the category's chapter colours (see tokens.css [data-cat]).
  */
-import fs from 'node:fs';
-import path from 'node:path';
 import { shapes, shapeFor } from '../lib/pack-shapes';
+import { productImagePath } from '../lib/product-image';
 
 interface Props {
   slug: string;
@@ -18,8 +17,8 @@ interface Props {
 
 const { slug, title, category, size } = Astro.props;
 
-const imgFile = path.join(process.cwd(), 'public', 'images', 'products', `${slug}.webp`);
-const hasImage = fs.existsSync(imgFile);
+const imgSrc = productImagePath(slug);
+const hasImage = !!imgSrc;
 
 const shape = shapeFor(slug, category);
 
@@ -30,7 +29,7 @@ const svg = shapes[shape];
   {
     hasImage ? (
       <img
-        src={`/images/products/${slug}.webp`}
+        src={imgSrc}
         alt={title}
         width={size === 'hero' ? 1200 : 600}
         height={size === 'hero' ? 1200 : 600}
