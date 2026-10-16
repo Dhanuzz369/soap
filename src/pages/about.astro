@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import CtaBand from '../components/CtaBand.astro';
+import PageHero from '../components/PageHero.astro';
+import QuoteCard from '../components/QuoteCard.astro';
 import site from '../config/site';
 import { getProductsByCategory } from '../lib/products';
 
@@ -11,27 +12,32 @@ const facts = [
   f.founded && { label: 'Founded', value: f.founded },
   f.iec && { label: 'Importer Exporter Code (IEC)', value: f.iec },
 ].filter((x): x is { label: string; value: string } => !!x);
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'About', url: '/about/' },
+];
 ---
 
 <BaseLayout
   title="About GoodBiz Hygiene: Soap & Home-Care Exporter & Supplier from India"
   description="GoodBiz Hygiene is the home-care and hygiene export division of GoodBiz Global, a merchant exporter from India, and a sister brand of GoodBiz Agro."
   path="/about/"
-  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'About', url: '/about/' }]}
+  breadcrumbs={breadcrumbs}
+  dark
 >
-  <header class="field page-hero" data-cat="surface-home-cleaners">
-    <div class="wrap">
-      <h1 class="page-title">About GoodBiz Hygiene</h1>
-      <p class="lead">
-        GoodBiz Hygiene is the home-care and hygiene export division of {site.parentName}, a merchant exporter from India, and a sister
-        brand of GoodBiz Agro.
-      </p>
-    </div>
-  </header>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1="GoodBiz Hygiene."
+    l2={`A ${site.parentName} company.`}
+    lead={`GoodBiz Hygiene is the home-care and hygiene export division of ${site.parentName}, a merchant exporter from India, and a sister brand of GoodBiz Agro.`}
+    media={{ src: '/images/found/neem-plate.webp', width: 1100, height: 682, alt: '', mode: 'plate' }}
+  />
 
-  <section class="wrap split-section" aria-labelledby="what-h">
-    <h2 id="what-h" data-reveal>What does GoodBiz Hygiene do?</h2>
-    <div class="prose" data-reveal>
+  <section class="wrap sec split" aria-labelledby="what-h">
+    <div class="split-head" data-reveal>
+      <h2 id="what-h">What does GoodBiz Hygiene do?</h2>
+    </div>
+    <div class="prose" data-reveal style="--i: 1">
       <p>
         GoodBiz Hygiene supplies soaps, detergents and home-care products to importers, distributors, wholesalers, supermarket chains and
         private-label brands outside India. It does not own a factory. Products are sourced from vetted Indian manufacturers, and GoodBiz
@@ -39,46 +45,59 @@ const facts = [
       </p>
       <p>
         The range covers products classified under HSN 3401 (soaps) and HSN 3402 (detergents and washing or cleaning preparations), plus
-        closely related items such as herbal phenol, in five ranges:
+        closely related items such as herbal phenol, in five ranges.
       </p>
-      <ul>
-        {
-          groups.map((g) => (
-            <li>
-              <a href={`/categories/${g.category.data.slug}/`}>{g.category.data.title}</a>
-            </li>
-          ))
-        }
-      </ul>
     </div>
   </section>
 
-  <section class="wrap split-section" aria-labelledby="family-h">
-    <h2 id="family-h" data-reveal>Part of GoodBiz Global</h2>
-    <div class="prose" data-reveal>
+  <nav class="wrap sec" aria-labelledby="ranges-h">
+    <div class="sec-head" data-reveal>
+      <h2 id="ranges-h">The five ranges</h2>
+      <a class="link-arrow" href="/products/">All products <span class="arr" aria-hidden="true">↗</span></a>
+    </div>
+    <ul class="cat-strip">
+      {
+        groups.map((g, i) => (
+          <li data-reveal style={`--i: ${i}`}>
+            <a class="cat-chip" href={`/categories/${g.category.data.slug}/`}>
+              <span class="cat-chip-media">
+                <img src={`/images/renders/category-${g.category.data.slug}.webp`} width="760" height="950" alt="" loading="lazy" decoding="async" />
+              </span>
+              <span class="cat-chip-title">
+                {g.category.data.title}
+                <span class="cat-chip-meta">{g.products.length} products · HSN {g.category.data.hsnRange}</span>
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+
+  <section class="wrap sec split" aria-labelledby="family-h">
+    <div class="split-head" data-reveal>
+      <h2 id="family-h">Part of {site.parentName}</h2>
+    </div>
+    <div class="prose" data-reveal style="--i: 1">
       <p>
         {site.parentName} runs GoodBiz Agro for agricultural exports and GoodBiz Hygiene for soaps and home care.
         {f.parentUrl && <> Visit <a href={f.parentUrl}>{site.parentName}</a>.</>}
         {f.agroUrl && <> Visit <a href={f.agroUrl}>GoodBiz Agro</a>.</>}
       </p>
+      {
+        facts.length > 0 && (
+          <dl class="facts" style="margin-top:32px">
+            {facts.map((x) => (
+              <div>
+                <dt>{x.label}</dt>
+                <dd>{x.value}</dd>
+              </div>
+            ))}
+          </dl>
+        )
+      }
     </div>
   </section>
 
-  {
-    facts.length > 0 && (
-      <section class="wrap split-section" aria-labelledby="facts-h">
-        <h2 id="facts-h">Company details</h2>
-        <dl class="facts">
-          {facts.map((x) => (
-            <div>
-              <dt>{x.label}</dt>
-              <dd>{x.value}</dd>
-            </div>
-          ))}
-        </dl>
-      </section>
-    )
-  }
-
-  <CtaBand />
+  <QuoteCard />
 </BaseLayout>

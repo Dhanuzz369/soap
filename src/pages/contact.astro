@@ -1,28 +1,53 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
+import ProductCard from '../components/ProductCard.astro';
 import site from '../config/site';
 import { buildWhatsAppUrl } from '../lib/enquiry';
+import { getProductsByCategory } from '../lib/products';
 
 const wa = buildWhatsAppUrl(site.contact.whatsapp, {});
 const tel = site.contact.phone.replace(/[^+\d]/g, '');
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Contact', url: '/contact/' },
+];
+const all = (await getProductsByCategory()).flatMap((g) => g.products);
+const often = ['dish-wash-liquid', 'fabric-softener', 'toilet-bath-soap']
+  .map((s) => all.find((p) => p.data.slug === s))
+  .filter((p): p is NonNullable<typeof p> => !!p);
 ---
 
 <BaseLayout
   title="Request a Quote: Soap & Home-Care Exporter & Supplier from India"
   description="Request a quote from GoodBiz Hygiene for soaps, detergents and home-care products from India. Send your products, pack sizes and port by email or WhatsApp."
   path="/contact/"
-  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact/' }]}
+  breadcrumbs={breadcrumbs}
+  dark
 >
-  <header class="wrap page-hero">
-    <h1 class="page-title">Request a quote</h1>
-    <p class="lead">
-      Tell us what you need: the products, pack sizes, quantity and destination port. GoodBiz Hygiene replies with prices, typical
-      specifications and lead times.
-    </p>
-  </header>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1="Request a quote."
+    l2="From India, to your port."
+    lead="Tell us what you need: the products, pack sizes, quantity and destination port. GoodBiz Hygiene replies with prices, typical specifications and lead times."
+    media={{
+      src: '/images/found/kochi-port-night.webp',
+      srcset: '/images/found/kochi-port-night-600.webp 600w, /images/found/kochi-port-night.webp 1200w',
+      sizes: '(max-width: 759px) 100vw, 54vw',
+      width: 1200,
+      height: 900,
+      alt: 'Gantry cranes loading a container ship at night at the International Container Transshipment Terminal in Kochi, India',
+      mode: 'bleed',
+    }}
+  >
+    <div class="ph-actions">
+      <a class="btn btn--light" href="#enquiry">Start the enquiry</a>
+      <a class="link-arrow" href={wa} target="_blank" rel="noopener">Message us on WhatsApp <span class="arr" aria-hidden="true">↗</span></a>
+    </div>
+  </PageHero>
 
-  <div class="wrap contact-grid">
+  <div class="wrap sec contact-grid" id="enquiry">
     <section aria-labelledby="form-h">
       <h2 id="form-h" class="visually-hidden">Enquiry form</h2>
       <EnquiryForm />
@@ -43,13 +68,32 @@ const tel = site.contact.phone.replace(/[^+\d]/g, '');
       </div>
       <div>
         <h2>Office</h2>
-        <p>{site.contact.address}</p>
+        <p class="contact-big">{site.contact.address}</p>
       </div>
-      <div>
+      <div class="contact-dark">
         <h2>Export terms</h2>
         <p>{site.exportTerms.incoterms}.</p>
-        <p class="note" style="margin-top:8px">{site.exportTerms.port}. {site.exportTerms.leadTime}.</p>
+        <p class="note" style="margin-top:8px;color:var(--on-dark-soft)">{site.exportTerms.port}. {site.exportTerms.leadTime}.</p>
       </div>
     </aside>
   </div>
+
+  <section class="wrap sec" aria-labelledby="often-h">
+    <div class="sec-head" data-reveal>
+      <div>
+        <h2 id="often-h">Often quoted together</h2>
+        <p>Tap “Add to enquiry” on a card to tick that product in the form above.</p>
+      </div>
+      <a class="link-arrow" href="/products/">All products <span class="arr" aria-hidden="true">↗</span></a>
+    </div>
+    <ul class="cards-stagger">
+      {
+        often.map((p, i) => (
+          <li data-reveal style={`--i: ${i}`}>
+            <ProductCard product={p} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </BaseLayout>

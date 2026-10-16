@@ -1,11 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import ProcessSteps from '../components/ProcessSteps.astro';
 import Faq from '../components/Faq.astro';
-import CtaBand from '../components/CtaBand.astro';
+import QuoteCard from '../components/QuoteCard.astro';
 import { faqJsonLd } from '../lib/seo';
 import site from '../config/site';
 
 const t = site.exportTerms;
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Export Process', url: '/export-process/' },
+];
 
 const steps = [
   { title: 'Enquiry', text: 'Send the products, pack sizes, quantity, destination port and any private-label needs, using the enquiry form, email or WhatsApp.' },
@@ -14,7 +21,7 @@ const steps = [
   { title: 'Proforma invoice and payment', text: 'A proforma invoice confirms products, quantities, packing, incoterm and payment terms (T/T or LC).' },
   { title: 'Production and packing', text: 'The manufacturer produces and packs the order, marked for export and for your market.' },
   { title: 'Documents and shipping', text: `We prepare the export documents and book the shipment. ${t.port}.` },
-];
+].map((s) => ({ name: s.title, text: s.text }));
 
 const documents = [
   'Commercial invoice',
@@ -44,57 +51,64 @@ const faqs = [
   title="Export Process: Soap & Home-Care Exporter & Supplier from India"
   description="How GoodBiz Hygiene exports soaps, detergents and cleaners from India: quotation, samples, incoterms, payment terms, documents, ports and typical lead times."
   path="/export-process/"
-  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Export Process', url: '/export-process/' }]}
+  breadcrumbs={breadcrumbs}
   jsonLd={[faqJsonLd(faqs)]}
+  dark
 >
-  <header class="field page-hero" data-cat="laundry-care">
-    <div class="wrap">
-      <h1 class="page-title">How export orders work</h1>
-      <p class="lead">
-        From the first enquiry to the bill of lading: the steps, terms and documents for buying soaps and home-care products from India
-        through GoodBiz Hygiene.
-      </p>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1="The export process."
+    l2="From enquiry to bill of lading."
+    lead="The steps, terms and documents for buying soaps and home-care products from India through GoodBiz Hygiene."
+    size="product"
+    media={{
+      src: '/images/renders/range-hero.webp',
+      width: 1600,
+      height: 1000,
+      alt: 'Illustration of the GoodBiz Hygiene range in typical export packs',
+      mode: 'bleed',
+      position: '96% 60%',
+    }}
+  >
+    <div class="ph-actions">
+      <a class="btn btn--light" href="/contact/">Request a Quote</a>
+      <a class="link-arrow" href="#steps">The six steps <span class="arr" aria-hidden="true">↓</span></a>
     </div>
-  </header>
+  </PageHero>
 
-  <section class="wrap section" aria-labelledby="terms-h">
-    <h2 id="terms-h" class="h-sub" data-reveal>What are the export terms?</h2>
-    <dl class="terms" data-reveal>
-      <div data-cat="kitchen-care"><dt>Incoterms and payment</dt><dd>{t.incoterms}</dd></div>
-      <div data-cat="surface-home-cleaners"><dt>Port</dt><dd>{t.port}</dd></div>
-      <div data-cat="bath-personal-soaps"><dt>Lead time</dt><dd>{t.leadTime}</dd></div>
+  <section class="wrap sec" aria-labelledby="terms-h">
+    <div class="sec-head" data-reveal>
+      <h2 id="terms-h">What are the export terms?</h2>
+    </div>
+    <dl class="facts" data-reveal style="--i: 1">
+      <div><dt>Incoterms and payment</dt><dd>{t.incoterms}</dd></div>
+      <div><dt>Port</dt><dd>{t.port}</dd></div>
+      <div><dt>Lead time</dt><dd>{t.leadTime}</dd></div>
     </dl>
   </section>
 
-  <section aria-labelledby="steps-h">
-    <div class="wrap" data-reveal>
-      <h2 id="steps-h" class="h-sub">What are the steps from enquiry to shipment?</h2>
-    </div>
-    <ol class="band-list" style="margin-top:40px">
-      {
-        steps.map((s) => (
-          <li class="band" data-reveal>
-            <h3>{s.title}</h3>
-            <p>{s.text}</p>
-          </li>
-        ))
-      }
-    </ol>
-  </section>
+  <div id="steps">
+    <ProcessSteps
+      id="steps-p"
+      l1="What are the steps"
+      l2="from enquiry to shipment?"
+      intro="Six steps, with your approval on the quotation, samples and proforma invoice before anything is produced."
+      steps={steps}
+      photo
+    />
+  </div>
 
-  <section class="wrap split-section" aria-labelledby="docs-h">
-    <div data-reveal>
+  <section class="wrap sec split" aria-labelledby="docs-h">
+    <div class="split-head" data-reveal>
       <h2 id="docs-h">Which documents come with a shipment?</h2>
-      <p style="margin-top:16px">The exact set depends on your country and is confirmed per order.</p>
+      <p>The exact set depends on your country and is confirmed per order.</p>
     </div>
-    <ul class="plain-list" data-reveal>
-      {documents.map((d) => <li>{d}</li>)}
+    <ul class="chips chips--lg" data-reveal style="--i: 1">
+      {documents.map((d) => <li class="chip">{d}</li>)}
     </ul>
   </section>
 
-  <div class="wrap prod-block" data-reveal>
-    <Faq faqs={faqs} heading="Export process: questions buyers ask" />
-  </div>
+  <Faq faqs={faqs} heading="Export process: questions buyers ask" split />
 
-  <CtaBand />
+  <QuoteCard />
 </BaseLayout>

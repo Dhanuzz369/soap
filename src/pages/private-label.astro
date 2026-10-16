@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import ProcessSteps from '../components/ProcessSteps.astro';
 import Faq from '../components/Faq.astro';
-import CtaBand from '../components/CtaBand.astro';
+import QuoteCard from '../components/QuoteCard.astro';
 import { faqJsonLd } from '../lib/seo';
 import site from '../config/site';
 
@@ -25,11 +27,11 @@ const options = [
 ];
 
 const steps = [
-  { title: 'Share your brief', text: 'Products, pack sizes, fragrances, target market and an estimate of quantity.' },
-  { title: 'Quotation and manufacturer match', text: 'We match the brief to a vetted Indian manufacturer and quote per pack, with incoterms and lead time.' },
-  { title: 'Samples and artwork', text: 'You approve a product sample and a printed proof of your artwork. Production normally starts after you approve both.' },
-  { title: 'Production and packing', text: 'The manufacturer produces and packs your order under your brand, marked for export.' },
-  { title: 'Documents and shipment', text: `We prepare the export documents and book the shipment. ${site.exportTerms.port}.` },
+  { name: 'Share your brief', text: 'Products, pack sizes, fragrances, target market and an estimate of quantity.' },
+  { name: 'Quotation and manufacturer match', text: 'We match the brief to a vetted Indian manufacturer and quote per pack, with incoterms and lead time.' },
+  { name: 'Samples and artwork', text: 'You approve a product sample and a printed proof of your artwork. Production normally starts after you approve both.' },
+  { name: 'Production and packing', text: 'The manufacturer produces and packs your order under your brand, marked for export.' },
+  { name: 'Documents and shipment', text: `We prepare the export documents and book the shipment. ${site.exportTerms.port}.` },
 ];
 
 const faqs = [
@@ -54,59 +56,70 @@ const faqs = [
     a: 'No. GoodBiz Hygiene is a merchant exporter from India. Products are made by vetted Indian manufacturers and GoodBiz Hygiene manages the brief, approvals, documents and shipping.',
   },
 ];
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Private Label', url: '/private-label/' },
+];
 ---
 
 <BaseLayout
   title="Private Label Soaps & Cleaning Products: Exporter & Supplier from India"
   description="Private label soaps, detergents and cleaners from India: your artwork, fragrance, colour and pack sizes, made by vetted Indian manufacturers and exported by GoodBiz Hygiene."
   path="/private-label/"
-  breadcrumbs={[{ name: 'Home', url: '/' }, { name: 'Private Label', url: '/private-label/' }]}
+  breadcrumbs={breadcrumbs}
   jsonLd={[faqJsonLd(faqs)]}
+  dark
 >
-  <header class="field page-hero" data-cat="bath-personal-soaps">
-    <div class="wrap">
-      <h1 class="page-title">Private label soaps and cleaning products from India</h1>
-      <p class="lead">
-        Sell soaps, detergents and cleaners under your own brand. GoodBiz Hygiene matches your brief to a vetted Indian manufacturer, manages
-        samples and artwork, and ships the finished goods to your port.
-      </p>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1="Private label soaps"
+    l2="and cleaning products from India."
+    lead="Sell soaps, detergents and cleaners under your own brand. GoodBiz Hygiene matches your brief to a vetted Indian manufacturer, manages samples and artwork, and ships the finished goods to your port."
+    size="product"
+    media={{
+      src: '/images/renders/category-bath-personal-soaps.webp',
+      width: 1440,
+      height: 1200,
+      alt: 'Illustration of soap bars and a hand wash bottle in typical private-label packs',
+      mode: 'bleed',
+    }}
+  >
+    <div class="ph-actions">
+      <a class="btn btn--light" href="/contact/">Start your brief</a>
+      <a class="link-arrow" href="#pl-steps">How an order runs <span class="arr" aria-hidden="true">↓</span></a>
     </div>
-  </header>
+  </PageHero>
 
-  <section class="section" aria-labelledby="pl-options-h">
-    <div class="wrap" data-reveal>
-      <h2 id="pl-options-h" class="h-sub">What can be customised?</h2>
+  <section class="wrap sec split" aria-labelledby="pl-options-h">
+    <div class="split-head" data-reveal>
+      <h2 id="pl-options-h">What can be customised?</h2>
+      <p>Four choices make a range your own. Each is approved by you before bulk production.</p>
     </div>
-    <div class="band-list" style="margin-top:40px">
+    <ul class="rows">
       {
-        options.map((o) => (
-          <div class="band" data-reveal>
+        options.map((o, i) => (
+          <li class="row" data-reveal style={`--i: ${i % 3}`}>
             <h3>{o.title}</h3>
             <p>{o.text}</p>
-          </div>
-        ))
-      }
-    </div>
-  </section>
-
-  <section class="wrap split-section" aria-labelledby="pl-steps-h">
-    <div data-reveal>
-      <h2 id="pl-steps-h">How does a private-label order run?</h2>
-    </div>
-    <ol class="plain-list" data-reveal>
-      {
-        steps.map((s) => (
-          <li>
-            <strong>{s.title}.</strong> {s.text}
           </li>
         ))
       }
-    </ol>
+    </ul>
   </section>
 
-  <div class="wrap prod-block" data-reveal>
-    <Faq faqs={faqs} heading="Private label: questions buyers ask" />
+  <div id="pl-steps">
+    <ProcessSteps
+      id="pl-process"
+      l1="How a private-label"
+      l2="order runs."
+      intro="Five steps from your brief to goods at your port, with your approval on the sample and the artwork before anything is made."
+      steps={steps}
+      photo
+      link={{ href: '/export-process/', label: 'The export process in full' }}
+    />
   </div>
 
-  <CtaBand heading="Start your private-label brief" text="Send the products, packs and market you have in mind. We reply with options, prices and lead times." />
+  <Faq faqs={faqs} heading="Private label: questions buyers ask" split />
+
+  <QuoteCard heading="Start your brief." text="Send the products, packs and market you have in mind in one line. We reply with options, prices and lead times." />
 </BaseLayout>
