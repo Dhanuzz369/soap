@@ -1886,6 +1886,12 @@ a:hover {
   gap: 0;
   max-width: 820px;
 }
+.post-list--compact {
+  margin-top: 24px;
+}
+.post-list--compact .post-title {
+  font-size: clamp(1.25rem, 1rem + 0.9vw, 1.625rem);
+}
 .post-item {
   padding-block: 28px;
   border-top: 2px solid var(--paper-2);

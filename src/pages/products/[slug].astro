@@ -8,11 +8,13 @@ import Faq from '../../components/Faq.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import { getRelated, type ProductEntry } from '../../lib/products';
+import { getPosts, type BlogEntry } from '../../lib/blog';
 import { productJsonLd, faqJsonLd, absoluteUrl } from '../../lib/seo';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
   const cats = await getCollection('categories');
+  const posts = await getPosts();
   return Promise.all(
     products.map(async (product) => ({
       params: { slug: product.data.slug },
@@ -20,6 +22,7 @@ export async function getStaticPaths() {
         product,
         category: cats.find((c) => c.id === product.data.category.id)!,
         related: await getRelated(product, 3),
+        guides: posts.filter((p) => p.data.relatedProducts.includes(product.data.slug)),
       },
     })),
   );
@@ -29,8 +32,9 @@ interface Props {
   product: ProductEntry;
   category: { data: { title: string; slug: string } };
   related: ProductEntry[];
+  guides: BlogEntry[];
 }
-const { product, category, related } = Astro.props;
+const { product, category, related, guides } = Astro.props;
 const d = product.data;
 const { Content } = await render(product);
 const url = `/products/${d.slug}/`;
@@ -149,6 +153,24 @@ const breadcrumbs = [
   <div class="wrap prod-block">
     <Faq faqs={d.faqs} heading={`${d.title}: questions buyers ask`} />
   </div>
+
+  {
+    guides.length > 0 && (
+      <section class="wrap prod-block" aria-labelledby="guides-h">
+        <h2 id="guides-h" class="h-sub">Buyer guides for this product</h2>
+        <ul class="post-list post-list--compact">
+          {guides.map((g) => (
+            <li class="post-item">
+              <h3 class="post-title">
+                <a class="plain-link" href={`/blog/${g.id}/`}>{g.data.title}</a>
+              </h3>
+              <p>{g.data.description}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 
   <CtaBand
     heading={`Request a quote for ${d.title}`}

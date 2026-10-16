@@ -54,6 +54,20 @@ describe('built pages', () => {
     });
   }
 
+  it('links product pages to their buyer guides', () => {
+    const productPages = pages.filter((p) => /^\/products\/[^/]+\/index\.html$/.test(p.file));
+    const withGuides = productPages.filter((p) => /href="\/blog\/[^"/]+\/"/.test(p.html));
+    expect(withGuides.length).toBeGreaterThanOrEqual(1);
+    for (const p of withGuides) expect(p.html).toContain('Buyer guides for this product');
+  });
+
+  it('product JSON-LD names the category', () => {
+    const html = pages.find((p) => /^\/products\/[^/]+\/index\.html$/.test(p.file))!.html;
+    const product = jsonLdBlocks(html).map((b) => JSON.parse(b)).find((o) => o['@type'] === 'Product');
+    expect(typeof product.category).toBe('string');
+    expect(product.category.length).toBeGreaterThan(0);
+  });
+
   it('has a 404 page with the expected robots meta', () => {
     const has = read('404.html').includes(NOINDEX);
     expect(has).toBe(!site.launchReady);
