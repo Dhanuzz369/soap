@@ -33,6 +33,13 @@ export type StudioOptions = {
   aim?: { x: number; y: number };
   /** Backdrop glow: centre (world x, y), size (world units), strength 0..1. */
   glow?: { x: number; y: number; w: number; h: number; strength: number };
+  /**
+   * What sits behind the packs: the forest field (stills' colour pass), nothing (the live hero
+   * over its CSS field, alpha canvas), or black (the matte pass of the stills).
+   */
+  background?: 'field' | 'none' | 'black';
+  /** Studio stills: a brighter room for the reflections (the strip softboxes are scripts/render/strips.ts). */
+  glossy?: boolean;
 };
 
 export function setupStudio(
@@ -45,13 +52,14 @@ export function setupStudio(
   renderer.toneMapping = NeutralToneMapping;
   renderer.toneMappingExposure = 1.0;
 
-  scene.background = new Color(FIELD);
+  const bg = opts.background ?? 'field';
+  scene.background = bg === 'none' ? null : new Color(bg === 'black' ? '#000000' : FIELD);
 
   const pmrem = new PMREMGenerator(renderer);
   const room = new RoomEnvironment();
   const envRT = pmrem.fromScene(room, 0.04);
   scene.environment = envRT.texture;
-  scene.environmentIntensity = 0.24;
+  scene.environmentIntensity = opts.glossy ? 0.42 : 0.24;
   room.dispose();
   pmrem.dispose();
   keep(envRT);
@@ -71,6 +79,7 @@ export function setupStudio(
   const rimL = new DirectionalLight('#bfe3cf', 2.6);
   rimL.position.set(-7, 3, -4);
   scene.add(rimL);
+
 
   const g = opts.glow;
   if (g && g.strength > 0) {

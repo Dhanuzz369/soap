@@ -5,6 +5,13 @@
  * (scripts/render-packs.mjs), so the pre-rendered stills and the live scene are the same models.
  * Everything is built from primitives, lathes and deformed boxes: no model files to download.
  * Each builder returns a Group standing on y = 0, roughly 1.6–2.5 units tall.
+ *
+ * Three material qualities share the same models:
+ *   live    the runtime hero: opaque glossy plastic, cheap enough for a phone
+ *   glossy  the pre-rendered stills: PET bottles with transmission and thickness, clearcoat 1 on
+ *           caps, clearcoated labels (no runtime cost, so no compromise)
+ *   matte   a white coverage pass of the same scene, used by the render script to cut the stills
+ *           out with a clean alpha channel (see scripts/render-packs.mjs)
  */
 import {
   BoxGeometry,
@@ -17,6 +24,7 @@ import {
   MeshBasicMaterial,
   MeshPhysicalMaterial,
   MeshStandardMaterial,
+  NoColorSpace,
   PlaneGeometry,
   SphereGeometry,
   SplineCurve,
@@ -70,6 +78,8 @@ export const SHAPE_TINT: Record<Shape, Tint> = {
 
 export type Disposable = { dispose(): void };
 
+export type PackQuality = 'live' | 'glossy' | 'matte';
+
 export type PackKit = {
   /** Builds one pack. `tint` overrides the shape's default category colour. */
   build(shape: Shape, tint?: Tint): Group;
@@ -77,25 +87,76 @@ export type PackKit = {
   shadow(): Mesh;
 };
 
-export function createPackKit(renderer: WebGLRenderer, keep: <T extends Disposable>(d: T) => T): PackKit {
+export function createPackKit(
+  renderer: WebGLRenderer,
+  keep: <T extends Disposable>(d: T) => T,
+  quality: PackQuality = 'live',
+): PackKit {
+  const glossy = quality === 'glossy';
+  const matte = quality === 'matte';
+  /* In the matte pass every surface is plain white: the render script reads coverage from it. */
+  const white = matte ? keep(new MeshBasicMaterial({ color: '#ffffff', toneMapped: false })) : null;
+
   /* ---------- materials ---------- */
-  const bottleMat = (t: Tint) =>
+  const bottleMat = (t: Tint): Material =>
+    white ??
+    keep(
+      glossy
+        ? new MeshPhysicalMaterial({
+            // Filled PET: a tinted liquid seen through a thin glossy wall.
+            color: t.body,
+            roughness: 0.1,
+            metalness: 0,
+            transmission: 0.42,
+            thickness: 1.3,
+            ior: 1.46,
+            attenuationColor: new Color(t.dark),
+            attenuationDistance: 1.8,
+            specularIntensity: 1,
+            clearcoat: 1,
+            clearcoatRoughness: 0.04,
+            sheen: 0.2,
+            sheenColor: new Color(t.light),
+          })
+        : new MeshPhysicalMaterial({
+            color: t.body,
+            roughness: 0.22,
+            metalness: 0,
+            clearcoat: 1,
+            clearcoatRoughness: 0.14,
+            sheen: 0.25,
+            sheenColor: new Color(t.light),
+          }),
+    );
+  const capMat = (hex: string): Material =>
+    white ??
+    keep(
+      glossy
+        ? new MeshPhysicalMaterial({ color: hex, roughness: 0.26, clearcoat: 1, clearcoatRoughness: 0.06 })
+        : new MeshPhysicalMaterial({ color: hex, roughness: 0.34, clearcoat: 0.7, clearcoatRoughness: 0.25 }),
+    );
+  const soapMat = (hex: string): Material =>
+    white ??
     keep(
       new MeshPhysicalMaterial({
-        color: t.body,
-        roughness: 0.22,
-        metalness: 0,
-        clearcoat: 1,
-        clearcoatRoughness: 0.14,
-        sheen: 0.25,
-        sheenColor: new Color(t.light),
+        color: hex,
+        roughness: glossy ? 0.38 : 0.5,
+        sheen: 0.7,
+        sheenColor: new Color('#ffffff'),
+        sheenRoughness: 0.55,
+        ...(glossy ? { clearcoat: 0.35, clearcoatRoughness: 0.3 } : {}),
       }),
     );
-  const capMat = (hex: string) =>
-    keep(new MeshPhysicalMaterial({ color: hex, roughness: 0.34, clearcoat: 0.7, clearcoatRoughness: 0.25 }));
-  const soapMat = (hex: string) =>
-    keep(new MeshPhysicalMaterial({ color: hex, roughness: 0.5, sheen: 0.7, sheenColor: new Color('#ffffff'), sheenRoughness: 0.55 }));
-  const clearSoapMat = (t: Tint) =>
+  /** Printed labels and faces: clearcoated in the stills, a plain print in the live scene. */
+  const printMat = (map: Texture, roughness: number): Material =>
+    white ??
+    keep(
+      glossy
+        ? new MeshPhysicalMaterial({ map, roughness: roughness * 0.6, clearcoat: 0.8, clearcoatRoughness: 0.1 })
+        : new MeshStandardMaterial({ map, roughness }),
+    );
+  const clearSoapMat = (t: Tint): Material =>
+    white ??
     keep(
       new MeshPhysicalMaterial({
         color: t.body,
@@ -109,10 +170,19 @@ export function createPackKit(renderer: WebGLRenderer, keep: <T extends Disposab
         clearcoatRoughness: 0.05,
       }),
     );
-  const filmMat = (t: Tint, map?: Texture) =>
-    keep(new MeshPhysicalMaterial({ color: map ? '#ffffff' : t.body, map, roughness: 0.38, clearcoat: 0.55, clearcoatRoughness: 0.3 }));
-  const wovenMat = (hex: string, map?: Texture) =>
-    keep(new MeshStandardMaterial({ color: map ? '#ffffff' : hex, map, roughness: 0.86 }));
+  const filmMat = (t: Tint, map?: Texture): Material =>
+    white ??
+    keep(
+      new MeshPhysicalMaterial({
+        color: map ? '#ffffff' : t.body,
+        map,
+        roughness: glossy ? 0.24 : 0.38,
+        clearcoat: glossy ? 0.9 : 0.55,
+        clearcoatRoughness: glossy ? 0.12 : 0.3,
+      }),
+    );
+  const wovenMat = (hex: string, map?: Texture): Material =>
+    white ?? keep(new MeshStandardMaterial({ color: map ? '#ffffff' : hex, map, roughness: 0.86 }));
 
   const geo = <G extends BufferGeometry>(g: G): G => keep(g);
   const mesh = (g: BufferGeometry, m: Material | Material[], x = 0, y = 0, z = 0) => {
@@ -188,7 +258,7 @@ export function createPackKit(renderer: WebGLRenderer, keep: <T extends Disposab
     });
 
   const labelBand = (t: Tint, r: number, y0: number, y1: number, arc = 1.9) => {
-    const m = keep(new MeshStandardMaterial({ map: labelTexture(t), roughness: 0.6 }));
+    const m = printMat(labelTexture(t), 0.6);
     const g = geo(new CylinderGeometry(r, r, y1 - y0, 48, 1, true, -arc / 2, arc));
     return mesh(g, m, 0, (y0 + y1) / 2, 0);
   };
@@ -353,7 +423,7 @@ export function createPackKit(renderer: WebGLRenderer, keep: <T extends Disposab
       const wrapped = mesh(
         geo(new RoundedBoxGeometry(0.98, 0.34, 0.66, 3, 0.05)),
         // box face order is +x, -x, +y, -y, +z, -z: the print goes on top (+y)
-        [paper, paper, keep(new MeshStandardMaterial({ map: wrap, roughness: 0.7 })), paper, paper, paper],
+        [paper, paper, printMat(wrap, 0.7), paper, paper, paper],
         -0.42, 0.17, 0.1,
       );
       wrapped.rotation.y = 0.28;
@@ -408,7 +478,7 @@ export function createPackKit(renderer: WebGLRenderer, keep: <T extends Disposab
       const g = new Group();
       const body = bottleMat(t);
       g.add(mesh(geo(new RoundedBoxGeometry(1.5, 1.5, 0.92, 6, 0.18)), body, 0, 0.75, 0));
-      const lbl = mesh(geo(new PlaneGeometry(0.92, 0.62)), keep(new MeshStandardMaterial({ map: labelTexture(t), roughness: 0.6 })), 0, 0.68, 0.462);
+      const lbl = mesh(geo(new PlaneGeometry(0.92, 0.62)), printMat(labelTexture(t), 0.6), 0, 0.68, 0.462);
       g.add(lbl);
       // handle: two posts and a grip
       g.add(mesh(geo(new RoundedBoxGeometry(0.16, 0.34, 0.26, 2, 0.06)), body, -0.62, 1.62, 0));
@@ -421,7 +491,16 @@ export function createPackKit(renderer: WebGLRenderer, keep: <T extends Disposab
     // Raw materials: a ribbed drum.
     drum: (t) => {
       const g = new Group();
-      const body = keep(new MeshPhysicalMaterial({ color: t.body, roughness: 0.4, clearcoat: 0.5, clearcoatRoughness: 0.35 }));
+      const body =
+        white ??
+        keep(
+          new MeshPhysicalMaterial({
+            color: t.body,
+            roughness: glossy ? 0.3 : 0.4,
+            clearcoat: glossy ? 0.9 : 0.5,
+            clearcoatRoughness: glossy ? 0.12 : 0.35,
+          }),
+        );
       const rib = capMat(t.dark);
       g.add(mesh(geo(new CylinderGeometry(0.74, 0.74, 1.72, 64)), body, 0, 0.86, 0));
       for (const y of [0.04, 0.6, 1.12, 1.7]) {
@@ -463,12 +542,28 @@ export function createPackKit(renderer: WebGLRenderer, keep: <T extends Disposab
     g.fillStyle = grad;
     g.fillRect(0, 0, 128, 128);
   });
+  // The matte pass needs the shadow's coverage as white: the same falloff, read through alphaMap (green).
+  const shadowMatteTex = matte
+    ? texture(128, 128, (g) => {
+        const grad = g.createRadialGradient(64, 64, 0, 64, 64, 64);
+        grad.addColorStop(0, 'rgb(209,209,209)');
+        grad.addColorStop(0.5, 'rgb(82,82,82)');
+        grad.addColorStop(1, 'rgb(0,0,0)');
+        g.fillStyle = grad;
+        g.fillRect(0, 0, 128, 128);
+      })
+    : null;
+  if (shadowMatteTex) shadowMatteTex.colorSpace = NoColorSpace;
   const shadowGeo = geo(new PlaneGeometry(1, 1));
 
   return {
     build: (shape, tint) => builders[shape](tint ?? SHAPE_TINT[shape]),
     shadow: () => {
-      const m = keep(new MeshBasicMaterial({ map: shadowTex, transparent: true, depthWrite: false, toneMapped: false }));
+      const m = keep(
+        shadowMatteTex
+          ? new MeshBasicMaterial({ color: '#ffffff', alphaMap: shadowMatteTex, transparent: true, depthWrite: false, toneMapped: false })
+          : new MeshBasicMaterial({ map: shadowTex, transparent: true, depthWrite: false, toneMapped: false }),
+      );
       const s = new Mesh(shadowGeo, m);
       s.rotation.x = -Math.PI / 2;
       s.renderOrder = -1;

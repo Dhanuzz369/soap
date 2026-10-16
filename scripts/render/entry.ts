@@ -1,16 +1,22 @@
 /**
  * The studio page driven by scripts/render-packs.mjs (served by Vite, never shipped).
  * It renders, with the site's own pack builders, studio lights and hero scene:
- *   window.renderShape(shape, w, h)        one pack, centred, on the forest backdrop
- *   window.renderGroup(items, tint, w, h)  a small group of packs (category tiles)
- *   window.renderHero()                    the home hero still (same scene as the live hero at t = 0)
+ *   window.renderShape(shape, w, h, category, pass)   one pack, centred
+ *   window.renderGroup(items, tint, w, h, fill, pass) a small group of packs (category tiles)
+ *   window.renderHero(pass)                            the home hero cut-out (the live scene at rest)
+ * Each still is drawn twice: pass 'color' with glossy materials on the forest field, and pass
+ * 'matte' (white coverage on black). The node script divides one by the other to cut it out.
  * Each resolves once the frame is drawn into the canvas #c.
  */
 import { Box3, Group, PerspectiveCamera, Scene, Vector3, WebGLRenderer, type MeshBasicMaterial } from 'three';
 import type { Shape } from '../../src/lib/pack-shapes';
 import { CATEGORY_TINT, createPackKit, TINT, type Tint } from '../../src/scripts/three/packs';
+import { createReflection } from '../../src/scripts/three/reflection';
 import { setupStudio } from '../../src/scripts/three/studio';
 import { HERO_FRAME, mountHero } from '../../src/scripts/hero-scene';
+import { addStrips } from './strips';
+
+type Pass = 'color' | 'matte';
 
 type GroupItem = { shape: Shape; x: number; z: number; yaw: number; lift?: number; shadow: number };
 
@@ -34,7 +40,14 @@ function freshCanvas(w: number, h: number) {
 
 const frame = () => new Promise<void>((r) => requestAnimationFrame(() => requestAnimationFrame(() => r())));
 
-async function shoot(items: GroupItem[], tint: Tint | undefined, w: number, h: number, opts: { fill: number; elev: number; lift?: number }) {
+async function shoot(
+  items: GroupItem[],
+  tint: Tint | undefined,
+  w: number,
+  h: number,
+  opts: { fill: number; elev: number; lift?: number },
+  pass: Pass,
+) {
   const c = freshCanvas(w, h);
   const disposables: { dispose(): void }[] = [];
   const keep = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
@@ -43,10 +56,12 @@ async function shoot(items: GroupItem[], tint: Tint | undefined, w: number, h: n
   renderer.setSize(w, h, false);
   const scene = new Scene();
 
-  const kit = createPackKit(renderer, keep);
+  const kit = createPackKit(renderer, keep, pass === 'matte' ? 'matte' : 'glossy');
   const world = new Group();
   const packs = new Group(); // framed without the shadow planes
   world.add(packs);
+  const reflection = createReflection(keep, 0.16, 0.6);
+  world.add(reflection.group);
   for (const it of items) {
     const obj = kit.build(it.shape, tint);
     obj.position.set(it.x, it.lift ?? 0.12, it.z);
@@ -57,6 +72,7 @@ async function shoot(items: GroupItem[], tint: Tint | undefined, w: number, h: n
     (s.material as MeshBasicMaterial).opacity = 0.95;
     packs.add(obj);
     world.add(s);
+    reflection.add(obj);
   }
   scene.add(world);
 
@@ -73,11 +89,13 @@ async function shoot(items: GroupItem[], tint: Tint | undefined, w: number, h: n
   camera.position.set(centre.x, centre.y + Math.sin(elev) * dist, centre.z + Math.cos(elev) * dist);
   camera.lookAt(centre.x, centre.y - size.y * (0.04 + (opts.lift ?? 0)), centre.z);
 
+  // No backdrop glow in the stills: they are cut out, and the page draws the glow in CSS.
   setupStudio(renderer, scene, keep, {
     aim: { x: centre.x, y: centre.y },
-    glow: { x: centre.x, y: centre.y + size.y * 0.1, w: Math.max(size.x, size.y) * 3.2, h: Math.max(size.x, size.y) * 2.6, strength: 0.9 },
+    background: pass === 'matte' ? 'black' : 'field',
+    glossy: pass === 'color',
   });
-  // The glow plane sits 6 units behind the origin; keep it behind the group.
+  if (pass === 'color') addStrips(scene, { x: centre.x, y: centre.y });
   renderer.render(scene, camera);
   await frame();
   dispose = () => {
@@ -88,23 +106,28 @@ async function shoot(items: GroupItem[], tint: Tint | undefined, w: number, h: n
 
 const api = {
   /** One pack; `category` tints it in that category's colours instead of the shape's default. */
-  async renderShape(shape: Shape, w: number, h: number, category?: string) {
+  async renderShape(shape: Shape, w: number, h: number, category: string | undefined, pass: Pass) {
     const flat = shape.startsWith('bar') || shape === 'tub';
     const tint = category ? CATEGORY_TINT[category] : undefined;
-    await shoot([{ shape, x: 0, z: 0, yaw: flat ? 0.55 : 0.32, lift: 0.02, shadow: flat ? 2.6 : 1.9 }], tint, w, h, {
-      fill: flat ? 0.74 : 0.66,
-      elev: flat ? 24 : 9,
-    });
+    await shoot(
+      [{ shape, x: 0, z: 0, yaw: flat ? 0.55 : 0.32, lift: 0.02, shadow: flat ? 2.6 : 1.9 }],
+      tint,
+      w,
+      h,
+      { fill: flat ? 0.74 : 0.66, elev: flat ? 24 : 9 },
+      pass,
+    );
   },
-  async renderGroup(items: GroupItem[], tint: keyof typeof TINT, w: number, h: number, fill = 0.7) {
+  async renderGroup(items: GroupItem[], tint: keyof typeof TINT, w: number, h: number, fill: number, pass: Pass) {
     // lift: the group sits in the upper part of the frame, leaving room for the tile's label below
-    await shoot(items, TINT[tint], w, h, { fill, elev: 10, lift: 0.12 });
+    await shoot(items, TINT[tint], w, h, { fill, elev: 10, lift: 0.12 }, pass);
   },
-  async renderHero() {
+  async renderHero(pass: Pass) {
     const c = freshCanvas(HERO_FRAME.width, HERO_FRAME.height);
-    c.style.setProperty('--still-x', '0.5');
-    c.style.setProperty('--still-y', '0.5');
-    dispose = mountHero(c, { still: true });
+    dispose =
+      pass === 'matte'
+        ? mountHero(c, { still: true, quality: 'matte', background: 'black' })
+        : mountHero(c, { still: true, quality: 'glossy', background: 'field', decorate: (s) => addStrips(s, { x: 0, y: 1 }) });
     await frame();
   },
 };

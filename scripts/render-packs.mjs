@@ -4,15 +4,23 @@
  *
  * Serves scripts/render/index.html with Vite (so it can import the site's own Three.js pack
  * builders, studio lights and hero scene), drives it with Playwright in an installed Chrome,
- * and writes WebP files to public/images/renders/:
+ * and writes transparent WebP cut-outs (alpha) to public/images/renders/:
  *   <shape>.webp (1200×1500) and <shape>-600.webp (600×750)   one per pack shape
  *   <shape>--<category>.webp (+ -600)                          the same pack in another category's
  *                                                            colours, where a product needs it
  *   category-<slug>.webp                                     a small group per category (bento tiles)
- *   range-hero.webp (1600×1000)                              the home hero still and LCP image
+ *   range-cutout.webp (1600×1280) + range-cutout-800.webp      the home hero object and LCP image
+ * and the neem-leaf cut-out public/images/found/neem-leaves.webp (from the public-domain plate).
+ *
+ * Glossy studio quality: PET bottles with transmission and thickness, clearcoat 1 on caps,
+ * clearcoated labels, strip softboxes for long specular highlights, rim lights, a soft contact
+ * shadow and a faint floor reflection. Each still is rendered twice, in colour on the forest
+ * field and as a white-on-black coverage matte; dividing out the field gives a clean alpha
+ * channel, including the half-transparent shadow and reflection. The page supplies the field,
+ * glow, vignette and grain in CSS.
  *
  * These are honest illustrations of pack formats, not product photographs; alt text says so.
- * Each file is kept under ~150 KB by stepping the WebP quality down if needed.
+ * Each file is kept under ~180 KB by stepping the WebP quality down if needed.
  *
  * Needs Google Chrome (or set CHROME_PATH to a Chromium-based browser).
  */
@@ -26,7 +34,9 @@ import sharp from 'sharp';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = path.join(root, 'public/images/renders');
-const MAX_BYTES = 150 * 1024;
+const MAX_BYTES = 180 * 1024;
+/** The forest field the colour pass is rendered on (studio.ts FIELD, --forest-950). */
+const FIELD = [0x0b, 0x21, 0x1a];
 const only = process.argv.slice(2); // optional filter: names to render, e.g. `npm run renders -- jug range-hero`
 
 const SHAPES = [
@@ -66,16 +76,61 @@ const GROUPS = [
 
 const want = (name) => only.length === 0 || only.includes(name);
 
-async function save(name, png, width, height) {
-  let quality = 82;
+/**
+ * Cut-out from the two passes: alpha = matte coverage; colour = (pixel − field·(1 − α)) / α,
+ * which removes the field from every edge, shadow and reflection pixel. Returns raw RGBA.
+ */
+async function cutout(colorPng, mattePng) {
+  const c = await sharp(colorPng).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const m = await sharp(mattePng).removeAlpha().raw().toBuffer();
+  const { width, height } = c.info;
+  const out = Buffer.alloc(width * height * 4);
+  for (let i = 0, j = 0; i < width * height; i++, j += 3) {
+    const a = m[j] / 255;
+    const o = i * 4;
+    if (a < 1 / 255) continue;
+    for (let k = 0; k < 3; k++) {
+      const v = (c.data[j + k] - FIELD[k] * (1 - a)) / a;
+      out[o + k] = v < 0 ? 0 : v > 255 ? 255 : Math.round(v);
+    }
+    out[o + 3] = m[j];
+  }
+  return { raw: out, width, height };
+}
+
+async function save(name, img, width, height, dir = outDir) {
+  let quality = 84;
   let buf;
   for (;;) {
-    buf = await sharp(png).resize(width, height).webp({ quality, effort: 6, smartSubsample: true }).toBuffer();
+    buf = await sharp(img.raw, { raw: { width: img.width, height: img.height, channels: 4 } })
+      .resize(width, height)
+      .webp({ quality, alphaQuality: 90, effort: 6, smartSubsample: true })
+      .toBuffer();
     if (buf.length <= MAX_BYTES || quality <= 50) break;
     quality -= 6;
   }
-  await writeFile(path.join(outDir, `${name}.webp`), buf);
+  await writeFile(path.join(dir, `${name}.webp`), buf);
   console.log(`  ${name}.webp  ${width}×${height}  ${(buf.length / 1024).toFixed(0)} KB  q${quality}`);
+}
+
+/**
+ * The neem-leaf cut-out: the public-domain plate (1873) already in the repo, with the paper
+ * removed. Ink density becomes alpha; the line work is set in mint for the dark fields.
+ */
+async function neemLeaves() {
+  const src = path.join(root, 'public/images/found/neem-plate.webp');
+  const { data, info } = await sharp(src).greyscale().raw().toBuffer({ resolveWithObject: true });
+  const out = Buffer.alloc(info.width * info.height * 4);
+  const mint = [0xbf, 0xe3, 0xcf];
+  for (let i = 0; i < info.width * info.height; i++) {
+    const l = data[i * info.channels];
+    // paper (≥ 215) → clear, ink (≤ 70) → solid, smooth in between
+    const t = Math.min(1, Math.max(0, (215 - l) / 145));
+    const a = t * t * (3 - 2 * t);
+    out.set(mint, i * 4);
+    out[i * 4 + 3] = Math.round(a * 255);
+  }
+  await save('neem-leaves', { raw: out, width: info.width, height: info.height }, 1100, 682, path.join(root, 'public/images/found'));
 }
 
 const server = await createServer({
@@ -101,12 +156,19 @@ try {
   await page.waitForFunction(() => window.studioReady === true, null, { timeout: 120_000 });
   const grab = () => page.evaluate(() => document.getElementById('c').toDataURL('image/png'));
   const png = (dataUrl) => Buffer.from(dataUrl.split(',')[1], 'base64');
+  /** Renders both passes with `fn(pass)` and returns the cut-out. */
+  const twoPass = async (fn, arg) => {
+    await page.evaluate(fn, [...arg, 'color']);
+    const color = png(await grab());
+    await page.evaluate(fn, [...arg, 'matte']);
+    const matte = png(await grab());
+    return cutout(color, matte);
+  };
 
   console.log('Pack shapes');
   for (const shape of SHAPES) {
     if (!want(shape)) continue;
-    await page.evaluate((s) => window.renderShape(s, 1200, 1500), shape);
-    const shot = png(await grab());
+    const shot = await twoPass(([s, p]) => window.renderShape(s, 1200, 1500, undefined, p), [shape]);
     await save(shape, shot, 1200, 1500);
     await save(`${shape}-600`, shot, 600, 750);
   }
@@ -127,8 +189,7 @@ try {
   for (const v of [...variants].sort()) {
     if (!want(v)) continue;
     const [shape, category] = v.split('--');
-    await page.evaluate(([s, c]) => window.renderShape(s, 1200, 1500, c), [shape, category]);
-    const shot = png(await grab());
+    const shot = await twoPass(([s, c, p]) => window.renderShape(s, 1200, 1500, c, p), [shape, category]);
     await save(v, shot, 1200, 1500);
     await save(`${v}-600`, shot, 600, 750);
   }
@@ -137,14 +198,20 @@ try {
   for (const [slug, tint, w, h, items, fill] of GROUPS) {
     const name = `category-${slug}`;
     if (!want(name)) continue;
-    await page.evaluate(([i, t, ww, hh, f]) => window.renderGroup(i, t, ww, hh, f), [items, tint, w, h, fill]);
-    await save(name, png(await grab()), w, h);
+    const shot = await twoPass(([i, t, ww, hh, f, p]) => window.renderGroup(i, t, ww, hh, f, p), [items, tint, w, h, fill]);
+    await save(name, shot, w, h);
   }
 
-  if (want('range-hero')) {
-    console.log('Hero still');
-    await page.evaluate(() => window.renderHero());
-    await save('range-hero', png(await grab()), 1600, 1000);
+  if (want('range-cutout')) {
+    console.log('Hero cut-out');
+    const shot = await twoPass(([p]) => window.renderHero(p), []);
+    await save('range-cutout', shot, 1600, 1280);
+    await save('range-cutout-800', shot, 800, 640);
+  }
+
+  if (want('neem-leaves')) {
+    console.log('Neem leaves');
+    await neemLeaves();
   }
 } finally {
   await browser.close();
