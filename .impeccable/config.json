@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "geist",
+        "createdAt": "2026-10-16T11:22:39.603Z",
+        "reason": "Claude decided: user asked to match floria-landing-page.vercel.app, whose only typeface is Geist (measured via computed styles)"
+      }
+    ]
+  }
+}
