@@ -201,4 +201,4 @@ Settings to enter on any of them:
 | `public/fonts/` | Self-hosted fonts (Geist, and Newsreader italic for accents; SIL Open Font License) |
 | `tests/` | Automatic checks |
 
-The site is built with [Astro](https://astro.build). The home page's 3D product shelf uses Three.js. It loads only after the page has appeared, and it is skipped for visitors who prefer reduced motion or are using data saver.
+The site is built with [Astro](https://astro.build). The home page hero shows a studio picture of the range (`public/images/renders/range-hero.webp`); a live Three.js version of the same scene fades in over it once the visitor first moves, touches or scrolls. It is skipped for visitors who prefer reduced motion or are using data saver.

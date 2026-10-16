@@ -22,7 +22,7 @@ const varieties = d.variants.slice(0, 3);
 <article class="pcard" data-cat={d.category.id}>
   <div class="pcard-media">
     <ProductVisual slug={d.slug} title={d.title} category={d.category.id} size="card" eager={eager} />
-    <a class="pcard-chip" href={`/contact/?product=${d.slug}`} aria-label={`Add ${d.title} to an enquiry`}>Add to enquiry</a>
+    <a class="pcard-chip" href={`/contact/?product=${d.slug}`} aria-label={`Add to enquiry: ${d.title}`}>Add to enquiry</a>
   </div>
   <div class="pcard-row">
     <h3 class="pcard-title"><a href={href}>{d.title}</a></h3>

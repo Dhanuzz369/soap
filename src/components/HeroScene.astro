@@ -3,8 +3,9 @@
  * HeroScene: the range photographed in a dark studio (spec §14, restyle direction §1).
  * The pre-rendered still (`npm run renders`, the same scene at t = 0) paints first: it is the
  * LCP element and the fallback. A tiny loader checks reduced motion, WebGL and data saver, then
- * imports the Three.js scene only once the stage is visible and the browser is idle; the canvas
- * fades in over the still. Both are cropped the same way, so the still simply comes alive.
+ * imports the Three.js scene only after the page has loaded and the visitor first interacts (pointer,
+ * touch, scroll or key), once the stage is visible and the browser is idle; the canvas fades in over
+ * the still. Both are cropped the same way, so the still simply comes alive.
  */
 ---
 
@@ -45,7 +46,8 @@
         });
     };
 
-    // Wait for the page to finish loading first, so the scene never competes with the first paint.
+    // The scene costs real main-thread time, so it waits for the visitor: the first pointer move,
+    // touch, scroll or key after the page has loaded (until then, and without it, the still shows).
     const begin = () => {
       const io = new IntersectionObserver((entries) => {
         if (entries.some((e) => e.isIntersecting)) {
@@ -55,7 +57,13 @@
       });
       io.observe(stage);
     };
-    if (document.readyState === 'complete') begin();
-    else window.addEventListener('load', begin, { once: true });
+    const events = ['pointermove', 'pointerdown', 'touchstart', 'scroll', 'keydown', 'wheel'] as const;
+    const onFirst = () => {
+      events.forEach((e) => window.removeEventListener(e, onFirst));
+      begin();
+    };
+    const arm = () => events.forEach((e) => window.addEventListener(e, onFirst, { once: true, passive: true }));
+    if (document.readyState === 'complete') arm();
+    else window.addEventListener('load', arm, { once: true });
   }
 </script>

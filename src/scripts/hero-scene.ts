@@ -69,7 +69,7 @@ function buildScene(
 ): () => void {
   const keep = <T extends { dispose(): void }>(d: T): T => (disposables.push(d), d);
 
-  renderer.setPixelRatio(opts.still ? 1 : Math.min(window.devicePixelRatio || 1, 2));
+  renderer.setPixelRatio(opts.still ? 1 : Math.min(window.devicePixelRatio || 1, 1.5));
   const scene = new Scene();
   setupStudio(renderer, scene, keep, { aim: { x: 2.0, y: 1.0 }, glow: { x: 2.2, y: 1.8, w: 13, h: 9, strength: 0.9 } });
 
