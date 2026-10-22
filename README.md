@@ -30,6 +30,9 @@ Other useful commands:
 | `npm test` | Runs the automatic checks on the site's logic. |
 | `npm run test:build` | Runs checks on the built pages (run `npm run build` first). |
 | `npm run check:placeholders` | Lists placeholder contact details still left on the site (`PLACEHOLDER` text, the all-zero WhatsApp number, `contactIsPlaceholder: true`). |
+| `npm run i18n:check` | Lists missing, out-of-date (stale) and faulty translations and missing interface text per language. Add `-- --lang fr` for one language, `-- --strict` to fail when anything is missing. |
+| `npm run i18n:stamp -- <file>` | Marks a translation as matching the current English (run after translating or updating it). |
+| `npm run i18n:sweep -- --lang fr` | With `npm run preview` running: opens every page of a language in Chrome and reports sideways scrolling or console errors. |
 | `npm run renders` | Re-draws the glossy studio cut-outs (transparent WebP) of each pack shape, the category groups and the home hero object (`range-cutout.webp`) into `public/images/renders/`, plus the neem-leaf cut-out (needs Google Chrome). Run it after changing the 3D pack models in `src/scripts/three/`. |
 
 ---
@@ -134,6 +137,17 @@ Adding posts is safe too. The checks look at every file in `src/content/blog/` a
 
 ---
 
+## 5b. Languages
+
+The site is published in 12 languages: English at `/`, and Arabic, French, Spanish, Portuguese, Russian, Simplified Chinese, German, Turkish, Indonesian, Swahili and Vietnamese at `/ar/`, `/fr/`, `/es/` … with the same page addresses after the prefix. A language menu sits in the bottom corner of every page, and a first-time visitor on an English page is sent to their browser's language if the site has it.
+
+- **French is fully translated.** The other languages show their menus and buttons in English until a translator fills them in; their pages show English text meanwhile.
+- **Translators follow `docs/i18n-translator-guide.md`.** Interface text is in `src/i18n/ui/<language>.ts`; product, category and blog translations are in `src/content/i18n/<language>/`.
+- **When you edit an English product, category or post,** run `npm run i18n:check`: it lists the translations that are now out of date. Send those to the translator.
+- **Export terms** in `src/config/site.ts` are English. Each language repeats them in `terms` in its interface file; update those too when you change the terms.
+
+---
+
 ## 6. Launch checklist
 
 Do these in order before the site goes public:
@@ -148,13 +162,14 @@ Do these in order before the site goes public:
    npm run check:placeholders
    ```
    It must say **"No PLACEHOLDER values found."** If it lists anything (leftover `PLACEHOLDER` text, the WhatsApp number still `910000000000`, or `contactIsPlaceholder` still `true`), fix it and run it again.
-6. **Flip the switch:** in `src/config/site.ts` change `launchReady: false` to `launchReady: true`. This removes the "do not index" tag, opens `robots.txt` to search engines and creates the sitemap. (`npm run check:placeholders` will refuse to pass if any placeholder remains while this is `true`.)
-7. Run the launch gate. Everything must pass:
+6. **Languages:** run `npm run i18n:check`. Any language that is not complete still publishes pages with English text under its address. Either finish it (`npm run i18n:check -- --lang <code> --strict` must pass) or accept that before launch.
+7. **Flip the switch:** in `src/config/site.ts` change `launchReady: false` to `launchReady: true`. This removes the "do not index" tag, opens `robots.txt` to search engines and creates the sitemap. (`npm run check:placeholders` will refuse to pass if any placeholder remains while this is `true`.)
+8. Run the launch gate. Everything must pass:
    ```bash
    npm test && npm run build && npm run test:build && npm run check:placeholders
    ```
    Then deploy (section 7).
-8. After it is live, add the site to **Google Search Console** and **Bing Webmaster Tools** and submit `https://your-domain/sitemap-index.xml`.
+9. After it is live, add the site to **Google Search Console** and **Bing Webmaster Tools** and submit `https://your-domain/sitemap-index.xml`.
 
 ---
 
@@ -195,10 +210,13 @@ Settings to enter on any of them:
 | `src/content/products/` | One file per product |
 | `src/content/categories/` | One file per category |
 | `src/content/blog/` | Blog posts |
-| `src/pages/` | Page templates (home, about, contact, FAQ, etc.) |
+| `src/content/i18n/<language>/` | Translations of products, categories and posts |
+| `src/i18n/` | Languages, interface text per language (`ui/`), language detection |
+| `src/views/` | The page templates (every language uses the same ones) |
+| `src/pages/` | Page addresses (each one shows a template from `src/views/`) |
 | `src/styles/` | Colours, fonts and layout |
 | `public/images/products/` | Product photos (`<slug>.webp`) |
-| `public/fonts/` | Self-hosted fonts (Geist, and Newsreader italic for accents; SIL Open Font License) |
+| `public/fonts/` | Self-hosted fonts (Geist with Latin, Cyrillic and Vietnamese subsets, Newsreader italic for accents, IBM Plex Sans Arabic for Arabic pages; SIL Open Font License) |
 | `tests/` | Automatic checks |
 
 The site is built with [Astro](https://astro.build). The home page hero shows a transparent studio cut-out of the range (`public/images/renders/range-cutout.webp`) that pops in and drifts with scroll; a live Three.js version of the same scene, framed identically, cross-fades over it once the visitor first moves, touches or scrolls. It is skipped for visitors who prefer reduced motion or are using data saver.
