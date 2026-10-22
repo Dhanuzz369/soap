@@ -69,7 +69,6 @@ faqs:
 related:
   - multi-surface-cleaner
   - floor-cleaner
-  - car-wash-shampoo
   - bathroom-tile-cleaner
 ---
 

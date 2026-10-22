@@ -1,6 +1,6 @@
 # GoodBiz Hygiene website
 
-This is the website for **GoodBiz Hygiene**, a GoodBiz Global company and merchant exporter of soaps, detergents and cleaning products from India. It shows the product range (24 products in 5 categories), explains private label and the export process, publishes buyer guides (the blog), and lets importers send an enquiry by WhatsApp or email.
+This is the website for **GoodBiz Hygiene**, a GoodBiz Global company and merchant exporter of soaps, detergents and cleaning products from India. It shows the product range (23 products in 5 categories), explains private label and the export process, publishes buyer guides (the blog), and lets importers send an enquiry by WhatsApp or email.
 
 The site is "static": it is a folder of ready-made web pages. There is no database, no server and no monthly hosting bill. You edit a few text files, run one command to rebuild, and upload the result.
 
@@ -77,7 +77,7 @@ To add a real photo:
 | Bath and Personal Soaps | `toilet-bath-soap`, `herbal-ayurvedic-soap`, `glycerin-transparent-soap`, `antibacterial-soap`, `hotel-guest-soap`, `liquid-hand-wash`, `body-wash-shower-gel` |
 | Laundry Care | `laundry-soap-bar`, `detergent-powder`, `liquid-detergent`, `fabric-softener` |
 | Kitchen Care | `dish-wash-liquid`, `dish-wash-bar` |
-| Surface and Home Cleaners | `floor-cleaner`, `herbal-phenol`, `glass-cleaner`, `toilet-bowl-cleaner`, `bathroom-tile-cleaner`, `multi-surface-cleaner`, `car-wash-shampoo` |
+| Surface and Home Cleaners | `floor-cleaner`, `herbal-phenol`, `glass-cleaner`, `toilet-bowl-cleaner`, `bathroom-tile-cleaner`, `multi-surface-cleaner` |
 | Industrial and Raw Materials | `soap-noodles`, `labsa`, `sles`, `bulk-institutional-cleaners` |
 
 Only use photos you own or are allowed to use (for example, from your manufacturer with permission).

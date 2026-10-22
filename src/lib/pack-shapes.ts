@@ -14,7 +14,6 @@ export const bySlug: Record<string, Shape> = {
   'fabric-softener': 'jug',
   'liquid-detergent': 'jug',
   'floor-cleaner': 'jug',
-  'car-wash-shampoo': 'jug',
   'glass-cleaner': 'spray',
   'multi-surface-cleaner': 'spray',
   'bathroom-tile-cleaner': 'spray',

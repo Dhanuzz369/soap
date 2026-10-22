@@ -10,7 +10,7 @@ const EXPECTED_SLUGS = [
   'laundry-soap-bar', 'detergent-powder', 'liquid-detergent', 'fabric-softener',
   'dish-wash-liquid', 'dish-wash-bar',
   'floor-cleaner', 'herbal-phenol', 'glass-cleaner', 'toilet-bowl-cleaner', 'bathroom-tile-cleaner',
-  'multi-surface-cleaner', 'car-wash-shampoo',
+  'multi-surface-cleaner',
   'soap-noodles', 'labsa', 'sles', 'bulk-institutional-cleaners',
 ];
 const EXPECTED_HSN: Record<string, string> = {
@@ -20,7 +20,7 @@ const EXPECTED_HSN: Record<string, string> = {
   'dish-wash-liquid': '3402 50', 'dish-wash-bar': '3401 19',
   'floor-cleaner': '3402 50', 'herbal-phenol': '3402 50',
   'glass-cleaner': '3402 50', 'toilet-bowl-cleaner': '3402 50', 'bathroom-tile-cleaner': '3402 50',
-  'multi-surface-cleaner': '3402 50', 'car-wash-shampoo': '3402 50', 'soap-noodles': '3401 20', 'labsa': '3402 31',
+  'multi-surface-cleaner': '3402 50', 'soap-noodles': '3401 20', 'labsa': '3402 31',
   'sles': '3402 39', 'bulk-institutional-cleaners': '3402 90',
 };
 const CATEGORY_SLUGS = ['bath-personal-soaps', 'laundry-care', 'kitchen-care', 'surface-home-cleaners', 'industrial-raw-materials'];
@@ -41,7 +41,7 @@ const slugs = new Set<string>(products.map((p) => p.slug));
 const categorySlugs = categories.map((c) => c.slug);
 
 describe('products content', () => {
-  it('has unique slugs and still includes the original 24 products', () => {
+  it('has unique slugs and still includes the original 23 products', () => {
     expect(slugs.size).toBe(products.length);
     expect(products.length).toBeGreaterThanOrEqual(EXPECTED_SLUGS.length);
     const missing = EXPECTED_SLUGS.filter((s) => !slugs.has(s));

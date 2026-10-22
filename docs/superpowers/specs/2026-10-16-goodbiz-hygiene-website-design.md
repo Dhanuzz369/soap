@@ -101,7 +101,7 @@ Success means:
 20. Toilet Bowl Cleaner: 3402 50
 21. Bathroom & Tile Cleaner: 3402 50
 22. Multi-Surface Cleaner: 3402 50
-23. Car Wash Shampoo: 3402 50
+23. ~~Car Wash Shampoo: 3402 50~~ (removed 2026-10-22 at the user's request)
 
 **E. Industrial & Raw Materials (HSN 3401 / 3402)**
 24. Soap Noodles: 3401 20
