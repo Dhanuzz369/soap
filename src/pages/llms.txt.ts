@@ -3,6 +3,7 @@ import site from '../config/site';
 import { absoluteUrl } from '../lib/seo';
 import { getProductsByCategory } from '../lib/products';
 import { getPosts } from '../lib/blog';
+import { LOCALES, localizePath } from '../i18n/locales';
 
 const firstSentence = (s: string) => (s.match(/^.*?[.!?](?=\s+[A-Z]|\s*$)/s)?.[0] ?? s).trim();
 
@@ -41,6 +42,9 @@ export const GET: APIRoute = async () => {
     ['Contact', '/contact/', 'Send an enquiry for prices and specification sheets'],
   ];
   for (const [t, u, d] of company) lines.push(`- [${t}](${absoluteUrl(u)}): ${d}`);
+  lines.push('', '## Languages', '');
+  lines.push('Every page is also published in these languages, at the same path under the language prefix:', '');
+  for (const l of LOCALES) lines.push(`- [${l.native === l.english ? l.native : `${l.native} (${l.english})`}](${absoluteUrl(localizePath('/', l.code))}): hreflang ${l.hreflang}`);
   lines.push('');
 
   return new Response(lines.join('\n'), { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });

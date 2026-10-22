@@ -168,10 +168,9 @@ html:lang(zh-Hans) :is(.serif-i, .statement-title em, .footer-tag) {
   position: absolute;
   inset-inline-start: 0;
   bottom: calc(100% + 10px);
-  width: max-content;
-  min-width: 232px;
-  max-width: calc(100vw - 32px);
-  max-height: min(72vh, 600px);
+  /* two columns of languages: every language visible at once, even on a phone */
+  width: min(420px, calc(100vw - 32px));
+  max-height: calc(100svh - 120px);
   overflow-y: auto;
   overscroll-behavior: contain;
   padding: 8px;
@@ -218,6 +217,7 @@ html:lang(zh-Hans) :is(.serif-i, .statement-title em, .footer-tag) {
 }
 .lang-list {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2px;
 }
 .lang-list a {
@@ -228,6 +228,8 @@ html:lang(zh-Hans) :is(.serif-i, .statement-title em, .footer-tag) {
   min-height: 44px;
   padding: 10px 12px;
   border-radius: 14px;
+  min-width: 0;
+  overflow-wrap: anywhere;
   color: var(--ink);
   font-size: 1rem;
   font-weight: 500;
@@ -260,6 +262,7 @@ html:lang(zh-Hans) :is(.serif-i, .statement-title em, .footer-tag) {
   stroke-width: 2;
 }
 .lang-more {
+  grid-column: 1 / -1;
   margin-top: 4px;
   padding-top: 4px;
   border-top: 1px solid rgb(18 53 42 / 0.1);

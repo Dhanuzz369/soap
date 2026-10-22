@@ -101,10 +101,8 @@ const ar = lang === 'ar';
     <link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     {
       ar ? (
-        <>
-          <link rel="preload" href="/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin />
-          <link rel="preload" href="/fonts/ibm-plex-sans-arabic-arabic-600-normal.woff2" as="font" type="font/woff2" crossorigin />
-        </>
+        // Body weight only: a second preload competed with the hero image for bandwidth (Lighthouse).
+        <link rel="preload" href="/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin />
       ) : (
         lang !== 'zh' && <link rel="preload" href="/fonts/newsreader-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin />
       )
