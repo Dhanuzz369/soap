@@ -1,0 +1,9 @@
+---
+sourceHash: "8684d01fe2f4"
+title: "Bahan Baku dan Produk Industri"
+slug: industrial-raw-materials
+order: 5
+hsnRange: "3401 / 3402"
+summary: "Soap noodles, LABSA, SLES, dan bahan kimia pembersih institusional curah dari produsen India."
+intro: "Soap noodles, surfaktan, dan bahan kimia pembersih curah untuk pembuat sabun, peracik deterjen, dan perusahaan jasa fasilitas, bersumber dari produsen India yang telah kami seleksi dalam kemasan curah."
+---

@@ -1,15 +1,505 @@
 /**
- * Chinese (Simplified) UI strings. NOT TRANSLATED YET: every key falls back to English.
- *
- * To translate: copy the body of src/i18n/ui/fr.ts (same keys) and translate from
- * src/i18n/ui/en.ts, following docs/i18n-translator-guide.md. Then run
- * `npm run i18n:stamp -- src/i18n/ui/zh.ts` and `npm run i18n:check -- --lang zh`.
+ * Simplified Chinese UI strings. Source: src/i18n/ui/en.ts. Rules: docs/i18n-translator-guide.md.
+ * Chinese has no letter case, so {name} is used instead of {nameLower}.
  */
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '';
+export const sourceHash = '1e31c873b185';
 
-const zh: UiPartial = {};
+const zh: UiPartial = {
+  meta: {
+    tagline: '香皂与家居清洁产品，从印度出口',
+  },
+
+  terms: {
+    incoterms: '可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）',
+    payment: '按每笔订单商定（T/T或LC）',
+    port: '从印度主要港口发运',
+    leadTime: '通常为订单确认后3至5周，具体视自有品牌要求而定',
+  },
+
+  common: {
+    skip: '跳转到正文',
+    home: '首页',
+    products: '产品',
+    blog: '采购指南',
+    breadcrumb: '面包屑导航',
+    requestQuote: '获取报价',
+    viewProducts: '查看产品',
+    exporterLine: '印度出口商与供应商',
+    hsn: 'HSN',
+    hsnTitle: '商品名称及编码协调制度（HSN）',
+    allProducts: '全部产品',
+    allGuides: '全部指南',
+    productsCount: '{n}种产品',
+    minRead: '阅读约{n}分钟',
+    readFaq: '阅读常见问题',
+    straightAnswers: '直接解答。',
+    buyerFaq: '采购商常见问题',
+    faqDefault: '采购商常问的问题',
+    exportProcessFull: '出口流程详解',
+    renderAlt: '{name}典型出口包装示意图',
+    drawingAlt: '{name}示意图',
+    photoAlt: 'GoodBiz的{name}',
+    categoryRenderAlt: '{name}典型包装示意图',
+    rangeAlt: 'GoodBiz Hygiene产品系列典型出口包装示意图',
+    heroAlt:
+      'GoodBiz Hygiene产品系列典型出口包装示意图：一瓶洗洁精、一桶衣物柔顺剂、一瓶喷雾清洁剂、一瓶按压式洗手液、一袋洗衣粉、一桶原料、一个方形油桶以及多块香皂',
+    portAlt: '夜间，龙门起重机在印度科钦国际集装箱转运码头为集装箱船装货',
+    portCaption: '科钦集装箱码头。摄影：{creator}，{license}。',
+    specCaption: '典型规格。最终数值按每笔订单确认。',
+  },
+
+  header: {
+    homeAria: '{name}，首页',
+    menu: '菜单',
+    mainNav: '主导航',
+    mainNavMobile: '主导航（移动端）',
+    nav: {
+      products: '产品',
+      privateLabel: '自有品牌',
+      exportProcess: '出口流程',
+      guides: '采购指南',
+      about: '关于我们',
+      faq: '常见问题',
+    },
+  },
+
+  footer: {
+    tag: '洁净，来自印度',
+    lede: '香皂与家居清洁产品，采购自经我们考察的印度制造商，由{parent}旗下的GoodBiz Hygiene出口。',
+    nav: '页脚',
+    products: '产品',
+    company: '公司',
+    contact: '联系方式',
+    whatsapp: 'WhatsApp',
+    legal: '© {year} {name}，{parent}旗下公司。印度贸易型出口商。',
+    backToTop: '返回顶部',
+  },
+
+  lang: {
+    label: '语言',
+    menuAria: '选择语言。当前语言：{name}',
+    more: '更多语言…',
+    moreTitle: '在谷歌翻译中打开本页（机器翻译）',
+  },
+
+  whatsapp: {
+    aria: '通过WhatsApp联系GoodBiz Hygiene',
+    label: 'WhatsApp',
+  },
+
+  cards: {
+    addToEnquiry: '加入询价',
+    addAria: '加入询价：{name}',
+    noteH: '可在同一集装箱内混装。',
+    noteText: '可将这些产品与其他系列的产品合并装入一个20英尺或40英尺集装箱。我们会在报价时确认混装方案。',
+  },
+
+  quote: {
+    heading: '获取报价。',
+    text: '请用一句话告诉我们您的需求。询价表单会自动填入这句话，您只需补充产品、数量和港口。',
+    placeholder: '例如：1个20英尺集装箱洗洁精，柠檬味，500 ml',
+    label: '您需要什么？',
+    submit: '开始询价',
+  },
+
+  ld: {
+    hsnCode: 'HSN编码',
+    variants: '品种',
+    packSizes: '包装规格',
+  },
+
+  home: {
+    title: '香皂与家居清洁产品印度出口商与供应商',
+    description:
+      'GoodBiz Hygiene是GoodBiz Global旗下公司，从经考察的印度制造商出口香皂、洗涤剂和家居清洁产品，支持自有品牌与混装集装箱。',
+    eyebrow: '香皂 · 洗涤剂 · 家居清洁',
+    h1a: '香皂与家居清洁产品',
+    h1b: '从印度出口。',
+    text: 'GoodBiz Hygiene是一家贸易型出口商：我们从经考察的印度制造商采购香皂、洗涤剂和清洁剂，支持自有品牌与混装集装箱。',
+    rangeH: '产品系列。',
+    rangeIntro: '以下展示{n}种产品中的三种。每种产品均有独立页面，列出典型规格、包装规格和自有品牌选项。',
+    rangeAll: '查看全部{n}种产品',
+    processL1: '出口订单',
+    processL2: '如何运作。',
+    processIntro: '在您与制造商之间，由一家贸易型出口商负责：报价、样品、单据和发运，从第一条消息一直到提单。',
+    steps: [
+      {
+        name: '规格确认与样品',
+        text: '请告知产品、包装规格、数量和目的港。我们按包装报价，并注明典型规格和交货周期，同时安排样品供您确认。',
+      },
+      {
+        name: '采购与自有品牌',
+        text: '我们根据您的需求匹配一家经考察的印度制造商。如做自有品牌，您的设计稿、香型和包装选择会在批量生产前获得您的确认。',
+      },
+      {
+        name: '单据与发运',
+        text: '制造商负责生产和包装订单，我们同时准备商业发票、装箱单、原产地证书、COA和MSDS。{port}。{leadTime}。',
+      },
+    ],
+    catsH: '产品类别。',
+    catsText: '五大系列，归入HSN 3401和3402。可在同一个20英尺或40英尺集装箱内混装。',
+    tileMeta: '{n}种产品 · HSN {hsn}',
+    answersMore: '更多解答请见常见问题页面',
+    statementA: '用心采购，',
+    statementB: '放心发运。',
+    statementLead:
+      '每一笔GoodBiz Hygiene订单都会匹配一家经考察的印度制造商，对照您确认的样品进行核对，并附齐全的出口单据发运。无论订单大小，我们都以此方式操作。',
+    promises: [
+      { title: '只选经考察的制造商', text: '每种产品均来自我们已就质量、稳定性和出口经验进行考察的印度制造商。' },
+      { title: '与您的样品一致', text: '您确认的配方、香型和包装即为发运的货品，装柜前会对照您的样品进行核对。' },
+      { title: '单据准确齐备', text: '每票货物均备妥商业发票、装箱单、原产地证书、COA和MSDS，可直接交给您的报关代理。' },
+      { title: '一个合作伙伴，港到港', text: '从首次样品到提单，您订购的所有产品只需一份报价、一位联系人。' },
+    ],
+    guidesH: '采购指南',
+  },
+
+  productsIndex: {
+    title: '香皂、洗涤剂与清洁产品印度出口商与供应商',
+    description:
+      '浏览{n}种采购自经考察的印度制造商的香皂、洗衣、厨房、表面清洁及原料产品，并附HSN编码和自有品牌选项。',
+    l1: '全部产品。',
+    l2: '香皂、洗涤剂与清洁剂。',
+    lead: '五大系列共{n}种产品，采购自经考察的印度制造商，并提供自有品牌选项。您可以选择某个系列，或打开任一产品查看规格、包装规格和HSN编码。',
+    hsnLink: '各产品的HSN编码',
+    rangesNav: '五大系列',
+    rangeFull: '完整产品系列',
+    hsnH: '各产品适用哪个HSN编码？',
+    hsnText: '编码按6位显示。8位ITC-HS编码按每笔订单确认，少数产品另有其他归类（详见各产品页面）。',
+    hsnCaption: '按系列分组的各产品HSN概览',
+    colProduct: '产品',
+    colRange: '系列',
+    colHsn: 'HSN（6位）',
+  },
+
+  product: {
+    hsnAlt: '下方注明了其他归类',
+    hsnConfirmed: '8位ITC-HS编码按每笔订单确认',
+    factsH: '采购商关键信息',
+    hsnCode: 'HSN编码',
+    hsnNoteDefault: '8位ITC-HS编码按每笔订单确认。',
+    moq: '最小起订量',
+    privateLabel: '自有品牌',
+    plAvailable: '可提供。',
+    plNot: '本产品不提供。',
+    varH: '品种、包装规格与包装方式',
+    variants: '可选品种',
+    variantsAria: '品种',
+    packSizes: '包装规格',
+    packaging: '包装方式',
+    galleryH: '更多香型，实物图片',
+    specH: '典型规格是什么？',
+    specNote: '{name}：出口级别的典型数值。最终数值按每笔订单与制造商确认。',
+    aboutAria: '关于{name}',
+    loadH: '集装箱装载量（约）',
+    loadText: '以下为大致数字；最终装载方案按每笔订单确认。',
+    ft20: '20英尺集装箱',
+    ft40: '40英尺集装箱',
+    guidesH: '本产品相关采购指南',
+    relatedH: '相关产品',
+    relatedAll: '全部{name}',
+    quoteH: '为本产品获取报价。',
+    quoteText: '请用一句话告诉我们{name}的品种、包装规格、数量和目的港。询价表单会自动填入这句话。',
+  },
+
+  category: {
+    title: '{name}印度出口商与供应商',
+    hsnMeta: '{n}种产品 · 8位ITC-HS编码按每笔订单确认',
+    seeProducts: '查看这{n}种产品',
+    productsH: '我们供应哪些{name}产品？',
+    quoteH: '为{name}获取报价。',
+  },
+
+  blogIndex: {
+    title: '香皂与清洁产品采购商出口指南',
+    description:
+      '面向从印度进口香皂、洗涤剂和家居清洁产品的进口商的实用指南：HSN编码、MOQ、单据、自有品牌与运输。',
+    l1: '采购指南。',
+    l2: '进口香皂与家居清洁产品。',
+    lead: '写给进口商和经销商的通俗笔记：归类、成本、单据与产品选择。',
+    latest: '最新文章',
+  },
+
+  post: {
+    meta: '{date} · {minutes} · GoodBiz Hygiene',
+    quickAnswers: '快速解答',
+    relatedH: '本指南提到的产品',
+    quoteH: '正在规划订单？',
+    quoteText: '请用一句话告诉我们您的需求。询价表单会自动填入这句话，您只需补充产品、数量和港口。',
+  },
+
+  contact: {
+    title: '获取报价：香皂与家居清洁产品印度出口商与供应商',
+    description:
+      '向GoodBiz Hygiene获取印度香皂、洗涤剂和家居清洁产品的报价。您可通过电子邮件或WhatsApp发送产品、包装规格和港口信息。',
+    l1: '获取报价。',
+    l2: '从印度，到您的港口。',
+    lead: '请告诉我们您的需求：产品、包装规格、数量和目的港。GoodBiz Hygiene将回复价格、典型规格和交货周期。',
+    start: '开始询价',
+    waMessage: '通过WhatsApp联系我们',
+    formH: '询价表单',
+    asideAria: '其他联系方式',
+    email: '电子邮件',
+    whatsapp: 'WhatsApp',
+    phone: '电话',
+    office: '办公地址',
+    terms: '出口条款',
+    oftenH: '常一并报价的产品',
+    oftenText: '点击产品卡片上的“加入询价”，即可在上方表单中勾选该产品。',
+  },
+
+  form: {
+    name: '您的姓名',
+    company: '公司',
+    country: '国家',
+    email: '电子邮件',
+    phone: 'WhatsApp或电话',
+    phoneHint: '（含国家区号）',
+    quantity: '数量',
+    choose: '请选择',
+    quantities: [
+      '样品或试订数量',
+      '混装集装箱的一部分',
+      '1个20英尺集装箱',
+      '1个40英尺集装箱',
+      '多个集装箱或长期供货',
+      '尚未确定',
+    ],
+    productsLegend: '感兴趣的产品',
+    chooseAny: '（可多选）',
+    plLegend: '您是否需要自有品牌？',
+    plYes: '需要，使用我的品牌',
+    plNo: '不需要',
+    message: '留言',
+    messageHint: '（包装规格、香型、目的港）',
+    submit: '发送询价',
+    hint: '点击后将打开您的邮件应用，并已填好询价内容。更习惯用WhatsApp？',
+    hintLink: '通过WhatsApp联系我们',
+    hintJs: '接下来，请选择通过WhatsApp或电子邮件发送。',
+    sendH: '您的询价已准备好。请选择发送方式。',
+    sendWa: '通过WhatsApp发送',
+    sendEmail: '通过电子邮件发送',
+    sendNote: '两种方式都会打开您自己的应用并写好信息，您可在发送前检查。',
+  },
+
+  about: {
+    title: '关于GoodBiz Hygiene：香皂与家居清洁产品印度出口商与供应商',
+    description:
+      'GoodBiz Hygiene是GoodBiz Global旗下的家居清洁与卫生用品出口部门，GoodBiz Global是一家印度贸易型出口商，GoodBiz Agro为其姊妹品牌。',
+    l1: 'GoodBiz Hygiene。',
+    l2: '{parent}旗下公司。',
+    lead: 'GoodBiz Hygiene是{parent}旗下的家居清洁与卫生用品出口部门。{parent}是一家印度贸易型出口商，GoodBiz Agro为其姊妹品牌。',
+    whatH: 'GoodBiz Hygiene做什么？',
+    what1:
+      'GoodBiz Hygiene向印度以外的进口商、经销商、批发商、连锁超市和自有品牌商供应香皂、洗涤剂和家居清洁产品。公司不拥有工厂。产品采购自经考察的印度制造商，由GoodBiz Hygiene负责报价、自有品牌协调、出口单据和运输。',
+    what2:
+      '产品系列涵盖归入HSN 3401（香皂）和HSN 3402（洗涤剂及洗涤或清洁制剂）的产品，以及草本酚类消毒液等密切相关的产品，共分五大系列。',
+    rangesH: '五大系列',
+    familyH: '{parent}的一员',
+    familyText: '{parent}旗下运营GoodBiz Agro（农产品出口）和GoodBiz Hygiene（香皂与家居清洁）。',
+    visit: '访问',
+    basedIn: '所在地',
+    founded: '成立时间',
+    iec: '进出口商代码（IEC）',
+  },
+
+  faqPage: {
+    title: '常见问题：香皂与家居清洁产品印度出口商与供应商',
+    description:
+      '为通过GoodBiz Hygiene从印度采购香皂、洗涤剂和清洁剂的进口商解答：采购来源、自有品牌、MOQ、国际贸易术语、单据与交货周期。',
+    l1: '采购商提问。',
+    l2: '直接解答。',
+    lead: '介绍GoodBiz Hygiene如何从印度采购、报价和发运香皂与家居清洁产品。与具体产品相关的问题，请见各产品页面。',
+    quoteH: '还有疑问？',
+    quoteText: '请将问题与询价一并用一句话发送给我们。我们会针对您的产品和市场回复详情。',
+  },
+
+  faqs: [
+    {
+      heading: '采购与产品',
+      faqs: [
+        {
+          q: 'GoodBiz Hygiene是否自己生产所出口的产品？',
+          a: '不是。GoodBiz Hygiene是一家印度贸易型出口商，隶属GoodBiz Global。公司从经考察的印度制造商采购香皂、洗涤剂和家居清洁产品，再为海外采购商办理报价、自有品牌协调、单据和运输。',
+        },
+        {
+          q: 'GoodBiz Hygiene供应哪些产品？',
+          a: '共五大系列：沐浴与个人香皂、洗衣护理、厨房清洁、表面与家居清洁剂，以及皂粒、LABSA和SLES等工业原料。每种产品均有独立页面，列出典型规格、包装规格和HSN编码。',
+        },
+        {
+          q: '香皂和清洁产品适用哪些HSN编码？',
+          a: '香皂归入HSN 3401，洗涤剂及洗涤或清洁制剂归入HSN 3402。本网站按6位显示编码，例如3402 50。8位ITC-HS编码按每笔订单确认，衣物柔顺剂和草本酚类消毒液等少数产品可能适用不同的归类。',
+        },
+        {
+          q: '产品页面上的规格是最终规格吗？',
+          a: '不是。规格为出口级别的典型数值。有效物含量、TFM或pH等最终数值，按每笔订单与制造商确认，并在报价单中注明。',
+        },
+      ],
+    },
+    {
+      heading: '订购与自有品牌',
+      faqs: [
+        {
+          q: '我可以订购使用自己品牌的产品吗？',
+          a: '可以。大多数产品可做自有品牌：使用您的标签设计稿，在配方允许的情况下可选择香型和颜色，并按您的市场需要设定包装规格。最小起订量视产品和包装而定，各产品页面列有典型数值。',
+        },
+        {
+          q: '不同产品可以合装在一个集装箱里吗？',
+          a: '可以。您可以将多个系列的产品合并装入一个20英尺或40英尺集装箱，这样无需为每种产品各装满一个集装箱，即可试销某一系列。混装方案会在报价时依据包装与兼容性规则确认。',
+        },
+        {
+          q: '下单前可以先拿样品吗？',
+          a: '可以。大多数产品在您确认订单前都可安排样品。请在询价中告知产品和您的快递信息，我们会确认可寄送的样品。',
+        },
+        {
+          q: '如何获取报价？',
+          a: '请使用联系页面上的询价表单，或通过WhatsApp或电子邮件发送产品、包装规格、数量和目的港。我们会回复价格、典型规格和交货周期。',
+        },
+      ],
+    },
+    {
+      heading: '运输、付款与单据',
+      faqs: [
+        { q: '你们提供哪些国际贸易术语和付款条件？', a: '{incoterms}。' },
+        { q: '订单多久可以发运？', a: '{leadTime}。{port}。' },
+        {
+          q: '货物随附哪些出口单据？',
+          a: '货物通常随附商业发票、装箱单、原产地证书和提单，以及分析证书（COA）和化学品安全技术说明书（MSDS）等产品文件。具体单据视您所在国家而定，按每笔订单确认。',
+        },
+        {
+          q: '你们能发货到我所在的国家吗？',
+          a: 'GoodBiz Hygiene可向大多数国家的进口商、经销商和自有品牌商报价。标签语言或注册要求等目的地规定，会在订单确认前与您核实。',
+        },
+      ],
+    },
+  ],
+
+  exportProcess: {
+    title: '出口流程：香皂与家居清洁产品印度出口商与供应商',
+    description:
+      'GoodBiz Hygiene如何从印度出口香皂、洗涤剂和清洁剂：报价、样品、国际贸易术语、付款条件、单据、港口与典型交货周期。',
+    l1: '出口流程。',
+    l2: '从询价到提单。',
+    lead: '通过GoodBiz Hygiene从印度采购香皂和家居清洁产品的步骤、条款与单据。',
+    stepsLink: '六个步骤',
+    termsH: '出口条款有哪些？',
+    termsIncoterms: '贸易术语与付款',
+    termsPort: '港口',
+    termsLead: '交货周期',
+    processL1: '从询价到发运',
+    processL2: '有哪些步骤？',
+    processIntro: '共六个步骤，在任何生产开始之前，报价、样品和形式发票均须经您确认。',
+    steps: [
+      { name: '询价', text: '请通过询价表单、电子邮件或WhatsApp发送产品、包装规格、数量、目的港以及任何自有品牌需求。' },
+      { name: '报价', text: '我们按包装报价，并注明典型规格、您需要的贸易术语和交货周期。{incoterms}。' },
+      { name: '样品与确认', text: '在订单确认前，产品样品以及自有品牌的设计稿打样均须经您确认。' },
+      { name: '形式发票与付款', text: '形式发票确认产品、数量、包装、贸易术语和付款条件（T/T或LC）。' },
+      { name: '生产与包装', text: '制造商生产并包装订单，按出口要求及您的市场要求做好标识。' },
+      { name: '单据与发运', text: '我们准备出口单据并订舱。{port}。' },
+    ],
+    docsH: '货物随附哪些单据？',
+    docsText: '具体单据视您所在国家而定，按每笔订单确认。',
+    documents: [
+      '商业发票',
+      '装箱单',
+      '原产地证书',
+      '提单（海运）',
+      '分析证书（COA）',
+      '化学品安全技术说明书（MSDS）',
+    ],
+    faqH: '出口流程：采购商常问的问题',
+    faqs: [
+      { q: '你们提供哪些国际贸易术语？', a: '{incoterms}。' },
+      { q: '货物从哪个港口发运？', a: '{port}。具体港口根据产品、制造商所在地和您的目的地选定，并在报价单中注明。' },
+      { q: '交货周期是多久？', a: '{leadTime}。' },
+      {
+        q: '随货附哪些单据？',
+        a: '货物通常随附商业发票、装箱单、原产地证书、提单（海运），并在产品需要时附COA和MSDS。您所在国家可能还需要更多文件，例如卫生证书或经认证的发票，此类事项按每笔订单商定。',
+      },
+      {
+        q: '发票上填写哪个HSN编码？',
+        a: '本网站按6位显示HSN编码，例如3402 50。8位ITC-HS编码按每笔订单确认。衣物柔顺剂和草本酚类消毒液可能适用其他归类（3809 91和3808 94）。',
+      },
+    ],
+  },
+
+  privateLabel: {
+    title: '自有品牌香皂与清洁产品：印度出口商与供应商',
+    description:
+      '印度自有品牌香皂、洗涤剂和清洁剂：由您决定设计稿、香型、颜色和包装规格，由经考察的印度制造商生产，GoodBiz Hygiene负责出口。',
+    l1: '印度自有品牌香皂',
+    l2: '与清洁产品。',
+    lead: '以您自己的品牌销售香皂、洗涤剂和清洁剂。GoodBiz Hygiene根据您的需求匹配一家经考察的印度制造商，负责管理样品和设计稿，并将成品运至您的港口。',
+    renderAlt: '香皂和洗手液瓶在典型自有品牌包装中的示意图',
+    startBrief: '提交您的需求',
+    howRuns: '订单如何运作',
+    optionsH: '哪些内容可以定制？',
+    optionsText: '四项选择让产品系列成为您自己的品牌。每一项在批量生产前均由您确认。',
+    options: [
+      {
+        title: '包装上的您的品牌',
+        text: '标签、套盒、纸箱或包装纸印上您的设计稿。我们将您的文件发给制造商，并在印刷前返回打样供您确认。',
+      },
+      {
+        title: '香型与颜色',
+        text: '可从各产品通常生产的香型和颜色中选择，例如柠檬、薰衣草、玫瑰或印楝。超出标准范围的更改，须先与制造商核实。',
+      },
+      {
+        title: '包装规格与形式',
+        text: '零售瓶装、补充装、袋装、块状以及大包装桶，按您的货架和价位选择。各产品页面列有其典型包装规格。',
+      },
+      {
+        title: '等级与规格',
+        text: '选择您的市场所需的等级，例如香皂的TFM或洗涤剂的有效物含量。典型数值见产品页面，最终数值在您的报价单中注明。',
+      },
+    ],
+    processL1: '自有品牌订单',
+    processL2: '如何运作。',
+    processIntro: '从您提交需求到货物抵达您的港口共五个步骤，在任何生产开始之前，样品和设计稿均须经您确认。',
+    steps: [
+      { name: '提交您的需求', text: '产品、包装规格、香型、目标市场以及预计数量。' },
+      { name: '报价与制造商匹配', text: '我们根据需求匹配一家经考察的印度制造商，并按包装报价，注明贸易术语和交货周期。' },
+      { name: '样品与设计稿', text: '您需确认产品样品和设计稿的印刷打样。通常在您确认两者之后才开始生产。' },
+      { name: '生产与包装', text: '制造商以您的品牌生产并包装订单，按出口要求做好标识。' },
+      { name: '单据与发运', text: '我们准备出口单据并订舱。{port}。' },
+    ],
+    faqH: '自有品牌：采购商常问的问题',
+    faqs: [
+      {
+        q: '自有品牌的最小起订量是多少？',
+        a: '视产品和包装而定。大多数产品没有固定的最小起订量，但自有品牌设计的印刷标签或纸箱可能有各自的最低数量。请告知您的数量，我们会据此报价。',
+      },
+      {
+        q: '设计稿和品牌归谁所有？',
+        a: '设计稿归您所有；使用条款按每笔订单商定。GoodBiz Hygiene负责与制造商协调印刷事宜。',
+      },
+      {
+        q: '自有品牌产品和标准产品可以混装在一个集装箱里吗？',
+        a: '可以。自有品牌产品线可与GoodBiz Hygiene系列的其他产品共用一个集装箱，但须符合报价时确认的包装与兼容性规则。',
+      },
+      {
+        q: '自有品牌订单需要多长时间？',
+        a: '{leadTime}。首单包含确认样品和设计稿的时间；复订通常更快。',
+      },
+      {
+        q: 'GoodBiz Hygiene是否自己生产这些产品？',
+        a: '不是。GoodBiz Hygiene是一家印度贸易型出口商。产品由经考察的印度制造商生产，GoodBiz Hygiene负责管理需求对接、确认事项、单据和运输。',
+      },
+    ],
+    quoteH: '提交您的需求。',
+    quoteText: '请用一句话发送您设想的产品、包装和市场。我们会回复方案、价格和交货周期。',
+  },
+
+  notFound: {
+    title: '页面未找到',
+    description: '找不到此页面。请浏览GoodBiz Hygiene的香皂和家居清洁产品，或获取报价。',
+    l1: '这个页面不在',
+    l2: '货架上。',
+    lead: '链接可能已过期或输入有误。完整产品系列只需一次点击。',
+    sprayAlt: '喷雾清洁剂瓶示意图',
+  },
+};
 
 export default zh;
