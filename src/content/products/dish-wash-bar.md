@@ -74,8 +74,6 @@ faqs:
     a: "Bars are made firm enough for warm, humid markets, and the moisture level is set with this in mind. Sealed wrapping or a lidded tub helps further. Tell us your destination climate and we will confirm the suitable grade."
 related:
   - dish-wash-liquid
-  - dish-wash-powder
-  - kitchen-degreaser
   - laundry-soap-bar
   - detergent-powder
 ---

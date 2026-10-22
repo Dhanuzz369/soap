@@ -3,7 +3,7 @@ title: "How to Import Dish Wash Liquid from India: Costs, MOQ, Documents and Shi
 description: "A practical guide to importing dish wash liquid from India: what drives cost, typical MOQ, pack choices, export documents and how shipping works step by step."
 date: 2026-10-08
 tags: ["dish wash liquid", "importing", "MOQ", "shipping"]
-relatedProducts: ["dish-wash-liquid", "kitchen-degreaser", "dish-wash-bar"]
+relatedProducts: ["dish-wash-liquid", "dish-wash-bar", "floor-cleaner"]
 faqs:
   - q: "What is the typical MOQ for dish wash liquid from India?"
     a: "Typically one 20 ft container, although mixed loads with other kitchen care products are possible and smaller trial quantities can be discussed. The exact minimum depends on the manufacturer and on whether you want private label."
@@ -54,7 +54,7 @@ Minimum order quantity for dish wash liquid is typically one 20 ft container, wi
 
 As an indication only, our product page notes that a 20 ft container might hold roughly 1,800 to 2,200 cartons of 12 x 500 ml bottles, and a 40 ft roughly 3,800 to 4,400. The real count varies with the bottle shape and the carton size, so we confirm it against your chosen pack.
 
-If you are testing the market, a mixed container is often the smartest first order. You can combine dish wash liquid with a [kitchen degreaser](/products/kitchen-degreaser/), floor cleaner or soap bars from other ranges, so that you trial several lines without filling a container with one product.
+If you are testing the market, a mixed container is often the smartest first order. You can combine dish wash liquid with a [dish wash bar](/products/dish-wash-bar/), [floor cleaner](/products/floor-cleaner/) or soap bars from other ranges, so that you trial several lines without filling a container with one product.
 
 ## Private label for dish wash liquid
 

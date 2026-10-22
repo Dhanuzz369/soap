@@ -71,7 +71,6 @@ related:
   - floor-cleaner
   - car-wash-shampoo
   - bathroom-tile-cleaner
-  - kitchen-degreaser
 ---
 
 ## Product overview

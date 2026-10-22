@@ -65,7 +65,6 @@ faqs:
     a: "Bulk goods are normally supplied in plain or manufacturer-labelled packs. If you need custom labelling, discuss it at enquiry stage, as options and minimums depend on the manufacturer."
 related:
   - floor-cleaner
-  - kitchen-degreaser
   - liquid-hand-wash
   - multi-surface-cleaner
   - labsa

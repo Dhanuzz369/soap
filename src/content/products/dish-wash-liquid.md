@@ -75,8 +75,6 @@ faqs:
     a: "Commercial invoice, packing list, bill of lading and certificate of origin are standard. A product specification sheet and a certificate of analysis (COA) per batch can be requested, and an MSDS is available on request. Other documents are confirmed per order."
 related:
   - dish-wash-bar
-  - dish-wash-powder
-  - kitchen-degreaser
   - liquid-hand-wash
   - bulk-institutional-cleaners
 ---

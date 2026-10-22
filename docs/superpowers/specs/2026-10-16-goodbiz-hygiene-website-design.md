@@ -91,8 +91,8 @@ Success means:
 **C. Kitchen Care (HSN 3402)**
 13. Dish Wash Liquid / Gel: 3402 50
 14. Dish Wash Bar: 3401 19
-15. Dish Wash Powder: 3402 50
-16. Kitchen Degreaser: 3402 50
+15. ~~Dish Wash Powder: 3402 50~~ (removed 2026-10-22 at the user's request)
+16. ~~Kitchen Degreaser: 3402 50~~ (removed 2026-10-22 at the user's request)
 
 **D. Surface and Home Cleaners (HSN 3402)**
 17. Floor Cleaner: 3402 50

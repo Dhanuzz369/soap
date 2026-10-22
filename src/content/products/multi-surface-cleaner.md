@@ -72,7 +72,6 @@ faqs:
 related:
   - glass-cleaner
   - floor-cleaner
-  - kitchen-degreaser
   - bathroom-tile-cleaner
   - bulk-institutional-cleaners
 ---
