@@ -7,6 +7,7 @@
  * slide in from the left, masked to a soft oval, in lighten blend.
  */
 import { foundPictures } from '../data/found-pictures';
+import { useI18n } from '../i18n/page';
 
 interface Props {
   l1: string;
@@ -18,6 +19,7 @@ interface Props {
   id?: string;
 }
 const { l1, l2, intro, steps, photo = false, link, id = 'process' } = Astro.props;
+const { ui, fmt } = useI18n(Astro.url);
 const port = foundPictures.find((p) => p.file.includes('kochi'))!;
 ---
 
@@ -47,13 +49,13 @@ const port = foundPictures.find((p) => p.file.includes('kochi'))!;
                   sizes="(max-width: 900px) 92vw, 480px"
                   width="1200"
                   height="900"
-                  alt="Gantry cranes loading a container ship at night at the International Container Transshipment Terminal in Kochi, India"
+                  alt={ui.common.portAlt}
                   loading="lazy"
                   decoding="async"
                 />
               </div>
               <figcaption>
-                Container terminal, Kochi. Photo: {port.creator}, {port.license}.
+                {fmt(ui.common.portCaption, { creator: port.creator, license: port.license })}
               </figcaption>
             </figure>
           )

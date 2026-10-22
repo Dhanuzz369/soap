@@ -33,7 +33,7 @@
 .process-leaves {
   position: absolute;
   z-index: -1;
-  left: -6vw;
+  inset-inline-start: -6vw;
   bottom: -4%;
   width: min(62vw, 980px);
   max-width: none;
@@ -57,7 +57,7 @@
 @media (max-width: 899.98px) {
   .process-leaves {
     width: 120vw;
-    left: -30vw;
+    inset-inline-start: -30vw;
     opacity: 0.14;
   }
 }
@@ -121,7 +121,7 @@
   max-width: 34rem;
 }
 .step--2 {
-  margin-left: clamp(0px, 6vw, 96px);
+  margin-inline-start: clamp(0px, 6vw, 96px);
 }
 .step-num {
   display: grid;
@@ -161,7 +161,7 @@
     position: static;
   }
   .step--2 {
-    margin-left: 0;
+    margin-inline-start: 0;
   }
   .step {
     grid-template-columns: 44px minmax(0, 1fr);
@@ -209,7 +209,7 @@
   content: '?' / '';
   position: absolute;
   top: 12px;
-  right: 22px;
+  inset-inline-end: 22px;
   z-index: -1;
   font-family: var(--font-serif);
   font-style: italic;
@@ -651,7 +651,7 @@
 .ph--media-bleed .ph-media {
   top: 0;
   bottom: 0;
-  right: -3vw;
+  inset-inline-end: -3vw;
   width: min(54vw, 980px);
 }
 .ph--media-bleed .ph-media img {
@@ -661,7 +661,7 @@
 }
 .ph--media-card .ph-media {
   top: 50%;
-  right: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
+  inset-inline-end: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
   width: min(40vw, 560px);
   aspect-ratio: 4 / 3;
   transform: translateY(-46%);
@@ -692,7 +692,6 @@
   .ph--media-card .ph-media {
     position: relative;
     inset: auto;
-    right: auto;
     width: 100%;
     height: 52svh;
     transform: none;
@@ -888,12 +887,12 @@
 }
 .plain-list li {
   position: relative;
-  padding-left: 22px;
+  padding-inline-start: 22px;
 }
 .plain-list li::before {
   content: '';
   position: absolute;
-  left: 2px;
+  inset-inline-start: 2px;
   top: 0.62em;
   width: 7px;
   height: 7px;
@@ -930,7 +929,7 @@
 }
 .prose ul,
 .prose ol {
-  padding-left: 1.3em;
+  padding-inline-start: 1.3em;
   display: grid;
   gap: 0.4em;
 }
@@ -958,7 +957,7 @@
 }
 .prose th,
 .prose td {
-  text-align: left;
+  text-align: start;
   vertical-align: top;
   padding: 12px 16px;
 }
@@ -967,19 +966,27 @@
   font-weight: 600;
 }
 .prose thead th:first-child {
-  border-radius: 16px 0 0 16px;
+  border-radius: 0;
+  border-start-start-radius: 16px;
+  border-end-start-radius: 16px;
 }
 .prose thead th:last-child {
-  border-radius: 0 16px 16px 0;
+  border-radius: 0;
+  border-start-end-radius: 16px;
+  border-end-end-radius: 16px;
 }
 .prose tbody tr:nth-child(even) > * {
   background: var(--paper-2);
 }
 .prose tbody tr:nth-child(even) > :first-child {
-  border-radius: 16px 0 0 16px;
+  border-radius: 0;
+  border-start-start-radius: 16px;
+  border-end-start-radius: 16px;
 }
 .prose tbody tr:nth-child(even) > :last-child {
-  border-radius: 0 16px 16px 0;
+  border-radius: 0;
+  border-start-end-radius: 16px;
+  border-end-end-radius: 16px;
 }
 .table-scroll {
   overflow-x: auto;
@@ -997,14 +1004,14 @@
 }
 .spec caption {
   caption-side: bottom;
-  text-align: left;
+  text-align: start;
   padding-top: 14px;
   font-size: var(--step-small);
   color: var(--ink-soft);
 }
 .spec th,
 .spec td {
-  text-align: left;
+  text-align: start;
   vertical-align: top;
   padding: 16px 22px;
   background: var(--paper-2);
@@ -1013,10 +1020,14 @@
   background: var(--paper);
 }
 .spec tr > :first-child {
-  border-radius: 18px 0 0 18px;
+  border-radius: 0;
+  border-start-start-radius: 18px;
+  border-end-start-radius: 18px;
 }
 .spec tr > :last-child {
-  border-radius: 0 18px 18px 0;
+  border-radius: 0;
+  border-start-end-radius: 18px;
+  border-end-end-radius: 18px;
 }
 .spec th {
   width: 38%;
@@ -1514,7 +1525,7 @@
 }
 .bubble-par {
   position: absolute;
-  left: var(--x);
+  inset-inline-start: var(--x);
   top: var(--y);
   width: var(--s);
   height: var(--s);

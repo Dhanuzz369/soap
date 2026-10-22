@@ -1,0 +1,220 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero, { type HeroMedia } from '../components/PageHero.astro';
+import SpecTable from '../components/SpecTable.astro';
+import AnswerWall from '../components/AnswerWall.astro';
+import GuideRows from '../components/GuideRows.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+import CardGrid from '../components/CardGrid.astro';
+import type { ProductEntry, CategoryEntry } from '../lib/products';
+import type { BlogEntry } from '../lib/blog';
+import { useI18n } from '../i18n/page';
+import { productJsonLd, faqJsonLd, absoluteUrl } from '../lib/seo';
+import { productImagePath, productPicture } from '../lib/product-image';
+import { shapeFor } from '../lib/pack-shapes';
+import { splitName } from '../lib/heading';
+
+interface Props {
+  product: ProductEntry;
+  category: CategoryEntry;
+  related: ProductEntry[];
+  guides: BlogEntry[];
+}
+const { product, category, related, guides } = Astro.props;
+const { info, ui, lp, fmt, lower } = useI18n(Astro.url);
+const P = ui.product;
+const d = product.data;
+const { Content } = await render(product.source);
+const path = `/products/${d.slug}/`;
+const url = lp(path);
+const names = { name: d.title, nameLower: lower(d.title) };
+const catId = d.category.id;
+// A photo in public/images/products/<slug>.webp is used for social previews and JSON-LD.
+const image = d.image ?? productImagePath(d.slug);
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: ui.common.products, url: lp('/products/') },
+  { name: category.data.title, url: lp(`/categories/${category.data.slug}/`) },
+  { name: d.title, url: url },
+];
+const name = splitName(d.title);
+const pic = productPicture(d.slug, shapeFor(d.slug, catId), catId);
+const media: HeroMedia | undefined = pic
+  ? pic.kind === 'photo'
+    ? { src: pic.src, srcset: pic.srcset, sizes: '(max-width: 759px) 100vw, 44vw', width: pic.width, height: pic.height, alt: fmt(ui.common.photoAlt, names), mode: 'card' }
+    : {
+        src: pic.src,
+        srcset: pic.srcset,
+        sizes: '(max-width: 759px) 100vw, 54vw',
+        width: pic.width,
+        height: pic.height,
+        alt: fmt(ui.common.renderAlt, names),
+        mode: 'bleed',
+        cutout: true,
+      }
+  : undefined;
+---
+
+<BaseLayout
+  title={d.metaTitle}
+  description={d.metaDescription}
+  path={path}
+  ogImage={image}
+  breadcrumbs={breadcrumbs}
+  jsonLd={[productJsonLd({ ...d, category: category.data.title, image }, absoluteUrl(url), ui.ld), faqJsonLd(d.faqs, info.hreflang)]}
+  dark
+>
+  <PageHero breadcrumbs={breadcrumbs} l1={name.l1} sub={name.sub} l2={ui.common.exporterLine} scale={name.scale} lead={d.answer} media={media} size="product">
+    <p class="ph-hsn">
+      <span class="pill"><abbr title={ui.common.hsnTitle}>{ui.common.hsn}</abbr>&nbsp;{d.hsn}</span>
+      <span>{d.hsnNote ? P.hsnAlt : P.hsnConfirmed}</span>
+    </p>
+    <div class="ph-actions">
+      <a class="btn btn--light" href={lp(`/contact/?product=${d.slug}`)}>{ui.common.requestQuote}</a>
+      <a class="link-arrow" href="#faq">{ui.common.readFaq} <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </PageHero>
+
+  <section class="wrap sec" aria-labelledby="facts-h">
+    <div class="sec-head" data-reveal>
+      <h2 id="facts-h">{P.factsH}</h2>
+    </div>
+    <dl class="facts" data-reveal style="--i: 1">
+      <div>
+        <dt>{P.hsnCode}</dt>
+        <dd>
+          {d.hsn}
+          <p class="note">{d.hsnNote ?? P.hsnNoteDefault}</p>
+        </dd>
+      </div>
+      <div>
+        <dt>{P.moq}</dt>
+        <dd>{d.moq}</dd>
+      </div>
+      <div>
+        <dt>{P.privateLabel}</dt>
+        <dd>
+          {d.privateLabel.available ? P.plAvailable : P.plNot}
+          {d.privateLabel.available && d.privateLabel.options.length > 0 && <span> {d.privateLabel.options.join('; ')}.</span>}
+        </dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="wrap sec" aria-labelledby="var-h">
+    <div class="sec-head" data-reveal>
+      <h2 id="var-h">{P.varH}</h2>
+    </div>
+    <div class="chip-groups">
+      <div data-reveal>
+        <h3>{P.variants}</h3>
+        <ul class="chips chips--lg" aria-label={P.variantsAria}>
+          {d.variants.map((v) => <li class="chip">{v}</li>)}
+        </ul>
+      </div>
+      <div data-reveal style="--i: 1">
+        <h3>{P.packSizes}</h3>
+        <ul class="chips chips--lg" aria-label={P.packSizes}>
+          {d.packSizes.map((v) => <li class="chip">{v}</li>)}
+        </ul>
+      </div>
+      <div data-reveal style="--i: 2">
+        <h3>{P.packaging}</h3>
+        <ul class="plain-list">
+          {d.packaging.map((v) => <li>{v}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {
+    d.gallery && d.gallery.length > 0 && (
+      <section class="wrap sec" aria-labelledby="gal-h">
+        <div class="sec-head" data-reveal>
+          <h2 id="gal-h">{P.galleryH}</h2>
+        </div>
+        <ul class="photo-gallery">
+          {d.gallery.map((g, i) => (
+            <li data-reveal style={`--i: ${i}`}>
+              <figure>
+                <img
+                  src={g.src}
+                  srcset={`${g.src.replace(/\.webp$/, '-800.webp')} 800w, ${g.src} 1448w`}
+                  sizes="(max-width: 759px) 100vw, 50vw"
+                  width="1448"
+                  height="1086"
+                  alt={g.alt}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>{g.caption}</figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="wrap sec split" aria-labelledby="spec-h">
+    <div class="split-head" data-reveal>
+      <h2 id="spec-h">{P.specH}</h2>
+      <p class="note">{fmt(P.specNote, names)}</p>
+    </div>
+    <div data-reveal style="--i: 1">
+      <SpecTable specs={d.specs} />
+    </div>
+  </section>
+
+  <section class="wrap sec post-layout" aria-label={fmt(P.aboutAria, names)}>
+    <div class="prose"><Content /></div>
+  </section>
+
+  {
+    d.containerLoad && (
+      <section class="wrap sec" aria-labelledby="load-h">
+        <div class="sec-head" data-reveal>
+          <div>
+            <h2 id="load-h">{P.loadH}</h2>
+            <p>{P.loadText}</p>
+          </div>
+        </div>
+        <dl class="facts facts--two" data-reveal style="--i: 1">
+          <div>
+            <dt>{P.ft20}</dt>
+            <dd>{d.containerLoad.ft20}</dd>
+          </div>
+          <div>
+            <dt>{P.ft40}</dt>
+            <dd>{d.containerLoad.ft40}</dd>
+          </div>
+        </dl>
+      </section>
+    )
+  }
+
+  <AnswerWall faqs={d.faqs} heading={ui.common.straightAnswers} id="faq" />
+
+  {guides.length > 0 && <GuideRows posts={guides} heading={P.guidesH} id="guides" />}
+
+  {
+    related.length > 0 && (
+      <section class="wrap sec" aria-labelledby="rel-h">
+        <div class="sec-head" data-reveal>
+          <h2 id="rel-h">{P.relatedH}</h2>
+          <a class="link-arrow" href={lp(`/categories/${category.data.slug}/`)}>
+            {fmt(P.relatedAll, { name: category.data.title, nameLower: lower(category.data.title) })} <span class="arr" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <CardGrid products={related} details={false} />
+      </section>
+    )
+  }
+
+  <QuoteCard
+    heading={P.quoteH}
+    text={fmt(P.quoteText, names)}
+    product={d.slug}
+  />
+</BaseLayout>

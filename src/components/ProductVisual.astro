@@ -8,6 +8,7 @@
  */
 import { shapes, shapeFor } from '../lib/pack-shapes';
 import { productPicture } from '../lib/product-image';
+import { useI18n } from '../i18n/page';
 
 interface Props {
   slug: string;
@@ -23,12 +24,14 @@ const shape = shapeFor(slug, category);
 const pic = productPicture(slug, shape, category);
 const sizes = size === 'hero' ? '(max-width: 860px) 92vw, 560px' : '(max-width: 640px) 92vw, (max-width: 1100px) 46vw, 400px';
 const svg = shapes[shape];
+const { ui, fmt, lower } = useI18n(Astro.url);
+const names = { name: title, nameLower: lower(title) };
 ---
 
 <figure class:list={['pv', `pv--${size}`]} data-cat={category} data-shape={pic?.kind === 'photo' ? 'photo' : shape}>
   {
     pic?.kind === 'photo' && (
-      <img src={pic.src} srcset={pic.srcset} sizes={sizes} alt={`${title} from GoodBiz`} width={pic.width} height={pic.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
+      <img src={pic.src} srcset={pic.srcset} sizes={sizes} alt={fmt(ui.common.photoAlt, names)} width={pic.width} height={pic.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
     )
   }
   {
@@ -37,7 +40,7 @@ const svg = shapes[shape];
         src={pic.src}
         srcset={pic.srcset}
         sizes={sizes}
-        alt={`Illustration of ${title.toLowerCase()} in a typical export pack`}
+        alt={fmt(ui.common.renderAlt, names)}
         width={pic.width}
         height={pic.height}
         loading={eager ? 'eager' : 'lazy'}
@@ -47,7 +50,7 @@ const svg = shapes[shape];
   }
   {
     !pic && (
-      <svg viewBox="0 0 240 240" role="img" aria-label={`Illustration of ${title.toLowerCase()}`} set:html={`<title>${title.replace(/[<&>]/g, '')}</title>${svg}`} />
+      <svg viewBox="0 0 240 240" role="img" aria-label={fmt(ui.common.drawingAlt, names)} set:html={`<title>${title.replace(/[<&>]/g, '')}</title>${svg}`} />
     )
   }
 </figure>

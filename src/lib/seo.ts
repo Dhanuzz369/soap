@@ -11,25 +11,27 @@ export function pageTitle(title: string): string {
   return title.endsWith(suffix) ? title : title + suffix;
 }
 
-export function organizationJsonLd(): Record<string, unknown> {
+export function organizationJsonLd(description: string = site.tagline): Record<string, unknown> {
   const sameAs = [site.facts.parentUrl, site.facts.agroUrl].filter((u): u is string => !!u);
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: site.name,
     url: site.url,
-    description: site.tagline,
+    description,
     parentOrganization: { '@type': 'Organization', name: site.parentName },
     ...(sameAs.length ? { sameAs } : {}),
   };
 }
 
-export function websiteJsonLd(): Record<string, unknown> {
+/** `url` is the site home in the page's language; `inLanguage` its BCP 47 tag. */
+export function websiteJsonLd(opts: { url?: string; inLanguage?: string } = {}): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: site.name,
-    url: site.url,
+    url: opts.url ?? site.url,
+    ...(opts.inLanguage ? { inLanguage: opts.inLanguage } : {}),
   };
 }
 
@@ -46,10 +48,11 @@ export function breadcrumbJsonLd(items: { name: string; url: string }[]) {
   };
 }
 
-export function faqJsonLd(faqs: { q: string; a: string }[]) {
+export function faqJsonLd(faqs: { q: string; a: string }[], inLanguage?: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    ...(inLanguage ? { inLanguage } : {}),
     mainEntity: faqs.map((f) => ({
       '@type': 'Question',
       name: f.q,
@@ -59,7 +62,12 @@ export function faqJsonLd(faqs: { q: string; a: string }[]) {
 }
 
 /** `p.category` should be the category's display title (it becomes schema.org `category`). */
-export function productJsonLd(p: ProductData, url: string): Record<string, unknown> {
+/** `labels` names the additional properties in the page's language (defaults: English). */
+export function productJsonLd(
+  p: ProductData,
+  url: string,
+  labels: { hsnCode: string; variants: string; packSizes: string } = { hsnCode: 'HSN Code', variants: 'Variants', packSizes: 'Pack sizes' },
+): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -70,9 +78,9 @@ export function productJsonLd(p: ProductData, url: string): Record<string, unkno
     ...(p.category ? { category: p.category } : {}),
     ...(p.image ? { image: absoluteUrl(p.image) } : {}),
     additionalProperty: [
-      { '@type': 'PropertyValue', name: 'HSN Code', value: p.hsn },
-      ...(p.variants.length ? [{ '@type': 'PropertyValue', name: 'Variants', value: p.variants.join(', ') }] : []),
-      ...(p.packSizes.length ? [{ '@type': 'PropertyValue', name: 'Pack sizes', value: p.packSizes.join(', ') }] : []),
+      { '@type': 'PropertyValue', name: labels.hsnCode, value: p.hsn },
+      ...(p.variants.length ? [{ '@type': 'PropertyValue', name: labels.variants, value: p.variants.join(', ') }] : []),
+      ...(p.packSizes.length ? [{ '@type': 'PropertyValue', name: labels.packSizes, value: p.packSizes.join(', ') }] : []),
       ...p.specs.map((s) => ({ '@type': 'PropertyValue', name: s.label, value: s.value })),
     ],
   };
@@ -85,6 +93,7 @@ export function articleJsonLd(a: {
   url: string;
   image?: string;
   type?: 'Article' | 'BlogPosting';
+  inLanguage?: string;
 }): Record<string, unknown> {
   return {
     '@context': 'https://schema.org',
@@ -92,6 +101,7 @@ export function articleJsonLd(a: {
     headline: a.title,
     description: a.description,
     datePublished: a.date.toISOString(),
+    ...(a.inLanguage ? { inLanguage: a.inLanguage } : {}),
     mainEntityOfPage: absoluteUrl(a.url),
     author: { '@type': 'Organization', name: site.name },
     publisher: { '@type': 'Organization', name: site.name },

@@ -4,7 +4,9 @@ interface Props {
   specs: { label: string; value: string }[];
   caption?: string;
 }
-const { specs, caption = 'Typical specifications. Final values are confirmed per order.' } = Astro.props;
+import { useI18n } from '../i18n/page';
+const { ui } = useI18n(Astro.url);
+const { specs, caption = ui.common.specCaption } = Astro.props;
 ---
 
 <div class="spec-wrap">

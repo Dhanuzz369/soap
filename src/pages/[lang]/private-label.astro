@@ -1,0 +1,8 @@
+---
+/* Route only: the page is src/views/PrivateLabel.astro. */
+import View from '../../views/PrivateLabel.astro';
+import { localeParams } from '../../views/paths';
+export const getStaticPaths = localeParams;
+---
+
+<View />

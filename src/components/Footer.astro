@@ -1,19 +1,23 @@
 ---
-import { getCollection } from 'astro:content';
 import site from '../config/site';
 import { buildWhatsAppUrl } from '../lib/enquiry';
+import { getProductsByCategory } from '../lib/products';
+import { useI18n } from '../i18n/page';
 
-const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
+const { lang, ui, lp, fmt } = useI18n(Astro.url);
+const categories = (await getProductsByCategory(lang)).map((g) => g.category);
+const n = ui.header.nav;
 const company = [
-  { label: 'Private Label', href: '/private-label/' },
-  { label: 'Export Process', href: '/export-process/' },
-  { label: 'About', href: '/about/' },
-  { label: 'Buyer Guides', href: '/blog/' },
-  { label: 'FAQ', href: '/faq/' },
-  { label: 'Request a Quote', href: '/contact/' },
+  { label: n.privateLabel, href: '/private-label/' },
+  { label: n.exportProcess, href: '/export-process/' },
+  { label: n.about, href: '/about/' },
+  { label: n.guides, href: '/blog/' },
+  { label: n.faq, href: '/faq/' },
+  { label: ui.common.requestQuote, href: '/contact/' },
 ];
 const year = new Date().getFullYear();
 const tel = site.contact.phone.replace(/[^+\d]/g, '');
+const t = ui.terms;
 ---
 
 <footer class="site-footer">
@@ -25,33 +29,31 @@ const tel = site.contact.phone.replace(/[^+\d]/g, '');
     <div class="footer-top">
       <div class="footer-brand">
         <p class="footer-name">GoodBiz Hygiene.</p>
-        <p class="footer-tag">Clean, from India</p>
-        <p class="footer-lede">
-          Soaps and home-care products, sourced from vetted Indian manufacturers and exported by GoodBiz Hygiene, a {site.parentName} company.
-        </p>
-        <p class="footer-terms">{site.exportTerms.incoterms}. {site.exportTerms.port}. {site.exportTerms.leadTime}.</p>
+        <p class="footer-tag">{ui.footer.tag}</p>
+        <p class="footer-lede">{fmt(ui.footer.lede, { parent: site.parentName })}</p>
+        <p class="footer-terms">{t.incoterms}. {t.port}. {t.leadTime}.</p>
       </div>
 
-      <nav class="footer-links" aria-label="Footer">
+      <nav class="footer-links" aria-label={ui.footer.nav}>
         <div>
-          <h2>Products</h2>
+          <h2>{ui.footer.products}</h2>
           <ul>
-            <li><a href="/products/">All products</a></li>
-            {categories.map((c) => <li><a href={`/categories/${c.data.slug}/`}>{c.data.title}</a></li>)}
+            <li><a href={lp('/products/')}>{ui.common.allProducts}</a></li>
+            {categories.map((c) => <li><a href={lp(`/categories/${c.data.slug}/`)}>{c.data.title}</a></li>)}
           </ul>
         </div>
         <div>
-          <h2>Company</h2>
+          <h2>{ui.footer.company}</h2>
           <ul>
-            {company.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+            {company.map((l) => <li><a href={lp(l.href)}>{l.label}</a></li>)}
           </ul>
         </div>
         <div>
-          <h2>Contact</h2>
+          <h2>{ui.footer.contact}</h2>
           <ul>
             <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
-            <li><a href={buildWhatsAppUrl(site.contact.whatsapp, {})} rel="noopener" target="_blank">WhatsApp</a></li>
-            <li><a href={`tel:${tel}`}>{site.contact.phone}</a></li>
+            <li><a href={buildWhatsAppUrl(site.contact.whatsapp, {})} rel="noopener" target="_blank">{ui.footer.whatsapp}</a></li>
+            <li><a href={`tel:${tel}`} dir="ltr">{site.contact.phone}</a></li>
             <li>{site.contact.address}</li>
           </ul>
         </div>
@@ -60,8 +62,8 @@ const tel = site.contact.phone.replace(/[^+\d]/g, '');
 
 
     <div class="footer-legal">
-      <p>© {year} {site.name}, a {site.parentName} company. Merchant exporter from India.</p>
-      <a href="#top">Back to top</a>
+      <p>{fmt(ui.footer.legal, { year, name: site.name, parent: site.parentName })}</p>
+      <a href="#top">{ui.footer.backToTop}</a>
     </div>
   </div>
 </footer>

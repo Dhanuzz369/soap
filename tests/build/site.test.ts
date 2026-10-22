@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import site from '../../src/config/site';
+import { splitLocale, localeInfo } from '../../src/i18n/locales';
 
 const NOINDEX = '<meta name="robots" content="noindex, nofollow">';
 const BASE = site.url.replace(/\/$/, '');
@@ -47,7 +48,9 @@ describe('built pages', () => {
       expect(html.match(/<title>(.+?)<\/title>/)).toBeTruthy();
       expect(html).toMatch(/<meta name="description" content=".{50,}"/);
       expect(html).toContain(`<link rel="canonical" href="${BASE}/`);
-      expect(html).toMatch(/<html lang="en"/);
+      // English pages are unprefixed; /<code>/ pages carry their own language (tests/build/i18n.test.ts).
+      const info = localeInfo(splitLocale(file).lang);
+      expect(html).toContain(`<html lang="${info.hreflang}" dir="${info.dir}"`);
       if (site.launchReady) expect(html).not.toContain(NOINDEX);
       else expect(html).toContain(NOINDEX);
       for (const block of jsonLdBlocks(html)) expect(() => JSON.parse(block)).not.toThrow();
@@ -90,12 +93,17 @@ describe('built pages', () => {
     expect(html).not.toContain('hreflang=');
   });
 
-  it('has unique titles and descriptions', () => {
-    const titles = pages.map((p) => titleOf(p.html));
-    const descs = pages.map((p) => descOf(p.html));
+  it('has unique titles and descriptions (within each language)', () => {
     const dup = (a: string[]) => a.filter((x, i) => a.indexOf(x) !== i);
-    expect(dup(titles)).toEqual([]);
-    expect(dup(descs)).toEqual([]);
+    const byLang = new Map<string, typeof pages>();
+    for (const p of pages) {
+      const lang = splitLocale(p.file).lang;
+      byLang.set(lang, [...(byLang.get(lang) ?? []), p]);
+    }
+    for (const [lang, list] of byLang) {
+      expect(dup(list.map((p) => titleOf(p.html))), lang).toEqual([]);
+      expect(dup(list.map((p) => descOf(p.html))), lang).toEqual([]);
+    }
   });
 
   it('never claims to manufacture', () => {

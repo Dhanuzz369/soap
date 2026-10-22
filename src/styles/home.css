@@ -25,7 +25,7 @@
 .hero-object {
   position: absolute;
   z-index: 1;
-  right: -3vw;
+  inset-inline-end: -3vw;
   /* the bottom runs ~12vh past the hero into the next section */
   top: calc(100% + 12vh - min(62vw, 1120px) * 0.8);
   width: min(62vw, 1120px);
@@ -142,7 +142,7 @@
   }
   .hero-object {
     top: 76px;
-    right: -4vw;
+    inset-inline-end: -4vw;
     width: 80vw;
   }
   .hero-copy {
@@ -167,8 +167,8 @@
   }
   .hero-object {
     top: 64px;
-    right: auto;
-    left: -6vw;
+    inset-inline-end: auto;
+    inset-inline-start: -6vw;
     width: 112vw;
   }
   .hero-copy {
@@ -271,10 +271,10 @@
   }
   .range-card--2 {
     margin-top: 0;
-    margin-left: 12%;
+    margin-inline-start: 12%;
   }
   .range-card--3 {
-    margin-right: 12%;
+    margin-inline-end: 12%;
   }
 }
 
@@ -335,8 +335,7 @@
 .tile-label {
   transition: transform var(--dur) var(--ease-out);
   position: absolute;
-  left: clamp(20px, 2.8vw, 40px);
-  right: clamp(20px, 2.8vw, 40px);
+  inset-inline: clamp(20px, 2.8vw, 40px);
   bottom: clamp(20px, 2.6vw, 36px);
   display: grid;
   gap: 4px;

@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import GuideRows from '../components/GuideRows.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+import { getPosts } from '../lib/blog';
+import { useI18n } from '../i18n/page';
+
+const { lang, ui, lp } = useI18n(Astro.url);
+const B = ui.blogIndex;
+const posts = await getPosts(lang);
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: ui.common.blog, url: lp('/blog/') },
+];
+---
+
+<BaseLayout
+  title={B.title}
+  description={B.description}
+  path="/blog/"
+  breadcrumbs={breadcrumbs}
+  dark
+>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1={B.l1}
+    l2={B.l2}
+    lead={B.lead}
+    media={{ src: '/images/found/neem-plate.webp', width: 1100, height: 682, alt: '', mode: 'plate' }}
+  />
+
+  <GuideRows posts={posts} heading={B.latest} id="posts" large />
+
+  <QuoteCard />
+</BaseLayout>

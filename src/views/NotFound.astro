@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import { useI18n } from '../i18n/page';
+const { ui, lp } = useI18n(Astro.url);
+const N = ui.notFound;
+---
+
+<BaseLayout
+  title={N.title}
+  description={N.description}
+  path="/404/"
+  noindex
+  dark
+>
+  <PageHero
+    l1={N.l1}
+    l2={N.l2}
+    lead={N.lead}
+    size="product"
+    id="nf-h"
+    media={{
+      src: '/images/renders/spray.webp',
+      srcset: '/images/renders/spray-600.webp 600w, /images/renders/spray.webp 1200w',
+      sizes: '(max-width: 759px) 100vw, 54vw',
+      width: 1200,
+      height: 1500,
+      alt: N.sprayAlt,
+      mode: 'bleed',
+      cutout: true,
+    }}
+  >
+    <div class="nf-links">
+      <a class="btn btn--light" href={lp('/products/')}>{ui.common.viewProducts}</a>
+      <a class="link-arrow" href={lp('/contact/')}>{ui.common.requestQuote} <span class="arr" aria-hidden="true">→</span></a>
+      <a class="link-arrow" href={lp('/')}>{ui.common.home} <span class="arr" aria-hidden="true">→</span></a>
+    </div>
+  </PageHero>
+</BaseLayout>

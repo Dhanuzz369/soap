@@ -33,7 +33,7 @@ export function initEnquiryForms(root: ParentNode = document): void {
     if (msg && message && !msg.value) msg.value = message;
 
     if (!panel || !wa || !mail) return;
-    if (hint) hint.textContent = 'Next, choose to send it by WhatsApp or by email.';
+    if (hint) hint.textContent = form.dataset.hintJs ?? 'Next, choose to send it by WhatsApp or by email.';
 
     const update = () => {
       const fields = fieldsFromEntries(new FormData(form) as unknown as Iterable<[string, FormDataEntryValue]>);

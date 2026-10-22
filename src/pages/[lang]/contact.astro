@@ -1,0 +1,8 @@
+---
+/* Route only: the page is src/views/Contact.astro. */
+import View from '../../views/Contact.astro';
+import { localeParams } from '../../views/paths';
+export const getStaticPaths = localeParams;
+---
+
+<View />

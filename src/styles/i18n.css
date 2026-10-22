@@ -1,0 +1,279 @@
+/*
+  Languages and right-to-left (src/i18n, docs/i18n-translator-guide.md).
+
+  1. Scripts: Arabic sets everything in IBM Plex Sans Arabic; the italic second lines become a
+     lighter upright weight (Arabic has no italic tradition). Simplified Chinese uses system fonts,
+     upright. Arabic and Chinese are never letter-spaced (it breaks Arabic joining and crowds CJK).
+  2. RTL: the layout uses logical properties (inset-inline-*, margin-inline-*, text-align: start),
+     so most of it mirrors by itself. The rules here mirror what logical properties cannot:
+     gradients and mask directions, transform origins, arrows and slide-in directions.
+  3. The language menu (LangSwitch.astro).
+*/
+
+/* ---------- 1. scripts ---------- */
+html:lang(ar) {
+  --font-display: 'IBM Plex Sans Arabic', 'Geist', 'Geist Fallback', system-ui, 'Segoe UI', Tahoma, sans-serif;
+  --track-display: 0;
+  --track-head: 0;
+  --lh-tight: 1.2;
+}
+html:lang(zh-Hans) {
+  --font-display: 'Geist', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', 'Noto Sans CJK SC', system-ui,
+    sans-serif;
+  --track-display: 0;
+  --track-head: 0;
+  --lh-tight: 1.15;
+}
+/* Every hand-set negative tracking in the stylesheets is undone for these scripts. */
+html:lang(ar) body *,
+html:lang(zh-Hans) body * {
+  letter-spacing: 0 !important; /* taste-skill-ignore: Arabic letters must join; tracking breaks them */
+}
+/* Display lines are set tight for Latin; Arabic and Chinese need room above and below. */
+html:lang(ar) :is(h1, h2, .display, .hero-h, .statement-title, .ph-title, .footer-name),
+html:lang(zh-Hans) :is(h1, h2, .display, .hero-h, .statement-title, .ph-title, .footer-name) {
+  line-height: 1.25;
+}
+/* The italic second line: the same face, upright and lighter. */
+html:lang(ar) :is(.serif-i, .statement-title em, .footer-tag),
+html:lang(zh-Hans) :is(.serif-i, .statement-title em, .footer-tag) {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 300;
+}
+html:lang(zh-Hans) :is(.serif-i, .statement-title em, .footer-tag) {
+  font-weight: 400;
+}
+
+/* ---------- 2. right-to-left ---------- */
+/* the mint glow on dark fields sits behind the object, which is now on the left */
+[dir='rtl'] :is(.hero, .ph, .process, .answers, .site-footer) {
+  background-image:
+    url('/images/grain.png'),
+    radial-gradient(130% 100% at 50% 40%, rgb(2 10 7 / 0) 58%, rgb(2 10 7 / 0.42) 100%), /* taste-skill-ignore: vignette on the dark field (audit: depth) */
+    radial-gradient(var(--glow-r, 40vw) circle at calc(100% - var(--glow-x, 70%)) var(--glow-y, 45%), rgb(191 227 207 / var(--glow-a, 0.1)), rgb(191 227 207 / 0) 100%); /* taste-skill-ignore: mint glow behind the object (audit: depth) */
+}
+/* the band render fades into the field from the copy's side */
+[dir='rtl'] .ph--media-bleed .ph-media img {
+  -webkit-mask-image: linear-gradient(270deg, transparent 0%, #000 38%); /* taste-skill-ignore: the render fades into the field (a mask, not a fill) */
+  mask-image: linear-gradient(270deg, transparent 0%, #000 38%); /* taste-skill-ignore: the render fades into the field (a mask, not a fill) */
+}
+@media (max-width: 759.98px) {
+  [dir='rtl'] .ph--media-bleed .ph-media img {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+[dir='rtl'] .ph--media-plate .ph-media img {
+  object-position: 20% 30%;
+}
+/* arrows (→ ↗) point the reading way; `scale` composes with the hover nudges' `transform` */
+[dir='rtl'] :is(.arr, .guide-arrow) {
+  display: inline-block;
+  scale: -1 1;
+}
+/* breadcrumbs read right to left */
+[dir='rtl'] .crumbs li:not(:last-child)::after {
+  content: '\\';
+}
+/* the nav underline grows from the start edge; the phone menu opens from its button */
+[dir='rtl'] .nav-desktop a::after {
+  transform-origin: right;
+}
+[dir='rtl'] .nav-panel {
+  transform-origin: top left;
+}
+[dir='rtl'] .enq select {
+  background-position: left 22px center;
+}
+/* the neem leaves slide in from the start edge */
+@media (prefers-reduced-motion: no-preference) {
+  [dir='rtl'] .process-leaves[data-reveal].is-pending {
+    transform: translateX(100px);
+  }
+}
+/* numbers, codes, emails and phone numbers stay left-to-right inside Arabic text */
+[dir='rtl'] :is(.pcard-hsn, .ph-hsn .pill, .num) {
+  unicode-bidi: isolate;
+  direction: ltr;
+}
+
+/* ---------- 3. the language menu (bottom inline-start corner) ---------- */
+.lang {
+  position: fixed;
+  z-index: 60;
+  inset-inline-start: max(16px, env(safe-area-inset-left));
+  bottom: calc(max(16px, env(safe-area-inset-bottom)) + 4px);
+  font-size: var(--step-small);
+}
+[dir='rtl'] .lang {
+  inset-inline-start: max(16px, env(safe-area-inset-right));
+}
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding-inline: 14px 16px;
+  border-radius: var(--pill);
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 600;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: /* taste-skill-ignore: the floating control sits over any field */
+    0 0 0 1px rgb(18 53 42 / 0.12),
+    0 12px 28px -14px rgb(11 33 26 / 0.55); /* taste-skill-ignore: the floating control sits over any field */
+  transition:
+    transform var(--dur-press) var(--ease-out),
+    background-color var(--dur-fast) ease;
+}
+.lang-btn::-webkit-details-marker {
+  display: none;
+}
+.lang-btn::marker {
+  content: '';
+}
+.lang-btn:active {
+  transform: scale(0.97);
+}
+@media (hover: hover) and (pointer: fine) {
+  .lang-btn:hover {
+    background: #fff;
+  }
+}
+.lang-btn:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+.lang-globe,
+.lang-chev,
+.lang-check {
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.lang-chev {
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+.lang[open] .lang-chev {
+  transform: rotate(180deg);
+}
+.lang-panel {
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: calc(100% + 10px);
+  width: max-content;
+  min-width: 232px;
+  max-width: calc(100vw - 32px);
+  max-height: min(72vh, 600px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 8px;
+  border-radius: 24px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: /* taste-skill-ignore: the open menu floats over the page */
+    0 0 0 1px rgb(18 53 42 / 0.08),
+    0 24px 48px -20px rgb(11 33 26 / 0.5); /* taste-skill-ignore: the open menu floats over the page */
+  /* it grows out of the corner the button sits in */
+  transform-origin: bottom left;
+}
+[dir='rtl'] .lang-panel {
+  transform-origin: bottom right;
+}
+.lang[open] .lang-panel {
+  animation: lang-in 180ms var(--ease-out);
+}
+@keyframes lang-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.96);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .lang[open] .lang-panel {
+    animation: lang-fade 150ms ease-out;
+  }
+  .lang-chev,
+  .lang-btn {
+    transition: none;
+  }
+}
+@keyframes lang-fade {
+  from {
+    opacity: 0;
+  }
+}
+.lang-title {
+  padding: 8px 12px 6px;
+  font-size: var(--step-small);
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+.lang-list {
+  display: grid;
+  gap: 2px;
+}
+.lang-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+}
+.lang-list a[lang='ar'] {
+  /* system fonts here, so opening the menu never downloads the Arabic web font */
+  font-family: system-ui, 'Segoe UI', Tahoma, 'Geeza Pro', sans-serif;
+}
+.lang-list a[lang='zh-Hans'] {
+  font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif;
+}
+@media (hover: hover) and (pointer: fine) {
+  .lang-list a:hover {
+    background: var(--paper-2);
+  }
+}
+.lang-list a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -2px;
+  background: var(--paper-2);
+}
+.lang-list a[aria-current] {
+  font-weight: 650;
+  background: var(--paper-2);
+}
+.lang-check {
+  color: var(--action);
+  stroke-width: 2;
+}
+.lang-more {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid rgb(18 53 42 / 0.1);
+}
+.lang-more a {
+  color: var(--ink-soft);
+}
+@media (max-width: 559.98px) {
+  .lang-btn {
+    padding-inline: 12px 14px;
+  }
+}
+@media print {
+  .lang {
+    display: none;
+  }
+}

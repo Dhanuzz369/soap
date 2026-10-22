@@ -1,0 +1,98 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero, { type HeroMedia } from '../components/PageHero.astro';
+import CardGrid from '../components/CardGrid.astro';
+import Faq from '../components/Faq.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+import { render } from 'astro:content';
+import { readingMinutes, fmtDate, type BlogEntry } from '../lib/blog';
+import type { ProductEntry } from '../lib/products';
+import { useI18n } from '../i18n/page';
+import { articleJsonLd, faqJsonLd } from '../lib/seo';
+import { splitPostTitle } from '../lib/heading';
+import { productPicture } from '../lib/product-image';
+import { shapeFor } from '../lib/pack-shapes';
+
+interface Props {
+  post: BlogEntry;
+  related: ProductEntry[];
+}
+const { post, related } = Astro.props;
+const { lang, info, ui, lp, fmt, lower } = useI18n(Astro.url);
+const d = post.data;
+const path = `/blog/${post.id}/`;
+const url = lp(path);
+const { Content } = await render(post.source);
+const faqs = d.faqs ?? [];
+const iso = d.date.toISOString().slice(0, 10);
+// "{date} · {minutes} · GoodBiz Hygiene": the date is a <time> element, the rest is text around it.
+const [metaBefore, metaAfter = ''] = ui.post.meta.split('{date}');
+const metaVars = { minutes: fmt(ui.common.minRead, { n: readingMinutes(post.body ?? '') }) };
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: ui.common.blog, url: lp('/blog/') },
+  { name: d.title, url },
+];
+const t = splitPostTitle(d.title);
+const lead = related[0];
+const pic = lead ? productPicture(lead.data.slug, shapeFor(lead.data.slug, lead.data.category.id), lead.data.category.id) : undefined;
+const media: HeroMedia | undefined =
+  pic && pic.kind === 'render'
+    ? {
+        src: pic.src,
+        srcset: pic.srcset,
+        sizes: '(max-width: 759px) 100vw, 54vw',
+        width: pic.width,
+        height: pic.height,
+        alt: fmt(ui.common.renderAlt, { name: lead!.data.title, nameLower: lower(lead!.data.title) }),
+        mode: 'bleed',
+        cutout: true,
+      }
+    : undefined;
+---
+
+<BaseLayout
+  title={d.title}
+  description={d.description}
+  path={path}
+  breadcrumbs={breadcrumbs}
+  jsonLd={[
+    {
+      ...articleJsonLd({ title: d.title, description: d.description, date: d.date, url, type: 'BlogPosting', inLanguage: info.hreflang }),
+      ...(d.updated ? { dateModified: d.updated.toISOString() } : {}),
+    },
+    ...(faqs.length ? [faqJsonLd(faqs, info.hreflang)] : []),
+  ]}
+  dark
+>
+  <PageHero breadcrumbs={breadcrumbs} l1={t.l1} l2={t.l2} size="post" media={media}>
+    <p class="ph-meta">
+      {fmt(metaBefore, metaVars)}<time datetime={iso}>{fmtDate(d.date, lang)}</time>{fmt(metaAfter, metaVars)}
+    </p>
+    <p class="ph-lead">{d.description}</p>
+  </PageHero>
+
+  <div class="wrap sec post-layout">
+    <article class="prose post-body">
+      <Content />
+    </article>
+  </div>
+
+  {faqs.length > 0 && <Faq faqs={faqs} heading={ui.post.quickAnswers} id="post-faq" split />}
+
+  {
+    related.length > 0 && (
+      <section class="wrap sec" aria-labelledby="rel-h">
+        <div class="sec-head" data-reveal>
+          <h2 id="rel-h">{ui.post.relatedH}</h2>
+          <a class="link-arrow" href={lp('/blog/')}>
+            {ui.common.allGuides} <span class="arr" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <CardGrid products={related} />
+      </section>
+    )
+  }
+
+  <QuoteCard heading={ui.post.quoteH} text={ui.post.quoteText} />
+</BaseLayout>

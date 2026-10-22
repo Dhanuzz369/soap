@@ -5,20 +5,22 @@
  * and the WhatsApp link below it is a real href. With JS, enquiry-form.ts pre-selects products
  * from ?product=<slug> and, on submit, offers "Send via WhatsApp" and "Send via Email" links
  * built from the same answers.
+ *
+ * Labels are in the page's language; the values sent to GoodBiz (field names, product names,
+ * quantity choices, Yes/No) stay English, because the export team reads English. A "Language"
+ * field tells the team which language the buyer used.
  */
 import site from '../config/site';
 import { getProductsByCategory } from '../lib/products';
-import { FORM_FIELDS as F, buildWhatsAppUrl } from '../lib/enquiry';
+import { FORM_FIELDS as F, QUANTITY_VALUES, buildWhatsAppUrl } from '../lib/enquiry';
+import { useI18n } from '../i18n/page';
 
-const groups = await getProductsByCategory();
-const quantities = [
-  'Samples or a trial quantity',
-  'Part of a mixed container',
-  '1 x 20ft container',
-  '1 x 40ft container',
-  'Several containers or regular supply',
-  'Not sure yet',
-];
+const { lang, info, ui } = useI18n(Astro.url);
+const f = ui.form;
+const groups = await getProductsByCategory(lang);
+// English product names (the values sent), by slug.
+const english = new Map((await getProductsByCategory('en')).flatMap((g) => g.products).map((p) => [p.data.slug, p.data.title]));
+const quantities = QUANTITY_VALUES.map((value, i) => ({ value, label: f.quantities[i] ?? value }));
 const waPlain = buildWhatsAppUrl(site.contact.whatsapp, {});
 ---
 
@@ -30,39 +32,41 @@ const waPlain = buildWhatsAppUrl(site.contact.whatsapp, {});
   data-enquiry
   data-email={site.contact.email}
   data-whatsapp={site.contact.whatsapp}
+  data-hint-js={f.hintJs}
 >
+  <input type="hidden" name={F.language} value={info.native} />
   <div class="enq-grid">
     <div class="enq-field">
-      <label for="enq-name">Your name</label>
+      <label for="enq-name">{f.name}</label>
       <input id="enq-name" name={F.name} type="text" autocomplete="name" required />
     </div>
     <div class="enq-field">
-      <label for="enq-company">Company</label>
+      <label for="enq-company">{f.company}</label>
       <input id="enq-company" name={F.company} type="text" autocomplete="organization" />
     </div>
     <div class="enq-field">
-      <label for="enq-country">Country</label>
+      <label for="enq-country">{f.country}</label>
       <input id="enq-country" name={F.country} type="text" autocomplete="country-name" required />
     </div>
     <div class="enq-field">
-      <label for="enq-email">Email</label>
-      <input id="enq-email" name={F.email} type="email" autocomplete="email" required />
+      <label for="enq-email">{f.email}</label>
+      <input id="enq-email" name={F.email} type="email" autocomplete="email" required dir="ltr" />
     </div>
     <div class="enq-field">
-      <label for="enq-phone">WhatsApp or phone <span class="enq-opt">(with country code)</span></label>
-      <input id="enq-phone" name={F.phone} type="tel" autocomplete="tel" inputmode="tel" />
+      <label for="enq-phone">{f.phone} <span class="enq-opt">{f.phoneHint}</span></label>
+      <input id="enq-phone" name={F.phone} type="tel" autocomplete="tel" inputmode="tel" dir="ltr" />
     </div>
     <div class="enq-field">
-      <label for="enq-qty">Quantity</label>
+      <label for="enq-qty">{f.quantity}</label>
       <select id="enq-qty" name={F.quantity}>
-        <option value="">Choose one</option>
-        {quantities.map((q) => <option value={q}>{q}</option>)}
+        <option value="">{f.choose}</option>
+        {quantities.map((q) => <option value={q.value}>{q.label}</option>)}
       </select>
     </div>
   </div>
 
   <fieldset class="enq-products">
-    <legend>Products of interest <span class="enq-opt">(choose any)</span></legend>
+    <legend>{f.productsLegend} <span class="enq-opt">{f.chooseAny}</span></legend>
     {
       groups.map((g) => (
         <div class="enq-range" data-cat={g.category.data.slug}>
@@ -74,7 +78,7 @@ const waPlain = buildWhatsAppUrl(site.contact.whatsapp, {});
                   type="checkbox"
                   id={`enq-p-${p.data.slug}`}
                   name={F.products}
-                  value={p.data.title}
+                  value={english.get(p.data.slug) ?? p.data.title}
                   data-slug={p.data.slug}
                 />
                 <label for={`enq-p-${p.data.slug}`}>{p.data.title}</label>
@@ -87,35 +91,35 @@ const waPlain = buildWhatsAppUrl(site.contact.whatsapp, {});
   </fieldset>
 
   <fieldset class="enq-pl">
-    <legend>Do you need private label?</legend>
+    <legend>{f.plLegend}</legend>
     <div class="enq-radios">
       <input type="radio" id="enq-pl-yes" name={F.privateLabel} value="Yes" />
-      <label for="enq-pl-yes">Yes, under my brand</label>
+      <label for="enq-pl-yes">{f.plYes}</label>
       <input type="radio" id="enq-pl-no" name={F.privateLabel} value="No" />
-      <label for="enq-pl-no">No</label>
+      <label for="enq-pl-no">{f.plNo}</label>
     </div>
   </fieldset>
 
   <div class="enq-field enq-field--wide">
-    <label for="enq-msg">Message <span class="enq-opt">(pack sizes, fragrances, destination port)</span></label>
+    <label for="enq-msg">{f.message} <span class="enq-opt">{f.messageHint}</span></label>
     <textarea id="enq-msg" name={F.message} rows="5" data-message></textarea>
   </div>
 
   <div class="enq-actions">
-    <button class="btn" type="submit">Send enquiry</button>
+    <button class="btn" type="submit">{f.submit}</button>
     <p class="note enq-hint" data-enquiry-hint>
-      This opens your email app with the enquiry filled in. Prefer WhatsApp?{' '}
-      <a href={waPlain} rel="noopener" target="_blank">Message us on WhatsApp</a>.
+      {f.hint}{' '}
+      <a href={waPlain} rel="noopener" target="_blank">{f.hintLink}</a>.
     </p>
   </div>
 
   <div class="enq-send" data-enquiry-send hidden tabindex="-1" role="region" aria-labelledby="enq-send-h">
-    <p id="enq-send-h" class="enq-send-h">Your enquiry is ready. How would you like to send it?</p>
+    <p id="enq-send-h" class="enq-send-h">{f.sendH}</p>
     <div class="enq-send-actions">
-      <a class="btn" data-send-whatsapp href={waPlain} target="_blank" rel="noopener">Send via WhatsApp</a>
-      <a class="btn btn--soft" data-send-email href={`mailto:${site.contact.email}`}>Send via Email</a>
+      <a class="btn" data-send-whatsapp href={waPlain} target="_blank" rel="noopener">{f.sendWa}</a>
+      <a class="btn btn--soft" data-send-email href={`mailto:${site.contact.email}`}>{f.sendEmail}</a>
     </div>
-    <p class="note">Each opens your own app with the message written out, so you can check it before sending.</p>
+    <p class="note">{f.sendNote}</p>
   </div>
 </form>
 

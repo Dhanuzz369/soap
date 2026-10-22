@@ -1,6 +1,7 @@
 ---
 /** Buyer guides as large rows (date, title, description, arrow). The whole row is the link. */
 import { fmtDate, readingMinutes, type BlogEntry } from '../lib/blog';
+import { useI18n } from '../i18n/page';
 
 interface Props {
   posts: BlogEntry[];
@@ -12,6 +13,7 @@ interface Props {
   hideHeading?: boolean;
 }
 const { posts, heading, id = 'guides', all = false, large = false, hideHeading = false } = Astro.props;
+const { lang, ui, lp, fmt } = useI18n(Astro.url);
 ---
 
 <section class:list={['wrap', 'guides', large && 'guides--large']} aria-labelledby={`${id}-h`}>
@@ -19,8 +21,8 @@ const { posts, heading, id = 'guides', all = false, large = false, hideHeading =
     <h2 id={`${id}-h`}>{heading}</h2>
     {
       all && (
-        <a class="link-arrow" href="/blog/">
-          All guides <span class="arr" aria-hidden="true">↗</span>
+        <a class="link-arrow" href={lp('/blog/')}>
+          {ui.common.allGuides} <span class="arr" aria-hidden="true">↗</span>
         </a>
       )
     }
@@ -30,11 +32,11 @@ const { posts, heading, id = 'guides', all = false, large = false, hideHeading =
       posts.map((p, i) => (
         <li class="guide" data-reveal style={`--i: ${i % 3}`}>
           <p class="guide-date">
-            <time datetime={p.data.date.toISOString().slice(0, 10)}>{fmtDate(p.data.date)}</time>
-            {large && <span> · {readingMinutes(p.body ?? '')} min read</span>}
+            <time datetime={p.data.date.toISOString().slice(0, 10)}>{fmtDate(p.data.date, lang)}</time>
+            {large && <span> · {fmt(ui.common.minRead, { n: readingMinutes(p.body ?? '') })}</span>}
           </p>
           <h3 class="guide-title">
-            <a href={`/blog/${p.id}/`}>{p.data.title}</a>
+            <a href={lp(`/blog/${p.id}/`)}>{p.data.title}</a>
           </h3>
           <p class="guide-desc">{p.data.description}</p>
           <span class="guide-arrow" aria-hidden="true">

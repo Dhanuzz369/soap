@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import ProcessSteps from '../components/ProcessSteps.astro';
+import Faq from '../components/Faq.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+import { faqJsonLd } from '../lib/seo';
+import { useI18n } from '../i18n/page';
+
+const { info, ui, lp, fmt } = useI18n(Astro.url);
+const E = ui.exportProcess;
+const t = ui.terms;
+
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: ui.header.nav.exportProcess, url: lp('/export-process/') },
+];
+
+const steps = E.steps.map((s) => ({ name: s.name, text: fmt(s.text, t) }));
+const documents = E.documents;
+const faqs = E.faqs.map((f) => ({ q: fmt(f.q, t), a: fmt(f.a, t) }));
+---
+
+<BaseLayout
+  title={E.title}
+  description={E.description}
+  path="/export-process/"
+  breadcrumbs={breadcrumbs}
+  jsonLd={[faqJsonLd(faqs, info.hreflang)]}
+  dark
+>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1={E.l1}
+    l2={E.l2}
+    lead={E.lead}
+    size="product"
+    media={{
+      src: '/images/renders/range-cutout.webp',
+      srcset: '/images/renders/range-cutout-800.webp 800w, /images/renders/range-cutout.webp 1600w',
+      sizes: '(max-width: 759px) 100vw, 54vw',
+      width: 1600,
+      height: 1280,
+      alt: ui.common.rangeAlt,
+      mode: 'bleed',
+      cutout: true,
+    }}
+  >
+    <div class="ph-actions">
+      <a class="btn btn--light" href={lp('/contact/')}>{ui.common.requestQuote}</a>
+      <a class="link-arrow" href="#steps">{E.stepsLink} <span class="arr" aria-hidden="true">↓</span></a>
+    </div>
+  </PageHero>
+
+  <section class="wrap sec" aria-labelledby="terms-h">
+    <div class="sec-head" data-reveal>
+      <h2 id="terms-h">{E.termsH}</h2>
+    </div>
+    <dl class="facts" data-reveal style="--i: 1">
+      <div><dt>{E.termsIncoterms}</dt><dd>{t.incoterms}</dd></div>
+      <div><dt>{E.termsPort}</dt><dd>{t.port}</dd></div>
+      <div><dt>{E.termsLead}</dt><dd>{t.leadTime}</dd></div>
+    </dl>
+  </section>
+
+  <div id="steps">
+    <ProcessSteps id="steps-p" l1={E.processL1} l2={E.processL2} intro={E.processIntro} steps={steps} photo />
+  </div>
+
+  <section class="wrap sec split" aria-labelledby="docs-h">
+    <div class="split-head" data-reveal>
+      <h2 id="docs-h">{E.docsH}</h2>
+      <p>{E.docsText}</p>
+    </div>
+    <ul class="chips chips--lg" data-reveal style="--i: 1">
+      {documents.map((d) => <li class="chip">{d}</li>)}
+    </ul>
+  </section>
+
+  <Faq faqs={faqs} heading={E.faqH} split />
+
+  <QuoteCard />
+</BaseLayout>

@@ -9,7 +9,9 @@ interface Props {
   id?: string;
   more?: { href: string; label: string };
 }
-const { faqs, heading = 'Straight answers.', id = 'answers', more } = Astro.props;
+import { useI18n } from '../i18n/page';
+const { ui } = useI18n(Astro.url);
+const { faqs, heading = ui.common.straightAnswers, id = 'answers', more } = Astro.props;
 ---
 
 <section class="answers" id={id} aria-labelledby={`${id}-h`}>
@@ -21,7 +23,7 @@ const { faqs, heading = 'Straight answers.', id = 'answers', more } = Astro.prop
           <li class="answer" data-reveal style={`--i: ${i % 3}`}>
             <h3 class="answer-q">{f.q}</h3>
             <p class="answer-a">{f.a}</p>
-            <p class="answer-sign">Buyer FAQ</p>
+            <p class="answer-sign">{ui.common.buyerFaq}</p>
           </li>
         ))
       }

@@ -7,17 +7,15 @@
 import type { ProductEntry } from '../lib/products';
 import ProductCard from './ProductCard.astro';
 import { cardGrid } from '../lib/card-grid';
+import { useI18n } from '../i18n/page';
 
 interface Props {
   products: ProductEntry[];
   details?: boolean;
   noteText?: string;
 }
-const {
-  products,
-  details = true,
-  noteText = 'Combine these with products from other ranges in one 20ft or 40ft container. We confirm the mix when we quote.',
-} = Astro.props;
+const { ui, lp } = useI18n(Astro.url);
+const { products, details = true, noteText = ui.cards.noteText } = Astro.props;
 const g = cardGrid(products.length);
 ---
 
@@ -32,10 +30,10 @@ const g = cardGrid(products.length);
   {
     g.note && (
       <li class="cards-note" data-reveal style={`--i: ${products.length % g.cols}`}>
-        <p class="cards-note-h">Mix it in one container.</p>
+        <p class="cards-note-h">{ui.cards.noteH}</p>
         <p>{noteText}</p>
-        <a class="link-arrow" href="/contact/">
-          Request a Quote <span class="arr" aria-hidden="true">→</span>
+        <a class="link-arrow" href={lp('/contact/')}>
+          {ui.common.requestQuote} <span class="arr" aria-hidden="true">→</span>
         </a>
       </li>
     )

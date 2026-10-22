@@ -16,6 +16,8 @@
  * scrolling fans the packs apart.
  */
 import Bubbles from './Bubbles.astro';
+import { useI18n } from '../i18n/page';
+const { ui } = useI18n(Astro.url);
 ---
 
 <script is:inline>
@@ -31,7 +33,7 @@ import Bubbles from './Bubbles.astro';
       sizes="(max-width: 759px) 100vw, 62vw"
       width="1600"
       height="1280"
-      alt="Illustration of the GoodBiz Hygiene range in typical export packs: a dish wash bottle, a fabric softener jug, a spray cleaner, a hand wash pump, a detergent pouch, a raw-material drum, a jerrycan and soap bars"
+      alt={ui.common.heroAlt}
       fetchpriority="high"
       decoding="async"
     />

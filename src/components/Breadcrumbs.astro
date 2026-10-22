@@ -3,12 +3,14 @@
 interface Props {
   items: { name: string; url: string }[];
 }
+import { useI18n } from '../i18n/page';
 const { items } = Astro.props;
+const { ui } = useI18n(Astro.url);
 ---
 
 {
   items.length > 1 && (
-    <nav class="crumbs" aria-label="Breadcrumb">
+    <nav class="crumbs" aria-label={ui.common.breadcrumb}>
       <ol>
         {items.map((it, i) => (
           <li>

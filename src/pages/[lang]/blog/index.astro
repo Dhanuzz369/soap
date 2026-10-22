@@ -1,0 +1,8 @@
+---
+/* Route only: the page is src/views/Blog.astro. */
+import View from '../../../views/Blog.astro';
+import { localeParams } from '../../../views/paths';
+export const getStaticPaths = localeParams;
+---
+
+<View />

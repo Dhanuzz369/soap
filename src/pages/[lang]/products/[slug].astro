@@ -1,0 +1,8 @@
+---
+/* Route only: the page is src/views/Product.astro. */
+import View from '../../../views/Product.astro';
+import { forEachLocale, productPaths } from '../../../views/paths';
+export const getStaticPaths = () => forEachLocale(productPaths);
+---
+
+<View {...(Astro.props as any)} />

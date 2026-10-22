@@ -1,0 +1,107 @@
+---
+/**
+ * The language menu: a floating pill in the bottom inline-start corner (bottom-left, or
+ * bottom-right in Arabic; the WhatsApp button holds the other corner). A <details> element, so it
+ * opens and its links work without JS. Each entry links to the same page in that language
+ * (data-lang-link, which the build tests exempt from the "stay in your locale" rule). The last
+ * entry opens the English page in Google Translate for languages the site does not cover.
+ *
+ * With JS: choosing a language stores it (localStorage "gb-lang", so the auto-detect script in
+ * BaseLayout never overrides the choice); Escape or a click outside closes the menu and Escape
+ * returns focus to the button; "More languages…" targets the browser's language.
+ *
+ * Motion (emil-design-eng): the panel scales in from the corner it is anchored to (transform-origin
+ * bottom start), 180ms with the strong ease-out; closing is instant. Reduced motion: opacity only.
+ */
+import { LOCALES, localizePath } from '../i18n/locales';
+import { absoluteUrl } from '../lib/seo';
+import { useI18n } from '../i18n/page';
+
+interface Props {
+  /** The page's English path. */
+  path: string;
+  /** Link every language to its home page (pages without translations, e.g. the 404). */
+  homesOnly?: boolean;
+}
+const { path, homesOnly = false } = Astro.props;
+const { lang, info, ui } = useI18n(Astro.url);
+const target = homesOnly ? '/' : path;
+const enUrl = absoluteUrl(localizePath(target, 'en'));
+const gt = `https://translate.google.com/translate?sl=en&tl=auto&u=${encodeURIComponent(enUrl)}`;
+---
+
+<details class="lang" data-lang-switch>
+  <summary class="lang-btn">
+    <svg class="lang-globe" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3c2.6 2.5 3.9 5.5 3.9 9s-1.3 6.5-3.9 9c-2.6-2.5-3.9-5.5-3.9-9S9.4 5.5 12 3Z" />
+    </svg>
+    <span class="visually-hidden">{ui.lang.label}: </span>
+    <span class="lang-current" lang={info.hreflang}>{info.native}</span>
+    <svg class="lang-chev" viewBox="0 0 12 12" width="12" height="12" aria-hidden="true" focusable="false">
+      <path d="M3 7.5 6 4.5l3 3" />
+    </svg>
+  </summary>
+  <div class="lang-panel">
+    <p class="lang-title" id="lang-title">{ui.lang.label}</p>
+    <ul class="lang-list" aria-labelledby="lang-title">
+      {
+        LOCALES.map((l) => (
+          <li>
+            <a
+              href={localizePath(target, l.code)}
+              lang={l.hreflang}
+              dir={l.dir}
+              data-lang-link={l.code}
+              aria-current={l.code === lang ? 'true' : undefined}
+            >
+              <span>{l.native}</span>
+              {l.code === lang && (
+                <svg class="lang-check" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">
+                  <path d="M3.5 8.5 6.5 11.5 12.5 5" />
+                </svg>
+              )}
+            </a>
+          </li>
+        ))
+      }
+      <li class="lang-more">
+        <a href={gt} data-lang-link="more" data-lang-gt={localizePath(target, 'en')} target="_blank" rel="noopener" title={ui.lang.moreTitle}>
+          <span>{ui.lang.more}</span>
+          <span class="arr" aria-hidden="true">↗</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</details>
+
+<script is:inline>
+  (function () {
+    var menu = document.querySelector('[data-lang-switch]');
+    if (!menu) return;
+    var summary = menu.querySelector('summary');
+    menu.querySelectorAll('a[data-lang-link]').forEach(function (a) {
+      var code = a.getAttribute('data-lang-link');
+      if (code === 'more') {
+        var tl = (navigator.language || 'auto').split('-')[0] || 'auto';
+        var u = location.origin + a.getAttribute('data-lang-gt');
+        a.href = 'https://translate.google.com/translate?sl=en&tl=' + encodeURIComponent(tl) + '&u=' + encodeURIComponent(u);
+        return;
+      }
+      a.addEventListener('click', function () {
+        try {
+          localStorage.setItem('gb-lang', code);
+        } catch (e) {}
+      });
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.open) {
+        menu.open = false;
+        summary.focus();
+      }
+    });
+    document.addEventListener('click', function (e) {
+      if (menu.open && !menu.contains(e.target)) menu.open = false;
+    });
+  })();
+</script>

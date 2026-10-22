@@ -10,7 +10,9 @@ interface Props {
   split?: boolean;
   intro?: string;
 }
-const { faqs, heading = 'Questions buyers ask', id = 'faq', split = false, intro } = Astro.props;
+import { useI18n } from '../i18n/page';
+const { ui } = useI18n(Astro.url);
+const { faqs, heading = ui.common.faqDefault, id = 'faq', split = false, intro } = Astro.props;
 ---
 
 <section class:list={['faq', 'wrap', 'sec', split && 'split']} id={id} aria-labelledby={`${id}-h`}>

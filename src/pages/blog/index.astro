@@ -1,33 +1,7 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import PageHero from '../../components/PageHero.astro';
-import GuideRows from '../../components/GuideRows.astro';
-import QuoteCard from '../../components/QuoteCard.astro';
-import { getPosts } from '../../lib/blog';
+/* Route only: the page is src/views/Blog.astro. */
+import View from '../../views/Blog.astro';
 
-const posts = await getPosts();
-const breadcrumbs = [
-  { name: 'Home', url: '/' },
-  { name: 'Blog', url: '/blog/' },
-];
 ---
 
-<BaseLayout
-  title="Export Guides for Soap & Cleaning Product Buyers"
-  description="Practical guides for importers of soaps, detergents and home-care products from India: HSN codes, MOQ, documents, private label and shipping."
-  path="/blog/"
-  breadcrumbs={breadcrumbs}
-  dark
->
-  <PageHero
-    breadcrumbs={breadcrumbs}
-    l1="Buyer guides."
-    l2="For importing soaps & home care."
-    lead="Plain-English notes for importers and distributors: classification, costs, documents and choosing products."
-    media={{ src: '/images/found/neem-plate.webp', width: 1100, height: 682, alt: '', mode: 'plate' }}
-  />
-
-  <GuideRows posts={posts} heading="Latest articles" id="posts" large />
-
-  <QuoteCard />
-</BaseLayout>
+<View />

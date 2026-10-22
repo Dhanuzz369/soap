@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import ProcessSteps from '../components/ProcessSteps.astro';
+import Faq from '../components/Faq.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+import { faqJsonLd } from '../lib/seo';
+import { useI18n } from '../i18n/page';
+
+const { info, ui, lp, fmt } = useI18n(Astro.url);
+const L = ui.privateLabel;
+const t = ui.terms;
+
+const options = L.options;
+const steps = L.steps.map((s) => ({ name: s.name, text: fmt(s.text, t) }));
+const faqs = L.faqs.map((f) => ({ q: fmt(f.q, t), a: fmt(f.a, t) }));
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: ui.header.nav.privateLabel, url: lp('/private-label/') },
+];
+---
+
+<BaseLayout
+  title={L.title}
+  description={L.description}
+  path="/private-label/"
+  breadcrumbs={breadcrumbs}
+  jsonLd={[faqJsonLd(faqs, info.hreflang)]}
+  dark
+>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1={L.l1}
+    l2={L.l2}
+    lead={L.lead}
+    size="product"
+    media={{
+      src: '/images/renders/category-bath-personal-soaps.webp',
+      width: 1440,
+      height: 1200,
+      alt: L.renderAlt,
+      mode: 'bleed',
+      cutout: true,
+    }}
+  >
+    <div class="ph-actions">
+      <a class="btn btn--light" href={lp('/contact/')}>{L.startBrief}</a>
+      <a class="link-arrow" href="#pl-steps">{L.howRuns} <span class="arr" aria-hidden="true">↓</span></a>
+    </div>
+  </PageHero>
+
+  <section class="wrap sec split" aria-labelledby="pl-options-h">
+    <div class="split-head" data-reveal>
+      <h2 id="pl-options-h">{L.optionsH}</h2>
+      <p>{L.optionsText}</p>
+    </div>
+    <ul class="rows">
+      {
+        options.map((o, i) => (
+          <li class="row" data-reveal style={`--i: ${i % 3}`}>
+            <h3>{o.title}</h3>
+            <p>{o.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <div id="pl-steps">
+    <ProcessSteps
+      id="pl-process"
+      l1={L.processL1}
+      l2={L.processL2}
+      intro={L.processIntro}
+      steps={steps}
+      photo
+      link={{ href: lp('/export-process/'), label: ui.common.exportProcessFull }}
+    />
+  </div>
+
+  <Faq faqs={faqs} heading={L.faqH} split />
+
+  <QuoteCard heading={L.quoteH} text={L.quoteText} />
+</BaseLayout>

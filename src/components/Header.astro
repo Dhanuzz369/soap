@@ -7,29 +7,33 @@
  * Phones get a <details> menu that works without JS.
  */
 import site from '../config/site';
+import { useI18n } from '../i18n/page';
 
 interface Props {
   path?: string;
   tone?: 'light' | 'dark';
 }
+/** `path` is the page's English path (the layout passes it). Links are localized here. */
 const { path = '/', tone = 'light' } = Astro.props;
+const { ui, lp, fmt } = useI18n(Astro.url);
+const n = ui.header.nav;
 
 const nav = [
-  { label: 'Products', href: '/products/' },
-  { label: 'Private Label', href: '/private-label/' },
-  { label: 'Export Process', href: '/export-process/' },
-  { label: 'Buyer Guides', href: '/blog/' },
+  { label: n.products, href: '/products/' },
+  { label: n.privateLabel, href: '/private-label/' },
+  { label: n.exportProcess, href: '/export-process/' },
+  { label: n.guides, href: '/blog/' },
 ];
 const more = [
-  { label: 'About', href: '/about/' },
-  { label: 'FAQ', href: '/faq/' },
+  { label: n.about, href: '/about/' },
+  { label: n.faq, href: '/faq/' },
 ];
 const isCurrent = (href: string) => path === href || (href !== '/' && path.startsWith(href));
 ---
 
 <header class="site-header" data-header data-tone={tone}>
   <div class="bar">
-    <a class="wordmark" href="/" aria-label={`${site.name}, home`}>
+    <a class="wordmark" href={lp('/')} aria-label={fmt(ui.header.homeAria, { name: site.name })}>
       <svg class="wordmark-mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <path d="M12 2.5c6 3 7.4 12.2 0 19-7.4-6.8-6-16 0-19Z" />
         <path class="wordmark-rib" d="M11.2 7h1.6v12h-1.6z" />
@@ -37,12 +41,12 @@ const isCurrent = (href: string) => path === href || (href !== '/' && path.start
       <span>GoodBiz Hygiene</span>
     </a>
 
-    <nav class="nav-desktop" aria-label="Main">
+    <nav class="nav-desktop" aria-label={ui.header.mainNav}>
       <ul>
         {
           nav.map((n) => (
             <li>
-              <a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>
+              <a href={lp(n.href)} aria-current={isCurrent(n.href) ? 'page' : undefined}>
                 {n.label}
               </a>
             </li>
@@ -50,25 +54,25 @@ const isCurrent = (href: string) => path === href || (href !== '/' && path.start
         }
       </ul>
     </nav>
-    <a class="btn btn--sm nav-cta" href="/contact/">Request a Quote</a>
+    <a class="btn btn--sm nav-cta" href={lp('/contact/')}>{ui.common.requestQuote}</a>
 
     <details class="nav-mobile">
-      <summary aria-label="Menu">
+      <summary aria-label={ui.header.menu}>
         <span class="nav-burger" aria-hidden="true"></span>
       </summary>
-      <nav class="nav-panel" aria-label="Main (mobile)">
+      <nav class="nav-panel" aria-label={ui.header.mainNavMobile}>
         <ul>
           {
             [...nav, ...more].map((n) => (
               <li>
-                <a href={n.href} aria-current={isCurrent(n.href) ? 'page' : undefined}>
+                <a href={lp(n.href)} aria-current={isCurrent(n.href) ? 'page' : undefined}>
                   {n.label}
                 </a>
               </li>
             ))
           }
         </ul>
-        <a class="btn nav-panel-cta" href="/contact/">Request a Quote</a>
+        <a class="btn nav-panel-cta" href={lp('/contact/')}>{ui.common.requestQuote}</a>
       </nav>
     </details>
   </div>

@@ -8,6 +8,8 @@ export type EnquiryFields = {
   quantity?: string;
   privateLabel?: boolean;
   message?: string;
+  /** The buyer's site language as its native name ("Français"). Field labels stay English. */
+  language?: string;
 };
 
 const SUBJECT = 'Export Enquiry - GoodBiz Hygiene';
@@ -27,6 +29,7 @@ export function enquiryText(f: EnquiryFields): string {
   add('Quantity', f.quantity);
   if (f.privateLabel !== undefined) add('Private label', f.privateLabel ? 'Yes' : 'No');
   add('Message', f.message);
+  add('Language', f.language);
   return lines.join('\n');
 }
 
@@ -52,10 +55,24 @@ export const FORM_FIELDS = {
   quantity: 'Quantity',
   privateLabel: 'Private label',
   message: 'Message',
+  language: 'Language',
 } as const;
 
+/**
+ * The quantity choices as sent to GoodBiz (always English). The form shows the translated labels
+ * from the UI dictionary (`form.quantities`, same order).
+ */
+export const QUANTITY_VALUES = [
+  'Samples or a trial quantity',
+  'Part of a mixed container',
+  '1 x 20ft container',
+  '1 x 40ft container',
+  'Several containers or regular supply',
+  'Not sure yet',
+] as const;
+
 type TextKey = Exclude<keyof EnquiryFields, 'products' | 'privateLabel'>;
-const TEXT_KEYS: TextKey[] = ['name', 'company', 'country', 'email', 'phone', 'quantity', 'message'];
+const TEXT_KEYS: TextKey[] = ['name', 'company', 'country', 'email', 'phone', 'quantity', 'message', 'language'];
 
 /** Reads form entries (e.g. `new FormData(form)`) into EnquiryFields. */
 export function fieldsFromEntries(entries: Iterable<[string, FormDataEntryValue | string]>): EnquiryFields {

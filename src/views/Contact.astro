@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
+import CardGrid from '../components/CardGrid.astro';
+import site from '../config/site';
+import { buildWhatsAppUrl } from '../lib/enquiry';
+import { getProductsByCategory } from '../lib/products';
+import { useI18n } from '../i18n/page';
+
+const { lang, ui, lp } = useI18n(Astro.url);
+const C = ui.contact;
+const wa = buildWhatsAppUrl(site.contact.whatsapp, {});
+const tel = site.contact.phone.replace(/[^+\d]/g, '');
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: ui.footer.contact, url: lp('/contact/') },
+];
+const all = (await getProductsByCategory(lang)).flatMap((g) => g.products);
+const often = ['dish-wash-liquid', 'fabric-softener', 'toilet-bath-soap']
+  .map((s) => all.find((p) => p.data.slug === s))
+  .filter((p): p is NonNullable<typeof p> => !!p);
+---
+
+<BaseLayout
+  title={C.title}
+  description={C.description}
+  path="/contact/"
+  breadcrumbs={breadcrumbs}
+  dark
+>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1={C.l1}
+    l2={C.l2}
+    lead={C.lead}
+    media={{
+      src: '/images/found/kochi-port-night.webp',
+      srcset: '/images/found/kochi-port-night-600.webp 600w, /images/found/kochi-port-night.webp 1200w',
+      sizes: '(max-width: 759px) 100vw, 54vw',
+      width: 1200,
+      height: 900,
+      alt: ui.common.portAlt,
+      mode: 'bleed',
+    }}
+  >
+    <div class="ph-actions">
+      <a class="btn btn--light" href="#enquiry">{C.start}</a>
+      <a class="link-arrow" href={wa} target="_blank" rel="noopener">{C.waMessage} <span class="arr" aria-hidden="true">↗</span></a>
+    </div>
+  </PageHero>
+
+  <div class="wrap sec contact-grid" id="enquiry">
+    <section aria-labelledby="form-h">
+      <h2 id="form-h" class="visually-hidden">{C.formH}</h2>
+      <EnquiryForm />
+    </section>
+
+    <aside class="contact-aside" aria-label={C.asideAria}>
+      <div>
+        <h2>{C.email}</h2>
+        <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+      </div>
+      <div>
+        <h2>{C.whatsapp}</h2>
+        <a href={wa} target="_blank" rel="noopener">{C.waMessage}</a>
+      </div>
+      <div>
+        <h2>{C.phone}</h2>
+        <a href={`tel:${tel}`} dir="ltr">{site.contact.phone}</a>
+      </div>
+      <div>
+        <h2>{C.office}</h2>
+        <p class="contact-big">{site.contact.address}</p>
+      </div>
+      <div class="contact-dark">
+        <h2>{C.terms}</h2>
+        <p>{ui.terms.incoterms}.</p>
+        <p style="margin-top:8px;color:var(--on-dark-soft)">{ui.terms.port}. {ui.terms.leadTime}.</p>
+      </div>
+    </aside>
+  </div>
+
+  <section class="wrap sec" aria-labelledby="often-h">
+    <div class="sec-head" data-reveal>
+      <div>
+        <h2 id="often-h">{C.oftenH}</h2>
+        <p>{C.oftenText}</p>
+      </div>
+      <a class="link-arrow" href={lp('/products/')}>{ui.common.allProducts} <span class="arr" aria-hidden="true">↗</span></a>
+    </div>
+    <CardGrid products={often} />
+  </section>
+</BaseLayout>

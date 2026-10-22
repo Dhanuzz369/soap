@@ -1,34 +1,7 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import PageHero from '../components/PageHero.astro';
-import Faq from '../components/Faq.astro';
-import QuoteCard from '../components/QuoteCard.astro';
-import { faqJsonLd } from '../lib/seo';
-import { faqGroups, allFaqs } from '../lib/faqs';
+/* Route only: the page is src/views/Faq.astro. */
+import View from '../views/Faq.astro';
 
-const breadcrumbs = [
-  { name: 'Home', url: '/' },
-  { name: 'FAQ', url: '/faq/' },
-];
 ---
 
-<BaseLayout
-  title="FAQ: Soap & Home-Care Exporter & Supplier from India"
-  description="Answers for importers buying soaps, detergents and cleaners from India through GoodBiz Hygiene: sourcing, private label, MOQ, incoterms, documents and lead times."
-  path="/faq/"
-  breadcrumbs={breadcrumbs}
-  jsonLd={[faqJsonLd(allFaqs)]}
-  dark
->
-  <PageHero
-    breadcrumbs={breadcrumbs}
-    l1="Buyer questions."
-    l2="Straight answers."
-    lead="How GoodBiz Hygiene sources, quotes and ships soaps and home-care products from India. Product-specific questions are answered on each product page."
-    media={{ src: '/images/found/neem-plate.webp', width: 1100, height: 682, alt: '', mode: 'plate' }}
-  />
-
-  {faqGroups.map((g) => <Faq faqs={g.faqs} heading={g.heading} id={g.id} split />)}
-
-  <QuoteCard heading="Still have a question?" text="Send it with your enquiry in one line. We reply with the details for your products and market." />
-</BaseLayout>
+<View />

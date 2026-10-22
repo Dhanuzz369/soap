@@ -1,0 +1,95 @@
+---
+import { categoryPicture } from '../lib/product-image';
+import type { CategoryEntry, ProductEntry } from '../lib/products';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import CardGrid from '../components/CardGrid.astro';
+import AnswerWall from '../components/AnswerWall.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+import { faqJsonLd } from '../lib/seo';
+import { splitName } from '../lib/heading';
+import { useI18n } from '../i18n/page';
+
+interface Props {
+  category: CategoryEntry;
+  products: ProductEntry[];
+}
+const { category, products } = Astro.props;
+const { info, ui, lp, fmt, lower } = useI18n(Astro.url);
+const C = ui.category;
+const c = category.data;
+const names = { name: c.title, nameLower: lower(c.title) };
+const path = `/categories/${c.slug}/`;
+const url = lp(path);
+const faqs = products.slice(0, 6).map((p) => p.data.faqs[0]).filter((f) => !!f);
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: ui.common.products, url: lp('/products/') },
+  { name: c.title, url },
+];
+// Category group renders (npm run renders): sizes as made by scripts/render-packs.mjs.
+const dims: Record<string, [number, number]> = {
+  'bath-personal-soaps': [1440, 1200],
+  'industrial-raw-materials': [760, 1200],
+};
+const [w, h] = dims[c.slug] ?? [1000, 800];
+const cpic = categoryPicture(c.slug);
+const name = splitName(c.title);
+---
+
+<BaseLayout
+  title={fmt(C.title, names)}
+  description={c.summary}
+  path={path}
+  breadcrumbs={breadcrumbs}
+  jsonLd={faqs.length ? [faqJsonLd(faqs, info.hreflang)] : []}
+  dark
+>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1={name.l1}
+    l2={ui.common.exporterLine}
+    scale={name.scale}
+    lead={c.summary}
+    size="product"
+    media={cpic.kind === 'photo' ? {
+      src: cpic.src,
+      srcset: cpic.srcset,
+      sizes: '(max-width: 759px) 100vw, 44vw',
+      width: cpic.width,
+      height: cpic.height,
+      alt: fmt(ui.common.photoAlt, names),
+      mode: 'card',
+    } : {
+      src: `/images/renders/category-${c.slug}.webp`,
+      width: w,
+      height: h,
+      alt: fmt(ui.common.categoryRenderAlt, names),
+      mode: 'bleed',
+      cutout: true,
+    }}
+  >
+    <p class="ph-hsn">
+      <span class="pill">{ui.common.hsn} {c.hsnRange}</span>
+      <span>{fmt(C.hsnMeta, { n: products.length })}</span>
+    </p>
+    <div class="ph-actions">
+      <a class="btn btn--light" href={lp('/contact/')}>{ui.common.requestQuote}</a>
+      <a class="link-arrow" href="#cat-products">{fmt(C.seeProducts, { n: products.length })} <span class="arr" aria-hidden="true">↓</span></a>
+    </div>
+  </PageHero>
+
+  <section class="wrap sec" id="cat-products" aria-labelledby="cat-products-h">
+    <div class="sec-head" data-reveal>
+      <div>
+        <h2 id="cat-products-h">{fmt(C.productsH, names)}</h2>
+        <p>{c.intro}</p>
+      </div>
+    </div>
+    <CardGrid products={products} />
+  </section>
+
+  {faqs.length > 0 && <AnswerWall faqs={faqs} heading={ui.common.straightAnswers} id="faq" />}
+
+  <QuoteCard heading={fmt(C.quoteH, names)} />
+</BaseLayout>

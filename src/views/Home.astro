@@ -1,0 +1,180 @@
+---
+import { categoryPicture } from '../lib/product-image';
+/**
+ * Home (Floria-style restyle; docs/superpowers/specs/2026-10-16-floria-restyle-direction.md).
+ * Dark hero with the live range → The Range → how export orders work → The Categories →
+ * Straight answers → statement → buyer guides → the quote card → footer.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/home.css';
+import HeroScene from '../components/HeroScene.astro';
+import ProductCard from '../components/ProductCard.astro';
+import { getProductsByCategory } from '../lib/products';
+import { faqJsonLd } from '../lib/seo';
+import { getHomeFaqs } from '../lib/faqs';
+import { getPosts } from '../lib/blog';
+import { useI18n } from '../i18n/page';
+import ProcessSteps from '../components/ProcessSteps.astro';
+import AnswerWall from '../components/AnswerWall.astro';
+import GuideRows from '../components/GuideRows.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+
+const { lang, info, ui, lp, fmt, lower } = useI18n(Astro.url);
+const h = ui.home;
+const homeFaqs = getHomeFaqs(lang);
+const groups = await getProductsByCategory(lang);
+const latestPosts = (await getPosts(lang)).slice(0, 3);
+const allProducts = groups.flatMap((g) => g.products);
+const total = allProducts.length;
+
+const rangeSlugs = ['dish-wash-liquid', 'fabric-softener', 'floor-cleaner'];
+const range = rangeSlugs
+  .map((s) => allProducts.find((p) => p.data.slug === s))
+  .filter((p): p is NonNullable<typeof p> => !!p);
+
+const steps = h.steps.map((s) => ({ name: s.name, text: fmt(s.text, ui.terms) }));
+
+/* The bento: bath soaps large, raw materials tall, the other three small. */
+const tileOrder = ['bath-personal-soaps', 'industrial-raw-materials', 'laundry-care', 'kitchen-care', 'surface-home-cleaners'];
+const tiles = tileOrder
+  .map((slug) => groups.find((g) => g.category.data.slug === slug))
+  .filter((g): g is NonNullable<typeof g> => !!g)
+  .map((g) => {
+    const slug = g.category.data.slug;
+    const size = slug === 'bath-personal-soaps' ? 'large' : slug === 'industrial-raw-materials' ? 'tall' : 'small';
+    const dims = size === 'large' ? [1440, 1200] : size === 'tall' ? [760, 1200] : [1000, 800];
+    const pic = categoryPicture(slug);
+    return { g, slug, size, w: dims[0], h: dims[1], pic };
+  });
+
+
+/* The statement band: what GoodBiz Hygiene commits to on every order. */
+const promises = h.promises;
+---
+
+<BaseLayout
+  title={h.title}
+  description={h.description}
+  path="/"
+  jsonLd={[faqJsonLd(homeFaqs, info.hreflang)]}
+  dark
+  preloadImage={{ href: '/images/renders/range-cutout.webp', srcset: '/images/renders/range-cutout-800.webp 800w, /images/renders/range-cutout.webp 1600w', sizes: '(max-width: 759px) 100vw, 62vw' }}
+>
+  <!-- 1. Hero -->
+  <section class="hero" aria-labelledby="hero-h">
+    <HeroScene />
+    <div class="wrap hero-copy">
+      <p class="hero-eyebrow"><!-- taste-skill-ignore: pill eyebrow allowed by the direction -->{h.eyebrow}</p>
+      <h1 id="hero-h" class="hero-h">
+        <span class="line"><span class="line-in">{h.h1a}</span></span>
+        <span class="line"><span class="line-in serif-i">{h.h1b}</span></span>
+      </h1>
+      <p class="hero-text">{h.text}</p>
+      <div class="hero-actions">
+        <a class="btn btn--light" href={lp('/products/')}>{ui.common.viewProducts}</a>
+        <a class="link-arrow hero-link" href={lp('/contact/')}>{ui.common.requestQuote} <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. The Range -->
+  <section class="wrap range" aria-labelledby="range-h">
+    <div class="range-head">
+      <div data-reveal>
+        <h2 id="range-h">{h.rangeH}</h2>
+        <p class="range-intro">{fmt(h.rangeIntro, { n: total })}</p>
+      </div>
+      <a class="range-all link-arrow" href={lp('/products/')} data-reveal style="--i: 1">
+        {fmt(h.rangeAll, { n: total })} <span class="arr" aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <ul class="range-cards">
+      {
+        range.map((p, i) => (
+          <li class={`range-card range-card--${i + 1}`} data-reveal style={`--i: ${i + 1}`}>
+            <ProductCard product={p} details={false} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- 3. How export orders work -->
+  <ProcessSteps
+    l1={h.processL1}
+    l2={h.processL2}
+    intro={h.processIntro}
+    steps={steps}
+    photo
+    link={{ href: lp('/export-process/'), label: ui.common.exportProcessFull }}
+  />
+
+  <!-- 4. The Categories -->
+  <section class="wrap cats" aria-labelledby="cats-h">
+    <div class="cats-head" data-reveal>
+      <h2 id="cats-h">{h.catsH}</h2>
+      <p>{h.catsText}</p>
+    </div>
+    <ul class="bento">
+      {
+        tiles.map(({ g, slug, size, w, h, pic }, i) => (
+          <li class={`tile tile--${size}`} data-reveal style={`--i: ${i % 3}`}>
+            <a class="tile-link" href={lp(`/categories/${slug}/`)}>
+              <img
+                class={pic.kind === 'photo' ? 'is-photo' : undefined}
+                src={pic.src}
+                srcset={pic.kind === 'photo' ? pic.srcset : undefined}
+                sizes={pic.kind === 'photo' ? '(max-width: 759px) 100vw, 60vw' : undefined}
+                width={pic.kind === 'photo' ? pic.width : w}
+                height={pic.kind === 'photo' ? pic.height : h}
+                alt={fmt(pic.kind === 'photo' ? ui.common.photoAlt : ui.common.categoryRenderAlt, { name: g.category.data.title, nameLower: lower(g.category.data.title) })}
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="tile-label">
+                <h3 class="tile-title">{g.category.data.title}</h3>
+                <span class="tile-meta">
+                  {fmt(ui.home.tileMeta, { n: g.products.length, hsn: g.category.data.hsnRange })}
+                </span>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- 5. Straight answers -->
+  <AnswerWall faqs={homeFaqs} more={{ href: lp('/faq/'), label: h.answersMore }} />
+
+  <!-- 6. Statement -->
+  <section class="statement" aria-labelledby="statement-h">
+    <img class="statement-plate" src="/images/found/neem-plate.webp" width="1100" height="682" alt="" loading="lazy" decoding="async" />
+    <div class="wrap statement-inner">
+      <svg class="statement-leaf" viewBox="0 0 48 48" aria-hidden="true" focusable="false" data-reveal>
+        <path d="M40 8C22 8 10 18 10 31c0 3 .7 5.6 2 8M40 8c0 17-9.5 29-24 29-1.5 0-2.8-.2-4-.5M40 8 15 34" />
+      </svg>
+      <h2 id="statement-h" class="statement-title" data-reveal style="--i: 1">
+        {h.statementA}
+        <em>{h.statementB}</em>
+      </h2>
+      <p class="statement-lead" data-reveal style="--i: 2">{h.statementLead}</p>
+      <ul class="promises">
+        {
+          promises.map((p, i) => (
+            <li class="promise" data-reveal style={`--i: ${i + 3}`}>
+              <h3>{p.title}</h3>
+              <p>{p.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7. Buyer guides -->
+  {latestPosts.length > 0 && <GuideRows posts={latestPosts} heading={h.guidesH} all />}
+
+  <!-- 8. The quote card: the one live thing -->
+  <QuoteCard />
+</BaseLayout>

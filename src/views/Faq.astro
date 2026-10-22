@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Faq from '../components/Faq.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+import { faqJsonLd } from '../lib/seo';
+import { getFaqGroups } from '../lib/faqs';
+import { useI18n } from '../i18n/page';
+
+const { lang, info, ui, lp } = useI18n(Astro.url);
+const F = ui.faqPage;
+const faqGroups = getFaqGroups(lang);
+const allFaqs = faqGroups.flatMap((g) => g.faqs);
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: ui.header.nav.faq, url: lp('/faq/') },
+];
+---
+
+<BaseLayout
+  title={F.title}
+  description={F.description}
+  path="/faq/"
+  breadcrumbs={breadcrumbs}
+  jsonLd={[faqJsonLd(allFaqs, info.hreflang)]}
+  dark
+>
+  <PageHero
+    breadcrumbs={breadcrumbs}
+    l1={F.l1}
+    l2={F.l2}
+    lead={F.lead}
+    media={{ src: '/images/found/neem-plate.webp', width: 1100, height: 682, alt: '', mode: 'plate' }}
+  />
+
+  {faqGroups.map((g) => <Faq faqs={g.faqs} heading={g.heading} id={g.id} split />)}
+
+  <QuoteCard heading={F.quoteH} text={F.quoteText} />
+</BaseLayout>

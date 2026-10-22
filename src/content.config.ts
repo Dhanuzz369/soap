@@ -56,4 +56,72 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { categories, products, blog };
+/*
+ * Translations (docs/i18n-translator-guide.md). One file per language and entry, mirroring the
+ * English file: src/content/i18n/<lang>/{products,categories,blog}/<slug>.md. Every field is
+ * optional here: a field that is missing falls back to the English value, and fixed fields
+ * (slug, category, order, hsn, related, image, gallery src, dates, relatedProducts) always come
+ * from the English file. `npm run i18n:check` reports missing and stale files.
+ * Entry ids are the path without ".md", e.g. "fr/products/dish-wash-liquid".
+ */
+const i18nId = ({ entry }: { entry: string }) => entry.replace(/\.md$/, '');
+const qa = z.array(z.object({ q: z.string(), a: z.string() }));
+const stamp = { sourceHash: z.string().optional() };
+
+const productsI18n = defineCollection({
+  loader: glob({ pattern: '*/products/*.md', base: './src/content/i18n', generateId: i18nId }),
+  schema: z.object({
+    ...stamp,
+    title: z.string().optional(),
+    slug: z.string().optional(),
+    category: z.string().optional(),
+    order: z.number().optional(),
+    hsn: z.string().optional(),
+    hsnNote: z.string().optional(),
+    metaTitle: z.string().optional(),
+    metaDescription: z.string().optional(),
+    answer: z.string().optional(),
+    variants: z.array(z.string()).optional(),
+    packSizes: z.array(z.string()).optional(),
+    packaging: z.array(z.string()).optional(),
+    specs: z.array(z.object({ label: z.string(), value: z.string() })).optional(),
+    moq: z.string().optional(),
+    privateLabel: z.object({ available: z.boolean().optional(), options: z.array(z.string()) }).optional(),
+    containerLoad: z.object({ ft20: z.string(), ft40: z.string() }).optional(),
+    uses: z.array(z.string()).optional(),
+    markets: z.array(z.string()).optional(),
+    faqs: qa.optional(),
+    related: z.array(z.string()).optional(),
+    image: z.string().optional(),
+    gallery: z.array(z.object({ src: z.string().optional(), alt: z.string(), caption: z.string() })).optional(),
+  }),
+});
+
+const categoriesI18n = defineCollection({
+  loader: glob({ pattern: '*/categories/*.md', base: './src/content/i18n', generateId: i18nId }),
+  schema: z.object({
+    ...stamp,
+    title: z.string().optional(),
+    slug: z.string().optional(),
+    order: z.number().optional(),
+    hsnRange: z.string().optional(),
+    summary: z.string().optional(),
+    intro: z.string().optional(),
+  }),
+});
+
+const blogI18n = defineCollection({
+  loader: glob({ pattern: '*/blog/*.md', base: './src/content/i18n', generateId: i18nId }),
+  schema: z.object({
+    ...stamp,
+    title: z.string().optional(),
+    description: z.string().optional(),
+    date: z.coerce.date().optional(),
+    updated: z.coerce.date().optional(),
+    tags: z.array(z.string()).optional(),
+    relatedProducts: z.array(z.string()).optional(),
+    faqs: qa.optional(),
+  }),
+});
+
+export const collections = { categories, products, blog, productsI18n, categoriesI18n, blogI18n };

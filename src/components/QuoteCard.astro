@@ -5,6 +5,7 @@
  * prefills itself (parseEnquiryParams in src/lib/enquiry.ts).
  */
 import Bubbles from './Bubbles.astro';
+import { useI18n } from '../i18n/page';
 
 interface Props {
   heading?: string;
@@ -14,13 +15,8 @@ interface Props {
   placeholder?: string;
   id?: string;
 }
-const {
-  heading = 'Request a quote.',
-  text = 'Tell us what you need in one line. The enquiry form opens with it written in, ready for your products, quantity and port.',
-  product,
-  placeholder = 'e.g. 1×20ft dish wash, lemon, 500 ml',
-  id = 'quote',
-} = Astro.props;
+const { ui, lp } = useI18n(Astro.url);
+const { heading = ui.quote.heading, text = ui.quote.text, product, placeholder = ui.quote.placeholder, id = 'quote' } = Astro.props;
 ---
 
 <section class="wrap quote" aria-labelledby={`${id}-h`}>
@@ -30,11 +26,11 @@ const {
     <div class="quote-inner">
       <h2 id={`${id}-h`}>{heading}</h2>
       <p>{text}</p>
-      <form class="quote-form" action="/contact/" method="get">
+      <form class="quote-form" action={lp('/contact/')} method="get">
         {product && <input type="hidden" name="product" value={product} />}
-        <label class="visually-hidden" for={`${id}-msg`}>What do you need?</label>
+        <label class="visually-hidden" for={`${id}-msg`}>{ui.quote.label}</label>
         <input id={`${id}-msg`} name="message" type="text" maxlength="500" autocomplete="off" placeholder={placeholder} required />
-        <button class="btn btn--light" type="submit">Start enquiry <span aria-hidden="true">→</span></button>
+        <button class="btn btn--light" type="submit">{ui.quote.submit} <span class="arr" aria-hidden="true">→</span></button>
       </form>
     </div>
   </div>

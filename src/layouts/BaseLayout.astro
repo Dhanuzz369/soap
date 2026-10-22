@@ -3,19 +3,26 @@ import '../styles/fonts.css';
 import '../styles/tokens.css';
 import '../styles/global.css';
 import '../styles/floria.css';
+import '../styles/i18n.css';
 import site from '../config/site';
 import { absoluteUrl, pageTitle, organizationJsonLd, websiteJsonLd, breadcrumbJsonLd } from '../lib/seo';
+import { LOCALES, LOCALE_CODES, DEFAULT_LOCALE, alternates, localizePath } from '../i18n/locales';
+import { pickLocale, isBot } from '../i18n/detect';
+import { useI18n } from '../i18n/page';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import WhatsAppFab from '../components/WhatsAppFab.astro';
+import LangSwitch from '../components/LangSwitch.astro';
 
 interface Props {
   title: string;
   description: string;
+  /** The page's ENGLISH (unprefixed) path, e.g. '/products/labsa/'. The layout localizes it. */
   path: string;
   ogImage?: string;
   jsonLd?: Record<string, unknown>[];
+  /** Breadcrumbs with names in the page's language and localized URLs. */
   breadcrumbs?: { name: string; url: string }[];
   /** Always noindex this page and leave out the canonical/hreflang links (e.g. the 404 page). */
   noindex?: boolean;
@@ -29,25 +36,41 @@ interface Props {
 }
 
 const { title, description, path, ogImage = '/og-default.png', jsonLd = [], breadcrumbs, noindex = false, dark = false, preloadImage } = Astro.props;
+const { lang, info, ui } = useI18n(Astro.url);
 
 const fullTitle = pageTitle(title);
-const canonical = absoluteUrl(path);
+const canonical = absoluteUrl(localizePath(path, lang));
+const alts = alternates(path).map((a) => ({ ...a, href: absoluteUrl(a.path) }));
 const ogUrl = absoluteUrl(ogImage);
 const schemas: Record<string, unknown>[] = [
-  organizationJsonLd(),
-  websiteJsonLd(),
+  organizationJsonLd(ui.meta.tagline),
+  websiteJsonLd({ url: absoluteUrl(localizePath('/', lang)), inLanguage: info.hreflang }),
   ...(breadcrumbs && breadcrumbs.length > 1 ? [breadcrumbJsonLd(breadcrumbs)] : []),
   ...jsonLd,
 ];
 // Escape "<" so JSON-LD can never close the script element early.
 const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
+
+// Auto-detect (English, unprefixed pages only; never the 404): send a first-time visitor whose
+// browser prefers a supported language to the same page in that language. Skipped for bots and
+// when the visitor has chosen a language in the menu (localStorage "gb-lang").
+const detect =
+  lang === DEFAULT_LOCALE && !noindex
+    ? `(function(){try{if(localStorage.getItem('gb-lang'))return}catch(e){return}` +
+      `var isBot=(${isBot.toString()});var pick=(${pickLocale.toString()});` +
+      `if(isBot(navigator.userAgent))return;` +
+      `var l=pick(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||''],${JSON.stringify(LOCALE_CODES)},'en');` +
+      `if(l!=='en')location.replace('/'+l+location.pathname+location.search+location.hash)})();`
+    : '';
+const ar = lang === 'ar';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={info.hreflang} dir={info.dir}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {detect && <script is:inline set:html={detect} />}
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     {(noindex || !site.launchReady) && <meta name="robots" content="noindex, nofollow" />}
@@ -55,8 +78,7 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
       !noindex && (
         <>
           <link rel="canonical" href={canonical} />
-          <link rel="alternate" hreflang="en" href={canonical} />
-          <link rel="alternate" hreflang="x-default" href={canonical} />
+          {alts.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
         </>
       )
     }
@@ -69,14 +91,24 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogUrl} />
-    <meta property="og:locale" content="en" />
+    <meta property="og:locale" content={info.og} />
+    {LOCALES.filter((l) => l.code !== lang).map((l) => <meta property="og:locale:alternate" content={l.og} />)}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogUrl} />
 
     <link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/newsreader-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin />
+    {
+      ar ? (
+        <>
+          <link rel="preload" href="/fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+          <link rel="preload" href="/fonts/ibm-plex-sans-arabic-arabic-600-normal.woff2" as="font" type="font/woff2" crossorigin />
+        </>
+      ) : (
+        lang !== 'zh' && <link rel="preload" href="/fonts/newsreader-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin />
+      )
+    }
     {
       preloadImage && (
         <link
@@ -95,7 +127,7 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
     <slot name="head" />
   </head>
   <body id="top" class:list={{ 'page-dark': dark }}>
-    <a class="skip" href="#main">Skip to content</a>
+    <a class="skip" href="#main">{ui.common.skip}</a>
     <Header path={path} tone={dark ? 'dark' : 'light'} />
     <main id="main">
       {!dark && breadcrumbs && breadcrumbs.length > 1 && (
@@ -105,6 +137,7 @@ const ld = (o: unknown) => JSON.stringify(o).replace(/</g, '\\u003c');
     </main>
     <Footer />
     <WhatsAppFab />
+    <LangSwitch path={path} homesOnly={noindex} />
     <script is:inline>
       // Scroll reveal: only blocks still below the fold are held back, so nothing on the first
       // screen flickers, and without JS (or with reduced motion) everything is simply visible.
