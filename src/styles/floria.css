@@ -1625,3 +1625,14 @@
     transform: translateY(-6vh) rotate(2deg) scale(0.97);
   }
 }
+
+/* Long words in any language (German compounds, document names in tables, long FAQ questions):
+   a grid or flex child may not grow past its column, so wide tables scroll in their own box. */
+.prose,
+.post-layout > * {
+  min-width: 0;
+}
+.faq-item summary > :not(.faq-sign) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}

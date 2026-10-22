@@ -104,7 +104,7 @@ describe('translation files', () => {
         const text = norm(JSON.stringify(t.data) + ' ' + t.body);
         if (text.includes('fob, cif')) expect(text, `use: "${terms.incoterms}"`).toContain(norm(terms.incoterms));
         // The lead-time figure: from the first digit to the first comma, e.g. "3 à 5 semaines après confirmation de la commande".
-        const figure = norm(terms.leadTime.split(',')[0]).replace(/^\D+/, '');
+        const figure = norm(terms.leadTime.split(/[,،，]/)[0]).replace(/^\D+/, '');
         const pattern = new RegExp(figure.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\d+/g, '\\d+'));
         if (pattern.test(text)) expect(text, `use: "${figure}"`).toContain(figure);
       });

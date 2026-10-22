@@ -280,3 +280,51 @@ html:lang(zh-Hans) :is(.serif-i, .statement-title em, .footer-tag) {
     display: none;
   }
 }
+
+/* Phones: a compact globe + language code, about the size of the WhatsApp button,
+   so the corner control covers as little of the page as possible. */
+.lang-code {
+  display: none;
+}
+@media (max-width: 559.98px) {
+  .lang-btn {
+    min-height: 48px;
+    gap: 6px;
+    padding-inline: 12px 14px;
+  }
+  .lang-current,
+  .lang-chev {
+    display: none;
+  }
+  .lang-code {
+    display: inline;
+    font-size: 0.875rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+/* Phones: the language control moves to the top corner, beside the menu button, and opens
+   downwards. The bottom of a phone screen stays clear for the page's own buttons and WhatsApp. */
+@media (max-width: 759.98px) {
+  .lang,
+  [dir='rtl'] .lang {
+    top: calc(max(16px, env(safe-area-inset-top)) + 2px);
+    bottom: auto;
+    inset-inline-start: auto;
+    inset-inline-end: calc(max(16px, env(safe-area-inset-right)) + 60px);
+  }
+  .lang-btn {
+    min-height: 44px;
+  }
+  .lang-panel {
+    top: calc(100% + 10px);
+    bottom: auto;
+    inset-inline-start: auto;
+    inset-inline-end: -60px;
+    max-height: calc(100svh - 100px);
+    transform-origin: top right;
+  }
+  [dir='rtl'] .lang-panel {
+    transform-origin: top left;
+  }
+}
