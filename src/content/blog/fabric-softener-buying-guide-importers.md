@@ -3,7 +3,7 @@ title: "Fabric Softener Buying Guide for Importers: Types, Fragrances and Pack S
 description: "What importers should know before buying fabric softener from India: regular vs concentrate, sensitive grades, fragrance choice, pack sizes and storage."
 date: 2026-09-17
 tags: ["fabric softener", "buying guide", "fragrance", "pack sizes"]
-relatedProducts: ["fabric-softener", "liquid-detergent", "fabric-whitener-stain-remover"]
+relatedProducts: ["fabric-softener", "liquid-detergent", "detergent-powder"]
 faqs:
   - q: "Should I stock regular or concentrated fabric softener?"
     a: "Many importers stock both. Regular grades suit price-led shelves and bulk buyers, while concentrates suit shoppers who value more washes per bottle and importers who want to save freight and shelf space."
@@ -76,7 +76,7 @@ Most bottles have a measuring cap, which helps customers dose correctly. For ret
 
 Softener is a fragrance-led category, so the first private-label decision is the scent and its strength. Next, choose whether to position the product as regular or concentrated. Colour is tinted to suit the fragrance, bottles come from available moulds and your label or sleeve carries the brand. A printed master carton completes the pack. A sample is approved before bulk production, and lead time is typically 3–5 weeks after order confirmation, depending on private-label requirements.
 
-If you are building a laundry family, a matching [liquid detergent](/products/liquid-detergent/) and a [fabric whitener and stain remover](/products/fabric-whitener-stain-remover/) can share the same label design.
+If you are building a laundry family, a matching [liquid detergent](/products/liquid-detergent/) and [detergent powder](/products/detergent-powder/) can share the same label design.
 
 ## What affects the cost
 

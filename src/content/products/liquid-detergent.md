@@ -76,7 +76,6 @@ faqs:
 related:
   - detergent-powder
   - fabric-softener
-  - fabric-whitener-stain-remover
   - sles
   - labsa
 ---

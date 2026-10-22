@@ -75,7 +75,7 @@ A sensible first order is rarely a single product. Consider a core item and one 
 
 1. An economy hand-wash powder in small and medium packs for price-led volume.
 2. A premium machine powder or a liquid in 1 L to 3 L bottles for the upgrade shopper.
-3. A fabric softener or stain remover to raise the sale per household, once the core range is moving.
+3. A fabric softener to raise the sale per household, once the core range is moving.
 
 Keep fragrance choices short at the start. Two or three well-chosen fragrances are easier to sell and to restock than a long list.
 

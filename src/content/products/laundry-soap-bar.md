@@ -77,7 +77,6 @@ related:
   - toilet-bath-soap
   - dish-wash-bar
   - soap-noodles
-  - fabric-whitener-stain-remover
 ---
 
 ## Product overview

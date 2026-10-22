@@ -86,7 +86,7 @@ Success means:
 9. Detergent Powder: 3402 50
 10. Liquid Detergent: 3402 50
 11. Fabric Softener / Conditioner: 3402 50 (often also classified 3809 91; note on page)
-12. Fabric Whitener / Stain Remover: 3402 50
+12. ~~Fabric Whitener / Stain Remover: 3402 50~~ (removed 2026-10-22 at the user's request)
 
 **C. Kitchen Care (HSN 3402)**
 13. Dish Wash Liquid / Gel: 3402 50

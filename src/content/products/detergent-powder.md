@@ -76,7 +76,6 @@ faqs:
 related:
   - liquid-detergent
   - laundry-soap-bar
-  - fabric-whitener-stain-remover
   - fabric-softener
   - labsa
 ---

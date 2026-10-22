@@ -76,7 +76,6 @@ faqs:
 related:
   - liquid-detergent
   - detergent-powder
-  - fabric-whitener-stain-remover
   - multi-surface-cleaner
   - laundry-soap-bar
 ---

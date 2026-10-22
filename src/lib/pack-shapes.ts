@@ -11,7 +11,6 @@ export type Shape =
 export const bySlug: Record<string, Shape> = {
   'dish-wash-liquid': 'squeeze',
   'herbal-phenol': 'squeeze',
-  'fabric-whitener-stain-remover': 'squeeze',
   'fabric-softener': 'jug',
   'liquid-detergent': 'jug',
   'floor-cleaner': 'jug',
