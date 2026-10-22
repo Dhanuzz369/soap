@@ -36,7 +36,7 @@ specs:
     value: "Yellow, green, purple, clear or custom to buyer shade"
   - label: "Shelf life"
     value: "Typical 24 months in sealed pack, stored away from heat and sunlight"
-moq: "Typically 1 x 20 ft container; mixed loads with other surface cleaners are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -68,7 +68,7 @@ faqs:
   - q: "Can the label carry my own brand and claims?"
     a: "Yes, private label is available. Any claims printed on the label must follow the rules of your market, and the specification sheet gives only typical values to help you word them accurately."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
 related:
   - glass-cleaner
   - floor-cleaner

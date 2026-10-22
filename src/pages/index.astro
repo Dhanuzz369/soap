@@ -58,6 +58,14 @@ const tiles = tileOrder
     return { g, slug, size, w: dims[0], h: dims[1], pic };
   });
 
+
+/* The statement band: what GoodBiz Hygiene commits to on every order. */
+const promises = [
+  { title: 'Vetted makers only', text: 'Each product comes from an Indian manufacturer we have checked for quality, consistency and export experience.' },
+  { title: 'Your sample, matched', text: 'The formula, fragrance and pack you approve is the one that ships, checked against your sample before loading.' },
+  { title: 'Paperwork done right', text: 'Invoice, packing list, certificate of origin, COA and MSDS prepared for every shipment, ready for your customs broker.' },
+  { title: 'One partner, port to port', text: 'One quotation and one point of contact from first sample to the bill of lading, across every product you order.' },
+];
 ---
 
 <BaseLayout
@@ -167,11 +175,24 @@ const tiles = tileOrder
       <svg class="statement-leaf" viewBox="0 0 48 48" aria-hidden="true" focusable="false" data-reveal>
         <path d="M40 8C22 8 10 18 10 31c0 3 .7 5.6 2 8M40 8c0 17-9.5 29-24 29-1.5 0-2.8-.2-4-.5M40 8 15 34" />
       </svg>
-      <h2 id="statement-h" data-reveal style="--i: 1">Never a generic supplier.</h2>
-      <p data-reveal style="--i: 2">
-        GoodBiz Hygiene does not manufacture. We match each brief to a vetted Indian maker, publish typical specifications, and confirm
-        every grade, pack and port in writing on the quote.
+      <h2 id="statement-h" class="statement-title" data-reveal style="--i: 1">
+        Sourced with care,
+        <em>shipped with confidence.</em>
+      </h2>
+      <p class="statement-lead" data-reveal style="--i: 2">
+        Every GoodBiz Hygiene order is matched to a vetted Indian manufacturer, checked against the sample you approved and shipped
+        with complete export paperwork. This is how we work on every order, whatever its size.
       </p>
+      <ul class="promises">
+        {
+          promises.map((p, i) => (
+            <li class="promise" data-reveal style={`--i: ${i + 3}`}>
+              <h3>{p.title}</h3>
+              <p>{p.text}</p>
+            </li>
+          ))
+        }
+      </ul>
     </div>
   </section>
 

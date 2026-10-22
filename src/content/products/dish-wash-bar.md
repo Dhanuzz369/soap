@@ -39,7 +39,7 @@ specs:
     value: "Typical 12-18%"
   - label: "Shelf life"
     value: "Typical 24 months in sealed pack, stored cool and dry"
-moq: "Typically 1 x 20 ft container; mixed loads with other dish wash or soap products are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -67,7 +67,7 @@ faqs:
   - q: "What bar sizes are most popular for export?"
     a: "Bars between 100 g and 250 g are the most common, and 200 g is a frequent middle choice. Tub packs with a scrub pad are usually 200 g to 300 g. The size to choose depends on the price point local shoppers expect."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, bar weights or other GoodBiz Hygiene products can often be arranged, though each private-label design may carry its own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several fragrances, bar weights or other GoodBiz Hygiene products can often be arranged, though each private-label design may carry its own minimum."
   - q: "Can I put my own brand on the bar?"
     a: "Yes. Private label is available, including your wrapper, carton or tub artwork, fragrance, colour and bar size. Artwork approval and a sample are completed before bulk production starts."
   - q: "Does the bar soften or crack in hot climates?"

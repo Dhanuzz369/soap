@@ -39,7 +39,7 @@ specs:
     value: "Typical 3,000-8,000 cP, depending on grade"
   - label: "Shelf life"
     value: "Typical 24 months in sealed pack"
-moq: "Typically 1 x 20 ft container; mixed fragrances and sizes in one load are possible."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -69,7 +69,7 @@ faqs:
   - q: "What fragrances are available?"
     a: "Ocean fresh, lavender, sandalwood, citrus, aloe and cucumber, charcoal and rose are common. Custom fragrance matching is possible within the manufacturer's range."
   - q: "What are the MOQ and lead time?"
-    a: "Typically one 20 ft container. Lead time is typically 3-5 weeks after order confirmation, depending on private-label requirements."
+    a: "There is no fixed minimum order; trial orders and part loads are quoted. Lead time is typically 3-5 weeks after order confirmation, depending on private-label requirements."
   - q: "Do you supply a COA and MSDS?"
     a: "A batch COA and a specification sheet can be supplied, and an MSDS is available on request. Documents needed by your importer registration are confirmed per order."
 related:

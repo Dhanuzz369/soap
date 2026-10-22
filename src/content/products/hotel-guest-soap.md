@@ -36,7 +36,7 @@ specs:
     value: "White or tinted to match brand colour"
   - label: "Shelf life"
     value: "Typical 24-36 months in sealed wrap"
-moq: "Typically 1 x 20 ft container for custom branded bars; smaller runs may be possible with stock designs."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -66,7 +66,7 @@ faqs:
   - q: "Can you supply other amenities with the soap?"
     a: "GoodBiz Hygiene can help source related amenities such as liquid hand wash, body wash and shower gel in small hotel bottles or sachets from the same Indian supplier network. Availability is confirmed per project."
   - q: "What is the MOQ for custom branding?"
-    a: "Typically one 20 ft container for custom-printed bars. Stock designs with a standard wrapper can sometimes be ordered in smaller lots."
+    a: "There is no fixed minimum order. Custom-printed bars may carry a minimum print run per design, and stock designs with a standard wrapper suit smaller lots."
   - q: "How is the soap protected during sea freight?"
     a: "Each bar is wrapped individually and packed in sealed master cartons. Cartons are palletised or floor-loaded to avoid crushing, and a loading plan can be arranged before shipment."
 related:

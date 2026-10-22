@@ -40,7 +40,7 @@ specs:
     value: "Yellow, green, orange or clear; custom to buyer shade"
   - label: "Shelf life"
     value: "Typical 24 months in sealed original pack, stored away from heat and direct sun"
-moq: "Typically 1 x 20 ft container; mixed loads with other kitchen care products are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -68,7 +68,7 @@ faqs:
   - q: "What active matter levels are available?"
     a: "Typical standard grades sit around 15-25% active detergent matter and concentrated grades around 25-30%. A higher level gives more washing power per millilitre, and the right choice depends on your price point and what local brands offer."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, pack sizes or other kitchen care items can often be arranged, though each private-label design may carry its own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several fragrances, pack sizes or other kitchen care items can often be arranged, though each private-label design may carry its own minimum."
   - q: "Can the product be supplied in bulk for re-packing?"
     a: "Yes. 20 L carboys, 50 L carboys and 200 L drums are available for buyers who fill their own bottles. Bulk liquid should be filled and shipped under agreed quality checks, and pack-out details are confirmed on the quotation."
   - q: "Which documents are provided with a shipment?"

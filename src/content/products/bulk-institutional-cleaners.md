@@ -35,7 +35,7 @@ specs:
     value: "Typical 1:10 to 1:100 depending on product and task"
   - label: "Shelf life"
     value: "Typical 12-24 months in sealed original packs"
-moq: "Typically 1 x 20 ft container; mixed loads of several products are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: false
   options: []

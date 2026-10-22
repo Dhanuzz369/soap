@@ -101,7 +101,7 @@ Phenol-type and disinfectant products both need clear handling instructions: kee
 
 ## How we work with buyers
 
-We help you shortlist, request specification sheets and test reports from the manufacturer, and prepare the shipping documents. Export terms are simple: FOB, CIF and CFR available; payment terms agreed per order (T/T or LC). Typical orders start from one 20 ft container, with mixed loads possible alongside other surface cleaners such as [toilet bowl cleaner](/products/toilet-bowl-cleaner/) or [multi-surface cleaner](/products/multi-surface-cleaner/), and smaller trial quantities can be discussed.
+We help you shortlist, request specification sheets and test reports from the manufacturer, and prepare the shipping documents. Export terms are simple: FOB, CIF and CFR available; payment terms agreed per order (T/T or LC). There is no fixed minimum order, and mixed loads are possible alongside other surface cleaners such as [toilet bowl cleaner](/products/toilet-bowl-cleaner/) or [multi-surface cleaner](/products/multi-surface-cleaner/), and smaller trial quantities can be discussed.
 
 ## Key takeaways
 

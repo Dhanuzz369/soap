@@ -34,7 +34,7 @@ specs:
     value: "Typical 1.5% max on 28% grade"
   - label: "Moles of ethoxylation"
     value: "1, 2 or 3 EO by agreement"
-moq: "Typically 1 x 20 ft container (drums or flexitank). Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: false
   options: []

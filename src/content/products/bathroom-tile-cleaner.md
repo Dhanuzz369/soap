@@ -36,7 +36,7 @@ specs:
     value: "Blue, green, pink, yellow or custom to buyer shade"
   - label: "Shelf life"
     value: "Typical 24 months in sealed pack, stored away from heat and sunlight"
-moq: "Typically 1 x 20 ft container; mixed loads with other surface cleaners are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -66,7 +66,7 @@ faqs:
   - q: "Can you supply a heavy-duty descaler grade?"
     a: "Yes. A stronger descaler grade is available for markets with very hard water or for institutional use. It carries a lower pH and needs matching hazard wording on the label, which we help to prepare for private-label orders."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
 related:
   - toilet-bowl-cleaner
   - glass-cleaner

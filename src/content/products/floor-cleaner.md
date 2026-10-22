@@ -38,7 +38,7 @@ specs:
     value: "Typical 1 capful to 1-2 L of water; concentrate grades dilute further"
   - label: "Shelf life"
     value: "Typical 24 months in sealed pack, stored away from heat and sunlight"
-moq: "Typically 1 x 20 ft container; mixed loads with other surface cleaners are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -68,7 +68,7 @@ faqs:
   - q: "Can I choose between economy and concentrated grades?"
     a: "Yes. Economy grades carry lower active matter and are used at a stronger dilution rate, while concentrated grades cost more per bottle but dilute further. The grade is agreed against your price point before production."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
   - q: "How is floor cleaner packed for sea freight?"
     a: "Bottles are capped, induction-sealed where specified, and packed in shrink-wrapped cartons. Cans are palletised and stretch-wrapped. A loading plan can be arranged on request so you can see the carton count per container."
 related:

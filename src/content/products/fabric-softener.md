@@ -40,7 +40,7 @@ specs:
     value: "Blue, pink, purple, green or white; custom on request"
   - label: "Shelf life"
     value: "Typical 12-18 months in sealed container"
-moq: "Typically 1 x 20 ft container; mixed loads of several sizes and fragrances are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -70,7 +70,7 @@ faqs:
   - q: "Can the softener be used in the machine and by hand?"
     a: "Yes. It is added to the final rinse, either in the machine's softener drawer or into the rinse water for hand washing. It should not be poured directly onto dry clothes, as this can cause staining."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Sizes, fragrances and other laundry products can often be mixed in one load, though each private-label design may carry its own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Sizes, fragrances and other laundry products can often be mixed in one load, though each private-label design may carry its own minimum."
   - q: "How should softener be stored?"
     a: "Keep it sealed, away from direct sun and at moderate temperatures. Cationic liquids can thicken or separate if frozen or overheated, so tell us about your storage conditions when ordering."
 related:

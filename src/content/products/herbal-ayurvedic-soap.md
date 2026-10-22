@@ -36,7 +36,7 @@ specs:
     value: "Plant extracts or powders added at low percentage; declared per formulation"
   - label: "Shelf life"
     value: "Typical 24-36 months in sealed pack"
-moq: "Typically 1 x 20 ft container; mixed herbal variants within one load are possible."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -66,7 +66,7 @@ faqs:
   - q: "Can the ingredient panel be printed in my language?"
     a: "Yes, on private-label cartons. You supply the translated text and regulatory wording required in your market, and artwork is proofed before production."
   - q: "What is the MOQ and can I mix variants?"
-    a: "The typical MOQ is one 20 ft container. Several herbal variants can be combined in one load, though each design has its own minimum run, which is confirmed on quotation."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Several herbal variants can be combined in one load, though each design has its own minimum run, which is confirmed on quotation."
   - q: "Do you provide a COA and MSDS?"
     a: "A batch certificate of analysis and a specification sheet can be provided, and an MSDS is available on request. Documentation needed by your customs or importer registration is confirmed per order."
 related:

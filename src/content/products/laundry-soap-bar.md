@@ -39,7 +39,7 @@ specs:
     value: "Blue, white, yellow or custom shade"
   - label: "Shelf life"
     value: "Typical 24 months in sealed wrap, stored cool and dry"
-moq: "Typically 1 x 20 ft container; mixed loads of different bar weights and colours are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -67,7 +67,7 @@ faqs:
   - q: "Which colours and bar sizes are available?"
     a: "Blue, white and yellow are the usual colours, and custom shades can be matched. Typical bar weights run from 100 g to 250 g, with twin packs also possible. Available shapes depend on the moulds of the manufacturer chosen for your order."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several bar weights or other GoodBiz Hygiene laundry products can often be arranged, though each private-label design may carry its own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several bar weights or other GoodBiz Hygiene laundry products can often be arranged, though each private-label design may carry its own minimum."
   - q: "Can the bars be supplied under my own brand?"
     a: "Yes. Private label is available, including wrapper artwork, bar weight, colour and an embossed logo where the manufacturer can cut a die. A pre-production sample is approved before bulk production starts."
   - q: "How should the bars be stored during shipping and in the warehouse?"

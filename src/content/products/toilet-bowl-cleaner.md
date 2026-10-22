@@ -35,7 +35,7 @@ specs:
     value: "Thickened to cling to the bowl, typical thick liquid"
   - label: "Shelf life"
     value: "Typical 24 months in sealed pack, stored upright away from heat"
-moq: "Typically 1 x 20 ft container; mixed loads with other surface cleaners are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -67,7 +67,7 @@ faqs:
   - q: "Is the product safe to ship by sea?"
     a: "Acidic cleaners may be treated as dangerous goods depending on strength and quantity. The manufacturer shares the SDS, and shipping classification is confirmed per order before booking so that documents and labelling are correct."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
 related:
   - bathroom-tile-cleaner
   - herbal-phenol

@@ -40,7 +40,7 @@ specs:
     value: "Blue, green, pink, purple or clear; custom on request"
   - label: "Shelf life"
     value: "Typical 18-24 months in sealed container"
-moq: "Typically 1 x 20 ft container; mixed loads of several sizes and fragrances are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -68,7 +68,7 @@ faqs:
   - q: "What pack sizes and containers are available?"
     a: "Retail sizes run from 500 ml to 5 L in PET or HDPE bottles, with pouch refills as a lower-cost option. Larger 20 L jerrycans, 200 L drums and 1,000 L IBCs suit distributors who re-pack locally."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Different sizes, fragrances and other GoodBiz Hygiene laundry products can often be combined in a mixed load, though each private-label design may carry its own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Different sizes, fragrances and other GoodBiz Hygiene laundry products can often be combined in a mixed load, though each private-label design may carry its own minimum."
   - q: "Does liquid detergent leak or freeze in transit?"
     a: "Leak risk is managed with induction-sealed caps, tested closures and sturdy cartons. Liquids can thicken or separate at low temperatures, so tell us if your route or storage involves freezing conditions."
   - q: "Can I choose my own fragrance and colour?"

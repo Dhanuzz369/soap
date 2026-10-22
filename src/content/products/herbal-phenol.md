@@ -37,7 +37,7 @@ specs:
     value: "Typical 1 part to 20-50 parts water, depending on grade"
   - label: "Shelf life"
     value: "Typical 24 months in sealed pack, stored away from heat and sunlight"
-moq: "Typically 1 x 20 ft container; mixed loads with other floor and surface cleaners are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -69,7 +69,7 @@ faqs:
   - q: "Do you make disinfection claims for the product?"
     a: "Performance varies by formulation and dilution, so typical figures are given on the specification sheet only. Any claim on your label must follow the rules of your own market, and test reports can be requested from the manufacturer where available."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several fragrances, pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
 related:
   - floor-cleaner
   - bathroom-tile-cleaner

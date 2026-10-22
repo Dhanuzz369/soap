@@ -34,7 +34,7 @@ specs:
     value: "Typical 0.1% max"
   - label: "Sodium chloride"
     value: "Typical 0.5% max"
-moq: "Typically 1 x 20 ft container. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: false
   options: []

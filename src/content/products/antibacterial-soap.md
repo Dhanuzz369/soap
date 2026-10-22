@@ -35,7 +35,7 @@ specs:
     value: "Type and percentage declared per formulation and market regulation"
   - label: "Shelf life"
     value: "Typical 24-36 months in sealed pack"
-moq: "Typically 1 x 20 ft container; mixed variants with other soaps are possible."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -62,7 +62,7 @@ faqs:
   - q: "Can the carton make a germ-kill claim?"
     a: "Claim wording must match both the formula and your local regulator. We do not supply lab claims we cannot document, so please share the wording you need and we will check what the manufacturer can support with test data."
   - q: "What is the MOQ?"
-    a: "Typically one 20 ft container. Mixed loads that include other bath soaps are possible, with a minimum run per design."
+    a: "There is no fixed minimum order. Mixed loads that include other bath soaps are possible, with a minimum run per design."
   - q: "Do you provide product registration support?"
     a: "We can supply specifications, ingredient lists, a COA and an MSDS on request. Registration with your local authority remains your responsibility, and we confirm which documents the manufacturer can provide."
   - q: "Is private label available?"

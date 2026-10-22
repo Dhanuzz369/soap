@@ -110,7 +110,7 @@ Bath soap in bars is normally classified under HSN 3401 11 at six digits, and th
 
 ## How we work with buyers
 
-We ask for your target market, preferred bar weight, grade and pack format, then request specifications and samples from vetted manufacturers. Export terms are straightforward: FOB, CIF and CFR available; payment terms agreed per order (T/T or LC). Typical orders start from one 20 ft container, with mixed loads of several soaps possible and smaller trial quantities available for discussion. Private label is available, including wrapper design, fragrance, colour and bar shape within the manufacturer's capabilities.
+We ask for your target market, preferred bar weight, grade and pack format, then request specifications and samples from vetted manufacturers. Export terms are straightforward: FOB, CIF and CFR available; payment terms agreed per order (T/T or LC). There is no fixed minimum order: mixed loads of several soaps and smaller trial quantities are both quoted. Private label is available, including wrapper design, fragrance, colour and bar shape within the manufacturer's capabilities.
 
 ## Key takeaways
 

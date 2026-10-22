@@ -37,7 +37,7 @@ specs:
     value: "White, pink, cream, green or custom to buyer shade"
   - label: "Shelf life"
     value: "Typical 24-36 months in sealed pack, stored cool and dry"
-moq: "Typically 1 x 20 ft container; mixed loads with other soaps are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -63,7 +63,7 @@ faqs:
   - q: "What TFM grades of toilet soap can you supply?"
     a: "Typical grades follow the reference tiers: 76% TFM or more for Grade 1 (premium), 70% or more for Grade 2 and 60% or more for Grade 3 (economy). The final grade, fragrance and bar weight are agreed with the manufacturer against your price point and market preferences before the order is confirmed."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several fragrances, bar weights or other GoodBiz Hygiene products can often be arranged, though each private-label design may carry its own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several fragrances, bar weights or other GoodBiz Hygiene products can often be arranged, though each private-label design may carry its own minimum."
   - q: "Can I put my own brand on the soap?"
     a: "Yes. Private label is available, including your wrapper or carton artwork, fragrance, colour and bar size. Artwork approval and sample production are completed before bulk production starts."
   - q: "Which documents are provided with a shipment?"

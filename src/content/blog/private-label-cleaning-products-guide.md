@@ -100,7 +100,7 @@ Label rules differ widely between countries, and responsibility normally sits wi
 
 ## Step 8: Plan the first order
 
-A first order has two goals: to stock your channel and to test the market without tying up too much cash. Many distributors choose a mixed container, with several products and two or three fragrances, rather than a full load of one item. The usual minimum is one 20 ft container, and smaller trial quantities can be discussed. Each product page lists indicative container loads, which we confirm against your chosen packs.
+A first order has two goals: to stock your channel and to test the market without tying up too much cash. Many distributors choose a mixed container, with several products and two or three fragrances, rather than a full load of one item. There is no fixed minimum, so trial quantities and part loads can be quoted. Each product page lists indicative container loads, which we confirm against your chosen packs.
 
 Think about carton weight as well as size. Liquids are heavy, so payload may limit a container before the space is full. Sturdier cartons are worth the small extra cost on long voyages or in humid ports.
 

@@ -40,7 +40,7 @@ specs:
     value: "Typical 5-10%"
   - label: "Shelf life"
     value: "Typical 24 months in sealed, moisture-proof pack"
-moq: "Typically 1 x 20 ft container; mixed loads of several pack sizes and fragrances are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -70,7 +70,7 @@ faqs:
   - q: "Can powder be supplied in sachets?"
     a: "Yes, small sachets of around 20 g to 100 g are possible and are popular in price-sensitive markets. Sachet lines usually need their own minimum quantity and a roll-stock film, so confirm the format early."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Several pack sizes and fragrances can often be mixed in one load, though each private-label design may carry its own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Several pack sizes and fragrances can often be mixed in one load, though each private-label design may carry its own minimum."
   - q: "How is the powder protected from moisture on a long sea voyage?"
     a: "Packs use laminated film or lined sacks, and containers are loaded with dry cartons and sealed. Moisture-absorbing desiccant can be added on request for long transit routes or humid destination ports."
 related:

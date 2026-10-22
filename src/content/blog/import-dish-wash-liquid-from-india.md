@@ -6,7 +6,7 @@ tags: ["dish wash liquid", "importing", "MOQ", "shipping"]
 relatedProducts: ["dish-wash-liquid", "dish-wash-bar", "floor-cleaner"]
 faqs:
   - q: "What is the typical MOQ for dish wash liquid from India?"
-    a: "Typically one 20 ft container, although mixed loads with other kitchen care products are possible and smaller trial quantities can be discussed. The exact minimum depends on the manufacturer and on whether you want private label."
+    a: "There is no fixed minimum order. Mixed loads with other kitchen care products are possible and smaller trial quantities can be discussed. The exact minimum depends on the manufacturer and on whether you want private label."
   - q: "Which Incoterms and payment terms are available?"
     a: "FOB, CIF and CFR available; payment terms agreed per order (T/T or LC)."
   - q: "How long does an order take?"
@@ -50,7 +50,7 @@ When you compare suppliers, compare like with like: the same fragrance, active m
 
 ## MOQ and container loading
 
-Minimum order quantity for dish wash liquid is typically one 20 ft container, with mixed loads alongside other kitchen care products possible and smaller trial quantities open to discussion. Because liquids are heavy, a full container of retail bottles is a large number of cartons.
+There is no fixed minimum order quantity for dish wash liquid: trial orders, part loads and mixed containers with other kitchen care products are all quoted. Because liquids are heavy, a full container of retail bottles is a large number of cartons.
 
 As an indication only, our product page notes that a 20 ft container might hold roughly 1,800 to 2,200 cartons of 12 x 500 ml bottles, and a 40 ft roughly 3,800 to 4,400. The real count varies with the bottle shape and the carton size, so we confirm it against your chosen pack.
 

@@ -35,7 +35,7 @@ specs:
     value: "Low foam, designed to wipe off without residue"
   - label: "Shelf life"
     value: "Typical 24 months in sealed pack, stored away from heat and sunlight"
-moq: "Typically 1 x 20 ft container; mixed loads with other surface cleaners are possible. Smaller trial quantities can be discussed."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -65,7 +65,7 @@ faqs:
   - q: "Can you supply refill packs without the trigger sprayer?"
     a: "Yes. Refill bottles, pouches and 5 L or 20 L cans are available for retail refill and institutional buyers. This reduces freight cost per litre and can be combined with spray bottles in the same container."
   - q: "What is the minimum order quantity?"
-    a: "The usual MOQ is one 20 ft container. Mixed loads that combine several pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
+    a: "There is no fixed minimum order: trial orders and part loads are quoted per order. Mixed loads that combine several pack sizes or other GoodBiz Hygiene cleaners can often be arranged, though private-label designs may carry their own minimum."
 related:
   - multi-surface-cleaner
   - floor-cleaner

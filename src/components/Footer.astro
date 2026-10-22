@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import site from '../config/site';
 import { buildWhatsAppUrl } from '../lib/enquiry';
-import { foundPictures } from '../data/found-pictures';
 
 const categories = (await getCollection('categories')).sort((a, b) => a.data.order - b.data.order);
 const company = [
@@ -59,18 +58,6 @@ const tel = site.contact.phone.replace(/[^+\d]/g, '');
       </nav>
     </div>
 
-    <p class="footer-credits">
-      Pictures from open collections, showing the world around our trade, not our own premises or products:{' '}
-      {
-        foundPictures.map((p, i) => (
-          <>
-            <a href={p.page} rel="noopener">“{p.title}”</a> by {p.creator}, <a href={p.licenseUrl} rel="noopener">{p.license}</a>, via {p.via}
-            {i < foundPictures.length - 1 ? '; ' : '. '}
-          </>
-        ))
-      }
-      Pack pictures are studio illustrations of typical export packs, not product photographs.
-    </p>
 
     <div class="footer-legal">
       <p>© {year} {site.name}, a {site.parentName} company. Merchant exporter from India.</p>

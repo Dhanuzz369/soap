@@ -35,7 +35,7 @@ specs:
     value: "Typical 9.0-10.0"
   - label: "Shelf life"
     value: "Typical 24 months, sealed in shrink wrap"
-moq: "Typically 1 x 20 ft container; mixed fragrance loads are possible within a single design family."
+moq: "No fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order."
 privateLabel:
   available: true
   options:
@@ -64,7 +64,7 @@ faqs:
   - q: "What fragrances and colours can I choose?"
     a: "Aloe, honey, rose, lemon and cucumber, sandalwood and sea mineral are common. Colour is chosen to suit the fragrance and your brand. Final options depend on the manufacturer's current range."
   - q: "What is the minimum order?"
-    a: "Typically one 20 ft container. Several fragrances can be combined in one load, subject to a minimum run per design."
+    a: "There is no fixed minimum order. Several fragrances can be combined in one load, subject to a minimum run per design."
   - q: "Is a sample available before ordering?"
     a: "Samples can be arranged. Courier cost is usually charged to the buyer, and private-label samples are produced against your approved artwork."
 related:
