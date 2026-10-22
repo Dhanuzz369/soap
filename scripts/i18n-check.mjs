@@ -75,7 +75,7 @@ for (const lang of targets) {
       const translatable = Object.keys(en.data).filter((k) => !FIXED_FIELDS[coll].includes(k));
       const lost = translatable.filter((k) => tr.data[k] === undefined || tr.data[k] === '');
       if (lost.length) fieldIssues.push(`${name}: missing fields ${lost.join(', ')} (English is shown)`);
-      if (!tr.content.trim()) fieldIssues.push(`${name}: the body (text below the second ---) is empty`);
+      if (en.content.trim() && !tr.content.trim()) fieldIssues.push(`${name}: the body (text below the second ---) is empty`);
       for (const k of FIXED_FIELDS[coll]) {
         if (tr.data[k] !== undefined && !same(tr.data[k], en.data[k]) && !(tr.data[k] instanceof Date && en.data[k] instanceof Date && +tr.data[k] === +en.data[k])) {
           fieldIssues.push(`${name}: "${k}" must stay exactly as in English (${JSON.stringify(en.data[k])}); the English value is used`);
