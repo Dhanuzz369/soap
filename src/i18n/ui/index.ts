@@ -63,7 +63,7 @@ export function fmt(template: string, vars: Record<string, string | number | und
 export function missingKeys(base: unknown, dict: unknown, prefix = ''): string[] {
   if (typeof base === 'string') return typeof dict === 'string' && dict.trim() !== '' ? [] : [prefix];
   if (Array.isArray(base)) {
-    if (!Array.isArray(dict)) return [prefix];
+    if (!Array.isArray(dict)) return base.flatMap((b, i) => missingKeys(b, undefined, `${prefix}[${i}]`));
     if (dict.length !== base.length) return [`${prefix} (needs ${base.length} items, has ${dict.length})`];
     return base.flatMap((b, i) => missingKeys(b, dict[i], `${prefix}[${i}]`));
   }

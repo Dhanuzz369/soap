@@ -4,7 +4,7 @@ import PageHero, { type HeroMedia } from '../components/PageHero.astro';
 import CardGrid from '../components/CardGrid.astro';
 import Faq from '../components/Faq.astro';
 import QuoteCard from '../components/QuoteCard.astro';
-import { render } from 'astro:content';
+import EntryBody from '../components/EntryBody.astro';
 import { readingMinutes, fmtDate, type BlogEntry } from '../lib/blog';
 import type { ProductEntry } from '../lib/products';
 import { useI18n } from '../i18n/page';
@@ -22,7 +22,6 @@ const { lang, info, ui, lp, fmt, lower } = useI18n(Astro.url);
 const d = post.data;
 const path = `/blog/${post.id}/`;
 const url = lp(path);
-const { Content } = await render(post.source);
 const faqs = d.faqs ?? [];
 const iso = d.date.toISOString().slice(0, 10);
 // "{date} · {minutes} · GoodBiz Hygiene": the date is a <time> element, the rest is text around it.
@@ -74,7 +73,7 @@ const media: HeroMedia | undefined =
 
   <div class="wrap sec post-layout">
     <article class="prose post-body">
-      <Content />
+      <EntryBody entry={post} />
     </article>
   </div>
 

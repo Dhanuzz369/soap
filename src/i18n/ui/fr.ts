@@ -1,15 +1,509 @@
 /**
- * French UI strings. NOT TRANSLATED YET: every key falls back to English.
- *
- * To translate: copy the body of src/i18n/ui/fr.ts (same keys) and translate from
- * src/i18n/ui/en.ts, following docs/i18n-translator-guide.md. Then run
- * `npm run i18n:stamp -- src/i18n/ui/fr.ts` and `npm run i18n:check -- --lang fr`.
+ * French UI strings (the reference translation: other languages copy this file's shape).
+ * Source: src/i18n/ui/en.ts. Rules: docs/i18n-translator-guide.md.
+ * French typography: a non-breaking space (U+00A0) before : ; ? ! and inside « ».
  */
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '';
+export const sourceHash = '1e31c873b185';
 
-const fr: UiPartial = {};
+const fr: UiPartial = {
+  meta: {
+    tagline: 'Savons et produits d’entretien, exportés depuis l’Inde',
+  },
+
+  terms: {
+    incoterms: 'FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC)',
+    payment: 'Convenues à chaque commande (T/T ou LC)',
+    port: 'Expédition depuis les principaux ports indiens',
+    leadTime: 'Généralement 3 à 5 semaines après confirmation de la commande, selon les exigences de marque de distributeur',
+  },
+
+  common: {
+    skip: 'Aller au contenu',
+    home: 'Accueil',
+    products: 'Produits',
+    blog: 'Guides',
+    breadcrumb: 'Fil d’Ariane',
+    requestQuote: 'Demander un devis',
+    viewProducts: 'Voir les produits',
+    exporterLine: 'Exportateur et fournisseur depuis l’Inde',
+    hsn: 'HSN',
+    hsnTitle: 'Système harmonisé de désignation et de codification des marchandises',
+    allProducts: 'Tous les produits',
+    allGuides: 'Tous les guides',
+    productsCount: '{n} produits',
+    minRead: '{n} min de lecture',
+    readFaq: 'Lire la FAQ',
+    straightAnswers: 'Réponses claires.',
+    buyerFaq: 'FAQ acheteurs',
+    faqDefault: 'Les questions des acheteurs',
+    exportProcessFull: 'Le processus d’export en détail',
+    renderAlt: 'Illustration de {nameLower} dans un conditionnement export type',
+    drawingAlt: 'Illustration de {nameLower}',
+    photoAlt: '{name} par GoodBiz',
+    categoryRenderAlt: 'Illustration de conditionnements types : {nameLower}',
+    rangeAlt: 'Illustration de la gamme GoodBiz Hygiene dans des conditionnements export types',
+    heroAlt:
+      'Illustration de la gamme GoodBiz Hygiene dans des conditionnements export types : un flacon de liquide vaisselle, un bidon d’assouplissant, un pulvérisateur de nettoyant, un flacon pompe de savon pour les mains, un sachet de lessive, un fût de matière première, un jerrican et des pains de savon',
+    portAlt: 'Portiques chargeant un porte-conteneurs de nuit au terminal international de transbordement de conteneurs de Kochi, en Inde',
+    portCaption: 'Terminal à conteneurs, Kochi. Photo : {creator}, {license}.',
+    specCaption: 'Spécifications types. Les valeurs définitives sont confirmées à chaque commande.',
+  },
+
+  header: {
+    homeAria: '{name}, accueil',
+    menu: 'Menu',
+    mainNav: 'Navigation principale',
+    mainNavMobile: 'Navigation principale (mobile)',
+    nav: {
+      products: 'Produits',
+      privateLabel: 'Marque de distributeur',
+      exportProcess: 'Processus d’export',
+      guides: 'Guides acheteurs',
+      about: 'À propos',
+      faq: 'FAQ',
+    },
+  },
+
+  footer: {
+    tag: 'Propre, depuis l’Inde',
+    lede: 'Savons et produits d’entretien sélectionnés auprès de fabricants indiens contrôlés et exportés par GoodBiz Hygiene, une société du groupe {parent}.',
+    nav: 'Pied de page',
+    products: 'Produits',
+    company: 'Société',
+    contact: 'Contact',
+    whatsapp: 'WhatsApp',
+    legal: '© {year} {name}, une société du groupe {parent}. Exportateur négociant depuis l’Inde.',
+    backToTop: 'Haut de page',
+  },
+
+  lang: {
+    label: 'Langue',
+    menuAria: 'Choisir une langue. Langue actuelle : {name}',
+    more: 'Autres langues…',
+    moreTitle: 'Ouvre cette page dans Google Traduction (traduction automatique)',
+  },
+
+  whatsapp: {
+    aria: 'Discuter avec GoodBiz Hygiene sur WhatsApp',
+    label: 'WhatsApp',
+  },
+
+  cards: {
+    addToEnquiry: 'Ajouter à la demande',
+    addAria: 'Ajouter à la demande : {name}',
+    noteH: 'Regroupez-les dans un seul conteneur.',
+    noteText: 'Combinez ces produits avec ceux d’autres gammes dans un même conteneur de 20 ou 40 pieds. Nous confirmons la composition dans le devis.',
+  },
+
+  quote: {
+    heading: 'Demander un devis.',
+    text: 'Décrivez votre besoin en une ligne. Le formulaire de demande s’ouvre avec votre texte, prêt à compléter avec vos produits, quantités et port.',
+    placeholder: 'ex. 1×20 pieds liquide vaisselle, citron, 500 ml',
+    label: 'De quoi avez-vous besoin ?',
+    submit: 'Lancer la demande',
+  },
+
+  ld: {
+    hsnCode: 'Code HSN',
+    variants: 'Variantes',
+    packSizes: 'Contenances',
+  },
+
+  home: {
+    title: 'Savons et produits d’entretien : exportateur et fournisseur depuis l’Inde',
+    description:
+      'GoodBiz Hygiene, société du groupe GoodBiz Global, exporte savons, lessives et produits d’entretien de fabricants indiens contrôlés, en marque de distributeur.',
+    eyebrow: 'Savons · Lessives · Entretien',
+    h1a: 'Savons et entretien',
+    h1b: 'Exportés depuis l’Inde.',
+    text: 'GoodBiz Hygiene est un exportateur négociant : nous sélectionnons savons, lessives et nettoyants auprès de fabricants indiens contrôlés, en marque de distributeur et en conteneurs mixtes.',
+    rangeH: 'La gamme.',
+    rangeIntro:
+      'Trois produits sur {n}. Chacun a sa propre page avec ses spécifications types, ses contenances et ses options de marque de distributeur.',
+    rangeAll: 'Voir les {n} produits',
+    processL1: 'Comment se déroule',
+    processL2: 'une commande export.',
+    processIntro:
+      'Un seul exportateur négociant entre vous et le fabricant : le devis, les échantillons, les documents et l’expédition, du premier message jusqu’au connaissement.',
+    steps: [
+      {
+        name: 'Spécifications et échantillons',
+        text: 'Indiquez les produits, les contenances, la quantité et le port de destination. Nous chiffrons le prix par unité avec les spécifications types et les délais, et organisons l’envoi d’échantillons pour validation.',
+      },
+      {
+        name: 'Sourcing et marque de distributeur',
+        text: 'Nous confions votre cahier des charges à un fabricant indien contrôlé. En marque de distributeur, vos maquettes, parfums et conditionnements sont validés avant la production en série.',
+      },
+      {
+        name: 'Documents et expédition',
+        text: 'Le fabricant produit et conditionne la commande pendant que nous préparons la facture, la liste de colisage, le certificat d’origine, le COA et la FDS (MSDS). {port}. {leadTime}.',
+      },
+    ],
+    catsH: 'Les catégories.',
+    catsText: 'Cinq gammes relevant des codes HSN 3401 et 3402. Regroupez-les dans un même conteneur de 20 ou 40 pieds.',
+    tileMeta: '{n} produits · HSN {hsn}',
+    answersMore: 'Plus de réponses dans la FAQ',
+    statementA: 'Sélectionnés avec soin,',
+    statementB: 'expédiés en confiance.',
+    statementLead:
+      'Chaque commande GoodBiz Hygiene est confiée à un fabricant indien contrôlé, vérifiée par rapport à l’échantillon que vous avez validé et expédiée avec un dossier export complet. C’est ainsi que nous travaillons sur chaque commande, quelle que soit sa taille.',
+    promises: [
+      { title: 'Uniquement des fabricants contrôlés', text: 'Chaque produit provient d’un fabricant indien dont nous avons vérifié la qualité, la régularité et l’expérience à l’export.' },
+      { title: 'Votre échantillon, respecté', text: 'La formule, le parfum et le conditionnement que vous validez sont ceux qui partent, contrôlés par rapport à votre échantillon avant chargement.' },
+      { title: 'Des documents en règle', text: 'Facture, liste de colisage, certificat d’origine, COA et FDS préparés pour chaque expédition, prêts pour votre transitaire en douane.' },
+      { title: 'Un seul partenaire, de port à port', text: 'Un seul devis et un seul interlocuteur, du premier échantillon jusqu’au connaissement, pour tous les produits que vous commandez.' },
+    ],
+    guidesH: 'Guides acheteurs',
+  },
+
+  productsIndex: {
+    title: 'Savons, lessives et produits d’entretien : exportateur et fournisseur depuis l’Inde',
+    description:
+      'Découvrez {n} savons, lessives, produits vaisselle, nettoyants et matières premières de fabricants indiens contrôlés, avec codes HSN et marque de distributeur.',
+    l1: 'Tous les produits.',
+    l2: 'Savons, lessives et nettoyants.',
+    lead: '{n} produits répartis en cinq gammes, sélectionnés auprès de fabricants indiens contrôlés et disponibles en marque de distributeur. Choisissez une gamme, ou ouvrez un produit pour ses spécifications, contenances et codes HSN.',
+    hsnLink: 'Codes HSN par produit',
+    rangesNav: 'Les cinq gammes',
+    rangeFull: 'Toute la gamme',
+    hsnH: 'Quel code HSN pour chaque produit ?',
+    hsnText:
+      'Les codes sont indiqués à 6 chiffres. Le code ITC-HS à 8 chiffres est confirmé à chaque commande, et quelques produits relèvent d’autres classements possibles (voir chaque fiche produit).',
+    hsnCaption: 'Codes HSN par produit, regroupés par gamme',
+    colProduct: 'Produit',
+    colRange: 'Gamme',
+    colHsn: 'HSN (6 chiffres)',
+  },
+
+  product: {
+    hsnAlt: 'Autre classement possible indiqué ci-dessous',
+    hsnConfirmed: 'Code ITC-HS à 8 chiffres confirmé à chaque commande',
+    factsH: 'L’essentiel pour les acheteurs',
+    hsnCode: 'Code HSN',
+    hsnNoteDefault: 'Le code ITC-HS à 8 chiffres est confirmé à chaque commande.',
+    moq: 'Quantité minimale de commande',
+    privateLabel: 'Marque de distributeur',
+    plAvailable: 'Disponible.',
+    plNot: 'Non proposée pour ce produit.',
+    varH: 'Variantes, contenances et conditionnement',
+    variants: 'Variantes disponibles',
+    variantsAria: 'Variantes',
+    packSizes: 'Contenances',
+    packaging: 'Options de conditionnement',
+    galleryH: 'D’autres parfums, en photos',
+    specH: 'Quelles sont les spécifications types ?',
+    specNote: '{name} : valeurs types pour les qualités export. Les valeurs définitives sont confirmées avec le fabricant à chaque commande.',
+    aboutAria: 'À propos : {name}',
+    loadH: 'Chargement conteneur (approx.)',
+    loadText: 'Chiffres approximatifs ; le plan de chargement définitif est confirmé à chaque commande.',
+    ft20: 'Conteneur 20 pieds',
+    ft40: 'Conteneur 40 pieds',
+    guidesH: 'Guides acheteurs pour ce produit',
+    relatedH: 'Produits associés',
+    relatedAll: 'Toute la gamme : {nameLower}',
+    quoteH: 'Demander un devis pour ce produit.',
+    quoteText: 'Précisez en une ligne la variante, la contenance, la quantité et le port de destination pour : {nameLower}. Le formulaire de demande s’ouvre avec votre texte.',
+  },
+
+  category: {
+    title: '{name} : exportateur et fournisseur depuis l’Inde',
+    hsnMeta: '{n} produits · Code ITC-HS à 8 chiffres confirmé à chaque commande',
+    seeProducts: 'Voir les {n} produits',
+    productsH: 'Quels produits proposons-nous dans la gamme {nameLower} ?',
+    quoteH: 'Devis : {nameLower}.',
+  },
+
+  blogIndex: {
+    title: 'Guides export pour les acheteurs de savons et produits d’entretien',
+    description:
+      'Guides pratiques pour importer savons, lessives et produits d’entretien depuis l’Inde : codes HSN, MOQ, documents, marque de distributeur et expédition.',
+    l1: 'Guides acheteurs.',
+    l2: 'Importer savons et produits d’entretien.',
+    lead: 'Des notes claires pour importateurs et distributeurs : classement douanier, coûts, documents et choix des produits.',
+    latest: 'Derniers articles',
+  },
+
+  post: {
+    meta: '{date} · {minutes} · GoodBiz Hygiene',
+    quickAnswers: 'Réponses rapides',
+    relatedH: 'Produits cités dans ce guide',
+    quoteH: 'Vous préparez une commande ?',
+    quoteText: 'Décrivez votre besoin en une ligne. Le formulaire de demande s’ouvre avec votre texte, prêt à compléter avec vos produits, quantités et port.',
+  },
+
+  contact: {
+    title: 'Demander un devis : savons et produits d’entretien, exportateur depuis l’Inde',
+    description:
+      'Demandez un devis à GoodBiz Hygiene pour des savons, lessives et produits d’entretien indiens. Indiquez produits, contenances et port par e-mail ou WhatsApp.',
+    l1: 'Demander un devis.',
+    l2: 'De l’Inde jusqu’à votre port.',
+    lead: 'Dites-nous ce dont vous avez besoin : produits, contenances, quantité et port de destination. GoodBiz Hygiene vous répond avec les prix, les spécifications types et les délais.',
+    start: 'Commencer la demande',
+    waMessage: 'Nous écrire sur WhatsApp',
+    formH: 'Formulaire de demande',
+    asideAria: 'Autres moyens de nous joindre',
+    email: 'E-mail',
+    whatsapp: 'WhatsApp',
+    phone: 'Téléphone',
+    office: 'Bureau',
+    terms: 'Conditions export',
+    oftenH: 'Souvent demandés ensemble',
+    oftenText: 'Touchez « Ajouter à la demande » sur une carte pour cocher ce produit dans le formulaire ci-dessus.',
+  },
+
+  form: {
+    name: 'Votre nom',
+    company: 'Société',
+    country: 'Pays',
+    email: 'E-mail',
+    phone: 'WhatsApp ou téléphone',
+    phoneHint: '(avec l’indicatif pays)',
+    quantity: 'Quantité',
+    choose: 'Choisir',
+    quantities: [
+      'Échantillons ou quantité d’essai',
+      'Partie d’un conteneur mixte',
+      '1 conteneur 20 pieds',
+      '1 conteneur 40 pieds',
+      'Plusieurs conteneurs ou approvisionnement régulier',
+      'Je ne sais pas encore',
+    ],
+    productsLegend: 'Produits qui vous intéressent',
+    chooseAny: '(choix multiple)',
+    plLegend: 'Avez-vous besoin d’une marque de distributeur ?',
+    plYes: 'Oui, sous ma marque',
+    plNo: 'Non',
+    message: 'Message',
+    messageHint: '(contenances, parfums, port de destination)',
+    submit: 'Envoyer la demande',
+    hint: 'Votre messagerie s’ouvre avec la demande déjà rédigée. Vous préférez WhatsApp ?',
+    hintLink: 'Écrivez-nous sur WhatsApp',
+    hintJs: 'Ensuite, choisissez de l’envoyer par WhatsApp ou par e-mail.',
+    sendH: 'Votre demande est prête. Comment souhaitez-vous l’envoyer ?',
+    sendWa: 'Envoyer par WhatsApp',
+    sendEmail: 'Envoyer par e-mail',
+    sendNote: 'Chaque option ouvre votre propre application avec le message rédigé, pour que vous puissiez le relire avant l’envoi.',
+  },
+
+  about: {
+    title: 'À propos de GoodBiz Hygiene : savons et produits d’entretien, exportateur depuis l’Inde',
+    description:
+      'GoodBiz Hygiene est la division export hygiène et entretien de GoodBiz Global, exportateur négociant indien, et la marque sœur de GoodBiz Agro.',
+    l1: 'GoodBiz Hygiene.',
+    l2: 'Une société du groupe {parent}.',
+    lead: 'GoodBiz Hygiene est la division export hygiène et entretien de {parent}, exportateur négociant indien, et la marque sœur de GoodBiz Agro.',
+    whatH: 'Que fait GoodBiz Hygiene ?',
+    what1:
+      'GoodBiz Hygiene fournit des savons, lessives et produits d’entretien aux importateurs, distributeurs, grossistes, chaînes de supermarchés et marques de distributeur hors d’Inde. La société ne possède pas d’usine. Les produits proviennent de fabricants indiens contrôlés, et GoodBiz Hygiene se charge du devis, de la coordination de la marque de distributeur, des documents d’export et de l’expédition.',
+    what2:
+      'La gamme couvre des produits classés sous le code HSN 3401 (savons) et le code HSN 3402 (agents de surface, préparations pour lessives et produits de nettoyage), ainsi que des articles proches comme le phénol aux plantes, répartis en cinq gammes.',
+    rangesH: 'Les cinq gammes',
+    familyH: 'Membre du groupe {parent}',
+    familyText: '{parent} réunit GoodBiz Agro pour les exportations agricoles et GoodBiz Hygiene pour les savons et produits d’entretien.',
+    visit: 'Visiter',
+    basedIn: 'Implantation',
+    founded: 'Création',
+    iec: 'Code importateur-exportateur (IEC)',
+  },
+
+  faqPage: {
+    title: 'FAQ : savons et produits d’entretien, exportateur et fournisseur depuis l’Inde',
+    description:
+      'Réponses aux importateurs qui achètent savons, lessives et nettoyants indiens via GoodBiz Hygiene : sourcing, MDD, MOQ, Incoterms, documents et délais.',
+    l1: 'Questions des acheteurs.',
+    l2: 'Réponses claires.',
+    lead: 'Comment GoodBiz Hygiene sélectionne, chiffre et expédie savons et produits d’entretien depuis l’Inde. Les questions propres à chaque produit trouvent leur réponse sur sa fiche.',
+    quoteH: 'Encore une question ?',
+    quoteText: 'Posez-la en une ligne avec votre demande. Nous vous répondons avec les détails pour vos produits et votre marché.',
+  },
+
+  faqs: [
+    {
+      heading: 'Sourcing et produits',
+      faqs: [
+        {
+          q: 'GoodBiz Hygiene fabrique-t-elle les produits qu’elle exporte ?',
+          a: 'Non. GoodBiz Hygiene est un exportateur négociant indien, membre du groupe GoodBiz Global. Elle sélectionne savons, lessives et produits d’entretien auprès de fabricants indiens contrôlés, puis prend en charge le devis, la coordination de la marque de distributeur, les documents et l’expédition pour les acheteurs à l’étranger.',
+        },
+        {
+          q: 'Quels produits GoodBiz Hygiene propose-t-elle ?',
+          a: 'Cinq gammes : savons de toilette et hygiène corporelle, entretien du linge, vaisselle et cuisine, nettoyants surfaces et maison, et matières premières industrielles comme les noodles de savon, le LABSA et le SLES. Chaque produit a sa propre fiche avec ses spécifications types, ses contenances et son code HSN.',
+        },
+        {
+          q: 'Quels codes HSN s’appliquent aux savons et aux produits de nettoyage ?',
+          a: 'Les savons relèvent du code HSN 3401, et les agents de surface, préparations pour lessives et produits de nettoyage du code HSN 3402. Le site indique les codes à 6 chiffres, par exemple 3402 50. Le code ITC-HS à 8 chiffres est confirmé à chaque commande, et quelques produits, comme l’assouplissant ou le phénol aux plantes, peuvent être classés différemment.',
+        },
+        {
+          q: 'Les spécifications des fiches produits sont-elles définitives ?',
+          a: 'Non. Ce sont des valeurs types pour les qualités export. Les valeurs définitives, comme la matière active, le TFM ou le pH, sont confirmées avec le fabricant pour chaque commande et indiquées dans le devis.',
+        },
+      ],
+    },
+    {
+      heading: 'Commande et marque de distributeur',
+      faqs: [
+        {
+          q: 'Puis-je commander des produits sous ma propre marque ?',
+          a: 'Oui. La marque de distributeur est proposée sur la plupart des produits : votre maquette d’étiquette, un choix de parfum et de couleur lorsque la formule le permet, et les contenances dont votre marché a besoin. Les quantités minimales dépendent du produit et du conditionnement ; des valeurs types figurent sur chaque fiche produit.',
+        },
+        {
+          q: 'Puis-je regrouper différents produits dans un même conteneur ?',
+          a: 'Oui. Vous pouvez regrouper des produits de plusieurs gammes dans un même conteneur de 20 ou 40 pieds, ce qui permet de tester une gamme sans remplir un conteneur par produit. La composition est validée selon les règles de chargement et de compatibilité au moment du devis.',
+        },
+        {
+          q: 'Puis-je obtenir des échantillons avant de commander ?',
+          a: 'Oui. Des échantillons peuvent être organisés pour la plupart des produits avant la confirmation d’une commande. Indiquez les produits et vos coordonnées de transporteur express dans votre demande, et nous confirmons ce qui peut être envoyé.',
+        },
+        {
+          q: 'Comment demander un devis ?',
+          a: 'Utilisez le formulaire de la page contact, ou envoyez un message WhatsApp ou un e-mail avec les produits, les contenances, la quantité et le port de destination. Nous vous répondons avec les prix, les spécifications types et les délais.',
+        },
+      ],
+    },
+    {
+      heading: 'Expédition, paiement et documents',
+      faqs: [
+        { q: 'Quels Incoterms et conditions de paiement proposez-vous ?', a: '{incoterms}.' },
+        { q: 'Quel est le délai d’expédition d’une commande ?', a: '{leadTime}. {port}.' },
+        {
+          q: 'Quels documents d’export accompagnent une expédition ?',
+          a: 'Une expédition est normalement accompagnée d’une facture commerciale, d’une liste de colisage, d’un certificat d’origine et d’un connaissement, ainsi que de documents produit comme un certificat d’analyse (COA) et une fiche de données de sécurité (FDS, ou MSDS). La liste exacte dépend de votre pays et est confirmée à chaque commande.',
+        },
+        {
+          q: 'Livrez-vous dans mon pays ?',
+          a: 'GoodBiz Hygiene établit des devis pour des importateurs, distributeurs et marques de distributeur dans la plupart des pays. Les règles du pays de destination, comme la langue de l’étiquetage ou l’enregistrement des produits, sont vérifiées avec vous avant la confirmation de la commande.',
+        },
+      ],
+    },
+  ],
+
+  exportProcess: {
+    title: 'Processus d’export : savons et produits d’entretien, exportateur depuis l’Inde',
+    description:
+      'Comment GoodBiz Hygiene exporte savons, lessives et nettoyants depuis l’Inde : devis, échantillons, Incoterms, paiement, documents, ports et délais types.',
+    l1: 'Le processus d’export.',
+    l2: 'De la demande au connaissement.',
+    lead: 'Les étapes, les conditions et les documents pour acheter des savons et produits d’entretien en Inde avec GoodBiz Hygiene.',
+    stepsLink: 'Les six étapes',
+    termsH: 'Quelles sont les conditions d’export ?',
+    termsIncoterms: 'Incoterms et paiement',
+    termsPort: 'Port',
+    termsLead: 'Délai',
+    processL1: 'Quelles sont les étapes',
+    processL2: 'de la demande à l’expédition ?',
+    processIntro: 'Six étapes, avec votre validation du devis, des échantillons et de la facture pro forma avant toute production.',
+    steps: [
+      { name: 'Demande', text: 'Indiquez les produits, les contenances, la quantité, le port de destination et vos besoins en marque de distributeur, via le formulaire, par e-mail ou par WhatsApp.' },
+      { name: 'Devis', text: 'Nous chiffrons le prix par unité avec les spécifications types, l’Incoterm souhaité et le délai. {incoterms}.' },
+      { name: 'Échantillons et validations', text: 'Les échantillons de produit et, en marque de distributeur, les épreuves des maquettes sont validés avant la confirmation de la commande.' },
+      { name: 'Facture pro forma et paiement', text: 'Une facture pro forma confirme les produits, les quantités, le conditionnement, l’Incoterm et les conditions de paiement (T/T ou LC).' },
+      { name: 'Production et conditionnement', text: 'Le fabricant produit et conditionne la commande, avec un marquage adapté à l’export et à votre marché.' },
+      { name: 'Documents et expédition', text: 'Nous préparons les documents d’export et réservons le transport. {port}.' },
+    ],
+    docsH: 'Quels documents accompagnent une expédition ?',
+    docsText: 'La liste exacte dépend de votre pays et est confirmée à chaque commande.',
+    documents: [
+      'Facture commerciale',
+      'Liste de colisage',
+      'Certificat d’origine',
+      'Connaissement (fret maritime)',
+      'Certificat d’analyse (COA)',
+      'Fiche de données de sécurité (FDS / MSDS)',
+    ],
+    faqH: 'Processus d’export : les questions des acheteurs',
+    faqs: [
+      { q: 'Quels Incoterms proposez-vous ?', a: '{incoterms}.' },
+      { q: 'De quel port partent les expéditions ?', a: '{port}. Le port est choisi selon le produit, la localisation du fabricant et votre destination, et il est indiqué dans le devis.' },
+      { q: 'Quel est le délai ?', a: '{leadTime}.' },
+      {
+        q: 'Quels documents sont fournis ?',
+        a: 'Une expédition est normalement accompagnée de la facture commerciale, de la liste de colisage, du certificat d’origine et du connaissement (fret maritime), ainsi que d’un COA et d’une FDS lorsque le produit l’exige. Votre pays peut en demander davantage, comme un certificat sanitaire ou une facture légalisée ; c’est convenu à chaque commande.',
+      },
+      {
+        q: 'Quel code HSN figure sur la facture ?',
+        a: 'Le site indique les codes HSN à 6 chiffres, par exemple 3402 50. Le code ITC-HS à 8 chiffres est confirmé à chaque commande. L’assouplissant et le phénol aux plantes peuvent relever d’autres classements (3809 91 et 3808 94).',
+      },
+    ],
+  },
+
+  privateLabel: {
+    title: 'Savons et produits d’entretien en marque de distributeur : exportateur depuis l’Inde',
+    description:
+      'Savons, lessives et nettoyants en marque de distributeur depuis l’Inde : vos maquettes, parfums, couleurs et contenances, exportés par GoodBiz Hygiene.',
+    l1: 'Savons et produits d’entretien',
+    l2: 'en marque de distributeur, depuis l’Inde.',
+    lead: 'Vendez savons, lessives et nettoyants sous votre propre marque. GoodBiz Hygiene confie votre cahier des charges à un fabricant indien contrôlé, gère les échantillons et les maquettes, et expédie les produits finis jusqu’à votre port.',
+    renderAlt: 'Illustration de pains de savon et d’un flacon de savon pour les mains dans des conditionnements types de marque de distributeur',
+    startBrief: 'Envoyer votre cahier des charges',
+    howRuns: 'Déroulement d’une commande',
+    optionsH: 'Que peut-on personnaliser ?',
+    optionsText: 'Quatre choix suffisent à faire une gamme à votre nom. Chacun est validé par vous avant la production en série.',
+    options: [
+      {
+        title: 'Votre marque sur l’emballage',
+        text: 'Étiquette, manchon, carton ou emballage imprimé à partir de vos maquettes. Nous transmettons vos fichiers au fabricant et vous renvoyons une épreuve à valider avant l’impression.',
+      },
+      {
+        title: 'Parfum et couleur',
+        text: 'Choisissez parmi les parfums et couleurs dans lesquels chaque produit est habituellement fabriqué, comme le citron, la lavande, la rose ou le neem. Toute demande hors de la gamme standard est d’abord vérifiée avec le fabricant.',
+      },
+      {
+        title: 'Contenances et formats',
+        text: 'Flacons de vente au détail, recharges, sachets, pains et bidons ou fûts en vrac, choisis selon votre linéaire et votre positionnement prix. Chaque fiche produit indique ses contenances types.',
+      },
+      {
+        title: 'Qualité et spécifications',
+        text: 'Choisissez la qualité attendue par votre marché, par exemple le TFM pour un savon de toilette ou la matière active pour une lessive. Les valeurs types figurent sur les fiches produits et les valeurs définitives dans votre devis.',
+      },
+    ],
+    processL1: 'Déroulement d’une commande',
+    processL2: 'en marque de distributeur.',
+    processIntro: 'Cinq étapes, de votre cahier des charges à la marchandise dans votre port, avec votre validation de l’échantillon et de la maquette avant toute fabrication.',
+    steps: [
+      { name: 'Transmettez votre cahier des charges', text: 'Produits, contenances, parfums, marché cible et estimation des quantités.' },
+      { name: 'Devis et choix du fabricant', text: 'Nous confions le cahier des charges à un fabricant indien contrôlé et chiffrons le prix par unité, avec Incoterms et délai.' },
+      { name: 'Échantillons et maquettes', text: 'Vous validez un échantillon du produit et une épreuve imprimée de votre maquette. La production démarre normalement après ces deux validations.' },
+      { name: 'Production et conditionnement', text: 'Le fabricant produit et conditionne votre commande sous votre marque, avec un marquage export.' },
+      { name: 'Documents et expédition', text: 'Nous préparons les documents d’export et réservons le transport. {port}.' },
+    ],
+    faqH: 'Marque de distributeur : les questions des acheteurs',
+    faqs: [
+      {
+        q: 'Quelle est la commande minimale en marque de distributeur ?',
+        a: 'Elle dépend du produit et du conditionnement. Il n’y a pas de minimum fixe pour la plupart des produits, mais une création en marque de distributeur peut imposer son propre minimum pour les étiquettes ou cartons imprimés. Indiquez-nous votre quantité et nous la chiffrerons.',
+      },
+      {
+        q: 'À qui appartiennent les maquettes et la marque ?',
+        a: 'Les maquettes restent votre propriété ; les conditions d’utilisation sont convenues à chaque commande. GoodBiz Hygiene coordonne l’impression avec le fabricant.',
+      },
+      {
+        q: 'Puis-je mélanger produits en marque de distributeur et produits standard dans un même conteneur ?',
+        a: 'Oui. Les références en marque de distributeur peuvent partager un conteneur avec d’autres produits de la gamme GoodBiz Hygiene, sous réserve des règles de chargement et de compatibilité confirmées lors du devis.',
+      },
+      {
+        q: 'Combien de temps prend une commande en marque de distributeur ?',
+        a: '{leadTime}. Une première commande inclut le temps de validation des échantillons et des maquettes ; les commandes suivantes sont généralement plus rapides.',
+      },
+      {
+        q: 'GoodBiz Hygiene fabrique-t-elle les produits ?',
+        a: 'Non. GoodBiz Hygiene est un exportateur négociant indien. Les produits sont fabriqués par des fabricants indiens contrôlés, et GoodBiz Hygiene gère le cahier des charges, les validations, les documents et l’expédition.',
+      },
+    ],
+    quoteH: 'Envoyez votre cahier des charges.',
+    quoteText: 'Indiquez en une ligne les produits, conditionnements et le marché visé. Nous vous répondons avec des options, des prix et des délais.',
+  },
+
+  notFound: {
+    title: 'Page introuvable',
+    description: 'Cette page est introuvable. Parcourez les savons et produits d’entretien de GoodBiz Hygiene ou demandez un devis.',
+    l1: 'Cette page n’est pas',
+    l2: 'en rayon.',
+    lead: 'Le lien est peut-être ancien ou mal saisi. Toute la gamme est à un clic.',
+    sprayAlt: 'Illustration d’un flacon pulvérisateur de nettoyant',
+  },
+};
 
 export default fr;

@@ -18,6 +18,12 @@ describe('enquiry', () => {
     expect(u).toMatch(/^mailto:a@b\.com\?subject=Export%20Enquiry%20-%20GoodBiz%20Hygiene&body=/);
     expect(u.endsWith(encodeURIComponent(enquiryText(f)))).toBe(true);
   });
+  it('adds the buyer\'s site language last, keeping English field labels', () => {
+    expect(enquiryText({ ...f, message: 'Prix FOB ?', language: 'Français' })).toBe(
+      'Name: Ali\nCountry: UAE\nProducts: Dish Wash Liquid, Floor Cleaner\nPrivate label: Yes\nMessage: Prix FOB ?\nLanguage: Français',
+    );
+    expect(enquiryText({ name: 'Ali' })).toBe('Name: Ali');
+  });
   it('omits an empty products array and renders privateLabel false as No', () => {
     expect(enquiryText({ products: [], privateLabel: false, quantity: '1 x 20ft' })).toBe('Quantity: 1 x 20ft\nPrivate label: No');
   });
@@ -48,6 +54,9 @@ describe('fieldsFromEntries (enquiry form)', () => {
       privateLabel: true,
       message: 'Lemon fragrance',
     });
+  });
+  it('reads the hidden Language field the form adds', () => {
+    expect(fieldsFromEntries([['Name', 'A'], ['Language', 'العربية']]).language).toBe('العربية');
   });
   it('leaves privateLabel undefined when not answered and reads No as false', () => {
     expect(fieldsFromEntries([['Name', 'A']]).privateLabel).toBeUndefined();

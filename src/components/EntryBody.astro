@@ -1,0 +1,21 @@
+---
+/**
+ * The Markdown body of a localized entry (src/i18n/content.ts). A translation renders its own
+ * Markdown (links already localized by src/i18n/markdown-localize-links.ts). An English body
+ * shown as a fallback on another language's page gets its internal links localized here, so
+ * visitors stay in their language.
+ */
+import { render } from 'astro:content';
+import { localizeHtmlLinks } from '../i18n/locales';
+import type { Localized, BaseCollection } from '../i18n/content';
+
+interface Props {
+  entry: Localized<BaseCollection>;
+}
+const { entry } = Astro.props;
+const rendered = (entry.source as { rendered?: { html?: string } }).rendered?.html;
+const html = entry.fallback && rendered !== undefined ? localizeHtmlLinks(rendered, entry.lang) : undefined;
+const { Content } = html === undefined ? await render(entry.source) : { Content: null };
+---
+
+{html !== undefined ? <Fragment set:html={html} /> : Content && <Content />}

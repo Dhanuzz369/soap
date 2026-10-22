@@ -10,6 +10,8 @@
     "test": "vitest run tests/unit",
     "test:build": "vitest run tests/build",
     "check:placeholders": "node scripts/check-placeholders.mjs",
+    "i18n:check": "node scripts/i18n-check.mjs",
+    "i18n:stamp": "node scripts/i18n-stamp.mjs",
     "og": "node scripts/make-og.mjs",
     "renders": "node scripts/render-packs.mjs"
   },

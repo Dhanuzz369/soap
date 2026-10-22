@@ -1,5 +1,5 @@
 ---
-import { render } from 'astro:content';
+import EntryBody from '../components/EntryBody.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero, { type HeroMedia } from '../components/PageHero.astro';
 import SpecTable from '../components/SpecTable.astro';
@@ -25,7 +25,6 @@ const { product, category, related, guides } = Astro.props;
 const { info, ui, lp, fmt, lower } = useI18n(Astro.url);
 const P = ui.product;
 const d = product.data;
-const { Content } = await render(product.source);
 const path = `/products/${d.slug}/`;
 const url = lp(path);
 const names = { name: d.title, nameLower: lower(d.title) };
@@ -168,7 +167,7 @@ const media: HeroMedia | undefined = pic
   </section>
 
   <section class="wrap sec post-layout" aria-label={fmt(P.aboutAria, names)}>
-    <div class="prose"><Content /></div>
+    <div class="prose"><EntryBody entry={product} /></div>
   </section>
 
   {

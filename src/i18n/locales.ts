@@ -92,3 +92,9 @@ export function langFromUrl(url: URL | string): Locale {
   const pathname = typeof url === 'string' ? url : url.pathname;
   return splitLocale(pathname).lang;
 }
+
+/** Localizes every internal href in rendered HTML (used for English bodies shown as a fallback). */
+export function localizeHtmlLinks(html: string, lang: Locale): string {
+  if (lang === DEFAULT_LOCALE) return html;
+  return html.replace(/(\shref=")(\/[^"]*)"/g, (_m, pre: string, href: string) => `${pre}${localizePath(href, lang)}"`);
+}
