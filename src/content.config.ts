@@ -38,6 +38,8 @@ const products = defineCollection({
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).min(4).max(6),
     related: z.array(z.string()),
     image: z.string().optional(),
+    /** Extra photos of variants (fragrances, colours), shown under the varieties. */
+    gallery: z.array(z.object({ src: z.string(), alt: z.string(), caption: z.string() })).optional(),
   }),
 });
 

@@ -3,6 +3,35 @@ import path from 'node:path';
 
 const exists = (root: string, url: string) => fs.existsSync(path.join(root, 'public', url));
 
+/** Pixel size from a WebP header (lossy VP8, lossless VP8L or extended VP8X), or undefined. */
+export function webpSize(buf: Buffer): { width: number; height: number } | undefined {
+  if (buf.length < 30 || buf.toString('ascii', 0, 4) !== 'RIFF' || buf.toString('ascii', 8, 12) !== 'WEBP') return undefined;
+  const chunk = buf.toString('ascii', 12, 16);
+  if (chunk === 'VP8 ') return { width: buf.readUInt16LE(26) & 0x3fff, height: buf.readUInt16LE(28) & 0x3fff };
+  if (chunk === 'VP8L') {
+    const b = buf.readUInt32LE(21);
+    return { width: (b & 0x3fff) + 1, height: ((b >>> 14) & 0x3fff) + 1 };
+  }
+  if (chunk === 'VP8X') return { width: buf.readUIntLE(24, 3) + 1, height: buf.readUIntLE(27, 3) + 1 };
+  return undefined;
+}
+
+const sizeOf = (root: string, url: string, fallback: { width: number; height: number }) => {
+  try {
+    return webpSize(fs.readFileSync(path.join(root, 'public', url))) ?? fallback;
+  } catch {
+    return fallback;
+  }
+};
+
+/** A photo at its real size, with its 800px copy (`<name>-800.webp`) in the srcset when present. */
+function photo(root: string, url: string): ProductPicture {
+  const { width, height } = sizeOf(root, url, { width: 1200, height: 1200 });
+  const small = url.replace(/\.webp$/, '-800.webp');
+  const srcset = exists(root, small) ? `${small} 800w, ${url} ${width}w` : `${url} ${width}w`;
+  return { kind: 'photo', src: url, srcset, width, height };
+}
+
 /**
  * Public URL of a product photo (`public/images/products/<slug>.webp`) when that file exists
  * at build time, otherwise undefined. Used by ProductVisual, og:image and Product JSON-LD.
@@ -14,7 +43,7 @@ export function productImagePath(slug: string, root: string = process.cwd()): st
 
 /** A picture for a product: its own photo, or else the studio render of its pack shape. */
 export type ProductPicture =
-  | { kind: 'photo'; src: string; width: number; height: number }
+  | { kind: 'photo'; src: string; srcset: string; width: number; height: number }
   | { kind: 'render'; src: string; srcset: string; width: number; height: number };
 
 /**
@@ -29,8 +58,8 @@ export function productPicture(
   category?: string,
   root: string = process.cwd(),
 ): ProductPicture | undefined {
-  const photo = productImagePath(slug, root);
-  if (photo) return { kind: 'photo', src: photo, width: 1200, height: 1200 };
+  const own = productImagePath(slug, root);
+  if (own) return photo(root, own);
   const variant = category ? `${shape}--${category}` : '';
   const name = variant && exists(root, `/images/renders/${variant}.webp`) ? variant : shape;
   const big = `/images/renders/${name}.webp`;
@@ -43,4 +72,16 @@ export function productPicture(
     width: 1200,
     height: 1500,
   };
+}
+
+/**
+ * The picture for a category: its own photo (`public/images/categories/<slug>.webp`) when present,
+ * otherwise its group render (`public/images/renders/category-<slug>.webp`).
+ */
+export function categoryPicture(slug: string, root: string = process.cwd()): ProductPicture {
+  const own = `/images/categories/${slug}.webp`;
+  if (exists(root, own)) return photo(root, own);
+  const src = `/images/renders/category-${slug}.webp`;
+  const { width, height } = sizeOf(root, src, { width: 1000, height: 800 });
+  return { kind: 'render', src, srcset: `${src} ${width}w`, width, height };
 }

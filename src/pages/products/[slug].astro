@@ -54,7 +54,7 @@ const name = splitName(d.title);
 const pic = productPicture(d.slug, shapeFor(d.slug, catId), catId);
 const media: HeroMedia | undefined = pic
   ? pic.kind === 'photo'
-    ? { src: pic.src, width: pic.width, height: pic.height, alt: d.title, mode: 'card' }
+    ? { src: pic.src, srcset: pic.srcset, sizes: '(max-width: 759px) 100vw, 44vw', width: pic.width, height: pic.height, alt: `${d.title} from GoodBiz`, mode: 'card' }
     : {
         src: pic.src,
         srcset: pic.srcset,
@@ -139,6 +139,35 @@ const media: HeroMedia | undefined = pic
       </div>
     </div>
   </section>
+
+  {
+    d.gallery && d.gallery.length > 0 && (
+      <section class="wrap sec" aria-labelledby="gal-h">
+        <div class="sec-head" data-reveal>
+          <h2 id="gal-h">More fragrances, in photos</h2>
+        </div>
+        <ul class="photo-gallery">
+          {d.gallery.map((g, i) => (
+            <li data-reveal style={`--i: ${i}`}>
+              <figure>
+                <img
+                  src={g.src}
+                  srcset={`${g.src.replace(/\.webp$/, '-800.webp')} 800w, ${g.src} 1448w`}
+                  sizes="(max-width: 759px) 100vw, 50vw"
+                  width="1448"
+                  height="1086"
+                  alt={g.alt}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>{g.caption}</figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
 
   <section class="wrap sec split" aria-labelledby="spec-h">
     <div class="split-head" data-reveal>

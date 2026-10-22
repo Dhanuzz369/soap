@@ -1233,3 +1233,33 @@ main {
   }
 }
 
+
+/* ---------- product photos: shown whole, at their own 4:3 shape ---------- */
+.pv[data-shape='photo'] {
+  aspect-ratio: 4 / 3;
+  background: var(--paper);
+}
+.photo-gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr));
+  gap: clamp(16px, 2vw, 32px);
+}
+.photo-gallery figure {
+  margin: 0;
+}
+.photo-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-card);
+}
+.photo-gallery figcaption {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: var(--ink);
+}

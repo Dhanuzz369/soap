@@ -74,6 +74,10 @@ related:
   - liquid-hand-wash
   - body-wash-shower-gel
   - glycerin-transparent-soap
+gallery:
+  - src: "/images/products/hotel-guest-soap--lavender.webp"
+    alt: "Lavender GoodBiz round soap beside its lavender-printed carton"
+    caption: "Lavender: round bar with matching carton"
 ---
 
 ## Product overview

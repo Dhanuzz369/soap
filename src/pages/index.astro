@@ -1,4 +1,5 @@
 ---
+import { categoryPicture } from '../lib/product-image';
 /**
  * Home (Floria-style restyle; docs/superpowers/specs/2026-10-16-floria-restyle-direction.md).
  * Dark hero with the live range → The Range → how export orders work → The Categories →
@@ -53,7 +54,8 @@ const tiles = tileOrder
     const slug = g.category.data.slug;
     const size = slug === 'bath-personal-soaps' ? 'large' : slug === 'industrial-raw-materials' ? 'tall' : 'small';
     const dims = size === 'large' ? [1440, 1200] : size === 'tall' ? [760, 1200] : [1000, 800];
-    return { g, slug, size, w: dims[0], h: dims[1] };
+    const pic = categoryPicture(slug);
+    return { g, slug, size, w: dims[0], h: dims[1], pic };
   });
 
 ---
@@ -128,14 +130,17 @@ const tiles = tileOrder
     </div>
     <ul class="bento">
       {
-        tiles.map(({ g, slug, size, w, h }, i) => (
+        tiles.map(({ g, slug, size, w, h, pic }, i) => (
           <li class={`tile tile--${size}`} data-reveal style={`--i: ${i % 3}`}>
             <a class="tile-link" href={`/categories/${slug}/`}>
               <img
-                src={`/images/renders/category-${slug}.webp`}
-                width={w}
-                height={h}
-                alt={`Illustration of typical ${g.category.data.title.toLowerCase()} packs`}
+                class={pic.kind === 'photo' ? 'is-photo' : undefined}
+                src={pic.src}
+                srcset={pic.kind === 'photo' ? pic.srcset : undefined}
+                sizes={pic.kind === 'photo' ? '(max-width: 759px) 100vw, 60vw' : undefined}
+                width={pic.kind === 'photo' ? pic.width : w}
+                height={pic.kind === 'photo' ? pic.height : h}
+                alt={pic.kind === 'photo' ? `${g.category.data.title} from GoodBiz` : `Illustration of typical ${g.category.data.title.toLowerCase()} packs`}
                 loading="lazy"
                 decoding="async"
               />

@@ -1,4 +1,5 @@
 ---
+import { categoryPicture } from '../../lib/product-image';
 import { getProductsByCategory, type CategoryEntry, type ProductEntry } from '../../lib/products';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
@@ -35,6 +36,7 @@ const dims: Record<string, [number, number]> = {
   'industrial-raw-materials': [760, 1200],
 };
 const [w, h] = dims[c.slug] ?? [1000, 800];
+const cpic = categoryPicture(c.slug);
 const name = splitName(c.title);
 ---
 
@@ -53,7 +55,15 @@ const name = splitName(c.title);
     scale={name.scale}
     lead={c.summary}
     size="product"
-    media={{
+    media={cpic.kind === 'photo' ? {
+      src: cpic.src,
+      srcset: cpic.srcset,
+      sizes: '(max-width: 759px) 100vw, 44vw',
+      width: cpic.width,
+      height: cpic.height,
+      alt: `${c.title} from GoodBiz`,
+      mode: 'card',
+    } : {
       src: `/images/renders/category-${c.slug}.webp`,
       width: w,
       height: h,

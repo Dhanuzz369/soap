@@ -568,3 +568,7 @@
     transform: translateY(-12vh) rotate(6deg) scale(0.94);
   }
 }
+/* a real photo in a bento tile: keep the soap and its carton in frame */
+.tile-link img.is-photo {
+  object-position: 42% 62%;
+}

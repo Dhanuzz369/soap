@@ -20,4 +20,5 @@ export interface ProductData {
   faqs: { q: string; a: string }[];
   related: string[];
   image?: string;
+  gallery?: { src: string; alt: string; caption: string }[];
 }

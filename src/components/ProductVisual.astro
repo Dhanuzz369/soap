@@ -28,7 +28,7 @@ const svg = shapes[shape];
 <figure class:list={['pv', `pv--${size}`]} data-cat={category} data-shape={pic?.kind === 'photo' ? 'photo' : shape}>
   {
     pic?.kind === 'photo' && (
-      <img src={pic.src} alt={title} width={pic.width} height={pic.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
+      <img src={pic.src} srcset={pic.srcset} sizes={sizes} alt={`${title} from GoodBiz`} width={pic.width} height={pic.height} loading={eager ? 'eager' : 'lazy'} decoding="async" />
     )
   }
   {

@@ -76,6 +76,10 @@ related:
   - hotel-guest-soap
   - laundry-soap-bar
   - soap-noodles
+gallery:
+  - src: "/images/products/toilet-bath-soap--sandal-lemon.webp"
+    alt: "Yellow rectangular GoodBiz bath soap bar beside its carton printed with white flowers"
+    caption: "Sandal and lemon: classic rectangular bar with carton"
 ---
 
 ## Product overview

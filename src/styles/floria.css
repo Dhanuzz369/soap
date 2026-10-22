@@ -543,6 +543,12 @@
     max-width: min(100%, 44vw);
   }
 }
+/* a 4:3 photo card takes more width, so its copy column stops short of it */
+@media (min-width: 760px) {
+  .ph--media-card .ph-copy > * {
+    max-width: calc(100% - min(40vw, 560px) - 64px);
+  }
+}
 .ph--product .ph-title--m {
   font-size: clamp(1.5rem, 0.8rem + 2.8vw, 3.25rem);
 }
@@ -656,8 +662,8 @@
 .ph--media-card .ph-media {
   top: 50%;
   right: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
-  width: min(36vw, 480px);
-  aspect-ratio: 1;
+  width: min(40vw, 560px);
+  aspect-ratio: 4 / 3;
   transform: translateY(-46%);
   overflow: hidden;
   border-radius: var(--radius-tile);
@@ -695,7 +701,11 @@
   }
   .ph--media-card .ph-media {
     height: auto;
-    aspect-ratio: 1;
+    aspect-ratio: 4 / 3;
+    /* clear the fixed header, keep the side gutters and the rounded card */
+    width: auto;
+    margin: 88px var(--gutter) 0;
+    border-radius: var(--radius-card);
     background: var(--paper);
   }
   .ph--media-bleed .ph-media::after {
