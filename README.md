@@ -33,7 +33,8 @@ Other useful commands:
 | `npm run i18n:check` | Lists missing, out-of-date (stale) and faulty translations and missing interface text per language. Add `-- --lang fr` for one language, `-- --strict` to fail when anything is missing. |
 | `npm run i18n:stamp -- <file>` | Marks a translation as matching the current English (run after translating or updating it). |
 | `npm run i18n:sweep -- --lang fr` | With `npm run preview` running: opens every page of a language in Chrome and reports sideways scrolling or console errors. |
-| `npm run renders` | Re-draws the glossy studio cut-outs (transparent WebP) of each pack shape, the category groups and the home hero object (`range-cutout.webp`) into `public/images/renders/`, plus the neem-leaf cut-out (needs Google Chrome). Run it after changing the 3D pack models in `src/scripts/three/`. |
+| `npm run renders` | Re-draws the glossy studio cut-outs (transparent WebP) of each pack shape, the category groups and the range group (`range-cutout.webp`, used on the Products and Export Process pages) into `public/images/renders/`, plus the neem-leaf cut-out (needs Google Chrome). Run it after changing the 3D pack models in `src/scripts/three/`. Three.js is only used here, never on the live site. |
+| `npm run hero:images` | Re-makes the home hero's smaller photo copies and its blurred colour glows in `public/images/hero/`. Run it after replacing one of the four hero photos (the list is `FAN_RANGES` in `src/lib/hero-fan.ts`). |
 
 ---
 
@@ -219,4 +220,6 @@ Settings to enter on any of them:
 | `public/fonts/` | Self-hosted fonts (Geist with Latin, Cyrillic and Vietnamese subsets, Newsreader italic for accents, IBM Plex Sans Arabic for Arabic pages; SIL Open Font License) |
 | `tests/` | Automatic checks |
 
-The site is built with [Astro](https://astro.build). The home page hero shows a transparent studio cut-out of the range (`public/images/renders/range-cutout.webp`) that pops in and drifts with scroll; a live Three.js version of the same scene, framed identically, cross-fades over it once the visitor first moves, touches or scrolls. It is skipped for visitors who prefer reduced motion or are using data saver.
+The site is built with [Astro](https://astro.build). The home page hero is "the fan": four real product photos, one per main range (bath soaps, laundry, kitchen, surface cleaners), held like a hand of cards beside the headline. They deal out on load, shuffle every 5 seconds on larger screens (paused while a visitor points at, tabs into or scrolls past them), and the small dots below pick a range; on phones a sideways swipe changes the card. Without JavaScript, or with reduced motion, the fan simply sits still and every card is a link to its range.
+
+**To change a hero photo or the range it shows:** edit `FAN_RANGES` in `src/lib/hero-fan.ts` (the range, the photo in `public/images/products/` and how the photo is framed in its tall card, `pos`), then run `npm run hero:images`. Range names and product counts come from the category pages, in every language.
