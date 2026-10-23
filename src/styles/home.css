@@ -290,6 +290,10 @@ html:not(.hero-js) .fan-deferred {
   display: grid;
   gap: 10px;
   margin-top: clamp(20px, 2.6vh, 32px);
+  /* arrives with the deal, a beat after the cards start to fan out */
+  transition:
+    opacity 600ms var(--ease-out) 360ms,
+    transform 600ms var(--ease-out) 360ms;
 }
 .fan-captions {
   display: grid;
@@ -468,7 +472,14 @@ html:not(.hero-js) .fan-deferred {
     --card-w: 50vw;
     --fan-radius: 28px;
   }
-  /* three cards on phones: the fourth waits at the back, out of sight */
+  /* three cards on phones, spread a little wider (the fan is ~72vw); the fourth waits at the
+     back, out of sight */
+  .fan-card[data-slot='1'] {
+    --x: -21%;
+  }
+  .fan-card[data-slot='2'] {
+    --x: 19%;
+  }
   .fan-card[data-slot='3'] {
     opacity: 0;
   }
@@ -956,6 +967,10 @@ html:not(.hero-js) .fan-deferred {
   }
   .hero-js .fan:not([data-dealt]) .fan-card:not([data-slot='0']) {
     transform: translateY(24px) scale(0.94);
+  }
+  .hero-js .fan:not([data-dealt]) .fan-meta {
+    opacity: 0;
+    transform: translateY(8px);
   }
   .hero-js .fan:not([data-dealt]) .fan-card:not([data-slot='0']) {
     opacity: 0;
