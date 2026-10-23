@@ -1,0 +1,401 @@
+/*
+  "Your brand, on our shelf": the /private-label/ hero (src/components/LabelHero.astro).
+  The .ph band (floria.css) gives the forest field, glow, vignette and grain; this file adds the
+  copy, the drawn pack pair with its live label, the controls and the step markers.
+
+  Motion (Emil Kowalski):
+  - typing changes the label instantly: a keyboard-driven, repeated action never animates
+  - a colourway change is a state change seen a few times: the label fills cross-fade in 200ms on
+    the strong ease-out
+  - the entrance runs once: the h1 lines rise through their masks (as the shelf), the bottle
+    rises and the carton slides out from behind it 90ms later, Floria curve, 900ms
+  - the tilt is decorative pointer-following: lerped in rAF (label-hero.ts), fine pointers only
+  - reduced motion: no tilt and no travel; the entrance is opacity only
+*/
+
+.ph--label {
+  padding: clamp(108px, 6rem + 2vw, 136px) 0 clamp(88px, 3rem + 5vw, 144px);
+  --glow-x: 72%;
+  --glow-y: 40%;
+  --glow-r: 46vw;
+  --glow-a: 0.12;
+}
+.lh-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: 'copy' 'stage' 'steps';
+  gap: clamp(32px, 6vw, 48px);
+}
+@media (min-width: 900px) {
+  .lh-grid {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    grid-template-areas: 'copy stage' 'steps stage';
+    grid-template-rows: auto 1fr;
+    column-gap: clamp(40px, 5vw, 96px);
+    row-gap: clamp(36px, 4vw, 56px);
+    align-items: start;
+  }
+}
+.lh-copy {
+  grid-area: copy;
+  min-width: 0;
+}
+.lh-stage {
+  grid-area: stage;
+  align-self: center;
+  width: 100%;
+  max-width: 520px;
+  margin: 0;
+  justify-self: center;
+  min-width: 0;
+}
+.lh-steps {
+  grid-area: steps;
+  min-width: 0;
+}
+@media (max-width: 899.98px) {
+  /* on a phone the packs and their controls fit one screen */
+  .lh-stage {
+    max-width: 400px;
+  }
+}
+
+/* ---------- copy ---------- */
+.lh-h {
+  margin-top: clamp(24px, 3vw, 40px);
+  font-size: clamp(2.25rem, 1rem + 3.6vw, 4.25rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+.lh-h .line {
+  display: block;
+  overflow: clip;
+  padding-bottom: 0.1em; /* room for descenders and the italic's overhang inside the mask */
+  margin-bottom: -0.1em;
+  padding-inline-end: 0.1em;
+}
+.lh-h .line-in {
+  display: block;
+}
+.lh-h .serif-i {
+  color: var(--mint);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+.lh-lead {
+  margin-top: clamp(18px, 2vw, 26px);
+  max-width: 52ch;
+}
+.lh-actions {
+  margin-top: clamp(24px, 3vw, 34px);
+}
+.lh-cta {
+  white-space: normal; /* long translations wrap inside the pill instead of overflowing a phone */
+  text-align: center;
+  min-height: 52px;
+  padding-block: 10px;
+}
+.ph--label .link-arrow,
+.ph--label .link-arrow:hover {
+  color: var(--on-dark);
+}
+
+/* ---------- the pack pair ---------- */
+.lh-tilt {
+  transform-origin: 50% 60%;
+}
+.lh-packs {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+@media (min-width: 900px) {
+  /* keep the packs and their controls inside one desktop screen (the drawing stays centred) */
+  .lh-packs {
+    max-height: max(340px, 52svh);
+  }
+}
+.lh-carton,
+.lh-bottle {
+  transform-box: view-box;
+}
+.lh-lab {
+  fill: var(--lh-lab);
+}
+.lh-acc,
+.lh-leaf {
+  fill: var(--lh-acc);
+}
+.lh-ring {
+  stroke: var(--lh-acc);
+}
+.lh-name {
+  fill: var(--lh-ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.lh-ink-f {
+  fill: var(--lh-ink);
+  opacity: 0.32;
+}
+/* the colourway cross-fade (the custom properties change on the figure; label-hero.ts) */
+.lh-lab,
+.lh-acc,
+.lh-leaf,
+.lh-name,
+.lh-ink-f {
+  transition: fill var(--dur-fast) var(--ease-out);
+}
+.lh-ring {
+  transition: stroke var(--dur-fast) var(--ease-out);
+}
+
+/* ---------- controls (shown only with JS: html.lh-js is set before first paint) ---------- */
+.lh-controls {
+  display: none;
+}
+.lh-js .lh-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px 24px;
+  margin-top: clamp(16px, 2vw, 24px);
+}
+.lh-field {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+.lh-field label,
+.lh-swatches legend {
+  display: block;
+  margin-bottom: 8px;
+  padding: 0;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--on-dark-soft);
+}
+.lh-field input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: var(--pill);
+  background: rgb(238 244 239 / 0.07);
+  box-shadow: inset 0 0 0 1px rgb(238 244 239 / 0.24); /* taste-skill-ignore: the pill field device on dark, as the shelf's pills */
+  color: var(--on-dark);
+  font: inherit;
+  font-size: 1rem; /* 16px: no zoom on focus in iOS Safari */
+  transition: box-shadow var(--dur-fast) ease;
+}
+.lh-field input::placeholder {
+  color: var(--on-dark-soft);
+  opacity: 0.8;
+}
+.lh-field input:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+}
+.lh-swatches {
+  flex: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.lh-swatch-row {
+  display: flex;
+  gap: 6px;
+}
+.lh-swatch {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding-inline: 8px 14px;
+  border-radius: var(--pill);
+  color: var(--on-dark-soft);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) ease,
+    color var(--dur-fast) ease,
+    transform var(--dur-press) var(--ease-out);
+}
+.lh-swatch input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.lh-swatch-dot {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border-radius: 50%;
+  background: radial-gradient(circle at 34% 30%, rgb(255 255 255 / 0.7), rgb(255 255 255 / 0) 46%), var(--sw); /* taste-skill-ignore: a glossy colour chip */
+  box-shadow: inset 0 0 0 5px var(--sw), inset 0 0 0 14px var(--sw-acc); /* taste-skill-ignore: label and accent colour in one chip */
+}
+.lh-swatch:has(input:checked) {
+  background: rgb(238 244 239 / 0.1);
+  color: var(--on-dark);
+}
+.lh-swatch:has(input:focus-visible) {
+  outline: 2px solid var(--mint);
+  outline-offset: 2px;
+}
+.lh-swatch:active {
+  transform: scale(0.97);
+}
+@media (hover: hover) and (pointer: fine) {
+  .lh-swatch:hover {
+    color: var(--on-dark);
+  }
+}
+.lh-cap {
+  margin-top: 14px;
+  font-size: 0.8125rem;
+  color: var(--on-dark-soft);
+}
+
+/* ---------- the four steps ---------- */
+.lh-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lh-steps li {
+  position: relative;
+  padding-top: 18px;
+  border-top: 1px solid rgb(238 244 239 / 0.2);
+  min-width: 0;
+}
+.lh-steps li::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  inset-inline-start: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--mint);
+}
+.lh-n {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--mint);
+}
+.lh-step {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--on-dark);
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+@media (max-width: 599.98px) {
+  .lh-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 22px;
+  }
+}
+
+/* ---------- motion ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .lh-h .line-in {
+    animation: lh-line-up 900ms var(--ease-out) both;
+  }
+  .lh-h .line:nth-child(2) .line-in {
+    animation-delay: 80ms;
+  }
+  .lh-copy .crumbs,
+  .lh-lead,
+  .lh-actions {
+    animation: lh-rise var(--dur-enter) var(--ease-out) both;
+  }
+  .lh-lead {
+    animation-delay: 160ms;
+  }
+  .lh-actions {
+    animation-delay: 240ms;
+  }
+  .lh-bottle {
+    animation: lh-rise 900ms var(--ease-floria) 200ms both;
+  }
+  /* the carton starts tucked behind the bottle and slides out to its place */
+  .lh-carton {
+    animation: lh-slide 900ms var(--ease-floria) 290ms both;
+  }
+  .lh-controls,
+  .lh-cap {
+    animation: lh-fade 600ms var(--ease-out) 520ms both;
+  }
+  .lh-js .lh-steps:not([data-play]) li {
+    opacity: 0;
+  }
+  .lh-steps[data-play] li {
+    animation: lh-step 600ms var(--ease-out) calc(var(--i) * 70ms) both;
+  }
+}
+@keyframes lh-line-up {
+  from {
+    transform: translateY(105%);
+  }
+}
+@keyframes lh-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+@keyframes lh-slide {
+  from {
+    opacity: 0;
+    transform: translateX(-120px) scale(0.96);
+  }
+}
+@keyframes lh-step {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@keyframes lh-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lh-copy .crumbs,
+  .lh-h .line-in,
+  .lh-lead,
+  .lh-actions,
+  .lh-bottle,
+  .lh-carton,
+  .lh-controls,
+  .lh-cap {
+    animation: lh-fade 300ms ease-out both;
+  }
+  .lh-carton {
+    animation-delay: 90ms;
+  }
+  .lh-js .lh-steps:not([data-play]) li {
+    opacity: 0;
+  }
+  .lh-steps[data-play] li {
+    animation: lh-fade 300ms ease-out calc(var(--i) * 70ms) both;
+  }
+}

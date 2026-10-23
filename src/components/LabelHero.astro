@@ -1,0 +1,191 @@
+---
+/**
+ * LabelHero: "Your brand, on our shelf", the /private-label/ hero. A dark forest band (the .ph
+ * field and grain) with the copy on the inline-start side (breadcrumbs, a two-line h1, the lead,
+ * the enquiry button and a link to the FAQ, then the four steps of an order as numbered markers)
+ * and, on the inline-end side, a live mock-up: a pump bottle and a folding carton drawn in SVG,
+ * both carrying the visitor's brand name on a blank label.
+ *
+ * - Typing in "Type your brand name" rewrites both labels at once (textContent only, sanitised
+ *   and trimmed: src/lib/brand-label.ts), fits the name to the label width and puts it in the
+ *   enquiry button's ?message=. No animation per keystroke.
+ * - Three colourway swatches (native radios): the label colours cross-fade in 200ms.
+ * - Entrance: the bottle rises, the carton slides out from behind it 90ms later (Floria curve,
+ *   900ms). Fine pointers: the packs tilt toward the pointer (±4°, lerped in rAF, off-screen
+ *   paused). Reduced motion: no tilt, no travel, opacity only.
+ * - Without JS: the label reads the placeholder brand ("Your Brand"); the input and the swatches
+ *   are not shown (they are revealed before first paint by an inline script, so no layout shift).
+ * Styles: src/styles/label-hero.css. Script: src/scripts/label-hero.ts.
+ */
+import Breadcrumbs from './Breadcrumbs.astro';
+import { BRAND_MAX, COLOURWAYS, brandMessage, estimateSize } from '../lib/brand-label';
+import { enquiryHref } from '../lib/enquiry';
+import { useI18n } from '../i18n/page';
+import '../styles/label-hero.css';
+
+interface Props {
+  breadcrumbs: { name: string; url: string }[];
+}
+const { breadcrumbs } = Astro.props;
+const { ui, lp } = useI18n(Astro.url);
+const L = ui.privateLabel;
+const H = L.hero;
+
+const contact = lp('/contact/');
+const href = enquiryHref(contact, { message: brandMessage('', H.message, H.messageNoBrand) });
+const brand = H.placeholder;
+/** Label boxes: the width the name may take, and its largest size (SVG units). */
+const FIT = { bottle: { w: 92, max: 24 }, carton: { w: 140, max: 34 } };
+const pad = (n: number) => String(n).padStart(2, '0');
+/** A colourway as the custom properties the SVG reads (label fill, ink, accent). */
+const colourVars = (c: (typeof COLOURWAYS)[number]) => `--lh-lab: ${c.label}; --lh-ink: ${c.ink}; --lh-acc: ${c.accent}`;
+---
+
+<script is:inline>
+  // Before first paint: show the live controls (they stay hidden without JS).
+  document.documentElement.classList.add('lh-js');
+</script>
+<section class="ph ph--label" aria-labelledby="page-h">
+  <div class="wrap lh-grid">
+    <div class="lh-copy">
+      {breadcrumbs.length > 1 && <Breadcrumbs items={breadcrumbs} />}
+      <h1 id="page-h" class="ph-title lh-h">
+        <span class="line"><span class="line-in">{H.h1a}</span></span>
+        <span class="line"><span class="line-in serif-i"> {H.h1b}</span></span>
+      </h1>
+      <p class="ph-lead lh-lead">{L.lead}</p>
+      <div class="ph-actions lh-actions">
+        <a class="btn btn--light lh-cta" href={href} data-label-cta data-contact={contact} data-msg={H.message} data-msg-none={H.messageNoBrand}>
+          {H.cta} <span class="arr" aria-hidden="true">→</span>
+        </a>
+        <a class="link-arrow" href="#faq">{ui.common.readFaq} <span class="arr" aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+
+    <figure class="lh-stage" data-label data-colourway={COLOURWAYS[0].id} style={colourVars(COLOURWAYS[0])}>
+      <div class="lh-tilt" data-label-tilt>
+        <svg class="lh-packs" viewBox="100 40 440 460" role="img" aria-labelledby="lh-svg-t" focusable="false">
+          <title id="lh-svg-t">{H.packAlt}</title>
+          <defs>
+            <linearGradient id="lh-glass" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#4f8a70" />
+              <stop offset=".16" stop-color="#93c9ad" />
+              <stop offset=".3" stop-color="#e3f4ea" />
+              <stop offset=".44" stop-color="#b3dcc5" />
+              <stop offset=".82" stop-color="#7fb89c" />
+              <stop offset="1" stop-color="#4b8169" />
+            </linearGradient>
+            <linearGradient id="lh-cyl" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0" stop-color="#000" stop-opacity=".22" />
+              <stop offset=".22" stop-color="#fff" stop-opacity=".16" />
+              <stop offset=".34" stop-color="#fff" stop-opacity=".3" />
+              <stop offset=".5" stop-color="#fff" stop-opacity="0" />
+              <stop offset=".86" stop-color="#000" stop-opacity=".08" />
+              <stop offset="1" stop-color="#000" stop-opacity=".26" />
+            </linearGradient>
+            <linearGradient id="lh-board" x1="0" x2="1" y1="0" y2=".3">
+              <stop offset="0" stop-color="#fff" stop-opacity=".26" />
+              <stop offset=".45" stop-color="#fff" stop-opacity=".04" />
+              <stop offset="1" stop-color="#000" stop-opacity=".1" />
+            </linearGradient>
+            <radialGradient id="lh-shadow">
+              <stop offset="0" stop-color="#020a07" stop-opacity=".55" />
+              <stop offset="1" stop-color="#020a07" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+
+          <ellipse cx="408" cy="474" rx="132" ry="16" fill="url(#lh-shadow)" />
+          <ellipse cx="196" cy="476" rx="104" ry="14" fill="url(#lh-shadow)" />
+
+          <!-- the folding carton, behind -->
+          <g class="lh-carton" data-label-carton>
+            <path class="lh-lab" d="M300 178 334 158h180l-34 20Z" />
+            <path d="M300 178 334 158h180l-34 20Z" fill="#fff" opacity=".42" />
+            <path class="lh-lab" d="M480 178 514 158v292l-34 22Z" />
+            <path d="M480 178 514 158v292l-34 22Z" fill="#020a07" opacity=".26" />
+            <rect class="lh-lab" x="300" y="178" width="180" height="294" />
+            <rect class="lh-acc" x="300" y="426" width="180" height="46" />
+            <path class="lh-acc" d="M480 426 514 404v46l-34 22Z" />
+            <path d="M480 426 514 404v46l-34 22Z" fill="#020a07" opacity=".3" />
+            <rect x="300" y="178" width="180" height="294" fill="url(#lh-board)" />
+            <path d="M300 178h180M480 178v294" stroke="#fff" stroke-opacity=".5" stroke-width="1" fill="none" />
+            <circle class="lh-ring" cx="390" cy="236" r="15" fill="none" stroke-width="2" />
+            <path class="lh-leaf" d="M390 228c6 4 7 11 0 17-7-6-6-13 0-17Z" />
+            <text class="lh-name" x="390" y="306" text-anchor="middle" font-size={estimateSize(brand, FIT.carton.w, FIT.carton.max)} data-label-name data-fit-w={FIT.carton.w} data-fit-max={FIT.carton.max}>{brand}</text>
+            <rect class="lh-ink-f" x="350" y="326" width="80" height="4" rx="2" />
+            <rect class="lh-ink-f" x="366" y="338" width="48" height="4" rx="2" />
+          </g>
+
+          <!-- the pump bottle, in front -->
+          <g class="lh-bottle" data-label-bottle>
+            <rect class="lh-acc" x="164" y="126" width="64" height="28" rx="6" />
+            <rect x="164" y="126" width="64" height="28" rx="6" fill="url(#lh-cyl)" />
+            <rect x="189" y="96" width="14" height="32" fill="#e8efe9" />
+            <rect x="189" y="96" width="14" height="32" fill="url(#lh-cyl)" />
+            <path class="lh-acc" d="M172 72h50l42 0a6 6 0 0 1 6 6v14h-10v-6h-38v10h-50a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6Z" />
+            <path d="M172 72h50l42 0a6 6 0 0 1 6 6v14h-10v-6h-38v10h-50a6 6 0 0 1-6-6v-12a6 6 0 0 1 6-6Z" fill="url(#lh-cyl)" />
+            <path d="M128 216c0-28 22-44 42-48v-14h52v14c20 4 42 20 42 48v230c0 14-10 24-24 24h-88c-14 0-24-10-24-24Z" fill="url(#lh-glass)" />
+            <rect class="lh-lab" x="140" y="262" width="112" height="158" rx="8" />
+            <rect x="140" y="262" width="112" height="158" rx="8" fill="url(#lh-cyl)" />
+            <circle class="lh-ring" cx="196" cy="296" r="11" fill="none" stroke-width="1.6" />
+            <path class="lh-leaf" d="M196 290c4.5 3 5.2 8 0 12.6-5.2-4.6-4.5-9.6 0-12.6Z" />
+            <text class="lh-name" x="196" y="346" text-anchor="middle" font-size={estimateSize(brand, FIT.bottle.w, FIT.bottle.max)} data-label-name data-fit-w={FIT.bottle.w} data-fit-max={FIT.bottle.max}>{brand}</text>
+            <rect class="lh-ink-f" x="170" y="362" width="52" height="3.5" rx="1.75" />
+            <rect class="lh-ink-f" x="180" y="372" width="32" height="3.5" rx="1.75" />
+            <rect x="146" y="196" width="9" height="250" rx="4.5" fill="#fff" opacity=".34" />
+            <path d="M150 190c6-10 16-16 26-18" stroke="#fff" stroke-opacity=".5" stroke-width="4" stroke-linecap="round" fill="none" />
+          </g>
+        </svg>
+      </div>
+
+      <form class="lh-controls" data-label-form action={contact} method="get">
+        <div class="lh-field">
+          <label for="lh-brand">{H.inputLabel}</label>
+          <input
+            id="lh-brand"
+            name="brand"
+            type="text"
+            maxlength={BRAND_MAX}
+            placeholder={brand}
+            autocomplete="off"
+            autocapitalize="words"
+            spellcheck="false"
+            data-label-input
+          />
+        </div>
+        <fieldset class="lh-swatches">
+          <legend>{H.colourLegend}</legend>
+          <div class="lh-swatch-row">
+            {
+              COLOURWAYS.map((c, i) => (
+                <label class="lh-swatch" style={`--sw: ${c.label}; --sw-acc: ${c.accent}`}>
+                  <input type="radio" name="colourway" value={c.id} checked={i === 0} data-label-swatch data-vars={colourVars(c)} />
+                  <span class="lh-swatch-dot" aria-hidden="true" />
+                  <span class="lh-swatch-name">{H.colourways[c.id]}</span>
+                </label>
+              ))
+            }
+          </div>
+        </fieldset>
+      </form>
+      <figcaption id="lh-cap" class="lh-cap">{H.caption}</figcaption>
+    </figure>
+
+    <ol class="lh-steps" aria-label={H.stepsAria} data-label-steps>
+      {
+        H.steps.map((s, i) => (
+          <li style={`--i: ${i}`}>
+            <span class="lh-n" aria-hidden="true">
+              {pad(i + 1)}
+            </span>
+            <span class="lh-step">{s}</span>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</section>
+
+<script>
+  import '../scripts/label-hero';
+</script>

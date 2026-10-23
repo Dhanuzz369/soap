@@ -462,12 +462,25 @@ const en = {
     title: 'Private Label Soaps & Cleaning Products: Exporter & Supplier from India',
     description:
       'Private label soaps, detergents and cleaners from India: your artwork, fragrance, colour and pack sizes, made by vetted Indian manufacturers and exported by GoodBiz Hygiene.',
-    l1: 'Private label soaps',
-    l2: 'and cleaning products from India.',
     lead: 'Sell soaps, detergents and cleaners under your own brand. GoodBiz Hygiene matches your brief to a vetted Indian manufacturer, manages samples and artwork, and ships the finished goods to your port.',
-    renderAlt: 'Illustration of soap bars and a hand wash bottle in typical private-label packs',
-    startBrief: 'Start your brief',
-    howRuns: 'How an order runs',
+    /** "Your brand, on our shelf": the page's hero with a live label (src/components/LabelHero.astro). */
+    hero: {
+      h1a: 'Your brand,',
+      h1b: 'sourced and shipped from India.',
+      cta: 'Start a private-label enquiry',
+      /** The brand shown on the drawn packs until the visitor types one (also the field's placeholder). */
+      placeholder: 'Your Brand',
+      inputLabel: 'Type your brand name',
+      colourLegend: 'Label colour',
+      colourways: { sage: 'Sage', ocean: 'Ocean', blush: 'Blush' },
+      packAlt: 'Illustration of a pump bottle and a folding carton with a blank label showing a brand name',
+      caption: 'Illustration of a typical private-label pack.',
+      /** Prefilled in the contact form's message. {brand} is the name the visitor typed. */
+      message: 'Private-label enquiry: we would like to sell under our brand “{brand}”.',
+      messageNoBrand: 'Private-label enquiry: we would like to sell under our own brand.',
+      stepsAria: 'A private-label order in four steps',
+      steps: ['Brief', 'Artwork proof', 'Sample approved', 'Shipped'],
+    },
     optionsH: 'What can be customised?',
     optionsText: 'Four choices make a range your own. Each is approved by you before bulk production.',
     options: [

@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PageHero from '../components/PageHero.astro';
+import LabelHero from '../components/LabelHero.astro';
 import ProcessSteps from '../components/ProcessSteps.astro';
 import Faq from '../components/Faq.astro';
 import QuoteCard from '../components/QuoteCard.astro';
@@ -28,26 +28,7 @@ const breadcrumbs = [
   jsonLd={[faqJsonLd(faqs, info.hreflang)]}
   dark
 >
-  <PageHero
-    breadcrumbs={breadcrumbs}
-    l1={L.l1}
-    l2={L.l2}
-    lead={L.lead}
-    size="product"
-    media={{
-      src: '/images/renders/category-bath-personal-soaps.webp',
-      width: 1440,
-      height: 1200,
-      alt: L.renderAlt,
-      mode: 'bleed',
-      cutout: true,
-    }}
-  >
-    <div class="ph-actions">
-      <a class="btn btn--light" href={lp('/contact/')}>{L.startBrief}</a>
-      <a class="link-arrow" href="#pl-steps">{L.howRuns} <span class="arr" aria-hidden="true">↓</span></a>
-    </div>
-  </PageHero>
+  <LabelHero breadcrumbs={breadcrumbs} />
 
   <section class="wrap sec split" aria-labelledby="pl-options-h">
     <div class="split-head" data-reveal>
@@ -66,17 +47,15 @@ const breadcrumbs = [
     </ul>
   </section>
 
-  <div id="pl-steps">
-    <ProcessSteps
-      id="pl-process"
-      l1={L.processL1}
-      l2={L.processL2}
-      intro={L.processIntro}
-      steps={steps}
-      photo
-      link={{ href: lp('/export-process/'), label: ui.common.exportProcessFull }}
-    />
-  </div>
+  <ProcessSteps
+    id="pl-process"
+    l1={L.processL1}
+    l2={L.processL2}
+    intro={L.processIntro}
+    steps={steps}
+    photo
+    link={{ href: lp('/export-process/'), label: ui.common.exportProcessFull }}
+  />
 
   <Faq faqs={faqs} heading={L.faqH} split />
 
