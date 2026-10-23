@@ -30,16 +30,9 @@
     column-gap: clamp(32px, 3vw, 56px);
     align-items: center;
   }
-  /* the map runs off the inline-end edge of the page (bigger, not cropped); the caption stays in */
-  .rt-map {
-    --bleed: calc(max(var(--gutter), (100vw - var(--max)) / 2 + var(--gutter)) - 8px);
-    margin-inline-end: calc(-1 * var(--bleed));
-  }
-  .rt-cap {
-    padding-inline-end: var(--bleed);
-  }
 }
 .rt-copy,
+.rt-side,
 .rt-map {
   min-width: 0;
 }
@@ -163,6 +156,12 @@
 }
 .rt-canvas {
   position: relative;
+  /* the window's cut edges (the north and the east) fade into the field; the west and south
+     edges carry Santos and the Cape lanes, so they stay sharp */
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 4%), linear-gradient(270deg, transparent 0, #000 5%); /* taste-skill-ignore: a mask on the map's cut edges, not a fill */
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(180deg, transparent 0, #000 4%), linear-gradient(270deg, transparent 0, #000 5%); /* taste-skill-ignore: a mask on the map's cut edges, not a fill */
+  mask-composite: intersect;
 }
 .rt-svg {
   display: block;
@@ -348,7 +347,7 @@
   align-items: center;
   gap: 12px 20px;
   min-height: var(--tap); /* the pause button appears with JS: its room is kept from the start */
-  margin-top: clamp(20px, 2.4vw, 32px);
+  margin-top: clamp(10px, 1.4vw, 18px);
 }
 .ph--route .link-arrow,
 .ph--route .link-arrow:hover {

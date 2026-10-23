@@ -1,8 +1,9 @@
 /**
  * "The route" (RouteHero.astro): region selection, the arc draw with the gliding ship, and the
  * 5s tour.
- * - A pointer pick draws the arc (stroke-dashoffset) and glides the ship along it, both from one
- *   rAF clock over 800ms on the strong ease-in-out, so the ship rides the tip of the line.
+ * - A pointer pick draws the route (stroke-dashoffset) and glides the ship along it, both from one
+ *   rAF clock on the strong ease-in-out, so the ship rides the tip of the line. The time grows
+ *   with the route's length (data-ms: 800ms for the Gulf, 1.6s at most for the Cape routes).
  * - A keyboard pick (arrow keys in the radio group) is instant: no animation on keyboard-driven,
  *   repeated actions. Reduced motion: every pick is instant and there is no ship.
  * - The tour pauses on hover or focus inside the hero, with the pause button, when the tab is
@@ -19,7 +20,6 @@ const toggle = document.querySelector<HTMLButtonElement>('[data-route-toggle]');
 const timeline = document.querySelector<HTMLElement>('[data-route-timeline]');
 const reduce = matchMedia('(prefers-reduced-motion: reduce)');
 
-const DRAW_MS = 800;
 const TOUR_MS = 5000;
 
 if (root && group) {
@@ -63,6 +63,14 @@ if (root && group) {
     baseOf(id)?.setAttribute('data-on', '');
     destOf(id)?.setAttribute('data-on', '');
 
+    // on phones the regions are a sideways strip: bring the picked one into view (inline only)
+    if (group.scrollWidth > group.clientWidth) {
+      const b = btn.getBoundingClientRect();
+      const g = group.getBoundingClientRect();
+      const delta = b.left + b.width / 2 - (g.left + g.width / 2);
+      group.scrollBy({ left: delta, behavior: how === 'key' || reduce.matches ? 'auto' : 'smooth' });
+    }
+
     if (lane) {
       lane.setAttribute('aria-live', how === 'tour' ? 'off' : 'polite');
       lane.textContent = btn.dataset.lane ?? '';
@@ -86,8 +94,9 @@ if (root && group) {
     const geo = baseOf(id) ?? arc; // the same curve, without pathLength, for exact ship positions
     ship?.setAttribute('data-on', '');
     const start = performance.now();
+    const ms = Number(arc.dataset.ms) || 800; // scaled by route length at build time, 0.8–1.6s
     const step = (now: number) => {
-      const p = easeInOut((now - start) / DRAW_MS);
+      const p = easeInOut((now - start) / ms);
       arc.style.strokeDashoffset = String(1 - p);
       placeShip(geo, p);
       if (p < 1) anim = requestAnimationFrame(step);

@@ -4,11 +4,13 @@
  * with the copy on the inline-start side (breadcrumbs, a two-line h1, the lead and six destination
  * region buttons) and a dotted world map: Natural Earth land sampled on a dot grid at build time
  * (`npm run route:map` → src/assets/route-map.svg, one path), glowing origin ports at Nhava Sheva,
- * Mundra and Chennai, and a stylised sea-route arc from the nearest of them to each region's port.
+ * Mundra and Chennai, and a sea route to each region's port, smoothed through waypoints on the usual
+ * lanes (Hormuz, the Red Sea and Suez, the Cape, Malacca) so no route crosses land.
  *
  * - The map is geographic in every language: it is never mirrored in RTL (dir="ltr" on the map),
  *   only the copy is.
- * - Selecting a region draws its arc (stroke-dashoffset, 800ms ease-in-out) while a small ship
+ * - Selecting a region draws its route (stroke-dashoffset, ease-in-out, 800ms scaled up with the
+ *   route's length to at most 1.6s) while a small ship
  *   glides along it (transform only), and the caption names the lane with the export terms. No
  *   transit days or freight prices anywhere (honesty rules).
  * - The tour moves on every 5s; it pauses on hover or focus, with the pause button, when the tab
@@ -21,7 +23,7 @@
  */
 import Breadcrumbs from './Breadcrumbs.astro';
 import mapSvg from '../assets/route-map.svg?raw';
-import { MAP_HEIGHT, MAP_WIDTH, ORIGINS, REGIONS, arcPath, project, regionArc } from '../lib/route-map';
+import { MAP_HEIGHT, MAP_WIDTH, ORIGINS, REGIONS, project, regionRoute, routeDuration, routeLength, routePath } from '../lib/route-map';
 import { useI18n } from '../i18n/page';
 import '../styles/route-hero.css';
 
@@ -36,16 +38,17 @@ const t = ui.terms;
 
 const land = mapSvg.match(/\sd="([^"]+)"/)?.[1] ?? '';
 const regions = REGIONS.map((r) => {
-  const arc = regionArc(r);
+  const route = regionRoute(r);
   const to = R.ports[r.port];
   const ports = 'also' in r ? `${to} / ${R.ports[r.also]}` : to;
   return {
     id: r.id,
     name: R.regions[r.id],
     ports,
-    d: arcPath(arc),
-    to: arc.to,
-    lane: fmt(R.lane, { from: R.ports[arc.origin], to }),
+    d: routePath(route.segments),
+    to: route.points[route.points.length - 1],
+    ms: routeDuration(routeLength(route.segments)),
+    lane: fmt(R.lane, { from: R.ports[route.origin], to }),
   };
 });
 const origins = ORIGINS.map((o) => ({ id: o.id, ...project(o.at) }));
@@ -89,6 +92,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
       </div>
     </div>
 
+    <div class="rt-side">
     <figure class="rt-map">
       <div class="rt-canvas" dir="ltr">
         <svg class="rt-svg" viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} role="img" aria-labelledby="rt-map-t" focusable="false">
@@ -102,7 +106,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
           </defs>
           <path class="rt-land" d={land} />
           <g class="rt-lanes">{regions.map((r) => <path class="rt-lane" d={r.d} data-lane-base={r.id} />)}</g>
-          <g class="rt-arcs">{regions.map((r) => <path class="rt-arc" d={r.d} pathLength="1" data-arc={r.id} />)}</g>
+          <g class="rt-arcs">{regions.map((r) => <path class="rt-arc" d={r.d} pathLength="1" data-arc={r.id} data-ms={r.ms} />)}</g>
           <g class="rt-dests">
             {
               regions.map((r) => (
@@ -135,6 +139,15 @@ const pad = (n: number) => String(n).padStart(2, '0');
         <p class="rt-cap-credit">{R.illustrative} <span class="rt-credit">{R.credit}</span></p>
       </figcaption>
     </figure>
+    <!-- under the map, clear of the fixed corner controls (language menu, WhatsApp) -->
+    <div class="rt-foot-row">
+      <a class="link-arrow" href="#steps">{E.stepsLink} <span class="arr" aria-hidden="true">↓</span></a>
+      <button class="rt-toggle" type="button" aria-pressed="false" hidden data-route-toggle>
+        <span class="rt-toggle-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">{R.pause}</span>
+      </button>
+    </div>
+    </div>
   </div>
 
   <div class="wrap rt-foot">
@@ -150,13 +163,6 @@ const pad = (n: number) => String(n).padStart(2, '0');
         ))
       }
     </ol>
-    <div class="rt-foot-row">
-      <a class="link-arrow" href="#steps">{E.stepsLink} <span class="arr" aria-hidden="true">↓</span></a>
-      <button class="rt-toggle" type="button" aria-pressed="false" hidden data-route-toggle>
-        <span class="rt-toggle-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">{R.pause}</span>
-      </button>
-    </div>
   </div>
 </section>
 

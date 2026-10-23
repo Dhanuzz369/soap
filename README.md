@@ -35,7 +35,7 @@ Other useful commands:
 | `npm run i18n:sweep -- --lang fr` | With `npm run preview` running: opens every page of a language in Chrome and reports sideways scrolling or console errors. |
 | `npm run renders` | Re-draws the glossy studio cut-outs (transparent WebP) of each pack shape, the category groups and the range group (`range-cutout.webp`, used on the Products and Export Process pages) into `public/images/renders/`, plus the neem-leaf cut-out (needs Google Chrome). Run it after changing the 3D pack models in `src/scripts/three/`. Three.js is only used here, never on the live site. |
 | `npm run hero:images` | Re-makes the home hero's smaller photo copies and its blurred colour glows in `public/images/hero/`, and the 480px copies of every product photo for the Products page's photo shelf in `public/images/shelf/`. Run it after replacing one of the four hero photos (the list is `FAN_RANGES` in `src/lib/hero-fan.ts`) or after adding or replacing any product photo. |
-| `npm run route:map` | Re-draws the dotted world map behind the Export Process page's hero ("the route") into `src/assets/route-map.svg`, from Natural Earth land data (public domain). Only needed after changing the map window, scale or dot spacing in `src/lib/route-map.ts`; the ports, regions and arc shapes live in that file too. |
+| `npm run route:map` | Re-draws the dotted world map behind the Export Process page's hero ("the route") into `src/assets/route-map.svg`, from Natural Earth land data (public domain). Only needed after changing the map window, scale or dot spacing in `src/lib/route-map.ts`; the ports, regions and the sea-lane waypoints of each route live in that file too (a unit test checks that no route crosses a land dot). |
 
 ---
 
