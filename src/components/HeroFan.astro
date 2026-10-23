@@ -15,7 +15,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { FAN_RANGES, FAN_SIZES } from '../lib/hero-fan';
+import { FAN_RANGES, FAN_SIZES, fanSrcset } from '../lib/hero-fan';
 import { productPicture } from '../lib/product-image';
 import { useI18n } from '../i18n/page';
 
@@ -43,7 +43,7 @@ const ranges = FAN_RANGES.flatMap((r) => {
   const d = data.find((x) => x.slug === r.slug);
   const pic = productPicture(r.photo, '');
   if (!d || !pic) return [];
-  return [{ ...r, ...d, pic, href: lp(`/categories/${r.slug}/`), glow: glowUri(r.photo) }];
+  return [{ ...r, ...d, pic, srcset: fanSrcset(r.photo, pic.srcset), href: lp(`/categories/${r.slug}/`), glow: glowUri(r.photo) }];
 });
 ---
 
@@ -72,18 +72,40 @@ const ranges = FAN_RANGES.flatMap((r) => {
             aria-label={fmt(ui.home.fanOpen, { name: r.title })}
             style={`--pos: ${r.pos}`}
           >
-            <span class="fan-face">
-              <img
-                src={r.pic.src}
-                srcset={r.pic.srcset}
-                sizes={FAN_SIZES}
-                width={r.pic.width}
-                height={r.pic.height}
-                alt={fmt(ui.common.photoAlt, { name: r.title })}
-                fetchpriority={i === 0 ? 'high' : 'low'}
-                decoding={i === 0 ? 'sync' : 'async'}
-                draggable="false"
-              />
+            <span class="fan-face" style={i > 0 && r.glow ? `background-image: url(${r.glow})` : undefined}>
+              {i === 0 || !r.glow ? (
+                <img
+                  src={r.pic.src}
+                  srcset={r.srcset}
+                  sizes={FAN_SIZES}
+                  width={r.pic.width}
+                  height={r.pic.height}
+                  alt={fmt(ui.common.photoAlt, { name: r.title })}
+                  fetchpriority={i === 0 ? 'high' : 'low'}
+                  decoding={i === 0 ? undefined : 'async'}
+                  draggable="false"
+                />
+              ) : (
+                <>
+                  {/* A back card shows its blurred colour (the face's background) until the front
+                      photo has loaded and the deal has settled, so it never takes bandwidth from the
+                      LCP image; its photo then fades in. Without JS, the noscript copy shows. */}
+                  <img
+                    class="fan-deferred"
+                    data-src={r.pic.src}
+                    data-srcset={r.srcset}
+                    sizes={FAN_SIZES}
+                    width={r.pic.width}
+                    height={r.pic.height}
+                    alt={fmt(ui.common.photoAlt, { name: r.title })}
+                    decoding="async"
+                    draggable="false"
+                  />
+                  <noscript>
+                    <img src={r.pic.src} srcset={r.srcset} sizes={FAN_SIZES} width={r.pic.width} height={r.pic.height} alt={fmt(ui.common.photoAlt, { name: r.title })} loading="lazy" decoding="async" />
+                  </noscript>
+                </>
+              )}
             </span>
           </a>
         ))

@@ -17,19 +17,38 @@ export const FAN_RANGES = [
   { slug: 'surface-home-cleaners', photo: 'floor-cleaner', pos: '80% 50%' },
 ] as const;
 
-/** The cards' `sizes` (CSS --card-w in home.css). Home's preload uses the same string. */
-export const FAN_SIZES = '(max-width: 759px) 50vw, clamp(240px, 23vw, 360px)';
+/** The fan's srcset: the hero's 480/640px copies (`npm run hero:images`) before the photo's own. */
+export function fanSrcset(photo: string, photoSrcset: string): string {
+  return `/images/hero/${photo}-480.webp 480w, /images/hero/${photo}-640.webp 640w, ${photoSrcset}`;
+}
+
+/**
+ * The photos' `sizes`. A 4:3 photo covering a 4:5 card is drawn 5/3 as wide as the card
+ * (--card-w in home.css: 50vw on phones, clamp(240px, 23vw, 360px) on wider screens), so this is
+ * 5/3 of the card width. Home's preload uses the same string.
+ */
+export const FAN_SIZES = '(max-width: 759px) 84vw, clamp(400px, 38vw, 600px)';
 
 /**
  * Slot poses, front (0) to back (3): x/y in % of the card, r in degrees (LTR; mirrored in RTL),
- * s the scale. The back cards are smaller, turned and offset to alternate sides.
+ * s the scale. The back cards are smaller, turned and offset to alternate sides. Each back card's
+ * bounding box (turned, and with the hover widening) stays smaller than the front card's, so the
+ * front photo is always the LCP element (tests/unit/hero-fan.test.ts).
  */
 export const FAN_POSES = [
   { x: 0, y: 0, r: 0, s: 1 },
-  { x: -17, y: -3, r: -6, s: 0.93 },
-  { x: 15, y: -6, r: 5, s: 0.88 },
-  { x: -30, y: -9, r: -10, s: 0.83 },
+  { x: -17, y: -3, r: -6, s: 0.88 },
+  { x: 15, y: -6, r: 5, s: 0.84 },
+  { x: -30, y: -9, r: -10, s: 0.8 },
 ] as const;
+
+/** Area of a card's axis-aligned bounding box, in card-widths² (a 4:5 card turned by `deg`, scaled by `s`). */
+export function boxArea(s: number, deg: number): number {
+  const a = (Math.abs(deg) * Math.PI) / 180;
+  const w = s * (Math.cos(a) + 1.25 * Math.sin(a));
+  const h = s * (1.25 * Math.cos(a) + Math.sin(a));
+  return w * h;
+}
 
 /** A card order, front first: order[0] is the card shown in front. */
 export type FanOrder = readonly number[];

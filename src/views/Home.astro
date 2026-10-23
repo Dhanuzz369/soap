@@ -1,6 +1,6 @@
 ---
 import { categoryPicture, productPicture } from '../lib/product-image';
-import { FAN_RANGES, FAN_SIZES } from '../lib/hero-fan';
+import { FAN_RANGES, FAN_SIZES, fanSrcset } from '../lib/hero-fan';
 /**
  * Home (Floria-style restyle; docs/superpowers/specs/2026-10-16-floria-restyle-direction.md).
  * Dark hero with the photo fan (HeroFan) → The Range → how export orders work → The Categories →
@@ -67,7 +67,7 @@ const promises = h.promises;
   path="/"
   jsonLd={[faqJsonLd(homeFaqs, info.hreflang)]}
   dark
-  preloadImage={lcp && { href: lcp.src, srcset: lcp.srcset, sizes: FAN_SIZES }}
+  preloadImage={lcp && { href: lcp.src, srcset: fanSrcset(FAN_RANGES[0].photo, lcp.srcset), sizes: FAN_SIZES }}
 >
   <!-- 1. Hero -->
   <section class="hero" aria-labelledby="hero-h">

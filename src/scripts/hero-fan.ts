@@ -73,7 +73,11 @@ function init(root: HTMLElement) {
       const isFront = i === front;
       c.tabIndex = isFront ? 0 : -1;
       if (isFront) c.removeAttribute('aria-hidden');
-      else c.setAttribute('aria-hidden', 'true');
+      else {
+        // (mouse) focus left on a card that goes to the back would sit inside aria-hidden
+        if (document.activeElement === c) c.blur();
+        c.setAttribute('aria-hidden', 'true');
+      }
     });
     glows.forEach((g, i) => g.toggleAttribute('data-active', i === front));
     captions.forEach((p, i) => p.toggleAttribute('data-active', i === front));
@@ -148,8 +152,9 @@ function init(root: HTMLElement) {
     hold.hovered = false;
     schedule();
   });
-  root.addEventListener('focusin', () => {
-    hold.focused = true;
+  // Keyboard focus holds the fan; a mouse click that leaves focus on a card does not.
+  root.addEventListener('focusin', (e) => {
+    hold.focused = (e.target as HTMLElement).matches(':focus-visible');
     schedule();
   });
   root.addEventListener('focusout', (e) => {
@@ -257,17 +262,39 @@ function init(root: HTMLElement) {
   stage.addEventListener('pointerup', endDrag);
   stage.addEventListener('pointercancel', endDrag);
 
+  /* ---------- the back cards' photos ----------
+     They show their blurred colour (the inlined glow) until the deal has settled (or the visitor
+     reaches for the fan), so they never compete with the front (LCP) photo; then they fade in. */
+  let backLoaded = false;
+  const loadBackPhotos = () => {
+    if (backLoaded) return;
+    backLoaded = true;
+    root.querySelectorAll<HTMLImageElement>('img[data-srcset]').forEach((im) => {
+      const shown = () => im.setAttribute('data-loaded', '');
+      im.addEventListener('load', shown, { once: true });
+      im.addEventListener('error', shown, { once: true });
+      im.srcset = im.dataset.srcset ?? '';
+      im.src = im.dataset.src ?? '';
+      im.removeAttribute('data-srcset');
+    });
+  };
+  for (const ev of ['pointerenter', 'touchstart', 'focusin'] as const) root.addEventListener(ev, loadBackPhotos, { once: true, passive: true });
+
   /* ---------- the deal: once the front photo has painted, fan out ---------- */
   render();
   const img = faces[0]?.querySelector('img');
   const go = () => {
     if (dealt) return;
     dealt = true;
+
     requestAnimationFrame(() =>
       requestAnimationFrame(() => {
         setMode('deal');
         root.dataset.dealt = '';
-        window.setTimeout(schedule, SETTLE.deal);
+        window.setTimeout(() => {
+          loadBackPhotos();
+          schedule();
+        }, SETTLE.deal);
       }),
     );
   };

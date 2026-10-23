@@ -169,7 +169,7 @@
   --x: -17%;
   --y: -3%;
   --r: -6deg;
-  --s: 0.93;
+  --s: 0.88;
   --dim: 0.42;
   --deal-i: 1;
   z-index: 3;
@@ -178,7 +178,7 @@
   --x: 15%;
   --y: -6%;
   --r: 5deg;
-  --s: 0.88;
+  --s: 0.84;
   --dim: 0.58;
   --deal-i: 2;
   z-index: 2;
@@ -187,7 +187,7 @@
   --x: -30%;
   --y: -9%;
   --r: -10deg;
-  --s: 0.83;
+  --s: 0.8;
   --dim: 0.72;
   --deal-i: 3;
   z-index: 1;
@@ -226,6 +226,22 @@
   background-color: var(--forest-800);
   box-shadow: 0 16px 36px -18px rgb(1 8 5 / 0.6); /* taste-skill-ignore: soft shadow under every card */
   transition: transform 400ms var(--ease-out);
+}
+/* a back card's photo fades in over its blurred colour once loaded; without JS the noscript
+   photo stands in for it */
+.fan-face[style] {
+  background-size: cover;
+  background-position: center;
+}
+.fan-deferred {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+.fan-deferred[data-loaded] {
+  opacity: 1;
+}
+html:not(.hero-js) .fan-deferred {
+  display: none;
 }
 .fan-face img {
   display: block;
@@ -897,9 +913,11 @@
 }
 
 /* The fan's motion (src/scripts/hero-fan.ts sets data-mode and data-slot; these pick the timing).
-   - deal (load): stacked and lowered (translateY 24px, scale .94, back cards transparent), then
-     out to the fanned poses, 1100ms on Floria's curve, 90ms apart. The front photo is never
-     transparent: it paints at once in the stacked pose (so it is the LCP element) and only moves.
+   - deal (load): stacked and lowered (translateY 24px; the back cards also scale .94 and are
+     transparent), then out to the fanned poses, 1100ms on Floria's curve, 90ms apart. The front
+     photo is never transparent or shrunk: it paints at once (the LCP element) and only rises.
+     Every back card, even turned, has a smaller bounding box than the front one, so a back photo
+     arriving later never becomes the LCP element.
    - auto (every 5s): 750ms on the strong ease-in-out. The leaving card goes out to the inline
      start (420ms), then is tucked in at the back.
    - user (range buttons, back cards, swipe): 280ms on the strong ease-out.
@@ -932,7 +950,11 @@
   transition-duration: 280ms;
 }
 @media (prefers-reduced-motion: no-preference) {
+  /* the front card only drops 24px (it stays the largest image on screen: the LCP element) */
   .hero-js .fan:not([data-dealt]) .fan-card {
+    transform: translateY(24px);
+  }
+  .hero-js .fan:not([data-dealt]) .fan-card:not([data-slot='0']) {
     transform: translateY(24px) scale(0.94);
   }
   .hero-js .fan:not([data-dealt]) .fan-card:not([data-slot='0']) {

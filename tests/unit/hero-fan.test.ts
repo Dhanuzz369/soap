@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import {
   advance,
+  boxArea,
   bringToFront,
   canAutoplay,
   dragOffset,
@@ -18,10 +19,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 describe('fan ranges', () => {
-  it('has one photo (with its 800px copy and glow) per main range', () => {
+  it('has one photo (with its 800px copy, hero copies and glow) per main range', () => {
     expect(FAN_RANGES.map((r) => r.slug)).toEqual(['bath-personal-soaps', 'laundry-care', 'kitchen-care', 'surface-home-cleaners']);
     for (const r of FAN_RANGES) {
-      for (const f of [`products/${r.photo}.webp`, `products/${r.photo}-800.webp`, `hero/glow-${r.photo}.webp`]) {
+      for (const f of [`products/${r.photo}.webp`, `products/${r.photo}-800.webp`, `hero/${r.photo}-480.webp`, `hero/${r.photo}-640.webp`, `hero/glow-${r.photo}.webp`]) {
         expect(fs.existsSync(path.join('public/images', f)), f).toBe(true);
       }
     }
@@ -30,6 +31,14 @@ describe('fan ranges', () => {
     expect(FAN_POSES).toHaveLength(FAN_RANGES.length);
     expect(FAN_POSES[0]).toEqual({ x: 0, y: 0, r: 0, s: 1 });
     for (let i = 1; i < FAN_POSES.length; i++) expect(FAN_POSES[i].s).toBeLessThan(FAN_POSES[i - 1].s);
+  });
+  it('keeps every back card, turned and widened on hover (x1.14), smaller on screen than the front (LCP)', () => {
+    const front = boxArea(1, 0);
+    expect(front).toBe(1.25);
+    for (const p of FAN_POSES.slice(1)) {
+      expect(boxArea(p.s, p.r)).toBeLessThan(front);
+      expect(boxArea(p.s, p.r * 1.14)).toBeLessThan(front);
+    }
   });
 });
 

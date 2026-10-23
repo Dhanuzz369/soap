@@ -44,6 +44,13 @@ html:lang(zh-Hans) :is(.serif-i, .statement-title em, .footer-tag) {
 html:lang(zh-Hans) :is(.serif-i, .statement-title em, .footer-tag) {
   font-weight: 400;
 }
+/* The decorative "?" behind each answer: in Arabic it is set in the Arabic face too, so the page
+   does not download Newsreader italic (63 KB) for one ornament (Lighthouse, photo hero report). */
+html:lang(ar) .answer::before {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 300;
+}
 
 /* ---------- 2. right-to-left ---------- */
 /* the mint glow on dark fields sits behind the object, which is now on the left */
