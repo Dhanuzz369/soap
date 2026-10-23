@@ -20,8 +20,7 @@
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.4",
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.4.0",
-    "three": "^0.186.1"
+    "astro": "^7.4.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
@@ -32,6 +31,7 @@
     "gray-matter": "^4.0.3",
     "playwright-core": "^1.64.1",
     "sharp": "^0.35.5",
+    "three": "^0.186.1",
     "typescript": "^6.0.3",
     "vitest": "^5.0.5"
   }

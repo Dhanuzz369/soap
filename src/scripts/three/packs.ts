@@ -1,13 +1,12 @@
 /**
  * Three.js pack builders: one stylised model per pack shape in src/lib/pack-shapes.ts.
  *
- * Shared by the live home hero (hero-scene.ts) and the studio render script
- * (scripts/render-packs.mjs), so the pre-rendered stills and the live scene are the same models.
+ * Used only by the studio render script (scripts/render-packs.mjs, `npm run renders`); nothing
+ * here ships to the browser since the home hero became the photo fan.
  * Everything is built from primitives, lathes and deformed boxes: no model files to download.
  * Each builder returns a Group standing on y = 0, roughly 1.6–2.5 units tall.
  *
- * Three material qualities share the same models:
- *   live    the runtime hero: opaque glossy plastic, cheap enough for a phone
+ * Two material qualities share the same models:
  *   glossy  the pre-rendered stills: PET bottles with transmission and thickness, clearcoat 1 on
  *           caps, clearcoated labels (no runtime cost, so no compromise)
  *   matte   a white coverage pass of the same scene, used by the render script to cut the stills
@@ -78,7 +77,7 @@ export const SHAPE_TINT: Record<Shape, Tint> = {
 
 export type Disposable = { dispose(): void };
 
-export type PackQuality = 'live' | 'glossy' | 'matte';
+export type PackQuality = 'glossy' | 'matte';
 
 export type PackKit = {
   /** Builds one pack. `tint` overrides the shape's default category colour. */
@@ -90,7 +89,7 @@ export type PackKit = {
 export function createPackKit(
   renderer: WebGLRenderer,
   keep: <T extends Disposable>(d: T) => T,
-  quality: PackQuality = 'live',
+  quality: PackQuality = 'glossy',
 ): PackKit {
   const glossy = quality === 'glossy';
   const matte = quality === 'matte';
@@ -147,7 +146,7 @@ export function createPackKit(
         ...(glossy ? { clearcoat: 0.35, clearcoatRoughness: 0.3 } : {}),
       }),
     );
-  /** Printed labels and faces: clearcoated in the stills, a plain print in the live scene. */
+  /** Printed labels and faces: clearcoated in the colour pass. */
   const printMat = (map: Texture, roughness: number): Material =>
     white ??
     keep(

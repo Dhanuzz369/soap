@@ -1,6 +1,6 @@
 /**
  * A faint floor reflection: a mirrored copy of each pack below y = 0 that fades out with depth
- * below the floor. Shared by the stills (scripts/render) and the live hero so they match.
+ * below the floor. Used by the stills (scripts/render).
  *
  * The copy reuses the pack's geometry; its materials are clones made transparent, without
  * transmission (no second transmission pass), and with a fragment fade on world height.

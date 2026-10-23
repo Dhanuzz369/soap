@@ -3,13 +3,13 @@
  * Studio renders of the pack shapes: `npm run renders`.
  *
  * Serves scripts/render/index.html with Vite (so it can import the site's own Three.js pack
- * builders, studio lights and hero scene), drives it with Playwright in an installed Chrome,
+ * builders, studio lights and range still), drives it with Playwright in an installed Chrome,
  * and writes transparent WebP cut-outs (alpha) to public/images/renders/:
  *   <shape>.webp (1200×1500) and <shape>-600.webp (600×750)   one per pack shape
  *   <shape>--<category>.webp (+ -600)                          the same pack in another category's
  *                                                            colours, where a product needs it
  *   category-<slug>.webp                                     a small group per category (bento tiles)
- *   range-cutout.webp (1600×1280) + range-cutout-800.webp      the home hero object and LCP image
+ *   range-cutout.webp (1600×1280) + range-cutout-800.webp      the range group (Products, Export Process bands)
  * and the neem-leaf cut-out public/images/found/neem-leaves.webp (from the public-domain plate).
  *
  * Glossy studio quality: PET bottles with transmission and thickness, clearcoat 1 on caps,
@@ -203,7 +203,7 @@ try {
   }
 
   if (want('range-cutout')) {
-    console.log('Hero cut-out');
+    console.log('Range cut-out');
     const shot = await twoPass(([p]) => window.renderHero(p), []);
     await save('range-cutout', shot, 1600, 1280);
     await save('range-cutout-800', shot, 800, 640);

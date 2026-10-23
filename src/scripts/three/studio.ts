@@ -1,6 +1,6 @@
 /**
  * The studio: renderer settings, lights and backdrop for packs photographed on the forest field.
- * Shared by the live hero and the render script so every still and the live scene match.
+ * Used by the render script (scripts/render-packs.mjs) so every still is lit the same way.
  *
  * Lighting is a classic dark-field product setup: a soft warm key from the upper left,
  * two mint rim lights from behind that draw the edges against the dark, a dim room
@@ -34,8 +34,8 @@ export type StudioOptions = {
   /** Backdrop glow: centre (world x, y), size (world units), strength 0..1. */
   glow?: { x: number; y: number; w: number; h: number; strength: number };
   /**
-   * What sits behind the packs: the forest field (stills' colour pass), nothing (the live hero
-   * over its CSS field, alpha canvas), or black (the matte pass of the stills).
+   * What sits behind the packs: the forest field (stills' colour pass), nothing (alpha), or
+   * black (the matte pass of the stills).
    */
   background?: 'field' | 'none' | 'black';
   /** Studio stills: a brighter room for the reflections (the strip softboxes are scripts/render/strips.ts). */
@@ -59,7 +59,6 @@ export function setupStudio(
   const room = new RoomEnvironment();
   const envRT = pmrem.fromScene(room, 0.04);
   scene.environment = envRT.texture;
-  // The live hero gets a brighter room than before so its clearcoat reads closer to the glossy still.
   scene.environmentIntensity = opts.glossy ? 0.42 : 0.34;
   room.dispose();
   pmrem.dispose();
