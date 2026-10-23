@@ -1015,3 +1015,13 @@ html:not(.hero-js) .fan-deferred {
 .tile-link img.is-photo {
   object-position: 42% 62%;
 }
+
+/* Phones: the second hero action sits under the first, on the inline-start side,
+   so the WhatsApp button in the end corner never covers it. */
+@media (max-width: 559.98px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
