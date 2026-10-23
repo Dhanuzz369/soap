@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '4d7442468d97';
+export const sourceHash = '2d63fbf41757';
 
 const zh: UiPartial = {
   meta: {
@@ -384,9 +384,42 @@ const zh: UiPartial = {
     title: '出口流程：香皂与家居清洁产品印度出口商与供应商',
     description:
       'GoodBiz Hygiene如何从印度出口香皂、洗涤剂和清洁剂：报价、样品、国际贸易术语、付款条件、单据、港口与典型交货周期。',
-    l1: '出口流程。',
-    l2: '从询价到提单。',
     lead: '通过GoodBiz Hygiene从印度采购香皂和家居清洁产品的步骤、条款与单据。',
+    route: {
+      h1a: '从印度港口，',
+      h1b: '到您的港口。',
+      regionsLabel: '选择目的地区域',
+      regions: {
+        gulf: '海湾与中东',
+        eastAfrica: '东非',
+        westAfrica: '西非',
+        europe: '欧洲',
+        southeastAsia: '东南亚',
+        latinAmerica: '拉丁美洲',
+      },
+      ports: {
+        nhavaSheva: '那瓦舍瓦（孟买）',
+        mundra: '蒙德拉',
+        chennai: '金奈',
+        jebelAli: '杰贝阿里',
+        mombasa: '蒙巴萨',
+        lagos: '拉各斯',
+        tema: '特马',
+        rotterdam: '鹿特丹',
+        singapore: '新加坡',
+        jakarta: '雅加达',
+        santos: '桑托斯',
+      },
+      lane: '{from} → {to}',
+      laneAll: '印度港口 → 您的港口',
+      terms: 'FOB、CIF 或 CFR · {leadTime}',
+      illustrative: '航线仅为示意。',
+      credit: '地图数据：Natural Earth（公有领域）',
+      mapAlt: '示意图：从那瓦舍瓦、蒙德拉和金奈到六个地区港口的海运航线',
+      pause: '暂停航线轮播',
+      timelineAria: '从订单到启航',
+      timeline: ['订单确认', '生产与包装', '单证', '装船与启航'],
+    },
     stepsLink: '六个步骤',
     termsH: '出口条款有哪些？',
     termsIncoterms: '贸易术语与付款',
@@ -433,12 +466,22 @@ const zh: UiPartial = {
     title: '自有品牌香皂与清洁产品：印度出口商与供应商',
     description:
       '印度自有品牌香皂、洗涤剂和清洁剂：由您决定设计稿、香型、颜色和包装规格，由经考察的印度制造商生产，GoodBiz Hygiene负责出口。',
-    l1: '印度自有品牌香皂',
-    l2: '与清洁产品。',
     lead: '以您自己的品牌销售香皂、洗涤剂和清洁剂。GoodBiz Hygiene根据您的需求匹配一家经考察的印度制造商，负责管理样品和设计稿，并将成品运至您的港口。',
-    renderAlt: '香皂和洗手液瓶在典型自有品牌包装中的示意图',
-    startBrief: '提交您的需求',
-    howRuns: '订单如何运作',
+    hero: {
+      h1a: '您的品牌，',
+      h1b: '在印度采购，从印度发运。',
+      cta: '发起自有品牌询价',
+      placeholder: '您的品牌',
+      inputLabel: '输入您的品牌名称',
+      colourLegend: '标签颜色',
+      colourways: { sage: '鼠尾草绿', ocean: '海洋蓝', blush: '柔粉' },
+      packAlt: '示意图：按压泵瓶和折叠纸盒，空白标签上显示品牌名称',
+      caption: '典型自有品牌包装示意图。',
+      message: '自有品牌询价：我们希望以我们的品牌“{brand}”销售。',
+      messageNoBrand: '自有品牌询价：我们希望以自有品牌销售。',
+      stepsAria: '自有品牌订单四个步骤',
+      steps: ['需求简报', '设计稿打样', '样品确认', '已发运'],
+    },
     optionsH: '哪些内容可以定制？',
     optionsText: '四项选择让产品系列成为您自己的品牌。每一项在批量生产前均由您确认。',
     options: [

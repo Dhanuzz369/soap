@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '4d7442468d97';
+export const sourceHash = '2d63fbf41757';
 
 const es: UiPartial = {
   meta: {
@@ -386,9 +386,42 @@ const es: UiPartial = {
     title: 'Proceso de exportación: exportador y proveedor de jabones y productos de limpieza desde la India',
     description:
       'Cómo exporta GoodBiz Hygiene jabones, detergentes y limpiadores desde la India: cotización, muestras, incoterms, condiciones de pago, documentos, puertos y plazos típicos.',
-    l1: 'El proceso de exportación.',
-    l2: 'De la consulta al conocimiento de embarque.',
     lead: 'Los pasos, las condiciones y los documentos para comprar jabones y productos de limpieza del hogar desde la India con GoodBiz Hygiene.',
+    route: {
+      h1a: 'De los puertos de la India,',
+      h1b: 'a los suyos.',
+      regionsLabel: 'Elija una región de destino',
+      regions: {
+        gulf: 'Golfo y Oriente Medio',
+        eastAfrica: 'África Oriental',
+        westAfrica: 'África Occidental',
+        europe: 'Europa',
+        southeastAsia: 'Sudeste Asiático',
+        latinAmerica: 'América Latina',
+      },
+      ports: {
+        nhavaSheva: 'Nhava Sheva (Bombay)',
+        mundra: 'Mundra',
+        chennai: 'Chennai',
+        jebelAli: 'Jebel Ali',
+        mombasa: 'Mombasa',
+        lagos: 'Lagos',
+        tema: 'Tema',
+        rotterdam: 'Róterdam',
+        singapore: 'Singapur',
+        jakarta: 'Yakarta',
+        santos: 'Santos',
+      },
+      lane: '{from} → {to}',
+      laneAll: 'Puertos de la India → su puerto',
+      terms: 'FOB, CIF o CFR · {leadTime}',
+      illustrative: 'Rutas ilustrativas.',
+      credit: 'Datos del mapa: Natural Earth (dominio público)',
+      mapAlt: 'Mapa de rutas marítimas ilustrativas desde Nhava Sheva, Mundra y Chennai hacia puertos de seis regiones',
+      pause: 'Pausar el recorrido de rutas',
+      timelineAria: 'Del pedido a la salida del buque',
+      timeline: ['Pedido confirmado', 'Producción y embalaje', 'Documentos', 'Carga y zarpe'],
+    },
     stepsLink: 'Los seis pasos',
     termsH: '¿Cuáles son las condiciones de exportación?',
     termsIncoterms: 'Incoterms y pago',
@@ -435,12 +468,22 @@ const es: UiPartial = {
     title: 'Jabones y productos de limpieza de marca propia: exportador y proveedor desde la India',
     description:
       'Jabones, detergentes y limpiadores de marca propia desde la India: su diseño, fragancia, color y tamaños de envase, fabricados por fabricantes indios seleccionados y exportados por GoodBiz Hygiene.',
-    l1: 'Jabones de marca propia',
-    l2: 'y productos de limpieza desde la India.',
     lead: 'Venda jabones, detergentes y limpiadores con su propia marca. GoodBiz Hygiene asigna su solicitud a un fabricante indio seleccionado, gestiona las muestras y el diseño, y envía el producto terminado a su puerto.',
-    renderAlt: 'Ilustración de pastillas de jabón y una botella de jabón de manos en envases típicos de marca propia',
-    startBrief: 'Inicie su solicitud',
-    howRuns: 'Cómo se desarrolla un pedido',
+    hero: {
+      h1a: 'Su marca,',
+      h1b: 'con origen y envío desde la India.',
+      cta: 'Iniciar una consulta de marca propia',
+      placeholder: 'Su Marca',
+      inputLabel: 'Escriba el nombre de su marca',
+      colourLegend: 'Color de la etiqueta',
+      colourways: { sage: 'Salvia', ocean: 'Océano', blush: 'Rosa' },
+      packAlt: 'Ilustración de un frasco con dosificador y un estuche plegable con una etiqueta en blanco que muestra un nombre de marca',
+      caption: 'Ilustración de un envase típico de marca propia.',
+      message: 'Consulta de marca propia: queremos vender con nuestra marca «{brand}».',
+      messageNoBrand: 'Consulta de marca propia: queremos vender con nuestra propia marca.',
+      stepsAria: 'Un pedido de marca propia en cuatro pasos',
+      steps: ['Brief', 'Prueba de arte', 'Muestra aprobada', 'Enviado'],
+    },
     optionsH: '¿Qué se puede personalizar?',
     optionsText: 'Cuatro decisiones hacen de una gama algo propio. Usted aprueba cada una antes de la producción en volumen.',
     options: [

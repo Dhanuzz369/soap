@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '4d7442468d97';
+export const sourceHash = '2d63fbf41757';
 
 const pt: UiPartial = {
   meta: {
@@ -386,9 +386,42 @@ const pt: UiPartial = {
     title: 'Processo de exportação: exportador e fornecedor de sabonetes e limpeza doméstica da Índia',
     description:
       'Como a GoodBiz Hygiene exporta sabonetes, detergentes e limpadores da Índia: cotação, amostras, incoterms, condições de pagamento, documentos, portos e prazos típicos.',
-    l1: 'O processo de exportação.',
-    l2: 'Da consulta ao conhecimento de embarque.',
     lead: 'As etapas, as condições e os documentos para comprar sabonetes e produtos de limpeza doméstica da Índia pela GoodBiz Hygiene.',
+    route: {
+      h1a: 'Dos portos da Índia,',
+      h1b: 'aos seus.',
+      regionsLabel: 'Escolha uma região de destino',
+      regions: {
+        gulf: 'Golfo e Oriente Médio',
+        eastAfrica: 'África Oriental',
+        westAfrica: 'África Ocidental',
+        europe: 'Europa',
+        southeastAsia: 'Sudeste Asiático',
+        latinAmerica: 'América Latina',
+      },
+      ports: {
+        nhavaSheva: 'Nhava Sheva (Mumbai)',
+        mundra: 'Mundra',
+        chennai: 'Chennai',
+        jebelAli: 'Jebel Ali',
+        mombasa: 'Mombaça',
+        lagos: 'Lagos',
+        tema: 'Tema',
+        rotterdam: 'Roterdã',
+        singapore: 'Singapura',
+        jakarta: 'Jacarta',
+        santos: 'Santos',
+      },
+      lane: '{from} → {to}',
+      laneAll: 'Portos da Índia → o seu porto',
+      terms: 'FOB, CIF ou CFR · {leadTime}',
+      illustrative: 'Rotas ilustrativas.',
+      credit: 'Dados do mapa: Natural Earth (domínio público)',
+      mapAlt: 'Mapa de rotas marítimas ilustrativas de Nhava Sheva, Mundra e Chennai para portos em seis regiões',
+      pause: 'Pausar a sequência de rotas',
+      timelineAria: 'Do pedido à partida do navio',
+      timeline: ['Pedido confirmado', 'Produção e embalagem', 'Documentos', 'Embarque e partida'],
+    },
     stepsLink: 'As seis etapas',
     termsH: 'Quais são as condições de exportação?',
     termsIncoterms: 'Incoterms e pagamento',
@@ -435,12 +468,22 @@ const pt: UiPartial = {
     title: 'Sabonetes e produtos de limpeza com marca própria: exportador e fornecedor da Índia',
     description:
       'Sabonetes, detergentes e limpadores com marca própria da Índia: sua arte, fragrância, cor e embalagens, fabricados por indianos selecionados e exportados pela GoodBiz Hygiene.',
-    l1: 'Sabonetes com marca própria',
-    l2: 'e produtos de limpeza da Índia.',
     lead: 'Venda sabonetes, detergentes e limpadores com a sua própria marca. A GoodBiz Hygiene associa a sua solicitação a um fabricante indiano selecionado, cuida das amostras e da arte e embarca os produtos acabados até o seu porto.',
-    renderAlt: 'Ilustração de barras de sabonete e de um frasco de sabonete líquido em embalagens típicas de marca própria',
-    startBrief: 'Inicie a sua solicitação',
-    howRuns: 'Como um pedido transcorre',
+    hero: {
+      h1a: 'Sua marca,',
+      h1b: 'com origem e embarque na Índia.',
+      cta: 'Iniciar uma consulta de marca própria',
+      placeholder: 'Sua Marca',
+      inputLabel: 'Digite o nome da sua marca',
+      colourLegend: 'Cor do rótulo',
+      colourways: { sage: 'Sálvia', ocean: 'Oceano', blush: 'Rosé' },
+      packAlt: 'Ilustração de um frasco com válvula pump e um cartucho dobrável com um rótulo em branco exibindo um nome de marca',
+      caption: 'Ilustração de uma embalagem típica de marca própria.',
+      message: 'Consulta de marca própria: queremos vender com a nossa marca “{brand}”.',
+      messageNoBrand: 'Consulta de marca própria: queremos vender com a nossa própria marca.',
+      stepsAria: 'Um pedido de marca própria em quatro etapas',
+      steps: ['Briefing', 'Prova de arte', 'Amostra aprovada', 'Embarcado'],
+    },
     optionsH: 'O que pode ser personalizado?',
     optionsText: 'Quatro escolhas tornam uma linha sua. Cada uma é aprovada por você antes da produção em escala.',
     options: [

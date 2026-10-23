@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '4d7442468d97';
+export const sourceHash = '2d63fbf41757';
 
 const vi: UiPartial = {
   meta: {
@@ -386,9 +386,42 @@ const vi: UiPartial = {
     title: 'Quy trình xuất khẩu: nhà xuất khẩu và nhà cung cấp xà phòng, sản phẩm vệ sinh gia dụng từ Ấn Độ',
     description:
       'Cách GoodBiz Hygiene xuất khẩu xà phòng, chất tẩy rửa từ Ấn Độ: báo giá, mẫu thử, Incoterms, điều khoản thanh toán, chứng từ, cảng và thời gian giao hàng điển hình.',
-    l1: 'Quy trình xuất khẩu.',
-    l2: 'Từ yêu cầu đến vận đơn đường biển.',
     lead: 'Các bước, điều khoản và chứng từ khi mua xà phòng và sản phẩm vệ sinh gia dụng từ Ấn Độ qua GoodBiz Hygiene.',
+    route: {
+      h1a: 'Từ các cảng của Ấn Độ,',
+      h1b: 'đến cảng của Quý khách.',
+      regionsLabel: 'Chọn khu vực điểm đến',
+      regions: {
+        gulf: 'Vùng Vịnh & Trung Đông',
+        eastAfrica: 'Đông Phi',
+        westAfrica: 'Tây Phi',
+        europe: 'Châu Âu',
+        southeastAsia: 'Đông Nam Á',
+        latinAmerica: 'Mỹ Latinh',
+      },
+      ports: {
+        nhavaSheva: 'Nhava Sheva (Mumbai)',
+        mundra: 'Mundra',
+        chennai: 'Chennai',
+        jebelAli: 'Jebel Ali',
+        mombasa: 'Mombasa',
+        lagos: 'Lagos',
+        tema: 'Tema',
+        rotterdam: 'Rotterdam',
+        singapore: 'Singapore',
+        jakarta: 'Jakarta',
+        santos: 'Santos',
+      },
+      lane: '{from} → {to}',
+      laneAll: 'Cảng Ấn Độ → cảng của Quý khách',
+      terms: 'FOB, CIF hoặc CFR · {leadTime}',
+      illustrative: 'Tuyến đường chỉ mang tính minh họa.',
+      credit: 'Dữ liệu bản đồ: Natural Earth (phạm vi công cộng)',
+      mapAlt: 'Bản đồ minh họa các tuyến đường biển từ Nhava Sheva, Mundra và Chennai đến các cảng ở sáu khu vực',
+      pause: 'Tạm dừng trình chiếu tuyến đường',
+      timelineAria: 'Từ đơn hàng đến khi tàu khởi hành',
+      timeline: ['Xác nhận đơn hàng', 'Sản xuất và đóng gói', 'Chứng từ', 'Xếp hàng và khởi hành'],
+    },
     stepsLink: 'Sáu bước',
     termsH: 'Điều khoản xuất khẩu gồm những gì?',
     termsIncoterms: 'Incoterms và thanh toán',
@@ -435,12 +468,22 @@ const vi: UiPartial = {
     title: 'Xà phòng và sản phẩm tẩy rửa nhãn riêng: nhà xuất khẩu và nhà cung cấp từ Ấn Độ',
     description:
       'Xà phòng, chất tẩy rửa nhãn riêng từ Ấn Độ: thiết kế bao bì, hương liệu, màu sắc và quy cách đóng gói theo ý Quý khách, do nhà sản xuất Ấn Độ đã thẩm định sản xuất và GoodBiz Hygiene xuất khẩu.',
-    l1: 'Xà phòng nhãn riêng',
-    l2: 'và sản phẩm tẩy rửa từ Ấn Độ.',
     lead: 'Bán xà phòng, chất tẩy rửa và nước vệ sinh dưới thương hiệu của chính Quý khách. GoodBiz Hygiene ghép yêu cầu của Quý khách với một nhà sản xuất Ấn Độ đã được thẩm định, quản lý mẫu và thiết kế bao bì, rồi giao thành phẩm đến cảng của Quý khách.',
-    renderAlt: 'Hình minh họa bánh xà phòng và chai nước rửa tay có vòi nhấn trong bao bì nhãn riêng điển hình',
-    startBrief: 'Bắt đầu gửi yêu cầu của Quý khách',
-    howRuns: 'Một đơn hàng vận hành như thế nào',
+    hero: {
+      h1a: 'Thương hiệu của Quý khách,',
+      h1b: 'tìm nguồn và vận chuyển từ Ấn Độ.',
+      cta: 'Gửi yêu cầu nhãn riêng',
+      placeholder: 'Thương hiệu',
+      inputLabel: 'Nhập tên thương hiệu của Quý khách',
+      colourLegend: 'Màu nhãn',
+      colourways: { sage: 'Xanh lá xám', ocean: 'Xanh đại dương', blush: 'Hồng phấn' },
+      packAlt: 'Hình minh họa chai vòi bơm và hộp giấy gấp có nhãn trống hiển thị tên thương hiệu',
+      caption: 'Hình minh họa bao bì nhãn riêng điển hình.',
+      message: 'Yêu cầu nhãn riêng: chúng tôi muốn bán dưới thương hiệu “{brand}” của mình.',
+      messageNoBrand: 'Yêu cầu nhãn riêng: chúng tôi muốn bán dưới thương hiệu riêng của mình.',
+      stepsAria: 'Đơn hàng nhãn riêng qua bốn bước',
+      steps: ['Yêu cầu', 'Bản in thử', 'Duyệt mẫu', 'Đã giao tàu'],
+    },
     optionsH: 'Có thể tùy chỉnh những gì?',
     optionsText: 'Bốn lựa chọn giúp dòng sản phẩm mang dấu ấn riêng của Quý khách. Mỗi lựa chọn đều do Quý khách duyệt trước khi sản xuất hàng loạt.',
     options: [

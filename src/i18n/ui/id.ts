@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '4d7442468d97';
+export const sourceHash = '2d63fbf41757';
 
 const id: UiPartial = {
   meta: {
@@ -386,9 +386,42 @@ const id: UiPartial = {
     title: 'Proses Ekspor: Eksportir dan Pemasok Sabun & Produk Perawatan Rumah dari India',
     description:
       'Cara GoodBiz Hygiene mengekspor sabun, deterjen, dan pembersih dari India: penawaran, sampel, incoterms, ketentuan pembayaran, dokumen, pelabuhan, dan lead time tipikal.',
-    l1: 'Proses ekspor.',
-    l2: 'Dari permintaan hingga bill of lading.',
     lead: 'Langkah, ketentuan, dan dokumen untuk membeli sabun dan produk perawatan rumah dari India melalui GoodBiz Hygiene.',
+    route: {
+      h1a: 'Dari pelabuhan India,',
+      h1b: 'ke pelabuhan Anda.',
+      regionsLabel: 'Pilih wilayah tujuan',
+      regions: {
+        gulf: 'Teluk & Timur Tengah',
+        eastAfrica: 'Afrika Timur',
+        westAfrica: 'Afrika Barat',
+        europe: 'Eropa',
+        southeastAsia: 'Asia Tenggara',
+        latinAmerica: 'Amerika Latin',
+      },
+      ports: {
+        nhavaSheva: 'Nhava Sheva (Mumbai)',
+        mundra: 'Mundra',
+        chennai: 'Chennai',
+        jebelAli: 'Jebel Ali',
+        mombasa: 'Mombasa',
+        lagos: 'Lagos',
+        tema: 'Tema',
+        rotterdam: 'Rotterdam',
+        singapore: 'Singapura',
+        jakarta: 'Jakarta',
+        santos: 'Santos',
+      },
+      lane: '{from} → {to}',
+      laneAll: 'Pelabuhan India → pelabuhan Anda',
+      terms: 'FOB, CIF atau CFR · {leadTime}',
+      illustrative: 'Rute bersifat ilustratif.',
+      credit: 'Data peta: Natural Earth (domain publik)',
+      mapAlt: 'Peta rute laut ilustratif dari Nhava Sheva, Mundra, dan Chennai ke pelabuhan di enam wilayah',
+      pause: 'Jeda tur rute',
+      timelineAria: 'Dari pesanan hingga berlayar',
+      timeline: ['Pesanan dikonfirmasi', 'Produksi dan pengemasan', 'Dokumen', 'Pemuatan dan pelayaran'],
+    },
     stepsLink: 'Enam langkah',
     termsH: 'Apa saja ketentuan ekspornya?',
     termsIncoterms: 'Incoterms dan pembayaran',
@@ -435,12 +468,22 @@ const id: UiPartial = {
     title: 'Sabun & Produk Pembersih Private Label: Eksportir dan Pemasok dari India',
     description:
       'Sabun, deterjen, dan pembersih private label dari India: desain, aroma, warna, dan ukuran kemasan sesuai Anda, dibuat produsen India terseleksi dan diekspor oleh GoodBiz Hygiene.',
-    l1: 'Sabun private label',
-    l2: 'dan produk pembersih dari India.',
     lead: 'Jual sabun, deterjen, dan pembersih dengan merek Anda sendiri. GoodBiz Hygiene mencocokkan kebutuhan Anda dengan produsen India terseleksi, mengelola sampel dan desain, lalu mengirim barang jadi ke pelabuhan Anda.',
-    renderAlt: 'Ilustrasi sabun batang dan botol sabun cuci tangan dalam kemasan private label yang umum',
-    startBrief: 'Mulai brief Anda',
-    howRuns: 'Cara kerja pesanan',
+    hero: {
+      h1a: 'Merek Anda,',
+      h1b: 'dipasok dan dikirim dari India.',
+      cta: 'Mulai permintaan private label',
+      placeholder: 'Merek Anda',
+      inputLabel: 'Ketik nama merek Anda',
+      colourLegend: 'Warna label',
+      colourways: { sage: 'Sage', ocean: 'Samudra', blush: 'Merah muda' },
+      packAlt: 'Ilustrasi botol pompa dan karton lipat dengan label kosong yang menampilkan nama merek',
+      caption: 'Ilustrasi kemasan private label yang umum.',
+      message: 'Permintaan private label: kami ingin menjual dengan merek kami “{brand}”.',
+      messageNoBrand: 'Permintaan private label: kami ingin menjual dengan merek kami sendiri.',
+      stepsAria: 'Pesanan private label dalam empat langkah',
+      steps: ['Brief', 'Proof desain', 'Sampel disetujui', 'Dikirim'],
+    },
     optionsH: 'Apa yang dapat disesuaikan?',
     optionsText: 'Empat pilihan menjadikan lini produk ini milik Anda. Masing-masing Anda setujui sebelum produksi massal.',
     options: [

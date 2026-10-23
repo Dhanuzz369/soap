@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '4d7442468d97';
+export const sourceHash = '2d63fbf41757';
 
 const sw: UiPartial = {
   meta: {
@@ -385,9 +385,42 @@ const sw: UiPartial = {
     title: 'Mchakato wa Usafirishaji Nje: Msafirishaji Nje na Muuzaji wa Sabuni na Bidhaa za Usafi kutoka India',
     description:
       'Jinsi GoodBiz Hygiene inavyosafirisha nje sabuni, sabuni za kufulia na visafishaji kutoka India: nukuu ya bei, sampuli, incoterms, masharti ya malipo, nyaraka, bandari na muda wa kawaida wa maandalizi.',
-    l1: 'Mchakato wa usafirishaji nje.',
-    l2: 'Kutoka ombi hadi hati ya shehena.',
     lead: 'Hatua, masharti na nyaraka za kununua sabuni na bidhaa za usafi wa nyumbani kutoka India kupitia GoodBiz Hygiene.',
+    route: {
+      h1a: 'Kutoka bandari za India,',
+      h1b: 'hadi bandari yako.',
+      regionsLabel: 'Chagua eneo la kufikia',
+      regions: {
+        gulf: 'Ghuba na Mashariki ya Kati',
+        eastAfrica: 'Afrika Mashariki',
+        westAfrica: 'Afrika Magharibi',
+        europe: 'Ulaya',
+        southeastAsia: 'Kusini-Mashariki mwa Asia',
+        latinAmerica: 'Amerika ya Kusini',
+      },
+      ports: {
+        nhavaSheva: 'Nhava Sheva (Mumbai)',
+        mundra: 'Mundra',
+        chennai: 'Chennai',
+        jebelAli: 'Jebel Ali',
+        mombasa: 'Mombasa',
+        lagos: 'Lagos',
+        tema: 'Tema',
+        rotterdam: 'Rotterdam',
+        singapore: 'Singapore',
+        jakarta: 'Jakarta',
+        santos: 'Santos',
+      },
+      lane: '{from} → {to}',
+      laneAll: 'Bandari za India → bandari yako',
+      terms: 'FOB, CIF au CFR · {leadTime}',
+      illustrative: 'Njia ni za mfano tu.',
+      credit: 'Data ya ramani: Natural Earth (kikoa cha umma)',
+      mapAlt: 'Ramani ya njia za baharini za mfano kutoka Nhava Sheva, Mundra na Chennai hadi bandari katika maeneo sita',
+      pause: 'Sitisha onyesho la njia',
+      timelineAria: 'Kutoka oda hadi kusafiri',
+      timeline: ['Oda imethibitishwa', 'Uzalishaji na ufungashaji', 'Nyaraka', 'Upakiaji na kusafiri'],
+    },
     stepsLink: 'Hatua sita',
     termsH: 'Masharti ya usafirishaji nje ni yapi?',
     termsIncoterms: 'Incoterms na malipo',
@@ -434,12 +467,22 @@ const sw: UiPartial = {
     title: 'Sabuni na Bidhaa za Usafi kwa Chapa ya Mnunuzi: Msafirishaji Nje na Muuzaji kutoka India',
     description:
       'Sabuni, sabuni za kufulia na visafishaji kwa chapa ya mnunuzi kutoka India: michoro yako, harufu, rangi na ukubwa wa vifungashio, vinavyotengenezwa na watengenezaji wa India tuliowakagua na kusafirishwa nje na GoodBiz Hygiene.',
-    l1: 'Sabuni kwa chapa ya mnunuzi',
-    l2: 'na bidhaa za usafi kutoka India.',
     lead: 'Uza sabuni, sabuni za kufulia na visafishaji chini ya chapa yako mwenyewe. GoodBiz Hygiene hulinganisha maelezo yako na mtengenezaji wa India tuliyemkagua, husimamia sampuli na michoro, na husafirisha bidhaa zilizokamilika hadi bandari yako.',
-    renderAlt: 'Mchoro wa vipande vya sabuni na chupa ya sabuni ya mikono katika vifungashio vya kawaida vya chapa ya mnunuzi',
-    startBrief: 'Anza maelezo yako',
-    howRuns: 'Jinsi oda inavyoendeshwa',
+    hero: {
+      h1a: 'Chapa yako,',
+      h1b: 'inapatikana na kusafirishwa kutoka India.',
+      cta: 'Anza ombi la chapa ya mnunuzi',
+      placeholder: 'Chapa Yako',
+      inputLabel: 'Andika jina la chapa yako',
+      colourLegend: 'Rangi ya lebo',
+      colourways: { sage: 'Kijani', ocean: 'Bahari', blush: 'Waridi' },
+      packAlt: 'Mchoro wa chupa ya pampu na boksi la karatasi linalokunjwa, lenye lebo tupu inayoonyesha jina la chapa',
+      caption: 'Mchoro wa kifungashio cha kawaida cha chapa ya mnunuzi.',
+      message: 'Ombi la chapa ya mnunuzi: tungependa kuuza chini ya chapa yetu “{brand}”.',
+      messageNoBrand: 'Ombi la chapa ya mnunuzi: tungependa kuuza chini ya chapa yetu wenyewe.',
+      stepsAria: 'Oda ya chapa ya mnunuzi kwa hatua nne',
+      steps: ['Maelezo', 'Rasimu ya muundo', 'Sampuli imeidhinishwa', 'Imesafirishwa'],
+    },
     optionsH: 'Nini kinaweza kubadilishwa?',
     optionsText: 'Chaguo nne hufanya bidhaa kuwa zako. Kila moja huidhinishwa nawe kabla ya uzalishaji wa jumla.',
     options: [

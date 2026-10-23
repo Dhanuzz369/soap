@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '4d7442468d97';
+export const sourceHash = '2d63fbf41757';
 
 const tr: UiPartial = {
   meta: {
@@ -386,9 +386,42 @@ const tr: UiPartial = {
     title: 'İhracat Süreci: Hindistan’dan Sabun ve Ev Bakım Ürünleri İhracatçısı ve Tedarikçisi',
     description:
       'GoodBiz Hygiene, Hindistan’dan sabun, deterjan ve temizleyicileri nasıl ihraç eder: teklif, numuneler, Incoterms, ödeme koşulları, evraklar, limanlar ve tipik teslim süreleri.',
-    l1: 'İhracat süreci.',
-    l2: 'Talepten konşimentoya.',
     lead: 'GoodBiz Hygiene üzerinden Hindistan’dan sabun ve ev bakım ürünleri satın almanın adımları, koşulları ve evrakları.',
+    route: {
+      h1a: 'Hindistan’ın limanlarından',
+      h1b: 'sizin limanınıza.',
+      regionsLabel: 'Bir varış bölgesi seçin',
+      regions: {
+        gulf: 'Körfez ve Orta Doğu',
+        eastAfrica: 'Doğu Afrika',
+        westAfrica: 'Batı Afrika',
+        europe: 'Avrupa',
+        southeastAsia: 'Güneydoğu Asya',
+        latinAmerica: 'Latin Amerika',
+      },
+      ports: {
+        nhavaSheva: 'Nhava Sheva (Mumbai)',
+        mundra: 'Mundra',
+        chennai: 'Chennai',
+        jebelAli: 'Cebel Ali',
+        mombasa: 'Mombasa',
+        lagos: 'Lagos',
+        tema: 'Tema',
+        rotterdam: 'Rotterdam',
+        singapore: 'Singapur',
+        jakarta: 'Cakarta',
+        santos: 'Santos',
+      },
+      lane: '{from} → {to}',
+      laneAll: 'Hindistan limanları → sizin limanınız',
+      terms: 'FOB, CIF veya CFR · {leadTime}',
+      illustrative: 'Rotalar temsilîdir.',
+      credit: 'Harita verileri: Natural Earth (kamu malı)',
+      mapAlt: 'Nhava Sheva, Mundra ve Chennai’den altı bölgedeki limanlara temsilî deniz rotalarını gösteren harita',
+      pause: 'Rota turunu duraklat',
+      timelineAria: 'Siparişten sefere',
+      timeline: ['Sipariş onaylandı', 'Üretim ve paketleme', 'Belgeler', 'Yükleme ve sefer'],
+    },
     stepsLink: 'Altı adım',
     termsH: 'İhracat koşulları nelerdir?',
     termsIncoterms: 'Incoterms ve ödeme',
@@ -435,12 +468,22 @@ const tr: UiPartial = {
     title: 'Özel Marka Sabun ve Temizlik Ürünleri: Hindistan’dan İhracatçı ve Tedarikçi',
     description:
       'Hindistan’dan özel marka sabun, deterjan ve temizleyiciler: tasarımınız, kokunuz, renginiz ve ambalaj boyutlarınızla, kontrol edilmiş Hindistanlı üreticilerce üretilir ve GoodBiz Hygiene tarafından ihraç edilir.',
-    l1: 'Hindistan’dan özel marka sabun',
-    l2: 've temizlik ürünleri.',
     lead: 'Sabun, deterjan ve temizleyicileri kendi markanız altında satın. GoodBiz Hygiene talebinizi kontrol edilmiş bir Hindistanlı üreticiyle eşleştirir, numune ve tasarım süreçlerini yönetir ve bitmiş ürünleri limanınıza sevk eder.',
-    renderAlt: 'Tipik özel marka ambalajlarında sabun kalıpları ve bir el sabunu şişesi görseli',
-    startBrief: 'Talebinizi başlatın',
-    howRuns: 'Bir sipariş nasıl yürür',
+    hero: {
+      h1a: 'Sizin markanız,',
+      h1b: 'Hindistan’dan tedarik ve sevkiyat.',
+      cta: 'Özel marka talebi başlatın',
+      placeholder: 'Markanız',
+      inputLabel: 'Marka adınızı yazın',
+      colourLegend: 'Etiket rengi',
+      colourways: { sage: 'Adaçayı', ocean: 'Okyanus', blush: 'Pudra' },
+      packAlt: 'Pompalı şişe ve katlanır karton kutu çizimi; boş etikette bir marka adı yazıyor',
+      caption: 'Tipik bir özel marka ambalajının çizimi.',
+      message: 'Özel marka talebi: “{brand}” markamızla satış yapmak istiyoruz.',
+      messageNoBrand: 'Özel marka talebi: kendi markamızla satış yapmak istiyoruz.',
+      stepsAria: 'Dört adımda özel marka siparişi',
+      steps: ['Brif', 'Tasarım provası', 'Numune onayı', 'Sevk edildi'],
+    },
     optionsH: 'Nelerde özelleştirme yapılabilir?',
     optionsText: 'Dört seçim, ürün gamını size ait kılar. Her biri toplu üretimden önce sizin tarafınızdan onaylanır.',
     options: [

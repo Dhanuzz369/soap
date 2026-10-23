@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '4d7442468d97';
+export const sourceHash = '2d63fbf41757';
 
 const fr: UiPartial = {
   meta: {
@@ -388,9 +388,42 @@ const fr: UiPartial = {
     title: 'Processus d’export : savons et produits d’entretien, exportateur depuis l’Inde',
     description:
       'Comment GoodBiz Hygiene exporte savons, lessives et nettoyants depuis l’Inde : devis, échantillons, Incoterms, paiement, documents, ports et délais types.',
-    l1: 'Le processus d’export.',
-    l2: 'De la demande au connaissement.',
     lead: 'Les étapes, les conditions et les documents pour acheter des savons et produits d’entretien en Inde avec GoodBiz Hygiene.',
+    route: {
+      h1a: 'Des ports de l’Inde,',
+      h1b: 'jusqu’aux vôtres.',
+      regionsLabel: 'Choisissez une région de destination',
+      regions: {
+        gulf: 'Golfe et Moyen-Orient',
+        eastAfrica: 'Afrique de l’Est',
+        westAfrica: 'Afrique de l’Ouest',
+        europe: 'Europe',
+        southeastAsia: 'Asie du Sud-Est',
+        latinAmerica: 'Amérique latine',
+      },
+      ports: {
+        nhavaSheva: 'Nhava Sheva (Bombay)',
+        mundra: 'Mundra',
+        chennai: 'Chennai',
+        jebelAli: 'Jebel Ali',
+        mombasa: 'Mombasa',
+        lagos: 'Lagos',
+        tema: 'Tema',
+        rotterdam: 'Rotterdam',
+        singapore: 'Singapour',
+        jakarta: 'Jakarta',
+        santos: 'Santos',
+      },
+      lane: '{from} → {to}',
+      laneAll: 'Ports indiens → votre port',
+      terms: 'FOB, CIF ou CFR · {leadTime}',
+      illustrative: 'Itinéraires indicatifs.',
+      credit: 'Données cartographiques : Natural Earth (domaine public)',
+      mapAlt: 'Carte d’itinéraires maritimes indicatifs depuis Nhava Sheva, Mundra et Chennai vers des ports de six régions',
+      pause: 'Mettre en pause le défilement des itinéraires',
+      timelineAria: 'De la commande au départ du navire',
+      timeline: ['Commande confirmée', 'Production et conditionnement', 'Documents', 'Chargement et départ'],
+    },
     stepsLink: 'Les six étapes',
     termsH: 'Quelles sont les conditions d’export ?',
     termsIncoterms: 'Incoterms et paiement',
@@ -437,12 +470,22 @@ const fr: UiPartial = {
     title: 'Savons et produits d’entretien en marque de distributeur : exportateur depuis l’Inde',
     description:
       'Savons, lessives et nettoyants en marque de distributeur depuis l’Inde : vos maquettes, parfums, couleurs et contenances, exportés par GoodBiz Hygiene.',
-    l1: 'Savons et produits d’entretien',
-    l2: 'en marque de distributeur, depuis l’Inde.',
     lead: 'Vendez savons, lessives et nettoyants sous votre propre marque. GoodBiz Hygiene confie votre cahier des charges à un fabricant indien contrôlé, gère les échantillons et les maquettes, et expédie les produits finis jusqu’à votre port.',
-    renderAlt: 'Illustration de pains de savon et d’un flacon de savon pour les mains dans des conditionnements types de marque de distributeur',
-    startBrief: 'Envoyer votre cahier des charges',
-    howRuns: 'Déroulement d’une commande',
+    hero: {
+      h1a: 'Votre marque,',
+      h1b: 'sourcée et expédiée depuis l’Inde.',
+      cta: 'Lancer une demande en marque de distributeur',
+      placeholder: 'Votre Marque',
+      inputLabel: 'Saisissez le nom de votre marque',
+      colourLegend: 'Couleur de l’étiquette',
+      colourways: { sage: 'Sauge', ocean: 'Océan', blush: 'Rose poudré' },
+      packAlt: 'Illustration d’un flacon pompe et d’un étui carton avec une étiquette vierge portant un nom de marque',
+      caption: 'Illustration d’un conditionnement type en marque de distributeur.',
+      message: 'Demande en marque de distributeur : nous souhaitons vendre sous notre marque « {brand} ».',
+      messageNoBrand: 'Demande en marque de distributeur : nous souhaitons vendre sous notre propre marque.',
+      stepsAria: 'Une commande en marque de distributeur en quatre étapes',
+      steps: ['Brief', 'BAT des visuels', 'Échantillon validé', 'Expédié'],
+    },
     optionsH: 'Que peut-on personnaliser ?',
     optionsText: 'Quatre choix suffisent à faire une gamme à votre nom. Chacun est validé par vous avant la production en série.',
     options: [

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '4d7442468d97';
+export const sourceHash = '2d63fbf41757';
 
 const de: UiPartial = {
   meta: {
@@ -386,9 +386,42 @@ const de: UiPartial = {
     title: 'Exportablauf: Seifen und Haushaltspflege, Exporteur und Lieferant aus Indien',
     description:
       'So exportiert GoodBiz Hygiene Seifen, Waschmittel und Reiniger aus Indien: Angebot, Muster, Incoterms, Zahlungsbedingungen, Dokumente, Häfen und typische Lieferzeiten.',
-    l1: 'Der Exportablauf.',
-    l2: 'Von der Anfrage bis zum Konnossement.',
     lead: 'Die Schritte, Bedingungen und Dokumente für den Bezug von Seifen und Haushaltspflegeprodukten aus Indien über GoodBiz Hygiene.',
+    route: {
+      h1a: 'Von Indiens Häfen',
+      h1b: 'bis in Ihren Hafen.',
+      regionsLabel: 'Zielregion wählen',
+      regions: {
+        gulf: 'Golfregion & Nahost',
+        eastAfrica: 'Ostafrika',
+        westAfrica: 'Westafrika',
+        europe: 'Europa',
+        southeastAsia: 'Südostasien',
+        latinAmerica: 'Lateinamerika',
+      },
+      ports: {
+        nhavaSheva: 'Nhava Sheva (Mumbai)',
+        mundra: 'Mundra',
+        chennai: 'Chennai',
+        jebelAli: 'Jebel Ali',
+        mombasa: 'Mombasa',
+        lagos: 'Lagos',
+        tema: 'Tema',
+        rotterdam: 'Rotterdam',
+        singapore: 'Singapur',
+        jakarta: 'Jakarta',
+        santos: 'Santos',
+      },
+      lane: '{from} → {to}',
+      laneAll: 'Indische Häfen → Ihr Hafen',
+      terms: 'FOB, CIF oder CFR · {leadTime}',
+      illustrative: 'Routen schematisch.',
+      credit: 'Kartendaten: Natural Earth (gemeinfrei)',
+      mapAlt: 'Karte schematischer Seewege von Nhava Sheva, Mundra und Chennai zu Häfen in sechs Regionen',
+      pause: 'Routen-Rundgang anhalten',
+      timelineAria: 'Von der Bestellung bis zum Auslaufen',
+      timeline: ['Auftrag bestätigt', 'Produktion und Verpackung', 'Dokumente', 'Verladung und Abfahrt'],
+    },
     stepsLink: 'Die sechs Schritte',
     termsH: 'Wie lauten die Exportbedingungen?',
     termsIncoterms: 'Incoterms und Zahlung',
@@ -435,12 +468,22 @@ const de: UiPartial = {
     title: 'Handelsmarken für Seifen und Reiniger: Exporteur und Lieferant aus Indien',
     description:
       'Handelsmarken für Seifen, Waschmittel und Reiniger aus Indien: Ihr Artwork, Duft, Farbe und Packungsgrößen, hergestellt von geprüften indischen Herstellern und exportiert von GoodBiz Hygiene.',
-    l1: 'Handelsmarken für Seifen',
-    l2: 'und Reiniger aus Indien.',
     lead: 'Verkaufen Sie Seifen, Waschmittel und Reiniger unter Ihrer eigenen Marke. GoodBiz Hygiene ordnet Ihre Anforderungen einem geprüften indischen Hersteller zu, betreut Muster und Artwork und verschifft die Fertigware zu Ihrem Hafen.',
-    renderAlt: 'Illustration von Seifenstücken und einer Handseifenflasche in typischen Handelsmarken-Verpackungen',
-    startBrief: 'Anforderungen senden',
-    howRuns: 'So läuft ein Auftrag ab',
+    hero: {
+      h1a: 'Ihre Marke,',
+      h1b: 'beschafft und verschifft aus Indien.',
+      cta: 'Handelsmarken-Anfrage starten',
+      placeholder: 'Ihre Marke',
+      inputLabel: 'Markennamen eingeben',
+      colourLegend: 'Etikettenfarbe',
+      colourways: { sage: 'Salbei', ocean: 'Ozean', blush: 'Rosé' },
+      packAlt: 'Illustration einer Pumpflasche und einer Faltschachtel mit leerem Etikett, auf dem ein Markenname steht',
+      caption: 'Illustration einer typischen Handelsmarken-Verpackung.',
+      message: 'Handelsmarken-Anfrage: Wir möchten unter unserer Marke „{brand}“ verkaufen.',
+      messageNoBrand: 'Handelsmarken-Anfrage: Wir möchten unter unserer eigenen Marke verkaufen.',
+      stepsAria: 'Ein Handelsmarken-Auftrag in vier Schritten',
+      steps: ['Briefing', 'Druckfreigabe', 'Muster freigegeben', 'Verschifft'],
+    },
     optionsH: 'Was lässt sich individuell gestalten?',
     optionsText: 'Vier Entscheidungen machen ein Sortiment zu Ihrem eigenen. Jede wird von Ihnen vor der Serienproduktion freigegeben.',
     options: [
