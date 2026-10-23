@@ -7,14 +7,14 @@
 import { clamp01 } from './hero-motion.ts';
 
 /**
- * One card per main range. `pos` is the object-position of the 4:3 photo in its 4:5 card, picked
- * by eye so the pack and its GoodBiz label stay in frame (the crop shows 60% of the width).
+ * One card per main range. The cards share the photos' own 4:3 shape, so each photo is shown whole:
+ * no crop, every pack and label in view. `pos` stays for photos of another shape.
  */
 export const FAN_RANGES = [
-  { slug: 'bath-personal-soaps', photo: 'herbal-ayurvedic-soap', pos: '72% 50%' },
+  { slug: 'bath-personal-soaps', photo: 'herbal-ayurvedic-soap', pos: '50% 50%' },
   { slug: 'laundry-care', photo: 'liquid-detergent', pos: '50% 50%' },
-  { slug: 'kitchen-care', photo: 'dish-wash-liquid', pos: '62% 50%' },
-  { slug: 'surface-home-cleaners', photo: 'floor-cleaner', pos: '80% 50%' },
+  { slug: 'kitchen-care', photo: 'dish-wash-liquid', pos: '50% 50%' },
+  { slug: 'surface-home-cleaners', photo: 'floor-cleaner', pos: '50% 50%' },
 ] as const;
 
 /** The fan's srcset: the hero's 480/640px copies (`npm run hero:images`) before the photo's own. */
@@ -27,26 +27,27 @@ export function fanSrcset(photo: string, photoSrcset: string): string {
  * (--card-w in home.css: 50vw on phones, clamp(240px, 23vw, 360px) on wider screens), so this is
  * 5/3 of the card width. Home's preload uses the same string.
  */
-export const FAN_SIZES = '(max-width: 759px) 84vw, clamp(400px, 38vw, 600px)';
+export const FAN_SIZES = '(max-width: 759px) 86vw, clamp(320px, 37vw, 580px)';
 
 /**
  * Slot poses, front (0) to back (3): x/y in % of the card, r in degrees (LTR; mirrored in RTL),
- * s the scale. The back cards are smaller, turned and offset to alternate sides. Each back card's
+ * s the scale. The cards are landscape (4:3), so the back cards rise above the front one and
+ * lean out a little to alternate sides, rather than spreading wide toward the headline. Each back card's
  * bounding box (turned, and with the hover widening) stays smaller than the front card's, so the
  * front photo is always the LCP element (tests/unit/hero-fan.test.ts).
  */
 export const FAN_POSES = [
   { x: 0, y: 0, r: 0, s: 1 },
-  { x: -17, y: -3, r: -6, s: 0.88 },
-  { x: 15, y: -6, r: 5, s: 0.84 },
-  { x: -30, y: -9, r: -10, s: 0.8 },
+  { x: -9, y: -11, r: -5, s: 0.9 },
+  { x: 8, y: -20, r: 4, s: 0.84 },
+  { x: -13, y: -28, r: -7, s: 0.78 },
 ] as const;
 
-/** Area of a card's axis-aligned bounding box, in card-widths² (a 4:5 card turned by `deg`, scaled by `s`). */
+/** Area of a card's axis-aligned bounding box, in card-widths² (a 4:3 card turned by `deg`, scaled by `s`). */
 export function boxArea(s: number, deg: number): number {
   const a = (Math.abs(deg) * Math.PI) / 180;
-  const w = s * (Math.cos(a) + 1.25 * Math.sin(a));
-  const h = s * (1.25 * Math.cos(a) + Math.sin(a));
+  const w = s * (Math.cos(a) + 0.75 * Math.sin(a));
+  const h = s * (0.75 * Math.cos(a) + Math.sin(a));
   return w * h;
 }
 

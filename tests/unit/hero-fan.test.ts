@@ -34,7 +34,7 @@ describe('fan ranges', () => {
   });
   it('keeps every back card, turned and widened on hover (x1.14), smaller on screen than the front (LCP)', () => {
     const front = boxArea(1, 0);
-    expect(front).toBe(1.25);
+    expect(front).toBe(0.75);
     for (const p of FAN_POSES.slice(1)) {
       expect(boxArea(p.s, p.r)).toBeLessThan(front);
       expect(boxArea(p.s, p.r * 1.14)).toBeLessThan(front);
@@ -104,8 +104,8 @@ describe('scroll mapping', () => {
   });
   it('turns back cards further out, mirrored in RTL; the front card stays upright', () => {
     expect(spreadTurn(0, 1)).toBe(0);
-    expect(spreadTurn(3, 1)).toBe(-3.5);
-    expect(spreadTurn(3, 1, -1)).toBe(3.5);
+    expect(spreadTurn(3, 1)).toBe(-2.45);
+    expect(spreadTurn(3, 1, -1)).toBe(2.45);
     expect(spreadTurn(2, 0)).toBe(0);
   });
 });

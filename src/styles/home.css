@@ -42,7 +42,7 @@
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 0.86fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   align-items: center;
   column-gap: clamp(40px, 4vw, 72px);
   padding-top: 112px;
@@ -66,7 +66,7 @@
 }
 .hero-h {
   margin-top: 24px;
-  font-size: clamp(2.5rem, 1rem + 4.9vw, 5rem);
+  font-size: clamp(2.5rem, 1rem + 4.3vw, 4.5rem);
   line-height: 0.92;
   letter-spacing: -0.05em;
   color: var(--on-dark);
@@ -108,7 +108,7 @@
 }
 
 /* ---------- the fan ----------
-   Each card is the front card's box (--card-w, 4:5) moved into its slot's pose: x/y in % of the
+   Each card is the front card's box (--card-w, 4:3 like the photos, so nothing is cropped) moved into its slot's pose: x/y in % of the
    card, a turn and a scale (FAN_POSES in src/lib/hero-fan.ts). --open widens the fan on hover;
    --dir mirrors it in RTL. Only transform and opacity change. */
 @property --open {
@@ -118,7 +118,7 @@
 }
 .fan {
   --dir: 1;
-  --card-w: clamp(240px, 23vw, 360px);
+  --card-w: clamp(320px, 37vw, 580px);
   --fan-radius: 32px;
   position: relative;
   z-index: 2;
@@ -135,7 +135,9 @@
 .fan-stage {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3;
+  /* the back cards rise above the front one: keep that room inside the fan */
+  margin-top: calc(var(--card-w) * 0.75 * 0.3);
   /* vertical page scrolling stays native; horizontal drags are the fan's (phones) */
   touch-action: pan-y;
 }
@@ -166,37 +168,37 @@
   z-index: 4;
 }
 .fan-card[data-slot='1'] {
-  --x: -17%;
-  --y: -3%;
-  --r: -6deg;
-  --s: 0.88;
+  --x: -9%;
+  --y: -11%;
+  --r: -5deg;
+  --s: 0.9;
   --dim: 0.42;
   --deal-i: 1;
   z-index: 3;
 }
 .fan-card[data-slot='2'] {
-  --x: 15%;
-  --y: -6%;
-  --r: 5deg;
+  --x: 8%;
+  --y: -20%;
+  --r: 4deg;
   --s: 0.84;
   --dim: 0.58;
   --deal-i: 2;
   z-index: 2;
 }
 .fan-card[data-slot='3'] {
-  --x: -30%;
-  --y: -9%;
-  --r: -10deg;
-  --s: 0.8;
+  --x: -13%;
+  --y: -28%;
+  --r: -7deg;
+  --s: 0.78;
   --dim: 0.72;
   --deal-i: 3;
   z-index: 1;
 }
 /* the auto-shuffle's first beat: the old front card slides out toward the inline start */
 .fan-card[data-slot='out'] {
-  --x: -52%;
-  --y: 2%;
-  --r: -8deg;
+  --x: -46%;
+  --y: 4%;
+  --r: -7deg;
   --s: 0.95;
   --dim: 0.2;
   z-index: 5;
@@ -443,7 +445,7 @@ html:not(.hero-js) .fan-deferred {
   }
   /* the back cards spill more to the inline start: nudge the stack the other way to centre it */
   .fan-drift {
-    translate: calc(var(--card-w) * 0.05 * var(--dir)) 0;
+    translate: none;
   }
   .fan-meta {
     justify-items: center;
@@ -464,28 +466,27 @@ html:not(.hero-js) .fan-deferred {
 }
 @media (min-width: 760px) and (max-width: 1100px) and (max-aspect-ratio: 1 / 1) {
   .fan {
-    --card-w: clamp(240px, 34vw, 360px);
+    --card-w: clamp(320px, 62vw, 560px);
   }
 }
 @media (max-width: 759.98px) {
   .fan {
-    --card-w: 50vw;
-    --fan-radius: 28px;
+    --card-w: 82vw;
+    --fan-radius: 24px;
   }
   /* three cards on phones, spread a little wider (the fan is ~72vw); the fourth waits at the
      back, out of sight */
   .fan-card[data-slot='1'] {
-    --x: -21%;
+    --x: -6%;
   }
   .fan-card[data-slot='2'] {
-    --x: 19%;
+    --x: 6%;
   }
   .fan-card[data-slot='3'] {
     opacity: 0;
   }
   .fan-meta {
-    width: 72vw;
-    margin-inline: calc((72vw - var(--card-w)) / -2);
+    width: 100%;
   }
   .hero-grid {
     padding-top: 88px;
