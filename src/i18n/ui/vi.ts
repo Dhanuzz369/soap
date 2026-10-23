@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '63f8be54f28d';
+export const sourceHash = '4d7442468d97';
 
 const vi: UiPartial = {
   meta: {
@@ -163,11 +163,7 @@ const vi: UiPartial = {
     title: 'Nhà xuất khẩu và nhà cung cấp xà phòng, chất giặt rửa và sản phẩm tẩy rửa từ Ấn Độ',
     description:
       'Khám phá {n} sản phẩm xà phòng, giặt giũ, nhà bếp, tẩy rửa bề mặt và nguyên liệu từ các nhà sản xuất Ấn Độ đã được thẩm định, kèm mã HSN và tùy chọn nhãn riêng.',
-    l1: 'Tất cả sản phẩm.',
-    l2: 'Xà phòng, chất giặt rửa và nước tẩy rửa.',
-    lead: '{n} sản phẩm thuộc năm nhóm, được cung ứng từ các nhà sản xuất Ấn Độ đã được thẩm định và có tùy chọn nhãn riêng. Hãy chọn một nhóm, hoặc mở từng sản phẩm để xem thông số kỹ thuật, quy cách đóng gói và mã HSN.',
     hsnLink: 'Mã HSN theo sản phẩm',
-    rangesNav: 'Năm nhóm sản phẩm',
     rangeFull: 'Toàn bộ dòng sản phẩm',
     hsnH: 'Mã HSN nào áp dụng cho từng sản phẩm?',
     hsnText:
@@ -176,6 +172,12 @@ const vi: UiPartial = {
     colProduct: 'Sản phẩm',
     colRange: 'Nhóm',
     colHsn: 'HSN (6 chữ số)',
+    h1a: 'Mọi sản phẩm,',
+    h1b: 'một đối tác xuất khẩu.',
+    shelfLead: '{n} sản phẩm trong {r} nhóm, thuộc HSN 3401 và 3402, có nhãn riêng và container hỗn hợp.',
+    shelfAria: 'Kệ sản phẩm',
+    jumpNav: 'Chuyển đến nhóm sản phẩm',
+    shelfPause: 'Tạm dừng kệ',
   },
 
   product: {

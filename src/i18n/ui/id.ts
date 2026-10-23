@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '63f8be54f28d';
+export const sourceHash = '4d7442468d97';
 
 const id: UiPartial = {
   meta: {
@@ -163,11 +163,7 @@ const id: UiPartial = {
     title: 'Eksportir dan Pemasok Sabun, Deterjen & Produk Pembersih dari India',
     description:
       'Jelajahi {n} produk sabun, perawatan pakaian, dapur, pembersih permukaan, dan bahan baku dari produsen India terseleksi, lengkap dengan kode HSN dan opsi private label.',
-    l1: 'Semua produk.',
-    l2: 'Sabun, deterjen & pembersih.',
-    lead: '{n} produk dalam lima lini, bersumber dari produsen India yang telah kami seleksi dan tersedia dengan opsi private label. Pilih satu lini, atau buka produk mana pun untuk melihat spesifikasi, ukuran kemasan, dan kode HSN.',
     hsnLink: 'Kode HSN per produk',
-    rangesNav: 'Lima lini produk',
     rangeFull: 'Lini produk selengkapnya',
     hsnH: 'Kode HSN mana yang berlaku untuk setiap produk?',
     hsnText:
@@ -176,6 +172,12 @@ const id: UiPartial = {
     colProduct: 'Produk',
     colRange: 'Lini',
     colHsn: 'HSN (6 digit)',
+    h1a: 'Setiap produk,',
+    h1b: 'satu mitra ekspor.',
+    shelfLead: '{n} produk dalam {r} lini, dengan HSN 3401 dan 3402, private label, dan kontainer campuran.',
+    shelfAria: 'Rak produk',
+    jumpNav: 'Lompat ke lini',
+    shelfPause: 'Jeda rak',
   },
 
   product: {

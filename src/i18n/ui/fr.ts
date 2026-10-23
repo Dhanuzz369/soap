@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '63f8be54f28d';
+export const sourceHash = '4d7442468d97';
 
 const fr: UiPartial = {
   meta: {
@@ -165,11 +165,7 @@ const fr: UiPartial = {
     title: 'Savons, lessives et produits d’entretien : exportateur et fournisseur depuis l’Inde',
     description:
       'Découvrez {n} savons, lessives, produits vaisselle, nettoyants et matières premières de fabricants indiens contrôlés, avec codes HSN et marque de distributeur.',
-    l1: 'Tous les produits.',
-    l2: 'Savons, lessives et nettoyants.',
-    lead: '{n} produits répartis en cinq gammes, sélectionnés auprès de fabricants indiens contrôlés et disponibles en marque de distributeur. Choisissez une gamme, ou ouvrez un produit pour ses spécifications, contenances et codes HSN.',
     hsnLink: 'Codes HSN par produit',
-    rangesNav: 'Les cinq gammes',
     rangeFull: 'Toute la gamme',
     hsnH: 'Quel code HSN pour chaque produit ?',
     hsnText:
@@ -178,6 +174,12 @@ const fr: UiPartial = {
     colProduct: 'Produit',
     colRange: 'Gamme',
     colHsn: 'HSN (6 chiffres)',
+    h1a: 'Chaque produit,',
+    h1b: 'un seul partenaire export.',
+    shelfLead: '{n} produits en {r} gammes, sous HSN 3401 et 3402, avec marque de distributeur et conteneurs mixtes.',
+    shelfAria: 'Vitrine des produits',
+    jumpNav: 'Aller à une gamme',
+    shelfPause: 'Mettre la vitrine en pause',
   },
 
   product: {

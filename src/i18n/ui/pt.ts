@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '63f8be54f28d';
+export const sourceHash = '4d7442468d97';
 
 const pt: UiPartial = {
   meta: {
@@ -163,11 +163,7 @@ const pt: UiPartial = {
     title: 'Exportador e fornecedor de sabonetes, detergentes e produtos de limpeza da Índia',
     description:
       'Conheça {n} produtos de sabonete, lavanderia, cozinha, limpeza de superfícies e matérias-primas de fabricantes indianos selecionados, com códigos HSN e marca própria.',
-    l1: 'Todos os produtos.',
-    l2: 'Sabonetes, detergentes e limpadores.',
-    lead: '{n} produtos em cinco linhas, adquiridos de fabricantes indianos selecionados e fornecidos com opções de marca própria. Escolha uma linha ou abra qualquer produto para ver especificações, tamanhos de embalagem e códigos HSN.',
     hsnLink: 'Códigos HSN por produto',
-    rangesNav: 'As cinco linhas',
     rangeFull: 'A linha completa',
     hsnH: 'Qual código HSN se aplica a cada produto?',
     hsnText:
@@ -176,6 +172,12 @@ const pt: UiPartial = {
     colProduct: 'Produto',
     colRange: 'Linha',
     colHsn: 'HSN (6 dígitos)',
+    h1a: 'Cada produto,',
+    h1b: 'um só parceiro de exportação.',
+    shelfLead: '{n} produtos em {r} linhas, sob HSN 3401 e 3402, com marca própria e contêineres mistos.',
+    shelfAria: 'Vitrine de produtos',
+    jumpNav: 'Ir para uma linha',
+    shelfPause: 'Pausar a vitrine',
   },
 
   product: {

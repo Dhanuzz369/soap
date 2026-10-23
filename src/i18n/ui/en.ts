@@ -180,11 +180,7 @@ const en = {
     title: 'Soap, Detergent & Cleaning Products Exporter & Supplier from India',
     description:
       'Browse {n} soap, laundry, kitchen, surface-cleaner and raw-material products sourced from vetted Indian manufacturers, with HSN codes and private label options.',
-    l1: 'All products.',
-    l2: 'Soaps, detergents & cleaners.',
-    lead: '{n} products in five ranges, sourced from vetted Indian manufacturers and supplied with private label options. Choose a range, or open any product for specifications, pack sizes and HSN codes.',
     hsnLink: 'HSN codes by product',
-    rangesNav: 'The five ranges',
     rangeFull: 'The range in full',
     hsnH: 'Which HSN code applies to each product?',
     hsnText:
@@ -193,6 +189,13 @@ const en = {
     colProduct: 'Product',
     colRange: 'Range',
     colHsn: 'HSN (6 digits)',
+    /** The products-page hero ("the shelf"): the h1 lines, the lead ({n} products, {r} ranges) and labels. */
+    h1a: 'Every product,',
+    h1b: 'one export partner.',
+    shelfLead: '{n} products in {r} ranges, under HSN 3401 and 3402, with private label and mixed containers.',
+    shelfAria: 'Product shelf',
+    jumpNav: 'Jump to range',
+    shelfPause: 'Pause the shelf',
   },
 
   product: {

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '63f8be54f28d';
+export const sourceHash = '4d7442468d97';
 
 const ar: UiPartial = {
   meta: {
@@ -163,11 +163,7 @@ const ar: UiPartial = {
     title: 'مصدّر ومورّد صابون ومنظفات ومنتجات تنظيف من الهند',
     description:
       'تصفّح {n} منتجًا من الصابون ومنتجات الغسيل والمطبخ ومنظفات الأسطح والمواد الخام، موفّرة من مصنّعين هنود تم التحقق منهم، مع رموز HSN وخيارات العلامة الخاصة.',
-    l1: 'جميع المنتجات.',
-    l2: 'صابون ومنظفات ومنتجات تنظيف.',
-    lead: '{n} منتجًا في خمس تشكيلات، موفّرة من مصنّعين هنود تم التحقق منهم ومتاحة بخيارات العلامة الخاصة. اختاروا تشكيلة، أو افتحوا أي منتج لمعرفة مواصفاته وأحجام عبواته ورموز HSN.',
     hsnLink: 'رموز HSN حسب المنتج',
-    rangesNav: 'التشكيلات الخمس',
     rangeFull: 'التشكيلة كاملة',
     hsnH: 'ما رمز HSN المنطبق على كل منتج؟',
     hsnText:
@@ -176,6 +172,12 @@ const ar: UiPartial = {
     colProduct: 'المنتج',
     colRange: 'التشكيلة',
     colHsn: 'HSN (6 أرقام)',
+    h1a: 'كل منتج،',
+    h1b: 'وشريك تصدير واحد.',
+    shelfLead: '{n} منتجًا في {r} تشكيلات، ضمن رمزَي HSN 3401 و3402، مع العلامة الخاصة والحاويات المختلطة.',
+    shelfAria: 'رف المنتجات',
+    jumpNav: 'انتقل إلى تشكيلة',
+    shelfPause: 'إيقاف حركة الرف',
   },
 
   product: {

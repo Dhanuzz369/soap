@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '63f8be54f28d';
+export const sourceHash = '4d7442468d97';
 
 const zh: UiPartial = {
   meta: {
@@ -162,11 +162,7 @@ const zh: UiPartial = {
     title: '香皂、洗涤剂与清洁产品印度出口商与供应商',
     description:
       '浏览{n}种采购自经考察的印度制造商的香皂、洗衣、厨房、表面清洁及原料产品，并附HSN编码和自有品牌选项。',
-    l1: '全部产品。',
-    l2: '香皂、洗涤剂与清洁剂。',
-    lead: '五大系列共{n}种产品，采购自经考察的印度制造商，并提供自有品牌选项。您可以选择某个系列，或打开任一产品查看规格、包装规格和HSN编码。',
     hsnLink: '各产品的HSN编码',
-    rangesNav: '五大系列',
     rangeFull: '完整产品系列',
     hsnH: '各产品适用哪个HSN编码？',
     hsnText: '编码按6位显示。8位ITC-HS编码按每笔订单确认，少数产品另有其他归类（详见各产品页面）。',
@@ -174,6 +170,12 @@ const zh: UiPartial = {
     colProduct: '产品',
     colRange: '系列',
     colHsn: 'HSN（6位）',
+    h1a: '每一款产品，',
+    h1b: '同一个出口伙伴。',
+    shelfLead: '{r}大系列共{n}种产品，HSN编码3401和3402，支持自有品牌与混装货柜。',
+    shelfAria: '产品陈列',
+    jumpNav: '跳转到系列',
+    shelfPause: '暂停滚动',
   },
 
   product: {

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '63f8be54f28d';
+export const sourceHash = '4d7442468d97';
 
 const de: UiPartial = {
   meta: {
@@ -163,11 +163,7 @@ const de: UiPartial = {
     title: 'Seifen, Waschmittel und Reiniger: Exporteur und Lieferant aus Indien',
     description:
       'Entdecken Sie {n} Produkte aus Seife, Wäschepflege, Küche, Oberflächenreinigung und Rohstoffen von geprüften indischen Herstellern, mit HSN-Codes und Handelsmarken-Optionen.',
-    l1: 'Alle Produkte.',
-    l2: 'Seifen, Waschmittel und Reiniger.',
-    lead: '{n} Produkte in fünf Sortimenten, von geprüften indischen Herstellern und mit Optionen für Handelsmarken. Wählen Sie ein Sortiment oder öffnen Sie ein Produkt für Spezifikationen, Packungsgrößen und HSN-Codes.',
     hsnLink: 'HSN-Codes nach Produkt',
-    rangesNav: 'Die fünf Sortimente',
     rangeFull: 'Das gesamte Sortiment',
     hsnH: 'Welcher HSN-Code gilt für welches Produkt?',
     hsnText:
@@ -176,6 +172,12 @@ const de: UiPartial = {
     colProduct: 'Produkt',
     colRange: 'Sortiment',
     colHsn: 'HSN (6-stellig)',
+    h1a: 'Jedes Produkt,',
+    h1b: 'ein Exportpartner.',
+    shelfLead: '{n} Produkte in {r} Sortimenten, unter HSN 3401 und 3402, mit Handelsmarke und gemischten Containern.',
+    shelfAria: 'Produktregal',
+    jumpNav: 'Zum Sortiment springen',
+    shelfPause: 'Regal anhalten',
   },
 
   product: {

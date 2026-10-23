@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '63f8be54f28d';
+export const sourceHash = '4d7442468d97';
 
 const sw: UiPartial = {
   meta: {
@@ -162,11 +162,7 @@ const sw: UiPartial = {
     title: 'Msafirishaji Nje na Muuzaji wa Sabuni, Sabuni za Kufulia na Bidhaa za Usafi kutoka India',
     description:
       'Tazama bidhaa {n} za sabuni, kufulia, jikoni, visafishaji vya nyuso na malighafi kutoka kwa watengenezaji wa India tuliowakagua, zikiwa na misimbo ya HSN na chaguo za chapa ya mnunuzi.',
-    l1: 'Bidhaa zote.',
-    l2: 'Sabuni, sabuni za kufulia na visafishaji.',
-    lead: 'Bidhaa {n} katika makundi matano, zinazopatikana kutoka kwa watengenezaji wa India tuliowakagua na kutolewa pamoja na chaguo za chapa ya mnunuzi. Chagua kundi, au fungua bidhaa yoyote kuona vipimo, ukubwa wa vifungashio na misimbo ya HSN.',
     hsnLink: 'Misimbo ya HSN kwa kila bidhaa',
-    rangesNav: 'Makundi matano',
     rangeFull: 'Bidhaa zote kwa kina',
     hsnH: 'Ni msimbo gani wa HSN unaotumika kwa kila bidhaa?',
     hsnText:
@@ -175,6 +171,12 @@ const sw: UiPartial = {
     colProduct: 'Bidhaa',
     colRange: 'Kundi',
     colHsn: 'HSN (tarakimu 6)',
+    h1a: 'Kila bidhaa,',
+    h1b: 'mshirika mmoja wa mauzo nje.',
+    shelfLead: 'Bidhaa {n} katika makundi {r}, chini ya HSN 3401 na 3402, pamoja na chapa ya mnunuzi na makontena mchanganyiko.',
+    shelfAria: 'Rafu ya bidhaa',
+    jumpNav: 'Nenda kwenye kundi',
+    shelfPause: 'Simamisha rafu',
   },
 
   product: {

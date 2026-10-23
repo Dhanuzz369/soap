@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '63f8be54f28d';
+export const sourceHash = '4d7442468d97';
 
 const tr: UiPartial = {
   meta: {
@@ -163,11 +163,7 @@ const tr: UiPartial = {
     title: 'Sabun, Deterjan ve Temizlik Ürünleri İhracatçısı ve Tedarikçisi, Hindistan',
     description:
       'Kontrol edilmiş Hindistanlı üreticilerden tedarik edilen {n} sabun, çamaşır, mutfak, yüzey temizleyici ve hammadde ürününü HSN kodları ve özel marka seçenekleriyle inceleyin.',
-    l1: 'Tüm ürünler.',
-    l2: 'Sabun, deterjan ve temizleyiciler.',
-    lead: 'Kontrol edilmiş Hindistanlı üreticilerden tedarik edilen ve özel marka seçeneğiyle sunulan, beş grupta {n} ürün. Bir grup seçin veya özellikler, ambalaj boyutları ve HSN kodları için herhangi bir ürünü açın.',
     hsnLink: 'Ürün bazında HSN kodları',
-    rangesNav: 'Beş ürün grubu',
     rangeFull: 'Ürün gamının tamamı',
     hsnH: 'Hangi ürüne hangi HSN kodu uygulanır?',
     hsnText:
@@ -176,6 +172,12 @@ const tr: UiPartial = {
     colProduct: 'Ürün',
     colRange: 'Grup',
     colHsn: 'HSN (6 hane)',
+    h1a: 'Her ürün,',
+    h1b: 'tek bir ihracat ortağı.',
+    shelfLead: '{r} ürün grubunda {n} ürün; HSN 3401 ve 3402 kapsamında, özel marka ve karma konteyner seçenekleriyle.',
+    shelfAria: 'Ürün rafı',
+    jumpNav: 'Ürün grubuna git',
+    shelfPause: 'Rafı durdur',
   },
 
   product: {
