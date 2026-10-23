@@ -411,9 +411,47 @@ const en = {
     title: 'Export Process: Soap & Home-Care Exporter & Supplier from India',
     description:
       'How GoodBiz Hygiene exports soaps, detergents and cleaners from India: quotation, samples, incoterms, payment terms, documents, ports and typical lead times.',
-    l1: 'The export process.',
-    l2: 'From enquiry to bill of lading.',
     lead: 'The steps, terms and documents for buying soaps and home-care products from India through GoodBiz Hygiene.',
+    /** "The route": the page's hero, a dotted map with sea routes (src/components/RouteHero.astro). */
+    route: {
+      h1a: 'From India’s ports,',
+      h1b: 'to yours.',
+      regionsLabel: 'Choose a destination region',
+      regions: {
+        gulf: 'Gulf & Middle East',
+        eastAfrica: 'East Africa',
+        westAfrica: 'West Africa',
+        europe: 'Europe',
+        southeastAsia: 'Southeast Asia',
+        latinAmerica: 'Latin America',
+      },
+      /** Port names as buyers in your language write them. */
+      ports: {
+        nhavaSheva: 'Nhava Sheva (Mumbai)',
+        mundra: 'Mundra',
+        chennai: 'Chennai',
+        jebelAli: 'Jebel Ali',
+        mombasa: 'Mombasa',
+        lagos: 'Lagos',
+        tema: 'Tema',
+        rotterdam: 'Rotterdam',
+        singapore: 'Singapore',
+        jakarta: 'Jakarta',
+        santos: 'Santos',
+      },
+      /** {from} an Indian port, {to} the destination port. Point the arrow the way your script reads. */
+      lane: '{from} → {to}',
+      /** The caption before a region is picked, and without JavaScript. */
+      laneAll: 'Indian ports → your port',
+      /** {leadTime} is filled in from terms.leadTime. Never add transit days or prices. */
+      terms: 'FOB, CIF or CFR · {leadTime}',
+      illustrative: 'Routes are illustrative.',
+      credit: 'Map data: Natural Earth (public domain)',
+      mapAlt: 'Map of illustrative sea routes from Nhava Sheva, Mundra and Chennai to ports in six regions',
+      pause: 'Pause the route tour',
+      timelineAria: 'From order to sailing',
+      timeline: ['Order confirmed', 'Production and packing', 'Documents', 'Loading and sailing'],
+    },
     stepsLink: 'The six steps',
     termsH: 'What are the export terms?',
     termsIncoterms: 'Incoterms and payment',

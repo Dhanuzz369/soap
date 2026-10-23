@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import PageHero from '../components/PageHero.astro';
+import RouteHero from '../components/RouteHero.astro';
 import ProcessSteps from '../components/ProcessSteps.astro';
 import Faq from '../components/Faq.astro';
 import QuoteCard from '../components/QuoteCard.astro';
@@ -29,28 +29,7 @@ const faqs = E.faqs.map((f) => ({ q: fmt(f.q, t), a: fmt(f.a, t) }));
   jsonLd={[faqJsonLd(faqs, info.hreflang)]}
   dark
 >
-  <PageHero
-    breadcrumbs={breadcrumbs}
-    l1={E.l1}
-    l2={E.l2}
-    lead={E.lead}
-    size="product"
-    media={{
-      src: '/images/renders/range-cutout.webp',
-      srcset: '/images/renders/range-cutout-800.webp 800w, /images/renders/range-cutout.webp 1600w',
-      sizes: '(max-width: 759px) 100vw, 54vw',
-      width: 1600,
-      height: 1280,
-      alt: ui.common.rangeAlt,
-      mode: 'bleed',
-      cutout: true,
-    }}
-  >
-    <div class="ph-actions">
-      <a class="btn btn--light" href={lp('/contact/')}>{ui.common.requestQuote}</a>
-      <a class="link-arrow" href="#steps">{E.stepsLink} <span class="arr" aria-hidden="true">↓</span></a>
-    </div>
-  </PageHero>
+  <RouteHero breadcrumbs={breadcrumbs} />
 
   <section class="wrap sec" aria-labelledby="terms-h">
     <div class="sec-head" data-reveal>

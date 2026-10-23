@@ -1,0 +1,495 @@
+/*
+  "The route": the /export-process/ hero (src/components/RouteHero.astro).
+  The .ph band (floria.css) gives the forest field, glow, vignette and grain; this file adds the
+  copy, the region buttons, the dotted map with its arcs and ports, the caption and the timeline.
+
+  Motion (Emil Kowalski):
+  - a pointer pick draws the arc and glides the ship: on-screen movement, so the strong
+    ease-in-out over 800ms (route-hero.ts drives both from one rAF clock)
+  - keyboard picks and reduced motion: instant highlight, no ship
+  - the origin glows breathe slowly (ease-in-out, 3.2s); decorative, off with reduced motion
+  - the entrance runs once: h1 lines rise through their masks, the map fades up on the Floria
+    curve; the timeline staggers in (70ms) when it reaches the screen
+*/
+
+.ph--route {
+  padding: clamp(108px, 6rem + 2vw, 136px) 0 clamp(88px, 3rem + 5vw, 144px);
+  --glow-x: 68%;
+  --glow-y: 44%;
+  --glow-r: 50vw;
+  --glow-a: 0.1;
+}
+.rt-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(28px, 5vw, 40px);
+}
+@media (min-width: 1000px) {
+  .rt-grid {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 5fr);
+    column-gap: clamp(32px, 3vw, 56px);
+    align-items: center;
+  }
+  /* the map runs off the inline-end edge of the page (bigger, not cropped); the caption stays in */
+  .rt-map {
+    --bleed: calc(max(var(--gutter), (100vw - var(--max)) / 2 + var(--gutter)) - 8px);
+    margin-inline-end: calc(-1 * var(--bleed));
+  }
+  .rt-cap {
+    padding-inline-end: var(--bleed);
+  }
+}
+.rt-copy,
+.rt-map {
+  min-width: 0;
+}
+
+/* ---------- copy ---------- */
+.rt-h {
+  margin-top: clamp(24px, 3vw, 40px);
+  font-size: clamp(2.25rem, 1rem + 3vw, 3.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+.rt-h .line {
+  display: block;
+  overflow: clip;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+  padding-inline-end: 0.1em;
+}
+.rt-h .line-in {
+  display: block;
+}
+.rt-h .serif-i {
+  color: var(--mint);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+.rt-lead {
+  margin-top: clamp(18px, 2vw, 26px);
+  max-width: 48ch;
+}
+
+/* ---------- region buttons ---------- */
+.rt-regions-wrap {
+  margin-top: clamp(24px, 3vw, 36px);
+}
+.rt-regions-label {
+  margin: 0 0 10px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--on-dark-soft);
+}
+.rt-regions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.rt-region {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-height: 56px;
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 18px;
+  background: rgb(238 244 239 / 0.06);
+  box-shadow: inset 0 0 0 1px rgb(238 244 239 / 0.16); /* taste-skill-ignore: the pill device on dark, as the shelf's pills */
+  color: var(--on-dark);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color var(--dur-fast) ease,
+    transform var(--dur-press) var(--ease-out);
+}
+.rt-region-name {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+.rt-region-port {
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  color: var(--on-dark-soft);
+}
+/* the picked region: an instant state change (no transition on the fill: picks can be keyboard) */
+.rt-region[aria-checked='true'] {
+  background: var(--mint);
+  box-shadow: none;
+  color: var(--forest-950);
+  transition: transform var(--dur-press) var(--ease-out);
+}
+.rt-region[aria-checked='true'] .rt-region-port {
+  color: var(--forest-700);
+}
+.rt-region:active {
+  transform: scale(0.97);
+}
+.rt-region:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .rt-region:not([aria-checked='true']):hover {
+    background: rgb(238 244 239 / 0.13);
+  }
+}
+@media (max-width: 999.98px) {
+  /* a sideways strip of regions above the map */
+  .rt-regions {
+    display: flex;
+    margin-inline: calc(-1 * var(--gutter));
+    padding: 4px var(--gutter);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    scroll-padding-inline: var(--gutter);
+  }
+  .rt-region {
+    flex: none;
+    white-space: nowrap;
+  }
+}
+
+/* ---------- the map ---------- */
+.rt-map {
+  margin-block: 0;
+  margin-inline-start: 0;
+}
+.rt-canvas {
+  position: relative;
+}
+.rt-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+@media (max-width: 999.98px) {
+  .rt-canvas {
+    margin-inline: calc(-1 * var(--gutter) + 4px);
+  }
+}
+.rt-land {
+  fill: none;
+  stroke: rgb(169 194 181 / 0.5);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.rt-lane {
+  fill: none;
+  stroke: rgb(191 227 207 / 0.2);
+  stroke-width: 1.4;
+  stroke-dasharray: 2 6;
+  stroke-linecap: round;
+}
+.rt-lane[data-on] {
+  stroke: rgb(191 227 207 / 0.34);
+}
+.rt-arc {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-dasharray: 1 1;
+  stroke-dashoffset: 0;
+  opacity: 0.72; /* without JS every route is shown */
+}
+.rt-js .rt-arc {
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+.rt-js .rt-arc[data-on] {
+  opacity: 1;
+  transition: none;
+}
+.rt-dest-dot {
+  fill: var(--on-dark);
+  opacity: 0.75;
+}
+.rt-dest-ring {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 1.4;
+  opacity: 0;
+}
+.rt-dest-dot,
+.rt-dest-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.rt-dest[data-on] .rt-dest-dot {
+  fill: var(--mint);
+  opacity: 1;
+}
+.rt-dest[data-on] .rt-dest-ring {
+  opacity: 0.8;
+}
+.rt-origin-dot {
+  fill: #fff;
+}
+.rt-origin-glow {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.rt-ship {
+  opacity: 0;
+}
+.rt-ship[data-on] {
+  opacity: 1;
+}
+.rt-ship-halo {
+  fill: rgb(191 227 207 / 0.22);
+}
+.rt-ship-hull {
+  fill: #fff;
+}
+@media (max-width: 759.98px) {
+  /* the map is drawn at ~40% on a phone: heavier dots and lines so it still reads */
+  .rt-land {
+    stroke-width: 4.6;
+  }
+  .rt-arc {
+    stroke-width: 4;
+  }
+  .rt-lane {
+    stroke-width: 2.2;
+  }
+  .rt-ship > * {
+    scale: 1.5; /* about the ship's own origin (its local user space) */
+  }
+}
+
+/* ---------- caption ---------- */
+.rt-cap {
+  margin-top: clamp(12px, 1.6vw, 20px);
+}
+.rt-cap p {
+  margin: 0;
+}
+.rt-cap-lane {
+  min-height: 1.4em; /* the lane changes; its line never collapses */
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--on-dark);
+}
+.rt-cap-terms {
+  margin-top: 4px !important;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--on-dark-soft);
+}
+.rt-cap-credit {
+  margin-top: 8px !important;
+  font-size: 0.75rem;
+  color: var(--on-dark-soft);
+}
+
+/* ---------- timeline and foot ---------- */
+.rt-foot {
+  margin-top: clamp(36px, 4vw, 56px);
+}
+.rt-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.rt-timeline li {
+  position: relative;
+  min-width: 0;
+  padding-top: 18px;
+  border-top: 1px solid rgb(238 244 239 / 0.2);
+}
+.rt-timeline li::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  inset-inline-start: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--mint);
+}
+.rt-n {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--mint);
+}
+.rt-step {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--on-dark);
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+@media (max-width: 599.98px) {
+  .rt-timeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 22px;
+  }
+}
+.rt-foot-row {
+  display: flex;
+  align-items: center;
+  gap: 12px 20px;
+  min-height: var(--tap); /* the pause button appears with JS: its room is kept from the start */
+  margin-top: clamp(20px, 2.4vw, 32px);
+}
+.ph--route .link-arrow,
+.ph--route .link-arrow:hover {
+  color: var(--on-dark);
+}
+.rt-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(238 244 239 / 0.07);
+  box-shadow: inset 0 0 0 1px rgb(238 244 239 / 0.2); /* taste-skill-ignore: round control, the shelf's pause button */
+  color: var(--on-dark);
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) ease,
+    transform var(--dur-press) var(--ease-out);
+}
+.rt-toggle[hidden] {
+  display: none;
+}
+.rt-toggle:active {
+  transform: scale(0.97);
+}
+.rt-toggle:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+}
+.rt-toggle-icon {
+  width: 10px;
+  height: 12px;
+  border-inline: 3px solid currentColor;
+}
+.rt-toggle[aria-pressed='true'] .rt-toggle-icon {
+  width: 0;
+  height: 0;
+  border-block: 6px solid transparent;
+  border-inline-start: 10px solid currentColor;
+  border-inline-end: 0;
+  margin-inline-start: 3px;
+}
+[dir='rtl'] .rt-toggle[aria-pressed='true'] .rt-toggle-icon {
+  border-inline-start: 0;
+  border-inline-end: 10px solid currentColor;
+  margin-inline: 0 3px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .rt-toggle:hover {
+    background: rgb(238 244 239 / 0.15);
+  }
+}
+
+/* ---------- motion ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .rt-h .line-in {
+    animation: rt-line-up 900ms var(--ease-out) both;
+  }
+  .rt-h .line:nth-child(2) .line-in {
+    animation-delay: 80ms;
+  }
+  .rt-copy .crumbs,
+  .rt-lead,
+  .rt-regions-wrap {
+    animation: rt-rise var(--dur-enter) var(--ease-out) both;
+  }
+  .rt-lead {
+    animation-delay: 160ms;
+  }
+  .rt-regions-wrap {
+    animation-delay: 240ms;
+  }
+  .rt-map {
+    animation: rt-rise 900ms var(--ease-floria) 200ms both;
+  }
+  .rt-origin-glow {
+    animation: rt-breathe 3200ms var(--ease-in-out) calc(var(--i) * -1100ms) infinite alternate;
+  }
+  .rt-js .rt-timeline:not([data-play]) li {
+    opacity: 0;
+  }
+  .rt-timeline[data-play] li {
+    animation: rt-step 600ms var(--ease-out) calc(var(--i) * 70ms) both;
+  }
+  .rt-dest-dot,
+  .rt-dest-ring {
+    transition:
+      opacity var(--dur-fast) ease,
+      fill var(--dur-fast) ease;
+  }
+}
+@keyframes rt-line-up {
+  from {
+    transform: translateY(105%);
+  }
+}
+@keyframes rt-rise {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+@keyframes rt-step {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@keyframes rt-breathe {
+  from {
+    transform: scale(0.78);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+@keyframes rt-fade {
+  from {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rt-copy .crumbs,
+  .rt-h .line-in,
+  .rt-lead,
+  .rt-regions-wrap,
+  .rt-map {
+    animation: rt-fade 300ms ease-out both;
+  }
+  .rt-js .rt-arc,
+  .rt-js .rt-arc[data-on] {
+    transition: none;
+  }
+  .rt-js .rt-timeline:not([data-play]) li {
+    opacity: 0;
+  }
+  .rt-timeline[data-play] li {
+    animation: rt-fade 300ms ease-out calc(var(--i) * 70ms) both;
+  }
+}

@@ -1,0 +1,165 @@
+---
+/**
+ * RouteHero: "the route", the /export-process/ hero. A dark forest band (the .ph field and grain)
+ * with the copy on the inline-start side (breadcrumbs, a two-line h1, the lead and six destination
+ * region buttons) and a dotted world map: Natural Earth land sampled on a dot grid at build time
+ * (`npm run route:map` → src/assets/route-map.svg, one path), glowing origin ports at Nhava Sheva,
+ * Mundra and Chennai, and a stylised sea-route arc from the nearest of them to each region's port.
+ *
+ * - The map is geographic in every language: it is never mirrored in RTL (dir="ltr" on the map),
+ *   only the copy is.
+ * - Selecting a region draws its arc (stroke-dashoffset, 800ms ease-in-out) while a small ship
+ *   glides along it (transform only), and the caption names the lane with the export terms. No
+ *   transit days or freight prices anywhere (honesty rules).
+ * - The tour moves on every 5s; it pauses on hover or focus, with the pause button, when the tab
+ *   is hidden or the map off-screen, and never runs with reduced motion. The region buttons are a
+ *   radio group with a roving tabindex; the caption is aria-live only for the visitor's own picks.
+ * - Reduced motion: arcs appear drawn, no ship, a pick is an instant highlight.
+ * - Without JS: every arc is drawn and the caption is the static one.
+ * Pure data and geometry: src/lib/route-map.ts. Styles: src/styles/route-hero.css.
+ * Script: src/scripts/route-hero.ts.
+ */
+import Breadcrumbs from './Breadcrumbs.astro';
+import mapSvg from '../assets/route-map.svg?raw';
+import { MAP_HEIGHT, MAP_WIDTH, ORIGINS, REGIONS, arcPath, project, regionArc } from '../lib/route-map';
+import { useI18n } from '../i18n/page';
+import '../styles/route-hero.css';
+
+interface Props {
+  breadcrumbs: { name: string; url: string }[];
+}
+const { breadcrumbs } = Astro.props;
+const { ui, fmt } = useI18n(Astro.url);
+const E = ui.exportProcess;
+const R = E.route;
+const t = ui.terms;
+
+const land = mapSvg.match(/\sd="([^"]+)"/)?.[1] ?? '';
+const regions = REGIONS.map((r) => {
+  const arc = regionArc(r);
+  const to = R.ports[r.port];
+  const ports = 'also' in r ? `${to} / ${R.ports[r.also]}` : to;
+  return {
+    id: r.id,
+    name: R.regions[r.id],
+    ports,
+    d: arcPath(arc),
+    to: arc.to,
+    lane: fmt(R.lane, { from: R.ports[arc.origin], to }),
+  };
+});
+const origins = ORIGINS.map((o) => ({ id: o.id, ...project(o.at) }));
+const terms = fmt(R.terms, { leadTime: t.leadTime });
+const pad = (n: number) => String(n).padStart(2, '0');
+---
+
+<script is:inline>
+  // Before first paint: the timeline waits for its entrance (it stays visible without JS).
+  document.documentElement.classList.add('rt-js');
+</script>
+<section class="ph ph--route" aria-labelledby="page-h">
+  <div class="wrap rt-grid" data-route>
+    <div class="rt-copy">
+      {breadcrumbs.length > 1 && <Breadcrumbs items={breadcrumbs} />}
+      <h1 id="page-h" class="ph-title rt-h">
+        <span class="line"><span class="line-in">{R.h1a}</span></span>
+        <span class="line"><span class="line-in serif-i"> {R.h1b}</span></span>
+      </h1>
+      <p class="ph-lead rt-lead">{E.lead}</p>
+      <div class="rt-regions-wrap">
+        <p class="rt-regions-label" id="rt-regions-l">{R.regionsLabel}</p>
+        <div class="rt-regions" role="radiogroup" aria-labelledby="rt-regions-l" data-route-regions>
+          {
+            regions.map((r, i) => (
+              <button
+                class="rt-region"
+                type="button"
+                role="radio"
+                aria-checked="false"
+                tabindex={i === 0 ? '0' : '-1'}
+                data-region={r.id}
+                data-lane={r.lane}
+              >
+                <span class="rt-region-name">{r.name}</span>
+                <span class="rt-region-port">{r.ports}</span>
+              </button>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <figure class="rt-map">
+      <div class="rt-canvas" dir="ltr">
+        <svg class="rt-svg" viewBox={`0 0 ${MAP_WIDTH} ${MAP_HEIGHT}`} role="img" aria-labelledby="rt-map-t" focusable="false">
+          <title id="rt-map-t">{R.mapAlt}</title>
+          <defs>
+            <radialGradient id="rt-glow">
+              <stop offset="0" stop-color="#bfe3cf" stop-opacity=".6" />
+              <stop offset=".35" stop-color="#bfe3cf" stop-opacity=".2" />
+              <stop offset="1" stop-color="#bfe3cf" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+          <path class="rt-land" d={land} />
+          <g class="rt-lanes">{regions.map((r) => <path class="rt-lane" d={r.d} data-lane-base={r.id} />)}</g>
+          <g class="rt-arcs">{regions.map((r) => <path class="rt-arc" d={r.d} pathLength="1" data-arc={r.id} />)}</g>
+          <g class="rt-dests">
+            {
+              regions.map((r) => (
+                <g class="rt-dest" data-dest={r.id} transform={`translate(${r.to.x} ${r.to.y})`}>
+                  <circle class="rt-dest-ring" r="9" />
+                  <circle class="rt-dest-dot" r="3.6" />
+                </g>
+              ))
+            }
+          </g>
+          <g class="rt-origins">
+            {
+              origins.map((o, i) => (
+                <g transform={`translate(${o.x} ${o.y})`}>
+                  <circle class="rt-origin-glow" r="26" fill="url(#rt-glow)" style={`--i: ${i}`} />
+                  <circle class="rt-origin-dot" r="4.2" />
+                </g>
+              ))
+            }
+          </g>
+          <g class="rt-ship" data-ship>
+            <circle r="9" class="rt-ship-halo" />
+            <path class="rt-ship-hull" d="M-8-3.6h10.5L8 0l-5.5 3.6H-8l1.6-3.6Z" />
+          </g>
+        </svg>
+      </div>
+      <figcaption class="rt-cap">
+        <p class="rt-cap-lane" data-route-lane data-all={R.laneAll}>{R.laneAll}</p>
+        <p class="rt-cap-terms">{terms}</p>
+        <p class="rt-cap-credit">{R.illustrative} <span class="rt-credit">{R.credit}</span></p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap rt-foot">
+    <ol class="rt-timeline" aria-label={R.timelineAria} data-route-timeline>
+      {
+        R.timeline.map((s, i) => (
+          <li style={`--i: ${i}`}>
+            <span class="rt-n" aria-hidden="true">
+              {pad(i + 1)}
+            </span>
+            <span class="rt-step">{s}</span>
+          </li>
+        ))
+      }
+    </ol>
+    <div class="rt-foot-row">
+      <a class="link-arrow" href="#steps">{E.stepsLink} <span class="arr" aria-hidden="true">↓</span></a>
+      <button class="rt-toggle" type="button" aria-pressed="false" hidden data-route-toggle>
+        <span class="rt-toggle-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">{R.pause}</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  import '../scripts/route-hero';
+</script>
