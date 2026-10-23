@@ -124,7 +124,9 @@
   gap: 12px 20px; /* side by side at the start: the fixed WhatsApp button owns the far corner */
   margin-top: clamp(20px, 2.4vw, 32px);
 }
-.shelf-hsn-link {
+/* links on the dark band keep their light ink on hover (the global a:hover is a dark green) */
+.ph--shelf :is(.shelf-pill, .shelf-card, .shelf-hsn-link),
+.ph--shelf :is(.shelf-pill, .shelf-card, .shelf-hsn-link):hover {
   color: var(--on-dark);
 }
 .shelf-toggle {
