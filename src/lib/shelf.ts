@@ -4,7 +4,18 @@
  */
 
 /** Cards in row 1 that load eagerly (the first carries fetchpriority="high"). */
-export const SHELF_EAGER = 4;
+export const SHELF_EAGER = 3;
+
+/** The shelf's small copy of a product photo (`npm run hero:images`). */
+export const shelfSmall = (slug: string): string => `/images/shelf/${slug}-480.webp`;
+
+/**
+ * A card's srcset: the 480px shelf copy (when it exists) before the photo's own 800px copy and
+ * original, so a phone's 210px card or a 300px card on a 1x screen loads about half the bytes.
+ */
+export function shelfSrcset(slug: string, photoSrcset: string, hasSmall: boolean): string {
+  return hasSmall ? `${shelfSmall(slug)} 480w, ${photoSrcset}` : photoSrcset;
+}
 
 /** The photos' `sizes`: the card is 210px on phones, about 300px on wider screens (shelf.css). */
 export const SHELF_SIZES = '(max-width: 759px) 210px, 300px';

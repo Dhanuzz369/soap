@@ -15,10 +15,12 @@
  * - Only products with their own photo appear (productPicture kind 'photo'), split across the
  *   two rows so the ranges mix (src/lib/shelf.ts).
  */
+import fs from 'node:fs';
+import path from 'node:path';
 import Breadcrumbs from './Breadcrumbs.astro';
 import { productPicture } from '../lib/product-image';
 import { shapeFor } from '../lib/pack-shapes';
-import { shelfRows, SHELF_EAGER, SHELF_SIZES } from '../lib/shelf';
+import { shelfRows, shelfSmall, shelfSrcset, SHELF_EAGER, SHELF_SIZES } from '../lib/shelf';
 import type { CategoryEntry, ProductEntry } from '../lib/products';
 import { useI18n } from '../i18n/page';
 import '../styles/shelf.css';
@@ -39,7 +41,9 @@ const withPhotos = groups.map((g) =>
     const d = p.data;
     const pic = productPicture(d.slug, shapeFor(d.slug, d.category.id), d.category.id);
     if (pic?.kind !== 'photo') return [];
-    return [{ slug: d.slug, title: d.title, hsn: d.hsn, cat: d.category.id, href: lp(`/products/${d.slug}/`), pic }];
+    const small = fs.existsSync(path.join(process.cwd(), 'public', shelfSmall(d.slug)));
+    const srcset = shelfSrcset(d.slug, pic.srcset, small);
+    return [{ slug: d.slug, title: d.title, hsn: d.hsn, cat: d.category.id, href: lp(`/products/${d.slug}/`), pic, srcset }];
   }),
 );
 const rows = shelfRows(withPhotos);
@@ -88,7 +92,7 @@ const rows = shelfRows(withPhotos);
                       <a class="shelf-card" href={p.href} data-cat={p.cat} tabindex={copy === 1 ? '-1' : undefined}>
                         <img
                           src={p.pic.src}
-                          srcset={p.pic.srcset}
+                          srcset={p.srcset}
                           sizes={SHELF_SIZES}
                           width={p.pic.width}
                           height={p.pic.height}

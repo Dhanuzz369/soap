@@ -7,7 +7,8 @@
   - the marquee is constant motion, so it is linear; transform only; will-change on the tracks only
   - the card lift on hover is feedback: 300ms on the strong ease-out, fine pointers only
   - the entrance runs once on load: copy lines rise through their masks (as the home hero), the
-    rows rise 24px and fade in, 120ms apart, on the Floria curve over 900ms
+    rows rise 24px, 120ms apart, on the Floria curve over 900ms (row 2 also fades in; row 1 does
+    not, so its first photo stays the LCP element)
   - reduced motion: no marquee (static scroll-snap strips), the entrance is a 200ms fade
 */
 
@@ -359,10 +360,14 @@
   .shelf-foot {
     animation-delay: 520ms;
   }
+  /* Row 1 rises without fading: its first card paints at once and stays the LCP element (an
+     element at opacity 0 is not an LCP candidate, so a fade would hand LCP to the logo text).
+     Row 2 rises and fades in, 120ms later. */
   .shelf-row {
-    animation: shelf-rise 900ms var(--ease-floria) 280ms both;
+    animation: shelf-slide 900ms var(--ease-floria) 280ms both;
   }
   .shelf-row[data-row='1'] {
+    animation-name: shelf-rise;
     animation-delay: 400ms;
   }
 }
@@ -401,6 +406,11 @@
 @keyframes shelf-rise {
   from {
     opacity: 0;
+    transform: translateY(24px);
+  }
+}
+@keyframes shelf-slide {
+  from {
     transform: translateY(24px);
   }
 }

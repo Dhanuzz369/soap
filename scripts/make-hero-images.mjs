@@ -8,9 +8,13 @@
  *  - public/images/hero/glow-<photo>.webp: a tiny, pre-blurred, slightly saturated 64px copy (a few
  *    hundred bytes). The page inlines it as a data URI behind the fan (the ambient glow) and as each
  *    back card's placeholder, so the colour costs no request and no runtime blur filter.
- * Run it again after replacing one of those photos.
+ *
+ * For every product photo (public/images/products/<slug>.webp, variants with `--` excepted):
+ *  - public/images/shelf/<slug>-480.webp: the /products/ hero shelf's small copy (src/lib/shelf.ts),
+ *    so a phone's ~210px card (and a 300px card on a 1x screen) loads ~half the bytes of the 800px copy.
+ * Run it again after replacing or adding a photo.
  */
-import { mkdir, stat } from 'node:fs/promises';
+import { mkdir, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
@@ -36,4 +40,13 @@ for (const r of FAN_RANGES) {
     .webp({ quality: 55, effort: 6 })
     .toFile(glow);
   await report(glow);
+}
+
+const shelfDir = path.join(root, 'public/images/shelf');
+await mkdir(shelfDir, { recursive: true });
+const photos = (await readdir(path.join(root, 'public/images/products'))).filter((f) => /^[a-z0-9-]+\.webp$/.test(f) && !/-\d+\.webp$/.test(f) && !f.includes('--'));
+for (const f of photos) {
+  const out = path.join(shelfDir, f.replace(/\.webp$/, '-480.webp'));
+  await sharp(path.join(root, 'public/images/products', f)).resize({ width: 480 }).webp({ quality: 72, effort: 6 }).toFile(out);
+  await report(out);
 }

@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { interleave, shelfRows } from '../../src/lib/shelf';
+import { interleave, shelfRows, shelfSrcset } from '../../src/lib/shelf';
 
 describe('interleave', () => {
   it('takes one from each range in turn and keeps the order inside a range', () => {
@@ -44,5 +44,15 @@ describe('shelfRows', () => {
 
   it('handles an empty shelf', () => {
     expect(shelfRows([])).toEqual([[], []]);
+  });
+});
+
+describe('shelfSrcset', () => {
+  const own = '/images/products/floor-cleaner-800.webp 800w, /images/products/floor-cleaner.webp 1255w';
+  it('puts the 480px shelf copy first when it exists, keeping the 800px copy', () => {
+    expect(shelfSrcset('floor-cleaner', own, true)).toBe(`/images/shelf/floor-cleaner-480.webp 480w, ${own}`);
+  });
+  it('falls back to the photo\'s own srcset', () => {
+    expect(shelfSrcset('floor-cleaner', own, false)).toBe(own);
   });
 });
