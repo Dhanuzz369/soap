@@ -163,3 +163,31 @@ describe('internal links', () => {
     expect(broken).toEqual([]);
   });
 });
+
+describe('home hero: the photo fan', () => {
+  const home = read('index.html');
+  const ar = read('ar/index.html');
+  const fan = (s: string) => s.slice(s.indexOf('data-fan'), s.indexOf('</section>', s.indexOf('data-fan')));
+  it('shows four range photos, the front one preloaded with the same srcset and sizes, at high priority', () => {
+    const cards = [...fan(home).matchAll(/<a class="fan-card" href="([^"]+)"/g)].map((m) => m[1]);
+    expect(cards).toEqual(['/categories/bath-personal-soaps/', '/categories/laundry-care/', '/categories/kitchen-care/', '/categories/surface-home-cleaners/']);
+    const pre = home.match(/<link rel="preload" href="([^"]+)" as="image"[^>]*imagesrcset="([^"]+)" imagesizes="([^"]+)"/);
+    expect(pre?.[1]).toBe('/images/products/herbal-ayurvedic-soap.webp');
+    const front = fan(home).match(/<img src="([^"]+)" srcset="([^"]+)" sizes="([^"]+)"[^>]*fetchpriority="high"/);
+    expect(front?.[1]).toBe(pre?.[1]);
+    expect(front?.[2]).toBe(pre?.[2]);
+    expect(front?.[3]).toBe(pre?.[3]);
+    expect(count(fan(home), /fetchpriority="high"/g)).toBe(1);
+  });
+  it('works without JS: every card and range button is a plain link, the first caption is shown', () => {
+    expect(count(fan(home), /class="fan-tab" href="\/categories\//g)).toBe(4);
+    expect(count(fan(home), /class="fan-caption" data-active/g)).toBe(1);
+    expect(fan(home)).toContain('role="region" aria-labelledby="fan-name-0"');
+  });
+  it('is localized, glows from inlined pre-blurred photos, and no longer ships the 3D scene', () => {
+    expect(fan(ar)).toContain('href="/ar/categories/laundry-care/"');
+    expect(count(fan(home), /class="fan-glow-img" src="data:image\/webp;base64,/g)).toBe(4);
+    expect(home).not.toMatch(/hero-canvas|range-cutout|three\.module/);
+    expect(allFiles.some((f) => /hero-scene/.test(f))).toBe(false);
+  });
+});

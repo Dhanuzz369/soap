@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1e31c873b185';
+export const sourceHash = '63f8be54f28d';
 
 const zh: UiPartial = {
   meta: {
@@ -44,8 +44,6 @@ const zh: UiPartial = {
     photoAlt: 'GoodBiz的{name}',
     categoryRenderAlt: '{name}典型包装示意图',
     rangeAlt: 'GoodBiz Hygiene产品系列典型出口包装示意图',
-    heroAlt:
-      'GoodBiz Hygiene产品系列典型出口包装示意图：一瓶洗洁精、一桶衣物柔顺剂、一瓶喷雾清洁剂、一瓶按压式洗手液、一袋洗衣粉、一桶原料、一个方形油桶以及多块香皂',
     portAlt: '夜间，龙门起重机在印度科钦国际集装箱转运码头为集装箱船装货',
     portCaption: '科钦集装箱码头。摄影：{creator}，{license}。',
     specCaption: '典型规格。最终数值按每笔订单确认。',
@@ -154,6 +152,10 @@ const zh: UiPartial = {
       { title: '一个合作伙伴，港到港', text: '从首次样品到提单，您订购的所有产品只需一份报价、一位联系人。' },
     ],
     guidesH: '采购指南',
+    fanTabs: '选择系列',
+    fanShow: '显示{name}',
+    fanView: '查看系列',
+    fanOpen: '{name}：查看系列',
   },
 
   productsIndex: {

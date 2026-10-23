@@ -57,8 +57,6 @@ const en = {
     photoAlt: '{name} from GoodBiz',
     categoryRenderAlt: 'Illustration of typical {nameLower} packs',
     rangeAlt: 'Illustration of the GoodBiz Hygiene range in typical export packs',
-    heroAlt:
-      'Illustration of the GoodBiz Hygiene range in typical export packs: a dish wash bottle, a fabric softener jug, a spray cleaner, a hand wash pump, a detergent pouch, a raw-material drum, a jerrycan and soap bars',
     portAlt: 'Gantry cranes loading a container ship at night at the International Container Transshipment Terminal in Kochi, India',
     portCaption: 'Container terminal, Kochi. Photo: {creator}, {license}.',
     specCaption: 'Typical specifications. Final values are confirmed per order.',
@@ -171,6 +169,11 @@ const en = {
       { title: 'One partner, port to port', text: 'One quotation and one point of contact from first sample to the bill of lading, across every product you order.' },
     ],
     guidesH: 'Buyer guides',
+    /** The photo fan in the hero: the range buttons' group label, each button's label ({name}: the range), the caption link and each card's link label. */
+    fanTabs: 'Choose a range',
+    fanShow: 'Show {name}',
+    fanView: 'View range',
+    fanOpen: '{name}: view the range',
   },
 
   productsIndex: {

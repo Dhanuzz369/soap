@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1e31c873b185';
+export const sourceHash = '63f8be54f28d';
 
 const vi: UiPartial = {
   meta: {
@@ -44,8 +44,6 @@ const vi: UiPartial = {
     photoAlt: '{name} từ GoodBiz',
     categoryRenderAlt: 'Hình minh họa các quy cách đóng gói {nameLower} điển hình',
     rangeAlt: 'Hình minh họa dòng sản phẩm GoodBiz Hygiene trong các quy cách đóng gói xuất khẩu điển hình',
-    heroAlt:
-      'Hình minh họa dòng sản phẩm GoodBiz Hygiene trong các quy cách đóng gói xuất khẩu điển hình: chai nước rửa chén, can nước xả vải, bình xịt tẩy rửa, chai nước rửa tay có vòi nhấn, túi bột giặt, thùng nguyên liệu, can nhựa và các bánh xà phòng',
     portAlt: 'Cần trục giàn bốc xếp container lên tàu vào ban đêm tại Cảng trung chuyển container quốc tế ở Kochi, Ấn Độ',
     portCaption: 'Cảng container Kochi. Ảnh: {creator}, {license}.',
     specCaption: 'Thông số kỹ thuật điển hình. Giá trị cuối cùng được xác nhận theo từng đơn hàng.',
@@ -155,6 +153,10 @@ const vi: UiPartial = {
       { title: 'Một đối tác, từ cảng đến cảng', text: 'Một bản báo giá và một đầu mối liên hệ duy nhất, từ mẫu đầu tiên đến vận đơn đường biển, cho mọi sản phẩm Quý khách đặt mua.' },
     ],
     guidesH: 'Cẩm nang cho người mua',
+    fanTabs: 'Chọn nhóm sản phẩm',
+    fanShow: 'Hiện {name}',
+    fanView: 'Xem nhóm này',
+    fanOpen: '{name}: xem nhóm sản phẩm',
   },
 
   productsIndex: {

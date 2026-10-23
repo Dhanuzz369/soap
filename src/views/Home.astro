@@ -1,13 +1,15 @@
 ---
-import { categoryPicture } from '../lib/product-image';
+import { categoryPicture, productPicture } from '../lib/product-image';
+import { FAN_RANGES, FAN_SIZES } from '../lib/hero-fan';
 /**
  * Home (Floria-style restyle; docs/superpowers/specs/2026-10-16-floria-restyle-direction.md).
- * Dark hero with the live range → The Range → how export orders work → The Categories →
+ * Dark hero with the photo fan (HeroFan) → The Range → how export orders work → The Categories →
  * Straight answers → statement → buyer guides → the quote card → footer.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import '../styles/home.css';
-import HeroScene from '../components/HeroScene.astro';
+import HeroFan from '../components/HeroFan.astro';
+import Bubbles from '../components/Bubbles.astro';
 import ProductCard from '../components/ProductCard.astro';
 import { getProductsByCategory } from '../lib/products';
 import { faqJsonLd } from '../lib/seo';
@@ -48,6 +50,13 @@ const tiles = tileOrder
   });
 
 
+/* The hero fan: one card per main range, named and counted in the page's language. */
+const fanRanges = FAN_RANGES.flatMap((r) => {
+  const g = groups.find((x) => x.category.data.slug === r.slug);
+  return g ? [{ slug: r.slug, title: g.category.data.title, count: g.products.length }] : [];
+});
+const lcp = productPicture(FAN_RANGES[0].photo, '');
+
 /* The statement band: what GoodBiz Hygiene commits to on every order. */
 const promises = h.promises;
 ---
@@ -58,22 +67,25 @@ const promises = h.promises;
   path="/"
   jsonLd={[faqJsonLd(homeFaqs, info.hreflang)]}
   dark
-  preloadImage={{ href: '/images/renders/range-cutout.webp', srcset: '/images/renders/range-cutout-800.webp 800w, /images/renders/range-cutout.webp 1600w', sizes: '(max-width: 759px) 100vw, 62vw' }}
+  preloadImage={lcp && { href: lcp.src, srcset: lcp.srcset, sizes: FAN_SIZES }}
 >
   <!-- 1. Hero -->
   <section class="hero" aria-labelledby="hero-h">
-    <HeroScene />
-    <div class="wrap hero-copy">
-      <p class="hero-eyebrow"><!-- taste-skill-ignore: pill eyebrow allowed by the direction -->{h.eyebrow}</p>
-      <h1 id="hero-h" class="hero-h">
-        <span class="line"><span class="line-in">{h.h1a}</span></span>
-        <span class="line"><span class="line-in serif-i">{h.h1b}</span></span>
-      </h1>
-      <p class="hero-text">{h.text}</p>
-      <div class="hero-actions">
-        <a class="btn btn--light" href={lp('/products/')}>{ui.common.viewProducts}</a>
-        <a class="link-arrow hero-link" href={lp('/contact/')}>{ui.common.requestQuote} <span class="arr" aria-hidden="true">→</span></a>
+    <Bubbles set="hero" />
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-eyebrow"><!-- taste-skill-ignore: pill eyebrow allowed by the direction -->{h.eyebrow}</p>
+        <h1 id="hero-h" class="hero-h">
+          <span class="line"><span class="line-in">{h.h1a}</span></span>
+          <span class="line"><span class="line-in serif-i">{h.h1b}</span></span>
+        </h1>
+        <p class="hero-text">{h.text}</p>
+        <div class="hero-actions">
+          <a class="btn btn--light" href={lp('/products/')}>{ui.common.viewProducts}</a>
+          <a class="link-arrow hero-link" href={lp('/contact/')}>{ui.common.requestQuote} <span class="arr" aria-hidden="true">→</span></a>
+        </div>
       </div>
+      <HeroFan ranges={fanRanges} />
     </div>
   </section>
 

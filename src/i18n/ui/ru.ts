@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1e31c873b185';
+export const sourceHash = '63f8be54f28d';
 
 const ru: UiPartial = {
   meta: {
@@ -44,8 +44,6 @@ const ru: UiPartial = {
     photoAlt: '{name} от GoodBiz',
     categoryRenderAlt: 'Иллюстрация: типовая упаковка, категория «{nameLower}»',
     rangeAlt: 'Иллюстрация: ассортимент GoodBiz Hygiene в типовой экспортной упаковке',
-    heroAlt:
-      'Иллюстрация: ассортимент GoodBiz Hygiene в типовой экспортной упаковке: бутылка средства для мытья посуды, канистра кондиционера для белья, спрей-очиститель, дозатор жидкого мыла для рук, пакет стирального порошка, бочка с сырьём, канистра и куски мыла',
     portAlt: 'Портальные краны загружают контейнеровоз ночью в Международном контейнерном перевалочном терминале в Кочи, Индия',
     portCaption: 'Контейнерный терминал, Кочи. Фото: {creator}, {license}.',
     specCaption: 'Типовые характеристики. Окончательные значения подтверждаются по каждому заказу.',
@@ -155,6 +153,10 @@ const ru: UiPartial = {
       { title: 'Один партнёр от порта до порта', text: 'Одно коммерческое предложение и один контактный человек от первого образца до коносамента, по всем заказываемым товарам.' },
     ],
     guidesH: 'Руководства для покупателей',
+    fanTabs: 'Выберите категорию',
+    fanShow: 'Показать: {name}',
+    fanView: 'Смотреть категорию',
+    fanOpen: '{name}: смотреть категорию',
   },
 
   productsIndex: {

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1e31c873b185';
+export const sourceHash = '63f8be54f28d';
 
 const tr: UiPartial = {
   meta: {
@@ -44,8 +44,6 @@ const tr: UiPartial = {
     photoAlt: '{name}, GoodBiz ürünü',
     categoryRenderAlt: 'Tipik {nameLower} ambalajlarının görseli',
     rangeAlt: 'GoodBiz Hygiene ürün gamının tipik ihracat ambalajlarındaki görseli',
-    heroAlt:
-      'GoodBiz Hygiene ürün gamının tipik ihracat ambalajlarındaki görseli: bir bulaşık deterjanı şişesi, bir yumuşatıcı bidonu, bir sprey temizleyici, bir el sabunu pompası, bir deterjan poşeti, bir hammadde varili, bir bidon ve sabun kalıpları',
     portAlt: 'Hindistan’ın Kochi kentindeki Uluslararası Konteyner Aktarma Terminali’nde geceleyin bir konteyner gemisini yükleyen portal vinçler',
     portCaption: 'Kochi konteyner terminali. Fotoğraf: {creator}, {license}.',
     specCaption: 'Tipik özellikler. Nihai değerler sipariş başına teyit edilir.',
@@ -155,6 +153,10 @@ const tr: UiPartial = {
       { title: 'Tek muhatap, limandan limana', text: 'İlk numuneden konşimentoya kadar, sipariş ettiğiniz tüm ürünler için tek teklif ve tek iletişim noktası.' },
     ],
     guidesH: 'Alıcı rehberleri',
+    fanTabs: 'Ürün grubu seçin',
+    fanShow: 'Göster: {name}',
+    fanView: 'Grubu incele',
+    fanOpen: '{name}: ürün grubunu incele',
   },
 
   productsIndex: {

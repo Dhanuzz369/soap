@@ -3,7 +3,7 @@
  *
  * The CSS keyframes in home.css / floria.css (run by `animation-timeline: scroll()` / `view()`)
  * and the tiny rAF fallback in src/scripts/scroll-fallback.ts use the same values, so browsers
- * without scroll timelines see the same move. The live hero (hero-scene.ts) reads `fan`.
+ * without scroll timelines see the same move.
  */
 
 export const clamp01 = (n: number): number => (n < 0 ? 0 : n > 1 ? 1 : Number.isFinite(n) ? n : 0);
@@ -22,10 +22,12 @@ export function viewProgress(top: number, height: number, viewport: number): num
   return scrollProgress(viewport - top, 0, viewport + height);
 }
 
-/** The home hero cut-out over the first 100vh of scroll: rises 12vh, turns +6deg, scales to 0.94. */
+/** A hero object over the first 100vh of scroll: rises 12vh, turns +6deg, scales to 0.94. */
 export const HERO_DRIFT = { rise: 12, turn: 6, scale: 0.94 } as const;
 /** Inner-page band renders: a lighter drift. */
 export const BAND_DRIFT = { rise: 6, turn: 2, scale: 0.97 } as const;
+/** The home hero photo fan: drifts up 8vh, no turn or scale (its cards spread instead, hero-fan.ts). */
+export const FAN_DRIFT = { rise: 8, turn: 0, scale: 1 } as const;
 
 export type Drift = { readonly rise: number; readonly turn: number; readonly scale: number };
 
@@ -42,24 +44,6 @@ export function driftTransform(p: number, vh: number, d: Drift = HERO_DRIFT): st
 export function parallaxTransform(p: number, amount: number): string {
   const y = amount * (1 - 2 * clamp01(p));
   return `translate3d(0, ${round(y)}px, 0)`;
-}
-
-/**
- * The live 3D range fans out as the hero scrolls away: each pack moves away from the group's
- * centre (`spread` of its offset) and turns (`turn` radians, alternating direction).
- */
-export function fanPose(fan: number, offsetX: number, index: number, spread = 0.22, turn = 0.38): { dx: number; yaw: number } {
-  const k = clamp01(fan);
-  return { dx: offsetX * spread * k, yaw: (index % 2 === 0 ? 1 : -1) * turn * k };
-}
-
-/**
- * A frame-rate independent ease towards a target (a critically damped feel without overshoot):
- * after `dt` seconds the gap shrinks by e^(-rate·dt).
- */
-export function approach(current: number, target: number, rate: number, dt: number): number {
-  if (!(dt > 0)) return current;
-  return target + (current - target) * Math.exp(-rate * dt);
 }
 
 function round(n: number, places = 2): number {

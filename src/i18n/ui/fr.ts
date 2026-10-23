@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1e31c873b185';
+export const sourceHash = '63f8be54f28d';
 
 const fr: UiPartial = {
   meta: {
@@ -45,8 +45,6 @@ const fr: UiPartial = {
     photoAlt: '{name} par GoodBiz',
     categoryRenderAlt: 'Illustration de conditionnements types : {nameLower}',
     rangeAlt: 'Illustration de la gamme GoodBiz Hygiene dans des conditionnements export types',
-    heroAlt:
-      'Illustration de la gamme GoodBiz Hygiene dans des conditionnements export types : un flacon de liquide vaisselle, un bidon d’assouplissant, un pulvérisateur de nettoyant, un flacon pompe de savon pour les mains, un sachet de lessive, un fût de matière première, un jerrican et des pains de savon',
     portAlt: 'Portiques chargeant un porte-conteneurs de nuit au terminal international de transbordement de conteneurs de Kochi, en Inde',
     portCaption: 'Terminal à conteneurs, Kochi. Photo : {creator}, {license}.',
     specCaption: 'Spécifications types. Les valeurs définitives sont confirmées à chaque commande.',
@@ -157,6 +155,10 @@ const fr: UiPartial = {
       { title: 'Un seul partenaire, de port à port', text: 'Un seul devis et un seul interlocuteur, du premier échantillon jusqu’au connaissement, pour tous les produits que vous commandez.' },
     ],
     guidesH: 'Guides acheteurs',
+    fanTabs: 'Choisir une gamme',
+    fanShow: 'Afficher {name}',
+    fanView: 'Voir la gamme',
+    fanOpen: '{name} : voir la gamme',
   },
 
   productsIndex: {

@@ -1,9 +1,9 @@
 /**
  * The studio page driven by scripts/render-packs.mjs (served by Vite, never shipped).
- * It renders, with the site's own pack builders, studio lights and hero scene:
+ * It renders, with the site's own pack builders, studio lights and range still:
  *   window.renderShape(shape, w, h, category, pass)   one pack, centred
  *   window.renderGroup(items, tint, w, h, fill, pass) a small group of packs (category tiles)
- *   window.renderHero(pass)                            the home hero cut-out (the live scene at rest)
+ *   window.renderHero(pass)                            the range group cut-out (range-cutout.webp)
  * Each still is drawn twice: pass 'color' with glossy materials on the forest field, and pass
  * 'matte' (white coverage on black). The node script divides one by the other to cut it out.
  * Each resolves once the frame is drawn into the canvas #c.
@@ -13,7 +13,7 @@ import type { Shape } from '../../src/lib/pack-shapes';
 import { CATEGORY_TINT, createPackKit, TINT, type Tint } from '../../src/scripts/three/packs';
 import { createReflection } from '../../src/scripts/three/reflection';
 import { setupStudio } from '../../src/scripts/three/studio';
-import { HERO_FRAME, mountHero } from '../../src/scripts/hero-scene';
+import { HERO_FRAME, mountHero } from './hero-still';
 import { addStrips } from './strips';
 
 type Pass = 'color' | 'matte';
@@ -126,8 +126,8 @@ const api = {
     const c = freshCanvas(HERO_FRAME.width, HERO_FRAME.height);
     dispose =
       pass === 'matte'
-        ? mountHero(c, { still: true, quality: 'matte', background: 'black' })
-        : mountHero(c, { still: true, quality: 'glossy', background: 'field', decorate: (s) => addStrips(s, { x: 0, y: 1 }) });
+        ? mountHero(c, { quality: 'matte', background: 'black' })
+        : mountHero(c, { quality: 'glossy', background: 'field', decorate: (s) => addStrips(s, { x: 0, y: 1 }) });
     await frame();
   },
 };

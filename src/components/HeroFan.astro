@@ -1,0 +1,127 @@
+---
+/**
+ * HeroFan: "the fan", a hand of four real product photos, one per main range, on the inline-end
+ * side of the home hero (mirrored in RTL). Design and motion: docs/superpowers/photo-hero-report.md.
+ *
+ * - The front photo is the LCP element (preloaded by Home, fetchpriority high). It paints at once
+ *   in its starting pose; only transforms animate after that ("the deal", src/scripts/hero-fan.ts).
+ * - Behind the fan: a soft colour field from the front photo (64px pre-blurred copies inlined as
+ *   data URIs, `npm run hero:glow`), cross-fading as the front card changes.
+ * - Every 5s the front card slides out toward the inline start and tucks behind (desktop only;
+ *   paused on hover, focus, hidden tab, off-screen, reduced motion). The range buttons, a click on
+ *   a back card and (on phones) a horizontal swipe pick a range.
+ * - Without JS: the fan sits in its fanned pose, every card and range button is a plain link.
+ * Pure decisions and poses: src/lib/hero-fan.ts. Styles: home.css "hero".
+ */
+import fs from 'node:fs';
+import path from 'node:path';
+import { FAN_RANGES, FAN_SIZES } from '../lib/hero-fan';
+import { productPicture } from '../lib/product-image';
+import { useI18n } from '../i18n/page';
+
+export interface FanRange {
+  slug: string;
+  title: string;
+  count: number;
+}
+interface Props {
+  ranges: FanRange[];
+}
+const { ranges: data } = Astro.props;
+const { ui, lp, fmt } = useI18n(Astro.url);
+
+const glowUri = (photo: string) => {
+  try {
+    const buf = fs.readFileSync(path.join(process.cwd(), 'public/images/hero', `glow-${photo}.webp`));
+    return `data:image/webp;base64,${buf.toString('base64')}`;
+  } catch {
+    return undefined;
+  }
+};
+
+const ranges = FAN_RANGES.flatMap((r) => {
+  const d = data.find((x) => x.slug === r.slug);
+  const pic = productPicture(r.photo, '');
+  if (!d || !pic) return [];
+  return [{ ...r, ...d, pic, href: lp(`/categories/${r.slug}/`), glow: glowUri(r.photo) }];
+});
+---
+
+<script is:inline>
+  // Before the first paint: hold the fan stacked until the front photo has painted (see home.css).
+  document.documentElement.classList.add('hero-js');
+  // Safety net: if the fan script never runs, fan out anyway.
+  setTimeout(function () {
+    var f = document.querySelector('[data-fan]');
+    if (f) f.setAttribute('data-dealt', '');
+  }, 3000);
+</script>
+<div class="fan" data-fan>
+  <div class="fan-glow" aria-hidden="true" data-fade="page">
+    {ranges.map((r, i) => r.glow && <img class="fan-glow-img" src={r.glow} width="64" height="48" alt="" data-active={i === 0 ? '' : undefined} />)}
+  </div>
+  <div class="fan-drift" data-drift="fan">
+    <div class="fan-stage" id="fan-stage" role="region" aria-labelledby="fan-name-0">
+      {
+        ranges.map((r, i) => (
+          <a
+            class="fan-card"
+            href={r.href}
+            data-slot={i}
+            data-spread
+            aria-label={fmt(ui.home.fanOpen, { name: r.title })}
+            style={`--pos: ${r.pos}`}
+          >
+            <span class="fan-face">
+              <img
+                src={r.pic.src}
+                srcset={r.pic.srcset}
+                sizes={FAN_SIZES}
+                width={r.pic.width}
+                height={r.pic.height}
+                alt={fmt(ui.common.photoAlt, { name: r.title })}
+                fetchpriority={i === 0 ? 'high' : 'low'}
+                decoding={i === 0 ? 'sync' : 'async'}
+                draggable="false"
+              />
+            </span>
+          </a>
+        ))
+      }
+    </div>
+    <div class="fan-meta">
+      <div class="fan-captions" aria-live="off" data-captions>
+        {
+          ranges.map((r, i) => (
+            <p class="fan-caption" data-active={i === 0 ? '' : undefined}>
+              <span class="fan-name" id={`fan-name-${i}`}>
+                {r.title}
+              </span>
+              <span class="fan-sub">
+                <span class="fan-count">{fmt(ui.common.productsCount, { n: r.count })}</span>
+                <a class="link-arrow fan-view" href={r.href}>
+                  {ui.home.fanView} <span class="arr" aria-hidden="true">→</span>
+                </a>
+              </span>
+            </p>
+          ))
+        }
+      </div>
+      <div class="fan-tabs" role="group" aria-label={ui.home.fanTabs} data-tabs>
+        {
+          ranges.map((r, i) => (
+            <a class="fan-tab" href={r.href} data-active={i === 0 ? '' : undefined}>
+              <span class="fan-dot" aria-hidden="true" />
+              <span class="visually-hidden">{fmt(ui.home.fanShow, { name: r.title })}</span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  import '../scripts/hero-fan';
+  import '../scripts/scroll-fallback';
+</script>

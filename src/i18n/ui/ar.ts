@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1e31c873b185';
+export const sourceHash = '63f8be54f28d';
 
 const ar: UiPartial = {
   meta: {
@@ -44,8 +44,6 @@ const ar: UiPartial = {
     photoAlt: '{name} من GoodBiz',
     categoryRenderAlt: 'رسم توضيحي لعبوات نموذجية من {name}',
     rangeAlt: 'رسم توضيحي لتشكيلة GoodBiz Hygiene في عبوات تصدير نموذجية',
-    heroAlt:
-      'رسم توضيحي لتشكيلة GoodBiz Hygiene في عبوات تصدير نموذجية: زجاجة سائل لغسل الأطباق، وعبوة منعّم أقمشة، ومنظف بخاخ، وعبوة صابون سائل لليدين بمضخة، وكيس مسحوق غسيل، وبرميل مواد خام، وجالون، وقوالب صابون',
     portAlt: 'رافعات جسرية تحمّل سفينة حاويات ليلًا في محطة كوتشي الدولية لمناولة الحاويات بالترانزيت في الهند',
     portCaption: 'محطة الحاويات، كوتشي. الصورة: {creator}، {license}.',
     specCaption: 'مواصفات نموذجية. تُؤكَّد القيم النهائية لكل طلب.',
@@ -155,6 +153,10 @@ const ar: UiPartial = {
       { title: 'شريك واحد من ميناء إلى ميناء', text: 'عرض سعر واحد وجهة اتصال واحدة من العينة الأولى حتى بوليصة الشحن، لكل المنتجات التي تطلبونها.' },
     ],
     guidesH: 'أدلة المشترين',
+    fanTabs: 'اختر تشكيلة',
+    fanShow: 'عرض {name}',
+    fanView: 'عرض التشكيلة',
+    fanOpen: '{name}: عرض التشكيلة',
   },
 
   productsIndex: {

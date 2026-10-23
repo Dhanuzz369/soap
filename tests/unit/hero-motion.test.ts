@@ -1,10 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import {
-  approach,
   BAND_DRIFT,
   clamp01,
   driftTransform,
-  fanPose,
+  FAN_DRIFT,
   HERO_DRIFT,
   parallaxTransform,
   scrollProgress,
@@ -64,28 +63,9 @@ describe('parallaxTransform', () => {
   });
 });
 
-describe('fanPose', () => {
-  it('is the rest pose at fan 0, so the live scene starts on the still', () => {
-    expect(fanPose(0, 1.5, 0)).toEqual({ dx: 0, yaw: 0 });
-  });
-  it('spreads away from the centre and alternates the turn', () => {
-    expect(fanPose(1, 2, 0).dx).toBeCloseTo(0.44);
-    expect(fanPose(1, -2, 1).dx).toBeCloseTo(-0.44);
-    expect(Math.sign(fanPose(1, 0, 0).yaw)).toBe(1);
-    expect(Math.sign(fanPose(1, 0, 1).yaw)).toBe(-1);
-  });
-});
-
-describe('approach', () => {
-  it('moves towards the target without overshoot, independent of frame rate', () => {
-    const one = approach(0, 1, 6, 1 / 30);
-    const two = approach(approach(0, 1, 6, 1 / 60), 1, 6, 1 / 60);
-    expect(one).toBeGreaterThan(0);
-    expect(one).toBeLessThan(1);
-    expect(two).toBeCloseTo(one, 10);
-  });
-  it('holds still for a zero or invalid step', () => {
-    expect(approach(0.3, 1, 6, 0)).toBe(0.3);
-    expect(approach(0.3, 1, 6, Number.NaN)).toBe(0.3);
+describe('FAN_DRIFT', () => {
+  it('rises 8vh over the first 100vh without turning or scaling', () => {
+    expect(driftTransform(1, 900, FAN_DRIFT)).toBe('translate3d(0, -72px, 0) rotate(0deg) scale(1)');
+    expect(driftTransform(0, 900, FAN_DRIFT)).toBe('translate3d(0, 0px, 0) rotate(0deg) scale(1)');
   });
 });

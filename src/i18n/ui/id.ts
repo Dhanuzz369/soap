@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1e31c873b185';
+export const sourceHash = '63f8be54f28d';
 
 const id: UiPartial = {
   meta: {
@@ -44,8 +44,6 @@ const id: UiPartial = {
     photoAlt: '{name} dari GoodBiz',
     categoryRenderAlt: 'Ilustrasi kemasan {nameLower} yang umum',
     rangeAlt: 'Ilustrasi lini produk GoodBiz Hygiene dalam kemasan ekspor yang umum',
-    heroAlt:
-      'Ilustrasi lini produk GoodBiz Hygiene dalam kemasan ekspor yang umum: botol sabun cuci piring, jerigen pelembut pakaian, pembersih semprot, pompa sabun cuci tangan, kantong deterjen, drum bahan baku, jerigen, dan sabun batang',
     portAlt: 'Derek gantri memuat kapal kontainer pada malam hari di International Container Transshipment Terminal, Kochi, India',
     portCaption: 'Terminal kontainer, Kochi. Foto: {creator}, {license}.',
     specCaption: 'Spesifikasi tipikal. Nilai akhir dikonfirmasi untuk setiap pesanan.',
@@ -155,6 +153,10 @@ const id: UiPartial = {
       { title: 'Satu mitra, dari pelabuhan ke pelabuhan', text: 'Satu penawaran dan satu narahubung dari sampel pertama hingga bill of lading, untuk semua produk yang Anda pesan.' },
     ],
     guidesH: 'Panduan pembeli',
+    fanTabs: 'Pilih lini produk',
+    fanShow: 'Tampilkan {name}',
+    fanView: 'Lihat lini',
+    fanOpen: '{name}: lihat lini produk',
   },
 
   productsIndex: {

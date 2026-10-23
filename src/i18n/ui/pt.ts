@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1e31c873b185';
+export const sourceHash = '63f8be54f28d';
 
 const pt: UiPartial = {
   meta: {
@@ -44,8 +44,6 @@ const pt: UiPartial = {
     photoAlt: '{name} da GoodBiz',
     categoryRenderAlt: 'Ilustração de embalagens típicas de {nameLower}',
     rangeAlt: 'Ilustração da linha GoodBiz Hygiene em embalagens de exportação típicas',
-    heroAlt:
-      'Ilustração da linha GoodBiz Hygiene em embalagens de exportação típicas: um frasco de detergente para louças, um galão de amaciante, um limpador em spray, um frasco com bomba de sabonete líquido, um sachê de sabão em pó, um tambor de matéria-prima, um galão e barras de sabonete',
     portAlt: 'Guindastes de pórtico carregando um navio porta-contêineres à noite no Terminal Internacional de Transbordo de Contêineres de Kochi, na Índia',
     portCaption: 'Terminal de contêineres, Kochi. Foto: {creator}, {license}.',
     specCaption: 'Especificações típicas. Os valores finais são confirmados a cada pedido.',
@@ -155,6 +153,10 @@ const pt: UiPartial = {
       { title: 'Um só parceiro, de porto a porto', text: 'Uma única cotação e um único ponto de contato, da primeira amostra ao conhecimento de embarque, para todos os produtos do seu pedido.' },
     ],
     guidesH: 'Guias do comprador',
+    fanTabs: 'Escolher uma linha',
+    fanShow: 'Mostrar {name}',
+    fanView: 'Ver a linha',
+    fanOpen: '{name}: ver a linha',
   },
 
   productsIndex: {

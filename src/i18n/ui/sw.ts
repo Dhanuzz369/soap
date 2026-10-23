@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1e31c873b185';
+export const sourceHash = '63f8be54f28d';
 
 const sw: UiPartial = {
   meta: {
@@ -43,8 +43,6 @@ const sw: UiPartial = {
     photoAlt: '{name} kutoka GoodBiz',
     categoryRenderAlt: 'Mchoro wa vifungashio vya kawaida vya {nameLower}',
     rangeAlt: 'Mchoro wa bidhaa za GoodBiz Hygiene katika vifungashio vya kawaida vya usafirishaji nje',
-    heroAlt:
-      'Mchoro wa bidhaa za GoodBiz Hygiene katika vifungashio vya kawaida vya usafirishaji nje: chupa ya sabuni ya kuosha vyombo, jagi la laini ya nguo, chupa ya kupulizia ya kisafishaji, pampu ya sabuni ya mikono, mfuko wa sabuni ya unga, pipa la malighafi, jerikani na vipande vya sabuni',
     portAlt: 'Winchi kubwa za gantry zikipakia meli ya kontena usiku kwenye Kituo cha Kimataifa cha Uhamishaji wa Kontena (International Container Transshipment Terminal) huko Kochi, India',
     portCaption: 'Kituo cha kontena, Kochi. Picha: {creator}, {license}.',
     specCaption: 'Vipimo vya kawaida. Thamani za mwisho huthibitishwa kwa kila oda.',
@@ -154,6 +152,10 @@ const sw: UiPartial = {
       { title: 'Mshirika mmoja, kutoka bandari hadi bandari', text: 'Nukuu moja na mtu mmoja wa mawasiliano tangu sampuli ya kwanza hadi hati ya shehena (bill of lading), kwa kila bidhaa unayoagiza.' },
     ],
     guidesH: 'Miongozo ya wanunuzi',
+    fanTabs: 'Chagua kundi',
+    fanShow: 'Onyesha {name}',
+    fanView: 'Tazama kundi',
+    fanOpen: '{name}: tazama kundi hili',
   },
 
   productsIndex: {

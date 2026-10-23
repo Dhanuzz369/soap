@@ -17,6 +17,9 @@ export const FAN_RANGES = [
   { slug: 'surface-home-cleaners', photo: 'floor-cleaner', pos: '80% 50%' },
 ] as const;
 
+/** The cards' `sizes` (CSS --card-w in home.css). Home's preload uses the same string. */
+export const FAN_SIZES = '(max-width: 759px) 50vw, clamp(240px, 23vw, 360px)';
+
 /**
  * Slot poses, front (0) to back (3): x/y in % of the card, r in degrees (LTR; mirrored in RTL),
  * s the scale. The back cards are smaller, turned and offset to alternate sides.
