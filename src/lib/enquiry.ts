@@ -121,3 +121,16 @@ export function parseEnquiryParams(search: string): { products: string[]; messag
     .slice(0, MAX_URL_MESSAGE);
   return { products, message };
 }
+
+/**
+ * A link to the contact page that prefills it: the writing side of parseEnquiryParams.
+ * `contact` is the (localized) contact path; empty values are left out.
+ */
+export function enquiryHref(contact: string, { message, products = [] }: { message?: string; products?: string[] }): string {
+  const params = new URLSearchParams();
+  if (products.length) params.set('product', products.join(','));
+  const m = message?.trim().slice(0, MAX_URL_MESSAGE);
+  if (m) params.set('message', m);
+  const q = params.toString();
+  return q ? `${contact}?${q}` : contact;
+}
