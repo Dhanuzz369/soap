@@ -1,0 +1,130 @@
+---
+/**
+ * ProductsHero: "the shelf", the /products/ hero. A dark forest band (the .ph field and grain)
+ * with the copy on the inline-start side (breadcrumbs, a two-line h1, a lead counted from the data,
+ * and a pill per range that jumps to its section), then two full-bleed rows of real product
+ * photos gliding slowly in opposite directions.
+ *
+ * - The marquee is pure CSS (shelf.css): each track holds the cards twice and slides by half its
+ *   width, linear, ~72s and ~86s a loop so the rows never sync. The second copy is aria-hidden
+ *   and its links are out of the tab order. It runs without JS.
+ * - Pauses: hovering a row (fine pointers), keyboard focus in a row (which also turns the row
+ *   into a plain scrollable strip so the focused card is always in view), the pause button,
+ *   off-screen and hidden tab (src/scripts/shelf.ts).
+ * - Reduced motion: no marquee; each row is a static scroll-snap strip without the second copy.
+ * - Only products with their own photo appear (productPicture kind 'photo'), split across the
+ *   two rows so the ranges mix (src/lib/shelf.ts).
+ */
+import Breadcrumbs from './Breadcrumbs.astro';
+import { productPicture } from '../lib/product-image';
+import { shapeFor } from '../lib/pack-shapes';
+import { shelfRows, SHELF_EAGER, SHELF_SIZES } from '../lib/shelf';
+import type { CategoryEntry, ProductEntry } from '../lib/products';
+import { useI18n } from '../i18n/page';
+import '../styles/shelf.css';
+
+interface Props {
+  groups: { category: CategoryEntry; products: ProductEntry[] }[];
+  breadcrumbs: { name: string; url: string }[];
+}
+const { groups, breadcrumbs } = Astro.props;
+const { ui, lp, fmt } = useI18n(Astro.url);
+const T = ui.productsIndex;
+
+const total = groups.reduce((n, g) => n + g.products.length, 0);
+const ranges = groups.length;
+
+const withPhotos = groups.map((g) =>
+  g.products.flatMap((p) => {
+    const d = p.data;
+    const pic = productPicture(d.slug, shapeFor(d.slug, d.category.id), d.category.id);
+    if (pic?.kind !== 'photo') return [];
+    return [{ slug: d.slug, title: d.title, hsn: d.hsn, cat: d.category.id, href: lp(`/products/${d.slug}/`), pic }];
+  }),
+);
+const rows = shelfRows(withPhotos);
+---
+
+<section class="ph ph--shelf" aria-labelledby="page-h">
+  <div class="wrap ph-copy shelf-copy">
+    {breadcrumbs.length > 1 && <Breadcrumbs items={breadcrumbs} />}
+    <h1 id="page-h" class="ph-title shelf-h">
+      <span class="line"><span class="line-in">{T.h1a}</span></span>
+      <span class="line"><span class="line-in serif-i"> {T.h1b}</span></span>
+    </h1>
+    <p class="ph-lead shelf-lead">{fmt(T.shelfLead, { n: total, r: ranges })}</p>
+    <div class="shelf-bar">
+      <nav class="shelf-jump" aria-label={T.jumpNav}>
+        <ul class="shelf-pills">
+          {
+            groups.map((g) => (
+              <li>
+                <a class="shelf-pill" href={`#c-${g.category.data.slug}`}>
+                  <span class="shelf-pill-name">{g.category.data.title}</span>
+                  <span class="shelf-pill-n" aria-hidden="true">
+                    {g.products.length}
+                  </span>
+                  <span class="visually-hidden">, {fmt(ui.common.productsCount, { n: g.products.length })}</span>
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="shelf" id="shelf" role="region" aria-label={T.shelfAria} data-shelf>
+    {
+      rows.map((row, r) => (
+        <div class="shelf-row" data-row={r}>
+          <div class="shelf-track">
+            {[0, 1].map((copy) => (
+              <ul class="shelf-set" aria-hidden={copy === 1 ? 'true' : undefined}>
+                {row.map((p, i) => {
+                  const eager = r === 0 && copy === 0 && i < SHELF_EAGER;
+                  return (
+                    <li>
+                      <a class="shelf-card" href={p.href} data-cat={p.cat} tabindex={copy === 1 ? '-1' : undefined}>
+                        <img
+                          src={p.pic.src}
+                          srcset={p.pic.srcset}
+                          sizes={SHELF_SIZES}
+                          width={p.pic.width}
+                          height={p.pic.height}
+                          alt=""
+                          loading={eager ? 'eager' : 'lazy'}
+                          fetchpriority={eager && i === 0 ? 'high' : undefined}
+                          decoding="async"
+                          draggable="false"
+                        />
+                        <span class="shelf-label">
+                          <span class="shelf-name">{p.title}</span>
+                          <span class="shelf-hsn">
+                            <abbr title={ui.common.hsnTitle}>{ui.common.hsn}</abbr>&nbsp;{p.hsn}
+                          </span>
+                        </span>
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="wrap shelf-foot">
+    <a class="link-arrow shelf-hsn-link" href="#hsn">{T.hsnLink} <span class="arr" aria-hidden="true">↓</span></a>
+    <button class="shelf-toggle" type="button" aria-pressed="false" aria-controls="shelf" hidden data-shelf-toggle>
+      <span class="shelf-toggle-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">{T.shelfPause}</span>
+    </button>
+  </div>
+</section>
+
+<script>
+  import '../scripts/shelf';
+</script>

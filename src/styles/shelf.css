@@ -1,0 +1,446 @@
+/*
+  "The shelf": the /products/ hero (src/components/ProductsHero.astro).
+  The .ph band (floria.css) gives the forest field, glow, vignette and grain; this file adds the
+  copy, the range pills and the two marquee rows.
+
+  Motion (Emil Kowalski):
+  - the marquee is constant motion, so it is linear; transform only; will-change on the tracks only
+  - the card lift on hover is feedback: 300ms on the strong ease-out, fine pointers only
+  - the entrance runs once on load: copy lines rise through their masks (as the home hero), the
+    rows rise 24px and fade in, 120ms apart, on the Floria curve over 900ms
+  - reduced motion: no marquee (static scroll-snap strips), the entrance is a 200ms fade
+*/
+
+.ph--shelf {
+  overflow: clip; /* the tracks are twice the viewport wide: never page-level sideways scroll */
+  padding: clamp(108px, 6rem + 2vw, 136px) 0 clamp(72px, 3rem + 4vw, 128px);
+  --glow-x: 74%;
+  --glow-y: 34%;
+  --glow-r: 52vw;
+  --glow-a: 0.11;
+  /* where the content column starts, so row 1's first card lines up with the copy */
+  --lead: max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
+}
+
+/* ---------- copy ---------- */
+.shelf-h {
+  margin-top: clamp(24px, 3vw, 40px);
+  font-size: clamp(2.5rem, 1.1rem + 4vw, 4.75rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+.shelf-h .line {
+  display: block;
+  overflow: clip;
+  padding-bottom: 0.1em; /* room for descenders and the italic's overhang inside the mask */
+  margin-bottom: -0.1em;
+  padding-inline-end: 0.1em;
+}
+.shelf-h .line-in {
+  display: block;
+}
+.shelf-h .serif-i {
+  color: var(--mint);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+.shelf-lead {
+  margin-top: clamp(18px, 2vw, 26px);
+  max-width: 50ch;
+}
+
+/* ---------- the range pills ---------- */
+.shelf-bar {
+  margin-top: clamp(24px, 3vw, 36px);
+}
+.shelf-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (max-width: 759.98px) {
+  .shelf-jump {
+    margin-inline: calc(-1 * var(--gutter));
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+  .shelf-pills {
+    flex-wrap: nowrap;
+    width: max-content;
+    padding-inline: var(--gutter);
+  }
+  .shelf-pill {
+    white-space: nowrap;
+  }
+}
+.shelf-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--tap);
+  padding-block: 0;
+  padding-inline: 18px 8px;
+  border-radius: var(--pill);
+  background: rgb(238 244 239 / 0.07);
+  box-shadow: inset 0 0 0 1px rgb(238 244 239 / 0.2); /* taste-skill-ignore: the reference's pill device on dark */
+  color: var(--on-dark);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  transition:
+    background-color var(--dur-fast) ease,
+    transform var(--dur-press) var(--ease-out);
+}
+.shelf-pill:active {
+  transform: scale(0.97);
+}
+.shelf-pill-n {
+  display: inline-grid;
+  place-items: center;
+  min-width: 28px;
+  height: 28px;
+  padding-inline: 8px;
+  border-radius: var(--pill);
+  background: var(--mint);
+  color: var(--forest-950);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.ph--shelf :is(.shelf-pill, .shelf-card, .shelf-toggle):focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+}
+/* under the shelf: the way down to the HSN table, and the pause button */
+.shelf-foot {
+  display: flex;
+  align-items: center;
+  gap: 12px 20px; /* side by side at the start: the fixed WhatsApp button owns the far corner */
+  margin-top: clamp(20px, 2.4vw, 32px);
+}
+.shelf-hsn-link {
+  color: var(--on-dark);
+}
+.shelf-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgb(238 244 239 / 0.07);
+  box-shadow: inset 0 0 0 1px rgb(238 244 239 / 0.2); /* taste-skill-ignore: round control, same device as the pills */
+  color: var(--on-dark);
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) ease,
+    transform var(--dur-press) var(--ease-out);
+}
+.shelf-toggle[hidden] {
+  display: none;
+}
+.shelf-toggle:active {
+  transform: scale(0.97);
+}
+/* pause: two bars; pressed (paused): a play triangle */
+.shelf-toggle-icon {
+  width: 10px;
+  height: 12px;
+  border-inline: 3px solid currentColor;
+}
+.shelf-toggle[aria-pressed='true'] .shelf-toggle-icon {
+  width: 0;
+  height: 0;
+  border-block: 6px solid transparent;
+  border-inline-start: 10px solid currentColor;
+  border-inline-end: 0;
+  margin-inline-start: 3px;
+}
+[dir='rtl'] .shelf-toggle[aria-pressed='true'] .shelf-toggle-icon {
+  /* a play sign points right in every script */
+  border-inline-start: 0;
+  border-inline-end: 10px solid currentColor;
+  margin-inline: 0 3px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .shelf-pill:hover,
+  .shelf-toggle:hover {
+    background: rgb(238 244 239 / 0.15);
+  }
+}
+
+/* ---------- the shelf ---------- */
+.shelf {
+  --card-w: 300px;
+  --card-gap: 20px;
+  --fade: clamp(32px, 9vw, 168px);
+  display: grid;
+  gap: calc(var(--card-gap) - 4px);
+  margin-top: clamp(40px, 4vw, 60px);
+}
+@media (max-width: 759.98px) {
+  .shelf {
+    --card-w: 210px;
+    --card-gap: 12px;
+  }
+}
+.shelf-row {
+  overflow-x: clip;
+  /* room for the hover lift and the focus ring, which the mask would otherwise cut */
+  padding-block: 12px;
+  margin-block: -12px;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 var(--fade), #000 calc(100% - var(--fade)), transparent 100%); /* taste-skill-ignore: the rows fade out at both ends (a mask, not a fill) */
+  mask-image: linear-gradient(90deg, transparent 0, #000 var(--fade), #000 calc(100% - var(--fade)), transparent 100%); /* taste-skill-ignore: the rows fade out at both ends (a mask, not a fill) */
+}
+.shelf-track {
+  display: flex;
+  width: max-content;
+}
+.shelf-set {
+  display: flex;
+  gap: var(--card-gap);
+  margin: 0;
+  padding: 0;
+  padding-inline-end: var(--card-gap); /* so one set is exactly half the track */
+  list-style: none;
+}
+.shelf-card {
+  position: relative;
+  display: block;
+  width: var(--card-w);
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--forest-800);
+  color: var(--on-dark);
+  text-decoration: none;
+  transition: transform var(--dur) var(--ease-out);
+  -webkit-user-drag: none;
+}
+.shelf-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* the photos are 4:3 too: nothing is cropped */
+}
+.shelf-label {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 48px 14px 12px;
+  background: linear-gradient(180deg, rgb(11 33 26 / 0) 0%, rgb(11 33 26 / 0.62) 45%, rgb(11 33 26 / 0.9) 100%); /* taste-skill-ignore: label scrim over a light studio photo */
+}
+.shelf-name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.shelf-hsn {
+  flex: none;
+  padding: 3px 9px;
+  border-radius: var(--pill);
+  background: rgb(238 244 239 / 0.14);
+  box-shadow: inset 0 0 0 1px rgb(238 244 239 / 0.24); /* taste-skill-ignore: HSN pill, the reference's pill device */
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.shelf-hsn abbr {
+  text-decoration: none;
+}
+[dir='rtl'] .shelf-hsn {
+  unicode-bidi: isolate;
+  direction: ltr;
+}
+@media (max-width: 759.98px) {
+  .shelf-card {
+    border-radius: 20px;
+  }
+  .shelf-label {
+    padding: 36px 10px 9px;
+    gap: 6px;
+  }
+  .shelf-name {
+    font-size: 0.8125rem;
+  }
+  .shelf-hsn {
+    padding: 2px 7px;
+    font-size: 0.6875rem;
+  }
+}
+
+/* ---------- motion ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  /* the marquee: row 1 glides toward the inline start, row 2 toward the inline end */
+  .shelf-track {
+    margin-inline-start: var(--lead);
+    animation: shelf-to-start 72s linear infinite;
+    will-change: transform;
+  }
+  .shelf-row[data-row='1'] .shelf-track {
+    margin-inline-start: 0;
+    animation-name: shelf-to-end;
+    animation-duration: 86s; /* a little slower, so the rows never line up */
+  }
+  [dir='rtl'] .shelf-track {
+    animation-name: shelf-to-start-rtl;
+  }
+  [dir='rtl'] .shelf-row[data-row='1'] .shelf-track {
+    animation-name: shelf-to-end-rtl;
+  }
+  /* pauses: off-screen, hidden tab, the pause button (shelf.ts); a focused row */
+  .shelf[data-paused] .shelf-track,
+  .shelf-row:focus-within .shelf-track {
+    animation-play-state: paused;
+  }
+  /* Keyboard focus in a row turns it into a plain scrollable strip, so the browser can always
+     bring the focused card into view (a moving, clipped track cannot scroll). */
+  .shelf-row:has(.shelf-card:focus-visible) {
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-padding-inline: var(--lead);
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .shelf-row:has(.shelf-card:focus-visible) .shelf-track {
+    margin-inline-start: 0;
+    padding-inline: var(--lead);
+    animation: none;
+  }
+  .shelf-row:has(.shelf-card:focus-visible) .shelf-set[aria-hidden] {
+    display: none;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .shelf-row:hover .shelf-track {
+      animation-play-state: paused;
+    }
+    .shelf-card:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+  }
+
+  /* the entrance, once on load */
+  .shelf-h .line-in {
+    animation: shelf-line-up 900ms var(--ease-out) both;
+  }
+  .shelf-h .line:nth-child(2) .line-in {
+    animation-delay: 80ms;
+  }
+  .shelf-copy .crumbs,
+  .shelf-lead,
+  .shelf-bar,
+  .shelf-foot {
+    animation: shelf-rise var(--dur-enter) var(--ease-out) both;
+  }
+  .shelf-lead {
+    animation-delay: 160ms;
+  }
+  .shelf-bar {
+    animation-delay: 240ms;
+  }
+  .shelf-foot {
+    animation-delay: 520ms;
+  }
+  .shelf-row {
+    animation: shelf-rise 900ms var(--ease-floria) 280ms both;
+  }
+  .shelf-row[data-row='1'] {
+    animation-delay: 400ms;
+  }
+}
+
+@keyframes shelf-to-start {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes shelf-to-end {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes shelf-to-start-rtl {
+  to {
+    transform: translateX(50%);
+  }
+}
+@keyframes shelf-to-end-rtl {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes shelf-line-up {
+  from {
+    transform: translateY(105%);
+  }
+}
+@keyframes shelf-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+@keyframes shelf-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* no marquee: each row is a static strip that scrolls sideways and snaps to a card */
+  .shelf-row {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--lead);
+    scrollbar-width: thin;
+    scrollbar-color: rgb(238 244 239 / 0.3) transparent;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .shelf-track {
+    padding-inline: var(--lead);
+  }
+  .shelf-set[aria-hidden] {
+    display: none;
+  }
+  .shelf-set li {
+    scroll-snap-align: start;
+  }
+  .shelf-set {
+    padding-inline-end: 0;
+  }
+  /* the entrance is a short fade, nothing travels */
+  .shelf-h .line-in,
+  .shelf-copy .crumbs,
+  .shelf-lead,
+  .shelf-bar,
+  .shelf-foot,
+  .shelf-row {
+    animation: shelf-fade 200ms ease-out both;
+  }
+}
