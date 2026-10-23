@@ -14,7 +14,8 @@
     "i18n:stamp": "node scripts/i18n-stamp.mjs",
     "i18n:sweep": "node scripts/i18n-sweep.mjs",
     "og": "node scripts/make-og.mjs",
-    "renders": "node scripts/render-packs.mjs"
+    "renders": "node scripts/render-packs.mjs",
+    "hero:glow": "node scripts/make-hero-glow.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.4",
