@@ -1,12 +1,13 @@
 ---
-import { categoryPicture } from '../lib/product-image';
+import { categoryPicture, ogCard } from '../lib/product-image';
 import type { CategoryEntry, ProductEntry } from '../lib/products';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import CardGrid from '../components/CardGrid.astro';
 import AnswerWall from '../components/AnswerWall.astro';
 import QuoteCard from '../components/QuoteCard.astro';
-import { faqJsonLd } from '../lib/seo';
+import { faqJsonLd, itemListJsonLd, buildKeywords, absoluteUrl } from '../lib/seo';
+import { productImagePath } from '../lib/product-image';
 import { splitName } from '../lib/heading';
 import { useI18n } from '../i18n/page';
 
@@ -35,14 +36,25 @@ const dims: Record<string, [number, number]> = {
 const [w, h] = dims[c.slug] ?? [1000, 800];
 const cpic = categoryPicture(c.slug);
 const name = splitName(c.title);
+const keywords = buildKeywords(ui.seo.keywords.category, { ...names, hsn: c.hsnRange }, products.map((p) => p.data.keyword ?? lower(p.data.title)));
+const list = itemListJsonLd(
+  url,
+  c.title,
+  products.map((p) => ({ name: p.data.title, url: lp(`/products/${p.data.slug}/`), image: productImagePath(p.data.slug) })),
+);
 ---
 
 <BaseLayout
   title={fmt(C.title, names)}
-  description={c.summary}
+  description={c.metaDescription}
   path={path}
+  ogImage={ogCard(`categories/${c.slug}.jpg`)}
+  ogImageAlt={fmt(ui.common.photoAlt, names)}
+  keywords={keywords}
+  pageType="CollectionPage"
+  mainEntity={`${absoluteUrl(url)}#itemlist`}
   breadcrumbs={breadcrumbs}
-  jsonLd={faqs.length ? [faqJsonLd(faqs, info.hreflang)] : []}
+  jsonLd={[list, ...(faqs.length ? [faqJsonLd(faqs, info.hreflang, url)] : [])]}
   dark
 >
   <PageHero

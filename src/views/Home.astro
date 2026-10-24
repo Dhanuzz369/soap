@@ -12,7 +12,9 @@ import HeroFan from '../components/HeroFan.astro';
 import Bubbles from '../components/Bubbles.astro';
 import ProductCard from '../components/ProductCard.astro';
 import { getProductsByCategory } from '../lib/products';
-import { faqJsonLd } from '../lib/seo';
+import { faqJsonLd, buildKeywords } from '../lib/seo';
+import { ogCard } from '../lib/product-image';
+import QuickFacts from '../components/QuickFacts.astro';
 import { getHomeFaqs } from '../lib/faqs';
 import { getPosts } from '../lib/blog';
 import { useI18n } from '../i18n/page';
@@ -65,7 +67,9 @@ const promises = h.promises;
   title={h.title}
   description={h.description}
   path="/"
-  jsonLd={[faqJsonLd(homeFaqs, info.hreflang)]}
+  ogImage={ogCard(`${lang}/home.png`)}
+  keywords={buildKeywords(ui.seo.keywords.home)}
+  jsonLd={[faqJsonLd(homeFaqs, info.hreflang, lp('/'))]}
   dark
   preloadImage={lcp && { href: lcp.src, srcset: fanSrcset(FAN_RANGES[0].photo, lcp.srcset), sizes: FAN_SIZES }}
 >
@@ -156,7 +160,10 @@ const promises = h.promises;
     </ul>
   </section>
 
-  <!-- 5. Straight answers -->
+  <!-- 5. Quick facts (AEO: quotable facts in a definition list) -->
+  <QuickFacts />
+
+  <!-- 5b. Straight answers -->
   <AnswerWall faqs={homeFaqs} more={{ href: lp('/faq/'), label: h.answersMore }} />
 
   <!-- 6. Statement -->

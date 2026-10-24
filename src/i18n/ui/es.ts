@@ -5,11 +5,113 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '2d63fbf41757';
+export const sourceHash = '9e5d353955e5';
 
 const es: UiPartial = {
   meta: {
     tagline: 'Jabones y productos de limpieza del hogar, exportados desde la India',
+  },
+
+  seo: {
+    entity: 'GoodBiz Hygiene, una empresa de GoodBiz Global, es un exportador comercial de jabones y productos de limpieza de India. Se abastece de fabricantes indios seleccionados y no fabrica.',
+    keywords: {
+      home: [
+        'exportador de jabón India',
+        'proveedor de detergente India',
+        'productos de limpieza de India',
+        'fabricantes de jabón en India',
+        'jabón marca propia',
+        'jabón y detergente al por mayor',
+        'HSN 3401 3402',
+      ],
+      products: [
+        'jabones y detergentes de India',
+        'productos de limpieza al por mayor',
+        'catálogo de productos de limpieza',
+        'importar jabón de India',
+        'códigos HSN jabones',
+      ],
+      category: [
+        'exportador de {nameLower} India',
+        'proveedor de {nameLower} India',
+        'fabricantes de {nameLower} India',
+        '{nameLower} al por mayor',
+        '{nameLower} marca propia',
+        'HSN {hsn}',
+      ],
+      product: [
+        'exportador de {kw} India',
+        'proveedor de {kw} India',
+        'fabricantes de {kw} en India',
+        '{kw} a granel',
+        '{kw} al por mayor',
+        '{kw} código HSN {hsn}',
+        'importar {kw} de India',
+      ],
+      productPrivateLabel: [
+        '{kw} marca propia',
+        '{kw} OEM',
+      ],
+      productMarkets: [
+        'proveedor de {kw} en México',
+        'proveedor de {kw} en Latinoamérica',
+      ],
+      privateLabel: [
+        'jabón marca propia India',
+        'productos de limpieza marca propia',
+        'detergente OEM India',
+        'proveedor de jabón para marca blanca',
+        'productos de limpieza marca blanca',
+      ],
+      exportProcess: [
+        'importar jabón de India',
+        'documentos de exportación jabones',
+        'FOB CIF CFR India',
+        'COA MSDS certificado de origen',
+        'contenedor desde India',
+      ],
+      about: [
+        'GoodBiz Hygiene',
+        'GoodBiz Global',
+        'exportador comercial India',
+        'exportador de jabón y detergente India',
+      ],
+      faq: [
+        'preguntas importar jabón',
+        'MOQ jabones detergentes India',
+        'código HSN jabón detergente',
+        'plazo de exportación India',
+      ],
+      contact: [
+        'cotización jabón India',
+        'precio detergente exportación',
+        'contacto GoodBiz Hygiene',
+        'consulta productos de limpieza',
+      ],
+      blog: [
+        'guía importar jabón',
+        'guía de compra detergente',
+        'importar productos de limpieza India',
+        'HSN 3401 o 3402',
+      ],
+      post: [
+        'importar de India',
+        'guía para compradores',
+      ],
+    },
+  },
+
+  quickFacts: {
+    heading: 'Datos clave',
+    what: 'Qué exportamos',
+    whatValue: 'Jabones, detergentes, lavavajillas, limpiadores y materias primas para jabón, de fabricantes indios seleccionados. GoodBiz Hygiene es un exportador comercial y no fabrica.',
+    hsn: 'Códigos HSN',
+    hsnValue: '3401 (jabones) y 3402 (detergentes y preparaciones de limpieza); el código de 8 dígitos se confirma en cada pedido',
+    terms: 'Incoterms y pago',
+    port: 'Puertos',
+    moq: 'Pedido mínimo',
+    moqValue: 'Sin mínimo fijo: se cotizan pedidos de prueba, cargas parciales y contenedores mixtos, y la marca propia está disponible en la mayoría de los productos',
+    lead: 'Plazo de entrega',
   },
 
   terms: {
@@ -41,7 +143,7 @@ const es: UiPartial = {
     exportProcessFull: 'El proceso de exportación completo',
     renderAlt: 'Ilustración de {nameLower} en un envase de exportación típico',
     drawingAlt: 'Ilustración de {nameLower}',
-    photoAlt: '{name} de GoodBiz',
+    photoAlt: '{name}, exportado de India por GoodBiz Hygiene',
     categoryRenderAlt: 'Ilustración de envases típicos de {nameLower}',
     rangeAlt: 'Ilustración de la gama de GoodBiz Hygiene en envases de exportación típicos',
     portAlt: 'Grúas pórtico cargando un buque portacontenedores de noche en la Terminal Internacional de Transbordo de Contenedores de Kochi, India',
@@ -110,9 +212,8 @@ const es: UiPartial = {
   },
 
   home: {
-    title: 'Exportador y proveedor de jabones y productos de limpieza desde la India',
-    description:
-      'GoodBiz Hygiene, empresa de GoodBiz Global, exporta jabones, detergentes y productos de limpieza de fabricantes indios seleccionados, con marca propia y contenedores mixtos.',
+    title: 'Jabones, detergentes y limpiadores: exportador de India',
+    description: 'GoodBiz Hygiene exporta jabones, detergentes y productos de limpieza de fabricantes indios seleccionados: a granel o marca propia, contenedores mixtos, FOB/CIF.',
     eyebrow: 'Jabones · Detergentes · Limpieza del hogar',
     h1a: 'Jabones y limpieza del hogar',
     h1b: 'Exportados desde la India.',
@@ -160,9 +261,8 @@ const es: UiPartial = {
   },
 
   productsIndex: {
-    title: 'Exportador y proveedor de jabones, detergentes y productos de limpieza desde la India',
-    description:
-      'Explore {n} productos de jabón, lavandería, cocina, limpieza de superficies y materias primas de fabricantes indios seleccionados, con códigos HSN y opciones de marca propia.',
+    title: 'Jabones, detergentes y limpiadores para exportar de India',
+    description: '{n} jabones, detergentes, limpiadores y materias primas de fabricantes indios seleccionados, con código HSN, envases y marca propia. Contenedores mixtos.',
     hsnLink: 'Códigos HSN por producto',
     rangeFull: 'La gama completa',
     hsnH: '¿Qué código HSN corresponde a cada producto?',
@@ -196,7 +296,7 @@ const es: UiPartial = {
     packSizes: 'Tamaños de envase',
     packaging: 'Opciones de embalaje',
     galleryH: 'Más fragancias, en fotos',
-    specH: '¿Cuáles son las especificaciones típicas?',
+    specH: '¿Cuáles son las especificaciones típicas: {nameLower}?',
     specNote: '{name}: valores típicos para calidades de exportación. Los valores finales se confirman con el fabricante en cada pedido.',
     aboutAria: 'Acerca de {name}',
     loadH: 'Carga del contenedor (aprox.)',
@@ -211,7 +311,7 @@ const es: UiPartial = {
   },
 
   category: {
-    title: '{name}: exportador y proveedor desde la India',
+    title: '{name}: exportador de India',
     hsnMeta: '{n} productos · código ITC-HS de 8 dígitos confirmado en cada pedido',
     seeProducts: 'Ver los {n} productos',
     productsH: '¿Qué productos de {nameLower} suministramos?',
@@ -219,9 +319,8 @@ const es: UiPartial = {
   },
 
   blogIndex: {
-    title: 'Guías de exportación para compradores de jabones y productos de limpieza',
-    description:
-      'Guías prácticas para importadores de jabones, detergentes y productos de limpieza del hogar desde la India: códigos HSN, MOQ, documentos, marca propia y transporte.',
+    title: 'Guías de importación: jabones y limpieza desde India',
+    description: 'Guías prácticas para importar jabones, detergentes y productos de limpieza de India: códigos HSN, MOQ, documentos, marca propia y transporte marítimo.',
     l1: 'Guías para compradores.',
     l2: 'Para importar jabones y productos de limpieza.',
     lead: 'Notas claras para importadores y distribuidores: clasificación arancelaria, costos, documentos y elección de productos.',
@@ -237,9 +336,8 @@ const es: UiPartial = {
   },
 
   contact: {
-    title: 'Solicitar cotización: exportador y proveedor de jabones y productos de limpieza desde la India',
-    description:
-      'Solicite una cotización a GoodBiz Hygiene de jabones, detergentes y productos de limpieza desde la India. Envíe sus productos, envases y puerto por correo o WhatsApp.',
+    title: 'Solicite una cotización: jabones y detergentes de India',
+    description: 'Pida a GoodBiz Hygiene una cotización de jabones, detergentes y productos de limpieza de India. Envíe productos, envases y puerto por correo o WhatsApp.',
     l1: 'Solicite una cotización.',
     l2: 'Desde la India hasta su puerto.',
     lead: 'Indíquenos lo que necesita: los productos, los tamaños de envase, la cantidad y el puerto de destino. GoodBiz Hygiene responde con precios, especificaciones típicas y plazos de entrega.',
@@ -291,9 +389,8 @@ const es: UiPartial = {
   },
 
   about: {
-    title: 'Sobre GoodBiz Hygiene: exportador y proveedor de jabones y productos de limpieza desde la India',
-    description:
-      'GoodBiz Hygiene es la división de exportación de productos de limpieza e higiene de GoodBiz Global, exportador comercial de la India, y marca hermana de GoodBiz Agro.',
+    title: 'GoodBiz Hygiene: exportador de jabones y detergentes, India',
+    description: 'GoodBiz Hygiene, una empresa de GoodBiz Global, es un exportador comercial indio de jabones y productos de limpieza de fabricantes indios seleccionados.',
     l1: 'GoodBiz Hygiene.',
     l2: 'Una empresa de {parent}.',
     lead: 'GoodBiz Hygiene es la división de exportación de productos de limpieza e higiene de {parent}, exportador comercial de la India, y marca hermana de GoodBiz Agro.',
@@ -312,9 +409,8 @@ const es: UiPartial = {
   },
 
   faqPage: {
-    title: 'Preguntas frecuentes: exportador y proveedor de jabones y productos de limpieza desde la India',
-    description:
-      'Respuestas para importadores que compran jabones, detergentes y limpiadores de la India con GoodBiz Hygiene: abastecimiento, marca propia, MOQ, incoterms, documentos y plazos.',
+    title: 'Preguntas frecuentes: comprar jabones y detergentes en India',
+    description: 'Respuestas para importadores de jabones, detergentes y limpiadores de India: abastecimiento, marca propia, MOQ, incoterms, documentos y plazos de entrega.',
     l1: 'Preguntas de los compradores.',
     l2: 'Respuestas claras.',
     lead: 'Cómo GoodBiz Hygiene adquiere, cotiza y embarca jabones y productos de limpieza del hogar desde la India. Las preguntas específicas de cada producto se responden en su página.',
@@ -383,9 +479,8 @@ const es: UiPartial = {
   ],
 
   exportProcess: {
-    title: 'Proceso de exportación: exportador y proveedor de jabones y productos de limpieza desde la India',
-    description:
-      'Cómo exporta GoodBiz Hygiene jabones, detergentes y limpiadores desde la India: cotización, muestras, incoterms, condiciones de pago, documentos, puertos y plazos típicos.',
+    title: 'Proceso de exportación: importar jabones desde India',
+    description: 'Cómo exporta GoodBiz Hygiene jabones, detergentes y limpiadores de India: cotización, muestras, incoterms, pago, documentos, puertos y plazos habituales.',
     lead: 'Los pasos, las condiciones y los documentos para comprar jabones y productos de limpieza del hogar desde la India con GoodBiz Hygiene.',
     route: {
       h1a: 'De los puertos de la India,',
@@ -430,6 +525,7 @@ const es: UiPartial = {
     processL1: '¿Cuáles son los pasos',
     processL2: 'de la consulta al embarque?',
     processIntro: 'Seis pasos, con su aprobación de la cotización, las muestras y la factura proforma antes de producir nada.',
+    howToName: 'Cómo importar jabones y productos de limpieza de India con GoodBiz Hygiene',
     steps: [
       { name: 'Consulta', text: 'Envíenos los productos, los tamaños de envase, la cantidad, el puerto de destino y sus necesidades de marca propia, mediante el formulario de consulta, el correo o WhatsApp.' },
       { name: 'Cotización', text: 'Cotizamos precios por envase con especificaciones típicas, el incoterm que necesite y el plazo de entrega. {incoterms}.' },
@@ -465,9 +561,8 @@ const es: UiPartial = {
   },
 
   privateLabel: {
-    title: 'Jabones y productos de limpieza de marca propia: exportador y proveedor desde la India',
-    description:
-      'Jabones, detergentes y limpiadores de marca propia desde la India: su diseño, fragancia, color y tamaños de envase, fabricados por fabricantes indios seleccionados y exportados por GoodBiz Hygiene.',
+    title: 'Jabones y productos de limpieza de marca propia, India',
+    description: 'Jabones, detergentes y limpiadores de marca propia desde India: su diseño, fragancia, color y envases, de fabricantes indios seleccionados. Contenedores mixtos.',
     lead: 'Venda jabones, detergentes y limpiadores con su propia marca. GoodBiz Hygiene asigna su solicitud a un fabricante indio seleccionado, gestiona las muestras y el diseño, y envía el producto terminado a su puerto.',
     hero: {
       h1a: 'Su marca,',

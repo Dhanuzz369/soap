@@ -85,3 +85,35 @@ export function categoryPicture(slug: string, root: string = process.cwd()): Pro
   const { width, height } = sizeOf(root, src, { width: 1000, height: 800 });
   return { kind: 'render', src, srcset: `${src} ${width}w`, width, height };
 }
+
+/** Pixel size from a PNG (IHDR) or JPEG (first SOF marker) header, or undefined. */
+export function rasterSize(buf: Buffer): { width: number; height: number } | undefined {
+  if (buf.length > 24 && buf.readUInt32BE(0) === 0x89504e47) return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+  if (buf.length > 4 && buf[0] === 0xff && buf[1] === 0xd8) {
+    let i = 2;
+    while (i + 9 < buf.length) {
+      if (buf[i] !== 0xff) return undefined;
+      const marker = buf[i + 1];
+      const len = buf.readUInt16BE(i + 2);
+      if (marker >= 0xc0 && marker <= 0xcf && marker !== 0xc4 && marker !== 0xc8 && marker !== 0xcc)
+        return { width: buf.readUInt16BE(i + 7), height: buf.readUInt16BE(i + 5) };
+      i += 2 + len;
+    }
+  }
+  return webpSize(buf);
+}
+
+/** Size of an image in public/ (WebP, PNG or JPEG), or undefined when it is missing or unreadable. */
+export function publicImageSize(url: string, root: string = process.cwd()): { width: number; height: number } | undefined {
+  try {
+    return rasterSize(fs.readFileSync(path.join(root, 'public', url)));
+  } catch {
+    return undefined;
+  }
+}
+
+/** The 1200 × 630 share card of a page (npm run og), when it exists. */
+export function ogCard(file: string, root: string = process.cwd()): string | undefined {
+  const url = `/og/${file}`;
+  return exists(root, url) ? url : undefined;
+}

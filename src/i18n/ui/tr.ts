@@ -5,11 +5,113 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '2d63fbf41757';
+export const sourceHash = '9e5d353955e5';
 
 const tr: UiPartial = {
   meta: {
     tagline: 'Sabun ve ev bakım ürünleri, Hindistan’dan ihracat',
+  },
+
+  seo: {
+    entity: 'GoodBiz Global şirketi olan GoodBiz Hygiene, Hindistan’dan sabun ve ev bakım ürünleri ihraç eden bir dış ticaret şirketidir. Ürünleri kontrol edilmiş Hindistanlı üreticilerden tedarik eder, kendisi üretim yapmaz.',
+    keywords: {
+      home: [
+        'Hindistan sabun ihracatçısı',
+        'Hindistan deterjan tedarikçisi',
+        'Hindistan ev bakım ürünleri',
+        'Hindistan sabun üreticileri',
+        'özel marka sabun',
+        'toptan sabun ve deterjan',
+        'GTİP 3401 3402',
+      ],
+      products: [
+        'Hindistan sabun ve deterjan',
+        'toptan temizlik ürünleri',
+        'ev bakım ürünleri kataloğu',
+        'Hindistan’dan sabun ithalatı',
+        'sabun GTİP kodları',
+      ],
+      category: [
+        'Hindistan {nameLower} ihracatçısı',
+        'Hindistan {nameLower} tedarikçisi',
+        'Hindistan {nameLower} üreticileri',
+        'toptan {nameLower}',
+        'özel marka {nameLower}',
+        'HSN {hsn}',
+      ],
+      product: [
+        'Hindistan {kw} ihracatçısı',
+        'Hindistan {kw} tedarikçisi',
+        'Hindistan {kw} üreticileri',
+        'dökme {kw}',
+        'toptan {kw}',
+        '{kw} GTİP {hsn}',
+        'Hindistan’dan {kw} ithalatı',
+      ],
+      productPrivateLabel: [
+        'özel marka {kw}',
+        '{kw} OEM',
+      ],
+      productMarkets: [
+        '{kw} tedarikçisi Türkiye',
+        '{kw} tedarikçisi Azerbaycan',
+      ],
+      privateLabel: [
+        'özel marka sabun Hindistan',
+        'özel marka temizlik ürünleri',
+        'deterjan OEM Hindistan',
+        'kendi markanıza sabun tedarikçisi',
+        'beyaz etiket ev bakım ürünleri',
+      ],
+      exportProcess: [
+        'Hindistan’dan sabun ithalatı',
+        'sabun ihracat evrakları',
+        'FOB CIF CFR Hindistan',
+        'COA MSDS menşe şahadetnamesi',
+        'Hindistan’dan konteyner',
+      ],
+      about: [
+        'GoodBiz Hygiene',
+        'GoodBiz Global',
+        'Hindistan dış ticaret şirketi',
+        'Hindistan sabun ve deterjan ihracatçısı',
+      ],
+      faq: [
+        'sabun ithalatı SSS',
+        'sabun deterjan MOQ Hindistan',
+        'sabun deterjan GTİP',
+        'Hindistan ihracat teslim süresi',
+      ],
+      contact: [
+        'Hindistan sabun teklifi',
+        'deterjan ihracat fiyatı',
+        'GoodBiz Hygiene iletişim',
+        'temizlik ürünü talebi',
+      ],
+      blog: [
+        'sabun ithalat rehberi',
+        'deterjan alım rehberi',
+        'Hindistan’dan temizlik ürünü ithalatı',
+        'HSN 3401 ve 3402',
+      ],
+      post: [
+        'Hindistan’dan ithalat',
+        'alıcı rehberi',
+      ],
+    },
+  },
+
+  quickFacts: {
+    heading: 'Kısa bilgiler',
+    what: 'Ne ihraç ediyoruz',
+    whatValue: 'Kontrol edilmiş Hindistanlı üreticilerden sabun, deterjan, bulaşık ürünleri, yüzey temizleyiciler ve sabun hammaddeleri. GoodBiz Hygiene bir dış ticaret şirketidir, üretim yapmaz.',
+    hsn: 'HSN kodları',
+    hsnValue: '3401 (sabunlar) ve 3402 (deterjanlar ve temizlik müstahzarları); 8 haneli kod her siparişte teyit edilir',
+    terms: 'Teslim şekilleri ve ödeme',
+    port: 'Limanlar',
+    moq: 'Minimum sipariş',
+    moqValue: 'Sabit bir minimum yok: deneme siparişleri, parsiyel yükler ve karışık konteynerler fiyatlandırılır; çoğu üründe özel marka mümkündür',
+    lead: 'Teslim süresi',
   },
 
   terms: {
@@ -41,7 +143,7 @@ const tr: UiPartial = {
     exportProcessFull: 'İhracat süreci ayrıntılarıyla',
     renderAlt: 'Tipik bir ihracat ambalajında {nameLower} görseli',
     drawingAlt: '{nameLower} çizimi',
-    photoAlt: '{name}, GoodBiz ürünü',
+    photoAlt: '{name}, GoodBiz Hygiene tarafından Hindistan’dan ihraç edilir',
     categoryRenderAlt: 'Tipik {nameLower} ambalajlarının görseli',
     rangeAlt: 'GoodBiz Hygiene ürün gamının tipik ihracat ambalajlarındaki görseli',
     portAlt: 'Hindistan’ın Kochi kentindeki Uluslararası Konteyner Aktarma Terminali’nde geceleyin bir konteyner gemisini yükleyen portal vinçler',
@@ -110,9 +212,8 @@ const tr: UiPartial = {
   },
 
   home: {
-    title: 'Sabun ve Ev Bakım Ürünleri İhracatçısı ve Tedarikçisi, Hindistan',
-    description:
-      'Bir GoodBiz Global şirketi olan GoodBiz Hygiene, kontrol edilmiş Hindistanlı üreticilerden sabun, deterjan ve ev bakım ürünleri ihraç eder; özel marka ve karışık konteyner sunar.',
+    title: 'Sabun, Deterjan ve Temizleyici: Hindistan’dan İhracatçı',
+    description: 'GoodBiz Hygiene, kontrol edilmiş Hindistanlı üreticilerden sabun, deterjan ve ev bakım ürünleri ihraç eder: dökme veya özel marka, karışık konteyner, FOB/CIF.',
     eyebrow: 'Sabun · Deterjan · Ev bakımı',
     h1a: 'Sabun ve Ev Bakımı',
     h1b: 'Hindistan’dan ihracat.',
@@ -160,9 +261,8 @@ const tr: UiPartial = {
   },
 
   productsIndex: {
-    title: 'Sabun, Deterjan ve Temizlik Ürünleri İhracatçısı ve Tedarikçisi, Hindistan',
-    description:
-      'Kontrol edilmiş Hindistanlı üreticilerden tedarik edilen {n} sabun, çamaşır, mutfak, yüzey temizleyici ve hammadde ürününü HSN kodları ve özel marka seçenekleriyle inceleyin.',
+    title: 'Hindistan’dan İhracat İçin Sabun, Deterjan ve Temizleyici',
+    description: 'Kontrol edilmiş Hindistanlı üreticilerden {n} sabun, deterjan, temizleyici ve hammadde; her biri HSN kodu, ambalaj ve özel marka seçeneğiyle. Karışık konteyner.',
     hsnLink: 'Ürün bazında HSN kodları',
     rangeFull: 'Ürün gamının tamamı',
     hsnH: 'Hangi ürüne hangi HSN kodu uygulanır?',
@@ -196,7 +296,7 @@ const tr: UiPartial = {
     packSizes: 'Ambalaj boyutları',
     packaging: 'Ambalaj seçenekleri',
     galleryH: 'Daha fazla koku, fotoğraflarla',
-    specH: 'Tipik özellikler nelerdir?',
+    specH: '{name} için tipik özellikler nelerdir?',
     specNote: '{name}: ihracat kaliteleri için tipik değerler. Nihai değerler sipariş başına üreticiyle teyit edilir.',
     aboutAria: 'Hakkında: {name}',
     loadH: 'Konteyner yüklemesi (yaklaşık)',
@@ -211,7 +311,7 @@ const tr: UiPartial = {
   },
 
   category: {
-    title: '{name}: Hindistan’dan İhracatçı ve Tedarikçi',
+    title: '{name}: Hindistan’dan İhracat',
     hsnMeta: '{n} ürün · 8 haneli ITC-HS kodu sipariş başına teyit edilir',
     seeProducts: '{n} ürünü görüntüleyin',
     productsH: 'Bu grupta hangi ürünleri tedarik ediyoruz: {nameLower}?',
@@ -219,9 +319,8 @@ const tr: UiPartial = {
   },
 
   blogIndex: {
-    title: 'Sabun ve Temizlik Ürünü Alıcıları için İhracat Rehberleri',
-    description:
-      'Hindistan’dan sabun, deterjan ve ev bakım ürünü ithal edenler için pratik rehberler: HSN kodları, MOQ, evraklar, özel marka ve sevkiyat.',
+    title: 'İthalat Rehberleri: Hindistan’dan Sabun ve Temizlik',
+    description: 'Hindistan’dan sabun, deterjan ve ev bakım ürünü ithal edenler için pratik rehberler: HSN kodları, MOQ, evraklar, özel marka ve deniz yolu sevkiyatı.',
     l1: 'Alıcı rehberleri.',
     l2: 'Sabun ve ev bakımı ithalatı için.',
     lead: 'İthalatçılar ve distribütörler için sade notlar: sınıflandırma, maliyetler, evraklar ve ürün seçimi.',
@@ -237,9 +336,8 @@ const tr: UiPartial = {
   },
 
   contact: {
-    title: 'Teklif İsteyin: Hindistan’dan Sabun ve Ev Bakım Ürünleri İhracatçısı ve Tedarikçisi',
-    description:
-      'GoodBiz Hygiene’den Hindistan menşeli sabun, deterjan ve ev bakım ürünleri için teklif isteyin. Ürünlerinizi, ambalaj boyutlarınızı ve limanınızı e-posta veya WhatsApp ile iletin.',
+    title: 'Teklif İsteyin: Hindistan’dan Sabun ve Deterjan',
+    description: 'Hindistan’dan sabun, deterjan ve ev bakım ürünleri için GoodBiz Hygiene’den teklif isteyin. Ürünleri, ambalajı ve limanı e-posta veya WhatsApp ile gönderin.',
     l1: 'Teklif isteyin.',
     l2: 'Hindistan’dan, limanınıza.',
     lead: 'İhtiyacınızı bize iletin: ürünler, ambalaj boyutları, miktar ve varış limanı. GoodBiz Hygiene fiyatlar, tipik özellikler ve teslim süreleriyle yanıt verir.',
@@ -291,9 +389,8 @@ const tr: UiPartial = {
   },
 
   about: {
-    title: 'GoodBiz Hygiene Hakkında: Hindistan’dan Sabun ve Ev Bakım Ürünleri İhracatçısı ve Tedarikçisi',
-    description:
-      'GoodBiz Hygiene, Hindistan’dan ticari ihracatçı olan GoodBiz Global’in ev bakımı ve hijyen ihracat bölümüdür ve GoodBiz Agro’nun kardeş markasıdır.',
+    title: 'GoodBiz Hygiene: Sabun ve Deterjan İhracatçısı, Hindistan',
+    description: 'GoodBiz Global şirketi GoodBiz Hygiene, kontrol edilmiş Hindistanlı üreticilerden sabun ve ev bakım ürünleri tedarik eden Hindistanlı bir ihracat şirketidir.',
     l1: 'GoodBiz Hygiene.',
     l2: 'Bir {parent} şirketi.',
     lead: 'GoodBiz Hygiene, Hindistan’dan ticari ihracatçı olan {parent}’ın ev bakımı ve hijyen ihracat bölümüdür ve GoodBiz Agro’nun kardeş markasıdır.',
@@ -312,9 +409,8 @@ const tr: UiPartial = {
   },
 
   faqPage: {
-    title: 'SSS: Hindistan’dan Sabun ve Ev Bakım Ürünleri İhracatçısı ve Tedarikçisi',
-    description:
-      'GoodBiz Hygiene üzerinden Hindistan’dan sabun, deterjan ve temizleyici alan ithalatçılar için cevaplar: tedarik, özel marka, MOQ, Incoterms, evraklar ve teslim süreleri.',
+    title: 'İthalatçı SSS: Hindistan’dan Sabun ve Deterjan Almak',
+    description: 'Hindistan’dan sabun, deterjan ve temizleyici alan ithalatçılar için yanıtlar: tedarik, özel marka, MOQ, teslim şekilleri, evraklar ve teslim süreleri.',
     l1: 'Alıcı soruları.',
     l2: 'Net cevaplar.',
     lead: 'GoodBiz Hygiene, Hindistan’dan sabun ve ev bakım ürünlerini nasıl tedarik eder, teklif verir ve sevk eder. Ürüne özel sorular her ürün sayfasında cevaplanır.',
@@ -383,9 +479,8 @@ const tr: UiPartial = {
   ],
 
   exportProcess: {
-    title: 'İhracat Süreci: Hindistan’dan Sabun ve Ev Bakım Ürünleri İhracatçısı ve Tedarikçisi',
-    description:
-      'GoodBiz Hygiene, Hindistan’dan sabun, deterjan ve temizleyicileri nasıl ihraç eder: teklif, numuneler, Incoterms, ödeme koşulları, evraklar, limanlar ve tipik teslim süreleri.',
+    title: 'İhracat Süreci: Hindistan’dan Sabun ve Deterjan İthalatı',
+    description: 'GoodBiz Hygiene, Hindistan’dan sabun, deterjan ve temizleyicileri nasıl ihraç eder: teklif, numune, teslim şekli, ödeme, evraklar, limanlar ve olağan süreler.',
     lead: 'GoodBiz Hygiene üzerinden Hindistan’dan sabun ve ev bakım ürünleri satın almanın adımları, koşulları ve evrakları.',
     route: {
       h1a: 'Hindistan’ın limanlarından',
@@ -430,6 +525,7 @@ const tr: UiPartial = {
     processL1: 'Talepten sevkiyata',
     processL2: 'adımlar nelerdir?',
     processIntro: 'Altı adım; herhangi bir şey üretilmeden önce teklif, numuneler ve proforma fatura üzerindeki onayınızla.',
+    howToName: 'GoodBiz Hygiene ile Hindistan’dan sabun ve ev bakım ürünleri nasıl ithal edilir',
     steps: [
       { name: 'Talep', text: 'Ürünleri, ambalaj boyutlarını, miktarı, varış limanını ve varsa özel marka ihtiyaçlarını talep formu, e-posta veya WhatsApp ile iletin.' },
       { name: 'Teklif', text: 'Tipik özellikler, ihtiyaç duyduğunuz Incoterm ve teslim süresiyle birlikte ambalaj başına fiyat teklif ederiz. {incoterms}.' },
@@ -465,9 +561,8 @@ const tr: UiPartial = {
   },
 
   privateLabel: {
-    title: 'Özel Marka Sabun ve Temizlik Ürünleri: Hindistan’dan İhracatçı ve Tedarikçi',
-    description:
-      'Hindistan’dan özel marka sabun, deterjan ve temizleyiciler: tasarımınız, kokunuz, renginiz ve ambalaj boyutlarınızla, kontrol edilmiş Hindistanlı üreticilerce üretilir ve GoodBiz Hygiene tarafından ihraç edilir.',
+    title: 'Hindistan’dan Özel Marka Sabun ve Temizlik Ürünleri',
+    description: 'Hindistan’dan özel marka sabun, deterjan ve temizleyiciler: tasarımınız, kokunuz, renginiz ve ambalajınız, kontrol edilmiş Hindistanlı üreticilerden.',
     lead: 'Sabun, deterjan ve temizleyicileri kendi markanız altında satın. GoodBiz Hygiene talebinizi kontrol edilmiş bir Hindistanlı üreticiyle eşleştirir, numune ve tasarım süreçlerini yönetir ve bitmiş ürünleri limanınıza sevk eder.',
     hero: {
       h1a: 'Sizin markanız,',

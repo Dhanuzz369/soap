@@ -4,10 +4,11 @@ import RouteHero from '../components/RouteHero.astro';
 import ProcessSteps from '../components/ProcessSteps.astro';
 import Faq from '../components/Faq.astro';
 import QuoteCard from '../components/QuoteCard.astro';
-import { faqJsonLd } from '../lib/seo';
+import { faqJsonLd, howToJsonLd, buildKeywords } from '../lib/seo';
+import { ogCard } from '../lib/product-image';
 import { useI18n } from '../i18n/page';
 
-const { info, ui, lp, fmt } = useI18n(Astro.url);
+const { lang, info, ui, lp, fmt } = useI18n(Astro.url);
 const E = ui.exportProcess;
 const t = ui.terms;
 
@@ -25,8 +26,13 @@ const faqs = E.faqs.map((f) => ({ q: fmt(f.q, t), a: fmt(f.a, t) }));
   title={E.title}
   description={E.description}
   path="/export-process/"
+  ogImage={ogCard(`${lang}/export-process.png`)}
+  keywords={buildKeywords(ui.seo.keywords.exportProcess)}
   breadcrumbs={breadcrumbs}
-  jsonLd={[faqJsonLd(faqs, info.hreflang)]}
+  jsonLd={[
+    howToJsonLd({ url: lp('/export-process/'), name: E.howToName, description: E.processIntro, inLanguage: info.hreflang, steps, anchor: 'steps' }),
+    faqJsonLd(faqs, info.hreflang, lp('/export-process/')),
+  ]}
   dark
 >
   <RouteHero breadcrumbs={breadcrumbs} />

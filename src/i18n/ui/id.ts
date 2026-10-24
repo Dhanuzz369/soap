@@ -5,11 +5,113 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '2d63fbf41757';
+export const sourceHash = '9e5d353955e5';
 
 const id: UiPartial = {
   meta: {
     tagline: 'Sabun dan produk perawatan rumah, diekspor dari India',
+  },
+
+  seo: {
+    entity: 'GoodBiz Hygiene, perusahaan GoodBiz Global, adalah eksportir dagang sabun dan produk perawatan rumah dari India. Produk bersumber dari produsen India terseleksi; GoodBiz Hygiene tidak memproduksi sendiri.',
+    keywords: {
+      home: [
+        'eksportir sabun India',
+        'pemasok deterjen India',
+        'produk perawatan rumah India',
+        'pabrik sabun India',
+        'sabun private label',
+        'grosir sabun dan deterjen',
+        'HS 3401 3402',
+      ],
+      products: [
+        'sabun dan deterjen dari India',
+        'grosir produk pembersih',
+        'katalog produk pembersih',
+        'impor sabun dari India',
+        'kode HS sabun',
+      ],
+      category: [
+        'eksportir {nameLower} India',
+        'pemasok {nameLower} India',
+        'pabrik {nameLower} India',
+        'grosir {nameLower}',
+        '{nameLower} private label',
+        'HSN {hsn}',
+      ],
+      product: [
+        'eksportir {kw} India',
+        'pemasok {kw} India',
+        'pabrik {kw} India',
+        '{kw} curah',
+        'grosir {kw}',
+        '{kw} kode HS {hsn}',
+        'impor {kw} dari India',
+      ],
+      productPrivateLabel: [
+        'maklon {kw}',
+        '{kw} OEM',
+      ],
+      productMarkets: [
+        'pemasok {kw} Indonesia',
+        'pemasok {kw} Malaysia',
+      ],
+      privateLabel: [
+        'sabun private label India',
+        'produk pembersih private label',
+        'deterjen OEM India',
+        'maklon sabun',
+        'produk pembersih merek sendiri',
+      ],
+      exportProcess: [
+        'impor sabun dari India',
+        'dokumen ekspor sabun',
+        'FOB CIF CFR India',
+        'COA MSDS surat keterangan asal',
+        'kontainer dari India',
+      ],
+      about: [
+        'GoodBiz Hygiene',
+        'GoodBiz Global',
+        'eksportir dagang India',
+        'eksportir sabun dan deterjen India',
+      ],
+      faq: [
+        'FAQ impor sabun',
+        'MOQ sabun deterjen India',
+        'kode HS sabun deterjen',
+        'waktu pengiriman dari India',
+      ],
+      contact: [
+        'penawaran sabun India',
+        'harga deterjen ekspor',
+        'kontak GoodBiz Hygiene',
+        'permintaan produk pembersih',
+      ],
+      blog: [
+        'panduan impor sabun',
+        'panduan membeli deterjen',
+        'impor produk pembersih India',
+        'HSN 3401 vs 3402',
+      ],
+      post: [
+        'impor dari India',
+        'panduan pembeli',
+      ],
+    },
+  },
+
+  quickFacts: {
+    heading: 'Fakta singkat',
+    what: 'Yang kami ekspor',
+    whatValue: 'Sabun, deterjen, sabun cuci piring, pembersih permukaan, dan bahan baku sabun dari produsen India terseleksi. GoodBiz Hygiene adalah eksportir dagang dan tidak memproduksi sendiri.',
+    hsn: 'Kode HSN',
+    hsnValue: '3401 (sabun) dan 3402 (deterjen dan preparat pembersih); kode 8 digit dikonfirmasi per pesanan',
+    terms: 'Incoterms dan pembayaran',
+    port: 'Pelabuhan',
+    moq: 'Pesanan minimum',
+    moqValue: 'Tanpa minimum tetap: pesanan percobaan, muatan parsial, dan kontainer campuran tetap kami beri penawaran; private label tersedia untuk sebagian besar produk',
+    lead: 'Waktu tunggu',
   },
 
   terms: {
@@ -41,7 +143,7 @@ const id: UiPartial = {
     exportProcessFull: 'Proses ekspor selengkapnya',
     renderAlt: 'Ilustrasi {nameLower} dalam kemasan ekspor yang umum',
     drawingAlt: 'Ilustrasi {nameLower}',
-    photoAlt: '{name} dari GoodBiz',
+    photoAlt: '{name}, diekspor dari India oleh GoodBiz Hygiene',
     categoryRenderAlt: 'Ilustrasi kemasan {nameLower} yang umum',
     rangeAlt: 'Ilustrasi lini produk GoodBiz Hygiene dalam kemasan ekspor yang umum',
     portAlt: 'Derek gantri memuat kapal kontainer pada malam hari di International Container Transshipment Terminal, Kochi, India',
@@ -110,9 +212,8 @@ const id: UiPartial = {
   },
 
   home: {
-    title: 'Eksportir dan Pemasok Sabun & Produk Perawatan Rumah dari India',
-    description:
-      'GoodBiz Hygiene, perusahaan GoodBiz Global, mengekspor sabun, deterjen, dan produk perawatan rumah dari produsen India terseleksi, dengan private label dan kontainer campuran.',
+    title: 'Sabun, Deterjen & Pembersih: Eksportir dari India',
+    description: 'GoodBiz Hygiene mengekspor sabun, deterjen, dan produk perawatan rumah dari produsen India terseleksi: curah atau private label, kontainer campuran, FOB/CIF.',
     eyebrow: 'Sabun · Deterjen · Perawatan rumah',
     h1a: 'Sabun & Perawatan Rumah',
     h1b: 'Diekspor dari India.',
@@ -160,9 +261,8 @@ const id: UiPartial = {
   },
 
   productsIndex: {
-    title: 'Eksportir dan Pemasok Sabun, Deterjen & Produk Pembersih dari India',
-    description:
-      'Jelajahi {n} produk sabun, perawatan pakaian, dapur, pembersih permukaan, dan bahan baku dari produsen India terseleksi, lengkap dengan kode HSN dan opsi private label.',
+    title: 'Sabun, Deterjen, dan Pembersih untuk Ekspor dari India',
+    description: '{n} sabun, deterjen, pembersih, dan bahan baku dari produsen India terseleksi, masing-masing dengan kode HSN, kemasan, dan private label. Kontainer campuran.',
     hsnLink: 'Kode HSN per produk',
     rangeFull: 'Lini produk selengkapnya',
     hsnH: 'Kode HSN mana yang berlaku untuk setiap produk?',
@@ -196,7 +296,7 @@ const id: UiPartial = {
     packSizes: 'Ukuran kemasan',
     packaging: 'Opsi pengemasan',
     galleryH: 'Lebih banyak aroma, dalam foto',
-    specH: 'Apa saja spesifikasi tipikalnya?',
+    specH: 'Apa spesifikasi khas {nameLower}?',
     specNote: '{name}: nilai tipikal untuk grade ekspor. Nilai akhir dikonfirmasi dengan produsen untuk setiap pesanan.',
     aboutAria: 'Tentang {name}',
     loadH: 'Muatan kontainer (perkiraan)',
@@ -211,7 +311,7 @@ const id: UiPartial = {
   },
 
   category: {
-    title: '{name}: Eksportir dan Pemasok dari India',
+    title: '{name}: Eksportir dari India',
     hsnMeta: '{n} produk · kode ITC-HS 8 digit dikonfirmasi untuk setiap pesanan',
     seeProducts: 'Lihat {n} produk',
     productsH: 'Produk {nameLower} apa saja yang kami pasok?',
@@ -219,9 +319,8 @@ const id: UiPartial = {
   },
 
   blogIndex: {
-    title: 'Panduan Ekspor bagi Pembeli Sabun & Produk Pembersih',
-    description:
-      'Panduan praktis bagi importir sabun, deterjen, dan produk perawatan rumah dari India: kode HSN, MOQ, dokumen, private label, dan pengiriman.',
+    title: 'Panduan Impor: Sabun dan Produk Pembersih dari India',
+    description: 'Panduan praktis untuk importir sabun, deterjen, dan produk perawatan rumah dari India: kode HSN, MOQ, dokumen, private label, dan pengiriman laut.',
     l1: 'Panduan pembeli.',
     l2: 'Untuk impor sabun & perawatan rumah.',
     lead: 'Catatan berbahasa lugas untuk importir dan distributor: klasifikasi, biaya, dokumen, dan cara memilih produk.',
@@ -237,9 +336,8 @@ const id: UiPartial = {
   },
 
   contact: {
-    title: 'Minta Penawaran: Eksportir dan Pemasok Sabun & Produk Perawatan Rumah dari India',
-    description:
-      'Minta penawaran dari GoodBiz Hygiene untuk sabun, deterjen, dan produk perawatan rumah dari India. Kirimkan produk, ukuran kemasan, dan pelabuhan Anda lewat email atau WhatsApp.',
+    title: 'Minta Penawaran: Sabun dan Deterjen dari India',
+    description: 'Minta penawaran dari GoodBiz Hygiene untuk sabun, deterjen, dan produk perawatan rumah dari India. Kirim produk, kemasan, dan pelabuhan via email atau WhatsApp.',
     l1: 'Minta penawaran.',
     l2: 'Dari India, ke pelabuhan Anda.',
     lead: 'Sampaikan kebutuhan Anda: produk, ukuran kemasan, jumlah, dan pelabuhan tujuan. GoodBiz Hygiene akan membalas dengan harga, spesifikasi tipikal, dan lead time.',
@@ -291,9 +389,8 @@ const id: UiPartial = {
   },
 
   about: {
-    title: 'Tentang GoodBiz Hygiene: Eksportir dan Pemasok Sabun & Produk Perawatan Rumah dari India',
-    description:
-      'GoodBiz Hygiene adalah divisi ekspor produk perawatan rumah dan kebersihan GoodBiz Global, merchant exporter dari India, sekaligus merek saudara GoodBiz Agro.',
+    title: 'GoodBiz Hygiene: Eksportir Sabun dan Deterjen dari India',
+    description: 'GoodBiz Hygiene, perusahaan GoodBiz Global, adalah eksportir dagang sabun dan produk perawatan rumah dari India, bersumber dari produsen India terseleksi.',
     l1: 'GoodBiz Hygiene.',
     l2: 'Perusahaan {parent}.',
     lead: 'GoodBiz Hygiene adalah divisi ekspor produk perawatan rumah dan kebersihan {parent}, merchant exporter dari India, sekaligus merek saudara GoodBiz Agro.',
@@ -312,9 +409,8 @@ const id: UiPartial = {
   },
 
   faqPage: {
-    title: 'FAQ: Eksportir dan Pemasok Sabun & Produk Perawatan Rumah dari India',
-    description:
-      'Jawaban bagi importir yang membeli sabun, deterjen, dan pembersih dari India melalui GoodBiz Hygiene: pengadaan, private label, MOQ, incoterms, dokumen, dan lead time.',
+    title: 'FAQ Importir: Membeli Sabun dan Deterjen dari India',
+    description: 'Jawaban bagi importir sabun, deterjen, dan pembersih dari India: sumber produk, private label, MOQ, incoterms, dokumen, dan waktu pengiriman.',
     l1: 'Pertanyaan pembeli.',
     l2: 'Jawaban yang lugas.',
     lead: 'Cara GoodBiz Hygiene mencarikan, menawarkan, dan mengirim sabun serta produk perawatan rumah dari India. Pertanyaan khusus produk dijawab di halaman masing-masing produk.',
@@ -383,9 +479,8 @@ const id: UiPartial = {
   ],
 
   exportProcess: {
-    title: 'Proses Ekspor: Eksportir dan Pemasok Sabun & Produk Perawatan Rumah dari India',
-    description:
-      'Cara GoodBiz Hygiene mengekspor sabun, deterjen, dan pembersih dari India: penawaran, sampel, incoterms, ketentuan pembayaran, dokumen, pelabuhan, dan lead time tipikal.',
+    title: 'Proses Ekspor: Impor Sabun dan Deterjen dari India',
+    description: 'Cara GoodBiz Hygiene mengekspor sabun, deterjen, dan pembersih dari India: penawaran, sampel, incoterms, pembayaran, dokumen, pelabuhan, dan waktu tunggu.',
     lead: 'Langkah, ketentuan, dan dokumen untuk membeli sabun dan produk perawatan rumah dari India melalui GoodBiz Hygiene.',
     route: {
       h1a: 'Dari pelabuhan India,',
@@ -430,6 +525,7 @@ const id: UiPartial = {
     processL1: 'Apa saja langkah',
     processL2: 'dari permintaan hingga pengiriman?',
     processIntro: 'Enam langkah, dengan persetujuan Anda atas penawaran, sampel, dan proforma invoice sebelum apa pun diproduksi.',
+    howToName: 'Cara mengimpor sabun dan produk perawatan rumah dari India melalui GoodBiz Hygiene',
     steps: [
       { name: 'Permintaan', text: 'Kirimkan produk, ukuran kemasan, jumlah, pelabuhan tujuan, dan kebutuhan private label (jika ada) melalui formulir permintaan, email, atau WhatsApp.' },
       { name: 'Penawaran', text: 'Kami menawarkan harga per kemasan beserta spesifikasi tipikal, incoterm yang Anda perlukan, dan lead time. {incoterms}.' },
@@ -465,9 +561,8 @@ const id: UiPartial = {
   },
 
   privateLabel: {
-    title: 'Sabun & Produk Pembersih Private Label: Eksportir dan Pemasok dari India',
-    description:
-      'Sabun, deterjen, dan pembersih private label dari India: desain, aroma, warna, dan ukuran kemasan sesuai Anda, dibuat produsen India terseleksi dan diekspor oleh GoodBiz Hygiene.',
+    title: 'Sabun dan Produk Pembersih Private Label dari India',
+    description: 'Sabun, deterjen, dan pembersih private label dari India: desain, aroma, warna, dan kemasan Anda, dibuat oleh produsen India terseleksi. Kontainer campuran.',
     lead: 'Jual sabun, deterjen, dan pembersih dengan merek Anda sendiri. GoodBiz Hygiene mencocokkan kebutuhan Anda dengan produsen India terseleksi, mengelola sampel dan desain, lalu mengirim barang jadi ke pelabuhan Anda.',
     hero: {
       h1a: 'Merek Anda,',

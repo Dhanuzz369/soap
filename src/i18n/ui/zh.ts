@@ -5,11 +5,113 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '2d63fbf41757';
+export const sourceHash = '9e5d353955e5';
 
 const zh: UiPartial = {
   meta: {
     tagline: '香皂与家居清洁产品，从印度出口',
+  },
+
+  seo: {
+    entity: 'GoodBiz Hygiene是GoodBiz Global旗下公司，是印度的香皂和家居清洁产品贸易出口商。产品采购自经考察的印度制造商，公司自身不从事生产。',
+    keywords: {
+      home: [
+        '印度香皂出口商',
+        '印度洗涤剂供应商',
+        '印度日化产品出口',
+        '印度香皂生产厂家',
+        '香皂贴牌代工',
+        '香皂洗涤剂批发',
+        'HS编码3401 3402',
+      ],
+      products: [
+        '印度香皂洗涤剂',
+        '清洁产品批发',
+        '日化产品目录',
+        '从印度进口香皂',
+        '香皂HS编码',
+      ],
+      category: [
+        '印度{name}出口商',
+        '印度{name}供应商',
+        '印度{name}生产厂家',
+        '{name}批发',
+        '{name}贴牌',
+        'HS编码 {hsn}',
+      ],
+      product: [
+        '印度{kw}出口商',
+        '印度{kw}供应商',
+        '印度{kw}生产厂家',
+        '{kw}大包装',
+        '{kw}批发',
+        '{kw} HS编码 {hsn}',
+        '从印度进口{kw}',
+      ],
+      productPrivateLabel: [
+        '{kw}贴牌代工',
+        '{kw} OEM',
+      ],
+      productMarkets: [
+        '{kw}供应商 马来西亚',
+        '{kw}进口 中国',
+      ],
+      privateLabel: [
+        '印度香皂贴牌',
+        '清洁产品自有品牌',
+        '印度洗涤剂OEM',
+        '香皂代工供应商',
+        '日化贴牌出口',
+      ],
+      exportProcess: [
+        '从印度进口香皂',
+        '香皂出口单据',
+        'FOB CIF CFR 印度',
+        'COA MSDS 原产地证',
+        '印度集装箱海运',
+      ],
+      about: [
+        'GoodBiz Hygiene',
+        'GoodBiz Global',
+        '印度贸易出口商',
+        '印度香皂洗涤剂出口商',
+      ],
+      faq: [
+        '进口香皂常见问题',
+        '香皂洗涤剂最低起订量',
+        '香皂洗涤剂HS编码',
+        '印度出口交货期',
+      ],
+      contact: [
+        '印度香皂询价',
+        '洗涤剂出口报价',
+        'GoodBiz Hygiene联系方式',
+        '清洁产品询盘',
+      ],
+      blog: [
+        '香皂进口指南',
+        '洗涤剂采购指南',
+        '从印度进口清洁产品',
+        'HSN 3401与3402',
+      ],
+      post: [
+        '从印度进口',
+        '采购指南',
+      ],
+    },
+  },
+
+  quickFacts: {
+    heading: '要点速览',
+    what: '出口产品',
+    whatValue: '香皂、洗涤剂、洗碗产品、表面清洁剂和制皂原料，采购自经考察的印度制造商。GoodBiz Hygiene是贸易出口商，自身不从事生产。',
+    hsn: 'HSN编码',
+    hsnValue: '3401（香皂）和3402（洗涤剂及清洁制剂）；8位编码按订单确认',
+    terms: '贸易术语与付款',
+    port: '港口',
+    moq: '最低起订量',
+    moqValue: '无固定最低起订量：试订单、拼柜和混装集装箱均可报价，大多数产品可做自有品牌',
+    lead: '交货期',
   },
 
   terms: {
@@ -41,7 +143,7 @@ const zh: UiPartial = {
     exportProcessFull: '出口流程详解',
     renderAlt: '{name}典型出口包装示意图',
     drawingAlt: '{name}示意图',
-    photoAlt: 'GoodBiz的{name}',
+    photoAlt: '{name}，由GoodBiz Hygiene从印度出口',
     categoryRenderAlt: '{name}典型包装示意图',
     rangeAlt: 'GoodBiz Hygiene产品系列典型出口包装示意图',
     portAlt: '夜间，龙门起重机在印度科钦国际集装箱转运码头为集装箱船装货',
@@ -110,9 +212,8 @@ const zh: UiPartial = {
   },
 
   home: {
-    title: '香皂与家居清洁产品印度出口商与供应商',
-    description:
-      'GoodBiz Hygiene是GoodBiz Global旗下公司，从经考察的印度制造商出口香皂、洗涤剂和家居清洁产品，支持自有品牌与混装集装箱。',
+    title: '香皂、洗涤剂与清洁剂印度出口商',
+    description: 'GoodBiz Hygiene从经考察的印度制造商采购并出口香皂、洗涤剂和家居清洁产品：大包装或自有品牌贴牌，支持混装集装箱和FOB/CIF报价。',
     eyebrow: '香皂 · 洗涤剂 · 家居清洁',
     h1a: '香皂与家居清洁产品',
     h1b: '从印度出口。',
@@ -159,9 +260,8 @@ const zh: UiPartial = {
   },
 
   productsIndex: {
-    title: '香皂、洗涤剂与清洁产品印度出口商与供应商',
-    description:
-      '浏览{n}种采购自经考察的印度制造商的香皂、洗衣、厨房、表面清洁及原料产品，并附HSN编码和自有品牌选项。',
+    title: '香皂、洗涤剂和清洁产品：印度出口',
+    description: '{n}款香皂、洗涤剂、清洁剂和制皂原料，采购自经考察的印度制造商，每款均列有HS编码、包装规格和自有品牌选项，支持混装集装箱和FOB/CIF报价。',
     hsnLink: '各产品的HSN编码',
     rangeFull: '完整产品系列',
     hsnH: '各产品适用哪个HSN编码？',
@@ -194,7 +294,7 @@ const zh: UiPartial = {
     packSizes: '包装规格',
     packaging: '包装方式',
     galleryH: '更多香型，实物图片',
-    specH: '典型规格是什么？',
+    specH: '{name}的典型规格是什么？',
     specNote: '{name}：出口级别的典型数值。最终数值按每笔订单与制造商确认。',
     aboutAria: '关于{name}',
     loadH: '集装箱装载量（约）',
@@ -209,7 +309,7 @@ const zh: UiPartial = {
   },
 
   category: {
-    title: '{name}印度出口商与供应商',
+    title: '{name}印度出口商',
     hsnMeta: '{n}种产品 · 8位ITC-HS编码按每笔订单确认',
     seeProducts: '查看这{n}种产品',
     productsH: '我们供应哪些{name}产品？',
@@ -217,9 +317,8 @@ const zh: UiPartial = {
   },
 
   blogIndex: {
-    title: '香皂与清洁产品采购商出口指南',
-    description:
-      '面向从印度进口香皂、洗涤剂和家居清洁产品的进口商的实用指南：HSN编码、MOQ、单据、自有品牌与运输。',
+    title: '进口指南：从印度采购香皂和清洁产品',
+    description: '从印度进口香皂、洗涤剂和家居清洁产品的实用指南：HS编码、最低起订量、出口单据、自有品牌贴牌和海运安排，帮助进口商和经销商做出更稳妥的采购决定。',
     l1: '采购指南。',
     l2: '进口香皂与家居清洁产品。',
     lead: '写给进口商和经销商的通俗笔记：归类、成本、单据与产品选择。',
@@ -235,9 +334,8 @@ const zh: UiPartial = {
   },
 
   contact: {
-    title: '获取报价：香皂与家居清洁产品印度出口商与供应商',
-    description:
-      '向GoodBiz Hygiene获取印度香皂、洗涤剂和家居清洁产品的报价。您可通过电子邮件或WhatsApp发送产品、包装规格和港口信息。',
+    title: '询价：来自印度的香皂和洗涤剂',
+    description: '向GoodBiz Hygiene询价来自印度的香皂、洗涤剂和家居清洁产品。通过电子邮件或WhatsApp发送产品、包装规格、数量和目的港，我们会回复价格、典型规格和交货期。',
     l1: '获取报价。',
     l2: '从印度，到您的港口。',
     lead: '请告诉我们您的需求：产品、包装规格、数量和目的港。GoodBiz Hygiene将回复价格、典型规格和交货周期。',
@@ -289,9 +387,8 @@ const zh: UiPartial = {
   },
 
   about: {
-    title: '关于GoodBiz Hygiene：香皂与家居清洁产品印度出口商与供应商',
-    description:
-      'GoodBiz Hygiene是GoodBiz Global旗下的家居清洁与卫生用品出口部门，GoodBiz Global是一家印度贸易型出口商，GoodBiz Agro为其姊妹品牌。',
+    title: '关于GoodBiz Hygiene：印度香皂洗涤剂出口商',
+    description: 'GoodBiz Hygiene是GoodBiz Global旗下公司，印度的香皂和家居清洁产品贸易出口商，产品采购自经考察的印度制造商，自身不从事生产。',
     l1: 'GoodBiz Hygiene。',
     l2: '{parent}旗下公司。',
     lead: 'GoodBiz Hygiene是{parent}旗下的家居清洁与卫生用品出口部门。{parent}是一家印度贸易型出口商，GoodBiz Agro为其姊妹品牌。',
@@ -310,9 +407,8 @@ const zh: UiPartial = {
   },
 
   faqPage: {
-    title: '常见问题：香皂与家居清洁产品印度出口商与供应商',
-    description:
-      '为通过GoodBiz Hygiene从印度采购香皂、洗涤剂和清洁剂的进口商解答：采购来源、自有品牌、MOQ、国际贸易术语、单据与交货周期。',
+    title: '进口商常见问题：从印度采购香皂和洗涤剂',
+    description: '为从印度采购香皂、洗涤剂和家居清洁剂的进口商和经销商解答常见问题：采购来源、自有品牌贴牌、最低起订量、贸易术语、付款方式、出口单据和通常的交货期。',
     l1: '采购商提问。',
     l2: '直接解答。',
     lead: '介绍GoodBiz Hygiene如何从印度采购、报价和发运香皂与家居清洁产品。与具体产品相关的问题，请见各产品页面。',
@@ -381,9 +477,8 @@ const zh: UiPartial = {
   ],
 
   exportProcess: {
-    title: '出口流程：香皂与家居清洁产品印度出口商与供应商',
-    description:
-      'GoodBiz Hygiene如何从印度出口香皂、洗涤剂和清洁剂：报价、样品、国际贸易术语、付款条件、单据、港口与典型交货周期。',
+    title: '出口流程：从印度进口香皂和洗涤剂',
+    description: 'GoodBiz Hygiene如何从印度出口香皂、洗涤剂和清洁剂：询价与报价、样品确认、贸易术语、付款方式、出口单据、装运港口和通常的交货期，一步一步说明。',
     lead: '通过GoodBiz Hygiene从印度采购香皂和家居清洁产品的步骤、条款与单据。',
     route: {
       h1a: '从印度港口，',
@@ -428,6 +523,7 @@ const zh: UiPartial = {
     processL1: '从询价到发运',
     processL2: '有哪些步骤？',
     processIntro: '共六个步骤，在任何生产开始之前，报价、样品和形式发票均须经您确认。',
+    howToName: '如何通过GoodBiz Hygiene从印度进口香皂和家居清洁产品',
     steps: [
       { name: '询价', text: '请通过询价表单、电子邮件或WhatsApp发送产品、包装规格、数量、目的港以及任何自有品牌需求。' },
       { name: '报价', text: '我们按包装报价，并注明典型规格、您需要的贸易术语和交货周期。{incoterms}。' },
@@ -463,9 +559,8 @@ const zh: UiPartial = {
   },
 
   privateLabel: {
-    title: '自有品牌香皂与清洁产品：印度出口商与供应商',
-    description:
-      '印度自有品牌香皂、洗涤剂和清洁剂：由您决定设计稿、香型、颜色和包装规格，由经考察的印度制造商生产，GoodBiz Hygiene负责出口。',
+    title: '印度自有品牌香皂与清洁产品（OEM）',
+    description: '来自印度的自有品牌香皂、洗涤剂和清洁剂：您的设计、香型、颜色和包装规格，由经考察的印度制造商生产，GoodBiz Hygiene负责打样、单据和出运，支持混装集装箱。',
     lead: '以您自己的品牌销售香皂、洗涤剂和清洁剂。GoodBiz Hygiene根据您的需求匹配一家经考察的印度制造商，负责管理样品和设计稿，并将成品运至您的港口。',
     hero: {
       h1a: '您的品牌，',

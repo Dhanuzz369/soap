@@ -77,12 +77,12 @@ describe('built pages', () => {
       const photo = `/images/products/${slug}.webp`;
       const og = p.html.match(/<meta property="og:image" content="([^"]*)"/)![1];
       const product = jsonLdBlocks(p.html).map((b) => JSON.parse(b)).find((o) => o['@type'] === 'Product');
-      if (existsSync(resolve(process.cwd(), 'public' + photo))) {
-        expect(og, slug).toBe(BASE + photo);
-        expect(product.image, slug).toBe(BASE + photo);
-      } else {
-        expect(og, slug).toBe(`${BASE}/og-default.png`);
-      }
+      // The share card made from the photo (npm run og:cards) when present, else the photo itself.
+      const card = `/og/products/${slug}.jpg`;
+      const hasPhoto = existsSync(resolve(process.cwd(), 'public' + photo));
+      if (existsSync(resolve(process.cwd(), 'public' + card))) expect(og, slug).toBe(BASE + card);
+      else expect(og, slug).toBe(hasPhoto ? BASE + photo : `${BASE}/og-default.png`);
+      if (hasPhoto) expect(product.image, slug).toBe(BASE + photo);
     }
   });
 

@@ -10,8 +10,8 @@ import CardGrid from '../components/CardGrid.astro';
 import type { ProductEntry, CategoryEntry } from '../lib/products';
 import type { BlogEntry } from '../lib/blog';
 import { useI18n } from '../i18n/page';
-import { productJsonLd, faqJsonLd, absoluteUrl } from '../lib/seo';
-import { productImagePath, productPicture } from '../lib/product-image';
+import { productJsonLd, faqJsonLd, absoluteUrl, buildKeywords } from '../lib/seo';
+import { productImagePath, productPicture, ogCard } from '../lib/product-image';
 import { shapeFor } from '../lib/pack-shapes';
 import { splitName } from '../lib/heading';
 
@@ -38,6 +38,14 @@ const breadcrumbs = [
   { name: d.title, url: url },
 ];
 const name = splitName(d.title);
+// The main search term (docs/seo-keywords.md): the product's `keyword`, else its name up to " / " or " (".
+const kw = d.keyword ?? lower(d.title.split(/\s*[/／(]\s*/)[0]);
+const K = ui.seo.keywords;
+const keywords = buildKeywords(
+  [...K.product, ...(d.privateLabel.available ? K.productPrivateLabel : []), ...K.productMarkets],
+  { kw, name: d.title, nameLower: lower(d.title), hsn: d.hsn, hsn4: d.hsn.slice(0, 4) },
+);
+const absUrl = absoluteUrl(url);
 const pic = productPicture(d.slug, shapeFor(d.slug, catId), catId);
 const media: HeroMedia | undefined = pic
   ? pic.kind === 'photo'
@@ -59,9 +67,13 @@ const media: HeroMedia | undefined = pic
   title={d.metaTitle}
   description={d.metaDescription}
   path={path}
-  ogImage={image}
+  ogImage={ogCard(`products/${d.slug}.jpg`) ?? image}
+  ogImageAlt={media?.alt}
+  keywords={keywords}
+  pageType="ItemPage"
+  mainEntity={`${absUrl}#product`}
   breadcrumbs={breadcrumbs}
-  jsonLd={[productJsonLd({ ...d, category: category.data.title, image }, absoluteUrl(url), ui.ld), faqJsonLd(d.faqs, info.hreflang)]}
+  jsonLd={[productJsonLd({ ...d, category: category.data.title, image }, absUrl, ui.ld), faqJsonLd(d.faqs, info.hreflang, url)]}
   dark
 >
   <PageHero breadcrumbs={breadcrumbs} l1={name.l1} sub={name.sub} l2={ui.common.exporterLine} scale={name.scale} lead={d.answer} media={media} size="product">
@@ -158,7 +170,7 @@ const media: HeroMedia | undefined = pic
 
   <section class="wrap sec split" aria-labelledby="spec-h">
     <div class="split-head" data-reveal>
-      <h2 id="spec-h">{P.specH}</h2>
+      <h2 id="spec-h">{fmt(P.specH, names)}</h2>
       <p class="note">{fmt(P.specNote, names)}</p>
     </div>
     <div data-reveal style="--i: 1">

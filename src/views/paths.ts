@@ -17,7 +17,10 @@ export async function productPaths(lang: Locale) {
           product,
           category: g.category,
           related: await getRelated(product, 3, lang),
-          guides: posts.filter((p) => p.data.relatedProducts.includes(product.data.slug)),
+          // Guides about this product: listed in the post's relatedProducts, or linked from its text.
+          guides: posts.filter(
+            (p) => p.data.relatedProducts.includes(product.data.slug) || (p.body ?? '').includes(`/products/${product.data.slug}/`),
+          ),
         },
       })),
     ),

@@ -4,11 +4,113 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '2d63fbf41757';
+export const sourceHash = '9e5d353955e5';
 
 const sw: UiPartial = {
   meta: {
     tagline: 'Sabuni na bidhaa za usafi wa nyumbani, zinazosafirishwa nje kutoka India',
+  },
+
+  seo: {
+    entity: 'GoodBiz Hygiene, kampuni ya GoodBiz Global, ni msafirishaji nje wa kibiashara wa sabuni na bidhaa za usafi wa nyumbani kutoka India. Hununua kutoka kwa watengenezaji wa India waliokaguliwa na haitengenezi bidhaa yenyewe.',
+    keywords: {
+      home: [
+        'msafirishaji wa sabuni India',
+        'muuzaji wa sabuni ya kufulia India',
+        'bidhaa za usafi kutoka India',
+        'watengenezaji wa sabuni India',
+        'sabuni kwa chapa yako',
+        'sabuni kwa jumla',
+        'HSN 3401 3402',
+      ],
+      products: [
+        'sabuni kutoka India',
+        'bidhaa za usafi kwa jumla',
+        'orodha ya bidhaa za usafi',
+        'kuagiza sabuni kutoka India',
+        'misimbo ya HSN ya sabuni',
+      ],
+      category: [
+        'msafirishaji wa {nameLower} India',
+        'muuzaji wa {nameLower} India',
+        'watengenezaji wa {nameLower} India',
+        '{nameLower} kwa jumla',
+        '{nameLower} kwa chapa yako',
+        'HSN {hsn}',
+      ],
+      product: [
+        'msafirishaji wa {kw} India',
+        'muuzaji wa {kw} India',
+        'watengenezaji wa {kw} India',
+        '{kw} kwa wingi',
+        '{kw} kwa jumla',
+        '{kw} msimbo wa HSN {hsn}',
+        'kuagiza {kw} kutoka India',
+      ],
+      productPrivateLabel: [
+        '{kw} kwa chapa yako',
+        '{kw} OEM',
+      ],
+      productMarkets: [
+        'muuzaji wa {kw} Kenya',
+        'muuzaji wa {kw} Tanzania',
+      ],
+      privateLabel: [
+        'sabuni kwa chapa yako India',
+        'bidhaa za usafi kwa chapa ya mnunuzi',
+        'sabuni ya kufulia OEM India',
+        'muuzaji wa sabuni ya chapa binafsi',
+        'private label sabuni',
+      ],
+      exportProcess: [
+        'kuagiza sabuni kutoka India',
+        'nyaraka za kusafirisha sabuni',
+        'FOB CIF CFR India',
+        'COA MSDS cheti cha asili',
+        'kontena kutoka India',
+      ],
+      about: [
+        'GoodBiz Hygiene',
+        'GoodBiz Global',
+        'msafirishaji nje wa kibiashara India',
+        'msafirishaji wa sabuni India',
+      ],
+      faq: [
+        'maswali kuagiza sabuni',
+        'MOQ sabuni India',
+        'msimbo wa HSN wa sabuni',
+        'muda wa kusafirisha kutoka India',
+      ],
+      contact: [
+        'bei ya sabuni India',
+        'bei ya sabuni ya kufulia',
+        'mawasiliano GoodBiz Hygiene',
+        'ombi la bidhaa za usafi',
+      ],
+      blog: [
+        'mwongozo wa kuagiza sabuni',
+        'mwongozo wa kununua sabuni ya kufulia',
+        'kuagiza bidhaa za usafi India',
+        'HSN 3401 dhidi ya 3402',
+      ],
+      post: [
+        'kuagiza kutoka India',
+        'mwongozo wa mnunuzi',
+      ],
+    },
+  },
+
+  quickFacts: {
+    heading: 'Mambo muhimu',
+    what: 'Tunachosafirisha',
+    whatValue: 'Sabuni, sabuni za kufulia, sabuni za vyombo, visafishaji na malighafi ya sabuni kutoka kwa watengenezaji wa India waliokaguliwa. GoodBiz Hygiene ni msafirishaji wa kibiashara na haitengenezi bidhaa yenyewe.',
+    hsn: 'Misimbo ya HSN',
+    hsnValue: '3401 (sabuni) na 3402 (sabuni za kufulia na maandalizi ya kusafisha); msimbo wa tarakimu 8 huthibitishwa kwa kila oda',
+    terms: 'Incoterms na malipo',
+    port: 'Bandari',
+    moq: 'Oda ya chini',
+    moqValue: 'Hakuna kiwango cha chini maalum: oda za majaribio, mizigo ya sehemu na makontena mchanganyiko hupewa bei, na chapa yako inawezekana kwa bidhaa nyingi',
+    lead: 'Muda wa kusafirisha',
   },
 
   terms: {
@@ -40,7 +142,7 @@ const sw: UiPartial = {
     exportProcessFull: 'Mchakato wa usafirishaji nje kwa kina',
     renderAlt: 'Mchoro wa {nameLower} katika kifungashio cha kawaida cha usafirishaji nje',
     drawingAlt: 'Mchoro wa {nameLower}',
-    photoAlt: '{name} kutoka GoodBiz',
+    photoAlt: '{name}, husafirishwa kutoka India na GoodBiz Hygiene',
     categoryRenderAlt: 'Mchoro wa vifungashio vya kawaida vya {nameLower}',
     rangeAlt: 'Mchoro wa bidhaa za GoodBiz Hygiene katika vifungashio vya kawaida vya usafirishaji nje',
     portAlt: 'Winchi kubwa za gantry zikipakia meli ya kontena usiku kwenye Kituo cha Kimataifa cha Uhamishaji wa Kontena (International Container Transshipment Terminal) huko Kochi, India',
@@ -109,9 +211,8 @@ const sw: UiPartial = {
   },
 
   home: {
-    title: 'Msafirishaji Nje na Muuzaji wa Sabuni na Bidhaa za Usafi wa Nyumbani kutoka India',
-    description:
-      'GoodBiz Hygiene, kampuni ya GoodBiz Global, husafirisha nje sabuni, sabuni za kufulia na bidhaa za usafi wa nyumbani kutoka kwa watengenezaji wa India tuliowakagua, pamoja na chapa ya mnunuzi na makontena mchanganyiko.',
+    title: 'Sabuni na Visafishaji: Msafirishaji Nje kutoka India',
+    description: 'GoodBiz Hygiene husafirisha sabuni, sabuni za kufulia na bidhaa za usafi wa nyumbani kutoka viwanda vya India vilivyokaguliwa: kwa jumla au chapa yako, FOB/CIF.',
     eyebrow: 'Sabuni · Sabuni za kufulia · Usafi wa nyumbani',
     h1a: 'Sabuni na Usafi wa Nyumbani',
     h1b: 'Zinasafirishwa kutoka India.',
@@ -159,9 +260,8 @@ const sw: UiPartial = {
   },
 
   productsIndex: {
-    title: 'Msafirishaji Nje na Muuzaji wa Sabuni, Sabuni za Kufulia na Bidhaa za Usafi kutoka India',
-    description:
-      'Tazama bidhaa {n} za sabuni, kufulia, jikoni, visafishaji vya nyuso na malighafi kutoka kwa watengenezaji wa India tuliowakagua, zikiwa na misimbo ya HSN na chaguo za chapa ya mnunuzi.',
+    title: 'Sabuni, Sabuni za Kufulia na Visafishaji kutoka India',
+    description: 'Bidhaa {n} za sabuni, sabuni za kufulia, visafishaji na malighafi kutoka viwanda vya India vilivyokaguliwa, kila moja na msimbo wa HSN na vifungashio.',
     hsnLink: 'Misimbo ya HSN kwa kila bidhaa',
     rangeFull: 'Bidhaa zote kwa kina',
     hsnH: 'Ni msimbo gani wa HSN unaotumika kwa kila bidhaa?',
@@ -195,7 +295,7 @@ const sw: UiPartial = {
     packSizes: 'Ukubwa wa vifungashio',
     packaging: 'Chaguo za ufungashaji',
     galleryH: 'Harufu zaidi, kwenye picha',
-    specH: 'Vipimo vya kawaida ni vipi?',
+    specH: 'Vipimo vya kawaida vya {nameLower} ni vipi?',
     specNote: '{name}: thamani za kawaida kwa daraja za usafirishaji nje. Thamani za mwisho huthibitishwa na mtengenezaji kwa kila oda.',
     aboutAria: 'Kuhusu {name}',
     loadH: 'Upakiaji wa kontena (takriban)',
@@ -210,7 +310,7 @@ const sw: UiPartial = {
   },
 
   category: {
-    title: '{name}: Msafirishaji Nje na Muuzaji kutoka India',
+    title: '{name}: Msafirishaji wa India',
     hsnMeta: 'Bidhaa {n} · Msimbo wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda',
     seeProducts: 'Tazama bidhaa {n}',
     productsH: 'Tunatoa bidhaa gani za {nameLower}?',
@@ -218,9 +318,8 @@ const sw: UiPartial = {
   },
 
   blogIndex: {
-    title: 'Miongozo ya Usafirishaji Nje kwa Wanunuzi wa Sabuni na Bidhaa za Usafi',
-    description:
-      'Miongozo ya vitendo kwa waagizaji wa sabuni, sabuni za kufulia na bidhaa za usafi wa nyumbani kutoka India: misimbo ya HSN, MOQ, nyaraka, chapa ya mnunuzi na usafirishaji.',
+    title: 'Miongozo ya Kuagiza Sabuni na Bidhaa za Usafi kutoka India',
+    description: 'Miongozo ya vitendo kwa waagizaji wa sabuni na bidhaa za usafi wa nyumbani kutoka India: misimbo ya HSN, MOQ, nyaraka, chapa ya mnunuzi na usafirishaji.',
     l1: 'Miongozo ya wanunuzi.',
     l2: 'Kwa kuagiza sabuni na bidhaa za usafi wa nyumbani.',
     lead: 'Maelezo rahisi kwa waagizaji na wasambazaji: uainishaji, gharama, nyaraka na uchaguzi wa bidhaa.',
@@ -236,9 +335,8 @@ const sw: UiPartial = {
   },
 
   contact: {
-    title: 'Omba Nukuu ya Bei: Msafirishaji Nje na Muuzaji wa Sabuni na Bidhaa za Usafi kutoka India',
-    description:
-      'Omba nukuu ya bei kutoka GoodBiz Hygiene kwa sabuni, sabuni za kufulia na bidhaa za usafi wa nyumbani kutoka India. Tuma bidhaa, ukubwa wa vifungashio na bandari yako kwa barua pepe au WhatsApp.',
+    title: 'Omba Bei: Sabuni na Sabuni za Kufulia kutoka India',
+    description: 'Omba bei kutoka GoodBiz Hygiene kwa sabuni, sabuni za kufulia na bidhaa za usafi kutoka India. Tuma bidhaa, vifungashio na bandari kwa barua pepe au WhatsApp.',
     l1: 'Omba nukuu ya bei.',
     l2: 'Kutoka India, hadi bandari yako.',
     lead: 'Tuambie unachohitaji: bidhaa, ukubwa wa vifungashio, kiasi na bandari ya kuwasili. GoodBiz Hygiene hujibu kwa bei, vipimo vya kawaida na muda wa maandalizi.',
@@ -290,9 +388,8 @@ const sw: UiPartial = {
   },
 
   about: {
-    title: 'Kuhusu GoodBiz Hygiene: Msafirishaji Nje na Muuzaji wa Sabuni na Bidhaa za Usafi kutoka India',
-    description:
-      'GoodBiz Hygiene ni kitengo cha usafirishaji nje cha bidhaa za usafi wa nyumbani cha GoodBiz Global, msafirishaji nje wa kibiashara kutoka India, na chapa dada ya GoodBiz Agro.',
+    title: 'GoodBiz Hygiene: Msafirishaji wa Sabuni kutoka India',
+    description: 'GoodBiz Hygiene, kampuni ya GoodBiz Global, ni msafirishaji nje wa kibiashara wa sabuni na bidhaa za usafi kutoka India, kutoka viwanda vilivyokaguliwa.',
     l1: 'GoodBiz Hygiene.',
     l2: 'Kampuni ya {parent}.',
     lead: 'GoodBiz Hygiene ni kitengo cha usafirishaji nje cha bidhaa za usafi wa nyumbani cha {parent}, msafirishaji nje wa kibiashara kutoka India, na chapa dada ya GoodBiz Agro.',
@@ -311,9 +408,8 @@ const sw: UiPartial = {
   },
 
   faqPage: {
-    title: 'Maswali: Msafirishaji Nje na Muuzaji wa Sabuni na Bidhaa za Usafi kutoka India',
-    description:
-      'Majibu kwa waagizaji wanaonunua sabuni, sabuni za kufulia na visafishaji kutoka India kupitia GoodBiz Hygiene: upatikanaji, chapa ya mnunuzi, MOQ, incoterms, nyaraka na muda wa maandalizi.',
+    title: 'Maswali ya Waagizaji: Kununua Sabuni kutoka India',
+    description: 'Majibu kwa waagizaji wa sabuni, sabuni za kufulia na visafishaji kutoka India: upatikanaji, chapa ya mnunuzi, MOQ, incoterms, nyaraka na muda wa kusafirisha.',
     l1: 'Maswali ya wanunuzi.',
     l2: 'Majibu ya moja kwa moja.',
     lead: 'Jinsi GoodBiz Hygiene inavyopata, kutoa nukuu na kusafirisha sabuni na bidhaa za usafi wa nyumbani kutoka India. Maswali kuhusu bidhaa mahususi hujibiwa kwenye ukurasa wa kila bidhaa.',
@@ -382,9 +478,8 @@ const sw: UiPartial = {
   ],
 
   exportProcess: {
-    title: 'Mchakato wa Usafirishaji Nje: Msafirishaji Nje na Muuzaji wa Sabuni na Bidhaa za Usafi kutoka India',
-    description:
-      'Jinsi GoodBiz Hygiene inavyosafirisha nje sabuni, sabuni za kufulia na visafishaji kutoka India: nukuu ya bei, sampuli, incoterms, masharti ya malipo, nyaraka, bandari na muda wa kawaida wa maandalizi.',
+    title: 'Mchakato wa Kusafirisha: Kuagiza Sabuni kutoka India',
+    description: 'Jinsi GoodBiz Hygiene inavyosafirisha sabuni na visafishaji kutoka India: bei, sampuli, incoterms, malipo, nyaraka, bandari na muda wa kawaida wa kusafirisha.',
     lead: 'Hatua, masharti na nyaraka za kununua sabuni na bidhaa za usafi wa nyumbani kutoka India kupitia GoodBiz Hygiene.',
     route: {
       h1a: 'Kutoka bandari za India,',
@@ -429,6 +524,7 @@ const sw: UiPartial = {
     processL1: 'Hatua zipi zipo',
     processL2: 'kutoka ombi hadi usafirishaji?',
     processIntro: 'Hatua sita, ukiidhinisha nukuu ya bei, sampuli na ankara ya awali (proforma invoice) kabla ya chochote kuzalishwa.',
+    howToName: 'Jinsi ya kuagiza sabuni na bidhaa za usafi kutoka India kupitia GoodBiz Hygiene',
     steps: [
       { name: 'Ombi', text: 'Tuma bidhaa, ukubwa wa vifungashio, kiasi, bandari ya kuwasili na mahitaji yoyote ya chapa ya mnunuzi, kwa kutumia fomu ya ombi, barua pepe au WhatsApp.' },
       { name: 'Nukuu ya bei', text: 'Tunatoa bei kwa kila kifungashio pamoja na vipimo vya kawaida, incoterm unayohitaji na muda wa maandalizi. {incoterms}.' },
@@ -464,9 +560,8 @@ const sw: UiPartial = {
   },
 
   privateLabel: {
-    title: 'Sabuni na Bidhaa za Usafi kwa Chapa ya Mnunuzi: Msafirishaji Nje na Muuzaji kutoka India',
-    description:
-      'Sabuni, sabuni za kufulia na visafishaji kwa chapa ya mnunuzi kutoka India: michoro yako, harufu, rangi na ukubwa wa vifungashio, vinavyotengenezwa na watengenezaji wa India tuliowakagua na kusafirishwa nje na GoodBiz Hygiene.',
+    title: 'Sabuni na Bidhaa za Usafi kwa Chapa Yako kutoka India',
+    description: 'Sabuni, sabuni za kufulia na visafishaji kwa chapa yako kutoka India: muundo, harufu, rangi na vifungashio vyako, kutoka viwanda vya India vilivyokaguliwa.',
     lead: 'Uza sabuni, sabuni za kufulia na visafishaji chini ya chapa yako mwenyewe. GoodBiz Hygiene hulinganisha maelezo yako na mtengenezaji wa India tuliyemkagua, husimamia sampuli na michoro, na husafirisha bidhaa zilizokamilika hadi bandari yako.',
     hero: {
       h1a: 'Chapa yako,',

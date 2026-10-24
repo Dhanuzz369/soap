@@ -6,11 +6,113 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '2d63fbf41757';
+export const sourceHash = '9e5d353955e5';
 
 const fr: UiPartial = {
   meta: {
     tagline: 'Savons et produits d’entretien, exportés depuis l’Inde',
+  },
+
+  seo: {
+    entity: 'GoodBiz Hygiene, une société GoodBiz Global, est un négociant exportateur indien de savons et de produits d’entretien. Elle s’approvisionne auprès de fabricants indiens contrôlés et ne fabrique pas elle-même.',
+    keywords: {
+      home: [
+        'exportateur savon Inde',
+        'fournisseur lessive Inde',
+        'produits d’entretien Inde export',
+        'fabricants savon Inde',
+        'savon marque de distributeur',
+        'savon et lessive en gros',
+        'HSN 3401 3402',
+      ],
+      products: [
+        'savons et lessives d’Inde',
+        'produits d’entretien en gros',
+        'catalogue produits d’entretien',
+        'import savon Inde',
+        'liste codes HSN savons',
+      ],
+      category: [
+        '{nameLower} Inde export',
+        'fournisseur {nameLower} Inde',
+        'fabricants {nameLower} Inde',
+        '{nameLower} en gros',
+        '{nameLower} marque de distributeur',
+        'HSN {hsn}',
+      ],
+      product: [
+        'exportateur {kw} Inde',
+        'fournisseur {kw} Inde',
+        'fabricant {kw} Inde',
+        '{kw} en vrac',
+        '{kw} en gros',
+        '{kw} code HSN {hsn}',
+        'importer {kw} d’Inde',
+      ],
+      productPrivateLabel: [
+        '{kw} marque de distributeur',
+        '{kw} OEM',
+      ],
+      productMarkets: [
+        'fournisseur {kw} Afrique de l’Ouest',
+        'fournisseur {kw} Maroc',
+      ],
+      privateLabel: [
+        'savon marque de distributeur Inde',
+        'produits d’entretien MDD',
+        'lessive OEM Inde',
+        'fournisseur savon marque propre',
+        'produits d’entretien marque blanche',
+      ],
+      exportProcess: [
+        'importer savon d’Inde',
+        'documents export savons',
+        'FOB CIF CFR Inde',
+        'COA FDS certificat d’origine',
+        'conteneur depuis l’Inde',
+      ],
+      about: [
+        'GoodBiz Hygiene',
+        'GoodBiz Global',
+        'négociant exportateur Inde',
+        'exportateur savon et lessive Inde',
+      ],
+      faq: [
+        'FAQ import savon',
+        'MOQ savons lessives Inde',
+        'code HSN savon lessive',
+        'délai export Inde',
+      ],
+      contact: [
+        'devis savon Inde',
+        'prix lessive export',
+        'contact GoodBiz Hygiene',
+        'demande produits d’entretien',
+      ],
+      blog: [
+        'guide import savon',
+        'guide achat lessive',
+        'importer produits d’entretien Inde',
+        'HSN 3401 ou 3402',
+      ],
+      post: [
+        'importer d’Inde',
+        'guide acheteur',
+      ],
+    },
+  },
+
+  quickFacts: {
+    heading: 'L’essentiel',
+    what: 'Ce que nous exportons',
+    whatValue: 'Savons, lessives, produits vaisselle, nettoyants et matières premières savonnières, issus de fabricants indiens contrôlés. GoodBiz Hygiene est négociant exportateur et ne fabrique pas.',
+    hsn: 'Codes HSN',
+    hsnValue: '3401 (savons) et 3402 (détergents et préparations de nettoyage) ; le code à 8 chiffres est confirmé à chaque commande',
+    terms: 'Incoterms et paiement',
+    port: 'Ports',
+    moq: 'Commande minimum',
+    moqValue: 'Pas de minimum fixe : commandes d’essai, lots partiels et conteneurs mixtes sont chiffrés, et la marque de distributeur est possible sur la plupart des produits',
+    lead: 'Délai',
   },
 
   terms: {
@@ -42,7 +144,7 @@ const fr: UiPartial = {
     exportProcessFull: 'Le processus d’export en détail',
     renderAlt: 'Illustration de {nameLower} dans un conditionnement export type',
     drawingAlt: 'Illustration de {nameLower}',
-    photoAlt: '{name} par GoodBiz',
+    photoAlt: '{name}, exporté d’Inde par GoodBiz Hygiene',
     categoryRenderAlt: 'Illustration de conditionnements types : {nameLower}',
     rangeAlt: 'Illustration de la gamme GoodBiz Hygiene dans des conditionnements export types',
     portAlt: 'Portiques chargeant un porte-conteneurs de nuit au terminal international de transbordement de conteneurs de Kochi, en Inde',
@@ -111,9 +213,8 @@ const fr: UiPartial = {
   },
 
   home: {
-    title: 'Savons et produits d’entretien : exportateur et fournisseur depuis l’Inde',
-    description:
-      'GoodBiz Hygiene, société du groupe GoodBiz Global, exporte savons, lessives et produits d’entretien de fabricants indiens contrôlés, en marque de distributeur.',
+    title: 'Savons, lessives et détergents : exportateur en Inde',
+    description: 'GoodBiz Hygiene exporte savons, lessives et produits d’entretien de fabricants indiens contrôlés : vrac ou marque de distributeur, conteneurs mixtes, FOB/CIF.',
     eyebrow: 'Savons · Lessives · Entretien',
     h1a: 'Savons et entretien',
     h1b: 'Exportés depuis l’Inde.',
@@ -162,9 +263,8 @@ const fr: UiPartial = {
   },
 
   productsIndex: {
-    title: 'Savons, lessives et produits d’entretien : exportateur et fournisseur depuis l’Inde',
-    description:
-      'Découvrez {n} savons, lessives, produits vaisselle, nettoyants et matières premières de fabricants indiens contrôlés, avec codes HSN et marque de distributeur.',
+    title: 'Savons, lessives et produits d’entretien à l’export d’Inde',
+    description: '{n} savons, lessives, nettoyants et matières premières de fabricants indiens contrôlés, avec code HSN, formats et marque de distributeur. Conteneurs mixtes.',
     hsnLink: 'Codes HSN par produit',
     rangeFull: 'Toute la gamme',
     hsnH: 'Quel code HSN pour chaque produit ?',
@@ -198,7 +298,7 @@ const fr: UiPartial = {
     packSizes: 'Contenances',
     packaging: 'Options de conditionnement',
     galleryH: 'D’autres parfums, en photos',
-    specH: 'Quelles sont les spécifications types ?',
+    specH: 'Quelles sont les spécifications types : {nameLower} ?',
     specNote: '{name} : valeurs types pour les qualités export. Les valeurs définitives sont confirmées avec le fabricant à chaque commande.',
     aboutAria: 'À propos : {name}',
     loadH: 'Chargement conteneur (approx.)',
@@ -213,7 +313,7 @@ const fr: UiPartial = {
   },
 
   category: {
-    title: '{name} : exportateur et fournisseur depuis l’Inde',
+    title: '{name} : exportateur en Inde',
     hsnMeta: '{n} produits · Code ITC-HS à 8 chiffres confirmé à chaque commande',
     seeProducts: 'Voir les {n} produits',
     productsH: 'Quels produits proposons-nous dans la gamme {nameLower} ?',
@@ -221,9 +321,8 @@ const fr: UiPartial = {
   },
 
   blogIndex: {
-    title: 'Guides export pour les acheteurs de savons et produits d’entretien',
-    description:
-      'Guides pratiques pour importer savons, lessives et produits d’entretien depuis l’Inde : codes HSN, MOQ, documents, marque de distributeur et expédition.',
+    title: 'Guides d’import : savons et produits d’entretien d’Inde',
+    description: 'Guides pratiques pour importer des savons, lessives et produits d’entretien d’Inde : codes HSN, MOQ, documents, marque de distributeur et expédition.',
     l1: 'Guides acheteurs.',
     l2: 'Importer savons et produits d’entretien.',
     lead: 'Des notes claires pour importateurs et distributeurs : classement douanier, coûts, documents et choix des produits.',
@@ -239,9 +338,8 @@ const fr: UiPartial = {
   },
 
   contact: {
-    title: 'Demander un devis : savons et produits d’entretien, exportateur depuis l’Inde',
-    description:
-      'Demandez un devis à GoodBiz Hygiene pour des savons, lessives et produits d’entretien indiens. Indiquez produits, contenances et port par e-mail ou WhatsApp.',
+    title: 'Demander un devis : savons et lessives d’Inde',
+    description: 'Demandez un devis à GoodBiz Hygiene pour des savons, lessives et produits d’entretien d’Inde. Indiquez produits, formats et port, par e-mail ou WhatsApp.',
     l1: 'Demander un devis.',
     l2: 'De l’Inde jusqu’à votre port.',
     lead: 'Dites-nous ce dont vous avez besoin : produits, contenances, quantité et port de destination. GoodBiz Hygiene vous répond avec les prix, les spécifications types et les délais.',
@@ -293,9 +391,8 @@ const fr: UiPartial = {
   },
 
   about: {
-    title: 'À propos de GoodBiz Hygiene : savons et produits d’entretien, exportateur depuis l’Inde',
-    description:
-      'GoodBiz Hygiene est la division export hygiène et entretien de GoodBiz Global, exportateur négociant indien, et la marque sœur de GoodBiz Agro.',
+    title: 'GoodBiz Hygiene : exportateur de savons et lessives, Inde',
+    description: 'GoodBiz Hygiene, une société GoodBiz Global, est un négociant exportateur indien de savons et produits d’entretien, issus de fabricants indiens contrôlés.',
     l1: 'GoodBiz Hygiene.',
     l2: 'Une société du groupe {parent}.',
     lead: 'GoodBiz Hygiene est la division export hygiène et entretien de {parent}, exportateur négociant indien, et la marque sœur de GoodBiz Agro.',
@@ -314,9 +411,8 @@ const fr: UiPartial = {
   },
 
   faqPage: {
-    title: 'FAQ : savons et produits d’entretien, exportateur et fournisseur depuis l’Inde',
-    description:
-      'Réponses aux importateurs qui achètent savons, lessives et nettoyants indiens via GoodBiz Hygiene : sourcing, MDD, MOQ, Incoterms, documents et délais.',
+    title: 'FAQ importateurs : acheter savons et lessives en Inde',
+    description: 'Réponses pour les importateurs de savons, lessives et nettoyants d’Inde : sourcing, marque de distributeur, MOQ, incoterms, documents et délais.',
     l1: 'Questions des acheteurs.',
     l2: 'Réponses claires.',
     lead: 'Comment GoodBiz Hygiene sélectionne, chiffre et expédie savons et produits d’entretien depuis l’Inde. Les questions propres à chaque produit trouvent leur réponse sur sa fiche.',
@@ -385,9 +481,8 @@ const fr: UiPartial = {
   ],
 
   exportProcess: {
-    title: 'Processus d’export : savons et produits d’entretien, exportateur depuis l’Inde',
-    description:
-      'Comment GoodBiz Hygiene exporte savons, lessives et nettoyants depuis l’Inde : devis, échantillons, Incoterms, paiement, documents, ports et délais types.',
+    title: 'Processus d’export : importer savons et lessives d’Inde',
+    description: 'Comment GoodBiz Hygiene exporte savons, lessives et nettoyants d’Inde : devis, échantillons, incoterms, paiement, documents, ports et délais habituels.',
     lead: 'Les étapes, les conditions et les documents pour acheter des savons et produits d’entretien en Inde avec GoodBiz Hygiene.',
     route: {
       h1a: 'Des ports de l’Inde,',
@@ -432,6 +527,7 @@ const fr: UiPartial = {
     processL1: 'Quelles sont les étapes',
     processL2: 'de la demande à l’expédition ?',
     processIntro: 'Six étapes, avec votre validation du devis, des échantillons et de la facture pro forma avant toute production.',
+    howToName: 'Importer des savons et produits d’entretien d’Inde avec GoodBiz Hygiene',
     steps: [
       { name: 'Demande', text: 'Indiquez les produits, les contenances, la quantité, le port de destination et vos besoins en marque de distributeur, via le formulaire, par e-mail ou par WhatsApp.' },
       { name: 'Devis', text: 'Nous chiffrons le prix par unité avec les spécifications types, l’Incoterm souhaité et le délai. {incoterms}.' },
@@ -467,9 +563,8 @@ const fr: UiPartial = {
   },
 
   privateLabel: {
-    title: 'Savons et produits d’entretien en marque de distributeur : exportateur depuis l’Inde',
-    description:
-      'Savons, lessives et nettoyants en marque de distributeur depuis l’Inde : vos maquettes, parfums, couleurs et contenances, exportés par GoodBiz Hygiene.',
+    title: 'Savons et produits d’entretien en MDD depuis l’Inde',
+    description: 'Savons, lessives et nettoyants en marque de distributeur depuis l’Inde : vos maquettes, parfums, couleurs et formats, chez des fabricants indiens contrôlés.',
     lead: 'Vendez savons, lessives et nettoyants sous votre propre marque. GoodBiz Hygiene confie votre cahier des charges à un fabricant indien contrôlé, gère les échantillons et les maquettes, et expédie les produits finis jusqu’à votre port.',
     hero: {
       h1a: 'Votre marque,',

@@ -1,0 +1,40 @@
+---
+/**
+ * "Quick facts": six short facts about GoodBiz Hygiene in a definition list (dl/dt/dd), so a
+ * reader, a search engine or an AI assistant can lift any one of them on its own (AEO/GEO).
+ * Used on the home and about pages. The terms come from the page language's `terms`.
+ */
+import { useI18n } from '../i18n/page';
+
+interface Props {
+  id?: string;
+}
+const { id = 'quick-facts' } = Astro.props;
+const { ui } = useI18n(Astro.url);
+const Q = ui.quickFacts;
+const t = ui.terms;
+const facts = [
+  { term: Q.what, value: Q.whatValue },
+  { term: Q.hsn, value: Q.hsnValue },
+  { term: Q.terms, value: t.incoterms },
+  { term: Q.port, value: t.port },
+  { term: Q.moq, value: Q.moqValue },
+  { term: Q.lead, value: t.leadTime },
+];
+---
+
+<section class="wrap sec quick-facts" id={id} aria-labelledby={`${id}-h`}>
+  <div class="sec-head" data-reveal>
+    <h2 id={`${id}-h`}>{Q.heading}</h2>
+  </div>
+  <dl class="facts" data-reveal style="--i: 1">
+    {
+      facts.map((f) => (
+        <div>
+          <dt>{f.term}</dt>
+          <dd>{f.value}</dd>
+        </div>
+      ))
+    }
+  </dl>
+</section>

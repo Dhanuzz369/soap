@@ -7,6 +7,8 @@ import site from '../config/site';
 import { buildWhatsAppUrl } from '../lib/enquiry';
 import { getProductsByCategory } from '../lib/products';
 import { useI18n } from '../i18n/page';
+import { buildKeywords } from '../lib/seo';
+import { ogCard } from '../lib/product-image';
 
 const { lang, ui, lp } = useI18n(Astro.url);
 const C = ui.contact;
@@ -26,6 +28,9 @@ const often = ['dish-wash-liquid', 'fabric-softener', 'toilet-bath-soap']
   title={C.title}
   description={C.description}
   path="/contact/"
+  ogImage={ogCard(`${lang}/contact.png`)}
+  keywords={buildKeywords(ui.seo.keywords.contact)}
+  pageType="ContactPage"
   breadcrumbs={breadcrumbs}
   dark
 >

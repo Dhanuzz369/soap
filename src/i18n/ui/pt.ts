@@ -5,11 +5,113 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '2d63fbf41757';
+export const sourceHash = '9e5d353955e5';
 
 const pt: UiPartial = {
   meta: {
     tagline: 'Sabonetes e produtos de limpeza doméstica, exportados da Índia',
+  },
+
+  seo: {
+    entity: 'A GoodBiz Hygiene, uma empresa GoodBiz Global, é uma exportadora comercial de sabonetes e produtos de limpeza da Índia. Compra de fabricantes indianos selecionados e não fabrica.',
+    keywords: {
+      home: [
+        'exportador de sabonete Índia',
+        'fornecedor de detergente Índia',
+        'produtos de limpeza da Índia',
+        'fabricantes de sabonete na Índia',
+        'sabonete marca própria',
+        'sabão e detergente atacado',
+        'HSN 3401 3402',
+      ],
+      products: [
+        'sabonetes e detergentes da Índia',
+        'produtos de limpeza atacado',
+        'catálogo de produtos de limpeza',
+        'importar sabonete da Índia',
+        'códigos HSN sabonetes',
+      ],
+      category: [
+        'exportador de {nameLower} Índia',
+        'fornecedor de {nameLower} Índia',
+        'fabricantes de {nameLower} Índia',
+        '{nameLower} atacado',
+        '{nameLower} marca própria',
+        'HSN {hsn}',
+      ],
+      product: [
+        'exportador de {kw} Índia',
+        'fornecedor de {kw} Índia',
+        'fabricantes de {kw} na Índia',
+        '{kw} a granel',
+        '{kw} atacado',
+        '{kw} código HSN {hsn}',
+        'importar {kw} da Índia',
+      ],
+      productPrivateLabel: [
+        '{kw} marca própria',
+        '{kw} OEM',
+      ],
+      productMarkets: [
+        'fornecedor de {kw} Brasil',
+        'fornecedor de {kw} Angola',
+      ],
+      privateLabel: [
+        'sabonete marca própria Índia',
+        'produtos de limpeza marca própria',
+        'detergente OEM Índia',
+        'fornecedor de sabonete para marca própria',
+        'produtos de limpeza private label',
+      ],
+      exportProcess: [
+        'importar sabonete da Índia',
+        'documentos de exportação sabonetes',
+        'FOB CIF CFR Índia',
+        'COA MSDS certificado de origem',
+        'contêiner da Índia',
+      ],
+      about: [
+        'GoodBiz Hygiene',
+        'GoodBiz Global',
+        'exportadora comercial Índia',
+        'exportador de sabonete e detergente Índia',
+      ],
+      faq: [
+        'dúvidas importar sabonete',
+        'MOQ sabonetes detergentes Índia',
+        'código HSN sabonete detergente',
+        'prazo de exportação Índia',
+      ],
+      contact: [
+        'cotação sabonete Índia',
+        'preço detergente exportação',
+        'contato GoodBiz Hygiene',
+        'pedido produtos de limpeza',
+      ],
+      blog: [
+        'guia importar sabonete',
+        'guia de compra detergente',
+        'importar produtos de limpeza Índia',
+        'HSN 3401 ou 3402',
+      ],
+      post: [
+        'importar da Índia',
+        'guia do comprador',
+      ],
+    },
+  },
+
+  quickFacts: {
+    heading: 'Fatos rápidos',
+    what: 'O que exportamos',
+    whatValue: 'Sabonetes, detergentes, lava-louças, limpadores e matérias-primas para sabão, de fabricantes indianos selecionados. A GoodBiz Hygiene é exportadora comercial e não fabrica.',
+    hsn: 'Códigos HSN',
+    hsnValue: '3401 (sabões) e 3402 (detergentes e preparações de limpeza); o código de 8 dígitos é confirmado em cada pedido',
+    terms: 'Incoterms e pagamento',
+    port: 'Portos',
+    moq: 'Pedido mínimo',
+    moqValue: 'Sem mínimo fixo: pedidos de teste, cargas parciais e contêineres mistos são cotados, e a marca própria está disponível na maioria dos produtos',
+    lead: 'Prazo de entrega',
   },
 
   terms: {
@@ -41,7 +143,7 @@ const pt: UiPartial = {
     exportProcessFull: 'O processo de exportação completo',
     renderAlt: 'Ilustração de {nameLower} em uma embalagem de exportação típica',
     drawingAlt: 'Ilustração de {nameLower}',
-    photoAlt: '{name} da GoodBiz',
+    photoAlt: '{name}, exportado da Índia pela GoodBiz Hygiene',
     categoryRenderAlt: 'Ilustração de embalagens típicas de {nameLower}',
     rangeAlt: 'Ilustração da linha GoodBiz Hygiene em embalagens de exportação típicas',
     portAlt: 'Guindastes de pórtico carregando um navio porta-contêineres à noite no Terminal Internacional de Transbordo de Contêineres de Kochi, na Índia',
@@ -110,9 +212,8 @@ const pt: UiPartial = {
   },
 
   home: {
-    title: 'Exportador e fornecedor de sabonetes e produtos de limpeza doméstica da Índia',
-    description:
-      'A GoodBiz Hygiene, empresa do grupo GoodBiz Global, exporta sabonetes, detergentes e produtos de limpeza de fabricantes indianos selecionados, com marca própria e contêineres mistos.',
+    title: 'Sabonetes, detergentes e limpadores: exportador da Índia',
+    description: 'A GoodBiz Hygiene exporta sabonetes, detergentes e produtos de limpeza de fabricantes indianos selecionados: granel ou marca própria, contêineres mistos.',
     eyebrow: 'Sabonetes · Detergentes · Limpeza doméstica',
     h1a: 'Sabonetes e limpeza doméstica',
     h1b: 'Exportados da Índia.',
@@ -160,9 +261,8 @@ const pt: UiPartial = {
   },
 
   productsIndex: {
-    title: 'Exportador e fornecedor de sabonetes, detergentes e produtos de limpeza da Índia',
-    description:
-      'Conheça {n} produtos de sabonete, lavanderia, cozinha, limpeza de superfícies e matérias-primas de fabricantes indianos selecionados, com códigos HSN e marca própria.',
+    title: 'Sabonetes, detergentes e limpeza para exportação da Índia',
+    description: '{n} sabonetes, detergentes, limpadores e matérias-primas de fabricantes indianos selecionados, com código HSN, embalagens e marca própria. Contêineres mistos.',
     hsnLink: 'Códigos HSN por produto',
     rangeFull: 'A linha completa',
     hsnH: 'Qual código HSN se aplica a cada produto?',
@@ -196,7 +296,7 @@ const pt: UiPartial = {
     packSizes: 'Tamanhos de embalagem',
     packaging: 'Opções de acondicionamento',
     galleryH: 'Mais fragrâncias, em fotos',
-    specH: 'Quais são as especificações típicas?',
+    specH: 'Quais são as especificações típicas: {nameLower}?',
     specNote: '{name}: valores típicos para os graus de exportação. Os valores finais são confirmados com o fabricante a cada pedido.',
     aboutAria: 'Sobre {name}',
     loadH: 'Carregamento do contêiner (aprox.)',
@@ -211,7 +311,7 @@ const pt: UiPartial = {
   },
 
   category: {
-    title: '{name}: exportador e fornecedor da Índia',
+    title: '{name}: exportador da Índia',
     hsnMeta: '{n} produtos · código ITC-HS de 8 dígitos confirmado a cada pedido',
     seeProducts: 'Ver os {n} produtos',
     productsH: 'Quais produtos de {nameLower} fornecemos?',
@@ -219,9 +319,8 @@ const pt: UiPartial = {
   },
 
   blogIndex: {
-    title: 'Guias de exportação para compradores de sabonetes e produtos de limpeza',
-    description:
-      'Guias práticos para importadores de sabonetes, detergentes e produtos de limpeza doméstica da Índia: códigos HSN, MOQ, documentos, marca própria e embarque.',
+    title: 'Guias de importação: sabonetes e limpeza da Índia',
+    description: 'Guias práticos para importar sabonetes, detergentes e produtos de limpeza da Índia: códigos HSN, MOQ, documentos, marca própria e embarque marítimo.',
     l1: 'Guias do comprador.',
     l2: 'Para importar sabonetes e limpeza doméstica.',
     lead: 'Notas em linguagem simples para importadores e distribuidores: classificação, custos, documentos e escolha de produtos.',
@@ -237,9 +336,8 @@ const pt: UiPartial = {
   },
 
   contact: {
-    title: 'Solicitar cotação: exportador e fornecedor de sabonetes e limpeza doméstica da Índia',
-    description:
-      'Solicite uma cotação à GoodBiz Hygiene para sabonetes, detergentes e produtos de limpeza doméstica da Índia. Envie produtos, embalagens e porto por e-mail ou WhatsApp.',
+    title: 'Peça uma cotação: sabonetes e detergentes da Índia',
+    description: 'Peça à GoodBiz Hygiene uma cotação de sabonetes, detergentes e produtos de limpeza da Índia. Envie produtos, embalagens e porto por e-mail ou WhatsApp.',
     l1: 'Solicite uma cotação.',
     l2: 'Da Índia ao seu porto.',
     lead: 'Diga-nos o que você precisa: produtos, tamanhos de embalagem, quantidade e porto de destino. A GoodBiz Hygiene responde com preços, especificações típicas e prazos.',
@@ -291,9 +389,8 @@ const pt: UiPartial = {
   },
 
   about: {
-    title: 'Sobre a GoodBiz Hygiene: exportador e fornecedor de sabonetes e limpeza doméstica da Índia',
-    description:
-      'A GoodBiz Hygiene é a divisão de exportação de limpeza doméstica e higiene da GoodBiz Global, exportador comercial da Índia, e marca irmã da GoodBiz Agro.',
+    title: 'GoodBiz Hygiene: exportador de sabonetes e detergentes',
+    description: 'A GoodBiz Hygiene, uma empresa GoodBiz Global, é uma exportadora comercial indiana de sabonetes e produtos de limpeza de fabricantes indianos selecionados.',
     l1: 'GoodBiz Hygiene.',
     l2: 'Uma empresa {parent}.',
     lead: 'A GoodBiz Hygiene é a divisão de exportação de limpeza doméstica e higiene da {parent}, exportador comercial da Índia, e marca irmã da GoodBiz Agro.',
@@ -312,9 +409,8 @@ const pt: UiPartial = {
   },
 
   faqPage: {
-    title: 'Perguntas frequentes: exportador e fornecedor de sabonetes e limpeza doméstica da Índia',
-    description:
-      'Respostas para importadores que compram sabonetes, detergentes e limpadores da Índia pela GoodBiz Hygiene: fornecimento, marca própria, MOQ, incoterms, documentos e prazos.',
+    title: 'Perguntas frequentes: comprar sabonetes da Índia',
+    description: 'Respostas para importadores de sabonetes, detergentes e limpadores da Índia: fornecimento, marca própria, MOQ, incoterms, documentos e prazos de entrega.',
     l1: 'Perguntas dos compradores.',
     l2: 'Respostas diretas.',
     lead: 'Como a GoodBiz Hygiene adquire, cota e embarca sabonetes e produtos de limpeza doméstica da Índia. As dúvidas específicas de cada produto são respondidas na página do produto.',
@@ -383,9 +479,8 @@ const pt: UiPartial = {
   ],
 
   exportProcess: {
-    title: 'Processo de exportação: exportador e fornecedor de sabonetes e limpeza doméstica da Índia',
-    description:
-      'Como a GoodBiz Hygiene exporta sabonetes, detergentes e limpadores da Índia: cotação, amostras, incoterms, condições de pagamento, documentos, portos e prazos típicos.',
+    title: 'Processo de exportação: importar sabonetes da Índia',
+    description: 'Como a GoodBiz Hygiene exporta sabonetes, detergentes e limpadores da Índia: cotação, amostras, incoterms, pagamento, documentos, portos e prazos usuais.',
     lead: 'As etapas, as condições e os documentos para comprar sabonetes e produtos de limpeza doméstica da Índia pela GoodBiz Hygiene.',
     route: {
       h1a: 'Dos portos da Índia,',
@@ -430,6 +525,7 @@ const pt: UiPartial = {
     processL1: 'Quais são as etapas',
     processL2: 'da consulta ao embarque?',
     processIntro: 'Seis etapas, com a sua aprovação da cotação, das amostras e da fatura proforma antes de qualquer produção.',
+    howToName: 'Como importar sabonetes e produtos de limpeza da Índia com a GoodBiz Hygiene',
     steps: [
       { name: 'Consulta', text: 'Envie os produtos, os tamanhos de embalagem, a quantidade, o porto de destino e eventuais necessidades de marca própria, pelo formulário de consulta, por e-mail ou pelo WhatsApp.' },
       { name: 'Cotação', text: 'Cotamos o preço por embalagem, com especificações típicas, o incoterm de que você precisa e o prazo. {incoterms}.' },
@@ -465,9 +561,8 @@ const pt: UiPartial = {
   },
 
   privateLabel: {
-    title: 'Sabonetes e produtos de limpeza com marca própria: exportador e fornecedor da Índia',
-    description:
-      'Sabonetes, detergentes e limpadores com marca própria da Índia: sua arte, fragrância, cor e embalagens, fabricados por indianos selecionados e exportados pela GoodBiz Hygiene.',
+    title: 'Sabonetes e produtos de limpeza com marca própria, Índia',
+    description: 'Sabonetes, detergentes e limpadores com marca própria da Índia: sua arte, fragrância, cor e embalagens, de fabricantes indianos selecionados. FOB/CIF.',
     lead: 'Venda sabonetes, detergentes e limpadores com a sua própria marca. A GoodBiz Hygiene associa a sua solicitação a um fabricante indiano selecionado, cuida das amostras e da arte e embarca os produtos acabados até o seu porto.',
     hero: {
       h1a: 'Sua marca,',

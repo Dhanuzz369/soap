@@ -5,6 +5,8 @@ import GuideRows from '../components/GuideRows.astro';
 import QuoteCard from '../components/QuoteCard.astro';
 import { getPosts } from '../lib/blog';
 import { useI18n } from '../i18n/page';
+import { itemListJsonLd, buildKeywords, absoluteUrl } from '../lib/seo';
+import { ogCard } from '../lib/product-image';
 
 const { lang, ui, lp } = useI18n(Astro.url);
 const B = ui.blogIndex;
@@ -19,6 +21,11 @@ const breadcrumbs = [
   title={B.title}
   description={B.description}
   path="/blog/"
+  ogImage={ogCard(`${lang}/blog.png`)}
+  keywords={buildKeywords(ui.seo.keywords.blog)}
+  pageType="CollectionPage"
+  mainEntity={`${absoluteUrl(lp('/blog/'))}#itemlist`}
+  jsonLd={[itemListJsonLd(lp('/blog/'), B.title, posts.map((p) => ({ name: p.data.title, url: lp(`/blog/${p.id}/`) })))]}
   breadcrumbs={breadcrumbs}
   dark
 >

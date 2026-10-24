@@ -5,11 +5,113 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '2d63fbf41757';
+export const sourceHash = '9e5d353955e5';
 
 const vi: UiPartial = {
   meta: {
     tagline: 'Xà phòng và sản phẩm vệ sinh gia dụng, xuất khẩu từ Ấn Độ',
+  },
+
+  seo: {
+    entity: 'GoodBiz Hygiene, một công ty thuộc GoodBiz Global, là nhà xuất khẩu thương mại xà phòng và sản phẩm gia dụng từ Ấn Độ. Công ty mua hàng từ các nhà sản xuất Ấn Độ đã thẩm định và không tự sản xuất.',
+    keywords: {
+      home: [
+        'nhà xuất khẩu xà phòng Ấn Độ',
+        'nhà cung cấp bột giặt Ấn Độ',
+        'sản phẩm tẩy rửa Ấn Độ',
+        'nhà sản xuất xà phòng Ấn Độ',
+        'xà phòng nhãn riêng',
+        'xà phòng giá sỉ',
+        'HS 3401 3402',
+      ],
+      products: [
+        'xà phòng và chất tẩy rửa Ấn Độ',
+        'sản phẩm tẩy rửa giá sỉ',
+        'danh mục sản phẩm tẩy rửa',
+        'nhập khẩu xà phòng Ấn Độ',
+        'mã HS xà phòng',
+      ],
+      category: [
+        'nhà xuất khẩu {nameLower} Ấn Độ',
+        'nhà cung cấp {nameLower} Ấn Độ',
+        'nhà sản xuất {nameLower} Ấn Độ',
+        '{nameLower} giá sỉ',
+        '{nameLower} nhãn riêng',
+        'HSN {hsn}',
+      ],
+      product: [
+        'nhà xuất khẩu {kw} Ấn Độ',
+        'nhà cung cấp {kw} Ấn Độ',
+        'nhà sản xuất {kw} Ấn Độ',
+        '{kw} số lượng lớn',
+        '{kw} giá sỉ',
+        '{kw} mã HS {hsn}',
+        'nhập khẩu {kw} từ Ấn Độ',
+      ],
+      productPrivateLabel: [
+        'gia công {kw}',
+        '{kw} OEM',
+      ],
+      productMarkets: [
+        'nhà cung cấp {kw} Việt Nam',
+        'nhà cung cấp {kw} Đông Nam Á',
+      ],
+      privateLabel: [
+        'xà phòng nhãn riêng Ấn Độ',
+        'sản phẩm tẩy rửa nhãn riêng',
+        'bột giặt OEM Ấn Độ',
+        'gia công xà phòng',
+        'sản phẩm tẩy rửa thương hiệu riêng',
+      ],
+      exportProcess: [
+        'nhập khẩu xà phòng từ Ấn Độ',
+        'chứng từ xuất khẩu xà phòng',
+        'FOB CIF CFR Ấn Độ',
+        'COA MSDS C/O',
+        'container từ Ấn Độ',
+      ],
+      about: [
+        'GoodBiz Hygiene',
+        'GoodBiz Global',
+        'nhà xuất khẩu thương mại Ấn Độ',
+        'xuất khẩu xà phòng Ấn Độ',
+      ],
+      faq: [
+        'hỏi đáp nhập khẩu xà phòng',
+        'MOQ xà phòng Ấn Độ',
+        'mã HS xà phòng chất tẩy rửa',
+        'thời gian giao hàng từ Ấn Độ',
+      ],
+      contact: [
+        'báo giá xà phòng Ấn Độ',
+        'giá bột giặt xuất khẩu',
+        'liên hệ GoodBiz Hygiene',
+        'yêu cầu sản phẩm tẩy rửa',
+      ],
+      blog: [
+        'hướng dẫn nhập khẩu xà phòng',
+        'cẩm nang mua bột giặt',
+        'nhập khẩu sản phẩm tẩy rửa Ấn Độ',
+        'HSN 3401 và 3402',
+      ],
+      post: [
+        'nhập khẩu từ Ấn Độ',
+        'cẩm nang người mua',
+      ],
+    },
+  },
+
+  quickFacts: {
+    heading: 'Thông tin nhanh',
+    what: 'Chúng tôi xuất khẩu gì',
+    whatValue: 'Xà phòng, chất tẩy rửa, nước rửa chén, nước tẩy bề mặt và nguyên liệu xà phòng từ nhà sản xuất Ấn Độ đã thẩm định. GoodBiz Hygiene là nhà xuất khẩu thương mại và không tự sản xuất.',
+    hsn: 'Mã HSN',
+    hsnValue: '3401 (xà phòng) và 3402 (chất tẩy rửa và chế phẩm làm sạch); mã 8 chữ số được xác nhận theo từng đơn hàng',
+    terms: 'Incoterms và thanh toán',
+    port: 'Cảng',
+    moq: 'Đơn hàng tối thiểu',
+    moqValue: 'Không có mức tối thiểu cố định: đơn thử, hàng lẻ và container ghép đều được báo giá; nhãn riêng có cho hầu hết sản phẩm',
+    lead: 'Thời gian giao hàng',
   },
 
   terms: {
@@ -41,7 +143,7 @@ const vi: UiPartial = {
     exportProcessFull: 'Toàn bộ quy trình xuất khẩu',
     renderAlt: 'Hình minh họa {nameLower} trong bao bì xuất khẩu điển hình',
     drawingAlt: 'Hình minh họa {nameLower}',
-    photoAlt: '{name} từ GoodBiz',
+    photoAlt: '{name}, GoodBiz Hygiene xuất khẩu từ Ấn Độ',
     categoryRenderAlt: 'Hình minh họa các quy cách đóng gói {nameLower} điển hình',
     rangeAlt: 'Hình minh họa dòng sản phẩm GoodBiz Hygiene trong các quy cách đóng gói xuất khẩu điển hình',
     portAlt: 'Cần trục giàn bốc xếp container lên tàu vào ban đêm tại Cảng trung chuyển container quốc tế ở Kochi, Ấn Độ',
@@ -110,9 +212,8 @@ const vi: UiPartial = {
   },
 
   home: {
-    title: 'Nhà xuất khẩu và nhà cung cấp xà phòng, sản phẩm vệ sinh gia dụng từ Ấn Độ',
-    description:
-      'GoodBiz Hygiene, một công ty thuộc GoodBiz Global, xuất khẩu xà phòng, chất tẩy rửa và sản phẩm vệ sinh gia dụng từ các nhà sản xuất Ấn Độ đã được thẩm định, có nhãn riêng và ghép container.',
+    title: 'Xà phòng, bột giặt, chất tẩy rửa: xuất khẩu từ Ấn Độ',
+    description: 'GoodBiz Hygiene xuất khẩu xà phòng, chất tẩy rửa và sản phẩm gia dụng từ nhà sản xuất Ấn Độ đã thẩm định: số lượng lớn hoặc nhãn riêng, container ghép, FOB/CIF.',
     eyebrow: 'Xà phòng · Chất tẩy rửa · Vệ sinh gia dụng',
     h1a: 'Xà phòng và vệ sinh gia dụng',
     h1b: 'Xuất khẩu từ Ấn Độ.',
@@ -160,9 +261,8 @@ const vi: UiPartial = {
   },
 
   productsIndex: {
-    title: 'Nhà xuất khẩu và nhà cung cấp xà phòng, chất giặt rửa và sản phẩm tẩy rửa từ Ấn Độ',
-    description:
-      'Khám phá {n} sản phẩm xà phòng, giặt giũ, nhà bếp, tẩy rửa bề mặt và nguyên liệu từ các nhà sản xuất Ấn Độ đã được thẩm định, kèm mã HSN và tùy chọn nhãn riêng.',
+    title: 'Xà phòng, chất tẩy rửa và sản phẩm vệ sinh từ Ấn Độ',
+    description: '{n} sản phẩm xà phòng, chất tẩy rửa, nước tẩy và nguyên liệu từ nhà sản xuất Ấn Độ đã thẩm định, có mã HSN, quy cách và nhãn riêng. Container ghép.',
     hsnLink: 'Mã HSN theo sản phẩm',
     rangeFull: 'Toàn bộ dòng sản phẩm',
     hsnH: 'Mã HSN nào áp dụng cho từng sản phẩm?',
@@ -196,7 +296,7 @@ const vi: UiPartial = {
     packSizes: 'Quy cách đóng gói',
     packaging: 'Tùy chọn bao bì',
     galleryH: 'Thêm các mùi hương, qua hình ảnh',
-    specH: 'Thông số kỹ thuật điển hình là gì?',
+    specH: 'Thông số điển hình của {nameLower} là gì?',
     specNote: '{name}: giá trị điển hình của các cấp độ xuất khẩu. Giá trị cuối cùng được xác nhận với nhà sản xuất theo từng đơn hàng.',
     aboutAria: 'Giới thiệu về {name}',
     loadH: 'Xếp hàng vào container (xấp xỉ)',
@@ -211,7 +311,7 @@ const vi: UiPartial = {
   },
 
   category: {
-    title: '{name}: nhà xuất khẩu và nhà cung cấp từ Ấn Độ',
+    title: '{name}: xuất khẩu từ Ấn Độ',
     hsnMeta: '{n} sản phẩm · Mã ITC-HS 8 chữ số được xác nhận theo từng đơn hàng',
     seeProducts: 'Xem {n} sản phẩm',
     productsH: 'Chúng tôi cung cấp những sản phẩm {nameLower} nào?',
@@ -219,9 +319,8 @@ const vi: UiPartial = {
   },
 
   blogIndex: {
-    title: 'Cẩm nang xuất khẩu dành cho người mua xà phòng và sản phẩm tẩy rửa',
-    description:
-      'Cẩm nang thực tế cho nhà nhập khẩu xà phòng, chất tẩy rửa và sản phẩm vệ sinh gia dụng từ Ấn Độ: mã HSN, MOQ, chứng từ, nhãn riêng và vận chuyển.',
+    title: 'Cẩm nang nhập khẩu xà phòng và chất tẩy rửa từ Ấn Độ',
+    description: 'Cẩm nang thực tế cho nhà nhập khẩu xà phòng, chất tẩy rửa và sản phẩm gia dụng từ Ấn Độ: mã HSN, MOQ, chứng từ, nhãn riêng và vận chuyển đường biển.',
     l1: 'Cẩm nang cho người mua.',
     l2: 'Nhập khẩu xà phòng và vệ sinh gia dụng.',
     lead: 'Những ghi chú dễ hiểu dành cho nhà nhập khẩu và nhà phân phối: phân loại hàng hóa, chi phí, chứng từ và cách chọn sản phẩm.',
@@ -237,9 +336,8 @@ const vi: UiPartial = {
   },
 
   contact: {
-    title: 'Yêu cầu báo giá: nhà xuất khẩu và nhà cung cấp xà phòng, sản phẩm vệ sinh gia dụng từ Ấn Độ',
-    description:
-      'Yêu cầu GoodBiz Hygiene báo giá xà phòng, chất tẩy rửa và sản phẩm vệ sinh gia dụng từ Ấn Độ. Gửi sản phẩm, quy cách đóng gói và cảng đến qua email hoặc WhatsApp.',
+    title: 'Yêu cầu báo giá: xà phòng và bột giặt từ Ấn Độ',
+    description: 'Yêu cầu GoodBiz Hygiene báo giá xà phòng, chất tẩy rửa và sản phẩm gia dụng từ Ấn Độ. Gửi sản phẩm, quy cách và cảng đến qua email hoặc WhatsApp.',
     l1: 'Yêu cầu báo giá.',
     l2: 'Từ Ấn Độ, đến cảng của Quý khách.',
     lead: 'Hãy cho chúng tôi biết nhu cầu của Quý khách: sản phẩm, quy cách đóng gói, số lượng và cảng đến. GoodBiz Hygiene sẽ phản hồi kèm giá, thông số kỹ thuật điển hình và thời gian giao hàng.',
@@ -291,9 +389,8 @@ const vi: UiPartial = {
   },
 
   about: {
-    title: 'Giới thiệu GoodBiz Hygiene: nhà xuất khẩu và nhà cung cấp xà phòng, sản phẩm vệ sinh gia dụng từ Ấn Độ',
-    description:
-      'GoodBiz Hygiene là bộ phận xuất khẩu sản phẩm vệ sinh gia dụng của GoodBiz Global, một nhà xuất khẩu thương mại từ Ấn Độ, và là thương hiệu chị em của GoodBiz Agro.',
+    title: 'GoodBiz Hygiene: nhà xuất khẩu xà phòng từ Ấn Độ',
+    description: 'GoodBiz Hygiene, một công ty thuộc GoodBiz Global, là nhà xuất khẩu thương mại xà phòng và sản phẩm gia dụng từ Ấn Độ, nguồn từ nhà sản xuất đã thẩm định.',
     l1: 'GoodBiz Hygiene.',
     l2: 'Một công ty thuộc {parent}.',
     lead: 'GoodBiz Hygiene là bộ phận xuất khẩu sản phẩm vệ sinh gia dụng của {parent}, một nhà xuất khẩu thương mại từ Ấn Độ, và là thương hiệu chị em của GoodBiz Agro.',
@@ -312,9 +409,8 @@ const vi: UiPartial = {
   },
 
   faqPage: {
-    title: 'Hỏi đáp: nhà xuất khẩu và nhà cung cấp xà phòng, sản phẩm vệ sinh gia dụng từ Ấn Độ',
-    description:
-      'Giải đáp cho nhà nhập khẩu mua xà phòng, chất tẩy rửa từ Ấn Độ qua GoodBiz Hygiene: nguồn hàng, nhãn riêng, MOQ, Incoterms, chứng từ và thời gian giao hàng.',
+    title: 'Hỏi đáp cho nhà nhập khẩu xà phòng từ Ấn Độ',
+    description: 'Giải đáp cho nhà nhập khẩu xà phòng, chất tẩy rửa và nước tẩy từ Ấn Độ: nguồn hàng, nhãn riêng, MOQ, điều kiện giao hàng, chứng từ và thời gian giao.',
     l1: 'Câu hỏi của người mua.',
     l2: 'Giải đáp rõ ràng.',
     lead: 'Cách GoodBiz Hygiene tìm nguồn hàng, báo giá và vận chuyển xà phòng và sản phẩm vệ sinh gia dụng từ Ấn Độ. Các câu hỏi riêng về từng sản phẩm được giải đáp trên trang của sản phẩm đó.',
@@ -383,9 +479,8 @@ const vi: UiPartial = {
   ],
 
   exportProcess: {
-    title: 'Quy trình xuất khẩu: nhà xuất khẩu và nhà cung cấp xà phòng, sản phẩm vệ sinh gia dụng từ Ấn Độ',
-    description:
-      'Cách GoodBiz Hygiene xuất khẩu xà phòng, chất tẩy rửa từ Ấn Độ: báo giá, mẫu thử, Incoterms, điều khoản thanh toán, chứng từ, cảng và thời gian giao hàng điển hình.',
+    title: 'Quy trình xuất khẩu: nhập khẩu xà phòng từ Ấn Độ',
+    description: 'Cách GoodBiz Hygiene xuất khẩu xà phòng, chất tẩy rửa và nước tẩy từ Ấn Độ: báo giá, mẫu, Incoterms, thanh toán, chứng từ, cảng và thời gian thông thường.',
     lead: 'Các bước, điều khoản và chứng từ khi mua xà phòng và sản phẩm vệ sinh gia dụng từ Ấn Độ qua GoodBiz Hygiene.',
     route: {
       h1a: 'Từ các cảng của Ấn Độ,',
@@ -430,6 +525,7 @@ const vi: UiPartial = {
     processL1: 'Các bước thực hiện',
     processL2: 'từ yêu cầu đến lô hàng là gì?',
     processIntro: 'Sáu bước, trong đó Quý khách duyệt bản báo giá, mẫu thử và hóa đơn chiếu lệ trước khi bắt đầu sản xuất.',
+    howToName: 'Cách nhập khẩu xà phòng và sản phẩm gia dụng từ Ấn Độ qua GoodBiz Hygiene',
     steps: [
       { name: 'Yêu cầu', text: 'Gửi sản phẩm, quy cách đóng gói, số lượng, cảng đến và các yêu cầu về nhãn riêng (nếu có) qua biểu mẫu yêu cầu, email hoặc WhatsApp.' },
       { name: 'Báo giá', text: 'Chúng tôi báo giá theo từng quy cách kèm thông số kỹ thuật điển hình, điều kiện Incoterms Quý khách cần và thời gian giao hàng. {incoterms}.' },
@@ -465,9 +561,8 @@ const vi: UiPartial = {
   },
 
   privateLabel: {
-    title: 'Xà phòng và sản phẩm tẩy rửa nhãn riêng: nhà xuất khẩu và nhà cung cấp từ Ấn Độ',
-    description:
-      'Xà phòng, chất tẩy rửa nhãn riêng từ Ấn Độ: thiết kế bao bì, hương liệu, màu sắc và quy cách đóng gói theo ý Quý khách, do nhà sản xuất Ấn Độ đã thẩm định sản xuất và GoodBiz Hygiene xuất khẩu.',
+    title: 'Xà phòng và sản phẩm tẩy rửa nhãn riêng từ Ấn Độ',
+    description: 'Xà phòng, chất tẩy rửa và nước tẩy nhãn riêng từ Ấn Độ: thiết kế, hương thơm, màu sắc và quy cách của Quý khách, từ nhà sản xuất Ấn Độ đã thẩm định.',
     lead: 'Bán xà phòng, chất tẩy rửa và nước vệ sinh dưới thương hiệu của chính Quý khách. GoodBiz Hygiene ghép yêu cầu của Quý khách với một nhà sản xuất Ấn Độ đã được thẩm định, quản lý mẫu và thiết kế bao bì, rồi giao thành phẩm đến cảng của Quý khách.',
     hero: {
       h1a: 'Thương hiệu của Quý khách,',

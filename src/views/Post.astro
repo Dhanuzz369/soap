@@ -8,9 +8,9 @@ import EntryBody from '../components/EntryBody.astro';
 import { readingMinutes, fmtDate, type BlogEntry } from '../lib/blog';
 import type { ProductEntry } from '../lib/products';
 import { useI18n } from '../i18n/page';
-import { articleJsonLd, faqJsonLd } from '../lib/seo';
+import { articleJsonLd, faqJsonLd, buildKeywords, absoluteUrl } from '../lib/seo';
 import { splitPostTitle } from '../lib/heading';
-import { productPicture } from '../lib/product-image';
+import { productPicture, productImagePath, ogCard } from '../lib/product-image';
 import { shapeFor } from '../lib/pack-shapes';
 
 interface Props {
@@ -33,6 +33,11 @@ const breadcrumbs = [
   { name: d.title, url },
 ];
 const t = splitPostTitle(d.title);
+// The share image: the card of the first product the guide is about (npm run og), else its photo.
+const leadSlug = d.relatedProducts[0];
+const share = (leadSlug && (ogCard(`products/${leadSlug}.jpg`) ?? productImagePath(leadSlug))) || undefined;
+const images = [share, ...related.map((p) => productImagePath(p.data.slug))].filter((x, i, a): x is string => !!x && a.indexOf(x) === i).slice(0, 3);
+const keywords = buildKeywords(d.tags, {}, [...related.map((p) => p.data.keyword ?? lower(p.data.title)), ...ui.seo.keywords.post]);
 const lead = related[0];
 const pic = lead ? productPicture(lead.data.slug, shapeFor(lead.data.slug, lead.data.category.id), lead.data.category.id) : undefined;
 const media: HeroMedia | undefined =
@@ -51,16 +56,27 @@ const media: HeroMedia | undefined =
 ---
 
 <BaseLayout
-  title={d.title}
+  title={d.metaTitle ?? d.title}
   description={d.description}
   path={path}
+  ogImage={share}
+  keywords={keywords}
+  mainEntity={`${absoluteUrl(url)}#article`}
+  article={{ published: d.date, modified: d.updated, tags: d.tags }}
   breadcrumbs={breadcrumbs}
   jsonLd={[
-    {
-      ...articleJsonLd({ title: d.title, description: d.description, date: d.date, url, type: 'BlogPosting', inLanguage: info.hreflang }),
-      ...(d.updated ? { dateModified: d.updated.toISOString() } : {}),
-    },
-    ...(faqs.length ? [faqJsonLd(faqs, info.hreflang)] : []),
+    articleJsonLd({
+      title: d.title,
+      description: d.description,
+      date: d.date,
+      updated: d.updated,
+      url,
+      type: 'BlogPosting',
+      inLanguage: info.hreflang,
+      image: images,
+      keywords: d.tags,
+    }),
+    ...(faqs.length ? [faqJsonLd(faqs, info.hreflang, url)] : []),
   ]}
   dark
 >

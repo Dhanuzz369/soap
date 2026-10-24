@@ -1,0 +1,15 @@
+{
+  "name": "GoodBiz Hygiene",
+  "short_name": "GoodBiz Hygiene",
+  "description": "Merchant exporter of soaps and home-care products from India, sourced from vetted Indian manufacturers.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#f5f8f2",
+  "theme_color": "#1d5a42",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

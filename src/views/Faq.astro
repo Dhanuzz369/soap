@@ -3,7 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Faq from '../components/Faq.astro';
 import QuoteCard from '../components/QuoteCard.astro';
-import { faqJsonLd } from '../lib/seo';
+import { faqJsonLd, buildKeywords } from '../lib/seo';
+import { ogCard } from '../lib/product-image';
 import { getFaqGroups } from '../lib/faqs';
 import { useI18n } from '../i18n/page';
 
@@ -21,8 +22,10 @@ const breadcrumbs = [
   title={F.title}
   description={F.description}
   path="/faq/"
+  ogImage={ogCard(`${lang}/faq.png`)}
+  keywords={buildKeywords(ui.seo.keywords.faq)}
   breadcrumbs={breadcrumbs}
-  jsonLd={[faqJsonLd(allFaqs, info.hreflang)]}
+  jsonLd={[faqJsonLd(allFaqs, info.hreflang, lp('/faq/'))]}
   dark
 >
   <PageHero

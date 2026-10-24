@@ -5,11 +5,18 @@ import ProductsHero from '../components/ProductsHero.astro';
 import CardGrid from '../components/CardGrid.astro';
 import QuoteCard from '../components/QuoteCard.astro';
 import { useI18n } from '../i18n/page';
+import { itemListJsonLd, buildKeywords, absoluteUrl } from '../lib/seo';
+import { productImagePath, ogCard } from '../lib/product-image';
 
 const { lang, ui, lp, fmt } = useI18n(Astro.url);
 const T = ui.productsIndex;
 const groups = await getProductsByCategory(lang);
 const total = groups.reduce((n, g) => n + g.products.length, 0);
+const list = itemListJsonLd(
+  lp('/products/'),
+  T.title,
+  groups.flatMap((g) => g.products).map((p) => ({ name: p.data.title, url: lp(`/products/${p.data.slug}/`), image: productImagePath(p.data.slug) })),
+);
 const breadcrumbs = [
   { name: ui.common.home, url: lp('/') },
   { name: ui.common.products, url: lp('/products/') },
@@ -20,6 +27,11 @@ const breadcrumbs = [
   title={T.title}
   description={fmt(T.description, { n: total })}
   path="/products/"
+  ogImage={ogCard(`${lang}/products.png`)}
+  keywords={buildKeywords(ui.seo.keywords.products, {}, groups.map((g) => g.category.data.title))}
+  pageType="CollectionPage"
+  mainEntity={`${absoluteUrl(lp('/products/'))}#itemlist`}
+  jsonLd={[list]}
   breadcrumbs={breadcrumbs}
   dark
 >

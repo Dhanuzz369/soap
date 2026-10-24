@@ -5,7 +5,8 @@ import '../styles/global.css';
 import '../styles/floria.css';
 import '../styles/i18n.css';
 import site from '../config/site';
-import { absoluteUrl, pageTitle, organizationJsonLd, websiteJsonLd, breadcrumbJsonLd } from '../lib/seo';
+import { absoluteUrl, pageTitle, organizationJsonLd, websiteJsonLd, breadcrumbJsonLd, webPageJsonLd, MAX_KEYWORDS, type PageType } from '../lib/seo';
+import { publicImageSize } from '../lib/product-image';
 import { LOCALES, LOCALE_CODES, DEFAULT_LOCALE, alternates, localizePath } from '../i18n/locales';
 import { pickLocale, isBot } from '../i18n/detect';
 import { useI18n } from '../i18n/page';
@@ -20,8 +21,18 @@ interface Props {
   description: string;
   /** The page's ENGLISH (unprefixed) path, e.g. '/products/labsa/'. The layout localizes it. */
   path: string;
+  /** The share image (og:image, twitter:image): a 1200 × 630 card or a product photo. */
   ogImage?: string;
-  jsonLd?: Record<string, unknown>[];
+  /** Alt text of the share image (defaults to the page title). */
+  ogImageAlt?: string;
+  /** <meta name="keywords">: at most 12 phrases (src/lib/seo.ts buildKeywords). */
+  keywords?: string[];
+  /** The schema.org type of this page (WebPage block) and the @id of its main entity. */
+  pageType?: PageType;
+  mainEntity?: string;
+  /** Blog posts: og:type article with its dates and tags. */
+  article?: { published: Date; modified?: Date; tags?: string[] };
+  jsonLd?: object[];
   /** Breadcrumbs with names in the page's language and localized URLs. */
   breadcrumbs?: { name: string; url: string }[];
   /** Always noindex this page and leave out the canonical/hreflang links (e.g. the 404 page). */
@@ -35,17 +46,54 @@ interface Props {
   preloadImage?: { href: string; type?: string; srcset?: string; sizes?: string };
 }
 
-const { title, description, path, ogImage = '/og-default.png', jsonLd = [], breadcrumbs, noindex = false, dark = false, preloadImage } = Astro.props;
+const {
+  title,
+  description,
+  path,
+  ogImage = '/og-default.png',
+  ogImageAlt,
+  keywords = [],
+  pageType,
+  mainEntity,
+  article,
+  jsonLd = [],
+  breadcrumbs,
+  noindex = false,
+  dark = false,
+  preloadImage,
+} = Astro.props;
 const { lang, info, ui } = useI18n(Astro.url);
 
 const fullTitle = pageTitle(title);
 const canonical = absoluteUrl(localizePath(path, lang));
+const home = localizePath('/', lang);
 const alts = alternates(path).map((a) => ({ ...a, href: absoluteUrl(a.path) }));
 const ogUrl = absoluteUrl(ogImage);
-const schemas: Record<string, unknown>[] = [
-  organizationJsonLd(ui.meta.tagline),
-  websiteJsonLd({ url: absoluteUrl(localizePath('/', lang)), inLanguage: info.hreflang }),
-  ...(breadcrumbs && breadcrumbs.length > 1 ? [breadcrumbJsonLd(breadcrumbs)] : []),
+const ogSize = publicImageSize(ogImage);
+const ogType = /\.png$/.test(ogImage) ? 'image/png' : /\.jpe?g$/.test(ogImage) ? 'image/jpeg' : /\.webp$/.test(ogImage) ? 'image/webp' : undefined;
+const kw = keywords.slice(0, MAX_KEYWORDS).join(', ');
+const v = site.verification;
+const hasCrumbs = !!breadcrumbs && breadcrumbs.length > 1;
+const schemas: object[] = [
+  organizationJsonLd(ui.seo.entity),
+  websiteJsonLd({ url: absoluteUrl(home), inLanguage: info.hreflang, description: ui.meta.tagline }),
+  ...(noindex
+    ? []
+    : [
+        webPageJsonLd({
+          url: localizePath(path, lang),
+          name: fullTitle,
+          description,
+          inLanguage: info.hreflang,
+          homeUrl: home,
+          type: pageType,
+          image: ogImage,
+          breadcrumb: hasCrumbs,
+          mainEntity,
+          dateModified: article?.modified ?? article?.published,
+        }),
+      ]),
+  ...(hasCrumbs ? [breadcrumbJsonLd(breadcrumbs!)] : []),
   ...jsonLd,
 ];
 // Escape "<" so JSON-LD can never close the script element early.
@@ -73,7 +121,15 @@ const ar = lang === 'ar';
     {detect && <script is:inline set:html={detect} />}
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
+    {kw && <meta name="keywords" content={kw} />}
     {(noindex || !site.launchReady) && <meta name="robots" content="noindex, nofollow" />}
+    {
+      // Large image previews and full snippets in Google once the site is live.
+      !noindex && site.launchReady && <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    }
+    {v.google && <meta name="google-site-verification" content={v.google} />}
+    {v.bing && <meta name="msvalidate.01" content={v.bing} />}
+    {v.yandex && <meta name="yandex-verification" content={v.yandex} />}
     {
       !noindex && (
         <>
@@ -82,21 +138,42 @@ const ar = lang === 'ar';
         </>
       )
     }
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content={dark ? '#0b211a' : '#f5f8f2'} />
+    <meta name="application-name" content={site.name} />
+    <meta name="apple-mobile-web-app-title" content={site.name} />
+    <link rel="alternate" type="text/plain" title="llms.txt" href={absoluteUrl(lang === DEFAULT_LOCALE ? '/llms.txt' : `/${lang}/llms.txt`)} />
 
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogUrl} />
+    {ogUrl.startsWith('https://') && <meta property="og:image:secure_url" content={ogUrl} />}
+    {ogType && <meta property="og:image:type" content={ogType} />}
+    {ogSize && <meta property="og:image:width" content={String(ogSize.width)} />}
+    {ogSize && <meta property="og:image:height" content={String(ogSize.height)} />}
+    <meta property="og:image:alt" content={ogImageAlt ?? fullTitle} />
     <meta property="og:locale" content={info.og} />
     {LOCALES.filter((l) => l.code !== lang).map((l) => <meta property="og:locale:alternate" content={l.og} />)}
+    {
+      article && (
+        <>
+          <meta property="article:published_time" content={article.published.toISOString()} />
+          <meta property="article:modified_time" content={(article.modified ?? article.published).toISOString()} />
+          {(article.tags ?? []).map((t) => <meta property="article:tag" content={t} />)}
+        </>
+      )
+    }
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogUrl} />
+    <meta name="twitter:image:alt" content={ogImageAlt ?? fullTitle} />
 
     <link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     {

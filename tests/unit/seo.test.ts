@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import {
   organizationJsonLd, websiteJsonLd, breadcrumbJsonLd, faqJsonLd,
   productJsonLd, articleJsonLd, pageTitle, absoluteUrl,
+  buildKeywords, MAX_KEYWORDS, itemListJsonLd, howToJsonLd,
 } from '../../src/lib/seo';
 import type { ProductData } from '../../src/lib/types';
 import site from '../../src/config/site';
@@ -20,7 +21,7 @@ const sampleProduct: ProductData = {
 
 describe('seo', () => {
   it('organization is an Organization with parent, no sameAs by default', () => {
-    const o = organizationJsonLd();
+    const o: any = organizationJsonLd();
     expect(o['@type']).toBe('Organization');
     expect(JSON.stringify(o)).not.toMatch(/Manufacturer/);
     expect(o.parentOrganization).toMatchObject({ '@type': 'Organization', name: 'GoodBiz Global' });
@@ -29,6 +30,28 @@ describe('seo', () => {
   it('website', () => {
     expect(websiteJsonLd()['@type']).toBe('WebSite');
   });
+  it('organization has a square logo and knowsAbout, and hides placeholder contacts', () => {
+    const o: any = organizationJsonLd();
+    expect(o.logo).toMatchObject({ '@type': 'ImageObject', url: `${BASE}/logo-512.png` });
+    expect(o.knowsAbout.length).toBeGreaterThan(3);
+    expect(o.areaServed).toBe('Worldwide');
+    if (site.contactIsPlaceholder) {
+      expect(o).not.toHaveProperty('contactPoint');
+      expect(JSON.stringify(o)).not.toContain('PLACEHOLDER');
+    } else expect(o.contactPoint).toMatchObject({ '@type': 'ContactPoint' });
+  });
+  it('keywords: filled, de-duplicated, unfilled templates dropped, capped at 12', () => {
+    const k = buildKeywords(['{kw} exporter India', 'Bulk {kw}', 'bulk {kw}', '{x} y', 'HSN {hsn}'], { kw: 'LABSA', hsn: '3402 31' });
+    expect(k).toEqual(['LABSA exporter India', 'Bulk LABSA', 'HSN 3402 31']);
+    expect(buildKeywords(Array.from({ length: 20 }, (_, i) => `k${i}`))).toHaveLength(MAX_KEYWORDS);
+  });
+  it('item list and how-to carry positions and absolute URLs', () => {
+    const l: any = itemListJsonLd('/products/', 'All', [{ name: 'A', url: '/products/a/' }, { name: 'B', url: '/products/b/' }]);
+    expect(l.itemListElement[1]).toMatchObject({ '@type': 'ListItem', position: 2, url: `${BASE}/products/b/` });
+    const h: any = howToJsonLd({ url: '/export-process/', name: 'N', description: 'D', inLanguage: 'en', steps: [{ name: 'S', text: 'T' }] });
+    expect(h.step[0]).toMatchObject({ '@type': 'HowToStep', position: 1, url: `${BASE}/export-process/#steps` });
+    expect(h.inLanguage).toBe('en');
+  });
   it('product has no offers/aggregateRating and carries HSN', () => {
     const p: any = productJsonLd(sampleProduct, `${BASE}/products/dish-wash-liquid/`);
     expect(p['@type']).toBe('Product');
@@ -36,7 +59,10 @@ describe('seo', () => {
     expect(p).not.toHaveProperty('aggregateRating');
     expect(p).not.toHaveProperty('review');
     expect(p.brand).toMatchObject({ name: 'GoodBiz Hygiene' });
-    expect(p.additionalProperty).toContainEqual({ '@type': 'PropertyValue', name: 'HSN Code', value: '3402 50' });
+    expect(p.additionalProperty).toContainEqual({ '@type': 'PropertyValue', name: 'HSN Code', propertyID: 'HSN', value: '3402 50' });
+    expect(p.sku).toBe('dish-wash-liquid');
+    expect(p['@id']).toBe(`${BASE}/products/dish-wash-liquid/#product`);
+    expect(p.countryOfOrigin).toMatchObject({ '@type': 'Country', name: 'India' });
   });
   it('product carries category title, variants and pack sizes', () => {
     const p: any = productJsonLd(sampleProduct, `${BASE}/products/dish-wash-liquid/`);

@@ -4,10 +4,11 @@ import LabelHero from '../components/LabelHero.astro';
 import ProcessSteps from '../components/ProcessSteps.astro';
 import Faq from '../components/Faq.astro';
 import QuoteCard from '../components/QuoteCard.astro';
-import { faqJsonLd } from '../lib/seo';
+import { faqJsonLd, buildKeywords } from '../lib/seo';
+import { ogCard } from '../lib/product-image';
 import { useI18n } from '../i18n/page';
 
-const { info, ui, lp, fmt } = useI18n(Astro.url);
+const { lang, info, ui, lp, fmt } = useI18n(Astro.url);
 const L = ui.privateLabel;
 const t = ui.terms;
 
@@ -24,8 +25,10 @@ const breadcrumbs = [
   title={L.title}
   description={L.description}
   path="/private-label/"
+  ogImage={ogCard(`${lang}/private-label.png`)}
+  keywords={buildKeywords(ui.seo.keywords.privateLabel)}
   breadcrumbs={breadcrumbs}
-  jsonLd={[faqJsonLd(faqs, info.hreflang)]}
+  jsonLd={[faqJsonLd(faqs, info.hreflang, lp('/private-label/'))]}
   dark
 >
   <LabelHero breadcrumbs={breadcrumbs} />

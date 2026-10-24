@@ -20,6 +20,99 @@ const en = {
     tagline: site.tagline,
   },
 
+  /**
+   * Search metadata. `entity` is how the company is described to search engines and AI answers
+   * (Organization structured data, llms.txt): keep the facts exactly (merchant exporter, sources
+   * from vetted Indian manufacturers, does not manufacture).
+   *
+   * `keywords`: the <meta name="keywords"> list of each page type (Bing, Yandex, Baidu and Naver may
+   * read it; Google ignores it). Write the phrases buyers in your language actually type into a
+   * search box, not word-for-word translations. {name}/{nameLower} is the product or range name,
+   * {kw} the product's main search term (its `keyword` field), {hsn} its HSN code (e.g. 3402 50),
+   * {hsn4} the 4-digit heading (3402). `productMarkets` names markets where your language is
+   * spoken. A page never shows more than 12. See docs/seo-keywords.md.
+   */
+  seo: {
+    entity:
+      'GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter of soaps and home-care products from India. It sources from vetted Indian manufacturers and does not manufacture.',
+    keywords: {
+      home: [
+        'soap exporter India',
+        'detergent supplier India',
+        'home care products exporter India',
+        'cleaning products manufacturers India',
+        'private label soap and detergent',
+        'wholesale soap and detergent',
+        'HSN 3401 3402 exporter',
+      ],
+      products: [
+        'soap and detergent products India',
+        'cleaning products wholesale India',
+        'home care products catalogue',
+        'bulk soap and detergent export',
+        'HSN code list soaps detergents',
+      ],
+      category: [
+        '{nameLower} exporter India',
+        '{nameLower} supplier India',
+        '{nameLower} manufacturers India',
+        'wholesale {nameLower}',
+        'private label {nameLower}',
+        'HSN {hsn}',
+      ],
+      product: [
+        '{kw} exporter India',
+        '{kw} supplier India',
+        '{kw} manufacturers India',
+        'bulk {kw}',
+        'wholesale {kw}',
+        '{kw} HSN code {hsn}',
+        '{kw} for import',
+      ],
+      /** Added for products offered under private label. */
+      productPrivateLabel: ['private label {kw}', 'OEM {kw}'],
+      /** Two markets where buyers of your language are: "{kw} supplier <country or region>". */
+      productMarkets: ['{kw} supplier UAE', '{kw} supplier Africa'],
+      privateLabel: [
+        'private label soap manufacturer India',
+        'private label cleaning products',
+        'OEM detergent India',
+        'own brand soap supplier',
+        'white label home care products',
+      ],
+      exportProcess: [
+        'import soap from India',
+        'export documents soaps detergents',
+        'FOB CIF CFR India',
+        'COA MSDS certificate of origin',
+        'container shipping from India',
+      ],
+      about: ['GoodBiz Hygiene', 'GoodBiz Global', 'merchant exporter India', 'soap and detergent exporter India'],
+      faq: ['soap import FAQ', 'MOQ soaps detergents India', 'HSN code soap detergent', 'export lead time India'],
+      contact: ['soap price quote India', 'detergent quotation', 'GoodBiz Hygiene contact', 'home care products enquiry'],
+      blog: ['soap import guide', 'detergent buying guide', 'cleaning products import India', 'HSN 3401 vs 3402'],
+      post: ['import from India', 'buyer guide'],
+    },
+  },
+
+  /**
+   * The "Quick facts" box (home and about pages): six short, self-contained facts that search
+   * engines and AI assistants can quote. Incoterms, ports and lead time come from `terms`.
+   */
+  quickFacts: {
+    heading: 'Quick facts',
+    what: 'What we export',
+    whatValue:
+      'Soaps, detergents, dish wash, surface cleaners and soap raw materials, sourced from vetted Indian manufacturers. GoodBiz Hygiene is a merchant exporter and does not manufacture.',
+    hsn: 'HSN codes',
+    hsnValue: '3401 (soaps) and 3402 (detergents and cleaning preparations); the 8-digit code is confirmed per order',
+    terms: 'Incoterms and payment',
+    port: 'Ports',
+    moq: 'Minimum order',
+    moqValue: 'No fixed minimum: trial orders, part loads and mixed containers are quoted, and private label is available on most products',
+    lead: 'Lead time',
+  },
+
   /** The export terms (src/config/site.ts). Translate the meaning exactly; keep FOB, CIF, CFR, T/T, LC. */
   terms: {
     incoterms: site.exportTerms.incoterms,
@@ -54,7 +147,7 @@ const en = {
     /** Alt text for a pack drawing (no render available). */
     drawingAlt: 'Illustration of {nameLower}',
     /** Alt text for a real product or category photo. */
-    photoAlt: '{name} from GoodBiz',
+    photoAlt: '{name}, exported from India by GoodBiz Hygiene',
     categoryRenderAlt: 'Illustration of typical {nameLower} packs',
     rangeAlt: 'Illustration of the GoodBiz Hygiene range in typical export packs',
     portAlt: 'Gantry cranes loading a container ship at night at the International Container Transshipment Terminal in Kochi, India',
@@ -125,9 +218,9 @@ const en = {
   },
 
   home: {
-    title: 'Soap & Home-Care Products Exporter & Supplier from India',
+    title: 'Soap, Detergent & Cleaner Exporter & Supplier from India',
     description:
-      'GoodBiz Hygiene, a GoodBiz Global company, exports soaps, detergents and home-care products from vetted Indian manufacturers, with private label and mixed containers.',
+      'GoodBiz Hygiene exports soaps, detergents and home-care products from vetted Indian manufacturers: bulk or private label, mixed containers, FOB/CIF quotes.',
     eyebrow: 'Soaps · Detergents · Home care',
     h1a: 'Soap & Home Care',
     h1b: 'Exported from India.',
@@ -177,9 +270,9 @@ const en = {
   },
 
   productsIndex: {
-    title: 'Soap, Detergent & Cleaning Products Exporter & Supplier from India',
+    title: 'Soap, Detergent & Cleaning Products for Export from India',
     description:
-      'Browse {n} soap, laundry, kitchen, surface-cleaner and raw-material products sourced from vetted Indian manufacturers, with HSN codes and private label options.',
+      '{n} soaps, detergents, cleaners and raw materials from vetted Indian manufacturers, each with HSN code, pack sizes and private label. Mixed containers.',
     hsnLink: 'HSN codes by product',
     rangeFull: 'The range in full',
     hsnH: 'Which HSN code applies to each product?',
@@ -214,7 +307,7 @@ const en = {
     packSizes: 'Pack sizes',
     packaging: 'Packaging options',
     galleryH: 'More fragrances, in photos',
-    specH: 'What are the typical specifications?',
+    specH: 'What are the typical specifications of {nameLower}?',
     specNote: '{name}: typical values for export grades. Final values are confirmed with the manufacturer per order.',
     aboutAria: 'About {name}',
     loadH: 'Container loading (approx.)',
@@ -238,7 +331,7 @@ const en = {
   },
 
   blogIndex: {
-    title: 'Export Guides for Soap & Cleaning Product Buyers',
+    title: 'Import Guides: Soaps & Cleaning Products from India',
     description:
       'Practical guides for importers of soaps, detergents and home-care products from India: HSN codes, MOQ, documents, private label and shipping.',
     l1: 'Buyer guides.',
@@ -256,7 +349,7 @@ const en = {
   },
 
   contact: {
-    title: 'Request a Quote: Soap & Home-Care Exporter & Supplier from India',
+    title: 'Request a Quote: Soaps & Detergents from India',
     description:
       'Request a quote from GoodBiz Hygiene for soaps, detergents and home-care products from India. Send your products, pack sizes and port by email or WhatsApp.',
     l1: 'Request a quote.',
@@ -312,9 +405,9 @@ const en = {
   },
 
   about: {
-    title: 'About GoodBiz Hygiene: Soap & Home-Care Exporter & Supplier from India',
+    title: 'About GoodBiz Hygiene: Soap & Detergent Exporter, India',
     description:
-      'GoodBiz Hygiene is the home-care and hygiene export division of GoodBiz Global, a merchant exporter from India, and a sister brand of GoodBiz Agro.',
+      'GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter of soaps and home-care products from India, sourced from vetted Indian manufacturers.',
     l1: 'GoodBiz Hygiene.',
     l2: 'A {parent} company.',
     lead: 'GoodBiz Hygiene is the home-care and hygiene export division of {parent}, a merchant exporter from India, and a sister brand of GoodBiz Agro.',
@@ -333,9 +426,9 @@ const en = {
   },
 
   faqPage: {
-    title: 'FAQ: Soap & Home-Care Exporter & Supplier from India',
+    title: 'Importer FAQ: Buying Soaps & Detergents from India',
     description:
-      'Answers for importers buying soaps, detergents and cleaners from India through GoodBiz Hygiene: sourcing, private label, MOQ, incoterms, documents and lead times.',
+      'Answers for importers buying soaps, detergents and cleaners from India: sourcing, private label, MOQ, incoterms, documents and lead times.',
     l1: 'Buyer questions.',
     l2: 'Straight answers.',
     lead: 'How GoodBiz Hygiene sources, quotes and ships soaps and home-care products from India. Product-specific questions are answered on each product page.',
@@ -408,7 +501,7 @@ const en = {
   ],
 
   exportProcess: {
-    title: 'Export Process: Soap & Home-Care Exporter & Supplier from India',
+    title: 'Export Process: Importing Soaps & Detergents from India',
     description:
       'How GoodBiz Hygiene exports soaps, detergents and cleaners from India: quotation, samples, incoterms, payment terms, documents, ports and typical lead times.',
     lead: 'The steps, terms and documents for buying soaps and home-care products from India through GoodBiz Hygiene.',
@@ -460,6 +553,8 @@ const en = {
     processL1: 'What are the steps',
     processL2: 'from enquiry to shipment?',
     processIntro: 'Six steps, with your approval on the quotation, samples and proforma invoice before anything is produced.',
+    /** The name of the six steps in structured data (HowTo) for search engines. */
+    howToName: 'How to import soaps and home-care products from India through GoodBiz Hygiene',
     /** {incoterms} and {port} are filled in. */
     steps: [
       { name: 'Enquiry', text: 'Send the products, pack sizes, quantity, destination port and any private-label needs, using the enquiry form, email or WhatsApp.' },
@@ -497,9 +592,9 @@ const en = {
   },
 
   privateLabel: {
-    title: 'Private Label Soaps & Cleaning Products: Exporter & Supplier from India',
+    title: 'Private Label Soaps & Cleaning Products from India (OEM)',
     description:
-      'Private label soaps, detergents and cleaners from India: your artwork, fragrance, colour and pack sizes, made by vetted Indian manufacturers and exported by GoodBiz Hygiene.',
+      'Private label soaps, detergents and cleaners from India: your artwork, fragrance, colour and pack sizes, made by vetted Indian manufacturers. Mixed containers.',
     lead: 'Sell soaps, detergents and cleaners under your own brand. GoodBiz Hygiene matches your brief to a vetted Indian manufacturer, manages samples and artwork, and ships the finished goods to your port.',
     /** "Your brand, on our shelf": the page's hero with a live label (src/components/LabelHero.astro). */
     hero: {

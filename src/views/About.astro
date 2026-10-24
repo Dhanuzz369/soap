@@ -5,6 +5,9 @@ import QuoteCard from '../components/QuoteCard.astro';
 import site from '../config/site';
 import { getProductsByCategory } from '../lib/products';
 import { useI18n } from '../i18n/page';
+import { buildKeywords } from '../lib/seo';
+import { ogCard } from '../lib/product-image';
+import QuickFacts from '../components/QuickFacts.astro';
 
 const { lang, ui, lp, fmt } = useI18n(Astro.url);
 const A = ui.about;
@@ -26,6 +29,9 @@ const breadcrumbs = [
   title={A.title}
   description={A.description}
   path="/about/"
+  ogImage={ogCard(`${lang}/about.png`)}
+  keywords={buildKeywords(ui.seo.keywords.about)}
+  pageType="AboutPage"
   breadcrumbs={breadcrumbs}
   dark
 >
@@ -46,6 +52,8 @@ const breadcrumbs = [
       <p>{A.what2}</p>
     </div>
   </section>
+
+  <QuickFacts />
 
   <nav class="wrap sec" aria-labelledby="ranges-h">
     <div class="sec-head" data-reveal>

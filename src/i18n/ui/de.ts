@@ -5,11 +5,113 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '2d63fbf41757';
+export const sourceHash = '9e5d353955e5';
 
 const de: UiPartial = {
   meta: {
     tagline: 'Seifen und Haushaltspflegeprodukte, exportiert aus Indien',
+  },
+
+  seo: {
+    entity: 'GoodBiz Hygiene, ein Unternehmen der GoodBiz Global, ist ein Handelsexporteur von Seifen und Haushaltsreinigern aus Indien. Es bezieht die Ware von geprüften indischen Herstellern und produziert nicht selbst.',
+    keywords: {
+      home: [
+        'Seife Exporteur Indien',
+        'Waschmittel Lieferant Indien',
+        'Haushaltsreiniger aus Indien',
+        'Seifenhersteller Indien',
+        'Seife Handelsmarke',
+        'Seife und Waschmittel Großhandel',
+        'HS-Code 3401 3402',
+      ],
+      products: [
+        'Seifen und Waschmittel aus Indien',
+        'Reinigungsmittel Großhandel',
+        'Haushaltsreiniger Sortiment',
+        'Seife aus Indien importieren',
+        'Zolltarifnummern Seifen',
+      ],
+      category: [
+        '{name} Exporteur Indien',
+        '{name} Lieferant Indien',
+        '{name} Hersteller Indien',
+        '{name} Großhandel',
+        '{name} Handelsmarke',
+        'HSN {hsn}',
+      ],
+      product: [
+        '{kw} Exporteur Indien',
+        '{kw} Lieferant Indien',
+        '{kw} Hersteller Indien',
+        '{kw} Großgebinde',
+        '{kw} Großhandel',
+        '{kw} Zolltarifnummer {hsn}',
+        '{kw} aus Indien importieren',
+      ],
+      productPrivateLabel: [
+        '{kw} Handelsmarke',
+        '{kw} OEM',
+      ],
+      productMarkets: [
+        '{kw} Lieferant Deutschland',
+        '{kw} Großhandel Europa',
+      ],
+      privateLabel: [
+        'Seife Handelsmarke Indien',
+        'Reinigungsmittel Eigenmarke',
+        'Waschmittel OEM Indien',
+        'Lieferant für Seife unter eigener Marke',
+        'Haushaltsreiniger White Label',
+      ],
+      exportProcess: [
+        'Seife aus Indien importieren',
+        'Exportdokumente Seifen',
+        'FOB CIF CFR Indien',
+        'COA MSDS Ursprungszeugnis',
+        'Container aus Indien',
+      ],
+      about: [
+        'GoodBiz Hygiene',
+        'GoodBiz Global',
+        'Handelsexporteur Indien',
+        'Seifen- und Waschmittelexporteur Indien',
+      ],
+      faq: [
+        'FAQ Seife importieren',
+        'MOQ Seifen Waschmittel Indien',
+        'HS-Code Seife Waschmittel',
+        'Lieferzeit Export Indien',
+      ],
+      contact: [
+        'Angebot Seife Indien',
+        'Preis Waschmittel Export',
+        'Kontakt GoodBiz Hygiene',
+        'Anfrage Haushaltsreiniger',
+      ],
+      blog: [
+        'Ratgeber Seife importieren',
+        'Einkaufsratgeber Waschmittel',
+        'Reinigungsmittel aus Indien importieren',
+        'HSN 3401 oder 3402',
+      ],
+      post: [
+        'aus Indien importieren',
+        'Einkaufsratgeber',
+      ],
+    },
+  },
+
+  quickFacts: {
+    heading: 'Kurz und knapp',
+    what: 'Was wir exportieren',
+    whatValue: 'Seifen, Waschmittel, Spülmittel, Oberflächenreiniger und Seifenrohstoffe von geprüften indischen Herstellern. GoodBiz Hygiene ist Handelsexporteur und produziert nicht selbst.',
+    hsn: 'HSN-Codes',
+    hsnValue: '3401 (Seifen) und 3402 (Waschmittel und Reinigungszubereitungen); der 8-stellige Code wird je Auftrag bestätigt',
+    terms: 'Incoterms und Zahlung',
+    port: 'Häfen',
+    moq: 'Mindestbestellmenge',
+    moqValue: 'Keine feste Mindestmenge: Probeaufträge, Teilladungen und Mischcontainer werden angeboten, eine Handelsmarke ist für die meisten Produkte möglich',
+    lead: 'Lieferzeit',
   },
 
   terms: {
@@ -41,7 +143,7 @@ const de: UiPartial = {
     exportProcessFull: 'Der Exportablauf im Detail',
     renderAlt: 'Illustration: {name} in einer typischen Exportverpackung',
     drawingAlt: 'Illustration: {name}',
-    photoAlt: '{name} von GoodBiz',
+    photoAlt: '{name}, aus Indien exportiert von GoodBiz Hygiene',
     categoryRenderAlt: 'Illustration typischer Verpackungen: {name}',
     rangeAlt: 'Illustration des Sortiments von GoodBiz Hygiene in typischen Exportverpackungen',
     portAlt: 'Portalkräne beladen nachts ein Containerschiff am International Container Transshipment Terminal in Kochi, Indien',
@@ -110,9 +212,8 @@ const de: UiPartial = {
   },
 
   home: {
-    title: 'Seifen und Haushaltspflege: Exporteur und Lieferant aus Indien',
-    description:
-      'GoodBiz Hygiene, ein Unternehmen von GoodBiz Global, exportiert Seifen, Waschmittel und Haushaltsreiniger geprüfter indischer Hersteller, mit Handelsmarke und gemischten Containern.',
+    title: 'Seifen, Waschmittel & Reiniger – Exporteur aus Indien',
+    description: 'GoodBiz Hygiene exportiert Seifen, Waschmittel und Haushaltsreiniger von geprüften indischen Herstellern: Großgebinde oder Handelsmarke, Mischcontainer.',
     eyebrow: 'Seifen · Waschmittel · Haushaltspflege',
     h1a: 'Seifen und Haushaltspflege',
     h1b: 'Exportiert aus Indien.',
@@ -160,9 +261,8 @@ const de: UiPartial = {
   },
 
   productsIndex: {
-    title: 'Seifen, Waschmittel und Reiniger: Exporteur und Lieferant aus Indien',
-    description:
-      'Entdecken Sie {n} Produkte aus Seife, Wäschepflege, Küche, Oberflächenreinigung und Rohstoffen von geprüften indischen Herstellern, mit HSN-Codes und Handelsmarken-Optionen.',
+    title: 'Seifen, Waschmittel und Reiniger für den Export aus Indien',
+    description: '{n} Seifen, Waschmittel, Reiniger und Rohstoffe von geprüften indischen Herstellern, jeweils mit HSN-Code, Packungsgrößen und Handelsmarke. Mischcontainer.',
     hsnLink: 'HSN-Codes nach Produkt',
     rangeFull: 'Das gesamte Sortiment',
     hsnH: 'Welcher HSN-Code gilt für welches Produkt?',
@@ -196,7 +296,7 @@ const de: UiPartial = {
     packSizes: 'Packungsgrößen',
     packaging: 'Verpackungsoptionen',
     galleryH: 'Weitere Düfte im Bild',
-    specH: 'Was sind die typischen Spezifikationen?',
+    specH: 'Welche typischen Spezifikationen hat {name}?',
     specNote: '{name}: typische Werte für Exportqualitäten. Die endgültigen Werte werden je Auftrag mit dem Hersteller bestätigt.',
     aboutAria: 'Über {name}',
     loadH: 'Containerbeladung (ca.)',
@@ -211,7 +311,7 @@ const de: UiPartial = {
   },
 
   category: {
-    title: '{name}: Exporteur und Lieferant aus Indien',
+    title: '{name} – Export aus Indien',
     hsnMeta: '{n} Produkte · achtstelliger ITC-HS-Code wird je Auftrag bestätigt',
     seeProducts: 'Die {n} Produkte ansehen',
     productsH: 'Welche Produkte der Kategorie „{name}“ liefern wir?',
@@ -219,9 +319,8 @@ const de: UiPartial = {
   },
 
   blogIndex: {
-    title: 'Exportratgeber für Einkäufer von Seifen und Reinigungsprodukten',
-    description:
-      'Praxisnahe Ratgeber für Importeure von Seifen, Waschmitteln und Haushaltspflegeprodukten aus Indien: HSN-Codes, MOQ, Dokumente, Handelsmarke und Versand.',
+    title: 'Import-Ratgeber: Seifen und Reiniger aus Indien',
+    description: 'Praxisnahe Ratgeber für Importeure von Seifen, Waschmitteln und Haushaltsreinigern aus Indien: HSN-Codes, MOQ, Dokumente, Handelsmarke und Seefracht.',
     l1: 'Einkaufsratgeber.',
     l2: 'Für den Import von Seifen und Haushaltspflege.',
     lead: 'Verständliche Hinweise für Importeure und Händler: Einreihung, Kosten, Dokumente und Produktauswahl.',
@@ -237,9 +336,8 @@ const de: UiPartial = {
   },
 
   contact: {
-    title: 'Angebot anfragen: Seifen und Haushaltspflege, Exporteur und Lieferant aus Indien',
-    description:
-      'Fragen Sie bei GoodBiz Hygiene ein Angebot für Seifen, Waschmittel und Haushaltspflegeprodukte aus Indien an. Senden Sie Produkte, Packungsgrößen und Hafen per E-Mail oder WhatsApp.',
+    title: 'Angebot anfragen: Seifen und Waschmittel aus Indien',
+    description: 'Fragen Sie bei GoodBiz Hygiene ein Angebot für Seifen, Waschmittel und Haushaltsreiniger aus Indien an. Produkte, Packungen und Hafen per E-Mail oder WhatsApp.',
     l1: 'Angebot anfragen.',
     l2: 'Aus Indien, zu Ihrem Hafen.',
     lead: 'Teilen Sie uns Ihren Bedarf mit: Produkte, Packungsgrößen, Menge und Zielhafen. GoodBiz Hygiene antwortet mit Preisen, typischen Spezifikationen und Lieferzeiten.',
@@ -291,9 +389,8 @@ const de: UiPartial = {
   },
 
   about: {
-    title: 'Über GoodBiz Hygiene: Seifen und Haushaltspflege, Exporteur und Lieferant aus Indien',
-    description:
-      'GoodBiz Hygiene ist die Exportsparte für Haushaltspflege und Hygiene von GoodBiz Global, einem Handelsexporteur aus Indien, und eine Schwestermarke von GoodBiz Agro.',
+    title: 'GoodBiz Hygiene: Exporteur von Seifen und Waschmitteln',
+    description: 'GoodBiz Hygiene, ein Unternehmen der GoodBiz Global, ist ein indischer Handelsexporteur von Seifen und Haushaltsreinigern von geprüften indischen Herstellern.',
     l1: 'GoodBiz Hygiene.',
     l2: 'Ein Unternehmen von {parent}.',
     lead: 'GoodBiz Hygiene ist die Exportsparte für Haushaltspflege und Hygiene von {parent}, einem Handelsexporteur aus Indien, und eine Schwestermarke von GoodBiz Agro.',
@@ -312,9 +409,8 @@ const de: UiPartial = {
   },
 
   faqPage: {
-    title: 'FAQ: Seifen und Haushaltspflege, Exporteur und Lieferant aus Indien',
-    description:
-      'Antworten für Importeure, die Seifen, Waschmittel und Reiniger aus Indien über GoodBiz Hygiene beziehen: Beschaffung, Handelsmarke, MOQ, Incoterms, Dokumente und Lieferzeiten.',
+    title: 'FAQ für Importeure: Seifen und Waschmittel aus Indien',
+    description: 'Antworten für Importeure von Seifen, Waschmitteln und Reinigern aus Indien: Beschaffung, Handelsmarke, MOQ, Incoterms, Dokumente und Lieferzeiten.',
     l1: 'Fragen von Einkäufern.',
     l2: 'Klare Antworten.',
     lead: 'Wie GoodBiz Hygiene Seifen und Haushaltspflegeprodukte aus Indien beschafft, anbietet und verschifft. Produktspezifische Fragen beantworten wir auf der jeweiligen Produktseite.',
@@ -383,9 +479,8 @@ const de: UiPartial = {
   ],
 
   exportProcess: {
-    title: 'Exportablauf: Seifen und Haushaltspflege, Exporteur und Lieferant aus Indien',
-    description:
-      'So exportiert GoodBiz Hygiene Seifen, Waschmittel und Reiniger aus Indien: Angebot, Muster, Incoterms, Zahlungsbedingungen, Dokumente, Häfen und typische Lieferzeiten.',
+    title: 'Exportablauf: Seifen und Waschmittel aus Indien importieren',
+    description: 'So exportiert GoodBiz Hygiene Seifen, Waschmittel und Reiniger aus Indien: Angebot, Muster, Incoterms, Zahlung, Dokumente, Häfen und übliche Lieferzeiten.',
     lead: 'Die Schritte, Bedingungen und Dokumente für den Bezug von Seifen und Haushaltspflegeprodukten aus Indien über GoodBiz Hygiene.',
     route: {
       h1a: 'Von Indiens Häfen',
@@ -430,6 +525,7 @@ const de: UiPartial = {
     processL1: 'Welche Schritte führen',
     processL2: 'von der Anfrage zur Verschiffung?',
     processIntro: 'Sechs Schritte, bei denen Angebot, Muster und Proforma-Rechnung von Ihnen freigegeben werden, bevor etwas produziert wird.',
+    howToName: 'Seifen und Haushaltsreiniger über GoodBiz Hygiene aus Indien importieren',
     steps: [
       { name: 'Anfrage', text: 'Senden Sie Produkte, Packungsgrößen, Menge, Zielhafen und etwaige Wünsche zur Handelsmarke über das Anfrageformular, per E-Mail oder WhatsApp.' },
       { name: 'Angebot', text: 'Wir nennen Preise je Packung mit typischen Spezifikationen, dem gewünschten Incoterm und der Lieferzeit. {incoterms}.' },
@@ -465,9 +561,8 @@ const de: UiPartial = {
   },
 
   privateLabel: {
-    title: 'Handelsmarken für Seifen und Reiniger: Exporteur und Lieferant aus Indien',
-    description:
-      'Handelsmarken für Seifen, Waschmittel und Reiniger aus Indien: Ihr Artwork, Duft, Farbe und Packungsgrößen, hergestellt von geprüften indischen Herstellern und exportiert von GoodBiz Hygiene.',
+    title: 'Seifen und Reiniger als Handelsmarke aus Indien (OEM)',
+    description: 'Seifen, Waschmittel und Reiniger als Handelsmarke aus Indien: Ihr Design, Duft, Farbe und Ihre Packungsgrößen, von geprüften indischen Herstellern.',
     lead: 'Verkaufen Sie Seifen, Waschmittel und Reiniger unter Ihrer eigenen Marke. GoodBiz Hygiene ordnet Ihre Anforderungen einem geprüften indischen Hersteller zu, betreut Muster und Artwork und verschifft die Fertigware zu Ihrem Hafen.',
     hero: {
       h1a: 'Ihre Marke,',
