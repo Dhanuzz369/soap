@@ -35,6 +35,10 @@ Other useful commands:
 | `npm run i18n:sweep -- --lang fr` | With `npm run preview` running: opens every page of a language in Chrome and reports sideways scrolling or console errors. |
 | `npm run renders` | Re-draws the glossy studio cut-outs (transparent WebP) of each pack shape, the category groups and the range group (`range-cutout.webp`, used on the Products and Export Process pages) into `public/images/renders/`, plus the neem-leaf cut-out (needs Google Chrome). Run it after changing the 3D pack models in `src/scripts/three/`. Three.js is only used here, never on the live site. |
 | `npm run hero:images` | Re-makes the home hero's smaller photo copies and its blurred colour glows in `public/images/hero/`, and the 480px copies of every product photo for the Products page's photo shelf in `public/images/shelf/`. Run it after replacing one of the four hero photos (the list is `FAN_RANGES` in `src/lib/hero-fan.ts`) or after adding or replacing any product photo. |
+| `npm run icons` | Re-makes `favicon.ico`, the apple touch icon, the web-app icons and the square `logo-512.png` (used in Google's company data) from the leaf mark. |
+| `npm run og:cards` | Re-makes the 1200 × 630 share images in `public/og/`: one per main page and language, and one per product and range from its photo (needs Google Chrome). Run it after changing a page headline or adding a product or category photo. |
+| `npm run indexnow` | After launch: tells Bing, Yandex and other IndexNow search engines about every page (see the go-live checklist). Does nothing before launch. |
+| `npm run check:types` | Type-checks the site, including the structured data for search engines (an unknown schema.org property is an error). |
 | `npm run route:map` | Re-draws the dotted world map behind the Export Process page's hero ("the route") into `src/assets/route-map.svg`, from Natural Earth land data (public domain). Only needed after changing the map window, scale or dot spacing in `src/lib/route-map.ts`; the ports, regions and the sea-lane waypoints of each route live in that file too (a unit test checks that no route crosses a land dot). |
 
 ---
@@ -95,7 +99,8 @@ Each product is one text file in `src/content/products/`, named after its slug (
 
 The top of the file, between the two `---` lines, holds the facts in a simple `label: value` format:
 
-- `title`, `metaTitle`, `metaDescription`: the name, the browser-tab title and the Google snippet. Keep `metaDescription` between 120 and 160 characters.
+- `title`, `metaTitle`, `metaDescription`: the name, the browser-tab title and the Google snippet. Keep `metaTitle` to about 60 characters (" | GoodBiz Hygiene" is added automatically) and `metaDescription` between 120 and 160 characters: say what the product is, one or two facts, and what the buyer gets (private label, mixed containers, FOB/CIF).
+- `keyword`: the main search term buyers type for this product, for example `"dish wash liquid"`. It feeds the page's search keywords, headings and image text. See `docs/seo-keywords.md`.
 - `answer`: the short summary under the heading.
 - `variants`, `packSizes`, `packaging`: lists, one item per line starting with `- `.
 - `specs`: the specification table. **These are drafted "typical" values.** Check each one against your manufacturer's real specification sheet before launch.
@@ -123,6 +128,7 @@ The easiest way is to copy an existing post and change it. The top section needs
 ```yaml
 ---
 title: "How to Choose a Liquid Detergent Supplier in India"
+metaTitle: "Choosing a Liquid Detergent Supplier in India"            # optional: a shorter title for Google (about 60 characters)
 description: "A 120 to 160 character summary that appears on Google and on the blog list page, written for an importer deciding what to buy."
 date: 2026-11-02
 tags: ["liquid detergent", "sourcing"]
@@ -143,35 +149,51 @@ Adding posts is safe too. The checks look at every file in `src/content/blog/` a
 
 The site is published in 12 languages: English at `/`, and Arabic, French, Spanish, Portuguese, Russian, Simplified Chinese, German, Turkish, Indonesian, Swahili and Vietnamese at `/ar/`, `/fr/`, `/es/` … with the same page addresses after the prefix. A language menu sits in the bottom corner of every page, and a first-time visitor on an English page is sent to their browser's language if the site has it.
 
-- **French is fully translated.** The other languages show their menus and buttons in English until a translator fills them in; their pages show English text meanwhile.
+- **All 11 languages are fully translated** (`npm run i18n:check -- --strict` passes). If a translation goes missing or out of date, that page shows English text until it is fixed.
 - **Translators follow `docs/i18n-translator-guide.md`.** Interface text is in `src/i18n/ui/<language>.ts`; product, category and blog translations are in `src/content/i18n/<language>/`.
 - **When you edit an English product, category or post,** run `npm run i18n:check`: it lists the translations that are now out of date. Send those to the translator.
 - **Export terms** in `src/config/site.ts` are English. Each language repeats them in `terms` in its interface file; update those too when you change the terms.
 
 ---
 
-## 6. Launch checklist
+## 6. Go-live checklist
 
-Do these in order before the site goes public:
+Do these **in order**. Steps 1-5 happen before anyone can find the site; steps 6-13 after it is live.
 
-1. **Real contact details** in `src/config/site.ts` (email, phone, WhatsApp, address), and set `contactIsPlaceholder: false`.
-2. **Your domain** in `src/config/site.ts`: set `url` to your real address, for example `'https://www.goodbizhygiene.com'` (with `https://`, no slash at the end). Search engines, social previews and the sitemap all use it.
-3. **Correct the specifications.** Go through each product file and confirm the `specs`, `packSizes`, `moq` and HSN against your manufacturers' documents. Remove anything you cannot confirm.
-4. **Optional:** add product photos (section 3) and any true company `facts`.
-5. Run:
+**Be realistic about results.** Nobody can guarantee a first-place ranking on Google, Bing or in AI answers, and anyone who promises it is not being honest. What this site does is pull every lever that is in your hands: fast pages, clean structure, structured data, 12 languages, keyword-led titles, and text that search engines and AI assistants can quote. The rest comes from time, real enquiries, other sites linking to you, and new buyer guides. Expect the first impressions in Search Console within a few weeks and steady rankings over 3 to 6 months.
+
+### Before launch
+
+1. **Fill in `src/config/site.ts`:**
+   - `contact`: real email, phone, WhatsApp (digits only, with country code) and address; then set `contactIsPlaceholder: false`.
+   - `url`: your real domain, for example `'https://www.goodbizhygiene.com'` (with `https://`, no slash at the end). Canonical links, hreflang, share images, the sitemap, `llms.txt` and IndexNow all use it.
+   - `facts`: only true, checkable facts (`city`, `iec`, `founded`, `parentUrl`, `agroUrl`). Leave out anything you cannot prove.
+   - `profiles`: the full `https://` addresses of company profiles you own (LinkedIn, IndiaMART, TradeIndia, Alibaba…). Add them as you create them (step 11). They tell Google and AI assistants these profiles are the same company.
+2. **Correct the specifications.** Go through each product file and confirm `specs`, `packSizes`, `moq` and the HSN code against your manufacturers' documents. Remove anything you cannot confirm.
+3. **Set `launchReady: true`** in `src/config/site.ts`. This removes the "do not index" tag, opens `robots.txt` to search engines and AI crawlers, and creates the sitemap.
+4. **Run every check.** All must pass:
    ```bash
-   npm run build
-   npm run check:placeholders
+   npm run build && npm test && npm run test:build && npm run check:placeholders && npm run i18n:check -- --strict
    ```
-   It must say **"No PLACEHOLDER values found."** If it lists anything (leftover `PLACEHOLDER` text, the WhatsApp number still `910000000000`, or `contactIsPlaceholder` still `true`), fix it and run it again.
-6. **Languages:** run `npm run i18n:check`. Any language that is not complete still publishes pages with English text under its address. Either finish it (`npm run i18n:check -- --lang <code> --strict` must pass) or accept that before launch.
-7. **Flip the switch:** in `src/config/site.ts` change `launchReady: false` to `launchReady: true`. This removes the "do not index" tag, opens `robots.txt` to search engines and creates the sitemap. (`npm run check:placeholders` will refuse to pass if any placeholder remains while this is `true`.)
-8. Run the launch gate. Everything must pass:
-   ```bash
-   npm test && npm run build && npm run test:build && npm run check:placeholders
-   ```
-   Then deploy (section 7).
-9. After it is live, add the site to **Google Search Console** and **Bing Webmaster Tools** and submit `https://your-domain/sitemap-index.xml`.
+   `check:placeholders` must say **"No PLACEHOLDER values found."**
+5. **Deploy** (section 7). Then open these on the live domain and check they load: `/robots.txt` (says `Allow: /`), `/sitemap-index.xml`, `/llms.txt`, `/llms-full.txt`, and `/1ea134f5e8470b6f56bd1766bc62c1b1.txt` (the IndexNow key, `indexNowKey` in `site.ts`).
+
+### After launch
+
+6. **Google Search Console** (<https://search.google.com/search-console>): add the site. The easiest proof of ownership is the "HTML tag" method: copy only the `content="…"` value into `verification.google` in `site.ts`, rebuild, deploy, then click Verify. (A "Domain" property verified through your DNS provider works too and needs no tag.) Then open **Sitemaps** and submit `sitemap-index.xml`.
+7. **Bing Webmaster Tools** (<https://www.bing.com/webmasters>): sign in and choose "Import from Google Search Console" (fastest), or verify with the meta tag (`verification.bing`). Submit `https://your-domain/sitemap-index.xml`. Bing also feeds ChatGPT search, Copilot and DuckDuckGo. Optional for Russian and Central Asian buyers: **Yandex Webmaster** (`verification.yandex`).
+8. **Ping IndexNow:** `npm run build` then `npm run indexnow`. It tells Bing, Yandex, Seznam and Naver about every page at once. Run it again after each deploy that adds or changes pages. (It refuses to send anything until the site is launched and the live domain serves the key file.)
+9. **Request indexing of the key pages** in Search Console (URL Inspection → "Request indexing"), one by one: the home page, `/products/`, the five range pages, your most important products (for example dish wash liquid, detergent powder, toilet soap, soap noodles, LABSA), `/private-label/`, `/export-process/`, and the home pages of the languages you sell into most (`/ar/`, `/fr/`, `/es/` …).
+10. **Google Business Profile** (<https://business.google.com>): only if you have a real address that can receive Google's verification. Use exactly the same company name, address and phone as on the site. Without a walk-in office, set it up as a service-area business, or skip it.
+11. **Get the first links from other sites.** These matter more than anything else on this list:
+    - The GoodBiz Global and GoodBiz Agro websites: link to GoodBiz Hygiene from their home or "Our companies" pages, and put their addresses in `facts.parentUrl` and `facts.agroUrl`.
+    - B2B directories where importers search: IndiaMART, TradeIndia, ExportersIndia, Alibaba, go4WorldBusiness, Tradekey. Use the same name, description ("merchant exporter of soaps and home-care products from India") and contact details everywhere, link to the site, and add each profile URL to `profiles` in `site.ts`.
+    - Chamber of commerce and export council listings you are a member of (for example your local chamber, FIEO, or the export promotion council for your products).
+    - A LinkedIn company page, then share each new buyer guide there.
+12. **Monitor** in Search Console every week for the first month, then monthly: **Page indexing** (fix anything "Not indexed" that should be), **Core Web Vitals** (field data appears once there is traffic; the lab scores at launch were 96-100 on mobile), **Enhancements** (structured data warnings), and **Performance → Queries** (which searches bring visitors). Do the same in Bing Webmaster Tools.
+13. **Keep publishing.** One new buyer guide a month (section 5), aimed at a question importers really ask, does more for rankings and AI answers than any tag. Every quarter, compare the queries in Search Console with `docs/seo-keywords.md` and adjust product `keyword`s and titles.
+
+What is already built in, and how it was checked, is in `docs/seo-launch-audit.md`; the keyword plan for every product and language is in `docs/seo-keywords.md`.
 
 ---
 
@@ -210,7 +232,7 @@ Settings to enter on any of them:
 | --- | --- |
 | `src/config/site.ts` | Contact details, export terms, launch switch |
 | `src/content/products/` | One file per product |
-| `src/content/categories/` | One file per category |
+| `src/content/categories/` | One file per category (`summary` is the line under the title; `metaDescription` is the Google snippet) |
 | `src/content/blog/` | Blog posts |
 | `src/content/i18n/<language>/` | Translations of products, categories and posts |
 | `src/i18n/` | Languages, interface text per language (`ui/`), language detection |
@@ -219,6 +241,9 @@ Settings to enter on any of them:
 | `src/styles/` | Colours, fonts and layout |
 | `public/images/products/` | Product photos (`<slug>.webp`) |
 | `public/fonts/` | Self-hosted fonts (Geist with Latin, Cyrillic and Vietnamese subsets, Newsreader italic for accents, IBM Plex Sans Arabic for Arabic pages; SIL Open Font License) |
+| `src/lib/seo.ts`, `src/lib/llms.ts`, `src/lib/robots.ts` | Search data: titles, keywords, structured data, `llms.txt`, `robots.txt` |
+| `public/og/` | Share images for social media and chat apps (`npm run og:cards`) |
+| `docs/seo-launch-audit.md`, `docs/seo-keywords.md` | What was checked for search and AI answers, and the keyword plan |
 | `tests/` | Automatic checks |
 
 The site is built with [Astro](https://astro.build). The home page hero is "the fan": four real product photos, one per main range (bath soaps, laundry, kitchen, surface cleaners), held like a hand of cards beside the headline. They deal out on load, shuffle every 5 seconds on larger screens (paused while a visitor points at, tabs into or scrolls past them), and the small dots below pick a range; on phones a sideways swipe changes the card. Without JavaScript, or with reduced motion, the fan simply sits still and every card is a link to its range.

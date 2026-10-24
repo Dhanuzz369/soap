@@ -81,14 +81,16 @@ Each file has a header between two `---` lines (the frontmatter) and a body belo
 
 ### 3.2 Translate
 
-`title`, `metaTitle`, `metaDescription`, `answer`, `hsnNote`, every item of `variants`, `packSizes` (unit words only, such as "can", "drum", "multipack"; keep the numbers and units), `packaging`, `specs` (both `label` and `value`), `moq`, `privateLabel` `options`, `containerLoad` (`ft20` and `ft40` text; keep the numbers), `uses`, `markets`, every `faqs` question and answer, `gallery` `alt` and `caption`, category `title`, `summary`, `intro`, blog `title`, `description`, `tags`, and the whole body.
+`title`, `metaTitle`, `metaDescription`, `keyword`, `answer`, `hsnNote`, every item of `variants`, `packSizes` (unit words only, such as "can", "drum", "multipack"; keep the numbers and units), `packaging`, `specs` (both `label` and `value`), `moq`, `privateLabel` `options`, `containerLoad` (`ft20` and `ft40` text; keep the numbers), `uses`, `markets`, every `faqs` question and answer, `gallery` `alt` and `caption`, category `title`, `summary`, `metaDescription`, `intro`, blog `title`, `metaTitle`, `description`, `tags`, and the whole body.
 
 Keep the same number of `specs` and `faqs` items as the English file, in the same order.
 
 ### 3.3 Length targets
 
 - `metaDescription` (products) and `description` (blog): **120 to 160 characters**. The tests fail below 70 or above 170.
-- `metaTitle`: keep `| GoodBiz Hygiene` at the end. The English pattern is "<Product> Exporter & Supplier from India | GoodBiz Hygiene"; use your language's translation of `common.exporterLine` from your UI file.
+- `metaTitle`: at most **60 characters** (32 for Chinese), without the brand: " | GoodBiz Hygiene" is added automatically. Pattern: "<Product>: <exporter and supplier from India>", using a shorter phrase (for example "exporter in India") when the long one does not fit. Blog `metaTitle` is a shorter version of the guide title for search results.
+- Category `metaDescription`: 120 to 160 characters (72 to 100 for Chinese), the Google snippet of the range page.
+- `keyword` (products): the words buyers in your language type into a search box for this product, in lower case unless it is a name (for example "liquide vaisselle", "洗洁精", "LABSA"). Not a literal translation of the English keyword: use the trade term your market uses. It fills the keyword templates in `seo.keywords` of your UI file. See `docs/seo-keywords.md`.
 
 ### 3.4 Links in the body
 
@@ -135,6 +137,12 @@ The tests check this, so that changing the terms later finds every file to updat
 - `faqs`, `exportProcess.faqs`, `privateLabel.faqs`: the answer "No. GoodBiz Hygiene is a merchant exporter…" must stay a clear "no".
 
 ---
+
+### 4.1 Search keywords and quick facts
+
+- `seo.entity`: one sentence that names the company the same way everywhere (search engines, AI assistants). Keep every fact: GoodBiz Hygiene, a GoodBiz Global company; merchant exporter of soaps and home-care products from India; sources from vetted Indian manufacturers; does not manufacture.
+- `seo.keywords`: short search phrases per page type, written the way buyers in your language search (not word-for-word). Keep the placeholders: `{kw}` (the product's `keyword`), `{name}` / `{nameLower}` (a range name), `{hsn}`. Use your market's terms for "private label", "wholesale", "bulk" and the customs code (HS, ТН ВЭД, GTİP…). `productMarkets` names two markets where your language is spoken. They never appear on the page, only in `<meta name="keywords">`.
+- `quickFacts`: six short facts shown on the home and about pages. Translate exactly; do not add claims.
 
 ## 5. Tone and wording
 
