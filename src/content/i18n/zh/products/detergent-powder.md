@@ -1,12 +1,13 @@
 ---
-sourceHash: "c252bad2fbfa"
+sourceHash: "1a547e59ad40"
 title: "洗衣粉"
 slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "洗衣粉印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的洗衣粉和洗涤剂粉：500 g至25 kg包装，有手洗和机洗两类等级，为进口商提供自有品牌和整柜装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "洗衣粉印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的洗衣粉批发：500 g至25 kg，手洗和机洗型。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "洗衣粉"
 answer: "洗衣粉是由表面活性剂、助洗剂和其他添加剂干混而成的粉状产品，用于手洗或洗衣机洗衣。配方在有效物含量和填料含量上各不相同，这决定了去污力和价格。GoodBiz Hygiene从经我们考察的印度制造商采购手洗和机洗等级的洗衣粉用于出口。"
 variants:
   - "手洗粉，经济型"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "9f781c932179"
+sourceHash: "5a4a8b081395"
 title: "Sabun Gliserin / Sabun Transparan"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "Sabun Gliserin dan Transparan: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun mandi gliserin dan transparan dari produsen India terseleksi: batang bening 75 g hingga 125 g aroma lidah buaya, madu, dan mawar, dengan private label."
+metaTitle: "Sabun Gliserin dan Transparan: Eksportir dari India"
+metaDescription: "Sabun gliserin dan transparan dari produsen India terseleksi: batang bening 75–125 g aroma lidah buaya, madu, mawar. Private label, kontainer campuran."
+keyword: "sabun gliserin"
 answer: "Sabun gliserin, yang juga dijual sebagai sabun transparan, adalah sabun mandi batang yang bening atau tembus cahaya, dibuat dengan kadar gliserin dan pelarut yang tinggi sehingga tampak seperti kaca atau ambar. Sabun ini dihargai karena teksturnya yang halus dan tampilannya yang premium. GoodBiz Hygiene mencarikannya dari produsen India yang telah diseleksi untuk ekspor dan private label."
 variants:
   - "Lidah buaya"

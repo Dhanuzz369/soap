@@ -1,12 +1,13 @@
 ---
-sourceHash: "48d8d4c59e96"
+sourceHash: "547b4d376403"
 title: "Kalıp Çamaşır Sabunu / Deterjan Kalıbı"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "Kalıp Çamaşır Sabunu ve Deterjan Kalıbı: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden kalıp çamaşır sabunu ve deterjan kalıbı: 100-250 g, %54-72 TFM, ithalatçılara özel marka ve konteyner yükleri."
+metaTitle: "Kalıp Çamaşır Sabunu ve Deterjan Kalıbı: Hindistan’dan İhracat"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden kalıp çamaşır sabunu ve deterjan kalıbı: 100–250 g, TFM %54–72. Özel marka, karışık konteyner ve FOB/CIF."
+keyword: "çamaşır sabunu"
 answer: "Kalıp çamaşır sabunu, kıyafetleri elde ovalayarak yıkamak için yapılmış katı bir sabun veya sabun-deterjan karışımı kalıbıdır. Kalıplar, yüksek Toplam Yağ Maddesi (TFM) içeren gerçek sabundan, dolgu ve yardımcı maddeler içeren daha düşük maliyetli deterjan kalıplarına kadar uzanır. GoodBiz Hygiene, ihracat için çamaşır kalıplarını kontrol edilmiş Hindistanlı üreticilerden birkaç kalitede tedarik eder."
 variants:
   - "Mavi kalıp (klasik, optik beyazlatıcı tonlu)"

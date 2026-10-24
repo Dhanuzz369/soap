@@ -1,12 +1,13 @@
 ---
-sourceHash: "095becea3801"
+sourceHash: "15d439c588c9"
 title: "LABSA (axit alkylbenzen sulfonic mạch thẳng)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
-metaTitle: "LABSA 90% và 96%: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "LABSA 90% và 96% từ nhà sản xuất Ấn Độ đã thẩm định, đóng thùng HDPE, IBC và flexitank cho cơ sở sản xuất và pha chế chất tẩy rửa."
+metaTitle: "LABSA 90% và 96%: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "LABSA 90% và 96% (axit alkyl benzen sulfonic mạch thẳng) từ nhà sản xuất Ấn Độ đã thẩm định, đóng phuy HDPE, IBC và flexitank. HSN 3402 31, báo giá FOB/CIF."
+keyword: "LABSA"
 answer: "LABSA (axit alkylbenzen sulfonic mạch thẳng) là chất hoạt động bề mặt anion chính dùng trong bột giặt, nước giặt và chất tẩy rửa. Đây là một axit sệt, màu sẫm, được trung hòa bằng xút hoặc soda để tạo thành tác nhân làm sạch hoạt tính. GoodBiz Hygiene cung ứng LABSA từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu cho cơ sở sản xuất chất tẩy rửa và nhà phân phối."
 variants:
   - "LABSA hàm lượng hoạt chất tối thiểu 90%"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "e4da7e02de7a"
+sourceHash: "d51786edaf5f"
 title: "SLES (Sodyum Lauril Eter Sülfat)"
 slug: sles
 category: industrial-raw-materials
 order: 3
 hsn: "3402 39"
-metaTitle: "SLES %28 ve %70: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden %28 ve %70 sodyum lauril eter sülfat (SLES); şampuan ve deterjan üreticileri için varil, IBC ve flexitank ambalajında."
+metaTitle: "SLES %28 ve %70: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden SLES %28 ve %70 (sodyum lauril eter sülfat); varil, IBC ve flexitank. HSN 3402 39, siparişe göre FOB/CIF teklif."
+keyword: "SLES"
 answer: "SLES (Sodyum Lauril Eter Sülfat), şampuanlarda, el sabunlarında, vücut şampuanlarında, sıvı bulaşık deterjanlarında ve deterjanlarda kullanılan, zengin köpük üreten yumuşak bir anyonik yüzey aktif maddedir. %28 veya %70 aktif güçte, berrak ile açık renkli arası viskoz bir sıvı olarak satılır. GoodBiz Hygiene, SLES’i formülatörlere ve distribütörlere ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "%28 aktif SLES (sıvı, kullanıma hazır)"

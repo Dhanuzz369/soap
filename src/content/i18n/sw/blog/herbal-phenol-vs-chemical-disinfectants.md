@@ -1,6 +1,7 @@
 ---
-sourceHash: "66cae22a82fe"
+sourceHash: "f39ee6f3d9e7"
 title: "Fenoli ya Mitishamba dhidi ya Dawa za Kemikali za Kuua Vijidudu: Wanunuzi wa Rejareja Wanapaswa Kujua Nini"
+metaTitle: "Fenoli ya Mitishamba au Dawa za Kemikali: Mwongozo"
 description: "Fenoli ya mitishamba dhidi ya dawa za kemikali za kuua vijidudu kwa rejareja: matumizi, uwekaji lebo, uainishaji na cha kumwuliza msafirishaji kwanza."
 date: 2026-09-24
 tags: ["fenoli ya mitishamba", "dawa za kuua vijidudu", "kisafishaji cha sakafu", "ununuzi wa rejareja"]

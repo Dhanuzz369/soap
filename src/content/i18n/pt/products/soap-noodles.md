@@ -1,12 +1,13 @@
 ---
-sourceHash: "386cf04101b2"
+sourceHash: "f2bf93b5815c"
 title: "Noodles de sabão (base de sabão)"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "Noodles de sabão: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Noodles de sabão nos graus 80:20 e 70:30 de palma e palmiste, de fabricantes indianos selecionados, em sacos de 25 kg e 50 kg para fabricantes de sabão."
+metaTitle: "Noodles de sabão: exportador e fornecedor da Índia"
+metaDescription: "Noodles de sabão (base de sabão) 80:20 e 70:30 de fabricantes indianos selecionados, em sacos de 25 e 50 kg para saboarias. HSN 3401 20, cotação FOB/CIF."
+keyword: "noodles de sabão"
 answer: "Os noodles de sabão são pequenos pellets de gordura e óleo saponificados e secos, usados como matéria-prima de base para fazer sabonetes, sabões para roupas e outros sabões em barra. São classificados pela proporção entre óleo de palma e óleo de palmiste e pela matéria graxa total (TFM). A GoodBiz Hygiene adquire noodles de sabão de fabricantes indianos selecionados, para exportação a fabricantes e distribuidores de sabão."
 variants:
   - "80:20 palma e palmiste (grau 1 / premium)"

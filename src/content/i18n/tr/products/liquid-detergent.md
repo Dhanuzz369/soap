@@ -1,12 +1,13 @@
 ---
-sourceHash: "a32b95104c89"
+sourceHash: "e01f264e3e3e"
 title: "Sıvı Çamaşır Deterjanı"
 slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Sıvı Çamaşır Deterjanı: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden sıvı çamaşır deterjanı: 500 ml-20 L ambalaj, elde ve makinede yıkama kaliteleri, özel marka ve karışık konteyner."
+metaTitle: "Sıvı Çamaşır Deterjanı: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden sıvı çamaşır deterjanı: 500 ml–20 L, elde ve makinede yıkama. Özel marka, karışık konteyner ve FOB/CIF teklif."
+keyword: "sıvı çamaşır deterjanı"
 answer: "Sıvı deterjan; yüzey aktif maddeleri, suyu ve katkıları birleştiren, soğuk veya ılık suda kolayca çözünen akışkan bir çamaşır temizleyicisidir. Hem elde yıkamaya hem çamaşır makinelerine uygundur ve tozun daha pratik, premium bir alternatifi olarak satılır. GoodBiz Hygiene, ihracat için sıvı deterjanı perakende ve dökme ambalajlarda kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Üstten yüklemeli makine ve elde yıkama"

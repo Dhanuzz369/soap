@@ -1,6 +1,7 @@
 ---
-sourceHash: "6de17572f082"
+sourceHash: "84702d62b584"
 title: "Graus de sabonete de banho explicados: TFM, grau 1 e grau 2, e por que isso importa"
+metaTitle: "Graus de sabonete: TFM, grau 1 ou grau 2 explicados"
 description: "O que significa TFM na especificação de um sabonete de banho, como os graus 1 e 2 são usados no comércio e como escolher o grau certo para o seu mercado."
 date: 2026-08-27
 tags: ["sabonete de banho", "TFM", "graus de sabonete", "especificações"]

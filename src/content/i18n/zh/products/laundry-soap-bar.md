@@ -1,12 +1,13 @@
 ---
-sourceHash: "48d8d4c59e96"
+sourceHash: "547b4d376403"
 title: "洗衣皂／洗涤皂块"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "洗衣皂／洗涤皂块印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的洗衣皂和洗涤皂块：100 g至250 g，TFM 54-72%等级，为进口商提供自有品牌和整柜装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "洗衣皂／洗涤皂块印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的洗衣皂和洗涤皂块：100–250 g，TFM 54–72%。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "洗衣皂"
 answer: "洗衣皂是用于手工搓洗衣物的固体皂块，由皂或皂与洗涤剂的混合物制成。皂块从高总脂肪物（TFM）的纯皂，到添加填料和助剂的低成本洗涤皂块不等。GoodBiz Hygiene从经我们考察的印度制造商采购多种等级的洗衣皂块用于出口。"
 variants:
   - "蓝色皂块（经典型，带荧光增白剂色调）"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "c651d0594a86"
+sourceHash: "94216906b8fc"
 title: "Pembersih Kamar Mandi dan Keramik"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "Pembersih Kamar Mandi dan Keramik: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Pembersih kamar mandi dan keramik untuk sisa sabun, kerak kapur, dan noda air, kemasan semprot dan isi ulang dari produsen India terseleksi, private label."
+metaTitle: "Pembersih Kamar Mandi dan Keramik: Eksportir dari India"
+metaDescription: "Pembersih kamar mandi dan keramik untuk kerak kapur dan sisa sabun, botol semprot dan isi ulang 5–20 L dari produsen India terseleksi. Private label, FOB/CIF."
+keyword: "pembersih kamar mandi"
 answer: "Pembersih kamar mandi dan keramik adalah cairan atau gel yang diformulasikan untuk menghilangkan sisa sabun, kerak kapur, noda air, dan bekas jamur ringan dari keramik, keran, wastafel, sekat kaca shower, dan perlengkapan kamar mandi. Produk ini biasanya bersifat asam ringan dan sering dijual dalam botol semprot trigger. GoodBiz Hygiene mencarikan pembersih kamar mandi dan keramik dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Lemon fresh"

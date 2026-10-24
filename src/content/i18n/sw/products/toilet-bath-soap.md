@@ -1,12 +1,13 @@
 ---
-sourceHash: "54468ef241aa"
+sourceHash: "a3d644f8b2bd"
 title: "Sabuni ya Kuogea"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "Sabuni ya Kuogea: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Vipande vya sabuni ya kuogea kutoka kwa watengenezaji wa India tuliowakagua: 50 g hadi 150 g, TFM 60% hadi 76%+, chapa ya mnunuzi na makontena mchanganyiko."
+metaTitle: "Sabuni ya Kuogea: Msafirishaji Nje na Muuzaji kutoka India"
+metaDescription: "Sabuni ya kuogea ya vipande 50–150 g, TFM 60% hadi 76%+, kutoka viwanda vya India vilivyokaguliwa. Chapa yako, makontena mchanganyiko na bei za FOB/CIF."
+keyword: "sabuni ya kuogea"
 answer: "Sabuni ya kuogea (toilet soap) ni kipande kigumu cha kusafishia kinachotengenezwa kwa kuchemsha mafuta na shahamu pamoja na alkali (saponification), kinachotumika kuosha uso na mwili. Huainishwa hasa kwa Jumla ya Vitu vya Mafuta (Total Fatty Matter, TFM), inayoonyesha kiasi cha sabuni halisi kilichomo kwenye kipande. GoodBiz Hygiene hupata sabuni ya kuogea katika daraja kadhaa za TFM kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Waridi"

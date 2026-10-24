@@ -4,8 +4,9 @@ slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "Toilet / Bath Soap Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Toilet and bath soap bars from vetted Indian manufacturers: 50 g to 150 g, TFM grades from 60% to 76%+, private label and mixed container loads for importers."
+metaTitle: "Toilet Soap & Bath Soap Exporter & Supplier from India"
+metaDescription: "Toilet soap and bath soap bars from vetted Indian manufacturers: 50–150 g, TFM 60% to 76%+. Private label, mixed containers and FOB/CIF quotes per order."
+keyword: "toilet soap"
 answer: "Toilet soap, also called bath soap, is a solid cleansing bar made by saponifying fats and oils, used for washing the face and body. It is graded mainly by Total Fatty Matter (TFM), which indicates how much true soap the bar contains. GoodBiz Hygiene sources toilet soap in several TFM grades from vetted Indian manufacturers for export."
 variants:
   - "Rose"

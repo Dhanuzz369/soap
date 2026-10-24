@@ -1,6 +1,7 @@
 ---
-sourceHash: "66cae22a82fe"
+sourceHash: "f39ee6f3d9e7"
 title: "Phénol aux plantes ou désinfectants chimiques : ce que les acheteurs de la distribution doivent savoir"
+metaTitle: "Phénol aux plantes ou désinfectants chimiques : le guide"
 description: "Phénol aux plantes et désinfectants chimiques comparés pour la distribution : usage, étiquetage, classement douanier et questions à poser à l’exportateur."
 date: 2026-09-24
 tags: ["phénol aux plantes", "désinfectants", "nettoyant sols", "achats distribution"]

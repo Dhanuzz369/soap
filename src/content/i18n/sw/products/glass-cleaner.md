@@ -1,12 +1,13 @@
 ---
-sourceHash: "4b57db25e377"
+sourceHash: "a76fe73afa27"
 title: "Kisafishaji cha Vioo"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "Kisafishaji cha Vioo: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Kisafishaji cha vioo kisichoacha michirizi katika vipulizio na makopo ya kujazia upya kutoka India: 500 ml hadi 20 L, chapa ya mnunuzi, mizigo ya makontena."
+metaTitle: "Kisafishaji cha Vioo: Msafirishaji wa India"
+metaDescription: "Kisafishaji cha vioo kisichoacha michirizi, kwa chupa za kunyunyiza na madumu 1–20 L kutoka viwanda vya India vilivyokaguliwa. Chapa yako na bei za FOB/CIF."
+keyword: "kisafishaji cha vioo"
 answer: "Kisafishaji cha vioo ni kimiminika chenye povu kidogo, kwa kawaida chenye maji, kiyeyusho hafifu na kiasi kidogo cha kiambato cha kusafisha, kilichotengenezwa kusafisha madirisha, vioo vya kujitazama na vioo vingine bila kuacha michirizi. Kwa kawaida huuzwa katika chupa za kupulizia na hukauka haraka. GoodBiz Hygiene hupata kisafishaji cha vioo kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Buluu ya kawaida, isiyo na amonia"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "f81c42efbf80"
+sourceHash: "329715bb8890"
 title: "草本阿育吠陀皂"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
 hsn: "3401 11"
-metaTitle: "草本阿育吠陀皂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的草本和阿育吠陀沐浴皂：印楝、姜黄、檀香和芦荟皂块，75 g至125 g，为进口商提供自有品牌，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "草本阿育吠陀皂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的草本阿育吠陀皂：印楝、姜黄、檀香和芦荟，75–125 g。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "草本皂"
 answer: "草本皂或阿育吠陀皂是在皂基中加入印楝、姜黄、檀香或芦荟等植物成分的沐浴皂块，定位于传统印度护肤理念，用于日常沐浴。GoodBiz Hygiene从经我们考察的印度制造商采购这类皂块，并以自有品牌选项出口。"
 variants:
   - "印楝与圣罗勒"

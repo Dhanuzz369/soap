@@ -1,12 +1,13 @@
 ---
-sourceHash: "c651d0594a86"
+sourceHash: "94216906b8fc"
 title: "Bad- und Fliesenreiniger"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "Bad- und Fliesenreiniger Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Bad- und Fliesenreiniger gegen Seifenreste, Kalk und Wasserflecken als Sprühflasche und Nachfüllpackung von geprüften indischen Herstellern, mit Handelsmarke."
+metaTitle: "Bad- und Fliesenreiniger – Exporteur & Lieferant aus Indien"
+metaDescription: "Bad- und Fliesenreiniger gegen Kalk und Seifenreste, als Sprühflasche und 5–20-L-Nachfüller von geprüften indischen Herstellern. Handelsmarke, FOB/CIF."
+keyword: "Badreiniger"
 answer: "Bad- und Fliesenreiniger ist eine Flüssigkeit oder ein Gel, das Seifenreste, Kalk, Wasserflecken und leichte Schimmelspuren von Fliesen, Armaturen, Waschbecken, Duschwänden und Badausstattung entfernen soll. Er ist meist leicht sauer und wird häufig in Sprühflaschen verkauft. GoodBiz Hygiene bezieht Bad- und Fliesenreiniger von geprüften indischen Herstellern für den Export."
 variants:
   - "Zitronenfrisch"

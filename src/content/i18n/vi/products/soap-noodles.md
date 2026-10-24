@@ -1,12 +1,13 @@
 ---
-sourceHash: "386cf04101b2"
+sourceHash: "f2bf93b5815c"
 title: "Hạt xà phòng (soap noodles, nguyên liệu nền xà phòng)"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "Hạt xà phòng (soap noodles): nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Hạt xà phòng cấp 80:20 và 70:30 cọ - nhân cọ từ nhà sản xuất Ấn Độ đã thẩm định, đóng bao 25 kg và 50 kg cho cơ sở sản xuất xà phòng."
+metaTitle: "Hạt xà phòng (soap noodles): xuất khẩu từ Ấn Độ"
+metaDescription: "Hạt xà phòng (soap noodles) 80:20 và 70:30 từ nhà sản xuất Ấn Độ đã thẩm định, bao 25 kg và 50 kg cho nhà máy xà phòng. HSN 3401 20, báo giá FOB/CIF."
+keyword: "hạt xà phòng"
 answer: "Hạt xà phòng (soap noodles) là các viên nhỏ chất béo và dầu đã xà phòng hóa và sấy khô, dùng làm nguyên liệu nền để sản xuất xà phòng tắm, xà phòng giặt và các loại xà phòng bánh khác. Sản phẩm được phân hạng theo tỷ lệ dầu cọ so với dầu nhân cọ và theo Tổng hàm lượng chất béo (TFM). GoodBiz Hygiene cung ứng hạt xà phòng từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu cho cơ sở sản xuất xà phòng và nhà phân phối."
 variants:
   - "80:20 cọ - nhân cọ (hạng 1 / cao cấp)"

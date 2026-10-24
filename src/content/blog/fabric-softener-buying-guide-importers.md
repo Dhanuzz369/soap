@@ -1,5 +1,6 @@
 ---
 title: "Fabric Softener Buying Guide for Importers: Types, Fragrances and Pack Sizes"
+metaTitle: "Fabric Softener Buying Guide for Importers"
 description: "What importers should know before buying fabric softener from India: regular vs concentrate, sensitive grades, fragrance choice, pack sizes and storage."
 date: 2026-09-17
 tags: ["fabric softener", "buying guide", "fragrance", "pack sizes"]

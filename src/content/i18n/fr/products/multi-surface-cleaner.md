@@ -1,12 +1,13 @@
 ---
-sourceHash: "108193995324"
+sourceHash: "412ca2d14ce7"
 title: "Nettoyant multi-surfaces"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
 hsn: "3402 50"
-metaTitle: "Nettoyant multi-surfaces : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Nettoyant multi-usages en pulvérisateur, recharge et vrac, de fabricants indiens contrôlés : parfums agrumes, lavande et fraîcheur, en marque de distributeur."
+metaTitle: "Nettoyant multi-surfaces : exportateur en Inde"
+metaDescription: "Nettoyant multi-surfaces en spray, recharges et vrac, de fabricants indiens contrôlés : agrumes, lavande. Marque de distributeur, conteneurs mixtes, FOB/CIF."
+keyword: "nettoyant multi-surfaces"
 answer: "Le nettoyant multi-surfaces, aussi appelé nettoyant multi-usages, est un nettoyant liquide polyvalent pour les plans de travail, tables, appareils, murs peints et de nombreuses surfaces dures. Il est généralement proche de la neutralité ou légèrement alcalin, et se vend prêt à l’emploi en pulvérisateur ou en concentré. GoodBiz Hygiene sélectionne ce nettoyant auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Agrumes / citron"

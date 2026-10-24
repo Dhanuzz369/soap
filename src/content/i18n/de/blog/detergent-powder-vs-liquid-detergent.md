@@ -1,6 +1,7 @@
 ---
-sourceHash: "6843f5aa2873"
+sourceHash: "c1161c07178f"
 title: "Waschpulver oder Flüssigwaschmittel: Was verkauft sich in Ihrem Markt besser?"
+metaTitle: "Waschpulver oder Flüssigwaschmittel: Was verkauft sich?"
 description: "Pulver oder Flüssigwaschmittel? Vergleichen Sie Klima, Waschgewohnheiten, Maschinen, Preis und Frachtkosten je Wäsche für das richtige Sortiment in Ihrem Markt."
 date: 2026-08-20
 tags: ["Waschpulver", "Flüssigwaschmittel", "Marktauswahl"]

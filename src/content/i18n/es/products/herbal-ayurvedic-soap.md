@@ -1,12 +1,13 @@
 ---
-sourceHash: "f81c42efbf80"
+sourceHash: "329715bb8890"
 title: "Jabón herbal y ayurvédico"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
 hsn: "3401 11"
-metaTitle: "Jabón herbal y ayurvédico: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Jabones de baño herbales y ayurvédicos de fabricantes indios seleccionados: pastillas de neem, cúrcuma, sándalo y aloe de 75 a 125 g, con marca propia."
+metaTitle: "Jabón herbal y ayurvédico: exportador y proveedor de India"
+metaDescription: "Jabón herbal y ayurvédico de fabricantes indios seleccionados: neem, cúrcuma, sándalo y aloe, de 75 a 125 g. Marca propia, contenedores mixtos, FOB/CIF."
+keyword: "jabón ayurvédico"
 answer: "El jabón herbal o ayurvédico es una pastilla de baño que incorpora ingredientes vegetales, como neem, cúrcuma, sándalo o aloe vera, en una base de jabón, y se posiciona en torno a las prácticas tradicionales indias de cuidado de la piel. Se usa para el baño diario. GoodBiz Hygiene adquiere estas pastillas a fabricantes indios seleccionados y las exporta con opciones de marca propia."
 variants:
   - "Neem y tulsi"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "05b3ceee9465"
+sourceHash: "36c4cfd3090d"
 title: "Sıvı Bulaşık Deterjanı / Jel"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
 hsn: "3402 50"
-metaTitle: "Sıvı Bulaşık Deterjanı ve Jel: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden limon, misket limonu ve diğer kokularda sıvı bulaşık deterjanı ve jel: 250 ml-5 L bidon, dökme varil, özel marka."
+metaTitle: "Sıvı Bulaşık Deterjanı ve Jel: Hindistan’dan İhracat"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden sıvı ve jel bulaşık deterjanı: limon, misket limonu, 250 ml’den 200 L varile. Özel marka, karışık konteyner, FOB/CIF."
+keyword: "bulaşık deterjanı"
 answer: "Sıvı bulaşık deterjanı; tabak, tava ve çatal-bıçağı elde temizlemek için kullanılan, ince bir sıvı veya daha koyu bir jel olarak bulunan konsantre bir deterjandır. Yağı çözer, serin suda iyi köpürür ve film bırakmadan durulanır. GoodBiz Hygiene, sıvı bulaşık deterjanını ve jeli perakende ve dökme ambalajlarda ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Limon"

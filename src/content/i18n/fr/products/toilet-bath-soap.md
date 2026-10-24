@@ -1,12 +1,13 @@
 ---
-sourceHash: "54468ef241aa"
+sourceHash: "a3d644f8b2bd"
 title: "Savon de toilette / savon de bain"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "Savon de toilette : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Savons de toilette de fabricants indiens contrôlés : 50 à 150 g, TFM de 60 % à plus de 76 %, marque de distributeur et conteneurs mixtes pour importateurs."
+metaTitle: "Savon de toilette : exportateur et fournisseur en Inde"
+metaDescription: "Savon de toilette en pains de 50 à 150 g, TFM de 60 % à 76 %+, de fabricants indiens contrôlés. Marque de distributeur, conteneurs mixtes et devis FOB/CIF."
+keyword: "savon de toilette"
 answer: "Le savon de toilette, ou savon de bain, est un pain nettoyant solide obtenu par saponification de graisses et d’huiles, utilisé pour le visage et le corps. Il se classe surtout selon sa teneur en matières grasses totales (TFM), qui indique la part de vrai savon dans le pain. GoodBiz Hygiene sélectionne des savons de toilette en plusieurs qualités de TFM auprès de fabricants indiens contrôlés, pour l’export."
 variants:
   - "Rose"

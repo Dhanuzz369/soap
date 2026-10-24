@@ -1,12 +1,13 @@
 ---
-sourceHash: "f6009b1516c1"
+sourceHash: "332323d039a7"
 title: "Klozet Temizleyici"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "Klozet Temizleyici: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden eğimli boyunlu şişelerde asit bazlı ve hafif kalitelerde koyu klozet temizleyici: 500 ml-5 L, özel marka."
+metaTitle: "Klozet Temizleyici: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Eğik ağızlı şişelerde koyu kıvamlı, asitli veya hafif klozet temizleyici, 500 ml–5 L, kontrol edilmiş Hindistanlı üreticilerden. Özel marka ve FOB/CIF."
+keyword: "klozet temizleyici"
 answer: "Klozet temizleyici, klozet taslarından ve pisuvarlardan kireci, pas lekelerini ve idrar birikintilerini gideren, normalde asit bazlı, koyu ve yapışkan bir sıvıdır. Sıvının kenarın altına bırakılabilmesi için eğimli boyunlu şişelerde satılır. GoodBiz Hygiene, klozet temizleyiciyi ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Standart asit bazlı, mavi"

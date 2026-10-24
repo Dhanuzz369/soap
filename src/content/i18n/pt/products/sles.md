@@ -1,12 +1,13 @@
 ---
-sourceHash: "e4da7e02de7a"
+sourceHash: "d51786edaf5f"
 title: "SLES (lauril éter sulfato de sódio)"
 slug: sles
 category: industrial-raw-materials
 order: 3
 hsn: "3402 39"
-metaTitle: "SLES 28% e 70%: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "SLES 28% e 70% (lauril éter sulfato de sódio) de fabricantes indianos selecionados, em tambores, IBCs e flexitanks, para fabricantes de xampus e detergentes."
+metaTitle: "SLES 28% e 70%: exportador e fornecedor da Índia"
+metaDescription: "SLES 28% e 70% (lauril éter sulfato de sódio) de fabricantes indianos selecionados, em tambores, IBC e flexitanques. HSN 3402 39, cotação FOB/CIF por pedido."
+keyword: "SLES"
 answer: "O SLES (lauril éter sulfato de sódio) é um tensoativo aniônico suave que produz espuma rica, usado em xampus, sabonetes líquidos para as mãos, géis de banho, detergentes para louças e detergentes em geral. É vendido como um líquido viscoso, de transparente a claro, em concentrações ativas de 28% ou 70%. A GoodBiz Hygiene adquire SLES de fabricantes indianos selecionados, para exportação a formuladores e distribuidores."
 variants:
   - "SLES 28% ativo (líquido, pronto para uso)"

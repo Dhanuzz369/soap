@@ -1,6 +1,7 @@
 ---
-sourceHash: "2b10481b836a"
+sourceHash: "259e3f5f79fb"
 title: "Nyaraka za Usafirishaji Nje kwa Bidhaa za Usafi: COA, MSDS, Cheti cha Asili na Zaidi"
+metaTitle: "Nyaraka za Kusafirisha Bidhaa za Usafi: COA, MSDS"
 description: "Orodha ya nyaraka za usafirishaji nje kwa sabuni na visafishaji kutoka India: ankara, COA, SDS, cheti cha asili, nyaraka za DG na usajili wa eneo."
 date: 2026-10-14
 tags: ["nyaraka za usafirishaji nje", "COA", "MSDS", "cheti cha asili"]

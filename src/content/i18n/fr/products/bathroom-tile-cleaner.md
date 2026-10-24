@@ -1,12 +1,13 @@
 ---
-sourceHash: "c651d0594a86"
+sourceHash: "94216906b8fc"
 title: "Nettoyant salle de bain et carrelage"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "Nettoyant salle de bain et carrelage : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Nettoyant salle de bain et carrelage contre traces de savon, calcaire et taches d’eau, en pulvérisateurs et recharges, de fabricants indiens contrôlés."
+metaTitle: "Nettoyant salle de bain et carrelage : exportateur en Inde"
+metaDescription: "Nettoyant salle de bain et carrelage anticalcaire, en spray et recharges de 5 à 20 L, de fabricants indiens contrôlés. Marque de distributeur, FOB/CIF."
+keyword: "nettoyant salle de bain"
 answer: "Le nettoyant salle de bain et carrelage est un liquide ou un gel formulé pour éliminer les résidus de savon, le calcaire, les taches d’eau et les légères traces de moisissure sur le carrelage, la robinetterie, les lavabos, les parois de douche et les équipements sanitaires. Il est généralement légèrement acide et souvent vendu en flacon pulvérisateur. GoodBiz Hygiene sélectionne ce nettoyant auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Citron frais"

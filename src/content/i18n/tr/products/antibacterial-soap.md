@@ -1,12 +1,13 @@
 ---
-sourceHash: "f7b01af09895"
+sourceHash: "76e23824cc1d"
 title: "Antibakteriyel / Medikal Sabun"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "Antibakteriyel ve Medikal Sabun: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden antibakteriyel ve medikal banyo sabunları: 75-150 g, TFM %70+, ithalatçılar için özel marka ve karışık konteyner."
+metaTitle: "Antibakteriyel ve Medikal Sabun: Hindistan’dan İhracat"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden antibakteriyel ve medikal sabun: 75–150 g, PCMX veya neem, TFM %70+. Özel marka, karışık konteyner, FOB/CIF."
+keyword: "antibakteriyel sabun"
 answer: "Antibakteriyel veya medikal sabun; yıkama sırasında cilt bakterilerini azaltmaya yardımcı olması için kloroksilenol (PCMX) ya da neem gibi bir bitkisel madde (ve izin verilen yerlerde triklokarban) gibi etken madde eklenmiş bir banyo kalıbıdır. Evlerde ve kurumlarda günlük hijyen için kullanılır. GoodBiz Hygiene bunu ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "PCMX’li antibakteriyel kalıp (ferah)"

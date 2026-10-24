@@ -1,12 +1,13 @@
 ---
-sourceHash: "4b57db25e377"
+sourceHash: "a76fe73afa27"
 title: "玻璃清洁剂"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "玻璃清洁剂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的无痕玻璃和镜面清洁剂，提供扳机喷雾瓶和补充装桶：500 ml至20 L，为进口商提供自有品牌和整柜装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "玻璃清洁剂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的无痕玻璃清洁剂：喷雾瓶及1–20 L补充装。支持自有品牌贴牌、混装集装箱，按订单提供FOB/CIF报价，面向进口商和经销商。"
+keyword: "玻璃清洁剂"
 answer: "玻璃清洁剂是一种低泡液体，通常含水、温和溶剂和少量表面活性剂，用于清洁窗户、镜子和其他玻璃而不留水痕。它通常装在扳机喷雾瓶中销售，干燥迅速。GoodBiz Hygiene从经我们考察的印度制造商采购玻璃清洁剂用于出口。"
 variants:
   - "标准蓝色，不含氨"

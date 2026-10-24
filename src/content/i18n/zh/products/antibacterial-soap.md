@@ -1,12 +1,13 @@
 ---
-sourceHash: "f7b01af09895"
+sourceHash: "76e23824cc1d"
 title: "抗菌皂／药皂"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "抗菌皂／药皂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的抗菌皂和药皂：75 g至150 g皂块，TFM 70%以上，为进口商提供自有品牌，并支持混装集装箱装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "抗菌皂／药皂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的抗菌皂和药皂：75–150 g皂块，PCMX或印楝配方，TFM 70%以上。支持自有品牌贴牌、混装集装箱及FOB/CIF报价。"
+keyword: "抗菌皂"
 answer: "抗菌皂或药皂是在沐浴皂块中添加活性成分的产品，例如对氯间二甲苯酚（PCMX）或印楝等植物成分（在允许的地区还可使用三氯卡班），以帮助在洗涤时减少皮肤上的细菌。它用于家庭和机构的日常卫生。GoodBiz Hygiene从经我们考察的印度制造商采购此类产品用于出口。"
 variants:
   - "PCMX抗菌皂块（清新型）"

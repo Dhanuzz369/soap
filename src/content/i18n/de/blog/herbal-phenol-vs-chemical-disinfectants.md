@@ -1,6 +1,7 @@
 ---
-sourceHash: "66cae22a82fe"
+sourceHash: "f39ee6f3d9e7"
 title: "Pflanzliches Phenol oder chemische Desinfektionsmittel: Was Einkäufer im Handel wissen sollten"
+metaTitle: "Pflanzliches Phenol oder chemisches Desinfektionsmittel?"
 description: "Pflanzliches Phenol und chemische Desinfektionsmittel im Vergleich für Handelssortimente: Anwendung, Kennzeichnung, Einreihung und Fragen an den Exporteur."
 date: 2026-09-24
 tags: ["Pflanzliches Phenol", "Desinfektionsmittel", "Bodenreiniger", "Einkauf im Handel"]

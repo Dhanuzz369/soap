@@ -1,12 +1,13 @@
 ---
-sourceHash: "1575bed4aaca"
+sourceHash: "2fb368c1aef4"
 title: "大包装及机构用清洁产品"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
 hsn: "3402 90"
-metaTitle: "大包装清洁化学品印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的大包装及机构用清洁化学品，提供5 L、20 L、200 L和1,000 L包装，供酒店、设施服务企业和经销商使用，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "大包装清洁化学品印度出口商与供应商"
+metaDescription: "面向酒店、保洁公司和经销商的大包装清洁化学品：5 L至1000 L吨桶浓缩液，采购自经考察的印度制造商。按订单提供FOB/CIF报价，面向进口商和经销商。"
+keyword: "清洁化学品"
 answer: "大包装及机构用清洁化学品是地板清洁剂、去油剂、洗手液和洗衣液等浓缩清洁剂，以大包装供专业使用。酒店、医院、清洁承包商和经销商采购它们，看重每升成本低和品质稳定。GoodBiz Hygiene从经我们考察的印度制造商采购这些产品用于出口。"
 variants:
   - "地板清洁剂浓缩液"

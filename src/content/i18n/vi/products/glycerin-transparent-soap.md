@@ -1,12 +1,13 @@
 ---
-sourceHash: "9f781c932179"
+sourceHash: "5a4a8b081395"
 title: "Xà phòng glycerin / xà phòng trong suốt"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "Xà phòng glycerin và trong suốt: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Xà phòng glycerin và trong suốt từ nhà sản xuất Ấn Độ đã thẩm định: bánh 75 g đến 125 g hương lô hội, mật ong, hoa hồng, có nhãn riêng."
+metaTitle: "Xà phòng glycerin và trong suốt: xuất khẩu từ Ấn Độ"
+metaDescription: "Xà phòng glycerin và trong suốt từ nhà sản xuất Ấn Độ đã thẩm định: bánh 75–125 g hương lô hội, mật ong, hoa hồng. Nhãn riêng, container ghép, FOB/CIF."
+keyword: "xà phòng glycerin"
 answer: "Xà phòng glycerin, còn bán dưới tên xà phòng trong suốt, là loại bánh xà phòng tắm trong hoặc mờ, được làm với hàm lượng glycerin và dung môi cao để bánh xà phòng trông như thủy tinh hoặc hổ phách. Sản phẩm được ưa chuộng nhờ cảm giác mịn màng và vẻ ngoài cao cấp. GoodBiz Hygiene cung ứng sản phẩm này từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu và làm nhãn riêng."
 variants:
   - "Lô hội"

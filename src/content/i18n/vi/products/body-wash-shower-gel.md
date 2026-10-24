@@ -1,12 +1,13 @@
 ---
-sourceHash: "4f059edea2db"
+sourceHash: "f923483b7544"
 title: "Sữa tắm / gel tắm"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "Sữa tắm và gel tắm: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Sữa tắm và gel tắm từ nhà sản xuất Ấn Độ đã thẩm định: chai 250 ml đến 1 L, hương tươi mát, hoa và thảo dược, có nhãn riêng."
+metaTitle: "Sữa tắm và gel tắm: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Sữa tắm và gel tắm từ nhà sản xuất Ấn Độ đã thẩm định: 100 ml đến 5 L, hương tươi mát, hoa và thảo dược. Nhãn riêng cho nhà nhập khẩu và khách sạn, FOB/CIF."
+keyword: "sữa tắm"
 answer: "Sữa tắm, còn gọi là gel tắm, là chất làm sạch cơ thể dạng lỏng được tạo từ các chất hoạt động bề mặt dịu nhẹ, chất dưỡng và hương liệu, dùng bằng tay hoặc bông tắm. Sản phẩm tạo bọt đậm và phù hợp dùng hằng ngày. GoodBiz Hygiene cung ứng sữa tắm và gel tắm từ các nhà sản xuất Ấn Độ đã được thẩm định cho người mua bán lẻ và khách sạn."
 variants:
   - "Hương đại dương tươi mát"

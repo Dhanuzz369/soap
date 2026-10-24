@@ -1,12 +1,13 @@
 ---
-sourceHash: "f81c42efbf80"
+sourceHash: "329715bb8890"
 title: "Xà phòng thảo dược và Ayurveda"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
 hsn: "3401 11"
-metaTitle: "Xà phòng thảo dược và Ayurveda: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Xà phòng thảo dược và Ayurveda từ nhà sản xuất Ấn Độ đã thẩm định: neem, nghệ, đàn hương, lô hội, 75 g đến 125 g, có nhãn riêng."
+metaTitle: "Xà phòng thảo dược và Ayurveda: xuất khẩu từ Ấn Độ"
+metaDescription: "Xà phòng thảo dược và Ayurveda từ nhà sản xuất Ấn Độ đã thẩm định: neem, nghệ, đàn hương, lô hội, 75–125 g. Nhãn riêng, container ghép và báo giá FOB/CIF."
+keyword: "xà phòng thảo dược"
 answer: "Xà phòng thảo dược hay Ayurveda là loại bánh xà phòng tắm có thành phần thực vật như neem, nghệ, đàn hương hoặc lô hội trong nền xà phòng, được định vị theo cách chăm sóc da truyền thống của Ấn Độ. Sản phẩm dùng để tắm hằng ngày. GoodBiz Hygiene cung ứng các loại bánh này từ các nhà sản xuất Ấn Độ đã được thẩm định và xuất khẩu kèm tùy chọn nhãn riêng."
 variants:
   - "Neem và húng quế thánh (tulsi)"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "e4da7e02de7a"
+sourceHash: "d51786edaf5f"
 title: "SLES (lauryl éther sulfate de sodium)"
 slug: sles
 category: industrial-raw-materials
 order: 3
 hsn: "3402 39"
-metaTitle: "SLES 28 % et 70 % : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "SLES (lauryl éther sulfate de sodium) à 28 % et 70 %, de fabricants indiens contrôlés, en fûts, GRV et flexitanks pour shampoings et détergents."
+metaTitle: "SLES 28 % et 70 % : exportateur et fournisseur en Inde"
+metaDescription: "SLES 28 % et 70 % (laurylsulfate de sodium éthoxylé) de fabricants indiens contrôlés, en fûts, IBC et flexitanks. HSN 3402 39, devis FOB/CIF par commande."
+keyword: "SLES"
 answer: "Le SLES (lauryl éther sulfate de sodium) est un tensioactif anionique doux à forte capacité moussante, utilisé dans les shampoings, savons pour les mains, gels douche, liquides vaisselle et détergents. Il se vend sous forme de liquide visqueux transparent à pâle, à 28 % ou 70 % de matière active. GoodBiz Hygiene sélectionne le SLES auprès de fabricants indiens contrôlés pour l’export vers les formulateurs et les distributeurs."
 variants:
   - "SLES 28 % de matière active (liquide, prêt à l’emploi)"

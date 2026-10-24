@@ -1,12 +1,13 @@
 ---
-sourceHash: "a32b95104c89"
+sourceHash: "e01f264e3e3e"
 title: "Sabão líquido / detergente líquido para roupas"
 slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Sabão líquido para roupas: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Sabão líquido para roupas de fabricantes indianos selecionados: embalagens de 500 ml a 20 L, graus para lavagem à mão e à máquina, marca própria."
+metaTitle: "Sabão líquido para roupas: exportador e fornecedor da Índia"
+metaDescription: "Sabão líquido para roupas de fabricantes indianos selecionados: 500 ml a 20 L, lavagem à mão e na máquina. Marca própria, contêineres mistos e FOB/CIF."
+keyword: "sabão líquido para roupas"
 answer: "O sabão líquido, ou detergente líquido para roupas, é um limpador fluido que combina tensoativos, água e aditivos e se dissolve com facilidade em água fria ou morna. Serve tanto para a lavagem à mão quanto para máquinas de lavar e é vendido como alternativa mais prática e premium ao sabão em pó. A GoodBiz Hygiene adquire sabão líquido de fabricantes indianos selecionados, em embalagens de varejo e a granel, para exportação."
 variants:
   - "Para máquina de abertura superior e lavagem à mão"

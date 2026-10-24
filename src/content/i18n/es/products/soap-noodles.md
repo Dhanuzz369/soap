@@ -1,12 +1,13 @@
 ---
-sourceHash: "386cf04101b2"
+sourceHash: "f2bf93b5815c"
 title: "Fideos de jabón (base de jabón)"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "Fideos de jabón: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Fideos de jabón en calidades 80:20 y 70:30 de palma y palmiste de fabricantes indios seleccionados, en sacos de 25 y 50 kg para fabricantes de jabón."
+metaTitle: "Fideos de jabón: exportador y proveedor de India"
+metaDescription: "Fideos de jabón (soap noodles) 80:20 y 70:30 de fabricantes indios seleccionados, en sacos de 25 y 50 kg para fábricas de jabón. HSN 3401 20, FOB/CIF."
+keyword: "fideos de jabón"
 answer: "Los fideos de jabón son pequeños gránulos de grasa y aceite saponificados y secos, que se usan como material base para fabricar jabones de tocador, de lavandería y otros jabones en barra. Se clasifican por la proporción de aceite de palma y de aceite de palmiste y por su materia grasa total (TFM). GoodBiz Hygiene adquiere fideos de jabón a fabricantes indios seleccionados para exportarlos a fabricantes de jabón y distribuidores."
 variants:
   - "80:20 palma y palmiste (Grado 1 / premium)"

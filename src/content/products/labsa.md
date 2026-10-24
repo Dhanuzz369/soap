@@ -4,8 +4,9 @@ slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
-metaTitle: "LABSA 90% & 96% Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "LABSA 90% and 96% active acid slurry from vetted Indian manufacturers, packed in HDPE drums, IBCs and flexitanks for detergent makers and blenders."
+metaTitle: "LABSA 90% & 96% Exporter & Supplier from India"
+metaDescription: "LABSA 90% and 96% (linear alkyl benzene sulphonic acid) from vetted Indian manufacturers in HDPE drums, IBCs and flexitanks. HSN 3402 31, FOB/CIF quotes."
+keyword: "LABSA"
 answer: "LABSA (Linear Alkyl Benzene Sulphonic Acid) is the main anionic surfactant used in detergent powders, liquid detergents and cleaners. It is a dark, viscous acid that is neutralised with caustic soda or soda ash to form the active cleaning agent. GoodBiz Hygiene sources LABSA from vetted Indian manufacturers for export to detergent makers and distributors."
 variants:
   - "LABSA 90% minimum active matter"

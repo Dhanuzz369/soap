@@ -1,13 +1,14 @@
 ---
-sourceHash: "4d96f789adca"
+sourceHash: "050e9d439949"
 title: "衣物柔顺剂"
 slug: fabric-softener
 category: laundry-care
 order: 4
 hsn: "3402 50"
 hsnNote: "衣物柔顺剂通常作为表面活性制剂归入3402 50，但也常归入3809 91（纺织品整理剂）。正确的编码取决于配方和目的国的海关惯例，因此我们会按每笔订单确认完整的8位编码。"
-metaTitle: "衣物柔顺剂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的衣物柔顺剂：500 ml至20 L包装，有普通型和浓缩型两类等级，为进口商提供自有品牌，并支持混装集装箱装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "衣物柔顺剂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的衣物柔顺剂：500 ml至20 L，普通型和浓缩型。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "衣物柔顺剂"
 answer: "衣物柔顺剂又称织物调理剂，是在洗涤最后一次漂洗时加入的液体，使衣物柔软、顺滑并带有香味。它通过阳离子柔软剂包覆纤维并减少静电发挥作用。GoodBiz Hygiene从经我们考察的印度制造商采购普通型和浓缩型衣物柔顺剂用于出口。"
 variants:
   - "花束香"

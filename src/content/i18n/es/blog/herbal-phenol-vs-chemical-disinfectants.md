@@ -1,6 +1,7 @@
 ---
-sourceHash: "66cae22a82fe"
+sourceHash: "f39ee6f3d9e7"
 title: "Fenol herbal frente a desinfectantes químicos: lo que deben saber los compradores minoristas"
+metaTitle: "Fenol herbal o desinfectantes químicos: guía de compra"
 description: "Fenol herbal frente a desinfectantes químicos en gamas minoristas: diferencias de uso, etiquetado y clasificación, y qué preguntar a un exportador."
 date: 2026-09-24
 tags: ["fenol herbal", "desinfectantes", "limpiador de pisos", "compra minorista"]

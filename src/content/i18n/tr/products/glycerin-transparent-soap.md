@@ -1,12 +1,13 @@
 ---
-sourceHash: "9f781c932179"
+sourceHash: "5a4a8b081395"
 title: "Gliserinli / Şeffaf Sabun"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "Gliserinli ve Şeffaf Sabun: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden gliserinli ve şeffaf banyo sabunu: aloe, bal ve gül kokulu 75 g ila 125 g şeffaf kalıplar; ithalatçılara özel marka."
+metaTitle: "Gliserinli ve Şeffaf Sabun: Hindistan’dan İhracat"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden gliserinli ve şeffaf sabun: aloe, bal ve gül kokulu 75–125 g kalıplar. Özel marka, karışık konteyner, FOB/CIF."
+keyword: "gliserinli sabun"
 answer: "Gliserinli sabun, şeffaf sabun olarak da satılır; kalıbın cam veya kehribar gibi görünmesi için yüksek oranda gliserin ve çözücü ile üretilen berrak veya yarı saydam bir banyo kalıbıdır. Pürüzsüz hissi ve premium görünümü nedeniyle değer görür. GoodBiz Hygiene bunu ihracat ve özel marka için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Aloe vera"

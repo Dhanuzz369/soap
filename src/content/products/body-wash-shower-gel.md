@@ -4,8 +4,9 @@ slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "Body Wash & Shower Gel Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Body wash and shower gel from vetted Indian manufacturers: 250 ml to 1 L bottles, fresh, floral and herbal variants, private label for importers and hotels."
+metaTitle: "Shower Gel & Body Wash Exporter & Supplier from India"
+metaDescription: "Shower gel and body wash from vetted Indian manufacturers: 100 ml to 5 L in fresh, floral and herbal variants. Private label for importers and hotels, FOB/CIF."
+keyword: "shower gel"
 answer: "Body wash, also called shower gel, is a liquid cleanser for the body made from mild surfactants, conditioners and fragrance, applied with the hands or a sponge. It lathers richly and suits daily use. GoodBiz Hygiene sources body wash and shower gel from vetted Indian manufacturers for retail and hotel buyers."
 variants:
   - "Ocean fresh"

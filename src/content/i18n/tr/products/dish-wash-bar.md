@@ -1,12 +1,13 @@
 ---
-sourceHash: "ccf18cf99322"
+sourceHash: "cf0393403b70"
 title: "Katı Bulaşık Sabunu (Bulaşık Kalıbı)"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
 hsn: "3401 19"
-metaTitle: "Katı Bulaşık Sabunu: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden limon ve misket limonu kokulu katı bulaşık sabunu: 100-300 g kap ve kalıplar, özel marka, ithalatçılara konteyner."
+metaTitle: "Katı Bulaşık Sabunu: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Limon, misket limonu ve diğer kokularda katı bulaşık sabunu, kontrol edilmiş Hindistanlı üreticilerden: 100–300 g. Özel marka, karışık konteyner, FOB/CIF."
+keyword: "katı bulaşık sabunu"
 answer: "Katı bulaşık sabunu, mutfak eşyalarını, tencereleri ve mutfak yüzeylerini temizlemek için bir ovma teli veya ıslak süngerle kullanılan katı bir deterjan kalıbıdır. Ekonomiktir, uzun ömürlüdür ve saklaması kolaydır; bu nedenle yıkama başına fiyatın en önemli olduğu yerlerde popülerdir. GoodBiz Hygiene, katı bulaşık sabunlarını ihracat için kontrol edilmiş Hindistanlı üreticilerden birkaç boyutta ve kokuda tedarik eder."
 variants:
   - "Limon"

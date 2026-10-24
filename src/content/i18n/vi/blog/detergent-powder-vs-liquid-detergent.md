@@ -1,6 +1,7 @@
 ---
-sourceHash: "6843f5aa2873"
+sourceHash: "c1161c07178f"
 title: "Bột giặt hay nước giặt: loại nào bán chạy hơn tại thị trường của Quý khách?"
+metaTitle: "Bột giặt hay nước giặt: loại nào bán chạy hơn?"
 description: "Bột giặt hay nước giặt? So sánh khí hậu, thói quen giặt, máy giặt, giá và cước vận chuyển trên mỗi lần giặt để chọn dòng phù hợp với thị trường của Quý khách."
 date: 2026-08-20
 tags: ["bột giặt", "nước giặt", "lựa chọn thị trường"]

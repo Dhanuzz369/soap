@@ -7,6 +7,7 @@ export interface ProductData {
   hsnNote?: string;
   metaTitle: string;
   metaDescription: string;
+  keyword?: string;
   answer: string;
   variants: string[];
   packSizes: string[];

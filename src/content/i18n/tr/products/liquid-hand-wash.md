@@ -1,12 +1,13 @@
 ---
-sourceHash: "569c74859cae"
+sourceHash: "3b93bcbf0059"
 title: "Sıvı El Sabunu"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "Sıvı El Sabunu: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden sıvı el sabunu: 250 ml-5 L, antibakteriyel, bitkisel ve nemlendirici çeşitler, ithalatçı ve kurumlara özel marka."
+metaTitle: "Sıvı El Sabunu: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden sıvı el sabunu: 250 ml pompalı şişeden 20 L’ye, antibakteriyel, bitkisel, nemlendirici. Özel marka, FOB/CIF."
+keyword: "sıvı el sabunu"
 answer: "Sıvı el sabunu, elleri yıkamak için kullanılan, sentetik deterjanlar, kıvam artırıcı, koku ve cilt bakım maddelerinden yapılan, pompalı şişeden veya yedek dolumdan dağıtılan yumuşak, akışkan bir temizleyicidir. Evlerde, ofislerde ve umumi tuvaletlerde kullanılır. GoodBiz Hygiene bunu ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Antibakteriyel ferah"

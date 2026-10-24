@@ -1,12 +1,13 @@
 ---
-sourceHash: "e23a6ba5ced8"
+sourceHash: "847242946928"
 title: "Bodenreiniger"
 slug: floor-cleaner
 category: surface-home-cleaners
 order: 1
 hsn: "3402 50"
-metaTitle: "Bodenreiniger Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Flüssiger Bodenreiniger in Lavendel, Rose, Jasmin, Zitrone und Kiefer von geprüften indischen Herstellern: 500 ml bis 20 L, Handelsmarke, Container."
+metaTitle: "Bodenreiniger – Exporteur & Lieferant aus Indien"
+metaDescription: "Bodenreiniger in Lavendel, Rose, Jasmin, Zitrone und Kiefer von geprüften indischen Herstellern, 500 ml bis 20 L. Handelsmarke, Mischcontainer und FOB/CIF."
+keyword: "Bodenreiniger"
 answer: "Bodenreiniger ist ein flüssiges Produkt auf Tensidbasis, das mit Wasser verdünnt oder unverdünnt verwendet wird, um Staub, Fett und Fußspuren von harten Böden wie Fliesen, Marmor, Vinyl und versiegeltem Stein zu entfernen. Er ist meist parfümiert und hinterlässt nach dem Wischen einen leichten Duft. GoodBiz Hygiene bezieht Bodenreiniger in Handels- und Großpackungen von geprüften indischen Herstellern für den Export."
 variants:
   - "Lavendel"

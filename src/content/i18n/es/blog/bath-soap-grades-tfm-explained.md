@@ -1,6 +1,7 @@
 ---
-sourceHash: "6de17572f082"
+sourceHash: "84702d62b584"
 title: "Calidades del jabón de baño explicadas: TFM, Grado 1 frente a Grado 2 y por qué importa"
+metaTitle: "Calidades de jabón de baño: TFM, grado 1 o grado 2"
 description: "Qué significa el TFM en la ficha de un jabón de baño, cómo se usan los Grados 1 y 2 en el comercio y cómo elegir la calidad adecuada para su mercado."
 date: 2026-08-27
 tags: ["jabón de baño", "TFM", "calidades de jabón", "especificaciones"]

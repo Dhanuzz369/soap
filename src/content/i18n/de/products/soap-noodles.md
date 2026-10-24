@@ -1,12 +1,13 @@
 ---
-sourceHash: "386cf04101b2"
+sourceHash: "f2bf93b5815c"
 title: "Seifennudeln (Seifenbasis)"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "Seifennudeln Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Seifennudeln in den Qualitäten 80:20 und 70:30 (Palm zu Palmkern) von geprüften indischen Herstellern, in 25-kg- und 50-kg-Säcken für Seifenhersteller weltweit."
+metaTitle: "Seifennudeln – Exporteur & Lieferant aus Indien"
+metaDescription: "Seifennudeln 80:20 und 70:30 von geprüften indischen Herstellern, in 25- und 50-kg-Säcken für Seifenhersteller. HSN 3401 20, FOB/CIF-Angebote je Auftrag."
+keyword: "Seifennudeln"
 answer: "Seifennudeln sind kleine Pellets aus getrocknetem, verseiftem Fett und Öl, die als Basismaterial für die Herstellung von Toiletten-, Wasch- und anderen Stückseifen dienen. Sie werden nach dem Verhältnis von Palmöl zu Palmkernöl und nach dem Gesamtfettgehalt (TFM, Total Fatty Matter) eingestuft. GoodBiz Hygiene bezieht Seifennudeln von geprüften indischen Herstellern für den Export an Seifenhersteller und Händler."
 variants:
   - "80:20 Palm zu Palmkern (Qualität 1 / Premium)"

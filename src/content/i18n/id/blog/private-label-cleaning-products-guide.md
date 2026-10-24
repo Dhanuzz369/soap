@@ -1,6 +1,7 @@
 ---
-sourceHash: "17eb2fddaa93"
+sourceHash: "bd86fef00fbc"
 title: "Produk Pembersih Private Label: Panduan Langkah demi Langkah untuk Distributor"
+metaTitle: "Produk Pembersih Private Label: Panduan Distributor"
 description: "Cara distributor meluncurkan merek pembersih sendiri dari India: memilih lini, membuat brief produsen, menyetujui sampel, desain, pengemasan, dan pengiriman."
 date: 2026-09-10
 tags: ["private label", "distributor", "perawatan rumah", "OEM"]

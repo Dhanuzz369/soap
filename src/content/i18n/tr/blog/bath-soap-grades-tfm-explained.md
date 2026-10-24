@@ -1,6 +1,7 @@
 ---
-sourceHash: "6de17572f082"
+sourceHash: "84702d62b584"
 title: "Banyo Sabunu Kaliteleri: TFM, 1. Kalite ve 2. Kalite Farkı ve Neden Önemli"
+metaTitle: "Banyo Sabunu Kaliteleri: TFM, 1. ve 2. Kalite"
 description: "Banyo sabunu şartnamesinde TFM ne anlama gelir, 1. ve 2. kalite ticarette nasıl kullanılır ve pazarınıza ile fiyatınıza uygun kalite nasıl seçilir."
 date: 2026-08-27
 tags: ["banyo sabunu", "TFM", "sabun kaliteleri", "şartnameler"]

@@ -1,12 +1,13 @@
 ---
-sourceHash: "9f781c932179"
+sourceHash: "5a4a8b081395"
 title: "Jabón de glicerina / jabón transparente"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "Jabón de glicerina y transparente: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Jabón de baño de glicerina y transparente de fabricantes indios seleccionados: pastillas de 75 a 125 g de aloe, miel y rosa, con marca propia."
+metaTitle: "Jabón de glicerina y transparente: exportador de India"
+metaDescription: "Jabón de glicerina y transparente de fabricantes indios seleccionados: pastillas de 75 a 125 g de aloe, miel y rosa. Marca propia, contenedores mixtos, FOB/CIF."
+keyword: "jabón de glicerina"
 answer: "El jabón de glicerina, que también se vende como jabón transparente, es una pastilla de baño clara o translúcida elaborada con un alto contenido de glicerina y disolventes, de modo que parece de vidrio o de ámbar. Se aprecia por su tacto suave y su aspecto premium. GoodBiz Hygiene lo adquiere a fabricantes indios seleccionados para su exportación y para marca propia."
 variants:
   - "Aloe vera"

@@ -1,6 +1,7 @@
 ---
-sourceHash: "41e1d0673a41"
+sourceHash: "23d4ef5247c9"
 title: "Hindistan’dan Sıvı Bulaşık Deterjanı Nasıl İthal Edilir: Maliyetler, MOQ, Evraklar ve Sevkiyat"
+metaTitle: "Hindistan’dan Bulaşık Deterjanı İthalatı: MOQ, Maliyet"
 description: "Hindistan’dan sıvı bulaşık deterjanı ithalatına pratik rehber: maliyeti ne belirler, tipik MOQ, ambalaj seçimleri, ihracat evrakları ve sevkiyat adımları."
 date: 2026-10-08
 tags: ["sıvı bulaşık deterjanı", "ithalat", "MOQ", "sevkiyat"]

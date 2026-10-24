@@ -4,8 +4,9 @@ slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "Bathroom & Tile Cleaner Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Bathroom and tile cleaner for soap scum, limescale and water stains in trigger spray and refill packs from vetted Indian manufacturers, private label available."
+metaTitle: "Bathroom & Tile Cleaner Exporter & Supplier from India"
+metaDescription: "Bathroom and tile cleaner for limescale and soap scum, in trigger sprays and 5–20 L refills from vetted Indian manufacturers. Private label, FOB/CIF quotes."
+keyword: "bathroom cleaner"
 answer: "Bathroom and tile cleaner is a liquid or gel formulated to remove soap scum, limescale, water stains and light mould marks from tiles, taps, sinks, shower screens and bathroom fittings. It is usually mildly acidic and often sold in trigger spray bottles. GoodBiz Hygiene sources bathroom and tile cleaner from vetted Indian manufacturers for export."
 variants:
   - "Lemon fresh"

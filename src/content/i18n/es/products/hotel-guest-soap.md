@@ -1,12 +1,13 @@
 ---
-sourceHash: "1e7810df1f33"
+sourceHash: "0632460c6e63"
 title: "Jabones para hoteles y huéspedes (minijabones)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "Jabón de hotel y huéspedes: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Minijabones de amenidades para hoteles de fabricantes indios seleccionados: de 10 a 40 g, envoltorio y logotipo propios, cajas para hoteles y distribuidores."
+metaTitle: "Jabón de hotel y huéspedes: exportador y proveedor de India"
+metaDescription: "Jabones de hotel de 10 a 40 g con su envoltorio y logotipo, de fabricantes indios seleccionados. Cajas a granel para hoteles y distribuidores, FOB/CIF."
+keyword: "jabón de hotel"
 answer: "El jabón de hotel o de huéspedes es una pequeña pastilla de baño envuelta individualmente, normalmente de 10 g a 40 g, que se ofrece como amenidad en habitaciones de hoteles, resorts y casas de huéspedes. A menudo lleva impresa la marca del establecimiento. GoodBiz Hygiene adquiere minijabones a fabricantes indios seleccionados para compradores de hostelería y distribuidores de amenidades."
 variants:
   - "Cítricos frescos"

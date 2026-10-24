@@ -1,6 +1,7 @@
 ---
-sourceHash: "76eda9a626ca"
+sourceHash: "81532f93455a"
 title: "HSN 3401 ou 3402: guia do comprador para classificar sabonetes e detergentes"
+metaTitle: "HSN 3401 ou 3402: como classificar sabonetes e detergentes"
 description: "Em dúvida se o seu sabonete ou detergente é HSN 3401 ou 3402? Um guia simples sobre a divisão, com tabela por produto e as perguntas a resolver primeiro."
 date: 2026-10-01
 tags: ["código HSN", "classificação", "documentos de exportação"]

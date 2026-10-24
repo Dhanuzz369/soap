@@ -1,12 +1,13 @@
 ---
-sourceHash: "f7b01af09895"
+sourceHash: "76e23824cc1d"
 title: "Sabonete antibacteriano / medicinal"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "Sabonete antibacteriano e medicinal: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Sabonetes de banho antibacterianos e medicinais de fabricantes indianos selecionados: barras de 75 g a 150 g, TFM 70%+, marca própria e contêineres mistos."
+metaTitle: "Sabonete antibacteriano e medicinal: exportador da Índia"
+metaDescription: "Sabonete antibacteriano e medicinal de fabricantes indianos selecionados: barras de 75 a 150 g, PCMX ou neem, TFM 70%+. Marca própria e cotação FOB/CIF."
+keyword: "sabonete antibacteriano"
 answer: "O sabonete antibacteriano ou medicinal é uma barra de banho que incorpora um ingrediente ativo, como o cloroxilenol (PCMX) ou um extrato vegetal como o nim (e, onde permitido, o triclocarbano), para ajudar a reduzir as bactérias da pele durante a lavagem. É usado na higiene diária em residências e instituições. A GoodBiz Hygiene o adquire de fabricantes indianos selecionados, para exportação."
 variants:
   - "Barra antibacteriana com PCMX (fresca)"

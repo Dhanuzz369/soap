@@ -1,12 +1,13 @@
 ---
-sourceHash: "c252bad2fbfa"
+sourceHash: "1a547e59ad40"
 title: "Lessive en poudre"
 slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "Lessive en poudre : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Lessive en poudre de fabricants indiens contrôlés : 500 g à 25 kg, qualités lavage à la main et machine, marque de distributeur et chargements complets."
+metaTitle: "Lessive en poudre : exportateur et fournisseur en Inde"
+metaDescription: "Lessive en poudre en gros de fabricants indiens contrôlés : 500 g à 25 kg, lavage main et machine. Marque de distributeur, conteneurs mixtes, FOB/CIF."
+keyword: "lessive en poudre"
 answer: "La lessive en poudre est un mélange sec de tensioactifs, d’adjuvants et d’autres additifs servant à laver le linge à la main ou en machine. Les formules varient en matière active et en charges, ce qui détermine à la fois le pouvoir lavant et le prix. GoodBiz Hygiene sélectionne des lessives en poudre en qualités lavage à la main et machine auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Poudre lavage à la main, économique"

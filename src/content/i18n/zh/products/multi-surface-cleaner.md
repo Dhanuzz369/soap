@@ -1,12 +1,13 @@
 ---
-sourceHash: "108193995324"
+sourceHash: "412ca2d14ce7"
 title: "多用途表面清洁剂"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
 hsn: "3402 50"
-metaTitle: "多用途表面清洁剂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的多用途表面清洁剂，提供喷雾瓶、补充装和大包装，有柑橘、薰衣草和清新香型，为进口商提供自有品牌，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "多用途表面清洁剂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的多用途表面清洁剂：喷雾瓶、补充装和大包装，柑橘、薰衣草等香型。支持自有品牌贴牌及FOB/CIF报价，面向进口商和经销商。"
+keyword: "多用途清洁剂"
 answer: "多用途表面清洁剂又称万能清洁剂，是用于台面、桌子、电器、涂漆墙面和许多硬质表面的通用液体清洁剂。它通常接近中性到弱碱性，以即用型喷雾或浓缩液形式销售。GoodBiz Hygiene从经我们考察的印度制造商采购多用途表面清洁剂用于出口。"
 variants:
   - "柑橘／柠檬"

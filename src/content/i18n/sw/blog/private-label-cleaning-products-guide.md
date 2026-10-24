@@ -1,6 +1,7 @@
 ---
-sourceHash: "17eb2fddaa93"
+sourceHash: "bd86fef00fbc"
 title: "Bidhaa za Usafi kwa Chapa ya Mnunuzi: Mwongozo wa Hatua kwa Hatua kwa Wasambazaji"
+metaTitle: "Bidhaa za Usafi kwa Chapa Yako: Mwongozo wa Wasambazaji"
 description: "Jinsi wasambazaji wanavyoweza kuzindua chapa yao ya bidhaa za usafi kutoka India: kuchagua bidhaa, sampuli, michoro, ufungashaji na usafirishaji."
 date: 2026-09-10
 tags: ["chapa ya mnunuzi", "wasambazaji", "usafi wa nyumbani", "OEM"]

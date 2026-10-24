@@ -1,12 +1,13 @@
 ---
-sourceHash: "e23a6ba5ced8"
+sourceHash: "847242946928"
 title: "Kisafishaji cha Sakafu"
 slug: floor-cleaner
 category: surface-home-cleaners
 order: 1
 hsn: "3402 50"
-metaTitle: "Kisafishaji cha Sakafu: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Kisafishaji cha sakafu cha maji chenye lavenda, waridi, yasmini, ndimu na msonobari kutoka India: 500 ml hadi 20 L, chapa ya mnunuzi na mizigo ya makontena."
+metaTitle: "Kisafishaji cha Sakafu: Msafirishaji wa India"
+metaDescription: "Kisafishaji cha sakafu chenye lavenda, waridi, yasmini, ndimu na msonobari, 500 ml hadi 20 L, kutoka viwanda vya India vilivyokaguliwa. Chapa yako, FOB/CIF."
+keyword: "kisafishaji cha sakafu"
 answer: "Kisafishaji cha sakafu ni bidhaa ya kimiminika yenye viambato vya kusafisha, inayochanganywa na maji au kutumika bila kuchanganywa kuondoa vumbi, mafuta na nyayo kwenye sakafu ngumu kama vigae, marumaru, vinyl na mawe yaliyopakwa kinga. Kwa kawaida huwa na harufu na huacha harufu hafifu baada ya kupiga deki. GoodBiz Hygiene hupata kisafishaji cha sakafu katika vifungashio vya rejareja na vya jumla kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Lavenda"

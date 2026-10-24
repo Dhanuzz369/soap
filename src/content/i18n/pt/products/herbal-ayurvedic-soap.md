@@ -1,12 +1,13 @@
 ---
-sourceHash: "f81c42efbf80"
+sourceHash: "329715bb8890"
 title: "Sabonete de ervas e ayurvédico"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
 hsn: "3401 11"
-metaTitle: "Sabonete de ervas e ayurvédico: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Sabonetes de banho de ervas e ayurvédicos de fabricantes indianos selecionados: barras de nim, cúrcuma, sândalo e aloe de 75 g a 125 g, com marca própria."
+metaTitle: "Sabonete de ervas e ayurvédico: exportador da Índia"
+metaDescription: "Sabonete de ervas e ayurvédico de fabricantes indianos selecionados: neem, cúrcuma, sândalo e aloe, de 75 a 125 g. Marca própria, contêineres mistos, FOB/CIF."
+keyword: "sabonete ayurvédico"
 answer: "O sabonete de ervas ou ayurvédico é uma barra de banho que inclui ingredientes vegetais, como nim, cúrcuma, sândalo ou aloe vera, em uma base de sabão, posicionada em torno da prática tradicional indiana de cuidado com a pele. É usado no banho diário. A GoodBiz Hygiene adquire essas barras de fabricantes indianos selecionados e as exporta com opções de marca própria."
 variants:
   - "Nim e tulsi"

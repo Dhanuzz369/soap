@@ -1,12 +1,13 @@
 ---
-sourceHash: "4b57db25e377"
+sourceHash: "a76fe73afa27"
 title: "Nước lau kính"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "Nước lau kính: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Nước lau kính không để lại vệt, dạng chai xịt và can refill từ nhà sản xuất Ấn Độ đã thẩm định: 500 ml đến 20 L, có nhãn riêng."
+metaTitle: "Nước lau kính: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Nước lau kính không để vệt, dạng chai xịt và can 1–20 L, từ nhà sản xuất Ấn Độ đã thẩm định. Nhãn riêng, container ghép và báo giá FOB/CIF theo đơn."
+keyword: "nước lau kính"
 answer: "Nước lau kính là chất lỏng ít bọt, thường gồm nước, một dung môi nhẹ và lượng nhỏ chất hoạt động bề mặt, được thiết kế để làm sạch cửa sổ, gương và các bề mặt kính khác mà không để lại vệt. Sản phẩm thường được bán trong chai xịt và khô nhanh. GoodBiz Hygiene cung ứng nước lau kính từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Xanh tiêu chuẩn, không amoniac"

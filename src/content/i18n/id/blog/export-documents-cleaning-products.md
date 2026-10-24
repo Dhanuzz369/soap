@@ -1,6 +1,7 @@
 ---
-sourceHash: "2b10481b836a"
+sourceHash: "259e3f5f79fb"
 title: "Dokumen Ekspor untuk Produk Pembersih: COA, MSDS, Surat Keterangan Asal, dan Lainnya"
+metaTitle: "Dokumen Ekspor Produk Pembersih: COA, MSDS, SKA"
 description: "Daftar periksa dokumen ekspor bagi pembeli sabun, deterjen, dan pembersih dari India: faktur, COA, SDS, surat keterangan asal, dokumen DG, dan registrasi lokal."
 date: 2026-10-14
 tags: ["dokumen ekspor", "COA", "MSDS", "surat keterangan asal"]

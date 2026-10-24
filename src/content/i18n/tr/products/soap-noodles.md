@@ -1,12 +1,13 @@
 ---
-sourceHash: "386cf04101b2"
+sourceHash: "f2bf93b5815c"
 title: "Sabun Noodle (Sabun Bazı)"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "Sabun Noodle: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden 80:20 ve 70:30 palm/palm çekirdeği kalitelerinde sabun noodle; sabun üreticileri için 25 kg ve 50 kg çuvallarda."
+metaTitle: "Sabun Noodle: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden 80:20 ve 70:30 sabun noodle (sabun bazı), sabun üreticileri için 25 ve 50 kg torba. HSN 3401 20, FOB/CIF teklif."
+keyword: "sabun noodle"
 answer: "Sabun noodle, kurutulmuş, sabunlaştırılmış yağ ve katı yağdan oluşan küçük peletlerdir; tuvalet, çamaşır ve diğer kalıp sabunların yapımında temel malzeme olarak kullanılır. Palm yağının palm çekirdeği yağına oranına ve Toplam Yağ Maddesine (TFM) göre sınıflandırılır. GoodBiz Hygiene, sabun noodle’ı sabun üreticilerine ve distribütörlere ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "80:20 palm / palm çekirdeği (1. kalite / premium)"

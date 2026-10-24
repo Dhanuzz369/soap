@@ -1,13 +1,14 @@
 ---
-sourceHash: "c3d7a358c07c"
+sourceHash: "40ef01b501de"
 title: "Fenol herbal / fenil"
 slug: herbal-phenol
 category: surface-home-cleaners
 order: 2
 hsn: "3402 50"
 hsnNote: "El fenol herbal y el fenil suelen clasificarse en la partida HSN 3808 94 como desinfectante, según la formulación y las declaraciones de la etiqueta. Mostramos 3402 50 como partida de limpiador de superficies; la clasificación correcta se confirma en cada pedido con el fabricante y con su agente de aduanas."
-metaTitle: "Fenol herbal / fenil: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Fenol herbal y fenil para pisos de neem, pino, eucalipto y citronela de fabricantes indios seleccionados: de 500 ml a tambores de 200 L, con marca propia."
+metaTitle: "Fenol herbal / fenil: exportador y proveedor de India"
+metaDescription: "Fenol herbal (fenil) de neem, pino, eucalipto y limoncillo, de 500 ml a tambores de 200 L, de fabricantes indios seleccionados. Marca propia y FOB/CIF."
+keyword: "fenol herbal"
 answer: "El fenol herbal, que también se vende como fenil, es un limpiador líquido concentrado a base de aceites de origen vegetal, como pino, neem o eucalipto, que suele presentarse como una emulsión blanco lechoso al mezclarse con agua. Se usa para fregar pisos y para limpiar alrededor de desagües e inodoros por su aroma intenso y duradero. GoodBiz Hygiene adquiere fenol herbal a fabricantes indios seleccionados para su exportación."
 variants:
   - "Neem"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "e4da7e02de7a"
+sourceHash: "d51786edaf5f"
 title: "SLES (Natrium Lauril Eter Sulfat)"
 slug: sles
 category: industrial-raw-materials
 order: 3
 hsn: "3402 39"
-metaTitle: "SLES 28% dan 70%: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "SLES 28% dan 70% natrium lauril eter sulfat dari produsen India terseleksi, dikemas drum, IBC, dan flexitank untuk pembuat sampo dan deterjen."
+metaTitle: "SLES 28% dan 70%: Eksportir & Pemasok dari India"
+metaDescription: "SLES 28% dan 70% (natrium lauril eter sulfat) dari produsen India terseleksi dalam drum, IBC, dan flexitank. HSN 3402 39, penawaran FOB/CIF per pesanan."
+keyword: "SLES"
 answer: "SLES (Sodium Lauryl Ether Sulphate, natrium lauril eter sulfat) adalah surfaktan anionik lembut yang menghasilkan busa kaya, dipakai dalam sampo, sabun cuci tangan, sabun mandi cair, sabun cuci piring cair, dan deterjen. SLES dijual sebagai cairan kental bening hingga pucat dalam kekuatan bahan aktif 28% atau 70%. GoodBiz Hygiene mencarikan SLES dari produsen India yang telah diseleksi untuk diekspor kepada peracik dan distributor."
 variants:
   - "SLES 28% aktif (cair, siap pakai)"

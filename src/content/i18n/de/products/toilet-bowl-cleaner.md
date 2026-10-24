@@ -1,12 +1,13 @@
 ---
-sourceHash: "f6009b1516c1"
+sourceHash: "332323d039a7"
 title: "WC-Reiniger"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "WC-Reiniger Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Dickflüssiger WC-Reiniger in Flaschen mit abgewinkeltem Hals, säurebasiert und mild, von geprüften indischen Herstellern: 500 ml bis 5 L, Handelsmarke."
+metaTitle: "WC-Reiniger – Exporteur & Lieferant aus Indien"
+metaDescription: "Dickflüssiger WC-Reiniger, sauer oder mild, in Flaschen mit Winkelhals von 500 ml bis 5 L, von geprüften indischen Herstellern. Handelsmarke und FOB/CIF."
+keyword: "WC-Reiniger"
 answer: "WC-Reiniger ist eine dickflüssige, haftende Flüssigkeit, normalerweise auf Säurebasis, die Kalk, Rostflecken und Urinstein aus Toilettenbecken und Urinalen entfernt. Er wird in Flaschen mit abgewinkeltem Hals verkauft, damit sich die Flüssigkeit unter dem Rand platzieren lässt. GoodBiz Hygiene bezieht WC-Reiniger von geprüften indischen Herstellern für den Export."
 variants:
   - "Standard säurebasiert, blau"

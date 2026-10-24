@@ -1,13 +1,14 @@
 ---
-sourceHash: "4d96f789adca"
+sourceHash: "050e9d439949"
 title: "Adoucissant / assouplissant textile"
 slug: fabric-softener
 category: laundry-care
 order: 4
 hsn: "3402 50"
 hsnNote: "L’assouplissant est couramment classé sous le code 3402 50 comme préparation tensioactive, mais il est aussi souvent classé sous le code 3809 91 (agents d’apprêt pour textiles). Le bon code dépend de la formule et de la pratique douanière du pays de destination ; nous confirmons donc le code complet à 8 chiffres pour chaque commande."
-metaTitle: "Adoucissant et assouplissant textile : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Assouplissant textile de fabricants indiens contrôlés : 500 ml à 20 L, qualités standard et concentrées, marque de distributeur et conteneurs mixtes."
+metaTitle: "Adoucissant et assouplissant textile : exportateur en Inde"
+metaDescription: "Adoucissant textile de fabricants indiens contrôlés : 500 ml à 20 L, standard ou concentré. Marque de distributeur, conteneurs mixtes et devis FOB/CIF."
+keyword: "adoucissant"
 answer: "L’adoucissant, ou assouplissant textile, est un liquide ajouté au dernier rinçage pour rendre le linge doux, lisse et parfumé. Il agit grâce à des agents adoucissants cationiques qui gainent les fibres et réduisent l’électricité statique. GoodBiz Hygiene sélectionne des assouplissants en qualités standard et concentrées auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Bouquet floral"

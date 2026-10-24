@@ -4,8 +4,9 @@ slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "Antibacterial & Medicated Soap Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Antibacterial and medicated bath soaps from vetted Indian manufacturers: 75 g to 150 g bars, TFM 70%+, private label and mixed container loads for importers."
+metaTitle: "Antibacterial Soap Exporter & Supplier from India"
+metaDescription: "Antibacterial and medicated soap from vetted Indian manufacturers: 75–150 g bars, PCMX and neem grades, TFM 70%+. Private label, mixed containers, FOB/CIF."
+keyword: "antibacterial soap"
 answer: "Antibacterial or medicated soap is a bath bar that adds an active ingredient, such as chloroxylenol (PCMX) or a botanical like neem (and, where permitted, triclocarban), to help reduce skin bacteria during washing. It is used for daily hygiene at home and in institutions. GoodBiz Hygiene sources it from vetted Indian manufacturers for export."
 variants:
   - "PCMX antibacterial bar (fresh)"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "e23a6ba5ced8"
+sourceHash: "847242946928"
 title: "Nước lau sàn"
 slug: floor-cleaner
 category: surface-home-cleaners
 order: 1
 hsn: "3402 50"
-metaTitle: "Nước lau sàn: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Nước lau sàn hương oải hương, hoa hồng, hoa nhài, chanh, thông từ nhà sản xuất Ấn Độ đã thẩm định: 500 ml đến 20 L, có nhãn riêng."
+metaTitle: "Nước lau sàn: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Nước lau sàn hương oải hương, hoa hồng, hoa nhài, chanh và thông, 500 ml đến 20 L, từ nhà sản xuất Ấn Độ đã thẩm định. Nhãn riêng, container ghép, FOB/CIF."
+keyword: "nước lau sàn"
 answer: "Nước lau sàn là sản phẩm dạng lỏng gốc chất hoạt động bề mặt, pha loãng trong nước hoặc dùng nguyên chất để loại bỏ bụi, dầu mỡ và dấu chân khỏi các loại sàn cứng như gạch, đá cẩm thạch, vinyl và đá đã được xử lý bề mặt. Sản phẩm thường có hương liệu và để lại mùi thơm nhẹ sau khi lau. GoodBiz Hygiene cung ứng nước lau sàn ở các quy cách bán lẻ và số lượng lớn từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Oải hương"

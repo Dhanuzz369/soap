@@ -1,12 +1,13 @@
 ---
-sourceHash: "c651d0594a86"
+sourceHash: "94216906b8fc"
 title: "Nước tẩy rửa phòng tắm và gạch men"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "Nước tẩy phòng tắm và gạch men: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Nước tẩy phòng tắm và gạch men xử lý cặn xà phòng, cặn vôi, dạng chai xịt và refill từ nhà sản xuất Ấn Độ đã thẩm định, có nhãn riêng."
+metaTitle: "Nước tẩy phòng tắm và gạch men: xuất khẩu từ Ấn Độ"
+metaDescription: "Nước tẩy phòng tắm và gạch men, sạch cặn vôi và cặn xà phòng, dạng xịt và can 5–20 L từ nhà sản xuất Ấn Độ đã thẩm định. Nhãn riêng, báo giá FOB/CIF."
+keyword: "nước tẩy phòng tắm"
 answer: "Nước tẩy rửa phòng tắm và gạch men là chất lỏng hoặc gel được pha chế để loại bỏ cặn xà phòng, cặn vôi, vết nước và vết mốc nhẹ khỏi gạch men, vòi nước, bồn rửa, vách kính tắm và các thiết bị phòng tắm. Sản phẩm thường có tính axit nhẹ và hay được bán trong chai xịt. GoodBiz Hygiene cung ứng nước tẩy rửa phòng tắm và gạch men từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Chanh tươi mát"

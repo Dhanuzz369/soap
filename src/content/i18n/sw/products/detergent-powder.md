@@ -1,12 +1,13 @@
 ---
-sourceHash: "c252bad2fbfa"
+sourceHash: "1a547e59ad40"
 title: "Poda ya Kufulia (Sabuni ya Unga)"
 slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "Poda ya Kufulia: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Poda ya kufulia kutoka kwa watengenezaji wa India tuliowakagua: vifungashio vya 500 g hadi 25 kg, daraja za mkono na mashine, chapa ya mnunuzi na makontena."
+metaTitle: "Poda ya Kufulia: Msafirishaji Nje na Muuzaji kutoka India"
+metaDescription: "Poda ya kufulia kwa jumla kutoka viwanda vya India vilivyokaguliwa: 500 g hadi 25 kg, kufua kwa mkono na mashine. Chapa yako, makontena mchanganyiko, FOB/CIF."
+keyword: "poda ya kufulia"
 answer: "Poda ya kufulia ni mchanganyiko mkavu wa viambato vya kusafisha (surfactants), viimarishaji (builders) na viongezeo vingine vinavyotumika kufua nguo kwa mkono au kwa mashine ya kufulia. Fomula hutofautiana katika kiasi cha viambato hai na vijazaji, jambo linaloamua nguvu ya kusafisha na bei. GoodBiz Hygiene hupata poda ya kufulia katika daraja za kufua kwa mkono na kwa mashine kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Poda ya kufua kwa mkono, ya bei nafuu"

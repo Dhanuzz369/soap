@@ -1,12 +1,13 @@
 ---
-sourceHash: "f6009b1516c1"
+sourceHash: "332323d039a7"
 title: "Pembersih Kloset"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "Pembersih Kloset: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Pembersih kloset kental dalam botol berleher miring, grade asam dan ringan, dari produsen India terseleksi: 500 ml hingga 5 L, private label, kontainer."
+metaTitle: "Pembersih Kloset: Eksportir & Pemasok dari India"
+metaDescription: "Pembersih kloset kental, asam atau lembut, dalam botol leher miring 500 ml hingga 5 L, dari produsen India terseleksi. Private label dan penawaran FOB/CIF."
+keyword: "pembersih kloset"
 answer: "Pembersih kloset adalah cairan kental yang menempel, umumnya berbasis asam, yang menghilangkan kerak kapur, noda karat, dan endapan urine dari kloset dan urinoir. Produk ini dijual dalam botol berleher miring agar cairan dapat dituangkan ke bawah tepi mangkuk. GoodBiz Hygiene mencarikan pembersih kloset dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Standar berbasis asam, biru"

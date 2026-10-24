@@ -10,6 +10,8 @@ const categories = defineCollection({
     order: z.number(),
     hsnRange: z.string(),
     summary: z.string().max(160),
+    /** The search snippet (120–160 characters); `summary` is the shorter line under the page title. */
+    metaDescription: z.string().min(120).max(160),
     intro: z.string(),
   }),
 });
@@ -25,6 +27,8 @@ const products = defineCollection({
     hsnNote: z.string().optional(),
     metaTitle: z.string(),
     metaDescription: z.string().min(120).max(160),
+    /** The main search term for this product, as buyers type it (docs/seo-keywords.md), e.g. "dish wash liquid". */
+    keyword: z.string(),
     answer: z.string(),
     variants: z.array(z.string()).min(3),
     packSizes: z.array(z.string()).min(3),
@@ -47,6 +51,8 @@ const blog = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/blog' }),
   schema: z.object({
     title: z.string(),
+    /** A shorter <title> for search results (aim for 60 characters or fewer); the page heading stays `title`. */
+    metaTitle: z.string().max(70).optional(),
     description: z.string().min(120).max(160),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
@@ -80,6 +86,7 @@ const productsI18n = defineCollection({
     hsnNote: z.string().optional(),
     metaTitle: z.string().optional(),
     metaDescription: z.string().optional(),
+    keyword: z.string().optional(),
     answer: z.string().optional(),
     variants: z.array(z.string()).optional(),
     packSizes: z.array(z.string()).optional(),
@@ -106,6 +113,7 @@ const categoriesI18n = defineCollection({
     order: z.number().optional(),
     hsnRange: z.string().optional(),
     summary: z.string().optional(),
+    metaDescription: z.string().optional(),
     intro: z.string().optional(),
   }),
 });
@@ -115,6 +123,7 @@ const blogI18n = defineCollection({
   schema: z.object({
     ...stamp,
     title: z.string().optional(),
+    metaTitle: z.string().optional(),
     description: z.string().optional(),
     date: z.coerce.date().optional(),
     updated: z.coerce.date().optional(),

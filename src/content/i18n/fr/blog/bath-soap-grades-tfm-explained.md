@@ -1,6 +1,7 @@
 ---
-sourceHash: "6de17572f082"
+sourceHash: "84702d62b584"
 title: "Qualités de savon de toilette : le TFM, qualité 1 ou qualité 2, et pourquoi c’est important"
+metaTitle: "Qualités de savon : TFM, qualité 1 ou 2, ce qui change"
 description: "Ce que signifie le TFM sur une fiche de savon, comment les qualités 1 et 2 sont utilisées dans le commerce, et comment choisir la qualité adaptée à votre prix."
 date: 2026-08-27
 tags: ["savon de toilette", "TFM", "qualités de savon", "spécifications"]

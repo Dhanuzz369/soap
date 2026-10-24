@@ -1,12 +1,13 @@
 ---
-sourceHash: "4f059edea2db"
+sourceHash: "f923483b7544"
 title: "Gel douche / nettoyant corps"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "Gel douche et nettoyant corps : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Gels douche de fabricants indiens contrôlés : flacons de 250 ml à 1 L, parfums frais, floraux ou aux plantes, en marque de distributeur pour importateurs."
+metaTitle: "Gel douche et nettoyant corps : exportateur en Inde"
+metaDescription: "Gel douche et nettoyant corps de fabricants indiens contrôlés : 100 ml à 5 L, parfums frais, floraux ou aux plantes. MDD pour importateurs et hôtels, FOB/CIF."
+keyword: "gel douche"
 answer: "Le gel douche, ou nettoyant corps, est un produit lavant liquide pour le corps, composé de tensioactifs doux, d’agents adoucissants et de parfum, appliqué à la main ou avec une éponge. Il mousse généreusement et convient à un usage quotidien. GoodBiz Hygiene sélectionne gels douche et nettoyants corps auprès de fabricants indiens contrôlés pour la distribution et l’hôtellerie."
 variants:
   - "Fraîcheur océane"

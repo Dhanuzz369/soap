@@ -1,12 +1,13 @@
 ---
-sourceHash: "05b3ceee9465"
+sourceHash: "36c4cfd3090d"
 title: "Liquide vaisselle / gel vaisselle"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
 hsn: "3402 50"
-metaTitle: "Liquide et gel vaisselle : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Liquide et gel vaisselle citron, citron vert et autres, de fabricants indiens contrôlés : 250 ml à 5 L, fûts vrac, marque de distributeur pour importateurs."
+metaTitle: "Liquide et gel vaisselle : exportateur en Inde"
+metaDescription: "Liquide et gel vaisselle de fabricants indiens contrôlés : citron, citron vert, de 250 ml au fût de 200 L. Marque de distributeur, conteneurs mixtes, FOB/CIF."
+keyword: "liquide vaisselle"
 answer: "Le liquide vaisselle est un détergent concentré pour laver à la main assiettes, casseroles et couverts, disponible en liquide fluide ou en gel plus épais. Il dissout les graisses, mousse bien à l’eau froide et se rince sans laisser de film. GoodBiz Hygiene sélectionne liquide et gel vaisselle en formats de vente au détail et en vrac auprès de fabricants indiens contrôlés, pour l’export."
 variants:
   - "Citron"

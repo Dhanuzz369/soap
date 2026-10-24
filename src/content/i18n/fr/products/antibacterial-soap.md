@@ -1,12 +1,13 @@
 ---
-sourceHash: "f7b01af09895"
+sourceHash: "76e23824cc1d"
 title: "Savon antibactérien / traitant"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "Savon antibactérien et traitant : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Savons antibactériens et traitants de fabricants indiens contrôlés : pains de 75 à 150 g, TFM 70 % et plus, marque de distributeur et conteneurs mixtes."
+metaTitle: "Savon antibactérien et traitant : exportateur en Inde"
+metaDescription: "Savon antibactérien et traitant de fabricants indiens contrôlés : pains de 75 à 150 g, PCMX ou neem, TFM 70 %+. Marque de distributeur, FOB/CIF."
+keyword: "savon antibactérien"
 answer: "Le savon antibactérien, ou savon traitant, est un pain de toilette qui contient un actif, comme le chloroxylénol (PCMX) ou un ingrédient végétal tel que le neem (et, là où il est autorisé, le triclocarban), pour aider à réduire les bactéries de la peau au lavage. Il sert à l’hygiène quotidienne à la maison et en collectivité. GoodBiz Hygiene le sélectionne auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Pain antibactérien PCMX (frais)"

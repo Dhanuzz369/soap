@@ -1,12 +1,13 @@
 ---
-sourceHash: "ccf18cf99322"
+sourceHash: "cf0393403b70"
 title: "Spülseife (festes Geschirrspülmittel)"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
 hsn: "3401 19"
-metaTitle: "Spülseife / festes Geschirrspülmittel Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Spülseife in Zitrone, Limette und mehr von geprüften indischen Herstellern: Stücke und Dosen von 100 bis 300 g, Handelsmarke, Containerladungen für Importeure."
+metaTitle: "Spülseife / festes Geschirrspülmittel – Export aus Indien"
+metaDescription: "Spülseife in Zitrone, Limette und mehr von geprüften indischen Herstellern: Dosen und Stücke von 100 bis 300 g. Handelsmarke, Mischcontainer und FOB/CIF."
+keyword: "Spülseife"
 answer: "Eine Spülseife ist ein fester Block aus Reinigungsmittel, der mit einem Scheuerschwamm oder feuchten Schwamm zum Reinigen von Geschirr, Töpfen und Küchenflächen verwendet wird. Sie ist sparsam, langlebig und leicht zu lagern, weshalb sie dort beliebt ist, wo der Preis je Spülgang am meisten zählt. GoodBiz Hygiene bezieht Spülseife in mehreren Größen und Düften von geprüften indischen Herstellern für den Export."
 variants:
   - "Zitrone"

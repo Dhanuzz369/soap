@@ -5,8 +5,9 @@ category: surface-home-cleaners
 order: 2
 hsn: "3402 50"
 hsnNote: "Herbal phenol and phenyl are often classified under HSN 3808 94 as a disinfectant, depending on the formulation and the claims made on the label. We show 3402 50 as a surface-cleaner heading; the correct classification is confirmed per order with the manufacturer and your customs broker."
-metaTitle: "Herbal Phenol / Phenyl Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Herbal phenol and phenyl floor cleaner in neem, pine, eucalyptus and lemongrass from vetted Indian manufacturers: 500 ml to 200 L drums, private label."
+metaTitle: "Herbal Phenol / Phenyl Exporter & Supplier from India"
+metaDescription: "Herbal phenyl (phenol) floor cleaner in neem, pine, eucalyptus and lemongrass, 500 ml to 200 L drums, from vetted Indian manufacturers. Private label, FOB/CIF."
+keyword: "herbal phenyl"
 answer: "Herbal phenol, also sold as phenyl, is a concentrated liquid cleaner based on plant-derived oils such as pine, neem or eucalyptus, usually supplied as a milky-white emulsion when mixed with water. It is mopped on floors and used around drains and toilets for its strong, lasting scent. GoodBiz Hygiene sources herbal phenol from vetted Indian manufacturers for export."
 variants:
   - "Neem"

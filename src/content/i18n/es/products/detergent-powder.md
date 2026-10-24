@@ -1,12 +1,13 @@
 ---
-sourceHash: "c252bad2fbfa"
+sourceHash: "1a547e59ad40"
 title: "Detergente en polvo"
 slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "Detergente en polvo: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Detergente en polvo de fabricantes indios seleccionados: envases de 500 g a 25 kg, calidades para lavado a mano y a máquina, marca propia y contenedores."
+metaTitle: "Detergente en polvo: exportador y proveedor de India"
+metaDescription: "Detergente en polvo a granel de fabricantes indios seleccionados: 500 g a 25 kg, lavado a mano y a máquina. Marca propia, contenedores mixtos, FOB/CIF."
+keyword: "detergente en polvo"
 answer: "El detergente en polvo es una mezcla seca de tensioactivos, coadyuvantes y otros aditivos que se usa para lavar la ropa a mano o en lavadora. Las formulaciones varían en materia activa y contenido de carga, lo que determina tanto el poder de limpieza como el precio. GoodBiz Hygiene adquiere detergente en polvo en calidades para lavado a mano y a máquina a fabricantes indios seleccionados para su exportación."
 variants:
   - "Polvo para lavado a mano, económico"

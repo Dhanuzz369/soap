@@ -1,12 +1,13 @@
 ---
-sourceHash: "54468ef241aa"
+sourceHash: "a3d644f8b2bd"
 title: "香皂／沐浴皂"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "香皂／沐浴皂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的香皂和沐浴皂块：50 g至150 g，TFM等级60%至76%以上，为进口商提供自有品牌和混装集装箱装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "香皂／沐浴皂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的香皂和沐浴皂：50–150 g，TFM 60%至76%以上。支持自有品牌贴牌、混装集装箱，按订单提供FOB/CIF报价。"
+keyword: "香皂"
 answer: "香皂又称沐浴皂，是由油脂皂化制成的固体清洁皂块，用于洗脸和洗身。其等级主要按总脂肪物（TFM）划分，TFM表示皂块中真正皂基的含量。GoodBiz Hygiene从经我们考察的印度制造商采购多种TFM等级的香皂用于出口。"
 variants:
   - "玫瑰"

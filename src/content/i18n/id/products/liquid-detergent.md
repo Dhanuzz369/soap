@@ -1,12 +1,13 @@
 ---
-sourceHash: "a32b95104c89"
+sourceHash: "e01f264e3e3e"
 title: "Deterjen Cair"
 slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Deterjen Cair untuk Cucian: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Deterjen cair untuk cucian dari produsen India terseleksi: kemasan 500 ml hingga 20 L, grade cuci tangan dan mesin cuci, private label dan muatan campuran."
+metaTitle: "Deterjen Cair untuk Cucian: Eksportir & Pemasok dari India"
+metaDescription: "Deterjen cair untuk pakaian dari produsen India terseleksi: 500 ml hingga 20 L, cuci tangan dan mesin. Private label, kontainer campuran, dan penawaran FOB/CIF."
+keyword: "deterjen cair"
 answer: "Deterjen cair adalah pembersih cucian yang dapat dituang, memadukan surfaktan, air, dan aditif, serta mudah larut dalam air dingin maupun hangat. Produk ini cocok untuk cuci tangan maupun mesin cuci, dan dijual sebagai alternatif yang lebih praktis dan premium dibanding bubuk. GoodBiz Hygiene mencarikan deterjen cair dari produsen India yang telah diseleksi dalam kemasan ritel dan curah untuk diekspor."
 variants:
   - "Mesin top-load dan cuci tangan"

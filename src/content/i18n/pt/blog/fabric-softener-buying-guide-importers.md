@@ -1,6 +1,7 @@
 ---
-sourceHash: "cc1fb6d2b8d5"
+sourceHash: "ee2e38612e35"
 title: "Guia de compra de amaciante para importadores: tipos, fragrâncias e tamanhos de embalagem"
+metaTitle: "Guia de compra de amaciante para importadores"
 description: "O que importadores devem saber antes de comprar amaciante da Índia: regular ou concentrado, graus sensíveis, fragrância, tamanhos de embalagem e armazenagem."
 date: 2026-09-17
 tags: ["amaciante", "guia de compra", "fragrância", "tamanhos de embalagem"]

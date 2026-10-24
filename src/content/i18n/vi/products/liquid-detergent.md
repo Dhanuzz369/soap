@@ -1,12 +1,13 @@
 ---
-sourceHash: "a32b95104c89"
+sourceHash: "e01f264e3e3e"
 title: "Nước giặt"
 slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Nước giặt quần áo: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Nước giặt từ nhà sản xuất Ấn Độ đã thẩm định: gói 500 ml đến 20 L, loại giặt tay và giặt máy, có nhãn riêng, ghép container."
+metaTitle: "Nước giặt quần áo: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Nước giặt quần áo từ nhà sản xuất Ấn Độ đã thẩm định: 500 ml đến 20 L, giặt tay và giặt máy. Nhãn riêng, container ghép và báo giá FOB/CIF theo đơn."
+keyword: "nước giặt"
 answer: "Nước giặt là chất giặt tẩy dạng lỏng dễ rót, kết hợp chất hoạt động bề mặt, nước và các chất bổ sung, hòa tan dễ trong nước lạnh hoặc ấm. Sản phẩm phù hợp cả giặt tay lẫn máy giặt, và được bán như lựa chọn tiện lợi, cao cấp hơn so với bột giặt. GoodBiz Hygiene cung ứng nước giặt từ các nhà sản xuất Ấn Độ đã được thẩm định, đóng gói bán lẻ và số lượng lớn để xuất khẩu."
 variants:
   - "Giặt máy cửa trên và giặt tay"

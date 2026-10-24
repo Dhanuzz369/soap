@@ -1,6 +1,7 @@
 ---
-sourceHash: "2b10481b836a"
+sourceHash: "259e3f5f79fb"
 title: "Documentos de exportación para productos de limpieza: COA, MSDS, certificado de origen y más"
+metaTitle: "Documentos de exportación de productos de limpieza"
 description: "Lista para compradores con los documentos de exportación de jabones, detergentes y limpiadores de la India: factura, COA, SDS, origen y registros."
 date: 2026-10-14
 tags: ["documentos de exportación", "COA", "MSDS", "certificado de origen"]

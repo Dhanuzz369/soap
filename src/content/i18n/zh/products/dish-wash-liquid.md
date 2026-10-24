@@ -1,12 +1,13 @@
 ---
-sourceHash: "05b3ceee9465"
+sourceHash: "36c4cfd3090d"
 title: "洗洁精／洗碗凝胶"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
 hsn: "3402 50"
-metaTitle: "洗洁精／洗碗凝胶印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的柠檬、青柠等香型洗洁精和洗碗凝胶：250 ml至5 L桶装及大桶装，为进口商提供自有品牌，并支持混装集装箱，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "洗洁精／洗碗凝胶印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的洗洁精和洗碗凝胶：柠檬、青柠等香型，250 ml至200 L桶装。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "洗洁精"
 answer: "洗洁精是用于手洗盘碗、锅具和餐具的浓缩洗涤剂，有稀液和较稠的凝胶两种形态。它能去除油脂，在凉水中泡沫丰富，冲洗后不留膜。GoodBiz Hygiene从经我们考察的印度制造商采购零售和大包装洗洁精及洗碗凝胶用于出口。"
 variants:
   - "柠檬"

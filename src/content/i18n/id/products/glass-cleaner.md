@@ -1,12 +1,13 @@
 ---
-sourceHash: "4b57db25e377"
+sourceHash: "a76fe73afa27"
 title: "Pembersih Kaca"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "Pembersih Kaca: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Pembersih kaca dan cermin bebas bekas garis, botol semprot dan jerigen isi ulang dari produsen India terseleksi: 500 ml hingga 20 L, private label."
+metaTitle: "Pembersih Kaca: Eksportir & Pemasok dari India"
+metaDescription: "Pembersih kaca tanpa noda dalam botol semprot dan isi ulang 1–20 L dari produsen India terseleksi. Private label, kontainer campuran, dan penawaran FOB/CIF."
+keyword: "pembersih kaca"
 answer: "Pembersih kaca adalah cairan rendah busa, biasanya berisi air, pelarut ringan, dan sedikit surfaktan, yang dirancang untuk membersihkan jendela, cermin, dan kaca lainnya tanpa meninggalkan bekas garis. Produk ini biasanya dijual dalam botol semprot trigger dan cepat kering. GoodBiz Hygiene mencarikan pembersih kaca dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Biru standar, bebas amonia"

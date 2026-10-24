@@ -1,12 +1,13 @@
 ---
-sourceHash: "1575bed4aaca"
+sourceHash: "2fb368c1aef4"
 title: "Hóa chất tẩy rửa số lượng lớn và dùng cho tổ chức"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
 hsn: "3402 90"
-metaTitle: "Hóa chất tẩy rửa số lượng lớn: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Hóa chất tẩy rửa số lượng lớn từ nhà sản xuất Ấn Độ đã thẩm định, quy cách 5 L đến IBC 1.000 L cho khách sạn, dịch vụ cơ sở và nhà phân phối."
+metaTitle: "Hóa chất tẩy rửa số lượng lớn: xuất khẩu từ Ấn Độ"
+metaDescription: "Hóa chất tẩy rửa số lượng lớn cho khách sạn, dịch vụ vệ sinh và nhà phân phối: dạng đậm đặc từ 5 L đến IBC 1.000 L, từ nhà sản xuất Ấn Độ. Báo giá FOB/CIF."
+keyword: "hóa chất tẩy rửa"
 answer: "Hóa chất tẩy rửa số lượng lớn và dùng cho tổ chức là các chất tẩy rửa đậm đặc, như nước lau sàn, chất tẩy dầu mỡ, nước rửa tay và nước giặt, được cung cấp trong bao bì lớn cho mục đích chuyên nghiệp. Sản phẩm được mua bởi khách sạn, bệnh viện, nhà thầu vệ sinh và nhà phân phối cần chi phí mỗi lít thấp và chất lượng ổn định. GoodBiz Hygiene cung ứng từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Nước lau sàn đậm đặc"

@@ -4,5 +4,6 @@ slug: surface-home-cleaners
 order: 4
 hsnRange: "3402"
 summary: "Floor, glass, toilet, bathroom and multi-surface cleaners and herbal phenol, exported from India."
+metaDescription: "Floor, glass, toilet, bathroom and multi-surface cleaners and herbal phenyl from India, in bulk or private label. Mixed containers and FOB/CIF quotes."
 intro: "Floor, bathroom, glass and general surface cleaners for homes and facilities, sourced from vetted Indian manufacturers in retail and bulk packs, with private label available for importers."
 ---

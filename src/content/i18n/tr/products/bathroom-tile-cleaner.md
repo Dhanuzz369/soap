@@ -1,12 +1,13 @@
 ---
-sourceHash: "c651d0594a86"
+sourceHash: "94216906b8fc"
 title: "Banyo ve Fayans Temizleyici"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "Banyo ve Fayans Temizleyici: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden kireç ve sabun kalıntısına karşı pompalı sprey ve yedek dolumlu banyo ve fayans temizleyici; özel marka mevcuttur."
+metaTitle: "Banyo ve Fayans Temizleyici: Hindistan’dan İhracat"
+metaDescription: "Kireç ve sabun kalıntısına karşı banyo ve fayans temizleyici; sprey ve 5–20 L yedekler, kontrol edilmiş Hindistanlı üreticilerden. Özel marka ve FOB/CIF."
+keyword: "banyo temizleyici"
 answer: "Banyo ve fayans temizleyici; fayanslardan, musluklardan, lavabolardan, duş kabinlerinden ve banyo armatürlerinden sabun köpüğü kalıntısını, kireci, su lekelerini ve hafif küf izlerini gidermek için formüle edilmiş bir sıvı veya jeldir. Genellikle hafif asidiktir ve çoğunlukla pompalı sprey şişelerde satılır. GoodBiz Hygiene, banyo ve fayans temizleyiciyi ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Ferah limon"

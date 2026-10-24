@@ -1,12 +1,13 @@
 ---
-sourceHash: "c252bad2fbfa"
+sourceHash: "1a547e59ad40"
 title: "Bột giặt"
 slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "Bột giặt: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Bột giặt từ nhà sản xuất Ấn Độ đã thẩm định: gói 500 g đến 25 kg, loại giặt tay và giặt máy, có nhãn riêng, xuất theo container."
+metaTitle: "Bột giặt: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Bột giặt số lượng lớn từ nhà sản xuất Ấn Độ đã thẩm định: 500 g đến 25 kg, giặt tay và giặt máy. Nhãn riêng, container ghép và báo giá FOB/CIF theo đơn."
+keyword: "bột giặt"
 answer: "Bột giặt là hỗn hợp khô gồm chất hoạt động bề mặt, phụ gia trợ giặt và các chất bổ sung khác, dùng để giặt quần áo bằng tay hoặc bằng máy giặt. Công thức khác nhau về hàm lượng hoạt chất và chất độn, quyết định cả sức làm sạch lẫn giá thành. GoodBiz Hygiene cung ứng bột giặt loại giặt tay và giặt máy từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Bột giặt tay, phổ thông"

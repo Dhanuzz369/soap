@@ -1,6 +1,7 @@
 ---
-sourceHash: "2b10481b836a"
+sourceHash: "259e3f5f79fb"
 title: "Chứng từ xuất khẩu cho sản phẩm tẩy rửa: COA, MSDS, giấy chứng nhận xuất xứ và hơn thế nữa"
+metaTitle: "Chứng từ xuất khẩu sản phẩm tẩy rửa: COA, MSDS, C/O"
 description: "Danh mục chứng từ xuất khẩu xà phòng, chất tẩy rửa từ Ấn Độ: hóa đơn, COA, SDS, chứng nhận xuất xứ, hồ sơ hàng nguy hiểm và đăng ký địa phương."
 date: 2026-10-14
 tags: ["chứng từ xuất khẩu", "COA", "MSDS", "giấy chứng nhận xuất xứ"]

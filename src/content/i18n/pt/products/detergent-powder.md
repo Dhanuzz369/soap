@@ -1,12 +1,13 @@
 ---
-sourceHash: "c252bad2fbfa"
+sourceHash: "1a547e59ad40"
 title: "Sabão em pó / detergente em pó"
 slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "Sabão em pó e detergente em pó: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Sabão em pó e detergente em pó de fabricantes indianos selecionados: embalagens de 500 g a 25 kg, graus para lavagem à mão e à máquina, marca própria."
+metaTitle: "Sabão em pó e detergente em pó: exportador da Índia"
+metaDescription: "Sabão em pó a granel de fabricantes indianos selecionados: 500 g a 25 kg, lavagem à mão e na máquina. Marca própria, contêineres mistos e cotação FOB/CIF."
+keyword: "sabão em pó"
 answer: "O sabão em pó, ou detergente em pó, é uma mistura seca de tensoativos, coadjuvantes e outros aditivos usada para lavar roupas à mão ou na máquina de lavar. As formulações variam em matéria ativa e teor de carga, o que define tanto o poder de limpeza quanto o preço. A GoodBiz Hygiene adquire sabão em pó em graus para lavagem à mão e à máquina de fabricantes indianos selecionados, para exportação."
 variants:
   - "Pó para lavagem à mão, econômico"

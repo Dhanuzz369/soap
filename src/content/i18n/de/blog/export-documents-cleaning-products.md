@@ -1,6 +1,7 @@
 ---
-sourceHash: "2b10481b836a"
+sourceHash: "259e3f5f79fb"
 title: "Exportdokumente für Reinigungsprodukte: COA, MSDS, Ursprungszeugnis und mehr"
+metaTitle: "Exportdokumente für Reinigungsmittel: COA, MSDS & mehr"
 description: "Checkliste der Exportdokumente für Seifen, Waschmittel und Reiniger aus Indien: Rechnung, COA, SDB, Ursprungszeugnis, Gefahrgutpapiere und Registrierungen."
 date: 2026-10-14
 tags: ["Exportdokumente", "COA", "MSDS", "Ursprungszeugnis"]

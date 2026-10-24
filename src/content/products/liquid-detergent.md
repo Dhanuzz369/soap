@@ -4,8 +4,9 @@ slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Liquid Laundry Detergent Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Liquid laundry detergent from vetted Indian manufacturers: 500 ml to 20 L packs, hand-wash and machine grades, private label and mixed container loads."
+metaTitle: "Liquid Laundry Detergent Exporter & Supplier from India"
+metaDescription: "Liquid laundry detergent from vetted Indian manufacturers: 500 ml to 20 L, hand-wash and machine grades. Private label, mixed containers, FOB/CIF quotes."
+keyword: "liquid detergent"
 answer: "Liquid detergent is a pourable laundry cleaner that combines surfactants, water and additives and dissolves easily in cold or warm water. It suits both hand washing and washing machines, and is sold as a more convenient, premium alternative to powder. GoodBiz Hygiene sources liquid detergent from vetted Indian manufacturers in retail and bulk packs for export."
 variants:
   - "Top-load machine and hand wash"

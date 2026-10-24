@@ -1,12 +1,13 @@
 ---
-sourceHash: "386cf04101b2"
+sourceHash: "f2bf93b5815c"
 title: "Noodles de savon (base savon)"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "Noodles de savon : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Noodles de savon en qualités palme/palmiste 80:20 et 70:30, de fabricants indiens contrôlés, en sacs de 25 et 50 kg pour les savonniers du monde entier."
+metaTitle: "Noodles de savon : exportateur et fournisseur en Inde"
+metaDescription: "Noodles de savon 80:20 et 70:30 de fabricants indiens contrôlés, en sacs de 25 et 50 kg pour savonneries. HSN 3401 20, devis FOB/CIF à chaque commande."
+keyword: "noodles de savon"
 answer: "Les noodles de savon sont de petits granulés de graisses et d’huiles saponifiées et séchées, utilisés comme matière de base pour fabriquer des savons de toilette, des savons de lessive et d’autres pains de savon. Ils se classent selon le rapport huile de palme / huile de palmiste et selon leur teneur en matières grasses totales (TFM). GoodBiz Hygiene sélectionne les noodles de savon auprès de fabricants indiens contrôlés pour l’export vers les savonniers et les distributeurs."
 variants:
   - "Palme / palmiste 80:20 (qualité 1 / premium)"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "a32b95104c89"
+sourceHash: "e01f264e3e3e"
 title: "Sabuni ya Maji ya Kufulia"
 slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Sabuni ya Maji ya Kufulia: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Sabuni ya maji ya kufulia kutoka kwa watengenezaji wa India tuliowakagua: 500 ml hadi 20 L, daraja za mkono na mashine, chapa ya mnunuzi na makontena."
+metaTitle: "Sabuni ya Maji ya Kufulia: Msafirishaji wa India"
+metaDescription: "Sabuni ya maji ya kufulia kutoka viwanda vya India vilivyokaguliwa: 500 ml hadi 20 L, kwa mkono na mashine. Chapa yako, makontena mchanganyiko, FOB/CIF."
+keyword: "sabuni ya maji ya kufulia"
 answer: "Sabuni ya maji ya kufulia ni kisafishaji cha nguo cha kumiminika kinachochanganya viambato vya kusafisha (surfactants), maji na viongezeo, na huyeyuka kwa urahisi kwenye maji baridi au vuguvugu. Inafaa kufua kwa mkono na kwa mashine, na huuzwa kama mbadala rahisi na wa hadhi ya juu wa poda. GoodBiz Hygiene hupata sabuni ya maji ya kufulia kutoka kwa watengenezaji wa India tuliowakagua katika vifungashio vya rejareja na vya jumla kwa ajili ya usafirishaji nje."
 variants:
   - "Kwa mashine ya kuwekea juu na kufua kwa mkono"

@@ -4,8 +4,9 @@ slug: sles
 category: industrial-raw-materials
 order: 3
 hsn: "3402 39"
-metaTitle: "SLES 28% & 70% Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "SLES 28% and 70% sodium lauryl ether sulphate from vetted Indian manufacturers, packed in drums, IBCs and flexitanks for shampoo and detergent makers."
+metaTitle: "SLES 28% & 70% Exporter & Supplier from India"
+metaDescription: "SLES 28% and 70% (sodium lauryl ether sulphate) from vetted Indian manufacturers in drums, IBCs and flexitanks. HSN 3402 39, FOB/CIF quotes per order."
+keyword: "SLES"
 answer: "SLES (Sodium Lauryl Ether Sulphate) is a mild anionic surfactant that produces rich foam, used in shampoos, hand washes, body washes, dish wash liquids and detergents. It is sold as a clear to pale viscous liquid in 28% or 70% active strengths. GoodBiz Hygiene sources SLES from vetted Indian manufacturers for export to formulators and distributors."
 variants:
   - "SLES 28% active (liquid, ready to use)"

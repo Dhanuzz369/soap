@@ -1,12 +1,13 @@
 ---
-sourceHash: "1e7810df1f33"
+sourceHash: "0632460c6e63"
 title: "Otel ve Misafir Sabunları (Mini Sabunlar)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "Otel ve Misafir Sabunu: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden otel mini sabunları: 10 g ila 40 g, özel sargı ve logo; oteller, tatil köyleri ve distribütörler için dökme koliler."
+metaTitle: "Otel ve Misafir Sabunu: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Size özel ambalaj ve logolu 10–40 g otel ve misafir sabunları, kontrol edilmiş Hindistanlı üreticilerden. Oteller ve distribütörler için koli, FOB/CIF."
+keyword: "otel sabunu"
 answer: "Otel veya misafir sabunu, genellikle 10 g ila 40 g ağırlığında, tek tek sarılmış küçük bir banyo kalıbıdır; otellerde, tatil köylerinde ve misafirhanelerde oda ikramı olarak sunulur. Çoğunlukla tesisin markasıyla basılır. GoodBiz Hygiene, mini sabunları konaklama sektörü alıcıları ve ikram ürünü distribütörleri için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Ferah narenciye"

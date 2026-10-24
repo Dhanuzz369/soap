@@ -1,6 +1,7 @@
 ---
-sourceHash: "17eb2fddaa93"
+sourceHash: "bd86fef00fbc"
 title: "Özel Marka Temizlik Ürünleri: Distribütörler için Adım Adım Rehber"
+metaTitle: "Özel Marka Temizlik Ürünleri: Distribütör Rehberi"
 description: "Distribütörler Hindistan’dan kendi temizlik markasını nasıl kurar: gamı seçme, üreticiyi bilgilendirme, numune onayı, tasarım, paketleme ve sevkiyat."
 date: 2026-09-10
 tags: ["özel marka", "distribütörler", "ev bakımı", "OEM"]

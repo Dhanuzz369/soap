@@ -1,6 +1,7 @@
 ---
-sourceHash: "6843f5aa2873"
+sourceHash: "c1161c07178f"
 title: "Lessive en poudre ou lessive liquide : laquelle se vend le mieux sur votre marché ?"
+metaTitle: "Lessive en poudre ou liquide : laquelle se vend le mieux ?"
 description: "Poudre ou liquide ? Comparez climat, habitudes de lavage, machines, prix et coût du fret par lavage pour choisir la bonne gamme pour votre marché."
 date: 2026-08-20
 tags: ["lessive en poudre", "lessive liquide", "choix du marché"]

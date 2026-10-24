@@ -1,12 +1,13 @@
 ---
-sourceHash: "f6009b1516c1"
+sourceHash: "332323d039a7"
 title: "Nước tẩy bồn cầu"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "Nước tẩy bồn cầu: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Nước tẩy bồn cầu gốc axit và loại dịu nhẹ, chai cổ cong, từ nhà sản xuất Ấn Độ đã thẩm định: 500 ml đến 5 L, có nhãn riêng."
+metaTitle: "Nước tẩy bồn cầu: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Nước tẩy bồn cầu đặc, gốc axit hoặc dịu nhẹ, chai vòi cong 500 ml đến 5 L, từ nhà sản xuất Ấn Độ đã thẩm định. Nhãn riêng, container ghép, FOB/CIF."
+keyword: "nước tẩy bồn cầu"
 answer: "Nước tẩy bồn cầu là chất lỏng đặc, bám dính, thường gốc axit, loại bỏ cặn vôi, vết gỉ và cặn nước tiểu khỏi bồn cầu và bồn tiểu. Sản phẩm được bán trong chai cổ cong để có thể đưa chất lỏng xuống dưới vành bồn. GoodBiz Hygiene cung ứng nước tẩy bồn cầu từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Gốc axit tiêu chuẩn, màu xanh"

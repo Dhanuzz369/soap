@@ -1,12 +1,13 @@
 ---
-sourceHash: "48d8d4c59e96"
+sourceHash: "547b4d376403"
 title: "Sabuni ya Kufulia (Kipande)"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "Sabuni ya Kufulia ya Kipande: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Vipande vya sabuni ya kufulia kutoka kwa watengenezaji wa India tuliowakagua: vipande vya 100 g hadi 250 g, daraja za TFM 54-72%, chapa ya mnunuzi na makontena."
+metaTitle: "Sabuni ya Kufulia ya Kipande: Msafirishaji wa India"
+metaDescription: "Sabuni ya kufulia ya kipande kutoka viwanda vya India vilivyokaguliwa: 100–250 g, TFM 54–72%. Chapa yako, makontena mchanganyiko na bei za FOB/CIF."
+keyword: "sabuni ya kufulia"
 answer: "Kipande cha sabuni ya kufulia ni kipande kigumu cha sabuni au mchanganyiko wa sabuni na kemikali za kusafisha, kilichotengenezwa kwa kusugua na kufua nguo kwa mkono. Vipande hutofautiana kutoka sabuni halisi yenye Jumla ya Vitu vya Mafuta (TFM) ya juu hadi vipande vya bei nafuu vya kemikali za kusafisha vyenye vijazaji na viimarishaji (builders). GoodBiz Hygiene hupata vipande vya sabuni ya kufulia katika daraja kadhaa kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Kipande cha buluu (cha kawaida, chenye rangi ya kung’arisha)"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "a32b95104c89"
+sourceHash: "e01f264e3e3e"
 title: "Detergente líquido"
 slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Detergente líquido para ropa: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Detergente líquido para ropa de fabricantes indios seleccionados: envases de 500 ml a 20 L, calidades para lavado a mano y a máquina, y marca propia."
+metaTitle: "Detergente líquido para ropa: exportador de India"
+metaDescription: "Detergente líquido para ropa de fabricantes indios seleccionados: 500 ml a 20 L, lavado a mano y a máquina. Marca propia, contenedores mixtos, FOB/CIF."
+keyword: "detergente líquido"
 answer: "El detergente líquido es un limpiador fluido para la ropa que combina tensioactivos, agua y aditivos y se disuelve con facilidad en agua fría o tibia. Sirve tanto para el lavado a mano como para lavadoras, y se vende como una alternativa más cómoda y premium al polvo. GoodBiz Hygiene adquiere detergente líquido a fabricantes indios seleccionados, en envases minoristas y a granel, para su exportación."
 variants:
   - "Lavadora de carga superior y lavado a mano"

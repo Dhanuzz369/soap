@@ -1,6 +1,7 @@
 ---
-sourceHash: "cc1fb6d2b8d5"
+sourceHash: "ee2e38612e35"
 title: "Cẩm nang mua nước xả vải cho nhà nhập khẩu: chủng loại, hương liệu và quy cách đóng gói"
+metaTitle: "Cẩm nang mua nước xả vải cho nhà nhập khẩu"
 description: "Những điều nhà nhập khẩu nên biết trước khi mua nước xả vải từ Ấn Độ: loại thường và đậm đặc, cấp cho da nhạy cảm, chọn hương liệu, quy cách và bảo quản."
 date: 2026-09-17
 tags: ["nước xả vải", "cẩm nang mua hàng", "hương liệu", "quy cách đóng gói"]

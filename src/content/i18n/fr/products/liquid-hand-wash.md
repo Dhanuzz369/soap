@@ -1,12 +1,13 @@
 ---
-sourceHash: "569c74859cae"
+sourceHash: "3b93bcbf0059"
 title: "Savon liquide pour les mains"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "Savon liquide pour les mains : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Savon liquide pour les mains de fabricants indiens contrôlés : 250 ml à 5 L, antibactérien, aux plantes ou hydratant, en marque de distributeur."
+metaTitle: "Savon liquide pour les mains : exportateur en Inde"
+metaDescription: "Savon liquide pour les mains de fabricants indiens contrôlés : 250 ml à 20 L, antibactérien, plantes ou hydratant. MDD, conteneurs mixtes, FOB/CIF."
+keyword: "savon liquide mains"
 answer: "Le savon liquide pour les mains est un nettoyant doux et fluide, composé de détergents de synthèse, d’un épaississant, d’un parfum et d’agents adoucissants, distribué par une pompe ou une recharge. On l’utilise à la maison, au bureau et dans les sanitaires publics. GoodBiz Hygiene le sélectionne auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Antibactérien frais"

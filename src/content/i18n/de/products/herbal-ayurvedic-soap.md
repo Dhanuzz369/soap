@@ -1,12 +1,13 @@
 ---
-sourceHash: "f81c42efbf80"
+sourceHash: "329715bb8890"
 title: "Kräuter- und Ayurveda-Seife"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
 hsn: "3401 11"
-metaTitle: "Kräuter- und Ayurveda-Seife Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Kräuter- und Ayurveda-Badeseifen von geprüften indischen Herstellern: Neem, Kurkuma, Sandelholz und Aloe in 75 bis 125 g, mit Handelsmarke für Importeure."
+metaTitle: "Kräuter- und Ayurveda-Seife – Export aus Indien"
+metaDescription: "Kräuter- und Ayurveda-Seife von geprüften indischen Herstellern: Neem, Kurkuma, Sandelholz und Aloe, 75–125 g. Handelsmarke, Mischcontainer und FOB/CIF."
+keyword: "Ayurveda-Seife"
 answer: "Kräuter- oder Ayurveda-Seife ist ein Badestück, das in einer Seifenbasis pflanzliche Zutaten wie Neem, Kurkuma, Sandelholz oder Aloe vera enthält und sich an der traditionellen indischen Hautpflege orientiert. Sie wird zum täglichen Baden verwendet. GoodBiz Hygiene bezieht diese Stücke von geprüften indischen Herstellern und exportiert sie mit Optionen für Handelsmarken."
 variants:
   - "Neem und Tulsi"

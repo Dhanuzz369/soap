@@ -1,12 +1,13 @@
 ---
-sourceHash: "108193995324"
+sourceHash: "412ca2d14ce7"
 title: "Limpador multiuso"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
 hsn: "3402 50"
-metaTitle: "Limpador multiuso: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Limpador multiuso em spray com gatilho, refil e embalagens a granel de fabricantes indianos selecionados: aromas cítrico, lavanda e frescor, marca própria."
+metaTitle: "Limpador multiuso: exportador e fornecedor da Índia"
+metaDescription: "Limpador multiuso em spray, refil e granel, de fabricantes indianos selecionados: cítrico, lavanda e fresco. Marca própria, contêineres mistos e FOB/CIF."
+keyword: "limpador multiuso"
 answer: "O limpador multiuso, também chamado de limpador geral, é um limpador líquido de uso geral, aplicado em bancadas, mesas, eletrodomésticos, paredes pintadas e muitas superfícies duras. Costuma ser de pH próximo do neutro a levemente alcalino e é vendido como spray pronto para uso ou como concentrado. A GoodBiz Hygiene adquire limpador multiuso de fabricantes indianos selecionados, para exportação."
 variants:
   - "Cítrico / limão"

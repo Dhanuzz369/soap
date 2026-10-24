@@ -1,12 +1,13 @@
 ---
-sourceHash: "4b57db25e377"
+sourceHash: "a76fe73afa27"
 title: "Limpiavidrios"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "Limpiavidrios: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Limpiavidrios sin marcas en botellas con pulverizador y bidones de recarga de fabricantes indios seleccionados: de 500 ml a 20 L, con marca propia."
+metaTitle: "Limpiavidrios: exportador y proveedor de India"
+metaDescription: "Limpiavidrios sin rayas en spray y recambios de 1 a 20 L, de fabricantes indios seleccionados. Marca propia, contenedores mixtos y cotización FOB/CIF."
+keyword: "limpiavidrios"
 answer: "El limpiavidrios es un líquido de baja espuma, que normalmente contiene agua, un disolvente suave y una pequeña cantidad de tensioactivo, diseñado para limpiar ventanas, espejos y otros vidrios sin dejar marcas. Suele venderse en botellas con pulverizador y se seca rápidamente. GoodBiz Hygiene adquiere limpiavidrios a fabricantes indios seleccionados para su exportación."
 variants:
   - "Azul estándar, sin amoníaco"

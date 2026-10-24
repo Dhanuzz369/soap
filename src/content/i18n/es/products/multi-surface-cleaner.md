@@ -1,12 +1,13 @@
 ---
-sourceHash: "108193995324"
+sourceHash: "412ca2d14ce7"
 title: "Limpiador multisuperficies"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
 hsn: "3402 50"
-metaTitle: "Limpiador multisuperficies: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Limpiador multisuperficies en pulverizador, recargas y envases a granel de fabricantes indios seleccionados: aromas cítricos, lavanda y frescos; marca propia."
+metaTitle: "Limpiador multisuperficies: exportador y proveedor de India"
+metaDescription: "Limpiador multisuperficies en spray, recambio y granel, de fabricantes indios seleccionados: cítricos, lavanda. Marca propia, contenedores mixtos, FOB/CIF."
+keyword: "limpiador multiusos"
 answer: "El limpiador multisuperficies, también llamado limpiador multiusos, es un limpiador líquido general que se usa en encimeras, mesas, electrodomésticos, paredes pintadas y muchas superficies duras. Suele ser de pH cercano al neutro o ligeramente alcalino y se vende como pulverizador listo para usar o como concentrado. GoodBiz Hygiene adquiere limpiador multisuperficies a fabricantes indios seleccionados para su exportación."
 variants:
   - "Cítricos / limón"

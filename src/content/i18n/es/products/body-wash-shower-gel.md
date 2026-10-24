@@ -1,12 +1,13 @@
 ---
-sourceHash: "4f059edea2db"
+sourceHash: "f923483b7544"
 title: "Gel de ducha / jabón líquido corporal"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "Gel de ducha y jabón líquido corporal: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Gel de ducha y jabón líquido corporal de fabricantes indios seleccionados: botellas de 250 ml a 1 L, variedades frescas, florales y herbales; marca propia."
+metaTitle: "Gel de ducha y jabón líquido corporal: exportador de India"
+metaDescription: "Gel de ducha y jabón corporal de fabricantes indios seleccionados: 100 ml a 5 L, aromas frescos, florales y herbales. Marca propia para importadores, FOB/CIF."
+keyword: "gel de ducha"
 answer: "El jabón líquido corporal, también llamado gel de ducha, es un limpiador líquido para el cuerpo elaborado con tensioactivos suaves, acondicionadores y fragancia, que se aplica con las manos o con una esponja. Hace una espuma abundante y es apto para el uso diario. GoodBiz Hygiene adquiere jabón líquido corporal y gel de ducha a fabricantes indios seleccionados para compradores minoristas y de hoteles."
 variants:
   - "Frescura oceánica"

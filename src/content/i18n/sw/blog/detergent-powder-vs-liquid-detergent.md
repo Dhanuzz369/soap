@@ -1,6 +1,7 @@
 ---
-sourceHash: "6843f5aa2873"
+sourceHash: "c1161c07178f"
 title: "Poda ya Kufulia dhidi ya Sabuni ya Maji ya Kufulia: Ipi Inauzika Zaidi Katika Soko Lako?"
+metaTitle: "Poda au Sabuni ya Maji ya Kufulia: Ipi Inauzika Zaidi?"
 description: "Poda au sabuni ya maji ya kufulia? Linganisha hali ya hewa, mazoea ya kufua, mashine, bei na gharama ya usafirishaji kwa kila ufuaji kuchagua bidhaa sahihi."
 date: 2026-08-20
 tags: ["poda ya kufulia", "sabuni ya maji ya kufulia", "uchaguzi wa soko"]

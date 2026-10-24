@@ -1,6 +1,7 @@
 ---
-sourceHash: "cc1fb6d2b8d5"
+sourceHash: "ee2e38612e35"
 title: "Guide d’achat de l’assouplissant pour importateurs : types, parfums et formats"
+metaTitle: "Adoucissant : guide d’achat pour importateurs"
 description: "Ce que l’importateur doit savoir avant d’acheter de l’assouplissant indien : standard ou concentré, peaux sensibles, choix du parfum, formats et stockage."
 date: 2026-09-17
 tags: ["assouplissant", "guide d’achat", "parfum", "formats"]

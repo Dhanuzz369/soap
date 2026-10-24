@@ -1,12 +1,13 @@
 ---
-sourceHash: "f7b01af09895"
+sourceHash: "76e23824cc1d"
 title: "Sabuni ya Kuua Bakteria / ya Matibabu"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "Sabuni ya Kuua Bakteria na ya Matibabu: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Sabuni za kuogea za kuua bakteria na za matibabu kutoka India: vipande vya 75 g hadi 150 g, TFM 70%+, chapa ya mnunuzi na makontena mchanganyiko."
+metaTitle: "Sabuni ya Kuua Bakteria na ya Matibabu: Msafirishaji wa India"
+metaDescription: "Sabuni ya kuua bakteria na ya matibabu kutoka viwanda vya India vilivyokaguliwa: vipande 75–150 g, PCMX au mwarobaini, TFM 70%+. Chapa yako, FOB/CIF."
+keyword: "sabuni ya kuua bakteria"
 answer: "Sabuni ya kuua bakteria au ya matibabu ni kipande cha kuogea chenye kiambato hai kilichoongezwa, kama kloroksilenoli (PCMX) au mmea kama mwarobaini (na, pale inaporuhusiwa, triclocarban), kinachosaidia kupunguza bakteria kwenye ngozi wakati wa kuosha. Hutumika kwa usafi wa kila siku nyumbani na kwenye taasisi. GoodBiz Hygiene huipata kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Kipande cha PCMX cha kuua bakteria (harufu mpya)"

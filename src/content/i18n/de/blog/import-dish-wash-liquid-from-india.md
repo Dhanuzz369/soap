@@ -1,6 +1,7 @@
 ---
-sourceHash: "41e1d0673a41"
+sourceHash: "23d4ef5247c9"
 title: "Geschirrspülmittel aus Indien importieren: Kosten, MOQ, Dokumente und Versand"
+metaTitle: "Spülmittel aus Indien importieren: MOQ und Kosten"
 description: "Praxisleitfaden zum Import von Geschirrspülmittel aus Indien: Kostentreiber, typische MOQ, Packungswahl, Exportdokumente und der Versand Schritt für Schritt."
 date: 2026-10-08
 tags: ["Geschirrspülmittel", "Import", "MOQ", "Versand"]

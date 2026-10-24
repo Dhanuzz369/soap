@@ -1,12 +1,13 @@
 ---
-sourceHash: "48d8d4c59e96"
+sourceHash: "547b4d376403"
 title: "Savon de lessive / pain détergent"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "Savon de lessive et pain détergent : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Savons de lessive et pains détergents de fabricants indiens contrôlés : pains de 100 à 250 g, TFM de 54 à 72 %, marque de distributeur et chargements complets."
+metaTitle: "Savon de lessive et pain détergent : exportateur en Inde"
+metaDescription: "Savon de lessive et pains détergents de fabricants indiens contrôlés : 100 à 250 g, TFM de 54 à 72 %. Marque de distributeur, conteneurs mixtes, FOB/CIF."
+keyword: "savon de lessive"
 answer: "Le savon de lessive est un pain solide de savon, ou de mélange savon-détergent, conçu pour frotter et laver le linge à la main. Les pains vont du vrai savon à forte teneur en matières grasses totales (TFM) aux pains détergents plus économiques, avec charges et adjuvants. GoodBiz Hygiene sélectionne des pains de lessive en plusieurs qualités auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Pain bleu (classique, teinte azurante)"

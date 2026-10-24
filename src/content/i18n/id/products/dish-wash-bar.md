@@ -1,12 +1,13 @@
 ---
-sourceHash: "ccf18cf99322"
+sourceHash: "cf0393403b70"
 title: "Sabun Cuci Piring Batang"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
 hsn: "3401 19"
-metaTitle: "Sabun Cuci Piring Batang: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun cuci piring batang aroma lemon, jeruk nipis, dan lainnya dari produsen India terseleksi: batang dan tub 100 g hingga 300 g, private label, kontainer."
+metaTitle: "Sabun Cuci Piring Batang: Eksportir & Pemasok dari India"
+metaDescription: "Sabun cuci piring batang aroma lemon, jeruk nipis, dan lainnya dari produsen India terseleksi: 100–300 g. Private label, kontainer campuran, penawaran FOB/CIF."
+keyword: "sabun cuci piring batang"
 answer: "Sabun cuci piring batang adalah balok padat deterjen yang dipakai dengan penggosok atau spons basah untuk membersihkan peralatan makan, panci, dan permukaan dapur. Sabun ini ekonomis, awet, dan mudah disimpan, sehingga populer di tempat yang harga per cucian paling diperhatikan. GoodBiz Hygiene mencarikan sabun cuci piring batang dalam beberapa ukuran dan aroma dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Lemon"

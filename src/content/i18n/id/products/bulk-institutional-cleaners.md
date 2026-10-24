@@ -1,12 +1,13 @@
 ---
-sourceHash: "1575bed4aaca"
+sourceHash: "2fb368c1aef4"
 title: "Bahan Kimia Pembersih Curah dan Institusional"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
 hsn: "3402 90"
-metaTitle: "Bahan Kimia Pembersih Curah: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Bahan kimia pembersih curah dan institusional dari produsen India terseleksi, kemasan 5 L, 20 L, 200 L, dan 1.000 L untuk hotel, jasa fasilitas, dan distributor."
+metaTitle: "Bahan Kimia Pembersih Curah: Eksportir & Pemasok dari India"
+metaDescription: "Bahan kimia pembersih curah untuk hotel, jasa kebersihan, dan distributor: konsentrat 5 L hingga IBC 1.000 L dari produsen India terseleksi. Penawaran FOB/CIF."
+keyword: "bahan kimia pembersih"
 answer: "Bahan kimia pembersih curah dan institusional adalah pembersih pekat, seperti pembersih lantai, pelarut lemak, sabun cuci tangan, dan cairan cuci pakaian, yang dipasok dalam kemasan besar untuk penggunaan profesional. Produk ini dibeli oleh hotel, rumah sakit, kontraktor kebersihan, dan distributor yang membutuhkan biaya per liter yang rendah dan mutu yang konsisten. GoodBiz Hygiene mencarikannya dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Konsentrat pembersih lantai"

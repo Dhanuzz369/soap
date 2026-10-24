@@ -1,12 +1,13 @@
 ---
-sourceHash: "1575bed4aaca"
+sourceHash: "2fb368c1aef4"
 title: "Produits d’entretien en vrac et pour collectivités"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
 hsn: "3402 90"
-metaTitle: "Produits d’entretien en vrac : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Produits d’entretien en vrac pour collectivités, de fabricants indiens contrôlés : 5 L, 20 L, 200 L et 1 000 L pour hôtels, services et distributeurs."
+metaTitle: "Produits d’entretien en vrac : exportateur en Inde"
+metaDescription: "Produits d’entretien concentrés en vrac pour hôtels, services de propreté et distributeurs : 5 L à IBC de 1 000 L, de fabricants indiens contrôlés. FOB/CIF."
+keyword: "produits d’entretien en gros"
 answer: "Les produits d’entretien en vrac et pour collectivités sont des nettoyants concentrés, comme les nettoyants sols, dégraissants, savons pour les mains et lessives liquides, fournis en grands conditionnements pour un usage professionnel. Ils sont achetés par les hôtels, hôpitaux, entreprises de propreté et distributeurs qui ont besoin d’un faible coût au litre et d’une qualité régulière. GoodBiz Hygiene les sélectionne auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Nettoyant sols concentré"

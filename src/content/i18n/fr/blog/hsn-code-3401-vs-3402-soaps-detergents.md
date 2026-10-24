@@ -1,6 +1,7 @@
 ---
-sourceHash: "76eda9a626ca"
+sourceHash: "81532f93455a"
 title: "Code HSN 3401 ou 3402 : guide de l’acheteur pour classer savons et détergents"
+metaTitle: "Code HSN 3401 ou 3402 : classer savons et détergents"
 description: "Votre savon ou votre détergent relève-t-il du code HSN 3401 ou 3402 ? Un guide clair de la distinction, avec un tableau produit par produit."
 date: 2026-10-01
 tags: ["code HSN", "classement douanier", "documents d’export"]

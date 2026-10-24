@@ -1,12 +1,13 @@
 ---
-sourceHash: "108193995324"
+sourceHash: "412ca2d14ce7"
 title: "Kisafishaji cha Nyuso Mbalimbali"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
 hsn: "3402 50"
-metaTitle: "Kisafishaji cha Nyuso Mbalimbali: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Kisafishaji cha nyuso mbalimbali katika vipulizio, vijazio na vifungashio vya jumla kutoka India: harufu za machungwa, lavenda na mpya, chapa ya mnunuzi."
+metaTitle: "Kisafishaji cha Nyuso Mbalimbali: Msafirishaji wa India"
+metaDescription: "Kisafishaji cha nyuso mbalimbali kwa chupa za kunyunyiza, madumu na kwa jumla, kutoka viwanda vya India vilivyokaguliwa. Chapa yako, makontena mchanganyiko."
+keyword: "kisafishaji cha nyuso zote"
 answer: "Kisafishaji cha nyuso mbalimbali (multi-surface cleaner), kinachoitwa pia kisafishaji cha matumizi yote, ni kisafishaji cha kimiminika cha jumla kinachotumika kwenye kaunta, meza, vifaa vya nyumbani, kuta zilizopakwa rangi na nyuso nyingi ngumu. Kwa kawaida kiko karibu na hali isiyo na upande hadi alkali hafifu na huuzwa kama kipulizio kilicho tayari kutumika au kimiminika kilichokolea. GoodBiz Hygiene hupata kisafishaji cha nyuso mbalimbali kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Machungwa / ndimu"

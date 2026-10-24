@@ -1,6 +1,7 @@
 ---
-sourceHash: "41e1d0673a41"
+sourceHash: "23d4ef5247c9"
 title: "Importer du liquide vaisselle depuis l’Inde : coûts, MOQ, documents et expédition"
+metaTitle: "Importer du liquide vaisselle d’Inde : MOQ et coûts"
 description: "Guide pratique pour importer du liquide vaisselle depuis l’Inde : ce qui fait le coût, la MOQ type, les formats, les documents d’export et l’expédition."
 date: 2026-10-08
 tags: ["liquide vaisselle", "importation", "MOQ", "expédition"]

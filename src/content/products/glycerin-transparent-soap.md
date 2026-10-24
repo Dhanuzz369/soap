@@ -4,8 +4,9 @@ slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "Glycerin & Transparent Soap Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Glycerin and transparent bath soap from vetted Indian manufacturers: 75 g to 125 g clear bars in aloe, honey and rose, with private label for importers."
+metaTitle: "Glycerin & Transparent Soap Exporter & Supplier from India"
+metaDescription: "Glycerin and transparent soap from vetted Indian manufacturers: 75–125 g clear bars in aloe, honey and rose. Private label, mixed containers, FOB/CIF quotes."
+keyword: "glycerin soap"
 answer: "Glycerin soap, also sold as transparent soap, is a clear or translucent bath bar made with a high level of glycerin and solvents so the bar looks like glass or amber. It is valued for a smooth feel and premium look. GoodBiz Hygiene sources it from vetted Indian manufacturers for export and private label."
 variants:
   - "Aloe vera"

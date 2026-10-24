@@ -1,13 +1,14 @@
 ---
-sourceHash: "4d96f789adca"
+sourceHash: "050e9d439949"
 title: "Suavizante de ropa / acondicionador textil"
 slug: fabric-softener
 category: laundry-care
 order: 4
 hsn: "3402 50"
 hsnNote: "El suavizante de ropa suele clasificarse en la partida 3402 50 como preparación tensioactiva, pero con frecuencia también se clasifica en la 3809 91 (agentes de acabado para textiles). El código correcto depende de la formulación y de la práctica aduanera del país de destino, por lo que confirmamos el código completo de 8 dígitos en cada pedido."
-metaTitle: "Suavizante de ropa y acondicionador: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Suavizante y acondicionador de ropa de fabricantes indios seleccionados: de 500 ml a 20 L, calidades regular y concentrada, marca propia y contenedores mixtos."
+metaTitle: "Suavizante de ropa y acondicionador: exportador de India"
+metaDescription: "Suavizante de ropa de fabricantes indios seleccionados: 500 ml a 20 L, normal y concentrado. Marca propia, contenedores mixtos y cotización FOB/CIF."
+keyword: "suavizante de ropa"
 answer: "El suavizante de ropa, también llamado acondicionador textil, es un líquido que se añade en el último enjuague del lavado para dejar la ropa suave, lisa y perfumada. Actúa mediante agentes suavizantes catiónicos que recubren las fibras y reducen la electricidad estática. GoodBiz Hygiene adquiere suavizante en calidades regular y concentrada a fabricantes indios seleccionados para su exportación."
 variants:
   - "Ramo floral"

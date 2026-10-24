@@ -1,5 +1,6 @@
 ---
 title: "How to Import Dish Wash Liquid from India: Costs, MOQ, Documents and Shipping"
+metaTitle: "How to Import Dish Wash Liquid from India: MOQ and Costs"
 description: "A practical guide to importing dish wash liquid from India: what drives cost, typical MOQ, pack choices, export documents and how shipping works step by step."
 date: 2026-10-08
 tags: ["dish wash liquid", "importing", "MOQ", "shipping"]

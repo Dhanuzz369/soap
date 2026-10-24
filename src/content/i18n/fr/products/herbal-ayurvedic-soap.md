@@ -1,12 +1,13 @@
 ---
-sourceHash: "f81c42efbf80"
+sourceHash: "329715bb8890"
 title: "Savon aux plantes et ayurvédique"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
 hsn: "3401 11"
-metaTitle: "Savon aux plantes et ayurvédique : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Savons aux plantes et ayurvédiques de fabricants indiens contrôlés : neem, curcuma, santal, aloe vera, de 75 à 125 g, en marque de distributeur."
+metaTitle: "Savon aux plantes et ayurvédique : exportateur en Inde"
+metaDescription: "Savon aux plantes et ayurvédique de fabricants indiens contrôlés : neem, curcuma, santal, aloe, 75 à 125 g. Marque de distributeur, conteneurs mixtes, FOB/CIF."
+keyword: "savon ayurvédique"
 answer: "Le savon aux plantes, ou savon ayurvédique, est un pain de toilette qui intègre des ingrédients végétaux comme le neem, le curcuma, le santal ou l’aloe vera dans une base savon, avec un positionnement inspiré des soins traditionnels indiens. Il s’utilise pour la toilette quotidienne. GoodBiz Hygiene sélectionne ces pains auprès de fabricants indiens contrôlés et les exporte avec des options de marque de distributeur."
 variants:
   - "Neem et tulsi"

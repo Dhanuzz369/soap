@@ -1,6 +1,7 @@
 ---
-sourceHash: "cc1fb6d2b8d5"
+sourceHash: "ee2e38612e35"
 title: "Einkaufsratgeber Weichspüler für Importeure: Arten, Düfte und Packungsgrößen"
+metaTitle: "Weichspüler: Einkaufsratgeber für Importeure"
 description: "Was Importeure vor dem Kauf von Weichspüler aus Indien wissen sollten: normal oder konzentriert, empfindliche Haut, Duftwahl, Packungsgrößen und Lagerung."
 date: 2026-09-17
 tags: ["Weichspüler", "Einkaufsratgeber", "Duft", "Packungsgrößen"]

@@ -1,13 +1,14 @@
 ---
-sourceHash: "4d96f789adca"
+sourceHash: "050e9d439949"
 title: "Laini ya Nguo (Dawa ya Kulainisha Nguo)"
 slug: fabric-softener
 category: laundry-care
 order: 4
 hsn: "3402 50"
 hsnNote: "Laini ya nguo kwa kawaida huainishwa chini ya 3402 50 kama maandalizi yenye kazi ya uso (surface-active), lakini mara nyingi huainishwa pia chini ya 3809 91 (viambato vya kumalizia nguo). Msimbo sahihi hutegemea fomula na utaratibu wa forodha wa nchi ya kuwasili, kwa hivyo tunathibitisha msimbo kamili wa tarakimu 8 kwa kila oda."
-metaTitle: "Laini ya Nguo: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Laini ya nguo kutoka kwa watengenezaji wa India tuliowakagua: 500 ml hadi 20 L, daraja za kawaida na zilizokolea, chapa ya mnunuzi na makontena mchanganyiko."
+metaTitle: "Laini ya Nguo: Msafirishaji Nje na Muuzaji kutoka India"
+metaDescription: "Laini ya nguo kutoka viwanda vya India vilivyokaguliwa: 500 ml hadi 20 L, ya kawaida na konsentreti. Chapa yako, makontena mchanganyiko na bei za FOB/CIF."
+keyword: "laini ya nguo"
 answer: "Laini ya nguo (fabric softener), inayoitwa pia kiyoyozi cha nguo (fabric conditioner), ni kimiminika kinachoongezwa wakati wa suuza ya mwisho ya ufuaji ili kuacha nguo laini, nyororo na zenye harufu nzuri. Hufanya kazi kupitia viambato vya kulainisha vya cationic vinavyofunika nyuzi na kupunguza umeme tuli. GoodBiz Hygiene hupata laini ya nguo katika daraja za kawaida na zilizokolea kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Shada la maua"

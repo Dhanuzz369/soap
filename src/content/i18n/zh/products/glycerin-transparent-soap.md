@@ -1,12 +1,13 @@
 ---
-sourceHash: "9f781c932179"
+sourceHash: "5a4a8b081395"
 title: "甘油皂／透明皂"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "甘油皂／透明皂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的甘油皂和透明沐浴皂：75 g至125 g透明皂块，有芦荟、蜂蜜和玫瑰香型，为进口商提供自有品牌，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "甘油皂／透明皂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的甘油皂和透明皂：75–125 g透明皂块，芦荟、蜂蜜和玫瑰香型。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "甘油皂"
 answer: "甘油皂又称透明皂，是添加高比例甘油和溶剂制成的清澈或半透明沐浴皂块，外观如玻璃或琥珀。它以细腻的触感和高端外观受到重视。GoodBiz Hygiene从经我们考察的印度制造商采购，用于出口和自有品牌。"
 variants:
   - "芦荟"

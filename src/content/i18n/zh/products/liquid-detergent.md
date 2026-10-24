@@ -1,12 +1,13 @@
 ---
-sourceHash: "a32b95104c89"
+sourceHash: "e01f264e3e3e"
 title: "洗衣液"
 slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "洗衣液印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的洗衣液：500 ml至20 L包装，有手洗和机洗两类等级，为进口商提供自有品牌，并支持混装集装箱装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "洗衣液印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的洗衣液：500 ml至20 L，手洗和机洗型。支持自有品牌贴牌、混装集装箱，按订单提供FOB/CIF报价，面向进口商和经销商。"
+keyword: "洗衣液"
 answer: "洗衣液是一种可倾倒的洗衣清洁剂，由表面活性剂、水和添加剂组成，在冷水或温水中易于溶解。它既适合手洗也适合洗衣机，作为洗衣粉更方便的高端替代品销售。GoodBiz Hygiene从经我们考察的印度制造商采购零售和大包装洗衣液用于出口。"
 variants:
   - "顶开式洗衣机及手洗用"

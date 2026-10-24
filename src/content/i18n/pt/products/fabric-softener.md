@@ -1,13 +1,14 @@
 ---
-sourceHash: "4d96f789adca"
+sourceHash: "050e9d439949"
 title: "Amaciante de roupas"
 slug: fabric-softener
 category: laundry-care
 order: 4
 hsn: "3402 50"
 hsnNote: "O amaciante de roupas é comumente classificado no código 3402 50, como preparação tensoativa, mas muitas vezes também é classificado no 3809 91 (agentes de acabamento para têxteis). O código correto depende da formulação e da prática aduaneira do país de destino; por isso, confirmamos o código completo de 8 dígitos a cada pedido."
-metaTitle: "Amaciante de roupas: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Amaciante de roupas de fabricantes indianos selecionados: de 500 ml a 20 L, graus regular e concentrado, marca própria e contêineres mistos."
+metaTitle: "Amaciante de roupas: exportador e fornecedor da Índia"
+metaDescription: "Amaciante de roupas de fabricantes indianos selecionados: 500 ml a 20 L, normal e concentrado. Marca própria, contêineres mistos e cotação FOB/CIF."
+keyword: "amaciante de roupas"
 answer: "O amaciante de roupas, também chamado de condicionador de tecidos, é um líquido adicionado no enxágue final da lavagem para deixar as roupas macias, lisas e perfumadas. Atua por meio de agentes amaciantes catiônicos que revestem as fibras e reduzem a estática. A GoodBiz Hygiene adquire amaciante em graus regular e concentrado de fabricantes indianos selecionados, para exportação."
 variants:
   - "Buquê floral"

@@ -1,6 +1,7 @@
 ---
-sourceHash: "66cae22a82fe"
+sourceHash: "f39ee6f3d9e7"
 title: "Fenol de ervas ou desinfetantes químicos: o que os compradores do varejo devem saber"
+metaTitle: "Fenol de ervas ou desinfetantes químicos: guia de compra"
 description: "Fenol de ervas ou desinfetantes químicos no varejo: diferenças de uso, rotulagem e classificação, e o que perguntar primeiro ao exportador."
 date: 2026-09-24
 tags: ["fenol de ervas", "desinfetantes", "limpador de pisos", "compra no varejo"]

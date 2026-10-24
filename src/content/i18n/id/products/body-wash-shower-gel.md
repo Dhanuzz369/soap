@@ -1,12 +1,13 @@
 ---
-sourceHash: "4f059edea2db"
+sourceHash: "f923483b7544"
 title: "Sabun Mandi Cair / Gel Mandi"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "Sabun Mandi Cair dan Gel Mandi: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun mandi cair dan gel mandi dari produsen India terseleksi: botol 250 ml hingga 1 L, varian segar, bunga, dan herbal, private label untuk importir dan hotel."
+metaTitle: "Sabun Mandi Cair dan Gel Mandi: Eksportir dari India"
+metaDescription: "Sabun mandi cair dan gel mandi dari produsen India terseleksi: 100 ml hingga 5 L, aroma segar, bunga, dan herbal. Private label untuk importir dan hotel."
+keyword: "sabun mandi cair"
 answer: "Sabun mandi cair, juga disebut gel mandi, adalah pembersih tubuh berbentuk cair yang dibuat dari surfaktan lembut, kondisioner, dan pewangi, dan dipakai dengan tangan atau spons. Produk ini berbusa kaya dan cocok untuk pemakaian sehari-hari. GoodBiz Hygiene mencarikan sabun mandi cair dan gel mandi dari produsen India yang telah diseleksi bagi pembeli ritel dan hotel."
 variants:
   - "Ocean fresh"

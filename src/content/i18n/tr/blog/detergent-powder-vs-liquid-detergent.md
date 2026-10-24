@@ -1,6 +1,7 @@
 ---
-sourceHash: "6843f5aa2873"
+sourceHash: "c1161c07178f"
 title: "Toz Deterjan mı Sıvı Deterjan mı: Pazarınızda Hangisi Daha Çok Satar?"
+metaTitle: "Toz Deterjan mı Sıvı Deterjan mı? Hangisi Daha Çok Satar"
 description: "Toz mu sıvı çamaşır deterjanı mı? Doğru gamı seçmek için iklimi, yıkama alışkanlıklarını, makineleri, fiyatı ve yıkama başına nakliye maliyetini karşılaştırın."
 date: 2026-08-20
 tags: ["toz deterjan", "sıvı deterjan", "pazar seçimi"]

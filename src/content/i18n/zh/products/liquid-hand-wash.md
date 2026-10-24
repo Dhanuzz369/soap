@@ -1,12 +1,13 @@
 ---
-sourceHash: "569c74859cae"
+sourceHash: "3b93bcbf0059"
 title: "洗手液"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "洗手液印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的洗手液：250 ml至5 L，有抗菌、草本和保湿品种，为进口商和机构客户提供自有品牌，并支持混装集装箱，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "洗手液印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的洗手液：250 ml按压瓶至20 L，抗菌、草本和滋润型。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "洗手液"
 answer: "洗手液是一种温和的可倾倒型洗手清洁剂，由合成洗涤剂、增稠剂、香精和护肤成分制成，通过按压泵或补充装使用。它用于家庭、办公室和公共洗手间。GoodBiz Hygiene从经我们考察的印度制造商采购洗手液用于出口。"
 variants:
   - "抗菌清新型"

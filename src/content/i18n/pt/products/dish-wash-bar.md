@@ -1,12 +1,13 @@
 ---
-sourceHash: "ccf18cf99322"
+sourceHash: "cf0393403b70"
 title: "Detergente em barra para louças"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
 hsn: "3401 19"
-metaTitle: "Detergente em barra para louças: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Barras para lavar louças de limão, lima e outras fragrâncias de fabricantes indianos selecionados: potes e barras de 100 g a 300 g, marca própria, contêineres."
+metaTitle: "Detergente em barra para louças: exportador da Índia"
+metaDescription: "Detergente em barra para louças, limão e outros aromas, de fabricantes indianos selecionados: potes e barras de 100 a 300 g. Marca própria, contêineres mistos."
+keyword: "detergente em barra"
 answer: "A barra para lavar louças é um bloco sólido de detergente usado com uma bucha ou esponja úmida para limpar utensílios, panelas e superfícies de cozinha. É econômica, rende muito e é fácil de guardar, o que a torna popular onde o preço por lavagem é o que mais pesa. A GoodBiz Hygiene adquire barras para lavar louças de fabricantes indianos selecionados, em vários tamanhos e fragrâncias, para exportação."
 variants:
   - "Limão"

@@ -1,13 +1,14 @@
 ---
-sourceHash: "c3d7a358c07c"
+sourceHash: "40ef01b501de"
 title: "Fenol de ervas / fenil"
 slug: herbal-phenol
 category: surface-home-cleaners
 order: 2
 hsn: "3402 50"
 hsnNote: "O fenol de ervas e o fenil são frequentemente classificados no HSN 3808 94, como desinfetante, conforme a formulação e as alegações feitas no rótulo. Exibimos o código 3402 50, como posição de limpador de superfícies; a classificação correta é confirmada a cada pedido com o fabricante e com o seu despachante aduaneiro."
-metaTitle: "Fenol de ervas e fenil: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Fenol de ervas e fenil para pisos, de nim, pinho, eucalipto e capim-limão, de fabricantes indianos selecionados: de 500 ml a tambores de 200 L, marca própria."
+metaTitle: "Fenol de ervas e fenil: exportador e fornecedor da Índia"
+metaDescription: "Fenol de ervas (fenil) de neem, pinho, eucalipto e capim-limão, de 500 ml a tambores de 200 L, de fabricantes indianos selecionados. Marca própria, FOB/CIF."
+keyword: "fenol de ervas"
 answer: "O fenol de ervas, também vendido como fenil, é um limpador líquido concentrado à base de óleos de origem vegetal, como pinho, nim ou eucalipto, geralmente fornecido como emulsão branco-leitosa quando misturado com água. É passado nos pisos e usado em ralos e vasos sanitários pelo seu aroma forte e duradouro. A GoodBiz Hygiene adquire fenol de ervas de fabricantes indianos selecionados, para exportação."
 variants:
   - "Nim"

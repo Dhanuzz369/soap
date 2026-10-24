@@ -1,12 +1,13 @@
 ---
-sourceHash: "1e7810df1f33"
+sourceHash: "0632460c6e63"
 title: "Sabuni za Hoteli na Wageni (Vipande Vidogo)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "Sabuni za Hoteli na Wageni: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Vipande vidogo vya sabuni kwa hoteli kutoka India: 10 g hadi 40 g, vifuniko na nembo maalum, katoni za jumla kwa hoteli na wasambazaji."
+metaTitle: "Sabuni za Hoteli na Wageni: Msafirishaji wa India"
+metaDescription: "Sabuni za hoteli na wageni za 10–40 g zenye kifungashio na nembo yako, kutoka viwanda vya India vilivyokaguliwa. Katoni kwa hoteli na wasambazaji, FOB/CIF."
+keyword: "sabuni ya hoteli"
 answer: "Sabuni ya hoteli au ya wageni ni kipande kidogo cha kuogea kilichofungwa kimoja kimoja, kwa kawaida cha 10 g hadi 40 g, kinachotolewa kama kifaa cha chumbani katika hoteli, hoteli za kitalii na nyumba za wageni. Mara nyingi huchapishwa chapa ya mahali husika. GoodBiz Hygiene hupata vipande vidogo vya sabuni kutoka kwa watengenezaji wa India tuliowakagua kwa wanunuzi wa sekta ya ukarimu na wasambazaji wa vifaa vya wageni."
 variants:
   - "Machungwa mapya"

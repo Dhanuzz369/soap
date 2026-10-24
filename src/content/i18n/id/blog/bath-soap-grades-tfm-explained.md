@@ -1,6 +1,7 @@
 ---
-sourceHash: "6de17572f082"
+sourceHash: "84702d62b584"
 title: "Penjelasan Grade Sabun Mandi: TFM, Grade 1 vs Grade 2, dan Mengapa Penting"
+metaTitle: "Grade Sabun Mandi: TFM, Grade 1 vs Grade 2"
 description: "Arti TFM pada spesifikasi sabun mandi, cara Grade 1 dan Grade 2 dipakai dalam perdagangan, dan cara memilih grade yang tepat untuk pasar dan harga Anda."
 date: 2026-08-27
 tags: ["sabun mandi", "TFM", "grade sabun", "spesifikasi"]

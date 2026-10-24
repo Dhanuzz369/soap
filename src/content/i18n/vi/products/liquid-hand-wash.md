@@ -1,12 +1,13 @@
 ---
-sourceHash: "569c74859cae"
+sourceHash: "3b93bcbf0059"
 title: "Nước rửa tay"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "Nước rửa tay: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Nước rửa tay từ nhà sản xuất Ấn Độ đã thẩm định: 250 ml đến 5 L, loại kháng khuẩn, thảo dược và dưỡng ẩm, có nhãn riêng."
+metaTitle: "Nước rửa tay: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Nước rửa tay từ nhà sản xuất Ấn Độ đã thẩm định: chai bơm 250 ml đến 20 L, kháng khuẩn, thảo dược, dưỡng ẩm. Nhãn riêng, container ghép, báo giá FOB/CIF."
+keyword: "nước rửa tay"
 answer: "Nước rửa tay là chất làm sạch dạng lỏng dịu nhẹ để rửa tay, được tạo từ chất tẩy rửa tổng hợp, chất làm đặc, hương liệu và chất dưỡng da, và được sử dụng qua vòi nhấn hoặc gói refill. Sản phẩm dùng tại gia đình, văn phòng và nhà vệ sinh công cộng. GoodBiz Hygiene cung ứng sản phẩm này từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Kháng khuẩn tươi mát"

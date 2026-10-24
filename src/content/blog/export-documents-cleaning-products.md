@@ -1,5 +1,6 @@
 ---
 title: "Export Documents for Cleaning Products: COA, MSDS, Certificate of Origin and More"
+metaTitle: "Export Documents for Cleaning Products: COA, MSDS, COO"
 description: "A buyer's checklist of export documents for soaps, detergents and cleaners from India: invoice, COA, SDS, origin certificate, DG papers and local registrations."
 date: 2026-10-14
 tags: ["export documents", "COA", "MSDS", "certificate of origin"]

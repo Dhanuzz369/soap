@@ -1,12 +1,13 @@
 ---
-sourceHash: "e4da7e02de7a"
+sourceHash: "d51786edaf5f"
 title: "SLES (natri lauryl ether sulfat)"
 slug: sles
 category: industrial-raw-materials
 order: 3
 hsn: "3402 39"
-metaTitle: "SLES 28% và 70%: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "SLES 28% và 70% từ nhà sản xuất Ấn Độ đã thẩm định, đóng thùng phuy, IBC và flexitank cho cơ sở sản xuất dầu gội và chất tẩy rửa."
+metaTitle: "SLES 28% và 70%: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "SLES 28% và 70% (natri lauryl ether sulfat) từ nhà sản xuất Ấn Độ đã thẩm định, đóng phuy, IBC và flexitank. HSN 3402 39, báo giá FOB/CIF theo đơn."
+keyword: "SLES"
 answer: "SLES (natri lauryl ether sulfat) là chất hoạt động bề mặt anion dịu nhẹ tạo bọt đậm, dùng trong dầu gội, nước rửa tay, sữa tắm, nước rửa chén và chất tẩy rửa. Sản phẩm được bán dưới dạng chất lỏng sệt từ trong đến nhạt màu với hàm lượng hoạt chất 28% hoặc 70%. GoodBiz Hygiene cung ứng SLES từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu cho đơn vị pha chế và nhà phân phối."
 variants:
   - "SLES hoạt chất 28% (dạng lỏng, dùng ngay)"

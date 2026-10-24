@@ -4,8 +4,9 @@ slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "Glass Cleaner Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Streak-free glass and mirror cleaner in trigger spray bottles and refill cans from vetted Indian manufacturers: 500 ml to 20 L, private label, container loads."
+metaTitle: "Bulk Glass Cleaner Exporter & Supplier from India"
+metaDescription: "Streak-free glass cleaner in trigger sprays and 1–20 L refills from vetted Indian manufacturers. Private label, mixed containers and FOB/CIF quotes per order."
+keyword: "glass cleaner"
 answer: "Glass cleaner is a low-foam liquid, usually containing water, a mild solvent and a small amount of surfactant, designed to clean windows, mirrors and other glass without leaving streaks. It is normally sold in trigger spray bottles and dries quickly. GoodBiz Hygiene sources glass cleaner from vetted Indian manufacturers for export."
 variants:
   - "Standard blue, ammonia-free"

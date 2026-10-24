@@ -1,12 +1,13 @@
 ---
-sourceHash: "48d8d4c59e96"
+sourceHash: "547b4d376403"
 title: "Xà phòng giặt / bánh chất tẩy giặt"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "Xà phòng giặt dạng bánh: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Xà phòng giặt dạng bánh từ nhà sản xuất Ấn Độ đã thẩm định: 100 g đến 250 g, TFM 54-72%, có nhãn riêng, xuất theo container."
+metaTitle: "Xà phòng giặt dạng bánh: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Xà phòng giặt dạng bánh từ nhà sản xuất Ấn Độ đã thẩm định: 100–250 g, TFM 54–72%. Nhãn riêng, container ghép và báo giá FOB/CIF theo từng đơn hàng."
+keyword: "xà phòng giặt"
 answer: "Xà phòng giặt dạng bánh là khối xà phòng rắn hoặc hỗn hợp xà phòng-chất tẩy rửa, dùng để chà xát và giặt quần áo bằng tay. Bánh có nhiều loại, từ xà phòng thực với Tổng hàm lượng chất béo (TFM) cao đến bánh chất tẩy giặt giá thấp hơn có chất độn và phụ gia trợ giặt. GoodBiz Hygiene cung ứng xà phòng giặt dạng bánh ở nhiều cấp độ từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Bánh xanh (cổ điển, tông màu chất tăng trắng quang học)"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "386cf04101b2"
+sourceHash: "f2bf93b5815c"
 title: "皂粒（皂基）"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "皂粒（皂基）印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的80:20和70:30棕榈与棕榈仁等级皂粒，提供25 kg和50 kg袋装，供应全球各地的制皂企业和经销商，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "皂粒（皂基）印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的皂粒（皂基）80:20和70:30，25 kg和50 kg袋装，供香皂生产商使用。HS编码3401 20，按订单提供FOB/CIF报价。"
+keyword: "皂粒"
 answer: "皂粒是由油脂皂化后干燥制成的小颗粒，用作制造香皂、洗衣皂和其他皂块的基础原料。其等级按棕榈油与棕榈仁油的比例以及总脂肪物（TFM）划分。GoodBiz Hygiene从经我们考察的印度制造商采购皂粒，出口给制皂企业和经销商。"
 variants:
   - "80:20棕榈与棕榈仁（一级／优质）"

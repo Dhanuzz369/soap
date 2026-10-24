@@ -1,13 +1,14 @@
 ---
-sourceHash: "4d96f789adca"
+sourceHash: "050e9d439949"
 title: "Nước xả vải"
 slug: fabric-softener
 category: laundry-care
 order: 4
 hsn: "3402 50"
 hsnNote: "Nước xả vải thường được phân loại vào 3402 50 như một chế phẩm hoạt động bề mặt, nhưng cũng thường được phân loại vào 3809 91 (chất hoàn tất dùng cho hàng dệt). Mã đúng phụ thuộc vào công thức và thông lệ hải quan tại nước đến, vì vậy chúng tôi xác nhận mã 8 chữ số đầy đủ cho từng đơn hàng."
-metaTitle: "Nước xả vải: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Nước xả vải từ nhà sản xuất Ấn Độ đã thẩm định: 500 ml đến 20 L, loại thường và đậm đặc, có nhãn riêng và ghép container."
+metaTitle: "Nước xả vải: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Nước xả vải từ nhà sản xuất Ấn Độ đã thẩm định: 500 ml đến 20 L, loại thường và đậm đặc. Nhãn riêng, container ghép và báo giá FOB/CIF theo từng đơn hàng."
+keyword: "nước xả vải"
 answer: "Nước xả vải là chất lỏng được cho vào lần xả cuối của quá trình giặt để quần áo mềm, mượt và thơm. Sản phẩm hoạt động nhờ các chất làm mềm cation phủ lên sợi vải và giảm tĩnh điện. GoodBiz Hygiene cung ứng nước xả vải loại thường và đậm đặc từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Bó hoa"

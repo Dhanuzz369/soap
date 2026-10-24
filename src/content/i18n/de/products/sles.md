@@ -1,12 +1,13 @@
 ---
-sourceHash: "e4da7e02de7a"
+sourceHash: "d51786edaf5f"
 title: "SLES (Natriumlaurylethersulfat)"
 slug: sles
 category: industrial-raw-materials
 order: 3
 hsn: "3402 39"
-metaTitle: "SLES 28 % und 70 % Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "SLES 28 % und 70 % (Natriumlaurylethersulfat) von geprüften indischen Herstellern in Fässern, IBC und Flexitanks für Shampoo- und Waschmittelhersteller."
+metaTitle: "SLES 28 % und 70 % – Exporteur & Lieferant aus Indien"
+metaDescription: "SLES 28 % und 70 % (Natriumlaurylethersulfat) von geprüften indischen Herstellern in Fässern, IBCs und Flexitanks. HSN 3402 39, FOB/CIF-Angebote je Auftrag."
+keyword: "SLES"
 answer: "SLES (Natriumlaurylethersulfat) ist ein mildes anionisches Tensid mit reichem Schaum, das in Shampoos, Flüssigseifen, Körperwaschlotionen, Geschirrspülmitteln und Waschmitteln verwendet wird. Es wird als klare bis blassgelbe, zähflüssige Flüssigkeit mit 28 % oder 70 % Aktivsubstanz verkauft. GoodBiz Hygiene bezieht SLES von geprüften indischen Herstellern für den Export an Formulierer und Händler."
 variants:
   - "SLES 28 % aktiv (flüssig, gebrauchsfertig)"

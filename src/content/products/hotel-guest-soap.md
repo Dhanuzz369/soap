@@ -4,8 +4,9 @@ slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "Hotel & Guest Soap Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Hotel amenity mini soap bars from vetted Indian manufacturers: 10 g to 40 g, custom wrappers and logo, bulk cartons for hotels, resorts and distributors."
+metaTitle: "Hotel Soap & Guest Soap Exporter & Supplier from India"
+metaDescription: "Hotel soap and guest amenity bars, 10–40 g, with your wrapper and logo, from vetted Indian manufacturers. Bulk cartons for hotels and distributors, FOB/CIF."
+keyword: "hotel soap"
 answer: "Hotel or guest soap is a small, individually wrapped bath bar, usually 10 g to 40 g, supplied as a room amenity in hotels, resorts and guest houses. It is often printed with the property's brand. GoodBiz Hygiene sources mini soap bars from vetted Indian manufacturers for hospitality buyers and amenity distributors."
 variants:
   - "Fresh citrus"

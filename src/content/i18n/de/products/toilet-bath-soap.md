@@ -1,12 +1,13 @@
 ---
-sourceHash: "54468ef241aa"
+sourceHash: "a3d644f8b2bd"
 title: "Toilettenseife / Badeseife"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "Toilettenseife / Badeseife Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Toiletten- und Badeseife von geprüften indischen Herstellern: 50 bis 150 g, TFM 60 % bis 76 %+, Handelsmarke und gemischte Container für Importeure."
+metaTitle: "Toilettenseife / Badeseife – Export aus Indien"
+metaDescription: "Toiletten- und Badeseife von geprüften indischen Herstellern: 50–150 g, TFM von 60 % bis über 76 %. Handelsmarke, Mischcontainer und FOB/CIF-Angebote."
+keyword: "Toilettenseife"
 answer: "Toilettenseife, auch Badeseife genannt, ist ein festes Reinigungsstück, das durch Verseifung von Fetten und Ölen entsteht und zur Reinigung von Gesicht und Körper dient. Sie wird vor allem nach dem Gesamtfettgehalt (TFM, Total Fatty Matter) eingestuft, der angibt, wie viel echte Seife das Stück enthält. GoodBiz Hygiene bezieht Toilettenseife in mehreren TFM-Qualitäten von geprüften indischen Herstellern für den Export."
 variants:
   - "Rose"

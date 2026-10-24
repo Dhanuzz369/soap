@@ -1,12 +1,13 @@
 ---
-sourceHash: "54468ef241aa"
+sourceHash: "a3d644f8b2bd"
 title: "Jabón de tocador / jabón de baño"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "Jabón de tocador: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Jabones de tocador y de baño de fabricantes indios seleccionados: de 50 a 150 g, TFM del 60% a más del 76%, marca propia y contenedores mixtos."
+metaTitle: "Jabón de tocador: exportador y proveedor de India"
+metaDescription: "Jabón de tocador en pastillas de 50 a 150 g, TFM del 60 % al 76 %+, de fabricantes indios seleccionados. Marca propia, contenedores mixtos y cotización FOB/CIF."
+keyword: "jabón de tocador"
 answer: "El jabón de tocador, también llamado jabón de baño, es una pastilla limpiadora sólida que se obtiene por saponificación de grasas y aceites y se usa para lavar el rostro y el cuerpo. Se clasifica sobre todo por su materia grasa total (TFM), que indica cuánto jabón puro contiene la pastilla. GoodBiz Hygiene adquiere jabón de tocador en varias calidades de TFM a fabricantes indios seleccionados para su exportación."
 variants:
   - "Rosa"

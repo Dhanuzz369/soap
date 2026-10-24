@@ -4,8 +4,9 @@ slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
 hsn: "3402 90"
-metaTitle: "Bulk Cleaning Chemicals Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Bulk and institutional cleaning chemicals from vetted Indian manufacturers in 5 L, 20 L, 200 L and 1,000 L packs for hotels, facility services and distributors."
+metaTitle: "Bulk Cleaning Chemicals Exporter & Supplier from India"
+metaDescription: "Bulk cleaning chemicals for hotels, facility services and distributors: concentrates in 5 L to 1,000 L IBCs from vetted Indian manufacturers. FOB/CIF quotes."
+keyword: "bulk cleaning chemicals"
 answer: "Bulk and institutional cleaning chemicals are concentrated cleaners, such as floor cleaners, degreasers, hand washes and laundry liquids, supplied in large packs for professional use. They are bought by hotels, hospitals, cleaning contractors and distributors who need low cost per litre and consistent quality. GoodBiz Hygiene sources them from vetted Indian manufacturers for export."
 variants:
   - "Floor cleaner concentrate"

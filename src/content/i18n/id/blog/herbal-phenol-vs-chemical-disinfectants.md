@@ -1,6 +1,7 @@
 ---
-sourceHash: "66cae22a82fe"
+sourceHash: "f39ee6f3d9e7"
 title: "Fenol Herbal vs Disinfektan Kimia: Yang Perlu Diketahui Pembeli Ritel"
+metaTitle: "Fenol Herbal vs Disinfektan Kimia: Panduan Pembeli"
 description: "Membandingkan fenol herbal dengan disinfektan kimia untuk lini ritel: perbedaan penggunaan, pelabelan, klasifikasi, dan apa yang perlu ditanyakan ke eksportir."
 date: 2026-09-24
 tags: ["fenol herbal", "disinfektan", "pembersih lantai", "pembelian ritel"]

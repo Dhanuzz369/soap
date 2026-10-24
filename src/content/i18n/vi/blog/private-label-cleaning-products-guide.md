@@ -1,6 +1,7 @@
 ---
-sourceHash: "17eb2fddaa93"
+sourceHash: "bd86fef00fbc"
 title: "Sản phẩm tẩy rửa nhãn riêng: hướng dẫn từng bước dành cho nhà phân phối"
+metaTitle: "Sản phẩm tẩy rửa nhãn riêng: hướng dẫn nhà phân phối"
 description: "Cách nhà phân phối ra mắt thương hiệu tẩy rửa riêng từ Ấn Độ: chọn dòng sản phẩm, lập yêu cầu, duyệt mẫu, thiết kế bao bì, đóng gói và vận chuyển."
 date: 2026-09-10
 tags: ["nhãn riêng", "nhà phân phối", "chăm sóc gia đình", "OEM"]

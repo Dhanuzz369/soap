@@ -1,12 +1,13 @@
 ---
-sourceHash: "4f059edea2db"
+sourceHash: "f923483b7544"
 title: "Duschgel / Körperwaschlotion"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "Duschgel und Körperwaschlotion Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Duschgel und Körperwaschlotion von geprüften indischen Herstellern: 250 ml bis 1 L, frische, blumige und pflanzliche Sorten, Handelsmarke für Importeure."
+metaTitle: "Duschgel und Körperwaschlotion – Export aus Indien"
+metaDescription: "Duschgel und Körperwaschlotion von geprüften indischen Herstellern: 100 ml bis 5 L, frische, blumige und Kräuterdüfte. Handelsmarke für Importeure und Hotels."
+keyword: "Duschgel"
 answer: "Körperwaschlotion, auch Duschgel genannt, ist ein flüssiges Reinigungsmittel für den Körper aus milden Tensiden, Pflegestoffen und Duftstoff, das mit den Händen oder einem Schwamm aufgetragen wird. Sie schäumt reichhaltig und eignet sich für die tägliche Anwendung. GoodBiz Hygiene bezieht Körperwaschlotion und Duschgel von geprüften indischen Herstellern für Handels- und Hotelkunden."
 variants:
   - "Ocean Fresh"

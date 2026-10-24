@@ -1,6 +1,7 @@
 ---
-sourceHash: "76eda9a626ca"
+sourceHash: "81532f93455a"
 title: "HSN-Code 3401 oder 3402: Ratgeber für Käufer zur Einreihung von Seifen und Waschmitteln"
+metaTitle: "HSN-Code 3401 oder 3402: Seifen und Waschmittel einreihen"
 description: "Unsicher, ob Ihre Seife oder Ihr Waschmittel unter HSN 3401 oder 3402 fällt? Eine klare Erläuterung der Aufteilung mit Tabelle je Produkt und ersten Fragen."
 date: 2026-10-01
 tags: ["HSN-Code", "Einreihung", "Exportdokumente"]

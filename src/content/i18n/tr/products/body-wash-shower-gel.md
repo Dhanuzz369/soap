@@ -1,12 +1,13 @@
 ---
-sourceHash: "4f059edea2db"
+sourceHash: "f923483b7544"
 title: "Vücut Şampuanı / Duş Jeli"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "Vücut Şampuanı ve Duş Jeli: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden vücut şampuanı ve duş jeli: 250 ml-1 L şişeler, ferah, çiçeksi ve bitkisel çeşitler; ithalatçı ve otellere özel marka."
+metaTitle: "Vücut Şampuanı ve Duş Jeli: Hindistan’dan İhracat"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden duş jeli ve vücut şampuanı: 100 ml–5 L, ferah, çiçeksi ve bitkisel kokular. İthalatçı ve oteller için özel marka."
+keyword: "duş jeli"
 answer: "Vücut şampuanı, duş jeli olarak da bilinir; yumuşak yüzey aktif maddeler, bakım maddeleri ve kokudan yapılan, elle veya lifle uygulanan sıvı bir vücut temizleyicisidir. Zengin köpürür ve günlük kullanıma uygundur. GoodBiz Hygiene, vücut şampuanı ve duş jelini perakende ve otel alıcıları için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Okyanus ferahlığı"

@@ -4,8 +4,9 @@ slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "Toilet Bowl Cleaner Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Thick toilet bowl cleaner in angled-neck bottles with acid-based and mild grades, from vetted Indian manufacturers: 500 ml to 5 L, private label, containers."
+metaTitle: "Toilet Bowl Cleaner Exporter & Supplier from India"
+metaDescription: "Toilet bowl cleaner, thick acid-based and mild grades in angled-neck bottles, 500 ml to 5 L, from vetted Indian manufacturers. Private label, FOB/CIF quotes."
+keyword: "toilet bowl cleaner"
 answer: "Toilet bowl cleaner is a thick, clinging liquid, normally acid-based, that removes limescale, rust stains and urine deposits from toilet bowls and urinals. It is sold in bottles with an angled neck so the liquid can be placed under the rim. GoodBiz Hygiene sources toilet bowl cleaner from vetted Indian manufacturers for export."
 variants:
   - "Standard acid-based, blue"

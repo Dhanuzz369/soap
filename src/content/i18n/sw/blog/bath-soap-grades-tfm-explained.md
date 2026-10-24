@@ -1,6 +1,7 @@
 ---
-sourceHash: "6de17572f082"
+sourceHash: "84702d62b584"
 title: "Daraja za Sabuni ya Kuogea Zimeelezwa: TFM, Daraja la 1 dhidi ya la 2, na Kwa Nini Ni Muhimu"
+metaTitle: "Daraja za Sabuni ya Kuogea: TFM, Daraja la 1 na la 2"
 description: "TFM inamaanisha nini kwenye vipimo vya sabuni ya kuogea, jinsi Daraja la 1 na la 2 zinavyotumika, na jinsi ya kuchagua daraja linalofaa soko na bei yako."
 date: 2026-08-27
 tags: ["sabuni ya kuogea", "TFM", "daraja za sabuni", "vipimo"]

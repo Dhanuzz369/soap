@@ -1,13 +1,14 @@
 ---
-sourceHash: "c3d7a358c07c"
+sourceHash: "40ef01b501de"
 title: "Fenoli ya Mitishamba (Dawa ya Kusafishia Sakafu)"
 slug: herbal-phenol
 category: surface-home-cleaners
 order: 2
 hsn: "3402 50"
 hsnNote: "Fenoli ya mitishamba na phenyl mara nyingi huainishwa chini ya HSN 3808 94 kama dawa ya kuua vijidudu (disinfectant), kulingana na fomula na madai yaliyo kwenye lebo. Tunaonyesha 3402 50 kama kichwa cha visafishaji vya nyuso; uainishaji sahihi huthibitishwa kwa kila oda na mtengenezaji na wakala wako wa forodha."
-metaTitle: "Fenoli ya Mitishamba (Phenyl): Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Fenoli ya mitishamba na phenyl ya mwarobaini, msonobari, mikaratusi na mchaichai kutoka India: 500 ml hadi mapipa ya 200 L, chapa ya mnunuzi kwa waagizaji."
+metaTitle: "Fenoli ya Mitishamba (Phenyl): Msafirishaji wa India"
+metaDescription: "Fenoli ya mitishamba (phenyl) ya mwarobaini, msonobari, mkaratusi na mchaichai, 500 ml hadi pipa la 200 L, kutoka viwanda vya India. Chapa yako, FOB/CIF."
+keyword: "fenoli ya mitishamba"
 answer: "Fenoli ya mitishamba (herbal phenol), inayouzwa pia kama phenyl, ni kisafishaji cha kimiminika kilichokolea kinachotokana na mafuta ya mimea kama msonobari, mwarobaini au mikaratusi, kwa kawaida hutolewa kama emalsheni nyeupe kama maziwa inapochanganywa na maji. Hupigiwa deki sakafuni na kutumika karibu na mifereji na vyoo kwa harufu yake kali inayodumu. GoodBiz Hygiene hupata fenoli ya mitishamba kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Mwarobaini"

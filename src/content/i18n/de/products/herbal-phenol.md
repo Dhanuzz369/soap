@@ -1,13 +1,14 @@
 ---
-sourceHash: "c3d7a358c07c"
+sourceHash: "40ef01b501de"
 title: "Pflanzliches Phenol / Phenyl"
 slug: herbal-phenol
 category: surface-home-cleaners
 order: 2
 hsn: "3402 50"
 hsnNote: "Pflanzliches Phenol und Phenyl werden je nach Rezeptur und den Aussagen auf dem Etikett häufig unter HSN 3808 94 als Desinfektionsmittel eingereiht. Wir zeigen 3402 50 als Position für Oberflächenreiniger; die richtige Einreihung wird je Auftrag mit dem Hersteller und Ihrem Zollagenten bestätigt."
-metaTitle: "Pflanzliches Phenol / Phenyl Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Pflanzliches Phenol und Phenyl-Bodenreiniger mit Neem, Kiefer, Eukalyptus und Zitronengras von geprüften indischen Herstellern: 500 ml bis 200 L, Handelsmarke."
+metaTitle: "Pflanzliches Phenol / Phenyl – Export aus Indien"
+metaDescription: "Pflanzliches Phenol (Phenyl) mit Neem, Kiefer, Eukalyptus und Zitronengras, 500 ml bis 200-L-Fass, von geprüften indischen Herstellern. Handelsmarke, FOB/CIF."
+keyword: "pflanzliches Phenol"
 answer: "Pflanzliches Phenol, auch als Phenyl verkauft, ist ein konzentrierter Flüssigreiniger auf Basis pflanzlicher Öle wie Kiefer, Neem oder Eukalyptus, der mit Wasser vermischt meist als milchig-weiße Emulsion vorliegt. Er wird auf Böden gewischt und wegen seines starken, anhaltenden Dufts rund um Abflüsse und Toiletten verwendet. GoodBiz Hygiene bezieht pflanzliches Phenol von geprüften indischen Herstellern für den Export."
 variants:
   - "Neem"

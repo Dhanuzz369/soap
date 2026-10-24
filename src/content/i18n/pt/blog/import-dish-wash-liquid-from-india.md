@@ -1,6 +1,7 @@
 ---
-sourceHash: "41e1d0673a41"
+sourceHash: "23d4ef5247c9"
 title: "Como importar detergente líquido para louças da Índia: custos, MOQ, documentos e embarque"
+metaTitle: "Como importar detergente de louça da Índia: MOQ e custos"
 description: "Guia prático para importar detergente para louças da Índia: o que determina o custo, MOQ típico, embalagens, documentos de exportação e embarque passo a passo."
 date: 2026-10-08
 tags: ["detergente para louças", "importação", "MOQ", "embarque"]

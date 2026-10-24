@@ -1,12 +1,13 @@
 ---
-sourceHash: "f6009b1516c1"
+sourceHash: "332323d039a7"
 title: "Limpiador de inodoros"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "Limpiador de inodoros: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Limpiador espeso de inodoros en botellas de cuello angulado, calidades ácida y suave, de fabricantes indios seleccionados: de 500 ml a 5 L, marca propia."
+metaTitle: "Limpiador de inodoros: exportador y proveedor de India"
+metaDescription: "Limpiador de inodoros espeso, ácido o suave, en botellas de cuello inclinado de 500 ml a 5 L, de fabricantes indios seleccionados. Marca propia, FOB/CIF."
+keyword: "limpiador de inodoros"
 answer: "El limpiador de inodoros es un líquido espeso y adherente, normalmente de base ácida, que elimina el sarro, las manchas de óxido y los depósitos de orina de las tazas de los inodoros y de los urinarios. Se vende en botellas de cuello angulado para poder aplicar el líquido bajo el borde. GoodBiz Hygiene adquiere limpiador de inodoros a fabricantes indios seleccionados para su exportación."
 variants:
   - "Estándar de base ácida, azul"

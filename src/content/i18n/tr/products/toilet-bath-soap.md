@@ -1,12 +1,13 @@
 ---
-sourceHash: "54468ef241aa"
+sourceHash: "a3d644f8b2bd"
 title: "Tuvalet / Banyo Sabunu"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "Tuvalet / Banyo Sabunu: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden tuvalet ve banyo sabunu: 50-150 g, %60 ila %76+ TFM kaliteleri, ithalatçılar için özel marka ve karışık konteyner."
+metaTitle: "Tuvalet / Banyo Sabunu: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden tuvalet ve banyo sabunu: 50–150 g, TFM %60 ile %76+ arası. Özel marka, karışık konteyner ve FOB/CIF teklif."
+keyword: "tuvalet sabunu"
 answer: "Tuvalet sabunu, banyo sabunu olarak da bilinir; yağların ve katı yağların sabunlaştırılmasıyla elde edilen, yüz ve vücut yıkamada kullanılan katı bir temizlik kalıbıdır. Esas olarak, kalıbın ne kadar gerçek sabun içerdiğini gösteren Toplam Yağ Maddesi (TFM) ile sınıflandırılır. GoodBiz Hygiene, ihracat için tuvalet sabununu kontrol edilmiş Hindistanlı üreticilerden birkaç TFM kalitesinde tedarik eder."
 variants:
   - "Gül"

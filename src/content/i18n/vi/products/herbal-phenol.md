@@ -1,13 +1,14 @@
 ---
-sourceHash: "c3d7a358c07c"
+sourceHash: "40ef01b501de"
 title: "Phenol thảo dược / phenyl"
 slug: herbal-phenol
 category: surface-home-cleaners
 order: 2
 hsn: "3402 50"
 hsnNote: "Phenol thảo dược và phenyl thường được phân loại vào HSN 3808 94 như chất khử trùng, tùy theo công thức và các tuyên bố trên nhãn. Chúng tôi nêu 3402 50 như nhóm chất tẩy rửa bề mặt; cách phân loại đúng được xác nhận theo từng đơn hàng với nhà sản xuất và đại lý hải quan của Quý khách."
-metaTitle: "Phenol thảo dược / phenyl: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Phenol thảo dược và phenyl hương neem, thông, bạch đàn, sả từ nhà sản xuất Ấn Độ đã thẩm định: 500 ml đến thùng 200 L, có nhãn riêng."
+metaTitle: "Phenol thảo dược / phenyl: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Phenol thảo dược (phenyl) hương neem, thông, bạch đàn và sả, 500 ml đến thùng 200 L, từ nhà sản xuất Ấn Độ đã thẩm định. Nhãn riêng và báo giá FOB/CIF."
+keyword: "phenol thảo dược"
 answer: "Phenol thảo dược, còn bán dưới tên phenyl, là chất tẩy rửa dạng lỏng đậm đặc gốc từ các loại tinh dầu thực vật như thông, neem hoặc bạch đàn, thường ở dạng nhũ tương trắng đục như sữa khi pha với nước. Sản phẩm được dùng lau sàn và dùng quanh cống, nhà vệ sinh nhờ mùi hương mạnh và lưu lại lâu. GoodBiz Hygiene cung ứng phenol thảo dược từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Neem"

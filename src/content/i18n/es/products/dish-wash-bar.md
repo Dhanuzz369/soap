@@ -1,12 +1,13 @@
 ---
-sourceHash: "ccf18cf99322"
+sourceHash: "cf0393403b70"
 title: "Lavavajillas sólido en barra"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
 hsn: "3401 19"
-metaTitle: "Lavavajillas sólido en barra: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Barras lavavajillas de limón y lima de fabricantes indios seleccionados: pastillas y tarros de 100 a 300 g, marca propia y cargas por contenedor."
+metaTitle: "Lavavajillas sólido en barra: exportador de India"
+metaDescription: "Lavavajillas en barra de limón, lima y más, de fabricantes indios seleccionados: potes y pastillas de 100 a 300 g. Marca propia, contenedores mixtos, FOB/CIF."
+keyword: "lavavajillas en barra"
 answer: "Una barra lavavajillas es una pastilla sólida de detergente que se usa con un estropajo o una esponja húmeda para limpiar utensilios, ollas y superficies de cocina. Es económica, duradera y fácil de guardar, lo que la hace popular donde más importa el precio por lavado. GoodBiz Hygiene adquiere barras lavavajillas en varios tamaños y fragancias a fabricantes indios seleccionados para su exportación."
 variants:
   - "Limón"

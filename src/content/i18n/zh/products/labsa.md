@@ -1,12 +1,13 @@
 ---
-sourceHash: "095becea3801"
+sourceHash: "15d439c588c9"
 title: "LABSA（直链烷基苯磺酸）"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
-metaTitle: "LABSA 90%和96%印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的LABSA 90%和96%有效物酸浆，采用HDPE桶、IBC吨桶和柔性液袋包装，供洗涤剂生产商和调配商使用，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "LABSA 90%和96%印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的LABSA 90%和96%（直链烷基苯磺酸），HDPE桶、吨桶或柔性罐包装。HS编码3402 31，提供FOB/CIF报价。"
+keyword: "LABSA"
 answer: "LABSA（直链烷基苯磺酸）是洗衣粉、洗衣液和清洁剂中使用的主要阴离子表面活性剂。它是一种深色黏稠的酸，用烧碱或纯碱中和后形成有效清洁成分。GoodBiz Hygiene从经我们考察的印度制造商采购LABSA，出口给洗涤剂生产商和经销商。"
 variants:
   - "LABSA 90%最低有效物含量"

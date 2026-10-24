@@ -1,12 +1,13 @@
 ---
-sourceHash: "f81c42efbf80"
+sourceHash: "329715bb8890"
 title: "Sabun Herbal dan Ayurveda"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
 hsn: "3401 11"
-metaTitle: "Sabun Herbal dan Ayurveda: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun mandi herbal dan Ayurveda dari produsen India terseleksi: mimba, kunyit, cendana, dan lidah buaya, 75 g hingga 125 g, dengan private label bagi importir."
+metaTitle: "Sabun Herbal dan Ayurveda: Eksportir & Pemasok dari India"
+metaDescription: "Sabun herbal dan Ayurveda dari produsen India terseleksi: mimba, kunyit, cendana, dan lidah buaya, 75–125 g. Private label, kontainer campuran, FOB/CIF."
+keyword: "sabun herbal"
 answer: "Sabun herbal atau Ayurveda adalah sabun mandi batang yang mengandung bahan tumbuhan seperti mimba, kunyit, cendana, atau lidah buaya dalam basis sabun, dengan positioning pada tradisi perawatan kulit India. Sabun ini dipakai untuk mandi sehari-hari. GoodBiz Hygiene mencarikan sabun ini dari produsen India yang telah diseleksi dan mengekspornya dengan opsi private label."
 variants:
   - "Mimba dan tulsi"

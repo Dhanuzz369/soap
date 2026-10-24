@@ -1,12 +1,13 @@
 ---
-sourceHash: "e23a6ba5ced8"
+sourceHash: "847242946928"
 title: "Zemin Temizleyici"
 slug: floor-cleaner
 category: surface-home-cleaners
 order: 1
 hsn: "3402 50"
-metaTitle: "Zemin Temizleyici: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden lavanta, gül, yasemin, limon ve çam kokulu sıvı zemin temizleyici: 500 ml-20 L ambalaj, özel marka ve konteyner."
+metaTitle: "Zemin Temizleyici: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Lavanta, gül, yasemin, limon ve çam kokulu yer temizleyici, kontrol edilmiş Hindistanlı üreticilerden, 500 ml–20 L. Özel marka, karışık konteyner, FOB/CIF."
+keyword: "yer temizleyici"
 answer: "Zemin temizleyici, fayans, mermer, vinil ve cilalı taş gibi sert zeminlerden toz, yağ ve ayak izlerini gidermek için suyla seyreltilen veya saf kullanılan, yüzey aktif madde bazlı sıvı bir üründür. Genellikle kokulandırılmıştır ve paspastan sonra hafif bir koku bırakır. GoodBiz Hygiene, zemin temizleyiciyi perakende ve dökme ambalajlarda ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Lavanta"

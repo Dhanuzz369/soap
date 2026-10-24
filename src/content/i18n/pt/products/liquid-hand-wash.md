@@ -1,12 +1,13 @@
 ---
-sourceHash: "569c74859cae"
+sourceHash: "3b93bcbf0059"
 title: "Sabonete líquido para as mãos"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "Sabonete líquido para as mãos: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Sabonete líquido para as mãos de fabricantes indianos selecionados: 250 ml a 5 L, versões antibacteriana, de ervas e hidratante, com marca própria."
+metaTitle: "Sabonete líquido para as mãos: exportador da Índia"
+metaDescription: "Sabonete líquido para as mãos de fabricantes indianos selecionados: 250 ml a 20 L, antibacteriano, de ervas ou hidratante. Marca própria, contêineres mistos."
+keyword: "sabonete líquido para mãos"
 answer: "O sabonete líquido para as mãos é um produto de limpeza suave e fluido para lavar as mãos, feito de detergentes sintéticos, espessante, fragrância e condicionadores para a pele, dispensado por bomba ou refil. É usado em residências, escritórios e banheiros públicos. A GoodBiz Hygiene o adquire de fabricantes indianos selecionados, para exportação."
 variants:
   - "Antibacteriano fresco"

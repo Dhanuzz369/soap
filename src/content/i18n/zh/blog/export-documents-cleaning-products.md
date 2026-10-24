@@ -1,6 +1,7 @@
 ---
-sourceHash: "2b10481b836a"
+sourceHash: "259e3f5f79fb"
 title: "清洁产品出口单据：COA、MSDS、原产地证书等"
+metaTitle: "清洁产品出口单据：COA、MSDS、原产地证"
 description: "采购商的印度香皂、洗涤剂和清洁剂出口单据清单：商业发票、COA、SDS、原产地证书、危险品单据以及目的国当地注册要求，帮助进口商少走弯路、做出更稳妥的采购决定。"
 date: 2026-10-14
 tags: ["出口单据", "COA", "MSDS", "原产地证书"]

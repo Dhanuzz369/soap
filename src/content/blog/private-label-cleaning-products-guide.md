@@ -1,5 +1,6 @@
 ---
 title: "Private Label Cleaning Products: A Step-by-Step Guide for Distributors"
+metaTitle: "Private Label Cleaning Products: A Guide for Distributors"
 description: "How distributors can launch their own cleaning brand from India: choosing the range, briefing a manufacturer, approving samples, artwork, packing and shipping."
 date: 2026-09-10
 tags: ["private label", "distributors", "home care", "OEM"]

@@ -1,12 +1,13 @@
 ---
-sourceHash: "e23a6ba5ced8"
+sourceHash: "847242946928"
 title: "Nettoyant sols"
 slug: floor-cleaner
 category: surface-home-cleaners
 order: 1
 hsn: "3402 50"
-metaTitle: "Nettoyant sols : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Nettoyant sols lavande, rose, jasmin, citron et pin, de fabricants indiens contrôlés : formats de 500 ml à 20 L, marque de distributeur et chargements complets."
+metaTitle: "Nettoyant sols : exportateur et fournisseur en Inde"
+metaDescription: "Nettoyant sols lavande, rose, jasmin, citron ou pin, de fabricants indiens contrôlés, 500 ml à 20 L. Marque de distributeur, conteneurs mixtes, FOB/CIF."
+keyword: "nettoyant sol"
 answer: "Le nettoyant sols est un produit liquide à base de tensioactifs, dilué dans l’eau ou utilisé pur, qui élimine la poussière, les graisses et les traces de pas sur les sols durs comme le carrelage, le marbre, le vinyle et la pierre traitée. Il est généralement parfumé et laisse une légère odeur après le lavage. GoodBiz Hygiene sélectionne des nettoyants sols en formats de vente au détail et en vrac auprès de fabricants indiens contrôlés, pour l’export."
 variants:
   - "Lavande"

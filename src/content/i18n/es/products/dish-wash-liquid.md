@@ -1,12 +1,13 @@
 ---
-sourceHash: "05b3ceee9465"
+sourceHash: "36c4cfd3090d"
 title: "Lavavajillas líquido / en gel"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
 hsn: "3402 50"
-metaTitle: "Lavavajillas líquido y en gel: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Lavavajillas líquido y en gel de limón, lima y más, de fabricantes indios seleccionados: de 250 ml a 5 L, tambores a granel y marca propia."
+metaTitle: "Lavavajillas líquido y en gel: exportador de India"
+metaDescription: "Lavavajillas líquido y en gel de fabricantes indios seleccionados: limón, lima y más, de 250 ml a tambores de 200 L. Marca propia, contenedores mixtos, FOB/CIF."
+keyword: "lavavajillas líquido"
 answer: "El lavavajillas líquido es un detergente concentrado para limpiar platos, sartenes y cubiertos a mano, disponible como líquido fluido o como gel más espeso. Corta la grasa, hace buena espuma en agua fría y se enjuaga sin dejar película. GoodBiz Hygiene adquiere lavavajillas líquido y en gel, en envases minoristas y a granel, a fabricantes indios seleccionados para su exportación."
 variants:
   - "Limón"

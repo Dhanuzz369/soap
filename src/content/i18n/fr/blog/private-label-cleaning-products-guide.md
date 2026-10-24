@@ -1,6 +1,7 @@
 ---
-sourceHash: "17eb2fddaa93"
+sourceHash: "bd86fef00fbc"
 title: "Produits d’entretien en marque de distributeur : le guide étape par étape pour les distributeurs"
+metaTitle: "Produits d’entretien en MDD : le guide des distributeurs"
 description: "Comment lancer votre propre marque de produits d’entretien depuis l’Inde : choix de la gamme, cahier des charges, échantillons, maquettes et expédition."
 date: 2026-09-10
 tags: ["marque de distributeur", "distributeurs", "entretien ménager", "OEM"]

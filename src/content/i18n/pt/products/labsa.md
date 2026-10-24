@@ -1,12 +1,13 @@
 ---
-sourceHash: "095becea3801"
+sourceHash: "15d439c588c9"
 title: "LABSA (ácido alquilbenzeno sulfônico linear)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
-metaTitle: "LABSA 90% e 96%: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "LABSA 90% e 96% de matéria ativa, de fabricantes indianos selecionados, em tambores de HDPE, IBCs e flexitanks para fabricantes e formuladores de detergentes."
+metaTitle: "LABSA 90% e 96%: exportador e fornecedor da Índia"
+metaDescription: "LABSA 90% e 96% (ácido sulfônico de alquilbenzeno linear) de fabricantes indianos selecionados, em tambores, IBC e flexitanques. HSN 3402 31, FOB/CIF."
+keyword: "LABSA"
 answer: "O LABSA (ácido alquilbenzeno sulfônico linear) é o principal tensoativo aniônico usado em detergentes em pó, detergentes líquidos e limpadores. É um ácido escuro e viscoso, neutralizado com soda cáustica ou barrilha para formar o agente de limpeza ativo. A GoodBiz Hygiene adquire LABSA de fabricantes indianos selecionados, para exportação a fabricantes e distribuidores de detergentes."
 variants:
   - "LABSA com 90% mínimo de matéria ativa"

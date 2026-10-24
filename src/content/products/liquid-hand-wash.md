@@ -4,8 +4,9 @@ slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "Liquid Hand Wash Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Liquid hand wash from vetted Indian manufacturers: 250 ml to 5 L, antibacterial, herbal and moisturising variants, private label for importers and institutions."
+metaTitle: "Liquid Hand Wash Exporter & Supplier from India"
+metaDescription: "Liquid hand wash from vetted Indian manufacturers: 250 ml pumps to 20 L, antibacterial, herbal and moisturising. Private label, mixed containers, FOB/CIF."
+keyword: "liquid hand wash"
 answer: "Liquid hand wash is a mild, pourable cleanser for washing hands, made from synthetic detergents, thickener, fragrance and skin conditioners and dispensed from a pump or refill. It is used in homes, offices and public washrooms. GoodBiz Hygiene sources it from vetted Indian manufacturers for export."
 variants:
   - "Antibacterial fresh"

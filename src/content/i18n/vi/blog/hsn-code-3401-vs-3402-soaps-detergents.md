@@ -1,6 +1,7 @@
 ---
-sourceHash: "76eda9a626ca"
+sourceHash: "81532f93455a"
 title: "Mã HSN 3401 và 3402: hướng dẫn phân loại xà phòng và chất tẩy rửa dành cho người mua"
+metaTitle: "Mã HSN 3401 và 3402: phân loại xà phòng, chất tẩy rửa"
 description: "Chưa chắc xà phòng hay chất tẩy rửa của Quý khách thuộc HSN 3401 hay 3402? Hướng dẫn dễ hiểu về cách phân chia, kèm bảng theo từng sản phẩm."
 date: 2026-10-01
 tags: ["mã HSN", "phân loại hàng hóa", "chứng từ xuất khẩu"]

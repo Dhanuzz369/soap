@@ -1,12 +1,13 @@
 ---
-sourceHash: "4b57db25e377"
+sourceHash: "a76fe73afa27"
 title: "Nettoyant vitres"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "Nettoyant vitres : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Nettoyant vitres et miroirs sans traces, en pulvérisateurs et bidons recharges, de fabricants indiens contrôlés : 500 ml à 20 L, marque de distributeur."
+metaTitle: "Nettoyant vitres : exportateur et fournisseur en Inde"
+metaDescription: "Nettoyant vitres sans traces en spray et recharges de 1 à 20 L, de fabricants indiens contrôlés. Marque de distributeur, conteneurs mixtes et devis FOB/CIF."
+keyword: "nettoyant vitres"
 answer: "Le nettoyant vitres est un liquide peu moussant, contenant généralement de l’eau, un solvant doux et un peu de tensioactif, conçu pour nettoyer fenêtres, miroirs et autres surfaces vitrées sans laisser de traces. Il se vend normalement en flacon pulvérisateur et sèche rapidement. GoodBiz Hygiene sélectionne le nettoyant vitres auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Bleu standard, sans ammoniaque"

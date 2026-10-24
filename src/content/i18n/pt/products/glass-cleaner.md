@@ -1,12 +1,13 @@
 ---
-sourceHash: "4b57db25e377"
+sourceHash: "a76fe73afa27"
 title: "Limpa-vidros"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "Limpa-vidros: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Limpa-vidros e espelhos sem marcas, em frascos spray com gatilho e galões de refil, de fabricantes indianos selecionados: 500 ml a 20 L, marca própria."
+metaTitle: "Limpa-vidros: exportador e fornecedor da Índia"
+metaDescription: "Limpa-vidros sem manchas em spray e refis de 1 a 20 L, de fabricantes indianos selecionados. Marca própria, contêineres mistos e cotação FOB/CIF por pedido."
+keyword: "limpa-vidros"
 answer: "O limpa-vidros é um líquido de baixa espuma, geralmente composto de água, um solvente suave e uma pequena quantidade de tensoativo, desenvolvido para limpar janelas, espelhos e outros vidros sem deixar marcas. Normalmente é vendido em frascos com gatilho e seca rapidamente. A GoodBiz Hygiene adquire limpa-vidros de fabricantes indianos selecionados, para exportação."
 variants:
   - "Azul padrão, sem amônia"

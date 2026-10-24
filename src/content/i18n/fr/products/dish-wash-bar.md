@@ -1,12 +1,13 @@
 ---
-sourceHash: "ccf18cf99322"
+sourceHash: "cf0393403b70"
 title: "Pain vaisselle solide"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
 hsn: "3401 19"
-metaTitle: "Pain vaisselle solide : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Pains vaisselle citron, citron vert et autres, de fabricants indiens contrôlés : pains et pots de 100 à 300 g, marque de distributeur, chargements complets."
+metaTitle: "Pain vaisselle solide : exportateur et fournisseur en Inde"
+metaDescription: "Pains vaisselle citron, citron vert et plus, de fabricants indiens contrôlés : pots et pains de 100 à 300 g. Marque de distributeur, conteneurs mixtes, FOB/CIF."
+keyword: "pain vaisselle"
 answer: "Le pain vaisselle est un bloc de détergent solide que l’on utilise avec un tampon à récurer ou une éponge humide pour laver la vaisselle, les casseroles et les surfaces de cuisine. Économique, durable et facile à ranger, il est très apprécié là où le prix par lavage compte le plus. GoodBiz Hygiene sélectionne des pains vaisselle en plusieurs formats et parfums auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Citron"

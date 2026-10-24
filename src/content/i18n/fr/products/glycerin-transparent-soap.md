@@ -1,12 +1,13 @@
 ---
-sourceHash: "9f781c932179"
+sourceHash: "5a4a8b081395"
 title: "Savon à la glycérine / savon transparent"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "Savon à la glycérine et transparent : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Savons à la glycérine et transparents de fabricants indiens contrôlés : pains de 75 à 125 g à l’aloe, au miel ou à la rose, en marque de distributeur."
+metaTitle: "Savon à la glycérine et transparent : exportateur en Inde"
+metaDescription: "Savon à la glycérine et transparent de fabricants indiens contrôlés : pains de 75 à 125 g à l’aloe, au miel ou à la rose. Marque de distributeur, FOB/CIF."
+keyword: "savon à la glycérine"
 answer: "Le savon à la glycérine, aussi vendu comme savon transparent, est un pain de toilette clair ou translucide, fabriqué avec une forte teneur en glycérine et en solvants pour un aspect de verre ou d’ambre. Il est apprécié pour son toucher doux et son allure premium. GoodBiz Hygiene le sélectionne auprès de fabricants indiens contrôlés pour l’export et la marque de distributeur."
 variants:
   - "Aloe vera"

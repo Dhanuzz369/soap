@@ -1,12 +1,13 @@
 ---
-sourceHash: "e23a6ba5ced8"
+sourceHash: "847242946928"
 title: "Pembersih Lantai"
 slug: floor-cleaner
 category: surface-home-cleaners
 order: 1
 hsn: "3402 50"
-metaTitle: "Pembersih Lantai: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Pembersih lantai cair aroma lavender, mawar, melati, lemon, dan pinus dari produsen India terseleksi: kemasan 500 ml hingga 20 L, private label, kontainer."
+metaTitle: "Pembersih Lantai: Eksportir & Pemasok dari India"
+metaDescription: "Pembersih lantai aroma lavender, mawar, melati, lemon, dan pinus dari produsen India terseleksi, 500 ml hingga 20 L. Private label, kontainer campuran, FOB/CIF."
+keyword: "pembersih lantai"
 answer: "Pembersih lantai adalah produk cair berbasis surfaktan yang diencerkan dalam air atau dipakai murni untuk menghilangkan debu, lemak, dan bekas telapak kaki dari lantai keras seperti keramik, marmer, vinil, dan batu yang telah dilapisi. Produk ini biasanya beraroma dan meninggalkan wangi ringan setelah mengepel. GoodBiz Hygiene mencarikan pembersih lantai dalam kemasan ritel dan curah dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Lavender"

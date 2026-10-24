@@ -1,5 +1,6 @@
 ---
 title: "Herbal Phenol vs Chemical Disinfectants: What Retail Buyers Should Know"
+metaTitle: "Herbal Phenol vs Chemical Disinfectants: A Buyer's Guide"
 description: "Comparing herbal phenol with chemical disinfectants for retail ranges: how they differ in use, labelling, classification and what to ask an exporter first."
 date: 2026-09-24
 tags: ["herbal phenol", "disinfectants", "floor cleaner", "retail buying"]

@@ -1,12 +1,13 @@
 ---
-sourceHash: "569c74859cae"
+sourceHash: "3b93bcbf0059"
 title: "Jabón líquido para manos"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "Jabón líquido para manos: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Jabón líquido para manos de fabricantes indios seleccionados: de 250 ml a 5 L, variedades antibacteriana, herbal e hidratante, con marca propia."
+metaTitle: "Jabón líquido para manos: exportador y proveedor de India"
+metaDescription: "Jabón líquido para manos de fabricantes indios seleccionados: 250 ml a 20 L, antibacteriano, herbal o hidratante. Marca propia, contenedores mixtos, FOB/CIF."
+keyword: "jabón líquido para manos"
 answer: "El jabón líquido para manos es un limpiador suave y fluido para lavarse las manos, elaborado con detergentes sintéticos, espesante, fragancia y acondicionadores de la piel, y que se dispensa con bomba o desde una recarga. Se usa en hogares, oficinas y baños públicos. GoodBiz Hygiene lo adquiere a fabricantes indios seleccionados para su exportación."
 variants:
   - "Antibacteriano fresco"

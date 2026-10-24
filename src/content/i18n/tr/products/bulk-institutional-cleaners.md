@@ -1,12 +1,13 @@
 ---
-sourceHash: "1575bed4aaca"
+sourceHash: "2fb368c1aef4"
 title: "Toplu ve Kurumsal Temizlik Kimyasalları"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
 hsn: "3402 90"
-metaTitle: "Toplu Temizlik Kimyasalları: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Oteller, tesis hizmetleri ve distribütörler için kontrol edilmiş Hindistanlı üreticilerden 5 L, 20 L, 200 L ve 1.000 L toplu ve kurumsal temizlik kimyasalları."
+metaTitle: "Toplu Temizlik Kimyasalları: Hindistan’dan İhracat"
+metaDescription: "Oteller, temizlik şirketleri ve distribütörler için toplu temizlik kimyasalları: 5 L’den 1.000 L IBC’ye konsantreler, Hindistanlı üreticilerden. FOB/CIF."
+keyword: "endüstriyel temizlik kimyasalları"
 answer: "Toplu ve kurumsal temizlik kimyasalları; zemin temizleyiciler, yağ çözücüler, el sabunları ve çamaşır sıvıları gibi, profesyonel kullanım için büyük ambalajlarda sunulan konsantre temizleyicilerdir. Litre başına düşük maliyet ve tutarlı kalite isteyen oteller, hastaneler, temizlik yüklenicileri ve distribütörler tarafından satın alınırlar. GoodBiz Hygiene bunları ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Zemin temizleyici konsantresi"

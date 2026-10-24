@@ -1,12 +1,13 @@
 ---
-sourceHash: "f6009b1516c1"
+sourceHash: "332323d039a7"
 title: "Limpador de vasos sanitários"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "Limpador de vasos sanitários: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Limpador de vasos sanitários espesso, em frascos de bico angular, nos graus ácido e suave, de fabricantes indianos selecionados: 500 ml a 5 L, marca própria."
+metaTitle: "Limpador de vasos sanitários: exportador da Índia"
+metaDescription: "Limpador de vaso sanitário espesso, ácido ou suave, em frascos de bico inclinado de 500 ml a 5 L, de fabricantes indianos selecionados. Marca própria, FOB/CIF."
+keyword: "limpador de vaso sanitário"
 answer: "O limpador de vasos sanitários é um líquido espesso e aderente, normalmente à base de ácido, que remove calcário, manchas de ferrugem e depósitos de urina de vasos sanitários e mictórios. É vendido em frascos com bico angular, para que o líquido possa ser aplicado sob a borda. A GoodBiz Hygiene adquire limpador de vasos sanitários de fabricantes indianos selecionados, para exportação."
 variants:
   - "Padrão à base de ácido, azul"

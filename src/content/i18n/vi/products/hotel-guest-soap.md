@@ -1,12 +1,13 @@
 ---
-sourceHash: "1e7810df1f33"
+sourceHash: "0632460c6e63"
 title: "Xà phòng khách sạn và xà phòng tiếp khách (xà phòng mini)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "Xà phòng khách sạn: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Xà phòng mini cho khách sạn từ nhà sản xuất Ấn Độ đã thẩm định: 10 g đến 40 g, bao gói và logo theo yêu cầu, thùng số lượng lớn."
+metaTitle: "Xà phòng khách sạn: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Xà phòng khách sạn 10–40 g với bao bì và logo của Quý khách, từ nhà sản xuất Ấn Độ đã thẩm định. Thùng số lượng lớn cho khách sạn và nhà phân phối, FOB/CIF."
+keyword: "xà phòng khách sạn"
 answer: "Xà phòng khách sạn hay xà phòng tiếp khách là loại bánh xà phòng tắm nhỏ, bọc riêng từng bánh, thường nặng 10 g đến 40 g, được cung cấp làm đồ tiện nghi trong phòng tại khách sạn, resort và nhà khách. Sản phẩm thường được in thương hiệu của cơ sở lưu trú. GoodBiz Hygiene cung ứng xà phòng mini từ các nhà sản xuất Ấn Độ đã được thẩm định cho người mua trong ngành khách sạn và nhà phân phối đồ tiện nghi."
 variants:
   - "Cam quýt tươi mát"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "9f781c932179"
+sourceHash: "5a4a8b081395"
 title: "Sabuni ya Gliserini / Sabuni Uwazi"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "Sabuni ya Gliserini na Uwazi: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Sabuni ya kuogea ya gliserini na uwazi kutoka kwa watengenezaji wa India tuliowakagua: vipande vya 75 g hadi 125 g vya aloe, asali na waridi, chapa ya mnunuzi."
+metaTitle: "Sabuni ya Gliserini na Uwazi: Msafirishaji wa India"
+metaDescription: "Sabuni ya gliserini na uwazi kutoka viwanda vya India vilivyokaguliwa: vipande 75–125 g vya aloe, asali na waridi. Chapa yako, makontena mchanganyiko, FOB/CIF."
+keyword: "sabuni ya gliserini"
 answer: "Sabuni ya gliserini, inayouzwa pia kama sabuni uwazi (transparent soap), ni kipande cha kuogea chenye uwazi au nusu-uwazi kinachotengenezwa kwa kiwango kikubwa cha gliserini na viyeyusho ili kipande kionekane kama kioo au kaharabu. Hupendwa kwa hisia yake laini na mwonekano wa hadhi ya juu. GoodBiz Hygiene huipata kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje na chapa ya mnunuzi."
 variants:
   - "Aloe vera"

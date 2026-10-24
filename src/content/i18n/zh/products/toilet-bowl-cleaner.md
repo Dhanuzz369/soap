@@ -1,12 +1,13 @@
 ---
-sourceHash: "f6009b1516c1"
+sourceHash: "332323d039a7"
 title: "马桶清洁剂"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "马桶清洁剂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的浓稠马桶清洁剂，采用弯颈瓶，有酸性和温和等级：500 ml至5 L，为进口商提供自有品牌和整柜装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "马桶清洁剂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的马桶清洁剂：酸性和温和型稠液，弯嘴瓶500 ml至5 L。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "马桶清洁剂"
 answer: "马桶清洁剂是一种浓稠、能附着的液体，通常为酸性，用于清除马桶和小便池中的水垢、锈渍和尿垢。它装在弯颈瓶中销售，便于将液体挤到边沿下方。GoodBiz Hygiene从经我们考察的印度制造商采购马桶清洁剂用于出口。"
 variants:
   - "标准酸性型，蓝色"

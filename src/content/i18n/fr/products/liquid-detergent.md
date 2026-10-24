@@ -1,12 +1,13 @@
 ---
-sourceHash: "a32b95104c89"
+sourceHash: "e01f264e3e3e"
 title: "Lessive liquide"
 slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Lessive liquide : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Lessive liquide de fabricants indiens contrôlés : formats de 500 ml à 20 L, qualités lavage à la main et machine, marque de distributeur et conteneurs mixtes."
+metaTitle: "Lessive liquide : exportateur et fournisseur en Inde"
+metaDescription: "Lessive liquide de fabricants indiens contrôlés : 500 ml à 20 L, lavage main et machine. Marque de distributeur, conteneurs mixtes et devis FOB/CIF."
+keyword: "lessive liquide"
 answer: "La lessive liquide est un détergent fluide pour le linge qui associe tensioactifs, eau et additifs, et se dissout facilement à l’eau froide ou tiède. Elle convient au lavage à la main comme en machine, et se vend comme une alternative plus pratique et plus haut de gamme à la poudre. GoodBiz Hygiene sélectionne la lessive liquide auprès de fabricants indiens contrôlés, en formats de vente au détail et en vrac, pour l’export."
 variants:
   - "Machine à chargement par le haut et lavage à la main"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "9f781c932179"
+sourceHash: "5a4a8b081395"
 title: "Glycerinseife / Transparentseife"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "Glycerin- und Transparentseife Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Glycerin- und Transparent-Badeseife von geprüften indischen Herstellern: klare Stücke von 75 bis 125 g in Aloe, Honig und Rose, mit Handelsmarke für Importeure."
+metaTitle: "Glycerin- und Transparentseife – Export aus Indien"
+metaDescription: "Glycerin- und Transparentseife von geprüften indischen Herstellern: klare Stücke von 75 bis 125 g mit Aloe, Honig, Rose. Handelsmarke, Mischcontainer, FOB/CIF."
+keyword: "Glycerinseife"
 answer: "Glycerinseife, auch als Transparentseife angeboten, ist ein klares oder durchscheinendes Badestück mit hohem Anteil an Glycerin und Lösungsmitteln, sodass das Stück wie Glas oder Bernstein aussieht. Sie wird wegen ihres weichen Hautgefühls und ihrer hochwertigen Optik geschätzt. GoodBiz Hygiene bezieht sie von geprüften indischen Herstellern für Export und Handelsmarke."
 variants:
   - "Aloe vera"

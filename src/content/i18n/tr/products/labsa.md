@@ -1,12 +1,13 @@
 ---
-sourceHash: "095becea3801"
+sourceHash: "15d439c588c9"
 title: "LABSA (Lineer Alkil Benzen Sülfonik Asit)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
-metaTitle: "LABSA %90 ve %96: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden %90 ve %96 aktif asit LABSA; deterjan üreticileri ve karıştırıcılar için HDPE varil, IBC ve flexitank ambalajında."
+metaTitle: "LABSA %90 ve %96: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden LABSA %90 ve %96 (lineer alkil benzen sülfonik asit); HDPE varil, IBC ve flexitank. HSN 3402 31, FOB/CIF teklif."
+keyword: "LABSA"
 answer: "LABSA (Lineer Alkil Benzen Sülfonik Asit), toz deterjanlarda, sıvı deterjanlarda ve temizleyicilerde kullanılan başlıca anyonik yüzey aktif maddedir. Etken temizleme maddesini oluşturmak için kostik soda veya soda külü ile nötrleştirilen koyu renkli, viskoz bir asittir. GoodBiz Hygiene, LABSA’yı deterjan üreticilerine ve distribütörlere ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "En az %90 aktif maddeli LABSA"

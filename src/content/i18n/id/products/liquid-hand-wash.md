@@ -1,12 +1,13 @@
 ---
-sourceHash: "569c74859cae"
+sourceHash: "3b93bcbf0059"
 title: "Sabun Cuci Tangan Cair"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "Sabun Cuci Tangan Cair: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun cuci tangan cair dari produsen India terseleksi: 250 ml hingga 5 L, varian antibakteri, herbal, dan pelembap, private label untuk importir dan institusi."
+metaTitle: "Sabun Cuci Tangan Cair: Eksportir & Pemasok dari India"
+metaDescription: "Sabun cuci tangan cair dari produsen India terseleksi: botol pompa 250 ml hingga 20 L, antibakteri, herbal, pelembap. Private label, kontainer campuran."
+keyword: "sabun cuci tangan"
 answer: "Sabun cuci tangan cair adalah pembersih lembut yang dapat dituang untuk mencuci tangan, dibuat dari deterjen sintetis, pengental, pewangi, dan kondisioner kulit, dan dikeluarkan lewat pompa atau isi ulang. Produk ini dipakai di rumah, kantor, dan toilet umum. GoodBiz Hygiene mencarikannya dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Antibakteri segar"

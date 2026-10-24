@@ -1,12 +1,13 @@
 ---
-sourceHash: "48d8d4c59e96"
+sourceHash: "547b4d376403"
 title: "Sabão em barra para roupas"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "Sabão em barra para roupas: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Sabão e detergente em barra para roupas de fabricantes indianos selecionados: barras de 100 g a 250 g, graus de TFM 54-72%, marca própria e contêineres."
+metaTitle: "Sabão em barra para roupas: exportador e fornecedor da Índia"
+metaDescription: "Sabão em barra para roupas de fabricantes indianos selecionados: 100 a 250 g, TFM de 54 a 72%. Marca própria, contêineres mistos e cotação FOB/CIF."
+keyword: "sabão em barra"
 answer: "O sabão em barra para roupas é um bloco sólido de sabão, ou de mistura de sabão e detergente, feito para esfregar e lavar roupas à mão. As barras vão do sabão propriamente dito, com alta matéria graxa total (TFM), a barras de detergente de menor custo, com cargas e coadjuvantes. A GoodBiz Hygiene adquire barras para roupas em vários graus de fabricantes indianos selecionados, para exportação."
 variants:
   - "Barra azul (clássica, com tonalidade de branqueador óptico)"

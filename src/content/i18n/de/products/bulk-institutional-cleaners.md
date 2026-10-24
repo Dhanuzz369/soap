@@ -1,12 +1,13 @@
 ---
-sourceHash: "1575bed4aaca"
+sourceHash: "2fb368c1aef4"
 title: "Reinigungsmittel für Großgebinde und Gewerbekunden"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
 hsn: "3402 90"
-metaTitle: "Reinigungschemikalien im Großgebinde Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Reinigungschemikalien im Großgebinde von geprüften indischen Herstellern in 5 L, 20 L, 200 L und 1.000 L für Hotels, Gebäudedienste und Händler."
+metaTitle: "Reinigungschemikalien im Großgebinde – Export aus Indien"
+metaDescription: "Reinigungschemie im Großgebinde für Hotels, Gebäudereiniger und Händler: Konzentrate von 5 L bis 1.000-L-IBC von geprüften indischen Herstellern. FOB/CIF."
+keyword: "Reinigungsmittel im Großgebinde"
 answer: "Reinigungschemikalien für Großgebinde und Gewerbekunden sind konzentrierte Reiniger wie Bodenreiniger, Entfetter, Flüssigseifen und Flüssigwaschmittel, die in großen Gebinden für den professionellen Einsatz geliefert werden. Sie werden von Hotels, Krankenhäusern, Reinigungsunternehmen und Händlern gekauft, die niedrige Kosten je Liter und gleichbleibende Qualität brauchen. GoodBiz Hygiene bezieht sie von geprüften indischen Herstellern für den Export."
 variants:
   - "Bodenreiniger-Konzentrat"

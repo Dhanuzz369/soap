@@ -1,6 +1,7 @@
 ---
-sourceHash: "6de17572f082"
+sourceHash: "84702d62b584"
 title: "Các hạng xà phòng tắm: TFM, hạng 1 và hạng 2, và vì sao điều này quan trọng"
+metaTitle: "Các hạng xà phòng tắm: TFM, hạng 1 và hạng 2"
 description: "TFM trên thông số xà phòng tắm nghĩa là gì, hạng 1 và hạng 2 được dùng trong thương mại ra sao, và cách chọn hạng phù hợp với thị trường và mức giá."
 date: 2026-08-27
 tags: ["xà phòng tắm", "TFM", "hạng xà phòng", "thông số kỹ thuật"]

@@ -1,6 +1,7 @@
 ---
-sourceHash: "6843f5aa2873"
+sourceHash: "c1161c07178f"
 title: "Detergente en polvo o detergente líquido: ¿cuál se vende mejor en su mercado?"
+metaTitle: "Detergente en polvo o líquido: ¿cuál se vende mejor?"
 description: "¿Detergente para ropa en polvo o líquido? Compare clima, hábitos de lavado, lavadoras, precio y flete por lavado para elegir la gama de su mercado."
 date: 2026-08-20
 tags: ["detergente en polvo", "detergente líquido", "elección de mercado"]

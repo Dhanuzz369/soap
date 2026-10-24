@@ -1,6 +1,7 @@
 ---
-sourceHash: "2b10481b836a"
+sourceHash: "259e3f5f79fb"
 title: "Documents d’export pour les produits d’entretien : COA, FDS, certificat d’origine et plus"
+metaTitle: "Documents d’export des produits d’entretien : COA, FDS"
 description: "Liste de contrôle des documents d’export pour savons, lessives et nettoyants indiens : facture, COA, FDS, certificat d’origine, marchandises dangereuses."
 date: 2026-10-14
 tags: ["documents d’export", "COA", "FDS", "certificat d’origine"]

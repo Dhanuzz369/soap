@@ -1,12 +1,13 @@
 ---
-sourceHash: "54468ef241aa"
+sourceHash: "a3d644f8b2bd"
 title: "Xà phòng tắm / xà phòng bánh"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "Xà phòng tắm: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Xà phòng tắm dạng bánh từ nhà sản xuất Ấn Độ đã thẩm định: 50 g đến 150 g, TFM 60% đến trên 76%, có nhãn riêng và container ghép."
+metaTitle: "Xà phòng tắm: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Xà phòng tắm dạng bánh 50–150 g, TFM 60% đến 76%+, từ nhà sản xuất Ấn Độ đã thẩm định. Nhãn riêng, container ghép và báo giá FOB/CIF theo từng đơn."
+keyword: "xà phòng tắm"
 answer: "Xà phòng tắm là loại bánh xà phòng rắn dùng để làm sạch, được tạo ra bằng cách xà phòng hóa chất béo và dầu, dùng rửa mặt và cơ thể. Sản phẩm được phân hạng chủ yếu theo Tổng hàm lượng chất béo (TFM), cho biết bánh xà phòng chứa bao nhiêu xà phòng thực. GoodBiz Hygiene cung ứng xà phòng tắm với nhiều cấp TFM từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Hoa hồng"

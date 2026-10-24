@@ -1,5 +1,6 @@
 ---
 title: "HSN Code 3401 vs 3402: A Buyer's Guide to Classifying Soaps and Detergents"
+metaTitle: "HSN Code 3401 vs 3402: Classifying Soaps and Detergents"
 description: "Not sure whether your soap or detergent is HSN 3401 or 3402? A plain guide to the split, with a product-by-product table and the questions to settle first."
 date: 2026-10-01
 tags: ["HSN code", "classification", "export documents"]

@@ -1,12 +1,13 @@
 ---
-sourceHash: "05b3ceee9465"
+sourceHash: "36c4cfd3090d"
 title: "Detergente líquido / gel para louças"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
 hsn: "3402 50"
-metaTitle: "Detergente líquido e gel para louças: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Detergente líquido e gel para louças de limão, lima e outras fragrâncias de fabricantes indianos selecionados: galões de 250 ml a 5 L, tambores, marca própria."
+metaTitle: "Detergente líquido e gel para louças: exportador da Índia"
+metaDescription: "Detergente líquido e gel para louças de fabricantes indianos selecionados: limão e outros, de 250 ml a tambores de 200 L. Marca própria e contêineres mistos."
+keyword: "detergente de louça"
 answer: "O detergente líquido para louças é um detergente concentrado para lavar pratos, panelas e talheres à mão, disponível como líquido fluido ou como gel mais espesso. Remove a gordura, faz boa espuma em água fria e enxágua sem deixar película. A GoodBiz Hygiene adquire detergente líquido e gel para louças, em embalagens de varejo e a granel, de fabricantes indianos selecionados, para exportação."
 variants:
   - "Limão"

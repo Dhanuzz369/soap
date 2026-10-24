@@ -4,8 +4,9 @@ slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "Soap Noodles Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Soap noodles in 80:20 and 70:30 palm to palm kernel grades from vetted Indian manufacturers, supplied in 25 kg and 50 kg bags for soap makers worldwide."
+metaTitle: "Soap Noodles 80:20 Exporter & Supplier from India"
+metaDescription: "Soap noodles in 80:20 and 70:30 grades from vetted Indian manufacturers, in 25 kg and 50 kg bags for soap makers. HSN 3401 20, FOB/CIF quotes per order."
+keyword: "soap noodles"
 answer: "Soap noodles are small pellets of dried, saponified fat and oil, used as the base material for making toilet, laundry and other bar soaps. They are graded by the ratio of palm oil to palm kernel oil and by Total Fatty Matter (TFM). GoodBiz Hygiene sources soap noodles from vetted Indian manufacturers for export to soap makers and distributors."
 variants:
   - "80:20 palm to palm kernel (Grade 1 / premium)"

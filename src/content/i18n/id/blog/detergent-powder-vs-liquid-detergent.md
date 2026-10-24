@@ -1,6 +1,7 @@
 ---
-sourceHash: "6843f5aa2873"
+sourceHash: "c1161c07178f"
 title: "Deterjen Bubuk vs Deterjen Cair: Mana yang Lebih Laris di Pasar Anda?"
+metaTitle: "Deterjen Bubuk vs Cair: Mana yang Lebih Laris?"
 description: "Deterjen cucian bubuk atau cair? Bandingkan iklim, kebiasaan mencuci, mesin cuci, harga, dan ongkos kirim per cucian untuk memilih lini bagi pasar Anda."
 date: 2026-08-20
 tags: ["deterjen bubuk", "deterjen cair", "pemilihan pasar"]

@@ -1,12 +1,13 @@
 ---
-sourceHash: "108193995324"
+sourceHash: "412ca2d14ce7"
 title: "Nước tẩy rửa đa năng"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
 hsn: "3402 50"
-metaTitle: "Nước tẩy rửa đa năng: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Nước tẩy rửa đa năng dạng chai xịt, refill và số lượng lớn từ nhà sản xuất Ấn Độ đã thẩm định: hương cam quýt, oải hương, có nhãn riêng."
+metaTitle: "Nước tẩy rửa đa năng: nhà xuất khẩu, cung cấp từ Ấn Độ"
+metaDescription: "Nước tẩy rửa đa năng dạng xịt, túi refill và số lượng lớn, từ nhà sản xuất Ấn Độ đã thẩm định: hương cam chanh, oải hương. Nhãn riêng, container ghép."
+keyword: "nước tẩy rửa đa năng"
 answer: "Nước tẩy rửa đa năng, còn gọi là chất tẩy rửa vạn năng, là chất làm sạch dạng lỏng thông dụng, dùng trên mặt bếp, bàn, thiết bị gia dụng, tường sơn và nhiều bề mặt cứng. Sản phẩm thường có pH gần trung tính đến kiềm nhẹ và được bán dưới dạng xịt dùng ngay hoặc dạng đậm đặc. GoodBiz Hygiene cung ứng nước tẩy rửa đa năng từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Cam quýt / chanh"

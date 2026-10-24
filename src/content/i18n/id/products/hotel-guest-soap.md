@@ -1,12 +1,13 @@
 ---
-sourceHash: "1e7810df1f33"
+sourceHash: "0632460c6e63"
 title: "Sabun Hotel dan Sabun Tamu (Sabun Mini)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "Sabun Hotel dan Sabun Tamu: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun mini perlengkapan hotel dari produsen India terseleksi: 10 g hingga 40 g, pembungkus dan logo kustom, karton curah untuk hotel, resor, dan distributor."
+metaTitle: "Sabun Hotel dan Sabun Tamu: Eksportir & Pemasok dari India"
+metaDescription: "Sabun hotel dan tamu 10–40 g dengan kemasan dan logo Anda, dari produsen India terseleksi. Karton curah untuk hotel, resort, dan distributor, penawaran FOB/CIF."
+keyword: "sabun hotel"
 answer: "Sabun hotel atau sabun tamu adalah sabun mandi batang kecil yang dibungkus satuan, umumnya 10 g hingga 40 g, disediakan sebagai perlengkapan kamar di hotel, resor, dan wisma. Sabun ini sering dicetak dengan merek properti. GoodBiz Hygiene mencarikan sabun mini dari produsen India yang telah diseleksi bagi pembeli perhotelan dan distributor perlengkapan mandi (amenities)."
 variants:
   - "Sitrus segar"

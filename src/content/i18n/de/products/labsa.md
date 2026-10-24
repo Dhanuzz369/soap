@@ -1,12 +1,13 @@
 ---
-sourceHash: "095becea3801"
+sourceHash: "15d439c588c9"
 title: "LABSA (lineare Alkylbenzolsulfonsäure)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
-metaTitle: "LABSA 90 % und 96 % Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "LABSA 90 % und 96 % aktive Säure von geprüften indischen Herstellern, verpackt in HDPE-Fässern, IBC und Flexitanks für Waschmittelhersteller und Mischbetriebe."
+metaTitle: "LABSA 90 % und 96 % – Exporteur & Lieferant aus Indien"
+metaDescription: "LABSA 90 % und 96 % (lineare Alkylbenzolsulfonsäure) von geprüften indischen Herstellern in HDPE-Fässern, IBCs und Flexitanks. HSN 3402 31, FOB/CIF-Angebote."
+keyword: "LABSA"
 answer: "LABSA (lineare Alkylbenzolsulfonsäure) ist das wichtigste anionische Tensid in Waschpulvern, Flüssigwaschmitteln und Reinigern. Es ist eine dunkle, zähflüssige Säure, die mit Natronlauge oder Soda neutralisiert wird und so den eigentlichen Reinigungswirkstoff bildet. GoodBiz Hygiene bezieht LABSA von geprüften indischen Herstellern für den Export an Waschmittelhersteller und Händler."
 variants:
   - "LABSA mit mind. 90 % Aktivsubstanz"

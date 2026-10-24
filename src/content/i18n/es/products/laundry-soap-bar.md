@@ -1,12 +1,13 @@
 ---
-sourceHash: "48d8d4c59e96"
+sourceHash: "547b4d376403"
 title: "Jabón de lavandería en barra / barra detergente"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "Jabón de lavandería y barra detergente: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Jabón de lavandería y barras detergentes de fabricantes indios seleccionados: barras de 100 a 250 g, TFM 54-72%, marca propia y cargas por contenedor."
+metaTitle: "Jabón de lavandería y barra detergente: exportador de India"
+metaDescription: "Jabón de lavandería y barras detergentes de fabricantes indios seleccionados: 100 a 250 g, TFM del 54 al 72 %. Marca propia, contenedores mixtos, FOB/CIF."
+keyword: "jabón de lavandería"
 answer: "Una barra de jabón de lavandería es una pastilla sólida de jabón o de mezcla de jabón y detergente destinada a frotar y lavar la ropa a mano. Las barras van desde el jabón puro, con una materia grasa total (TFM) alta, hasta barras detergentes de menor costo con cargas y coadyuvantes. GoodBiz Hygiene adquiere barras de lavandería en varias calidades a fabricantes indios seleccionados para su exportación."
 variants:
   - "Barra azul (clásica, con tinte de blanqueador óptico)"

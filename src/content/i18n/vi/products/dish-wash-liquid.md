@@ -1,12 +1,13 @@
 ---
-sourceHash: "05b3ceee9465"
+sourceHash: "36c4cfd3090d"
 title: "Nước rửa chén / gel rửa chén"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
 hsn: "3402 50"
-metaTitle: "Nước rửa chén và gel rửa chén: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Nước rửa chén dạng lỏng và gel từ nhà sản xuất Ấn Độ đã thẩm định: can 250 ml đến 5 L, thùng phuy, có nhãn riêng cho nhà nhập khẩu."
+metaTitle: "Nước rửa chén và gel rửa chén: xuất khẩu từ Ấn Độ"
+metaDescription: "Nước rửa chén và gel rửa chén từ nhà sản xuất Ấn Độ đã thẩm định: hương chanh và hơn thế, 250 ml đến thùng 200 L. Nhãn riêng, container ghép, FOB/CIF."
+keyword: "nước rửa chén"
 answer: "Nước rửa chén là chất tẩy rửa đậm đặc để làm sạch đĩa, chảo và dao muỗng bằng tay, có dạng lỏng loãng hoặc gel đặc hơn. Sản phẩm tẩy dầu mỡ, tạo bọt tốt trong nước mát và xả sạch không để lại lớp màng. GoodBiz Hygiene cung ứng nước rửa chén dạng lỏng và gel ở các quy cách bán lẻ và số lượng lớn từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Chanh"

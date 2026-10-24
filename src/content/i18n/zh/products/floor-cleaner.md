@@ -1,12 +1,13 @@
 ---
-sourceHash: "e23a6ba5ced8"
+sourceHash: "847242946928"
 title: "地板清洁剂"
 slug: floor-cleaner
 category: surface-home-cleaners
 order: 1
 hsn: "3402 50"
-metaTitle: "地板清洁剂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的薰衣草、玫瑰、茉莉、柠檬和松木香型液体地板清洁剂：500 ml至20 L包装，提供自有品牌和整柜装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "地板清洁剂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的薰衣草、玫瑰、茉莉、柠檬和松木香型地板清洁剂：500 ml至20 L。支持自有品牌贴牌、混装集装箱及FOB/CIF报价。"
+keyword: "地板清洁剂"
 answer: "地板清洁剂是以表面活性剂为基础的液体产品，兑水稀释或直接使用，用于清除瓷砖、大理石、乙烯基地板和密封石材等硬质地面上的灰尘、油脂和脚印。它通常带香味，拖地后留有淡淡香气。GoodBiz Hygiene从经我们考察的印度制造商采购零售和大包装地板清洁剂用于出口。"
 variants:
   - "薰衣草"

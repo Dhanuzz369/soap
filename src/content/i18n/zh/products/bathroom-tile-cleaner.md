@@ -1,12 +1,13 @@
 ---
-sourceHash: "c651d0594a86"
+sourceHash: "94216906b8fc"
 title: "浴室瓷砖清洁剂"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "浴室瓷砖清洁剂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的浴室瓷砖清洁剂，可去除皂垢、水垢和水渍，提供扳机喷雾瓶和补充装，并为进口商提供自有品牌，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "浴室瓷砖清洁剂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的浴室瓷砖清洁剂，去除水垢和皂垢：喷雾瓶及5–20 L补充装。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "浴室清洁剂"
 answer: "浴室瓷砖清洁剂是一种液体或凝胶，用于去除瓷砖、水龙头、洗手盆、淋浴屏和浴室配件上的皂垢、水垢、水渍和轻微霉斑。它通常为弱酸性，常装在扳机喷雾瓶中销售。GoodBiz Hygiene从经我们考察的印度制造商采购浴室瓷砖清洁剂用于出口。"
 variants:
   - "清新柠檬"

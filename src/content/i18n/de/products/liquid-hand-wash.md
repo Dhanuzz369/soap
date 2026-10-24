@@ -1,12 +1,13 @@
 ---
-sourceHash: "569c74859cae"
+sourceHash: "3b93bcbf0059"
 title: "Flüssigseife für die Hände"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "Flüssigseife für die Hände Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Flüssigseife von geprüften indischen Herstellern: 250 ml bis 5 L, antibakterielle, pflanzliche und pflegende Sorten, Handelsmarke für Importeure."
+metaTitle: "Flüssigseife für die Hände – Export aus Indien"
+metaDescription: "Flüssigseife für die Hände von geprüften indischen Herstellern: 250 ml bis 20 L, antibakteriell, Kräuter oder pflegend. Handelsmarke, Mischcontainer, FOB/CIF."
+keyword: "Flüssigseife"
 answer: "Flüssigseife ist ein mildes, fließfähiges Reinigungsmittel zum Händewaschen aus synthetischen Tensiden, Verdickungsmittel, Duftstoff und Hautpflegestoffen, das aus einem Pumpspender oder einer Nachfüllpackung dosiert wird. Sie wird in Haushalten, Büros und öffentlichen Waschräumen verwendet. GoodBiz Hygiene bezieht sie von geprüften indischen Herstellern für den Export."
 variants:
   - "Antibakteriell, frisch"

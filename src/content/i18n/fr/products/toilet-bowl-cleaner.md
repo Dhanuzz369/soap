@@ -1,12 +1,13 @@
 ---
-sourceHash: "f6009b1516c1"
+sourceHash: "332323d039a7"
 title: "Nettoyant WC"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "Nettoyant WC : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Nettoyant WC épais en flacon à col incliné, qualités acides ou douces, de fabricants indiens contrôlés : 500 ml à 5 L, marque de distributeur, conteneurs."
+metaTitle: "Nettoyant WC : exportateur et fournisseur en Inde"
+metaDescription: "Nettoyant WC épais, acide ou doux, en flacons à col incliné de 500 ml à 5 L, de fabricants indiens contrôlés. Marque de distributeur et devis FOB/CIF."
+keyword: "nettoyant WC"
 answer: "Le nettoyant WC est un liquide épais et adhérent, généralement acide, qui élimine le tartre, les taches de rouille et les dépôts d’urine des cuvettes et des urinoirs. Il se vend en flacons à col incliné pour pouvoir appliquer le liquide sous le rebord. GoodBiz Hygiene sélectionne le nettoyant WC auprès de fabricants indiens contrôlés pour l’export."
 variants:
   - "Acide standard, bleu"

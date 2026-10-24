@@ -1,6 +1,7 @@
 ---
-sourceHash: "66cae22a82fe"
+sourceHash: "f39ee6f3d9e7"
 title: "Bitkisel Fenol ve Kimyasal Dezenfektanlar: Perakende Alıcıların Bilmesi Gerekenler"
+metaTitle: "Bitkisel Fenol mü Kimyasal Dezenfektan mı? Rehber"
 description: "Perakende gamları için bitkisel fenol ile kimyasal dezenfektanların karşılaştırması: kullanım, etiketleme, sınıflandırma ve bir ihracatçıya önce ne sorulmalı."
 date: 2026-09-24
 tags: ["bitkisel fenol", "dezenfektanlar", "zemin temizleyici", "perakende alım"]

@@ -1,12 +1,13 @@
 ---
-sourceHash: "095becea3801"
+sourceHash: "15d439c588c9"
 title: "LABSA (Asidi ya Alkilibenzini Salfoniki ya Mnyororo Ulionyooka)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
-metaTitle: "LABSA 90% na 96%: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "LABSA 90% na 96% kutoka kwa watengenezaji wa India tuliowakagua, katika mapipa ya HDPE, IBC na flexitank kwa watengenezaji wa sabuni za kufulia."
+metaTitle: "LABSA 90% na 96%: Msafirishaji Nje na Muuzaji kutoka India"
+metaDescription: "LABSA 90% na 96% (asidi ya linear alkyl benzene sulphonic) kutoka viwanda vya India vilivyokaguliwa, kwa mapipa ya HDPE, IBC na flexitank. HSN 3402 31, FOB/CIF."
+keyword: "LABSA"
 answer: "LABSA (Linear Alkyl Benzene Sulphonic Acid, asidi ya alkilibenzini salfoniki ya mnyororo ulionyooka) ni kiambato kikuu cha kusafisha cha anionic kinachotumika katika sabuni za unga, sabuni za maji za kufulia na visafishaji. Ni asidi nzito yenye rangi nyeusi inayopunguzwa makali kwa soda ya caustic au soda ash ili kuunda kiambato hai cha kusafisha. GoodBiz Hygiene hupata LABSA kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje kwa watengenezaji wa sabuni za kufulia na wasambazaji."
 variants:
   - "LABSA yenye viambato hai 90% kiwango cha chini"

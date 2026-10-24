@@ -1,13 +1,14 @@
 ---
-sourceHash: "c3d7a358c07c"
+sourceHash: "40ef01b501de"
 title: "Bitkisel Fenol / Fenil"
 slug: herbal-phenol
 category: surface-home-cleaners
 order: 2
 hsn: "3402 50"
 hsnNote: "Bitkisel fenol ve fenil, formülasyona ve etikette yapılan iddialara bağlı olarak çoğunlukla dezenfektan olarak HSN 3808 94 altında sınıflandırılır. Biz 3402 50’yi yüzey temizleyici başlığı olarak gösteririz; doğru sınıflandırma, sipariş başına üretici ve gümrük müşavirinizle teyit edilir."
-metaTitle: "Bitkisel Fenol / Fenil: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden neem, çam, okaliptüs ve limon otu kokulu bitkisel fenol ve fenil zemin temizleyici: 500 ml-200 L varil, özel marka."
+metaTitle: "Bitkisel Fenol / Fenil: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Neem, çam, okaliptüs ve limon otu kokulu bitkisel fenol (fenil), 500 ml’den 200 L varile, kontrol edilmiş Hindistanlı üreticilerden. Özel marka, FOB/CIF."
+keyword: "bitkisel fenol"
 answer: "Bitkisel fenol, fenil olarak da satılır; çam, neem veya okaliptüs gibi bitki kaynaklı yağlara dayanan, suyla karıştırıldığında genellikle sütlü beyaz bir emülsiyon halinde sunulan konsantre sıvı bir temizleyicidir. Güçlü ve kalıcı kokusu nedeniyle zeminlerde paspaslanır, gider ve tuvalet çevrelerinde kullanılır. GoodBiz Hygiene, bitkisel fenolü ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Neem"

@@ -1,13 +1,14 @@
 ---
-sourceHash: "4d96f789adca"
+sourceHash: "050e9d439949"
 title: "Weichspüler"
 slug: fabric-softener
 category: laundry-care
 order: 4
 hsn: "3402 50"
 hsnNote: "Weichspüler wird üblicherweise unter 3402 50 als grenzflächenaktive Zubereitung eingereiht, häufig aber auch unter 3809 91 (Appreturmittel für Textilien). Der richtige Code hängt von der Rezeptur und der Zollpraxis des Bestimmungslandes ab, daher bestätigen wir für jeden Auftrag den vollständigen achtstelligen Code."
-metaTitle: "Weichspüler Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Weichspüler von geprüften indischen Herstellern: 500 ml bis 20 L, normale und konzentrierte Qualitäten, Handelsmarke und gemischte Containerladungen."
+metaTitle: "Weichspüler – Exporteur & Lieferant aus Indien"
+metaDescription: "Weichspüler von geprüften indischen Herstellern: 500 ml bis 20 L, normal und Konzentrat. Handelsmarke, Mischcontainer und FOB/CIF-Angebote je Auftrag."
+keyword: "Weichspüler"
 answer: "Weichspüler, auch Wäschekonditionierer genannt, ist eine Flüssigkeit, die im letzten Spülgang einer Wäsche zugegeben wird, damit Kleidung weich, glatt und duftend wird. Er wirkt über kationische Weichmacher, die die Fasern umhüllen und die statische Aufladung verringern. GoodBiz Hygiene bezieht Weichspüler in normaler und konzentrierter Qualität von geprüften indischen Herstellern für den Export."
 variants:
   - "Blumenstrauß"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "108193995324"
+sourceHash: "412ca2d14ce7"
 title: "Pembersih Serbaguna"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
 hsn: "3402 50"
-metaTitle: "Pembersih Serbaguna: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Pembersih serbaguna multi-permukaan dalam kemasan semprot, isi ulang, dan curah dari produsen India terseleksi: aroma sitrus, lavender, segar, private label."
+metaTitle: "Pembersih Serbaguna: Eksportir & Pemasok dari India"
+metaDescription: "Pembersih serbaguna dalam botol semprot, isi ulang, dan curah dari produsen India terseleksi: jeruk, lavender. Private label, kontainer campuran, FOB/CIF."
+keyword: "pembersih serbaguna"
 answer: "Pembersih serbaguna, juga disebut pembersih multi-permukaan, adalah cairan pembersih umum yang dipakai pada meja dapur, meja, peralatan rumah tangga, dinding bercat, dan banyak permukaan keras. Produk ini biasanya mendekati netral hingga sedikit basa dan dijual sebagai semprot siap pakai atau konsentrat. GoodBiz Hygiene mencarikan pembersih serbaguna dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Sitrus / lemon"

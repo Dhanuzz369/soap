@@ -1,12 +1,13 @@
 ---
-sourceHash: "095becea3801"
+sourceHash: "15d439c588c9"
 title: "LABSA (acide alkylbenzène sulfonique linéaire)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
-metaTitle: "LABSA 90 % et 96 % : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "LABSA (acide sulfonique) à 90 % et 96 % de matière active, de fabricants indiens contrôlés, en fûts PEHD, GRV et flexitanks pour fabricants de détergents."
+metaTitle: "LABSA 90 % et 96 % : exportateur et fournisseur en Inde"
+metaDescription: "LABSA 90 % et 96 % (acide alkylbenzène sulfonique linéaire) de fabricants indiens contrôlés, en fûts PEHD, IBC et flexitanks. HSN 3402 31, devis FOB/CIF."
+keyword: "LABSA"
 answer: "Le LABSA (acide alkylbenzène sulfonique linéaire) est le principal tensioactif anionique utilisé dans les lessives en poudre, les lessives liquides et les nettoyants. C’est un acide foncé et visqueux, neutralisé à la soude caustique ou au carbonate de sodium pour former l’agent lavant actif. GoodBiz Hygiene sélectionne le LABSA auprès de fabricants indiens contrôlés pour l’export vers les fabricants de détergents et les distributeurs."
 variants:
   - "LABSA 90 % de matière active minimum"

@@ -1,6 +1,7 @@
 ---
-sourceHash: "cc1fb6d2b8d5"
+sourceHash: "ee2e38612e35"
 title: "Guía de compra de suavizante de ropa para importadores: tipos, fragancias y tamaños de envase"
+metaTitle: "Guía de compra de suavizante para importadores"
 description: "Lo que deben saber los importadores antes de comprar suavizante de ropa a la India: regular o concentrado, fragancias, envases y almacenamiento."
 date: 2026-09-17
 tags: ["suavizante de ropa", "guía de compra", "fragancia", "tamaños de envase"]

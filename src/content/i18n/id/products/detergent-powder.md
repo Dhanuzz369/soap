@@ -1,12 +1,13 @@
 ---
-sourceHash: "c252bad2fbfa"
+sourceHash: "1a547e59ad40"
 title: "Deterjen Bubuk"
 slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "Deterjen Bubuk: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Deterjen bubuk dari produsen India terseleksi: kemasan 500 g hingga 25 kg, grade cuci tangan dan mesin cuci, private label dan muatan kontainer."
+metaTitle: "Deterjen Bubuk: Eksportir & Pemasok dari India"
+metaDescription: "Deterjen bubuk curah dari produsen India terseleksi: 500 g hingga 25 kg, untuk cuci tangan dan mesin. Private label, kontainer campuran, penawaran FOB/CIF."
+keyword: "deterjen bubuk"
 answer: "Deterjen bubuk adalah campuran kering surfaktan, builder, dan aditif lain yang dipakai untuk mencuci pakaian dengan tangan atau mesin cuci. Formulasinya bervariasi dalam kandungan bahan aktif dan bahan pengisi, yang menentukan daya bersih sekaligus harga. GoodBiz Hygiene mencarikan deterjen bubuk grade cuci tangan dan mesin cuci dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Bubuk cuci tangan, ekonomi"

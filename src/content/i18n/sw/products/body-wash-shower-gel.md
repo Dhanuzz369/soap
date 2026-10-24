@@ -1,12 +1,13 @@
 ---
-sourceHash: "4f059edea2db"
+sourceHash: "f923483b7544"
 title: "Jeli ya Kuogea / Sabuni ya Maji ya Mwili"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "Jeli ya Kuogea na Sabuni ya Maji ya Mwili: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Sabuni ya maji ya mwili na jeli ya kuogea kutoka India: chupa za 250 ml hadi 1 L, harufu mpya, za maua na mitishamba, chapa ya mnunuzi kwa waagizaji na hoteli."
+metaTitle: "Jeli ya Kuogea na Sabuni ya Maji ya Mwili: Msafirishaji wa India"
+metaDescription: "Jeli ya kuogea na sabuni ya maji ya mwili kutoka viwanda vya India vilivyokaguliwa: 100 ml hadi 5 L, harufu safi na za maua. Chapa yako kwa waagizaji na hoteli."
+keyword: "jeli ya kuogea"
 answer: "Sabuni ya maji ya mwili (body wash), inayoitwa pia jeli ya kuogea (shower gel), ni kisafishaji cha kimiminika cha mwili kinachotengenezwa kwa viambato laini vya kusafisha, viambato vya kulainisha na harufu, kinachopakwa kwa mikono au sponji. Hutoa povu tajiri na kinafaa matumizi ya kila siku. GoodBiz Hygiene hupata sabuni ya maji ya mwili na jeli ya kuogea kutoka kwa watengenezaji wa India tuliowakagua kwa wanunuzi wa rejareja na hoteli."
 variants:
   - "Harufu mpya ya bahari"

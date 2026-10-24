@@ -1,13 +1,14 @@
 ---
-sourceHash: "4d96f789adca"
+sourceHash: "050e9d439949"
 title: "Pelembut Pakaian / Kondisioner"
 slug: fabric-softener
 category: laundry-care
 order: 4
 hsn: "3402 50"
 hsnNote: "Pelembut pakaian lazim diklasifikasikan di bawah 3402 50 sebagai sediaan aktif permukaan, tetapi sering juga diklasifikasikan di bawah 3809 91 (bahan penyelesaian untuk tekstil). Kode yang benar bergantung pada formulasi dan praktik bea cukai di negara tujuan, sehingga kami mengonfirmasi kode 8 digit lengkap untuk setiap pesanan."
-metaTitle: "Pelembut dan Kondisioner Pakaian: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Pelembut dan kondisioner pakaian dari produsen India terseleksi: 500 ml hingga 20 L, grade reguler dan konsentrat, private label dan muatan kontainer campuran."
+metaTitle: "Pelembut dan Kondisioner Pakaian: Eksportir dari India"
+metaDescription: "Pelembut pakaian dari produsen India terseleksi: 500 ml hingga 20 L, reguler dan konsentrat. Private label, kontainer campuran, dan penawaran FOB/CIF."
+keyword: "pelembut pakaian"
 answer: "Pelembut pakaian, juga disebut kondisioner pakaian, adalah cairan yang ditambahkan pada pembilasan akhir saat mencuci agar pakaian terasa lembut, halus, dan harum. Cara kerjanya melalui bahan pelembut kationik yang melapisi serat dan mengurangi listrik statis. GoodBiz Hygiene mencarikan pelembut pakaian grade reguler dan konsentrat dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Floral bouquet"

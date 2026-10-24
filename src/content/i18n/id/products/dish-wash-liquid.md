@@ -1,12 +1,13 @@
 ---
-sourceHash: "05b3ceee9465"
+sourceHash: "36c4cfd3090d"
 title: "Sabun Cuci Piring Cair / Gel"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
 hsn: "3402 50"
-metaTitle: "Sabun Cuci Piring Cair dan Gel: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun cuci piring cair dan gel aroma lemon, jeruk nipis, dan lainnya dari produsen India terseleksi: jerigen 250 ml hingga 5 L, drum curah, private label."
+metaTitle: "Sabun Cuci Piring Cair dan Gel: Eksportir dari India"
+metaDescription: "Sabun cuci piring cair dan gel dari produsen India terseleksi: lemon, jeruk nipis, 250 ml hingga drum 200 L. Private label, kontainer campuran, FOB/CIF."
+keyword: "sabun cuci piring"
 answer: "Sabun cuci piring cair adalah deterjen pekat untuk membersihkan piring, wajan, dan alat makan dengan tangan, tersedia sebagai cairan encer atau gel yang lebih kental. Produk ini mengangkat lemak, berbusa baik dalam air dingin, dan terbilas tanpa meninggalkan lapisan. GoodBiz Hygiene mencarikan sabun cuci piring cair dan gel dalam kemasan ritel dan curah dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Lemon"

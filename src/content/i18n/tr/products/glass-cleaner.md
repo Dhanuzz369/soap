@@ -1,12 +1,13 @@
 ---
-sourceHash: "4b57db25e377"
+sourceHash: "a76fe73afa27"
 title: "Cam Temizleyici"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "Cam Temizleyici: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden pompalı sprey ve yedek dolum bidonlarında iz bırakmayan cam ve ayna temizleyici: 500 ml-20 L, özel marka."
+metaTitle: "Cam Temizleyici: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "İz bırakmayan cam temizleyici; sprey ve 1–20 L yedekler, kontrol edilmiş Hindistanlı üreticilerden. Özel marka, karışık konteyner ve FOB/CIF teklif."
+keyword: "cam temizleyici"
 answer: "Cam temizleyici, genellikle su, hafif bir çözücü ve az miktarda yüzey aktif madde içeren; pencereleri, aynaları ve diğer camları iz bırakmadan temizlemek için tasarlanmış düşük köpüklü bir sıvıdır. Normalde pompalı sprey şişelerde satılır ve hızlı kurur. GoodBiz Hygiene, cam temizleyiciyi ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Standart mavi, amonyaksız"

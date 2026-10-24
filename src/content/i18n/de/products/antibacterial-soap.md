@@ -1,12 +1,13 @@
 ---
-sourceHash: "f7b01af09895"
+sourceHash: "76e23824cc1d"
 title: "Antibakterielle Seife / medizinische Seife"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "Antibakterielle und medizinische Seife Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Antibakterielle und medizinische Badeseifen von geprüften indischen Herstellern: Stücke von 75 bis 150 g, TFM 70 %+, mit Handelsmarke und gemischten Containern."
+metaTitle: "Antibakterielle und medizinische Seife – Export aus Indien"
+metaDescription: "Antibakterielle und medizinische Seife von geprüften indischen Herstellern: 75–150 g, PCMX oder Neem, TFM ab 70 %. Handelsmarke, Mischcontainer, FOB/CIF."
+keyword: "antibakterielle Seife"
 answer: "Antibakterielle oder medizinische Seife ist ein Badestück mit einem zusätzlichen Wirkstoff, etwa Chloroxylenol (PCMX) oder einem pflanzlichen Stoff wie Neem (und, wo zulässig, Triclocarban), der beim Waschen helfen soll, Bakterien auf der Haut zu verringern. Sie dient der täglichen Hygiene zu Hause und in Einrichtungen. GoodBiz Hygiene bezieht sie von geprüften indischen Herstellern für den Export."
 variants:
   - "PCMX-Antibakterienstück (frisch)"

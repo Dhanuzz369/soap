@@ -1,12 +1,13 @@
 ---
-sourceHash: "54468ef241aa"
+sourceHash: "a3d644f8b2bd"
 title: "Sabonete em barra / sabonete de banho"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "Sabonete em barra: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Sabonetes em barra de fabricantes indianos selecionados: 50 g a 150 g, TFM de 60% a mais de 76%, marca própria e contêineres mistos para importadores."
+metaTitle: "Sabonete em barra: exportador e fornecedor da Índia"
+metaDescription: "Sabonete em barra de 50 a 150 g, TFM de 60% a 76%+, de fabricantes indianos selecionados. Marca própria, contêineres mistos e cotação FOB/CIF por pedido."
+keyword: "sabonete em barra"
 answer: "O sabonete em barra, também chamado de sabonete de banho, é uma barra de limpeza sólida obtida pela saponificação de gorduras e óleos, usada para lavar o rosto e o corpo. É classificado principalmente pela matéria graxa total (TFM), que indica a quantidade de sabão propriamente dito na barra. A GoodBiz Hygiene adquire sabonetes em barra em vários graus de TFM de fabricantes indianos selecionados, para exportação."
 variants:
   - "Rosa"

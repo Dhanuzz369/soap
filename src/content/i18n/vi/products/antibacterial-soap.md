@@ -1,12 +1,13 @@
 ---
-sourceHash: "f7b01af09895"
+sourceHash: "76e23824cc1d"
 title: "Xà phòng kháng khuẩn / xà phòng dược tính"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "Xà phòng kháng khuẩn và dược tính: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Xà phòng kháng khuẩn và dược tính từ nhà sản xuất Ấn Độ đã thẩm định: bánh 75 g đến 150 g, TFM từ 70%, có nhãn riêng, ghép container."
+metaTitle: "Xà phòng kháng khuẩn và dược tính: xuất khẩu từ Ấn Độ"
+metaDescription: "Xà phòng kháng khuẩn và dược tính từ nhà sản xuất Ấn Độ đã thẩm định: bánh 75–150 g, PCMX hoặc neem, TFM 70%+. Nhãn riêng, container ghép, báo giá FOB/CIF."
+keyword: "xà phòng kháng khuẩn"
 answer: "Xà phòng kháng khuẩn hay xà phòng dược tính là loại bánh xà phòng tắm bổ sung một hoạt chất, như chloroxylenol (PCMX) hoặc thành phần thực vật như neem (và triclocarban ở nơi được phép), giúp giảm vi khuẩn trên da khi rửa. Sản phẩm dùng để vệ sinh hằng ngày tại gia đình và các tổ chức. GoodBiz Hygiene cung ứng sản phẩm này từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Bánh kháng khuẩn PCMX (hương tươi mát)"

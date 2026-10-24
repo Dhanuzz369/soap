@@ -1,12 +1,13 @@
 ---
-sourceHash: "e4da7e02de7a"
+sourceHash: "d51786edaf5f"
 title: "SLES (Laurili Eta Salfeti ya Sodiamu)"
 slug: sles
 category: industrial-raw-materials
 order: 3
 hsn: "3402 39"
-metaTitle: "SLES 28% na 70%: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "SLES 28% na 70% kutoka kwa watengenezaji wa India tuliowakagua, katika mapipa, IBC na flexitank kwa watengenezaji wa shampoo na sabuni za kufulia."
+metaTitle: "SLES 28% na 70%: Msafirishaji Nje na Muuzaji kutoka India"
+metaDescription: "SLES 28% na 70% (sodium lauryl ether sulphate) kutoka viwanda vya India vilivyokaguliwa, kwa mapipa, IBC na flexitank. HSN 3402 39, bei za FOB/CIF kwa kila oda."
+keyword: "SLES"
 answer: "SLES (Sodium Lauryl Ether Sulphate, laurili eta salfeti ya sodiamu) ni kiambato laini cha kusafisha cha anionic kinachotoa povu tajiri, kinachotumika katika shampoo, sabuni za mikono, sabuni za mwili, sabuni za maji za kuosha vyombo na sabuni za kufulia. Huuzwa kama kimiminika kizito chenye uwazi hadi rangi hafifu katika nguvu za viambato hai za 28% au 70%. GoodBiz Hygiene hupata SLES kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje kwa watengenezaji wa fomula na wasambazaji."
 variants:
   - "SLES yenye viambato hai 28% (kimiminika, tayari kutumika)"

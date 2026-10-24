@@ -1,6 +1,7 @@
 ---
-sourceHash: "41e1d0673a41"
+sourceHash: "23d4ef5247c9"
 title: "Cómo importar lavavajillas líquido desde la India: costos, MOQ, documentos y transporte"
+metaTitle: "Cómo importar lavavajillas líquido de India: MOQ y costos"
 description: "Guía práctica para importar lavavajillas líquido desde la India: qué determina el costo, MOQ típico, envases, documentos y transporte paso a paso."
 date: 2026-10-08
 tags: ["lavavajillas líquido", "importación", "MOQ", "transporte"]

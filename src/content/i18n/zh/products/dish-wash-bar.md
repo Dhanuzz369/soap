@@ -1,12 +1,13 @@
 ---
-sourceHash: "ccf18cf99322"
+sourceHash: "cf0393403b70"
 title: "固体洗碗皂"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
 hsn: "3401 19"
-metaTitle: "固体洗碗皂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的柠檬、青柠等香型固体洗碗皂：100 g至300 g皂块和盒装，为进口商提供自有品牌，并支持整柜装运，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "固体洗碗皂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的柠檬、青柠等香型固体洗碗皂：100–300 g盒装和块装。支持自有品牌贴牌、混装集装箱及FOB/CIF报价，面向进口商和经销商。"
+keyword: "洗碗皂"
 answer: "固体洗碗皂是一块固体洗涤剂，配合搓洗垫或湿海绵使用，用于清洁餐具、锅具和厨房台面。它经济、耐用、易于存放，因此在注重每次洗涤成本的地方很受欢迎。GoodBiz Hygiene从经我们考察的印度制造商采购多种规格和香型的固体洗碗皂用于出口。"
 variants:
   - "柠檬"

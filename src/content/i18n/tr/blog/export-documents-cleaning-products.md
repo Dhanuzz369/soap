@@ -1,6 +1,7 @@
 ---
-sourceHash: "2b10481b836a"
+sourceHash: "259e3f5f79fb"
 title: "Temizlik Ürünleri için İhracat Evrakları: COA, MSDS, Menşe Şahadetnamesi ve Daha Fazlası"
+metaTitle: "Temizlik Ürünlerinde İhracat Evrakı: COA, MSDS"
 description: "Hindistan’dan sabun, deterjan ve temizleyici ithal edenler için ihracat evrakları listesi: fatura, COA, SDS, menşe belgesi, DG evrakları ve yerel kayıtlar."
 date: 2026-10-14
 tags: ["ihracat evrakları", "COA", "MSDS", "menşe şahadetnamesi"]

@@ -1,12 +1,13 @@
 ---
-sourceHash: "4f059edea2db"
+sourceHash: "f923483b7544"
 title: "Gel de banho / sabonete líquido corporal"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "Gel de banho e sabonete líquido corporal: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Gel de banho e sabonete líquido corporal de fabricantes indianos selecionados: frascos de 250 ml a 1 L, versões frescas, florais e de ervas, marca própria."
+metaTitle: "Gel de banho e sabonete líquido corporal: exportador da Índia"
+metaDescription: "Gel de banho e sabonete líquido corporal de fabricantes indianos selecionados: 100 ml a 5 L, fragrâncias frescas e florais. Marca própria, cotação FOB/CIF."
+keyword: "gel de banho"
 answer: "O gel de banho, também chamado de sabonete líquido corporal, é um produto de limpeza líquido para o corpo, feito de tensoativos suaves, condicionadores e fragrância, aplicado com as mãos ou com uma esponja. Faz espuma rica e é adequado ao uso diário. A GoodBiz Hygiene adquire gel de banho e sabonete líquido corporal de fabricantes indianos selecionados, para compradores do varejo e da hotelaria."
 variants:
   - "Frescor oceânico"

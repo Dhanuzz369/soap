@@ -1,12 +1,13 @@
 ---
-sourceHash: "1575bed4aaca"
+sourceHash: "2fb368c1aef4"
 title: "Visafishaji vya Jumla na vya Taasisi"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
 hsn: "3402 90"
-metaTitle: "Kemikali za Kusafisha za Jumla: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Kemikali za kusafisha za jumla na za taasisi kutoka India katika vifungashio vya 5 L hadi 1,000 L kwa hoteli, huduma za majengo na wasambazaji."
+metaTitle: "Kemikali za Kusafisha za Jumla: Msafirishaji wa India"
+metaDescription: "Kemikali za kusafisha kwa jumla kwa hoteli, kampuni za usafi na wasambazaji: konsentreti za 5 L hadi IBC ya 1,000 L kutoka viwanda vya India. Bei za FOB/CIF."
+keyword: "kemikali za kusafisha"
 answer: "Kemikali za kusafisha za jumla na za taasisi ni visafishaji vilivyokolea, kama visafishaji vya sakafu, viondoa mafuta, sabuni za mikono na sabuni za maji za kufulia, vinavyotolewa katika vifungashio vikubwa kwa matumizi ya kitaalamu. Hununuliwa na hoteli, hospitali, wakandarasi wa usafi na wasambazaji wanaohitaji gharama ndogo kwa lita na ubora thabiti. GoodBiz Hygiene huzipata kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Kisafishaji cha sakafu kilichokolea"

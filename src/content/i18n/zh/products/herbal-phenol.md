@@ -1,13 +1,14 @@
 ---
-sourceHash: "c3d7a358c07c"
+sourceHash: "40ef01b501de"
 title: "草本酚类消毒液／苯酚清洁剂"
 slug: herbal-phenol
 category: surface-home-cleaners
 order: 2
 hsn: "3402 50"
 hsnNote: "草本酚类消毒液和苯酚清洁剂（phenyl）常根据配方和标签宣称，作为消毒剂归入HSN 3808 94。我们按表面清洁剂品目显示3402 50；正确的归类按每笔订单与制造商及您的报关代理确认。"
-metaTitle: "草本酚类消毒液印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的印楝、松木、桉树和香茅香型草本酚类消毒液及苯酚地板清洁剂：500 ml至200 L桶装，提供自有品牌，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "草本酚类消毒液印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的草本酚类地板消毒液：印楝、松木、桉树和香茅香型，500 ml至200 L桶装。支持自有品牌贴牌及FOB/CIF报价，面向进口商和经销商。"
+keyword: "草本消毒液"
 answer: "草本酚类消毒液，也称苯酚清洁剂（phenyl），是以松木、印楝或桉树等植物油为基础的浓缩液体清洁剂，与水混合后通常呈乳白色乳液。它用于拖地，也用于下水道和马桶周围，以浓烈持久的香味著称。GoodBiz Hygiene从经我们考察的印度制造商采购草本酚类消毒液用于出口。"
 variants:
   - "印楝"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "1e7810df1f33"
+sourceHash: "0632460c6e63"
 title: "酒店客房皂（迷你皂）"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "酒店客房皂印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的酒店客房迷你皂：10 g至40 g，可定制包装纸和标志，为酒店、度假村和经销商提供大箱装，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "酒店客房皂印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的酒店客房香皂：10–40 g，可定制包装纸和标志。为酒店和经销商提供大箱包装，按订单提供FOB/CIF报价，面向进口商和经销商。"
+keyword: "酒店香皂"
 answer: "酒店皂或客房皂是单独包装的小型沐浴皂块，通常为10 g至40 g，作为客房用品供应给酒店、度假村和民宿，常印有酒店自己的品牌。GoodBiz Hygiene从经我们考察的印度制造商采购迷你皂，供应给酒店业采购商和客房用品经销商。"
 variants:
   - "清新柑橘"

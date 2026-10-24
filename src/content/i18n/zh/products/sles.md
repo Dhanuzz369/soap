@@ -1,12 +1,13 @@
 ---
-sourceHash: "e4da7e02de7a"
+sourceHash: "d51786edaf5f"
 title: "SLES（脂肪醇聚氧乙烯醚硫酸钠）"
 slug: sles
 category: industrial-raw-materials
 order: 3
 hsn: "3402 39"
-metaTitle: "SLES 28%和70%印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的SLES 28%和70%脂肪醇聚氧乙烯醚硫酸钠，采用桶、IBC吨桶和柔性液袋包装，供洗发水和洗涤剂生产商使用，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "SLES 28%和70%印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的SLES 28%和70%（脂肪醇聚氧乙烯醚硫酸钠，AES），桶装、吨桶或柔性罐。HS编码3402 39，提供FOB/CIF报价。"
+keyword: "SLES"
 answer: "SLES（脂肪醇聚氧乙烯醚硫酸钠）是一种温和的阴离子表面活性剂，泡沫丰富，用于洗发水、洗手液、沐浴露、洗洁精和洗涤剂。它以透明至淡色黏稠液体形式销售，有效物含量为28%或70%。GoodBiz Hygiene从经我们考察的印度制造商采购SLES，出口给配方企业和经销商。"
 variants:
   - "SLES 28%有效物（液体，即用型）"

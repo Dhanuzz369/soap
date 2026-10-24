@@ -1,12 +1,13 @@
 ---
-sourceHash: "1e7810df1f33"
+sourceHash: "0632460c6e63"
 title: "Hotel- und Gästeseifen (Mini-Seifen)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "Hotel- und Gästeseifen Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Mini-Seifen für Hotel-Amenities von geprüften indischen Herstellern: 10 bis 40 g, individuelle Verpackung und Logo, Großkartons für Hotels, Resorts und Händler."
+metaTitle: "Hotel- und Gästeseifen – Exporteur & Lieferant aus Indien"
+metaDescription: "Hotel- und Gästeseifen von 10 bis 40 g mit Ihrer Verpackung und Ihrem Logo, von geprüften indischen Herstellern. Großkartons für Hotels und Händler, FOB/CIF."
+keyword: "Hotelseife"
 answer: "Hotel- oder Gästeseife ist ein kleines, einzeln verpacktes Badestück, meist 10 bis 40 g, das in Hotels, Resorts und Gästehäusern als Zimmer-Amenity bereitgestellt wird. Oft ist es mit der Marke des Hauses bedruckt. GoodBiz Hygiene bezieht Mini-Seifen von geprüften indischen Herstellern für Hotelkunden und Amenity-Händler."
 variants:
   - "Frische Zitrusnote"

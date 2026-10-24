@@ -1,12 +1,13 @@
 ---
-sourceHash: "c651d0594a86"
+sourceHash: "94216906b8fc"
 title: "Kisafishaji cha Bafu na Vigae"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "Kisafishaji cha Bafu na Vigae: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Kisafishaji cha bafu na vigae cha utando wa sabuni na chokaa ngumu, katika vipulizio na vijazio kutoka India, chapa ya mnunuzi inapatikana kwa waagizaji."
+metaTitle: "Kisafishaji cha Bafu na Vigae: Msafirishaji wa India"
+metaDescription: "Kisafishaji cha bafu na vigae dhidi ya ukoko wa chokaa, kwa chupa za kunyunyiza na madumu 5–20 L kutoka viwanda vya India vilivyokaguliwa. Chapa yako, FOB/CIF."
+keyword: "kisafishaji cha bafu"
 answer: "Kisafishaji cha bafu na vigae ni kimiminika au jeli iliyotengenezwa kuondoa utando wa sabuni, chokaa ngumu (limescale), madoa ya maji na alama hafifu za ukungu kwenye vigae, mabomba, sinki, skrini za bafu na vifaa vya bafuni. Kwa kawaida kina asidi hafifu na mara nyingi huuzwa katika chupa za kupulizia. GoodBiz Hygiene hupata kisafishaji cha bafu na vigae kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Ndimu mpya"

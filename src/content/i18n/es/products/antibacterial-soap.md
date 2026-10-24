@@ -1,12 +1,13 @@
 ---
-sourceHash: "f7b01af09895"
+sourceHash: "76e23824cc1d"
 title: "Jabón antibacteriano / medicinal"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "Jabón antibacteriano y medicinal: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Jabones antibacterianos y medicinales de fabricantes indios seleccionados: pastillas de 75 a 150 g, TFM del 70% o más, marca propia y contenedores mixtos."
+metaTitle: "Jabón antibacteriano y medicinal: exportador de India"
+metaDescription: "Jabón antibacteriano y medicinal de fabricantes indios seleccionados: pastillas de 75 a 150 g, PCMX o neem, TFM 70 %+. Marca propia, contenedores mixtos."
+keyword: "jabón antibacteriano"
 answer: "El jabón antibacteriano o medicinal es una pastilla de baño que incorpora un ingrediente activo, como el cloroxilenol (PCMX) o un extracto vegetal como el neem (y, donde esté permitido, el triclocarbán), para ayudar a reducir las bacterias de la piel durante el lavado. Se usa para la higiene diaria en el hogar y en instituciones. GoodBiz Hygiene lo adquiere a fabricantes indios seleccionados para su exportación."
 variants:
   - "Pastilla antibacteriana con PCMX (fresca)"

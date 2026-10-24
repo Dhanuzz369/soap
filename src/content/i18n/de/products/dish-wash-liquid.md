@@ -1,12 +1,13 @@
 ---
-sourceHash: "05b3ceee9465"
+sourceHash: "36c4cfd3090d"
 title: "Geschirrspülmittel (flüssig / Gel)"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
 hsn: "3402 50"
-metaTitle: "Geschirrspülmittel flüssig und Gel Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Geschirrspülmittel als Flüssigkeit und Gel in Zitrone, Limette und mehr von geprüften indischen Herstellern: 250 ml bis 5 L, Großfässer, Handelsmarke."
+metaTitle: "Geschirrspülmittel flüssig und Gel – Export aus Indien"
+metaDescription: "Spülmittel flüssig und als Gel von geprüften indischen Herstellern: Zitrone, Limette u. a., 250 ml bis 200-L-Fass. Handelsmarke, Mischcontainer, FOB/CIF."
+keyword: "Spülmittel"
 answer: "Geschirrspülmittel ist ein konzentriertes Reinigungsmittel zum Spülen von Tellern, Pfannen und Besteck von Hand, erhältlich als dünnflüssige Flüssigkeit oder als dickeres Gel. Es löst Fett, schäumt gut in kühlem Wasser und lässt sich ohne Filmrückstände abspülen. GoodBiz Hygiene bezieht Geschirrspülmittel als Flüssigkeit und Gel in Handels- und Großpackungen von geprüften indischen Herstellern für den Export."
 variants:
   - "Zitrone"

@@ -1,12 +1,13 @@
 ---
-sourceHash: "48d8d4c59e96"
+sourceHash: "547b4d376403"
 title: "Waschseife / Waschmittelstück"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "Waschseife und Waschmittelstück Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Waschseife und Waschmittelstücke von geprüften indischen Herstellern: Stücke von 100 bis 250 g, TFM 54-72 %, Handelsmarke und Containerladungen für Importeure."
+metaTitle: "Waschseife und Waschmittelstück – Export aus Indien"
+metaDescription: "Waschseife und Waschmittelstücke von geprüften indischen Herstellern: 100–250 g, TFM 54–72 %. Handelsmarke, Mischcontainer und FOB/CIF-Angebote je Auftrag."
+keyword: "Waschseife"
 answer: "Ein Waschseifenstück ist ein fester Block aus Seife oder einer Seifen-Waschmittel-Mischung, der zum Schrubben und Waschen von Kleidung von Hand bestimmt ist. Die Stücke reichen von echter Seife mit hohem Gesamtfettgehalt (TFM, Total Fatty Matter) bis zu preisgünstigeren Waschmittelstücken mit Füllstoffen und Gerüststoffen. GoodBiz Hygiene bezieht Waschstücke in mehreren Qualitäten von geprüften indischen Herstellern für den Export."
 variants:
   - "Blaues Stück (klassisch, mit Aufheller-Tönung)"

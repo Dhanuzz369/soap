@@ -1,12 +1,13 @@
 ---
-sourceHash: "108193995324"
+sourceHash: "412ca2d14ce7"
 title: "Çok Amaçlı Yüzey Temizleyici"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
 hsn: "3402 50"
-metaTitle: "Çok Amaçlı Yüzey Temizleyici: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden sprey, yedek dolum ve dökme ambalajda çok amaçlı yüzey temizleyici: narenciye, lavanta ve ferah kokular, özel marka."
+metaTitle: "Çok Amaçlı Yüzey Temizleyici: Hindistan’dan İhracat"
+metaDescription: "Sprey, yedek ve dökme ambalajda çok amaçlı yüzey temizleyici, kontrol edilmiş Hindistanlı üreticilerden: narenciye, lavanta. Özel marka ve FOB/CIF."
+keyword: "çok amaçlı temizleyici"
 answer: "Çok amaçlı yüzey temizleyici, genel amaçlı temizleyici olarak da adlandırılır; tezgâhlarda, masalarda, cihazlarda, boyalı duvarlarda ve birçok sert yüzeyde kullanılan genel bir sıvı temizleyicidir. Genellikle nötre yakın ile hafif alkali arasındadır ve kullanıma hazır sprey veya konsantre olarak satılır. GoodBiz Hygiene, çok amaçlı yüzey temizleyiciyi ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Narenciye / limon"

@@ -4,8 +4,9 @@ slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "Detergent Powder Exporter & Supplier from India | GoodBiz Hygiene"
-metaDescription: "Washing and detergent powder from vetted Indian manufacturers: 500 g to 25 kg packs, hand-wash and machine grades, private label and container loads."
+metaTitle: "Bulk Detergent Powder Exporter & Supplier from India"
+metaDescription: "Bulk detergent powder from vetted Indian manufacturers: 500 g to 25 kg, hand-wash and machine grades. Private label, mixed containers, FOB/CIF/CFR quotes."
+keyword: "detergent powder"
 answer: "Detergent powder is a dry blend of surfactants, builders and other additives used to wash clothes by hand or in a washing machine. Formulations vary in active matter and filler content, which sets both cleaning power and price. GoodBiz Hygiene sources detergent powder in hand-wash and machine grades from vetted Indian manufacturers for export."
 variants:
   - "Hand-wash powder, economy"

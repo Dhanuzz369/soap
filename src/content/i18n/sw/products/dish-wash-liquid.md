@@ -1,12 +1,13 @@
 ---
-sourceHash: "05b3ceee9465"
+sourceHash: "36c4cfd3090d"
 title: "Sabuni ya Maji ya Kuosha Vyombo / Jeli"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
 hsn: "3402 50"
-metaTitle: "Sabuni ya Maji ya Kuosha Vyombo: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Sabuni ya maji na jeli ya kuosha vyombo ya ndimu, limau na zaidi kutoka India: makopo ya 250 ml hadi 5 L, mapipa ya jumla, chapa ya mnunuzi kwa waagizaji."
+metaTitle: "Sabuni ya Maji ya Kuosha Vyombo: Msafirishaji wa India"
+metaDescription: "Sabuni ya maji na jeli ya kuosha vyombo kutoka viwanda vya India vilivyokaguliwa: ndimu na zaidi, 250 ml hadi pipa la 200 L. Chapa yako, makontena mchanganyiko."
+keyword: "sabuni ya kuosha vyombo"
 answer: "Sabuni ya maji ya kuosha vyombo ni kisafishaji kilichokolea cha kuosha sahani, sufuria na vijiko kwa mkono, kinachopatikana kama kimiminika chembamba au jeli nzito zaidi. Huondoa mafuta, hutoa povu vizuri kwenye maji baridi na huoshwa bila kuacha utando. GoodBiz Hygiene hupata sabuni ya maji na jeli ya kuosha vyombo katika vifungashio vya rejareja na vya jumla kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Ndimu"

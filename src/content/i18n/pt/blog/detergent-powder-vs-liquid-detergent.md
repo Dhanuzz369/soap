@@ -1,6 +1,7 @@
 ---
-sourceHash: "6843f5aa2873"
+sourceHash: "c1161c07178f"
 title: "Sabão em pó ou sabão líquido: qual vende mais no seu mercado?"
+metaTitle: "Sabão em pó ou líquido: qual vende mais no seu mercado?"
 description: "Sabão em pó ou líquido para roupas? Compare clima, hábitos de lavagem, máquinas, preço e frete por lavagem para escolher a linha certa para o seu mercado."
 date: 2026-08-20
 tags: ["sabão em pó", "sabão líquido", "escolha de mercado"]

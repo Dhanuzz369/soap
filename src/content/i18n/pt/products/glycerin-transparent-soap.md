@@ -1,12 +1,13 @@
 ---
-sourceHash: "9f781c932179"
+sourceHash: "5a4a8b081395"
 title: "Sabonete de glicerina / sabonete transparente"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
 hsn: "3401 11"
-metaTitle: "Sabonete de glicerina e transparente: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Sabonete de banho de glicerina e transparente de fabricantes indianos selecionados: barras de 75 g a 125 g de aloe vera, mel e rosa, com marca própria."
+metaTitle: "Sabonete de glicerina e transparente: exportador da Índia"
+metaDescription: "Sabonete de glicerina e transparente de fabricantes indianos selecionados: barras de 75 a 125 g de aloe, mel e rosa. Marca própria, contêineres mistos, FOB/CIF."
+keyword: "sabonete de glicerina"
 answer: "O sabonete de glicerina, também vendido como sabonete transparente, é uma barra de banho clara ou translúcida, feita com alto teor de glicerina e solventes, de modo que a barra tem aspecto de vidro ou de âmbar. É valorizado pela sensação suave e pelo aspecto premium. A GoodBiz Hygiene o adquire de fabricantes indianos selecionados, para exportação e marca própria."
 variants:
   - "Aloe vera"

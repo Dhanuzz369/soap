@@ -1,6 +1,7 @@
 ---
-sourceHash: "6de17572f082"
+sourceHash: "84702d62b584"
 title: "Qualitäten von Badeseife erklärt: TFM, Qualität 1 oder 2 und warum es darauf ankommt"
+metaTitle: "Badeseife: TFM, Qualität 1 oder 2 einfach erklärt"
 description: "Was TFM in der Spezifikation einer Badeseife bedeutet, wie Qualität 1 und 2 im Handel gelten und wie Sie die passende Qualität für Markt und Preis wählen."
 date: 2026-08-27
 tags: ["Badeseife", "TFM", "Seifenqualitäten", "Spezifikationen"]

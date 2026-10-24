@@ -1,13 +1,14 @@
 ---
-sourceHash: "c3d7a358c07c"
+sourceHash: "40ef01b501de"
 title: "Fenol Herbal / Fenil (Karbol)"
 slug: herbal-phenol
 category: surface-home-cleaners
 order: 2
 hsn: "3402 50"
 hsnNote: "Fenol herbal dan fenil sering diklasifikasikan di bawah HSN 3808 94 sebagai disinfektan, tergantung formulasi dan klaim pada label. Kami menampilkan 3402 50 sebagai pos pembersih permukaan; klasifikasi yang benar dikonfirmasi untuk setiap pesanan bersama produsen dan agen bea cukai Anda."
-metaTitle: "Fenol Herbal dan Fenil: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Pembersih lantai fenol herbal dan fenil aroma mimba, pinus, eukaliptus, dan serai dari produsen India terseleksi: 500 ml hingga drum 200 L, private label."
+metaTitle: "Fenol Herbal dan Fenil: Eksportir & Pemasok dari India"
+metaDescription: "Karbol herbal (fenil) aroma mimba, pinus, kayu putih, dan serai, 500 ml hingga drum 200 L, dari produsen India terseleksi. Private label dan penawaran FOB/CIF."
+keyword: "karbol"
 answer: "Fenol herbal, yang juga dijual sebagai fenil, adalah pembersih cair pekat berbahan minyak nabati seperti pinus, mimba, atau eukaliptus, biasanya berupa emulsi putih susu bila dicampur air. Produk ini dipakai untuk mengepel lantai dan membersihkan area sekitar saluran pembuangan serta toilet karena aromanya yang kuat dan tahan lama. GoodBiz Hygiene mencarikan fenol herbal dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Mimba"

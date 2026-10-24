@@ -1,13 +1,14 @@
 ---
-sourceHash: "4d96f789adca"
+sourceHash: "050e9d439949"
 title: "Çamaşır Yumuşatıcı / Kondisyoner"
 slug: fabric-softener
 category: laundry-care
 order: 4
 hsn: "3402 50"
 hsnNote: "Çamaşır yumuşatıcı, yüzey aktif müstahzar olarak yaygın biçimde 3402 50 altında sınıflandırılır; ancak çoğunlukla 3809 91 (tekstil apreleme maddeleri) altında da sınıflandırılır. Doğru kod, formülasyona ve varış ülkesindeki gümrük uygulamasına bağlıdır; bu nedenle her sipariş için 8 haneli kodun tamamını teyit ederiz."
-metaTitle: "Çamaşır Yumuşatıcı ve Kondisyoner: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden çamaşır yumuşatıcı ve kondisyoner: 500 ml-20 L, normal ve konsantre kaliteler, özel marka ve karışık konteyner."
+metaTitle: "Çamaşır Yumuşatıcı ve Kondisyoner: Hindistan’dan İhracat"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden çamaşır yumuşatıcı: 500 ml–20 L, normal ve konsantre. Özel marka, karışık konteyner ve FOB/CIF teklif."
+keyword: "çamaşır yumuşatıcı"
 answer: "Çamaşır yumuşatıcı, kondisyoner olarak da adlandırılır; kıyafetleri yumuşak, pürüzsüz ve kokulu bırakmak için yıkamanın son durulamasında eklenen sıvıdır. Lifleri kaplayan ve statik elektriği azaltan katyonik yumuşatıcı maddeler aracılığıyla çalışır. GoodBiz Hygiene, ihracat için çamaşır yumuşatıcıyı normal ve konsantre kalitelerde kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Çiçek buketi"

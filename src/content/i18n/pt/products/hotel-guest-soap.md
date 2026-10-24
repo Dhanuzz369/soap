@@ -1,12 +1,13 @@
 ---
-sourceHash: "1e7810df1f33"
+sourceHash: "0632460c6e63"
 title: "Sabonetes para hotéis e hóspedes (miniaturas)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "Sabonetes para hotéis e hóspedes: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Mini sabonetes em barra para amenities de hotéis, de fabricantes indianos selecionados: 10 g a 40 g, embalagem e logotipo personalizados, caixas a granel."
+metaTitle: "Sabonetes para hotéis e hóspedes: exportador da Índia"
+metaDescription: "Sabonetes para hotel de 10 a 40 g com sua embalagem e logotipo, de fabricantes indianos selecionados. Caixas a granel para hotéis e distribuidores, FOB/CIF."
+keyword: "sabonete para hotel"
 answer: "O sabonete para hotéis e hóspedes é uma pequena barra de banho embalada individualmente, normalmente de 10 g a 40 g, fornecida como amenity de quarto em hotéis, resorts e pousadas. Costuma ser impresso com a marca do estabelecimento. A GoodBiz Hygiene adquire mini sabonetes de fabricantes indianos selecionados, para compradores da hotelaria e distribuidores de amenities."
 variants:
   - "Cítrico fresco"

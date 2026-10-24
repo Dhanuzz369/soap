@@ -1,12 +1,13 @@
 ---
-sourceHash: "095becea3801"
+sourceHash: "15d439c588c9"
 title: "LABSA (Asam Alkilbenzena Sulfonat Linier)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
-metaTitle: "LABSA 90% dan 96%: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "LABSA 90% dan 96% bahan aktif asam dari produsen India terseleksi, dikemas drum HDPE, IBC, dan flexitank untuk pembuat dan peracik deterjen."
+metaTitle: "LABSA 90% dan 96%: Eksportir & Pemasok dari India"
+metaDescription: "LABSA 90% dan 96% (asam sulfonat alkil benzena linear) dari produsen India terseleksi dalam drum HDPE, IBC, dan flexitank. HSN 3402 31, penawaran FOB/CIF."
+keyword: "LABSA"
 answer: "LABSA (Linear Alkyl Benzene Sulphonic Acid, asam alkilbenzena sulfonat linier) adalah surfaktan anionik utama yang dipakai dalam deterjen bubuk, deterjen cair, dan pembersih. LABSA berupa asam kental berwarna gelap yang dinetralkan dengan soda api atau abu soda untuk membentuk bahan pembersih aktif. GoodBiz Hygiene mencarikan LABSA dari produsen India yang telah diseleksi untuk diekspor kepada pembuat deterjen dan distributor."
 variants:
   - "LABSA bahan aktif minimum 90%"

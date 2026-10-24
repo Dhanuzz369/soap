@@ -1,12 +1,13 @@
 ---
-sourceHash: "ccf18cf99322"
+sourceHash: "cf0393403b70"
 title: "Kipande cha Sabuni ya Kuosha Vyombo"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
 hsn: "3401 19"
-metaTitle: "Kipande cha Sabuni ya Kuosha Vyombo: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Vipande vya sabuni ya kuosha vyombo vya ndimu, limau na zaidi kutoka India: vyombo na vipande vya 100 g hadi 300 g, chapa ya mnunuzi, mizigo ya makontena."
+metaTitle: "Kipande cha Sabuni ya Kuosha Vyombo: Msafirishaji wa India"
+metaDescription: "Sabuni ya kuosha vyombo ya kipande yenye ndimu na zaidi, kutoka viwanda vya India vilivyokaguliwa: 100–300 g. Chapa yako, makontena mchanganyiko, FOB/CIF."
+keyword: "sabuni ya vyombo ya kipande"
 answer: "Kipande cha sabuni ya kuosha vyombo ni kipande kigumu cha kisafishaji kinachotumika na kitambaa cha kusugua au sponji yenye maji kusafisha vyombo, sufuria na nyuso za jikoni. Ni cha gharama nafuu, kinadumu na ni rahisi kuhifadhi, jambo linaloifanya ipendwe pale bei kwa kila ufuaji ni muhimu zaidi. GoodBiz Hygiene hupata vipande vya sabuni ya kuosha vyombo kutoka kwa watengenezaji wa India tuliowakagua katika ukubwa na harufu kadhaa kwa ajili ya usafirishaji nje."
 variants:
   - "Ndimu"

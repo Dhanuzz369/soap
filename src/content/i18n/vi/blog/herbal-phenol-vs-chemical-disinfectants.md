@@ -1,6 +1,7 @@
 ---
-sourceHash: "66cae22a82fe"
+sourceHash: "f39ee6f3d9e7"
 title: "Phenol thảo dược và chất khử trùng hóa học: những điều người mua bán lẻ nên biết"
+metaTitle: "Phenol thảo dược hay chất khử trùng hóa học?"
 description: "So sánh phenol thảo dược với chất khử trùng hóa học cho dòng bán lẻ: khác nhau về cách dùng, nhãn, phân loại và điều cần hỏi nhà xuất khẩu trước tiên."
 date: 2026-09-24
 tags: ["phenol thảo dược", "chất khử trùng", "nước lau sàn", "mua hàng bán lẻ"]

@@ -1,5 +1,6 @@
 ---
 title: "Detergent Powder vs Liquid Detergent: Which Sells Better in Your Market?"
+metaTitle: "Detergent Powder vs Liquid Detergent: Which Sells Better?"
 description: "Powder or liquid laundry detergent? Compare climate, washing habits, machines, price and freight cost per wash to choose the right range for your market."
 date: 2026-08-20
 tags: ["detergent powder", "liquid detergent", "market selection"]

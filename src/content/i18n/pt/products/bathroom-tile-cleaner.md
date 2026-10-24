@@ -1,12 +1,13 @@
 ---
-sourceHash: "c651d0594a86"
+sourceHash: "94216906b8fc"
 title: "Limpador de banheiros e azulejos"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "Limpador de banheiros e azulejos: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Limpador de banheiros e azulejos contra resíduos de sabão, calcário e manchas de água, em spray e refil, de fabricantes indianos selecionados, marca própria."
+metaTitle: "Limpador de banheiros e azulejos: exportador da Índia"
+metaDescription: "Limpador de banheiros e azulejos contra calcário, em spray e refis de 5 a 20 L, de fabricantes indianos selecionados. Marca própria e cotação FOB/CIF."
+keyword: "limpador de banheiro"
 answer: "O limpador de banheiros e azulejos é um líquido ou gel formulado para remover resíduos de sabão, calcário, manchas de água e leves marcas de mofo de azulejos, torneiras, pias, boxes de vidro e louças e metais do banheiro. Costuma ser levemente ácido e é muitas vezes vendido em frascos com gatilho. A GoodBiz Hygiene adquire limpadores de banheiros e azulejos de fabricantes indianos selecionados, para exportação."
 variants:
   - "Limão fresco"

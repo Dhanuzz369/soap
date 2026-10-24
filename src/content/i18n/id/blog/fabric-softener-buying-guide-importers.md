@@ -1,6 +1,7 @@
 ---
-sourceHash: "cc1fb6d2b8d5"
+sourceHash: "ee2e38612e35"
 title: "Panduan Membeli Pelembut Pakaian bagi Importir: Jenis, Aroma, dan Ukuran Kemasan"
+metaTitle: "Panduan Membeli Pelembut Pakaian untuk Importir"
 description: "Yang perlu diketahui importir sebelum membeli pelembut pakaian dari India: reguler vs konsentrat, grade sensitif, pilihan aroma, ukuran kemasan, penyimpanan."
 date: 2026-09-17
 tags: ["pelembut pakaian", "panduan pembelian", "aroma", "ukuran kemasan"]

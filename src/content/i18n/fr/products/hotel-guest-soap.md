@@ -1,12 +1,13 @@
 ---
-sourceHash: "1e7810df1f33"
+sourceHash: "0632460c6e63"
 title: "Savons d’hôtel et d’accueil (mini-savons)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
 hsn: "3401 11"
-metaTitle: "Savons d’hôtel et d’accueil : exportateur et fournisseur depuis l’Inde | GoodBiz Hygiene"
-metaDescription: "Mini-savons d’accueil de fabricants indiens contrôlés : 10 à 40 g, emballage et logo personnalisés, cartons vrac pour hôtels, resorts et distributeurs."
+metaTitle: "Savons d’hôtel et d’accueil : exportateur en Inde"
+metaDescription: "Savonnettes d’hôtel de 10 à 40 g avec votre emballage et votre logo, de fabricants indiens contrôlés. Cartons en vrac pour hôtels et distributeurs, FOB/CIF."
+keyword: "savon d’hôtel"
 answer: "Le savon d’hôtel, ou savon d’accueil, est un petit pain de toilette emballé individuellement, généralement de 10 à 40 g, fourni comme produit d’accueil en chambre dans les hôtels, resorts et maisons d’hôtes. Il est souvent imprimé aux couleurs de l’établissement. GoodBiz Hygiene sélectionne ces mini-savons auprès de fabricants indiens contrôlés pour les acheteurs de l’hôtellerie et les distributeurs de produits d’accueil."
 variants:
   - "Agrumes frais"

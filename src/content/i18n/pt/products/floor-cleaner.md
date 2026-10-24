@@ -1,12 +1,13 @@
 ---
-sourceHash: "e23a6ba5ced8"
+sourceHash: "847242946928"
 title: "Limpador de pisos"
 slug: floor-cleaner
 category: surface-home-cleaners
 order: 1
 hsn: "3402 50"
-metaTitle: "Limpador de pisos: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Limpador de pisos líquido de lavanda, rosa, jasmim, limão e pinho de fabricantes indianos selecionados: embalagens de 500 ml a 20 L, marca própria."
+metaTitle: "Limpador de pisos: exportador e fornecedor da Índia"
+metaDescription: "Limpador de pisos de lavanda, rosa, jasmim, limão e pinho, de fabricantes indianos selecionados, de 500 ml a 20 L. Marca própria, contêineres mistos, FOB/CIF."
+keyword: "limpador de pisos"
 answer: "O limpador de pisos é um produto líquido à base de tensoativos, diluído em água ou usado puro para remover poeira, gordura e marcas de pegadas de pisos duros, como cerâmica, mármore, vinílico e pedra selada. Costuma ser perfumado e deixa uma fragrância leve após a limpeza com esfregão. A GoodBiz Hygiene adquire limpador de pisos, em embalagens de varejo e a granel, de fabricantes indianos selecionados, para exportação."
 variants:
   - "Lavanda"

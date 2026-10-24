@@ -1,12 +1,13 @@
 ---
-sourceHash: "f6009b1516c1"
+sourceHash: "332323d039a7"
 title: "Kisafishaji cha Choo"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
 hsn: "3402 50"
-metaTitle: "Kisafishaji cha Choo: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Kisafishaji kizito cha choo katika chupa zenye shingo iliyopinda, daraja za asidi na laini, kutoka India: 500 ml hadi 5 L, chapa ya mnunuzi, makontena."
+metaTitle: "Kisafishaji cha Choo: Msafirishaji wa India"
+metaDescription: "Kisafishaji kizito cha choo, cha asidi au laini, kwa chupa zenye shingo iliyopinda 500 ml hadi 5 L, kutoka viwanda vya India vilivyokaguliwa. Chapa yako."
+keyword: "kisafishaji cha choo"
 answer: "Kisafishaji cha choo ni kimiminika kizito kinachoganda, kwa kawaida chenye asidi, kinachoondoa chokaa ngumu (limescale), madoa ya kutu na masalia ya mkojo kwenye vyoo na vyoo vya kusimama. Huuzwa katika chupa zenye shingo iliyopinda ili kimiminika kiweze kuwekwa chini ya ukingo. GoodBiz Hygiene hupata kisafishaji cha choo kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Cha kawaida chenye asidi, buluu"

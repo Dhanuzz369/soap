@@ -1,12 +1,13 @@
 ---
-sourceHash: "c252bad2fbfa"
+sourceHash: "1a547e59ad40"
 title: "Toz Deterjan"
 slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "Toz Deterjan: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden çamaşır ve toz deterjan: 500 g-25 kg ambalajlar, elde ve makinede yıkama kaliteleri, özel marka ve konteyner yükleri."
+metaTitle: "Toz Deterjan: Hindistan’dan İhracatçı ve Tedarikçi"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden toptan toz deterjan: 500 g–25 kg, elde ve makinede yıkama. Özel marka, karışık konteyner ve FOB/CIF teklif."
+keyword: "toz deterjan"
 answer: "Toz deterjan, kıyafetleri elde veya çamaşır makinesinde yıkamak için kullanılan; yüzey aktif maddelerin, yardımcı maddelerin ve diğer katkıların kuru karışımıdır. Formülasyonlar, hem temizleme gücünü hem fiyatı belirleyen aktif madde ve dolgu içeriğine göre değişir. GoodBiz Hygiene, ihracat için toz deterjanı elde ve makinede yıkama kalitelerinde kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
   - "Elde yıkama tozu, ekonomik"

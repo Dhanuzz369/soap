@@ -1,12 +1,13 @@
 ---
-sourceHash: "4b57db25e377"
+sourceHash: "a76fe73afa27"
 title: "Glasreiniger"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
 hsn: "3402 50"
-metaTitle: "Glasreiniger Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Streifenfreier Glas- und Spiegelreiniger als Sprühflasche und Nachfüllkanister von geprüften indischen Herstellern: 500 ml bis 20 L, Handelsmarke, Container."
+metaTitle: "Glasreiniger – Exporteur & Lieferant aus Indien"
+metaDescription: "Streifenfreier Glasreiniger als Sprühflasche und 1–20-L-Nachfüller von geprüften indischen Herstellern. Handelsmarke, Mischcontainer und FOB/CIF-Angebote."
+keyword: "Glasreiniger"
 answer: "Glasreiniger ist eine schaumarme Flüssigkeit, meist aus Wasser, einem milden Lösungsmittel und einer kleinen Menge Tensid, die Fenster, Spiegel und anderes Glas ohne Streifen reinigen soll. Er wird normalerweise in Sprühflaschen verkauft und trocknet schnell. GoodBiz Hygiene bezieht Glasreiniger von geprüften indischen Herstellern für den Export."
 variants:
   - "Standard blau, ammoniakfrei"

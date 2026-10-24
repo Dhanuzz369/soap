@@ -1,12 +1,13 @@
 ---
-sourceHash: "569c74859cae"
+sourceHash: "3b93bcbf0059"
 title: "Sabuni ya Maji ya Mikono"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
 hsn: "3401 30"
-metaTitle: "Sabuni ya Maji ya Mikono: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Sabuni ya maji ya mikono kutoka India: 250 ml hadi 5 L, aina za kuua bakteria, mitishamba na kulainisha, chapa ya mnunuzi kwa waagizaji na taasisi."
+metaTitle: "Sabuni ya Maji ya Mikono: Msafirishaji wa India"
+metaDescription: "Sabuni ya maji ya mikono kutoka viwanda vya India vilivyokaguliwa: 250 ml hadi 20 L, ya kuua bakteria, mitishamba au ya kulainisha. Chapa yako, FOB/CIF."
+keyword: "sabuni ya maji ya mikono"
 answer: "Sabuni ya maji ya mikono ni kisafishaji laini cha kumiminika cha kuosha mikono, kinachotengenezwa kwa viambato vya kusafisha vya kisanisi, kinene, harufu na viambato vya kulainisha ngozi, na hutolewa kupitia pampu au kujazwa upya. Hutumika majumbani, ofisini na kwenye vyoo vya umma. GoodBiz Hygiene huipata kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje."
 variants:
   - "Ya kuua bakteria yenye harufu mpya"

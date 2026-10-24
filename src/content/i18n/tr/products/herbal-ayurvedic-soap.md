@@ -1,12 +1,13 @@
 ---
-sourceHash: "f81c42efbf80"
+sourceHash: "329715bb8890"
 title: "Bitkisel ve Ayurvedik Sabun"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
 hsn: "3401 11"
-metaTitle: "Bitkisel ve Ayurvedik Sabun: Hindistan’dan İhracatçı ve Tedarikçi | GoodBiz Hygiene"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden bitkisel ve Ayurvedik banyo sabunları: 75-125 g neem, zerdeçal, sandal ağacı ve aloe kalıpları; özel marka."
+metaTitle: "Bitkisel ve Ayurvedik Sabun: Hindistan’dan İhracat"
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden bitkisel ve ayurvedik sabun: neem, zerdeçal, sandal ağacı ve aloe, 75–125 g. Özel marka, karışık konteyner, FOB/CIF."
+keyword: "ayurvedik sabun"
 answer: "Bitkisel veya Ayurvedik sabun; sabun bazına neem, zerdeçal, sandal ağacı veya aloe vera gibi bitkisel maddeler eklenmiş, geleneksel Hint cilt bakımı uygulamalarına dayanan bir banyo kalıbıdır. Günlük banyoda kullanılır. GoodBiz Hygiene bu kalıpları kontrol edilmiş Hindistanlı üreticilerden tedarik eder ve özel marka seçenekleriyle ihraç eder."
 variants:
   - "Neem ve tulsi"

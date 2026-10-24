@@ -1,12 +1,13 @@
 ---
-sourceHash: "386cf04101b2"
+sourceHash: "f2bf93b5815c"
 title: "Soap Noodles (Bahan Dasar Sabun)"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "Soap Noodles: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Soap noodles grade sawit dan inti sawit 80:20 serta 70:30 dari produsen India terseleksi, dikemas karung 25 kg dan 50 kg untuk pembuat sabun di seluruh dunia."
+metaTitle: "Soap Noodles: Eksportir & Pemasok dari India"
+metaDescription: "Soap noodles 80:20 dan 70:30 dari produsen India terseleksi, karung 25 kg dan 50 kg untuk pabrik sabun. HSN 3401 20, penawaran FOB/CIF per pesanan."
+keyword: "soap noodles"
 answer: "Soap noodles adalah butiran kecil lemak dan minyak tersaponifikasi yang telah dikeringkan, dipakai sebagai bahan dasar pembuatan sabun mandi, sabun cuci, dan sabun batang lainnya. Mutunya dinilai dari rasio minyak sawit terhadap minyak inti sawit dan dari Total Fatty Matter (TFM). GoodBiz Hygiene mencarikan soap noodles dari produsen India yang telah diseleksi untuk diekspor kepada pembuat sabun dan distributor."
 variants:
   - "Sawit dan inti sawit 80:20 (Grade 1 / premium)"

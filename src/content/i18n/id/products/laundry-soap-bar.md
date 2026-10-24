@@ -1,12 +1,13 @@
 ---
-sourceHash: "48d8d4c59e96"
+sourceHash: "547b4d376403"
 title: "Sabun Cuci Batang / Deterjen Batang"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
 hsn: "3401 19"
-metaTitle: "Sabun Cuci dan Deterjen Batang: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun cuci dan deterjen batang dari produsen India terseleksi: batang 100 g hingga 250 g, grade TFM 54-72%, private label dan muatan kontainer untuk importir."
+metaTitle: "Sabun Cuci dan Deterjen Batang: Eksportir dari India"
+metaDescription: "Sabun cuci batangan dan deterjen batang dari produsen India terseleksi: 100–250 g, TFM 54–72%. Private label, kontainer campuran, dan penawaran FOB/CIF."
+keyword: "sabun cuci batangan"
 answer: "Sabun cuci batang adalah balok padat sabun atau campuran sabun dan deterjen yang dibuat untuk menyikat dan mencuci pakaian dengan tangan. Batangnya berkisar dari sabun murni dengan Total Fatty Matter (TFM) tinggi hingga deterjen batang berbiaya lebih rendah dengan bahan pengisi dan builder. GoodBiz Hygiene mencarikan sabun cuci batang dalam beberapa grade dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Batang biru (klasik, bernuansa pencerah optik)"

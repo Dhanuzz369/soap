@@ -1,12 +1,13 @@
 ---
-sourceHash: "f7b01af09895"
+sourceHash: "76e23824cc1d"
 title: "Sabun Antibakteri / Sabun Medis"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
 hsn: "3401 11"
-metaTitle: "Sabun Antibakteri dan Medis: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun mandi antibakteri dan medis dari produsen India terseleksi: batang 75 g hingga 150 g, TFM 70%+, private label dan muatan campuran untuk importir."
+metaTitle: "Sabun Antibakteri dan Medis: Eksportir & Pemasok dari India"
+metaDescription: "Sabun antibakteri dan medis dari produsen India terseleksi: batang 75–150 g, PCMX atau mimba, TFM 70%+. Private label, kontainer campuran, penawaran FOB/CIF."
+keyword: "sabun antibakteri"
 answer: "Sabun antibakteri atau sabun medis adalah sabun mandi batang yang ditambah bahan aktif, seperti kloroksilenol (PCMX) atau bahan botani seperti mimba (dan, bila diizinkan, triklokarban), untuk membantu mengurangi bakteri pada kulit saat mencuci. Sabun ini dipakai untuk kebersihan sehari-hari di rumah dan institusi. GoodBiz Hygiene mencarikannya dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Sabun antibakteri PCMX (segar)"

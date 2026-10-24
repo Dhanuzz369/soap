@@ -1,12 +1,13 @@
 ---
-sourceHash: "ccf18cf99322"
+sourceHash: "cf0393403b70"
 title: "Xà phòng rửa chén dạng bánh"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
 hsn: "3401 19"
-metaTitle: "Xà phòng rửa chén dạng bánh: nhà xuất khẩu và nhà cung cấp từ Ấn Độ | GoodBiz Hygiene"
-metaDescription: "Xà phòng rửa chén dạng bánh từ nhà sản xuất Ấn Độ đã thẩm định: 100 g đến 300 g, hương chanh, có nhãn riêng, xuất theo container."
+metaTitle: "Xà phòng rửa chén dạng bánh: xuất khẩu từ Ấn Độ"
+metaDescription: "Xà phòng rửa chén dạng bánh hương chanh và nhiều hương khác, từ nhà sản xuất Ấn Độ đã thẩm định: 100–300 g. Nhãn riêng, container ghép, báo giá FOB/CIF."
+keyword: "xà phòng rửa chén"
 answer: "Xà phòng rửa chén dạng bánh là khối chất tẩy rửa rắn, dùng với miếng cọ hoặc bọt biển ướt để làm sạch dụng cụ, nồi chảo và bề mặt nhà bếp. Sản phẩm tiết kiệm, bền và dễ cất giữ, nên được ưa chuộng ở nơi chi phí mỗi lần rửa là yếu tố quan trọng nhất. GoodBiz Hygiene cung ứng xà phòng rửa chén dạng bánh với nhiều kích cỡ và mùi hương từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu."
 variants:
   - "Chanh"

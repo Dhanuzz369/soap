@@ -1,12 +1,13 @@
 ---
-sourceHash: "4f059edea2db"
+sourceHash: "f923483b7544"
 title: "沐浴露／淋浴凝胶"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
 hsn: "3401 30"
-metaTitle: "沐浴露／淋浴凝胶印度出口商与供应商 | GoodBiz Hygiene"
-metaDescription: "采购自经我们考察的印度制造商的沐浴露和淋浴凝胶：250 ml至1 L瓶装，有清新、花香和草本品种，为进口商和酒店提供自有品牌，并列有典型规格、包装规格和HSN编码。"
+metaTitle: "沐浴露／淋浴凝胶印度出口商与供应商"
+metaDescription: "采购自经考察的印度制造商的沐浴露和淋浴凝胶：100 ml至5 L，清新、花香和草本香型。为进口商和酒店提供自有品牌贴牌及FOB/CIF报价，面向进口商和经销商。"
+keyword: "沐浴露"
 answer: "沐浴露又称淋浴凝胶，是用温和表面活性剂、护肤成分和香精制成的身体清洁液，可用手或浴花涂抹。它泡沫丰富，适合日常使用。GoodBiz Hygiene从经我们考察的印度制造商采购沐浴露和淋浴凝胶，供应零售和酒店采购商。"
 variants:
   - "海洋清新"

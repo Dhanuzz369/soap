@@ -1,12 +1,13 @@
 ---
-sourceHash: "1575bed4aaca"
+sourceHash: "2fb368c1aef4"
 title: "Produtos de limpeza a granel e institucionais"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
 hsn: "3402 90"
-metaTitle: "Produtos de limpeza a granel: exportador e fornecedor da Índia | GoodBiz Hygiene"
-metaDescription: "Produtos de limpeza a granel e institucionais de fabricantes indianos selecionados, em embalagens de 5 L a 1.000 L, para hotéis e serviços prediais."
+metaTitle: "Produtos de limpeza a granel: exportador da Índia"
+metaDescription: "Químicos de limpeza a granel para hotéis, empresas de limpeza e distribuidores: concentrados de 5 L a IBC de 1.000 L, de fabricantes indianos. FOB/CIF."
+keyword: "produtos de limpeza a granel"
 answer: "Os produtos de limpeza a granel e institucionais são limpadores concentrados, como limpadores de piso, desengordurantes, sabonetes líquidos para as mãos e sabões líquidos para roupas, fornecidos em embalagens grandes para uso profissional. São comprados por hotéis, hospitais, empresas de limpeza e distribuidores que precisam de baixo custo por litro e qualidade constante. A GoodBiz Hygiene os adquire de fabricantes indianos selecionados, para exportação."
 variants:
   - "Concentrado limpador de pisos"

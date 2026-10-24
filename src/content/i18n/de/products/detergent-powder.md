@@ -1,12 +1,13 @@
 ---
-sourceHash: "c252bad2fbfa"
+sourceHash: "1a547e59ad40"
 title: "Waschpulver"
 slug: detergent-powder
 category: laundry-care
 order: 2
 hsn: "3402 50"
-metaTitle: "Waschpulver Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Waschpulver von geprüften indischen Herstellern: Packungen von 500 g bis 25 kg, Qualitäten für Hand- und Maschinenwäsche, Handelsmarke und Containerladungen."
+metaTitle: "Waschpulver – Exporteur & Lieferant aus Indien"
+metaDescription: "Waschpulver im Großhandel von geprüften indischen Herstellern: 500 g bis 25 kg, für Hand- und Maschinenwäsche. Handelsmarke, Mischcontainer und FOB/CIF."
+keyword: "Waschpulver"
 answer: "Waschpulver ist eine trockene Mischung aus Tensiden, Gerüststoffen und weiteren Zusätzen, mit der Kleidung von Hand oder in der Waschmaschine gewaschen wird. Die Rezepturen unterscheiden sich in Aktivsubstanz und Füllstoffanteil, was Reinigungskraft und Preis bestimmt. GoodBiz Hygiene bezieht Waschpulver in Qualitäten für Handwäsche und Maschinenwäsche von geprüften indischen Herstellern für den Export."
 variants:
   - "Handwaschpulver, Economy"

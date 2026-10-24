@@ -1,6 +1,7 @@
 ---
-sourceHash: "17eb2fddaa93"
+sourceHash: "bd86fef00fbc"
 title: "Productos de limpieza de marca propia: guía paso a paso para distribuidores"
+metaTitle: "Productos de limpieza de marca propia: guía de compra"
 description: "Cómo lanzar su propia marca de limpieza desde la India: elegir la gama, preparar la solicitud al fabricante, aprobar muestras, diseño y transporte."
 date: 2026-09-10
 tags: ["marca propia", "distribuidores", "limpieza del hogar", "OEM"]

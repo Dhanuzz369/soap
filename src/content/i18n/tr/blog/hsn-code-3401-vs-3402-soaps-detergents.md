@@ -1,6 +1,7 @@
 ---
-sourceHash: "76eda9a626ca"
+sourceHash: "81532f93455a"
 title: "HSN Kodu 3401 ve 3402: Sabun ve Deterjanları Sınıflandırmak için Alıcı Rehberi"
+metaTitle: "HSN 3401 ve 3402: Sabun ve Deterjan Sınıflandırması"
 description: "Sabununuzun veya deterjanınızın HSN 3401 mi 3402 mi olduğundan emin değil misiniz? Ayrımın sade bir rehberi; ürün bazında tablo ve önce netleştirilecek sorular."
 date: 2026-10-01
 tags: ["HSN kodu", "sınıflandırma", "ihracat evrakları"]

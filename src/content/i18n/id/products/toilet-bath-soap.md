@@ -1,12 +1,13 @@
 ---
-sourceHash: "54468ef241aa"
+sourceHash: "a3d644f8b2bd"
 title: "Sabun Mandi (Toilet Soap)"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
 hsn: "3401 11"
-metaTitle: "Sabun Mandi: Eksportir dan Pemasok dari India | GoodBiz Hygiene"
-metaDescription: "Sabun mandi batang dari produsen India terseleksi: 50 g hingga 150 g, grade TFM 60% hingga 76%+, private label dan muatan kontainer campuran untuk importir."
+metaTitle: "Sabun Mandi: Eksportir & Pemasok dari India"
+metaDescription: "Sabun mandi batang 50–150 g, TFM 60% hingga 76%+, dari produsen India terseleksi. Private label, kontainer campuran, dan penawaran FOB/CIF per pesanan."
+keyword: "sabun mandi batang"
 answer: "Sabun mandi (toilet soap) adalah sabun batang padat hasil saponifikasi lemak dan minyak, digunakan untuk membersihkan wajah dan tubuh. Mutunya dinilai terutama dari Total Fatty Matter (TFM), yaitu ukuran kandungan sabun murni dalam satu batang. GoodBiz Hygiene mencarikan sabun mandi dalam beberapa grade TFM dari produsen India yang telah diseleksi untuk diekspor."
 variants:
   - "Mawar"

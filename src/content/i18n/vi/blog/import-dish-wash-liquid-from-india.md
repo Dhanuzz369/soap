@@ -1,6 +1,7 @@
 ---
-sourceHash: "41e1d0673a41"
+sourceHash: "23d4ef5247c9"
 title: "Cách nhập khẩu nước rửa chén từ Ấn Độ: chi phí, MOQ, chứng từ và vận chuyển"
+metaTitle: "Nhập khẩu nước rửa chén từ Ấn Độ: MOQ và chi phí"
 description: "Hướng dẫn thực tế về nhập khẩu nước rửa chén từ Ấn Độ: yếu tố quyết định chi phí, MOQ điển hình, lựa chọn quy cách, chứng từ xuất khẩu và vận chuyển từng bước."
 date: 2026-10-08
 tags: ["nước rửa chén", "nhập khẩu", "MOQ", "vận chuyển"]

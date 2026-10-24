@@ -1,6 +1,7 @@
 ---
-sourceHash: "cc1fb6d2b8d5"
+sourceHash: "ee2e38612e35"
 title: "İthalatçılar için Çamaşır Yumuşatıcı Alım Rehberi: Türler, Kokular ve Ambalaj Boyutları"
+metaTitle: "İthalatçılar için Çamaşır Yumuşatıcı Alım Rehberi"
 description: "Hindistan’dan çamaşır yumuşatıcı almadan önce bilinmesi gerekenler: normal ve konsantre, hassas kaliteler, koku seçimi, ambalaj boyutları ve depolama."
 date: 2026-09-17
 tags: ["çamaşır yumuşatıcı", "alım rehberi", "koku", "ambalaj boyutları"]

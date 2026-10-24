@@ -1,6 +1,7 @@
 ---
-sourceHash: "41e1d0673a41"
+sourceHash: "23d4ef5247c9"
 title: "Cara Mengimpor Sabun Cuci Piring Cair dari India: Biaya, MOQ, Dokumen, dan Pengiriman"
+metaTitle: "Cara Impor Sabun Cuci Piring dari India: MOQ dan Biaya"
 description: "Panduan praktis mengimpor sabun cuci piring cair dari India: faktor biaya, MOQ tipikal, pilihan kemasan, dokumen ekspor, dan alur pengiriman bertahap."
 date: 2026-10-08
 tags: ["sabun cuci piring cair", "impor", "MOQ", "pengiriman"]

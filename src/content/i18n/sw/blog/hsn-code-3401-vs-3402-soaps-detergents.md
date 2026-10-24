@@ -1,6 +1,7 @@
 ---
-sourceHash: "76eda9a626ca"
+sourceHash: "81532f93455a"
 title: "Msimbo wa HSN 3401 dhidi ya 3402: Mwongozo wa Mnunuzi wa Kuainisha Sabuni na Sabuni za Kufulia"
+metaTitle: "HSN 3401 dhidi ya 3402: Kuainisha Sabuni"
 description: "Huna uhakika kama bidhaa yako ni HSN 3401 au 3402? Mwongozo rahisi wa mgawanyo huo, jedwali la bidhaa kwa bidhaa na maswali ya kutatua kwanza."
 date: 2026-10-01
 tags: ["msimbo wa HSN", "uainishaji", "nyaraka za usafirishaji nje"]

@@ -1,5 +1,6 @@
 ---
 title: "Bath Soap Grades Explained: TFM, Grade 1 vs Grade 2, and Why It Matters"
+metaTitle: "Bath Soap Grades: TFM, Grade 1 vs Grade 2 Explained"
 description: "What TFM means on a bath soap specification, how Grade 1 and Grade 2 are used in trade, and how to choose the right grade for your market and price."
 date: 2026-08-27
 tags: ["bath soap", "TFM", "soap grades", "specifications"]

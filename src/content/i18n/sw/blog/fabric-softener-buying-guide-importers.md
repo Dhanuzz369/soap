@@ -1,6 +1,7 @@
 ---
-sourceHash: "cc1fb6d2b8d5"
+sourceHash: "ee2e38612e35"
 title: "Mwongozo wa Kununua Laini ya Nguo kwa Waagizaji: Aina, Harufu na Ukubwa wa Vifungashio"
+metaTitle: "Mwongozo wa Kununua Laini ya Nguo kwa Waagizaji"
 description: "Mambo ya kujua kabla ya kununua laini ya nguo kutoka India: ya kawaida au iliyokolea, ngozi nyeti, harufu, ukubwa wa vifungashio na uhifadhi."
 date: 2026-09-17
 tags: ["laini ya nguo", "mwongozo wa kununua", "harufu", "ukubwa wa vifungashio"]

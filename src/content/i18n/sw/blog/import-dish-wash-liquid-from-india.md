@@ -1,6 +1,7 @@
 ---
-sourceHash: "41e1d0673a41"
+sourceHash: "23d4ef5247c9"
 title: "Jinsi ya Kuagiza Sabuni ya Maji ya Kuosha Vyombo kutoka India: Gharama, MOQ, Nyaraka na Usafirishaji"
+metaTitle: "Kuagiza Sabuni ya Vyombo kutoka India: MOQ na Gharama"
 description: "Mwongozo wa kuagiza sabuni ya maji ya kuosha vyombo kutoka India: gharama, MOQ ya kawaida, vifungashio, nyaraka za usafirishaji nje na hatua za usafirishaji."
 date: 2026-10-08
 tags: ["sabuni ya maji ya kuosha vyombo", "kuagiza", "MOQ", "usafirishaji"]

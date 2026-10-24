@@ -1,12 +1,13 @@
 ---
-sourceHash: "108193995324"
+sourceHash: "412ca2d14ce7"
 title: "Allzweckreiniger (Mehrflächenreiniger)"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
 hsn: "3402 50"
-metaTitle: "Allzweckreiniger / Mehrflächenreiniger Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Allzweck-Mehrflächenreiniger als Sprühflasche, Nachfüll- und Großpackung von geprüften indischen Herstellern: Zitrus-, Lavendel- und Frischedüfte, Handelsmarke."
+metaTitle: "Allzweckreiniger / Mehrflächenreiniger – Export aus Indien"
+metaDescription: "Allzweckreiniger als Sprühflasche, Nachfüller und Großgebinde von geprüften indischen Herstellern: Zitrus, Lavendel. Handelsmarke, Mischcontainer, FOB/CIF."
+keyword: "Allzweckreiniger"
 answer: "Mehrflächenreiniger, auch Allzweckreiniger genannt, ist ein universeller Flüssigreiniger für Arbeitsplatten, Tische, Geräte, gestrichene Wände und viele harte Oberflächen. Er ist meist nahezu neutral bis leicht alkalisch und wird als gebrauchsfertiges Spray oder als Konzentrat verkauft. GoodBiz Hygiene bezieht Mehrflächenreiniger von geprüften indischen Herstellern für den Export."
 variants:
   - "Zitrus / Zitrone"

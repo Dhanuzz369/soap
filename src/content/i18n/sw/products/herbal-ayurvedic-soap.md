@@ -1,12 +1,13 @@
 ---
-sourceHash: "f81c42efbf80"
+sourceHash: "329715bb8890"
 title: "Sabuni ya Mitishamba na ya Ayurveda"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
 hsn: "3401 11"
-metaTitle: "Sabuni ya Mitishamba na ya Ayurveda: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Sabuni za kuogea za mitishamba na za Ayurveda kutoka India: mwarobaini, manjano, sandali na aloe, 75 g hadi 125 g, pamoja na chapa ya mnunuzi kwa waagizaji."
+metaTitle: "Sabuni ya Mitishamba na ya Ayurveda: Msafirishaji wa India"
+metaDescription: "Sabuni ya mitishamba na Ayurveda kutoka viwanda vya India vilivyokaguliwa: mwarobaini, manjano, msandali na aloe, 75–125 g. Chapa yako na bei za FOB/CIF."
+keyword: "sabuni ya mitishamba"
 answer: "Sabuni ya mitishamba au ya Ayurveda ni kipande cha kuogea kinachojumuisha viambato vya mimea kama mwarobaini, manjano, sandali au aloe vera katika msingi wa sabuni, kikilenga mila za jadi za India za utunzaji wa ngozi. Hutumika kuoga kila siku. GoodBiz Hygiene hupata sabuni hizi kutoka kwa watengenezaji wa India tuliowakagua na kuzisafirisha nje pamoja na chaguo za chapa ya mnunuzi."
 variants:
   - "Mwarobaini na tulsi (basil takatifu)"

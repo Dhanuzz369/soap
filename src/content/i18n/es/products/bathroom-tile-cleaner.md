@@ -1,12 +1,13 @@
 ---
-sourceHash: "c651d0594a86"
+sourceHash: "94216906b8fc"
 title: "Limpiador de baños y azulejos"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
 hsn: "3402 50"
-metaTitle: "Limpiador de baños y azulejos: exportador y proveedor desde la India | GoodBiz Hygiene"
-metaDescription: "Limpiador de baños y azulejos contra restos de jabón y sarro, en pulverizador y recargas, de fabricantes indios seleccionados; marca propia disponible."
+metaTitle: "Limpiador de baños y azulejos: exportador de India"
+metaDescription: "Limpiador de baños y azulejos contra el sarro, en spray y recambios de 5 a 20 L, de fabricantes indios seleccionados. Marca propia y cotización FOB/CIF."
+keyword: "limpiador de baños"
 answer: "El limpiador de baños y azulejos es un líquido o gel formulado para eliminar restos de jabón, sarro, manchas de agua y ligeras marcas de moho de azulejos, grifos, lavabos, mamparas de ducha y accesorios de baño. Suele ser ligeramente ácido y a menudo se vende en botellas con pulverizador de gatillo. GoodBiz Hygiene adquiere limpiador de baños y azulejos a fabricantes indios seleccionados para su exportación."
 variants:
   - "Frescor de limón"

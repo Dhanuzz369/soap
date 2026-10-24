@@ -1,12 +1,13 @@
 ---
-sourceHash: "386cf04101b2"
+sourceHash: "f2bf93b5815c"
 title: "Soap Noodles (Msingi wa Sabuni wa Chembechembe)"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
 hsn: "3401 20"
-metaTitle: "Soap Noodles: Msafirishaji Nje na Muuzaji kutoka India | GoodBiz Hygiene"
-metaDescription: "Soap noodles za daraja 80:20 na 70:30 za mawese hadi punje za mawese kutoka India, katika mifuko ya 25 kg na 50 kg kwa watengenezaji wa sabuni duniani kote."
+metaTitle: "Soap Noodles: Msafirishaji Nje na Muuzaji kutoka India"
+metaDescription: "Soap noodles za 80:20 na 70:30 kutoka viwanda vya India vilivyokaguliwa, kwa magunia ya 25 kg na 50 kg kwa watengenezaji wa sabuni. HSN 3401 20, bei za FOB/CIF."
+keyword: "soap noodles"
 answer: "Soap noodles ni chembechembe ndogo za mafuta na shahamu zilizokaushwa na kuchemshwa kuwa sabuni (saponified), zinazotumika kama malighafi ya msingi ya kutengeneza sabuni za kuogea, za kufulia na vipande vingine vya sabuni. Huainishwa kwa uwiano wa mafuta ya mawese na mafuta ya punje za mawese na kwa Jumla ya Vitu vya Mafuta (TFM). GoodBiz Hygiene hupata soap noodles kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje kwa watengenezaji wa sabuni na wasambazaji."
 variants:
   - "80:20 mawese hadi punje za mawese (Daraja la 1 / bora zaidi)"

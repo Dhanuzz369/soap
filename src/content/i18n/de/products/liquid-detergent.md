@@ -1,12 +1,13 @@
 ---
-sourceHash: "a32b95104c89"
+sourceHash: "e01f264e3e3e"
 title: "Flüssigwaschmittel"
 slug: liquid-detergent
 category: laundry-care
 order: 3
 hsn: "3402 50"
-metaTitle: "Flüssigwaschmittel Exporteur und Lieferant aus Indien | GoodBiz Hygiene"
-metaDescription: "Flüssigwaschmittel von geprüften indischen Herstellern: 500 ml bis 20 L, Qualitäten für Hand- und Maschinenwäsche, Handelsmarke, gemischte Container."
+metaTitle: "Flüssigwaschmittel – Exporteur & Lieferant aus Indien"
+metaDescription: "Flüssigwaschmittel von geprüften indischen Herstellern: 500 ml bis 20 L, für Hand- und Maschinenwäsche. Handelsmarke, Mischcontainer und FOB/CIF-Angebote."
+keyword: "Flüssigwaschmittel"
 answer: "Flüssigwaschmittel ist ein fließfähiges Wäschereinigungsmittel aus Tensiden, Wasser und Zusätzen, das sich in kaltem oder warmem Wasser leicht löst. Es eignet sich für die Handwäsche ebenso wie für Waschmaschinen und wird als bequemere, höherwertige Alternative zum Pulver verkauft. GoodBiz Hygiene bezieht Flüssigwaschmittel von geprüften indischen Herstellern in Handels- und Großpackungen für den Export."
 variants:
   - "Toplader-Maschine und Handwäsche"
