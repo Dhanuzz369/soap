@@ -15,7 +15,7 @@ describe('IndexNow plan', () => {
     expect(planIndexNow({ launchReady: true, url: 'https://www.example.com', key: site.indexNowKey, urls: [] }).ok).toBe(false);
   });
   it('sends only the site’s own URLs with the key location', () => {
-    const p = planIndexNow({ launchReady: true, url: 'https://www.example.com/', key: site.indexNowKey, urls: URLS });
+    const p: any = planIndexNow({ launchReady: true, url: 'https://www.example.com/', key: site.indexNowKey, urls: URLS });
     expect(p.ok).toBe(true);
     expect(p.payload).toEqual({
       host: 'www.example.com',
