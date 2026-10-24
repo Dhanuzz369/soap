@@ -16,7 +16,7 @@ const walk = (dir) =>
   });
 
 const files = [configPath];
-if (existsSync(distPath)) files.push(...walk(distPath).filter((f) => f.endsWith('.html') || f.endsWith('llms.txt')));
+if (existsSync(distPath)) files.push(...walk(distPath).filter((f) => f.endsWith('.html') || f.endsWith('.txt') || f.endsWith('.xml')));
 else console.warn('dist/ not found; run `npm run build` to scan built pages too.');
 
 const tokenHits = [];

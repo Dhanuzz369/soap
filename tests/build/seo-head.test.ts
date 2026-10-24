@@ -8,7 +8,8 @@ import { describe, it, expect } from 'vitest';
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import site from '../../src/config/site';
-import { splitLocale, localizePath, type Locale } from '../../src/i18n/locales';
+import { splitLocale, localizePath, PREFIXED_LOCALES, type Locale } from '../../src/i18n/locales';
+import { getUi } from '../../src/i18n/ui';
 import { MAX_KEYWORDS } from '../../src/lib/seo';
 import { publicImageSize } from '../../src/lib/product-image';
 
@@ -220,6 +221,39 @@ describe('AEO: answers and quick facts', () => {
       const box = html.match(/<section class="wrap sec quick-facts"[\s\S]*?<\/section>/)?.[0] ?? '';
       expect((box.match(/<dt>/g) ?? []).length, path).toBe(6);
       expect(box, path).toContain('3401');
+    }
+  });
+});
+
+describe('GEO: llms.txt in every language and llms-full.txt', () => {
+  const products = readdirSync(resolve(process.cwd(), 'src/content/products')).filter((f) => f.endsWith('.md')).map((f) => f.replace(/\.md$/, ''));
+
+  it('every language has its own llms.txt, naming the company the same way and linking to its own pages', () => {
+    for (const lang of PREFIXED_LOCALES) {
+      const txt = readFileSync(join(DIST, lang, 'llms.txt'), 'utf8');
+      expect(txt.startsWith(`# ${site.name}`), lang).toBe(true);
+      expect(txt, lang).toContain(`> ${getUi(lang).seo.entity}`);
+      for (const slug of products) expect(txt, `${lang} ${slug}`).toContain(`${BASE}/${lang}/products/${slug}/`);
+      expect(txt, lang).toContain(`${BASE}/llms-full.txt`);
+    }
+  });
+
+  it('llms-full.txt has every product with its HSN code, specification table and FAQs, and no placeholders', () => {
+    const full = readFileSync(join(DIST, 'llms-full.txt'), 'utf8');
+    expect(full).toContain(getUi('en').seo.entity);
+    for (const slug of products) expect(full, slug).toContain(`URL: ${BASE}/products/${slug}/`);
+    expect((full.match(/^\| Specification \(typical\) \| Value \|$/gm) ?? []).length).toBe(products.length);
+    expect((full.match(/^- \*\*HSN code:\*\* \d{4} \d{2}\./gm) ?? []).length).toBe(products.length);
+    expect(full).toContain('## Company FAQ');
+    expect(full).toContain('## Export process');
+    expect(full).not.toContain('PLACEHOLDER');
+    expect(full).not.toMatch(/\]\(\/(?!\/)/); // every Markdown link is absolute
+  });
+
+  it('every page links its language\'s llms.txt', () => {
+    for (const p of pages) {
+      const want = p.lang === 'en' ? `${BASE}/llms.txt` : `${BASE}/${p.lang}/llms.txt`;
+      expect(p.html, p.path).toContain(`<link rel="alternate" type="text/plain" title="llms.txt" href="${want}">`);
     }
   });
 });
