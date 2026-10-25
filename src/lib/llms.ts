@@ -19,6 +19,7 @@ import { getFaqGroups } from './faqs';
 import { LOCALES, localizePath, DEFAULT_LOCALE, type Locale } from '../i18n/locales';
 import { getUi, fmt } from '../i18n/ui';
 import { SPACES } from './horeca';
+import { registrationsLlmsLine } from './registrations';
 
 const firstSentence = (s: string) => (s.match(/^.*?[.!?。](?=\s+\S|\s*$)/su)?.[0] ?? s).trim();
 /** Markdown body with site links made absolute (for text read outside the site). */
@@ -77,6 +78,8 @@ export async function buildLlmsIndex(lang: Locale = DEFAULT_LOCALE): Promise<str
   const lines: string[] = [`# ${site.name}`, '', `> ${ui.seo.entity}`, '', `## ${H.facts}`, '', ...quickFacts(lang), ''];
   const contact = contactLines();
   if (contact.length) lines.push(...contact, '');
+  const reg = registrationsLlmsLine();
+  if (reg) lines.push(reg, '');
 
   lines.push(`## ${H.products}`, '');
   for (const { category, products } of groups) {
@@ -131,6 +134,7 @@ export async function buildLlmsFull(): Promise<string> {
     '',
     ...quickFacts(DEFAULT_LOCALE),
     ...contactLines(),
+    ...(registrationsLlmsLine() ? ['', registrationsLlmsLine()!] : []),
     '',
     '## Export terms',
     '',

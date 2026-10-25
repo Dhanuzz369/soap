@@ -1,3 +1,18 @@
+export type RegistrationId = 'fieo' | 'msme' | 'chemexcil' | 'dgft';
+export interface Registration {
+  id: RegistrationId;
+  /** Short name, shown in the text badge. */
+  name: string;
+  /** Full name of the body, used in alt and aria text. */
+  fullName: string;
+  /** The body's official website. */
+  url: string;
+  /** Official logo in public/ (used only when the file exists at build time). */
+  logo?: string;
+  /** false for DGFT: its mark carries the State Emblem of India, so it is only ever a text badge. */
+  logoAllowed: boolean;
+}
+
 const site = {
   name: 'GoodBiz Hygiene',
   tagline: 'Soaps & home-care products, exported from India',
@@ -24,6 +39,18 @@ const site = {
     parentUrl?: string;
     agroUrl?: string;
   },
+  /**
+   * Export registrations shown as a "Registered exporter" strip (footer, About, Export process,
+   * HoReCa). Never add registration numbers here or anywhere on the site. Logos: see README.
+   * DGFT is a text badge only (State Emblem of India (Prohibition of Improper Use) Act, 2005).
+   */
+  showRegistrations: true,
+  registrations: [
+    { id: 'fieo', name: 'FIEO', fullName: 'Federation of Indian Export Organisations', url: 'https://www.fieo.org/', logo: '/images/registrations/fieo.svg', logoAllowed: true },
+    { id: 'msme', name: 'MSME', fullName: 'Ministry of Micro, Small & Medium Enterprises', url: 'https://udyamregistration.gov.in/', logo: '/images/registrations/msme.svg', logoAllowed: true },
+    { id: 'chemexcil', name: 'CHEMEXCIL', fullName: 'Basic Chemicals, Cosmetics & Dyes Export Promotion Council', url: 'https://www.chemexcil.in/', logo: '/images/registrations/chemexcil.svg', logoAllowed: true },
+    { id: 'dgft', name: 'DGFT', fullName: 'Directorate General of Foreign Trade', url: 'https://www.dgft.gov.in/', logoAllowed: false },
+  ] as Registration[],
   /**
    * Other official profiles of GoodBiz Hygiene (LinkedIn, IndiaMART, TradeIndia, Alibaba…), as full
    * https:// URLs. They go into the Organization structured data (`sameAs`) so search engines and

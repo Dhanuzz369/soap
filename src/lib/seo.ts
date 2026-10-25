@@ -32,6 +32,7 @@ import type {
   WithContext,
 } from 'schema-dts';
 import site from '../config/site';
+import { memberOfJsonLd } from './registrations';
 import type { ProductData } from './types';
 
 const CONTEXT = 'https://schema.org' as const;
@@ -96,6 +97,7 @@ export function organizationJsonLd(description: string = site.tagline): WithCont
   const f = site.facts;
   const real = !site.contactIsPlaceholder;
   const sameAs = site.profiles.filter((u) => /^https:\/\//.test(u));
+  const member = memberOfJsonLd();
   const logo = { '@type': 'ImageObject' as const, url: LOGO_URL(), width: '512', height: '512' };
   return {
     '@context': CONTEXT,
@@ -128,6 +130,7 @@ export function organizationJsonLd(description: string = site.tagline): WithCont
           },
         }
       : {}),
+    ...(member.length ? { memberOf: member } : {}),
     ...(sameAs.length ? { sameAs } : {}),
   };
 }

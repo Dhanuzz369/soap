@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '99275ef123f5';
+export const sourceHash = '713dcaf54fc7';
 
 const tr: UiPartial = {
   meta: {
@@ -189,6 +189,20 @@ const tr: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, bir {parent} şirketi. Hindistan’dan ticari ihracatçı.',
     backToTop: 'Başa dön',
+  },
+
+  /** The "Registered exporter" strip: no registration numbers, ever. */
+  registrations: {
+    heading: "Kayıtlı ihracatçı",
+    aria: "İhracat kayıtlarımız",
+    aboutText: "GoodBiz Hygiene, aşağıda listelenen Hindistan ihracat otoriteleri ve konseylerine kayıtlıdır; kayıt ayrıntıları alıcılara talep üzerine sunulur.",
+    opens: "{name} (resmi web sitesini açar)",
+    status: {
+      fieo: "Üye ihracatçı",
+      msme: "Udyam kayıtlı",
+      chemexcil: "RCMC sahibi",
+      dgft: "IEC kayıtlı ihracatçı",
+    },
   },
 
   lang: {

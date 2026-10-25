@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '99275ef123f5';
+export const sourceHash = '713dcaf54fc7';
 
 const vi: UiPartial = {
   meta: {
@@ -189,6 +189,20 @@ const vi: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, một công ty thuộc {parent}. Nhà xuất khẩu thương mại từ Ấn Độ.',
     backToTop: 'Lên đầu trang',
+  },
+
+  /** The "Registered exporter" strip: no registration numbers, ever. */
+  registrations: {
+    heading: "Nhà xuất khẩu đã đăng ký",
+    aria: "Các đăng ký xuất khẩu của chúng tôi",
+    aboutText: "GoodBiz Hygiene đã đăng ký với các cơ quan và hội đồng xuất khẩu của Ấn Độ nêu dưới đây; chi tiết đăng ký được cung cấp cho người mua khi có yêu cầu.",
+    opens: "{name} (mở trang web chính thức)",
+    status: {
+      fieo: "Nhà xuất khẩu là hội viên",
+      msme: "Đã đăng ký Udyam",
+      chemexcil: "Đơn vị có RCMC",
+      dgft: "Nhà xuất khẩu đã đăng ký IEC",
+    },
   },
 
   lang: {

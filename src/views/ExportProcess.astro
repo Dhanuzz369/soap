@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import RouteHero from '../components/RouteHero.astro';
 import ProcessSteps from '../components/ProcessSteps.astro';
 import Faq from '../components/Faq.astro';
+import Registrations from '../components/Registrations.astro';
 import QuoteCard from '../components/QuoteCard.astro';
 import { faqJsonLd, howToJsonLd, buildKeywords } from '../lib/seo';
 import { ogCard } from '../lib/product-image';
@@ -60,6 +61,16 @@ const faqs = E.faqs.map((f) => ({ q: fmt(f.q, t), a: fmt(f.a, t) }));
     <ul class="chips chips--lg" data-reveal style="--i: 1">
       {documents.map((d) => <li class="chip">{d}</li>)}
     </ul>
+  </section>
+
+  <section class="wrap sec split" aria-labelledby="regs-h">
+    <div class="split-head" data-reveal>
+      <h2 id="regs-h">{ui.registrations.heading}</h2>
+      <p>{ui.registrations.aboutText}</p>
+    </div>
+    <div data-reveal style="--i: 1">
+      <Registrations variant="full" />
+    </div>
   </section>
 
   <Faq faqs={faqs} heading={E.faqH} split />

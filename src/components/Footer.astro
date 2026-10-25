@@ -2,6 +2,7 @@
 import site from '../config/site';
 import { buildWhatsAppUrl } from '../lib/enquiry';
 import { getProductsByCategory } from '../lib/products';
+import Registrations from './Registrations.astro';
 import { useI18n } from '../i18n/page';
 
 const { lang, ui, lp, fmt } = useI18n(Astro.url);
@@ -61,6 +62,7 @@ const t = ui.terms;
       </nav>
     </div>
 
+    <Registrations variant="compact" />
 
     <div class="footer-legal">
       <p>{fmt(ui.footer.legal, { year, name: site.name, parent: site.parentName })}</p>

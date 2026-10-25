@@ -37,7 +37,7 @@ const pages = walk(DIST)
 const COMMON = ['@context', '@type', '@id'];
 /** schema.org properties allowed per type (the ones this site may emit). */
 const VOCAB: Record<string, string[]> = {
-  Organization: ['name', 'alternateName', 'url', 'logo', 'image', 'description', 'slogan', 'areaServed', 'knowsAbout', 'parentOrganization', 'foundingDate', 'identifier', 'email', 'telephone', 'address', 'contactPoint', 'sameAs'],
+  Organization: ['name', 'alternateName', 'url', 'logo', 'image', 'description', 'slogan', 'areaServed', 'knowsAbout', 'parentOrganization', 'foundingDate', 'memberOf', 'identifier', 'email', 'telephone', 'address', 'contactPoint', 'sameAs'],
   WebSite: ['name', 'alternateName', 'url', 'description', 'inLanguage', 'publisher'],
   WebPage: ['url', 'name', 'description', 'inLanguage', 'isPartOf', 'publisher', 'about', 'primaryImageOfPage', 'breadcrumb', 'mainEntity', 'dateModified'],
   BreadcrumbList: ['itemListElement'],

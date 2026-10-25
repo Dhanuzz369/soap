@@ -197,6 +197,20 @@ const en = {
     backToTop: 'Back to top',
   },
 
+  /** The "Registered exporter" strip: no registration numbers, ever. */
+  registrations: {
+    heading: "Registered exporter",
+    aria: "Our export registrations",
+    aboutText: "GoodBiz Hygiene is registered with India’s export authorities and councils listed below; registration details are available to buyers on request.",
+    opens: "{name} (opens official website)",
+    status: {
+      fieo: "Member exporter",
+      msme: "Udyam registered",
+      chemexcil: "RCMC holder",
+      dgft: "IEC registered exporter",
+    },
+  },
+
   /** The language menu (bottom corner of every page). */
   lang: {
     label: 'Language',

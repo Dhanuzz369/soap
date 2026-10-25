@@ -7,6 +7,7 @@ import { getProductsByCategory } from '../lib/products';
 import { useI18n } from '../i18n/page';
 import { buildKeywords } from '../lib/seo';
 import { ogCard } from '../lib/product-image';
+import Registrations from '../components/Registrations.astro';
 import QuickFacts from '../components/QuickFacts.astro';
 
 const { lang, ui, lp, fmt } = useI18n(Astro.url);
@@ -101,6 +102,16 @@ const breadcrumbs = [
           </dl>
         )
       }
+    </div>
+  </section>
+
+  <section class="wrap sec split" aria-labelledby="regs-h">
+    <div class="split-head" data-reveal>
+      <h2 id="regs-h">{ui.registrations.heading}</h2>
+      <p>{ui.registrations.aboutText}</p>
+    </div>
+    <div data-reveal style="--i: 1">
+      <Registrations variant="full" />
     </div>
   </section>
 

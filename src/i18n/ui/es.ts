@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '99275ef123f5';
+export const sourceHash = '713dcaf54fc7';
 
 const es: UiPartial = {
   meta: {
@@ -189,6 +189,20 @@ const es: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, una empresa de {parent}. Exportador comercial desde la India.',
     backToTop: 'Volver arriba',
+  },
+
+  /** The "Registered exporter" strip: no registration numbers, ever. */
+  registrations: {
+    heading: "Exportador registrado",
+    aria: "Nuestros registros de exportación",
+    aboutText: "GoodBiz Hygiene está registrada ante las autoridades y consejos de exportación de la India que se indican abajo; los detalles del registro se facilitan a los compradores que los soliciten.",
+    opens: "{name} (abre el sitio web oficial)",
+    status: {
+      fieo: "Exportador miembro",
+      msme: "Registrada en Udyam",
+      chemexcil: "Titular de RCMC",
+      dgft: "Exportador con código IEC",
+    },
   },
 
   lang: {

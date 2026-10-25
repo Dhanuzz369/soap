@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '99275ef123f5';
+export const sourceHash = '713dcaf54fc7';
 
 const ru: UiPartial = {
   meta: {
@@ -189,6 +189,20 @@ const ru: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, компания {parent}. Экспортёр-посредник из Индии.',
     backToTop: 'Наверх',
+  },
+
+  /** The "Registered exporter" strip: no registration numbers, ever. */
+  registrations: {
+    heading: "Зарегистрированный экспортёр",
+    aria: "Наши экспортные регистрации",
+    aboutText: "GoodBiz Hygiene зарегистрирована в перечисленных ниже экспортных органах и советах Индии; реквизиты регистрации предоставляются покупателям по запросу.",
+    opens: "{name} (открывает официальный сайт)",
+    status: {
+      fieo: "Экспортёр, член организации",
+      msme: "Зарегистрирована в Udyam",
+      chemexcil: "Владелец RCMC",
+      dgft: "Экспортёр с кодом IEC",
+    },
   },
 
   lang: {

@@ -1,0 +1,53 @@
+---
+/**
+ * The "Registered exporter" strip: FIEO, MSME/Udyam, CHEMEXCIL (RCMC) and DGFT (IEC).
+ * `compact`: one row in the footer (small monochrome logos on the dark field).
+ * `full`: a row of cards (About, Export process, HoReCa).
+ * An item shows the body's official logo only when site.registrations allows it and the file exists
+ * in public/ at build time; otherwise (always for DGFT: State Emblem of India) a text badge.
+ * No registration numbers are shown anywhere. See README, "Registrations".
+ */
+import { resolveRegistrations } from '../lib/registrations';
+import { useI18n } from '../i18n/page';
+import { fmt } from '../i18n/ui';
+import '../styles/registrations.css';
+
+interface Props {
+  variant?: 'compact' | 'full';
+}
+const { variant = 'full' } = Astro.props;
+const { ui } = useI18n(Astro.url);
+const R = ui.registrations;
+const items = resolveRegistrations();
+const h = variant === 'compact' ? 40 : 56;
+---
+
+{
+  items.length > 0 && (
+    <div class={`regs regs--${variant}`} data-regs={variant} role="group" aria-label={R.aria}>
+      {variant === 'compact' && <p class="regs-label">{R.heading}</p>}
+      <ul class="regs-list">
+        {items.map((r) => (
+          <li>
+            <a
+              class={`reg ${r.logoSrc ? 'reg--logo' : 'reg--badge'}`}
+              data-reg={r.id}
+              href={r.url}
+              rel="noopener"
+              aria-label={fmt(R.opens, { name: r.fullName })}
+            >
+              <span class="reg-mark">
+                {r.logoSrc ? (
+                  <img src={r.logoSrc} alt={`${r.fullName} logo`} width={Math.round(h * (r.aspect ?? 1))} height={h} loading="lazy" decoding="async" />
+                ) : (
+                  <span class="reg-name" dir="ltr">{r.name}</span>
+                )}
+              </span>
+              <span class="reg-status">{R.status[r.id]}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}

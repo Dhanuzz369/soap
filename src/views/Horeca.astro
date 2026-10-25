@@ -12,6 +12,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import FloorPlanHero from '../components/FloorPlanHero.astro';
 import ProductVisual from '../components/ProductVisual.astro';
 import Faq from '../components/Faq.astro';
+import Registrations from '../components/Registrations.astro';
 import QuoteCard from '../components/QuoteCard.astro';
 import { SPACES, PROPERTY_TYPES, horecaMessage } from '../lib/horeca';
 import { enquiryHref } from '../lib/enquiry';
@@ -240,6 +241,16 @@ const jsonLd = [
   </section>
 
   <!-- 4. HoReCa FAQ -->
+  <section class="wrap sec split" aria-labelledby="regs-h">
+    <div class="split-head" data-reveal>
+      <h2 id="regs-h">{ui.registrations.heading}</h2>
+      <p>{ui.registrations.aboutText}</p>
+    </div>
+    <div data-reveal style="--i: 1">
+      <Registrations variant="full" />
+    </div>
+  </section>
+
   <Faq faqs={faqs} heading={H.faqH} split />
 
   <!-- 5. The quote card -->

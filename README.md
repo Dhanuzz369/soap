@@ -156,6 +156,26 @@ The site is published in 12 languages: English at `/`, and Arabic, French, Spani
 
 ---
 
+## 5c. Registrations ("Registered exporter" strip)
+
+The footer, the About page, the Export Process page and the HoReCa page show the company's four export registrations: **FIEO** (member), **MSME / Udyam** (registered), **CHEMEXCIL** (RCMC holder) and **DGFT** (IEC holder). The list, each body's full name and official website are `registrations` in `src/config/site.ts`; `showRegistrations: false` hides the strip everywhere (and the matching lines in `llms.txt` and the structured data). The status lines ("Member exporter", "RCMC holder"…) are in each language file under `registrations`.
+
+**No registration numbers are shown, in the pages, the structured data or `llms.txt`.** Do not add any. Buyers get the details on request.
+
+**To add the official logos**, save the files at exactly these names in `public/images/registrations/` (create the folder), then run `npm run build`:
+
+| File | Body |
+| --- | --- |
+| `fieo.svg` | FIEO |
+| `msme.svg` (or `msme.png`) | MSME / Udyam |
+| `chemexcil.svg` | CHEMEXCIL |
+
+SVG is preferred (sharp at any size, tiny). A PNG is fine if that is all you have (at least 3 times the display height: 168px tall or more). Use the files the councils provide to their members, and follow each council's logo-use rules. A logo is used only when its file exists at build time; until then the page shows a tidy text badge (the short name with its status line), so nothing looks missing. In the footer the logos are tinted to a single light colour on the dark field, so a logo with a white background should be supplied with a transparent one.
+
+**DGFT stays a text badge, always.** The DGFT mark carries the State Emblem of India, and the State Emblem of India (Prohibition of Improper Use) Act, 2005 restricts private use of the emblem. So `logoAllowed` is `false` for DGFT, no DGFT image is ever rendered (a build test fails if one appears), and the emblem must not be drawn or included anywhere on the site.
+
+---
+
 ## 6. Go-live checklist
 
 Do these **in order**. Steps 1-5 happen before anyone can find the site; steps 6-13 after it is live.
@@ -238,6 +258,7 @@ Settings to enter on any of them:
 | `src/i18n/` | Languages, interface text per language (`ui/`), language detection |
 | `src/views/` | The page templates (every language uses the same ones) |
 | `src/pages/` | Page addresses (each one shows a template from `src/views/`) |
+| `src/components/Registrations.astro`, `src/lib/registrations.ts` | The "Registered exporter" strip (config in `site.ts`, logos in `public/images/registrations/`) |
 | `src/styles/` | Colours, fonts and layout |
 | `public/images/products/` | Product photos (`<slug>.webp`) |
 | `public/fonts/` | Self-hosted fonts (Geist with Latin, Cyrillic and Vietnamese subsets, Newsreader italic for accents, IBM Plex Sans Arabic for Arabic pages; SIL Open Font License) |

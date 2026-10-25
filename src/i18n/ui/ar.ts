@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '99275ef123f5';
+export const sourceHash = '713dcaf54fc7';
 
 const ar: UiPartial = {
   meta: {
@@ -189,6 +189,20 @@ const ar: UiPartial = {
     whatsapp: 'واتساب',
     legal: '© {year} {name}، إحدى شركات {parent}. مصدّر تاجر من الهند.',
     backToTop: 'العودة إلى الأعلى',
+  },
+
+  /** The "Registered exporter" strip: no registration numbers, ever. */
+  registrations: {
+    heading: "مُصدِّر مسجَّل",
+    aria: "تسجيلاتنا التصديرية",
+    aboutText: "جود بيز هايجين مسجّلة لدى الجهات والمجالس الهندية للتصدير المذكورة أدناه، وتتوفر تفاصيل التسجيل للمشترين عند الطلب.",
+    opens: "{name} (يفتح الموقع الرسمي)",
+    status: {
+      fieo: "مصدّر عضو",
+      msme: "مسجّلة في أُدْيام",
+      chemexcil: "حاملة شهادة RCMC",
+      dgft: "مصدّر حاصل على رمز الاستيراد والتصدير (IEC)",
+    },
   },
 
   lang: {

@@ -1,0 +1,145 @@
+/* "Registered exporter" strip (Registrations.astro). Fixed mark heights: no layout shift. */
+.regs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.reg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* logical: flips with direction */
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+.reg-mark {
+  display: flex;
+  align-items: center;
+}
+.reg-mark img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.reg-name {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  border: 1px solid currentColor;
+  border-radius: var(--pill);
+  white-space: nowrap;
+}
+.reg-status {
+  font-size: 0.8125rem;
+  line-height: 1.35;
+}
+.reg:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+/* ---------- compact: the footer row, above the legal line ---------- */
+.regs--compact {
+  margin-top: clamp(40px, 5vw, 64px);
+  padding-top: 28px;
+  border-top: 1px solid rgb(238 244 239 / 0.12);
+}
+.regs-label {
+  margin: 0 0 16px;
+  max-width: none;
+  color: var(--on-dark);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.regs--compact .reg {
+  color: var(--on-dark-soft);
+  transition: color var(--dur-fast) ease;
+}
+.regs--compact .reg:hover {
+  color: var(--on-dark);
+}
+.regs--compact .reg-mark {
+  height: 40px;
+}
+.regs--compact .reg-mark img {
+  height: 40px;
+  /* monochrome: every logo is tinted to the footer ink */
+  filter: brightness(0) invert(1);
+  opacity: 0.72;
+  transition: opacity var(--dur-fast) ease;
+}
+.regs--compact .reg:hover .reg-mark img {
+  opacity: 0.95;
+}
+.regs--compact .reg-name {
+  height: 40px;
+  padding-inline: 16px;
+  font-size: 0.875rem;
+  border-color: rgb(238 244 239 / 0.28);
+}
+.regs--compact .reg-status {
+  color: var(--on-dark-soft);
+}
+
+/* ---------- full: cards on the paper field ---------- */
+.regs--full .regs-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--gap);
+}
+.regs--full .regs-list > li {
+  display: flex;
+}
+.regs--full .reg {
+  width: 100%;
+  gap: 18px;
+  padding: clamp(18px, 1rem + 0.6vw, 28px);
+  color: var(--ink);
+  background: var(--paper-2);
+  border: 1px solid rgb(18 53 42 / 0.12);
+  border-radius: var(--radius-card);
+  transition: border-color var(--dur-fast) ease, background-color var(--dur-fast) ease;
+}
+.regs--full .reg:hover {
+  background: var(--paper-3);
+  border-color: rgb(18 53 42 / 0.28);
+}
+.regs--full .reg-mark {
+  height: 56px;
+}
+.regs--full .reg-mark img {
+  height: 56px;
+}
+.regs--full .reg-name {
+  height: 56px;
+  padding-inline: 20px;
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.25rem);
+  border-color: rgb(18 53 42 / 0.32);
+}
+.regs--full .reg-status {
+  color: var(--ink-soft);
+  font-size: 0.9375rem;
+}
+@media (max-width: 599.98px) {
+  .regs--compact .regs-list {
+    gap: 20px 24px;
+  }
+  .regs--full .reg {
+    padding: 16px;
+  }
+  .regs--full .reg-name {
+    padding-inline: 12px;
+    font-size: 0.9375rem;
+    letter-spacing: 0.02em;
+  }
+}
