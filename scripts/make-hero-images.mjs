@@ -12,13 +12,19 @@
  * For every product photo (public/images/products/<slug>.webp, variants with `--` excepted):
  *  - public/images/shelf/<slug>-480.webp: the /products/ hero shelf's small copy (src/lib/shelf.ts),
  *    so a phone's ~210px card (and a 300px card on a 1x screen) loads ~half the bytes of the 800px copy.
+ *
+ * For every product (src/content/products/*.md):
+ *  - public/images/thumbs/<slug>-96.webp: a 96px square thumbnail of its photo, or of its studio
+ *    render when it has no photo yet, for the small product lists in the HoReCa hero's cards.
  * Run it again after replacing or adding a photo.
  */
-import { mkdir, readdir, stat } from 'node:fs/promises';
+import { mkdir, readdir, stat, readFile } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 import { FAN_RANGES } from '../src/lib/hero-fan.ts';
+import { shapeFor } from '../src/lib/pack-shapes.ts';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outDir = path.join(root, 'public/images/hero');
@@ -48,5 +54,26 @@ const photos = (await readdir(path.join(root, 'public/images/products'))).filter
 for (const f of photos) {
   const out = path.join(shelfDir, f.replace(/\.webp$/, '-480.webp'));
   await sharp(path.join(root, 'public/images/products', f)).resize({ width: 480 }).webp({ quality: 72, effort: 6 }).toFile(out);
+  await report(out);
+}
+
+const thumbDir = path.join(root, 'public/images/thumbs');
+await mkdir(thumbDir, { recursive: true });
+const productFiles = (await readdir(path.join(root, 'src/content/products'))).filter((f) => f.endsWith('.md'));
+for (const f of productFiles) {
+  const slug = f.replace(/\.md$/, '');
+  const category = (await readFile(path.join(root, 'src/content/products', f), 'utf8')).match(/^category:\s*(\S+)/m)[1];
+  const photo = path.join(root, 'public/images/products', `${slug}.webp`);
+  const shape = shapeFor(slug, category);
+  const variant = path.join(root, 'public/images/renders', `${shape}--${category}.webp`);
+  const src = existsSync(photo) ? photo : existsSync(variant) ? variant : path.join(root, 'public/images/renders', `${shape}.webp`);
+  if (!existsSync(src)) continue;
+  const out = path.join(thumbDir, `${slug}-96.webp`);
+  const fit = src === photo ? 'cover' : 'contain';
+  await sharp(src)
+    .resize({ width: 96, height: 96, fit, background: { r: 11, g: 33, b: 26, alpha: 1 } })
+    .flatten({ background: { r: 11, g: 33, b: 26 } })
+    .webp({ quality: 70, effort: 6 })
+    .toFile(out);
   await report(out);
 }
