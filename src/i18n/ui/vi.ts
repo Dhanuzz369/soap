@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '9e5d353955e5';
+export const sourceHash = '99275ef123f5';
 
 const vi: UiPartial = {
   meta: {
@@ -98,6 +98,18 @@ const vi: UiPartial = {
         'nhập khẩu từ Ấn Độ',
         'cẩm nang người mua',
       ],
+      horeca: [
+        'nhà cung cấp amenities khách sạn',
+        'hóa chất tẩy rửa khách sạn',
+        'sản phẩm vệ sinh HoReCa giá sỉ',
+        'xà phòng khách sạn in logo',
+        'nước rửa chén 20 lít cho nhà hàng',
+        'hóa chất buồng phòng khách sạn',
+        'nhà cung cấp xà phòng khách sạn Ấn Độ',
+        'sản phẩm vệ sinh bếp nhà hàng giá sỉ',
+        'bột giặt cho giặt là khách sạn',
+        'đồ vệ sinh cho quán cà phê',
+      ],
     },
   },
 
@@ -161,6 +173,7 @@ const vi: UiPartial = {
       privateLabel: 'Nhãn riêng',
       exportProcess: 'Quy trình xuất khẩu',
       guides: 'Cẩm nang mua hàng',
+      horeca: 'Khách sạn & Nhà hàng',
       about: 'Giới thiệu',
       faq: 'Hỏi đáp',
     },
@@ -634,6 +647,157 @@ const vi: UiPartial = {
     ],
     quoteH: 'Bắt đầu gửi yêu cầu của Quý khách.',
     quoteText: 'Hãy nêu sản phẩm, quy cách đóng gói và thị trường Quý khách đang hướng đến trong một dòng. Chúng tôi sẽ phản hồi kèm các phương án, giá và thời gian giao hàng.',
+  },
+
+  horeca: {
+    title: 'Amenities khách sạn và hóa chất vệ sinh HoReCa từ Ấn Độ',
+    description: 'Xà phòng cho khách và chất tẩy rửa bếp, nhà vệ sinh, sàn và giặt là cho khách sạn, nhà hàng, quán cà phê, bao bì lớn. Nhãn riêng, container ghép, mẫu miễn phí.',
+    h1a: 'Mọi không gian trong khách sạn,',
+    h1b: 'một nhà cung cấp.',
+    lead: 'Đạt các thông số bạn mong đợi ở những thương hiệu hàng đầu, trong bao bì lớn, với chi phí mỗi lần dùng thấp hơn. Dành cho quản lý mua hàng, bếp trưởng và bộ phận buồng phòng của khách sạn, nhà hàng, quán cà phê và đơn vị suất ăn.',
+    ctaHero: 'Lập danh sách mẫu của tôi',
+    sampleLink: 'Cách nhận mẫu miễn phí',
+    stageTitle: 'Hình cắt của một khách sạn với sáu không gian: phòng khách, bếp, nhà vệ sinh, sảnh và sàn, khu giặt là và kho',
+    stageHint: 'Rê chuột hoặc chạm vào một không gian để xem không gian đó dùng gì.',
+    spacesNav: 'Các không gian trong khách sạn',
+    cardLink: 'Xem {n} sản phẩm',
+    spaces: {
+      rooms: {
+        name: 'Phòng khách & phòng tắm',
+        short: 'Phòng',
+        need: 'Những amenities khách để ý: xà phòng gói in tên khách sạn của bạn, sữa tắm và nước rửa tay dạng túi/can châm thêm, và xà phòng tắm.',
+      },
+      kitchen: {
+        name: 'Bếp',
+        short: 'Bếp',
+        need: 'Nước rửa chén đóng can và phuy cho bồn rửa bận rộn, xà phòng rửa chén dạng bánh cho nồi chảo, và chất tẩy dầu mỡ đậm đặc cho vết dầu nặng.',
+      },
+      washrooms: {
+        name: 'Nhà vệ sinh & khu công cộng',
+        short: 'Nhà vệ sinh',
+        need: 'Nước rửa tay cho bình châm thêm, chất tẩy bồn cầu và gạch men, nước lau kính cho gương, và xà phòng kháng khuẩn.',
+      },
+      floors: {
+        name: 'Sàn & buồng phòng',
+        short: 'Sảnh & sàn',
+        need: 'Nước lau sàn và phenol thảo mộc để lau sảnh và hành lang, cùng chất tẩy rửa đa năng và nước lau kính cho xe đẩy buồng phòng.',
+      },
+      laundry: {
+        name: 'Giặt là',
+        short: 'Giặt là',
+        need: 'Bột giặt và nước giặt cho máy giặt, nước xả vải cho khăn tắm và ga giường, và xà phòng bánh để chà cổ áo và vết bẩn.',
+      },
+      backOfHouse: {
+        name: 'Hàng số lượng lớn & kho',
+        short: 'Kho',
+        need: 'Sản phẩm đậm đặc cho kho trung tâm: nước lau sàn, chất tẩy dầu mỡ nhà bếp, nước rửa tay và nước giặt, mua bao bì lớn rồi chiết ra cho từng tầng.',
+      },
+    },
+    bulkNote: 'Bao bì lớn cho kho: can 5 L và 20 L, phuy 200 L.',
+    promiseH: 'Các thông số bạn mong đợi, chi phí mỗi lần dùng thấp hơn.',
+    promiseText: 'Năm điều mỗi đơn hàng HoReCa đều có.',
+    promises: [
+      {
+        title: 'Bao bì cho bếp và buồng phòng',
+        text: 'Can 5 L và 20 L, phuy 200 L và bao 25 kg cho bếp, khu giặt là và kho buồng phòng.',
+      },
+      {
+        title: 'Tên khách sạn của bạn trên amenities',
+        text: 'Nhãn riêng cho xà phòng khách, sữa tắm và nước rửa tay: logo của bạn trên giấy gói hoặc nhãn.',
+      },
+      {
+        title: 'Một container ghép',
+        text: 'Sản phẩm cho mọi bộ phận, từ phòng đến bếp và giặt là, trong một container 20 ft hoặc 40 ft.',
+      },
+      {
+        title: 'Không có đơn tối thiểu cố định',
+        text: 'Đơn dùng thử, lô lẻ và container ghép đều được báo giá; số lượng thỏa thuận theo từng đơn.',
+      },
+      {
+        title: 'Mẫu miễn phí để so sánh',
+        text: 'Dùng thử sản phẩm của chúng tôi so với thương hiệu bạn đang dùng trước khi đặt số lượng lớn.',
+      },
+    ],
+    listH: 'Đánh dấu những gì mỗi không gian dùng.',
+    listText: 'Thêm sản phẩm vào danh sách khi xem trang. Nút bấm gửi danh sách sang biểu mẫu yêu cầu của chúng tôi, sẵn sàng để xin mẫu và báo giá số lượng lớn.',
+    packsLabel: 'Bao bì HoReCa',
+    add: 'Thêm vào danh sách',
+    addAria: 'Thêm {name} vào danh sách HoReCa của tôi',
+    addNoJs: 'Xin mẫu',
+    viewProduct: 'Xem sản phẩm',
+    panel: {
+      title: 'Danh sách HoReCa của tôi',
+      count: 'trong danh sách',
+      empty: 'Chưa đánh dấu sản phẩm nào. Đánh dấu sản phẩm bạn dùng, chúng tôi gửi mẫu từng loại.',
+      noJs: 'Cho chúng tôi biết sản phẩm và loại hình cơ sở của bạn trong biểu mẫu yêu cầu.',
+      typeLabel: 'Loại hình cơ sở',
+      typeChoose: 'Chọn một',
+      types: { hotel: 'Khách sạn', restaurant: 'Nhà hàng', cafe: 'Quán cà phê', catering: 'Suất ăn', other: 'Khác' },
+      cta: 'Xin mẫu HoReCa và báo giá số lượng lớn',
+      clear: 'Xóa danh sách',
+      remove: 'Bỏ {name}',
+      open: 'Mở danh sách của tôi',
+      close: 'Đóng danh sách của tôi',
+    },
+    message: {
+      samples: 'Yêu cầu HoReCa: xin mẫu {products}.',
+      general: 'Yêu cầu HoReCa: chúng tôi muốn nhận mẫu và báo giá số lượng lớn.',
+      type: 'Loại hình cơ sở: {type}.',
+      separator: ', ',
+    },
+    samplesH: 'Mẫu miễn phí: cách thực hiện',
+    samplesText: 'Mẫu được xác nhận theo từng yêu cầu: chúng tôi trả lời những gì có thể gửi cho sản phẩm của bạn.',
+    samplesLead: 'Đơn số lượng lớn: {leadTime}.',
+    samplesSteps: [
+      {
+        name: 'Đánh dấu sản phẩm',
+        text: 'Chọn những gì phòng, bếp, nhà vệ sinh và khu giặt là của bạn dùng, và loại hình cơ sở.',
+      },
+      {
+        name: 'Chúng tôi gửi mẫu',
+        text: 'Chúng tôi xác nhận mẫu nào có thể gửi cho yêu cầu của bạn và sắp xếp cùng bạn.',
+      },
+      {
+        name: 'So sánh rồi đặt số lượng lớn',
+        text: 'Dùng thử so với thương hiệu hiện tại. Khi đã hài lòng, đặt hàng bao bì lớn, gộp trong một container.',
+      },
+    ],
+    faqH: 'HoReCa: câu hỏi của người mua',
+    faqs: [
+      {
+        q: 'Có thể in tên khách sạn của chúng tôi lên xà phòng khách không?',
+        a: 'Có. Xà phòng khách từ 10 g đến 40 g có thể gói giấy hoặc màng in logo khách sạn hay khu nghỉ dưỡng của bạn, với màu giấy gói và hương thơm bạn chọn. Giấy gói in có thể có mức tối thiểu riêng, được báo giá cùng đơn hàng.',
+      },
+      {
+        q: 'Quy cách bao bì nào phù hợp cho bếp và buồng phòng?',
+        a: 'Nước rửa chén có can 5 L, 20 L và phuy 200 L; nước lau sàn, nước rửa tay và chất tẩy rửa bề mặt có can 5 L và 20 L; bột giặt có bao 10 kg và 25 kg; hóa chất tẩy rửa số lượng lớn đến bồn IBC 1.000 L. Trang của từng sản phẩm liệt kê đầy đủ quy cách.',
+      },
+      {
+        q: 'Có thể gộp sản phẩm của nhiều bộ phận trong một lô hàng không?',
+        a: 'Có. Sản phẩm cho phòng, bếp, nhà vệ sinh, sàn và giặt là có thể đi chung một container 20 ft hoặc 40 ft. Cách ghép được xác nhận theo quy tắc đóng gói và tương thích khi báo giá.',
+      },
+      {
+        q: 'Có đơn hàng tối thiểu không?',
+        a: 'Không có mức tối thiểu cố định. Đơn dùng thử, lô lẻ và container ghép đều được báo giá, số lượng thỏa thuận theo từng đơn. Giấy gói in của xà phòng khách có thể có mức tối thiểu riêng.',
+      },
+      {
+        q: 'Mẫu thử hoạt động thế nào?',
+        a: 'Đánh dấu trên trang này những sản phẩm bạn dùng và gửi yêu cầu. Chúng tôi xác nhận mẫu có thể gửi và sắp xếp gửi đi, để bạn so sánh với thương hiệu hiện tại trước khi đặt số lượng lớn.',
+      },
+      {
+        q: 'Mỗi lô hàng kèm những chứng từ nào?',
+        a: 'Hóa đơn thương mại, phiếu đóng gói, giấy chứng nhận xuất xứ và vận đơn, cùng giấy chứng nhận phân tích (COA) và phiếu an toàn hóa chất (MSDS) khi sản phẩm cần. Bộ chứng từ cụ thể tùy quốc gia của bạn và được xác nhận theo từng đơn.',
+      },
+    ],
+    quoteH: 'Cung ứng cho một cơ sở?',
+    quoteText: 'Cho chúng tôi biết cơ sở của bạn và sản phẩm bạn dùng trong một dòng. Biểu mẫu yêu cầu sẽ mở với nội dung đã điền sẵn.',
+    homeLine: 'Mua cho khách sạn, nhà hàng hay quán cà phê?',
+    homeLink: 'Xem sản phẩm theo không gian',
+    productLink: 'Dành cho khách sạn & nhà hàng',
+    serviceName: 'Cung ứng HoReCa amenities và sản phẩm vệ sinh từ Ấn Độ',
+    serviceType: 'Cung ứng sỉ amenities và sản phẩm vệ sinh cho khách sạn, nhà hàng và quán cà phê',
+    audience: 'Khách sạn, nhà hàng, quán cà phê và đơn vị suất ăn',
+    llms: 'Amenities và sản phẩm vệ sinh cho khách sạn, nhà hàng, quán cà phê và đơn vị suất ăn, sắp xếp theo không gian (phòng khách, bếp, nhà vệ sinh, sàn, giặt là, kho), trong bao bì cho bếp và buồng phòng, có nhãn riêng cho amenities, container ghép, không có đơn tối thiểu cố định và mẫu miễn phí xác nhận theo từng yêu cầu.',
   },
 
   notFound: {

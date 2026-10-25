@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '9e5d353955e5';
+export const sourceHash = '99275ef123f5';
 
 const de: UiPartial = {
   meta: {
@@ -98,6 +98,18 @@ const de: UiPartial = {
         'aus Indien importieren',
         'Einkaufsratgeber',
       ],
+      horeca: [
+        'Hotelbedarf Reinigungsmittel Großhandel',
+        'Hotelkosmetik Lieferant',
+        'Gästeseife mit Hotel-Logo',
+        'Gastronomie Reinigungsmittel Großgebinde',
+        'Reinigungsmittel für Hotel-Housekeeping',
+        'HoReCa Reinigungsmittel Großhandel',
+        'Hotelseife Lieferant Indien',
+        'Spülmittel 20 Liter Gastronomie',
+        'Waschmittel Hotelwäscherei Großgebinde',
+        'Reinigungsmittel für Cafés',
+      ],
     },
   },
 
@@ -161,6 +173,7 @@ const de: UiPartial = {
       privateLabel: 'Handelsmarke',
       exportProcess: 'Exportablauf',
       guides: 'Einkaufsratgeber',
+      horeca: 'Hotel & Gastro',
       about: 'Über uns',
       faq: 'FAQ',
     },
@@ -634,6 +647,157 @@ const de: UiPartial = {
     ],
     quoteH: 'Anforderungen senden.',
     quoteText: 'Senden Sie uns Produkte, Packungen und Markt, die Ihnen vorschweben, in einer Zeile. Wir antworten mit Optionen, Preisen und Lieferzeiten.',
+  },
+
+  horeca: {
+    title: 'Hotelkosmetik & Gastro-Reinigungsmittel aus Indien',
+    description: 'Gästeseifen und Reiniger für Küche, Sanitär, Böden und Wäsche für Hotels, Restaurants und Cafés, in Großgebinden. Eigenmarke, Mischcontainer, Gratismuster.',
+    h1a: 'Jeder Bereich Ihres Hotels,',
+    h1b: 'ein Lieferant.',
+    lead: 'Nach den Spezifikationen, die Sie von führenden Marken erwarten, in Großgebinden und mit niedrigeren Kosten pro Anwendung. Für Einkauf, Küchenchefs und Hausdamen in Hotels, Restaurants, Cafés und Catering.',
+    ctaHero: 'Musterliste erstellen',
+    sampleLink: 'So funktioniert das Gratismuster',
+    stageTitle: 'Schnitt durch ein Hotel mit sechs Bereichen: Gästezimmer, Küche, Sanitärräume, Lobby und Böden, Wäscherei und Lager',
+    stageHint: 'Zeigen Sie auf einen Bereich oder tippen Sie ihn an, um zu sehen, was er braucht.',
+    spacesNav: 'Bereiche im Hotel',
+    cardLink: 'Die {n} Produkte ansehen',
+    spaces: {
+      rooms: {
+        name: 'Gästezimmer & Bäder',
+        short: 'Zimmer',
+        need: 'Amenities, die Gäste bemerken: verpackte Gästeseifen mit dem Namen Ihres Hotels, Duschgel und Flüssigseife in Nachfüllgebinden sowie Badeseife.',
+      },
+      kitchen: {
+        name: 'Küche',
+        short: 'Küche',
+        need: 'Spülmittel in Kanistern und Fässern für die Spülküche, Spülseife für Töpfe und Pfannen und konzentrierter Fettlöser für hartnäckiges Fett.',
+      },
+      washrooms: {
+        name: 'Sanitär & öffentliche Bereiche',
+        short: 'Sanitär',
+        need: 'Flüssigseife für nachfüllbare Spender, WC- und Fliesenreiniger, Glasreiniger für Spiegel und antibakterielle Seife.',
+      },
+      floors: {
+        name: 'Böden & Housekeeping',
+        short: 'Lobby & Böden',
+        need: 'Bodenreiniger und Kräuter-Phenol für Lobby und Flure, dazu Allzweck- und Glasreiniger für den Housekeeping-Wagen.',
+      },
+      laundry: {
+        name: 'Wäscherei',
+        short: 'Wäscherei',
+        need: 'Waschpulver und Flüssigwaschmittel für die Maschinen, Weichspüler für Handtücher und Bettwäsche und Kernseife für Kragen und Flecken.',
+      },
+      backOfHouse: {
+        name: 'Großgebinde & Lager',
+        short: 'Lager',
+        need: 'Konzentrate für das Zentrallager: Bodenreiniger, Küchenfettlöser, Flüssigseife und Flüssigwaschmittel, in Großgebinden gekauft und auf jeder Etage abgefüllt.',
+      },
+    },
+    bulkNote: 'Großgebinde für das Lager: Kanister mit 5 L und 20 L und Fässer mit 200 L.',
+    promiseH: 'Die Spezifikationen, die Sie erwarten, zu niedrigeren Kosten pro Anwendung.',
+    promiseText: 'Fünf Zusagen für jede HoReCa-Bestellung.',
+    promises: [
+      {
+        title: 'Gebinde für Küche und Housekeeping',
+        text: 'Kanister mit 5 L und 20 L, Fässer mit 200 L und Säcke mit 25 kg für Küchen, Wäschereien und Housekeeping-Lager.',
+      },
+      {
+        title: 'Ihr Hotelname auf den Amenities',
+        text: 'Eigenmarke auf Gästeseifen, Duschgel und Flüssigseife: Ihr Logo auf Verpackung oder Etikett.',
+      },
+      {
+        title: 'Ein Mischcontainer',
+        text: 'Produkte für jede Abteilung, vom Zimmer bis zu Küche und Wäscherei, in einem 20-ft- oder 40-ft-Container.',
+      },
+      {
+        title: 'Keine feste Mindestmenge',
+        text: 'Probeaufträge, Teilladungen und Mischcontainer werden angeboten; die Mengen vereinbaren wir je Auftrag.',
+      },
+      {
+        title: 'Ein Gratismuster zum Vergleich',
+        text: 'Testen Sie unsere Produkte gegen Ihre jetzige Marke, bevor Sie in großen Mengen bestellen.',
+      },
+    ],
+    listH: 'Haken Sie ab, was jeder Bereich braucht.',
+    listText: 'Legen Sie Produkte beim Durchsehen auf Ihre Liste. Der Button überträgt die Liste in unser Anfrageformular, bereit für Muster und ein Mengenangebot.',
+    packsLabel: 'HoReCa-Gebinde',
+    add: 'Auf meine Liste',
+    addAria: '{name} auf meine HoReCa-Liste setzen',
+    addNoJs: 'Muster anfragen',
+    viewProduct: 'Produkt ansehen',
+    panel: {
+      title: 'Meine HoReCa-Liste',
+      count: 'auf Ihrer Liste',
+      empty: 'Noch nichts ausgewählt. Haken Sie die Produkte ab, die Sie verwenden, und wir schicken Ihnen von jedem ein Muster.',
+      noJs: 'Nennen Sie uns Ihre Produkte und Ihren Betriebstyp im Anfrageformular.',
+      typeLabel: 'Betriebstyp',
+      typeChoose: 'Bitte wählen',
+      types: { hotel: 'Hotel', restaurant: 'Restaurant', cafe: 'Café', catering: 'Catering', other: 'Sonstiges' },
+      cta: 'HoReCa-Muster & Mengenangebot anfragen',
+      clear: 'Liste leeren',
+      remove: '{name} entfernen',
+      open: 'Meine Liste öffnen',
+      close: 'Meine Liste schließen',
+    },
+    message: {
+      samples: 'HoReCa-Anfrage: Wir bitten um Muster von {products}.',
+      general: 'HoReCa-Anfrage: Wir hätten gern Muster und ein Mengenangebot.',
+      type: 'Betriebstyp: {type}.',
+      separator: ', ',
+    },
+    samplesH: 'Gratismuster: so funktioniert’s',
+    samplesText: 'Muster werden je Anfrage bestätigt: Wir antworten, was für Ihre Produkte verschickt werden kann.',
+    samplesLead: 'Großbestellungen: {leadTime}.',
+    samplesSteps: [
+      {
+        name: 'Produkte abhaken',
+        text: 'Wählen Sie, was Zimmer, Küche, Sanitär und Wäscherei verwenden, und Ihren Betriebstyp.',
+      },
+      {
+        name: 'Wir schicken Muster',
+        text: 'Wir bestätigen, welche Muster für Ihre Anfrage verschickt werden können, und stimmen den Versand mit Ihnen ab.',
+      },
+      {
+        name: 'Vergleichen, dann groß bestellen',
+        text: 'Testen Sie sie gegen Ihre jetzige Marke. Wenn alles passt, bestellen Sie in Großgebinden, gemeinsam in einem Container.',
+      },
+    ],
+    faqH: 'HoReCa: Fragen von Einkäufern',
+    faqs: [
+      {
+        q: 'Können Sie unseren Hotelnamen auf die Gästeseifen drucken?',
+        a: 'Ja. Gästeseifen von 10 g bis 40 g lassen sich in Papier- oder Folienverpackung mit dem Logo Ihres Hotels oder Resorts verpacken, in Verpackungsfarben und Duft Ihrer Wahl. Für bedruckte Verpackungen kann eine eigene Mindestmenge gelten; wir bieten sie mit Ihrer Bestellung an.',
+      },
+      {
+        q: 'Welche Gebinde passen für Küche und Housekeeping?',
+        a: 'Spülmittel gibt es in Kanistern mit 5 L und 20 L und Fässern mit 200 L; Bodenreiniger, Flüssigseife und Oberflächenreiniger in Kanistern mit 5 L und 20 L; Waschpulver in Säcken mit 10 kg und 25 kg; Reinigungschemikalien in Großgebinden bis zum IBC mit 1.000 L. Jede Produktseite nennt alle Gebinde.',
+      },
+      {
+        q: 'Können wir Produkte verschiedener Abteilungen in einer Sendung bündeln?',
+        a: 'Ja. Produkte für Zimmer, Küche, Sanitär, Böden und Wäscherei können zusammen in einem 20-ft- oder 40-ft-Container reisen. Die Zusammenstellung wird beim Angebot nach Verpackungs- und Verträglichkeitsregeln bestätigt.',
+      },
+      {
+        q: 'Gibt es eine Mindestbestellmenge?',
+        a: 'Eine feste Mindestmenge gibt es nicht. Probeaufträge, Teilladungen und Mischcontainer werden angeboten, und die Mengen vereinbaren wir je Auftrag. Für bedruckte Gästeseifen-Verpackungen kann eine eigene Mindestmenge gelten.',
+      },
+      {
+        q: 'Wie funktionieren die Muster?',
+        a: 'Haken Sie auf dieser Seite die Produkte ab, die Sie verwenden, und senden Sie die Anfrage. Wir bestätigen, welche Muster verschickt werden können, und organisieren den Versand, damit Sie vor der Großbestellung mit Ihrer jetzigen Marke vergleichen können.',
+      },
+      {
+        q: 'Welche Dokumente begleiten jede Sendung?',
+        a: 'Handelsrechnung, Packliste, Ursprungszeugnis und Konnossement, dazu ein Analysenzertifikat (COA) und ein Sicherheitsdatenblatt (MSDS), wenn das Produkt sie erfordert. Der genaue Umfang hängt von Ihrem Land ab und wird je Auftrag bestätigt.',
+      },
+    ],
+    quoteH: 'Sie beliefern einen Betrieb?',
+    quoteText: 'Beschreiben Sie Ihren Betrieb und die verwendeten Produkte in einer Zeile. Das Anfrageformular öffnet sich mit Ihrem Text.',
+    homeLine: 'Sie kaufen für Hotel, Restaurant oder Café?',
+    homeLink: 'Produkte nach Bereich ansehen',
+    productLink: 'Für Hotels & Restaurants',
+    serviceName: 'HoReCa-Belieferung mit Hotelkosmetik und Reinigungsmitteln aus Indien',
+    serviceType: 'Großhandelsbelieferung von Hotelkosmetik und Reinigungsmitteln für Hotels, Restaurants und Cafés',
+    audience: 'Hotels, Restaurants, Cafés und Caterer',
+    llms: 'Hotelkosmetik und Reinigungsmittel für Hotels, Restaurants, Cafés und Caterer, nach Bereich geordnet (Gästezimmer, Küche, Sanitär, Böden, Wäscherei, Lager), in Gebinden für Küche und Housekeeping, mit Eigenmarke auf Gästeartikeln, Mischcontainern, ohne feste Mindestmenge und mit Gratismustern, die je Anfrage bestätigt werden.',
   },
 
   notFound: {

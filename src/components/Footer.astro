@@ -8,6 +8,7 @@ const { lang, ui, lp, fmt } = useI18n(Astro.url);
 const categories = (await getProductsByCategory(lang)).map((g) => g.category);
 const n = ui.header.nav;
 const company = [
+  { label: n.horeca, href: '/horeca/' },
   { label: n.privateLabel, href: '/private-label/' },
   { label: n.exportProcess, href: '/export-process/' },
   { label: n.about, href: '/about/' },

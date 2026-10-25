@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '9e5d353955e5';
+export const sourceHash = '99275ef123f5';
 
 const sw: UiPartial = {
   meta: {
@@ -97,6 +97,18 @@ const sw: UiPartial = {
         'kuagiza kutoka India',
         'mwongozo wa mnunuzi',
       ],
+      horeca: [
+        'msambazaji wa vifaa vya hoteli',
+        'bidhaa za usafi za hoteli kwa jumla',
+        'sabuni ya wageni wa hoteli',
+        'sabuni ya hoteli yenye nembo',
+        'bidhaa za usafi za jikoni za mgahawa',
+        'kemikali za usafi wa hoteli',
+        'msambazaji wa sabuni za hoteli India',
+        'sabuni ya vyombo lita 20 kwa mgahawa',
+        'sabuni ya kufulia ya hoteli kwa jumla',
+        'vifaa vya usafi vya mikahawa',
+      ],
     },
   },
 
@@ -160,6 +172,7 @@ const sw: UiPartial = {
       privateLabel: 'Chapa ya Mnunuzi',
       exportProcess: 'Mchakato wa Usafirishaji',
       guides: 'Miongozo ya Wanunuzi',
+      horeca: 'Hoteli na Migahawa',
       about: 'Kuhusu Sisi',
       faq: 'Maswali',
     },
@@ -633,6 +646,163 @@ const sw: UiPartial = {
     ],
     quoteH: 'Anza maelezo yako.',
     quoteText: 'Tuma bidhaa, vifungashio na soko unalolenga kwa sentensi moja. Tunajibu kwa chaguo, bei na muda wa maandalizi.',
+  },
+
+  horeca: {
+    title: 'Vifaa vya Wageni na Bidhaa za Usafi za Hoteli kutoka India',
+    description: 'Sabuni za wageni na visafishaji vya jikoni, vyoo, sakafu na ufuaji kwa hoteli, migahawa na mikahawa, kwa vifungashio vikubwa. Chapa ya mnunuzi, sampuli bure.',
+    h1a: 'Kila sehemu ya hoteli yako,',
+    h1b: 'msambazaji mmoja.',
+    lead: 'Zimetengenezwa kwa vipimo unavyotarajia kutoka kwa chapa zinazoongoza, kwa vifungashio vikubwa, kwa gharama ndogo zaidi kwa kila matumizi. Kwa mameneja wa ununuzi, wapishi wakuu na timu za usafi wa hoteli, migahawa, mikahawa na watoa huduma za chakula.',
+    ctaHero: 'Tengeneza orodha yangu ya sampuli',
+    sampleLink: 'Jinsi sampuli ya bure inavyofanya kazi',
+    stageTitle: 'Mchoro wa sehemu ya ndani ya hoteli yenye maeneo sita: vyumba, jikoni, vyoo, ukumbi na sakafu, sehemu ya kufulia na stoo',
+    stageHint: 'Elekeza kipanya au gusa eneo kuona linachotumia.',
+    spacesNav: 'Maeneo ya hoteli',
+    cardLink: 'Tazama bidhaa {n}',
+    spaces: {
+      rooms: {
+        name: 'Vyumba vya wageni na bafu',
+        short: 'Vyumba',
+        need: 'Vifaa wanavyoviona wageni: sabuni za wageni zilizofungwa zenye jina la hoteli yako, jeli ya kuogea na sabuni ya mikono kwa vifungashio vya kujaza tena, na sabuni za kuogea.',
+      },
+      kitchen: {
+        name: 'Jikoni',
+        short: 'Jikoni',
+        need: 'Sabuni ya maji ya vyombo kwenye madumu na mapipa kwa sinki yenye shughuli nyingi, sabuni ya mche ya vyombo kwa sufuria, na kiondoa mafuta kilichokolea kwa mafuta mazito.',
+      },
+      washrooms: {
+        name: 'Vyoo na maeneo ya umma',
+        short: 'Vyoo',
+        need: 'Sabuni ya mikono kwa vitoa-sabuni vya kujaza tena, visafishaji vya choo na vigae, kisafishaji cha vioo kwa vioo vya kujitazama, na sabuni ya kuua bakteria.',
+      },
+      floors: {
+        name: 'Sakafu na usafi wa vyumba',
+        short: 'Ukumbi na sakafu',
+        need: 'Kisafishaji cha sakafu na fenoli ya mitishamba kwa kupiga deki ukumbi na korido, pamoja na kisafishaji cha nyuso zote na cha vioo kwa toroli ya usafi.',
+      },
+      laundry: {
+        name: 'Sehemu ya kufulia',
+        short: 'Kufulia',
+        need: 'Sabuni ya unga na ya maji kwa mashine za kufulia, laini ya nguo kwa taulo na shuka, na sabuni ya mche ya kusugua kola na madoa.',
+      },
+      backOfHouse: {
+        name: 'Jumla na stoo',
+        short: 'Stoo',
+        need: 'Bidhaa zilizokolea kwa stoo kuu: kisafishaji cha sakafu, kiondoa mafuta cha jikoni, sabuni ya mikono na sabuni ya maji ya kufulia, hununuliwa kwa vifungashio vikubwa na kugawanywa kila ghorofa.',
+      },
+    },
+    bulkNote: 'Vifungashio vikubwa kwa stoo: madumu ya 5 L na 20 L na mapipa ya 200 L.',
+    promiseH: 'Vipimo unavyotarajia, kwa gharama ndogo zaidi kwa kila matumizi.',
+    promiseText: 'Mambo matano kwa kila oda ya HoReCa.',
+    promises: [
+      {
+        title: 'Vifungashio vya jikoni na usafi',
+        text: 'Madumu ya 5 L na 20 L, mapipa ya 200 L na magunia ya 25 kg kwa jikoni, sehemu za kufulia na stoo za usafi.',
+      },
+      {
+        title: 'Jina la hoteli yako kwenye vifaa vya wageni',
+        text: 'Chapa ya mnunuzi kwenye sabuni za wageni, jeli ya kuogea na sabuni ya mikono: nembo yako kwenye karatasi ya kufunga au lebo.',
+      },
+      {
+        title: 'Kontena moja mchanganyiko',
+        text: 'Bidhaa za kila idara, kuanzia vyumba hadi jikoni na kufulia, katika kontena moja la futi 20 au 40.',
+      },
+      {
+        title: 'Hakuna kiwango cha chini maalum',
+        text: 'Oda za majaribio, mizigo ya sehemu na kontena mchanganyiko zote hupewa bei, na kiasi hukubaliwa kwa kila oda.',
+      },
+      {
+        title: 'Sampuli ya bure ya kulinganisha',
+        text: 'Jaribu bidhaa zetu dhidi ya chapa unayotumia sasa kabla ya kuagiza kwa wingi.',
+      },
+    ],
+    listH: 'Weka alama kwa kila eneo linachotumia.',
+    listText: 'Ongeza bidhaa kwenye orodha yako unapopitia ukurasa. Kitufe hutuma orodha kwenye fomu yetu ya maulizo, tayari kwa sampuli na nukuu ya bei ya jumla.',
+    packsLabel: 'Vifungashio vya HoReCa',
+    add: 'Ongeza kwenye orodha yangu',
+    addAria: 'Ongeza {name} kwenye orodha yangu ya HoReCa',
+    addNoJs: 'Omba sampuli',
+    viewProduct: 'Tazama bidhaa',
+    panel: {
+      title: 'Orodha yangu ya HoReCa',
+      count: 'kwenye orodha yako',
+      empty: 'Bado hujaweka alama. Weka alama kwa bidhaa unazotumia, tutakutumia sampuli ya kila moja.',
+      noJs: 'Tuambie bidhaa zako na aina ya biashara yako kwenye fomu ya maulizo.',
+      typeLabel: 'Aina ya biashara',
+      typeChoose: 'Chagua moja',
+      types: {
+        hotel: 'Hoteli',
+        restaurant: 'Mgahawa',
+        cafe: 'Mkahawa',
+        catering: 'Huduma za chakula',
+        other: 'Nyingine',
+      },
+      cta: 'Omba sampuli za HoReCa na nukuu ya jumla',
+      clear: 'Futa orodha',
+      remove: 'Ondoa {name}',
+      open: 'Fungua orodha yangu',
+      close: 'Funga orodha yangu',
+    },
+    message: {
+      samples: 'Ulizo la HoReCa: tunaomba sampuli za {products}.',
+      general: 'Ulizo la HoReCa: tungependa sampuli na nukuu ya bei ya jumla.',
+      type: 'Aina ya biashara: {type}.',
+      separator: ', ',
+    },
+    samplesH: 'Sampuli za bure: jinsi zinavyofanya kazi',
+    samplesText: 'Sampuli huthibitishwa kwa kila ulizo: tunajibu kwa kile kinachoweza kutumwa kwa bidhaa zako.',
+    samplesLead: 'Oda za jumla: {leadTime}.',
+    samplesSteps: [
+      {
+        name: 'Weka alama kwa bidhaa zako',
+        text: 'Chagua vinavyotumiwa na vyumba, jikoni, vyoo na sehemu ya kufulia, na aina ya biashara yako.',
+      },
+      {
+        name: 'Tunatuma sampuli',
+        text: 'Tunathibitisha sampuli zinazoweza kutumwa kwa ulizo lako na kupanga utumaji pamoja nawe.',
+      },
+      {
+        name: 'Linganisha, kisha agiza kwa wingi',
+        text: 'Zijaribu dhidi ya chapa yako ya sasa. Ukiridhika, agiza kwa vifungashio vikubwa, pamoja katika kontena moja.',
+      },
+    ],
+    faqH: 'HoReCa: maswali ya wanunuzi',
+    faqs: [
+      {
+        q: 'Mnaweza kuchapisha jina la hoteli yetu kwenye sabuni za wageni?',
+        a: 'Ndiyo. Sabuni za wageni za 10 g hadi 40 g zinaweza kufungwa kwa karatasi au plastiki iliyochapishwa nembo ya hoteli au hoteli ya mapumziko yako, kwa rangi za kifungashio na harufu utakayochagua. Vifungashio vilivyochapishwa vinaweza kuwa na kiwango chake cha chini, tunachokipa bei pamoja na oda yako.',
+      },
+      {
+        q: 'Vifungashio gani vinafaa jikoni na usafi wa vyumba?',
+        a: 'Sabuni ya maji ya vyombo huja kwenye madumu ya 5 L na 20 L na mapipa ya 200 L; kisafishaji cha sakafu, sabuni ya mikono na visafishaji vya nyuso kwenye madumu ya 5 L na 20 L; sabuni ya unga kwenye magunia ya 10 kg na 25 kg; na kemikali za usafi za jumla hadi IBC ya 1,000 L. Ukurasa wa kila bidhaa unaonyesha vifungashio vyake vyote.',
+      },
+      {
+        q: 'Tunaweza kuchanganya bidhaa za idara tofauti kwenye usafirishaji mmoja?',
+        a: 'Ndiyo. Bidhaa za vyumba, jikoni, vyoo, sakafu na kufulia zinaweza kusafiri pamoja katika kontena moja la futi 20 au 40. Mchanganyiko huthibitishwa kwa kanuni za ufungaji na uoanifu wakati wa kutoa bei.',
+      },
+      {
+        q: 'Je, kuna kiwango cha chini cha oda?',
+        a: 'Hakuna kiwango cha chini maalum. Oda za majaribio, mizigo ya sehemu na kontena mchanganyiko zote hupewa bei, na kiasi hukubaliwa kwa kila oda. Vifungashio vilivyochapishwa vya sabuni za wageni vinaweza kuwa na kiwango chake cha chini.',
+      },
+      {
+        q: 'Sampuli zinafanyaje kazi?',
+        a: 'Weka alama kwa bidhaa unazotumia kwenye ukurasa huu kisha tuma ulizo. Tunathibitisha sampuli zinazoweza kutumwa na kuzipanga, ili uzilinganishe na chapa yako ya sasa kabla ya kuagiza kwa wingi.',
+      },
+      {
+        q: 'Ni nyaraka gani huambatana na kila usafirishaji?',
+        a: 'Ankara ya biashara, orodha ya ufungaji, cheti cha asili na hati ya usafirishaji (bill of lading), pamoja na cheti cha uchambuzi (COA) na karatasi ya data ya usalama (MSDS) bidhaa inapovihitaji. Seti kamili hutegemea nchi yako na huthibitishwa kwa kila oda.',
+      },
+    ],
+    quoteH: 'Unasambaza kwa biashara ya ukarimu?',
+    quoteText: 'Tueleze biashara yako na bidhaa unazotumia kwa mstari mmoja. Fomu ya maulizo itafunguka ikiwa imeandikwa.',
+    homeLine: 'Unanunua kwa hoteli, mgahawa au mkahawa?',
+    homeLink: 'Tazama bidhaa kwa eneo',
+    productLink: 'Kwa hoteli na migahawa',
+    serviceName: 'Usambazaji wa HoReCa wa vifaa vya wageni na bidhaa za usafi kutoka India',
+    serviceType: 'Usambazaji wa jumla wa vifaa vya wageni na bidhaa za usafi kwa hoteli, migahawa na mikahawa',
+    audience: 'Hoteli, migahawa, mikahawa na watoa huduma za chakula',
+    llms: 'Vifaa vya wageni na bidhaa za usafi kwa hoteli, migahawa, mikahawa na watoa huduma za chakula, vilivyopangwa kwa eneo (vyumba vya wageni, jikoni, vyoo, sakafu, kufulia, stoo), kwa vifungashio vya jikoni na usafi, pamoja na chapa ya mnunuzi kwenye vifaa vya wageni, kontena mchanganyiko, bila kiwango cha chini maalum, na sampuli za bure zinazothibitishwa kwa kila ulizo.',
   },
 
   notFound: {

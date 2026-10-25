@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '9e5d353955e5';
+export const sourceHash = '99275ef123f5';
 
 const pt: UiPartial = {
   meta: {
@@ -98,6 +98,18 @@ const pt: UiPartial = {
         'importar da Índia',
         'guia do comprador',
       ],
+      horeca: [
+        'fornecedor de amenities para hotéis',
+        'produtos de limpeza para hotelaria atacado',
+        'fornecedor de produtos de limpeza para hotéis',
+        'sabonete para hotel personalizado',
+        'produtos de limpeza para cozinha de restaurante',
+        'produtos de governança hoteleira',
+        'fornecedor HoReCa produtos de limpeza',
+        'detergente lava-louças 20 L para restaurante',
+        'sabão para lavanderia hoteleira atacado',
+        'produtos de limpeza para cafeterias',
+      ],
     },
   },
 
@@ -161,6 +173,7 @@ const pt: UiPartial = {
       privateLabel: 'Marca própria',
       exportProcess: 'Processo de exportação',
       guides: 'Guias do comprador',
+      horeca: 'Hotelaria',
       about: 'Sobre',
       faq: 'Perguntas frequentes',
     },
@@ -634,6 +647,157 @@ const pt: UiPartial = {
     ],
     quoteH: 'Inicie a sua solicitação.',
     quoteText: 'Envie em uma linha os produtos, as embalagens e o mercado que você tem em mente. Respondemos com opções, preços e prazos.',
+  },
+
+  horeca: {
+    title: 'Amenities e produtos de limpeza para hotelaria da Índia',
+    description: 'Sabonetes de hóspede e limpadores de cozinha, banheiro, piso e lavanderia para hotéis, restaurantes e cafés, em embalagem grande. Marca própria, amostra grátis.',
+    h1a: 'Cada espaço do seu hotel,',
+    h1b: 'um só fornecedor.',
+    lead: 'Feitos com as especificações que você espera das marcas líderes, em embalagens grandes, com custo por uso mais baixo. Para compradores, chefs e equipes de governança de hotéis, restaurantes, cafés e empresas de catering.',
+    ctaHero: 'Montar minha lista de amostras',
+    sampleLink: 'Como funciona a amostra grátis',
+    stageTitle: 'Desenho em corte de um hotel com seis espaços: quartos, cozinha, banheiros, recepção e pisos, lavanderia e almoxarifado',
+    stageHint: 'Passe o cursor ou toque em um espaço para ver o que ele usa.',
+    spacesNav: 'Espaços de um hotel',
+    cardLink: 'Ver os {n} produtos',
+    spaces: {
+      rooms: {
+        name: 'Quartos e banheiros',
+        short: 'Quartos',
+        need: 'Amenities que o hóspede nota: sabonetes embalados com o nome do seu hotel, gel de banho e sabonete líquido em refil, e sabonetes em barra.',
+      },
+      kitchen: {
+        name: 'Cozinha',
+        short: 'Cozinha',
+        need: 'Lava-louças líquido em galões e tambores para a pia movimentada, barras lava-louças para panelas e desengordurante concentrado para gordura pesada.',
+      },
+      washrooms: {
+        name: 'Banheiros e áreas comuns',
+        short: 'Banheiros',
+        need: 'Sabonete líquido para dispensers com refil, limpadores de vaso sanitário e azulejos, limpa-vidros para espelhos e sabonete antibacteriano.',
+      },
+      floors: {
+        name: 'Pisos e governança',
+        short: 'Recepção e pisos',
+        need: 'Limpador de pisos e fenol herbal para limpar recepções e corredores, com limpador multiuso e limpa-vidros para o carrinho da governança.',
+      },
+      laundry: {
+        name: 'Lavanderia',
+        short: 'Lavanderia',
+        need: 'Sabão em pó e líquido para as máquinas, amaciante para toalhas e roupa de cama, e uma barra para esfregar golas e manchas.',
+      },
+      backOfHouse: {
+        name: 'Granel e almoxarifado',
+        short: 'Almoxarifado',
+        need: 'Concentrados para o almoxarifado central: limpador de pisos, desengordurante de cozinha, sabonete líquido e sabão líquido, comprados em embalagens grandes e fracionados em cada andar.',
+      },
+    },
+    bulkNote: 'Embalagens grandes para o almoxarifado: galões de 5 L e 20 L e tambores de 200 L.',
+    promiseH: 'As especificações que você espera, com custo por uso mais baixo.',
+    promiseText: 'Cinco coisas que todo pedido HoReCa recebe.',
+    promises: [
+      {
+        title: 'Embalagens para cozinha e governança',
+        text: 'Galões de 5 L e 20 L, tambores de 200 L e sacos de 25 kg para cozinhas, lavanderias e almoxarifados da governança.',
+      },
+      {
+        title: 'O nome do seu hotel nos amenities',
+        text: 'Marca própria em sabonetes de hóspede, gel de banho e sabonete líquido: seu logotipo na embalagem ou no rótulo.',
+      },
+      {
+        title: 'Um só contêiner misto',
+        text: 'Produtos para cada departamento, dos quartos à cozinha e à lavanderia, em um contêiner de 20 ou 40 pés.',
+      },
+      {
+        title: 'Sem pedido mínimo fixo',
+        text: 'Pedidos de teste, cargas parciais e contêineres mistos são todos cotados, e as quantidades são acordadas a cada pedido.',
+      },
+      {
+        title: 'Uma amostra grátis para comparar',
+        text: 'Teste nossos produtos com a sua marca atual antes de comprar em grande volume.',
+      },
+    ],
+    listH: 'Marque o que cada espaço usa.',
+    listText: 'Adicione produtos à sua lista enquanto navega. O botão envia a lista para o nosso formulário, pronta para amostras e uma cotação em volume.',
+    packsLabel: 'Embalagens HoReCa',
+    add: 'Adicionar à minha lista',
+    addAria: 'Adicionar {name} à minha lista HoReCa',
+    addNoJs: 'Pedir uma amostra',
+    viewProduct: 'Ver produto',
+    panel: {
+      title: 'Minha lista HoReCa',
+      count: 'na sua lista',
+      empty: 'Nada marcado ainda. Marque os produtos que você usa e enviamos uma amostra de cada um.',
+      noJs: 'Informe seus produtos e o tipo de estabelecimento no formulário.',
+      typeLabel: 'Tipo de estabelecimento',
+      typeChoose: 'Escolha um',
+      types: { hotel: 'Hotel', restaurant: 'Restaurante', cafe: 'Café', catering: 'Catering', other: 'Outro' },
+      cta: 'Pedir amostras HoReCa e cotação em volume',
+      clear: 'Limpar a lista',
+      remove: 'Remover {name}',
+      open: 'Abrir minha lista',
+      close: 'Fechar minha lista',
+    },
+    message: {
+      samples: 'Consulta HoReCa: solicitamos amostras de {products}.',
+      general: 'Consulta HoReCa: queremos amostras e uma cotação em volume.',
+      type: 'Tipo de estabelecimento: {type}.',
+      separator: ', ',
+    },
+    samplesH: 'Amostras grátis: como funciona',
+    samplesText: 'As amostras são confirmadas a cada consulta: respondemos com o que pode ser enviado para os seus produtos.',
+    samplesLead: 'Pedidos em volume: {leadTime}.',
+    samplesSteps: [
+      {
+        name: 'Marque seus produtos',
+        text: 'Escolha o que seus quartos, cozinha, banheiros e lavanderia usam, e o tipo de estabelecimento.',
+      },
+      {
+        name: 'Enviamos as amostras',
+        text: 'Confirmamos quais amostras podem ser enviadas para a sua consulta e combinamos o envio com você.',
+      },
+      {
+        name: 'Compare e compre em volume',
+        text: 'Teste-as com a sua marca atual. Quando estiver satisfeito, compre em embalagens grandes, juntas em um só contêiner.',
+      },
+    ],
+    faqH: 'HoReCa: perguntas dos compradores',
+    faqs: [
+      {
+        q: 'Vocês podem imprimir o nome do nosso hotel nos sabonetes de hóspede?',
+        a: 'Sim. Sabonetes de hóspede de 10 g a 40 g podem ser embalados em papel ou filme impresso com o logotipo do seu hotel ou resort, com as cores de embalagem e a fragrância que você escolher. Embalagens impressas podem ter mínimo próprio, cotado junto com o seu pedido.',
+      },
+      {
+        q: 'Quais embalagens servem para cozinhas e governança?',
+        a: 'O lava-louças líquido vem em galões de 5 L e 20 L e tambores de 200 L; o limpador de pisos, o sabonete líquido e os limpadores de superfícies em galões de 5 L e 20 L; o sabão em pó em sacos de 10 kg e 25 kg; e os químicos de limpeza a granel até IBCs de 1.000 L. A página de cada produto lista todas as embalagens.',
+      },
+      {
+        q: 'Podemos juntar produtos de departamentos diferentes em um só embarque?',
+        a: 'Sim. Produtos de quartos, cozinha, banheiros, pisos e lavanderia podem viajar juntos em um contêiner de 20 ou 40 pés. A combinação é confirmada pelas regras de embalagem e compatibilidade na cotação.',
+      },
+      {
+        q: 'Existe pedido mínimo?',
+        a: 'Não há mínimo fixo. Pedidos de teste, cargas parciais e contêineres mistos são todos cotados, e as quantidades são acordadas a cada pedido. Embalagens impressas de sabonetes de hóspede podem ter mínimo próprio.',
+      },
+      {
+        q: 'Como funcionam as amostras?',
+        a: 'Marque nesta página os produtos que você usa e envie a consulta. Confirmamos quais amostras podem ser enviadas e organizamos o envio, para você compará-las com a sua marca atual antes de comprar em volume.',
+      },
+      {
+        q: 'Quais documentos acompanham cada embarque?',
+        a: 'Fatura comercial, romaneio, certificado de origem e conhecimento de embarque, além de certificado de análise (COA) e ficha de dados de segurança (MSDS) quando o produto exige. O conjunto exato depende do seu país e é confirmado a cada pedido.',
+      },
+    ],
+    quoteH: 'Abastece um estabelecimento?',
+    quoteText: 'Conte em uma linha o seu estabelecimento e os produtos que usa. O formulário abre com o texto já escrito.',
+    homeLine: 'Compra para hotel, restaurante ou café?',
+    homeLink: 'Ver produtos por espaço',
+    productLink: 'Para hotéis e restaurantes',
+    serviceName: 'Fornecimento HoReCa de amenities e produtos de limpeza da Índia',
+    serviceType: 'Fornecimento em atacado de amenities e produtos de limpeza para hotéis, restaurantes e cafés',
+    audience: 'Hotéis, restaurantes, cafés e empresas de catering',
+    llms: 'Amenities e produtos de limpeza para hotéis, restaurantes, cafés e catering, organizados por espaço (quartos, cozinha, banheiros, pisos, lavanderia, almoxarifado), em embalagens para cozinha e governança, com marca própria nos amenities, contêineres mistos, sem mínimo fixo e amostras grátis confirmadas a cada consulta.',
   },
 
   notFound: {

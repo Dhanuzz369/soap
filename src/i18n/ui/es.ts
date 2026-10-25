@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '9e5d353955e5';
+export const sourceHash = '99275ef123f5';
 
 const es: UiPartial = {
   meta: {
@@ -98,6 +98,18 @@ const es: UiPartial = {
         'importar de India',
         'guía para compradores',
       ],
+      horeca: [
+        'proveedor de amenities para hoteles',
+        'productos de limpieza para hostelería al por mayor',
+        'proveedor de productos de limpieza para hoteles',
+        'jabón para hoteles personalizado',
+        'productos de limpieza para cocinas de restaurantes',
+        'químicos de limpieza para housekeeping',
+        'proveedor HORECA productos de limpieza',
+        'lavavajillas 20 L para restaurantes',
+        'detergente para lavandería de hotel al por mayor',
+        'productos de limpieza para cafeterías',
+      ],
     },
   },
 
@@ -161,6 +173,7 @@ const es: UiPartial = {
       privateLabel: 'Marca propia',
       exportProcess: 'Proceso de exportación',
       guides: 'Guías para compradores',
+      horeca: 'Hostelería',
       about: 'Nosotros',
       faq: 'Preguntas frecuentes',
     },
@@ -634,6 +647,157 @@ const es: UiPartial = {
     ],
     quoteH: 'Inicie su solicitud.',
     quoteText: 'Envíenos en una línea los productos, los envases y el mercado que tiene en mente. Le responderemos con opciones, precios y plazos de entrega.',
+  },
+
+  horeca: {
+    title: 'Amenities y limpieza para hostelería desde India',
+    description: 'Jabones de cortesía y limpiadores de cocina, baños, suelos y lavandería para hoteles, restaurantes y cafés, en envases grandes. Marca propia y muestras gratis.',
+    h1a: 'Cada espacio de su hotel,',
+    h1b: 'un solo proveedor.',
+    lead: 'Fabricados con las especificaciones que espera de las marcas líderes, en envases grandes y con un coste por uso más bajo. Para jefes de compras, chefs y gobernantas de hoteles, restaurantes, cafeterías y empresas de catering.',
+    ctaHero: 'Crear mi lista de muestras',
+    sampleLink: 'Cómo funciona la muestra gratuita',
+    stageTitle: 'Dibujo en sección de un hotel con seis espacios: habitaciones, cocina, aseos, vestíbulo y suelos, lavandería y almacén',
+    stageHint: 'Pase el cursor o toque un espacio para ver lo que utiliza.',
+    spacesNav: 'Espacios de un hotel',
+    cardLink: 'Ver los {n} productos',
+    spaces: {
+      rooms: {
+        name: 'Habitaciones y baños',
+        short: 'Habitaciones',
+        need: 'Amenities que el huésped nota: jabones envueltos con el nombre de su hotel, gel de ducha y jabón de manos en recambios, y pastillas de baño.',
+      },
+      kitchen: {
+        name: 'Cocina',
+        short: 'Cocina',
+        need: 'Lavavajillas líquido en garrafas y bidones para el fregadero, pastillas lavavajillas para ollas y sartenes, y desengrasante concentrado para la grasa difícil.',
+      },
+      washrooms: {
+        name: 'Aseos y zonas comunes',
+        short: 'Aseos',
+        need: 'Jabón de manos para dosificadores recargables, limpiadores de inodoros y azulejos, limpiacristales para espejos y jabón antibacteriano.',
+      },
+      floors: {
+        name: 'Suelos y limpieza',
+        short: 'Vestíbulo y suelos',
+        need: 'Limpiasuelos y fenol herbal para fregar vestíbulos y pasillos, con limpiador multisuperficies y limpiacristales para el carro de limpieza.',
+      },
+      laundry: {
+        name: 'Lavandería',
+        short: 'Lavandería',
+        need: 'Detergente en polvo y líquido para las lavadoras, suavizante para toallas y ropa de cama, y una pastilla para frotar cuellos y manchas.',
+      },
+      backOfHouse: {
+        name: 'Granel y almacén',
+        short: 'Almacén',
+        need: 'Concentrados para el almacén central: limpiasuelos, desengrasante de cocina, jabón de manos y detergente líquido, comprados en envases grandes y repartidos en cada planta.',
+      },
+    },
+    bulkNote: 'Envases grandes para el almacén: garrafas de 5 L y 20 L y bidones de 200 L.',
+    promiseH: 'Las especificaciones que espera, con un coste por uso más bajo.',
+    promiseText: 'Cinco cosas que incluye cada pedido de hostelería.',
+    promises: [
+      {
+        title: 'Envases para cocina y limpieza',
+        text: 'Garrafas de 5 L y 20 L, bidones de 200 L y sacos de 25 kg para cocinas, lavanderías y almacenes de limpieza.',
+      },
+      {
+        title: 'El nombre de su hotel en los amenities',
+        text: 'Marca propia en jabones de cortesía, gel de ducha y jabón de manos: su logotipo en el envoltorio o la etiqueta.',
+      },
+      {
+        title: 'Un solo contenedor mixto',
+        text: 'Productos para cada departamento, de las habitaciones a la cocina y la lavandería, en un contenedor de 20 o 40 pies.',
+      },
+      {
+        title: 'Sin pedido mínimo fijo',
+        text: 'Cotizamos pedidos de prueba, cargas parciales y contenedores mixtos, y las cantidades se acuerdan en cada pedido.',
+      },
+      {
+        title: 'Una muestra gratis para comparar',
+        text: 'Pruebe nuestros productos frente a su marca actual antes de pedir al por mayor.',
+      },
+    ],
+    listH: 'Marque lo que usa cada espacio.',
+    listText: 'Añada productos a su lista mientras recorre la página. El botón envía la lista a nuestro formulario, lista para pedir muestras y una cotización al por mayor.',
+    packsLabel: 'Envases para hostelería',
+    add: 'Añadir a mi lista',
+    addAria: 'Añadir {name} a mi lista de hostelería',
+    addNoJs: 'Pedir una muestra',
+    viewProduct: 'Ver producto',
+    panel: {
+      title: 'Mi lista de hostelería',
+      count: 'en su lista',
+      empty: 'Aún no ha marcado nada. Marque los productos que usa y le enviamos una muestra de cada uno.',
+      noJs: 'Indíquenos sus productos y el tipo de establecimiento en el formulario.',
+      typeLabel: 'Tipo de establecimiento',
+      typeChoose: 'Elija uno',
+      types: { hotel: 'Hotel', restaurant: 'Restaurante', cafe: 'Cafetería', catering: 'Catering', other: 'Otro' },
+      cta: 'Pedir muestras y cotización al por mayor',
+      clear: 'Vaciar la lista',
+      remove: 'Quitar {name}',
+      open: 'Abrir mi lista',
+      close: 'Cerrar mi lista',
+    },
+    message: {
+      samples: 'Consulta HORECA: solicitamos muestras de {products}.',
+      general: 'Consulta HORECA: queremos muestras y una cotización al por mayor.',
+      type: 'Tipo de establecimiento: {type}.',
+      separator: ', ',
+    },
+    samplesH: 'Muestras gratuitas: cómo funciona',
+    samplesText: 'Las muestras se confirman en cada consulta: le respondemos con lo que se puede enviar para sus productos.',
+    samplesLead: 'Pedidos al por mayor: {leadTime}.',
+    samplesSteps: [
+      {
+        name: 'Marque sus productos',
+        text: 'Elija lo que usan sus habitaciones, cocina, aseos y lavandería, y el tipo de establecimiento.',
+      },
+      {
+        name: 'Enviamos las muestras',
+        text: 'Confirmamos qué muestras se pueden enviar para su consulta y las organizamos con usted.',
+      },
+      {
+        name: 'Compare y pida al por mayor',
+        text: 'Pruébelas frente a su marca actual. Cuando esté conforme, pida en envases grandes, juntos en un solo contenedor.',
+      },
+    ],
+    faqH: 'Hostelería: preguntas de los compradores',
+    faqs: [
+      {
+        q: '¿Pueden imprimir el nombre de nuestro hotel en los jabones de cortesía?',
+        a: 'Sí. Los jabones de cortesía de 10 g a 40 g pueden envolverse en papel o film impreso con el logotipo de su hotel o resort, con los colores de envoltorio y la fragancia que elija. Los envoltorios impresos pueden tener su propio mínimo, que cotizamos con su pedido.',
+      },
+      {
+        q: '¿Qué envases convienen a cocinas y limpieza?',
+        a: 'El lavavajillas líquido viene en garrafas de 5 L y 20 L y bidones de 200 L; el limpiasuelos, el jabón de manos y los limpiadores de superficies en garrafas de 5 L y 20 L; el detergente en polvo en sacos de 10 kg y 25 kg; y los químicos de limpieza a granel hasta contenedores IBC de 1.000 L. Cada página de producto indica todos sus envases.',
+      },
+      {
+        q: '¿Podemos combinar productos de distintos departamentos en un solo envío?',
+        a: 'Sí. Los productos de habitaciones, cocina, aseos, suelos y lavandería pueden viajar juntos en un contenedor de 20 o 40 pies. La combinación se confirma según las normas de embalaje y compatibilidad al cotizar.',
+      },
+      {
+        q: '¿Hay un pedido mínimo?',
+        a: 'No hay mínimo fijo. Cotizamos pedidos de prueba, cargas parciales y contenedores mixtos, y las cantidades se acuerdan en cada pedido. Los envoltorios impresos de los jabones de cortesía pueden tener su propio mínimo.',
+      },
+      {
+        q: '¿Cómo funcionan las muestras?',
+        a: 'Marque en esta página los productos que usa y envíe la consulta. Confirmamos qué muestras se pueden enviar y las organizamos, para que las compare con su marca actual antes de pedir al por mayor.',
+      },
+      {
+        q: '¿Qué documentos acompañan cada envío?',
+        a: 'Factura comercial, lista de empaque, certificado de origen y conocimiento de embarque, además de un certificado de análisis (COA) y una hoja de datos de seguridad (MSDS) cuando el producto los requiere. El conjunto exacto depende de su país y se confirma en cada pedido.',
+      },
+    ],
+    quoteH: '¿Abastece un establecimiento?',
+    quoteText: 'Cuéntenos en una línea su establecimiento y los productos que usa. El formulario se abre con el texto ya escrito.',
+    homeLine: '¿Compra para un hotel, restaurante o cafetería?',
+    homeLink: 'Ver productos por espacio',
+    productLink: 'Para hoteles y restaurantes',
+    serviceName: 'Suministro HORECA de amenities y productos de limpieza desde India',
+    serviceType: 'Suministro al por mayor de amenities y productos de limpieza para hoteles, restaurantes y cafeterías',
+    audience: 'Hoteles, restaurantes, cafeterías y empresas de catering',
+    llms: 'Amenities y productos de limpieza para hoteles, restaurantes, cafeterías y catering, organizados por espacio (habitaciones, cocina, aseos, suelos, lavandería, almacén), en envases para cocina y limpieza, con marca propia en amenities, contenedores mixtos, sin mínimo fijo y muestras gratuitas confirmadas en cada consulta.',
   },
 
   notFound: {

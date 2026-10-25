@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '9e5d353955e5';
+export const sourceHash = '99275ef123f5';
 
 const id: UiPartial = {
   meta: {
@@ -98,6 +98,18 @@ const id: UiPartial = {
         'impor dari India',
         'panduan pembeli',
       ],
+      horeca: [
+        'supplier amenities hotel',
+        'pemasok produk kebersihan hotel',
+        'produk kebersihan HoReCa grosir',
+        'sabun hotel custom logo',
+        'sabun cuci piring restoran 20 liter',
+        'bahan kimia housekeeping hotel',
+        'supplier sabun hotel dari India',
+        'pembersih dapur restoran grosir',
+        'deterjen laundry hotel grosir',
+        'perlengkapan kebersihan kafe',
+      ],
     },
   },
 
@@ -161,6 +173,7 @@ const id: UiPartial = {
       privateLabel: 'Private Label',
       exportProcess: 'Proses Ekspor',
       guides: 'Panduan Pembeli',
+      horeca: 'Hotel & Restoran',
       about: 'Tentang Kami',
       faq: 'FAQ',
     },
@@ -634,6 +647,157 @@ const id: UiPartial = {
     ],
     quoteH: 'Mulai brief Anda.',
     quoteText: 'Kirimkan produk, kemasan, dan pasar yang Anda bayangkan dalam satu baris. Kami akan membalas dengan pilihan, harga, dan lead time.',
+  },
+
+  horeca: {
+    title: 'Amenities Hotel & Produk Kebersihan HoReCa dari India',
+    description: 'Sabun tamu serta pembersih dapur, toilet, lantai, dan laundry untuk hotel, restoran, dan kafe, kemasan besar. Private label, kontainer campuran, sampel gratis.',
+    h1a: 'Setiap ruang di hotel Anda,',
+    h1b: 'satu pemasok.',
+    lead: 'Dibuat sesuai spesifikasi yang Anda harapkan dari merek-merek terkemuka, dalam kemasan besar, dengan biaya per pemakaian lebih rendah. Untuk manajer pembelian, chef, dan tim housekeeping di hotel, restoran, kafe, dan katering.',
+    ctaHero: 'Buat daftar sampel saya',
+    sampleLink: 'Cara kerja sampel gratis',
+    stageTitle: 'Gambar potongan hotel dengan enam ruang: kamar tamu, dapur, toilet, lobi dan lantai, laundry, serta gudang',
+    stageHint: 'Arahkan kursor atau ketuk sebuah ruang untuk melihat apa yang dipakainya.',
+    spacesNav: 'Ruang di hotel',
+    cardLink: 'Lihat {n} produk',
+    spaces: {
+      rooms: {
+        name: 'Kamar tamu & kamar mandi',
+        short: 'Kamar',
+        need: 'Amenities yang diperhatikan tamu: sabun tamu berbungkus dengan nama hotel Anda, sabun mandi cair dan sabun cuci tangan dalam kemasan isi ulang, serta sabun batang.',
+      },
+      kitchen: {
+        name: 'Dapur',
+        short: 'Dapur',
+        need: 'Sabun cuci piring cair dalam jeriken dan drum untuk bak cuci yang sibuk, sabun colek untuk panci dan wajan, serta degreaser pekat untuk lemak membandel.',
+      },
+      washrooms: {
+        name: 'Toilet & area umum',
+        short: 'Toilet',
+        need: 'Sabun cuci tangan untuk dispenser isi ulang, pembersih kloset dan keramik, pembersih kaca untuk cermin, serta sabun antibakteri.',
+      },
+      floors: {
+        name: 'Lantai & housekeeping',
+        short: 'Lobi & lantai',
+        need: 'Pembersih lantai dan fenol herbal untuk mengepel lobi dan koridor, plus pembersih serbaguna dan pembersih kaca untuk troli housekeeping.',
+      },
+      laundry: {
+        name: 'Laundry',
+        short: 'Laundry',
+        need: 'Deterjen bubuk dan cair untuk mesin cuci, pelembut untuk handuk dan sprei, serta sabun batang untuk menyikat kerah dan noda.',
+      },
+      backOfHouse: {
+        name: 'Curah & gudang',
+        short: 'Gudang',
+        need: 'Konsentrat untuk gudang pusat: pembersih lantai, degreaser dapur, sabun cuci tangan, dan deterjen cair, dibeli dalam kemasan besar lalu dibagi ke tiap lantai.',
+      },
+    },
+    bulkNote: 'Kemasan besar untuk gudang: jeriken 5 L dan 20 L serta drum 200 L.',
+    promiseH: 'Spesifikasi yang Anda harapkan, dengan biaya per pemakaian lebih rendah.',
+    promiseText: 'Lima hal yang didapat setiap pesanan HoReCa.',
+    promises: [
+      {
+        title: 'Kemasan untuk dapur dan housekeeping',
+        text: 'Jeriken 5 L dan 20 L, drum 200 L, dan karung 25 kg untuk dapur, laundry, dan gudang housekeeping.',
+      },
+      {
+        title: 'Nama hotel Anda di amenities',
+        text: 'Private label untuk sabun tamu, sabun mandi cair, dan sabun cuci tangan: logo Anda di pembungkus atau label.',
+      },
+      {
+        title: 'Satu kontainer campuran',
+        text: 'Produk untuk setiap departemen, dari kamar hingga dapur dan laundry, dalam satu kontainer 20 ft atau 40 ft.',
+      },
+      {
+        title: 'Tanpa minimum order tetap',
+        text: 'Pesanan percobaan, muatan parsial, dan kontainer campuran semuanya kami beri penawaran; jumlah disepakati per pesanan.',
+      },
+      {
+        title: 'Sampel gratis untuk dibandingkan',
+        text: 'Uji produk kami dengan merek yang Anda pakai sekarang sebelum memesan dalam jumlah besar.',
+      },
+    ],
+    listH: 'Centang yang dipakai setiap ruang.',
+    listText: 'Tambahkan produk ke daftar Anda sambil menelusuri halaman. Tombolnya mengirim daftar ke formulir permintaan kami, siap untuk sampel dan penawaran grosir.',
+    packsLabel: 'Kemasan HoReCa',
+    add: 'Tambah ke daftar saya',
+    addAria: 'Tambahkan {name} ke daftar HoReCa saya',
+    addNoJs: 'Minta sampel',
+    viewProduct: 'Lihat produk',
+    panel: {
+      title: 'Daftar HoReCa saya',
+      count: 'di daftar Anda',
+      empty: 'Belum ada yang dicentang. Centang produk yang Anda pakai dan kami kirimkan sampel masing-masing.',
+      noJs: 'Sebutkan produk dan jenis usaha Anda di formulir permintaan.',
+      typeLabel: 'Jenis usaha',
+      typeChoose: 'Pilih salah satu',
+      types: { hotel: 'Hotel', restaurant: 'Restoran', cafe: 'Kafe', catering: 'Katering', other: 'Lainnya' },
+      cta: 'Minta sampel HoReCa & penawaran grosir',
+      clear: 'Kosongkan daftar',
+      remove: 'Hapus {name}',
+      open: 'Buka daftar saya',
+      close: 'Tutup daftar saya',
+    },
+    message: {
+      samples: 'Permintaan HoReCa: kami meminta sampel {products}.',
+      general: 'Permintaan HoReCa: kami ingin sampel dan penawaran grosir.',
+      type: 'Jenis usaha: {type}.',
+      separator: ', ',
+    },
+    samplesH: 'Sampel gratis: cara kerjanya',
+    samplesText: 'Sampel dikonfirmasi per permintaan: kami membalas dengan apa yang bisa dikirim untuk produk Anda.',
+    samplesLead: 'Pesanan grosir: {leadTime}.',
+    samplesSteps: [
+      {
+        name: 'Centang produk Anda',
+        text: 'Pilih yang dipakai kamar, dapur, toilet, dan laundry Anda, lalu jenis usaha Anda.',
+      },
+      {
+        name: 'Kami kirim sampel',
+        text: 'Kami konfirmasi sampel mana yang bisa dikirim untuk permintaan Anda dan mengaturnya bersama Anda.',
+      },
+      {
+        name: 'Bandingkan, lalu pesan grosir',
+        text: 'Uji dengan merek Anda saat ini. Setelah cocok, pesan dalam kemasan besar, digabung dalam satu kontainer.',
+      },
+    ],
+    faqH: 'HoReCa: pertanyaan pembeli',
+    faqs: [
+      {
+        q: 'Bisakah nama hotel kami dicetak di sabun tamu?',
+        a: 'Bisa. Sabun tamu 10 g sampai 40 g dapat dibungkus kertas atau flow wrap bercetak logo hotel atau resor Anda, dengan warna pembungkus dan aroma pilihan Anda. Pembungkus bercetak mungkin punya minimum sendiri, yang kami tawarkan bersama pesanan Anda.',
+      },
+      {
+        q: 'Ukuran kemasan apa yang cocok untuk dapur dan housekeeping?',
+        a: 'Sabun cuci piring cair tersedia dalam jeriken 5 L dan 20 L serta drum 200 L; pembersih lantai, sabun cuci tangan, dan pembersih permukaan dalam jeriken 5 L dan 20 L; deterjen bubuk dalam karung 10 kg dan 25 kg; dan bahan kimia pembersih curah hingga IBC 1.000 L. Setiap halaman produk mencantumkan semua kemasannya.',
+      },
+      {
+        q: 'Bisakah produk dari departemen berbeda digabung dalam satu pengiriman?',
+        a: 'Bisa. Produk untuk kamar, dapur, toilet, lantai, dan laundry dapat dikirim bersama dalam satu kontainer 20 ft atau 40 ft. Komposisinya dikonfirmasi sesuai aturan pengemasan dan kompatibilitas saat penawaran.',
+      },
+      {
+        q: 'Apakah ada minimum order?',
+        a: 'Tidak ada minimum tetap. Pesanan percobaan, muatan parsial, dan kontainer campuran semuanya kami beri penawaran, dan jumlah disepakati per pesanan. Pembungkus sabun tamu bercetak mungkin punya minimum sendiri.',
+      },
+      {
+        q: 'Bagaimana cara kerja sampel?',
+        a: 'Centang produk yang Anda pakai di halaman ini dan kirim permintaannya. Kami konfirmasi sampel yang bisa dikirim dan mengaturnya, agar Anda dapat membandingkannya dengan merek Anda saat ini sebelum memesan grosir.',
+      },
+      {
+        q: 'Dokumen apa yang menyertai setiap pengiriman?',
+        a: 'Faktur komersial, packing list, surat keterangan asal, dan bill of lading, ditambah sertifikat analisis (COA) dan lembar data keselamatan (MSDS) bila produk memerlukannya. Daftar persisnya tergantung negara Anda dan dikonfirmasi per pesanan.',
+      },
+    ],
+    quoteH: 'Memasok sebuah properti?',
+    quoteText: 'Ceritakan properti Anda dan produk yang Anda pakai dalam satu baris. Formulir permintaan terbuka dengan teks itu.',
+    homeLine: 'Belanja untuk hotel, restoran, atau kafe?',
+    homeLink: 'Lihat produk per ruang',
+    productLink: 'Untuk hotel & restoran',
+    serviceName: 'Pasokan HoReCa amenities dan produk kebersihan dari India',
+    serviceType: 'Pasokan grosir amenities dan produk kebersihan untuk hotel, restoran, dan kafe',
+    audience: 'Hotel, restoran, kafe, dan katering',
+    llms: 'Amenities dan produk kebersihan untuk hotel, restoran, kafe, dan katering, disusun per ruang (kamar tamu, dapur, toilet, lantai, laundry, gudang), dalam kemasan dapur dan housekeeping, dengan private label untuk amenities, kontainer campuran, tanpa minimum tetap, dan sampel gratis yang dikonfirmasi per permintaan.',
   },
 
   notFound: {

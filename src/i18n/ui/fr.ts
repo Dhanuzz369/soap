@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '9e5d353955e5';
+export const sourceHash = '99275ef123f5';
 
 const fr: UiPartial = {
   meta: {
@@ -99,6 +99,18 @@ const fr: UiPartial = {
         'importer d’Inde',
         'guide acheteur',
       ],
+      horeca: [
+        'fournisseur produits d’entretien hôtellerie',
+        'fournisseur produits d’accueil hôtel',
+        'savon hôtel personnalisé',
+        'produits d’entretien CHR en gros',
+        'produits de nettoyage cuisine restaurant en gros',
+        'produits d’entretien gouvernante hôtel',
+        'savonnettes hôtel fournisseur Inde',
+        'liquide vaisselle 20 L restaurant',
+        'lessive professionnelle hôtel en gros',
+        'produits d’hygiène pour cafés et restaurants',
+      ],
     },
   },
 
@@ -162,6 +174,7 @@ const fr: UiPartial = {
       privateLabel: 'Marque de distributeur',
       exportProcess: 'Processus d’export',
       guides: 'Guides acheteurs',
+      horeca: 'Hôtels & restaurants',
       about: 'À propos',
       faq: 'FAQ',
     },
@@ -636,6 +649,157 @@ const fr: UiPartial = {
     ],
     quoteH: 'Envoyez votre cahier des charges.',
     quoteText: 'Indiquez en une ligne les produits, conditionnements et le marché visé. Nous vous répondons avec des options, des prix et des délais.',
+  },
+
+  horeca: {
+    title: 'Produits d’accueil et d’entretien CHR depuis l’Inde',
+    description: 'Savons d’accueil et produits pour cuisine, sanitaires, sols et linge des hôtels, restaurants et cafés, en grands formats. Marque propre, échantillons gratuits.',
+    h1a: 'Chaque espace de votre hôtel,',
+    h1b: 'un seul fournisseur.',
+    lead: 'Conformes aux spécifications que vous attendez des grandes marques, en grands formats, pour un coût par utilisation plus bas. Pour les acheteurs, chefs et gouvernantes des hôtels, restaurants, cafés et traiteurs.',
+    ctaHero: 'Composer ma liste d’échantillons',
+    sampleLink: 'L’échantillon gratuit, mode d’emploi',
+    stageTitle: 'Coupe d’un hôtel avec six espaces : chambres, cuisine, sanitaires, hall et sols, blanchisserie et réserve',
+    stageHint: 'Survolez ou touchez un espace pour voir ce qu’il utilise.',
+    spacesNav: 'Les espaces d’un hôtel',
+    cardLink: 'Voir les {n} produits',
+    spaces: {
+      rooms: {
+        name: 'Chambres & salles de bain',
+        short: 'Chambres',
+        need: 'Les produits d’accueil que les clients remarquent : savons emballés au nom de votre hôtel, gel douche et savon liquide en recharges, savons de toilette.',
+      },
+      kitchen: {
+        name: 'Cuisine',
+        short: 'Cuisine',
+        need: 'Liquide vaisselle en bidons et en fûts pour la plonge, pains vaisselle pour les casseroles et un dégraissant concentré pour les graisses tenaces.',
+      },
+      washrooms: {
+        name: 'Sanitaires & espaces publics',
+        short: 'Sanitaires',
+        need: 'Savon liquide pour distributeurs à recharger, nettoyants WC et carrelage, nettoyant vitres pour les miroirs et savon antibactérien.',
+      },
+      floors: {
+        name: 'Sols & ménage',
+        short: 'Hall & sols',
+        need: 'Nettoyant sols et phényl aux plantes pour le lavage des halls et couloirs, avec nettoyant multi-surfaces et vitres pour le chariot de ménage.',
+      },
+      laundry: {
+        name: 'Blanchisserie',
+        short: 'Blanchisserie',
+        need: 'Lessive en poudre et liquide pour les machines, adoucissant pour serviettes et draps, et un pain de savon pour frotter cols et taches.',
+      },
+      backOfHouse: {
+        name: 'Vrac & réserve',
+        short: 'Réserve',
+        need: 'Des concentrés pour la réserve centrale : nettoyant sols, dégraissant cuisine, savon liquide et lessive liquide, achetés en grands formats et répartis à chaque étage.',
+      },
+    },
+    bulkNote: 'Grands formats pour la réserve : bidons de 5 L et 20 L et fûts de 200 L.',
+    promiseH: 'Les spécifications que vous attendez, pour un coût par utilisation plus bas.',
+    promiseText: 'Cinq engagements pour chaque commande CHR.',
+    promises: [
+      {
+        title: 'Formats cuisine et ménage',
+        text: 'Bidons de 5 L et 20 L, fûts de 200 L et sacs de 25 kg pour les cuisines, la blanchisserie et la réserve du ménage.',
+      },
+      {
+        title: 'Le nom de votre hôtel sur les produits d’accueil',
+        text: 'Marque propre sur les savons d’accueil, le gel douche et le savon liquide : votre logo sur l’emballage ou l’étiquette.',
+      },
+      {
+        title: 'Un seul conteneur mixte',
+        text: 'Des produits pour chaque service, des chambres à la cuisine et à la blanchisserie, dans un conteneur de 20 ou 40 pieds.',
+      },
+      {
+        title: 'Pas de minimum de commande fixe',
+        text: 'Commandes d’essai, chargements partiels et conteneurs mixtes sont tous chiffrés ; les quantités sont convenues à chaque commande.',
+      },
+      {
+        title: 'Un échantillon gratuit pour comparer',
+        text: 'Testez nos produits face à votre marque actuelle avant de commander en gros.',
+      },
+    ],
+    listH: 'Cochez ce que chaque espace utilise.',
+    listText: 'Ajoutez les produits à votre liste au fil de la page. Le bouton envoie la liste vers notre formulaire, prête pour les échantillons et un devis en gros.',
+    packsLabel: 'Formats CHR',
+    add: 'Ajouter à ma liste',
+    addAria: 'Ajouter {name} à ma liste CHR',
+    addNoJs: 'Demander un échantillon',
+    viewProduct: 'Voir le produit',
+    panel: {
+      title: 'Ma liste CHR',
+      count: 'dans votre liste',
+      empty: 'Rien de coché pour l’instant. Cochez les produits que vous utilisez et nous vous envoyons un échantillon de chacun.',
+      noJs: 'Indiquez vos produits et votre type d’établissement dans le formulaire.',
+      typeLabel: 'Type d’établissement',
+      typeChoose: 'Choisir',
+      types: { hotel: 'Hôtel', restaurant: 'Restaurant', cafe: 'Café', catering: 'Traiteur', other: 'Autre' },
+      cta: 'Demander des échantillons CHR et un devis en gros',
+      clear: 'Vider la liste',
+      remove: 'Retirer {name}',
+      open: 'Ouvrir ma liste',
+      close: 'Fermer ma liste',
+    },
+    message: {
+      samples: 'Demande CHR : échantillons souhaités pour {products}.',
+      general: 'Demande CHR : nous souhaitons des échantillons et un devis en gros.',
+      type: 'Type d’établissement : {type}.',
+      separator: ', ',
+    },
+    samplesH: 'Échantillons gratuits : comment ça marche',
+    samplesText: 'Les échantillons sont confirmés à chaque demande : nous vous répondons avec ce qui peut être envoyé pour vos produits.',
+    samplesLead: 'Commandes en gros : {leadTime}.',
+    samplesSteps: [
+      {
+        name: 'Cochez vos produits',
+        text: 'Choisissez ce qu’utilisent vos chambres, votre cuisine, vos sanitaires et votre blanchisserie, puis votre type d’établissement.',
+      },
+      {
+        name: 'Nous envoyons les échantillons',
+        text: 'Nous confirmons les échantillons qui peuvent être envoyés pour votre demande et les organisons avec vous.',
+      },
+      {
+        name: 'Comparez, puis commandez en gros',
+        text: 'Testez-les face à votre marque actuelle. Une fois convaincu, commandez en grands formats, regroupés dans un seul conteneur.',
+      },
+    ],
+    faqH: 'CHR : les questions des acheteurs',
+    faqs: [
+      {
+        q: 'Pouvez-vous imprimer le nom de notre hôtel sur les savons d’accueil ?',
+        a: 'Oui. Les savons d’accueil de 10 g à 40 g peuvent être emballés dans un papier ou un film imprimé au logo de votre hôtel ou resort, avec les couleurs d’emballage et le parfum de votre choix. Les emballages imprimés peuvent avoir leur propre minimum, chiffré avec votre commande.',
+      },
+      {
+        q: 'Quels formats conviennent aux cuisines et au ménage ?',
+        a: 'Le liquide vaisselle existe en bidons de 5 L et 20 L et en fûts de 200 L ; le nettoyant sols, le savon liquide et les nettoyants surfaces en bidons de 5 L et 20 L ; la lessive en poudre en sacs de 10 kg et 25 kg ; et les produits d’entretien en vrac jusqu’aux IBC de 1 000 L. Chaque fiche produit donne tous ses formats.',
+      },
+      {
+        q: 'Peut-on regrouper des produits de différents services dans une même expédition ?',
+        a: 'Oui. Les produits des chambres, de la cuisine, des sanitaires, des sols et de la blanchisserie peuvent voyager ensemble dans un conteneur de 20 ou 40 pieds. Le mélange est validé selon les règles d’emballage et de compatibilité lors du devis.',
+      },
+      {
+        q: 'Y a-t-il un minimum de commande ?',
+        a: 'Il n’y a pas de minimum fixe. Commandes d’essai, chargements partiels et conteneurs mixtes sont tous chiffrés, et les quantités sont convenues à chaque commande. Les emballages imprimés des savons d’accueil peuvent avoir leur propre minimum.',
+      },
+      {
+        q: 'Comment fonctionnent les échantillons ?',
+        a: 'Cochez sur cette page les produits que vous utilisez et envoyez la demande. Nous confirmons les échantillons qui peuvent être envoyés et les organisons, pour que vous les compariez à votre marque actuelle avant de commander en gros.',
+      },
+      {
+        q: 'Quels documents accompagnent chaque expédition ?',
+        a: 'Une facture commerciale, une liste de colisage, un certificat d’origine et un connaissement, plus un certificat d’analyse (COA) et une fiche de données de sécurité (MSDS) lorsque le produit l’exige. La liste exacte dépend de votre pays et est confirmée à chaque commande.',
+      },
+    ],
+    quoteH: 'Vous équipez un établissement ?',
+    quoteText: 'Décrivez votre établissement et les produits que vous utilisez en une ligne. Le formulaire s’ouvre avec votre texte.',
+    homeLine: 'Vous achetez pour un hôtel, un restaurant ou un café ?',
+    homeLink: 'Voir les produits par espace',
+    productLink: 'Pour les hôtels et restaurants',
+    serviceName: 'Fourniture CHR de produits d’accueil et d’entretien depuis l’Inde',
+    serviceType: 'Fourniture en gros de produits d’accueil et d’entretien pour hôtels, restaurants et cafés',
+    audience: 'Hôtels, restaurants, cafés et traiteurs',
+    llms: 'Produits d’accueil et d’entretien pour hôtels, restaurants, cafés et traiteurs, classés par espace (chambres, cuisine, sanitaires, sols, blanchisserie, réserve), en formats cuisine et ménage, avec marque propre sur les produits d’accueil, conteneurs mixtes, sans minimum fixe et échantillons gratuits confirmés à chaque demande.',
   },
 
   notFound: {

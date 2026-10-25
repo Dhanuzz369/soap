@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '9e5d353955e5';
+export const sourceHash = '99275ef123f5';
 
 const tr: UiPartial = {
   meta: {
@@ -98,6 +98,18 @@ const tr: UiPartial = {
         'Hindistan’dan ithalat',
         'alıcı rehberi',
       ],
+      horeca: [
+        'otel buklet malzemeleri tedarikçisi',
+        'otel temizlik ürünleri tedarikçisi',
+        'HoReCa temizlik ürünleri toptan',
+        'logolu otel sabunu',
+        'restoran mutfak temizlik ürünleri toptan',
+        'kat hizmetleri temizlik kimyasalları',
+        'otel sabunu tedarikçisi Hindistan',
+        'restoran bulaşık deterjanı 20 L',
+        'otel çamaşırhanesi deterjanı toptan',
+        'kafe temizlik malzemeleri',
+      ],
     },
   },
 
@@ -161,6 +173,7 @@ const tr: UiPartial = {
       privateLabel: 'Özel Marka',
       exportProcess: 'İhracat Süreci',
       guides: 'Alıcı Rehberleri',
+      horeca: 'Otel & Restoran',
       about: 'Hakkımızda',
       faq: 'SSS',
     },
@@ -634,6 +647,157 @@ const tr: UiPartial = {
     ],
     quoteH: 'Talebinizi başlatın.',
     quoteText: 'Aklınızdaki ürünleri, ambalajları ve pazarı tek satırda iletin. Seçenekler, fiyatlar ve teslim süreleriyle yanıt veririz.',
+  },
+
+  horeca: {
+    title: 'Otel Buklet ve HoReCa Temizlik Ürünleri Hindistan’dan',
+    description: 'Otel, restoran ve kafeler için misafir sabunu ile mutfak, tuvalet, zemin ve çamaşır temizleyicileri, büyük ambalajda. Özel marka, karışık konteyner, numune.',
+    h1a: 'Otelinizin her alanı,',
+    h1b: 'tek tedarikçi.',
+    lead: 'Önde gelen markalardan beklediğiniz spesifikasyonlarda, büyük ambalajlarda ve kullanım başına daha düşük maliyetle. Otel, restoran, kafe ve catering firmalarının satın alma yöneticileri, şefleri ve kat hizmetleri ekipleri için.',
+    ctaHero: 'Numune listemi oluştur',
+    sampleLink: 'Ücretsiz numune nasıl işler',
+    stageTitle: 'Altı alanlı bir otelin kesit çizimi: odalar, mutfak, tuvaletler, lobi ve zeminler, çamaşırhane ve depo',
+    stageHint: 'Bir alanın ne kullandığını görmek için üzerine gelin veya dokunun.',
+    spacesNav: 'Oteldeki alanlar',
+    cardLink: '{n} ürünü gör',
+    spaces: {
+      rooms: {
+        name: 'Misafir odaları ve banyolar',
+        short: 'Odalar',
+        need: 'Misafirin fark ettiği buklet ürünleri: otelinizin adını taşıyan ambalajlı misafir sabunları, yedek ambalajda duş jeli ve sıvı sabun, banyo sabunu.',
+      },
+      kitchen: {
+        name: 'Mutfak',
+        short: 'Mutfak',
+        need: 'Yoğun bulaşık tezgâhı için bidon ve varillerde bulaşık deterjanı, tencere ve tavalar için bulaşık sabunu ve ağır yağlar için konsantre yağ çözücü.',
+      },
+      washrooms: {
+        name: 'Tuvaletler ve ortak alanlar',
+        short: 'Tuvaletler',
+        need: 'Doldurulabilir dispenserler için sıvı sabun, klozet ve fayans temizleyicileri, aynalar için cam temizleyici ve antibakteriyel sabun.',
+      },
+      floors: {
+        name: 'Zeminler ve kat hizmetleri',
+        short: 'Lobi ve zeminler',
+        need: 'Lobi ve koridorları silmek için zemin temizleyici ve bitkisel fenol; kat arabası için çok amaçlı temizleyici ve cam temizleyici.',
+      },
+      laundry: {
+        name: 'Çamaşırhane',
+        short: 'Çamaşırhane',
+        need: 'Makineler için toz ve sıvı deterjan, havlu ve nevresimler için yumuşatıcı, yaka ve lekeleri ovmak için çamaşır sabunu.',
+      },
+      backOfHouse: {
+        name: 'Toptan ve depo',
+        short: 'Depo',
+        need: 'Merkez depo için konsantreler: zemin temizleyici, mutfak yağ çözücü, sıvı sabun ve sıvı deterjan; büyük ambalajda alınır, her katta dağıtılır.',
+      },
+    },
+    bulkNote: 'Depo için büyük ambalajlar: 5 L ve 20 L bidonlar ve 200 L variller.',
+    promiseH: 'Beklediğiniz spesifikasyonlar, kullanım başına daha düşük maliyet.',
+    promiseText: 'Her HoReCa siparişinde beş şey.',
+    promises: [
+      {
+        title: 'Mutfak ve kat hizmetleri ambalajları',
+        text: 'Mutfaklar, çamaşırhaneler ve kat hizmetleri depoları için 5 L ve 20 L bidonlar, 200 L variller ve 25 kg çuvallar.',
+      },
+      {
+        title: 'Buklet ürünlerinde otelinizin adı',
+        text: 'Misafir sabunu, duş jeli ve sıvı sabunda özel marka: logonuz ambalajda veya etikette.',
+      },
+      {
+        title: 'Tek karışık konteyner',
+        text: 'Odalardan mutfağa ve çamaşırhaneye her departmanın ürünleri tek bir 20 ft veya 40 ft konteynerde.',
+      },
+      {
+        title: 'Sabit asgari sipariş yok',
+        text: 'Deneme siparişleri, parsiyel yükler ve karışık konteynerler fiyatlandırılır; miktarlar her siparişte kararlaştırılır.',
+      },
+      {
+        title: 'Karşılaştırma için ücretsiz numune',
+        text: 'Toplu sipariş vermeden önce ürünlerimizi mevcut markanızla karşılaştırın.',
+      },
+    ],
+    listH: 'Her alanın kullandıklarını işaretleyin.',
+    listText: 'Sayfada ilerlerken ürünleri listenize ekleyin. Düğme listeyi numune ve toplu fiyat teklifi için hazır şekilde talep formumuza gönderir.',
+    packsLabel: 'HoReCa ambalajları',
+    add: 'Listeme ekle',
+    addAria: '{name} ürününü HoReCa listeme ekle',
+    addNoJs: 'Numune iste',
+    viewProduct: 'Ürünü gör',
+    panel: {
+      title: 'HoReCa listem',
+      count: 'listenizde',
+      empty: 'Henüz bir şey işaretlenmedi. Kullandığınız ürünleri işaretleyin, her birinden numune gönderelim.',
+      noJs: 'Ürünlerinizi ve işletme türünüzü talep formunda belirtin.',
+      typeLabel: 'İşletme türü',
+      typeChoose: 'Seçin',
+      types: { hotel: 'Otel', restaurant: 'Restoran', cafe: 'Kafe', catering: 'Catering', other: 'Diğer' },
+      cta: 'HoReCa numunesi ve toplu teklif iste',
+      clear: 'Listeyi temizle',
+      remove: '{name} ürününü çıkar',
+      open: 'Listemi aç',
+      close: 'Listemi kapat',
+    },
+    message: {
+      samples: 'HoReCa talebi: şu ürünler için numune istiyoruz: {products}.',
+      general: 'HoReCa talebi: numune ve toplu fiyat teklifi istiyoruz.',
+      type: 'İşletme türü: {type}.',
+      separator: ', ',
+    },
+    samplesH: 'Ücretsiz numune: nasıl işler',
+    samplesText: 'Numuneler her talepte teyit edilir: ürünleriniz için nelerin gönderilebileceğini bildiririz.',
+    samplesLead: 'Toplu siparişler: {leadTime}.',
+    samplesSteps: [
+      {
+        name: 'Ürünlerinizi işaretleyin',
+        text: 'Odalarınızın, mutfağınızın, tuvaletlerinizin ve çamaşırhanenizin kullandıklarını ve işletme türünüzü seçin.',
+      },
+      {
+        name: 'Numuneleri gönderiyoruz',
+        text: 'Talebiniz için hangi numunelerin gönderilebileceğini teyit eder, gönderimi sizinle planlarız.',
+      },
+      {
+        name: 'Karşılaştırın, toplu sipariş verin',
+        text: 'Mevcut markanızla karşılaştırın. Memnun kaldığınızda büyük ambalajlarda, tek konteynerde sipariş verin.',
+      },
+    ],
+    faqH: 'HoReCa: alıcıların soruları',
+    faqs: [
+      {
+        q: 'Misafir sabunlarına otelimizin adını basabilir misiniz?',
+        a: 'Evet. 10 g ile 40 g arası misafir sabunları, otelinizin veya resortunuzun logosu basılı kâğıt ya da flow-pack ambalajla, seçtiğiniz ambalaj renkleri ve kokuyla paketlenebilir. Baskılı ambalajın kendi asgari miktarı olabilir; bunu siparişinizle birlikte fiyatlandırırız.',
+      },
+      {
+        q: 'Mutfak ve kat hizmetleri için hangi ambalajlar uygun?',
+        a: 'Bulaşık deterjanı 5 L ve 20 L bidon ile 200 L varilde; zemin temizleyici, sıvı sabun ve yüzey temizleyiciler 5 L ve 20 L bidonda; toz deterjan 10 kg ve 25 kg çuvalda; dökme temizlik kimyasalları ise 1.000 L IBC’ye kadar. Her ürün sayfasında tüm ambalajlar yer alır.',
+      },
+      {
+        q: 'Farklı departmanların ürünlerini tek sevkiyatta birleştirebilir miyiz?',
+        a: 'Evet. Oda, mutfak, tuvalet, zemin ve çamaşırhane ürünleri tek bir 20 ft veya 40 ft konteynerde birlikte gidebilir. Karışım, teklif aşamasında ambalaj ve uyumluluk kurallarına göre teyit edilir.',
+      },
+      {
+        q: 'Asgari sipariş miktarı var mı?',
+        a: 'Sabit bir asgari miktar yok. Deneme siparişleri, parsiyel yükler ve karışık konteynerler fiyatlandırılır; miktarlar her siparişte kararlaştırılır. Baskılı misafir sabunu ambalajlarının kendi asgari miktarı olabilir.',
+      },
+      {
+        q: 'Numuneler nasıl işler?',
+        a: 'Bu sayfada kullandığınız ürünleri işaretleyip talebi gönderin. Hangi numunelerin gönderilebileceğini teyit eder ve gönderimi ayarlarız; böylece toplu sipariş öncesinde mevcut markanızla karşılaştırabilirsiniz.',
+      },
+      {
+        q: 'Her sevkiyatla hangi belgeler gelir?',
+        a: 'Ticari fatura, çeki listesi, menşe şahadetnamesi ve konşimento; ürün gerektiriyorsa analiz sertifikası (COA) ve güvenlik bilgi formu (MSDS). Belgelerin tam listesi ülkenize göre değişir ve her siparişte teyit edilir.',
+      },
+    ],
+    quoteH: 'Bir işletmeye mi tedarik ediyorsunuz?',
+    quoteText: 'İşletmenizi ve kullandığınız ürünleri tek satırda yazın. Talep formu bu metinle açılır.',
+    homeLine: 'Otel, restoran veya kafe için mi alıyorsunuz?',
+    homeLink: 'Ürünleri alana göre görün',
+    productLink: 'Oteller ve restoranlar için',
+    serviceName: 'Hindistan’dan HoReCa buklet ve temizlik ürünleri tedariki',
+    serviceType: 'Oteller, restoranlar ve kafeler için buklet ve temizlik ürünlerinin toptan tedariki',
+    audience: 'Oteller, restoranlar, kafeler ve catering firmaları',
+    llms: 'Oteller, restoranlar, kafeler ve catering firmaları için buklet ve temizlik ürünleri; alana göre düzenlenmiş (misafir odaları, mutfak, tuvaletler, zeminler, çamaşırhane, depo), mutfak ve kat hizmetleri ambalajlarında, buklet ürünlerinde özel marka, karışık konteyner, sabit asgari sipariş olmadan ve her talepte teyit edilen ücretsiz numunelerle.',
   },
 
   notFound: {

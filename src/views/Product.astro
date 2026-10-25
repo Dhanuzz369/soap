@@ -14,6 +14,7 @@ import { productJsonLd, faqJsonLd, absoluteUrl, buildKeywords } from '../lib/seo
 import { productImagePath, productPicture, ogCard } from '../lib/product-image';
 import { shapeFor } from '../lib/pack-shapes';
 import { splitName } from '../lib/heading';
+import { HORECA_LINKED } from '../lib/horeca';
 
 interface Props {
   product: ProductEntry;
@@ -84,6 +85,13 @@ const media: HeroMedia | undefined = pic
     <div class="ph-actions">
       <a class="btn btn--light" href={lp(`/contact/?product=${d.slug}`)}>{ui.common.requestQuote}</a>
       <a class="link-arrow" href="#faq">{ui.common.readFaq} <span class="arr" aria-hidden="true">→</span></a>
+      {
+        HORECA_LINKED.includes(d.slug) && (
+          <a class="link-arrow ph-horeca" href={lp('/horeca/')}>
+            {ui.horeca.productLink} <span class="arr" aria-hidden="true">→</span>
+          </a>
+        )
+      }
     </div>
   </PageHero>
 

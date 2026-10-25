@@ -92,6 +92,19 @@ const en = {
       contact: ['soap price quote India', 'detergent quotation', 'GoodBiz Hygiene contact', 'home care products enquiry'],
       blog: ['soap import guide', 'detergent buying guide', 'cleaning products import India', 'HSN 3401 vs 3402'],
       post: ['import from India', 'buyer guide'],
+      /** The HoReCa page: what hotel, restaurant and café buyers type (purchasing, chefs, housekeeping). */
+      horeca: [
+        'hotel amenities supplier',
+        'HoReCa cleaning products wholesale',
+        'hotel housekeeping chemicals supplier',
+        'bulk kitchen cleaning products for restaurants',
+        'guest soap supplier India',
+        'hotel soap private label',
+        'restaurant dish wash liquid 20 L',
+        'hotel laundry detergent bulk',
+        'café cleaning supplies wholesale',
+        'hospitality cleaning products India',
+      ],
     },
   },
 
@@ -165,6 +178,8 @@ const en = {
       privateLabel: 'Private Label',
       exportProcess: 'Export Process',
       guides: 'Buyer Guides',
+      /** The HoReCa page (/horeca/): the shortest natural name for hotels, restaurants and cafés. Keep it short: the desktop menu must fit at 1280px. */
+      horeca: 'Hotels & Restaurants',
       about: 'About',
       faq: 'FAQ',
     },
@@ -671,6 +686,151 @@ const en = {
     ],
     quoteH: 'Start your brief.',
     quoteText: 'Send the products, packs and market you have in mind in one line. We reply with options, prices and lead times.',
+  },
+
+  /**
+   * The HoReCa page (/horeca/): for hotels, restaurants, cafés and caterers, organised by the spaces
+   * they run. The promise (`lead`, `promiseH`) is approved by the owner: translate its meaning
+   * exactly. Never say the products are better than any brand, never name a brand, and add no
+   * numbers, savings, clients, ratings or certifications.
+   */
+  horeca: {
+    title: 'Hotel Amenities & HoReCa Cleaning Supplies from India',
+    description:
+      'Guest soaps and kitchen, washroom, floor and laundry cleaners for hotels, restaurants and cafés, in bulk packs. Private label, mixed containers, free samples.',
+    h1a: 'Every space in your hotel,',
+    h1b: 'one supplier.',
+    lead: 'Made to the specifications you expect from leading brands, in bulk packs, at a lower cost per use. For purchasing managers, chefs and housekeeping teams at hotels, restaurants, cafés and caterers.',
+    ctaHero: 'Build my sample list',
+    sampleLink: 'How the free sample works',
+    /** The hotel drawing in the hero. */
+    stageTitle: 'Cross-section drawing of a hotel with six spaces: guest rooms, kitchen, washrooms, lobby and floors, laundry, and back-of-house',
+    stageHint: 'Point at or tap a space to see what it uses.',
+    spacesNav: 'Spaces in a hotel',
+    /** In the floating card: {n} is the number of products. */
+    cardLink: 'See the {n} products',
+    spaces: {
+      rooms: {
+        name: 'Guest rooms & bathrooms',
+        short: 'Rooms',
+        need: 'Amenities guests notice: wrapped guest soaps with your hotel’s name, shower gel and hand wash in refill packs, and bath bars.',
+      },
+      kitchen: {
+        name: 'Kitchen',
+        short: 'Kitchen',
+        need: 'Dish wash liquid in cans and drums for busy sinks, dish wash bars for pots and pans, and concentrated degreaser for heavy fat.',
+      },
+      washrooms: {
+        name: 'Washrooms & public areas',
+        short: 'Washrooms',
+        need: 'Hand wash for refill dispensers, toilet bowl and tile cleaners, glass cleaner for mirrors and antibacterial bar soap.',
+      },
+      floors: {
+        name: 'Floors & housekeeping',
+        short: 'Lobby & floors',
+        need: 'Floor cleaner and herbal phenol for mopping lobbies and corridors, with multi-surface and glass cleaner for the housekeeping trolley.',
+      },
+      laundry: {
+        name: 'Laundry',
+        short: 'Laundry',
+        need: 'Detergent powder and liquid for the washing machines, softener for towels and bed linen, and a bar for scrubbing collars and stains.',
+      },
+      backOfHouse: {
+        name: 'Bulk & back-of-house',
+        short: 'Back-of-house',
+        need: 'Concentrates for the central store: floor cleaner, kitchen degreaser, hand wash and laundry liquid, bought in large packs and decanted on each floor.',
+      },
+    },
+    /** Under the back-of-house products. */
+    bulkNote: 'Bulk packs for the store room: 5 L and 20 L cans and 200 L drums.',
+    promiseH: 'The specifications you expect, at a lower cost per use.',
+    promiseText: 'Five things every HoReCa order gets.',
+    promises: [
+      { title: 'Catering and housekeeping packs', text: '5 L and 20 L cans, 200 L drums and 25 kg sacks for kitchens, laundries and housekeeping stores.' },
+      { title: 'Your hotel’s name on guest amenities', text: 'Private label on guest soaps, shower gel and hand wash: your logo on the wrapper or label.' },
+      { title: 'One mixed container', text: 'Products for every department, from rooms to the kitchen and laundry, in one 20 ft or 40 ft container.' },
+      { title: 'No fixed minimum order', text: 'Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order.' },
+      { title: 'A free sample to compare', text: 'Test our products against your current brand before you order in bulk.' },
+    ],
+    listH: 'Tick what each space uses.',
+    listText: 'Add products to your list as you go. The button sends the list to our enquiry form, ready for samples and a bulk quote.',
+    /** Above each product card's pack chips. */
+    packsLabel: 'HoReCa packs',
+    add: 'Add to my list',
+    addAria: 'Add {name} to my HoReCa list',
+    /** The link shown instead of the checkbox without JavaScript. */
+    addNoJs: 'Request a sample',
+    viewProduct: 'View product',
+    panel: {
+      title: 'My HoReCa list',
+      /** Next to the number of ticked products. */
+      count: 'on your list',
+      empty: 'Nothing ticked yet. Tick the products you use and we send samples of each.',
+      noJs: 'Tell us your products and property type on the enquiry form.',
+      typeLabel: 'Property type',
+      typeChoose: 'Choose one',
+      types: { hotel: 'Hotel', restaurant: 'Restaurant', cafe: 'Café', catering: 'Catering', other: 'Other' },
+      cta: 'Request HoReCa samples & a bulk quote',
+      clear: 'Clear list',
+      remove: 'Remove {name}',
+      open: 'Open my list',
+      close: 'Close my list',
+    },
+    /** Prefilled in the contact form's message. {products}: the ticked names; {type}: the property type. */
+    message: {
+      samples: 'HoReCa enquiry: samples requested for {products}.',
+      general: 'HoReCa enquiry: we would like samples and a bulk quote.',
+      type: 'Property type: {type}.',
+      separator: ', ',
+    },
+    samplesH: 'Free samples: how it works',
+    samplesText: 'Samples are confirmed per enquiry: we reply with what can be sent for your products.',
+    /** {leadTime} is filled in from the export terms. Never add other timelines. */
+    samplesLead: 'Bulk orders: {leadTime}.',
+    samplesSteps: [
+      { name: 'Tick your products', text: 'Choose what your rooms, kitchen, washrooms and laundry use, and pick your property type.' },
+      { name: 'We send samples', text: 'We confirm which samples can be sent for your enquiry and arrange them with you.' },
+      { name: 'Compare, then order in bulk', text: 'Test them against your current brand. When you are happy, order in bulk packs, mixed in one container.' },
+    ],
+    faqH: 'HoReCa: questions buyers ask',
+    /** Keep every answer in line with the product pages and the export terms. */
+    faqs: [
+      {
+        q: 'Can you print our hotel name on guest soaps?',
+        a: 'Yes. Guest soaps of 10 g to 40 g can be wrapped in paper or flow wrap printed with your hotel or resort logo, with your choice of wrapper colours and fragrance. Printed wrappers may carry their own minimum, which we quote with your order.',
+      },
+      {
+        q: 'What pack sizes suit kitchens and housekeeping?',
+        a: 'Dish wash liquid comes in 5 L and 20 L cans and 200 L drums; floor cleaner, hand wash and surface cleaners in 5 L and 20 L cans; detergent powder in 10 kg and 25 kg sacks; and bulk cleaning chemicals up to 1,000 L IBCs. Each product page lists its full pack range.',
+      },
+      {
+        q: 'Can we mix products from different departments in one shipment?',
+        a: 'Yes. Room, kitchen, washroom, floor and laundry products can travel together in one 20 ft or 40 ft container. The mix is confirmed against packing and compatibility rules when we quote.',
+      },
+      {
+        q: 'Is there a minimum order?',
+        a: 'There is no fixed minimum. Trial orders, part loads and mixed containers are all quoted, and quantities are agreed per order. Printed guest-soap wrappers may carry their own minimum.',
+      },
+      {
+        q: 'How do samples work?',
+        a: 'Tick the products you use on this page and send the enquiry. We confirm which samples can be sent and arrange them, so you can compare them with your current brand before you order in bulk.',
+      },
+      {
+        q: 'Which documents come with each shipment?',
+        a: 'A commercial invoice, packing list, certificate of origin and bill of lading, plus a certificate of analysis (COA) and material safety data sheet (MSDS) where the product needs them. The exact set depends on your country and is confirmed per order.',
+      },
+    ],
+    quoteH: 'Supplying a property?',
+    quoteText: 'Tell us your property and the products you use in one line. The enquiry form opens with it written in.',
+    /** The link from the home page and from the hotel soap and bulk cleaner pages. */
+    homeLine: 'Buying for a hotel, restaurant or café?',
+    homeLink: 'See products by space',
+    productLink: 'For hotels & restaurants',
+    /** Structured data (Service) and llms.txt. */
+    serviceName: 'HoReCa supply of guest amenities and cleaning products from India',
+    serviceType: 'Wholesale supply of guest amenities and cleaning products for hotels, restaurants and cafés',
+    audience: 'Hotels, restaurants, cafés and caterers',
+    llms: 'Guest amenities and cleaning products for hotels, restaurants, cafés and caterers, organised by space (guest rooms, kitchen, washrooms, floors, laundry, back-of-house), in catering and housekeeping packs, with private label on guest amenities, mixed containers, no fixed minimum and free samples confirmed per enquiry.',
   },
 
   notFound: {
