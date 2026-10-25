@@ -45,6 +45,7 @@ const VOCAB: Record<string, string[]> = {
   ItemList: ['name', 'numberOfItems', 'itemListOrder', 'itemListElement'],
   HowTo: ['name', 'description', 'inLanguage', 'image', 'step'],
   Product: ['name', 'description', 'url', 'sku', 'brand', 'countryOfOrigin', 'category', 'image', 'additionalProperty'],
+  Service: ['name', 'serviceType', 'description', 'url', 'provider', 'areaServed', 'audience'],
   BlogPosting: ['headline', 'description', 'datePublished', 'dateModified', 'inLanguage', 'mainEntityOfPage', 'url', 'author', 'publisher', 'keywords', 'image'],
 };
 for (const t of ['CollectionPage', 'ItemPage', 'AboutPage', 'ContactPage']) VOCAB[t] = VOCAB.WebPage;
@@ -168,22 +169,34 @@ describe.each([...new Set(pages.map((p) => p.lang))])('required fields per type,
     expect(problems.slice(0, 20)).toEqual([]);
   });
 
-  it('ItemList on the products page, category pages and the blog: positions and existing URLs', () => {
+  it('ItemList on the products page, category pages, the blog and the HoReCa page: positions and existing URLs', () => {
     const problems: string[] = [];
-    for (const p of list.filter((x) => /\/(products|blog)\/$|\/categories\/[^/]+\/$/.test(x.path))) {
-      const l = p.blocks.find((b) => b['@type'] === 'ItemList');
-      if (!l) {
+    for (const p of list.filter((x) => /\/(products|blog|horeca)\/$|\/categories\/[^/]+\/$/.test(x.path))) {
+      const all = p.blocks.filter((b) => b['@type'] === 'ItemList');
+      if (!all.length) {
         problems.push(`${p.path}: no ItemList`);
         continue;
       }
-      const items = l.itemListElement as Node[];
-      if (!items.length || l.numberOfItems !== items.length) problems.push(`${p.path}: ItemList count`);
-      items.forEach((it, i) => {
-        if (it.position !== i + 1 || !it.name || !abs(it.url) || !distHas(it.url)) problems.push(`${p.path}: item ${i + 1} ${it.url}`);
-        else if (splitLocale(it.url.slice(BASE.length)).lang !== lang) problems.push(`${p.path}: item ${it.url} in another language`);
-      });
+      for (const l of all) {
+        const items = l.itemListElement as Node[];
+        if (!items.length || l.numberOfItems !== items.length) problems.push(`${p.path}: ItemList count`);
+        items.forEach((it, i) => {
+          if (it.position !== i + 1 || !it.name || !abs(it.url) || !distHas(it.url)) problems.push(`${p.path}: item ${i + 1} ${it.url}`);
+          else if (splitLocale(it.url.slice(BASE.length)).lang !== lang) problems.push(`${p.path}: item ${it.url} in another language`);
+        });
+      }
     }
     expect(problems.slice(0, 20)).toEqual([]);
+  });
+
+  it('Service on the HoReCa page: name, type, provider (the Organization), audience; no offers', () => {
+    const p = list.find((x) => /\/horeca\/$/.test(x.path))!;
+    const s = p.blocks.find((b) => b['@type'] === 'Service')!;
+    expect(s.name && s.serviceType && s.description).toBeTruthy();
+    expect(s.url).toBe(BASE + p.path);
+    expect(s.provider).toEqual({ '@id': `${BASE}/#organization` });
+    expect(s.audience).toMatchObject({ '@type': 'BusinessAudience' });
+    expect(s.audience.audienceType.length).toBeGreaterThan(5);
   });
 
   it('FAQPage wherever FAQs appear: questions with answers, in this language', () => {

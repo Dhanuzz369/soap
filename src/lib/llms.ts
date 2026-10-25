@@ -6,7 +6,7 @@
  *   /<lang>/llms.txt   the same in each language, linking to that language's pages.
  *   /llms-full.txt     English, the complete factual text as clean Markdown: every product with its
  *                      specifications, packs, MOQ, private label and FAQs, the export terms and
- *                      process, private label, and the company FAQs.
+ *                      process, private label, the HoReCa page (by space) and the company FAQs.
  *
  * The company is always named the same way (ui.seo.entity). Contact details appear only once they
  * are real (site.contactIsPlaceholder false).
@@ -18,6 +18,7 @@ import { getPosts } from './blog';
 import { getFaqGroups } from './faqs';
 import { LOCALES, localizePath, DEFAULT_LOCALE, type Locale } from '../i18n/locales';
 import { getUi, fmt } from '../i18n/ui';
+import { SPACES } from './horeca';
 
 const firstSentence = (s: string) => (s.match(/^.*?[.!?。](?=\s+\S|\s*$)/su)?.[0] ?? s).trim();
 /** Markdown body with site links made absolute (for text read outside the site). */
@@ -42,6 +43,25 @@ const contactLines = () =>
   site.contactIsPlaceholder
     ? []
     : [`- Email: ${site.contact.email}`, `- Phone / WhatsApp: ${site.contact.phone}`, `- Address: ${site.contact.address}`];
+
+/**
+ * The HoReCa page by space: "- Space: product (packs), product (packs)" lines, with links to the
+ * product pages when `link` is given. Products and pack names in the page's language.
+ */
+async function horecaSpaces(lang: Locale, link: boolean): Promise<string[]> {
+  const ui = getUi(lang);
+  const lp = (p: string) => absoluteUrl(localizePath(p, lang));
+  const products = (await getProductsByCategory(lang)).flatMap((g) => g.products);
+  return SPACES.map((s) => {
+    const items = s.products.map((sp) => {
+      const p = products.find((x) => x.data.slug === sp.slug)!;
+      const packs = sp.packs.map((i) => p.data.packSizes[i]).filter(Boolean).join(', ');
+      const name = link ? `[${p.data.title}](${lp(`/products/${sp.slug}/`)})` : p.data.title;
+      return `${name} (${packs})`;
+    });
+    return `- **${ui.horeca.spaces[s.id].name}:** ${items.join('; ')}`;
+  });
+}
 
 /** /llms.txt (English) and /<lang>/llms.txt. */
 export async function buildLlmsIndex(lang: Locale = DEFAULT_LOCALE): Promise<string> {
@@ -79,6 +99,9 @@ export async function buildLlmsIndex(lang: Locale = DEFAULT_LOCALE): Promise<str
     [ui.footer.contact, '/contact/', ui.contact.description],
   ];
   for (const [t, u, d] of company) lines.push(`- [${t}](${lp(u)}): ${d}`);
+
+  // Hotels, restaurants and cafés: the HoReCa page, by space.
+  lines.push('', `## ${ui.header.nav.horeca}`, '', `- [${ui.horeca.title}](${lp('/horeca/')}): ${ui.horeca.llms}`, '', ...(await horecaSpaces(lang, false)));
 
   lines.push('', `## ${H.full}`, '', `- [llms-full.txt](${absoluteUrl('/llms-full.txt')}): ${en ? 'every product, specification, term and FAQ as Markdown, in English' : 'English'}`);
 
@@ -160,6 +183,13 @@ export async function buildLlmsFull(): Promise<string> {
   L.steps.forEach((s, i) => out.push(`${i + 1}. **${s.name}.** ${fmt(s.text, t)}`));
   out.push('');
   for (const f of L.faqs) out.push(`**${fmt(f.q, t)}**`, '', fmt(f.a, t), '');
+
+  const R = ui.horeca;
+  out.push('## For hotels, restaurants and cafés (HoReCa)', '', `URL: ${absoluteUrl('/horeca/')}`, '', R.llms, '', `${R.lead}`, '');
+  out.push(...(await horecaSpaces(DEFAULT_LOCALE, true)), '', R.bulkNote, '');
+  for (const p of R.promises) out.push(`- **${p.title}:** ${p.text}`);
+  out.push('', `${R.samplesH}. ${R.samplesText} ${fmt(R.samplesLead, t)}`, '');
+  for (const f of R.faqs) out.push(`**${f.q}**`, '', f.a, '');
 
   out.push('## Company FAQ', '');
   for (const g of getFaqGroups(DEFAULT_LOCALE)) {

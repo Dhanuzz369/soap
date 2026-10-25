@@ -8,8 +8,12 @@
 //   og/products/<slug>.jpg the product's photo (or its studio render) on a 1200 × 630 field, with
 //   og/categories/<slug>.jpg  no text, so one card serves every language. Blog posts use the card
 //                          of the first product they are about.
+//   og/horeca.jpg          the HoReCa page: a collage of four HoReCa product photos (guest soap,
+//                          dish wash, hand wash, fabric softener) as tall rounded tiles on the forest
+//                          field, no text, for every language.
 //
 // Run: npm run og:cards   (needs Google Chrome, like `npm run renders`; CHROME_PATH=… to use another)
+//      npm run og:cards -- --only horeca   makes just the HoReCa collage (no Chrome needed)
 // Re-run after changing a page headline in src/i18n/ui/*.ts or adding a product photo.
 import { chromium } from 'playwright-core';
 import sharp from 'sharp';
@@ -49,6 +53,49 @@ const photoCard = async (src, out, { cutout = false } = {}) => {
   const bg = await sharp(src).resize({ width: W, height: H, fit: 'cover' }).blur(28).modulate({ brightness: 0.7 }).toBuffer();
   await sharp(bg).composite([{ input: fg, left: Math.round((W - w) / 2), top: 0 }]).jpeg({ quality: 82, mozjpeg: true }).toFile(out);
 };
+
+// ---- 0. The HoReCa collage (language-neutral) -----------------------------------------------------
+/** The four photos and where each product sits across its photo (0 = left edge, 1 = right edge). */
+const HORECA_PHOTOS = [
+  ['hotel-guest-soap', 0.36],
+  ['dish-wash-liquid', 0.5],
+  ['liquid-hand-wash', 0.7],
+  ['fabric-softener', 0.5],
+];
+const horecaCard = async (out) => {
+  const pad = 32;
+  const gap = 16;
+  const tw = Math.floor((W - 2 * pad - 3 * gap) / HORECA_PHOTOS.length);
+  const th = H - 2 * pad;
+  const r = 28;
+  const mask = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="${tw}" height="${th}"><rect width="${tw}" height="${th}" rx="${r}" ry="${r}"/></svg>`);
+  const tiles = await Promise.all(
+    HORECA_PHOTOS.map(async ([slug, fx]) => {
+      const src = pub(`images/products/${slug}.webp`);
+      const m = await sharp(src).metadata();
+      const w = Math.round((m.width / m.height) * th);
+      const left = Math.max(0, Math.min(w - tw, Math.round(fx * w - tw / 2)));
+      const full = await sharp(src).resize({ height: th }).toBuffer();
+      return sharp(full)
+        .extract({ left, top: 0, width: tw, height: th })
+        .composite([{ input: mask, blend: 'dest-in' }])
+        .png()
+        .toBuffer();
+    }),
+  );
+  const field = Buffer.from(
+    `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}"><defs><radialGradient id="g" cx="80%" cy="0%" r="110%"><stop offset="0" stop-color="#24563f"/><stop offset=".5" stop-color="${FIELD}"/><stop offset="1" stop-color="${DEEP}"/></radialGradient></defs><rect width="${W}" height="${H}" fill="url(#g)"/></svg>`,
+  );
+  const left0 = Math.round((W - (tw * HORECA_PHOTOS.length + gap * (HORECA_PHOTOS.length - 1))) / 2);
+  await sharp(field)
+    .composite(tiles.map((input, i) => ({ input, left: left0 + i * (tw + gap), top: pad })))
+    .jpeg({ quality: 82, mozjpeg: true })
+    .toFile(out);
+};
+mkdirSync(pub('og'), { recursive: true });
+await horecaCard(pub('og/horeca.jpg'));
+console.log('horeca collage: og/horeca.jpg');
+if (process.argv.includes('--only') && process.argv[process.argv.indexOf('--only') + 1] === 'horeca') process.exit(0);
 
 mkdirSync(pub('og/products'), { recursive: true });
 mkdirSync(pub('og/categories'), { recursive: true });
