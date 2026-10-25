@@ -143,3 +143,20 @@
     letter-spacing: 0.02em;
   }
 }
+
+/* Official logos keep their own colours (FIEO's white lettering would vanish if tinted):
+   each sits on a small paper tile, on the dark footer as on the paper cards. */
+.reg--logo .reg-mark {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: #fff;
+}
+.regs--compact .reg--logo .reg-mark {
+  height: 52px;
+}
+.regs--compact .reg-mark img {
+  filter: none;
+  opacity: 1;
+}

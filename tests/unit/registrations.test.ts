@@ -53,10 +53,15 @@ describe('resolveRegistrations', () => {
     expect(r.find((x) => x.id === 'fieo')).toMatchObject({ logoSrc: '/images/registrations/fieo.svg', aspect: 2 });
     expect(r.find((x) => x.id === 'chemexcil')!.logoSrc).toBeUndefined();
   });
-  it('accepts msme.png when msme.svg is missing', () => {
+  it('accepts chemexcil.png (the configured file) with its aspect ratio', () => {
     // 1x1 PNG
+    put('chemexcil.png', Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==', 'base64'));
+    expect(resolveRegistrations(root).find((x) => x.id === 'chemexcil')).toMatchObject({ logoSrc: '/images/registrations/chemexcil.png', aspect: 1 });
+  });
+  it('never returns a logo for MSME (its mark carries the State Emblem of India)', () => {
     put('msme.png', Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==', 'base64'));
-    expect(resolveRegistrations(root).find((x) => x.id === 'msme')).toMatchObject({ logoSrc: '/images/registrations/msme.png', aspect: 1 });
+    expect(site.registrations.find((r) => r.id === 'msme')!.logoAllowed).toBe(false);
+    expect(resolveRegistrations(root).find((x) => x.id === 'msme')!.logoSrc).toBeUndefined();
   });
   it('never returns a logo for DGFT, even when the file exists', () => {
     put('dgft.svg', '<svg viewBox="0 0 10 10"></svg>');

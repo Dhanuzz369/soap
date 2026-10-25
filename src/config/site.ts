@@ -46,9 +46,9 @@ const site = {
    */
   showRegistrations: true,
   registrations: [
-    { id: 'fieo', name: 'FIEO', fullName: 'Federation of Indian Export Organisations', url: 'https://www.fieo.org/', logo: '/images/registrations/fieo.svg', logoAllowed: true },
-    { id: 'msme', name: 'MSME', fullName: 'Ministry of Micro, Small & Medium Enterprises', url: 'https://udyamregistration.gov.in/', logo: '/images/registrations/msme.svg', logoAllowed: true },
-    { id: 'chemexcil', name: 'CHEMEXCIL', fullName: 'Basic Chemicals, Cosmetics & Dyes Export Promotion Council', url: 'https://www.chemexcil.in/', logo: '/images/registrations/chemexcil.svg', logoAllowed: true },
+    { id: 'fieo', name: 'FIEO', fullName: 'Federation of Indian Export Organisations', url: 'https://www.fieo.org/', logo: '/images/registrations/fieo.png', logoAllowed: true },
+    { id: 'msme', name: 'MSME', fullName: 'Ministry of Micro, Small & Medium Enterprises', url: 'https://udyamregistration.gov.in/', logoAllowed: false /* the MSME logo carries the State Emblem of India: text badge only */ },
+    { id: 'chemexcil', name: 'CHEMEXCIL', fullName: 'Basic Chemicals, Cosmetics & Dyes Export Promotion Council', url: 'https://www.chemexcil.in/', logo: '/images/registrations/chemexcil.png', logoAllowed: true },
     { id: 'dgft', name: 'DGFT', fullName: 'Directorate General of Foreign Trade', url: 'https://www.dgft.gov.in/', logoAllowed: false },
   ] as Registration[],
   /**

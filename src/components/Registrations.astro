@@ -34,7 +34,7 @@ const h = variant === 'compact' ? 40 : 56;
               data-reg={r.id}
               href={r.url}
               rel="noopener"
-              aria-label={fmt(R.opens, { name: r.fullName })}
+              aria-label={fmt(R.opens, { name: `${r.name}, ${r.fullName}` })}
             >
               <span class="reg-mark">
                 {r.logoSrc ? (
