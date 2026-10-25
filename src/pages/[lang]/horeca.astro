@@ -1,0 +1,8 @@
+---
+/* Route only: the page is src/views/Horeca.astro. */
+import View from '../../views/Horeca.astro';
+import { localeParams } from '../../views/paths';
+export const getStaticPaths = localeParams;
+---
+
+<View />

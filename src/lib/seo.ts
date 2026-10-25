@@ -26,6 +26,7 @@ import type {
   ItemList,
   Organization,
   Product,
+  Service,
   WebPage,
   WebSite,
   WithContext,
@@ -212,13 +213,21 @@ export function faqJsonLd(faqs: { q: string; a: string }[], inLanguage?: string,
   };
 }
 
-/** A list of products (the products page, a category page), in display order. */
-export function itemListJsonLd(url: string, name: string, items: { name: string; url: string; image?: string }[]): WithContext<ItemList> {
+/**
+ * A list of products (the products page, a category page, one space on the HoReCa page), in display
+ * order. `fragment` names the list when a page has several (default `itemlist`).
+ */
+export function itemListJsonLd(
+  url: string,
+  name: string,
+  items: { name: string; url: string; image?: string }[],
+  fragment = 'itemlist',
+): WithContext<ItemList> {
   const abs = absoluteUrl(url);
   return {
     '@context': CONTEXT,
     '@type': 'ItemList',
-    '@id': `${abs}#itemlist`,
+    '@id': `${abs}#${fragment}`,
     name,
     numberOfItems: items.length,
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
@@ -229,6 +238,32 @@ export function itemListJsonLd(url: string, name: string, items: { name: string;
       url: absoluteUrl(it.url),
       ...(it.image ? { image: absoluteUrl(it.image) } : {}),
     })),
+  };
+}
+
+/**
+ * A service offered by the Organization (the HoReCa page): what it is, for whom and where. No
+ * offers, prices or ratings: Service is valid without them, and none exist.
+ */
+export function serviceJsonLd(p: {
+  url: string;
+  name: string;
+  serviceType: string;
+  description: string;
+  audience: string;
+}): WithContext<Service> {
+  const abs = absoluteUrl(p.url);
+  return {
+    '@context': CONTEXT,
+    '@type': 'Service',
+    '@id': `${abs}#service`,
+    name: p.name,
+    serviceType: p.serviceType,
+    description: p.description,
+    url: abs,
+    provider: { '@id': ORG_ID() },
+    areaServed: 'Worldwide',
+    audience: { '@type': 'BusinessAudience', audienceType: p.audience },
   };
 }
 

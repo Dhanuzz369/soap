@@ -1,0 +1,1162 @@
+/*
+  For Hotels, Restaurants & Cafés (/horeca/): the Floor Plan hero (FloorPlanHero.astro), the
+  promise strip, the space sections with their "Add to my list" cards, the "My HoReCa list" panel
+  (sticky on desktop, a bottom sheet on phones) and the free-sample steps.
+  The .ph band (floria.css) gives the hero's forest field, glow, vignette and grain.
+
+  Motion (Emil Kowalski):
+  - the hotspot card is a popover: it scales from its hotspot (transform-origin set by horeca.ts),
+    0.96 → 1 with opacity, 180ms strong ease-out; it closes faster (120ms). Moving from one open
+    hotspot to the next is instant (data-instant), like tooltips after the first.
+  - the room glow is a state change: opacity only, 200ms
+  - one hotspot pulses slowly (2.4s) until the drawing is first used; paused off-screen
+  - cards lift on hover only on fine pointers; every pressable thing scales on :active
+  - the list count slides to its new number (horeca.ts, WAAPI, 180ms); the bottom sheet moves on
+    the drawer curve
+  - transform and opacity only; reduced motion: no travel, no pulse, short fades
+*/
+
+/* ==========================================================================
+   HERO: the floor plan
+   ========================================================================== */
+.ph--plan {
+  padding: clamp(108px, 6rem + 2vw, 136px) 0 clamp(88px, 3rem + 5vw, 144px);
+  --glow-x: 72%;
+  --glow-y: 48%;
+  --glow-r: 46vw;
+  --glow-a: 0.12;
+}
+.fp-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(36px, 6vw, 56px);
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .fp-grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    column-gap: clamp(40px, 4vw, 80px);
+  }
+}
+.fp-copy,
+.fp-stage {
+  min-width: 0;
+}
+.fp-h {
+  margin-top: clamp(24px, 3vw, 40px);
+  font-size: clamp(2.25rem, 1rem + 3.4vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+.fp-h .line {
+  display: block;
+  overflow: clip;
+  padding-bottom: 0.1em; /* room for descenders and the italic's overhang inside the mask */
+  margin-bottom: -0.1em;
+  padding-inline-end: 0.1em;
+}
+.fp-h .line-in {
+  display: block;
+}
+.fp-h .serif-i {
+  color: var(--mint);
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+}
+.fp-lead {
+  margin-top: clamp(18px, 2vw, 26px);
+  max-width: 50ch;
+}
+.fp-actions {
+  margin-top: clamp(24px, 3vw, 34px);
+}
+.fp-cta {
+  white-space: normal;
+  text-align: center;
+}
+.ph--plan .link-arrow,
+.ph--plan .link-arrow:hover {
+  color: var(--on-dark);
+}
+
+/* ---------- the drawing ---------- */
+.fp-stage {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  justify-self: center;
+}
+.fp-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.fp-shell {
+  fill: var(--forest-700);
+}
+.fp-room {
+  fill: var(--forest-900);
+}
+.fp-line {
+  fill: none;
+  stroke: var(--on-dark-soft);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.8;
+}
+.fp-ground {
+  stroke: var(--mint);
+  stroke-opacity: 0.4;
+  stroke-width: 1.5;
+  stroke-dasharray: 2 6;
+  stroke-linecap: round;
+}
+.fp-acc {
+  fill: var(--mint);
+}
+.fp-acc-soft {
+  fill: var(--mint);
+  opacity: 0.42;
+}
+.fp-soft {
+  fill: var(--on-dark);
+  opacity: 0.5;
+}
+.fp-leafy {
+  fill: #2c5d4a;
+}
+.fp-lamp {
+  fill: #f5f8f2;
+  opacity: 0.85;
+}
+.fp-sign {
+  fill: var(--forest-800);
+  stroke: var(--mint);
+  stroke-opacity: 0.35;
+}
+.fp-steam {
+  fill: none;
+  stroke: var(--on-dark-soft);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  opacity: 0.5;
+}
+/* the lit space: a soft mint glow and a crisp edge, opacity only */
+.fp-hl {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--dur-fast) var(--ease-out);
+}
+.fp-hl[data-on] {
+  opacity: 1;
+}
+.fp-hl-glow {
+  fill: url(#fp-glow);
+}
+.fp-hl-edge {
+  fill: none;
+  stroke: var(--mint);
+  stroke-width: 2;
+}
+
+/* ---------- hotspots (shown only with JS; html.fp-js is set before first paint) ---------- */
+.fp-spots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+html:not(.fp-js) .fp-spots,
+html:not(.fp-js) .fp-hint {
+  display: none;
+}
+.fp-spot {
+  position: absolute;
+  translate: -16px -16px; /* the pin's centre sits on the space's point */
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 4px 14px 4px 4px;
+  border: 0;
+  border-radius: var(--pill);
+  background: rgb(11 33 26 / 0.78);
+  box-shadow: inset 0 0 0 1px rgb(191 227 207 / 0.32); /* taste-skill-ignore: the hotspot pill's edge on the drawing */
+  color: var(--on-dark);
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform var(--dur-press) var(--ease-out),
+    background-color var(--dur-fast) ease,
+    box-shadow var(--dur-fast) ease;
+}
+.fp-spot:active {
+  transform: scale(0.96);
+}
+.fp-spot[aria-expanded='true'] {
+  background: var(--forest-800);
+  box-shadow: inset 0 0 0 1.5px var(--mint); /* taste-skill-ignore: the open hotspot's edge */
+}
+.fp-spot:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+}
+.fp-pin {
+  position: relative;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--forest-950);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+@media (hover: hover) and (pointer: fine) {
+  .fp-spot:hover {
+    background: var(--forest-800);
+  }
+}
+/* the idle pulse: one ring breathing out from one pin, until the drawing is first used */
+.fp-spot[data-pulse] .fp-pin::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px var(--mint); /* taste-skill-ignore: the pulse ring */
+  opacity: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-plan][data-live]:not([data-used]) .fp-spot[data-pulse] .fp-pin::after {
+    animation: fp-pulse 2400ms var(--ease-out) 1200ms infinite;
+  }
+}
+@keyframes fp-pulse {
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  70%,
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+}
+@media (max-width: 599.98px) {
+  /* phones: the number only (the name stays in the button's accessible name) */
+  .fp-spot {
+    translate: -16px -16px;
+    padding: 4px;
+    min-height: 32px;
+  }
+  .fp-name {
+    position: absolute;
+    width: 1px;
+    height: 1px; /* taste-skill-ignore: visually hidden text */
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+/* ---------- the floating card ---------- */
+.fp-card {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: min(288px, calc(100% - 16px));
+  padding: 18px 18px 8px;
+  border-radius: 22px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: /* taste-skill-ignore: the floating card lifts off the drawing */
+    0 0 0 1px rgb(18 53 42 / 0.08),
+    0 28px 56px -24px rgb(2 10 7 / 0.7);
+  transform-origin: var(--origin, 0 0);
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0.96);
+  pointer-events: none;
+  transition:
+    opacity 120ms var(--ease-out),
+    transform 120ms var(--ease-out),
+    visibility 0s linear 120ms;
+}
+.fp-card[data-open] {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+  transition:
+    opacity 180ms var(--ease-out),
+    transform 180ms var(--ease-out),
+    visibility 0s;
+}
+.fp-card[data-instant] {
+  transition-duration: 0s;
+}
+.fp-card-h {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+.fp-card-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+.fp-card-list li {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+.fp-card-list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--forest-950);
+  object-fit: cover;
+}
+.fp-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--tap);
+  margin-top: 4px;
+  color: var(--action);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.fp-card-link:hover {
+  color: var(--action-hover);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.fp-card :focus-visible {
+  outline-color: var(--action);
+}
+.fp-hint {
+  margin-top: 14px;
+  text-align: center;
+  font-size: var(--step-small);
+  color: var(--on-dark-soft);
+}
+
+/* ---------- without JS: links to the six sections ---------- */
+.fp-legend {
+  margin-top: 20px;
+}
+html.fp-js .fp-legend {
+  display: none;
+}
+.fp-legend ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.fp-legend a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: var(--tap);
+  padding: 0 14px 0 6px;
+  border-radius: var(--pill);
+  background: rgb(238 244 239 / 0.07);
+  color: var(--on-dark);
+  font-size: var(--step-small);
+  font-weight: 500;
+  text-decoration: none;
+}
+.fp-legend .fp-pin {
+  width: 30px;
+  height: 30px;
+}
+
+/* ---------- entrance (once) ---------- */
+@media (prefers-reduced-motion: no-preference) {
+  .fp-h .line-in {
+    animation: fp-line-up 900ms var(--ease-out) both;
+  }
+  .fp-h .line:nth-child(2) .line-in {
+    animation-delay: 80ms;
+  }
+  .fp-copy .crumbs,
+  .fp-lead,
+  .fp-actions {
+    animation: fp-rise var(--dur-enter) var(--ease-out) both;
+  }
+  .fp-lead {
+    animation-delay: 160ms;
+  }
+  .fp-actions {
+    animation-delay: 240ms;
+  }
+  .fp-svg {
+    animation: fp-rise 900ms var(--ease-floria) 180ms both;
+  }
+  .fp-spot {
+    animation: fp-pop 500ms var(--ease-out) calc(560ms + var(--n, 0) * 60ms) backwards;
+  }
+  .fp-hint {
+    animation: fp-fade 600ms var(--ease-out) 900ms both;
+  }
+}
+@keyframes fp-line-up {
+  from {
+    transform: translateY(105%);
+  }
+}
+@keyframes fp-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+@keyframes fp-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+@keyframes fp-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+/* ==========================================================================
+   THE PROMISE STRIP
+   ========================================================================== */
+.hc-promise {
+  position: relative;
+  padding-block: clamp(48px, 2rem + 3vw, 80px) clamp(72px, 3rem + 4vw, 120px);
+  background:
+    radial-gradient(60% 80% at 82% 20%, rgb(191 227 207 / 0.35), rgb(191 227 207 / 0) 70%), /* taste-skill-ignore: a soft mint light behind the glass cards */
+    var(--paper);
+}
+.hc-promise-head {
+  display: grid;
+  gap: 14px;
+  max-width: 44rem;
+}
+.hc-promise-head h2 {
+  font-size: var(--step-head);
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+.hc-promise-head p {
+  color: var(--ink-soft);
+  font-size: var(--step-lead);
+}
+@media (min-width: 1100px) {
+  .hc-promises {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+@media (min-width: 600px) and (max-width: 1099.98px) {
+  .hc-promises {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .hc-promises > :last-child {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 599.98px) {
+  .hc-promises {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.hc-promises .promise {
+  background: rgb(255 255 255 / 0.7);
+}
+.hc-promises .promise h3 {
+  font-size: clamp(1.0625rem, 0.95rem + 0.35vw, 1.25rem);
+  overflow-wrap: break-word;
+}
+
+/* ==========================================================================
+   THE SPACES AND THE LIST
+   ========================================================================== */
+.hc-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 48px;
+  padding-block: clamp(32px, 2rem + 2vw, 64px) clamp(72px, 3rem + 4vw, 120px);
+  scroll-margin-top: 96px;
+}
+@media (min-width: 1000px) {
+  .hc-layout {
+    grid-template-columns: minmax(0, 1fr) clamp(300px, 26vw, 360px);
+    column-gap: clamp(32px, 4vw, 64px);
+    align-items: start;
+  }
+}
+.hc-main {
+  min-width: 0;
+}
+.hc-intro {
+  display: grid;
+  gap: 12px;
+  max-width: 40rem;
+}
+.hc-intro h2 {
+  font-size: var(--step-head);
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+.hc-intro p {
+  color: var(--ink-soft);
+}
+.hc-space {
+  padding-top: clamp(56px, 2rem + 4vw, 96px);
+  scroll-margin-top: 72px;
+}
+.hc-space-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 16px;
+  row-gap: 10px;
+  align-items: baseline;
+}
+.hc-space-n {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.25rem, 1rem + 0.8vw, 1.75rem);
+  color: var(--action);
+  font-variant-numeric: tabular-nums;
+}
+.hc-space-head h2 {
+  font-size: clamp(1.75rem, 1.2rem + 1.6vw, 2.625rem);
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  overflow-wrap: break-word;
+}
+.hc-space-head p {
+  grid-column: 2;
+  max-width: 56ch;
+  color: var(--ink-soft);
+}
+@media (max-width: 599.98px) {
+  .hc-space-head p {
+    grid-column: 1 / -1;
+  }
+}
+.hc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  gap: 36px 20px;
+  margin-top: clamp(24px, 3vw, 36px);
+}
+@media (max-width: 519.98px) {
+  .hc-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 12px;
+  }
+}
+.hc-card {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  transition: transform var(--dur) var(--ease-out);
+}
+.hc-card-media .pv {
+  aspect-ratio: 4 / 3;
+  border-radius: 20px;
+  transition: transform var(--dur-press) var(--ease-out);
+}
+/* a pack render (no photo yet) is shown whole on the forest field */
+.hc-card-media .pv:not([data-shape='photo']) img {
+  object-fit: contain;
+  padding: 6%;
+}
+.hc-card-title {
+  margin-top: 4px;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+.hc-card-title a {
+  color: var(--ink);
+  text-decoration: none;
+}
+/* the card (except its checkbox) is the link to the product page */
+.hc-card-title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 20px;
+}
+.hc-card-title a:focus-visible {
+  outline: none;
+}
+.hc-card:has(.hc-card-title a:focus-visible) .pv {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+.hc-packs-l {
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+}
+.hc-packs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: -4px;
+}
+.hc-packs li {
+  padding: 3px 10px;
+  border-radius: var(--pill);
+  background: var(--paper-2);
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  font-variant-numeric: tabular-nums;
+}
+.hc-card:active .pv {
+  transform: scale(0.98);
+}
+@media (hover: hover) and (pointer: fine) {
+  .hc-card:hover {
+    transform: translateY(-4px);
+  }
+  .hc-card:hover .hc-card-title a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+}
+
+/* "Add to my list": a real checkbox inside a pill (JS only; a link stands in without JS) */
+.hc-add {
+  position: relative;
+  z-index: 2;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--tap);
+  margin-top: 4px;
+  padding: 0 16px 0 10px;
+  border-radius: var(--pill);
+  background: var(--paper-2);
+  color: var(--ink);
+  font-size: var(--step-small);
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    background-color var(--dur-fast) ease,
+    transform var(--dur-press) var(--ease-out);
+}
+.hc-add input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.hc-add:active {
+  transform: scale(0.97);
+}
+.hc-add:has(input:checked) {
+  background: var(--mint);
+}
+.hc-add:has(input:focus-visible) {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .hc-add:hover {
+    background: var(--paper-3);
+  }
+  .hc-add:has(input:checked):hover {
+    background: #b0d9c2;
+  }
+}
+.hc-check {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1.5px var(--ink-soft); /* taste-skill-ignore: the checkbox's edge */
+  transition:
+    background-color var(--dur-fast) ease,
+    box-shadow var(--dur-fast) ease;
+}
+.hc-check svg {
+  fill: none;
+  stroke: var(--paper);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0;
+  transform: scale(0.6);
+  transition:
+    opacity var(--dur-press) var(--ease-out),
+    transform var(--dur-press) var(--ease-out);
+}
+.hc-add input:checked + .hc-check {
+  background: var(--action);
+  box-shadow: inset 0 0 0 1.5px var(--action); /* taste-skill-ignore: the checkbox's edge */
+}
+.hc-add input:checked + .hc-check svg {
+  opacity: 1;
+  transform: none;
+}
+.hc-add-nojs {
+  position: relative;
+  z-index: 2;
+  justify-self: start;
+  color: var(--action);
+  font-size: var(--step-small);
+}
+html.fp-js .hc-add-nojs,
+html:not(.fp-js) .hc-add {
+  display: none;
+}
+.hc-bulk-note {
+  margin-top: 28px;
+  padding: 18px 22px;
+  border-radius: 20px;
+  background: var(--paper-2);
+  font-weight: 500;
+}
+
+/* ---------- the panel: "My HoReCa list" ---------- */
+.hc-panel {
+  min-width: 0;
+}
+@media (min-width: 1000px) {
+  .hc-panel {
+    position: sticky;
+    top: 104px;
+    align-self: start;
+    margin-top: clamp(56px, 2rem + 4vw, 96px);
+  }
+}
+.hc-panel-card {
+  border-radius: 28px;
+  background-color: var(--forest-950);
+  background-image: url('/images/grain.png');
+  background-size: 160px 160px;
+  color: var(--on-dark-soft);
+  padding: 24px;
+  box-shadow: 0 30px 60px -36px rgb(2 10 7 / 0.65); /* taste-skill-ignore: the list floats beside the cards */
+}
+.hc-panel-bar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 4px 16px;
+}
+.hc-panel-bar h2 {
+  color: var(--on-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
+.hc-count {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 6px;
+}
+.hc-count-n {
+  display: inline-block;
+  min-width: 2ch;
+  color: var(--mint);
+  font-size: 2.75rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.hc-count-l {
+  font-size: var(--step-small);
+}
+.hc-panel-toggle {
+  display: none;
+}
+.hc-panel-body {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+.hc-empty,
+.hc-nojs {
+  font-size: var(--step-small);
+  line-height: 1.5;
+}
+html.fp-js .hc-nojs,
+html:not(.fp-js) .hc-empty,
+html:not(.fp-js) .hc-type,
+html:not(.fp-js) .hc-clear,
+html:not(.fp-js) .hc-picked,
+.hc-empty[hidden] {
+  display: none;
+}
+.hc-picked {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-height: min(34vh, 260px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.hc-picked:empty {
+  display: none;
+}
+.hc-picked li {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  min-height: 34px;
+  padding-inline: 12px 2px;
+  border-radius: var(--pill);
+  background: rgb(238 244 239 / 0.08);
+  color: var(--on-dark);
+  font-size: 0.8125rem;
+  line-height: 1.25;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hc-picked li {
+    animation: hc-chip-in 180ms var(--ease-out) both;
+  }
+}
+@keyframes hc-chip-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+}
+.hc-picked button {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--on-dark-soft);
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) ease,
+    transform var(--dur-press) var(--ease-out);
+}
+.hc-picked button:active {
+  transform: scale(0.9);
+}
+@media (hover: hover) and (pointer: fine) {
+  .hc-picked button:hover {
+    background: rgb(238 244 239 / 0.12);
+    color: var(--on-dark);
+  }
+}
+.hc-picked svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+.hc-type label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.hc-type select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: var(--pill);
+  background: rgb(238 244 239 / 0.08);
+  box-shadow: inset 0 0 0 1px rgb(238 244 239 / 0.24); /* taste-skill-ignore: the pill field device on dark, as the label hero */
+  color: var(--on-dark);
+  font: inherit;
+  font-size: 1rem;
+  color-scheme: dark;
+}
+.hc-type select:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+}
+.hc-cta {
+  width: 100%;
+  min-height: 56px;
+  padding-block: 12px;
+  white-space: normal;
+  text-align: center;
+  background: var(--paper);
+  color: var(--forest-950);
+}
+.hc-cta:hover {
+  background: var(--mint);
+  color: var(--forest-950);
+}
+.hc-panel :focus-visible {
+  outline-color: var(--mint);
+}
+.hc-clear {
+  justify-self: center;
+  min-height: var(--tap);
+  padding: 0 12px;
+  border: 0;
+  background: none;
+  color: var(--on-dark-soft);
+  font: inherit;
+  font-size: var(--step-small);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  cursor: pointer;
+  transition: transform var(--dur-press) var(--ease-out);
+}
+.hc-clear:active {
+  transform: scale(0.97);
+}
+.hc-clear:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* ---------- phones and tablets: the panel becomes a bottom sheet (JS only) ----------
+   It sits above the WhatsApp and language buttons (they keep the bottom corners) and shows only
+   its bar until opened. It slides away while the space sections are off-screen. */
+@media (max-width: 999.98px) {
+  html.fp-js .hc-layout {
+    padding-bottom: calc(var(--section) * 0.5 + 72px);
+  }
+  html.fp-js .hc-panel {
+    position: fixed;
+    z-index: 55;
+    left: max(12px, env(safe-area-inset-left));
+    right: max(12px, env(safe-area-inset-right));
+    bottom: calc(max(16px, env(safe-area-inset-bottom)) + 56px + 12px);
+    max-width: 560px;
+    margin-inline: auto;
+    border-radius: 24px;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  html.fp-js .hc-panel-card {
+    --bar: 68px;
+    max-height: min(72svh, 620px);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 24px;
+    pointer-events: auto;
+    box-shadow: /* taste-skill-ignore: the sheet floats over the page */
+      0 0 0 1px rgb(191 227 207 / 0.16),
+      0 20px 40px -16px rgb(2 10 7 / 0.7);
+    transform: translateY(calc(100% - var(--bar)));
+    transition:
+      transform 420ms var(--ease-drawer, cubic-bezier(0.32, 0.72, 0, 1)),
+      opacity 240ms var(--ease-out);
+  }
+  html.fp-js .hc-panel[data-open] .hc-panel-card {
+    transform: none;
+  }
+  html.fp-js .hc-panel[data-away] .hc-panel-card {
+    transform: translateY(calc(100% + 24px));
+    opacity: 0;
+    pointer-events: none;
+  }
+  html.fp-js .hc-panel-bar {
+    flex: none;
+    min-height: var(--bar);
+    padding: 10px 10px 10px 20px;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    cursor: pointer;
+  }
+  html.fp-js .hc-panel-bar h2 {
+    font-size: 1rem;
+  }
+  html.fp-js .hc-count {
+    grid-column: auto;
+    grid-row: 1;
+    grid-column-start: 2;
+    margin: 0;
+    gap: 6px;
+  }
+  html.fp-js .hc-count-n {
+    font-size: 1.5rem;
+  }
+  html.fp-js .hc-count-l {
+    position: absolute;
+    width: 1px;
+    height: 1px; /* taste-skill-ignore: visually hidden text */
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  html.fp-js .hc-panel-toggle {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgb(238 244 239 / 0.1);
+    color: var(--on-dark);
+    cursor: pointer;
+    transition: transform var(--dur-press) var(--ease-out);
+  }
+  html.fp-js .hc-panel-toggle:active {
+    transform: scale(0.94);
+  }
+  html.fp-js .hc-panel-toggle svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: transform var(--dur) var(--ease-out);
+  }
+  html.fp-js .hc-panel[data-open] .hc-panel-toggle svg {
+    transform: rotate(180deg);
+  }
+  html.fp-js .hc-panel-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    margin: 0;
+    padding: 4px 20px 16px;
+  }
+  html.fp-js .hc-picked {
+    max-height: none;
+    overflow: visible;
+  }
+}
+@media (max-width: 999.98px) and (prefers-reduced-motion: reduce) {
+  html.fp-js .hc-panel-card {
+    transition: opacity 160ms ease-out;
+  }
+}
+
+/* ==========================================================================
+   FREE SAMPLES: HOW IT WORKS
+   ========================================================================== */
+.hc-samples {
+  scroll-margin-top: 72px;
+}
+.hc-samples-head {
+  display: grid;
+  gap: 12px;
+  max-width: 44rem;
+}
+.hc-samples-head h2 {
+  font-size: var(--step-head);
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+.hc-samples-head p {
+  color: var(--ink-soft);
+}
+.hc-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: clamp(32px, 4vw, 56px);
+  counter-reset: none;
+}
+.hc-step {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: clamp(24px, 2.6vw, 36px);
+  border-radius: 24px;
+  background: var(--paper-2);
+}
+.hc-step:first-child {
+  background: var(--forest-950);
+  color: var(--on-dark-soft);
+}
+.hc-step:first-child h3 {
+  color: var(--on-dark);
+}
+.hc-step:first-child .hc-step-n {
+  color: var(--mint);
+}
+.hc-step-n {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(2.5rem, 1.8rem + 2vw, 3.75rem);
+  line-height: 1;
+  color: var(--action);
+  font-variant-numeric: tabular-nums;
+}
+.hc-step h3 {
+  font-size: var(--step-h3);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+.hc-samples-lead {
+  margin-top: 20px;
+  font-size: var(--step-small);
+  color: var(--ink-soft);
+}
+@media (max-width: 759.98px) {
+  .hc-steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* ==========================================================================
+   REDUCED MOTION: short fades, no travel, no pulse
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  .fp-copy .crumbs,
+  .fp-h .line-in,
+  .fp-lead,
+  .fp-actions,
+  .fp-svg,
+  .fp-hint {
+    animation: fp-fade 300ms ease-out both;
+  }
+  .fp-spot {
+    animation: fp-fade 300ms ease-out backwards;
+  }
+  .fp-card,
+  .fp-card[data-open] {
+    transform: none;
+  }
+  .hc-card,
+  .hc-card:hover {
+    transform: none;
+  }
+}

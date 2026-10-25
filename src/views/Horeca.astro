@@ -1,0 +1,251 @@
+---
+/**
+ * For Hotels, Restaurants & Cafés (HoReCa): /horeca/ in every language.
+ * The Floor Plan hero → the promise strip → one section per space with photo cards and an
+ * "Add to my list" checkbox, beside the sticky "My HoReCa list" panel (a bottom sheet on phones)
+ * → how the free sample works → HoReCa FAQ → the quote card.
+ *
+ * The spaces, their products and HoReCa pack sizes come from src/lib/horeca.ts; product names,
+ * pack names and photos come from the product files in the page's language.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FloorPlanHero from '../components/FloorPlanHero.astro';
+import ProductVisual from '../components/ProductVisual.astro';
+import Faq from '../components/Faq.astro';
+import QuoteCard from '../components/QuoteCard.astro';
+import { SPACES, PROPERTY_TYPES, horecaMessage } from '../lib/horeca';
+import { enquiryHref } from '../lib/enquiry';
+import { getProducts } from '../lib/products';
+import { faqJsonLd, itemListJsonLd, serviceJsonLd, buildKeywords } from '../lib/seo';
+import { ogCard, productImagePath } from '../lib/product-image';
+import { useI18n } from '../i18n/page';
+import '../styles/horeca.css';
+
+const { lang, info, ui, lp, fmt } = useI18n(Astro.url);
+const H = ui.horeca;
+const path = '/horeca/';
+const url = lp(path);
+const contact = lp('/contact/');
+
+const products = await getProducts(lang);
+const bySlug = new Map(products.map((p) => [p.data.slug, p]));
+const spaces = SPACES.map((s) => {
+  const t = H.spaces[s.id];
+  return {
+    ...s,
+    name: t.name,
+    short: t.short,
+    need: t.need,
+    products: s.products.map((sp) => {
+      const p = bySlug.get(sp.slug)!;
+      return {
+        slug: sp.slug,
+        name: p.data.title,
+        category: p.data.category.id,
+        href: lp(`/products/${sp.slug}/`),
+        packs: sp.packs.map((i) => p.data.packSizes[i]).filter(Boolean),
+        thumb: `/images/thumbs/${sp.slug}-96.webp`,
+        image: productImagePath(sp.slug),
+      };
+    }),
+  };
+});
+
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: ui.header.nav.horeca, url },
+];
+const generic = horecaMessage([], '', H.message);
+const genericHref = enquiryHref(contact, { message: generic });
+const faqs = H.faqs;
+const steps = H.samplesSteps;
+const pad = (n: number) => String(n).padStart(2, '0');
+
+const jsonLd = [
+  serviceJsonLd({ url, name: H.serviceName, serviceType: H.serviceType, description: H.description, audience: H.audience }),
+  ...spaces.map((s) =>
+    itemListJsonLd(
+      url,
+      s.name,
+      s.products.map((p) => ({ name: p.name, url: p.href, image: p.image })),
+      s.anchor,
+    ),
+  ),
+  faqJsonLd(faqs, info.hreflang, url),
+];
+---
+
+<BaseLayout
+  title={H.title}
+  description={H.description}
+  path={path}
+  ogImage={ogCard('horeca.jpg')}
+  ogImageAlt={H.stageTitle}
+  keywords={buildKeywords(ui.seo.keywords.horeca)}
+  breadcrumbs={breadcrumbs}
+  jsonLd={jsonLd}
+  dark
+>
+  <FloorPlanHero breadcrumbs={breadcrumbs} spaces={spaces} />
+
+  <!-- 1. The promise -->
+  <section class="hc-promise" aria-labelledby="hc-promise-h">
+    <div class="wrap hc-promise-inner">
+      <div class="hc-promise-head" data-reveal>
+        <h2 id="hc-promise-h">{H.promiseH}</h2>
+        <p>{H.promiseText}</p>
+      </div>
+      <ul class="promises hc-promises">
+        {
+          H.promises.map((p, i) => (
+            <li class="promise" data-reveal style={`--i: ${i + 1}`}>
+              <h3>{p.title}</h3>
+              <p>{p.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- 2. The spaces and the list -->
+  <div class="wrap hc-layout" id="checklist" data-checklist>
+    <div class="hc-main">
+      <div class="hc-intro" data-reveal>
+        <h2 id="hc-list-h">{H.listH}</h2>
+        <p>{H.listText}</p>
+      </div>
+
+      {
+        spaces.map((s, si) => (
+          <section class="hc-space" id={s.anchor} aria-labelledby={`${s.anchor}-h`}>
+            <div class="hc-space-head" data-reveal>
+              <span class="hc-space-n" aria-hidden="true">
+                {pad(si + 1)}
+              </span>
+              <h2 id={`${s.anchor}-h`}>{s.name}</h2>
+              <p>{s.need}</p>
+            </div>
+            <ul class="hc-cards">
+              {s.products.map((p, pi) => (
+                <li class="hc-card" data-cat={p.category} data-reveal style={`--i: ${pi % 4}`}>
+                  <div class="hc-card-media">
+                    <ProductVisual slug={p.slug} title={p.name} category={p.category} size="card" />
+                  </div>
+                  <h3 class="hc-card-title" id={`hc-t-${s.anchor}-${p.slug}`}>
+                    <a href={p.href}>{p.name}</a>
+                  </h3>
+                  <p class="hc-packs-l">{H.packsLabel}</p>
+                  <ul class="hc-packs">
+                    {p.packs.map((k) => (
+                      <li>{k}</li>
+                    ))}
+                  </ul>
+                  <label class="hc-add">
+                    <input
+                      type="checkbox"
+                      id={`hc-add-${s.anchor}-${p.slug}`}
+                      data-pick={p.slug}
+                      data-name={p.name}
+                      aria-labelledby={`hc-add-l-${s.anchor}-${p.slug} hc-t-${s.anchor}-${p.slug}`}
+                    />
+                    <span class="hc-check" aria-hidden="true">
+                      <svg viewBox="0 0 16 16" width="14" height="14" focusable="false">
+                        <path d="M3.5 8.5 6.5 11.5 12.5 5" />
+                      </svg>
+                    </span>
+                    <span id={`hc-add-l-${s.anchor}-${p.slug}`}>{H.add}</span>
+                  </label>
+                  <a class="hc-add-nojs link-arrow" href={enquiryHref(contact, { products: [p.slug], message: generic })}>
+                    {H.addNoJs} <span class="arr" aria-hidden="true">→</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {s.id === 'backOfHouse' && <p class="hc-bulk-note" data-reveal>{H.bulkNote}</p>}
+          </section>
+        ))
+      }
+    </div>
+
+    <aside class="hc-panel" aria-labelledby="hc-panel-h" data-panel data-away>
+      <div class="hc-panel-card">
+        <div class="hc-panel-bar">
+          <h2 id="hc-panel-h">{H.panel.title}</h2>
+          <p class="hc-count" aria-live="polite">
+            <span class="hc-count-n" data-count>0</span>
+            <span class="hc-count-l">{H.panel.count}</span>
+          </p>
+          <button
+            type="button"
+            class="hc-panel-toggle"
+            aria-expanded="false"
+            aria-controls="hc-panel-body"
+            data-panel-toggle
+            data-open={H.panel.open}
+            data-close={H.panel.close}
+            aria-label={H.panel.open}
+          >
+            <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">
+              <path d="M4 10l4-4 4 4" />
+            </svg>
+          </button>
+        </div>
+        <div class="hc-panel-body" id="hc-panel-body">
+          <p class="hc-empty" data-empty>{H.panel.empty}</p>
+          <p class="hc-nojs">{H.panel.noJs}</p>
+          <ul class="hc-picked" data-picked data-remove={H.panel.remove}></ul>
+          <div class="hc-type">
+            <label for="hc-type">{H.panel.typeLabel}</label>
+            <select id="hc-type" data-type>
+              <option value="">{H.panel.typeChoose}</option>
+              {PROPERTY_TYPES.map((t) => <option value={t}>{H.panel.types[t]}</option>)}
+            </select>
+          </div>
+          <a
+            class="btn hc-cta"
+            href={genericHref}
+            data-cta
+            data-contact={contact}
+            data-msg={JSON.stringify(H.message)}
+          >
+            {H.panel.cta} <span class="arr" aria-hidden="true">→</span>
+          </a>
+          <button type="button" class="hc-clear" data-clear>{H.panel.clear}</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 3. Free samples -->
+  <section class="wrap sec hc-samples" id="samples" aria-labelledby="hc-samples-h">
+    <div class="hc-samples-head" data-reveal>
+      <h2 id="hc-samples-h">{H.samplesH}</h2>
+      <p>{H.samplesText}</p>
+    </div>
+    <ol class="hc-steps">
+      {
+        steps.map((st, i) => (
+          <li class="hc-step" data-reveal style={`--i: ${i}`}>
+            <span class="hc-step-n" aria-hidden="true">
+              {pad(i + 1)}
+            </span>
+            <h3>{st.name}</h3>
+            <p>{st.text}</p>
+          </li>
+        ))
+      }
+    </ol>
+    <p class="hc-samples-lead" data-reveal>{fmt(H.samplesLead, ui.terms)}</p>
+  </section>
+
+  <!-- 4. HoReCa FAQ -->
+  <Faq faqs={faqs} heading={H.faqH} split />
+
+  <!-- 5. The quote card -->
+  <QuoteCard heading={H.quoteH} text={H.quoteText} />
+</BaseLayout>
+
+<script>
+  import '../scripts/horeca';
+</script>
