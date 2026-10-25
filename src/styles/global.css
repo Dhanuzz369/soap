@@ -541,7 +541,9 @@ a:hover {
   width: 100%;
   margin-top: 8px;
 }
-@media (max-width: 899.98px) {
+/* The full menu needs about 1200px in the longest languages (Russian, Swahili, French), so
+   narrower screens use the menu button. */
+@media (max-width: 1199.98px) {
   .bar {
     grid-template-columns: 1fr auto;
     padding-block: 0;

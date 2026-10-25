@@ -785,14 +785,13 @@ html:not(.fp-js) .hc-add {
 }
 .hc-count {
   grid-column: 1 / -1;
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  margin-top: 6px;
+  display: grid;
+  justify-items: start;
+  gap: 4px;
+  margin-top: 10px;
 }
 .hc-count-n {
   display: inline-block;
-  min-width: 2ch;
   color: var(--mint);
   font-size: 2.75rem;
   font-weight: 600;
@@ -821,6 +820,7 @@ html:not(.fp-js) .hc-empty,
 html:not(.fp-js) .hc-type,
 html:not(.fp-js) .hc-clear,
 html:not(.fp-js) .hc-picked,
+html:not(.fp-js) .hc-count,
 .hc-empty[hidden] {
   display: none;
 }
@@ -1007,10 +1007,18 @@ html:not(.fp-js) .hc-picked,
     grid-row: 1;
     grid-column-start: 2;
     margin: 0;
-    gap: 6px;
   }
   html.fp-js .hc-count-n {
-    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    min-width: 36px;
+    height: 36px;
+    padding-inline: 8px;
+    border-radius: var(--pill);
+    background: var(--mint);
+    color: var(--forest-950);
+    font-size: 1rem;
+    letter-spacing: 0;
   }
   html.fp-js .hc-count-l {
     position: absolute;

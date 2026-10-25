@@ -53,8 +53,14 @@ if (stage) {
     let left = px - 16;
     if (left + cw > st.width) left = px + 16 - cw;
     left = Math.max(0, Math.min(left, st.width - cw));
+    // Below the pin when it fits inside the hero band, else above it (clear of the floating
+    // header), else on whichever side has more room.
+    const band = (stage.closest('section') ?? stage).getBoundingClientRect();
+    const pinY = pin.top + pin.height / 2;
+    const below = band.bottom - (pinY + gap) - 8;
+    const above = pinY - gap - Math.max(band.top, 88);
     let top = py + gap;
-    if (top + ch > st.height + 24 && py - gap - ch > -st.top) top = py - gap - ch;
+    if (ch > below && above > below) top = py - gap - ch;
     card.style.left = `${Math.round(left)}px`;
     card.style.top = `${Math.round(top)}px`;
     card.style.setProperty('--origin', `${Math.round(px - left)}px ${Math.round(py - top)}px`);

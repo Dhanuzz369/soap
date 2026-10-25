@@ -35,7 +35,9 @@ interface Props {
   }[];
 }
 const { breadcrumbs, spaces } = Astro.props;
-const { ui, fmt } = useI18n(Astro.url);
+const { ui, fmt, info } = useI18n(Astro.url);
+/** The drawing stays left-to-right; its labels and cards read in the page's direction. */
+const dir = info.dir;
 const H = ui.horeca;
 const pct = (v: number, of: number) => `${((v / of) * 100).toFixed(3)}%`;
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -238,9 +240,9 @@ const ROOMS: Record<SpaceId, [number, number, number, number][]> = {
                 <span class="fp-pin" aria-hidden="true">
                   {i + 1}
                 </span>
-                <span class="fp-name">{s.short}</span>
+                <span class="fp-name" dir={dir}>{s.short}</span>
               </button>
-              <div class="fp-card" id={`fp-card-${s.id}`} data-card={s.id} role="region" aria-label={s.name}>
+              <div class="fp-card" id={`fp-card-${s.id}`} data-card={s.id} role="region" aria-label={s.name} dir={dir}>
                 <p class="fp-card-h">{s.name}</p>
                 <ul class="fp-card-list">
                   {s.products.map((p) => (
@@ -258,8 +260,8 @@ const ROOMS: Record<SpaceId, [number, number, number, number][]> = {
           ))
         }
       </div>
-      <p class="fp-hint">{H.stageHint}</p>
-      <nav class="fp-legend" aria-label={H.spacesNav}>
+      <p class="fp-hint" dir={dir}>{H.stageHint}</p>
+      <nav class="fp-legend" aria-label={H.spacesNav} dir={dir}>
         <ol>
           {
             spaces.map((s, i) => (
