@@ -67,6 +67,37 @@ For "<product> exporter India" searches, the results are 90–100% marketplaces 
 
 Where the site *can* rank early: long-tail and per-market searches, and above all French, Spanish and Arabic searches, where no Indian supplier currently writes in the buyer's language. That's your clearest opening.
 
+## Fixes applied (2026-10-26)
+
+All of section B is done on branch `fix/seo-audit`. Contacts, `site.url` and `launchReady` are unchanged (owner input, section A). Every new or changed visible string is in all 12 languages and `npm run i18n:check -- --strict` passes.
+
+| # | What was done | Commit |
+|---|---|---|
+| 1 | `vercel.json` (written by `npm run vercel:config` from `site.ts`, checked by a unit test): `X-Robots-Tag: noindex, nofollow` on every `*.vercel.app` host, and a 308 from `*.vercel.app` to `site.url` once `launchReady` is true with a real domain. The launch decision is now `launchReady && VERCEL_ENV === 'production'` (no `VERCEL_ENV` = local build = production), so every preview is noindex with `Disallow: /`. README section 7 explains it. | `b55b00f` |
+| 2 | `trailingSlash: true` in `vercel.json` (`/products` → 308 → `/products/`). | `b55b00f` |
+| 3 | The private-label FAQ answer now says there is no fixed minimum, and that a private-label design can carry its own label or carton minimum stated on the quotation. Test keeps FAQs and products consistent in every language. | `aa2b400` |
+| 4 | /horeca/ narrowed to "hotel soaps, guest amenities (soap, body wash, hand wash) and housekeeping, kitchen and laundry chemicals": title, description, a scope line under the h1, a guest-rooms note saying shampoo, conditioner, dental kits and slippers are not supplied, Service name and type, llms text, and keywords without "hotel amenities supplier" as a head term. | `38660da` |
+| 5 | "How we vet manufacturers and check orders" on /about/#how-we-vet (six steps, only practices the site already states), linked from the footer and the home page, in llms-full.txt. README asks the owner to confirm and extend it. | `4fa66c8` |
+| 6 | /private-label/: grid of the 19 private-label products by range with their pack photos and links, the products supplied without private label named, and "Why source private label through a merchant exporter" (one contact, mixed containers, documents, no fixed minimum). | `e6b1444` |
+| 7 | All 8 guides cite primary sources by stable URL (WCO HS 2022, DGFT ITC(HS), CBIC, BIS IS 2888, ICC Incoterms). The HSN guide explains that HS 2022 moved retail washing and cleaning preparations from 3402 20 to 3402 50 and says "8-digit ITC-HS codes are confirmed per order against the current DGFT schedule". No 8-digit codes are published. Guides show "Last reviewed 26 Oct 2026". | `96ab06d` |
+| 8 | Security headers (X-Content-Type-Options, Referrer-Policy, Permissions-Policy, X-Frame-Options, CSP `frame-ancestors 'none'`), one-year immutable caching for /fonts, one week for /images and /og. | `b55b00f` |
+| 9 | /horeca/ WebPage `mainEntity` → Service; Service `mainEntityOfPage` and a price-free `hasOfferCatalog` listing the six space ItemLists. Organization `address` (country now; city and street when real) and `@id`s on the FIEO and CHEMEXCIL `memberOf` nodes. | `f64dfbb` |
+| 10 | Product and range h1s are composed per language from `common.titleH1` (e.g. "Nettoyant sols : exportateur et fournisseur depuis l’Inde"); the two-line layout is unchanged. | `c596b4b` |
+| 11 | Kochi photo 400w/800w and neem cut-out 600w/900w with correct `sizes`; Arabic pages load two font files instead of three; hero fan setup moved to idle time. `build.inlineStylesheets: 'always'` was measured and not adopted (it lowered / and /horeca/ to 97 on the uncompressed local preview). | `62da489` |
+| 12 | Every product body links its range and a related guide (23 products × 12 languages); each range page has a 155–165 word overview with guide links; products show "Last reviewed" and emit `dateModified`; the seven products without a guide are now listed on one. | `f75c0b2` |
+| 13 | The enquiry-ready panel is announced through a polite `role="status"` region (focus still moves to it), and the email and phone are shown as plain text beside the send buttons. | `9f55206` |
+| 14 | Hidden separator between the HSN pill and its note ("3402 50. 8-digit…"); the llms.txt "Registered with" line is translated; the robots.ts comment now separates search, grounding and training bots, with a test. | `e6f5bf9` |
+
+Local Lighthouse 13.5.0, mobile, `npm run preview`, median of 3 interleaved runs against a build of the audit commit (`5b25154`):
+
+| Page | Performance before → after | Accessibility | CLS | LCP before → after | Weight before → after |
+|---|---|---|---|---|---|
+| / | 98 → 98 | 100 | 0 | 2.48 s → 2.48 s | 400 → 355 KB |
+| /horeca/ | 99 → 99 | 100 | 0 | 1.96 s → 1.96 s | 414 → 415 KB |
+| /export-process/ | 99 → 99 | 100 | 0 | 2.11 s → 2.11 s | 325 → 256 KB |
+| /ar/ | 97 → 98 | 100 | 0 | 2.57 s → 2.41 s | 469 → 379 KB |
+| /zh/ | 97 → 97 (worst run 91 → 96) | 100 | 0 | 2.56 s → 2.56 s | 400 → 355 KB |
+
 ## What to measure (no re-audit needed)
 - Search Console: pages indexed out of about 541 in week 2, and impressions by country and language.
 - Enquiries per week from `/contact/?product=` links.
