@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '06deb3bc7fff';
+export const sourceHash = 'ff1e6f1225e8';
 
 const sw: UiPartial = {
   meta: {
@@ -674,6 +674,17 @@ const sw: UiPartial = {
     ],
     quoteH: 'Anza maelezo yako.',
     quoteText: 'Tuma bidhaa, vifungashio na soko unalolenga kwa sentensi moja. Tunajibu kwa chaguo, bei na muda wa maandalizi.',
+    rangeH: 'Bidhaa zipi zinaweza kubeba chapa yako?',
+    rangeText: 'Chapa ya mnunuzi inapatikana kwa bidhaa {n}. Ukurasa wa kila bidhaa unaorodhesha aina zake, ukubwa wa kawaida wa vifungashio na chaguo za chapa ya mnunuzi.',
+    rangeNone: 'Hutolewa bila chapa ya mnunuzi: {list}.',
+    whyH: 'Kwa nini upate chapa ya mnunuzi kupitia msafirishaji mfanyabiashara',
+    whyText: 'Unatafuta mtengenezaji? GoodBiz Hygiene ni msafirishaji mfanyabiashara, si kiwanda. Haya ndiyo inayoongeza kwenye bidhaa za chapa yako.',
+    why: [
+      { title: 'Mtu mmoja wa kuwasiliana kwa viwanda vingi', text: 'Sabuni, sabuni za unga na visafishaji kwa kawaida hutengenezwa katika viwanda maalum tofauti. Unaeleza mahitaji yako kwa timu moja na kupokea nukuu moja ya bei kwa bidhaa zote, badala ya kutafuta na kusimamia kila kiwanda mwenyewe.' },
+      { title: 'Makontena mchanganyiko', text: 'Bidhaa za chapa ya mnunuzi kutoka kwa watengenezaji kadhaa zinaweza kusafiri pamoja katika kontena moja la futi 20 au 40, pamoja na bidhaa za kawaida ukizihitaji.' },
+      { title: 'Nyaraka tunashughulikia', text: 'Ankara, orodha ya upakiaji, cheti cha asili, COA na MSDS huandaliwa kwa usafirishaji wote, tayari kwa wakala wako wa forodha.' },
+      { title: 'Hakuna kiwango cha chini kisichobadilika', text: 'Hakuna kiwango cha chini cha oda kisichobadilika: oda za majaribio na mizigo ya sehemu hupewa bei. Muundo wa chapa ya mnunuzi unaweza kuwa na kiwango chake cha chini kwa lebo au katoni zilizochapishwa, kinachoelezwa kwenye nukuu ya bei.' },
+    ],
   },
 
   horeca: {

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '06deb3bc7fff';
+export const sourceHash = 'ff1e6f1225e8';
 
 const vi: UiPartial = {
   meta: {
@@ -675,6 +675,17 @@ const vi: UiPartial = {
     ],
     quoteH: 'Bắt đầu gửi yêu cầu của Quý khách.',
     quoteText: 'Hãy nêu sản phẩm, quy cách đóng gói và thị trường Quý khách đang hướng đến trong một dòng. Chúng tôi sẽ phản hồi kèm các phương án, giá và thời gian giao hàng.',
+    rangeH: 'Những sản phẩm nào có thể mang thương hiệu của Quý khách?',
+    rangeText: 'Nhãn riêng có cho {n} sản phẩm. Trang của mỗi sản phẩm liệt kê các loại, quy cách đóng gói điển hình và các lựa chọn nhãn riêng.',
+    rangeNone: 'Cung cấp không kèm nhãn riêng: {list}.',
+    whyH: 'Vì sao nên đặt hàng nhãn riêng qua một nhà xuất khẩu thương mại',
+    whyText: 'Quý khách đang tìm nhà sản xuất? GoodBiz Hygiene là nhà xuất khẩu thương mại, không phải nhà máy. Đây là những gì điều đó mang lại cho dòng sản phẩm nhãn riêng.',
+    why: [
+      { title: 'Một đầu mối cho nhiều nhà máy', text: 'Xà phòng, bột giặt và chất tẩy rửa thường được sản xuất ở các nhà máy chuyên biệt khác nhau. Quý khách chỉ cần làm việc với một đội ngũ và nhận một báo giá cho cả dòng sản phẩm, thay vì tự tìm và quản lý từng nhà máy.' },
+      { title: 'Container ghép', text: 'Các dòng nhãn riêng từ nhiều nhà sản xuất có thể đi chung trong một container 20 ft hoặc 40 ft, cùng các sản phẩm tiêu chuẩn trong danh mục nếu Quý khách cần.' },
+      { title: 'Chứng từ do chúng tôi lo', text: 'Hóa đơn, phiếu đóng gói, giấy chứng nhận xuất xứ, COA và MSDS được chuẩn bị cho cả lô hàng, sẵn sàng cho đại lý hải quan của Quý khách.' },
+      { title: 'Không có mức tối thiểu cố định', text: 'Không có số lượng đặt hàng tối thiểu cố định: đơn hàng dùng thử và lô hàng lẻ đều được báo giá. Thiết kế nhãn riêng có thể có mức tối thiểu riêng cho nhãn hoặc thùng carton in sẵn, được nêu trong báo giá.' },
+    ],
   },
 
   horeca: {

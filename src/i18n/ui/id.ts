@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '06deb3bc7fff';
+export const sourceHash = 'ff1e6f1225e8';
 
 const id: UiPartial = {
   meta: {
@@ -675,6 +675,17 @@ const id: UiPartial = {
     ],
     quoteH: 'Mulai brief Anda.',
     quoteText: 'Kirimkan produk, kemasan, dan pasar yang Anda bayangkan dalam satu baris. Kami akan membalas dengan pilihan, harga, dan lead time.',
+    rangeH: 'Produk mana yang bisa memakai merek Anda?',
+    rangeText: 'Private label tersedia untuk {n} produk. Setiap halaman produk mencantumkan varian, ukuran kemasan tipikal, dan pilihan private label-nya.',
+    rangeNone: 'Dipasok tanpa private label: {list}.',
+    whyH: 'Mengapa memesan private label melalui eksportir pedagang',
+    whyText: 'Mencari produsen? GoodBiz Hygiene adalah eksportir pedagang, bukan pabrik. Inilah nilai tambahnya bagi lini private label Anda.',
+    why: [
+      { title: 'Satu kontak untuk banyak pabrik', text: 'Sabun, deterjen, dan pembersih biasanya dibuat di pabrik khusus yang berbeda. Anda cukup memberi brief kepada satu tim dan menerima satu penawaran untuk seluruh lini, tanpa harus mencari dan mengelola setiap pabrik sendiri.' },
+      { title: 'Kontainer campuran', text: 'Lini private label dari beberapa produsen dapat dikirim bersama dalam satu kontainer 20 ft atau 40 ft, bersama produk standar dari lini kami bila Anda perlukan.' },
+      { title: 'Dokumen kami urus', text: 'Faktur, packing list, surat keterangan asal, COA, dan MSDS disiapkan untuk seluruh pengiriman, siap untuk agen bea cukai Anda.' },
+      { title: 'Tanpa minimum tetap', text: 'Tidak ada pesanan minimum yang tetap: pesanan percobaan dan muatan parsial dapat diberi penawaran. Desain private label dapat memiliki minimum tersendiri untuk label atau karton cetak, yang dicantumkan dalam penawaran.' },
+    ],
   },
 
   horeca: {

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '06deb3bc7fff';
+export const sourceHash = 'ff1e6f1225e8';
 
 const de: UiPartial = {
   meta: {
@@ -675,6 +675,17 @@ const de: UiPartial = {
     ],
     quoteH: 'Anforderungen senden.',
     quoteText: 'Senden Sie uns Produkte, Packungen und Markt, die Ihnen vorschweben, in einer Zeile. Wir antworten mit Optionen, Preisen und Lieferzeiten.',
+    rangeH: 'Welche Produkte können Ihre Marke tragen?',
+    rangeText: 'Eine Handelsmarke ist bei {n} Produkten möglich. Jede Produktseite nennt Sorten, typische Packungsgrößen und Optionen für die Handelsmarke.',
+    rangeNone: 'Ohne Handelsmarke geliefert: {list}.',
+    whyH: 'Warum Handelsmarken über einen Handelsexporteur beziehen',
+    whyText: 'Sie suchen einen Hersteller? GoodBiz Hygiene ist ein Handelsexporteur, keine Fabrik. Das bringt es Ihrem Handelsmarken-Sortiment.',
+    why: [
+      { title: 'Ein Ansprechpartner für viele Werke', text: 'Seifen, Waschmittel und Reiniger entstehen meist in verschiedenen Spezialwerken. Sie briefen ein Team und erhalten ein Angebot für das ganze Sortiment, statt jedes Werk selbst zu suchen und zu steuern.' },
+      { title: 'Gemischte Container', text: 'Handelsmarken-Linien mehrerer Hersteller können gemeinsam in einem 20- oder 40-Fuß-Container reisen, bei Bedarf zusammen mit Standardprodukten aus dem Sortiment.' },
+      { title: 'Dokumente erledigt', text: 'Rechnung, Packliste, Ursprungszeugnis, COA und Sicherheitsdatenblatt (MSDS) werden für die ganze Sendung erstellt, bereit für Ihren Zollagenten.' },
+      { title: 'Keine feste Mindestmenge', text: 'Eine feste Mindestbestellmenge gibt es nicht: Probeaufträge und Teilladungen werden angeboten. Für ein Handelsmarken-Design kann eine eigene Mindestmenge für bedruckte Etiketten oder Kartons gelten; sie steht im Angebot.' },
+    ],
   },
 
   horeca: {

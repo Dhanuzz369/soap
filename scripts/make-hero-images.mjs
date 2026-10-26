@@ -14,8 +14,9 @@
  *    so a phone's ~210px card (and a 300px card on a 1x screen) loads ~half the bytes of the 800px copy.
  *
  * For every product (src/content/products/*.md):
- *  - public/images/thumbs/<slug>-96.webp: a 96px square thumbnail of its photo, or of its studio
- *    render when it has no photo yet, for the small product lists in the HoReCa hero's cards.
+ *  - public/images/thumbs/<slug>-96.webp and -192.webp: square thumbnails of its photo, or of its
+ *    studio render when it has no photo yet, for the small product lists in the HoReCa hero's cards
+ *    and the private-label range grid (192px for sharp screens).
  * Run it again after replacing or adding a photo.
  */
 import { mkdir, readdir, stat, readFile } from 'node:fs/promises';
@@ -68,12 +69,14 @@ for (const f of productFiles) {
   const variant = path.join(root, 'public/images/renders', `${shape}--${category}.webp`);
   const src = existsSync(photo) ? photo : existsSync(variant) ? variant : path.join(root, 'public/images/renders', `${shape}.webp`);
   if (!existsSync(src)) continue;
-  const out = path.join(thumbDir, `${slug}-96.webp`);
   const fit = src === photo ? 'cover' : 'contain';
-  await sharp(src)
-    .resize({ width: 96, height: 96, fit, background: { r: 11, g: 33, b: 26, alpha: 1 } })
-    .flatten({ background: { r: 11, g: 33, b: 26 } })
-    .webp({ quality: 70, effort: 6 })
-    .toFile(out);
-  await report(out);
+  for (const size of [96, 192]) {
+    const out = path.join(thumbDir, `${slug}-${size}.webp`);
+    await sharp(src)
+      .resize({ width: size, height: size, fit, background: { r: 11, g: 33, b: 26, alpha: 1 } })
+      .flatten({ background: { r: 11, g: 33, b: 26 } })
+      .webp({ quality: 70, effort: 6 })
+      .toFile(out);
+    await report(out);
+  }
 }

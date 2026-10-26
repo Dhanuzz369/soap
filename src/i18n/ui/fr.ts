@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '06deb3bc7fff';
+export const sourceHash = 'ff1e6f1225e8';
 
 const fr: UiPartial = {
   meta: {
@@ -677,6 +677,17 @@ const fr: UiPartial = {
     ],
     quoteH: 'Envoyez votre cahier des charges.',
     quoteText: 'Indiquez en une ligne les produits, conditionnements et le marché visé. Nous vous répondons avec des options, des prix et des délais.',
+    rangeH: 'Quels produits peuvent porter votre marque ?',
+    rangeText: 'La marque de distributeur (marque blanche) est proposée sur {n} produits. Chaque fiche produit indique ses variantes, ses contenances types et ses options de personnalisation.',
+    rangeNone: 'Fournis sans marque de distributeur : {list}.',
+    whyH: 'Pourquoi passer par un exportateur négociant pour votre marque de distributeur',
+    whyText: 'Vous cherchez un fabricant ? GoodBiz Hygiene est un exportateur négociant, pas une usine. Voici ce que cela apporte à une gamme en marque de distributeur.',
+    why: [
+      { title: 'Un seul interlocuteur pour plusieurs usines', text: 'Savons, lessives et nettoyants sont généralement fabriqués dans des usines spécialisées différentes. Vous briefez une seule équipe et recevez un seul devis pour toute la gamme, sans rechercher ni gérer chaque usine vous-même.' },
+      { title: 'Conteneurs mixtes', text: 'Des produits en marque de distributeur issus de plusieurs fabricants peuvent voyager ensemble dans un conteneur de 20 ou 40 pieds, avec des produits standard de la gamme si besoin.' },
+      { title: 'Documents pris en charge', text: 'Facture, liste de colisage, certificat d’origine, COA et FDS (MSDS) sont préparés pour toute l’expédition, prêts pour votre transitaire en douane.' },
+      { title: 'Pas de minimum fixe', text: 'Il n’y a pas de minimum de commande fixe : commandes d’essai et chargements partiels font l’objet d’un devis. Une création en marque de distributeur peut avoir son propre minimum pour les étiquettes ou cartons imprimés, indiqué sur le devis.' },
+    ],
   },
 
   horeca: {

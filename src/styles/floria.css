@@ -799,6 +799,59 @@
   }
 }
 
+/* Private label: the range grid (products offered under private label, by range) */
+.pl-range {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 12px;
+}
+.pl-range-group {
+  padding: clamp(20px, 2.4vw, 30px);
+  border-radius: 24px;
+  background: var(--paper-2);
+}
+.pl-range-group h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+.pl-range-group h3 a {
+  color: inherit;
+}
+.pl-range-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+.pl-range-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 56px;
+  color: var(--ink);
+  text-decoration: none;
+}
+.pl-range-item img {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+.pl-range-item span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+@media (hover: hover) {
+  .pl-range-item:hover span {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+.pl-range-none {
+  margin-top: 20px;
+}
+
 /* About: "How we vet manufacturers" is a link target from the footer and the home page */
 #how-we-vet {
   scroll-margin-top: 72px;

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '06deb3bc7fff';
+export const sourceHash = 'ff1e6f1225e8';
 
 const zh: UiPartial = {
   meta: {
@@ -673,6 +673,17 @@ const zh: UiPartial = {
     ],
     quoteH: '提交您的需求。',
     quoteText: '请用一句话发送您设想的产品、包装和市场。我们会回复方案、价格和交货周期。',
+    rangeH: '哪些产品可以使用您的品牌？',
+    rangeText: '共有{n}种产品可做自有品牌。每个产品页面都列出其品种、典型包装规格和自有品牌选项。',
+    rangeNone: '以下产品不提供自有品牌：{list}。',
+    whyH: '为什么通过贸易出口商采购自有品牌产品',
+    whyText: '在找制造商？GoodBiz Hygiene是贸易出口商，不是工厂。以下是这为自有品牌产品线带来的好处。',
+    why: [
+      { title: '多家工厂，一个联系人', text: '香皂、洗涤剂和清洁剂通常由不同的专业工厂生产。您只需向一个团队说明需求，即可获得整条产品线的一份报价，无需自己寻找和管理每家工厂。' },
+      { title: '混装集装箱', text: '来自多家制造商的自有品牌产品可以装在同一个20英尺或40英尺集装箱中运输，如有需要还可搭配产品线中的标准产品。' },
+      { title: '单证由我们处理', text: '整批货物的发票、装箱单、原产地证书、COA和安全技术说明书（MSDS）均由我们准备，可直接交给您的报关行。' },
+      { title: '无固定起订量', text: '没有固定的最小起订量：试单和部分装载均可报价。自有品牌设计的印刷标签或纸箱可能有单独的起订量，并在报价单中注明。' },
+    ],
   },
 
   horeca: {

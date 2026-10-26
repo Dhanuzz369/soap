@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '06deb3bc7fff';
+export const sourceHash = 'ff1e6f1225e8';
 
 const pt: UiPartial = {
   meta: {
@@ -675,6 +675,17 @@ const pt: UiPartial = {
     ],
     quoteH: 'Inicie a sua solicitação.',
     quoteText: 'Envie em uma linha os produtos, as embalagens e o mercado que você tem em mente. Respondemos com opções, preços e prazos.',
+    rangeH: 'Quais produtos podem levar a sua marca?',
+    rangeText: 'A marca própria está disponível em {n} produtos. Cada página de produto informa as variedades, os tamanhos de embalagem típicos e as opções de marca própria.',
+    rangeNone: 'Fornecidos sem marca própria: {list}.',
+    whyH: 'Por que comprar marca própria por meio de uma trading exportadora',
+    whyText: 'Procurando um fabricante? A GoodBiz Hygiene é uma trading exportadora, não uma fábrica. Veja o que isso acrescenta a uma linha de marca própria.',
+    why: [
+      { title: 'Um só contato para várias fábricas', text: 'Sabonetes, detergentes e limpadores costumam ser feitos em fábricas especializadas diferentes. Você passa o briefing a uma só equipe e recebe uma única cotação para toda a linha, sem precisar encontrar e gerenciar cada fábrica.' },
+      { title: 'Contêineres mistos', text: 'Linhas de marca própria de vários fabricantes podem viajar juntas em um contêiner de 20 ou 40 pés, com produtos padrão da linha se você precisar.' },
+      { title: 'Documentos por nossa conta', text: 'Fatura, packing list, certificado de origem, COA e ficha de segurança (MSDS) são preparados para todo o embarque, prontos para o seu despachante aduaneiro.' },
+      { title: 'Sem mínimo fixo', text: 'Não há pedido mínimo fixo: pedidos de teste e cargas parciais são cotados. Um design de marca própria pode ter um mínimo próprio para rótulos ou caixas impressos, informado na cotação.' },
+    ],
   },
 
   horeca: {

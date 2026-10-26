@@ -7,6 +7,7 @@ import QuoteCard from '../components/QuoteCard.astro';
 import { faqJsonLd, buildKeywords } from '../lib/seo';
 import { ogCard } from '../lib/product-image';
 import { useI18n } from '../i18n/page';
+import { getProductsByCategory } from '../lib/products';
 
 const { lang, info, ui, lp, fmt } = useI18n(Astro.url);
 const L = ui.privateLabel;
@@ -15,6 +16,14 @@ const t = ui.terms;
 const options = L.options;
 const steps = L.steps.map((s) => ({ name: s.name, text: fmt(s.text, t) }));
 const faqs = L.faqs.map((f) => ({ q: fmt(f.q, t), a: fmt(f.a, t) }));
+// The range grid: every product offered under private label, by range, with its pack photo
+// (the 96/192px thumbnails from `npm run hero:images`), linking to the product page.
+const all = await getProductsByCategory(lang);
+const plGroups = all
+  .map((g) => ({ category: g.category, products: g.products.filter((p) => p.data.privateLabel.available) }))
+  .filter((g) => g.products.length > 0);
+const plCount = plGroups.reduce((n, g) => n + g.products.length, 0);
+const withoutPl = all.flatMap((g) => g.products).filter((p) => !p.data.privateLabel.available).map((p) => p.data.title);
 const breadcrumbs = [
   { name: ui.common.home, url: lp('/') },
   { name: ui.header.nav.privateLabel, url: lp('/private-label/') },
@@ -44,6 +53,63 @@ const breadcrumbs = [
           <li class="row" data-reveal style={`--i: ${i % 3}`}>
             <h3>{o.title}</h3>
             <p>{o.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="wrap sec" id="pl-range" aria-labelledby="pl-range-h">
+    <div class="sec-head" data-reveal>
+      <div>
+        <h2 id="pl-range-h">{L.rangeH}</h2>
+        <p>{fmt(L.rangeText, { n: plCount })}</p>
+      </div>
+    </div>
+    <div class="pl-range">
+      {
+        plGroups.map((g, gi) => (
+          <div class="pl-range-group" data-reveal style={`--i: ${gi % 3}`}>
+            <h3>
+              <a href={lp(`/categories/${g.category.data.slug}/`)}>{g.category.data.title}</a>
+            </h3>
+            <ul class="pl-range-list">
+              {g.products.map((p) => (
+                <li>
+                  <a class="pl-range-item" href={lp(`/products/${p.data.slug}/`)}>
+                    <img
+                      src={`/images/thumbs/${p.data.slug}-96.webp`}
+                      srcset={`/images/thumbs/${p.data.slug}-96.webp 96w, /images/thumbs/${p.data.slug}-192.webp 192w`}
+                      sizes="56px"
+                      width="96"
+                      height="96"
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <span>{p.data.title}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+    {withoutPl.length > 0 && <p class="note pl-range-none">{fmt(L.rangeNone, { list: withoutPl.join(ui.horeca.message.separator) })}</p>}
+  </section>
+
+  <section class="wrap sec split" aria-labelledby="pl-why-h">
+    <div class="split-head" data-reveal>
+      <h2 id="pl-why-h">{L.whyH}</h2>
+      <p>{L.whyText}</p>
+    </div>
+    <ul class="rows">
+      {
+        L.why.map((w, i) => (
+          <li class="row" data-reveal style={`--i: ${i % 3}`}>
+            <h3>{w.title}</h3>
+            <p>{w.text}</p>
           </li>
         ))
       }

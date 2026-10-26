@@ -220,3 +220,20 @@ describe('how we vet manufacturers (audit B5)', () => {
     });
   }
 });
+
+describe('private label page (audit B6)', () => {
+  const plProducts = readdirSync('src/content/products').filter((f) => /available:\s*true/.test(readFileSync(join('src/content/products', f), 'utf8'))).length;
+  for (const l of LOCALE_CODES) {
+    const prefix = l === 'en' ? '' : `${l}/`;
+    it(`${l}: links every private-label product with its pack photo, and explains the merchant-exporter route`, () => {
+      const html = read(`${prefix}private-label/index.html`);
+      const main = html.slice(html.indexOf('<main'), html.indexOf('</main>'));
+      const links = [...main.matchAll(/<a class="pl-range-item" href="([^"]+)"><img src="\/images\/thumbs\/([a-z0-9-]+)-96\.webp"/g)];
+      expect(links.length, l).toBe(plProducts);
+      expect(plProducts).toBeGreaterThan(10);
+      for (const [, href, slug] of links) expect(href, l).toBe(`/${prefix}products/${slug}/`);
+      expect(main, l).toContain('id="pl-why-h"');
+      expect((main.slice(main.indexOf('id="pl-why-h"')).match(/<li class="row"/g) ?? []).length, l).toBeGreaterThanOrEqual(4);
+    });
+  }
+});

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '06deb3bc7fff';
+export const sourceHash = 'ff1e6f1225e8';
 
 const tr: UiPartial = {
   meta: {
@@ -675,6 +675,17 @@ const tr: UiPartial = {
     ],
     quoteH: 'Talebinizi başlatın.',
     quoteText: 'Aklınızdaki ürünleri, ambalajları ve pazarı tek satırda iletin. Seçenekler, fiyatlar ve teslim süreleriyle yanıt veririz.',
+    rangeH: 'Hangi ürünler sizin markanızı taşıyabilir?',
+    rangeText: 'Özel marka {n} üründe mevcuttur. Her ürün sayfası çeşitleri, tipik ambalaj boyutlarını ve özel marka seçeneklerini listeler.',
+    rangeNone: 'Özel marka olmadan tedarik edilenler: {list}.',
+    whyH: 'Özel markayı neden bir dış ticaret şirketi üzerinden almalı',
+    whyText: 'Üretici mi arıyorsunuz? GoodBiz Hygiene bir fabrika değil, ihracatçı bir dış ticaret şirketidir. Bunun özel marka ürün gamınıza kattıkları şunlardır.',
+    why: [
+      { title: 'Birçok fabrika için tek muhatap', text: 'Sabun, deterjan ve temizleyiciler genellikle farklı uzman tesislerde üretilir. Tek bir ekibe brif verir ve tüm ürün gamı için tek teklif alırsınız; her fabrikayı kendiniz bulup yönetmeniz gerekmez.' },
+      { title: 'Karma konteyner', text: 'Birden fazla üreticiden gelen özel marka ürünler, gerekirse gamdaki standart ürünlerle birlikte tek bir 20 veya 40 ft konteynerde taşınabilir.' },
+      { title: 'Belgeler bizden', text: 'Fatura, çeki listesi, menşe şahadetnamesi, COA ve güvenlik bilgi formu (MSDS) tüm sevkiyat için hazırlanır ve gümrük müşavirinize hazır olur.' },
+      { title: 'Sabit asgari sipariş yok', text: 'Sabit bir asgari sipariş miktarı yoktur: deneme siparişleri ve kısmi yükler için teklif verilir. Özel marka tasarımında basılı etiket veya koliler için ayrı bir asgari miktar olabilir; teklifte belirtilir.' },
+    ],
   },
 
   horeca: {

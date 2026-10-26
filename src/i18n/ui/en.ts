@@ -725,6 +725,19 @@ const en = {
     ],
     quoteH: 'Start your brief.',
     quoteText: 'Send the products, packs and market you have in mind in one line. We reply with options, prices and lead times.',
+    /** The range grid: {n} products with private label; {list} the products without it. */
+    rangeH: 'Which products can carry your brand?',
+    rangeText: 'Private label is available on {n} products. Each product page lists its varieties, typical pack sizes and private-label options.',
+    rangeNone: 'Supplied without private label: {list}.',
+    /** For people searching "manufacturer": what a merchant exporter adds. Keep it in line with the export terms and the product pages. */
+    whyH: 'Why source private label through a merchant exporter',
+    whyText: 'Looking for a manufacturer? GoodBiz Hygiene is a merchant exporter, not a factory. This is what that adds to a private-label range.',
+    why: [
+      { title: 'One contact across many factories', text: 'Soaps, detergents and cleaners are usually made in different specialist plants. You brief one team and receive one quotation for the whole range, instead of finding and managing each factory yourself.' },
+      { title: 'Mixed containers', text: 'Private-label lines from several manufacturers can travel together in one 20 ft or 40 ft container, with standard products from the range if you need them.' },
+      { title: 'Documents handled', text: 'The invoice, packing list, certificate of origin, COA and MSDS are prepared for the whole shipment, ready for your customs broker.' },
+      { title: 'No fixed minimum', text: 'There is no fixed minimum order: trial orders and part loads are quoted. A private-label design can carry its own minimum for printed labels or cartons, which is stated on the quotation.' },
+    ],
   },
 
   /**
