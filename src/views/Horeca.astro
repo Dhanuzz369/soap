@@ -171,6 +171,7 @@ const jsonLd = [
                 </li>
               ))}
             </ul>
+            {s.id === 'rooms' && <p class="hc-bulk-note hc-scope-note" data-reveal>{H.roomsNote}</p>}
             {s.id === 'backOfHouse' && <p class="hc-bulk-note" data-reveal>{H.bulkNote}</p>}
           </section>
         ))

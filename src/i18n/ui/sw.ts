@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'b5ab65b59872';
+export const sourceHash = '6972558e1188';
 
 const sw: UiPartial = {
   meta: {
@@ -98,7 +98,7 @@ const sw: UiPartial = {
         'mwongozo wa mnunuzi',
       ],
       horeca: [
-        'msambazaji wa vifaa vya hoteli',
+        'sabuni na jeli ya kuogea kwa hoteli',
         'bidhaa za usafi za hoteli kwa jumla',
         'sabuni ya wageni wa hoteli',
         'sabuni ya hoteli yenye nembo',
@@ -666,10 +666,11 @@ const sw: UiPartial = {
   },
 
   horeca: {
-    title: 'Vifaa vya Wageni na Bidhaa za Usafi za Hoteli kutoka India',
-    description: 'Sabuni za wageni na visafishaji vya jikoni, vyoo, sakafu na ufuaji kwa hoteli, migahawa na mikahawa, kwa vifungashio vikubwa. Chapa ya mnunuzi, sampuli bure.',
+    title: 'Sabuni za Hoteli, Vifaa vya Wageni na Kemikali za Usafi',
+    description: 'Sabuni za hoteli, vifaa vya wageni (sabuni, jeli ya kuogea, sabuni ya mikono) na kemikali za usafi wa vyumba, jikoni na ufuaji kutoka India, kwa jumla.',
     h1a: 'Kila sehemu ya hoteli yako,',
     h1b: 'msambazaji mmoja.',
+    scope: 'Sabuni za hoteli, vifaa vya wageni (sabuni, jeli ya kuogea, sabuni ya mikono) na kemikali za usafi wa vyumba, jikoni na ufuaji, kutoka India.',
     lead: 'Zimetengenezwa kwa vipimo unavyotarajia kutoka kwa chapa zinazoongoza, kwa vifungashio vikubwa, kwa gharama ndogo zaidi kwa kila matumizi. Kwa mameneja wa ununuzi, wapishi wakuu na timu za usafi wa hoteli, migahawa, mikahawa na watoa huduma za chakula.',
     ctaHero: 'Tengeneza orodha yangu ya sampuli',
     sampleLink: 'Jinsi sampuli ya bure inavyofanya kazi',
@@ -710,6 +711,7 @@ const sw: UiPartial = {
       },
     },
     bulkNote: 'Vifungashio vikubwa kwa stoo: madumu ya 5 L na 20 L na mapipa ya 200 L.',
+    roomsNote: 'Kwa vyumba vya wageni tunasambaza sabuni, jeli ya kuogea na sabuni ya mikono. Hatusambazi shampuu, kiyoyozi cha nywele, seti za meno wala viatu vya ndani.',
     promiseH: 'Vipimo unavyotarajia, kwa gharama ndogo zaidi kwa kila matumizi.',
     promiseText: 'Mambo matano kwa kila oda ya HoReCa.',
     promises: [
@@ -816,10 +818,10 @@ const sw: UiPartial = {
     homeLine: 'Unanunua kwa hoteli, mgahawa au mkahawa?',
     homeLink: 'Tazama bidhaa kwa eneo',
     productLink: 'Kwa hoteli na migahawa',
-    serviceName: 'Usambazaji wa HoReCa wa vifaa vya wageni na bidhaa za usafi kutoka India',
-    serviceType: 'Usambazaji wa jumla wa vifaa vya wageni na bidhaa za usafi kwa hoteli, migahawa na mikahawa',
+    serviceName: 'Usambazaji wa HoReCa wa sabuni za hoteli, vifaa vya wageni na kemikali za usafi kutoka India',
+    serviceType: 'Usambazaji wa jumla wa sabuni za hoteli, vifaa vya wageni (sabuni, jeli ya kuogea, sabuni ya mikono) na kemikali za usafi kwa hoteli, migahawa na mikahawa',
     audience: 'Hoteli, migahawa, mikahawa na watoa huduma za chakula',
-    llms: 'Vifaa vya wageni na bidhaa za usafi kwa hoteli, migahawa, mikahawa na watoa huduma za chakula, vilivyopangwa kwa eneo (vyumba vya wageni, jikoni, vyoo, sakafu, kufulia, stoo), kwa vifungashio vya jikoni na usafi, pamoja na chapa ya mnunuzi kwenye vifaa vya wageni, kontena mchanganyiko, bila kiwango cha chini maalum, na sampuli za bure zinazothibitishwa kwa kila ulizo.',
+    llms: 'Sabuni za hoteli, vifaa vya wageni (sabuni, jeli ya kuogea, sabuni ya mikono) na kemikali za usafi wa vyumba, jikoni na ufuaji kwa hoteli, migahawa, mikahawa na watoa huduma za chakula, vilivyopangwa kwa eneo (vyumba vya wageni, jikoni, vyoo, sakafu, kufulia, stoo), kwa vifungashio vya jikoni na usafi, pamoja na chapa ya mnunuzi kwenye vifaa vya wageni, kontena mchanganyiko, bila kiwango cha chini maalum, na sampuli za bure zinazothibitishwa kwa kila ulizo.',
   },
 
   notFound: {

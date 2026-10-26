@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'b5ab65b59872';
+export const sourceHash = '6972558e1188';
 
 const tr: UiPartial = {
   meta: {
@@ -99,7 +99,7 @@ const tr: UiPartial = {
         'alıcı rehberi',
       ],
       horeca: [
-        'otel buklet malzemeleri tedarikçisi',
+        'otel sabunu ve duş jeli tedarikçisi',
         'otel temizlik ürünleri tedarikçisi',
         'HoReCa temizlik ürünleri toptan',
         'logolu otel sabunu',
@@ -667,10 +667,11 @@ const tr: UiPartial = {
   },
 
   horeca: {
-    title: 'Otel Buklet ve HoReCa Temizlik Ürünleri Hindistan’dan',
-    description: 'Otel, restoran ve kafeler için misafir sabunu ile mutfak, tuvalet, zemin ve çamaşır temizleyicileri, büyük ambalajda. Özel marka, karışık konteyner, numune.',
+    title: 'Otel Sabunu, Misafir Ürünleri ve Temizlik Kimyasalları',
+    description: 'Otel sabunu, misafir ürünleri (sabun, duş jeli, sıvı sabun) ile kat hizmetleri, mutfak ve çamaşırhane temizlik kimyasalları Hindistan’dan, büyük ambalajda.',
     h1a: 'Otelinizin her alanı,',
     h1b: 'tek tedarikçi.',
+    scope: 'Otel sabunu, misafir ürünleri (sabun, duş jeli, sıvı sabun) ve kat hizmetleri, mutfak ve çamaşırhane için temizlik kimyasalları, Hindistan’dan.',
     lead: 'Önde gelen markalardan beklediğiniz spesifikasyonlarda, büyük ambalajlarda ve kullanım başına daha düşük maliyetle. Otel, restoran, kafe ve catering firmalarının satın alma yöneticileri, şefleri ve kat hizmetleri ekipleri için.',
     ctaHero: 'Numune listemi oluştur',
     sampleLink: 'Ücretsiz numune nasıl işler',
@@ -711,6 +712,7 @@ const tr: UiPartial = {
       },
     },
     bulkNote: 'Depo için büyük ambalajlar: 5 L ve 20 L bidonlar ve 200 L variller.',
+    roomsNote: 'Misafir odaları için sabun, duş jeli ve sıvı sabun tedarik ediyoruz. Şampuan, saç kremi, diş seti veya terlik tedarik etmiyoruz.',
     promiseH: 'Beklediğiniz spesifikasyonlar, kullanım başına daha düşük maliyet.',
     promiseText: 'Her HoReCa siparişinde beş şey.',
     promises: [
@@ -811,10 +813,10 @@ const tr: UiPartial = {
     homeLine: 'Otel, restoran veya kafe için mi alıyorsunuz?',
     homeLink: 'Ürünleri alana göre görün',
     productLink: 'Oteller ve restoranlar için',
-    serviceName: 'Hindistan’dan HoReCa buklet ve temizlik ürünleri tedariki',
-    serviceType: 'Oteller, restoranlar ve kafeler için buklet ve temizlik ürünlerinin toptan tedariki',
+    serviceName: 'Hindistan’dan HoReCa otel sabunu, misafir ürünleri ve temizlik kimyasalları tedariki',
+    serviceType: 'Oteller, restoranlar ve kafeler için otel sabunu, misafir ürünleri (sabun, duş jeli, sıvı sabun) ve temizlik kimyasallarının toptan tedariki',
     audience: 'Oteller, restoranlar, kafeler ve catering firmaları',
-    llms: 'Oteller, restoranlar, kafeler ve catering firmaları için buklet ve temizlik ürünleri; alana göre düzenlenmiş (misafir odaları, mutfak, tuvaletler, zeminler, çamaşırhane, depo), mutfak ve kat hizmetleri ambalajlarında, buklet ürünlerinde özel marka, karışık konteyner, sabit asgari sipariş olmadan ve her talepte teyit edilen ücretsiz numunelerle.',
+    llms: 'Oteller, restoranlar, kafeler ve catering firmaları için otel sabunu, misafir ürünleri (sabun, duş jeli, sıvı sabun) ile kat hizmetleri, mutfak ve çamaşırhane temizlik kimyasalları; alana göre düzenlenmiş (misafir odaları, mutfak, tuvaletler, zeminler, çamaşırhane, depo), mutfak ve kat hizmetleri ambalajlarında, buklet ürünlerinde özel marka, karışık konteyner, sabit asgari sipariş olmadan ve her talepte teyit edilen ücretsiz numunelerle.',
   },
 
   notFound: {

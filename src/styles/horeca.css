@@ -63,8 +63,16 @@
   letter-spacing: -0.035em;
   line-height: 1.02;
 }
+.fp-scope {
+  margin-top: clamp(16px, 1.8vw, 22px);
+  max-width: 52ch;
+  color: var(--mint);
+  font-size: var(--step-small);
+  font-weight: 500;
+  line-height: 1.5;
+}
 .fp-lead {
-  margin-top: clamp(18px, 2vw, 26px);
+  margin-top: clamp(12px, 1.4vw, 18px);
   max-width: 50ch;
 }
 .fp-actions {
@@ -398,9 +406,13 @@ html.fp-js .fp-legend {
     animation-delay: 80ms;
   }
   .fp-copy .crumbs,
+  .fp-scope,
   .fp-lead,
   .fp-actions {
     animation: fp-rise var(--dur-enter) var(--ease-out) both;
+  }
+  .fp-scope {
+    animation-delay: 120ms;
   }
   .fp-lead {
     animation-delay: 160ms;
@@ -1150,6 +1162,7 @@ html:not(.fp-js) .hc-count,
 @media (prefers-reduced-motion: reduce) {
   .fp-copy .crumbs,
   .fp-h .line-in,
+  .fp-scope,
   .fp-lead,
   .fp-actions,
   .fp-svg,

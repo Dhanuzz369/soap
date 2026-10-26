@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'b5ab65b59872';
+export const sourceHash = '6972558e1188';
 
 const de: UiPartial = {
   meta: {
@@ -100,7 +100,7 @@ const de: UiPartial = {
       ],
       horeca: [
         'Hotelbedarf Reinigungsmittel Großhandel',
-        'Hotelkosmetik Lieferant',
+        'Hotelseife und Duschgel Großgebinde',
         'Gästeseife mit Hotel-Logo',
         'Gastronomie Reinigungsmittel Großgebinde',
         'Reinigungsmittel für Hotel-Housekeeping',
@@ -667,10 +667,11 @@ const de: UiPartial = {
   },
 
   horeca: {
-    title: 'Hotelkosmetik & Gastro-Reinigungsmittel aus Indien',
-    description: 'Gästeseifen und Reiniger für Küche, Sanitär, Böden und Wäsche für Hotels, Restaurants und Cafés, in Großgebinden. Eigenmarke, Mischcontainer, Gratismuster.',
+    title: 'Hotelseife, Gästeartikel und Reinigungsmittel aus Indien',
+    description: 'Hotelseife, Gästeartikel (Seife, Duschgel, Flüssigseife) sowie Reinigungsmittel für Housekeeping, Küche und Wäscherei aus Indien, in Großgebinden.',
     h1a: 'Jeder Bereich Ihres Hotels,',
     h1b: 'ein Lieferant.',
+    scope: 'Hotelseife, Gästeartikel (Seife, Duschgel, Flüssigseife) und Reinigungsmittel für Housekeeping, Küche und Wäscherei, aus Indien.',
     lead: 'Nach den Spezifikationen, die Sie von führenden Marken erwarten, in Großgebinden und mit niedrigeren Kosten pro Anwendung. Für Einkauf, Küchenchefs und Hausdamen in Hotels, Restaurants, Cafés und Catering.',
     ctaHero: 'Musterliste erstellen',
     sampleLink: 'So funktioniert das Gratismuster',
@@ -711,6 +712,7 @@ const de: UiPartial = {
       },
     },
     bulkNote: 'Großgebinde für das Lager: Kanister mit 5 L und 20 L und Fässer mit 200 L.',
+    roomsNote: 'Für Gästezimmer liefern wir Seife, Duschgel und Flüssigseife. Shampoo, Spülung, Zahnpflegesets und Hausschuhe liefern wir nicht.',
     promiseH: 'Die Spezifikationen, die Sie erwarten, zu niedrigeren Kosten pro Anwendung.',
     promiseText: 'Fünf Zusagen für jede HoReCa-Bestellung.',
     promises: [
@@ -811,10 +813,10 @@ const de: UiPartial = {
     homeLine: 'Sie kaufen für Hotel, Restaurant oder Café?',
     homeLink: 'Produkte nach Bereich ansehen',
     productLink: 'Für Hotels & Restaurants',
-    serviceName: 'HoReCa-Belieferung mit Hotelkosmetik und Reinigungsmitteln aus Indien',
-    serviceType: 'Großhandelsbelieferung von Hotelkosmetik und Reinigungsmitteln für Hotels, Restaurants und Cafés',
+    serviceName: 'HoReCa-Belieferung mit Hotelseife, Gästeartikeln und Reinigungsmitteln aus Indien',
+    serviceType: 'Großhandelsbelieferung mit Hotelseife, Gästeartikeln (Seife, Duschgel, Flüssigseife) und Reinigungsmitteln für Hotels, Restaurants und Cafés',
     audience: 'Hotels, Restaurants, Cafés und Caterer',
-    llms: 'Hotelkosmetik und Reinigungsmittel für Hotels, Restaurants, Cafés und Caterer, nach Bereich geordnet (Gästezimmer, Küche, Sanitär, Böden, Wäscherei, Lager), in Gebinden für Küche und Housekeeping, mit Eigenmarke auf Gästeartikeln, Mischcontainern, ohne feste Mindestmenge und mit Gratismustern, die je Anfrage bestätigt werden.',
+    llms: 'Hotelseife, Gästeartikel (Seife, Duschgel, Flüssigseife) und Reinigungsmittel für Housekeeping, Küche und Wäscherei, für Hotels, Restaurants, Cafés und Caterer, nach Bereich geordnet (Gästezimmer, Küche, Sanitär, Böden, Wäscherei, Lager), in Gebinden für Küche und Housekeeping, mit Eigenmarke auf Gästeartikeln, Mischcontainern, ohne feste Mindestmenge und mit Gratismustern, die je Anfrage bestätigt werden.',
   },
 
   notFound: {

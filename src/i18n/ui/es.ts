@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'b5ab65b59872';
+export const sourceHash = '6972558e1188';
 
 const es: UiPartial = {
   meta: {
@@ -99,7 +99,7 @@ const es: UiPartial = {
         'guía para compradores',
       ],
       horeca: [
-        'proveedor de amenities para hoteles',
+        'amenities de hotel jabón y gel de ducha',
         'productos de limpieza para hostelería al por mayor',
         'proveedor de productos de limpieza para hoteles',
         'jabón para hoteles personalizado',
@@ -667,10 +667,11 @@ const es: UiPartial = {
   },
 
   horeca: {
-    title: 'Amenities y limpieza para hostelería desde India',
-    description: 'Jabones de cortesía y limpiadores de cocina, baños, suelos y lavandería para hoteles, restaurantes y cafés, en envases grandes. Marca propia y muestras gratis.',
+    title: 'Jabones de hotel, amenities y limpieza para hostelería',
+    description: 'Jabones de hotel, amenities (jabón, gel de ducha, jabón de manos) y químicos de limpieza para habitaciones, cocina y lavandería desde India, en envases grandes.',
     h1a: 'Cada espacio de su hotel,',
     h1b: 'un solo proveedor.',
+    scope: 'Jabones de hotel, amenities (jabón, gel de ducha, jabón de manos) y químicos de limpieza para habitaciones, cocina y lavandería, desde India.',
     lead: 'Fabricados con las especificaciones que espera de las marcas líderes, en envases grandes y con un coste por uso más bajo. Para jefes de compras, chefs y gobernantas de hoteles, restaurantes, cafeterías y empresas de catering.',
     ctaHero: 'Crear mi lista de muestras',
     sampleLink: 'Cómo funciona la muestra gratuita',
@@ -711,6 +712,7 @@ const es: UiPartial = {
       },
     },
     bulkNote: 'Envases grandes para el almacén: garrafas de 5 L y 20 L y bidones de 200 L.',
+    roomsNote: 'Para las habitaciones suministramos jabón, gel de ducha y jabón de manos. No suministramos champú, acondicionador, kits dentales ni zapatillas.',
     promiseH: 'Las especificaciones que espera, con un coste por uso más bajo.',
     promiseText: 'Cinco cosas que incluye cada pedido de hostelería.',
     promises: [
@@ -811,10 +813,10 @@ const es: UiPartial = {
     homeLine: '¿Compra para un hotel, restaurante o cafetería?',
     homeLink: 'Ver productos por espacio',
     productLink: 'Para hoteles y restaurantes',
-    serviceName: 'Suministro HORECA de amenities y productos de limpieza desde India',
-    serviceType: 'Suministro al por mayor de amenities y productos de limpieza para hoteles, restaurantes y cafeterías',
+    serviceName: 'Suministro HORECA de jabones de hotel, amenities y químicos de limpieza desde India',
+    serviceType: 'Suministro al por mayor de jabones de hotel, amenities (jabón, gel de ducha, jabón de manos) y químicos de limpieza para hoteles, restaurantes y cafeterías',
     audience: 'Hoteles, restaurantes, cafeterías y empresas de catering',
-    llms: 'Amenities y productos de limpieza para hoteles, restaurantes, cafeterías y catering, organizados por espacio (habitaciones, cocina, aseos, suelos, lavandería, almacén), en envases para cocina y limpieza, con marca propia en amenities, contenedores mixtos, sin mínimo fijo y muestras gratuitas confirmadas en cada consulta.',
+    llms: 'Jabones de hotel, amenities (jabón, gel de ducha, jabón de manos) y químicos de limpieza para habitaciones, cocina y lavandería, para hoteles, restaurantes, cafeterías y catering, organizados por espacio (habitaciones, cocina, aseos, suelos, lavandería, almacén), en envases para cocina y limpieza, con marca propia en amenities, contenedores mixtos, sin mínimo fijo y muestras gratuitas confirmadas en cada consulta.',
   },
 
   notFound: {

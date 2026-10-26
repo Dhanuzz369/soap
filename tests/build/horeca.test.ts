@@ -190,3 +190,25 @@ describe('/horeca/ honesty (English)', () => {
     expect(text).not.toMatch(/save \d|\d+\s?% (less|cheaper|saving)/i);
   });
 });
+
+const esc = (t: string) => t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+describe('HoReCa wording matches the range (audit B4)', () => {
+  for (const l of LOCALES) {
+    const lang = l.code as Locale;
+    const ui = getUi(lang);
+    const html = page('/horeca/', lang);
+    it(`${lang}: the scope line sits under the h1 and the guest-room note says what is not supplied`, () => {
+      expect(html).toContain(`<p class="fp-scope">${esc(ui.horeca.scope)}</p>`);
+      expect(html).toContain(esc(ui.horeca.roomsNote));
+    });
+  }
+  it('English title, description and keywords say hotel soaps and housekeeping chemicals, and do not lead with "hotel amenities supplier"', () => {
+    const H = getUi('en').horeca;
+    expect(H.title).toMatch(/Hotel Soaps/);
+    expect(H.description).toMatch(/soap, body wash, hand wash/);
+    expect(H.description).toMatch(/housekeeping, kitchen and laundry chemicals/);
+    expect(getUi('en').seo.keywords.horeca).not.toContain('hotel amenities supplier');
+    expect(H.roomsNote).toMatch(/do not supply shampoo, conditioner, dental kits or slippers/);
+  });
+});

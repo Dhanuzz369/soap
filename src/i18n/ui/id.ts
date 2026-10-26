@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'b5ab65b59872';
+export const sourceHash = '6972558e1188';
 
 const id: UiPartial = {
   meta: {
@@ -99,7 +99,7 @@ const id: UiPartial = {
         'panduan pembeli',
       ],
       horeca: [
-        'supplier amenities hotel',
+        'sabun dan sabun mandi cair untuk hotel',
         'pemasok produk kebersihan hotel',
         'produk kebersihan HoReCa grosir',
         'sabun hotel custom logo',
@@ -667,10 +667,11 @@ const id: UiPartial = {
   },
 
   horeca: {
-    title: 'Amenities Hotel & Produk Kebersihan HoReCa dari India',
-    description: 'Sabun tamu serta pembersih dapur, toilet, lantai, dan laundry untuk hotel, restoran, dan kafe, kemasan besar. Private label, kontainer campuran, sampel gratis.',
+    title: 'Sabun Hotel, Amenities Tamu & Bahan Kebersihan dari India',
+    description: 'Sabun hotel, amenities tamu (sabun, sabun mandi cair, sabun cuci tangan) serta bahan kebersihan housekeeping, dapur, dan laundry dari India, kemasan besar.',
     h1a: 'Setiap ruang di hotel Anda,',
     h1b: 'satu pemasok.',
+    scope: 'Sabun hotel, amenities tamu (sabun, sabun mandi cair, sabun cuci tangan), serta bahan kebersihan untuk housekeeping, dapur, dan laundry, dari India.',
     lead: 'Dibuat sesuai spesifikasi yang Anda harapkan dari merek-merek terkemuka, dalam kemasan besar, dengan biaya per pemakaian lebih rendah. Untuk manajer pembelian, chef, dan tim housekeeping di hotel, restoran, kafe, dan katering.',
     ctaHero: 'Buat daftar sampel saya',
     sampleLink: 'Cara kerja sampel gratis',
@@ -711,6 +712,7 @@ const id: UiPartial = {
       },
     },
     bulkNote: 'Kemasan besar untuk gudang: jeriken 5 L dan 20 L serta drum 200 L.',
+    roomsNote: 'Untuk kamar tamu kami memasok sabun, sabun mandi cair, dan sabun cuci tangan. Kami tidak memasok sampo, kondisioner, perlengkapan gigi, atau sandal.',
     promiseH: 'Spesifikasi yang Anda harapkan, dengan biaya per pemakaian lebih rendah.',
     promiseText: 'Lima hal yang didapat setiap pesanan HoReCa.',
     promises: [
@@ -811,10 +813,10 @@ const id: UiPartial = {
     homeLine: 'Belanja untuk hotel, restoran, atau kafe?',
     homeLink: 'Lihat produk per ruang',
     productLink: 'Untuk hotel & restoran',
-    serviceName: 'Pasokan HoReCa amenities dan produk kebersihan dari India',
-    serviceType: 'Pasokan grosir amenities dan produk kebersihan untuk hotel, restoran, dan kafe',
+    serviceName: 'Pasokan HoReCa sabun hotel, amenities tamu, dan bahan kebersihan dari India',
+    serviceType: 'Pasokan grosir sabun hotel, amenities tamu (sabun, sabun mandi cair, sabun cuci tangan), dan bahan kebersihan untuk hotel, restoran, dan kafe',
     audience: 'Hotel, restoran, kafe, dan katering',
-    llms: 'Amenities dan produk kebersihan untuk hotel, restoran, kafe, dan katering, disusun per ruang (kamar tamu, dapur, toilet, lantai, laundry, gudang), dalam kemasan dapur dan housekeeping, dengan private label untuk amenities, kontainer campuran, tanpa minimum tetap, dan sampel gratis yang dikonfirmasi per permintaan.',
+    llms: 'Sabun hotel, amenities tamu (sabun, sabun mandi cair, sabun cuci tangan) serta bahan kebersihan housekeeping, dapur, dan laundry untuk hotel, restoran, kafe, dan katering, disusun per ruang (kamar tamu, dapur, toilet, lantai, laundry, gudang), dalam kemasan dapur dan housekeeping, dengan private label untuk amenities, kontainer campuran, tanpa minimum tetap, dan sampel gratis yang dikonfirmasi per permintaan.',
   },
 
   notFound: {

@@ -94,11 +94,11 @@ const en = {
       post: ['import from India', 'buyer guide'],
       /** The HoReCa page: what hotel, restaurant and café buyers type (purchasing, chefs, housekeeping). */
       horeca: [
-        'hotel amenities supplier',
+        'hotel soap supplier India',
         'HoReCa cleaning products wholesale',
         'hotel housekeeping chemicals supplier',
         'bulk kitchen cleaning products for restaurants',
-        'guest soap supplier India',
+        'hotel guest amenities soap body wash hand wash',
         'hotel soap private label',
         'restaurant dish wash liquid 20 L',
         'hotel laundry detergent bulk',
@@ -718,11 +718,12 @@ const en = {
    * numbers, savings, clients, ratings or certifications.
    */
   horeca: {
-    title: 'Hotel Amenities & HoReCa Cleaning Supplies from India',
-    description:
-      'Guest soaps and kitchen, washroom, floor and laundry cleaners for hotels, restaurants and cafés, in bulk packs. Private label, mixed containers, free samples.',
+    title: 'Hotel Soaps, Guest Amenities & Housekeeping Chemicals',
+    description: 'Hotel soaps, guest amenities (soap, body wash, hand wash) and housekeeping, kitchen and laundry chemicals from India, in bulk packs. Private label available.',
     h1a: 'Every space in your hotel,',
     h1b: 'one supplier.',
+    /** Under the h1: exactly what the page supplies (no shampoo, kits or slippers). */
+    scope: 'Hotel soaps, guest amenities (soap, body wash, hand wash) and housekeeping, kitchen and laundry chemicals, from India.',
     lead: 'Made to the specifications you expect from leading brands, in bulk packs, at a lower cost per use. For purchasing managers, chefs and housekeeping teams at hotels, restaurants, cafés and caterers.',
     ctaHero: 'Build my sample list',
     sampleLink: 'How the free sample works',
@@ -766,6 +767,8 @@ const en = {
     },
     /** Under the back-of-house products. */
     bulkNote: 'Bulk packs for the store room: 5 L and 20 L cans and 200 L drums.',
+    /** Under the guest-room products: what is and is not supplied for rooms. */
+    roomsNote: 'For guest rooms we supply soap, body wash and hand wash. We do not supply shampoo, conditioner, dental kits or slippers.',
     promiseH: 'The specifications you expect, at a lower cost per use.',
     promiseText: 'Five things every HoReCa order gets.',
     promises: [
@@ -850,10 +853,10 @@ const en = {
     homeLink: 'See products by space',
     productLink: 'For hotels & restaurants',
     /** Structured data (Service) and llms.txt. */
-    serviceName: 'HoReCa supply of guest amenities and cleaning products from India',
-    serviceType: 'Wholesale supply of guest amenities and cleaning products for hotels, restaurants and cafés',
+    serviceName: 'HoReCa supply of hotel soaps, guest amenities and housekeeping chemicals from India',
+    serviceType: 'Wholesale supply of hotel soaps, guest amenities (soap, body wash, hand wash) and housekeeping, kitchen and laundry chemicals for hotels, restaurants and cafés',
     audience: 'Hotels, restaurants, cafés and caterers',
-    llms: 'Guest amenities and cleaning products for hotels, restaurants, cafés and caterers, organised by space (guest rooms, kitchen, washrooms, floors, laundry, back-of-house), in catering and housekeeping packs, with private label on guest amenities, mixed containers, no fixed minimum and free samples confirmed per enquiry.',
+    llms: 'Hotel soaps, guest amenities (soap, body wash, hand wash) and housekeeping, kitchen and laundry chemicals for hotels, restaurants, cafés and caterers, organised by space (guest rooms, kitchen, washrooms, floors, laundry, back-of-house), in catering and housekeeping packs, with private label on guest amenities, mixed containers, no fixed minimum and free samples confirmed per enquiry.',
   },
 
   notFound: {

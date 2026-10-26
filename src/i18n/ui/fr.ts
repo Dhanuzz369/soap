@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'b5ab65b59872';
+export const sourceHash = '6972558e1188';
 
 const fr: UiPartial = {
   meta: {
@@ -101,7 +101,7 @@ const fr: UiPartial = {
       ],
       horeca: [
         'fournisseur produits d’entretien hôtellerie',
-        'fournisseur produits d’accueil hôtel',
+        'produits d’accueil hôtel savon gel douche',
         'savon hôtel personnalisé',
         'produits d’entretien CHR en gros',
         'produits de nettoyage cuisine restaurant en gros',
@@ -669,10 +669,11 @@ const fr: UiPartial = {
   },
 
   horeca: {
-    title: 'Produits d’accueil et d’entretien CHR depuis l’Inde',
-    description: 'Savons d’accueil et produits pour cuisine, sanitaires, sols et linge des hôtels, restaurants et cafés, en grands formats. Marque propre, échantillons gratuits.',
+    title: 'Savons d’hôtel, produits d’accueil et entretien hôtelier',
+    description: 'Savons d’hôtel, produits d’accueil (savon, gel douche, savon liquide) et produits d’entretien ménage, cuisine et linge, depuis l’Inde, en grands formats.',
     h1a: 'Chaque espace de votre hôtel,',
     h1b: 'un seul fournisseur.',
+    scope: 'Savons d’hôtel, produits d’accueil (savon, gel douche, savon liquide) et produits d’entretien pour le ménage, la cuisine et la blanchisserie, depuis l’Inde.',
     lead: 'Conformes aux spécifications que vous attendez des grandes marques, en grands formats, pour un coût par utilisation plus bas. Pour les acheteurs, chefs et gouvernantes des hôtels, restaurants, cafés et traiteurs.',
     ctaHero: 'Composer ma liste d’échantillons',
     sampleLink: 'L’échantillon gratuit, mode d’emploi',
@@ -713,6 +714,7 @@ const fr: UiPartial = {
       },
     },
     bulkNote: 'Grands formats pour la réserve : bidons de 5 L et 20 L et fûts de 200 L.',
+    roomsNote: 'Pour les chambres, nous fournissons savon, gel douche et savon liquide. Nous ne fournissons ni shampooing, ni après-shampooing, ni kits dentaires, ni chaussons.',
     promiseH: 'Les spécifications que vous attendez, pour un coût par utilisation plus bas.',
     promiseText: 'Cinq engagements pour chaque commande CHR.',
     promises: [
@@ -813,10 +815,10 @@ const fr: UiPartial = {
     homeLine: 'Vous achetez pour un hôtel, un restaurant ou un café ?',
     homeLink: 'Voir les produits par espace',
     productLink: 'Pour les hôtels et restaurants',
-    serviceName: 'Fourniture CHR de produits d’accueil et d’entretien depuis l’Inde',
-    serviceType: 'Fourniture en gros de produits d’accueil et d’entretien pour hôtels, restaurants et cafés',
+    serviceName: 'Fourniture CHR de savons d’hôtel, produits d’accueil et produits d’entretien depuis l’Inde',
+    serviceType: 'Fourniture en gros de savons d’hôtel, produits d’accueil (savon, gel douche, savon liquide) et produits d’entretien ménage, cuisine et linge pour hôtels, restaurants et cafés',
     audience: 'Hôtels, restaurants, cafés et traiteurs',
-    llms: 'Produits d’accueil et d’entretien pour hôtels, restaurants, cafés et traiteurs, classés par espace (chambres, cuisine, sanitaires, sols, blanchisserie, réserve), en formats cuisine et ménage, avec marque propre sur les produits d’accueil, conteneurs mixtes, sans minimum fixe et échantillons gratuits confirmés à chaque demande.',
+    llms: 'Savons d’hôtel, produits d’accueil (savon, gel douche, savon liquide) et produits d’entretien ménage, cuisine et linge pour hôtels, restaurants, cafés et traiteurs, classés par espace (chambres, cuisine, sanitaires, sols, blanchisserie, réserve), en formats cuisine et ménage, avec marque propre sur les produits d’accueil, conteneurs mixtes, sans minimum fixe et échantillons gratuits confirmés à chaque demande.',
   },
 
   notFound: {

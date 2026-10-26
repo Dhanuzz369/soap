@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'b5ab65b59872';
+export const sourceHash = '6972558e1188';
 
 const vi: UiPartial = {
   meta: {
@@ -99,7 +99,7 @@ const vi: UiPartial = {
         'cẩm nang người mua',
       ],
       horeca: [
-        'nhà cung cấp amenities khách sạn',
+        'xà phòng và sữa tắm cho khách sạn',
         'hóa chất tẩy rửa khách sạn',
         'sản phẩm vệ sinh HoReCa giá sỉ',
         'xà phòng khách sạn in logo',
@@ -667,10 +667,11 @@ const vi: UiPartial = {
   },
 
   horeca: {
-    title: 'Amenities khách sạn và hóa chất vệ sinh HoReCa từ Ấn Độ',
-    description: 'Xà phòng cho khách và chất tẩy rửa bếp, nhà vệ sinh, sàn và giặt là cho khách sạn, nhà hàng, quán cà phê, bao bì lớn. Nhãn riêng, container ghép, mẫu miễn phí.',
+    title: 'Xà phòng khách sạn, amenities và hóa chất buồng phòng',
+    description: 'Xà phòng khách sạn, amenities (xà phòng, sữa tắm, nước rửa tay) và hóa chất vệ sinh buồng phòng, bếp, giặt là từ Ấn Độ, bao bì lớn, có nhãn riêng.',
     h1a: 'Mọi không gian trong khách sạn,',
     h1b: 'một nhà cung cấp.',
+    scope: 'Xà phòng khách sạn, amenities (xà phòng, sữa tắm, nước rửa tay) và hóa chất vệ sinh cho buồng phòng, bếp và giặt là, từ Ấn Độ.',
     lead: 'Đạt các thông số bạn mong đợi ở những thương hiệu hàng đầu, trong bao bì lớn, với chi phí mỗi lần dùng thấp hơn. Dành cho quản lý mua hàng, bếp trưởng và bộ phận buồng phòng của khách sạn, nhà hàng, quán cà phê và đơn vị suất ăn.',
     ctaHero: 'Lập danh sách mẫu của tôi',
     sampleLink: 'Cách nhận mẫu miễn phí',
@@ -711,6 +712,7 @@ const vi: UiPartial = {
       },
     },
     bulkNote: 'Bao bì lớn cho kho: can 5 L và 20 L, phuy 200 L.',
+    roomsNote: 'Cho phòng khách, chúng tôi cung cấp xà phòng, sữa tắm và nước rửa tay. Chúng tôi không cung cấp dầu gội, dầu xả, bộ đồ đánh răng hay dép.',
     promiseH: 'Các thông số bạn mong đợi, chi phí mỗi lần dùng thấp hơn.',
     promiseText: 'Năm điều mỗi đơn hàng HoReCa đều có.',
     promises: [
@@ -811,10 +813,10 @@ const vi: UiPartial = {
     homeLine: 'Mua cho khách sạn, nhà hàng hay quán cà phê?',
     homeLink: 'Xem sản phẩm theo không gian',
     productLink: 'Dành cho khách sạn & nhà hàng',
-    serviceName: 'Cung ứng HoReCa amenities và sản phẩm vệ sinh từ Ấn Độ',
-    serviceType: 'Cung ứng sỉ amenities và sản phẩm vệ sinh cho khách sạn, nhà hàng và quán cà phê',
+    serviceName: 'Cung ứng HoReCa xà phòng khách sạn, amenities và hóa chất vệ sinh từ Ấn Độ',
+    serviceType: 'Cung ứng sỉ xà phòng khách sạn, amenities (xà phòng, sữa tắm, nước rửa tay) và hóa chất vệ sinh cho khách sạn, nhà hàng và quán cà phê',
     audience: 'Khách sạn, nhà hàng, quán cà phê và đơn vị suất ăn',
-    llms: 'Amenities và sản phẩm vệ sinh cho khách sạn, nhà hàng, quán cà phê và đơn vị suất ăn, sắp xếp theo không gian (phòng khách, bếp, nhà vệ sinh, sàn, giặt là, kho), trong bao bì cho bếp và buồng phòng, có nhãn riêng cho amenities, container ghép, không có đơn tối thiểu cố định và mẫu miễn phí xác nhận theo từng yêu cầu.',
+    llms: 'Xà phòng khách sạn, amenities (xà phòng, sữa tắm, nước rửa tay) và hóa chất vệ sinh buồng phòng, bếp, giặt là cho khách sạn, nhà hàng, quán cà phê và đơn vị suất ăn, sắp xếp theo không gian (phòng khách, bếp, nhà vệ sinh, sàn, giặt là, kho), trong bao bì cho bếp và buồng phòng, có nhãn riêng cho amenities, container ghép, không có đơn tối thiểu cố định và mẫu miễn phí xác nhận theo từng yêu cầu.',
   },
 
   notFound: {

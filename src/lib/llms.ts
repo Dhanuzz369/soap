@@ -104,7 +104,7 @@ export async function buildLlmsIndex(lang: Locale = DEFAULT_LOCALE): Promise<str
   for (const [t, u, d] of company) lines.push(`- [${t}](${lp(u)}): ${d}`);
 
   // Hotels, restaurants and cafés: the HoReCa page, by space.
-  lines.push('', `## ${ui.header.nav.horeca}`, '', `- [${ui.horeca.title}](${lp('/horeca/')}): ${ui.horeca.llms}`, '', ...(await horecaSpaces(lang, false)));
+  lines.push('', `## ${ui.header.nav.horeca}`, '', `- [${ui.horeca.title}](${lp('/horeca/')}): ${ui.horeca.llms} ${ui.horeca.roomsNote}`, '', ...(await horecaSpaces(lang, false)));
 
   lines.push('', `## ${H.full}`, '', `- [llms-full.txt](${absoluteUrl('/llms-full.txt')}): ${en ? 'every product, specification, term and FAQ as Markdown, in English' : 'English'}`);
 
@@ -189,7 +189,7 @@ export async function buildLlmsFull(): Promise<string> {
   for (const f of L.faqs) out.push(`**${fmt(f.q, t)}**`, '', fmt(f.a, t), '');
 
   const R = ui.horeca;
-  out.push('## For hotels, restaurants and cafés (HoReCa)', '', `URL: ${absoluteUrl('/horeca/')}`, '', R.llms, '', `${R.lead}`, '');
+  out.push('## For hotels, restaurants and cafés (HoReCa)', '', `URL: ${absoluteUrl('/horeca/')}`, '', `${R.llms} ${R.roomsNote}`, '', `${R.lead}`, '');
   out.push(...(await horecaSpaces(DEFAULT_LOCALE, true)), '', R.bulkNote, '');
   for (const p of R.promises) out.push(`- **${p.title}:** ${p.text}`);
   out.push('', `${R.samplesH}. ${R.samplesText} ${fmt(R.samplesLead, t)}`, '');

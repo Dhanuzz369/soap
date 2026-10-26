@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'b5ab65b59872';
+export const sourceHash = '6972558e1188';
 
 const pt: UiPartial = {
   meta: {
@@ -99,7 +99,7 @@ const pt: UiPartial = {
         'guia do comprador',
       ],
       horeca: [
-        'fornecedor de amenities para hotéis',
+        'amenities de hotel sabonete e gel de banho',
         'produtos de limpeza para hotelaria atacado',
         'fornecedor de produtos de limpeza para hotéis',
         'sabonete para hotel personalizado',
@@ -667,10 +667,11 @@ const pt: UiPartial = {
   },
 
   horeca: {
-    title: 'Amenities e produtos de limpeza para hotelaria da Índia',
-    description: 'Sabonetes de hóspede e limpadores de cozinha, banheiro, piso e lavanderia para hotéis, restaurantes e cafés, em embalagem grande. Marca própria, amostra grátis.',
+    title: 'Sabonetes de hotel, amenities e limpeza para hotelaria',
+    description: 'Sabonetes de hotel, amenities (sabonete, gel de banho, sabonete líquido) e produtos de limpeza para governança, cozinha e lavanderia da Índia, em atacado.',
     h1a: 'Cada espaço do seu hotel,',
     h1b: 'um só fornecedor.',
+    scope: 'Sabonetes de hotel, amenities (sabonete, gel de banho, sabonete líquido) e produtos de limpeza para governança, cozinha e lavanderia, da Índia.',
     lead: 'Feitos com as especificações que você espera das marcas líderes, em embalagens grandes, com custo por uso mais baixo. Para compradores, chefs e equipes de governança de hotéis, restaurantes, cafés e empresas de catering.',
     ctaHero: 'Montar minha lista de amostras',
     sampleLink: 'Como funciona a amostra grátis',
@@ -711,6 +712,7 @@ const pt: UiPartial = {
       },
     },
     bulkNote: 'Embalagens grandes para o almoxarifado: galões de 5 L e 20 L e tambores de 200 L.',
+    roomsNote: 'Para os quartos fornecemos sabonete, gel de banho e sabonete líquido. Não fornecemos xampu, condicionador, kits dentais nem chinelos.',
     promiseH: 'As especificações que você espera, com custo por uso mais baixo.',
     promiseText: 'Cinco coisas que todo pedido HoReCa recebe.',
     promises: [
@@ -811,10 +813,10 @@ const pt: UiPartial = {
     homeLine: 'Compra para hotel, restaurante ou café?',
     homeLink: 'Ver produtos por espaço',
     productLink: 'Para hotéis e restaurantes',
-    serviceName: 'Fornecimento HoReCa de amenities e produtos de limpeza da Índia',
-    serviceType: 'Fornecimento em atacado de amenities e produtos de limpeza para hotéis, restaurantes e cafés',
+    serviceName: 'Fornecimento HoReCa de sabonetes de hotel, amenities e produtos de limpeza da Índia',
+    serviceType: 'Fornecimento em atacado de sabonetes de hotel, amenities (sabonete, gel de banho, sabonete líquido) e produtos de limpeza para hotéis, restaurantes e cafés',
     audience: 'Hotéis, restaurantes, cafés e empresas de catering',
-    llms: 'Amenities e produtos de limpeza para hotéis, restaurantes, cafés e catering, organizados por espaço (quartos, cozinha, banheiros, pisos, lavanderia, almoxarifado), em embalagens para cozinha e governança, com marca própria nos amenities, contêineres mistos, sem mínimo fixo e amostras grátis confirmadas a cada consulta.',
+    llms: 'Sabonetes de hotel, amenities (sabonete, gel de banho, sabonete líquido) e produtos de limpeza para governança, cozinha e lavanderia, para hotéis, restaurantes, cafés e catering, organizados por espaço (quartos, cozinha, banheiros, pisos, lavanderia, almoxarifado), em embalagens para cozinha e governança, com marca própria nos amenities, contêineres mistos, sem mínimo fixo e amostras grátis confirmadas a cada consulta.',
   },
 
   notFound: {
