@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ea0d79815312';
+export const sourceHash = '0e0921cd929e';
 
 const tr: UiPartial = {
   meta: {
@@ -474,7 +474,7 @@ const tr: UiPartial = {
       faqs: [
         {
           q: 'Ürünleri kendi markam altında sipariş edebilir miyim?',
-          a: 'Evet. Özel marka çoğu üründe mevcuttur: etiket tasarımınız, formülasyonun izin verdiği ölçüde koku ve renk seçimi ve pazarınızın ihtiyaç duyduğu ambalaj boyutları. Asgari miktarlar ürüne ve ambalaja bağlıdır ve her ürün sayfasında tipik olarak belirtilir.',
+          a: 'Evet. Özel marka çoğu üründe mevcuttur: etiket tasarımınız, formülasyonun izin verdiği ölçüde koku ve renk seçimi ve pazarınızın ihtiyaç duyduğu ambalaj boyutları. Sabit bir asgari sipariş miktarı yoktur: deneme siparişleri, kısmi yükler ve karma konteynerler için teklif verilir. Özel marka tasarımında basılı etiket veya koliler için ayrı bir asgari miktar olabilir; bu miktar ürüne ve ambalaja bağlıdır ve teklifte belirtilir.',
         },
         {
           q: 'Farklı ürünleri tek konteynerde birleştirebilir miyim?',

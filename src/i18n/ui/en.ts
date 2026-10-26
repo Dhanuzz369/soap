@@ -498,7 +498,7 @@ const en = {
       faqs: [
         {
           q: 'Can I order products under my own brand?',
-          a: 'Yes. Private label is available on most products: your label artwork, a choice of fragrance and colour where the formulation allows, and the pack sizes your market needs. Minimum quantities depend on the product and pack, and are listed as typical on each product page.',
+          a: 'Yes. Private label is available on most products: your label artwork, a choice of fragrance and colour where the formulation allows, and the pack sizes your market needs. There is no fixed minimum order: trial orders, part loads and mixed containers are quoted. A private-label design can carry its own minimum for printed labels or cartons, which depends on the product and pack and is stated on the quotation.',
         },
         {
           q: 'Can I combine different products in one container?',

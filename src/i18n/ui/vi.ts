@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ea0d79815312';
+export const sourceHash = '0e0921cd929e';
 
 const vi: UiPartial = {
   meta: {
@@ -474,7 +474,7 @@ const vi: UiPartial = {
       faqs: [
         {
           q: 'Tôi có thể đặt hàng dưới thương hiệu riêng của mình không?',
-          a: 'Có. Nhãn riêng được cung cấp cho hầu hết sản phẩm: thiết kế nhãn của Quý khách, lựa chọn mùi hương và màu sắc khi công thức cho phép, cùng các quy cách đóng gói phù hợp với thị trường của Quý khách. Số lượng tối thiểu tùy theo sản phẩm và quy cách, và được nêu ở mức điển hình trên trang của từng sản phẩm.',
+          a: 'Có. Nhãn riêng được cung cấp cho hầu hết sản phẩm: thiết kế nhãn của Quý khách, lựa chọn mùi hương và màu sắc khi công thức cho phép, cùng các quy cách đóng gói phù hợp với thị trường của Quý khách. Không có số lượng đặt hàng tối thiểu cố định: đơn hàng dùng thử, lô hàng lẻ và container ghép đều được báo giá. Thiết kế nhãn riêng có thể có mức tối thiểu riêng cho nhãn hoặc thùng carton in sẵn, tùy theo sản phẩm và quy cách đóng gói, và được nêu trong báo giá.',
         },
         {
           q: 'Tôi có thể ghép nhiều sản phẩm khác nhau trong một container không?',

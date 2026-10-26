@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ea0d79815312';
+export const sourceHash = '0e0921cd929e';
 
 const zh: UiPartial = {
   meta: {
@@ -472,7 +472,7 @@ const zh: UiPartial = {
       faqs: [
         {
           q: '我可以订购使用自己品牌的产品吗？',
-          a: '可以。大多数产品可做自有品牌：使用您的标签设计稿，在配方允许的情况下可选择香型和颜色，并按您的市场需要设定包装规格。最小起订量视产品和包装而定，各产品页面列有典型数值。',
+          a: '可以。大多数产品可做自有品牌：使用您的标签设计稿，在配方允许的情况下可选择香型和颜色，并按您的市场需要设定包装规格。没有固定的最小起订量：试单、部分装载和混装集装箱均可报价。自有品牌设计的印刷标签或纸箱可能有单独的起订量，视产品和包装而定，并在报价单中注明。',
         },
         {
           q: '不同产品可以合装在一个集装箱里吗？',

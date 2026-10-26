@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ea0d79815312';
+export const sourceHash = '0e0921cd929e';
 
 const es: UiPartial = {
   meta: {
@@ -474,7 +474,7 @@ const es: UiPartial = {
       faqs: [
         {
           q: '¿Puedo pedir productos con mi propia marca?',
-          a: 'Sí. La marca propia está disponible en la mayoría de los productos: su diseño de etiqueta, una selección de fragancia y color cuando la formulación lo permite, y los tamaños de envase que necesite su mercado. Las cantidades mínimas dependen del producto y del envase, y se indican como valores típicos en cada página de producto.',
+          a: 'Sí. La marca propia está disponible en la mayoría de los productos: su diseño de etiqueta, una selección de fragancia y color cuando la formulación lo permite, y los tamaños de envase que necesite su mercado. No hay un pedido mínimo fijo: cotizamos pedidos de prueba, cargas parciales y contenedores mixtos. Un diseño de marca propia puede tener su propio mínimo para etiquetas o cajas impresas, que depende del producto y del envase y se indica en la cotización.',
         },
         {
           q: '¿Puedo combinar distintos productos en un mismo contenedor?',

@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ea0d79815312';
+export const sourceHash = '0e0921cd929e';
 
 const fr: UiPartial = {
   meta: {
@@ -476,7 +476,7 @@ const fr: UiPartial = {
       faqs: [
         {
           q: 'Puis-je commander des produits sous ma propre marque ?',
-          a: 'Oui. La marque de distributeur est proposée sur la plupart des produits : votre maquette d’étiquette, un choix de parfum et de couleur lorsque la formule le permet, et les contenances dont votre marché a besoin. Les quantités minimales dépendent du produit et du conditionnement ; des valeurs types figurent sur chaque fiche produit.',
+          a: 'Oui. La marque de distributeur est proposée sur la plupart des produits : votre maquette d’étiquette, un choix de parfum et de couleur lorsque la formule le permet, et les contenances dont votre marché a besoin. Il n’y a pas de minimum de commande fixe : commandes d’essai, chargements partiels et conteneurs mixtes font tous l’objet d’un devis. Une création en marque de distributeur peut avoir son propre minimum pour les étiquettes ou cartons imprimés ; il dépend du produit et du conditionnement et figure sur le devis.',
         },
         {
           q: 'Puis-je regrouper différents produits dans un même conteneur ?',

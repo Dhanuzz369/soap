@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ea0d79815312';
+export const sourceHash = '0e0921cd929e';
 
 const sw: UiPartial = {
   meta: {
@@ -473,7 +473,7 @@ const sw: UiPartial = {
       faqs: [
         {
           q: 'Je, ninaweza kuagiza bidhaa chini ya chapa yangu mwenyewe?',
-          a: 'Ndiyo. Chapa ya mnunuzi (private label) inapatikana kwa bidhaa nyingi: michoro ya lebo yako, chaguo la harufu na rangi pale fomula inaporuhusu, na ukubwa wa vifungashio ambao soko lako linahitaji. Kiwango cha chini cha oda hutegemea bidhaa na kifungashio, na huorodheshwa kama cha kawaida kwenye ukurasa wa kila bidhaa.',
+          a: 'Ndiyo. Chapa ya mnunuzi (private label) inapatikana kwa bidhaa nyingi: michoro ya lebo yako, chaguo la harufu na rangi pale fomula inaporuhusu, na ukubwa wa vifungashio ambao soko lako linahitaji. Hakuna kiwango cha chini cha oda kisichobadilika: oda za majaribio, mizigo ya sehemu na makontena mchanganyiko yote hupewa bei. Muundo wa chapa ya mnunuzi unaweza kuwa na kiwango chake cha chini kwa lebo au katoni zilizochapishwa, kinachotegemea bidhaa na kifungashio, na huelezwa kwenye nukuu ya bei.',
         },
         {
           q: 'Je, ninaweza kuchanganya bidhaa tofauti kwenye kontena moja?',

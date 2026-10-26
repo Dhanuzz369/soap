@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ea0d79815312';
+export const sourceHash = '0e0921cd929e';
 
 const id: UiPartial = {
   meta: {
@@ -474,7 +474,7 @@ const id: UiPartial = {
       faqs: [
         {
           q: 'Bisakah saya memesan produk dengan merek saya sendiri?',
-          a: 'Bisa. Private label tersedia untuk sebagian besar produk: desain label Anda, pilihan aroma dan warna sepanjang formulasinya memungkinkan, serta ukuran kemasan yang dibutuhkan pasar Anda. Jumlah minimum bergantung pada produk dan kemasan, dan dicantumkan sebagai nilai tipikal di setiap halaman produk.',
+          a: 'Bisa. Private label tersedia untuk sebagian besar produk: desain label Anda, pilihan aroma dan warna sepanjang formulasinya memungkinkan, serta ukuran kemasan yang dibutuhkan pasar Anda. Tidak ada pesanan minimum yang tetap: pesanan percobaan, muatan parsial, dan kontainer campuran semuanya dapat diberi penawaran. Desain private label dapat memiliki minimum tersendiri untuk label atau karton cetak, yang bergantung pada produk dan kemasan serta dicantumkan dalam penawaran harga.',
         },
         {
           q: 'Bisakah saya menggabungkan berbagai produk dalam satu kontainer?',

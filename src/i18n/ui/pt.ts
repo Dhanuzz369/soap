@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ea0d79815312';
+export const sourceHash = '0e0921cd929e';
 
 const pt: UiPartial = {
   meta: {
@@ -474,7 +474,7 @@ const pt: UiPartial = {
       faqs: [
         {
           q: 'Posso encomendar produtos com a minha própria marca?',
-          a: 'Sim. A marca própria está disponível na maioria dos produtos: a arte do seu rótulo, a escolha de fragrância e cor quando a formulação permite e os tamanhos de embalagem de que o seu mercado precisa. As quantidades mínimas dependem do produto e da embalagem e constam, como valores típicos, na página de cada produto.',
+          a: 'Sim. A marca própria está disponível na maioria dos produtos: a arte do seu rótulo, a escolha de fragrância e cor quando a formulação permite e os tamanhos de embalagem de que o seu mercado precisa. Não há pedido mínimo fixo: pedidos de teste, cargas parciais e contêineres mistos são todos cotados. Um design de marca própria pode ter um mínimo próprio para rótulos ou caixas impressos, que depende do produto e da embalagem e consta da cotação.',
         },
         {
           q: 'Posso combinar produtos diferentes em um mesmo contêiner?',

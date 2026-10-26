@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ea0d79815312';
+export const sourceHash = '0e0921cd929e';
 
 const de: UiPartial = {
   meta: {
@@ -474,7 +474,7 @@ const de: UiPartial = {
       faqs: [
         {
           q: 'Kann ich Produkte unter meiner eigenen Marke bestellen?',
-          a: 'Ja. Eine Handelsmarke ist bei den meisten Produkten möglich: mit Ihrem Etiketten-Artwork, einer Auswahl an Duft und Farbe, soweit die Rezeptur es zulässt, und den Packungsgrößen, die Ihr Markt benötigt. Die Mindestmengen hängen von Produkt und Packung ab und sind auf jeder Produktseite als typische Werte angegeben.',
+          a: 'Ja. Eine Handelsmarke ist bei den meisten Produkten möglich: mit Ihrem Etiketten-Artwork, einer Auswahl an Duft und Farbe, soweit die Rezeptur es zulässt, und den Packungsgrößen, die Ihr Markt benötigt. Eine feste Mindestbestellmenge gibt es nicht: Probeaufträge, Teilladungen und gemischte Container werden angeboten. Für ein Handelsmarken-Design kann eine eigene Mindestmenge für bedruckte Etiketten oder Kartons gelten; sie hängt von Produkt und Packung ab und steht im Angebot.',
         },
         {
           q: 'Kann ich verschiedene Produkte in einem Container kombinieren?',
