@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '16023fb245ce';
+export const sourceHash = 'b5ab65b59872';
 
 const tr: UiPartial = {
   meta: {
@@ -415,6 +415,7 @@ const tr: UiPartial = {
     sendWa: 'WhatsApp ile gönderin',
     sendEmail: 'E-posta ile gönderin',
     sendNote: 'Her biri kendi uygulamanızı mesaj yazılı olarak açar; göndermeden önce kontrol edebilirsiniz.',
+    direct: 'Ya da bize doğrudan ulaşın:',
   },
 
   about: {

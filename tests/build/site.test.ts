@@ -3,7 +3,7 @@ import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import site from '../../src/config/site';
 import { launched } from '../../src/lib/launch';
-import { splitLocale, localeInfo } from '../../src/i18n/locales';
+import { splitLocale, localeInfo, LOCALE_CODES } from '../../src/i18n/locales';
 
 const NOINDEX = '<meta name="robots" content="noindex, nofollow">';
 const BASE = site.url.replace(/\/$/, '');
@@ -190,5 +190,18 @@ describe('home hero: the photo fan', () => {
     expect(count(fan(home), /class="fan-glow-img" src="data:image\/webp;base64,/g)).toBe(4);
     expect(home).not.toMatch(/hero-canvas|range-cutout|three\.module/);
     expect(allFiles.some((f) => /hero-scene/.test(f))).toBe(false);
+  });
+});
+
+describe('enquiry hand-off (audit B13)', () => {
+  const contactPages = LOCALE_CODES.map((l) => (l === 'en' ? 'contact/index.html' : `${l}/contact/index.html`));
+  it('every contact page has a polite status region and the email and phone as plain text beside the send buttons', () => {
+    for (const f of contactPages) {
+      const html = read(f);
+      expect(html, f).toMatch(/role="status" aria-live="polite" data-enquiry-status/);
+      const panel = html.slice(html.indexOf('data-enquiry-send'), html.indexOf('</form>'));
+      expect(panel, f).toContain(`data-direct-email>${site.contact.email}</span>`);
+      expect(panel, f).toContain(`data-direct-phone>${site.contact.phone}</span>`);
+    }
   });
 });

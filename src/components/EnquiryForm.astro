@@ -33,6 +33,7 @@ const waPlain = buildWhatsAppUrl(site.contact.whatsapp, {});
   data-email={site.contact.email}
   data-whatsapp={site.contact.whatsapp}
   data-hint-js={f.hintJs}
+  data-ready={f.sendH}
 >
   <input type="hidden" name={F.language} value={info.native} />
   <div class="enq-grid">
@@ -113,12 +114,21 @@ const waPlain = buildWhatsAppUrl(site.contact.whatsapp, {});
     </p>
   </div>
 
+  {/* Announces the panel below politely when it opens (focus also moves to it). */}
+  <p class="visually-hidden" role="status" aria-live="polite" data-enquiry-status></p>
+
   <div class="enq-send" data-enquiry-send hidden tabindex="-1" role="region" aria-labelledby="enq-send-h">
     <p id="enq-send-h" class="enq-send-h">{f.sendH}</p>
     <div class="enq-send-actions">
       <a class="btn" data-send-whatsapp href={waPlain} target="_blank" rel="noopener">{f.sendWa}</a>
       <a class="btn btn--soft" data-send-email href={`mailto:${site.contact.email}`}>{f.sendEmail}</a>
     </div>
+    {/* The address and number as plain text, so a buyer (or an assistant) can copy or quote them. */}
+    <p class="enq-direct">
+      {f.direct}{' '}
+      <span class="enq-direct-item">{ui.contact.email}: <span dir="ltr" data-direct-email>{site.contact.email}</span>{' '}</span>
+      <span class="enq-direct-item">{ui.contact.phone}: <span dir="ltr" data-direct-phone>{site.contact.phone}</span></span>
+    </p>
     <p class="note">{f.sendNote}</p>
   </div>
 </form>

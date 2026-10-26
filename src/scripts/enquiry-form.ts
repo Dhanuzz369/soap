@@ -3,7 +3,8 @@
  * - Pre-selects products named in ?product=<slug> (comma-separated or repeated).
  * - Prefills the message from ?message=<text> (sent by the home page's quote card).
  * - On submit, validates natively, then reveals "Send via WhatsApp" / "Send via Email"
- *   links built with the same pure helpers the tests cover.
+ *   links built with the same pure helpers the tests cover, announces the panel politely
+ *   (role="status") and moves focus to it.
  * Without this script the form posts to mailto: as normal.
  */
 import { buildMailtoUrl, buildWhatsAppUrl, fieldsFromEntries, parseEnquiryParams } from '../lib/enquiry';
@@ -19,6 +20,7 @@ export function initEnquiryForms(root: ParentNode = document): void {
     const wa = form.querySelector<HTMLAnchorElement>('[data-send-whatsapp]');
     const mail = form.querySelector<HTMLAnchorElement>('[data-send-email]');
     const hint = form.querySelector<HTMLElement>('[data-enquiry-hint]');
+    const status = form.querySelector<HTMLElement>('[data-enquiry-status]');
 
     let first: HTMLInputElement | null = null;
     form.querySelectorAll<HTMLInputElement>('input[data-slug]').forEach((box) => {
@@ -47,7 +49,12 @@ export function initEnquiryForms(root: ParentNode = document): void {
       update();
       const wasHidden = panel.hidden;
       panel.hidden = false;
-      if (wasHidden) panel.focus({ preventScroll: true });
+      if (wasHidden) {
+        // Polite announcement (role="status") plus focus on the panel, so keyboard and screen-reader
+        // users land on the two send buttons.
+        if (status) status.textContent = form.dataset.ready ?? '';
+        panel.focus({ preventScroll: true });
+      }
       panel.scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     });
     // Keep the links in step if the buyer edits after revealing them.

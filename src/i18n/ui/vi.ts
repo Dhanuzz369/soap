@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '16023fb245ce';
+export const sourceHash = 'b5ab65b59872';
 
 const vi: UiPartial = {
   meta: {
@@ -415,6 +415,7 @@ const vi: UiPartial = {
     sendWa: 'Gửi qua WhatsApp',
     sendEmail: 'Gửi qua Email',
     sendNote: 'Mỗi lựa chọn đều mở ứng dụng của chính Quý khách với nội dung tin nhắn đã soạn sẵn, để Quý khách kiểm tra trước khi gửi.',
+    direct: 'Hoặc liên hệ trực tiếp với chúng tôi:',
   },
 
   about: {

@@ -438,6 +438,8 @@ const en = {
     sendWa: 'Send via WhatsApp',
     sendEmail: 'Send via Email',
     sendNote: 'Each opens your own app with the message written out, so you can check it before sending.',
+    /** Before the email address and phone number, shown as plain text beside the send buttons. */
+    direct: 'Or contact us directly:',
   },
 
   about: {
