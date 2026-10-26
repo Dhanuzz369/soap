@@ -45,7 +45,7 @@ const VOCAB: Record<string, string[]> = {
   ItemList: ['name', 'numberOfItems', 'itemListOrder', 'itemListElement'],
   HowTo: ['name', 'description', 'inLanguage', 'image', 'step'],
   Product: ['name', 'description', 'url', 'sku', 'brand', 'countryOfOrigin', 'category', 'image', 'additionalProperty'],
-  Service: ['name', 'serviceType', 'description', 'url', 'provider', 'areaServed', 'audience'],
+  Service: ['name', 'serviceType', 'description', 'url', 'provider', 'areaServed', 'audience', 'mainEntityOfPage', 'hasOfferCatalog'],
   BlogPosting: ['headline', 'description', 'datePublished', 'dateModified', 'inLanguage', 'mainEntityOfPage', 'url', 'author', 'publisher', 'keywords', 'image'],
 };
 for (const t of ['CollectionPage', 'ItemPage', 'AboutPage', 'ContactPage']) VOCAB[t] = VOCAB.WebPage;
@@ -197,6 +197,29 @@ describe.each([...new Set(pages.map((p) => p.lang))])('required fields per type,
     expect(s.provider).toEqual({ '@id': `${BASE}/#organization` });
     expect(s.audience).toMatchObject({ '@type': 'BusinessAudience' });
     expect(s.audience.audienceType.length).toBeGreaterThan(5);
+  });
+
+  it('HoReCa: the page names the Service as its main entity, and the Service links every space list', () => {
+    for (const p of list.filter((x) => /\/horeca\/$/.test(x.path))) {
+      const s = p.blocks.find((b) => b['@type'] === 'Service')!;
+      const page = p.blocks.find((b) => b['@type'] === 'WebPage')!;
+      expect(page.mainEntity, p.path).toEqual({ '@id': s['@id'] });
+      expect(s.mainEntityOfPage, p.path).toEqual({ '@id': page['@id'] });
+      const lists = p.blocks.filter((b) => b['@type'] === 'ItemList').map((b) => b['@id']);
+      expect(lists.length, p.path).toBe(6);
+      expect(s.hasOfferCatalog['@type']).toBe('OfferCatalog');
+      expect(s.hasOfferCatalog.itemListElement.map((x: Node) => x['@id']).sort(), p.path).toEqual([...lists].sort());
+    }
+  });
+
+  it('Organization: country in the address on every page, and memberOf bodies with @ids', () => {
+    for (const p of list) {
+      const org = p.blocks.find((b) => b['@type'] === 'Organization')!;
+      expect(org.address?.['@type'], p.path).toBe('PostalAddress');
+      expect(org.address.addressCountry, p.path).toBe('IN');
+      if (site.contactIsPlaceholder) expect(JSON.stringify(org.address), p.path).not.toMatch(/PLACEHOLDER/);
+      for (const m of org.memberOf ?? []) expect(m['@id'], p.path).toBe(`${m.url.replace(/\/+$/, '')}/#organization`);
+    }
   });
 
   it('FAQPage wherever FAQs appear: questions with answers, in this language', () => {

@@ -101,7 +101,7 @@ describe('llms and structured data', () => {
       const org = [...html.matchAll(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1])).find((b) => b['@type'] === 'Organization');
       expect(org.memberOf.map((m: any) => m.url), l.code).toEqual(['https://www.fieo.org/', 'https://www.chemexcil.in/']);
       for (const m of org.memberOf) {
-        expect(Object.keys(m).sort()).toEqual(['@type', 'name', 'url']);
+        expect(Object.keys(m).sort()).toEqual(['@id', '@type', 'name', 'url']);
         expect(JSON.stringify(m)).not.toMatch(/\d/);
       }
     }

@@ -17,7 +17,7 @@ import QuoteCard from '../components/QuoteCard.astro';
 import { SPACES, PROPERTY_TYPES, horecaMessage } from '../lib/horeca';
 import { enquiryHref } from '../lib/enquiry';
 import { getProducts } from '../lib/products';
-import { faqJsonLd, itemListJsonLd, serviceJsonLd, buildKeywords } from '../lib/seo';
+import { faqJsonLd, itemListJsonLd, serviceJsonLd, buildKeywords, absoluteUrl } from '../lib/seo';
 import { ogCard, productImagePath } from '../lib/product-image';
 import { useI18n } from '../i18n/page';
 import '../styles/horeca.css';
@@ -63,7 +63,14 @@ const steps = H.samplesSteps;
 const pad = (n: number) => String(n).padStart(2, '0');
 
 const jsonLd = [
-  serviceJsonLd({ url, name: H.serviceName, serviceType: H.serviceType, description: H.description, audience: H.audience }),
+  serviceJsonLd({
+    url,
+    name: H.serviceName,
+    serviceType: H.serviceType,
+    description: H.description,
+    audience: H.audience,
+    catalog: { name: H.spacesNav, fragments: spaces.map((s) => s.anchor) },
+  }),
   ...spaces.map((s) =>
     itemListJsonLd(
       url,
@@ -83,6 +90,7 @@ const jsonLd = [
   ogImage={ogCard('horeca.jpg')}
   ogImageAlt={H.stageTitle}
   keywords={buildKeywords(ui.seo.keywords.horeca)}
+  mainEntity={`${absoluteUrl(url)}#service`}
   breadcrumbs={breadcrumbs}
   jsonLd={jsonLd}
   dark

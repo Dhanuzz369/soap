@@ -62,12 +62,13 @@ export function resolveRegistrations(
   });
 }
 
-/** schema.org `memberOf` for the bodies the company is a member of (FIEO and CHEMEXCIL). No numbers. */
+/** schema.org `memberOf` for the bodies the company is a member of (FIEO and CHEMEXCIL), with an @id each. No numbers. */
 export function memberOfJsonLd(list: Registration[] = site.registrations, show: boolean = site.showRegistrations) {
   if (!show) return [];
   return list
     .filter((r) => r.id === 'fieo' || r.id === 'chemexcil')
-    .map((r) => ({ '@type': 'Organization' as const, name: r.fullName, url: r.url }));
+    // An @id on each body's own site, so every page (and other sites) can refer to the same node.
+    .map((r) => ({ '@type': 'Organization' as const, '@id': `${r.url.replace(/\/+$/, '')}/#organization`, name: r.fullName, url: r.url }));
 }
 
 /** The words the llms line uses: `llmsLine` ("Registered with: {list}") and each body's status, from the UI file. */

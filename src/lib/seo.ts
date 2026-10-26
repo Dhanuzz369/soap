@@ -115,11 +115,18 @@ export function organizationJsonLd(description: string = site.tagline): WithCont
     parentOrganization: { '@type': 'Organization', name: site.parentName, ...(f.parentUrl ? { url: f.parentUrl } : {}) },
     ...(f.founded ? { foundingDate: f.founded } : {}),
     ...(f.iec ? { identifier: { '@type': 'PropertyValue', propertyID: 'IEC (Importer Exporter Code, India)', value: f.iec } } : {}),
+    // The country is a public fact now; the city once `facts.city` is filled in, the street once
+    // the contact details are real.
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'IN',
+      ...(f.city ? { addressLocality: f.city } : {}),
+      ...(real ? { streetAddress: site.contact.address } : {}),
+    },
     ...(real
       ? {
           email: site.contact.email,
           telephone: site.contact.phone,
-          address: { '@type': 'PostalAddress', streetAddress: site.contact.address, addressCountry: 'IN', ...(f.city ? { addressLocality: f.city } : {}) },
           contactPoint: {
             '@type': 'ContactPoint',
             contactType: 'sales',
@@ -254,6 +261,8 @@ export function serviceJsonLd(p: {
   serviceType: string;
   description: string;
   audience: string;
+  /** The page's product lists (ItemList `#<fragment>`), linked as the Service's catalogue. */
+  catalog?: { name: string; fragments: string[] };
 }): WithContext<Service> {
   const abs = absoluteUrl(p.url);
   return {
@@ -267,6 +276,17 @@ export function serviceJsonLd(p: {
     provider: { '@id': ORG_ID() },
     areaServed: 'Worldwide',
     audience: { '@type': 'BusinessAudience', audienceType: p.audience },
+    mainEntityOfPage: { '@id': `${abs}#webpage` },
+    ...(p.catalog && p.catalog.fragments.length
+      ? {
+          // A catalogue without prices or offers: it only points at the page's product lists.
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: p.catalog.name,
+            itemListElement: p.catalog.fragments.map((f) => ({ '@id': `${abs}#${f}` })),
+          },
+        }
+      : {}),
   };
 }
 
