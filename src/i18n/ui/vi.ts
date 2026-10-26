@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6972558e1188';
+export const sourceHash = '06deb3bc7fff';
 
 const vi: UiPartial = {
   meta: {
@@ -189,6 +189,7 @@ const vi: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, một công ty thuộc {parent}. Nhà xuất khẩu thương mại từ Ấn Độ.',
     backToTop: 'Lên đầu trang',
+    vetting: 'Cách chúng tôi thẩm định nhà sản xuất',
   },
 
   /** The "Registered exporter" strip: no registration numbers, ever. */
@@ -436,6 +437,16 @@ const vi: UiPartial = {
     basedIn: 'Trụ sở tại',
     founded: 'Thành lập',
     iec: 'Mã số nhà nhập khẩu - xuất khẩu (IEC)',
+    vetH: 'Cách chúng tôi thẩm định nhà sản xuất và kiểm tra đơn hàng',
+    vetLead: 'GoodBiz Hygiene không tự sản xuất, vì vậy đây là những bước kiểm tra đằng sau mỗi đơn hàng chúng tôi giao. Chỉ những bước chúng tôi thực sự làm mới được liệt kê.',
+    vetSteps: [
+      { title: 'Nhà sản xuất đã được chúng tôi thẩm định', text: 'Mỗi sản phẩm được đặt tại một nhà sản xuất Ấn Độ mà chúng tôi đã thẩm định về chất lượng, độ ổn định và kinh nghiệm xuất khẩu.' },
+      { title: 'Thống nhất quy cách trước', text: 'Thông số điển hình đi kèm báo giá. Giá trị cuối cùng, như hoạt chất, TFM hoặc pH, được xác nhận với nhà sản xuất cho đơn hàng của Quý khách và ghi trong báo giá.' },
+      { title: 'Duyệt mẫu trước khi sản xuất', text: 'Quý khách duyệt mẫu sản phẩm và, với nhãn riêng, bản in thử thiết kế trước khi xác nhận đơn hàng và bắt đầu sản xuất hàng loạt.' },
+      { title: 'Đối chiếu với mẫu của Quý khách trước khi xếp hàng', text: 'Công thức, mùi hương và bao bì xuất đi được đối chiếu với mẫu Quý khách đã duyệt trước khi xếp hàng lên container.' },
+      { title: 'Chứng từ cho mỗi lô hàng', text: 'Hóa đơn thương mại, phiếu đóng gói, giấy chứng nhận xuất xứ và vận đơn, kèm giấy chứng nhận phân tích (COA) và MSDS khi sản phẩm cần. Có thể yêu cầu COA cho từng lô.' },
+      { title: 'Ảnh và phương án xếp hàng theo yêu cầu', text: 'Ảnh trước khi giao hàng và phương án xếp container có thể được chuẩn bị theo yêu cầu, để Quý khách xem hàng và số thùng trước khi tàu chạy.' },
+    ],
   },
 
   faqPage: {

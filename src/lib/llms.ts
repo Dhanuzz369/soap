@@ -208,5 +208,6 @@ export async function buildLlmsFull(): Promise<string> {
   }
 
   out.push('## About', '', ui.about.what1, '', ui.about.what2, '', fmt(ui.about.familyText, { parent: site.parentName }), '');
+  out.push(`## ${ui.about.vetH}`, '', `URL: ${absoluteUrl('/about/#how-we-vet')}`, '', ui.about.vetLead, '', ...ui.about.vetSteps.map((s) => `- **${s.title}.** ${s.text}`), '');
   return out.join('\n').replace(/\n{3,}/g, '\n\n');
 }

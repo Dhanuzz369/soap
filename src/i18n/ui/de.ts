@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6972558e1188';
+export const sourceHash = '06deb3bc7fff';
 
 const de: UiPartial = {
   meta: {
@@ -189,6 +189,7 @@ const de: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, ein Unternehmen von {parent}. Handelsexporteur aus Indien.',
     backToTop: 'Nach oben',
+    vetting: 'Wie wir Hersteller prüfen',
   },
 
   /** The "Registered exporter" strip: no registration numbers, ever. */
@@ -436,6 +437,16 @@ const de: UiPartial = {
     basedIn: 'Sitz in',
     founded: 'Gegründet',
     iec: 'Importer Exporter Code (IEC)',
+    vetH: 'Wie wir Hersteller prüfen und Aufträge kontrollieren',
+    vetLead: 'GoodBiz Hygiene stellt nicht selbst her. Deshalb stehen diese Prüfungen hinter jedem Auftrag, den wir verschiffen. Aufgeführt sind nur Schritte, die wir tatsächlich durchführen.',
+    vetSteps: [
+      { title: 'Ein von uns geprüfter Hersteller', text: 'Jedes Produkt wird bei einem indischen Hersteller platziert, den wir auf Qualität, Beständigkeit und Exporterfahrung geprüft haben.' },
+      { title: 'Zuerst die Spezifikation', text: 'Typische Spezifikationen kommen mit dem Angebot. Die endgültigen Werte, etwa Aktivsubstanz, TFM oder pH, werden für Ihren Auftrag mit dem Hersteller bestätigt und im Angebot genannt.' },
+      { title: 'Muster vor der Produktion freigegeben', text: 'Sie geben Produktmuster und bei Handelsmarken einen gedruckten Andruck Ihres Artworks frei, bevor der Auftrag bestätigt wird und die Produktion beginnt.' },
+      { title: 'Vor dem Verladen mit Ihrem Muster abgeglichen', text: 'Rezeptur, Duft und Packung der Ware werden vor dem Verladen mit dem von Ihnen freigegebenen Muster abgeglichen.' },
+      { title: 'Dokumente zu jeder Sendung', text: 'Handelsrechnung, Packliste, Ursprungszeugnis und Konnossement, dazu ein Analysezertifikat (COA) und ein Sicherheitsdatenblatt (MSDS), wo das Produkt sie braucht. Ein COA je Charge kann angefordert werden.' },
+      { title: 'Fotos und Ladeplan auf Anfrage', text: 'Fotos vor dem Versand und ein Containerladeplan können auf Anfrage bereitgestellt werden, damit Sie Ware und Kartonzahl vor dem Auslaufen sehen.' },
+    ],
   },
 
   faqPage: {

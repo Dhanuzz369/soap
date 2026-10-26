@@ -799,6 +799,11 @@
   }
 }
 
+/* About: "How we vet manufacturers" is a link target from the footer and the home page */
+#how-we-vet {
+  scroll-margin-top: 72px;
+}
+
 /* tone-step rows (no rules, no icons): a title and its text */
 .rows {
   display: grid;

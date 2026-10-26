@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6972558e1188';
+export const sourceHash = '06deb3bc7fff';
 
 const id: UiPartial = {
   meta: {
@@ -189,6 +189,7 @@ const id: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, perusahaan {parent}. Merchant exporter dari India.',
     backToTop: 'Kembali ke atas',
+    vetting: 'Cara kami memeriksa produsen',
   },
 
   /** The "Registered exporter" strip: no registration numbers, ever. */
@@ -436,6 +437,16 @@ const id: UiPartial = {
     basedIn: 'Berkedudukan di',
     founded: 'Didirikan',
     iec: 'Importer Exporter Code (IEC)',
+    vetH: 'Cara kami memeriksa produsen dan pesanan',
+    vetLead: 'GoodBiz Hygiene tidak memproduksi sendiri, jadi inilah pemeriksaan di balik setiap pesanan yang kami kirim. Hanya langkah yang benar-benar kami lakukan yang dicantumkan.',
+    vetSteps: [
+      { title: 'Produsen yang sudah kami periksa', text: 'Setiap produk dipesan dari produsen India yang telah kami periksa kualitas, konsistensi, dan pengalaman ekspornya.' },
+      { title: 'Spesifikasi disepakati lebih dulu', text: 'Spesifikasi tipikal disertakan dalam penawaran. Nilai akhir, seperti bahan aktif, TFM, atau pH, dikonfirmasi dengan produsen untuk pesanan Anda dan dicantumkan dalam penawaran.' },
+      { title: 'Sampel disetujui sebelum produksi', text: 'Anda menyetujui sampel produk dan, untuk private label, cetak coba desain Anda sebelum pesanan dikonfirmasi dan produksi massal dimulai.' },
+      { title: 'Dicocokkan dengan sampel Anda sebelum muat', text: 'Formula, aroma, dan kemasan yang dikirim dicocokkan dengan sampel yang Anda setujui sebelum barang dimuat.' },
+      { title: 'Dokumen di setiap pengiriman', text: 'Faktur komersial, packing list, surat keterangan asal, dan bill of lading, ditambah sertifikat analisis (COA) dan MSDS bila produk memerlukannya. COA per batch dapat diminta.' },
+      { title: 'Foto dan rencana muat atas permintaan', text: 'Foto sebelum pengiriman dan rencana muat kontainer dapat disiapkan atas permintaan, agar Anda dapat melihat barang dan jumlah karton sebelum kapal berangkat.' },
+    ],
   },
 
   faqPage: {

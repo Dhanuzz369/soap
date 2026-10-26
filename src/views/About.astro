@@ -54,6 +54,23 @@ const breadcrumbs = [
     </div>
   </section>
 
+  <section class="wrap sec split" id="how-we-vet" aria-labelledby="vet-h">
+    <div class="split-head" data-reveal>
+      <h2 id="vet-h">{A.vetH}</h2>
+      <p>{A.vetLead}</p>
+    </div>
+    <ol class="rows vet-rows">
+      {
+        A.vetSteps.map((s, i) => (
+          <li class="row" data-reveal style={`--i: ${i % 3}`}>
+            <h3>{s.title}</h3>
+            <p>{s.text}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
   <QuickFacts />
 
   <nav class="wrap sec" aria-labelledby="ranges-h">

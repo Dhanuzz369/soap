@@ -205,3 +205,18 @@ describe('enquiry hand-off (audit B13)', () => {
     }
   });
 });
+
+describe('how we vet manufacturers (audit B5)', () => {
+  for (const l of LOCALE_CODES) {
+    const prefix = l === 'en' ? '' : `${l}/`;
+    it(`${l}: About has the #how-we-vet section, linked from the footer and the home page`, () => {
+      const about = read(`${prefix}about/index.html`);
+      const sec = about.slice(about.indexOf('id="how-we-vet"'), about.indexOf('</section>', about.indexOf('id="how-we-vet"')));
+      expect(sec.length, l).toBeGreaterThan(100);
+      expect((sec.match(/<li class="row"/g) ?? []).length, l).toBe(6);
+      const target = `href="/${prefix}about/#how-we-vet"`;
+      expect(read(`${prefix}index.html`), l).toContain(target);
+      expect(read(`${prefix}products/index.html`), l).toContain(target);
+    });
+  }
+});

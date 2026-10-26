@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6972558e1188';
+export const sourceHash = '06deb3bc7fff';
 
 const fr: UiPartial = {
   meta: {
@@ -190,6 +190,7 @@ const fr: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, une société du groupe {parent}. Exportateur négociant depuis l’Inde.',
     backToTop: 'Haut de page',
+    vetting: 'Comment nous contrôlons les fabricants',
   },
 
   /** The "Registered exporter" strip: no registration numbers, ever. */
@@ -438,6 +439,16 @@ const fr: UiPartial = {
     basedIn: 'Implantation',
     founded: 'Création',
     iec: 'Code importateur-exportateur (IEC)',
+    vetH: 'Comment nous contrôlons les fabricants et vérifions les commandes',
+    vetLead: 'GoodBiz Hygiene ne fabrique pas. Voici donc les contrôles qui accompagnent chaque commande expédiée. Seules les étapes que nous appliquons réellement figurent ici.',
+    vetSteps: [
+      { title: 'Un fabricant que nous avons contrôlé', text: 'Chaque produit est confié à un fabricant indien dont nous avons contrôlé la qualité, la régularité et l’expérience de l’export.' },
+      { title: 'La spécification d’abord', text: 'Les spécifications types accompagnent le devis. Les valeurs finales, comme la matière active, le TFM ou le pH, sont confirmées avec le fabricant pour votre commande et indiquées sur le devis.' },
+      { title: 'Échantillons validés avant production', text: 'Vous validez les échantillons et, en marque de distributeur, une épreuve imprimée de votre maquette avant la confirmation de la commande et le lancement de la production.' },
+      { title: 'Contrôle par rapport à votre échantillon avant chargement', text: 'La formule, le parfum et le conditionnement expédiés sont vérifiés par rapport à l’échantillon validé avant le chargement des marchandises.' },
+      { title: 'Des documents à chaque expédition', text: 'Facture commerciale, liste de colisage, certificat d’origine et connaissement, ainsi qu’un certificat d’analyse (COA) et une FDS (MSDS) lorsque le produit l’exige. Un COA par lot peut être demandé.' },
+      { title: 'Photos et plan de chargement sur demande', text: 'Des photos avant expédition et un plan de chargement du conteneur peuvent être fournis sur demande, pour voir la marchandise et le nombre de cartons avant le départ.' },
+    ],
   },
 
   faqPage: {

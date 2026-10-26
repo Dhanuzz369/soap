@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6972558e1188';
+export const sourceHash = '06deb3bc7fff';
 
 const zh: UiPartial = {
   meta: {
@@ -189,6 +189,7 @@ const zh: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}，{parent}旗下公司。印度贸易型出口商。',
     backToTop: '返回顶部',
+    vetting: '我们如何审核制造商',
   },
 
   /** The "Registered exporter" strip: no registration numbers, ever. */
@@ -434,6 +435,16 @@ const zh: UiPartial = {
     basedIn: '所在地',
     founded: '成立时间',
     iec: '进出口商代码（IEC）',
+    vetH: '我们如何审核制造商并检查订单',
+    vetLead: 'GoodBiz Hygiene不从事生产，因此以下是我们每笔出货背后的检查。这里只列出我们实际执行的步骤。',
+    vetSteps: [
+      { title: '经我们审核的制造商', text: '每种产品都交由我们已在质量、稳定性和出口经验方面审核过的印度制造商生产。' },
+      { title: '先确认规格', text: '报价时附上典型规格。活性物、TFM或pH等最终数值会针对您的订单与制造商确认，并在报价单中注明。' },
+      { title: '生产前确认样品', text: '在确认订单和开始批量生产之前，由您确认产品样品；自有品牌还需确认设计稿的印刷打样。' },
+      { title: '装货前与您的样品比对', text: '出货的配方、香型和包装在装货前会与您确认过的样品进行比对。' },
+      { title: '每批货物都附单证', text: '商业发票、装箱单、原产地证书和提单，产品需要时另附分析证书（COA）和安全技术说明书（MSDS）。可申请每批次的COA。' },
+      { title: '可应要求提供照片和装箱方案', text: '可应要求安排装运前照片和集装箱装箱方案，让您在开船前看到货物和箱数。' },
+    ],
   },
 
   faqPage: {

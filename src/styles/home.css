@@ -808,6 +808,9 @@ html:not(.hero-js) .fan-deferred {
   color: var(--ink);
 }
 /* the four promise cards (.promises/.promise) live in floria.css: the HoReCa page shares them */
+.statement-more {
+  margin-top: clamp(20px, 2.4vw, 32px);
+}
 
 /* Statement: the leaf icon grows in (scale .8 → 1 + opacity), the heading rises 30px 200ms
    later, the paragraph only fades, 400ms in (the reference's choreography). */

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6972558e1188';
+export const sourceHash = '06deb3bc7fff';
 
 const tr: UiPartial = {
   meta: {
@@ -189,6 +189,7 @@ const tr: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, bir {parent} şirketi. Hindistan’dan ticari ihracatçı.',
     backToTop: 'Başa dön',
+    vetting: 'Üreticileri nasıl denetliyoruz',
   },
 
   /** The "Registered exporter" strip: no registration numbers, ever. */
@@ -436,6 +437,16 @@ const tr: UiPartial = {
     basedIn: 'Merkez',
     founded: 'Kuruluş',
     iec: 'İthalatçı İhracatçı Kodu (IEC)',
+    vetH: 'Üreticileri nasıl denetliyor, siparişleri nasıl kontrol ediyoruz',
+    vetLead: 'GoodBiz Hygiene üretim yapmaz; bu yüzden gönderdiğimiz her siparişin arkasında aşağıdaki kontroller vardır. Yalnızca gerçekten uyguladığımız adımlar listelenmiştir.',
+    vetSteps: [
+      { title: 'Denetlediğimiz bir üretici', text: 'Her ürün, kalite, tutarlılık ve ihracat deneyimi açısından denetlediğimiz bir Hint üreticisine verilir.' },
+      { title: 'Önce şartname', text: 'Tipik spesifikasyonlar teklifle birlikte gelir. Aktif madde, TFM veya pH gibi nihai değerler siparişiniz için üreticiyle teyit edilir ve teklifte belirtilir.' },
+      { title: 'Üretimden önce onaylanan numuneler', text: 'Sipariş onaylanıp seri üretim başlamadan önce ürün numunelerini ve özel markada tasarımınızın baskı provasını siz onaylarsınız.' },
+      { title: 'Yüklemeden önce numunenizle karşılaştırma', text: 'Sevk edilen formül, koku ve ambalaj, mallar yüklenmeden önce onayladığınız numuneyle karşılaştırılır.' },
+      { title: 'Her sevkiyatta belgeler', text: 'Ticari fatura, çeki listesi, menşe şahadetnamesi ve konşimento; ürün gerektirdiğinde analiz sertifikası (COA) ve güvenlik bilgi formu (MSDS). Parti bazında COA talep edilebilir.' },
+      { title: 'Talep üzerine fotoğraf ve yükleme planı', text: 'Talep üzerine sevkiyat öncesi fotoğraflar ve konteyner yükleme planı sağlanabilir; böylece malları ve koli sayısını gemi kalkmadan görürsünüz.' },
+    ],
   },
 
   faqPage: {

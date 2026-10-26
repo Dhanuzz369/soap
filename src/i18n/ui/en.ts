@@ -200,6 +200,8 @@ const en = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, a {parent} company. Merchant exporter from India.',
     backToTop: 'Back to top',
+    /** Footer link to the vetting section on the About page (/about/#how-we-vet). */
+    vetting: 'How we vet manufacturers',
   },
 
   /** The "Registered exporter" strip: no registration numbers, ever. */
@@ -461,6 +463,20 @@ const en = {
     basedIn: 'Based in',
     founded: 'Founded',
     iec: 'Importer Exporter Code (IEC)',
+    /**
+     * "How we vet manufacturers and check orders" (About page, #how-we-vet; linked from the home page and
+     * the footer). Only checks GoodBiz Hygiene really makes: never add a step that does not happen.
+     */
+    vetH: 'How we vet manufacturers and check orders',
+    vetLead: 'GoodBiz Hygiene does not manufacture, so these are the checks behind every order we ship. Only steps we actually take are listed.',
+    vetSteps: [
+      { title: 'A manufacturer we have checked', text: 'Each product is placed with an Indian manufacturer we have checked for quality, consistency and export experience.' },
+      { title: 'Specification agreed first', text: 'Typical specifications come with the quotation. Final values, such as active matter, TFM or pH, are confirmed with the manufacturer for your order and stated on the quotation.' },
+      { title: 'Samples approved before production', text: 'Product samples and, for private label, a printed proof of your artwork are approved by you before the order is confirmed and bulk production starts.' },
+      { title: 'Checked against your sample before loading', text: 'The formula, fragrance and pack that ship are checked against the sample you approved before the goods are loaded.' },
+      { title: 'Documents with every shipment', text: 'Commercial invoice, packing list, certificate of origin and bill of lading, plus a certificate of analysis (COA) and MSDS where the product needs them. A batch COA can be requested.' },
+      { title: 'Photos and loading plan on request', text: 'Pre-shipment photographs and a container loading plan can be arranged on request, so you can see the goods and the carton count before they sail.' },
+    ],
   },
 
   faqPage: {

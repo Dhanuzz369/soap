@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6972558e1188';
+export const sourceHash = '06deb3bc7fff';
 
 const sw: UiPartial = {
   meta: {
@@ -188,6 +188,7 @@ const sw: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, kampuni ya {parent}. Msafirishaji nje wa kibiashara kutoka India.',
     backToTop: 'Rudi juu',
+    vetting: 'Jinsi tunavyowakagua watengenezaji',
   },
 
   /** The "Registered exporter" strip: no registration numbers, ever. */
@@ -435,6 +436,16 @@ const sw: UiPartial = {
     basedIn: 'Makao yake',
     founded: 'Ilianzishwa',
     iec: 'Msimbo wa Mwagizaji na Msafirishaji Nje (IEC)',
+    vetH: 'Jinsi tunavyowakagua watengenezaji na kukagua oda',
+    vetLead: 'GoodBiz Hygiene haitengenezi bidhaa yenyewe, kwa hiyo hizi ndizo ukaguzi nyuma ya kila oda tunayosafirisha. Ni hatua tunazozichukua kweli pekee ndizo zimeorodheshwa.',
+    vetSteps: [
+      { title: 'Mtengenezaji tuliyemkagua', text: 'Kila bidhaa huagizwa kwa mtengenezaji wa India ambaye tumemkagua kwa ubora, uthabiti na uzoefu wa kusafirisha nje.' },
+      { title: 'Vipimo hukubaliwa kwanza', text: 'Vipimo vya kawaida huja pamoja na nukuu ya bei. Thamani za mwisho, kama kiambato hai, TFM au pH, huthibitishwa na mtengenezaji kwa oda yako na kuelezwa kwenye nukuu.' },
+      { title: 'Sampuli huidhinishwa kabla ya uzalishaji', text: 'Wewe huidhinisha sampuli za bidhaa na, kwa chapa ya mnunuzi, nakala iliyochapishwa ya muundo wako kabla oda haijathibitishwa na uzalishaji kuanza.' },
+      { title: 'Hulinganishwa na sampuli yako kabla ya kupakia', text: 'Fomula, harufu na kifungashio vinavyosafirishwa hulinganishwa na sampuli uliyoidhinisha kabla ya mzigo kupakiwa.' },
+      { title: 'Nyaraka kwa kila usafirishaji', text: 'Ankara ya kibiashara, orodha ya upakiaji, cheti cha asili na hati ya shehena, pamoja na cheti cha uchambuzi (COA) na MSDS pale bidhaa inapovihitaji. COA ya kila kundi inaweza kuombwa.' },
+      { title: 'Picha na mpango wa upakiaji ukiomba', text: 'Picha kabla ya usafirishaji na mpango wa upakiaji wa kontena vinaweza kupangwa ukiomba, ili uone bidhaa na idadi ya katoni kabla ya meli kuondoka.' },
+    ],
   },
 
   faqPage: {

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6972558e1188';
+export const sourceHash = '06deb3bc7fff';
 
 const es: UiPartial = {
   meta: {
@@ -189,6 +189,7 @@ const es: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '© {year} {name}, una empresa de {parent}. Exportador comercial desde la India.',
     backToTop: 'Volver arriba',
+    vetting: 'Cómo verificamos a los fabricantes',
   },
 
   /** The "Registered exporter" strip: no registration numbers, ever. */
@@ -436,6 +437,16 @@ const es: UiPartial = {
     basedIn: 'Con sede en',
     founded: 'Fundación',
     iec: 'Código de importador-exportador (IEC)',
+    vetH: 'Cómo verificamos a los fabricantes y controlamos los pedidos',
+    vetLead: 'GoodBiz Hygiene no fabrica, así que estos son los controles que respaldan cada pedido que enviamos. Solo figuran los pasos que realmente aplicamos.',
+    vetSteps: [
+      { title: 'Un fabricante que hemos verificado', text: 'Cada producto se encarga a un fabricante indio cuya calidad, regularidad y experiencia exportadora hemos verificado.' },
+      { title: 'Primero, la especificación', text: 'Las especificaciones típicas acompañan la cotización. Los valores finales, como materia activa, TFM o pH, se confirman con el fabricante para su pedido y se indican en la cotización.' },
+      { title: 'Muestras aprobadas antes de producir', text: 'Usted aprueba las muestras del producto y, en marca propia, una prueba impresa de su diseño antes de confirmar el pedido y de iniciar la producción.' },
+      { title: 'Comparado con su muestra antes de cargar', text: 'La fórmula, la fragancia y el envase que se embarcan se comparan con la muestra que usted aprobó antes de cargar la mercancía.' },
+      { title: 'Documentos en cada envío', text: 'Factura comercial, lista de empaque, certificado de origen y conocimiento de embarque, además de certificado de análisis (COA) y hoja de seguridad (MSDS) cuando el producto lo requiere. Se puede solicitar un COA por lote.' },
+      { title: 'Fotos y plan de carga a solicitud', text: 'Se pueden facilitar fotos previas al embarque y un plan de carga del contenedor a solicitud, para que vea la mercancía y el número de cajas antes de zarpar.' },
+    ],
   },
 
   faqPage: {
