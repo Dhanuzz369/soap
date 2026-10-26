@@ -5,6 +5,7 @@ import '../styles/global.css';
 import '../styles/floria.css';
 import '../styles/i18n.css';
 import site from '../config/site';
+import { launched } from '../lib/launch';
 import { absoluteUrl, pageTitle, organizationJsonLd, websiteJsonLd, breadcrumbJsonLd, webPageJsonLd, MAX_KEYWORDS, type PageType } from '../lib/seo';
 import { publicImageSize } from '../lib/product-image';
 import { LOCALES, LOCALE_CODES, DEFAULT_LOCALE, alternates, localizePath } from '../i18n/locales';
@@ -122,10 +123,11 @@ const ar = lang === 'ar';
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     {kw && <meta name="keywords" content={kw} />}
-    {(noindex || !site.launchReady) && <meta name="robots" content="noindex, nofollow" />}
+    {(noindex || !launched) && <meta name="robots" content="noindex, nofollow" />}
     {
-      // Large image previews and full snippets in Google once the site is live.
-      !noindex && site.launchReady && <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      // Large image previews and full snippets in Google once the site is live (src/lib/launch.ts:
+      // launchReady AND a production build, so Vercel previews stay noindex).
+      !noindex && launched && <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     }
     {v.google && <meta name="google-site-verification" content={v.google} />}
     {v.bing && <meta name="msvalidate.01" content={v.bing} />}

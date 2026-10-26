@@ -5,6 +5,7 @@ import { LOCALES, DEFAULT_LOCALE } from './src/i18n/locales.ts';
 import { satteri } from '@astrojs/markdown-satteri';
 import localizeLinks from './src/i18n/markdown-localize-links.ts';
 import { lastmodFor } from './src/lib/lastmod.ts';
+import { launched } from './src/lib/launch.ts';
 
 // English is served at /, every other language at /<code>/ (src/i18n/locales.ts).
 // Simplified Chinese uses the path /zh/ and the language tag zh-Hans.
@@ -22,7 +23,8 @@ export default defineConfig({
     // Links inside translated Markdown (src/content/i18n/<lang>/…) point to the same language.
     processor: satteri({ mdastPlugins: [localizeLinks] }),
   },
-  integrations: site.launchReady
+  // The sitemap only exists for a launched production build (src/lib/launch.ts).
+  integrations: launched
     ? [
         sitemap({
           // Every URL lists its 12 language versions as <xhtml:link rel="alternate" hreflang>.

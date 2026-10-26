@@ -39,6 +39,7 @@ Other useful commands:
 | `npm run og:cards` | Re-makes the 1200 × 630 share images in `public/og/`: one per main page and language, and one per product and range from its photo (needs Google Chrome). Run it after changing a page headline or adding a product or category photo. |
 | `npm run indexnow` | After launch: tells Bing, Yandex and other IndexNow search engines about every page (see the go-live checklist). Does nothing before launch. |
 | `npm run check:types` | Type-checks the site, including the structured data for search engines (an unknown schema.org property is an error). |
+| `npm run vercel:config` | Re-writes `vercel.json` (Vercel's redirects and headers) from `src/config/site.ts`. Run it after changing `url` or `launchReady`, then commit `vercel.json`; `npm test` fails while the two disagree. See section 7. |
 | `npm run route:map` | Re-draws the dotted world map behind the Export Process page's hero ("the route") into `src/assets/route-map.svg`, from Natural Earth land data (public domain). Only needed after changing the map window, scale or dot spacing in `src/lib/route-map.ts`; the ports, regions and the sea-lane waypoints of each route live in that file too (a unit test checks that no route crosses a land dot). |
 
 ---
@@ -190,7 +191,7 @@ Do these **in order**. Steps 1-5 happen before anyone can find the site; steps 6
    - `facts`: only true, checkable facts (`city`, `iec`, `founded`, `parentUrl`, `agroUrl`). Leave out anything you cannot prove.
    - `profiles`: the full `https://` addresses of company profiles you own (LinkedIn, IndiaMART, TradeIndia, Alibaba…). Add them as you create them (step 11). They tell Google and AI assistants these profiles are the same company.
 2. **Correct the specifications.** Go through each product file and confirm `specs`, `packSizes`, `moq` and the HSN code against your manufacturers' documents. Remove anything you cannot confirm.
-3. **Set `launchReady: true`** in `src/config/site.ts`. This removes the "do not index" tag, opens `robots.txt` to search engines and AI crawlers, and creates the sitemap.
+3. **Set `launchReady: true`** in `src/config/site.ts`. This removes the "do not index" tag, opens `robots.txt` to search engines and AI crawlers, and creates the sitemap, but only in a **production** build (see "Vercel: previews and the vercel.app address" in section 7). Then run `npm run vercel:config` and commit the new `vercel.json`: it adds the redirect from the `*.vercel.app` address to your domain.
 4. **Run every check.** All must pass:
    ```bash
    npm run build && npm test && npm run test:build && npm run check:placeholders && npm run i18n:check -- --strict
@@ -237,6 +238,16 @@ Settings to enter on any of them:
 **Vercel** (<https://vercel.com>)
 1. Sign up with GitHub, then "Add New" > "Project" > import the repository.
 2. Vercel detects Astro automatically. Check that the output directory is `dist`, then "Deploy".
+
+**Vercel: previews and the vercel.app address.** The site is set up for Vercel by `vercel.json` (written by `npm run vercel:config` from `src/config/site.ts`; do not edit it by hand):
+
+- **Search engines only see the production build.** A page is indexable only when `launchReady` is `true` **and** the build is Vercel's production build (`VERCEL_ENV=production`). Every preview deployment (each branch and pull request) is built with "do not index" on every page and a `robots.txt` that says `Disallow: /`, whatever `launchReady` says. A build on your own computer counts as production, so `npm run build` shows exactly what the live site will be. The rule is in `src/lib/deploy.ts`.
+- **Every `*.vercel.app` address always sends `X-Robots-Tag: noindex, nofollow`.** That covers preview links and the project's own address (for example `soap-gules.vercel.app`), so they never compete with your domain in Google.
+- **After launch, the `*.vercel.app` addresses redirect to your domain.** Once `launchReady` is `true` and `url` is your real domain, `vercel.json` sends every `*.vercel.app` request to the same page on your domain with a permanent (308) redirect. Preview links on `*.vercel.app` then open the live site too, so check unpublished changes on your own computer with `npm run build && npm run preview`.
+- **One address per page.** `trailingSlash: true` sends `/products` to `/products/` (308), the address used in canonical links and the sitemap. Files such as `/robots.txt` and `/llms.txt` are not affected.
+- **Security and caching headers** for every page (no framing by other sites, no MIME sniffing, a strict referrer policy, camera, microphone and location switched off) and long caching for `/fonts/` (one year) and `/images/` (one week).
+
+If you host somewhere other than Vercel, `vercel.json` is ignored: set the same redirects and headers in that host's settings.
 
 **Cloudflare Pages** (<https://pages.cloudflare.com>)
 1. Sign up, go to "Workers & Pages" > "Create" > "Pages" > "Connect to Git", and pick the repository.

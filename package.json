@@ -20,7 +20,8 @@
     "icons": "node scripts/make-icons.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "og:cards": "node scripts/make-og-cards.mjs",
-    "check:types": "astro check"
+    "check:types": "astro check",
+    "vercel:config": "node scripts/vercel-config.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.4",
