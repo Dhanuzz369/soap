@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf0393403b70"
+sourceHash: "e4e01699d6d9"
 title: "Katı Bulaşık Sabunu (Bulaşık Kalıbı)"
 slug: dish-wash-bar
 category: kitchen-care
@@ -103,3 +103,5 @@ Markalar yalnızca kalıp, ovma pedli kalıp ve kap paketi arasında seçim yapa
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Bulaşık kalıpları fiyata göre satın alınır; bu nedenle alıcılar kalıp başına maliyeti değil, yıkama başına maliyeti karşılaştırır. GoodBiz Hygiene, pazarınıza en uygun olanı seçebilmeniz için birkaç kalıp ağırlığı ve ambalaj tipi teklif edebilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Kalıp ağırlığınızı, ambalaj tipinizi ve hedef fiyatınızı bildirin, size teklif verelim.
+
+Birçok alıcı kalıp ve sıvı bulaşık ürünlerini tek sevkiyatta dener. Adımlar, maliyetler ve evraklar [Hindistan’dan sıvı bulaşık deterjanı ithalatı](/blog/import-dish-wash-liquid-from-india/) rehberimizde yer alır; iki format da [mutfak bakımı gamında](/categories/kitchen-care/) bulunur.

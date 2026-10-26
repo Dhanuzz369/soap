@@ -1,5 +1,5 @@
 ---
-sourceHash: "1a547e59ad40"
+sourceHash: "9bdf91bdfe1b"
 title: "Bột giặt"
 slug: detergent-powder
 category: laundry-care
@@ -105,3 +105,5 @@ Nhà nhập khẩu làm thương hiệu bột giặt riêng thường chọn thi
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Người mua bột giặt rất đa dạng, từ nhà phân phối gói nhỏ trong kênh thương mại truyền thống đến chuỗi siêu thị, và mỗi bên cần một cấp độ và quy cách khác nhau. GoodBiz Hygiene có thể báo giá bột phổ thông và cao cấp cùng các quy cách đóng gói tương ứng trong một đề nghị duy nhất. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy gửi mức giá mục tiêu mỗi kilôgam, quy cách đóng gói và phương pháp giặt, chúng tôi sẽ đề xuất các cấp độ phù hợp.
+
+Chưa chắc bột giặt hay nước giặt bán chạy hơn tại thị trường của Quý khách? Bài so sánh [bột giặt và nước giặt](/blog/detergent-powder-vs-liquid-detergent/) của chúng tôi nêu các yếu tố quyết định, còn [nhóm chăm sóc đồ giặt](/categories/laundry-care/) cho thấy những gì có thể ghép chung một container.

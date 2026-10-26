@@ -1,5 +1,5 @@
 ---
-sourceHash: "0632460c6e63"
+sourceHash: "ce5d989571e7"
 title: "酒店客房皂（迷你皂）"
 slug: hotel-guest-soap
 category: bath-personal-soaps
@@ -105,3 +105,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 酒店按房晚量采购，需要客房用品在酒店开业或旺季开始之前到货。GoodBiz Hygiene会从您的交货日期倒推安排发运，并可协助从同一供应商网络采购配套的沐浴露和洗手液。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请发送您的年度房晚量、偏好的皂块重量和品牌设计稿，我们会回复报价单。
+
+酒店皂与普通尺寸香皂一样按TFM分级，详见我们的[沐浴皂等级指南](/blog/bath-soap-grades-tfm-explained/)。用于同一客房的洗手液和沐浴露在[沐浴与个人香皂系列](/categories/bath-personal-soaps/)中。

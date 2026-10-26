@@ -1,5 +1,5 @@
 ---
-sourceHash: "1a547e59ad40"
+sourceHash: "9bdf91bdfe1b"
 title: "Toz Deterjan"
 slug: detergent-powder
 category: laundry-care
@@ -105,3 +105,5 @@ Kendi tozunu markalayan ithalatçılar genellikle poşet tasarımını, kokuyu, 
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Toz alıcıları, genel ticaretteki saşe distribütörlerinden süpermarket zincirlerine uzanır ve her biri farklı bir kalite ve ambalaj ister. GoodBiz Hygiene, ekonomik ve premium tozları uyumlu ambalaj formatlarıyla tek teklifte sunabilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Kilogram başına hedef fiyatınızı, ambalaj boyutlarınızı ve yıkama yöntemini gönderin, uygun kaliteleri önerelim.
+
+Pazarınızda tozun mu sıvının mı daha iyi satacağından emin değil misiniz? [Toz deterjan ve sıvı deterjan](/blog/detergent-powder-vs-liquid-detergent/) karşılaştırmamız belirleyici etkenleri ortaya koyar; [çamaşır bakımı gamı](/categories/laundry-care/) ise aynı konteynere nelerin eklenebileceğini gösterir.

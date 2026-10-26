@@ -1,5 +1,5 @@
 ---
-sourceHash: "1a547e59ad40"
+sourceHash: "9bdf91bdfe1b"
 title: "Lessive en poudre"
 slug: detergent-powder
 category: laundry-care
@@ -105,3 +105,5 @@ Les importateurs qui lancent leur propre poudre choisissent généralement le de
 ## Pourquoi passer par GoodBiz Hygiene
 
 Les acheteurs de poudre vont du distributeur de dosettes du commerce traditionnel aux chaînes de supermarchés, et chacun a besoin d’une qualité et d’un format différents. GoodBiz Hygiene peut chiffrer dans une même offre des poudres économiques et premium avec les formats assortis. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous votre prix cible au kilo, vos contenances et le mode de lavage, et nous vous proposerons les qualités adaptées.
+
+Vous hésitez entre poudre et liquide pour votre marché ? Notre comparatif [lessive en poudre ou lessive liquide](/blog/detergent-powder-vs-liquid-detergent/) présente les critères décisifs, et la gamme [entretien du linge](/categories/laundry-care/) montre ce que vous pouvez regrouper dans le même conteneur.

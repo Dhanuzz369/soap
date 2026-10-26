@@ -1,5 +1,5 @@
 ---
-sourceHash: "f2bf93b5815c"
+sourceHash: "367702ea5e76"
 title: "Soap Noodles (Msingi wa Sabuni wa Chembechembe)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -95,3 +95,5 @@ Wanunuzi wa kawaida ni watengenezaji wa sabuni wanaomalizia vipande vyao wenyewe
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Watengenezaji wa sabuni hununua noodles kwa uwiano wa vitu vya mafuta, unyevu na rangi, na mabadiliko madogo katika yoyote kati ya hivi hubadilisha kipande chao kilichokamilika. GoodBiz Hygiene inaweza kupata sampuli na cheti cha uchambuzi kwa ajili ya kusaga kwa majaribio kabla hujaweka oda ya kontena. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuambie uwiano wako wa mawese hadi punje za mawese, lengo la TFM na tani za kila mwezi nasi tutarudi na nukuu ya bei.
+
+TFM ya tambi za sabuni huamua daraja la sabuni iliyokamilika, kama mwongozo wetu kuhusu [daraja za sabuni na TFM](/blog/bath-soap-grades-tfm-explained/) unavyoeleza. LABSA na SLES kwa kutengeneza sabuni za unga ziko katika [kundi la malighafi na bidhaa za viwandani](/categories/industrial-raw-materials/).

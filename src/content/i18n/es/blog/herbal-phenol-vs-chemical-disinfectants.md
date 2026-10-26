@@ -1,11 +1,11 @@
 ---
-sourceHash: "d4c87bac15fb"
+sourceHash: "b7e27ce42927"
 title: "Fenol herbal frente a desinfectantes químicos: lo que deben saber los compradores minoristas"
 metaTitle: "Fenol herbal o desinfectantes químicos: guía de compra"
 description: "Fenol herbal frente a desinfectantes químicos en gamas minoristas: diferencias de uso, etiquetado y clasificación, y qué preguntar a un exportador."
 date: 2026-09-24
 tags: ["fenol herbal", "desinfectantes", "limpiador de pisos", "compra minorista"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "¿Es el fenol herbal lo mismo que un desinfectante químico?"
     a: "No necesariamente. El fenol herbal es normalmente una emulsión a base de aceites vegetales que se vende sobre todo como limpiador perfumado de pisos y desagües. Un desinfectante químico se construye en torno a un ingrediente activo con nombre propio y suele venderse y regularse con ese fin. El lugar que ocupa un producto depende de su formulación, de las declaraciones de su etiqueta y de las normas de su mercado."

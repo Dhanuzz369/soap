@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "沐浴皂等级详解：TFM、一级与二级之分，及其重要性"
 metaTitle: "沐浴皂等级详解：TFM、一级与二级"
 description: "解读沐浴皂规格中TFM的含义，说明一级和二级在贸易中如何使用，并介绍如何根据您的目标市场和价位选择合适的皂块等级，帮助进口商少走弯路、做出更稳妥的采购决定。"
 date: 2026-08-27
 tags: ["沐浴皂", "TFM", "皂的等级", "规格"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "沐浴皂中的TFM是什么意思？"
     a: "TFM是Total Fatty Matter的缩写，即总脂肪物。它是皂块中由皂化所用油脂产生的脂肪酸按重量计所占的百分比。TFM越高，通常意味着真正的皂基越多，填料、水分和其他添加剂越少。"

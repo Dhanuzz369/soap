@@ -1,5 +1,5 @@
 ---
-sourceHash: "847242946928"
+sourceHash: "ace444adc458"
 title: "Kisafishaji cha Sakafu"
 slug: floor-cleaner
 category: surface-home-cleaners
@@ -104,3 +104,5 @@ Chapa za visafishaji vya sakafu huchagua familia ya harufu, kama lavenda, waridi
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Visafishaji vya sakafu huuzwa kwa harufu na kwa umbali ambao chupa moja inachanganywa na maji. GoodBiz Hygiene inaweza kutoa nukuu ya nguvu ya bei nafuu na iliyokolea ikiwa na uwiano wa mchanganyiko ulioelezwa, ili ulinganishe gharama kwa kila ndoo ya deki. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Shiriki aina za harufu, nguvu na ukubwa wa vifungashio nasi tutarudi na nukuu ya bei.
+
+Unachagua kati ya kisafishaji cha sakafu chenye harufu na bidhaa ya aina ya dawa ya kuua vijidudu? Mwongozo wetu wa [fenoli ya mitishamba na dawa za kemikali za kuua vijidudu](/blog/herbal-phenol-vs-chemical-disinfectants/) unalinganisha madai, usajili na uainishaji, na bidhaa nyingine za [kundi la visafishaji vya nyuso na nyumbani](/categories/surface-home-cleaners/) zinaweza kushiriki kontena lako.

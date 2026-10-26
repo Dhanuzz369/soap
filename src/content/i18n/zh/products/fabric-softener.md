@@ -1,5 +1,5 @@
 ---
-sourceHash: "050e9d439949"
+sourceHash: "421e81d90f2e"
 title: "衣物柔顺剂"
 slug: fabric-softener
 category: laundry-care
@@ -109,3 +109,5 @@ GoodBiz Hygiene是一家印度贸易型出口商，隶属GoodBiz Global，从成
 ## 为何通过GoodBiz Hygiene采购
 
 柔顺剂靠气味评判，因此采购商应在真实织物上比较香型样品，而不是只在瓶中闻。为此，GoodBiz Hygiene可向制造商安排香型样品。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的香型偏好、浓缩程度和包装规格，我们会回复报价单。
+
+我们的[衣物柔顺剂采购指南](/blog/fabric-softener-buying-guide-importers/)更详细地介绍了类型、香型和包装规格，[洗衣护理系列](/categories/laundry-care/)则列出了通常与其一同发运的洗涤产品。

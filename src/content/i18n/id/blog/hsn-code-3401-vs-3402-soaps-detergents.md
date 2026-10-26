@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "Kode HSN 3401 vs 3402: Panduan Pembeli untuk Mengklasifikasikan Sabun dan Deterjen"
 metaTitle: "Kode HSN 3401 vs 3402: Klasifikasi Sabun dan Deterjen"
 description: "Ragu sabun atau deterjen Anda masuk HSN 3401 atau 3402? Panduan lugas tentang pembagiannya, dengan tabel per produk dan pertanyaan yang perlu diselesaikan."
 date: 2026-10-01
 tags: ["kode HSN", "klasifikasi", "dokumen ekspor"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "Apa perbedaan HSN 3401 dan 3402?"
     a: "Pos 3401 mencakup sabun itu sendiri dan produk pencuci kulit tertentu. Pos 3402 mencakup zat aktif permukaan organik selain sabun, serta sediaan pencuci dan pembersih yang dibuat darinya, seperti deterjen bubuk dan cair."

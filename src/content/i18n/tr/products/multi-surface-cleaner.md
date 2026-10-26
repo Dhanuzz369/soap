@@ -1,5 +1,5 @@
 ---
-sourceHash: "412ca2d14ce7"
+sourceHash: "91416f83e94e"
 title: "Çok Amaçlı Yüzey Temizleyici"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
@@ -101,3 +101,5 @@ Bir çok amaçlı yüzey temizleyici markası, kullanıma hazır ve konsantre fo
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Çok amaçlı bir temizleyici birçok yüzey için yeterince nazik olmalıdır; bu nedenle etiketteki iddialar testlerle uyuşmalıdır. GoodBiz Hygiene, üreticiye formülün hangi yüzeylerde kontrol edildiğini sorar. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Yüzey listenizi ve format tercihinizi bildirin, size teklif verelim.
+
+Çok amaçlı sprey, çoğu zaman özel markalı bir temizlik gamının öncü ürünüdür; [adım adım özel marka rehberimiz](/blog/private-label-cleaning-products-guide/) brif, numune ve etiket konularını ele alır. Zemin, cam ve banyo için özel temizleyiciler [yüzey ve ev temizleyicileri gamında](/categories/surface-home-cleaners/) bulunur.

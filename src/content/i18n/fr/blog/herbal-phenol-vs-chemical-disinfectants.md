@@ -1,11 +1,11 @@
 ---
-sourceHash: "d4c87bac15fb"
+sourceHash: "b7e27ce42927"
 title: "Phénol aux plantes ou désinfectants chimiques : ce que les acheteurs de la distribution doivent savoir"
 metaTitle: "Phénol aux plantes ou désinfectants chimiques : le guide"
 description: "Phénol aux plantes et désinfectants chimiques comparés pour la distribution : usage, étiquetage, classement douanier et questions à poser à l’exportateur."
 date: 2026-09-24
 tags: ["phénol aux plantes", "désinfectants", "nettoyant sols", "achats distribution"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "Le phénol aux plantes est-il la même chose qu’un désinfectant chimique ?"
     a: "Pas nécessairement. Le phénol aux plantes est généralement une émulsion à base d’huiles végétales, vendue surtout comme nettoyant parfumé pour les sols et les évacuations. Un désinfectant chimique repose sur un actif identifié et se vend, et se réglemente, normalement pour cet usage. La place d’un produit dépend de sa formule, des allégations de son étiquette et des règles de votre marché."

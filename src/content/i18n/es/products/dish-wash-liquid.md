@@ -1,5 +1,5 @@
 ---
-sourceHash: "36c4cfd3090d"
+sourceHash: "82edc50d27ca"
 title: "Lavavajillas líquido / en gel"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -104,3 +104,5 @@ Las marcas minoristas de lavavajillas suelen elegir una forma de botella de stoc
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los compradores de lavavajillas se dividen entre supermercados que quieren botellas de marca y empresas de catering que quieren garrafones de 20 L. GoodBiz Hygiene puede cotizar ambos con la misma fórmula para simplificar el suministro. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Comparta su objetivo de materia activa, la fragancia y la combinación de envases, y le enviaremos una cotización.
+
+Para costos, MOQ, documentos y transporte paso a paso, lea [cómo importar lavavajillas líquido desde la India](/blog/import-dish-wash-liquid-from-india/). Las pastillas lavavajillas para mercados que lavan con estropajo están en la misma gama de [cocina y vajilla](/categories/kitchen-care/).

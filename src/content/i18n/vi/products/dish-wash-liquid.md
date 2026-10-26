@@ -1,5 +1,5 @@
 ---
-sourceHash: "36c4cfd3090d"
+sourceHash: "82edc50d27ca"
 title: "Nước rửa chén / gel rửa chén"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -104,3 +104,5 @@ Các thương hiệu nước rửa chén bán lẻ thường chọn dáng chai c
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Người mua nước rửa chén chia thành siêu thị muốn chai có thương hiệu và đơn vị phục vụ ăn uống muốn bình lớn 20 L. GoodBiz Hygiene có thể báo giá cả hai từ cùng một công thức để giữ nguồn cung đơn giản. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy chia sẻ mục tiêu hàm lượng hoạt chất, hương liệu và cơ cấu quy cách, chúng tôi sẽ gửi báo giá.
+
+Về chi phí, MOQ, chứng từ và vận chuyển từng bước, hãy đọc [cách nhập khẩu nước rửa chén từ Ấn Độ](/blog/import-dish-wash-liquid-from-india/). Kem rửa chén dạng bánh cho các thị trường quen rửa bằng miếng cọ nằm trong cùng [nhóm chăm sóc nhà bếp](/categories/kitchen-care/).

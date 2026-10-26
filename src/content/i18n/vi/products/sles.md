@@ -1,5 +1,5 @@
 ---
-sourceHash: "d51786edaf5f"
+sourceHash: "44d84f27fc48"
 title: "SLES (natri lauryl ether sulfat)"
 slug: sles
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ SLES đặc lên khi thêm muối, nên nhiều đơn vị pha chế tạo độ
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Người mua SLES sản xuất dầu gội, nước rửa tay và nước rửa chén, nơi màu sắc, mùi và hàm lượng 1,4-dioxan là yếu tố quan trọng. GoodBiz Hygiene có thể đề nghị nhà sản xuất gửi mẫu và giấy chứng nhận phân tích trước khi Quý khách chốt một container. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy cho chúng tôi biết phần trăm hoạt chất ưa thích, mức ethoxyl hóa và khối lượng hằng tháng, chúng tôi sẽ gửi báo giá.
+
+SLES được phân loại là chất hoạt động bề mặt anion ở phân nhóm 3402 39, tách biệt với chất tẩy rửa thành phẩm; xem [hướng dẫn mã HSN 3401 và 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) của chúng tôi. LABSA và soap noodle nằm trong cùng [nhóm nguyên liệu và sản phẩm công nghiệp](/categories/industrial-raw-materials/).

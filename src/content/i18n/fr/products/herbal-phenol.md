@@ -1,5 +1,5 @@
 ---
-sourceHash: "40ef01b501de"
+sourceHash: "a7d6ca47c781"
 title: "Phénol aux plantes / phényl"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -107,3 +107,5 @@ Les marques de phényl se distinguent par leur mélange d’huiles végétales e
 ## Pourquoi passer par GoodBiz Hygiene
 
 Le phényl se vend sur des marchés où les allégations désinfectantes sont réglementées : ce que l’étiquette peut affirmer varie donc. GoodBiz Hygiene vérifie avec le fabricant le classement et les allégations applicables avant que vous ne finalisiez la maquette. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous votre destination, l’huile végétale souhaitée et les formats, et nous vous adresserons un devis.
+
+Notre guide [phénol aux plantes ou désinfectants chimiques](/blog/herbal-phenol-vs-chemical-disinfectants/) explique quand un phényl est traité comme nettoyant (3402 50) ou comme désinfectant (3808 94). Les nettoyants sols, WC et multi-surfaces de la gamme [nettoyants surfaces et maison](/categories/surface-home-cleaners/) peuvent voyager dans le même conteneur.

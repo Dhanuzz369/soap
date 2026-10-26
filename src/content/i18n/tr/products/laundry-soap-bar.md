@@ -1,5 +1,5 @@
 ---
-sourceHash: "547b4d376403"
+sourceHash: "f1704cab86aa"
 title: "Kalıp Çamaşır Sabunu / Deterjan Kalıbı"
 slug: laundry-soap-bar
 category: laundry-care
@@ -104,3 +104,5 @@ Elde yıkama pazarlarındaki distribütörler çoğunlukla mavi veya sarı gibi 
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Çamaşır kalıpları, kalıp başına birkaç kuruşun siparişi belirlediği, devir hızı yüksek, fiyat odaklı bir hattır. GoodBiz Hygiene sabun ağırlıklı ve deterjan kalıbı kalitelerini yan yana teklif edebilir; böylece daha düşük bir TFM’nin size ne kadar tasarruf sağladığını görebilirsiniz. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Hedef pazarınızı, kalıp ağırlığınızı ve renk tercihinizi paylaşın, kalite seçenekleriyle size dönelim.
+
+Çamaşır sabunları deterjanlarla değil, sabun olarak 3401 19 altında sınıflandırılır; [HSN 3401 ve 3402 rehberimiz](/blog/hsn-code-3401-vs-3402-soaps-detergents/) bu ayrımı açıklar. Aynı alıcılar için toz, sıvı deterjan ve yumuşatıcı [çamaşır bakımı gamında](/categories/laundry-care/) yer alır.

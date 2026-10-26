@@ -1,5 +1,5 @@
 ---
-sourceHash: "547b4d376403"
+sourceHash: "f1704cab86aa"
 title: "Waschseife / Waschmittelstück"
 slug: laundry-soap-bar
 category: laundry-care
@@ -104,3 +104,5 @@ Händler in Märkten mit Handwäsche wünschen sich oft eine wiedererkennbare St
 ## Warum der Bezug über GoodBiz Hygiene
 
 Waschstücke sind eine Linie mit hohem Umschlag und starkem Preisfokus, bei der wenige Cent je Stück über den Auftrag entscheiden. GoodBiz Hygiene kann seifenreiche Qualitäten und Waschmittelstück-Qualitäten nebeneinander anbieten, damit Sie sehen, was ein niedrigerer TFM Ihnen spart. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Teilen Sie uns Ihren Zielmarkt, das Stückgewicht und Ihre Farbwünsche mit, und wir senden Ihnen Qualitätsoptionen.
+
+Waschstücke werden als Seife in 3401 19 eingereiht, nicht bei den Waschmitteln; unser [Ratgeber zu HSN 3401 und 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) erklärt die Abgrenzung. Pulver, Flüssigwaschmittel und Weichspüler für dieselben Käufer finden Sie im Sortiment [Wäschepflege](/categories/laundry-care/).

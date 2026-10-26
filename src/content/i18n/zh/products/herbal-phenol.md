@@ -1,5 +1,5 @@
 ---
-sourceHash: "40ef01b501de"
+sourceHash: "a7d6ca47c781"
 title: "草本酚类消毒液／苯酚清洁剂"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -107,3 +107,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 苯酚清洁剂销往消毒剂宣称受监管的市场，因此标签可以写什么各地不同。在您定稿设计稿之前，GoodBiz Hygiene会与制造商确认适用的归类和宣称。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的目的地、偏好的草本油和包装规格，我们会回复报价单。
+
+我们的[草本酚类消毒液与化学消毒剂](/blog/herbal-phenol-vs-chemical-disinfectants/)指南解释了酚类清洁液何时按清洁剂（3402 50）、何时按消毒剂（3808 94）处理。[表面与家居清洁剂系列](/categories/surface-home-cleaners/)中的地板、马桶和多用途清洁剂可同柜运输。

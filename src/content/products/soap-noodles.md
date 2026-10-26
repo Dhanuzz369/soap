@@ -3,6 +3,7 @@ title: "Soap Noodles"
 slug: soap-noodles
 category: industrial-raw-materials
 order: 1
+reviewed: 2026-10-26
 hsn: "3401 20"
 metaTitle: "Soap Noodles 80:20 Exporter & Supplier from India"
 metaDescription: "Soap noodles in 80:20 and 70:30 grades from vetted Indian manufacturers, in 25 kg and 50 kg bags for soap makers. HSN 3401 20, FOB/CIF quotes per order."
@@ -94,3 +95,5 @@ Typical buyers are soap manufacturers who finish their own bars, contract soap p
 ## Why source through GoodBiz Hygiene
 
 Soap makers buy noodles on fatty-matter ratio, moisture and colour, and a small shift in any of these changes their finished bar. GoodBiz Hygiene can obtain a sample and a certificate of analysis for trial milling before you place a container order. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your palm to palm kernel ratio, TFM target and monthly tonnage and we will return a quotation.
+
+The TFM of the noodles sets the grade of the finished bar, as our guide to [bath soap grades and TFM](/blog/bath-soap-grades-tfm-explained/) explains. LABSA and SLES for detergent making are in the same [industrial and raw materials range](/categories/industrial-raw-materials/).

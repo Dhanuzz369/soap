@@ -3,6 +3,7 @@ title: "Herbal & Ayurvedic Soap"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
 order: 2
+reviewed: 2026-10-26
 hsn: "3401 11"
 metaTitle: "Herbal & Ayurvedic Soap Exporter & Supplier from India"
 metaDescription: "Herbal and Ayurvedic soap from vetted Indian manufacturers: neem, turmeric, sandalwood and aloe bars, 75–125 g. Private label, mixed containers, FOB/CIF."
@@ -100,3 +101,5 @@ An importer building a natural-care brand typically picks two or three herbal pr
 ## Why source through GoodBiz Hygiene
 
 Herbal ranges are often marketed on ingredient claims, which is where mistakes cost most. GoodBiz Hygiene asks each manufacturer for the ingredient list behind a claim before it goes on your carton, so the pack does not promise more than the formula delivers. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your intended positioning and the claims you need to make and we will propose matching herbal variants.
+
+Herbal ingredients sell the bar, but the grade decides how long it lasts; see [bath soap grades and TFM explained](/blog/bath-soap-grades-tfm-explained/). Plain toilet, glycerin and antibacterial bars are in the same [bath and personal soaps range](/categories/bath-personal-soaps/).

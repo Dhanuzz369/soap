@@ -1,11 +1,11 @@
 ---
-sourceHash: "d4c87bac15fb"
+sourceHash: "b7e27ce42927"
 title: "Fenol de ervas ou desinfetantes químicos: o que os compradores do varejo devem saber"
 metaTitle: "Fenol de ervas ou desinfetantes químicos: guia de compra"
 description: "Fenol de ervas ou desinfetantes químicos no varejo: diferenças de uso, rotulagem e classificação, e o que perguntar primeiro ao exportador."
 date: 2026-09-24
 tags: ["fenol de ervas", "desinfetantes", "limpador de pisos", "compra no varejo"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "O fenol de ervas é o mesmo que um desinfetante químico?"
     a: "Não necessariamente. O fenol de ervas costuma ser uma emulsão à base de óleos vegetais, vendida principalmente como limpador perfumado de pisos e ralos. Um desinfetante químico é construído em torno de um ingrediente ativo definido e normalmente é vendido e regulamentado para essa finalidade. Em qual categoria um produto se encaixa depende da sua formulação, das alegações do rótulo e das regras do seu mercado."

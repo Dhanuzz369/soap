@@ -3,6 +3,7 @@ title: "Body Wash / Shower Gel"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
 order: 7
+reviewed: 2026-10-26
 hsn: "3401 30"
 metaTitle: "Shower Gel & Body Wash Exporter & Supplier from India"
 metaDescription: "Shower gel and body wash from vetted Indian manufacturers: 100 ml to 5 L in fresh, floral and herbal variants. Private label for importers and hotels, FOB/CIF."
@@ -103,3 +104,5 @@ Body wash brands compete on fragrance story and bottle look, so buyers usually c
 ## Why source through GoodBiz Hygiene
 
 Shower gel is often bought by buyers who also need hotel amenities, and keeping both in one fragrance saves a second supplier search. GoodBiz Hygiene can quote retail bottles, mini bottles and bulk refills as one project. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your preferred fragrances and pack sizes and we will return a quotation.
+
+Shower gel is classified with liquid hand wash under 3401 30 rather than with detergents, and our [HSN 3401 vs 3402 guide](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explains why. Bars and hand wash in matching fragrances are in the [bath and personal soaps range](/categories/bath-personal-soaps/).

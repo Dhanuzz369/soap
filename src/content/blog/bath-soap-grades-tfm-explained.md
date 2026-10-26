@@ -5,7 +5,7 @@ description: "What TFM means on a bath soap specification, how Grade 1 and Grade
 date: 2026-08-27
 updated: 2026-10-26
 tags: ["bath soap", "TFM", "soap grades", "specifications"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "What does TFM mean in bath soap?"
     a: "TFM stands for Total Fatty Matter. It is the percentage of the bar, by weight, made up of fatty acids from the oils and fats used in saponification. A higher TFM generally means more true soap and less filler, water and other additives."

@@ -5,7 +5,7 @@ description: "How distributors can launch their own cleaning brand from India: c
 date: 2026-09-10
 updated: 2026-10-26
 tags: ["private label", "distributors", "home care", "OEM"]
-relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener"]
+relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener", "glass-cleaner"]
 faqs:
   - q: "Do I need my own factory or formulation team to start a private label?"
     a: "No. You supply the brand, the target market and the positioning. The manufacturer supplies a proven base formula that can be adjusted for fragrance, colour and texture, and GoodBiz Hygiene coordinates the process and the shipment."

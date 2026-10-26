@@ -3,6 +3,7 @@ title: "Glycerin / Transparent Soap"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
 order: 3
+reviewed: 2026-10-26
 hsn: "3401 11"
 metaTitle: "Glycerin & Transparent Soap Exporter & Supplier from India"
 metaDescription: "Glycerin and transparent soap from vetted Indian manufacturers: 75–125 g clear bars in aloe, honey and rose. Private label, mixed containers, FOB/CIF quotes."
@@ -98,3 +99,5 @@ Transparent soap brands usually differentiate by colour and visible inclusions, 
 ## Why source through GoodBiz Hygiene
 
 Transparent soap needs dedicated processing, so GoodBiz Hygiene works only with manufacturers that run clear-soap lines. Photographs of bar clarity and surface finish can be arranged before cartons are sealed, which helps you catch cloudiness or sweating early. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your preferred bar weight, tint and fragrance and we will return a quotation.
+
+Transparent bars carry a lower TFM than opaque soap by design, and our guide to [bath soap grades and TFM](/blog/bath-soap-grades-tfm-explained/) explains how to read those figures. Opaque, herbal and hotel bars are in the [bath and personal soaps range](/categories/bath-personal-soaps/).

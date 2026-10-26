@@ -1,5 +1,5 @@
 ---
-sourceHash: "e01f264e3e3e"
+sourceHash: "4ae767bdf766"
 title: "Sabuni ya Maji ya Kufulia"
 slug: liquid-detergent
 category: laundry-care
@@ -105,3 +105,5 @@ Chapa za sabuni ya maji ya kufulia mara nyingi huongeza mfuko wa kujazia upya un
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Sabuni za maji za kufua kwa mashine na za kufua kwa mkono zinahitaji udhibiti tofauti wa povu, na kukosea hili huleta malalamiko. GoodBiz Hygiene huthibitisha na mtengenezaji njia ya kufua iliyokusudiwa kabla daraja halijatolewa nukuu. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuambie kama bidhaa ni ya mashine ya kuwekea juu, ya kuwekea mbele au ya kufua kwa mkono, pamoja na ukubwa wa vifungashio vyako, nasi tutarudi na nukuu ya bei.
+
+Ukiwa unachagua kati ya aina, ulinganisho wetu wa [poda ya kufulia na sabuni ya maji ya kufulia](/blog/detergent-powder-vs-liquid-detergent/) unaangalia mazoea ya kufua, bei na gharama ya usafiri. Laini ya nguo na sabuni za vipande kutoka [kundi la bidhaa za kufulia](/categories/laundry-care/) zinaweza kuongezwa kwenye oda hiyo hiyo.

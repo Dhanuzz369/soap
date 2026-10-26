@@ -3,6 +3,7 @@ title: "Detergent Powder"
 slug: detergent-powder
 category: laundry-care
 order: 2
+reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Bulk Detergent Powder Exporter & Supplier from India"
 metaDescription: "Bulk detergent powder from vetted Indian manufacturers: 500 g to 25 kg, hand-wash and machine grades. Private label, mixed containers, FOB/CIF/CFR quotes."
@@ -104,3 +105,5 @@ Importers branding their own powder usually choose the pouch design, fragrance, 
 ## Why source through GoodBiz Hygiene
 
 Powder buyers range from sachet distributors in general trade to supermarket chains, and each needs a different grade and pack. GoodBiz Hygiene can quote economy and premium powders with matching pack formats in one offer. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your target price per kilogram, pack sizes and wash method and we will suggest suitable grades.
+
+Not sure whether powder or liquid will sell better in your market? Our comparison of [detergent powder and liquid detergent](/blog/detergent-powder-vs-liquid-detergent/) sets out the deciding factors, and the [laundry care range](/categories/laundry-care/) shows what can be mixed into the same container.

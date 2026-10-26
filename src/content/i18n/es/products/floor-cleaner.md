@@ -1,5 +1,5 @@
 ---
-sourceHash: "847242946928"
+sourceHash: "ace444adc458"
 title: "Limpiador de pisos"
 slug: floor-cleaner
 category: surface-home-cleaners
@@ -104,3 +104,5 @@ Las marcas de limpiador de pisos eligen una familia de aromas, como lavanda, ros
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los limpiadores de pisos se venden por la fragancia y por lo mucho que se diluye una botella. GoodBiz Hygiene puede cotizar la intensidad económica y la concentrada con la proporción de dilución indicada, para que pueda comparar el costo por cubo de fregado. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Comparta su gama de fragancias, la intensidad y los tamaños de envase, y le enviaremos una cotización.
+
+¿Duda entre un limpiador de suelos perfumado y un producto de tipo desinfectante? Nuestra guía [fenol herbal frente a desinfectantes químicos](/blog/herbal-phenol-vs-chemical-disinfectants/) compara declaraciones, registro y clasificación, y el resto de la gama de [limpiadores de superficies y del hogar](/categories/surface-home-cleaners/) puede compartir su contenedor.

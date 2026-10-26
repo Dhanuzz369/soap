@@ -1,5 +1,5 @@
 ---
-sourceHash: "15d439c588c9"
+sourceHash: "f7335a2c4b58"
 title: "LABSA (ácido alquilbencensulfónico lineal)"
 slug: labsa
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ El LABSA es corrosivo, por lo que deben usarse equipos, guantes y protección oc
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los compradores de LABSA son formuladores de detergentes que necesitan una materia activa constante y un bajo contenido de aceite libre. GoodBiz Hygiene puede gestionar con el fabricante una muestra y un certificado de análisis para que pruebe en su propia pasta base antes del primer contenedor. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Envíenos la calidad, el embalaje que prefiere y su volumen mensual, y le enviaremos una cotización.
+
+El LABSA es corrosivo y viaja como mercancía peligrosa, así que lea nuestra guía de [documentos de exportación para productos de limpieza](/blog/export-documents-cleaning-products/) antes de reservar el flete. El SLES y los noodles de jabón están en la misma gama de [materias primas e industriales](/categories/industrial-raw-materials/).

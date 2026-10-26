@@ -1,5 +1,5 @@
 ---
-sourceHash: "40ef01b501de"
+sourceHash: "a7d6ca47c781"
 title: "Fenoli ya Mitishamba (Dawa ya Kusafishia Sakafu)"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -107,3 +107,5 @@ Chapa za phenyl hushindana kwa mchanganyiko wa mafuta ya mitishamba na mwonekano
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Phenyl huuzwa katika masoko ambako madai ya dawa za kuua vijidudu yanadhibitiwa, kwa hivyo kile ambacho lebo inaruhusiwa kusema hutofautiana. GoodBiz Hygiene huthibitisha na mtengenezaji ni uainishaji na madai gani yanatumika kabla hujakamilisha michoro. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuambie nchi unayopeleka, mafuta ya mitishamba unayopendelea na ukubwa wa vifungashio nasi tutarudi na nukuu ya bei.
+
+Mwongozo wetu wa [fenoli ya mitishamba dhidi ya dawa za kemikali za kuua vijidudu](/blog/herbal-phenol-vs-chemical-disinfectants/) unaeleza lini fenili huchukuliwa kama kisafishaji (3402 50) au kama dawa ya kuua vijidudu (3808 94). Visafishaji vya sakafu, vyoo na nyuso nyingi kutoka [kundi la visafishaji vya nyuso na nyumbani](/categories/surface-home-cleaners/) vinaweza kusafiri katika kontena moja.

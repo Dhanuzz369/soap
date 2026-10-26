@@ -1,5 +1,5 @@
 ---
-sourceHash: "f2bf93b5815c"
+sourceHash: "367702ea5e76"
 title: "Noodles de sabão (base de sabão)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -95,3 +95,5 @@ Os compradores típicos são fabricantes de sabão que finalizam suas próprias 
 ## Por que comprar pela GoodBiz Hygiene
 
 Os fabricantes de sabão compram noodles pela proporção de matéria graxa, pela umidade e pela cor, e uma pequena variação em qualquer um desses fatores altera a barra acabada. A GoodBiz Hygiene pode obter uma amostra e um certificado de análise para moagem de teste antes de você fazer um pedido de contêiner. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe a sua proporção de palma e palmiste, a meta de TFM e a tonelagem mensal, e enviaremos uma cotação.
+
+O TFM dos noodles define o grau da barra acabada, como explica o nosso guia sobre [graus de sabonete e TFM](/blog/bath-soap-grades-tfm-explained/). LABSA e SLES para fabricar detergentes estão na mesma linha [matérias-primas e produtos industriais](/categories/industrial-raw-materials/).

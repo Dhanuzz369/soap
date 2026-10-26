@@ -1,5 +1,5 @@
 ---
-sourceHash: "0632460c6e63"
+sourceHash: "ce5d989571e7"
 title: "Sabonetes para hotéis e hóspedes (miniaturas)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
@@ -105,3 +105,5 @@ Uma rede de hotéis ou um distribuidor de amenities fornece o logotipo e as core
 ## Por que comprar pela GoodBiz Hygiene
 
 Os hotéis compram por volume de diárias e precisam de amenities que cheguem antes da abertura de um estabelecimento ou do início de uma temporada. A GoodBiz Hygiene planeja os embarques de trás para a frente, a partir da sua data de entrega, e pode ajudar a adquirir gel de banho e sabonete para as mãos combinando, da mesma rede de fornecedores. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Envie o seu volume anual de diárias, o peso de barra preferido e a arte da marca, e enviaremos uma cotação.
+
+Os sabonetes de hotel são classificados por TFM como o sabonete de tamanho normal, como explica o nosso guia sobre [graus de sabonete](/blog/bath-soap-grades-tfm-explained/). Sabonete líquido e gel de banho para os mesmos quartos estão na linha [sabonetes e higiene pessoal](/categories/bath-personal-soaps/).

@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "Qualités de savon de toilette : le TFM, qualité 1 ou qualité 2, et pourquoi c’est important"
 metaTitle: "Qualités de savon : TFM, qualité 1 ou 2, ce qui change"
 description: "Ce que signifie le TFM sur une fiche de savon, comment les qualités 1 et 2 sont utilisées dans le commerce, et comment choisir la qualité adaptée à votre prix."
 date: 2026-08-27
 tags: ["savon de toilette", "TFM", "qualités de savon", "spécifications"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "Que signifie TFM pour un savon de toilette ?"
     a: "TFM signifie Total Fatty Matter, soit la teneur en matières grasses totales. C’est le pourcentage du pain, en poids, constitué d’acides gras issus des huiles et graisses utilisées pour la saponification. Un TFM plus élevé signifie généralement plus de vrai savon et moins de charges, d’eau et d’autres additifs."

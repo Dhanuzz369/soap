@@ -1,5 +1,5 @@
 ---
-sourceHash: "f923483b7544"
+sourceHash: "fab6a5425e7d"
 title: "Jeli ya Kuogea / Sabuni ya Maji ya Mwili"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -104,3 +104,5 @@ Chapa za sabuni ya maji ya mwili hushindana kwa hadithi ya harufu na mwonekano w
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Jeli ya kuogea mara nyingi hununuliwa na wanunuzi wanaohitaji pia vifaa vya hoteli, na kuweka vyote katika harufu moja kunaokoa utafutaji wa msambazaji wa pili. GoodBiz Hygiene inaweza kutoa nukuu ya chupa za rejareja, chupa ndogo na vijazio vya jumla kama mradi mmoja. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuambie harufu na ukubwa wa vifungashio unaopendelea nasi tutarudi na nukuu ya bei.
+
+Jeli ya kuogea huainishwa pamoja na sabuni ya maji ya mikono chini ya 3401 30 badala ya pamoja na sabuni za kufulia, na [mwongozo wetu wa HSN 3401 dhidi ya 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) unaeleza kwa nini. Sabuni za vipande na sabuni ya mikono zenye harufu zinazolingana ziko katika [kundi la sabuni na usafi wa mwili](/categories/bath-personal-soaps/).

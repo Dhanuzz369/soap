@@ -1,5 +1,5 @@
 ---
-sourceHash: "15d439c588c9"
+sourceHash: "f7335a2c4b58"
 title: "LABSA (Lineer Alkil Benzen Sülfonik Asit)"
 slug: labsa
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ LABSA aşındırıcıdır; bu nedenle aside dayanıklı ekipman, eldiven ve göz
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 LABSA alıcıları, tutarlı aktif madde ve düşük serbest yağ isteyen deterjan karıştırıcılarıdır. GoodBiz Hygiene, ilk konteynerden önce kendi bulamacınızda test edebilmeniz için üreticiden bir numune ve analiz sertifikası temin edebilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Kalitenizi, paketleme tercihinizi ve aylık hacminizi gönderin, size teklif verelim.
+
+LABSA aşındırıcıdır ve tehlikeli madde olarak taşınır; navlun ayırtmadan önce [temizlik ürünleri için ihracat evrakları](/blog/export-documents-cleaning-products/) rehberimizi okuyun. SLES ve sabun noodle aynı [endüstriyel ürünler ve hammaddeler gamında](/categories/industrial-raw-materials/) bulunur.

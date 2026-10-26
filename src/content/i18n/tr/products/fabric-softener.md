@@ -1,5 +1,5 @@
 ---
-sourceHash: "050e9d439949"
+sourceHash: "421e81d90f2e"
 title: "Çamaşır Yumuşatıcı / Kondisyoner"
 slug: fabric-softener
 category: laundry-care
@@ -109,3 +109,5 @@ Yumuşatıcı koku odaklı bir kategoridir; bu nedenle en önemli özel marka ka
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Yumuşatıcı kokusuyla değerlendirilir; bu nedenle alıcılar koku numunelerini şişede değil, gerçek kumaşta karşılaştırmalıdır. GoodBiz Hygiene bu amaçla üreticiden koku numuneleri ayarlayabilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Koku tercihlerinizi, konsantrasyon seviyenizi ve ambalaj boyutlarınızı paylaşın, size teklif verelim.
+
+[Çamaşır yumuşatıcı alım rehberimiz](/blog/fabric-softener-buying-guide-importers/) türleri, kokuları ve ambalaj boyutlarını daha ayrıntılı ele alır; [çamaşır bakımı gamı](/categories/laundry-care/) ise genellikle onunla birlikte gönderilen deterjanları listeler.

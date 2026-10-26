@@ -1,5 +1,5 @@
 ---
-sourceHash: "412ca2d14ce7"
+sourceHash: "91416f83e94e"
 title: "Nước tẩy rửa đa năng"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
@@ -101,3 +101,5 @@ Một thương hiệu đa năng chọn giữa dạng dùng ngay và dạng đậ
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Nước tẩy rửa đa năng phải đủ dịu nhẹ cho nhiều bề mặt, nên các tuyên bố trên nhãn cần khớp với kết quả thử nghiệm. GoodBiz Hygiene hỏi nhà sản xuất công thức đã được kiểm tra trên những bề mặt nào. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy cho chúng tôi biết danh sách bề mặt và định dạng ưa thích, chúng tôi sẽ gửi báo giá.
+
+Bình xịt đa năng thường là sản phẩm chủ lực của một dòng tẩy rửa thương hiệu riêng, và [hướng dẫn nhãn riêng từng bước](/blog/private-label-cleaning-products-guide/) của chúng tôi bao quát yêu cầu, mẫu thử và nhãn. Các chất tẩy rửa chuyên dụng cho sàn, kính và phòng tắm có trong [nhóm nước tẩy rửa bề mặt và gia dụng](/categories/surface-home-cleaners/).

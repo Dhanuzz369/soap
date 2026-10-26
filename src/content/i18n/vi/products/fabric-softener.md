@@ -1,5 +1,5 @@
 ---
-sourceHash: "050e9d439949"
+sourceHash: "421e81d90f2e"
 title: "Nước xả vải"
 slug: fabric-softener
 category: laundry-care
@@ -109,3 +109,5 @@ Nước xả vải là nhóm sản phẩm lấy hương liệu làm trọng tâm
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Nước xả vải được đánh giá bằng mùi hương, nên người mua nên so sánh mẫu hương liệu trên vải thật thay vì trong chai. GoodBiz Hygiene có thể sắp xếp mẫu hương liệu từ nhà sản xuất cho mục đích đó. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy chia sẻ hương liệu ưa thích, mức đậm đặc và quy cách đóng gói của Quý khách, chúng tôi sẽ gửi báo giá.
+
+[Cẩm nang mua nước xả vải](/blog/fabric-softener-buying-guide-importers/) của chúng tôi trình bày kỹ hơn về chủng loại, hương liệu và quy cách đóng gói, còn [nhóm chăm sóc đồ giặt](/categories/laundry-care/) liệt kê các loại bột giặt, nước giặt thường được gửi kèm.

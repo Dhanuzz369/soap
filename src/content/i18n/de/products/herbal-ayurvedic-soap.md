@@ -1,5 +1,5 @@
 ---
-sourceHash: "329715bb8890"
+sourceHash: "e0d1945ad630"
 title: "Kräuter- und Ayurveda-Seife"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -101,3 +101,5 @@ Ein Importeur, der eine Naturpflege-Marke aufbaut, wählt typischerweise zwei od
 ## Warum der Bezug über GoodBiz Hygiene
 
 Kräutersortimente werden oft über Aussagen zu Inhaltsstoffen vermarktet, und genau hier sind Fehler am teuersten. GoodBiz Hygiene verlangt von jedem Hersteller die Inhaltsstoffliste hinter einer Aussage, bevor sie auf Ihren Karton kommt, damit die Packung nicht mehr verspricht, als die Rezeptur hält. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Teilen Sie uns Ihre geplante Positionierung und die Aussagen mit, die Sie treffen müssen, und wir schlagen passende pflanzliche Sorten vor.
+
+Kräuter verkaufen die Seife, doch die Qualität entscheidet, wie lange sie hält; siehe [Seifenqualitäten und TFM erklärt](/blog/bath-soap-grades-tfm-explained/). Klassische Toiletten-, Glycerin- und antibakterielle Seifen gehören zum selben Sortiment [Seifen und Körperpflege](/categories/bath-personal-soaps/).

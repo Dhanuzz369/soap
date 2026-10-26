@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "Các hạng xà phòng tắm: TFM, hạng 1 và hạng 2, và vì sao điều này quan trọng"
 metaTitle: "Các hạng xà phòng tắm: TFM, hạng 1 và hạng 2"
 description: "TFM trên thông số xà phòng tắm nghĩa là gì, hạng 1 và hạng 2 được dùng trong thương mại ra sao, và cách chọn hạng phù hợp với thị trường và mức giá."
 date: 2026-08-27
 tags: ["xà phòng tắm", "TFM", "hạng xà phòng", "thông số kỹ thuật"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "TFM nghĩa là gì trong xà phòng tắm?"
     a: "TFM là viết tắt của Total Fatty Matter, tức Tổng hàm lượng chất béo. Đây là phần trăm khối lượng của bánh xà phòng gồm các axit béo từ dầu và chất béo dùng trong quá trình xà phòng hóa. TFM cao hơn thường có nghĩa là nhiều xà phòng thực hơn và ít chất độn, nước và các phụ gia khác hơn."

@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "رمز HSN 3401 مقابل 3402: دليل المشتري لتصنيف الصابون والمنظفات"
 metaTitle: "رمز HSN 3401 مقابل 3402: تصنيف الصابون والمنظفات"
 description: "لا تعرفون هل صابونكم أو منظفكم تحت HSN 3401 أم 3402؟ دليل واضح للتقسيم، مع جدول لكل منتج والأسئلة التي ينبغي حسمها أولًا."
 date: 2026-10-01
 tags: ["رمز HSN", "التصنيف", "مستندات التصدير"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "ما الفرق بين HSN 3401 و3402؟"
     a: "يغطي البند 3401 الصابون نفسه وبعض منتجات الغسيل للبشرة. ويغطي البند 3402 العوامل الفعالة بالسطح العضوية غير الصابون، ومستحضرات الغسيل والتنظيف المصنوعة منها، مثل مساحيق المنظفات وسوائلها."

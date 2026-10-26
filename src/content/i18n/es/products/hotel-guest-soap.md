@@ -1,5 +1,5 @@
 ---
-sourceHash: "0632460c6e63"
+sourceHash: "ce5d989571e7"
 title: "Jabones para hoteles y huéspedes (minijabones)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
@@ -105,3 +105,5 @@ Un grupo hotelero o un distribuidor de amenidades aporta su logotipo y los color
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los hoteles compran por volumen de noches de habitación y necesitan amenidades que lleguen antes de la apertura de un establecimiento o del inicio de una temporada. GoodBiz Hygiene planifica los embarques hacia atrás a partir de su fecha de entrega, y puede ayudar a abastecer gel de ducha y jabón de manos a juego de la misma red de proveedores. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Envíenos su volumen anual de noches de habitación, el peso de pastilla preferido y el diseño de su marca, y le enviaremos una cotización.
+
+Las pastillas de hotel se clasifican por TFM igual que el jabón de tocador de tamaño normal, como explica nuestra guía sobre [las calidades del jabón](/blog/bath-soap-grades-tfm-explained/). El jabón de manos y el gel de ducha para las mismas habitaciones están en la gama de [jabones y cuidado personal](/categories/bath-personal-soaps/).

@@ -1,5 +1,5 @@
 ---
-sourceHash: "3b93bcbf0059"
+sourceHash: "c9f1e55506d3"
 title: "Sabuni ya Maji ya Mikono"
 slug: liquid-hand-wash
 category: bath-personal-soaps
@@ -102,3 +102,5 @@ Chapa nyingi za sabuni ya maji ya mikono huanzia kwenye chupa na pampu za akiba 
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Sabuni ya maji ya mikono hununuliwa kama bidhaa ya rejareja na kama kijazio cha vifaa vya kutolea, na hizo mbili zina mahitaji tofauti sana ya vifungashio na bei. GoodBiz Hygiene inaweza kutoa nukuu ya ukubwa wa rejareja na wa taasisi pamoja ili vyote visafirishwe kwenye kontena moja. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuma ukubwa wa vifungashio unaolenga, mapendeleo ya harufu na dai lolote la kuua bakteria unalohitaji, nasi tutarudi na nukuu ya bei.
+
+Sabuni ya maji ya mikono si sabuni kwa maana ya kikemia, lakini huainishwa chini ya kichwa 3401, na [mwongozo wetu wa HSN 3401 dhidi ya 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) unaeleza kwa nini. Sabuni za vipande na jeli ya kuogea zenye harufu zinazolingana ziko katika [kundi la sabuni na usafi wa mwili](/categories/bath-personal-soaps/).

@@ -1,5 +1,5 @@
 ---
-sourceHash: "1a547e59ad40"
+sourceHash: "9bdf91bdfe1b"
 title: "Sabão em pó / detergente em pó"
 slug: detergent-powder
 category: laundry-care
@@ -105,3 +105,5 @@ Os importadores que dão sua marca ao pó normalmente escolhem o projeto do pouc
 ## Por que comprar pela GoodBiz Hygiene
 
 Os compradores de pó vão de distribuidores de sachês no comércio em geral a redes de supermercados, e cada um precisa de um grau e de uma embalagem diferentes. A GoodBiz Hygiene pode cotar pós econômicos e premium, com os formatos de embalagem correspondentes, em uma única oferta. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Envie o seu preço-alvo por quilo, os tamanhos de embalagem e o método de lavagem, e sugeriremos graus adequados.
+
+Em dúvida se o pó ou o líquido vende mais no seu mercado? A nossa comparação entre [sabão em pó e sabão líquido](/blog/detergent-powder-vs-liquid-detergent/) mostra os fatores decisivos, e a linha [cuidado com a roupa](/categories/laundry-care/) mostra o que pode ir no mesmo contêiner.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "94216906b8fc"
+sourceHash: "cf73f343c941"
 title: "浴室瓷砖清洁剂"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
@@ -100,3 +100,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 浴室清洁剂以除水垢效果以及对水龙头和镀铬的安全性来评判。GoodBiz Hygiene可向制造商索取温和和强力两种样品，让您在自己的水质条件下测试。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的水硬度、包装规格和香型，我们会回复报价单。
+
+可与其拼柜的地板、玻璃和马桶清洁剂均在[表面与家居清洁剂系列](/categories/surface-home-cleaners/)中。如果您计划在标签上标注杀菌功效，请先阅读[草本酚类消毒液与化学消毒剂](/blog/herbal-phenol-vs-chemical-disinfectants/)，因为功效宣称会影响注册和归类。

@@ -1,5 +1,5 @@
 ---
-sourceHash: "d51786edaf5f"
+sourceHash: "44d84f27fc48"
 title: "SLES (lauril éter sulfato de sodio)"
 slug: sles
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ El SLES se espesa con sal, por lo que muchos formuladores construyen la viscosid
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los compradores de SLES fabrican champús, jabones de manos y lavavajillas líquidos, donde cuentan el color, el olor y el nivel de 1,4-dioxano. GoodBiz Hygiene puede solicitar al fabricante una muestra y un certificado de análisis antes de que usted se comprometa con un contenedor. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Indíquenos el porcentaje de activo que prefiere, el nivel de etoxilación y su volumen mensual, y le enviaremos una cotización.
+
+El SLES se clasifica como agente de superficie aniónico en la 3402 39, aparte de los detergentes terminados; vea nuestra [guía del código HSN 3401 frente a 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/). El LABSA y los noodles de jabón están en la misma gama de [materias primas e industriales](/categories/industrial-raw-materials/).

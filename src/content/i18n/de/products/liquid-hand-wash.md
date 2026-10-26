@@ -1,5 +1,5 @@
 ---
-sourceHash: "3b93bcbf0059"
+sourceHash: "c9f1e55506d3"
 title: "Flüssigseife für die Hände"
 slug: liquid-hand-wash
 category: bath-personal-soaps
@@ -102,3 +102,5 @@ Die meisten Flüssigseifen-Marken starten mit den Standardflaschen und Pumpen de
 ## Warum der Bezug über GoodBiz Hygiene
 
 Flüssigseife wird sowohl als Handelsprodukt als auch als Nachfüllung für Spender gekauft, und beide haben sehr unterschiedliche Anforderungen an Packung und Preis. GoodBiz Hygiene kann Größen für Handel und Einrichtungen gemeinsam anbieten, sodass beide in einem Container verschifft werden. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Senden Sie uns Ihre gewünschten Packungsgrößen, Duftvorlieben und eine etwaige antibakterielle Aussage, und wir senden Ihnen ein Angebot.
+
+Flüssigseife ist chemisch gesehen keine Seife und wird dennoch in Position 3401 eingereiht; warum, erklärt unser [Ratgeber zu HSN 3401 und 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/). Seifenstücke und Duschgel in passenden Düften finden Sie im Sortiment [Seifen und Körperpflege](/categories/bath-personal-soaps/).

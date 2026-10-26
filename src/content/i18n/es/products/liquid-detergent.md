@@ -1,5 +1,5 @@
 ---
-sourceHash: "e01f264e3e3e"
+sourceHash: "4ae767bdf766"
 title: "Detergente líquido"
 slug: liquid-detergent
 category: laundry-care
@@ -105,3 +105,5 @@ Las marcas de detergente líquido suelen añadir una bolsa de recarga a juego co
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los líquidos para lavadora y los de lavado a mano necesitan un control de espuma distinto, y equivocarse en esto genera reclamaciones. GoodBiz Hygiene confirma con el fabricante el método de lavado previsto antes de cotizar una calidad. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Indíquenos si el producto es para carga superior, carga frontal o lavado a mano, además de sus tamaños de envase, y le enviaremos una cotización.
+
+Si está decidiendo entre formatos, nuestra comparación de [detergente en polvo y detergente líquido](/blog/detergent-powder-vs-liquid-detergent/) analiza los hábitos de lavado, el precio y el flete. El suavizante y las pastillas de la gama de [cuidado de la ropa](/categories/laundry-care/) pueden sumarse al mismo pedido.

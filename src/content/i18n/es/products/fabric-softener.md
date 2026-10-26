@@ -1,5 +1,5 @@
 ---
-sourceHash: "050e9d439949"
+sourceHash: "421e81d90f2e"
 title: "Suavizante de ropa / acondicionador textil"
 slug: fabric-softener
 category: laundry-care
@@ -109,3 +109,5 @@ El suavizante es una categoría guiada por la fragancia, por lo que la decisión
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 El suavizante se juzga por el olor, por lo que los compradores deben comparar las muestras de fragancia sobre tela real y no en la botella. GoodBiz Hygiene puede gestionar con el fabricante muestras de fragancia con ese fin. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Comparta las fragancias que prefiere, el nivel de concentración y los tamaños de envase, y le enviaremos una cotización.
+
+Nuestra [guía de compra de suavizante](/blog/fabric-softener-buying-guide-importers/) trata con más detalle los tipos, las fragancias y los tamaños de envase, y la gama de [cuidado de la ropa](/categories/laundry-care/) recoge los detergentes que suelen enviarse con él.

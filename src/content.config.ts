@@ -23,6 +23,8 @@ const products = defineCollection({
     slug: z.string(),
     category: reference('categories'),
     order: z.number(),
+    /** When the page's facts were last checked (shown as "Last reviewed …" and used as dateModified). */
+    reviewed: z.coerce.date().optional(),
     hsn: z.string().regex(/^\d{4} \d{2}$/),
     hsnNote: z.string().optional(),
     metaTitle: z.string(),
@@ -82,6 +84,7 @@ const productsI18n = defineCollection({
     slug: z.string().optional(),
     category: z.string().optional(),
     order: z.number().optional(),
+    reviewed: z.coerce.date().optional(),
     hsn: z.string().optional(),
     hsnNote: z.string().optional(),
     metaTitle: z.string().optional(),

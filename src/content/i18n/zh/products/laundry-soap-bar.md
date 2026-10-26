@@ -1,5 +1,5 @@
 ---
-sourceHash: "547b4d376403"
+sourceHash: "f1704cab86aa"
 title: "洗衣皂／洗涤皂块"
 slug: laundry-soap-bar
 category: laundry-care
@@ -104,3 +104,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 洗衣皂块是高周转、价格导向的产品线，每块皂差几分钱就可能决定订单归属。GoodBiz Hygiene可将含皂量高的皂块和洗涤皂块等级并列报价，让您看到较低TFM能为您节省多少。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的目标市场、皂块重量和颜色偏好，我们会回复等级方案。
+
+洗衣皂作为肥皂归入3401 19，而非归入洗涤剂，我们的[HSN 3401与3402指南](/blog/hsn-code-3401-vs-3402-soaps-detergents/)解释了其中的区分。面向同一买家的洗衣粉、洗衣液和柔顺剂在[洗衣护理系列](/categories/laundry-care/)中。

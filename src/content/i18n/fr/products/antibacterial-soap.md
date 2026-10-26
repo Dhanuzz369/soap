@@ -1,5 +1,5 @@
 ---
-sourceHash: "76e23824cc1d"
+sourceHash: "29ee9c2a1b83"
 title: "Savon antibactérien / traitant"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ L’actif et l’allégation figurant sur l’emballage doivent convenir à votr
 ## Pourquoi passer par GoodBiz Hygiene
 
 Le savon antibactérien est soumis à des règles plus strictes que le savon de toilette ordinaire, et l’actif autorisé diffère d’un pays à l’autre. GoodBiz Hygiene vérifie avec le fabricant quels actifs et quelles données d’essai sont disponibles avant que vous ne vous engagiez sur un libellé d’allégation. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous votre marché de destination, l’actif souhaité et le poids du pain, et nous vous confirmerons ce qui peut être fourni.
+
+Les savons antibactériens côtoient nos savons de toilette, aux plantes et d’hôtel dans la gamme [savons et hygiène corporelle](/categories/bath-personal-soaps/), et notre guide sur [les qualités de savon et le TFM](/blog/bath-soap-grades-tfm-explained/) explique comment comparer les pains sur la matière grasse autant que sur les allégations.

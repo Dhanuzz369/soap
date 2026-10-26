@@ -1,11 +1,11 @@
 ---
-sourceHash: "7f212b113545"
+sourceHash: "08c0a2083e95"
 title: "منتجات التنظيف بعلامة خاصة: دليل خطوة بخطوة للموزعين"
 metaTitle: "منتجات التنظيف بعلامة خاصة: دليل الموزعين"
 description: "كيف يمكن للموزعين إطلاق علامتهم الخاصة لمنتجات التنظيف من الهند: اختيار التشكيلة ووصف الطلب للمصنّع واعتماد العينات والتصميم والتعبئة والشحن."
 date: 2026-09-10
 tags: ["العلامة الخاصة", "الموزعون", "العناية المنزلية", "OEM"]
-relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener"]
+relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener", "glass-cleaner"]
 faqs:
   - q: "هل أحتاج إلى مصنعي الخاص أو فريق تركيبات لبدء علامة خاصة؟"
     a: "لا. أنتم توفرون العلامة والسوق المستهدف والتموضع. ويوفر المصنّع تركيبة أساسية مجرّبة يمكن تعديلها للعطر واللون والقوام، وتنسّق GoodBiz Hygiene العملية والشحنة."

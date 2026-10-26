@@ -3,6 +3,7 @@ title: "Hotel & Guest Soap (Mini Bars)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
 order: 5
+reviewed: 2026-10-26
 hsn: "3401 11"
 metaTitle: "Hotel Soap & Guest Soap Exporter & Supplier from India"
 metaDescription: "Hotel soap and guest amenity bars, 10–40 g, with your wrapper and logo, from vetted Indian manufacturers. Bulk cartons for hotels and distributors, FOB/CIF."
@@ -104,3 +105,5 @@ A hotel group or amenity distributor supplies its logo and brand colours and cho
 ## Why source through GoodBiz Hygiene
 
 Hotels buy by room-night volume and need amenities that arrive before a property opens or a season starts. GoodBiz Hygiene plans shipments backwards from your delivery date, and can help source matching shower gel and hand wash from the same supplier network. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your annual room-night volume, preferred bar weight and brand artwork and we will return a quotation.
+
+Hotel bars are graded by TFM in the same way as full-size toilet soap, as our guide to [bath soap grades](/blog/bath-soap-grades-tfm-explained/) explains. Hand wash and shower gel for the same rooms are in the [bath and personal soaps range](/categories/bath-personal-soaps/).

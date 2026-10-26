@@ -1,11 +1,11 @@
 ---
-sourceHash: "7f212b113545"
+sourceHash: "08c0a2083e95"
 title: "Özel Marka Temizlik Ürünleri: Distribütörler için Adım Adım Rehber"
 metaTitle: "Özel Marka Temizlik Ürünleri: Distribütör Rehberi"
 description: "Distribütörler Hindistan’dan kendi temizlik markasını nasıl kurar: gamı seçme, üreticiyi bilgilendirme, numune onayı, tasarım, paketleme ve sevkiyat."
 date: 2026-09-10
 tags: ["özel marka", "distribütörler", "ev bakımı", "OEM"]
-relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener"]
+relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener", "glass-cleaner"]
 faqs:
   - q: "Özel marka başlatmak için kendi fabrikama veya formülasyon ekibime ihtiyacım var mı?"
     a: "Hayır. Siz markayı, hedef pazarı ve konumlandırmayı sağlarsınız. Üretici; koku, renk ve doku için ayarlanabilen kanıtlanmış bir baz formül sağlar; GoodBiz Hygiene ise süreci ve sevkiyatı koordine eder."

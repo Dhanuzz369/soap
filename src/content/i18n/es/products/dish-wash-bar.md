@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf0393403b70"
+sourceHash: "e4e01699d6d9"
 title: "Lavavajillas sólido en barra"
 slug: dish-wash-bar
 category: kitchen-care
@@ -103,3 +103,5 @@ Las marcas eligen entre solo la barra, barra con estropajo y tarro, cada uno con
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Las barras lavavajillas se compran por precio, por lo que los compradores comparan el costo por lavado y no el costo por barra. GoodBiz Hygiene puede cotizar varios pesos de barra y tipos de envase para que usted elija el que mejor se adapte a su mercado. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Indíquenos el peso de barra, el tipo de envase y el precio objetivo, y le enviaremos una cotización.
+
+Muchos compradores prueban pastillas y líquido en un mismo envío. Los pasos, costos y documentos están en nuestra guía [cómo importar lavavajillas líquido desde la India](/blog/import-dish-wash-liquid-from-india/), y ambos formatos están en la gama de [cocina y vajilla](/categories/kitchen-care/).

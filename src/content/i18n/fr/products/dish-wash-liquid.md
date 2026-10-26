@@ -1,5 +1,5 @@
 ---
-sourceHash: "36c4cfd3090d"
+sourceHash: "82edc50d27ca"
 title: "Liquide vaisselle / gel vaisselle"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -104,3 +104,5 @@ Les marques de liquide vaisselle choisissent généralement une forme de flacon 
 ## Pourquoi passer par GoodBiz Hygiene
 
 Les acheteurs de liquide vaisselle se partagent entre supermarchés qui veulent des flacons de marque et traiteurs qui veulent des bonbonnes de 20 L. GoodBiz Hygiene peut chiffrer les deux à partir de la même formule pour simplifier l’approvisionnement. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous votre niveau de matière active cible, le parfum et la combinaison de formats, et nous vous adresserons un devis.
+
+Pour les coûts, le MOQ, les documents et l’expédition étape par étape, lisez [importer du liquide vaisselle depuis l’Inde](/blog/import-dish-wash-liquid-from-india/). Les pains vaisselle pour les marchés qui lavent à l’éponge sont dans la même gamme [vaisselle et cuisine](/categories/kitchen-care/).

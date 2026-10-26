@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "HSN-Code 3401 oder 3402: Ratgeber für Käufer zur Einreihung von Seifen und Waschmitteln"
 metaTitle: "HSN-Code 3401 oder 3402: Seifen und Waschmittel einreihen"
 description: "Unsicher, ob Ihre Seife oder Ihr Waschmittel unter HSN 3401 oder 3402 fällt? Eine klare Erläuterung der Aufteilung mit Tabelle je Produkt und ersten Fragen."
 date: 2026-10-01
 tags: ["HSN-Code", "Einreihung", "Exportdokumente"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "Worin unterscheiden sich HSN 3401 und 3402?"
     a: "Position 3401 umfasst Seife selbst und bestimmte Waschmittel für die Haut. Position 3402 umfasst organische grenzflächenaktive Stoffe außer Seife sowie daraus hergestellte Wasch- und Reinigungsmittel, etwa Waschpulver und Flüssigwaschmittel."

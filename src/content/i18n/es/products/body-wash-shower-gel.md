@@ -1,5 +1,5 @@
 ---
-sourceHash: "f923483b7544"
+sourceHash: "fab6a5425e7d"
 title: "Gel de ducha / jabón líquido corporal"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -104,3 +104,5 @@ Las marcas de jabón líquido corporal compiten por el relato de la fragancia y 
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 El gel de ducha suele ser comprado por clientes que también necesitan amenidades para hoteles, y mantener ambas en una misma fragancia ahorra una segunda búsqueda de proveedor. GoodBiz Hygiene puede cotizar botellas minoristas, botellas pequeñas y recargas a granel como un único proyecto. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Indíquenos las fragancias y los tamaños de envase que prefiere y le enviaremos una cotización.
+
+El gel de ducha se clasifica junto con el jabón líquido de manos en la 3401 30 y no con los detergentes; nuestra [guía del código HSN 3401 frente a 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explica el motivo. Las pastillas y el jabón de manos con las mismas fragancias están en la gama de [jabones y cuidado personal](/categories/bath-personal-soaps/).

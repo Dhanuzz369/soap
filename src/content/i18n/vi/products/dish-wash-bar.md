@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf0393403b70"
+sourceHash: "e4e01699d6d9"
 title: "Xà phòng rửa chén dạng bánh"
 slug: dish-wash-bar
 category: kitchen-care
@@ -103,3 +103,5 @@ Các thương hiệu chọn giữa chỉ bánh, bánh kèm miếng cọ và gói
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Xà phòng rửa chén dạng bánh được mua theo giá, nên người mua so sánh chi phí mỗi lần rửa thay vì chi phí mỗi bánh. GoodBiz Hygiene có thể báo giá nhiều trọng lượng bánh và loại bao gói để Quý khách chọn phương án phù hợp nhất với thị trường. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy cho chúng tôi biết trọng lượng bánh, loại bao gói và mức giá mục tiêu, chúng tôi sẽ gửi báo giá.
+
+Nhiều người mua thử cả kem rửa chén dạng bánh và nước rửa chén trong một lô hàng. Các bước, chi phí và chứng từ có trong hướng dẫn [cách nhập khẩu nước rửa chén từ Ấn Độ](/blog/import-dish-wash-liquid-from-india/), và cả hai dạng đều thuộc [nhóm chăm sóc nhà bếp](/categories/kitchen-care/).

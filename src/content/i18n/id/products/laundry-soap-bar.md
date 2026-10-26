@@ -1,5 +1,5 @@
 ---
-sourceHash: "547b4d376403"
+sourceHash: "f1704cab86aa"
 title: "Sabun Cuci Batang / Deterjen Batang"
 slug: laundry-soap-bar
 category: laundry-care
@@ -104,3 +104,5 @@ Distributor di pasar cuci tangan sering menginginkan warna batang yang mudah dik
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Sabun cuci batang adalah lini berputaran tinggi yang dipimpin harga, di mana selisih beberapa sen per batang menentukan pesanan. GoodBiz Hygiene dapat menawarkan grade kaya sabun dan deterjen batang berdampingan sehingga Anda dapat melihat berapa banyak penghematan dari TFM yang lebih rendah. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan pasar sasaran, berat batang, dan preferensi warna Anda, lalu kami akan mengirimkan opsi grade.
+
+Sabun cuci batangan diklasifikasikan sebagai sabun di 3401 19, bukan bersama deterjen, dan [panduan HSN 3401 vs 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) kami menjelaskan pembagiannya. Deterjen bubuk, cair, dan pelembut untuk pembeli yang sama ada di [rangkaian perawatan pakaian](/categories/laundry-care/).

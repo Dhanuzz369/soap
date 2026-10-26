@@ -5,7 +5,7 @@ description: "Comparing herbal phenol with chemical disinfectants for retail ran
 date: 2026-09-24
 updated: 2026-10-26
 tags: ["herbal phenol", "disinfectants", "floor cleaner", "retail buying"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "Is herbal phenol the same as a chemical disinfectant?"
     a: "Not necessarily. Herbal phenol is usually a plant-oil based emulsion sold mainly as a scented floor and drain cleaner. A chemical disinfectant is built around a named active ingredient and is normally sold and regulated for that purpose. Where a product sits depends on its formulation, its label claims and your market's rules."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "76e23824cc1d"
+sourceHash: "29ee9c2a1b83"
 title: "Jabón antibacteriano / medicinal"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ El ingrediente activo y la declaración del envase deben ser adecuados para su m
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 El jabón antibacteriano está sujeto a normas más estrictas que el jabón de baño sencillo, y el activo permitido varía según el país. GoodBiz Hygiene confirma con el fabricante qué activos y qué datos de ensayo están disponibles antes de que usted se comprometa con una redacción de declaraciones. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Comparta su mercado de destino, el activo preferido y el peso de la pastilla, y confirmaremos qué puede suministrarse.
+
+Las pastillas antibacterianas comparten la gama de [jabones y cuidado personal](/categories/bath-personal-soaps/) con nuestros jabones de tocador, herbales y de hotel, y nuestra guía sobre [las calidades del jabón y el TFM](/blog/bath-soap-grades-tfm-explained/) explica cómo comparar pastillas por su materia grasa además de por sus declaraciones.

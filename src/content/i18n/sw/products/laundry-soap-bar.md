@@ -1,5 +1,5 @@
 ---
-sourceHash: "547b4d376403"
+sourceHash: "f1704cab86aa"
 title: "Sabuni ya Kufulia (Kipande)"
 slug: laundry-soap-bar
 category: laundry-care
@@ -104,3 +104,5 @@ Wasambazaji katika masoko ya kufua kwa mkono mara nyingi wanataka rangi ya kipan
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Vipande vya sabuni ya kufulia ni bidhaa yenye mzunguko wa juu na inayoongozwa na bei, ambapo senti chache kwa kila kipande huamua oda. GoodBiz Hygiene inaweza kutoa nukuu ya daraja za vipande vyenye sabuni nyingi na za kemikali za kusafisha kando kwa kando ili uone TFM ya chini inakuokolea kiasi gani. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Shiriki soko lako lengwa, uzito wa kipande na rangi unayopendelea nasi tutarudi na chaguo za daraja.
+
+Sabuni za vipande za kufulia huainishwa kama sabuni chini ya 3401 19, si pamoja na sabuni za unga, na [mwongozo wetu wa HSN 3401 dhidi ya 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) unaeleza mgawanyo huo. Poda, sabuni ya maji na laini ya nguo kwa wanunuzi hao hao ziko katika [kundi la bidhaa za kufulia](/categories/laundry-care/).

@@ -1,5 +1,5 @@
 ---
-sourceHash: "36c4cfd3090d"
+sourceHash: "82edc50d27ca"
 title: "Geschirrspülmittel (flüssig / Gel)"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -104,3 +104,5 @@ Marken für Geschirrspülmittel im Handel wählen meist eine Standardflaschenfor
 ## Warum der Bezug über GoodBiz Hygiene
 
 Käufer von Geschirrspülmittel teilen sich in Supermärkte, die Markenflaschen wünschen, und Caterer, die 20-L-Ballons wünschen. GoodBiz Hygiene kann beides aus derselben Rezeptur anbieten und hält die Lieferung dadurch einfach. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Teilen Sie uns Ihr Ziel für die Aktivsubstanz, den Duft und den Packungsmix mit, und wir senden Ihnen ein Angebot.
+
+Kosten, MOQ, Dokumente und Versand Schritt für Schritt erklärt unser Ratgeber [Geschirrspülmittel aus Indien importieren](/blog/import-dish-wash-liquid-from-india/). Spülpasten für Märkte, in denen mit dem Schwamm gespült wird, gehören zum selben Sortiment [Geschirr und Küche](/categories/kitchen-care/).

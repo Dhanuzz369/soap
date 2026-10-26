@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf0393403b70"
+sourceHash: "e4e01699d6d9"
 title: "Sabun Cuci Piring Batang"
 slug: dish-wash-bar
 category: kitchen-care
@@ -103,3 +103,5 @@ Merek memilih antara hanya sabun, sabun dengan spons penggosok, dan kemasan tub,
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Sabun cuci piring batang dibeli berdasarkan harga, sehingga pembeli membandingkan biaya per cucian, bukan biaya per batang. GoodBiz Hygiene dapat menawarkan beberapa berat batang dan jenis kemasan agar Anda dapat memilih yang paling sesuai untuk pasar Anda. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan berat batang, jenis kemasan, dan target harga Anda, lalu kami akan mengirimkan penawaran.
+
+Banyak pembeli mencoba sabun colek dan sabun cair dalam satu pengiriman. Langkah, biaya, dan dokumennya ada di panduan kami [cara mengimpor sabun cuci piring cair dari India](/blog/import-dish-wash-liquid-from-india/), dan kedua format ada di [rangkaian perawatan dapur](/categories/kitchen-care/).

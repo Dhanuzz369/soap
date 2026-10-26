@@ -1,5 +1,5 @@
 ---
-sourceHash: "f923483b7544"
+sourceHash: "fab6a5425e7d"
 title: "沐浴露／淋浴凝胶"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -104,3 +104,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 淋浴凝胶的采购商往往同时需要酒店客房用品，两者使用同一种香型，可省去再找一家供应商。GoodBiz Hygiene可将零售瓶装、迷你瓶和大包装补充装作为一个项目一并报价。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您偏好的香型和包装规格，我们会回复报价单。
+
+沐浴露与洗手液一同归入3401 30，而不是归入洗涤剂；我们的[HSN 3401与3402指南](/blog/hsn-code-3401-vs-3402-soaps-detergents/)解释了原因。同香型的香皂和洗手液可在[沐浴与个人香皂系列](/categories/bath-personal-soaps/)中找到。

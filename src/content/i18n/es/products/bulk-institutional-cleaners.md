@@ -1,5 +1,5 @@
 ---
-sourceHash: "2fb368c1aef4"
+sourceHash: "3ab35c7f503a"
 title: "Productos de limpieza a granel e institucionales"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
@@ -94,3 +94,5 @@ Parta de sus clientes. Un proveedor de hoteles necesita jabón de manos, limpiad
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Las empresas de servicios de instalaciones y los grupos hoteleros suelen comprar de cinco a ocho productos a la vez, por lo que un contenedor mixto les ahorra mucha coordinación. GoodBiz Hygiene puede preparar una sola cotización y un solo embarque para toda la gama. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Envíenos su lista de productos, los volúmenes y los tamaños de envase, y le enviaremos una cotización.
+
+Los concentrados muy alcalinos o ácidos pueden viajar como mercancía peligrosa, y nuestra guía de [documentos de exportación para productos de limpieza](/blog/export-documents-cleaning-products/) enumera los papeles que conviene pedir. Los noodles de jabón, el LABSA y el SLES para formular localmente están en la misma gama de [materias primas e industriales](/categories/industrial-raw-materials/).

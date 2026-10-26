@@ -1,5 +1,5 @@
 ---
-sourceHash: "3b93bcbf0059"
+sourceHash: "c9f1e55506d3"
 title: "Nước rửa tay"
 slug: liquid-hand-wash
 category: bath-personal-soaps
@@ -102,3 +102,5 @@ Phần lớn thương hiệu nước rửa tay bắt đầu từ chai và vòi n
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Nước rửa tay được mua vừa như sản phẩm bán lẻ vừa như gói châm đầy cho thiết bị, và hai nhu cầu này rất khác nhau về quy cách và giá. GoodBiz Hygiene có thể báo giá đồng thời các cỡ bán lẻ và cỡ cho tổ chức để cả hai cùng được giao trong một container. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy gửi quy cách đóng gói mục tiêu, hương liệu ưa thích và mọi tuyên bố kháng khuẩn Quý khách cần, chúng tôi sẽ gửi báo giá.
+
+Nước rửa tay không phải là xà phòng theo nghĩa hóa học, nhưng vẫn được phân loại ở nhóm 3401; [hướng dẫn mã HSN 3401 và 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) giải thích lý do. Xà phòng bánh và sữa tắm cùng mùi hương có trong [nhóm xà phòng tắm và xà phòng cá nhân](/categories/bath-personal-soaps/).

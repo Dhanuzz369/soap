@@ -1,5 +1,5 @@
 ---
-sourceHash: "a3d644f8b2bd"
+sourceHash: "6c80f574c217"
 title: "香皂／沐浴皂"
 slug: toilet-bath-soap
 category: bath-personal-soaps
@@ -107,3 +107,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 对香皂项目而言，真正的工作是让TFM等级、香型和皂块重量与货架售价相匹配，而通过一家出口伙伴比较，比分别向多家工厂询价更容易。GoodBiz Hygiene可将两三个TFM等级并列比较，让您看清每个价位对应的品质。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请发送您的目标零售价、皂块重量和偏好的香型，我们会回复等级方案。
+
+比较报价之前，请先阅读[沐浴皂等级详解](/blog/bath-soap-grades-tfm-explained/)，了解规格书上一级、二级和TFM的含义。草本皂、甘油皂、抗菌皂和酒店皂同在[沐浴与个人香皂系列](/categories/bath-personal-soaps/)中。

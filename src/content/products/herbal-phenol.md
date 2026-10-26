@@ -3,6 +3,7 @@ title: "Herbal Phenol / Phenyl"
 slug: herbal-phenol
 category: surface-home-cleaners
 order: 2
+reviewed: 2026-10-26
 hsn: "3402 50"
 hsnNote: "Herbal phenol and phenyl are often classified under HSN 3808 94 as a disinfectant, depending on the formulation and the claims made on the label. We show 3402 50 as a surface-cleaner heading; the correct classification is confirmed per order with the manufacturer and your customs broker."
 metaTitle: "Herbal Phenol / Phenyl Exporter & Supplier from India"
@@ -106,3 +107,5 @@ Phenyl brands compete on herbal oil blend and milky appearance. Buyers choose ne
 ## Why source through GoodBiz Hygiene
 
 Phenyl is sold in markets where disinfectant claims are regulated, so what the label may say varies. GoodBiz Hygiene checks with the manufacturer which classification and claims apply before you finalise artwork. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your destination, preferred herbal oil and pack sizes and we will return a quotation.
+
+Our guide to [herbal phenol vs chemical disinfectants](/blog/herbal-phenol-vs-chemical-disinfectants/) explains when a phenyl is treated as a cleaner (3402 50) or as a disinfectant (3808 94). Floor, toilet and multi-surface cleaners from the [surface and home cleaners range](/categories/surface-home-cleaners/) can travel in the same container.

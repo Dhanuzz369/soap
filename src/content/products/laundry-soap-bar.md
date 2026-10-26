@@ -3,6 +3,7 @@ title: "Laundry Soap / Detergent Bar"
 slug: laundry-soap-bar
 category: laundry-care
 order: 1
+reviewed: 2026-10-26
 hsn: "3401 19"
 metaTitle: "Laundry Soap Bar Exporter & Supplier from India"
 metaDescription: "Laundry soap and detergent bars from vetted Indian manufacturers: 100–250 g, TFM 54–72% grades. Private label, mixed containers and FOB/CIF quotes."
@@ -103,3 +104,5 @@ Distributors in hand-washing markets often want a recognisable bar colour, such 
 ## Why source through GoodBiz Hygiene
 
 Laundry bars are a high-turnover, price-led line, where a few cents per bar decides the order. GoodBiz Hygiene can quote soap-rich and detergent-bar grades side by side so you can see what a lower TFM saves you. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your target market, bar weight and colour preference and we will return grade options.
+
+Laundry bars are classified as soap under 3401 19, not with detergents, and our [HSN 3401 vs 3402 guide](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explains the split. Powder, liquid and softener for the same buyers are in the [laundry care range](/categories/laundry-care/).

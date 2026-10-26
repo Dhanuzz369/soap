@@ -1,5 +1,5 @@
 ---
-sourceHash: "3b93bcbf0059"
+sourceHash: "c9f1e55506d3"
 title: "Savon liquide pour les mains"
 slug: liquid-hand-wash
 category: bath-personal-soaps
@@ -102,3 +102,5 @@ La plupart des marques de savon pour les mains partent des flacons et pompes sta
 ## Pourquoi passer par GoodBiz Hygiene
 
 Le savon pour les mains s’achète à la fois comme produit de grande consommation et comme recharge pour distributeurs, avec des besoins très différents en formats et en prix. GoodBiz Hygiene peut chiffrer ensemble les formats grand public et collectivités pour qu’ils partent dans le même conteneur. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous les formats visés, vos préférences de parfum et toute allégation antibactérienne nécessaire, et nous vous adresserons un devis.
+
+Le savon liquide pour les mains n’est pas un savon au sens chimique, mais il relève de la position 3401 ; notre guide [code HSN 3401 ou 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explique pourquoi. Les pains et le gel douche aux mêmes parfums sont dans la gamme [savons et hygiène corporelle](/categories/bath-personal-soaps/).

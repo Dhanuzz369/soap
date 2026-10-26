@@ -1,5 +1,5 @@
 ---
-sourceHash: "76e23824cc1d"
+sourceHash: "29ee9c2a1b83"
 title: "Sabuni ya Kuua Bakteria / ya Matibabu"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Kiambato hai na dai lililo kwenye kifungashio lazima vilingane na soko lako, kwa
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Sabuni ya kuua bakteria iko chini ya kanuni kali zaidi kuliko sabuni ya kawaida ya kuogea, na kiambato kinachoruhusiwa hutofautiana kati ya nchi. GoodBiz Hygiene huthibitisha na mtengenezaji ni viambato gani hai na data gani za vipimo zinapatikana kabla hujakubali maneno ya dai. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Shiriki soko unalopeleka, kiambato hai unachopendelea na uzito wa kipande, nasi tutathibitisha kile kinachoweza kutolewa.
+
+Sabuni za kuua bakteria ziko pamoja na sabuni zetu za kuogea, za mitishamba na za hoteli katika [kundi la sabuni na usafi wa mwili](/categories/bath-personal-soaps/), na mwongozo wetu kuhusu [daraja za sabuni na TFM](/blog/bath-soap-grades-tfm-explained/) unaeleza jinsi ya kulinganisha sabuni kwa kiwango cha mafuta, si kwa madai tu.

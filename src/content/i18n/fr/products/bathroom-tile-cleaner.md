@@ -1,5 +1,5 @@
 ---
-sourceHash: "94216906b8fc"
+sourceHash: "cf73f343c941"
 title: "Nettoyant salle de bain et carrelage"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
@@ -100,3 +100,5 @@ Les marques de nettoyant salle de bain choisissent entre un acide doux, sans dan
 ## Pourquoi passer par GoodBiz Hygiene
 
 Un nettoyant salle de bain se juge à son efficacité contre le calcaire et à son innocuité pour la robinetterie et le chrome. GoodBiz Hygiene peut demander au fabricant un échantillon doux et un échantillon renforcé pour que vous les testiez avec votre eau. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous la dureté de votre eau, vos formats et vos parfums, et nous vous adresserons un devis.
+
+Les nettoyants sols, vitres et WC qui peuvent partager son conteneur figurent dans la gamme [nettoyants surfaces et maison](/categories/surface-home-cleaners/). Si vous prévoyez une allégation antibactérienne sur l’étiquette, lisez d’abord [phénol aux plantes ou désinfectants chimiques](/blog/herbal-phenol-vs-chemical-disinfectants/) : les allégations changent l’enregistrement et le classement.

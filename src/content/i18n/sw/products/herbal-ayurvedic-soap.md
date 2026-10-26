@@ -1,5 +1,5 @@
 ---
-sourceHash: "329715bb8890"
+sourceHash: "e0d1945ad630"
 title: "Sabuni ya Mitishamba na ya Ayurveda"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -101,3 +101,5 @@ Mwagizaji anayejenga chapa ya utunzaji wa asili kwa kawaida huchagua mwelekeo wa
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Bidhaa za mitishamba mara nyingi huuzwa kwa madai kuhusu viambato, na hapo ndipo makosa yanapogharimu zaidi. GoodBiz Hygiene huomba kwa kila mtengenezaji orodha ya viambato vilivyo nyuma ya dai kabla halijawekwa kwenye katoni yako, ili kifungashio kisiahidi zaidi ya kile fomula inachotoa. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Shiriki mwelekeo unaokusudia na madai unayohitaji kutoa, nasi tutapendekeza aina za mitishamba zinazofaa.
+
+Viambato vya mitishamba huuza sabuni, lakini daraja huamua itadumu kwa muda gani; tazama [daraja za sabuni ya kuogea na TFM zimeelezwa](/blog/bath-soap-grades-tfm-explained/). Sabuni za kawaida, za glycerin na za kuua bakteria ziko katika [kundi la sabuni na usafi wa mwili](/categories/bath-personal-soaps/).

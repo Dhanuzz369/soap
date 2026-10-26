@@ -1,5 +1,5 @@
 ---
-sourceHash: "050e9d439949"
+sourceHash: "421e81d90f2e"
 title: "Laini ya Nguo (Dawa ya Kulainisha Nguo)"
 slug: fabric-softener
 category: laundry-care
@@ -109,3 +109,5 @@ Laini ni kundi linaloongozwa na harufu, kwa hivyo uamuzi muhimu zaidi wa chapa y
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Laini hupimwa kwa harufu, kwa hivyo wanunuzi wanapaswa kulinganisha sampuli za harufu kwenye kitambaa halisi badala ya ndani ya chupa. GoodBiz Hygiene inaweza kupanga sampuli za harufu kutoka kwa mtengenezaji kwa madhumuni hayo. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Shiriki harufu unazopendelea, kiwango cha ukolezi na ukubwa wa vifungashio nasi tutarudi na nukuu ya bei.
+
+[Mwongozo wetu wa kununua laini ya nguo](/blog/fabric-softener-buying-guide-importers/) unaeleza kwa kina aina, harufu na ukubwa wa vifungashio, na [kundi la bidhaa za kufulia](/categories/laundry-care/) linaorodhesha sabuni ambazo kwa kawaida husafirishwa pamoja nayo.

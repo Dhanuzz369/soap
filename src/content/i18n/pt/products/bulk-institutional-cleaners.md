@@ -1,5 +1,5 @@
 ---
-sourceHash: "2fb368c1aef4"
+sourceHash: "3ab35c7f503a"
 title: "Produtos de limpeza a granel e institucionais"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
@@ -94,3 +94,5 @@ Comece pelos seus clientes. Um fornecedor de hotéis precisa de sabonete para as
 ## Por que comprar pela GoodBiz Hygiene
 
 As empresas de serviços prediais e as redes de hotéis costumam comprar de cinco a oito produtos de uma vez; por isso, um contêiner misto poupa muita coordenação. A GoodBiz Hygiene pode providenciar uma única cotação e um único embarque para toda a linha. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Envie a sua lista de produtos, os volumes e os tamanhos de embalagem, e enviaremos uma cotação.
+
+Concentrados fortemente alcalinos ou ácidos podem ser embarcados como carga perigosa, e o nosso guia de [documentos de exportação para produtos de limpeza](/blog/export-documents-cleaning-products/) lista os papéis a pedir. Noodles de sabão, LABSA e SLES para formulação local estão na mesma linha [matérias-primas e produtos industriais](/categories/industrial-raw-materials/).

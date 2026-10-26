@@ -1,5 +1,5 @@
 ---
-sourceHash: "5a4a8b081395"
+sourceHash: "9186bb112e63"
 title: "Sabuni ya Gliserini / Sabuni Uwazi"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Chapa za sabuni uwazi kwa kawaida hujitofautisha kwa rangi na vitu vinavyoonekan
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Sabuni uwazi inahitaji uchakataji maalumu, kwa hivyo GoodBiz Hygiene hufanya kazi tu na watengenezaji wanaoendesha mistari ya sabuni uwazi. Picha za uwazi wa kipande na umaliziaji wa uso zinaweza kupangwa kabla katoni hazijafungwa, jambo linalokusaidia kugundua mapema hali ya kuwa na ukungu au jasho. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuambie uzito wa kipande, rangi na harufu unazopendelea nasi tutarudi na nukuu ya bei.
+
+Sabuni angavu kwa asili zina TFM ya chini kuliko sabuni zisizoonyesha, na mwongozo wetu kuhusu [daraja za sabuni na TFM](/blog/bath-soap-grades-tfm-explained/) unaeleza jinsi ya kusoma takwimu hizo. Sabuni zisizoonyesha, za mitishamba na za hoteli ziko katika [kundi la sabuni na usafi wa mwili](/categories/bath-personal-soaps/).

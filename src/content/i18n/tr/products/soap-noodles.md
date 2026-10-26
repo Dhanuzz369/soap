@@ -1,5 +1,5 @@
 ---
-sourceHash: "f2bf93b5815c"
+sourceHash: "367702ea5e76"
 title: "Sabun Noodle (Sabun Bazı)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -95,3 +95,5 @@ Tipik alıcılar kendi kalıplarını bitiren sabun üreticileri, fason sabun pa
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Sabun üreticileri noodle’ı yağ karışımı oranı, nem ve renge göre satın alır; bunlardan herhangi birindeki küçük bir kayma bitmiş kalıplarını değiştirir. GoodBiz Hygiene, konteyner siparişi vermeden önce deneme öğütmesi için bir numune ve analiz sertifikası temin edebilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Palm / palm çekirdeği oranınızı, TFM hedefinizi ve aylık tonajınızı bildirin, size teklif verelim.
+
+Noodle’ın TFM değeri bitmiş sabunun kalitesini belirler; [banyo sabunu kaliteleri ve TFM](/blog/bath-soap-grades-tfm-explained/) rehberimiz bunu açıklar. Deterjan üretimi için LABSA ve SLES aynı [endüstriyel ürünler ve hammaddeler gamında](/categories/industrial-raw-materials/) bulunur.

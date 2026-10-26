@@ -3,6 +3,7 @@ title: "Dish Wash Liquid / Gel"
 slug: dish-wash-liquid
 category: kitchen-care
 order: 1
+reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Dish Wash Liquid & Gel Exporter & Supplier from India"
 metaDescription: "Dish wash liquid and gel from vetted Indian manufacturers: lemon, lime and more, 250 ml to 200 L drums. Private label, mixed containers, FOB/CIF quotes."
@@ -103,3 +104,5 @@ Retail dish wash brands usually choose a bottle shape from stock, a shrink sleev
 ## Why source through GoodBiz Hygiene
 
 Dish wash buyers split into supermarkets that want branded bottles and caterers that want 20 L carboys. GoodBiz Hygiene can quote both from the same formula to keep supply simple. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your active-matter target, fragrance and pack mix and we will return a quotation.
+
+For costs, MOQ, documents and shipping step by step, read [how to import dish wash liquid from India](/blog/import-dish-wash-liquid-from-india/). Dish wash bars for markets that wash with a scrubber are in the same [kitchen care range](/categories/kitchen-care/).

@@ -3,6 +3,7 @@ title: "SLES (Sodium Lauryl Ether Sulphate)"
 slug: sles
 category: industrial-raw-materials
 order: 3
+reviewed: 2026-10-26
 hsn: "3402 39"
 metaTitle: "SLES 28% & 70% Exporter & Supplier from India"
 metaDescription: "SLES 28% and 70% (sodium lauryl ether sulphate) from vetted Indian manufacturers in drums, IBCs and flexitanks. HSN 3402 39, FOB/CIF quotes per order."
@@ -92,3 +93,5 @@ SLES thickens with salt, so many formulators build viscosity with sodium chlorid
 ## Why source through GoodBiz Hygiene
 
 SLES buyers make shampoos, hand washes and dish liquids, where colour, odour and 1,4-dioxane level count. GoodBiz Hygiene can ask the manufacturer for a sample and certificate of analysis before you commit to a container. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your preferred active percentage, ethoxylation level and monthly volume and we will return a quotation.
+
+SLES is classified as an anionic surface-active agent under 3402 39, separately from finished detergents; see our [HSN 3401 vs 3402 guide](/blog/hsn-code-3401-vs-3402-soaps-detergents/). LABSA and soap noodles are in the same [industrial and raw materials range](/categories/industrial-raw-materials/).

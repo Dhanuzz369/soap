@@ -1,11 +1,11 @@
 ---
-sourceHash: "7f212b113545"
+sourceHash: "08c0a2083e95"
 title: "Produits d’entretien en marque de distributeur : le guide étape par étape pour les distributeurs"
 metaTitle: "Produits d’entretien en MDD : le guide des distributeurs"
 description: "Comment lancer votre propre marque de produits d’entretien depuis l’Inde : choix de la gamme, cahier des charges, échantillons, maquettes et expédition."
 date: 2026-09-10
 tags: ["marque de distributeur", "distributeurs", "entretien ménager", "OEM"]
-relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener"]
+relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener", "glass-cleaner"]
 faqs:
   - q: "Ai-je besoin de ma propre usine ou d’une équipe de formulation pour lancer une marque de distributeur ?"
     a: "Non. Vous apportez la marque, le marché cible et le positionnement. Le fabricant apporte une formule de base éprouvée, ajustable en parfum, couleur et texture, et GoodBiz Hygiene coordonne le processus et l’expédition."

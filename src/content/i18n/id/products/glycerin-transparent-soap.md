@@ -1,5 +1,5 @@
 ---
-sourceHash: "5a4a8b081395"
+sourceHash: "9186bb112e63"
 title: "Sabun Gliserin / Sabun Transparan"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Merek sabun transparan biasanya membedakan diri lewat warna dan inklusi yang ter
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Sabun transparan memerlukan proses khusus, sehingga GoodBiz Hygiene hanya bekerja sama dengan produsen yang menjalankan lini sabun bening. Foto kejernihan dan permukaan sabun dapat diatur sebelum karton ditutup, yang membantu Anda menemukan kekeruhan atau sabun berkeringat sejak dini. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan berat batang, warna, dan aroma pilihan Anda, lalu kami akan mengirimkan penawaran.
+
+Sabun transparan memang memiliki TFM lebih rendah daripada sabun buram, dan panduan kami tentang [grade sabun mandi dan TFM](/blog/bath-soap-grades-tfm-explained/) menjelaskan cara membaca angka tersebut. Sabun buram, herbal, dan hotel ada di [rangkaian sabun mandi dan perawatan diri](/categories/bath-personal-soaps/).

@@ -1,11 +1,11 @@
 ---
-sourceHash: "d4c87bac15fb"
+sourceHash: "b7e27ce42927"
 title: "Bitkisel Fenol ve Kimyasal Dezenfektanlar: Perakende Alıcıların Bilmesi Gerekenler"
 metaTitle: "Bitkisel Fenol mü Kimyasal Dezenfektan mı? Rehber"
 description: "Perakende gamları için bitkisel fenol ile kimyasal dezenfektanların karşılaştırması: kullanım, etiketleme, sınıflandırma ve bir ihracatçıya önce ne sorulmalı."
 date: 2026-09-24
 tags: ["bitkisel fenol", "dezenfektanlar", "zemin temizleyici", "perakende alım"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "Bitkisel fenol kimyasal bir dezenfektanla aynı mıdır?"
     a: "Mutlaka değil. Bitkisel fenol genellikle bitkisel yağ bazlı bir emülsiyondur ve esas olarak kokulu bir zemin ve gider temizleyicisi olarak satılır. Kimyasal dezenfektan ise adı belli bir etken madde etrafında kurulur ve normalde bu amaçla satılır ve düzenlenir. Bir ürünün nerede durduğu formülasyonuna, etiket iddialarına ve pazarınızın kurallarına bağlıdır."

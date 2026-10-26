@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "Mã HSN 3401 và 3402: hướng dẫn phân loại xà phòng và chất tẩy rửa dành cho người mua"
 metaTitle: "Mã HSN 3401 và 3402: phân loại xà phòng, chất tẩy rửa"
 description: "Chưa chắc xà phòng hay chất tẩy rửa của Quý khách thuộc HSN 3401 hay 3402? Hướng dẫn dễ hiểu về cách phân chia, kèm bảng theo từng sản phẩm."
 date: 2026-10-01
 tags: ["mã HSN", "phân loại hàng hóa", "chứng từ xuất khẩu"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "HSN 3401 và 3402 khác nhau như thế nào?"
     a: "Nhóm 3401 bao gồm chính xà phòng và một số sản phẩm rửa dành cho da. Nhóm 3402 bao gồm các chất hoạt động bề mặt hữu cơ không phải xà phòng, cùng các chế phẩm giặt rửa và làm sạch được tạo từ chúng, như bột giặt và nước giặt."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "a3d644f8b2bd"
+sourceHash: "6c80f574c217"
 title: "Toilettenseife / Badeseife"
 slug: toilet-bath-soap
 category: bath-personal-soaps
@@ -107,3 +107,5 @@ Ein Händler mit eigener Badeseifenmarke kann Verpackungsdesign, Stückgewicht, 
 ## Warum der Bezug über GoodBiz Hygiene
 
 Bei einem Toilettenseifen-Programm besteht die eigentliche Arbeit darin, TFM-Qualität, Duft und Stückgewicht auf einen Regalpreis abzustimmen, und dieser Vergleich fällt über einen Exportpartner leichter als über mehrere Herstellerangebote. GoodBiz Hygiene kann zwei oder drei TFM-Qualitäten nebeneinander darstellen, damit Sie sehen, was jeder Preispunkt bietet. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Senden Sie uns Ihren angestrebten Verkaufspreis, das Stückgewicht und Ihre bevorzugten Düfte, und wir melden uns mit Qualitätsoptionen.
+
+Bevor Sie Angebote vergleichen, lesen Sie [Qualitäten von Badeseife erklärt](/blog/bath-soap-grades-tfm-explained/), um zu sehen, was Qualität 1, Qualität 2 und TFM in einer Spezifikation bedeuten. Kräuter-, Glycerin-, antibakterielle und Hotelseifen gehören zum selben Sortiment [Seifen und Körperpflege](/categories/bath-personal-soaps/).

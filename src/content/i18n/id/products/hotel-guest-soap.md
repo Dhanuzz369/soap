@@ -1,5 +1,5 @@
 ---
-sourceHash: "0632460c6e63"
+sourceHash: "ce5d989571e7"
 title: "Sabun Hotel dan Sabun Tamu (Sabun Mini)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
@@ -105,3 +105,5 @@ Grup hotel atau distributor perlengkapan mandi menyediakan logo dan warna merekn
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Hotel membeli berdasarkan volume malam-kamar dan membutuhkan perlengkapan yang tiba sebelum properti dibuka atau musim dimulai. GoodBiz Hygiene merencanakan pengiriman mundur dari tanggal pengiriman yang Anda inginkan, dan dapat membantu mencarikan gel mandi serta sabun cuci tangan yang senada dari jaringan pemasok yang sama. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Kirimkan volume malam-kamar tahunan, berat sabun pilihan, dan desain merek Anda, lalu kami akan mengirimkan penawaran.
+
+Sabun hotel dinilai berdasarkan TFM sama seperti sabun mandi ukuran biasa, sebagaimana dijelaskan dalam panduan kami tentang [grade sabun mandi](/blog/bath-soap-grades-tfm-explained/). Sabun cuci tangan dan sabun mandi cair untuk kamar yang sama ada di [rangkaian sabun mandi dan perawatan diri](/categories/bath-personal-soaps/).

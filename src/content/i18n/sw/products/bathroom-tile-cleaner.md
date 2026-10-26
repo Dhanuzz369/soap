@@ -1,5 +1,5 @@
 ---
-sourceHash: "94216906b8fc"
+sourceHash: "cf73f343c941"
 title: "Kisafishaji cha Bafu na Vigae"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
@@ -100,3 +100,5 @@ Chapa za visafishaji vya bafu huchagua kati ya asidi laini salama kwa chrome na 
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Visafishaji vya bafu hupimwa kwa uondoaji wa chokaa ngumu na usalama kwa mabomba na chrome. GoodBiz Hygiene inaweza kuomba sampuli za daraja laini na nzito kutoka kwa mtengenezaji ili ujaribu kwenye aina ya maji yako. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Shiriki ugumu wa maji yako, ukubwa wa vifungashio na harufu nasi tutarudi na nukuu ya bei.
+
+Visafishaji vya sakafu, vioo na vyoo vinavyoweza kushiriki kontena nacho viko katika [kundi la visafishaji vya nyuso na nyumbani](/categories/surface-home-cleaners/). Ukipanga kuchapisha dai la kuua vijidudu kwenye lebo, soma kwanza [fenoli ya mitishamba dhidi ya dawa za kemikali za kuua vijidudu](/blog/herbal-phenol-vs-chemical-disinfectants/), kwa sababu madai hubadilisha usajili na uainishaji.

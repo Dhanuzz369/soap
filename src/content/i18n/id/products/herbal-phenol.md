@@ -1,5 +1,5 @@
 ---
-sourceHash: "40ef01b501de"
+sourceHash: "a7d6ca47c781"
 title: "Fenol Herbal / Fenil (Karbol)"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -107,3 +107,5 @@ Merek fenil bersaing lewat campuran minyak herbal dan tampilan putih susu. Pembe
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Fenil dijual di pasar tempat klaim disinfektan diatur, sehingga apa yang boleh dicantumkan pada label berbeda-beda. GoodBiz Hygiene memeriksa dengan produsen klasifikasi dan klaim mana yang berlaku sebelum Anda memfinalkan desain. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan negara tujuan, minyak herbal pilihan, dan ukuran kemasan Anda, lalu kami akan mengirimkan penawaran.
+
+Panduan kami tentang [fenol herbal vs disinfektan kimia](/blog/herbal-phenol-vs-chemical-disinfectants/) menjelaskan kapan karbol diperlakukan sebagai pembersih (3402 50) atau sebagai disinfektan (3808 94). Pembersih lantai, kloset, dan serbaguna dari [rangkaian pembersih permukaan dan rumah](/categories/surface-home-cleaners/) dapat dikirim dalam kontainer yang sama.

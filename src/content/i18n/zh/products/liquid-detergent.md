@@ -1,5 +1,5 @@
 ---
-sourceHash: "e01f264e3e3e"
+sourceHash: "4ae767bdf766"
 title: "洗衣液"
 slug: liquid-detergent
 category: laundry-care
@@ -105,3 +105,5 @@ GoodBiz Hygiene是一家印度贸易型出口商，隶属GoodBiz Global，负责
 ## 为何通过GoodBiz Hygiene采购
 
 机洗洗衣液和手洗洗衣液需要不同的泡沫控制，一旦弄错就会招致投诉。在报价等级之前，GoodBiz Hygiene会与制造商确认预期的洗涤方式。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知产品用于顶开式、前开式还是手洗，以及您的包装规格，我们会回复报价单。
+
+如果您在比较剂型，我们的[洗衣粉与洗衣液对比](/blog/detergent-powder-vs-liquid-detergent/)从洗涤习惯、价格和运费几方面进行了分析。[洗衣护理系列](/categories/laundry-care/)中的柔顺剂和洗衣皂可加入同一订单。

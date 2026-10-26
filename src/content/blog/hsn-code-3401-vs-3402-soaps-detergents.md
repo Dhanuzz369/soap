@@ -5,7 +5,7 @@ description: "Not sure whether your soap or detergent is HSN 3401 or 3402? A pla
 date: 2026-10-01
 updated: 2026-10-26
 tags: ["HSN code", "classification", "export documents"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "What is the difference between HSN 3401 and 3402?"
     a: "Heading 3401 covers soap itself and certain washing products for the skin. Heading 3402 covers organic surface-active agents other than soap, and washing and cleaning preparations made from them, such as detergent powders and liquids."

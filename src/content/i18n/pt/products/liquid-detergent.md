@@ -1,5 +1,5 @@
 ---
-sourceHash: "e01f264e3e3e"
+sourceHash: "4ae767bdf766"
 title: "Sabão líquido / detergente líquido para roupas"
 slug: liquid-detergent
 category: laundry-care
@@ -105,3 +105,5 @@ As marcas de sabão líquido costumam acrescentar um sachê de refil combinando 
 ## Por que comprar pela GoodBiz Hygiene
 
 Os líquidos para máquina e para lavagem à mão exigem controles de espuma diferentes, e errar nisso gera reclamações. A GoodBiz Hygiene confirma com o fabricante o método de lavagem pretendido antes de cotar um grau. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe se o produto é para máquina de abertura superior, de abertura frontal ou para lavagem à mão, além dos tamanhos de embalagem, e enviaremos uma cotação.
+
+Se está decidindo entre formatos, a nossa comparação entre [sabão em pó e sabão líquido](/blog/detergent-powder-vs-liquid-detergent/) analisa hábitos de lavagem, preço e frete. Amaciante e barras da linha [cuidado com a roupa](/categories/laundry-care/) podem entrar no mesmo pedido.

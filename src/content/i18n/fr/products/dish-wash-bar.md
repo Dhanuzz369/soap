@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf0393403b70"
+sourceHash: "e4e01699d6d9"
 title: "Pain vaisselle solide"
 slug: dish-wash-bar
 category: kitchen-care
@@ -103,3 +103,5 @@ Les marques choisissent entre pain seul, pain avec tampon et pot, chacun à un n
 ## Pourquoi passer par GoodBiz Hygiene
 
 Le pain vaisselle s’achète au prix : les acheteurs comparent le coût par lavage plutôt que le coût par pain. GoodBiz Hygiene peut chiffrer plusieurs poids et types de conditionnement pour que vous choisissiez la meilleure option pour votre marché. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous le poids du pain, le type de conditionnement et votre prix cible, et nous vous adresserons un devis.
+
+Beaucoup d’acheteurs testent pains et liquide dans une même expédition. Les étapes, coûts et documents sont dans notre guide [importer du liquide vaisselle depuis l’Inde](/blog/import-dish-wash-liquid-from-india/), et les deux formats figurent dans la gamme [vaisselle et cuisine](/categories/kitchen-care/).

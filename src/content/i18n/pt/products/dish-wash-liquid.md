@@ -1,5 +1,5 @@
 ---
-sourceHash: "36c4cfd3090d"
+sourceHash: "82edc50d27ca"
 title: "Detergente líquido / gel para louças"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -104,3 +104,5 @@ As marcas de detergente para louças no varejo costumam escolher um formato de f
 ## Por que comprar pela GoodBiz Hygiene
 
 Os compradores de detergente para louças se dividem entre supermercados, que querem frascos de marca, e buffets, que querem garrafões de 20 L. A GoodBiz Hygiene pode cotar os dois a partir da mesma fórmula, para simplificar o fornecimento. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe a sua meta de matéria ativa, a fragrância e a combinação de embalagens, e enviaremos uma cotação.
+
+Para custos, MOQ, documentos e embarque passo a passo, leia [como importar detergente líquido para louças da Índia](/blog/import-dish-wash-liquid-from-india/). As barras lava-louças para mercados que lavam com esponja estão na mesma linha [cozinha e louças](/categories/kitchen-care/).

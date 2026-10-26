@@ -1,5 +1,5 @@
 ---
-sourceHash: "76e23824cc1d"
+sourceHash: "29ee9c2a1b83"
 title: "Antibakterielle Seife / medizinische Seife"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Wirkstoff und Aussage auf der Packung müssen zu Ihrem Markt passen und werden d
 ## Warum der Bezug über GoodBiz Hygiene
 
 Antibakterielle Seife unterliegt strengeren Vorschriften als einfache Badeseife, und der zulässige Wirkstoff unterscheidet sich von Land zu Land. GoodBiz Hygiene klärt mit dem Hersteller, welche Wirkstoffe und Prüfdaten verfügbar sind, bevor Sie sich auf einen Wortlaut für Aussagen festlegen. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Teilen Sie uns Ihren Zielmarkt, den bevorzugten Wirkstoff und das Stückgewicht mit, und wir bestätigen, was geliefert werden kann.
+
+Antibakterielle Seifen gehören mit unseren Toiletten-, Kräuter- und Hotelseifen zum Sortiment [Seifen und Körperpflege](/categories/bath-personal-soaps/), und unser Ratgeber zu [Seifenqualitäten und TFM](/blog/bath-soap-grades-tfm-explained/) erklärt, wie Sie Stücke nach Fettsäuregehalt und nicht nur nach Werbeaussagen vergleichen.

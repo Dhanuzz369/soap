@@ -1,5 +1,5 @@
 ---
-sourceHash: "2fb368c1aef4"
+sourceHash: "3ab35c7f503a"
 title: "Reinigungsmittel für Großgebinde und Gewerbekunden"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
@@ -94,3 +94,5 @@ Gehen Sie von Ihren Kunden aus. Ein Hotellieferant braucht Flüssigseife, Bodenr
 ## Warum der Bezug über GoodBiz Hygiene
 
 Gebäudedienstleister und Hotelgruppen kaufen meist fünf bis acht Produkte auf einmal, daher spart ihnen ein gemischter Container viel Abstimmung. GoodBiz Hygiene kann ein Angebot und eine Verschiffung für das gesamte Sortiment organisieren. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Senden Sie uns Ihre Produktliste, Volumen und Gebindegrößen, und wir senden Ihnen ein Angebot.
+
+Stark alkalische oder saure Konzentrate können als Gefahrgut reisen, und unser Ratgeber zu [Exportdokumenten für Reinigungsprodukte](/blog/export-documents-cleaning-products/) nennt die Papiere, nach denen Sie fragen sollten. Seifennudeln, LABSA und SLES für die eigene Abmischung gehören zum selben Sortiment [Rohstoffe und Industrieprodukte](/categories/industrial-raw-materials/).

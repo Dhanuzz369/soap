@@ -1,5 +1,5 @@
 ---
-sourceHash: "5a4a8b081395"
+sourceHash: "9186bb112e63"
 title: "Xà phòng glycerin / xà phòng trong suốt"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Các thương hiệu xà phòng trong suốt thường tạo khác biệt bằng
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Xà phòng trong suốt cần quy trình chế biến chuyên biệt, nên GoodBiz Hygiene chỉ làm việc với các nhà sản xuất có dây chuyền xà phòng trong suốt. Có thể sắp xếp ảnh chụp độ trong và bề mặt hoàn thiện của bánh trước khi niêm phong thùng carton, giúp Quý khách sớm phát hiện hiện tượng bị đục hoặc đổ mồ hôi. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy cho chúng tôi biết trọng lượng bánh, tông màu và hương liệu Quý khách ưa thích, chúng tôi sẽ gửi báo giá.
+
+Xà phòng trong suốt vốn có TFM thấp hơn xà phòng đục, và hướng dẫn của chúng tôi về [các hạng xà phòng và TFM](/blog/bath-soap-grades-tfm-explained/) giải thích cách đọc các con số này. Xà phòng đục, thảo dược và khách sạn có trong [nhóm xà phòng tắm và xà phòng cá nhân](/categories/bath-personal-soaps/).

@@ -3,6 +3,7 @@ title: "Multi-Surface Cleaner"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
 order: 6
+reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Multi-Surface Cleaner Exporter & Supplier from India"
 metaDescription: "All-purpose multi-surface cleaner in trigger sprays, refills and bulk packs from vetted Indian manufacturers. Private label, mixed containers, FOB/CIF quotes."
@@ -100,3 +101,5 @@ A multi-surface brand chooses between ready-to-use and concentrate formats, then
 ## Why source through GoodBiz Hygiene
 
 A multi-purpose cleaner must be gentle enough for many surfaces, so claims on the label should match testing. GoodBiz Hygiene asks the manufacturer which surfaces the formula has been checked on. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your surface list and format preference and we will return a quotation.
+
+A multi-surface spray is often the lead product of an own-brand cleaning range, and our [step-by-step private-label guide](/blog/private-label-cleaning-products-guide/) covers the brief, samples and labels. Specialist cleaners for floors, glass and bathrooms are in the [surface and home cleaners range](/categories/surface-home-cleaners/).

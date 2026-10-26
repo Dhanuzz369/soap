@@ -1,5 +1,5 @@
 ---
-sourceHash: "332323d039a7"
+sourceHash: "c8da3d442a73"
 title: "Nước tẩy bồn cầu"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -103,3 +103,5 @@ Các thương hiệu nước tẩy bồn cầu chọn độ mạnh axit, gel đ�
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Nước tẩy bồn cầu phải có nhãn cảnh báo nguy hiểm và, ở một số thị trường, nắp an toàn cho trẻ em. GoodBiz Hygiene xác nhận câu chữ an toàn và loại nắp cần cho thị trường của Quý khách trước khi bắt đầu thiết kế nhãn. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy cho chúng tôi biết nơi đến và độ mạnh ưa thích, chúng tôi sẽ gửi báo giá.
+
+Các loại gốc axit có thể cần nhãn cảnh báo nguy hiểm và thêm giấy tờ vận chuyển, và hướng dẫn về [chứng từ xuất khẩu cho sản phẩm tẩy rửa](/blog/export-documents-cleaning-products/) của chúng tôi liệt kê những gì cần yêu cầu. Nước lau sàn, tẩy phòng tắm và lau kính nằm trong cùng [nhóm nước tẩy rửa bề mặt và gia dụng](/categories/surface-home-cleaners/).

@@ -1,11 +1,11 @@
 ---
-sourceHash: "d4c87bac15fb"
+sourceHash: "b7e27ce42927"
 title: "Fenoli ya Mitishamba dhidi ya Dawa za Kemikali za Kuua Vijidudu: Wanunuzi wa Rejareja Wanapaswa Kujua Nini"
 metaTitle: "Fenoli ya Mitishamba au Dawa za Kemikali: Mwongozo"
 description: "Fenoli ya mitishamba dhidi ya dawa za kemikali za kuua vijidudu kwa rejareja: matumizi, uwekaji lebo, uainishaji na cha kumwuliza msafirishaji kwanza."
 date: 2026-09-24
 tags: ["fenoli ya mitishamba", "dawa za kuua vijidudu", "kisafishaji cha sakafu", "ununuzi wa rejareja"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "Je, fenoli ya mitishamba ni sawa na dawa ya kemikali ya kuua vijidudu?"
     a: "Si lazima. Fenoli ya mitishamba kwa kawaida ni emalsheni yenye msingi wa mafuta ya mimea inayouzwa hasa kama kisafishaji chenye harufu cha sakafu na mifereji. Dawa ya kemikali ya kuua vijidudu hujengwa kuzunguka kiambato hai kilichotajwa na kwa kawaida huuzwa na kudhibitiwa kwa madhumuni hayo. Bidhaa iko wapi hutegemea fomula yake, madai ya lebo na kanuni za soko lako."

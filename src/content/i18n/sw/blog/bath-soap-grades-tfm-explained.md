@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "Daraja za Sabuni ya Kuogea Zimeelezwa: TFM, Daraja la 1 dhidi ya la 2, na Kwa Nini Ni Muhimu"
 metaTitle: "Daraja za Sabuni ya Kuogea: TFM, Daraja la 1 na la 2"
 description: "TFM inamaanisha nini kwenye vipimo vya sabuni ya kuogea, jinsi Daraja la 1 na la 2 zinavyotumika, na jinsi ya kuchagua daraja linalofaa soko na bei yako."
 date: 2026-08-27
 tags: ["sabuni ya kuogea", "TFM", "daraja za sabuni", "vipimo"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "TFM inamaanisha nini kwenye sabuni ya kuogea?"
     a: "TFM ni kifupi cha Total Fatty Matter (Jumla ya Vitu vya Mafuta). Ni asilimia ya kipande, kwa uzito, inayotokana na asidi za mafuta kutoka kwa mafuta na shahamu zilizotumika katika saponification. TFM ya juu kwa ujumla humaanisha sabuni halisi zaidi na vijazaji, maji na viongezeo vingine kidogo."

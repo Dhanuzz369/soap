@@ -1,5 +1,5 @@
 ---
-sourceHash: "412ca2d14ce7"
+sourceHash: "91416f83e94e"
 title: "多用途表面清洁剂"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
@@ -101,3 +101,5 @@ GoodBiz Hygiene是GoodBiz Global旗下的一家印度贸易型出口商，从经
 ## 为何通过GoodBiz Hygiene采购
 
 多用途清洁剂必须温和到足以适用于多种表面，因此标签上的宣称应与测试相符。GoodBiz Hygiene会向制造商了解该配方已在哪些表面上检验过。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的表面清单和形式偏好，我们会回复报价单。
+
+多用途喷雾常是自有品牌清洁系列的主打产品，我们的[自有品牌分步指南](/blog/private-label-cleaning-products-guide/)涵盖需求说明、样品和标签。地板、玻璃和浴室专用清洁剂在[表面与家居清洁剂系列](/categories/surface-home-cleaners/)中。

@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf0393403b70"
+sourceHash: "e4e01699d6d9"
 title: "Detergente em barra para louças"
 slug: dish-wash-bar
 category: kitchen-care
@@ -103,3 +103,5 @@ As marcas escolhem entre somente a barra, barra com bucha e embalagem em pote, c
 ## Por que comprar pela GoodBiz Hygiene
 
 As barras para louças são compradas pelo preço; por isso, os compradores comparam o custo por lavagem, e não o custo por barra. A GoodBiz Hygiene pode cotar vários pesos de barra e tipos de embalagem, para que você escolha a melhor opção para o seu mercado. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe o peso da barra, o tipo de embalagem e o preço-alvo, e enviaremos uma cotação.
+
+Muitos compradores testam barras e líquido no mesmo embarque. As etapas, custos e documentos estão no nosso guia [como importar detergente líquido para louças da Índia](/blog/import-dish-wash-liquid-from-india/), e os dois formatos estão na linha [cozinha e louças](/categories/kitchen-care/).

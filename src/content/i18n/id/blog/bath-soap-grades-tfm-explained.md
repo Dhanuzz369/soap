@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "Penjelasan Grade Sabun Mandi: TFM, Grade 1 vs Grade 2, dan Mengapa Penting"
 metaTitle: "Grade Sabun Mandi: TFM, Grade 1 vs Grade 2"
 description: "Arti TFM pada spesifikasi sabun mandi, cara Grade 1 dan Grade 2 dipakai dalam perdagangan, dan cara memilih grade yang tepat untuk pasar dan harga Anda."
 date: 2026-08-27
 tags: ["sabun mandi", "TFM", "grade sabun", "spesifikasi"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "Apa arti TFM pada sabun mandi?"
     a: "TFM adalah singkatan dari Total Fatty Matter (total kandungan bahan lemak). TFM adalah persentase berat sabun batang yang berasal dari asam lemak dari minyak dan lemak yang dipakai dalam saponifikasi. TFM yang lebih tinggi umumnya berarti lebih banyak sabun murni dan lebih sedikit bahan pengisi, air, dan aditif lainnya."

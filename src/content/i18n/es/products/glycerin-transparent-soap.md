@@ -1,5 +1,5 @@
 ---
-sourceHash: "5a4a8b081395"
+sourceHash: "9186bb112e63"
 title: "Jabón de glicerina / jabón transparente"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Las marcas de jabón transparente suelen diferenciarse por el color y por las in
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 El jabón transparente requiere un procesamiento específico, por lo que GoodBiz Hygiene trabaja únicamente con fabricantes que cuentan con líneas de jabón transparente. Pueden organizarse fotografías de la transparencia y del acabado superficial de las pastillas antes de sellar las cajas, lo que le ayuda a detectar a tiempo turbidez o sudoración. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Indíquenos el peso de pastilla, el tono y la fragancia que prefiere y le enviaremos una cotización.
+
+Las pastillas transparentes tienen por diseño un TFM más bajo que el jabón opaco, y nuestra guía sobre [las calidades del jabón y el TFM](/blog/bath-soap-grades-tfm-explained/) explica cómo leer esas cifras. Las pastillas opacas, herbales y de hotel están en la gama de [jabones y cuidado personal](/categories/bath-personal-soaps/).

@@ -1,5 +1,5 @@
 ---
-sourceHash: "329715bb8890"
+sourceHash: "e0d1945ad630"
 title: "草本阿育吠陀皂"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -101,3 +101,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 草本产品往往以成分宣称作为卖点，而失误的代价也最大。在某项宣称印上您的纸盒之前，GoodBiz Hygiene会向各制造商索取该宣称所依据的成分表，使包装承诺不超出配方实际能做到的范围。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的预期定位和需要的宣称，我们会推荐相匹配的草本品种。
+
+草本成分决定卖点，等级决定耐用度；请参阅[沐浴皂等级与TFM详解](/blog/bath-soap-grades-tfm-explained/)。普通香皂、甘油皂和抗菌皂同在[沐浴与个人香皂系列](/categories/bath-personal-soaps/)中。

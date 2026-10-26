@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "Code HSN 3401 ou 3402 : guide de l’acheteur pour classer savons et détergents"
 metaTitle: "Code HSN 3401 ou 3402 : classer savons et détergents"
 description: "Votre savon ou votre détergent relève-t-il du code HSN 3401 ou 3402 ? Un guide clair de la distinction, avec un tableau produit par produit."
 date: 2026-10-01
 tags: ["code HSN", "classement douanier", "documents d’export"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "Quelle différence entre les codes HSN 3401 et 3402 ?"
     a: "La position 3401 couvre le savon lui-même et certains produits de lavage pour la peau. La position 3402 couvre les agents de surface organiques autres que le savon, ainsi que les préparations pour lessives et produits de nettoyage qui en sont tirés, comme les lessives en poudre et liquides."

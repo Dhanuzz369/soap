@@ -3,6 +3,7 @@ title: "Bathroom & Tile Cleaner"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
 order: 5
+reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Bathroom & Tile Cleaner Exporter & Supplier from India"
 metaDescription: "Bathroom and tile cleaner for limescale and soap scum, in trigger sprays and 5–20 L refills from vetted Indian manufacturers. Private label, FOB/CIF quotes."
@@ -99,3 +100,5 @@ Bathroom cleaner brands choose between a mild, chrome-safe acid and a heavy-duty
 ## Why source through GoodBiz Hygiene
 
 Bathroom cleaners are judged on limescale removal and on tap and chrome safety. GoodBiz Hygiene can ask the manufacturer for both a mild and a heavy-duty sample so you can test on your water type. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your water hardness, pack sizes and scents and we will return a quotation.
+
+The floor, glass and toilet cleaners that can share a container with it are in the [surface and home cleaners range](/categories/surface-home-cleaners/). If you plan to print a germ-kill claim on the label, read [herbal phenol vs chemical disinfectants](/blog/herbal-phenol-vs-chemical-disinfectants/) first, because claims change registration and classification.

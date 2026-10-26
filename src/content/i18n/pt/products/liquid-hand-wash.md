@@ -1,5 +1,5 @@
 ---
-sourceHash: "3b93bcbf0059"
+sourceHash: "c9f1e55506d3"
 title: "Sabonete líquido para as mãos"
 slug: liquid-hand-wash
 category: bath-personal-soaps
@@ -102,3 +102,5 @@ A maioria das marcas de sabonete para as mãos parte dos frascos e bombas em est
 ## Por que comprar pela GoodBiz Hygiene
 
 O sabonete para as mãos é comprado tanto como produto de varejo quanto como refil para dispensadores, e os dois têm necessidades de embalagem e de preço muito diferentes. A GoodBiz Hygiene pode cotar juntos os tamanhos de varejo e institucionais, para que ambos sigam em um só contêiner. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Envie os tamanhos de embalagem desejados, as preferências de fragrância e qualquer alegação antibacteriana de que você precise, e enviaremos uma cotação.
+
+O sabonete líquido não é sabão no sentido químico, mas é classificado na posição 3401; o nosso [guia HSN 3401 ou 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explica por quê. Barras e gel de banho nas mesmas fragrâncias estão na linha [sabonetes e higiene pessoal](/categories/bath-personal-soaps/).

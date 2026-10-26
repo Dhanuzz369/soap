@@ -1,5 +1,5 @@
 ---
-sourceHash: "1a547e59ad40"
+sourceHash: "9bdf91bdfe1b"
 title: "洗衣粉"
 slug: detergent-powder
 category: laundry-care
@@ -105,3 +105,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 洗衣粉的采购商既有一般贸易中的小袋分销商，也有连锁超市，各自需要不同的等级和包装。GoodBiz Hygiene可在一份报价中同时提供经济型和高端洗衣粉及对应的包装形式。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请发送您的目标每公斤价格、包装规格和洗涤方式，我们会推荐合适的等级。
+
+不确定您的市场更适合洗衣粉还是洗衣液？我们的[洗衣粉与洗衣液对比](/blog/detergent-powder-vs-liquid-detergent/)列出了关键因素，[洗衣护理系列](/categories/laundry-care/)则展示了可混装在同一集装箱中的产品。

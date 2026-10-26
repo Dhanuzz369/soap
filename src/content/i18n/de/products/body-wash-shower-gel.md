@@ -1,5 +1,5 @@
 ---
-sourceHash: "f923483b7544"
+sourceHash: "fab6a5425e7d"
 title: "Duschgel / Körperwaschlotion"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -104,3 +104,5 @@ Marken für Körperwaschlotion konkurrieren über Duftgeschichte und Flaschenopt
 ## Warum der Bezug über GoodBiz Hygiene
 
 Duschgel kaufen oft Käufer, die auch Hotel-Amenities brauchen, und beides in einem Duft zu halten erspart eine zweite Lieferantensuche. GoodBiz Hygiene kann Handelsflaschen, Miniflaschen und Nachfüllungen im Großgebinde als ein Projekt anbieten. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Nennen Sie uns Ihre bevorzugten Düfte und Packungsgrößen, und wir senden Ihnen ein Angebot.
+
+Duschgel wird zusammen mit Flüssigseife in 3401 30 eingereiht und nicht bei den Waschmitteln; warum, erklärt unser [Ratgeber zu HSN 3401 und 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/). Seifenstücke und Flüssigseife in passenden Düften finden Sie im Sortiment [Seifen und Körperpflege](/categories/bath-personal-soaps/).

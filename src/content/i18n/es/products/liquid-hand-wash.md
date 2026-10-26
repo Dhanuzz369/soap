@@ -1,5 +1,5 @@
 ---
-sourceHash: "3b93bcbf0059"
+sourceHash: "c9f1e55506d3"
 title: "Jabón líquido para manos"
 slug: liquid-hand-wash
 category: bath-personal-soaps
@@ -102,3 +102,5 @@ La mayoría de las marcas de jabón de manos parten de las botellas y bombas de 
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 El jabón de manos se compra tanto como producto minorista como recarga para dispensadores, y ambos tienen necesidades de envase y de precio muy distintas. GoodBiz Hygiene puede cotizar juntos los tamaños minoristas e institucionales para que ambos se embarquen en un mismo contenedor. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Envíenos los tamaños de envase objetivo, las fragancias que prefiere y cualquier declaración antibacteriana que necesite, y le enviaremos una cotización.
+
+El jabón de manos no es jabón en sentido químico y, sin embargo, se clasifica en la partida 3401; nuestra [guía del código HSN 3401 frente a 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explica el motivo. Las pastillas y el gel de ducha con las mismas fragancias están en la gama de [jabones y cuidado personal](/categories/bath-personal-soaps/).

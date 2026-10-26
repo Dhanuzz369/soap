@@ -1,5 +1,5 @@
 ---
-sourceHash: "1a547e59ad40"
+sourceHash: "9bdf91bdfe1b"
 title: "Poda ya Kufulia (Sabuni ya Unga)"
 slug: detergent-powder
 category: laundry-care
@@ -105,3 +105,5 @@ Waagizaji wanaoweka chapa kwenye poda yao kwa kawaida huchagua muundo wa mfuko, 
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Wanunuzi wa poda ni kuanzia wasambazaji wa pakiti ndogo katika biashara ya kawaida hadi minyororo ya maduka makubwa, na kila mmoja anahitaji daraja na kifungashio tofauti. GoodBiz Hygiene inaweza kutoa nukuu ya poda za bei nafuu na za hadhi ya juu pamoja na maumbo ya vifungashio yanayolingana katika ofa moja. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuma bei lengwa kwa kila kilo, ukubwa wa vifungashio na njia ya kufua, nasi tutapendekeza daraja zinazofaa.
+
+Huna uhakika kama poda au sabuni ya maji itauzika zaidi katika soko lako? Ulinganisho wetu wa [poda ya kufulia na sabuni ya maji ya kufulia](/blog/detergent-powder-vs-liquid-detergent/) unaeleza mambo yanayoamua, na [kundi la bidhaa za kufulia](/categories/laundry-care/) linaonyesha kinachoweza kuchanganywa katika kontena moja.

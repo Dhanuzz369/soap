@@ -70,7 +70,7 @@ Each file has a header between two `---` lines (the frontmatter) and a body belo
 
 ### 3.1 Keep EXACTLY as in English (do not translate, do not change)
 
-- `slug`, `category`, `order`, `hsn`, `hsnRange`, `related`, `relatedProducts`, `image`, `date`, `updated`
+- `slug`, `category`, `order`, `reviewed`, `hsn`, `hsnRange`, `related`, `relatedProducts`, `image`, `date`, `updated`
 - every `src:` inside `gallery`
 - `privateLabel: available: true/false`
 - the field names themselves (`title:`, `faqs:`, `- q:`, `a:`, `label:`, `value:` …)

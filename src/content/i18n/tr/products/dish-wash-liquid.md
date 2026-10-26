@@ -1,5 +1,5 @@
 ---
-sourceHash: "36c4cfd3090d"
+sourceHash: "82edc50d27ca"
 title: "Sıvı Bulaşık Deterjanı / Jel"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -104,3 +104,5 @@ Perakende bulaşık deterjanı markaları genellikle stoktan bir şişe şekli, 
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Bulaşık deterjanı alıcıları, markalı şişe isteyen süpermarketler ile 20 L damacana isteyen cateringciler olarak ikiye ayrılır. GoodBiz Hygiene, tedariği sade tutmak için ikisini de aynı formülden teklif edebilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Aktif madde hedefinizi, kokunuzu ve ambalaj karışımınızı paylaşın, size teklif verelim.
+
+Maliyetler, MOQ, evraklar ve sevkiyat için adım adım [Hindistan’dan sıvı bulaşık deterjanı ithalatı](/blog/import-dish-wash-liquid-from-india/) yazımızı okuyun. Bulaşığı süngerle yıkayan pazarlar için kalıp bulaşık sabunları aynı [mutfak bakımı gamında](/categories/kitchen-care/) yer alır.

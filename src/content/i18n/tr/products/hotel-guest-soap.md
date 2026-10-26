@@ -1,5 +1,5 @@
 ---
-sourceHash: "0632460c6e63"
+sourceHash: "ce5d989571e7"
 title: "Otel ve Misafir Sabunları (Mini Sabunlar)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
@@ -105,3 +105,5 @@ Bir otel grubu veya ikram ürünü distribütörü logosunu ve marka renklerini 
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Oteller oda-gece hacmine göre alım yapar ve bir tesis açılmadan veya sezon başlamadan önce gelen ikram ürünlerine ihtiyaç duyar. GoodBiz Hygiene sevkiyatları teslim tarihinizden geriye doğru planlar ve aynı tedarikçi ağından uyumlu duş jeli ve el sabunu temin etmeye yardımcı olabilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Yıllık oda-gece hacminizi, tercih ettiğiniz kalıp ağırlığını ve marka tasarımınızı gönderin, size teklif verelim.
+
+Otel sabunları da normal boy tuvalet sabunu gibi TFM’ye göre sınıflandırılır; [banyo sabunu kaliteleri](/blog/bath-soap-grades-tfm-explained/) rehberimiz bunu anlatır. Aynı odalar için sıvı sabun ve duş jeli [banyo ve kişisel sabunlar gamında](/categories/bath-personal-soaps/) yer alır.

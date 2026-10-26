@@ -1,5 +1,5 @@
 ---
-sourceHash: "547b4d376403"
+sourceHash: "f1704cab86aa"
 title: "Sabão em barra para roupas"
 slug: laundry-soap-bar
 category: laundry-care
@@ -104,3 +104,5 @@ Os distribuidores de mercados de lavagem à mão costumam querer uma cor de barr
 ## Por que comprar pela GoodBiz Hygiene
 
 As barras para roupas são uma linha de alto giro e orientada por preço, em que alguns centavos por barra decidem o pedido. A GoodBiz Hygiene pode cotar lado a lado os graus ricos em sabão e os de barra de detergente, para que você veja quanto um TFM menor economiza. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe o seu mercado-alvo, o peso de barra e a preferência de cor, e retornaremos com opções de grau.
+
+As barras para lavar roupa são classificadas como sabão na 3401 19, e não com os detergentes; o nosso [guia HSN 3401 ou 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explica a divisão. Sabão em pó, líquido e amaciante para os mesmos compradores estão na linha [cuidado com a roupa](/categories/laundry-care/).

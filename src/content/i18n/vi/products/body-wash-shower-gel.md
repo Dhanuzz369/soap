@@ -1,5 +1,5 @@
 ---
-sourceHash: "f923483b7544"
+sourceHash: "fab6a5425e7d"
 title: "Sữa tắm / gel tắm"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -104,3 +104,5 @@ Các thương hiệu sữa tắm cạnh tranh bằng câu chuyện hương liệ
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Gel tắm thường được mua bởi những người mua cũng cần đồ tiện nghi khách sạn, và giữ cả hai trong cùng một mùi hương giúp tiết kiệm công tìm nhà cung cấp thứ hai. GoodBiz Hygiene có thể báo giá chai bán lẻ, chai mini và gói refill số lượng lớn như một dự án duy nhất. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy cho chúng tôi biết các mùi hương và quy cách đóng gói Quý khách ưa thích, chúng tôi sẽ gửi báo giá.
+
+Sữa tắm được phân loại cùng nước rửa tay ở phân nhóm 3401 30 chứ không cùng chất tẩy rửa; [hướng dẫn mã HSN 3401 và 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) của chúng tôi giải thích lý do. Xà phòng bánh và nước rửa tay cùng mùi hương có trong [nhóm xà phòng tắm và xà phòng cá nhân](/categories/bath-personal-soaps/).

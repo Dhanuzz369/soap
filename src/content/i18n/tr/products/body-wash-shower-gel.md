@@ -1,5 +1,5 @@
 ---
-sourceHash: "f923483b7544"
+sourceHash: "fab6a5425e7d"
 title: "Vücut Şampuanı / Duş Jeli"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -104,3 +104,5 @@ Vücut şampuanı markaları koku hikâyesi ve şişe görünümü üzerinden re
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Duş jeli çoğunlukla otel ikram ürünlerine de ihtiyaç duyan alıcılar tarafından satın alınır; ikisini tek bir kokuda tutmak ikinci bir tedarikçi araştırmasından tasarruf sağlar. GoodBiz Hygiene perakende şişeleri, mini şişeleri ve dökme yedek dolumları tek bir proje olarak teklif edebilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Tercih ettiğiniz kokuları ve ambalaj boyutlarını bildirin, size teklif verelim.
+
+Duş jeli deterjanlarla değil, sıvı el sabunuyla birlikte 3401 30 altında sınıflandırılır; nedenini [HSN 3401 ve 3402 rehberimiz](/blog/hsn-code-3401-vs-3402-soaps-detergents/) anlatır. Aynı kokulardaki kalıp sabunlar ve sıvı sabunlar [banyo ve kişisel sabunlar gamında](/categories/bath-personal-soaps/) bulunur.

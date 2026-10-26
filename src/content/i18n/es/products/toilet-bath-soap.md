@@ -1,5 +1,5 @@
 ---
-sourceHash: "a3d644f8b2bd"
+sourceHash: "6c80f574c217"
 title: "Jabón de tocador / jabón de baño"
 slug: toilet-bath-soap
 category: bath-personal-soaps
@@ -107,3 +107,5 @@ Un distribuidor con su propia marca de jabón de baño puede elegir el diseño d
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 En un programa de jabón de tocador, el verdadero trabajo consiste en ajustar la calidad de TFM, la fragancia y el peso de la pastilla a un precio de venta, y esa comparación resulta más sencilla con un único socio exportador que con varias cotizaciones de fábricas. GoodBiz Hygiene puede presentarle dos o tres calidades de TFM lado a lado para que vea qué ofrece cada nivel de precio. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Envíenos su precio de venta objetivo, el peso de la pastilla y las fragancias preferidas, y le responderemos con opciones de calidad.
+
+Antes de comparar cotizaciones, lea [las calidades del jabón de baño explicadas](/blog/bath-soap-grades-tfm-explained/) para ver qué significan Grado 1, Grado 2 y TFM en una especificación. Las pastillas herbales, de glicerina, antibacterianas y de hotel están en la misma gama de [jabones y cuidado personal](/categories/bath-personal-soaps/).

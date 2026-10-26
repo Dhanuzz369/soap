@@ -3,6 +3,7 @@ title: "Fabric Softener / Conditioner"
 slug: fabric-softener
 category: laundry-care
 order: 4
+reviewed: 2026-10-26
 hsn: "3402 50"
 hsnNote: "Fabric softener is commonly classified under 3402 50 as a surface-active preparation, but it is often also classified under 3809 91 (finishing agents for textiles). The correct code depends on the formulation and customs practice in the destination country, so we confirm the full 8-digit code for each order."
 metaTitle: "Private Label Fabric Softener Exporter & Supplier from India"
@@ -108,3 +109,5 @@ Softener is a fragrance-led category, so the most important private-label decisi
 ## Why source through GoodBiz Hygiene
 
 Softener is judged by smell, so buyers should compare fragrance samples on real cloth rather than in the bottle. GoodBiz Hygiene can arrange fragrance samples from the manufacturer for that purpose. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your fragrance preferences, concentration level and pack sizes and we will return a quotation.
+
+Our [fabric softener buying guide](/blog/fabric-softener-buying-guide-importers/) covers types, fragrances and pack sizes in more depth, and the [laundry care range](/categories/laundry-care/) lists the detergents usually shipped with it.

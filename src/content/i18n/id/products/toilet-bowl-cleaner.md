@@ -1,5 +1,5 @@
 ---
-sourceHash: "332323d039a7"
+sourceHash: "c8da3d442a73"
 title: "Pembersih Kloset"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -105,3 +105,5 @@ Merek pembersih kloset memilih kekuatan asam, gel kental atau encer, warna biru,
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Pembersih kloset memuat pelabelan bahaya dan, di sebagian pasar, tutup tahan anak. GoodBiz Hygiene mengonfirmasi redaksi keselamatan dan jenis tutup yang dibutuhkan pasar Anda sebelum desain label dimulai. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan negara tujuan dan kekuatan pilihan Anda, lalu kami akan mengirimkan penawaran.
+
+Varian berbahan asam dapat memerlukan label bahaya dan dokumen pengiriman tambahan, dan panduan kami tentang [dokumen ekspor untuk produk pembersih](/blog/export-documents-cleaning-products/) mencantumkan apa yang perlu diminta. Pembersih lantai, kamar mandi, dan kaca ada di [rangkaian pembersih permukaan dan rumah](/categories/surface-home-cleaners/) yang sama.

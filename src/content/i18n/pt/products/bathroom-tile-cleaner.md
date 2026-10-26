@@ -1,5 +1,5 @@
 ---
-sourceHash: "94216906b8fc"
+sourceHash: "cf73f343c941"
 title: "Limpador de banheiros e azulejos"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
@@ -100,3 +100,5 @@ As marcas de limpador de banheiro escolhem entre um ácido suave, seguro para cr
 ## Por que comprar pela GoodBiz Hygiene
 
 Os limpadores de banheiro são avaliados pela remoção de calcário e pela segurança em torneiras e cromados. A GoodBiz Hygiene pode pedir ao fabricante amostras de um grau suave e de um grau de uso pesado, para que você teste com o seu tipo de água. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe a dureza da sua água, os tamanhos de embalagem e as fragrâncias, e enviaremos uma cotação.
+
+Os limpadores de pisos, vidros e vasos sanitários que podem dividir o contêiner com ele estão na linha [limpadores de superfícies e uso doméstico](/categories/surface-home-cleaners/). Se pretende imprimir uma alegação antigermes no rótulo, leia antes [fenol de ervas ou desinfetantes químicos](/blog/herbal-phenol-vs-chemical-disinfectants/), porque as alegações mudam o registro e a classificação.

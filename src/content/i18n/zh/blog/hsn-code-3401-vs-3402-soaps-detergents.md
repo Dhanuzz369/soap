@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "HSN编码3401与3402：香皂和洗涤剂归类采购指南"
 metaTitle: "HSN 3401与3402：香皂和洗涤剂归类"
 description: "不确定您的香皂或洗涤剂属于HSN 3401还是3402？通俗讲解两个品目的划分，附逐产品对照表以及下单前应先确定的问题，帮助进口商少走弯路、做出更稳妥的采购决定。"
 date: 2026-10-01
 tags: ["HSN编码", "归类", "出口单据"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "HSN 3401与3402有什么区别？"
     a: "品目3401涵盖皂本身以及某些用于皮肤的洗涤产品。品目3402涵盖皂以外的有机表面活性剂，以及由其制成的洗涤和清洁制剂，例如洗衣粉和洗衣液。"

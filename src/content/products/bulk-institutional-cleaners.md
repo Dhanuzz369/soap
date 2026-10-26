@@ -3,6 +3,7 @@ title: "Bulk & Institutional Cleaning Chemicals"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
 order: 4
+reviewed: 2026-10-26
 hsn: "3402 90"
 metaTitle: "Bulk Cleaning Chemicals Exporter & Supplier from India"
 metaDescription: "Bulk cleaning chemicals for hotels, facility services and distributors: concentrates in 5 L to 1,000 L IBCs from vetted Indian manufacturers. FOB/CIF quotes."
@@ -93,3 +94,5 @@ Start from your customers. A hotel supplier needs hand wash, floor cleaner and l
 ## Why source through GoodBiz Hygiene
 
 Facility-service companies and hotel groups usually buy five to eight products at once, so a mixed container saves them a lot of coordination. GoodBiz Hygiene can arrange one quotation and one shipment for the whole range. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your product list, volumes and pack sizes and we will return a quotation.
+
+Strongly alkaline or acidic concentrates may ship as dangerous goods, and our guide to [export documents for cleaning products](/blog/export-documents-cleaning-products/) lists the paperwork to ask for. Soap noodles, LABSA and SLES for local blending are in the same [industrial and raw materials range](/categories/industrial-raw-materials/).

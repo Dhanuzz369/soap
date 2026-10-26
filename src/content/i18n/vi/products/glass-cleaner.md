@@ -1,5 +1,5 @@
 ---
-sourceHash: "a76fe73afa27"
+sourceHash: "30c0f836be53"
 title: "Nước lau kính"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -97,3 +97,5 @@ Một thương hiệu nước lau kính chọn công thức không amoniac hoặ
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Người mua nước lau kính quan tâm đến kết quả không vệt và chất lượng đầu xịt. GoodBiz Hygiene có thể đề nghị nhà sản xuất gửi chai mẫu để Quý khách thử cả hai trước khi đặt hàng. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy gửi kích cỡ chai xịt và lựa chọn về amoniac của Quý khách, chúng tôi sẽ gửi báo giá.
+
+Nước lau kính thường là sản phẩm đầu tiên của một dòng thương hiệu riêng mới, và [hướng dẫn sản phẩm tẩy rửa nhãn riêng](/blog/private-label-cleaning-products-guide/) của chúng tôi đi qua từng bước từ yêu cầu, mẫu thử đến thiết kế. Các loại nước lau sàn, tẩy phòng tắm và đa năng đi kèm nằm trong [nhóm nước tẩy rửa bề mặt và gia dụng](/categories/surface-home-cleaners/).

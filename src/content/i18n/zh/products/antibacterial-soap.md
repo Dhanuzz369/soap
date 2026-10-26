@@ -1,5 +1,5 @@
 ---
-sourceHash: "76e23824cc1d"
+sourceHash: "29ee9c2a1b83"
 title: "抗菌皂／药皂"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 抗菌皂所受的监管比普通沐浴皂更严格，且各国允许使用的活性成分不同。在您确定宣称用语之前，GoodBiz Hygiene会与制造商确认可提供哪些活性成分和测试数据。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的目标市场、偏好的活性成分和皂块重量，我们会确认可供应的产品。
+
+抗菌皂与我们的普通香皂、草本皂和酒店皂同属[沐浴与个人香皂系列](/categories/bath-personal-soaps/)；我们的[沐浴皂等级与TFM指南](/blog/bath-soap-grades-tfm-explained/)介绍了如何在比较功效宣称之外，再按脂肪物含量比较皂块。

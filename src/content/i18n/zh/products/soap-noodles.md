@@ -1,5 +1,5 @@
 ---
-sourceHash: "f2bf93b5815c"
+sourceHash: "367702ea5e76"
 title: "皂粒（皂基）"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -95,3 +95,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 制皂企业按脂肪配比、水分和颜色采购皂粒，其中任何一项的细微变化都会改变其成品皂块。在您下整柜订单之前，GoodBiz Hygiene可获取样品和分析证书，供试验研磨之用。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的棕榈与棕榈仁比例、TFM目标和月用量，我们会回复报价单。
+
+皂粒的TFM决定成品皂的等级，详见我们的[沐浴皂等级与TFM指南](/blog/bath-soap-grades-tfm-explained/)。用于生产洗涤剂的LABSA和SLES同在[工业原料系列](/categories/industrial-raw-materials/)中。

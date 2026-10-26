@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "Qualitäten von Badeseife erklärt: TFM, Qualität 1 oder 2 und warum es darauf ankommt"
 metaTitle: "Badeseife: TFM, Qualität 1 oder 2 einfach erklärt"
 description: "Was TFM in der Spezifikation einer Badeseife bedeutet, wie Qualität 1 und 2 im Handel gelten und wie Sie die passende Qualität für Markt und Preis wählen."
 date: 2026-08-27
 tags: ["Badeseife", "TFM", "Seifenqualitäten", "Spezifikationen"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "Was bedeutet TFM bei Badeseife?"
     a: "TFM steht für Total Fatty Matter, also den Gesamtfettgehalt. Er gibt den Gewichtsanteil des Stücks an, der aus Fettsäuren der bei der Verseifung verwendeten Öle und Fette besteht. Ein höherer TFM bedeutet in der Regel mehr echte Seife und weniger Füllstoffe, Wasser und andere Zusätze."

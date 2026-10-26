@@ -1,5 +1,5 @@
 ---
-sourceHash: "15d439c588c9"
+sourceHash: "f7335a2c4b58"
 title: "LABSA（直链烷基苯磺酸）"
 slug: labsa
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ LABSA具有腐蚀性，因此应使用耐酸设备、手套和护目装备。储
 ## 为何通过GoodBiz Hygiene采购
 
 LABSA的采购商是需要稳定有效物含量和低游离油的洗涤剂调配商。GoodBiz Hygiene可向制造商安排样品和分析证书，让您在首个集装箱之前，用自己的料浆进行测试。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请发送您的等级、包装偏好和月用量，我们会回复报价单。
+
+LABSA具有腐蚀性，须按危险品运输，订舱前请阅读我们的[清洁产品出口单据指南](/blog/export-documents-cleaning-products/)。SLES和皂粒同在[工业原料系列](/categories/industrial-raw-materials/)中。

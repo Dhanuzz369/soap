@@ -1,5 +1,5 @@
 ---
-sourceHash: "3b93bcbf0059"
+sourceHash: "c9f1e55506d3"
 title: "洗手液"
 slug: liquid-hand-wash
 category: bath-personal-soaps
@@ -102,3 +102,5 @@ GoodBiz Hygiene是一家印度贸易型出口商，隶属GoodBiz Global，负责
 ## 为何通过GoodBiz Hygiene采购
 
 洗手液既作为零售产品销售，也作为皂液器补充装销售，两者在包装和价格上的需求差别很大。GoodBiz Hygiene可将零售和机构规格一并报价，使两者装入同一个集装箱发运。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请发送您的目标包装规格、香型偏好以及需要的抗菌宣称，我们会回复报价单。
+
+洗手液在化学意义上并不是肥皂，却归入品目3401，我们的[HSN 3401与3402指南](/blog/hsn-code-3401-vs-3402-soaps-detergents/)解释了原因。同香型的香皂和沐浴露在[沐浴与个人香皂系列](/categories/bath-personal-soaps/)中。

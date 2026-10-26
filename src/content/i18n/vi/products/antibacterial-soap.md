@@ -1,5 +1,5 @@
 ---
-sourceHash: "76e23824cc1d"
+sourceHash: "29ee9c2a1b83"
 title: "Xà phòng kháng khuẩn / xà phòng dược tính"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Hoạt chất và tuyên bố trên bao bì phải phù hợp với thị trư�
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Xà phòng kháng khuẩn chịu quy định chặt chẽ hơn xà phòng tắm thông thường, và hoạt chất được phép khác nhau theo từng quốc gia. GoodBiz Hygiene xác nhận với nhà sản xuất những hoạt chất và dữ liệu thử nghiệm nào hiện có trước khi Quý khách chốt câu chữ tuyên bố. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy chia sẻ thị trường đích, hoạt chất ưa thích và trọng lượng bánh, chúng tôi sẽ xác nhận những gì có thể cung cấp.
+
+Xà phòng kháng khuẩn nằm cùng xà phòng tắm, xà phòng thảo dược và xà phòng khách sạn trong [nhóm xà phòng tắm và xà phòng cá nhân](/categories/bath-personal-soaps/), và hướng dẫn của chúng tôi về [các hạng xà phòng và TFM](/blog/bath-soap-grades-tfm-explained/) giải thích cách so sánh bánh xà phòng theo hàm lượng chất béo chứ không chỉ theo công dụng quảng cáo.

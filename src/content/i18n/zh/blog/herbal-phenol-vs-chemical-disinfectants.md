@@ -1,11 +1,11 @@
 ---
-sourceHash: "d4c87bac15fb"
+sourceHash: "b7e27ce42927"
 title: "草本酚类消毒液与化学消毒剂：零售采购商须知"
 metaTitle: "草本酚类消毒液与化学消毒剂对比"
 description: "对比草本酚类消毒液与化学消毒剂在零售产品系列中的差异：用途、标签、海关归类，以及向出口商首先应当询问的问题，帮助进口商少走弯路、做出更稳妥的采购决定。"
 date: 2026-09-24
 tags: ["草本酚类消毒液", "消毒剂", "地板清洁剂", "零售采购"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "草本酚类消毒液与化学消毒剂是一回事吗？"
     a: "不一定。草本酚类消毒液通常是以植物油为基础的乳液，主要作为带香味的地板和下水道清洁剂销售。化学消毒剂则围绕一种明确的活性成分构建，通常以此用途销售并受到监管。产品属于哪一类，取决于其配方、标签宣称和您所在市场的规定。"

@@ -1,5 +1,5 @@
 ---
-sourceHash: "5a4a8b081395"
+sourceHash: "9186bb112e63"
 title: "Gliserinli / Şeffaf Sabun"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Berraklık, bir sabun bazıyla birleştirilen gliserin, şeker ve çözücülerd
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Şeffaf sabun özel işleme gerektirdiğinden GoodBiz Hygiene yalnızca şeffaf sabun hatları işleten üreticilerle çalışır. Kartonlar kapatılmadan önce kalıp berraklığının ve yüzey bitişinin fotoğrafları ayarlanabilir; bu, bulanıklık veya terlemeyi erkenden yakalamanıza yardımcı olur. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Tercih ettiğiniz kalıp ağırlığını, tonu ve kokuyu bildirin, size teklif verelim.
+
+Şeffaf sabunların TFM değeri, yapıları gereği opak sabunlardan düşüktür; [sabun kaliteleri ve TFM rehberimiz](/blog/bath-soap-grades-tfm-explained/) bu rakamları nasıl okuyacağınızı anlatır. Opak, bitkisel ve otel sabunları [banyo ve kişisel sabunlar gamında](/categories/bath-personal-soaps/) yer alır.

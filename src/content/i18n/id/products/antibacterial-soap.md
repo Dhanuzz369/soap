@@ -1,5 +1,5 @@
 ---
-sourceHash: "76e23824cc1d"
+sourceHash: "29ee9c2a1b83"
 title: "Sabun Antibakteri / Sabun Medis"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Bahan aktif dan klaim pada kemasan harus sesuai dengan pasar Anda, sehingga kedu
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Sabun antibakteri tunduk pada aturan yang lebih ketat daripada sabun mandi biasa, dan bahan aktif yang diizinkan berbeda di tiap negara. GoodBiz Hygiene mengonfirmasi dengan produsen bahan aktif dan data uji apa yang tersedia sebelum Anda menetapkan redaksi klaim. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan pasar tujuan, bahan aktif pilihan, dan berat batang, lalu kami akan mengonfirmasi apa yang dapat dipasok.
+
+Sabun antibakteri berada dalam [rangkaian sabun mandi dan perawatan diri](/categories/bath-personal-soaps/) bersama sabun mandi biasa, herbal, dan hotel, dan panduan kami tentang [grade sabun mandi dan TFM](/blog/bath-soap-grades-tfm-explained/) menjelaskan cara membandingkan sabun dari kandungan lemaknya, bukan hanya dari klaimnya.

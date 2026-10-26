@@ -1,5 +1,5 @@
 ---
-sourceHash: "a3d644f8b2bd"
+sourceHash: "6c80f574c217"
 title: "Tuvalet / Banyo Sabunu"
 slug: toilet-bath-soap
 category: bath-personal-soaps
@@ -107,3 +107,5 @@ Kendi banyo sabunu markası olan bir distribütör, sargı tasarımını, kalıp
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Bir tuvalet sabunu programında asıl iş, TFM kalitesini, kokuyu ve kalıp ağırlığını bir raf fiyatıyla eşleştirmektir; bu karşılaştırma, birçok fabrika teklifine kıyasla tek bir ihracat ortağı üzerinden daha kolaydır. GoodBiz Hygiene, her fiyat noktasının neyi satın aldığını görebilmeniz için iki veya üç TFM kalitesini yan yana sıralayabilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Hedef perakende fiyatınızı, kalıp ağırlığınızı ve tercih ettiğiniz kokuları gönderin, kalite seçenekleriyle size dönelim.
+
+Teklifleri karşılaştırmadan önce, bir şartnamede 1. kalite, 2. kalite ve TFM’nin ne anlama geldiğini görmek için [banyo sabunu kaliteleri](/blog/bath-soap-grades-tfm-explained/) yazımızı okuyun. Bitkisel, gliserinli, antibakteriyel ve otel sabunları aynı [banyo ve kişisel sabunlar gamında](/categories/bath-personal-soaps/) yer alır.

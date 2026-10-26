@@ -1,5 +1,5 @@
 ---
-sourceHash: "5a4a8b081395"
+sourceHash: "9186bb112e63"
 title: "Savon à la glycérine / savon transparent"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Les marques de savon transparent se différencient surtout par la couleur et les
 ## Pourquoi passer par GoodBiz Hygiene
 
 Le savon transparent demande une transformation dédiée : GoodBiz Hygiene travaille donc uniquement avec des fabricants qui exploitent des lignes de savon clair. Des photos de la clarté et de la finition de surface peuvent être prises avant la fermeture des cartons, ce qui permet de repérer tôt un voile ou un ressuage. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous le poids de pain, la teinte et le parfum souhaités, et nous vous adresserons un devis.
+
+Les savons transparents ont par nature un TFM plus bas que les savons opaques, et notre guide sur [les qualités de savon et le TFM](/blog/bath-soap-grades-tfm-explained/) explique comment lire ces chiffres. Les savons opaques, aux plantes et d’hôtel sont dans la gamme [savons et hygiène corporelle](/categories/bath-personal-soaps/).

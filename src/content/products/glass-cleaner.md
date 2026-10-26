@@ -3,6 +3,7 @@ title: "Glass Cleaner"
 slug: glass-cleaner
 category: surface-home-cleaners
 order: 3
+reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Bulk Glass Cleaner Exporter & Supplier from India"
 metaDescription: "Streak-free glass cleaner in trigger sprays and 1–20 L refills from vetted Indian manufacturers. Private label, mixed containers and FOB/CIF quotes per order."
@@ -96,3 +97,5 @@ A glass cleaner brand chooses ammonia-free or ammonia-based formula, a blue or c
 ## Why source through GoodBiz Hygiene
 
 Glass cleaner buyers care about streak-free results and sprayer quality. GoodBiz Hygiene can ask the manufacturer for sample bottles so you can test both before ordering. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your spray bottle size and ammonia preference and we will return a quotation.
+
+Glass cleaner is a common first product for a new own-brand range, and our [private-label cleaning products guide](/blog/private-label-cleaning-products-guide/) walks through the brief, samples and artwork. Matching floor, bathroom and multi-surface cleaners are in the [surface and home cleaners range](/categories/surface-home-cleaners/).

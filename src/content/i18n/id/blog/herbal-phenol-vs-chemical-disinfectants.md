@@ -1,11 +1,11 @@
 ---
-sourceHash: "d4c87bac15fb"
+sourceHash: "b7e27ce42927"
 title: "Fenol Herbal vs Disinfektan Kimia: Yang Perlu Diketahui Pembeli Ritel"
 metaTitle: "Fenol Herbal vs Disinfektan Kimia: Panduan Pembeli"
 description: "Membandingkan fenol herbal dengan disinfektan kimia untuk lini ritel: perbedaan penggunaan, pelabelan, klasifikasi, dan apa yang perlu ditanyakan ke eksportir."
 date: 2026-09-24
 tags: ["fenol herbal", "disinfektan", "pembersih lantai", "pembelian ritel"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "Apakah fenol herbal sama dengan disinfektan kimia?"
     a: "Belum tentu. Fenol herbal biasanya berupa emulsi berbasis minyak nabati yang dijual terutama sebagai pembersih lantai dan saluran pembuangan beraroma. Disinfektan kimia dibangun di sekitar bahan aktif bernama dan biasanya dijual serta diatur untuk tujuan itu. Di mana suatu produk berada bergantung pada formulasinya, klaim labelnya, dan aturan pasar Anda."

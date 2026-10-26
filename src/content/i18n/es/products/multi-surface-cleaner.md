@@ -1,5 +1,5 @@
 ---
-sourceHash: "412ca2d14ce7"
+sourceHash: "91416f83e94e"
 title: "Limpiador multisuperficies"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
@@ -101,3 +101,5 @@ Una marca multisuperficies elige entre los formatos listo para usar y concentrad
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Un limpiador multiusos debe ser lo bastante suave para muchas superficies, por lo que las declaraciones de la etiqueta deben coincidir con los ensayos. GoodBiz Hygiene pregunta al fabricante en qué superficies se ha verificado la fórmula. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Indíquenos su lista de superficies y el formato que prefiere, y le enviaremos una cotización.
+
+Un spray multiusos suele ser el producto principal de una gama de limpieza de marca propia, y nuestra [guía paso a paso de marca propia](/blog/private-label-cleaning-products-guide/) cubre el briefing, las muestras y las etiquetas. Los limpiadores específicos para suelos, cristales y baños están en la gama de [limpiadores de superficies y del hogar](/categories/surface-home-cleaners/).

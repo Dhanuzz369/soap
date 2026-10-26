@@ -1,5 +1,5 @@
 ---
-sourceHash: "0632460c6e63"
+sourceHash: "ce5d989571e7"
 title: "Sabuni za Hoteli na Wageni (Vipande Vidogo)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
@@ -105,3 +105,5 @@ Kundi la hoteli au msambazaji wa vifaa vya wageni hutoa nembo na rangi za chapa 
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Hoteli hununua kulingana na kiasi cha usiku wa vyumba na zinahitaji vifaa vinavyowasili kabla hoteli haijafunguliwa au msimu haujaanza. GoodBiz Hygiene hupanga usafirishaji kuanzia tarehe yako ya kupokea kurudi nyuma, na inaweza kusaidia kupata jeli ya kuogea na sabuni ya mikono inayolingana kutoka mtandao huohuo wa wasambazaji. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuma kiasi chako cha kila mwaka cha usiku wa vyumba, uzito wa kipande unaopendelea na michoro ya chapa yako, nasi tutarudi na nukuu ya bei.
+
+Sabuni za hoteli hupangwa kwa TFM kama sabuni za kawaida za kuogea, kama mwongozo wetu wa [daraja za sabuni](/blog/bath-soap-grades-tfm-explained/) unavyoeleza. Sabuni ya mikono na jeli ya kuogea kwa vyumba hivyo hivyo ziko katika [kundi la sabuni na usafi wa mwili](/categories/bath-personal-soaps/).

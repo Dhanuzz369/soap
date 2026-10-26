@@ -1,5 +1,5 @@
 ---
-sourceHash: "2fb368c1aef4"
+sourceHash: "3ab35c7f503a"
 title: "Toplu ve Kurumsal Temizlik Kimyasalları"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
@@ -94,3 +94,5 @@ Müşterilerinizden başlayın. Bir otel tedarikçisi el sabununa, zemin temizle
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Tesis hizmetleri şirketleri ve otel grupları genellikle aynı anda beş ila sekiz ürün satın alır; bu nedenle karışık bir konteyner onlara çok sayıda koordinasyon işinden tasarruf sağlar. GoodBiz Hygiene, tüm gam için tek teklif ve tek sevkiyat ayarlayabilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Ürün listenizi, hacimlerinizi ve ambalaj boyutlarınızı gönderin, size teklif verelim.
+
+Güçlü alkali veya asidik konsantreler tehlikeli madde olarak taşınabilir; [temizlik ürünleri için ihracat evrakları](/blog/export-documents-cleaning-products/) rehberimiz istemeniz gereken belgeleri listeler. Yerel karışım için sabun noodle, LABSA ve SLES aynı [endüstriyel ürünler ve hammaddeler gamında](/categories/industrial-raw-materials/) bulunur.

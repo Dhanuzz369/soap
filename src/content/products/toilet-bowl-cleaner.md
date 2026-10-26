@@ -3,6 +3,7 @@ title: "Toilet Bowl Cleaner"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
 order: 4
+reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Toilet Bowl Cleaner Exporter & Supplier from India"
 metaDescription: "Toilet bowl cleaner, thick acid-based and mild grades in angled-neck bottles, 500 ml to 5 L, from vetted Indian manufacturers. Private label, FOB/CIF quotes."
@@ -104,3 +105,5 @@ Toilet cleaner brands choose acid strength, a thick or thin gel, a blue, green o
 ## Why source through GoodBiz Hygiene
 
 Toilet cleaners carry hazard labelling and, in some markets, child-resistant caps. GoodBiz Hygiene confirms the safety wording and closure type needed for your market before label artwork starts. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your destination and preferred strength and we will return a quotation.
+
+Acid-based grades can need hazard labelling and extra shipping papers, and our guide to [export documents for cleaning products](/blog/export-documents-cleaning-products/) lists what to ask for. Floor, bathroom and glass cleaners are in the same [surface and home cleaners range](/categories/surface-home-cleaners/).

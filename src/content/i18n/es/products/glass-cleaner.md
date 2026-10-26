@@ -1,5 +1,5 @@
 ---
-sourceHash: "a76fe73afa27"
+sourceHash: "30c0f836be53"
 title: "Limpiavidrios"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -97,3 +97,5 @@ Una marca de limpiavidrios elige la fórmula sin amoníaco o con amoníaco, un t
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 A los compradores de limpiavidrios les importan el resultado sin marcas y la calidad del pulverizador. GoodBiz Hygiene puede solicitar al fabricante botellas de muestra para que pueda probar ambos aspectos antes de pedir. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Envíenos el tamaño de la botella con pulverizador y su preferencia respecto al amoníaco, y le enviaremos una cotización.
+
+El limpiacristales suele ser el primer producto de una nueva gama de marca propia, y nuestra [guía de productos de limpieza de marca propia](/blog/private-label-cleaning-products-guide/) recorre el briefing, las muestras y el diseño. Los limpiadores de suelos, baños y multiusos a juego están en la gama de [limpiadores de superficies y del hogar](/categories/surface-home-cleaners/).

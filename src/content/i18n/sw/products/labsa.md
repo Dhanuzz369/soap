@@ -1,5 +1,5 @@
 ---
-sourceHash: "15d439c588c9"
+sourceHash: "f7335a2c4b58"
 title: "LABSA (Asidi ya Alkilibenzini Salfoniki ya Mnyororo Ulionyooka)"
 slug: labsa
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ LABSA inaunguza, kwa hivyo tumia vifaa vinavyostahimili asidi, glovu na kinga ya
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Wanunuzi wa LABSA ni wachanganyaji wa sabuni za kufulia wanaohitaji viambato hai thabiti na mafuta huru kidogo. GoodBiz Hygiene inaweza kupanga sampuli na cheti cha uchambuzi kutoka kwa mtengenezaji ili ujaribu kwenye tope lako mwenyewe kabla ya kontena la kwanza. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuma daraja lako, upendeleo wa ufungashaji na kiasi cha kila mwezi nasi tutarudi na nukuu ya bei.
+
+LABSA ni babuzi na husafirishwa kama bidhaa hatari, kwa hiyo soma mwongozo wetu wa [nyaraka za usafirishaji nje kwa bidhaa za usafi](/blog/export-documents-cleaning-products/) kabla ya kukodi usafiri. SLES na tambi za sabuni ziko katika [kundi la malighafi na bidhaa za viwandani](/categories/industrial-raw-materials/).

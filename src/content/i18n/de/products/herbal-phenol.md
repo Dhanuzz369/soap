@@ -1,5 +1,5 @@
 ---
-sourceHash: "40ef01b501de"
+sourceHash: "a7d6ca47c781"
 title: "Pflanzliches Phenol / Phenyl"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -107,3 +107,5 @@ Phenyl-Marken konkurrieren über die pflanzliche Ölmischung und das milchige Er
 ## Warum der Bezug über GoodBiz Hygiene
 
 Phenyl wird in Märkten verkauft, in denen Aussagen zu Desinfektionsmitteln reguliert sind, daher unterscheidet sich, was das Etikett aussagen darf. GoodBiz Hygiene klärt mit dem Hersteller, welche Einreihung und welche Aussagen gelten, bevor Sie das Artwork abschließen. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Nennen Sie uns Ihr Bestimmungsland, das bevorzugte pflanzliche Öl und die Packungsgrößen, und wir senden Ihnen ein Angebot.
+
+Unser Ratgeber [pflanzliches Phenol oder chemische Desinfektionsmittel](/blog/herbal-phenol-vs-chemical-disinfectants/) erklärt, wann ein Phenyl als Reiniger (3402 50) und wann als Desinfektionsmittel (3808 94) gilt. Boden-, WC- und Allzweckreiniger aus dem Sortiment [Oberflächen- und Haushaltsreiniger](/categories/surface-home-cleaners/) können im selben Container reisen.

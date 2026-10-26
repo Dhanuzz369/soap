@@ -1,5 +1,5 @@
 ---
-sourceHash: "f2bf93b5815c"
+sourceHash: "367702ea5e76"
 title: "Noodles de savon (base savon)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -95,3 +95,5 @@ Les acheteurs types sont des savonniers qui finissent leurs propres pains, des c
 ## Pourquoi passer par GoodBiz Hygiene
 
 Les savonniers achètent les noodles sur leur rapport de corps gras, leur humidité et leur couleur, et un léger écart sur l’un de ces points modifie le pain fini. GoodBiz Hygiene peut obtenir un échantillon et un certificat d’analyse pour un essai de broyage avant que vous ne passiez une commande de conteneur. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous votre rapport palme / palmiste, votre TFM cible et votre tonnage mensuel, et nous vous adresserons un devis.
+
+Le TFM des noodles fixe la qualité du pain fini, comme l’explique notre guide sur [les qualités de savon et le TFM](/blog/bath-soap-grades-tfm-explained/). Le LABSA et le SLES pour la fabrication de détergents sont dans la même gamme [matières premières et produits industriels](/categories/industrial-raw-materials/).

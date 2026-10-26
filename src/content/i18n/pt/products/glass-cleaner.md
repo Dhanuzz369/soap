@@ -1,5 +1,5 @@
 ---
-sourceHash: "a76fe73afa27"
+sourceHash: "30c0f836be53"
 title: "Limpa-vidros"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -97,3 +97,5 @@ Uma marca de limpa-vidros escolhe a fórmula sem amônia ou à base de amônia, 
 ## Por que comprar pela GoodBiz Hygiene
 
 Os compradores de limpa-vidros se importam com o resultado sem marcas e com a qualidade do pulverizador. A GoodBiz Hygiene pode pedir ao fabricante frascos de amostra, para que você teste os dois antes de fazer o pedido. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe o tamanho do frasco spray e a sua preferência quanto à amônia, e enviaremos uma cotação.
+
+O limpa-vidros costuma ser o primeiro produto de uma nova linha de marca própria, e o nosso [guia de produtos de limpeza com marca própria](/blog/private-label-cleaning-products-guide/) percorre o briefing, as amostras e a arte. Limpadores de pisos, banheiro e multiuso combinando estão na linha [limpadores de superfícies e uso doméstico](/categories/surface-home-cleaners/).

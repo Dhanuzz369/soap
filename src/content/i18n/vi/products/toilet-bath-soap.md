@@ -1,5 +1,5 @@
 ---
-sourceHash: "a3d644f8b2bd"
+sourceHash: "6c80f574c217"
 title: "Xà phòng tắm / xà phòng bánh"
 slug: toilet-bath-soap
 category: bath-personal-soaps
@@ -107,3 +107,5 @@ Nhà phân phối có thương hiệu xà phòng tắm riêng có thể chọn t
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Với một chương trình xà phòng tắm, công việc thực sự là phối hợp cấp TFM, hương liệu và trọng lượng bánh với giá bán trên kệ, và việc so sánh này dễ hơn khi thông qua một đối tác xuất khẩu thay vì nhiều báo giá từ các nhà máy. GoodBiz Hygiene có thể đưa hai hoặc ba cấp TFM ra cạnh nhau để Quý khách thấy mỗi mức giá mua được gì. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy gửi giá bán lẻ mục tiêu, trọng lượng bánh và các mùi hương ưa thích, chúng tôi sẽ phản hồi với các phương án về cấp độ.
+
+Trước khi so sánh báo giá, hãy đọc [giải thích các hạng xà phòng tắm](/blog/bath-soap-grades-tfm-explained/) để hiểu hạng 1, hạng 2 và TFM nghĩa là gì trên bảng thông số. Xà phòng thảo dược, glycerin, kháng khuẩn và khách sạn có trong cùng [nhóm xà phòng tắm và xà phòng cá nhân](/categories/bath-personal-soaps/).

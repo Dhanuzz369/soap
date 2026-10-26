@@ -1,5 +1,5 @@
 ---
-sourceHash: "332323d039a7"
+sourceHash: "c8da3d442a73"
 title: "Limpador de vasos sanitários"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -105,3 +105,5 @@ As marcas de limpador de vaso sanitário escolhem a força do ácido, um gel esp
 ## Por que comprar pela GoodBiz Hygiene
 
 Os limpadores de vaso sanitário levam rotulagem de perigo e, em alguns mercados, tampas à prova de crianças. A GoodBiz Hygiene confirma o texto de segurança e o tipo de fecho exigidos para o seu mercado antes de a arte do rótulo começar. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe o seu destino e a força preferida, e enviaremos uma cotação.
+
+As versões ácidas podem exigir rotulagem de perigo e papéis de transporte adicionais, e o nosso guia de [documentos de exportação para produtos de limpeza](/blog/export-documents-cleaning-products/) mostra o que pedir. Limpadores de pisos, banheiro e vidros estão na mesma linha [limpadores de superfícies e uso doméstico](/categories/surface-home-cleaners/).

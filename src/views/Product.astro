@@ -8,7 +8,7 @@ import GuideRows from '../components/GuideRows.astro';
 import QuoteCard from '../components/QuoteCard.astro';
 import CardGrid from '../components/CardGrid.astro';
 import type { ProductEntry, CategoryEntry } from '../lib/products';
-import type { BlogEntry } from '../lib/blog';
+import { fmtDate, type BlogEntry } from '../lib/blog';
 import { useI18n } from '../i18n/page';
 import { productJsonLd, faqJsonLd, absoluteUrl, buildKeywords } from '../lib/seo';
 import { productImagePath, productPicture, ogCard } from '../lib/product-image';
@@ -23,7 +23,7 @@ interface Props {
   guides: BlogEntry[];
 }
 const { product, category, related, guides } = Astro.props;
-const { info, ui, lp, fmt, lower } = useI18n(Astro.url);
+const { lang, info, ui, lp, fmt, lower } = useI18n(Astro.url);
 const P = ui.product;
 const d = product.data;
 const path = `/products/${d.slug}/`;
@@ -39,6 +39,8 @@ const breadcrumbs = [
   { name: d.title, url: url },
 ];
 const name = composeTitle(ui.common.titleH1, d.title);
+// "Last reviewed {date}" under the description, when the product file has a `reviewed` date.
+const [reviewedBefore, reviewedAfter = ''] = ui.post.reviewed.split('{date}');
 // The main search term (docs/seo-keywords.md): the product's `keyword`, else its name up to " / " or " (".
 const kw = d.keyword ?? lower(d.title.split(/\s*[/／(]\s*/)[0]);
 const K = ui.seo.keywords;
@@ -74,6 +76,7 @@ const media: HeroMedia | undefined = pic
   pageType="ItemPage"
   mainEntity={`${absUrl}#product`}
   breadcrumbs={breadcrumbs}
+  dateModified={d.reviewed}
   jsonLd={[productJsonLd({ ...d, category: category.data.title, image }, absUrl, ui.ld), faqJsonLd(d.faqs, info.hreflang, url)]}
   dark
 >
@@ -189,7 +192,16 @@ const media: HeroMedia | undefined = pic
   </section>
 
   <section class="wrap sec post-layout" aria-label={fmt(P.aboutAria, names)}>
-    <div class="prose"><EntryBody entry={product} /></div>
+    <div class="prose">
+      <EntryBody entry={product} />
+      {
+        d.reviewed && (
+          <p class="note product-reviewed">
+            {reviewedBefore}<time datetime={d.reviewed.toISOString().slice(0, 10)}>{fmtDate(d.reviewed, lang)}</time>{reviewedAfter}
+          </p>
+        )
+      }
+    </div>
   </section>
 
   {

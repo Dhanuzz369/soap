@@ -1,5 +1,5 @@
 ---
-sourceHash: "5a4a8b081395"
+sourceHash: "9186bb112e63"
 title: "Sabonete de glicerina / sabonete transparente"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ As marcas de sabonete transparente costumam se diferenciar pela cor e pelas incl
 ## Por que comprar pela GoodBiz Hygiene
 
 O sabonete transparente exige processamento dedicado; por isso, a GoodBiz Hygiene trabalha apenas com fabricantes que operam linhas de sabonete transparente. Fotografias da transparência e do acabamento superficial das barras podem ser providenciadas antes de as caixas serem lacradas, o que ajuda a detectar cedo opacidade ou suor. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe o peso de barra, a tonalidade e a fragrância preferidos, e enviaremos uma cotação.
+
+As barras transparentes têm, por natureza, TFM menor que o sabonete opaco, e o nosso guia sobre [graus de sabonete e TFM](/blog/bath-soap-grades-tfm-explained/) explica como ler esses números. Barras opacas, de ervas e de hotel estão na linha [sabonetes e higiene pessoal](/categories/bath-personal-soaps/).

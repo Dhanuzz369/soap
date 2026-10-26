@@ -1,11 +1,11 @@
 ---
-sourceHash: "d4c87bac15fb"
+sourceHash: "b7e27ce42927"
 title: "Pflanzliches Phenol oder chemische Desinfektionsmittel: Was Einkäufer im Handel wissen sollten"
 metaTitle: "Pflanzliches Phenol oder chemisches Desinfektionsmittel?"
 description: "Pflanzliches Phenol und chemische Desinfektionsmittel im Vergleich für Handelssortimente: Anwendung, Kennzeichnung, Einreihung und Fragen an den Exporteur."
 date: 2026-09-24
 tags: ["Pflanzliches Phenol", "Desinfektionsmittel", "Bodenreiniger", "Einkauf im Handel"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "Ist pflanzliches Phenol dasselbe wie ein chemisches Desinfektionsmittel?"
     a: "Nicht unbedingt. Pflanzliches Phenol ist meist eine Emulsion auf Basis pflanzlicher Öle, die vor allem als parfümierter Boden- und Abflussreiniger verkauft wird. Ein chemisches Desinfektionsmittel baut auf einem benannten Wirkstoff auf und wird normalerweise für diesen Zweck verkauft und reguliert. Wo ein Produkt einzuordnen ist, hängt von seiner Rezeptur, den Aussagen auf dem Etikett und den Vorschriften Ihres Marktes ab."

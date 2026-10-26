@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "Código HSN 3401 frente a 3402: guía del comprador para clasificar jabones y detergentes"
 metaTitle: "Código HSN 3401 o 3402: clasificar jabones y detergentes"
 description: "¿No sabe si su jabón o detergente es HSN 3401 o 3402? Guía clara de la división, con tabla por producto y las preguntas que conviene resolver antes."
 date: 2026-10-01
 tags: ["código HSN", "clasificación", "documentos de exportación"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "¿Qué diferencia hay entre el HSN 3401 y el 3402?"
     a: "La partida 3401 abarca el jabón propiamente dicho y ciertos productos de lavado para la piel. La partida 3402 abarca los agentes orgánicos de superficie activa distintos del jabón y las preparaciones para lavar y limpiar elaboradas con ellos, como los detergentes en polvo y líquidos."

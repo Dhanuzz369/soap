@@ -1,5 +1,5 @@
 ---
-sourceHash: "0632460c6e63"
+sourceHash: "ce5d989571e7"
 title: "Hotel- und Gästeseifen (Mini-Seifen)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
@@ -105,3 +105,5 @@ Eine Hotelgruppe oder ein Amenity-Händler liefert Logo und Markenfarben und wä
 ## Warum der Bezug über GoodBiz Hygiene
 
 Hotels kaufen nach Zimmernächten und brauchen Amenities, die vor der Eröffnung eines Hauses oder dem Saisonstart eintreffen. GoodBiz Hygiene plant Sendungen rückwärts ab Ihrem Liefertermin und kann beim Bezug von passendem Duschgel und Flüssigseife aus demselben Lieferantennetz helfen. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Senden Sie uns Ihr jährliches Volumen an Zimmernächten, das bevorzugte Stückgewicht und Ihr Marken-Artwork, und wir senden Ihnen ein Angebot.
+
+Hotelseifen werden wie normale Toilettenseife nach TFM eingestuft, wie unser Ratgeber zu [Seifenqualitäten](/blog/bath-soap-grades-tfm-explained/) erklärt. Flüssigseife und Duschgel für dieselben Zimmer finden Sie im Sortiment [Seifen und Körperpflege](/categories/bath-personal-soaps/).

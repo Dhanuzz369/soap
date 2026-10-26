@@ -1,5 +1,5 @@
 ---
-sourceHash: "40ef01b501de"
+sourceHash: "a7d6ca47c781"
 title: "Phenol thảo dược / phenyl"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -107,3 +107,5 @@ Các thương hiệu phenyl cạnh tranh bằng hỗn hợp tinh dầu thảo d�
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Phenyl được bán tại các thị trường nơi các tuyên bố về chất khử trùng được quản lý, nên những gì nhãn được phép ghi khác nhau. GoodBiz Hygiene xác nhận với nhà sản xuất cách phân loại và các tuyên bố nào được áp dụng trước khi Quý khách chốt thiết kế bao bì. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy cho chúng tôi biết nơi đến, loại tinh dầu thảo dược ưa thích và quy cách đóng gói, chúng tôi sẽ gửi báo giá.
+
+Hướng dẫn [phenol thảo dược và chất khử trùng hóa học](/blog/herbal-phenol-vs-chemical-disinfectants/) của chúng tôi giải thích khi nào nước lau phenyl được xem là chất tẩy rửa (3402 50) hay chất khử trùng (3808 94). Nước lau sàn, tẩy bồn cầu và tẩy rửa đa năng trong [nhóm nước tẩy rửa bề mặt và gia dụng](/categories/surface-home-cleaners/) có thể đi chung một container.

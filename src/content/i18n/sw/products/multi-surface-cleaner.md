@@ -1,5 +1,5 @@
 ---
-sourceHash: "412ca2d14ce7"
+sourceHash: "91416f83e94e"
 title: "Kisafishaji cha Nyuso Mbalimbali"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
@@ -101,3 +101,5 @@ Chapa ya nyuso mbalimbali huchagua kati ya umbo lililo tayari kutumika na lililo
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Kisafishaji cha matumizi mengi lazima kiwe laini vya kutosha kwa nyuso nyingi, kwa hivyo madai kwenye lebo yanapaswa kulingana na vipimo. GoodBiz Hygiene huuliza mtengenezaji ni nyuso zipi fomula imekaguliwa kwazo. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuambie orodha yako ya nyuso na umbo unalopendelea nasi tutarudi na nukuu ya bei.
+
+Spray ya nyuso nyingi mara nyingi huwa bidhaa kuu ya chapa ya usafi ya mnunuzi, na [mwongozo wetu wa hatua kwa hatua wa chapa ya mnunuzi](/blog/private-label-cleaning-products-guide/) unashughulikia maelezo ya mahitaji, sampuli na lebo. Visafishaji maalum vya sakafu, vioo na bafu viko katika [kundi la visafishaji vya nyuso na nyumbani](/categories/surface-home-cleaners/).

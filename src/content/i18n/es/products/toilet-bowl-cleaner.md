@@ -1,5 +1,5 @@
 ---
-sourceHash: "332323d039a7"
+sourceHash: "c8da3d442a73"
 title: "Limpiador de inodoros"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -105,3 +105,5 @@ Las marcas de limpiador de inodoros eligen la fuerza del ácido, un gel espeso o
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los limpiadores de inodoros llevan etiquetado de peligro y, en algunos mercados, tapas de seguridad para niños. GoodBiz Hygiene confirma el texto de seguridad y el tipo de cierre que necesita su mercado antes de iniciar el diseño de la etiqueta. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Indíquenos su destino y la concentración que prefiere, y le enviaremos una cotización.
+
+Las calidades ácidas pueden requerir etiquetado de peligro y documentos de transporte adicionales, y nuestra guía de [documentos de exportación para productos de limpieza](/blog/export-documents-cleaning-products/) indica qué pedir. Los limpiadores de suelos, baños y cristales están en la misma gama de [limpiadores de superficies y del hogar](/categories/surface-home-cleaners/).

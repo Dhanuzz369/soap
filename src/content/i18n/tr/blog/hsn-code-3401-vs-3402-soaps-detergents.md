@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "HSN Kodu 3401 ve 3402: Sabun ve Deterjanları Sınıflandırmak için Alıcı Rehberi"
 metaTitle: "HSN 3401 ve 3402: Sabun ve Deterjan Sınıflandırması"
 description: "Sabununuzun veya deterjanınızın HSN 3401 mi 3402 mi olduğundan emin değil misiniz? Ayrımın sade bir rehberi; ürün bazında tablo ve önce netleştirilecek sorular."
 date: 2026-10-01
 tags: ["HSN kodu", "sınıflandırma", "ihracat evrakları"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "HSN 3401 ile 3402 arasındaki fark nedir?"
     a: "3401 başlığı sabunun kendisini ve cilt için bazı yıkama ürünlerini kapsar. 3402 başlığı ise sabun dışındaki organik yüzey aktif maddeleri ve bunlardan yapılan, toz ve sıvı deterjanlar gibi yıkama ve temizlik müstahzarlarını kapsar."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "a3d644f8b2bd"
+sourceHash: "6c80f574c217"
 title: "Sabonete em barra / sabonete de banho"
 slug: toilet-bath-soap
 category: bath-personal-soaps
@@ -107,3 +107,5 @@ Um distribuidor com marca própria de sabonete de banho pode escolher o projeto 
 ## Por que comprar pela GoodBiz Hygiene
 
 Em um programa de sabonete em barra, o trabalho de verdade é ajustar o grau de TFM, a fragrância e o peso da barra ao preço de prateleira, e essa comparação é mais fácil com um único parceiro de exportação do que com várias cotações de fábricas. A GoodBiz Hygiene pode apresentar lado a lado dois ou três graus de TFM, para que você veja o que cada faixa de preço oferece. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Envie o seu preço-alvo no varejo, o peso da barra e as fragrâncias preferidas, e retornaremos com opções de grau.
+
+Antes de comparar cotações, leia [graus de sabonete explicados](/blog/bath-soap-grades-tfm-explained/) para entender o que grau 1, grau 2 e TFM significam numa especificação. Sabonetes de ervas, de glicerina, antibacterianos e de hotel estão na mesma linha [sabonetes e higiene pessoal](/categories/bath-personal-soaps/).

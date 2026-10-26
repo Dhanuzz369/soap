@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "HSN 3401 ou 3402: guia do comprador para classificar sabonetes e detergentes"
 metaTitle: "HSN 3401 ou 3402: como classificar sabonetes e detergentes"
 description: "Em dúvida se o seu sabonete ou detergente é HSN 3401 ou 3402? Um guia simples sobre a divisão, com tabela por produto e as perguntas a resolver primeiro."
 date: 2026-10-01
 tags: ["código HSN", "classificação", "documentos de exportação"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "Qual é a diferença entre o HSN 3401 e o 3402?"
     a: "A posição 3401 abrange o sabão propriamente dito e certos produtos de lavagem para a pele. A posição 3402 abrange os agentes orgânicos tensoativos que não são sabão e as preparações de lavagem e de limpeza feitas com eles, como sabões em pó e líquidos detergentes."

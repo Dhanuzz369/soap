@@ -1,5 +1,5 @@
 ---
-sourceHash: "40ef01b501de"
+sourceHash: "a7d6ca47c781"
 title: "Bitkisel Fenol / Fenil"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -107,3 +107,5 @@ Fenil markaları bitkisel yağ karışımı ve sütlü görünüm üzerinden rek
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Fenil, dezenfektan iddialarının düzenlendiği pazarlarda satılır; bu nedenle etiketin neyi belirtebileceği değişir. GoodBiz Hygiene, tasarımı kesinleştirmeden önce üreticiyle hangi sınıflandırma ve iddiaların geçerli olduğunu kontrol eder. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Varış yerinizi, tercih ettiğiniz bitkisel yağı ve ambalaj boyutlarını bildirin, size teklif verelim.
+
+[Bitkisel fenol ve kimyasal dezenfektanlar](/blog/herbal-phenol-vs-chemical-disinfectants/) rehberimiz, bir fenilin ne zaman temizleyici (3402 50), ne zaman dezenfektan (3808 94) sayıldığını açıklar. [Yüzey ve ev temizleyicileri gamındaki](/categories/surface-home-cleaners/) zemin, klozet ve çok amaçlı temizleyiciler aynı konteynerde taşınabilir.

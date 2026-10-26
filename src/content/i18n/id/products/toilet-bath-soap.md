@@ -1,5 +1,5 @@
 ---
-sourceHash: "a3d644f8b2bd"
+sourceHash: "6c80f574c217"
 title: "Sabun Mandi (Toilet Soap)"
 slug: toilet-bath-soap
 category: bath-personal-soaps
@@ -107,3 +107,5 @@ Distributor yang memiliki merek sabun mandi sendiri dapat memilih desain pembung
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Untuk program sabun mandi, pekerjaan sesungguhnya adalah mencocokkan grade TFM, aroma, dan berat batang dengan harga rak, dan perbandingan itu lebih mudah dilakukan lewat satu mitra ekspor daripada lewat beberapa penawaran dari berbagai pabrik. GoodBiz Hygiene dapat menyandingkan dua atau tiga grade TFM sehingga Anda dapat melihat apa yang ditawarkan tiap titik harga. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Kirimkan target harga ritel, berat batang, dan aroma pilihan Anda, lalu kami akan kembali dengan opsi grade.
+
+Sebelum membandingkan penawaran, baca [penjelasan grade sabun mandi](/blog/bath-soap-grades-tfm-explained/) untuk memahami arti grade 1, grade 2, dan TFM pada spesifikasi. Sabun herbal, gliserin, antibakteri, dan hotel ada di [rangkaian sabun mandi dan perawatan diri](/categories/bath-personal-soaps/) yang sama.

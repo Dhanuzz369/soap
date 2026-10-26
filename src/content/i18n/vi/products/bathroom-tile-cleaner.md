@@ -1,5 +1,5 @@
 ---
-sourceHash: "94216906b8fc"
+sourceHash: "cf73f343c941"
 title: "Nước tẩy rửa phòng tắm và gạch men"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
@@ -100,3 +100,5 @@ Các thương hiệu nước tẩy phòng tắm chọn giữa axit nhẹ an toà
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Nước tẩy phòng tắm được đánh giá dựa trên khả năng tẩy cặn vôi và độ an toàn cho vòi nước, crôm. GoodBiz Hygiene có thể đề nghị nhà sản xuất gửi cả mẫu loại dịu nhẹ lẫn loại mạnh để Quý khách thử trên loại nước của mình. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy chia sẻ độ cứng của nước, quy cách đóng gói và mùi hương, chúng tôi sẽ gửi báo giá.
+
+Các loại nước lau sàn, lau kính và tẩy bồn cầu có thể đi chung container với sản phẩm này nằm trong [nhóm nước tẩy rửa bề mặt và gia dụng](/categories/surface-home-cleaners/). Nếu Quý khách định in công dụng diệt khuẩn trên nhãn, hãy đọc trước bài [phenol thảo dược và chất khử trùng hóa học](/blog/herbal-phenol-vs-chemical-disinfectants/), vì công dụng ghi trên nhãn làm thay đổi việc đăng ký và phân loại.

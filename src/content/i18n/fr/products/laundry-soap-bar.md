@@ -1,5 +1,5 @@
 ---
-sourceHash: "547b4d376403"
+sourceHash: "f1704cab86aa"
 title: "Savon de lessive / pain détergent"
 slug: laundry-soap-bar
 category: laundry-care
@@ -104,3 +104,5 @@ Les distributeurs des marchés de lavage à la main veulent souvent une couleur 
 ## Pourquoi passer par GoodBiz Hygiene
 
 Le pain de lessive est une référence à forte rotation, tirée par le prix, où quelques centimes par pain décident de la commande. GoodBiz Hygiene peut chiffrer côte à côte des qualités riches en savon et des pains détergents pour que vous voyiez ce qu’un TFM plus bas vous fait économiser. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous votre marché cible, le poids du pain et la couleur souhaitée, et nous vous proposerons des options de qualité.
+
+Les savons de lessive sont classés comme savons en 3401 19, et non avec les détergents ; notre guide [code HSN 3401 ou 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explique la distinction. Lessive en poudre, liquide et assouplissant pour les mêmes acheteurs sont dans la gamme [entretien du linge](/categories/laundry-care/).

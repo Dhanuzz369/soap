@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf0393403b70"
+sourceHash: "e4e01699d6d9"
 title: "固体洗碗皂"
 slug: dish-wash-bar
 category: kitchen-care
@@ -103,3 +103,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 洗碗皂是按价格购买的，因此采购商比较的是每次洗涤成本而不是每块皂的成本。GoodBiz Hygiene可对多种皂块重量和包装类型报价，让您选出最适合自己市场的方案。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的皂块重量、包装类型和目标价格，我们会回复报价单。
+
+许多买家会在一批货中同时试订洗碗膏和洗洁精。具体步骤、成本和单据见我们的[如何从印度进口洗洁精](/blog/import-dish-wash-liquid-from-india/)指南，两种剂型均在[厨房清洁系列](/categories/kitchen-care/)中。

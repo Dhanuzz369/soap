@@ -1,5 +1,5 @@
 ---
-sourceHash: "2fb368c1aef4"
+sourceHash: "3ab35c7f503a"
 title: "大包装及机构用清洁产品"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
@@ -94,3 +94,5 @@ GoodBiz Hygiene是GoodBiz Global旗下的一家印度贸易型出口商，负责
 ## 为何通过GoodBiz Hygiene采购
 
 设施服务公司和酒店集团通常一次采购五到八种产品，因此混装集装箱为他们节省大量协调工作。GoodBiz Hygiene可为整个产品系列安排一份报价和一次发运。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请发送您的产品清单、数量和包装规格，我们会回复报价单。
+
+强碱性或强酸性浓缩液可能需按危险品运输，我们的[清洁产品出口单据指南](/blog/export-documents-cleaning-products/)列出了应索取的文件。供本地调配用的皂粒、LABSA和SLES同在[工业原料系列](/categories/industrial-raw-materials/)中。

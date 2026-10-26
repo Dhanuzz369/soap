@@ -1,5 +1,5 @@
 ---
-sourceHash: "e01f264e3e3e"
+sourceHash: "4ae767bdf766"
 title: "Sıvı Çamaşır Deterjanı"
 slug: liquid-detergent
 category: laundry-care
@@ -105,3 +105,5 @@ Sıvı deterjan markaları çoğunlukla şişe etiketine uyan bir yedek dolum po
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Makinede yıkama sıvıları ile elde yıkama sıvıları farklı köpük kontrolü gerektirir ve bunu yanlış yapmak şikâyetlere yol açar. GoodBiz Hygiene, bir kalite teklif etmeden önce üreticiyle amaçlanan yıkama yöntemini teyit eder. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Ürünün üstten yüklemeli, önden yüklemeli veya elde yıkama için olduğunu ve ambalaj boyutlarınızı bildirin, size teklif verelim.
+
+Formatlar arasında karar veriyorsanız, [toz deterjan ve sıvı deterjan](/blog/detergent-powder-vs-liquid-detergent/) karşılaştırmamız yıkama alışkanlıklarını, fiyatı ve navlunu inceler. [Çamaşır bakımı gamındaki](/categories/laundry-care/) yumuşatıcı ve çamaşır sabunları aynı siparişe eklenebilir.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "f923483b7544"
+sourceHash: "fab6a5425e7d"
 title: "Gel de banho / sabonete líquido corporal"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -104,3 +104,5 @@ As marcas de gel de banho competem pela história da fragrância e pelo visual d
 ## Por que comprar pela GoodBiz Hygiene
 
 O gel de banho costuma ser comprado por quem também precisa de amenities de hotel, e manter os dois em uma só fragrância evita uma segunda busca por fornecedor. A GoodBiz Hygiene pode cotar frascos de varejo, mini frascos e refis a granel como um único projeto. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe as fragrâncias e os tamanhos de embalagem preferidos, e enviaremos uma cotação.
+
+O gel de banho é classificado com o sabonete líquido para as mãos na 3401 30, e não com os detergentes; o nosso [guia HSN 3401 ou 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explica por quê. Barras e sabonete líquido nas mesmas fragrâncias estão na linha [sabonetes e higiene pessoal](/categories/bath-personal-soaps/).

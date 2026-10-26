@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "Graus de sabonete de banho explicados: TFM, grau 1 e grau 2, e por que isso importa"
 metaTitle: "Graus de sabonete: TFM, grau 1 ou grau 2 explicados"
 description: "O que significa TFM na especificação de um sabonete de banho, como os graus 1 e 2 são usados no comércio e como escolher o grau certo para o seu mercado."
 date: 2026-08-27
 tags: ["sabonete de banho", "TFM", "graus de sabonete", "especificações"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "O que significa TFM em um sabonete de banho?"
     a: "TFM significa matéria graxa total (Total Fatty Matter). É a porcentagem da barra, em peso, formada pelos ácidos graxos dos óleos e gorduras usados na saponificação. Um TFM mais alto geralmente significa mais sabão propriamente dito e menos cargas, água e outros aditivos."

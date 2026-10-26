@@ -1,5 +1,5 @@
 ---
-sourceHash: "329715bb8890"
+sourceHash: "e0d1945ad630"
 title: "Jabón herbal y ayurvédico"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -101,3 +101,5 @@ Un importador que construye una marca de cuidado natural suele elegir dos o tres
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Las gamas herbales suelen comercializarse con declaraciones sobre los ingredientes, y ahí es donde los errores salen más caros. GoodBiz Hygiene solicita a cada fabricante la lista de ingredientes que respalda una declaración antes de que figure en su caja, de modo que el envase no prometa más de lo que la fórmula ofrece. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Comparta el posicionamiento que desea y las declaraciones que necesita hacer, y le propondremos variedades herbales adecuadas.
+
+Los ingredientes herbales venden la pastilla, pero la calidad decide cuánto dura; vea [las calidades del jabón y el TFM explicados](/blog/bath-soap-grades-tfm-explained/). Las pastillas de tocador, de glicerina y antibacterianas están en la misma gama de [jabones y cuidado personal](/categories/bath-personal-soaps/).

@@ -1,5 +1,5 @@
 ---
-sourceHash: "d51786edaf5f"
+sourceHash: "44d84f27fc48"
 title: "SLES (Natriumlaurylethersulfat)"
 slug: sles
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ SLES verdickt mit Salz, daher bauen viele Formulierer die Viskosität mit Natriu
 ## Warum der Bezug über GoodBiz Hygiene
 
 Käufer von SLES stellen Shampoos, Flüssigseifen und Geschirrspülmittel her, bei denen Farbe, Geruch und der Gehalt an 1,4-Dioxan zählen. GoodBiz Hygiene kann beim Hersteller ein Muster und ein Analysezertifikat anfordern, bevor Sie sich auf einen Container festlegen. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Nennen Sie uns Ihren bevorzugten Wirkstoffanteil, den Ethoxylierungsgrad und Ihr monatliches Volumen, und wir senden Ihnen ein Angebot.
+
+SLES wird als anionischer grenzflächenaktiver Stoff in 3402 39 eingereiht, getrennt von fertigen Waschmitteln; siehe unseren [Ratgeber zu HSN 3401 und 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/). LABSA und Seifennudeln gehören zum selben Sortiment [Rohstoffe und Industrieprodukte](/categories/industrial-raw-materials/).

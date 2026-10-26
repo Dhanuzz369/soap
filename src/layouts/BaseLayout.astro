@@ -33,6 +33,8 @@ interface Props {
   mainEntity?: string;
   /** Blog posts: og:type article with its dates and tags. */
   article?: { published: Date; modified?: Date; tags?: string[] };
+  /** When the page's facts were last checked (WebPage dateModified), for pages that are not articles. */
+  dateModified?: Date;
   jsonLd?: object[];
   /** Breadcrumbs with names in the page's language and localized URLs. */
   breadcrumbs?: { name: string; url: string }[];
@@ -57,6 +59,7 @@ const {
   pageType,
   mainEntity,
   article,
+  dateModified,
   jsonLd = [],
   breadcrumbs,
   noindex = false,
@@ -91,7 +94,7 @@ const schemas: object[] = [
           image: ogImage,
           breadcrumb: hasCrumbs,
           mainEntity,
-          dateModified: article?.modified ?? article?.published,
+          dateModified: article?.modified ?? article?.published ?? dateModified,
         }),
       ]),
   ...(hasCrumbs ? [breadcrumbJsonLd(breadcrumbs!)] : []),

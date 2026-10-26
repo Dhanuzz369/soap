@@ -1,5 +1,5 @@
 ---
-sourceHash: "f923483b7544"
+sourceHash: "fab6a5425e7d"
 title: "Sabun Mandi Cair / Gel Mandi"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -104,3 +104,5 @@ Merek sabun mandi cair bersaing lewat cerita aroma dan tampilan botol, sehingga 
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Gel mandi sering dibeli oleh pembeli yang juga membutuhkan perlengkapan mandi hotel, dan menjaga keduanya dalam satu aroma menghemat pencarian pemasok kedua. GoodBiz Hygiene dapat menawarkan botol ritel, botol mini, dan isi ulang curah sebagai satu proyek. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan aroma dan ukuran kemasan pilihan Anda, lalu kami akan mengirimkan penawaran.
+
+Sabun mandi cair diklasifikasikan bersama sabun cuci tangan cair di 3401 30, bukan bersama deterjen; [panduan HSN 3401 vs 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) kami menjelaskan alasannya. Sabun batang dan sabun cuci tangan dengan aroma serupa ada di [rangkaian sabun mandi dan perawatan diri](/categories/bath-personal-soaps/).

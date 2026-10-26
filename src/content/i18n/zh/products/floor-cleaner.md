@@ -1,5 +1,5 @@
 ---
-sourceHash: "847242946928"
+sourceHash: "ace444adc458"
 title: "地板清洁剂"
 slug: floor-cleaner
 category: surface-home-cleaners
@@ -104,3 +104,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 地板清洁剂靠香型和一瓶能稀释多少来销售。GoodBiz Hygiene可对经济型和浓缩型报价并注明稀释比例，让您比较每桶拖地水的成本。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的香型范围、浓度和包装规格，我们会回复报价单。
+
+在加香地板清洁剂和消毒型产品之间犹豫？我们的[草本酚类消毒液与化学消毒剂](/blog/herbal-phenol-vs-chemical-disinfectants/)指南比较了功效宣称、注册和归类，[表面与家居清洁剂系列](/categories/surface-home-cleaners/)中的其他产品也可与之拼柜。

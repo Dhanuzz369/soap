@@ -6,6 +6,7 @@ import PageHero from '../components/PageHero.astro';
 import CardGrid from '../components/CardGrid.astro';
 import AnswerWall from '../components/AnswerWall.astro';
 import QuoteCard from '../components/QuoteCard.astro';
+import EntryBody from '../components/EntryBody.astro';
 import { faqJsonLd, itemListJsonLd, buildKeywords, absoluteUrl } from '../lib/seo';
 import { productImagePath } from '../lib/product-image';
 import { composeTitle } from '../lib/heading';
@@ -102,6 +103,18 @@ const list = itemListJsonLd(
     </div>
     <CardGrid products={products} />
   </section>
+
+  {
+    /* The range overview (the category file's Markdown body): how to choose, classification and
+       shipping notes, with links to the buyer guides. */
+    (category.body ?? '').trim() && (
+      <section class="wrap sec post-layout cat-overview">
+        <div class="prose">
+          <EntryBody entry={category} />
+        </div>
+      </section>
+    )
+  }
 
   {faqs.length > 0 && <AnswerWall faqs={faqs} heading={ui.common.straightAnswers} id="faq" />}
 

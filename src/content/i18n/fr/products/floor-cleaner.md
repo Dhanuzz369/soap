@@ -1,5 +1,5 @@
 ---
-sourceHash: "847242946928"
+sourceHash: "ace444adc458"
 title: "Nettoyant sols"
 slug: floor-cleaner
 category: surface-home-cleaners
@@ -104,3 +104,5 @@ Les marques de nettoyant sols choisissent une famille olfactive, comme la lavand
 ## Pourquoi passer par GoodBiz Hygiene
 
 Un nettoyant sols se vend sur son parfum et sur son rendement à la dilution. GoodBiz Hygiene peut chiffrer les qualités économique et concentrée en indiquant le taux de dilution, pour que vous compariez le coût par seau de lavage. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Présentez-nous votre gamme de parfums, la concentration et les formats, et nous vous adresserons un devis.
+
+Vous hésitez entre un nettoyant sols parfumé et un produit de type désinfectant ? Notre guide [phénol aux plantes ou désinfectants chimiques](/blog/herbal-phenol-vs-chemical-disinfectants/) compare allégations, enregistrement et classement, et le reste de la gamme [nettoyants surfaces et maison](/categories/surface-home-cleaners/) peut partager votre conteneur.

@@ -3,6 +3,7 @@ title: "Liquid Detergent"
 slug: liquid-detergent
 category: laundry-care
 order: 3
+reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Liquid Laundry Detergent Exporter & Supplier from India"
 metaDescription: "Liquid laundry detergent from vetted Indian manufacturers: 500 ml to 20 L, hand-wash and machine grades. Private label, mixed containers, FOB/CIF quotes."
@@ -104,3 +105,5 @@ Liquid detergent brands often add a refill pouch that matches the bottle label, 
 ## Why source through GoodBiz Hygiene
 
 Machine-wash liquids and hand-wash liquids need different foam control, and getting this wrong creates complaints. GoodBiz Hygiene confirms the intended wash method with the manufacturer before a grade is quoted. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us whether the product is for top-load, front-load or hand washing, plus your pack sizes, and we will return a quotation.
+
+If you are deciding between formats, our comparison of [detergent powder and liquid detergent](/blog/detergent-powder-vs-liquid-detergent/) looks at washing habits, price and freight. Softener and laundry bars from the [laundry care range](/categories/laundry-care/) can be added to the same order.

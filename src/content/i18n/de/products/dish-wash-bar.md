@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf0393403b70"
+sourceHash: "e4e01699d6d9"
 title: "Spülseife (festes Geschirrspülmittel)"
 slug: dish-wash-bar
 category: kitchen-care
@@ -103,3 +103,5 @@ Marken wählen zwischen nur Stück, Stück mit Scheuerschwamm und Dosenpackung, 
 ## Warum der Bezug über GoodBiz Hygiene
 
 Spülseifen werden über den Preis gekauft, daher vergleichen Käufer die Kosten je Spülgang statt der Kosten je Stück. GoodBiz Hygiene kann mehrere Stückgewichte und Packungsarten anbieten, damit Sie die beste Lösung für Ihren Markt wählen können. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Nennen Sie uns Stückgewicht, Packungsart und Zielpreis, und wir senden Ihnen ein Angebot.
+
+Viele Käufer testen Spülpaste und Spülmittel in einer Sendung. Schritte, Kosten und Dokumente stehen in unserem Ratgeber [Geschirrspülmittel aus Indien importieren](/blog/import-dish-wash-liquid-from-india/), und beide Formate finden Sie im Sortiment [Geschirr und Küche](/categories/kitchen-care/).

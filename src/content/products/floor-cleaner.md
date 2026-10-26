@@ -3,6 +3,7 @@ title: "Floor Cleaner"
 slug: floor-cleaner
 category: surface-home-cleaners
 order: 1
+reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Private Label Floor Cleaner Exporter & Supplier from India"
 metaDescription: "Floor cleaner in lavender, rose, jasmine, lemon and pine from vetted Indian manufacturers, 500 ml to 20 L. Private label, mixed containers and FOB/CIF quotes."
@@ -103,3 +104,5 @@ Floor cleaner brands choose a scent family, such as lavender, rose, jasmine or p
 ## Why source through GoodBiz Hygiene
 
 Floor cleaners are sold on fragrance and on how far a bottle dilutes. GoodBiz Hygiene can quote economy and concentrated strength with the dilution ratio stated, so you can compare cost per mop bucket. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your fragrance range, strength and pack sizes and we will return a quotation.
+
+Choosing between a scented floor cleaner and a disinfectant-type product? Our guide to [herbal phenol and chemical disinfectants](/blog/herbal-phenol-vs-chemical-disinfectants/) compares claims, registration and classification, and the rest of the [surface and home cleaners range](/categories/surface-home-cleaners/) can share your container.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "3b93bcbf0059"
+sourceHash: "c9f1e55506d3"
 title: "Sabun Cuci Tangan Cair"
 slug: liquid-hand-wash
 category: bath-personal-soaps
@@ -102,3 +102,5 @@ Kebanyakan merek sabun cuci tangan memulai dari botol dan pompa stok produsen, y
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Sabun cuci tangan dibeli baik sebagai produk ritel maupun sebagai isi ulang dispenser, dan keduanya memiliki kebutuhan kemasan dan harga yang sangat berbeda. GoodBiz Hygiene dapat menawarkan ukuran ritel dan institusional bersamaan sehingga keduanya terkirim dalam satu kontainer. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Kirimkan ukuran kemasan sasaran, preferensi aroma, dan klaim antibakteri yang Anda perlukan, lalu kami akan mengirimkan penawaran.
+
+Sabun cuci tangan cair bukan sabun dalam arti kimia, tetapi diklasifikasikan di pos 3401, dan [panduan HSN 3401 vs 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) kami menjelaskan alasannya. Sabun batang dan sabun mandi cair dengan aroma serupa ada di [rangkaian sabun mandi dan perawatan diri](/categories/bath-personal-soaps/).

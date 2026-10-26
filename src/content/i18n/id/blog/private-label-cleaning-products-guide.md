@@ -1,11 +1,11 @@
 ---
-sourceHash: "7f212b113545"
+sourceHash: "08c0a2083e95"
 title: "Produk Pembersih Private Label: Panduan Langkah demi Langkah untuk Distributor"
 metaTitle: "Produk Pembersih Private Label: Panduan Distributor"
 description: "Cara distributor meluncurkan merek pembersih sendiri dari India: memilih lini, membuat brief produsen, menyetujui sampel, desain, pengemasan, dan pengiriman."
 date: 2026-09-10
 tags: ["private label", "distributor", "perawatan rumah", "OEM"]
-relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener"]
+relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener", "glass-cleaner"]
 faqs:
   - q: "Apakah saya memerlukan pabrik atau tim formulasi sendiri untuk memulai private label?"
     a: "Tidak. Anda menyediakan merek, pasar sasaran, dan positioning. Produsen menyediakan formula dasar yang telah terbukti yang dapat disesuaikan untuk aroma, warna, dan tekstur, dan GoodBiz Hygiene mengoordinasikan prosesnya dan pengirimannya."

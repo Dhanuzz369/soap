@@ -1,5 +1,5 @@
 ---
-sourceHash: "d51786edaf5f"
+sourceHash: "44d84f27fc48"
 title: "SLES (Laurili Eta Salfeti ya Sodiamu)"
 slug: sles
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ SLES hunenepa kwa chumvi, kwa hivyo watengenezaji wengi wa fomula hujenga unene 
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Wanunuzi wa SLES hutengeneza shampoo, sabuni za mikono na sabuni za maji za kuosha vyombo, ambapo rangi, harufu na kiwango cha 1,4-dioxane ni muhimu. GoodBiz Hygiene inaweza kuomba sampuli na cheti cha uchambuzi kutoka kwa mtengenezaji kabla hujakubali kontena. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuambie asilimia ya viambato hai unayopendelea, kiwango cha ethoxylation na kiasi cha kila mwezi nasi tutarudi na nukuu ya bei.
+
+SLES huainishwa kama kiambato amilifu cha uso cha aina ya anioni chini ya 3402 39, tofauti na sabuni zilizokamilika; tazama [mwongozo wetu wa HSN 3401 dhidi ya 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/). LABSA na tambi za sabuni ziko katika [kundi la malighafi na bidhaa za viwandani](/categories/industrial-raw-materials/).

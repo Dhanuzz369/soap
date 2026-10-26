@@ -1,11 +1,11 @@
 ---
-sourceHash: "d4c87bac15fb"
+sourceHash: "b7e27ce42927"
 title: "Phenol thảo dược và chất khử trùng hóa học: những điều người mua bán lẻ nên biết"
 metaTitle: "Phenol thảo dược hay chất khử trùng hóa học?"
 description: "So sánh phenol thảo dược với chất khử trùng hóa học cho dòng bán lẻ: khác nhau về cách dùng, nhãn, phân loại và điều cần hỏi nhà xuất khẩu trước tiên."
 date: 2026-09-24
 tags: ["phenol thảo dược", "chất khử trùng", "nước lau sàn", "mua hàng bán lẻ"]
-relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
+relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner", "bathroom-tile-cleaner"]
 faqs:
   - q: "Phenol thảo dược có giống chất khử trùng hóa học không?"
     a: "Không nhất thiết. Phenol thảo dược thường là nhũ tương gốc dầu thực vật, được bán chủ yếu như chất tẩy sàn và cống có mùi thơm. Chất khử trùng hóa học được xây dựng quanh một hoạt chất có tên và thường được bán và quản lý cho mục đích đó. Sản phẩm thuộc nhóm nào phụ thuộc vào công thức, các tuyên bố trên nhãn và quy định của thị trường của Quý khách."

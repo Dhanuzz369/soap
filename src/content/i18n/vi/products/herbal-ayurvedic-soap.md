@@ -1,5 +1,5 @@
 ---
-sourceHash: "329715bb8890"
+sourceHash: "e0d1945ad630"
 title: "Xà phòng thảo dược và Ayurveda"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -101,3 +101,5 @@ Nhà nhập khẩu xây dựng thương hiệu chăm sóc tự nhiên thường 
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Dòng thảo dược thường được quảng bá dựa trên tuyên bố về thành phần, và đây là nơi sai sót gây tốn kém nhất. GoodBiz Hygiene yêu cầu từng nhà sản xuất cung cấp danh sách thành phần đứng sau một tuyên bố trước khi tuyên bố đó được in lên hộp carton của Quý khách, để bao bì không hứa hẹn nhiều hơn những gì công thức mang lại. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy chia sẻ định vị dự kiến và các tuyên bố Quý khách cần nêu, chúng tôi sẽ đề xuất các chủng loại thảo dược phù hợp.
+
+Thành phần thảo dược giúp bán được hàng, nhưng hạng xà phòng quyết định độ bền khi dùng; xem [giải thích các hạng xà phòng tắm và TFM](/blog/bath-soap-grades-tfm-explained/). Xà phòng tắm thông thường, glycerin và kháng khuẩn có trong cùng [nhóm xà phòng tắm và xà phòng cá nhân](/categories/bath-personal-soaps/).

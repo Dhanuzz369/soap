@@ -1,5 +1,5 @@
 ---
-sourceHash: "e01f264e3e3e"
+sourceHash: "4ae767bdf766"
 title: "Nước giặt"
 slug: liquid-detergent
 category: laundry-care
@@ -105,3 +105,5 @@ Các thương hiệu nước giặt thường bổ sung túi refill đồng bộ
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Nước giặt cho máy giặt và nước giặt cho giặt tay cần kiểm soát bọt khác nhau, và làm sai điều này sẽ gây ra khiếu nại. GoodBiz Hygiene xác nhận phương pháp giặt dự kiến với nhà sản xuất trước khi báo giá một cấp độ. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy cho chúng tôi biết sản phẩm dành cho máy cửa trên, máy cửa trước hay giặt tay, cùng quy cách đóng gói của Quý khách, chúng tôi sẽ gửi báo giá.
+
+Nếu Quý khách đang cân nhắc giữa các dạng sản phẩm, bài so sánh [bột giặt và nước giặt](/blog/detergent-powder-vs-liquid-detergent/) của chúng tôi xem xét thói quen giặt, giá và cước vận chuyển. Nước xả vải và xà phòng giặt dạng bánh trong [nhóm chăm sóc đồ giặt](/categories/laundry-care/) có thể thêm vào cùng đơn hàng.

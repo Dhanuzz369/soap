@@ -1,5 +1,5 @@
 ---
-sourceHash: "329715bb8890"
+sourceHash: "e0d1945ad630"
 title: "Sabonete de ervas e ayurvédico"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -101,3 +101,5 @@ Um importador que constrói uma marca de cuidados naturais normalmente escolhe d
 ## Por que comprar pela GoodBiz Hygiene
 
 As linhas de ervas costumam ser comercializadas com base em alegações sobre ingredientes, e é aí que os erros custam mais. A GoodBiz Hygiene pede a cada fabricante a lista de ingredientes que embasa uma alegação antes de ela ir para a sua caixa, para que a embalagem não prometa mais do que a fórmula entrega. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe o posicionamento pretendido e as alegações que você precisa fazer, e proporemos variedades de ervas correspondentes.
+
+Os ingredientes de ervas vendem a barra, mas é o grau que decide quanto ela dura; veja [graus de sabonete e TFM explicados](/blog/bath-soap-grades-tfm-explained/). Sabonetes comuns, de glicerina e antibacterianos estão na mesma linha [sabonetes e higiene pessoal](/categories/bath-personal-soaps/).

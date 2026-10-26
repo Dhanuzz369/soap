@@ -1,5 +1,5 @@
 ---
-sourceHash: "40ef01b501de"
+sourceHash: "a7d6ca47c781"
 title: "Fenol herbal / fenil"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -107,3 +107,5 @@ Las marcas de fenil compiten por la mezcla de aceites herbales y el aspecto lech
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 El fenil se vende en mercados donde las declaraciones de desinfectante están reguladas, por lo que lo que puede decir la etiqueta varía. GoodBiz Hygiene confirma con el fabricante qué clasificación y qué declaraciones se aplican antes de que usted ultime el diseño. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Indíquenos su destino, el aceite herbal que prefiere y los tamaños de envase, y le enviaremos una cotización.
+
+Nuestra guía [fenol herbal frente a desinfectantes químicos](/blog/herbal-phenol-vs-chemical-disinfectants/) explica cuándo un fenilo se trata como limpiador (3402 50) o como desinfectante (3808 94). Los limpiadores de suelos, inodoros y multiusos de la gama de [limpiadores de superficies y del hogar](/categories/surface-home-cleaners/) pueden viajar en el mismo contenedor.

@@ -1,11 +1,11 @@
 ---
-sourceHash: "7f212b113545"
+sourceHash: "08c0a2083e95"
 title: "Sản phẩm tẩy rửa nhãn riêng: hướng dẫn từng bước dành cho nhà phân phối"
 metaTitle: "Sản phẩm tẩy rửa nhãn riêng: hướng dẫn nhà phân phối"
 description: "Cách nhà phân phối ra mắt thương hiệu tẩy rửa riêng từ Ấn Độ: chọn dòng sản phẩm, lập yêu cầu, duyệt mẫu, thiết kế bao bì, đóng gói và vận chuyển."
 date: 2026-09-10
 tags: ["nhãn riêng", "nhà phân phối", "chăm sóc gia đình", "OEM"]
-relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener"]
+relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener", "glass-cleaner"]
 faqs:
   - q: "Tôi có cần nhà máy hoặc đội ngũ pha chế riêng để bắt đầu làm nhãn riêng không?"
     a: "Không. Quý khách cung cấp thương hiệu, thị trường mục tiêu và định vị. Nhà sản xuất cung cấp công thức nền đã được kiểm chứng có thể điều chỉnh về hương liệu, màu sắc và kết cấu, còn GoodBiz Hygiene điều phối quy trình và lô hàng."

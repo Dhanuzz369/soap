@@ -1,5 +1,5 @@
 ---
-sourceHash: "2fb368c1aef4"
+sourceHash: "3ab35c7f503a"
 title: "Bahan Kimia Pembersih Curah dan Institusional"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
@@ -94,3 +94,5 @@ Mulailah dari pelanggan Anda. Pemasok hotel membutuhkan sabun cuci tangan, pembe
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Perusahaan jasa fasilitas dan grup hotel biasanya membeli lima hingga delapan produk sekaligus, sehingga kontainer campuran menghemat banyak koordinasi bagi mereka. GoodBiz Hygiene dapat mengatur satu penawaran dan satu pengiriman untuk seluruh lini. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Kirimkan daftar produk, volume, dan ukuran kemasan Anda, lalu kami akan mengirimkan penawaran.
+
+Konsentrat yang sangat basa atau asam dapat dikirim sebagai barang berbahaya, dan panduan kami tentang [dokumen ekspor untuk produk pembersih](/blog/export-documents-cleaning-products/) mencantumkan dokumen yang perlu diminta. Soap noodle, LABSA, dan SLES untuk pencampuran lokal ada di [rangkaian bahan baku dan produk industri](/categories/industrial-raw-materials/) yang sama.

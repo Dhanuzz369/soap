@@ -1,5 +1,5 @@
 ---
-sourceHash: "36c4cfd3090d"
+sourceHash: "82edc50d27ca"
 title: "洗洁精／洗碗凝胶"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -104,3 +104,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 洗碗产品的采购商分为两类：想要品牌瓶装的超市，和想要20 L大桶的餐饮企业。GoodBiz Hygiene可用同一配方对两者分别报价，使供应更简单。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的有效物含量目标、香型和包装组合，我们会回复报价单。
+
+关于成本、起订量、单据和运输的逐步说明，请阅读[如何从印度进口洗洁精](/blog/import-dish-wash-liquid-from-india/)。适合用百洁布洗碗的市场所用的洗碗膏，同在[厨房清洁系列](/categories/kitchen-care/)中。

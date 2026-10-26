@@ -1,5 +1,5 @@
 ---
-sourceHash: "36c4cfd3090d"
+sourceHash: "82edc50d27ca"
 title: "Sabuni ya Maji ya Kuosha Vyombo / Jeli"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -104,3 +104,5 @@ Chapa za rejareja za kuosha vyombo kwa kawaida huchagua umbo la chupa kutoka kwa
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Wanunuzi wa sabuni ya kuosha vyombo hugawanyika kati ya maduka makubwa yanayotaka chupa zenye chapa na wapishi wa huduma za chakula wanaotaka galoni kubwa za 20 L. GoodBiz Hygiene inaweza kutoa nukuu ya zote mbili kutoka kwa fomula ileile ili kurahisisha usambazaji. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Shiriki lengo lako la viambato hai, harufu na mchanganyiko wa vifungashio nasi tutarudi na nukuu ya bei.
+
+Kwa gharama, MOQ, nyaraka na usafirishaji hatua kwa hatua, soma [jinsi ya kuagiza sabuni ya maji ya kuosha vyombo kutoka India](/blog/import-dish-wash-liquid-from-india/). Sabuni za vipande za kuosha vyombo kwa masoko yanayotumia sifongo ziko katika [kundi la kuosha vyombo na jikoni](/categories/kitchen-care/).

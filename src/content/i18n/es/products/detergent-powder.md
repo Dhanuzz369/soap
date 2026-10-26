@@ -1,5 +1,5 @@
 ---
-sourceHash: "1a547e59ad40"
+sourceHash: "9bdf91bdfe1b"
 title: "Detergente en polvo"
 slug: detergent-powder
 category: laundry-care
@@ -105,3 +105,5 @@ Los importadores que ponen su marca a un polvo suelen elegir el diseño de la bo
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los compradores de polvo van desde distribuidores de sobres en el comercio tradicional hasta cadenas de supermercados, y cada uno necesita una calidad y un envase distintos. GoodBiz Hygiene puede cotizar en una sola oferta polvos económicos y premium con los formatos de envase correspondientes. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Envíenos su precio objetivo por kilogramo, los tamaños de envase y el método de lavado, y le sugeriremos las calidades adecuadas.
+
+¿No sabe si en su mercado se venderá mejor el polvo o el líquido? Nuestra comparación de [detergente en polvo y detergente líquido](/blog/detergent-powder-vs-liquid-detergent/) expone los factores decisivos, y la gama de [cuidado de la ropa](/categories/laundry-care/) muestra lo que puede combinar en el mismo contenedor.

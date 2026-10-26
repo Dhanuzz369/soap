@@ -1,5 +1,5 @@
 ---
-sourceHash: "d51786edaf5f"
+sourceHash: "44d84f27fc48"
 title: "SLES (Natrium Lauril Eter Sulfat)"
 slug: sles
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ SLES mengental dengan garam, sehingga banyak peracik membangun viskositas dengan
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Pembeli SLES membuat sampo, sabun cuci tangan, dan sabun cuci piring cair, yang mementingkan warna, bau, dan kadar 1,4-dioksan. GoodBiz Hygiene dapat meminta sampel dan sertifikat analisis dari produsen sebelum Anda menetapkan satu kontainer. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan persentase aktif, tingkat etoksilasi, dan volume bulanan pilihan Anda, lalu kami akan mengirimkan penawaran.
+
+SLES diklasifikasikan sebagai bahan aktif permukaan anionik di 3402 39, terpisah dari deterjen jadi; lihat [panduan HSN 3401 vs 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) kami. LABSA dan soap noodle ada di [rangkaian bahan baku dan produk industri](/categories/industrial-raw-materials/) yang sama.

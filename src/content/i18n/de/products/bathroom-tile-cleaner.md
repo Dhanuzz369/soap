@@ -1,5 +1,5 @@
 ---
-sourceHash: "94216906b8fc"
+sourceHash: "cf73f343c941"
 title: "Bad- und Fliesenreiniger"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
@@ -100,3 +100,5 @@ Marken für Badreiniger wählen zwischen einer milden, chromschonenden Säure un
 ## Warum der Bezug über GoodBiz Hygiene
 
 Badreiniger werden an der Kalkentfernung und an der Verträglichkeit für Armaturen und Chrom gemessen. GoodBiz Hygiene kann beim Hersteller sowohl ein mildes als auch ein starkes Muster anfordern, damit Sie mit Ihrer Wasserart testen können. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Teilen Sie uns Ihre Wasserhärte, Packungsgrößen und Düfte mit, und wir senden Ihnen ein Angebot.
+
+Boden-, Glas- und WC-Reiniger, die mit in den Container passen, finden Sie im Sortiment [Oberflächen- und Haushaltsreiniger](/categories/surface-home-cleaners/). Wenn Sie eine keimtötende Aussage auf das Etikett drucken möchten, lesen Sie zuerst [pflanzliches Phenol oder chemische Desinfektionsmittel](/blog/herbal-phenol-vs-chemical-disinfectants/), denn Aussagen verändern Registrierung und Einreihung.

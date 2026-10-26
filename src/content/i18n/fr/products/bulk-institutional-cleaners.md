@@ -1,5 +1,5 @@
 ---
-sourceHash: "2fb368c1aef4"
+sourceHash: "3ab35c7f503a"
 title: "Produits d’entretien en vrac et pour collectivités"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
@@ -94,3 +94,5 @@ Partez de vos clients. Un fournisseur d’hôtels a besoin de savon pour les mai
 ## Pourquoi passer par GoodBiz Hygiene
 
 Les sociétés de services aux bâtiments et les groupes hôteliers achètent généralement cinq à huit produits à la fois : un conteneur mixte leur épargne beaucoup de coordination. GoodBiz Hygiene peut établir un seul devis et organiser une seule expédition pour toute la gamme. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Envoyez-nous votre liste de produits, vos volumes et vos formats, et nous vous adresserons un devis.
+
+Les concentrés fortement alcalins ou acides peuvent voyager comme marchandises dangereuses, et notre guide des [documents d’export pour les produits d’entretien](/blog/export-documents-cleaning-products/) liste les papiers à demander. Les noodles de savon, le LABSA et le SLES pour la formulation locale sont dans la même gamme [matières premières et produits industriels](/categories/industrial-raw-materials/).

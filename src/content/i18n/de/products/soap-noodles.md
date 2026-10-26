@@ -1,5 +1,5 @@
 ---
-sourceHash: "f2bf93b5815c"
+sourceHash: "367702ea5e76"
 title: "Seifennudeln (Seifenbasis)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -95,3 +95,5 @@ Typische Käufer sind Seifenhersteller, die ihre Stücke selbst veredeln, Lohnab
 ## Warum der Bezug über GoodBiz Hygiene
 
 Seifenhersteller kaufen Nudeln nach Fettverhältnis, Feuchtigkeit und Farbe, und eine kleine Abweichung bei einem dieser Werte verändert ihr fertiges Stück. GoodBiz Hygiene kann ein Muster und ein Analysezertifikat für eine Probevermahlung beschaffen, bevor Sie einen Containerauftrag erteilen. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Nennen Sie uns Ihr Verhältnis von Palm zu Palmkern, Ihr TFM-Ziel und Ihre monatliche Tonnage, und wir senden Ihnen ein Angebot.
+
+Der TFM der Seifennudeln bestimmt die Qualität der fertigen Seife, wie unser Ratgeber zu [Seifenqualitäten und TFM](/blog/bath-soap-grades-tfm-explained/) erklärt. LABSA und SLES für die Waschmittelherstellung gehören zum selben Sortiment [Rohstoffe und Industrieprodukte](/categories/industrial-raw-materials/).

@@ -1,5 +1,5 @@
 ---
-sourceHash: "547b4d376403"
+sourceHash: "f1704cab86aa"
 title: "Jabón de lavandería en barra / barra detergente"
 slug: laundry-soap-bar
 category: laundry-care
@@ -104,3 +104,5 @@ Los distribuidores de los mercados de lavado a mano suelen querer un color de ba
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Las barras de lavandería son una línea de alta rotación y guiada por el precio, en la que unos pocos centavos por barra deciden el pedido. GoodBiz Hygiene puede cotizar lado a lado las calidades ricas en jabón y las de barra detergente para que vea cuánto ahorra con un TFM menor. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Comparta su mercado objetivo, el peso de barra y el color que prefiere, y le enviaremos opciones de calidad.
+
+Las pastillas para lavar ropa se clasifican como jabón en la 3401 19 y no con los detergentes; nuestra [guía del código HSN 3401 frente a 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explica la división. El polvo, el líquido y el suavizante para los mismos compradores están en la gama de [cuidado de la ropa](/categories/laundry-care/).

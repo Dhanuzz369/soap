@@ -1,5 +1,5 @@
 ---
-sourceHash: "2fb368c1aef4"
+sourceHash: "3ab35c7f503a"
 title: "Visafishaji vya Jumla na vya Taasisi"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
@@ -94,3 +94,5 @@ Anza na wateja wako. Msambazaji wa hoteli anahitaji sabuni ya mikono, kisafishaj
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Kampuni za huduma za majengo na makundi ya hoteli kwa kawaida hununua bidhaa tano hadi nane kwa wakati mmoja, kwa hivyo kontena mchanganyiko huwaokolea uratibu mwingi. GoodBiz Hygiene inaweza kupanga nukuu moja na usafirishaji mmoja kwa bidhaa zote. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuma orodha ya bidhaa zako, kiasi na ukubwa wa vifungashio nasi tutarudi na nukuu ya bei.
+
+Vikolezo vyenye alkali au asidi kali vinaweza kusafirishwa kama bidhaa hatari, na mwongozo wetu wa [nyaraka za usafirishaji nje kwa bidhaa za usafi](/blog/export-documents-cleaning-products/) unaorodhesha nyaraka za kuomba. Tambi za sabuni, LABSA na SLES kwa uchanganyaji wa ndani ziko katika [kundi la malighafi na bidhaa za viwandani](/categories/industrial-raw-materials/).

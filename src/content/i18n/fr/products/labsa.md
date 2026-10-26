@@ -1,5 +1,5 @@
 ---
-sourceHash: "15d439c588c9"
+sourceHash: "f7335a2c4b58"
 title: "LABSA (acide alkylbenzène sulfonique linéaire)"
 slug: labsa
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ Le LABSA est corrosif : utilisez des équipements, des gants et une protection 
 ## Pourquoi passer par GoodBiz Hygiene
 
 Les acheteurs de LABSA sont des formulateurs de détergents qui ont besoin d’une matière active régulière et d’une faible teneur en huile libre. GoodBiz Hygiene peut obtenir du fabricant un échantillon et un certificat d’analyse pour que vous le testiez dans votre propre bouillie avant le premier conteneur. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous la qualité, le conditionnement souhaité et votre volume mensuel, et nous vous adresserons un devis.
+
+Le LABSA est corrosif et voyage comme marchandise dangereuse : lisez notre guide des [documents d’export pour les produits d’entretien](/blog/export-documents-cleaning-products/) avant de réserver le fret. Le SLES et les noodles de savon sont dans la même gamme [matières premières et produits industriels](/categories/industrial-raw-materials/).

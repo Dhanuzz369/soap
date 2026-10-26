@@ -1,5 +1,5 @@
 ---
-sourceHash: "a76fe73afa27"
+sourceHash: "30c0f836be53"
 title: "玻璃清洁剂"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -97,3 +97,5 @@ pH和有效物含量等规格以典型值形式列在规格书中，在您确认
 ## 为何通过GoodBiz Hygiene采购
 
 玻璃清洁剂的采购商关心无痕效果和喷头质量。GoodBiz Hygiene可向制造商索取样品瓶，让您在下单前测试这两点。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的喷雾瓶规格和对氨的偏好，我们会回复报价单。
+
+玻璃清洁剂常是新自有品牌系列的首款产品，我们的[自有品牌清洁产品指南](/blog/private-label-cleaning-products-guide/)逐步介绍了需求说明、样品和设计稿。配套的地板、浴室和多用途清洁剂均在[表面与家居清洁剂系列](/categories/surface-home-cleaners/)中。

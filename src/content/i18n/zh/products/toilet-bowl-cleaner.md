@@ -1,5 +1,5 @@
 ---
-sourceHash: "332323d039a7"
+sourceHash: "c8da3d442a73"
 title: "马桶清洁剂"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -105,3 +105,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，是一家印度贸易型出口商
 ## 为何通过GoodBiz Hygiene采购
 
 马桶清洁剂带有危险标识，在某些市场还要求儿童安全盖。在标签设计稿开始之前，GoodBiz Hygiene会确认您的市场所需的安全用语和瓶盖类型。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您的目的地和偏好的强度，我们会回复报价单。
+
+酸性产品可能需要危险标识和额外的运输单据，我们的[清洁产品出口单据指南](/blog/export-documents-cleaning-products/)列出了应索取的文件。地板、浴室和玻璃清洁剂同在[表面与家居清洁剂系列](/categories/surface-home-cleaners/)中。

@@ -1,5 +1,5 @@
 ---
-sourceHash: "050e9d439949"
+sourceHash: "421e81d90f2e"
 title: "Adoucissant / assouplissant textile"
 slug: fabric-softener
 category: laundry-care
@@ -109,3 +109,5 @@ L’assouplissant est une catégorie portée par le parfum : la décision la pl
 ## Pourquoi passer par GoodBiz Hygiene
 
 Un assouplissant se juge à l’odeur : les acheteurs devraient comparer les échantillons de parfum sur un vrai tissu plutôt qu’au flacon. GoodBiz Hygiene peut organiser l’envoi d’échantillons de parfum par le fabricant à cet effet. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous vos préférences de parfum, le niveau de concentration et les formats, et nous vous adresserons un devis.
+
+Notre [guide d’achat de l’assouplissant](/blog/fabric-softener-buying-guide-importers/) détaille les types, les parfums et les formats, et la gamme [entretien du linge](/categories/laundry-care/) présente les lessives généralement expédiées avec lui.

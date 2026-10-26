@@ -3,6 +3,7 @@ title: "Toilet / Bath Soap"
 slug: toilet-bath-soap
 category: bath-personal-soaps
 order: 1
+reviewed: 2026-10-26
 hsn: "3401 11"
 metaTitle: "Toilet Soap & Bath Soap Exporter & Supplier from India"
 metaDescription: "Toilet soap and bath soap bars from vetted Indian manufacturers: 50–150 g, TFM 60% to 76%+. Private label, mixed containers and FOB/CIF quotes per order."
@@ -106,3 +107,5 @@ A distributor with its own bath-soap brand can choose the wrapper design, bar we
 ## Why source through GoodBiz Hygiene
 
 For a toilet soap programme the real work is matching TFM grade, fragrance and bar weight to a shelf price, and that comparison is easier through one export partner than through several factory quotations. GoodBiz Hygiene can line up two or three TFM grades side by side so you can see what each price point buys. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your target retail price, bar weight and preferred scents and we will come back with grade options.
+
+Before you compare quotations, read [bath soap grades explained](/blog/bath-soap-grades-tfm-explained/) to see what Grade 1, Grade 2 and TFM mean on a specification. Herbal, glycerin, antibacterial and hotel bars are in the same [bath and personal soaps range](/categories/bath-personal-soaps/).

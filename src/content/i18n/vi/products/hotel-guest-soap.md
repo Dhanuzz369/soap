@@ -1,5 +1,5 @@
 ---
-sourceHash: "0632460c6e63"
+sourceHash: "ce5d989571e7"
 title: "Xà phòng khách sạn và xà phòng tiếp khách (xà phòng mini)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
@@ -105,3 +105,5 @@ Tập đoàn khách sạn hoặc nhà phân phối đồ tiện nghi cung cấp 
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Khách sạn mua theo khối lượng phòng-đêm và cần đồ tiện nghi đến trước khi cơ sở khai trương hoặc mùa du lịch bắt đầu. GoodBiz Hygiene lập kế hoạch giao hàng ngược từ ngày nhận hàng của Quý khách, và có thể hỗ trợ tìm nguồn gel tắm và nước rửa tay phù hợp từ cùng mạng lưới nhà cung cấp. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy gửi khối lượng phòng-đêm hằng năm, trọng lượng bánh ưa thích và thiết kế thương hiệu của Quý khách, chúng tôi sẽ gửi báo giá.
+
+Xà phòng khách sạn cũng được phân hạng theo TFM như xà phòng tắm cỡ thường, như hướng dẫn về [các hạng xà phòng tắm](/blog/bath-soap-grades-tfm-explained/) của chúng tôi giải thích. Nước rửa tay và sữa tắm cho cùng các phòng có trong [nhóm xà phòng tắm và xà phòng cá nhân](/categories/bath-personal-soaps/).

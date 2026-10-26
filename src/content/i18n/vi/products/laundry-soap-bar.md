@@ -1,5 +1,5 @@
 ---
-sourceHash: "547b4d376403"
+sourceHash: "f1704cab86aa"
 title: "Xà phòng giặt / bánh chất tẩy giặt"
 slug: laundry-soap-bar
 category: laundry-care
@@ -104,3 +104,5 @@ Các nhà phân phối tại thị trường giặt tay thường muốn một m
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Xà phòng giặt dạng bánh là dòng hàng vòng quay cao, cạnh tranh về giá, nơi chênh lệch vài xu mỗi bánh cũng quyết định đơn hàng. GoodBiz Hygiene có thể báo giá song song các cấp xà phòng giàu xà phòng và bánh chất tẩy giặt để Quý khách thấy TFM thấp hơn tiết kiệm được bao nhiêu. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy chia sẻ thị trường mục tiêu, trọng lượng bánh và màu sắc ưa thích, chúng tôi sẽ gửi các phương án về cấp độ.
+
+Xà phòng giặt dạng bánh được phân loại là xà phòng ở phân nhóm 3401 19 chứ không cùng chất tẩy rửa; [hướng dẫn mã HSN 3401 và 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) giải thích sự phân chia này. Bột giặt, nước giặt và nước xả vải cho cùng nhóm khách hàng có trong [nhóm chăm sóc đồ giặt](/categories/laundry-care/).

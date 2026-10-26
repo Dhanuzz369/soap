@@ -1,5 +1,5 @@
 ---
-sourceHash: "332323d039a7"
+sourceHash: "c8da3d442a73"
 title: "WC-Reiniger"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -105,3 +105,5 @@ Marken für WC-Reiniger wählen Säurestärke, dickes oder dünnes Gel, blaue, g
 ## Warum der Bezug über GoodBiz Hygiene
 
 WC-Reiniger tragen eine Gefahrenkennzeichnung und in manchen Märkten kindergesicherte Verschlüsse. GoodBiz Hygiene bestätigt die für Ihren Markt nötigen Sicherheitshinweise und die Verschlussart, bevor das Etiketten-Artwork beginnt. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Nennen Sie uns Ihr Bestimmungsland und die bevorzugte Stärke, und wir senden Ihnen ein Angebot.
+
+Saure Qualitäten können Gefahrenkennzeichnung und zusätzliche Versandpapiere erfordern, und unser Ratgeber zu [Exportdokumenten für Reinigungsprodukte](/blog/export-documents-cleaning-products/) nennt, wonach Sie fragen sollten. Boden-, Bad- und Glasreiniger gehören zum selben Sortiment [Oberflächen- und Haushaltsreiniger](/categories/surface-home-cleaners/).

@@ -1,5 +1,5 @@
 ---
-sourceHash: "3b93bcbf0059"
+sourceHash: "c9f1e55506d3"
 title: "Sıvı El Sabunu"
 slug: liquid-hand-wash
 category: bath-personal-soaps
@@ -102,3 +102,5 @@ Perakende ambalajlar, 250 ml ve 500 ml pompalı dağıtıcılı PET şişelerdir
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 El sabunu hem perakende ürün olarak hem de dağıtıcılar için yedek dolum olarak satın alınır ve ikisinin ambalaj ve fiyat ihtiyaçları çok farklıdır. GoodBiz Hygiene perakende ve kurumsal boyutları birlikte teklif edebilir; böylece ikisi de tek konteynerde sevk edilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Hedef ambalaj boyutlarınızı, koku tercihlerinizi ve ihtiyaç duyduğunuz antibakteriyel iddiayı gönderin, size teklif verelim.
+
+Sıvı el sabunu kimyasal anlamda sabun değildir, yine de 3401 pozisyonunda sınıflandırılır; nedenini [HSN 3401 ve 3402 rehberimiz](/blog/hsn-code-3401-vs-3402-soaps-detergents/) açıklar. Aynı kokulardaki kalıp sabunlar ve duş jeli [banyo ve kişisel sabunlar gamında](/categories/bath-personal-soaps/) yer alır.

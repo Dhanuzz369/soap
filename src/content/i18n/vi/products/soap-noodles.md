@@ -1,5 +1,5 @@
 ---
-sourceHash: "f2bf93b5815c"
+sourceHash: "367702ea5e76"
 title: "Hạt xà phòng (soap noodles, nguyên liệu nền xà phòng)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -95,3 +95,5 @@ Người mua điển hình là các cơ sở sản xuất xà phòng tự hoàn 
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Các cơ sở sản xuất xà phòng mua hạt dựa trên tỷ lệ chất béo, độ ẩm và màu sắc, và một thay đổi nhỏ ở bất kỳ chỉ số nào cũng làm thay đổi bánh thành phẩm của họ. GoodBiz Hygiene có thể lấy mẫu và giấy chứng nhận phân tích để Quý khách thử nghiền trước khi đặt đơn hàng cả container. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy cho chúng tôi biết tỷ lệ cọ - nhân cọ, mục tiêu TFM và sản lượng hằng tháng, chúng tôi sẽ gửi báo giá.
+
+TFM của soap noodle quyết định hạng của bánh xà phòng thành phẩm, như hướng dẫn về [các hạng xà phòng và TFM](/blog/bath-soap-grades-tfm-explained/) của chúng tôi giải thích. LABSA và SLES để sản xuất chất tẩy rửa nằm trong cùng [nhóm nguyên liệu và sản phẩm công nghiệp](/categories/industrial-raw-materials/).

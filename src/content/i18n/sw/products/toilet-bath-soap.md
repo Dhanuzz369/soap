@@ -1,5 +1,5 @@
 ---
-sourceHash: "a3d644f8b2bd"
+sourceHash: "6c80f574c217"
 title: "Sabuni ya Kuogea"
 slug: toilet-bath-soap
 category: bath-personal-soaps
@@ -107,3 +107,5 @@ Msambazaji mwenye chapa yake ya sabuni ya kuogea anaweza kuchagua muundo wa kifu
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Kwa mpango wa sabuni ya kuogea, kazi halisi ni kulinganisha daraja la TFM, harufu na uzito wa kipande na bei ya rafuni, na ulinganisho huo ni rahisi kupitia mshirika mmoja wa usafirishaji nje kuliko kupitia nukuu nyingi za viwanda. GoodBiz Hygiene inaweza kupanga daraja mbili au tatu za TFM kando kwa kando ili uone kila kiwango cha bei kinakupa nini. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tutumie bei lengwa ya rejareja, uzito wa kipande na harufu unazopendelea, nasi tutarudi na chaguo za daraja.
+
+Kabla ya kulinganisha nukuu za bei, soma [daraja za sabuni ya kuogea zimeelezwa](/blog/bath-soap-grades-tfm-explained/) ili kuona maana ya daraja la 1, daraja la 2 na TFM kwenye vipimo. Sabuni za mitishamba, glycerin, za kuua bakteria na za hoteli ziko katika [kundi la sabuni na usafi wa mwili](/categories/bath-personal-soaps/).

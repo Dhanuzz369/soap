@@ -1,5 +1,5 @@
 ---
-sourceHash: "d51786edaf5f"
+sourceHash: "44d84f27fc48"
 title: "SLES（脂肪醇聚氧乙烯醚硫酸钠）"
 slug: sles
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ SLES遇盐增稠，因此许多配方企业用氯化钠来调节粘度。个人�
 ## 为何通过GoodBiz Hygiene采购
 
 SLES的采购商生产洗发水、洗手液和洗洁精，这些产品对颜色、气味和1,4-二恶烷含量十分在意。在您承诺整柜之前，GoodBiz Hygiene可向制造商索取样品和分析证书。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您偏好的有效物百分比、乙氧基化程度和月用量，我们会回复报价单。
+
+SLES作为阴离子表面活性剂归入3402 39，与成品洗涤剂分开；请参阅我们的[HSN 3401与3402指南](/blog/hsn-code-3401-vs-3402-soaps-detergents/)。LABSA和皂粒同在[工业原料系列](/categories/industrial-raw-materials/)中。

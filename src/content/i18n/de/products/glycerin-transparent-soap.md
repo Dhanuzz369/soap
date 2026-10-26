@@ -1,5 +1,5 @@
 ---
-sourceHash: "5a4a8b081395"
+sourceHash: "9186bb112e63"
 title: "Glycerinseife / Transparentseife"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Marken für Transparentseife unterscheiden sich meist über Farbe und sichtbare 
 ## Warum der Bezug über GoodBiz Hygiene
 
 Transparentseife erfordert eine eigene Verarbeitung, daher arbeitet GoodBiz Hygiene nur mit Herstellern, die Klarseifenlinien betreiben. Fotos von Klarheit und Oberflächenqualität der Stücke lassen sich vor dem Verschließen der Kartons organisieren, sodass Sie Trübungen oder Schwitzen früh erkennen. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Nennen Sie uns Ihr bevorzugtes Stückgewicht, Ihren Farbton und Ihren Duft, und wir senden Ihnen ein Angebot.
+
+Transparente Seifen haben bauartbedingt einen niedrigeren TFM als undurchsichtige, und unser Ratgeber zu [Seifenqualitäten und TFM](/blog/bath-soap-grades-tfm-explained/) erklärt, wie Sie diese Werte lesen. Undurchsichtige, Kräuter- und Hotelseifen finden Sie im Sortiment [Seifen und Körperpflege](/categories/bath-personal-soaps/).

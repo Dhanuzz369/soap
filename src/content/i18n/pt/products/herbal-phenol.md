@@ -1,5 +1,5 @@
 ---
-sourceHash: "40ef01b501de"
+sourceHash: "a7d6ca47c781"
 title: "Fenol de ervas / fenil"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -107,3 +107,5 @@ As marcas de fenil competem pela mistura de óleos de ervas e pelo aspecto leito
 ## Por que comprar pela GoodBiz Hygiene
 
 O fenil é vendido em mercados em que as alegações de desinfetantes são regulamentadas; por isso, o que o rótulo pode dizer varia. A GoodBiz Hygiene verifica com o fabricante qual classificação e quais alegações se aplicam antes de você finalizar a arte. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe o seu destino, o óleo de ervas preferido e os tamanhos de embalagem, e enviaremos uma cotação.
+
+O nosso guia [fenol de ervas ou desinfetantes químicos](/blog/herbal-phenol-vs-chemical-disinfectants/) explica quando um fenil é tratado como limpador (3402 50) ou como desinfetante (3808 94). Limpadores de pisos, vasos sanitários e multiuso da linha [limpadores de superfícies e uso doméstico](/categories/surface-home-cleaners/) podem seguir no mesmo contêiner.

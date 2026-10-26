@@ -1,11 +1,11 @@
 ---
-sourceHash: "7f212b113545"
+sourceHash: "08c0a2083e95"
 title: "自有品牌清洁产品：经销商分步指南"
 metaTitle: "自有品牌清洁产品：经销商指南"
 description: "经销商如何从印度推出自有清洁品牌：选择产品系列、向制造商提出需求、确认样品、准备设计稿、包装以及运输的分步指南，帮助进口商少走弯路、做出更稳妥的采购决定。"
 date: 2026-09-10
 tags: ["自有品牌", "经销商", "家居清洁", "OEM"]
-relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener"]
+relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener", "glass-cleaner"]
 faqs:
   - q: "启动自有品牌需要自己的工厂或配方团队吗？"
     a: "不需要。您提供品牌、目标市场和定位。制造商提供经过验证的基础配方，可调整香型、颜色和质地，GoodBiz Hygiene负责协调流程和发运。"

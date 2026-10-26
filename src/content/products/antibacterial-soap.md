@@ -3,6 +3,7 @@ title: "Antibacterial / Medicated Soap"
 slug: antibacterial-soap
 category: bath-personal-soaps
 order: 4
+reviewed: 2026-10-26
 hsn: "3401 11"
 metaTitle: "Antibacterial Soap Exporter & Supplier from India"
 metaDescription: "Antibacterial and medicated soap from vetted Indian manufacturers: 75–150 g bars, PCMX and neem grades, TFM 70%+. Private label, mixed containers, FOB/CIF."
@@ -98,3 +99,5 @@ The active ingredient and the claim on the pack must suit your market, so these 
 ## Why source through GoodBiz Hygiene
 
 Antibacterial soap sits under tighter rules than plain bath soap, and the permitted active differs by country. GoodBiz Hygiene confirms with the manufacturer which actives and test data are available before you commit to claim wording. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Share your destination market, preferred active and bar weight and we will confirm what can be supplied.
+
+Antibacterial bars sit alongside our toilet, herbal and hotel soaps in the [bath and personal soaps range](/categories/bath-personal-soaps/), and our guide to [bath soap grades and TFM](/blog/bath-soap-grades-tfm-explained/) explains how to compare bars on fatty matter as well as on claims.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "15d439c588c9"
+sourceHash: "f7335a2c4b58"
 title: "LABSA (Asam Alkilbenzena Sulfonat Linier)"
 slug: labsa
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ LABSA bersifat korosif, jadi gunakan peralatan tahan asam, sarung tangan, dan pe
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Pembeli LABSA adalah peracik deterjen yang membutuhkan bahan aktif yang konsisten dan minyak bebas yang rendah. GoodBiz Hygiene dapat mengatur sampel dan sertifikat analisis dari produsen agar Anda dapat menguji pada slurry Anda sendiri sebelum kontainer pertama. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan grade, preferensi pengemasan, dan volume bulanan Anda, lalu kami akan mengirimkan penawaran.
+
+LABSA bersifat korosif dan dikirim sebagai barang berbahaya, jadi baca panduan kami tentang [dokumen ekspor untuk produk pembersih](/blog/export-documents-cleaning-products/) sebelum memesan pengangkutan. SLES dan soap noodle ada di [rangkaian bahan baku dan produk industri](/categories/industrial-raw-materials/) yang sama.

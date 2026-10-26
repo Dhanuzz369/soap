@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf0393403b70"
+sourceHash: "e4e01699d6d9"
 title: "Kipande cha Sabuni ya Kuosha Vyombo"
 slug: dish-wash-bar
 category: kitchen-care
@@ -103,3 +103,5 @@ Chapa huchagua kati ya kipande pekee, kipande na kitambaa cha kusugua, na pakiti
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Vipande vya kuosha vyombo hununuliwa kwa bei, kwa hivyo wanunuzi hulinganisha gharama kwa kila ufuaji badala ya gharama kwa kila kipande. GoodBiz Hygiene inaweza kutoa nukuu ya uzito kadhaa wa vipande na aina za vifungashio ili uchague kinachofaa zaidi soko lako. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuambie uzito wa kipande, aina ya kifungashio na bei lengwa nasi tutarudi na nukuu ya bei.
+
+Wanunuzi wengi hujaribu sabuni za vipande na za maji katika usafirishaji mmoja. Hatua, gharama na nyaraka ziko katika mwongozo wetu wa [jinsi ya kuagiza sabuni ya maji ya kuosha vyombo kutoka India](/blog/import-dish-wash-liquid-from-india/), na aina zote mbili ziko katika [kundi la kuosha vyombo na jikoni](/categories/kitchen-care/).

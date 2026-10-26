@@ -1,5 +1,5 @@
 ---
-sourceHash: "d51786edaf5f"
+sourceHash: "44d84f27fc48"
 title: "SLES (Sodyum Lauril Eter Sülfat)"
 slug: sles
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ SLES tuzla koyulaşır; bu nedenle birçok formülatör viskoziteyi sodyum klor�
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 SLES alıcıları, renk, koku ve 1,4-dioksan seviyesinin önem taşıdığı şampuan, el sabunu ve bulaşık deterjanı üretir. GoodBiz Hygiene, bir konteynere karar vermeden önce üreticiden bir numune ve analiz sertifikası isteyebilir. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Tercih ettiğiniz aktif yüzdeyi, etoksilasyon seviyesini ve aylık hacminizi bildirin, size teklif verelim.
+
+SLES, bitmiş deterjanlardan ayrı olarak 3402 39 altında anyonik yüzey aktif madde olarak sınıflandırılır; [HSN 3401 ve 3402 rehberimize](/blog/hsn-code-3401-vs-3402-soaps-detergents/) bakın. LABSA ve sabun noodle aynı [endüstriyel ürünler ve hammaddeler gamında](/categories/industrial-raw-materials/) yer alır.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "332323d039a7"
+sourceHash: "c8da3d442a73"
 title: "Nettoyant WC"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -105,3 +105,5 @@ Les marques de nettoyant WC choisissent la force de l’acide, un gel épais ou 
 ## Pourquoi passer par GoodBiz Hygiene
 
 Les nettoyants WC portent un étiquetage de danger et, sur certains marchés, un bouchon de sécurité enfant. GoodBiz Hygiene confirme les mentions de sécurité et le type de fermeture requis pour votre marché avant le début de la maquette d’étiquette. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous votre destination et la concentration souhaitée, et nous vous adresserons un devis.
+
+Les qualités acides peuvent exiger un étiquetage de danger et des papiers de transport supplémentaires, et notre guide des [documents d’export pour les produits d’entretien](/blog/export-documents-cleaning-products/) indique quoi demander. Les nettoyants sols, salle de bain et vitres sont dans la même gamme [nettoyants surfaces et maison](/categories/surface-home-cleaners/).

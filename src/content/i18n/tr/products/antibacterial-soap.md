@@ -1,5 +1,5 @@
 ---
-sourceHash: "76e23824cc1d"
+sourceHash: "29ee9c2a1b83"
 title: "Antibakteriyel / Medikal Sabun"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ Etken madde ile paket üzerindeki iddia pazarınıza uygun olmalıdır; bu neden
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Antibakteriyel sabun, sade banyo sabunundan daha sıkı kurallara tabidir ve izin verilen etken madde ülkeye göre değişir. GoodBiz Hygiene, iddia ifadesini kesinleştirmeden önce üreticiyle hangi etken maddelerin ve test verilerinin mevcut olduğunu teyit eder. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Hedef pazarınızı, tercih ettiğiniz etken maddeyi ve kalıp ağırlığını paylaşın, nelerin tedarik edilebileceğini teyit edelim.
+
+Antibakteriyel sabunlar; tuvalet, bitkisel ve otel sabunlarımızla birlikte [banyo ve kişisel sabunlar gamında](/categories/bath-personal-soaps/) yer alır. [Sabun kaliteleri ve TFM rehberimiz](/blog/bath-soap-grades-tfm-explained/) sabunları iddiaların yanı sıra yağ oranına göre nasıl karşılaştıracağınızı anlatır.

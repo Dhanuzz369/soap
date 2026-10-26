@@ -1,5 +1,5 @@
 ---
-sourceHash: "15d439c588c9"
+sourceHash: "f7335a2c4b58"
 title: "LABSA (axit alkylbenzen sulfonic mạch thẳng)"
 slug: labsa
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ LABSA có tính ăn mòn, vì vậy hãy dùng thiết bị chống axit, găng 
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Người mua LABSA là các đơn vị pha chế chất tẩy rửa cần hàm lượng hoạt chất ổn định và dầu tự do thấp. GoodBiz Hygiene có thể sắp xếp mẫu và giấy chứng nhận phân tích từ nhà sản xuất để Quý khách thử trong hỗn hợp sệt của mình trước container đầu tiên. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy gửi cấp độ, quy cách đóng gói ưa thích và khối lượng hằng tháng, chúng tôi sẽ gửi báo giá.
+
+LABSA có tính ăn mòn và được vận chuyển như hàng nguy hiểm, vì vậy hãy đọc hướng dẫn về [chứng từ xuất khẩu cho sản phẩm tẩy rửa](/blog/export-documents-cleaning-products/) trước khi đặt cước. SLES và soap noodle nằm trong cùng [nhóm nguyên liệu và sản phẩm công nghiệp](/categories/industrial-raw-materials/).

@@ -1,5 +1,5 @@
 ---
-sourceHash: "0632460c6e63"
+sourceHash: "ce5d989571e7"
 title: "Savons d’hôtel et d’accueil (mini-savons)"
 slug: hotel-guest-soap
 category: bath-personal-soaps
@@ -105,3 +105,5 @@ Un groupe hôtelier ou un distributeur de produits d’accueil fournit son logo 
 ## Pourquoi passer par GoodBiz Hygiene
 
 Les hôtels achètent au volume de nuitées et ont besoin de produits d’accueil livrés avant l’ouverture d’un établissement ou le début d’une saison. GoodBiz Hygiene planifie les expéditions à rebours à partir de votre date de livraison, et peut aider à sélectionner un gel douche et un savon pour les mains assortis auprès du même réseau de fournisseurs. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Envoyez-nous votre volume annuel de nuitées, le poids de pain souhaité et votre maquette de marque, et nous vous adresserons un devis.
+
+Les savons d’hôtel se classent par TFM comme les savons de toilette de taille normale, comme l’explique notre guide sur [les qualités de savon](/blog/bath-soap-grades-tfm-explained/). Le savon liquide et le gel douche pour les mêmes chambres sont dans la gamme [savons et hygiène corporelle](/categories/bath-personal-soaps/).

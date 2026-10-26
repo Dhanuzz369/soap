@@ -1,5 +1,5 @@
 ---
-sourceHash: "36c4cfd3090d"
+sourceHash: "82edc50d27ca"
 title: "Sabun Cuci Piring Cair / Gel"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -104,3 +104,5 @@ Merek sabun cuci piring ritel biasanya memilih bentuk botol dari stok, shrink sl
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Pembeli sabun cuci piring terbagi antara supermarket yang menginginkan botol bermerek dan pengelola katering yang menginginkan carboy 20 L. GoodBiz Hygiene dapat menawarkan keduanya dari formula yang sama agar pasokan tetap sederhana. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan target bahan aktif, aroma, dan kombinasi kemasan Anda, lalu kami akan mengirimkan penawaran.
+
+Untuk biaya, MOQ, dokumen, dan pengiriman langkah demi langkah, baca [cara mengimpor sabun cuci piring cair dari India](/blog/import-dish-wash-liquid-from-india/). Sabun colek untuk pasar yang mencuci dengan spons ada di [rangkaian perawatan dapur](/categories/kitchen-care/) yang sama.

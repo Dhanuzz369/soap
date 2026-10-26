@@ -1,5 +1,5 @@
 ---
-sourceHash: "2fb368c1aef4"
+sourceHash: "3ab35c7f503a"
 title: "Hóa chất tẩy rửa số lượng lớn và dùng cho tổ chức"
 slug: bulk-institutional-cleaners
 category: industrial-raw-materials
@@ -94,3 +94,5 @@ Hãy bắt đầu từ khách hàng của Quý khách. Nhà cung cấp cho khác
 ## Vì sao nên cung ứng qua GoodBiz Hygiene
 
 Các công ty dịch vụ cơ sở và tập đoàn khách sạn thường mua năm đến tám sản phẩm cùng lúc, nên container ghép giúp họ tiết kiệm nhiều công điều phối. GoodBiz Hygiene có thể sắp xếp một bản báo giá và một lô hàng cho toàn bộ dòng sản phẩm. FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn hàng (T/T hoặc LC). Hàng được giao từ các cảng lớn của Ấn Độ. Mã HSN nêu trên là mức 6 chữ số, còn mã ITC-HS 8 chữ số đầy đủ được xác nhận cho từng đơn hàng. Hãy gửi danh sách sản phẩm, khối lượng và quy cách đóng gói, chúng tôi sẽ gửi báo giá.
+
+Các dung dịch đậm đặc có tính kiềm hoặc axit mạnh có thể phải vận chuyển như hàng nguy hiểm, và hướng dẫn của chúng tôi về [chứng từ xuất khẩu cho sản phẩm tẩy rửa](/blog/export-documents-cleaning-products/) liệt kê các giấy tờ cần yêu cầu. Soap noodle, LABSA và SLES để pha chế tại chỗ nằm trong cùng [nhóm nguyên liệu và sản phẩm công nghiệp](/categories/industrial-raw-materials/).

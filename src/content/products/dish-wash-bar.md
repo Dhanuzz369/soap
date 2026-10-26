@@ -3,6 +3,7 @@ title: "Dish Wash Bar"
 slug: dish-wash-bar
 category: kitchen-care
 order: 2
+reviewed: 2026-10-26
 hsn: "3401 19"
 metaTitle: "Bulk Dish Wash Bar Exporter & Supplier from India"
 metaDescription: "Dish wash bars in lemon, lime and more from vetted Indian manufacturers: 100–300 g tubs and cakes. Private label, mixed containers and FOB/CIF quotes."
@@ -102,3 +103,5 @@ Brands choose between bar only, bar with scrub pad and tub pack, each at a diffe
 ## Why source through GoodBiz Hygiene
 
 Dish bars are bought on price, so buyers compare cost per wash rather than cost per bar. GoodBiz Hygiene can quote several bar weights and pack types so you can pick the best fit for your market. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Tell us your bar weight, pack type and target price and we will return a quotation.
+
+Many buyers trial bars and a liquid in one shipment. The steps, costs and documents are in our guide on [how to import dish wash liquid from India](/blog/import-dish-wash-liquid-from-india/), and both formats are in the [kitchen care range](/categories/kitchen-care/).

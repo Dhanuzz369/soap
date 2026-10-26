@@ -1,11 +1,11 @@
 ---
-sourceHash: "7f212b113545"
+sourceHash: "08c0a2083e95"
 title: "Bidhaa za Usafi kwa Chapa ya Mnunuzi: Mwongozo wa Hatua kwa Hatua kwa Wasambazaji"
 metaTitle: "Bidhaa za Usafi kwa Chapa Yako: Mwongozo wa Wasambazaji"
 description: "Jinsi wasambazaji wanavyoweza kuzindua chapa yao ya bidhaa za usafi kutoka India: kuchagua bidhaa, sampuli, michoro, ufungashaji na usafirishaji."
 date: 2026-09-10
 tags: ["chapa ya mnunuzi", "wasambazaji", "usafi wa nyumbani", "OEM"]
-relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener"]
+relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener", "glass-cleaner"]
 faqs:
   - q: "Je, ninahitaji kiwanda changu au timu ya fomula ili kuanza chapa ya mnunuzi?"
     a: "Hapana. Wewe hutoa chapa, soko lengwa na mwelekeo. Mtengenezaji hutoa fomula ya msingi iliyothibitishwa inayoweza kurekebishwa kwa harufu, rangi na umbile, na GoodBiz Hygiene huratibu mchakato na usafirishaji."

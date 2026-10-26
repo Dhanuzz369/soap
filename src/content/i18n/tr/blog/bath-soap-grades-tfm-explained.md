@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "Banyo Sabunu Kaliteleri: TFM, 1. Kalite ve 2. Kalite Farkı ve Neden Önemli"
 metaTitle: "Banyo Sabunu Kaliteleri: TFM, 1. ve 2. Kalite"
 description: "Banyo sabunu şartnamesinde TFM ne anlama gelir, 1. ve 2. kalite ticarette nasıl kullanılır ve pazarınıza ile fiyatınıza uygun kalite nasıl seçilir."
 date: 2026-08-27
 tags: ["banyo sabunu", "TFM", "sabun kaliteleri", "şartnameler"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "Banyo sabununda TFM ne anlama gelir?"
     a: "TFM, Toplam Yağ Maddesi (Total Fatty Matter) demektir. Kalıbın, sabunlaştırmada kullanılan yağlardan ve katı yağlardan gelen yağ asitlerinden oluşan ağırlıkça yüzdesidir. Daha yüksek TFM genellikle daha fazla gerçek sabun, daha az dolgu maddesi, su ve diğer katkı anlamına gelir."

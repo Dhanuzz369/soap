@@ -1,5 +1,5 @@
 ---
-sourceHash: "329715bb8890"
+sourceHash: "e0d1945ad630"
 title: "Bitkisel ve Ayurvedik Sabun"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -101,3 +101,5 @@ Doğal bakım markası oluşturan bir ithalatçı genellikle iki veya üç bitki
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Bitkisel gamlar çoğunlukla içerik iddialarıyla pazarlanır ve hataların en pahalıya mal olduğu yer burasıdır. GoodBiz Hygiene, bir iddia kartonunuza girmeden önce her üreticiden o iddianın arkasındaki bileşen listesini ister; böylece paket, formülün sağladığından fazlasını vaat etmez. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Düşündüğünüz konumlandırmayı ve yapmanız gereken iddiaları paylaşın, uygun bitkisel çeşitleri önerelim.
+
+Bitkisel içerikler sabunu sattırır, ancak ne kadar dayanacağını kalite belirler; [banyo sabunu kaliteleri ve TFM](/blog/bath-soap-grades-tfm-explained/) yazımıza bakın. Sade tuvalet, gliserinli ve antibakteriyel sabunlar aynı [banyo ve kişisel sabunlar gamında](/categories/bath-personal-soaps/) bulunur.

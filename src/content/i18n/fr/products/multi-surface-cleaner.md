@@ -1,5 +1,5 @@
 ---
-sourceHash: "412ca2d14ce7"
+sourceHash: "91416f83e94e"
 title: "Nettoyant multi-surfaces"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
@@ -101,3 +101,5 @@ Une marque multi-surfaces choisit entre format prêt à l’emploi et concentré
 ## Pourquoi passer par GoodBiz Hygiene
 
 Un nettoyant multi-usages doit être assez doux pour de nombreuses surfaces : les allégations de l’étiquette doivent donc correspondre aux essais réalisés. GoodBiz Hygiene demande au fabricant sur quelles surfaces la formule a été vérifiée. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous la liste des surfaces visées et le format souhaité, et nous vous adresserons un devis.
+
+Un spray multi-surfaces est souvent le produit phare d’une gamme d’entretien à marque propre, et notre [guide pas à pas de la marque de distributeur](/blog/private-label-cleaning-products-guide/) couvre le brief, les échantillons et les étiquettes. Les nettoyants spécialisés sols, vitres et salle de bain sont dans la gamme [nettoyants surfaces et maison](/categories/surface-home-cleaners/).

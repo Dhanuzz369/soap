@@ -1,5 +1,5 @@
 ---
-sourceHash: "332323d039a7"
+sourceHash: "c8da3d442a73"
 title: "Kisafishaji cha Choo"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -105,3 +105,5 @@ Chapa za visafishaji vya choo huchagua nguvu ya asidi, jeli nzito au nyepesi, ra
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 
 Visafishaji vya choo hubeba maelezo ya hatari na, katika baadhi ya masoko, vifuniko visivyofunguliwa na watoto. GoodBiz Hygiene huthibitisha maneno ya usalama na aina ya kifuniko kinachohitajika kwa soko lako kabla michoro ya lebo haijaanza. FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au LC). Usafirishaji kutoka bandari kuu za India. Msimbo wa HSN unaoonyeshwa ni wa kiwango cha tarakimu 6, na msimbo kamili wa ITC-HS wa tarakimu 8 huthibitishwa kwa kila oda. Tuambie nchi unayopeleka na nguvu unayopendelea nasi tutarudi na nukuu ya bei.
+
+Aina zenye asidi zinaweza kuhitaji lebo za hatari na nyaraka za ziada za usafirishaji, na mwongozo wetu wa [nyaraka za usafirishaji nje kwa bidhaa za usafi](/blog/export-documents-cleaning-products/) unaorodhesha cha kuomba. Visafishaji vya sakafu, bafu na vioo viko katika [kundi la visafishaji vya nyuso na nyumbani](/categories/surface-home-cleaners/).

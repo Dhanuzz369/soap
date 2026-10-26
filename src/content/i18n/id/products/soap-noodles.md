@@ -1,5 +1,5 @@
 ---
-sourceHash: "f2bf93b5815c"
+sourceHash: "367702ea5e76"
 title: "Soap Noodles (Bahan Dasar Sabun)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -95,3 +95,5 @@ Pembeli tipikal adalah produsen sabun yang menyelesaikan sendiri sabunnya, penge
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Pembuat sabun membeli noodles berdasarkan rasio bahan lemak, kadar air, dan warna, dan pergeseran kecil pada salah satunya mengubah sabun jadi mereka. GoodBiz Hygiene dapat mengupayakan sampel dan sertifikat analisis untuk uji penggilingan sebelum Anda memesan satu kontainer. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan rasio sawit dan inti sawit, target TFM, dan tonase bulanan Anda, lalu kami akan mengirimkan penawaran.
+
+TFM soap noodle menentukan grade sabun jadi, sebagaimana dijelaskan panduan kami tentang [grade sabun mandi dan TFM](/blog/bath-soap-grades-tfm-explained/). LABSA dan SLES untuk pembuatan deterjen ada di [rangkaian bahan baku dan produk industri](/categories/industrial-raw-materials/) yang sama.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "76e23824cc1d"
+sourceHash: "29ee9c2a1b83"
 title: "Sabonete antibacteriano / medicinal"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ O ingrediente ativo e a alegação na embalagem precisam ser adequados ao seu me
 ## Por que comprar pela GoodBiz Hygiene
 
 O sabonete antibacteriano está sujeito a regras mais rigorosas do que o sabonete comum, e o ativo permitido varia de país para país. A GoodBiz Hygiene confirma com o fabricante quais ativos e dados de ensaio estão disponíveis antes de você definir o texto das alegações. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe o seu mercado de destino, o ativo preferido e o peso da barra, e confirmaremos o que pode ser fornecido.
+
+Os sabonetes antibacterianos estão ao lado dos nossos sabonetes de toalete, de ervas e de hotel na linha [sabonetes e higiene pessoal](/categories/bath-personal-soaps/), e o nosso guia sobre [graus de sabonete e TFM](/blog/bath-soap-grades-tfm-explained/) explica como comparar barras pela matéria graxa, e não só pelas alegações.

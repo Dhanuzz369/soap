@@ -1,5 +1,5 @@
 ---
-sourceHash: "f2bf93b5815c"
+sourceHash: "367702ea5e76"
 title: "Fideos de jabón (base de jabón)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -95,3 +95,5 @@ Los compradores típicos son fabricantes de jabón que terminan sus propias past
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los fabricantes de jabón compran fideos por la proporción de materia grasa, la humedad y el color, y un pequeño cambio en cualquiera de ellos modifica su pastilla terminada. GoodBiz Hygiene puede obtener una muestra y un certificado de análisis para una molienda de prueba antes de que haga un pedido de contenedor. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Indíquenos su proporción de palma y palmiste, su objetivo de TFM y su tonelaje mensual, y le enviaremos una cotización.
+
+El TFM de los noodles fija la calidad de la pastilla terminada, como explica nuestra guía sobre [las calidades del jabón y el TFM](/blog/bath-soap-grades-tfm-explained/). El LABSA y el SLES para fabricar detergentes están en la misma gama de [materias primas e industriales](/categories/industrial-raw-materials/).

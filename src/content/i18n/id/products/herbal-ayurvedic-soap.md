@@ -1,5 +1,5 @@
 ---
-sourceHash: "329715bb8890"
+sourceHash: "e0d1945ad630"
 title: "Sabun Herbal dan Ayurveda"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -101,3 +101,5 @@ Importir yang membangun merek perawatan alami umumnya memilih dua atau tiga prof
 ## Mengapa membeli melalui GoodBiz Hygiene
 
 Lini herbal sering dipasarkan dengan klaim bahan, dan di situlah kesalahan paling mahal akibatnya. GoodBiz Hygiene meminta daftar bahan di balik suatu klaim dari setiap produsen sebelum klaim itu dicantumkan pada karton Anda, sehingga kemasan tidak menjanjikan lebih dari yang diberikan formula. FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan (T/T atau LC). Pengiriman berangkat dari pelabuhan-pelabuhan utama India. Kode HSN yang ditampilkan adalah tingkat 6 digit, dan kode ITC-HS 8 digit lengkap dikonfirmasi untuk setiap pesanan. Sampaikan positioning yang Anda inginkan dan klaim yang perlu Anda cantumkan, lalu kami akan mengusulkan varian herbal yang sesuai.
+
+Bahan herbal membuat sabun laku, tetapi grade menentukan seberapa awet sabun itu; lihat [penjelasan grade sabun mandi dan TFM](/blog/bath-soap-grades-tfm-explained/). Sabun mandi biasa, gliserin, dan antibakteri ada di [rangkaian sabun mandi dan perawatan diri](/categories/bath-personal-soaps/) yang sama.

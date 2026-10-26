@@ -1,5 +1,5 @@
 ---
-sourceHash: "f923483b7544"
+sourceHash: "fab6a5425e7d"
 title: "Gel douche / nettoyant corps"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -104,3 +104,5 @@ Les marques de gel douche se distinguent par l’histoire de leur parfum et l’
 ## Pourquoi passer par GoodBiz Hygiene
 
 Le gel douche est souvent acheté par des clients qui ont aussi besoin de produits d’accueil hôteliers, et garder un seul parfum pour les deux évite de chercher un second fournisseur. GoodBiz Hygiene peut chiffrer flacons grand public, mini-flacons et recharges vrac en un seul projet. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous vos parfums et formats préférés, et nous vous adresserons un devis.
+
+Le gel douche est classé avec le savon liquide pour les mains en 3401 30, et non avec les détergents ; notre guide [code HSN 3401 ou 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explique pourquoi. Les savons et savons liquides aux mêmes parfums sont dans la gamme [savons et hygiène corporelle](/categories/bath-personal-soaps/).

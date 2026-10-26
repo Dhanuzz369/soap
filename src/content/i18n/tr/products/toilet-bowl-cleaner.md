@@ -1,5 +1,5 @@
 ---
-sourceHash: "332323d039a7"
+sourceHash: "c8da3d442a73"
 title: "Klozet Temizleyici"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -105,3 +105,5 @@ Klozet temizleyici markaları asit gücünü, koyu veya ince bir jeli, mavi, ye�
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 
 Klozet temizleyiciler tehlike etiketlemesi taşır ve bazı pazarlarda çocuk korumalı kapak gerektirir. GoodBiz Hygiene, etiket tasarımı başlamadan önce pazarınız için gereken güvenlik ifadelerini ve kapak tipini teyit eder. FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırılır (T/T veya LC). Sevkiyatlar başlıca Hindistan limanlarından yapılır. Gösterilen HSN kodu 6 haneli düzeydir; 8 haneli ITC-HS kodunun tamamı her sipariş için teyit edilir. Varış yerinizi ve tercih ettiğiniz gücü bildirin, size teklif verelim.
+
+Asit bazlı kaliteler tehlike etiketi ve ek sevkiyat evrakı gerektirebilir; [temizlik ürünleri için ihracat evrakları](/blog/export-documents-cleaning-products/) rehberimiz neyi istemeniz gerektiğini listeler. Zemin, banyo ve cam temizleyicileri aynı [yüzey ve ev temizleyicileri gamında](/categories/surface-home-cleaners/) bulunur.

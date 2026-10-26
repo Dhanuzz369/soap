@@ -261,3 +261,53 @@ describe('product and range h1s read as one phrase in every language (audit B10)
     expect(titled.length).toBe(12 * 28);
   });
 });
+
+describe('inline links in product bodies and range overviews stay in the page language (audit B12)', () => {
+  const exists = (href: string) => existsSync(join(DIST, href, 'index.html'));
+  const bodyOf = (html: string, marker: string) => {
+    const i = html.indexOf(marker);
+    return i < 0 ? '' : html.slice(i, html.indexOf('</section>', i));
+  };
+  const products = pages.filter((p) => /\/products\/[^/]+\/$/.test(p.path));
+  const categories = pages.filter((p) => /\/categories\/[^/]+\/$/.test(p.path));
+
+  it('every product body links its range and a buyer guide, in its own language, to pages that exist', () => {
+    const problems: string[] = [];
+    for (const p of products) {
+      const body = bodyOf(p.html, 'class="wrap sec post-layout"');
+      const links = [...body.matchAll(/<a href="(\/[^"#?]*)"/g)].map((m) => m[1]);
+      const prefix = p.lang === 'en' ? '/' : `/${p.lang}/`;
+      const cat = links.find((h) => h.startsWith(`${prefix}categories/`));
+      const guide = links.find((h) => h.startsWith(`${prefix}blog/`));
+      if (!cat || !guide) problems.push(`${p.path}: category ${cat}, guide ${guide}`);
+      for (const h of links) {
+        if (!h.startsWith(prefix)) problems.push(`${p.path}: ${h} leaves the language`);
+        else if (!exists(h)) problems.push(`${p.path}: ${h} does not exist`);
+      }
+      // The range linked is the product's own range (the breadcrumb's third item).
+      const crumb = p.html.match(/"position":3,"name":"[^"]*","item":"[^"]*?(\/(?:[a-z]{2}\/)?categories\/[^"]+)"/)?.[1];
+      if (crumb && cat && crumb !== cat) problems.push(`${p.path}: links ${cat}, range is ${crumb}`);
+    }
+    expect(problems.slice(0, 20)).toEqual([]);
+    expect(products.length).toBe(12 * 23);
+  });
+
+  it('every product page shows "last reviewed" with a date', () => {
+    for (const p of products) expect(p.html, p.path).toMatch(/class="note product-reviewed">[^<]*<time datetime="\d{4}-\d{2}-\d{2}">/);
+  });
+
+  it('every range page has an overview linking at least one buyer guide in its language', () => {
+    const problems: string[] = [];
+    for (const p of categories) {
+      const body = bodyOf(p.html, 'cat-overview');
+      const prefix = p.lang === 'en' ? '/' : `/${p.lang}/`;
+      const guides = [...body.matchAll(/<a href="(\/[^"#?]*)"/g)].map((m) => m[1]).filter((h) => h.includes('/blog/'));
+      if (!guides.length) problems.push(`${p.path}: no guide link`);
+      for (const h of guides) if (!h.startsWith(prefix) || !exists(h)) problems.push(`${p.path}: ${h}`);
+      const words = body.replace(/<[^>]+>/g, ' ').trim().split(/\s+/).length;
+      if (p.lang === 'en' && (words < 120 || words > 230)) problems.push(`${p.path}: ${words} words`);
+    }
+    expect(problems).toEqual([]);
+    expect(categories.length).toBe(12 * 5);
+  });
+});

@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "درجات صابون الاستحمام: TFM والدرجة 1 مقابل الدرجة 2 ولماذا يهمّ ذلك"
 metaTitle: "درجات صابون الاستحمام: TFM والدرجة 1 مقابل 2"
 description: "ما معنى TFM في مواصفات صابون الاستحمام، وكيف تُستخدم الدرجة 1 والدرجة 2 في التجارة، وكيف تختار الدرجة المناسبة لسوقك وسعرك."
 date: 2026-08-27
 tags: ["صابون الاستحمام", "TFM", "درجات الصابون", "المواصفات"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "ما معنى TFM في صابون الاستحمام؟"
     a: "TFM اختصار للمادة الدهنية الكلية (Total Fatty Matter). وهي النسبة المئوية من القالب، بالوزن، التي تشكلها الأحماض الدهنية الناتجة عن الزيوت والدهون المستخدمة في التصبين. وارتفاع TFM يعني عمومًا صابونًا حقيقيًا أكثر ومواد مالئة وماءً وإضافات أخرى أقل."

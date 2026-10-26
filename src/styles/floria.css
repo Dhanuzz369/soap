@@ -855,6 +855,11 @@
   margin-top: 20px;
 }
 
+/* Product pages: "Last reviewed …" under the description */
+.product-reviewed {
+  margin-top: 28px;
+}
+
 /* About: "How we vet manufacturers" is a link target from the footer and the home page */
 #how-we-vet {
   scroll-margin-top: 72px;

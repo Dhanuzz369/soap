@@ -1,5 +1,5 @@
 ---
-sourceHash: "94216906b8fc"
+sourceHash: "cf73f343c941"
 title: "Limpiador de baños y azulejos"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
@@ -100,3 +100,5 @@ Las marcas de limpiador de baños eligen entre un ácido suave apto para cromado
 ## Por qué abastecerse a través de GoodBiz Hygiene
 
 Los limpiadores de baño se juzgan por la eliminación del sarro y por la seguridad para grifos y cromados. GoodBiz Hygiene puede solicitar al fabricante una muestra suave y otra de uso intensivo para que pueda probarlas con su tipo de agua. FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o LC). Los embarques salen de los principales puertos de la India. El código HSN indicado corresponde al nivel de 6 dígitos, y el código ITC-HS completo de 8 dígitos se confirma en cada pedido. Comparta la dureza de su agua, los tamaños de envase y los aromas, y le enviaremos una cotización.
+
+Los limpiadores de suelos, cristales e inodoros que pueden compartir contenedor con él están en la gama de [limpiadores de superficies y del hogar](/categories/surface-home-cleaners/). Si piensa imprimir una declaración antigérmenes en la etiqueta, lea antes [fenol herbal frente a desinfectantes químicos](/blog/herbal-phenol-vs-chemical-disinfectants/), porque las declaraciones cambian el registro y la clasificación.

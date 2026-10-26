@@ -3,6 +3,7 @@ title: "LABSA (Linear Alkyl Benzene Sulphonic Acid)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
+reviewed: 2026-10-26
 hsn: "3402 31"
 metaTitle: "LABSA 90% & 96% Exporter & Supplier from India"
 metaDescription: "LABSA 90% and 96% (linear alkyl benzene sulphonic acid) from vetted Indian manufacturers in HDPE drums, IBCs and flexitanks. HSN 3402 31, FOB/CIF quotes."
@@ -92,3 +93,5 @@ LABSA is corrosive, so use acid-resistant equipment, gloves and eye protection. 
 ## Why source through GoodBiz Hygiene
 
 LABSA buyers are detergent blenders who need consistent active matter and low free oil. GoodBiz Hygiene can arrange a sample and certificate of analysis from the manufacturer so you can test in your own slurry before the first container. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your grade, packing preference and monthly volume and we will return a quotation.
+
+LABSA is corrosive and moves as dangerous goods, so read our guide to [export documents for cleaning products](/blog/export-documents-cleaning-products/) before you book freight. SLES and soap noodles are in the same [industrial and raw materials range](/categories/industrial-raw-materials/).

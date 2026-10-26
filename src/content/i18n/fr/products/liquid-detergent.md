@@ -1,5 +1,5 @@
 ---
-sourceHash: "e01f264e3e3e"
+sourceHash: "4ae767bdf766"
 title: "Lessive liquide"
 slug: liquid-detergent
 category: laundry-care
@@ -105,3 +105,5 @@ Les marques de lessive liquide ajoutent souvent une recharge en sachet assortie 
 ## Pourquoi passer par GoodBiz Hygiene
 
 Les liquides pour machine et pour lavage à la main n’exigent pas le même contrôle de la mousse, et une erreur sur ce point génère des réclamations. GoodBiz Hygiene confirme le mode de lavage prévu avec le fabricant avant de chiffrer une qualité. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Précisez-nous si le produit est destiné aux machines à chargement par le haut, à hublot ou au lavage à la main, ainsi que vos formats, et nous vous adresserons un devis.
+
+Si vous choisissez entre les formats, notre comparatif [lessive en poudre ou lessive liquide](/blog/detergent-powder-vs-liquid-detergent/) examine les habitudes de lavage, le prix et le fret. L’assouplissant et les savons de lessive de la gamme [entretien du linge](/categories/laundry-care/) peuvent rejoindre la même commande.

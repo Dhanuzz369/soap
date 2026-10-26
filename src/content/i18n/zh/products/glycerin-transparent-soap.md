@@ -1,5 +1,5 @@
 ---
-sourceHash: "5a4a8b081395"
+sourceHash: "9186bb112e63"
 title: "甘油皂／透明皂"
 slug: glycerin-transparent-soap
 category: bath-personal-soaps
@@ -99,3 +99,5 @@ GoodBiz Hygiene是GoodBiz Global旗下公司，也是一家印度贸易型出口
 ## 为何通过GoodBiz Hygiene采购
 
 透明皂需要专用工艺，因此GoodBiz Hygiene只与设有透明皂生产线的制造商合作。可在封箱前安排皂块透明度和表面状态的照片，帮助您及早发现浑浊或出汗问题。可提供FOB、CIF和CFR贸易条款；付款条件按每笔订单商定（T/T或LC）。货物从印度主要港口发运。页面所示HSN编码为6位级别，完整的8位ITC-HS编码按每笔订单确认。请告知您偏好的皂块重量、色调和香型，我们会回复报价单。
+
+透明皂的TFM本身就低于不透明香皂，我们的[沐浴皂等级与TFM指南](/blog/bath-soap-grades-tfm-explained/)解释了如何解读这些数值。不透明皂、草本皂和酒店皂均在[沐浴与个人香皂系列](/categories/bath-personal-soaps/)中。

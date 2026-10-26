@@ -3,6 +3,7 @@ title: "Liquid Hand Wash"
 slug: liquid-hand-wash
 category: bath-personal-soaps
 order: 6
+reviewed: 2026-10-26
 hsn: "3401 30"
 metaTitle: "Liquid Hand Wash Exporter & Supplier from India"
 metaDescription: "Liquid hand wash from vetted Indian manufacturers: 250 ml pumps to 20 L, antibacterial, herbal and moisturising. Private label, mixed containers, FOB/CIF."
@@ -101,3 +102,5 @@ Most hand wash brands start from the manufacturer's stock bottles and pumps, whi
 ## Why source through GoodBiz Hygiene
 
 Hand wash is bought both as a retail product and as a refill for dispensers, and the two have very different pack and price needs. GoodBiz Hygiene can quote the retail and institutional sizes together so both ship in one container. FOB, CIF and CFR are available; payment terms are agreed per order (T/T or LC). Shipments leave from major Indian ports. The HSN code shown is the 6-digit level, and the full 8-digit ITC-HS code is confirmed for each order. Send your target pack sizes, fragrance preferences and any antibacterial claim you need and we will return a quotation.
+
+Hand wash is not soap in the chemical sense, yet it is classified under heading 3401, and our [HSN 3401 vs 3402 guide](/blog/hsn-code-3401-vs-3402-soaps-detergents/) explains why. Bars and shower gel in matching fragrances are in the [bath and personal soaps range](/categories/bath-personal-soaps/).

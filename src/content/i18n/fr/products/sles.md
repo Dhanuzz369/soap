@@ -1,5 +1,5 @@
 ---
-sourceHash: "d51786edaf5f"
+sourceHash: "44d84f27fc48"
 title: "SLES (lauryl éther sulfate de sodium)"
 slug: sles
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ Le SLES s’épaissit avec le sel : de nombreux formulateurs construisent la vi
 ## Pourquoi passer par GoodBiz Hygiene
 
 Les acheteurs de SLES fabriquent des shampoings, des savons pour les mains et des liquides vaisselle, où la couleur, l’odeur et la teneur en 1,4-dioxane comptent. GoodBiz Hygiene peut demander au fabricant un échantillon et un certificat d’analyse avant que vous ne vous engagiez sur un conteneur. FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque commande (T/T ou LC). Les expéditions partent des principaux ports indiens. Le code HSN indiqué correspond au niveau à 6 chiffres, et le code ITC-HS complet à 8 chiffres est confirmé pour chaque commande. Indiquez-nous le pourcentage d’actif souhaité, le degré d’éthoxylation et votre volume mensuel, et nous vous adresserons un devis.
+
+Le SLES est classé comme agent de surface anionique en 3402 39, à part des détergents finis ; voir notre guide [code HSN 3401 ou 3402](/blog/hsn-code-3401-vs-3402-soaps-detergents/). Le LABSA et les noodles de savon sont dans la même gamme [matières premières et produits industriels](/categories/industrial-raw-materials/).

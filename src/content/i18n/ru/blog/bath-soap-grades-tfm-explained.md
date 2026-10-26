@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "Сорта туалетного мыла: что такое TFM, чем 1-й сорт отличается от 2-го и почему это важно"
 metaTitle: "Сорта туалетного мыла: TFM, 1-й и 2-й сорт"
 description: "Что означает TFM в спецификации туалетного мыла, как в торговле применяют 1-й и 2-й сорта и как выбрать сорт под ваш рынок и цену."
 date: 2026-08-27
 tags: ["туалетное мыло", "TFM", "сорта мыла", "спецификации"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "Что означает TFM в туалетном мыле?"
     a: "TFM расшифровывается как Total Fatty Matter, общее содержание жирных кислот. Это доля куска по массе, приходящаяся на жирные кислоты из масел и жиров, использованных при омылении. Более высокий TFM, как правило, означает больше настоящего мыла и меньше наполнителей, воды и других добавок."

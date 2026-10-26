@@ -1,11 +1,11 @@
 ---
-sourceHash: "af3f3cf90c23"
+sourceHash: "6c8919b9f6cf"
 title: "Calidades del jabón de baño explicadas: TFM, Grado 1 frente a Grado 2 y por qué importa"
 metaTitle: "Calidades de jabón de baño: TFM, grado 1 o grado 2"
 description: "Qué significa el TFM en la ficha de un jabón de baño, cómo se usan los Grados 1 y 2 en el comercio y cómo elegir la calidad adecuada para su mercado."
 date: 2026-08-27
 tags: ["jabón de baño", "TFM", "calidades de jabón", "especificaciones"]
-relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles", "hotel-guest-soap", "glycerin-transparent-soap"]
 faqs:
   - q: "¿Qué significa TFM en un jabón de baño?"
     a: "TFM significa materia grasa total (Total Fatty Matter). Es el porcentaje de la pastilla, en peso, formado por los ácidos grasos de los aceites y grasas empleados en la saponificación. Un TFM más alto suele significar más jabón puro y menos carga, agua y otros aditivos."

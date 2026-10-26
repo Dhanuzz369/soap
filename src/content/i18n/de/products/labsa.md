@@ -1,5 +1,5 @@
 ---
-sourceHash: "15d439c588c9"
+sourceHash: "f7335a2c4b58"
 title: "LABSA (lineare Alkylbenzolsulfonsäure)"
 slug: labsa
 category: industrial-raw-materials
@@ -93,3 +93,5 @@ LABSA ist ätzend, daher säurebeständige Ausrüstung, Handschuhe und Augenschu
 ## Warum der Bezug über GoodBiz Hygiene
 
 Käufer von LABSA sind Waschmittelhersteller, die gleichbleibende Aktivsubstanz und wenig freies Öl brauchen. GoodBiz Hygiene kann beim Hersteller ein Muster und ein Analysezertifikat organisieren, damit Sie vor dem ersten Container in Ihrem eigenen Slurry testen können. FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T/T oder LC). Versand ab den wichtigsten indischen Häfen. Der angegebene HSN-Code ist die sechsstellige Ebene, der vollständige achtstellige ITC-HS-Code wird für jeden Auftrag bestätigt. Senden Sie uns Ihre Qualität, die bevorzugte Verpackung und Ihr monatliches Volumen, und wir senden Ihnen ein Angebot.
+
+LABSA ist ätzend und wird als Gefahrgut befördert; lesen Sie daher vor der Frachtbuchung unseren Ratgeber zu [Exportdokumenten für Reinigungsprodukte](/blog/export-documents-cleaning-products/). SLES und Seifennudeln gehören zum selben Sortiment [Rohstoffe und Industrieprodukte](/categories/industrial-raw-materials/).

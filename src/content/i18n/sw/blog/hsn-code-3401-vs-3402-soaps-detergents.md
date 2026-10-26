@@ -1,11 +1,11 @@
 ---
-sourceHash: "85547357c07f"
+sourceHash: "dc20e0fa7d5e"
 title: "Msimbo wa HSN 3401 dhidi ya 3402: Mwongozo wa Mnunuzi wa Kuainisha Sabuni na Sabuni za Kufulia"
 metaTitle: "HSN 3401 dhidi ya 3402: Kuainisha Sabuni"
 description: "Huna uhakika kama bidhaa yako ni HSN 3401 au 3402? Mwongozo rahisi wa mgawanyo huo, jedwali la bidhaa kwa bidhaa na maswali ya kutatua kwanza."
 date: 2026-10-01
 tags: ["msimbo wa HSN", "uainishaji", "nyaraka za usafirishaji nje"]
-relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
+relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
   - q: "Kuna tofauti gani kati ya HSN 3401 na 3402?"
     a: "Kichwa cha 3401 kinashughulikia sabuni yenyewe na baadhi ya bidhaa za kuosha ngozi. Kichwa cha 3402 kinashughulikia viambato hai vya kikaboni vya kusafisha visivyo sabuni, na maandalizi ya kuosha na kusafisha yanayotengenezwa kutokana navyo, kama poda na vimiminika vya sabuni za kufulia."

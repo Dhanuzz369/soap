@@ -1,5 +1,5 @@
 ---
-sourceHash: "050e9d439949"
+sourceHash: "421e81d90f2e"
 title: "Amaciante de roupas"
 slug: fabric-softener
 category: laundry-care
@@ -109,3 +109,5 @@ O amaciante é uma categoria guiada pela fragrância; por isso, a decisão mais 
 ## Por que comprar pela GoodBiz Hygiene
 
 O amaciante é julgado pelo cheiro; por isso, os compradores devem comparar amostras de fragrância em tecido de verdade, e não no frasco. A GoodBiz Hygiene pode providenciar amostras de fragrância do fabricante para esse fim. FOB, CIF e CFR disponíveis; condições de pagamento acordadas a cada pedido (T/T ou LC). Os embarques saem dos principais portos indianos. O código HSN exibido está no nível de 6 dígitos, e o código ITC-HS completo, de 8 dígitos, é confirmado a cada pedido. Informe as suas preferências de fragrância, o nível de concentração e os tamanhos de embalagem, e enviaremos uma cotação.
+
+O nosso [guia de compra de amaciante](/blog/fabric-softener-buying-guide-importers/) aprofunda tipos, fragrâncias e tamanhos de embalagem, e a linha [cuidado com a roupa](/categories/laundry-care/) traz os sabões que costumam ser embarcados com ele.
