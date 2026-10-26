@@ -5,6 +5,7 @@ import { join, resolve } from 'node:path';
 import site from '../../src/config/site';
 import { LOCALES, localizePath, type Locale } from '../../src/i18n/locales';
 import { getUi } from '../../src/i18n/ui';
+import { registrationsLlmsLine } from '../../src/lib/registrations';
 
 const DIST = resolve(process.cwd(), 'dist');
 const page = (path: string, lang: Locale) => readFileSync(join(DIST, localizePath(path, lang), 'index.html'), 'utf8');
@@ -84,13 +85,15 @@ describe('no DGFT image', () => {
 });
 
 describe('llms and structured data', () => {
-  const line = 'Registered with: FIEO (member), MSME Udyam, CHEMEXCIL (RCMC holder), DGFT (IEC)';
-  it('llms.txt in every language and llms-full.txt carry the registrations line', () => {
+  const line = (l: Locale) => registrationsLlmsLine(getUi(l).registrations)!;
+  it('llms.txt in every language and llms-full.txt carry the registrations line, translated', () => {
     for (const l of LOCALES) {
       const file = l.code === 'en' ? 'llms.txt' : `${l.code}/llms.txt`;
-      expect(readFileSync(join(DIST, file), 'utf8'), file).toContain(line);
+      const txt = readFileSync(join(DIST, file), 'utf8');
+      expect(txt, file).toContain(line(l.code as Locale));
+      if (l.code !== 'en') expect(txt, file).not.toContain('Registered with');
     }
-    expect(readFileSync(join(DIST, 'llms-full.txt'), 'utf8')).toContain(line);
+    expect(readFileSync(join(DIST, 'llms-full.txt'), 'utf8')).toContain(line('en'));
   });
   it('Organization memberOf lists FIEO and CHEMEXCIL, with no numbers', () => {
     for (const l of LOCALES) {

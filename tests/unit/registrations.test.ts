@@ -4,7 +4,7 @@ import os from 'node:os';
 import path from 'node:path';
 import site from '../../src/config/site';
 import { resolveRegistrations, memberOfJsonLd, registrationsLlmsLine, svgSize } from '../../src/lib/registrations';
-import { LOCALE_CODES } from '../../src/i18n/locales';
+import { LOCALE_CODES, PREFIXED_LOCALES } from '../../src/i18n/locales';
 import { getUi } from '../../src/i18n/ui';
 
 describe('registrations config', () => {
@@ -72,7 +72,7 @@ describe('resolveRegistrations', () => {
   it('returns nothing when showRegistrations is false', () => {
     expect(resolveRegistrations(root, site.registrations, false)).toEqual([]);
     expect(memberOfJsonLd(site.registrations, false)).toEqual([]);
-    expect(registrationsLlmsLine(site.registrations, false)).toBeUndefined();
+    expect(registrationsLlmsLine(getUi('en').registrations, site.registrations, false)).toBeUndefined();
   });
 });
 
@@ -84,8 +84,18 @@ describe('helpers', () => {
     for (const x of m) expect(x['@type']).toBe('Organization');
     expect(JSON.stringify(m)).not.toMatch(/\d/);
   });
-  it('llms line', () => {
-    expect(registrationsLlmsLine()).toBe('Registered with: FIEO (member), MSME Udyam, CHEMEXCIL (RCMC holder), DGFT (IEC)');
+  it('llms line, in each language', () => {
+    expect(registrationsLlmsLine(getUi('en').registrations)).toBe(
+      'Registered with: FIEO (Member exporter), MSME (Udyam registered), CHEMEXCIL (RCMC holder), DGFT (IEC registered exporter)',
+    );
+    const de = registrationsLlmsLine(getUi('de').registrations)!;
+    expect(de.startsWith('Registriert bei: FIEO (')).toBe(true);
+    for (const l of PREFIXED_LOCALES) {
+      const line = registrationsLlmsLine(getUi(l).registrations)!;
+      expect(line, l).not.toContain('Registered with');
+      expect(line, l).not.toContain('{list}');
+      for (const r of site.registrations) expect(line, l).toContain(r.name);
+    }
   });
   it('reads SVG sizes', () => {
     expect(svgSize('<svg width="120px" height="40">')).toEqual({ width: 120, height: 40 });

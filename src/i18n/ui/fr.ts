@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '713dcaf54fc7';
+export const sourceHash = 'ea0d79815312';
 
 const fr: UiPartial = {
   meta: {
@@ -198,6 +198,8 @@ const fr: UiPartial = {
     aria: "Nos enregistrements à l’exportation",
     aboutText: "GoodBiz Hygiene est enregistrée auprès des autorités et conseils d’exportation indiens ci-dessous ; les détails d’enregistrement sont communiqués aux acheteurs sur demande.",
     opens: "{name} (ouvre le site officiel)",
+    /** llms.txt: {list} is each body with its status line, e.g. "FIEO (Member exporter)". */
+    llmsLine: 'Enregistrée auprès de : {list}',
     status: {
       fieo: "Exportateur membre",
       msme: "Enregistrée Udyam",

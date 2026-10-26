@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '713dcaf54fc7';
+export const sourceHash = 'ea0d79815312';
 
 const sw: UiPartial = {
   meta: {
@@ -196,6 +196,8 @@ const sw: UiPartial = {
     aria: "Usajili wetu wa usafirishaji nje",
     aboutText: "GoodBiz Hygiene imesajiliwa na mamlaka na mabaraza ya India ya usafirishaji nje yaliyoorodheshwa hapa chini; maelezo ya usajili yanapatikana kwa wanunuzi kwa ombi.",
     opens: "{name} (hufungua tovuti rasmi)",
+    /** llms.txt: {list} is each body with its status line, e.g. "FIEO (Member exporter)". */
+    llmsLine: 'Imesajiliwa na: {list}',
     status: {
       fieo: "Msafirishaji mwanachama",
       msme: "Imesajiliwa Udyam",

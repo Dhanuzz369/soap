@@ -23,6 +23,13 @@ describe('buildRobots', () => {
     expect(out).toContain(`Sitemap: ${URL}/sitemap-index.xml`);
   });
 
+  it('keeps every search and answer crawler allowed (opting out of training must not remove these)', () => {
+    const out = buildRobots(URL, true);
+    for (const bot of ['Googlebot', 'Bingbot', 'Applebot', 'OAI-SearchBot', 'ChatGPT-User', 'PerplexityBot', 'Perplexity-User', 'Claude-SearchBot', 'Claude-User', 'DuckAssistBot']) {
+      expect(out, bot).toContain(`User-agent: ${bot}\nAllow: /`);
+    }
+  });
+
   it('tolerates a trailing slash on the url', () => {
     expect(buildRobots(URL + '/', true)).toContain(`Sitemap: ${URL}/sitemap-index.xml`);
   });

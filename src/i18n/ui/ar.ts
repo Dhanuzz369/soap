@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '713dcaf54fc7';
+export const sourceHash = 'ea0d79815312';
 
 const ar: UiPartial = {
   meta: {
@@ -197,6 +197,8 @@ const ar: UiPartial = {
     aria: "تسجيلاتنا التصديرية",
     aboutText: "جود بيز هايجين مسجّلة لدى الجهات والمجالس الهندية للتصدير المذكورة أدناه، وتتوفر تفاصيل التسجيل للمشترين عند الطلب.",
     opens: "{name} (يفتح الموقع الرسمي)",
+    /** llms.txt: {list} is each body with its status line, e.g. "FIEO (Member exporter)". */
+    llmsLine: 'مسجّلة لدى: {list}',
     status: {
       fieo: "مصدّر عضو",
       msme: "مسجّلة في أُدْيام",

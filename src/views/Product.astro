@@ -80,6 +80,8 @@ const media: HeroMedia | undefined = pic
   <PageHero breadcrumbs={breadcrumbs} l1={name.l1} sub={name.sub} l2={ui.common.exporterLine} scale={name.scale} lead={d.answer} media={media} size="product">
     <p class="ph-hsn">
       <span class="pill"><abbr title={ui.common.hsnTitle}>{ui.common.hsn}</abbr>&nbsp;{d.hsn}</span>
+      {/* A hidden full stop keeps the code apart from the note in extracted text ("3402 50. 8-digit…", not "3402 508-digit…"). */}
+      <span class="visually-hidden">. </span>
       <span>{d.hsnNote ? P.hsnAlt : P.hsnConfirmed}</span>
     </p>
     <div class="ph-actions">

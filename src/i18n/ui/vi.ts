@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '713dcaf54fc7';
+export const sourceHash = 'ea0d79815312';
 
 const vi: UiPartial = {
   meta: {
@@ -197,6 +197,8 @@ const vi: UiPartial = {
     aria: "Các đăng ký xuất khẩu của chúng tôi",
     aboutText: "GoodBiz Hygiene đã đăng ký với các cơ quan và hội đồng xuất khẩu của Ấn Độ nêu dưới đây; chi tiết đăng ký được cung cấp cho người mua khi có yêu cầu.",
     opens: "{name} (mở trang web chính thức)",
+    /** llms.txt: {list} is each body with its status line, e.g. "FIEO (Member exporter)". */
+    llmsLine: 'Đã đăng ký với: {list}',
     status: {
       fieo: "Nhà xuất khẩu là hội viên",
       msme: "Đã đăng ký Udyam",

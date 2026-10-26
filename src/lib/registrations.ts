@@ -6,7 +6,7 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import site, { type Registration } from '../config/site';
+import site, { type Registration, type RegistrationId } from '../config/site';
 import { rasterSize } from './product-image';
 
 export interface ResolvedRegistration extends Registration {
@@ -70,9 +70,19 @@ export function memberOfJsonLd(list: Registration[] = site.registrations, show: 
     .map((r) => ({ '@type': 'Organization' as const, name: r.fullName, url: r.url }));
 }
 
-/** The line for llms.txt and llms-full.txt. */
-export function registrationsLlmsLine(list: Registration[] = site.registrations, show: boolean = site.showRegistrations): string | undefined {
+/** The words the llms line uses: `llmsLine` ("Registered with: {list}") and each body's status, from the UI file. */
+export interface RegistrationLabels {
+  llmsLine: string;
+  status: Record<RegistrationId, string>;
+}
+
+/** The line for llms.txt and llms-full.txt, in the language of `labels` (ui.registrations). */
+export function registrationsLlmsLine(
+  labels: RegistrationLabels,
+  list: Registration[] = site.registrations,
+  show: boolean = site.showRegistrations,
+): string | undefined {
   if (!show || !list.length) return undefined;
-  const label: Record<string, string> = { fieo: 'FIEO (member)', msme: 'MSME Udyam', chemexcil: 'CHEMEXCIL (RCMC holder)', dgft: 'DGFT (IEC)' };
-  return `Registered with: ${list.map((r) => label[r.id] ?? r.name).join(', ')}`;
+  const items = list.map((r) => (labels.status[r.id] ? `${r.name} (${labels.status[r.id]})` : r.name)).join(', ');
+  return labels.llmsLine.replace('{list}', items);
 }

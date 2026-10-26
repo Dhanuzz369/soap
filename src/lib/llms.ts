@@ -78,7 +78,7 @@ export async function buildLlmsIndex(lang: Locale = DEFAULT_LOCALE): Promise<str
   const lines: string[] = [`# ${site.name}`, '', `> ${ui.seo.entity}`, '', `## ${H.facts}`, '', ...quickFacts(lang), ''];
   const contact = contactLines();
   if (contact.length) lines.push(...contact, '');
-  const reg = registrationsLlmsLine();
+  const reg = registrationsLlmsLine(ui.registrations);
   if (reg) lines.push(reg, '');
 
   lines.push(`## ${H.products}`, '');
@@ -134,7 +134,7 @@ export async function buildLlmsFull(): Promise<string> {
     '',
     ...quickFacts(DEFAULT_LOCALE),
     ...contactLines(),
-    ...(registrationsLlmsLine() ? ['', registrationsLlmsLine()!] : []),
+    ...(registrationsLlmsLine(ui.registrations) ? ['', registrationsLlmsLine(ui.registrations)!] : []),
     '',
     '## Export terms',
     '',

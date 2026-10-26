@@ -203,6 +203,8 @@ const en = {
     aria: "Our export registrations",
     aboutText: "GoodBiz Hygiene is registered with India’s export authorities and councils listed below; registration details are available to buyers on request.",
     opens: "{name} (opens official website)",
+    /** llms.txt: {list} is each body with its status line, e.g. "FIEO (Member exporter)". */
+    llmsLine: 'Registered with: {list}',
     status: {
       fieo: "Member exporter",
       msme: "Udyam registered",

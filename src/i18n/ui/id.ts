@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '713dcaf54fc7';
+export const sourceHash = 'ea0d79815312';
 
 const id: UiPartial = {
   meta: {
@@ -197,6 +197,8 @@ const id: UiPartial = {
     aria: "Registrasi ekspor kami",
     aboutText: "GoodBiz Hygiene terdaftar pada otoritas dan dewan ekspor India yang tercantum di bawah; rincian registrasi tersedia bagi pembeli atas permintaan.",
     opens: "{name} (membuka situs resmi)",
+    /** llms.txt: {list} is each body with its status line, e.g. "FIEO (Member exporter)". */
+    llmsLine: 'Terdaftar di: {list}',
     status: {
       fieo: "Eksportir anggota",
       msme: "Terdaftar di Udyam",
