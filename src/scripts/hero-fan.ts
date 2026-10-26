@@ -26,7 +26,14 @@ const SETTLE: Record<Mode, number> = { deal: 1100 + 3 * 90 + 50, auto: 800, user
 const TUCK: Record<Exclude<Mode, 'deal'>, number> = { auto: 360, user: 130 };
 
 const root = document.querySelector<HTMLElement>('[data-fan]');
-if (root) init(root);
+// Set up after the first paint, when the main thread is idle (at most 800 ms later), so the fan's
+// setup never competes with the front photo (the LCP) or with text layout (long CJK pages). Until
+// then the fan is a still, fully linked stack (the inline safety net fans it out at 3 s anyway).
+if (root) {
+  const start = () => init(root);
+  if ('requestIdleCallback' in window) requestIdleCallback(start, { timeout: 800 });
+  else setTimeout(start, 1);
+}
 
 function init(root: HTMLElement) {
   const stage = root.querySelector<HTMLElement>('.fan-stage');

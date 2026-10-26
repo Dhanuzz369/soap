@@ -27,6 +27,8 @@ const port = foundPictures.find((p) => p.file.includes('kochi'))!;
   <img
     class="process-leaves"
     src="/images/found/neem-leaves.webp"
+    srcset="/images/found/neem-leaves-600.webp 600w, /images/found/neem-leaves-900.webp 900w, /images/found/neem-leaves.webp 1100w"
+    sizes="(max-width: 899.98px) 120vw, min(62vw, 980px)"
     width="1100"
     height="682"
     alt=""
@@ -45,8 +47,8 @@ const port = foundPictures.find((p) => p.file.includes('kochi'))!;
               <div class="process-photo-frame">
                 <img
                   src="/images/found/kochi-port-night-600.webp"
-                  srcset="/images/found/kochi-port-night-600.webp 600w, /images/found/kochi-port-night.webp 1200w"
-                  sizes="(max-width: 900px) 92vw, 480px"
+                  srcset="/images/found/kochi-port-night-400.webp 400w, /images/found/kochi-port-night-600.webp 600w, /images/found/kochi-port-night-800.webp 800w, /images/found/kochi-port-night.webp 1200w"
+                  sizes="(max-width: 520px) calc(100vw - 40px), 480px"
                   width="1200"
                   height="900"
                   alt={ui.common.portAlt}
