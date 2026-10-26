@@ -1,5 +1,5 @@
 ---
-sourceHash: "81532f93455a"
+sourceHash: "85547357c07f"
 title: "HSN Kodu 3401 ve 3402: Sabun ve Deterjanları Sınıflandırmak için Alıcı Rehberi"
 metaTitle: "HSN 3401 ve 3402: Sabun ve Deterjan Sınıflandırması"
 description: "Sabununuzun veya deterjanınızın HSN 3401 mi 3402 mi olduğundan emin değil misiniz? Ayrımın sade bir rehberi; ürün bazında tablo ve önce netleştirilecek sorular."
@@ -56,6 +56,10 @@ Bu, sabun dışı temizlik kimyası için daha büyük başlıktır. Tipik alt b
 - **3402 31 ve 3402 39**: LABSA ve SLES gibi hammaddeleri kapsayan anyonik yüzey aktif maddeler.
 - **3402 50**: perakende satışa sunulan yıkama ve temizlik müstahzarları. Toz deterjan, sıvı deterjan, sıvı bulaşık deterjanı, zemin temizleyici ve benzeri ürünler genellikle buraya yerleştirilir.
 - **3402 90**: çoğunlukla perakende satışa sunulmayan toplu ve kurumsal temizleyiciler için kullanılan diğer müstahzarlar.
+
+### HS 2022 notu: 3402 20 alt pozisyonu artık 3402 50
+
+Armonize Sistem yaklaşık beş yılda bir revize edilir. 1 Ocak 2022’den beri yürürlükte olan HS 2022 baskısında Dünya Gümrük Örgütü 3402 pozisyonunu yeniden numaralandırdı: perakende satış için hazırlanmış yıkama ve temizleme müstahzarları 3402 20 alt pozisyonundan 3402 50’ye taşındı; yüzey aktif maddeler de yeniden gruplandı ve doğrusal alkilbenzen sülfonik asitler ile tuzları (LABSA) için yeni 3402 31 alt pozisyonu açıldı. Eski fiyat listeleri, faturalar ve web siteleri hâlâ 3402 20 gösterebilir; bu nedenle bir kodun hangi baskıya ait olduğunu kontrol edin. 8 haneli ITC-HS kodları her sipariş için güncel DGFT listesine göre teyit edilir.
 
 ## Ürün bazında bir bakış
 
@@ -117,3 +121,11 @@ Pazarınızın temizlik ürünlerinin ön kaydı veya belirli bir etiket format�
 - Ödeme yapmadan önce önerilen kodu her zaman kendi ülkenizin tarifesine göre kontrol edin.
 
 Ürününüzün nasıl sınıflandırılması gerektiğinden emin değil misiniz? Ürünü, ambalaj boyutunu ve varış yerinizi bize gönderin; bir kod önerelim ve ayrıntıları üreticiyle teyit edelim. 3401 başlığının farklı bölümlerinde yer alan iki ürün örneği için [sıvı el sabunu](/products/liquid-hand-wash/) veya [sabun noodle](/products/soap-noodles/) sayfalarına göz atın.
+
+## Kaynaklar
+
+Bu rehberdeki kodların ve standartların birincil kaynakları. Bir rakama güvenmeden önce güncel sürümü kontrol edin.
+
+- [Dünya Gümrük Örgütü (DGÖ): Armonize Sistem Nomenklatürü, 2022 baskısı](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): 3401 ve 3402 dahil uluslararası altı haneli pozisyonlar ve alt pozisyonlar.
+- [Hindistan Dış Ticaret Genel Müdürlüğü (DGFT): ITC(HS) ihracat ve ithalat listeleri](https://www.dgft.gov.in/CP/?opt=itchs-import-export): Hindistan’ın 8 haneli kodları ve ihracat politikası.
+- [Hindistan Merkezi Dolaylı Vergiler ve Gümrük Kurulu (CBIC): Hindistan Gümrük Tarifesi](https://www.cbic.gov.in/): Hindistan gümrük tarifesi ve duyuruları.

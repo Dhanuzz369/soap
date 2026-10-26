@@ -1,5 +1,5 @@
 ---
-sourceHash: "ee2e38612e35"
+sourceHash: "b19904d90d4f"
 title: "进口商衣物柔顺剂采购指南：类型、香型与包装规格"
 metaTitle: "进口商衣物柔顺剂采购指南"
 description: "进口商从印度采购衣物柔顺剂前需要了解的事项：普通型与浓缩型、敏感肌型、香型选择、包装规格以及储存和运输要点，帮助进口商少走弯路、做出更稳妥的采购决定。"
@@ -115,3 +115,10 @@ GoodBiz Hygiene是一家贸易型出口商。我们从经我们考察的印度�
 ## 下一步
 
 请发送您的目标市场、候选香型、浓缩程度和包装规格。GoodBiz Hygiene将回复报价单，向制造商安排香型样品，并在您想加入洗衣液或其他洗衣产品线时，建议混装集装箱方案。
+
+## 资料来源
+
+本指南所涉编码和标准的原始出处。引用任何数字前，请先核对现行版本。
+
+- [世界海关组织（WCO）：《协调制度》2022年版](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx)：国际通用的6位品目和子目，包括3401和3402。
+- [印度对外贸易总局（DGFT）：ITC(HS)进出口目录](https://www.dgft.gov.in/CP/?opt=itchs-import-export)：印度8位编码及出口政策。

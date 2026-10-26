@@ -1,5 +1,5 @@
 ---
-sourceHash: "81532f93455a"
+sourceHash: "85547357c07f"
 title: "Msimbo wa HSN 3401 dhidi ya 3402: Mwongozo wa Mnunuzi wa Kuainisha Sabuni na Sabuni za Kufulia"
 metaTitle: "HSN 3401 dhidi ya 3402: Kuainisha Sabuni"
 description: "Huna uhakika kama bidhaa yako ni HSN 3401 au 3402? Mwongozo rahisi wa mgawanyo huo, jedwali la bidhaa kwa bidhaa na maswali ya kutatua kwanza."
@@ -56,6 +56,10 @@ Hiki ndicho kichwa kikubwa zaidi cha kemia ya kusafisha isiyo sabuni. Vichwa vid
 - **3402 31 na 3402 39**: viambato vya kusafisha vya anionic, vinavyojumuisha malighafi kama LABSA na SLES.
 - **3402 50**: maandalizi ya kuosha na kusafisha yaliyofungashwa kwa mauzo ya rejareja. Poda ya kufulia, sabuni ya maji ya kufulia, sabuni ya maji ya kuosha vyombo, kisafishaji cha sakafu na bidhaa zinazofanana kwa kawaida huwekwa hapa.
 - **3402 90**: maandalizi mengine, mara nyingi hutumika kwa visafishaji vya jumla na vya taasisi ambavyo havijafungashwa kwa mauzo ya rejareja.
+
+### Dokezo kuhusu HS 2022: kifungu kidogo 3402 20 sasa ni 3402 50
+
+Mfumo Uliooanishwa (HS) hurekebishwa takriban kila baada ya miaka mitano. Katika toleo la HS 2022, linalotumika tangu tarehe 1 Januari 2022, WCO ilipanga upya namba za kichwa 3402: maandalizi ya kufulia na kusafisha yaliyofungashwa kwa rejareja yalihamishwa kutoka kifungu kidogo 3402 20 hadi 3402 50, na viambato amilifu vya uso vilipangwa upya, pamoja na kifungu kidogo kipya 3402 31 kwa asidi za linear alkylbenzene sulphonic na chumvi zake (LABSA). Orodha za bei, ankara na tovuti za zamani bado zinaweza kuonyesha 3402 20, kwa hiyo hakikisha msimbo unatoka toleo gani. Misimbo ya ITC-HS ya tarakimu 8 huthibitishwa kwa kila oda kulingana na jedwali la sasa la DGFT.
 
 ## Mtazamo wa bidhaa kwa bidhaa
 
@@ -117,3 +121,11 @@ Ikiwa soko lako lina mahitaji maalum, kama usajili wa awali wa bidhaa za usafi a
 - Daima kagua msimbo unaopendekezwa dhidi ya ushuru wa nchi yako mwenyewe kabla ya kulipa.
 
 Huna uhakika bidhaa yako inapaswa kuainishwaje? Tutumie bidhaa, ukubwa wa kifungashio na nchi unayopeleka, nasi tutapendekeza msimbo na kuthibitisha maelezo na mtengenezaji. Tazama [sabuni ya maji ya mikono](/products/liquid-hand-wash/) au [soap noodles](/products/soap-noodles/) kwa mifano miwili ya bidhaa zilizo katika sehemu tofauti za kichwa cha 3401.
+
+## Vyanzo
+
+Vyanzo vya msingi vya misimbo na viwango vilivyo katika mwongozo huu. Hakikisha toleo la sasa kabla ya kutegemea takwimu yoyote.
+
+- [Shirika la Forodha Duniani (WCO): Nomenklecha ya HS, toleo la 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): vichwa na vifungu vidogo vya kimataifa vya tarakimu sita, ikiwemo 3401 na 3402.
+- [Kurugenzi Kuu ya Biashara ya Nje ya India (DGFT): majedwali ya ITC(HS) ya kusafirisha na kuagiza](https://www.dgft.gov.in/CP/?opt=itchs-import-export): misimbo ya India ya tarakimu 8 na sera ya usafirishaji nje.
+- [Bodi Kuu ya Kodi Zisizo za Moja kwa Moja na Forodha ya India (CBIC): Ushuru wa Forodha wa India](https://www.cbic.gov.in/): ushuru wa forodha wa India na matangazo yake.

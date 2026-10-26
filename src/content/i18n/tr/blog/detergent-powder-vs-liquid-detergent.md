@@ -1,5 +1,5 @@
 ---
-sourceHash: "c1161c07178f"
+sourceHash: "3192292d0bae"
 title: "Toz Deterjan mı Sıvı Deterjan mı: Pazarınızda Hangisi Daha Çok Satar?"
 metaTitle: "Toz Deterjan mı Sıvı Deterjan mı? Hangisi Daha Çok Satar"
 description: "Toz mu sıvı çamaşır deterjanı mı? Doğru gamı seçmek için iklimi, yıkama alışkanlıklarını, makineleri, fiyatı ve yıkama başına nakliye maliyetini karşılaştırın."
@@ -103,3 +103,10 @@ Kalitelerle, ambalaj seçenekleriyle ve bir konteyner planıyla yanıt veririz. 
 - **Etiket kurallarını kontrol edin.** Bazı pazarlar deterjanlar için belirli ifade, dil veya kayıt gerektirir. Tasarım basılmadan önce bunu teyit edin.
 - **İkinci siparişi düşünün.** En iyi ilk ürün, deponuza ve distribütörlerinizin kamyonlarına uyan ambalajlarla kolayca yeniden stoklayabileceğiniz üründür.
 - **Komşunuzun pazarını kopyalamayın.** Yan yana iki ülkenin yıkama alışkanlıkları, fiyatları ve ithalat maliyetleri çok farklı olabilir.
+
+## Kaynaklar
+
+Bu rehberdeki kodların ve standartların birincil kaynakları. Bir rakama güvenmeden önce güncel sürümü kontrol edin.
+
+- [Dünya Gümrük Örgütü (DGÖ): Armonize Sistem Nomenklatürü, 2022 baskısı](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): 3401 ve 3402 dahil uluslararası altı haneli pozisyonlar ve alt pozisyonlar.
+- [Milletlerarası Ticaret Odası (ICC): Incoterms kuralları](https://iccwbo.org/business-solutions/incoterms-rules/): tekliflerde kullanılan teslim şekillerinin resmi tanımları.

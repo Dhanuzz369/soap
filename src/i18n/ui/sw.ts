@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ff1e6f1225e8';
+export const sourceHash = '3056a29d249f';
 
 const sw: UiPartial = {
   meta: {
@@ -358,6 +358,7 @@ const sw: UiPartial = {
 
   post: {
     meta: '{date} · {minutes} · GoodBiz Hygiene',
+    reviewed: 'Ilipitiwa mwisho: {date}',
     quickAnswers: 'Majibu ya haraka',
     relatedH: 'Bidhaa zilizotajwa katika mwongozo huu',
     quoteH: 'Unapanga oda?',

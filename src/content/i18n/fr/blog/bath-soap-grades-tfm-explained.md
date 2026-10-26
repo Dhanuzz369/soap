@@ -1,5 +1,5 @@
 ---
-sourceHash: "84702d62b584"
+sourceHash: "af3f3cf90c23"
 title: "Qualités de savon de toilette : le TFM, qualité 1 ou qualité 2, et pourquoi c’est important"
 metaTitle: "Qualités de savon : TFM, qualité 1 ou 2, ce qui change"
 description: "Ce que signifie le TFM sur une fiche de savon, comment les qualités 1 et 2 sont utilisées dans le commerce, et comment choisir la qualité adaptée à votre prix."
@@ -35,7 +35,7 @@ Trois effets pratiques en découlent :
 
 ## Comment les qualités sont utilisées dans le commerce
 
-De nombreux acheteurs de savon utilisent les qualités comme raccourci pour des tranches de TFM. Dans le commerce indien, la norme du Bureau of Indian Standards (BIS) pour le savon de toilette définit les qualités par un TFM minimum, et les devis reprennent souvent ce vocabulaire.
+De nombreux acheteurs de savon utilisent les qualités comme raccourci pour des tranches de TFM. Dans le commerce indien, la norme du Bureau of Indian Standards (BIS, IS 2888) pour le savon de toilette définit les qualités par un TFM minimum, et les devis reprennent souvent ce vocabulaire.
 
 Les valeurs ci-dessous sont des chiffres de référence couramment utilisés pour le TFM minimum, pas des garanties. Confirmez la qualité exacte, la version de la norme et la méthode d’essai avec le fabricant pour chaque commande.
 
@@ -123,3 +123,10 @@ Nous vous demandons votre marché cible, le poids de pain souhaité, la qualité
 - Choisissez la qualité selon votre client et votre prix de vente plutôt que de supposer que la plus élevée est la meilleure.
 
 Indiquez-nous votre marché cible, la qualité et le poids du pain, et nous reviendrons vers vous avec des options, des échantillons et les fiches de spécifications du fabricant.
+
+## Sources
+
+Sources primaires des codes et normes cités dans ce guide. Vérifiez la version en vigueur avant de vous fier à un chiffre.
+
+- [Bureau of Indian Standards (BIS) : IS 2888, savon de toilette — spécification](https://www.bis.gov.in/?lang=en) : la norme indienne qui fixe les qualités du savon de toilette par un TFM minimum.
+- [Organisation mondiale des douanes (OMD) : Nomenclature du SH, édition 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx) : les positions et sous-positions internationales à six chiffres, dont 3401 et 3402.

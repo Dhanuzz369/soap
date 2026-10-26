@@ -1,5 +1,5 @@
 ---
-sourceHash: "bd86fef00fbc"
+sourceHash: "7f212b113545"
 title: "Bidhaa za Usafi kwa Chapa ya Mnunuzi: Mwongozo wa Hatua kwa Hatua kwa Wasambazaji"
 metaTitle: "Bidhaa za Usafi kwa Chapa Yako: Mwongozo wa Wasambazaji"
 description: "Jinsi wasambazaji wanavyoweza kuzindua chapa yao ya bidhaa za usafi kutoka India: kuchagua bidhaa, sampuli, michoro, ufungashaji na usafirishaji."
@@ -123,3 +123,10 @@ Tazama sampuli ya mwisho ya kabla ya usafirishaji kutoka kwenye kundi la uzalish
 ## Hatua zinazofuata
 
 Anza na maelezo: mstari wa bidhaa, ukubwa wa vifungashio, harufu na bandari yako ya kuwasili. Yatume kwa GoodBiz Hygiene nasi tutarudi na mstari wa kuanzia unaopendekezwa, nukuu na mpango wa sampuli na kontena la kwanza mchanganyiko.
+
+## Vyanzo
+
+Vyanzo vya msingi vya misimbo na viwango vilivyo katika mwongozo huu. Hakikisha toleo la sasa kabla ya kutegemea takwimu yoyote.
+
+- [Chemba ya Kimataifa ya Biashara (ICC): kanuni za Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): maana rasmi za masharti ya biashara yanayotumika kwenye nukuu za bei.
+- [Kurugenzi Kuu ya Biashara ya Nje ya India (DGFT): majedwali ya ITC(HS) ya kusafirisha na kuagiza](https://www.dgft.gov.in/CP/?opt=itchs-import-export): misimbo ya India ya tarakimu 8 na sera ya usafirishaji nje.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "bd86fef00fbc"
+sourceHash: "7f212b113545"
 title: "Handelsmarken für Reinigungsprodukte: Schritt-für-Schritt-Leitfaden für Händler"
 metaTitle: "Reinigungsmittel als Handelsmarke: Leitfaden für Händler"
 description: "Wie Händler eine eigene Reinigungsmarke aus Indien starten: Sortiment wählen, Hersteller briefen, Muster freigeben, Artwork, Verpackung und Versand."
@@ -123,3 +123,10 @@ Werfen Sie zum Schluss einen Blick auf ein Muster aus der Produktionscharge vor 
 ## Nächste Schritte
 
 Beginnen Sie mit dem Briefing: Sortiment, Packungsgrößen, Düfte und Ihr Zielhafen. Senden Sie es an GoodBiz Hygiene, und wir melden uns mit einem empfohlenen Startsortiment, einem Angebot und einem Plan für Muster und einen gemischten ersten Container.
+
+## Quellen
+
+Primärquellen für die Codes und Normen in diesem Ratgeber. Prüfen Sie die aktuelle Fassung, bevor Sie sich auf eine Zahl verlassen.
+
+- [Internationale Handelskammer (ICC): Incoterms-Regeln](https://iccwbo.org/business-solutions/incoterms-rules/): die offiziellen Definitionen der Lieferbedingungen in Angeboten.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS)-Listen für Ausfuhr und Einfuhr](https://www.dgft.gov.in/CP/?opt=itchs-import-export): die indischen achtstelligen Codes und die Exportpolitik.

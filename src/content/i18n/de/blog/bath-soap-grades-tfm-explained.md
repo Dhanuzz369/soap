@@ -1,5 +1,5 @@
 ---
-sourceHash: "84702d62b584"
+sourceHash: "af3f3cf90c23"
 title: "Qualitäten von Badeseife erklärt: TFM, Qualität 1 oder 2 und warum es darauf ankommt"
 metaTitle: "Badeseife: TFM, Qualität 1 oder 2 einfach erklärt"
 description: "Was TFM in der Spezifikation einer Badeseife bedeutet, wie Qualität 1 und 2 im Handel gelten und wie Sie die passende Qualität für Markt und Preis wählen."
@@ -35,7 +35,7 @@ Daraus ergeben sich drei praktische Folgen:
 
 ## Wie Qualitäten im Handel verwendet werden
 
-Viele Seifenkäufer nutzen Qualitäten als Kurzform für TFM-Bereiche. Im indischen Handel definiert die Spezifikation des Bureau of Indian Standards (BIS) für Toilettenseife die Qualitäten über einen Mindest-TFM, und Angebote übernehmen diese Sprache häufig.
+Viele Seifenkäufer nutzen Qualitäten als Kurzform für TFM-Bereiche. Im indischen Handel definiert die Spezifikation des Bureau of Indian Standards (BIS, IS 2888) für Toilettenseife die Qualitäten über einen Mindest-TFM, und Angebote übernehmen diese Sprache häufig.
 
 Die folgenden Werte sind häufig verwendete Referenzwerte für den Mindest-TFM, keine Garantien. Bestätigen Sie für jeden Auftrag mit dem Hersteller die genaue Qualität, die Fassung der Norm und das Prüfverfahren.
 
@@ -123,3 +123,10 @@ Wir fragen nach Ihrem Zielmarkt, dem bevorzugten Stückgewicht, der Qualität un
 - Wählen Sie die Qualität nach Ihrem Kunden und Preispunkt, statt anzunehmen, dass die höchste die beste ist.
 
 Nennen Sie uns Ihren Zielmarkt, die Qualität und das Stückgewicht, und wir melden uns mit Optionen, Mustern und Datenblättern des Herstellers.
+
+## Quellen
+
+Primärquellen für die Codes und Normen in diesem Ratgeber. Prüfen Sie die aktuelle Fassung, bevor Sie sich auf eine Zahl verlassen.
+
+- [Bureau of Indian Standards (BIS): IS 2888, Toilettenseife — Spezifikation](https://www.bis.gov.in/?lang=en): die indische Norm, die die Qualitäten von Toilettenseife über einen Mindest-TFM festlegt.
+- [Weltzollorganisation (WZO): HS-Nomenklatur, Ausgabe 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): die internationalen sechsstelligen Positionen und Unterpositionen, darunter 3401 und 3402.

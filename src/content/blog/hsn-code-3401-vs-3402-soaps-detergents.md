@@ -3,6 +3,7 @@ title: "HSN Code 3401 vs 3402: A Buyer's Guide to Classifying Soaps and Detergen
 metaTitle: "HSN Code 3401 vs 3402: Classifying Soaps and Detergents"
 description: "Not sure whether your soap or detergent is HSN 3401 or 3402? A plain guide to the split, with a product-by-product table and the questions to settle first."
 date: 2026-10-01
+updated: 2026-10-26
 tags: ["HSN code", "classification", "export documents"]
 relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles"]
 faqs:
@@ -55,6 +56,10 @@ This is the larger heading for non-soap cleaning chemistry. Typical subheadings 
 - **3402 31 and 3402 39**: anionic surface-active agents, which includes raw materials such as LABSA and SLES.
 - **3402 50**: washing and cleaning preparations put up for retail sale. Detergent powder, liquid detergent, dish wash liquid, floor cleaner and similar products are usually placed here.
 - **3402 90**: other preparations, often used for bulk and institutional cleaners that are not put up for retail sale.
+
+### A note on HS 2022: 3402 20 is now 3402 50
+
+The Harmonized System is revised roughly every five years. In the HS 2022 edition, in force since 1 January 2022, the WCO renumbered heading 3402: washing and cleaning preparations put up for retail sale moved from subheading 3402 20 to 3402 50, and the surface-active agents were regrouped, with a new subheading 3402 31 for linear alkylbenzene sulphonic acids and their salts (LABSA). Older price lists, invoices and websites may still show 3402 20, so check which edition a code comes from. 8-digit ITC-HS codes are confirmed per order against the current DGFT schedule.
 
 ## A product-by-product view
 
@@ -116,3 +121,11 @@ If your market has special requirements, such as pre-registration of cleaning pr
 - Always check the proposed code against your own country's tariff before you pay.
 
 Not sure how your product should be classified? Send us the product, the pack size and your destination, and we will propose a code and confirm the details with the manufacturer. Browse [liquid hand wash](/products/liquid-hand-wash/) or [soap noodles](/products/soap-noodles/) for two examples of products that sit in different parts of heading 3401.
+
+## Sources
+
+Primary sources for the codes and standards in this guide. Check the current version before you rely on a figure.
+
+- [World Customs Organization (WCO): HS Nomenclature 2022 edition](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): the international six-digit headings and subheadings, including 3401 and 3402.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS) export and import schedules](https://www.dgft.gov.in/CP/?opt=itchs-import-export): India’s 8-digit lines and export policy.
+- [Central Board of Indirect Taxes and Customs (CBIC): Customs Tariff of India](https://www.cbic.gov.in/): India’s customs tariff and notifications.

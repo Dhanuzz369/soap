@@ -1,5 +1,5 @@
 ---
-sourceHash: "ee2e38612e35"
+sourceHash: "b19904d90d4f"
 title: "İthalatçılar için Çamaşır Yumuşatıcı Alım Rehberi: Türler, Kokular ve Ambalaj Boyutları"
 metaTitle: "İthalatçılar için Çamaşır Yumuşatıcı Alım Rehberi"
 description: "Hindistan’dan çamaşır yumuşatıcı almadan önce bilinmesi gerekenler: normal ve konsantre, hassas kaliteler, koku seçimi, ambalaj boyutları ve depolama."
@@ -115,3 +115,10 @@ Sıvılar ağırdır. Bir konteyner alan dolmadan ağırlık sınırına ulaşab
 ## Sonraki adımlar
 
 Hedef pazarınızı, koku kısa listenizi, konsantrasyon seviyenizi ve ambalaj boyutlarınızı bize gönderin. GoodBiz Hygiene bir teklifle dönecek, üreticiden koku numuneleri ayarlayacak ve sıvı deterjan veya diğer çamaşır hatlarını eklemek isterseniz karışık bir konteyner önerecektir.
+
+## Kaynaklar
+
+Bu rehberdeki kodların ve standartların birincil kaynakları. Bir rakama güvenmeden önce güncel sürümü kontrol edin.
+
+- [Dünya Gümrük Örgütü (DGÖ): Armonize Sistem Nomenklatürü, 2022 baskısı](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): 3401 ve 3402 dahil uluslararası altı haneli pozisyonlar ve alt pozisyonlar.
+- [Hindistan Dış Ticaret Genel Müdürlüğü (DGFT): ITC(HS) ihracat ve ithalat listeleri](https://www.dgft.gov.in/CP/?opt=itchs-import-export): Hindistan’ın 8 haneli kodları ve ihracat politikası.

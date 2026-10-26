@@ -1,5 +1,5 @@
 ---
-sourceHash: "81532f93455a"
+sourceHash: "85547357c07f"
 title: "Kode HSN 3401 vs 3402: Panduan Pembeli untuk Mengklasifikasikan Sabun dan Deterjen"
 metaTitle: "Kode HSN 3401 vs 3402: Klasifikasi Sabun dan Deterjen"
 description: "Ragu sabun atau deterjen Anda masuk HSN 3401 atau 3402? Panduan lugas tentang pembagiannya, dengan tabel per produk dan pertanyaan yang perlu diselesaikan."
@@ -56,6 +56,10 @@ Ini adalah pos yang lebih besar untuk kimia pembersih non-sabun. Subpos tipikaln
 - **3402 31 dan 3402 39**: zat aktif permukaan anionik, yang mencakup bahan baku seperti LABSA dan SLES.
 - **3402 50**: sediaan pencuci dan pembersih yang dikemas untuk penjualan ritel. Deterjen bubuk, deterjen cair, sabun cuci piring cair, pembersih lantai, dan produk serupa biasanya ditempatkan di sini.
 - **3402 90**: sediaan lain, sering dipakai untuk pembersih curah dan institusional yang tidak dikemas untuk penjualan ritel.
+
+### Catatan HS 2022: subpos 3402 20 kini 3402 50
+
+Sistem Harmonisasi direvisi kira-kira setiap lima tahun. Dalam edisi HS 2022, yang berlaku sejak 1 Januari 2022, WCO menomori ulang pos 3402: sediaan pencuci dan pembersih yang dikemas untuk penjualan eceran pindah dari subpos 3402 20 ke 3402 50, dan bahan aktif permukaan dikelompokkan ulang, dengan subpos baru 3402 31 untuk asam alkilbenzena sulfonat linear dan garamnya (LABSA). Daftar harga, faktur, dan situs web lama mungkin masih mencantumkan 3402 20, jadi periksa dari edisi mana sebuah kode berasal. Kode ITC-HS 8 digit dikonfirmasi untuk setiap pesanan berdasarkan daftar DGFT yang berlaku.
 
 ## Tinjauan per produk
 
@@ -117,3 +121,11 @@ Bila pasar Anda memiliki persyaratan khusus, seperti pra-registrasi produk pembe
 - Selalu periksa kode yang diusulkan terhadap tarif negara Anda sendiri sebelum Anda membayar.
 
 Tidak yakin bagaimana produk Anda harus diklasifikasikan? Kirimkan produk, ukuran kemasan, dan tujuan Anda, dan kami akan mengusulkan kode serta mengonfirmasi rinciannya dengan produsen. Telusuri [sabun cuci tangan cair](/products/liquid-hand-wash/) atau [soap noodles](/products/soap-noodles/) untuk dua contoh produk yang berada di bagian berbeda dari pos 3401.
+
+## Sumber
+
+Sumber primer untuk kode dan standar dalam panduan ini. Periksa versi terbaru sebelum mengandalkan suatu angka.
+
+- [Organisasi Kepabeanan Dunia (WCO): Nomenklatur HS edisi 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): pos dan subpos internasional enam digit, termasuk 3401 dan 3402.
+- [Direktorat Jenderal Perdagangan Luar Negeri India (DGFT): daftar ekspor dan impor ITC(HS)](https://www.dgft.gov.in/CP/?opt=itchs-import-export): kode 8 digit India dan kebijakan ekspor.
+- [Dewan Pusat Pajak Tidak Langsung dan Bea Cukai India (CBIC): Tarif Bea Cukai India](https://www.cbic.gov.in/): tarif bea cukai India dan notifikasinya.

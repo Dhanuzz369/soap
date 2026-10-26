@@ -27,6 +27,8 @@ const iso = d.date.toISOString().slice(0, 10);
 // "{date} · {minutes} · GoodBiz Hygiene": the date is a <time> element, the rest is text around it.
 const [metaBefore, metaAfter = ''] = ui.post.meta.split('{date}');
 const metaVars = { minutes: fmt(ui.common.minRead, { n: readingMinutes(post.body ?? '') }) };
+// "Last reviewed {date}": shown when the guide has an `updated` date (its facts and sources re-checked).
+const [revBefore, revAfter = ''] = ui.post.reviewed.split('{date}');
 const breadcrumbs = [
   { name: ui.common.home, url: lp('/') },
   { name: ui.common.blog, url: lp('/blog/') },
@@ -84,6 +86,13 @@ const media: HeroMedia | undefined =
     <p class="ph-meta">
       {fmt(metaBefore, metaVars)}<time datetime={iso}>{fmtDate(d.date, lang)}</time>{fmt(metaAfter, metaVars)}
     </p>
+    {
+      d.updated && (
+        <p class="ph-meta ph-reviewed">
+          {revBefore}<time datetime={d.updated.toISOString().slice(0, 10)}>{fmtDate(d.updated, lang)}</time>{revAfter}
+        </p>
+      )
+    }
     <p class="ph-lead">{d.description}</p>
   </PageHero>
 

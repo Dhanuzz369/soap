@@ -1,5 +1,5 @@
 ---
-sourceHash: "c1161c07178f"
+sourceHash: "3192292d0bae"
 title: "Detergente en polvo o detergente líquido: ¿cuál se vende mejor en su mercado?"
 metaTitle: "Detergente en polvo o líquido: ¿cuál se vende mejor?"
 description: "¿Detergente para ropa en polvo o líquido? Compare clima, hábitos de lavado, lavadoras, precio y flete por lavado para elegir la gama de su mercado."
@@ -103,3 +103,10 @@ Le responderemos con calidades, opciones de envase y un plan de contenedor. FOB,
 - **Compruebe las normas de etiquetado.** Algunos mercados exigen una redacción, un idioma o un registro específicos para los detergentes. Confírmelo antes de imprimir el diseño.
 - **Piense en el segundo pedido.** El mejor primer producto es el que puede reponer con facilidad, con envases que quepan en su almacén y en los camiones de sus distribuidores.
 - **No copie el mercado de un vecino.** Dos países contiguos pueden tener hábitos de lavado, precios y costos de importación muy distintos.
+
+## Fuentes
+
+Fuentes primarias de los códigos y normas de esta guía. Compruebe la versión vigente antes de basarse en una cifra.
+
+- [Organización Mundial de Aduanas (OMA): Nomenclatura del SA, edición 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): las partidas y subpartidas internacionales de seis dígitos, incluidas 3401 y 3402.
+- [Cámara de Comercio Internacional (ICC): reglas Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): las definiciones oficiales de los términos comerciales usados en las cotizaciones.

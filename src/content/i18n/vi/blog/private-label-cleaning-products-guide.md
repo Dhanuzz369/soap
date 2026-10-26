@@ -1,5 +1,5 @@
 ---
-sourceHash: "bd86fef00fbc"
+sourceHash: "7f212b113545"
 title: "Sản phẩm tẩy rửa nhãn riêng: hướng dẫn từng bước dành cho nhà phân phối"
 metaTitle: "Sản phẩm tẩy rửa nhãn riêng: hướng dẫn nhà phân phối"
 description: "Cách nhà phân phối ra mắt thương hiệu tẩy rửa riêng từ Ấn Độ: chọn dòng sản phẩm, lập yêu cầu, duyệt mẫu, thiết kế bao bì, đóng gói và vận chuyển."
@@ -123,3 +123,10 @@ Hãy xem lần cuối một mẫu trước khi giao hàng lấy từ lô sản x
 ## Bước tiếp theo
 
 Hãy bắt đầu với bản yêu cầu: dòng sản phẩm, quy cách đóng gói, hương liệu và cảng đến của Quý khách. Hãy gửi cho GoodBiz Hygiene và chúng tôi sẽ phản hồi với dòng sản phẩm khởi đầu được đề xuất, bản báo giá và kế hoạch cho mẫu cùng container ghép đầu tiên.
+
+## Nguồn tham khảo
+
+Nguồn gốc của các mã và tiêu chuẩn trong hướng dẫn này. Hãy kiểm tra phiên bản hiện hành trước khi dựa vào một con số.
+
+- [Phòng Thương mại Quốc tế (ICC): quy tắc Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): định nghĩa chính thức của các điều kiện thương mại dùng trong báo giá.
+- [Tổng cục Ngoại thương Ấn Độ (DGFT): danh mục ITC(HS) xuất khẩu và nhập khẩu](https://www.dgft.gov.in/CP/?opt=itchs-import-export): các mã 8 chữ số của Ấn Độ và chính sách xuất khẩu.

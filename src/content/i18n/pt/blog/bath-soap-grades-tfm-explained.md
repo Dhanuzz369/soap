@@ -1,5 +1,5 @@
 ---
-sourceHash: "84702d62b584"
+sourceHash: "af3f3cf90c23"
 title: "Graus de sabonete de banho explicados: TFM, grau 1 e grau 2, e por que isso importa"
 metaTitle: "Graus de sabonete: TFM, grau 1 ou grau 2 explicados"
 description: "O que significa TFM na especificação de um sabonete de banho, como os graus 1 e 2 são usados no comércio e como escolher o grau certo para o seu mercado."
@@ -35,7 +35,7 @@ Disso decorrem três efeitos práticos:
 
 ## Como os graus são usados no comércio
 
-Muitos compradores de sabonete usam os graus como atalho para faixas de TFM. No comércio indiano, a especificação do Bureau of Indian Standards (BIS, a entidade indiana de normas) para sabonetes define os graus pelo TFM mínimo, e as cotações frequentemente adotam essa linguagem.
+Muitos compradores de sabonete usam os graus como atalho para faixas de TFM. No comércio indiano, a especificação do Bureau of Indian Standards (BIS, a entidade indiana de normas; norma IS 2888) para sabonetes define os graus pelo TFM mínimo, e as cotações frequentemente adotam essa linguagem.
 
 Os valores abaixo são valores de referência de uso comum para o TFM mínimo, e não garantias. Confirme com o fabricante, a cada pedido, o grau exato, a versão da norma e o método de ensaio.
 
@@ -123,3 +123,10 @@ Pedimos o seu mercado-alvo, o peso de barra preferido, o grau e o formato de emb
 - Escolha o grau pelo seu cliente e pela sua faixa de preço, em vez de presumir que o mais alto é o melhor.
 
 Informe o seu mercado-alvo, o grau e o peso da barra, e retornaremos com opções, amostras e fichas de especificação do fabricante.
+
+## Fontes
+
+Fontes primárias dos códigos e normas deste guia. Confira a versão vigente antes de se basear em um número.
+
+- [Bureau of Indian Standards (BIS): IS 2888, sabonete — especificação](https://www.bis.gov.in/?lang=en): a norma indiana que define os graus do sabonete pelo TFM mínimo.
+- [Organização Mundial das Aduanas (OMA): Nomenclatura do SH, edição 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): as posições e subposições internacionais de seis dígitos, incluindo 3401 e 3402.

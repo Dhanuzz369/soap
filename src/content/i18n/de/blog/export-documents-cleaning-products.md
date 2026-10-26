@@ -1,5 +1,5 @@
 ---
-sourceHash: "259e3f5f79fb"
+sourceHash: "30b7478cf2a7"
 title: "Exportdokumente für Reinigungsprodukte: COA, MSDS, Ursprungszeugnis und mehr"
 metaTitle: "Exportdokumente für Reinigungsmittel: COA, MSDS & mehr"
 description: "Checkliste der Exportdokumente für Seifen, Waschmittel und Reiniger aus Indien: Rechnung, COA, SDB, Ursprungszeugnis, Gefahrgutpapiere und Registrierungen."
@@ -120,3 +120,11 @@ FOB, CIF und CFR verfügbar; Zahlungsbedingungen werden je Auftrag vereinbart (T
 ## Wie es weitergeht
 
 Wenn Sie Produktoptionen vergleichen, sehen Sie sich unsere Seite zu [Waschpulver](/products/detergent-powder/) für Wäschepflegeprodukte an oder unser Sortiment an [Reinigungsmitteln für Großgebinde und Gewerbekunden](/products/bulk-institutional-cleaners/) für Hotels und Käufer aus dem Gebäudedienst. Nennen Sie uns mit Ihrer Anfrage Ihr Land, Ihren Hafen und jedes Dokument, das Ihre Behörden verlangen, und wir bestätigen die Papiere für Ihren Auftrag.
+
+## Quellen
+
+Primärquellen für die Codes und Normen in diesem Ratgeber. Prüfen Sie die aktuelle Fassung, bevor Sie sich auf eine Zahl verlassen.
+
+- [Directorate General of Foreign Trade (DGFT): ITC(HS)-Listen für Ausfuhr und Einfuhr](https://www.dgft.gov.in/CP/?opt=itchs-import-export): die indischen achtstelligen Codes und die Exportpolitik.
+- [Central Board of Indirect Taxes and Customs (CBIC): Zolltarif Indiens](https://www.cbic.gov.in/): der indische Zolltarif und seine Bekanntmachungen.
+- [Internationale Handelskammer (ICC): Incoterms-Regeln](https://iccwbo.org/business-solutions/incoterms-rules/): die offiziellen Definitionen der Lieferbedingungen in Angeboten.

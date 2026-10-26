@@ -1,5 +1,5 @@
 ---
-sourceHash: "f39ee6f3d9e7"
+sourceHash: "d4c87bac15fb"
 title: "Phenol thảo dược và chất khử trùng hóa học: những điều người mua bán lẻ nên biết"
 metaTitle: "Phenol thảo dược hay chất khử trùng hóa học?"
 description: "So sánh phenol thảo dược với chất khử trùng hóa học cho dòng bán lẻ: khác nhau về cách dùng, nhãn, phân loại và điều cần hỏi nhà xuất khẩu trước tiên."
@@ -114,3 +114,10 @@ Chúng tôi giúp Quý khách lập danh sách rút gọn, yêu cầu bảng th�
 - Hãy cho nhà xuất khẩu biết các tuyên bố dự định của Quý khách sớm, để sản phẩm, nhãn và chứng từ đều khớp nhau.
 
 Quý khách đang lên kế hoạch cho dòng chăm sóc sàn hay vệ sinh? Hãy gửi cho chúng tôi thị trường mục tiêu, quy cách đóng gói và các tuyên bố dự định, chúng tôi sẽ phản hồi với các phương án và những câu hỏi phù hợp dành cho nhà sản xuất.
+
+## Nguồn tham khảo
+
+Nguồn gốc của các mã và tiêu chuẩn trong hướng dẫn này. Hãy kiểm tra phiên bản hiện hành trước khi dựa vào một con số.
+
+- [Tổ chức Hải quan Thế giới (WCO): Danh mục HS phiên bản 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): các nhóm và phân nhóm quốc tế 6 chữ số, gồm cả 3401 và 3402.
+- [Tổng cục Ngoại thương Ấn Độ (DGFT): danh mục ITC(HS) xuất khẩu và nhập khẩu](https://www.dgft.gov.in/CP/?opt=itchs-import-export): các mã 8 chữ số của Ấn Độ và chính sách xuất khẩu.

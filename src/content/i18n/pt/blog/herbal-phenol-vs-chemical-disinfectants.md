@@ -1,5 +1,5 @@
 ---
-sourceHash: "f39ee6f3d9e7"
+sourceHash: "d4c87bac15fb"
 title: "Fenol de ervas ou desinfetantes químicos: o que os compradores do varejo devem saber"
 metaTitle: "Fenol de ervas ou desinfetantes químicos: guia de compra"
 description: "Fenol de ervas ou desinfetantes químicos no varejo: diferenças de uso, rotulagem e classificação, e o que perguntar primeiro ao exportador."
@@ -114,3 +114,10 @@ Ajudamos você a montar uma lista de opções, solicitamos ao fabricante fichas 
 - Informe cedo ao seu exportador as alegações pretendidas, para que o produto, o rótulo e a documentação coincidam.
 
 Está planejando uma linha de cuidado com pisos ou de higiene? Envie o seu mercado-alvo, os tamanhos de embalagem e as alegações pretendidas, e retornaremos com opções e com as perguntas certas para o fabricante.
+
+## Fontes
+
+Fontes primárias dos códigos e normas deste guia. Confira a versão vigente antes de se basear em um número.
+
+- [Organização Mundial das Aduanas (OMA): Nomenclatura do SH, edição 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): as posições e subposições internacionais de seis dígitos, incluindo 3401 e 3402.
+- [Diretoria-Geral de Comércio Exterior da Índia (DGFT): tabelas ITC(HS) de exportação e importação](https://www.dgft.gov.in/CP/?opt=itchs-import-export): as linhas indianas de 8 dígitos e a política de exportação.

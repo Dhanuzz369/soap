@@ -3,6 +3,7 @@ title: "Bath Soap Grades Explained: TFM, Grade 1 vs Grade 2, and Why It Matters"
 metaTitle: "Bath Soap Grades: TFM, Grade 1 vs Grade 2 Explained"
 description: "What TFM means on a bath soap specification, how Grade 1 and Grade 2 are used in trade, and how to choose the right grade for your market and price."
 date: 2026-08-27
+updated: 2026-10-26
 tags: ["bath soap", "TFM", "soap grades", "specifications"]
 relatedProducts: ["toilet-bath-soap", "herbal-ayurvedic-soap", "antibacterial-soap", "soap-noodles"]
 faqs:
@@ -34,7 +35,7 @@ Three practical effects follow from this:
 
 ## How grades are used in trade
 
-Many soap buyers use grades as shorthand for TFM bands. In Indian trade, the Bureau of Indian Standards (BIS) specification for toilet soap defines grades by minimum TFM, and quotations frequently borrow that language.
+Many soap buyers use grades as shorthand for TFM bands. In Indian trade, the Bureau of Indian Standards (BIS) specification for toilet soap, IS 2888, defines grades by minimum TFM, and quotations frequently borrow that language.
 
 The values below are commonly used reference figures for minimum TFM, not guarantees. Confirm the exact grade, the standard version and the test method with the manufacturer for each order.
 
@@ -122,3 +123,10 @@ We ask for your target market, preferred bar weight, grade and pack format, then
 - Choose the grade for your customer and price point rather than assuming the highest is best.
 
 Tell us your target market, grade and bar weight, and we will return with options, samples and specification sheets from the manufacturer.
+
+## Sources
+
+Primary sources for the codes and standards in this guide. Check the current version before you rely on a figure.
+
+- [Bureau of Indian Standards (BIS): IS 2888, Toilet soap — Specification](https://www.bis.gov.in/?lang=en): the Indian standard that sets toilet soap grades by minimum TFM.
+- [World Customs Organization (WCO): HS Nomenclature 2022 edition](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): the international six-digit headings and subheadings, including 3401 and 3402.

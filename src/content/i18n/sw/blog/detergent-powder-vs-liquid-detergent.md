@@ -1,5 +1,5 @@
 ---
-sourceHash: "c1161c07178f"
+sourceHash: "3192292d0bae"
 title: "Poda ya Kufulia dhidi ya Sabuni ya Maji ya Kufulia: Ipi Inauzika Zaidi Katika Soko Lako?"
 metaTitle: "Poda au Sabuni ya Maji ya Kufulia: Ipi Inauzika Zaidi?"
 description: "Poda au sabuni ya maji ya kufulia? Linganisha hali ya hewa, mazoea ya kufua, mashine, bei na gharama ya usafirishaji kwa kila ufuaji kuchagua bidhaa sahihi."
@@ -103,3 +103,10 @@ Tutajibu kwa daraja, chaguo za vifungashio na mpango wa kontena. FOB, CIF na CFR
 - **Kagua kanuni za lebo.** Baadhi ya masoko yanahitaji maneno mahususi, lugha au usajili kwa sabuni za kufulia. Thibitisha hili kabla michoro haijachapishwa.
 - **Fikiria oda ya pili.** Bidhaa bora ya kuanzia ni ile unayoweza kujaza upya kwa urahisi, ikiwa na vifungashio vinavyolingana na ghala lako na malori ya wasambazaji wako.
 - **Usinakili soko la jirani.** Nchi mbili zilizo jirani zinaweza kuwa na mazoea tofauti sana ya kufua, bei na gharama za uagizaji.
+
+## Vyanzo
+
+Vyanzo vya msingi vya misimbo na viwango vilivyo katika mwongozo huu. Hakikisha toleo la sasa kabla ya kutegemea takwimu yoyote.
+
+- [Shirika la Forodha Duniani (WCO): Nomenklecha ya HS, toleo la 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): vichwa na vifungu vidogo vya kimataifa vya tarakimu sita, ikiwemo 3401 na 3402.
+- [Chemba ya Kimataifa ya Biashara (ICC): kanuni za Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): maana rasmi za masharti ya biashara yanayotumika kwenye nukuu za bei.

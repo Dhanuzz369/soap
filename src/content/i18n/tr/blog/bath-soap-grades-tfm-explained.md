@@ -1,5 +1,5 @@
 ---
-sourceHash: "84702d62b584"
+sourceHash: "af3f3cf90c23"
 title: "Banyo Sabunu Kaliteleri: TFM, 1. Kalite ve 2. Kalite Farkı ve Neden Önemli"
 metaTitle: "Banyo Sabunu Kaliteleri: TFM, 1. ve 2. Kalite"
 description: "Banyo sabunu şartnamesinde TFM ne anlama gelir, 1. ve 2. kalite ticarette nasıl kullanılır ve pazarınıza ile fiyatınıza uygun kalite nasıl seçilir."
@@ -35,7 +35,7 @@ Bundan üç pratik etki doğar:
 
 ## Kaliteler ticarette nasıl kullanılır
 
-Birçok sabun alıcısı kaliteleri TFM bantları için kısaltma olarak kullanır. Hint ticaretinde Hindistan Standartlar Bürosu (BIS) tuvalet sabunu şartnamesi kaliteleri asgari TFM’ye göre tanımlar ve teklifler çoğunlukla bu dili ödünç alır.
+Birçok sabun alıcısı kaliteleri TFM bantları için kısaltma olarak kullanır. Hint ticaretinde Hindistan Standartlar Bürosu (BIS, IS 2888) tuvalet sabunu şartnamesi kaliteleri asgari TFM’ye göre tanımlar ve teklifler çoğunlukla bu dili ödünç alır.
 
 Aşağıdaki değerler asgari TFM için yaygın kullanılan referans rakamlardır; garanti değildir. Kesin kaliteyi, standart sürümünü ve test yöntemini her sipariş için üreticiyle teyit edin.
 
@@ -123,3 +123,10 @@ Hedef pazarınızı, tercih ettiğiniz kalıp ağırlığını, kaliteyi ve amba
 - En yükseğin en iyi olduğunu varsaymak yerine, kaliteyi müşterinize ve fiyat noktanıza göre seçin.
 
 Hedef pazarınızı, kalitenizi ve kalıp ağırlığınızı bildirin; üreticiden seçenekler, numuneler ve şartname formlarıyla size dönelim.
+
+## Kaynaklar
+
+Bu rehberdeki kodların ve standartların birincil kaynakları. Bir rakama güvenmeden önce güncel sürümü kontrol edin.
+
+- [Hindistan Standartlar Bürosu (BIS): IS 2888, tuvalet sabunu şartnamesi](https://www.bis.gov.in/?lang=en): tuvalet sabunu kalitelerini asgari TFM’ye göre belirleyen Hint standardı.
+- [Dünya Gümrük Örgütü (DGÖ): Armonize Sistem Nomenklatürü, 2022 baskısı](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): 3401 ve 3402 dahil uluslararası altı haneli pozisyonlar ve alt pozisyonlar.

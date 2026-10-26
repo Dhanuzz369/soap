@@ -1,5 +1,5 @@
 ---
-sourceHash: "84702d62b584"
+sourceHash: "af3f3cf90c23"
 title: "Penjelasan Grade Sabun Mandi: TFM, Grade 1 vs Grade 2, dan Mengapa Penting"
 metaTitle: "Grade Sabun Mandi: TFM, Grade 1 vs Grade 2"
 description: "Arti TFM pada spesifikasi sabun mandi, cara Grade 1 dan Grade 2 dipakai dalam perdagangan, dan cara memilih grade yang tepat untuk pasar dan harga Anda."
@@ -35,7 +35,7 @@ Tiga dampak praktis mengikutinya:
 
 ## Cara grade dipakai dalam perdagangan
 
-Banyak pembeli sabun memakai grade sebagai singkatan untuk rentang TFM. Dalam perdagangan India, spesifikasi Bureau of Indian Standards (BIS) untuk sabun mandi menetapkan grade berdasarkan TFM minimum, dan penawaran sering meminjam bahasa tersebut.
+Banyak pembeli sabun memakai grade sebagai singkatan untuk rentang TFM. Dalam perdagangan India, spesifikasi Bureau of Indian Standards (BIS, IS 2888) untuk sabun mandi menetapkan grade berdasarkan TFM minimum, dan penawaran sering meminjam bahasa tersebut.
 
 Nilai di bawah adalah angka acuan yang lazim dipakai untuk TFM minimum, bukan jaminan. Konfirmasikan grade pastinya, versi standar, dan metode uji dengan produsen untuk setiap pesanan.
 
@@ -123,3 +123,10 @@ Kami menanyakan pasar sasaran, berat sabun pilihan, grade, dan format kemasan An
 - Pilih grade untuk pelanggan dan titik harga Anda, jangan berasumsi yang tertinggi adalah yang terbaik.
 
 Sampaikan pasar sasaran, grade, dan berat sabun Anda, dan kami akan kembali dengan opsi, sampel, dan lembar spesifikasi dari produsen.
+
+## Sumber
+
+Sumber primer untuk kode dan standar dalam panduan ini. Periksa versi terbaru sebelum mengandalkan suatu angka.
+
+- [Bureau of Indian Standards (BIS): IS 2888, spesifikasi sabun mandi](https://www.bis.gov.in/?lang=en): standar India yang menetapkan grade sabun mandi berdasarkan TFM minimum.
+- [Organisasi Kepabeanan Dunia (WCO): Nomenklatur HS edisi 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): pos dan subpos internasional enam digit, termasuk 3401 dan 3402.

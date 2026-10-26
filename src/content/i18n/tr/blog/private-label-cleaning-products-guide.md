@@ -1,5 +1,5 @@
 ---
-sourceHash: "bd86fef00fbc"
+sourceHash: "7f212b113545"
 title: "Özel Marka Temizlik Ürünleri: Distribütörler için Adım Adım Rehber"
 metaTitle: "Özel Marka Temizlik Ürünleri: Distribütör Rehberi"
 description: "Distribütörler Hindistan’dan kendi temizlik markasını nasıl kurar: gamı seçme, üreticiyi bilgilendirme, numune onayı, tasarım, paketleme ve sevkiyat."
@@ -123,3 +123,10 @@ Siparişi onayladıktan ve tasarımı onayladıktan sonra üretici üretimi plan
 ## Sonraki adımlar
 
 Talebinizle başlayın: gam, ambalaj boyutları, kokular ve varış limanınız. Bunu GoodBiz Hygiene’e gönderin; önerilen bir başlangıç gamı, bir teklif ve numuneler ile karışık bir ilk konteyner için bir planla yanıt verelim.
+
+## Kaynaklar
+
+Bu rehberdeki kodların ve standartların birincil kaynakları. Bir rakama güvenmeden önce güncel sürümü kontrol edin.
+
+- [Milletlerarası Ticaret Odası (ICC): Incoterms kuralları](https://iccwbo.org/business-solutions/incoterms-rules/): tekliflerde kullanılan teslim şekillerinin resmi tanımları.
+- [Hindistan Dış Ticaret Genel Müdürlüğü (DGFT): ITC(HS) ihracat ve ithalat listeleri](https://www.dgft.gov.in/CP/?opt=itchs-import-export): Hindistan’ın 8 haneli kodları ve ihracat politikası.

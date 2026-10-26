@@ -1,5 +1,5 @@
 ---
-sourceHash: "81532f93455a"
+sourceHash: "85547357c07f"
 title: "Código HSN 3401 frente a 3402: guía del comprador para clasificar jabones y detergentes"
 metaTitle: "Código HSN 3401 o 3402: clasificar jabones y detergentes"
 description: "¿No sabe si su jabón o detergente es HSN 3401 o 3402? Guía clara de la división, con tabla por producto y las preguntas que conviene resolver antes."
@@ -56,6 +56,10 @@ Es la partida más amplia para la química de limpieza que no es jabón. Las sub
 - **3402 31 y 3402 39**: agentes aniónicos de superficie activa, que incluyen materias primas como el LABSA y el SLES.
 - **3402 50**: preparaciones para lavar y limpiar acondicionadas para la venta al por menor. El detergente en polvo, el detergente líquido, el lavavajillas líquido, el limpiador de pisos y productos similares suelen colocarse aquí.
 - **3402 90**: otras preparaciones, a menudo usadas para limpiadores a granel e institucionales que no se acondicionan para la venta al por menor.
+
+### Nota sobre el SA 2022: la subpartida 3402 20 es ahora 3402 50
+
+El Sistema Armonizado se revisa aproximadamente cada cinco años. En la edición SA 2022, vigente desde el 1 de enero de 2022, la OMA renumeró la partida 3402: las preparaciones para lavar y de limpieza acondicionadas para la venta al por menor pasaron de la subpartida 3402 20 a la 3402 50, y los agentes de superficie se reagruparon, con una nueva subpartida 3402 31 para los ácidos alquilbencenosulfónicos lineales y sus sales (LABSA). Listas de precios, facturas y sitios web antiguos pueden seguir mostrando 3402 20, así que compruebe de qué edición procede un código. Los códigos ITC-HS de 8 dígitos se confirman en cada pedido con el listado vigente de la DGFT.
 
 ## Una vista producto por producto
 
@@ -117,3 +121,11 @@ Si su mercado tiene requisitos especiales, como el registro previo de los produc
 - Compruebe siempre el código propuesto con el arancel de su propio país antes de pagar.
 
 ¿No está seguro de cómo debe clasificarse su producto? Envíenos el producto, el tamaño del envase y su destino, y le propondremos un código y confirmaremos los detalles con el fabricante. Consulte el [jabón líquido para manos](/products/liquid-hand-wash/) o los [fideos de jabón](/products/soap-noodles/) como dos ejemplos de productos que se sitúan en partes distintas de la partida 3401.
+
+## Fuentes
+
+Fuentes primarias de los códigos y normas de esta guía. Compruebe la versión vigente antes de basarse en una cifra.
+
+- [Organización Mundial de Aduanas (OMA): Nomenclatura del SA, edición 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): las partidas y subpartidas internacionales de seis dígitos, incluidas 3401 y 3402.
+- [Dirección General de Comercio Exterior de la India (DGFT): listados ITC(HS) de exportación e importación](https://www.dgft.gov.in/CP/?opt=itchs-import-export): las líneas indias de 8 dígitos y la política de exportación.
+- [Junta Central de Impuestos Indirectos y Aduanas de la India (CBIC): Arancel de Aduanas de la India](https://www.cbic.gov.in/): el arancel aduanero indio y sus notificaciones.

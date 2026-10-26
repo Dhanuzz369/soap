@@ -1,5 +1,5 @@
 ---
-sourceHash: "84702d62b584"
+sourceHash: "af3f3cf90c23"
 title: "Các hạng xà phòng tắm: TFM, hạng 1 và hạng 2, và vì sao điều này quan trọng"
 metaTitle: "Các hạng xà phòng tắm: TFM, hạng 1 và hạng 2"
 description: "TFM trên thông số xà phòng tắm nghĩa là gì, hạng 1 và hạng 2 được dùng trong thương mại ra sao, và cách chọn hạng phù hợp với thị trường và mức giá."
@@ -35,7 +35,7 @@ Từ đó rút ra ba tác động thực tế:
 
 ## Cách dùng các hạng trong thương mại
 
-Nhiều người mua xà phòng dùng hạng như cách nói tắt cho các dải TFM. Trong thương mại Ấn Độ, tiêu chuẩn của Cục Tiêu chuẩn Ấn Độ (BIS) đối với xà phòng tắm xác định các hạng theo TFM tối thiểu, và các bản báo giá thường mượn cách diễn đạt đó.
+Nhiều người mua xà phòng dùng hạng như cách nói tắt cho các dải TFM. Trong thương mại Ấn Độ, tiêu chuẩn của Cục Tiêu chuẩn Ấn Độ (BIS, IS 2888) đối với xà phòng tắm xác định các hạng theo TFM tối thiểu, và các bản báo giá thường mượn cách diễn đạt đó.
 
 Các giá trị dưới đây là số liệu tham chiếu thường dùng cho TFM tối thiểu, không phải cam kết. Hãy xác nhận hạng chính xác, phiên bản tiêu chuẩn và phương pháp thử với nhà sản xuất cho từng đơn hàng.
 
@@ -123,3 +123,10 @@ Chúng tôi hỏi thị trường mục tiêu, trọng lượng bánh ưa thích
 - Chọn hạng theo khách hàng và mức giá của Quý khách thay vì cho rằng hạng cao nhất là tốt nhất.
 
 Hãy cho chúng tôi biết thị trường mục tiêu, hạng và trọng lượng bánh của Quý khách, chúng tôi sẽ phản hồi với các phương án, mẫu và bảng thông số từ nhà sản xuất.
+
+## Nguồn tham khảo
+
+Nguồn gốc của các mã và tiêu chuẩn trong hướng dẫn này. Hãy kiểm tra phiên bản hiện hành trước khi dựa vào một con số.
+
+- [Cục Tiêu chuẩn Ấn Độ (BIS): IS 2888, tiêu chuẩn xà phòng tắm](https://www.bis.gov.in/?lang=en): tiêu chuẩn Ấn Độ phân hạng xà phòng tắm theo TFM tối thiểu.
+- [Tổ chức Hải quan Thế giới (WCO): Danh mục HS phiên bản 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): các nhóm và phân nhóm quốc tế 6 chữ số, gồm cả 3401 và 3402.

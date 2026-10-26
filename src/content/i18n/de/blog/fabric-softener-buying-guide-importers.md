@@ -1,5 +1,5 @@
 ---
-sourceHash: "ee2e38612e35"
+sourceHash: "b19904d90d4f"
 title: "Einkaufsratgeber Weichspüler für Importeure: Arten, Düfte und Packungsgrößen"
 metaTitle: "Weichspüler: Einkaufsratgeber für Importeure"
 description: "Was Importeure vor dem Kauf von Weichspüler aus Indien wissen sollten: normal oder konzentriert, empfindliche Haut, Duftwahl, Packungsgrößen und Lagerung."
@@ -115,3 +115,10 @@ Weichspüler wird üblicherweise unter HSN 3402 50 eingereiht, manchmal aber unt
 ## Nächste Schritte
 
 Senden Sie uns Ihren Zielmarkt, Ihre Duft-Auswahl, den Konzentrationsgrad und die Packungsgrößen. GoodBiz Hygiene sendet Ihnen ein Angebot, organisiert Duftmuster beim Hersteller und schlägt einen gemischten Container vor, wenn Sie Flüssigwaschmittel oder andere Wäschepflegelinien ergänzen möchten.
+
+## Quellen
+
+Primärquellen für die Codes und Normen in diesem Ratgeber. Prüfen Sie die aktuelle Fassung, bevor Sie sich auf eine Zahl verlassen.
+
+- [Weltzollorganisation (WZO): HS-Nomenklatur, Ausgabe 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): die internationalen sechsstelligen Positionen und Unterpositionen, darunter 3401 und 3402.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS)-Listen für Ausfuhr und Einfuhr](https://www.dgft.gov.in/CP/?opt=itchs-import-export): die indischen achtstelligen Codes und die Exportpolitik.

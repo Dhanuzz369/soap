@@ -1,5 +1,5 @@
 ---
-sourceHash: "23d4ef5247c9"
+sourceHash: "6bde713a3f96"
 title: "如何从印度进口洗洁精：成本、MOQ、单据与运输"
 metaTitle: "如何从印度进口洗洁精：MOQ与成本"
 description: "从印度进口洗洁精的实用指南：成本由什么决定、典型MOQ、包装选择、出口单据，以及运输如何分步进行，适合首次进口商参考，帮助进口商少走弯路、做出更稳妥的采购决定。"
@@ -115,3 +115,11 @@ GoodBiz Hygiene是一家贸易型出口商。我们不拥有工厂：我们从�
 ## 下一步
 
 如果您打算经营多款厨房产品，固体洗碗皂在固体皂块仍然受欢迎的市场也能发挥作用，我们的[固体洗碗皂](/products/dish-wash-bar/)页面列出了典型的形式。准备好后，请把您的需求发给我们，我们会回复报价单和推荐的包装方案。
+
+## 资料来源
+
+本指南所涉编码和标准的原始出处。引用任何数字前，请先核对现行版本。
+
+- [世界海关组织（WCO）：《协调制度》2022年版](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx)：国际通用的6位品目和子目，包括3401和3402。
+- [印度对外贸易总局（DGFT）：ITC(HS)进出口目录](https://www.dgft.gov.in/CP/?opt=itchs-import-export)：印度8位编码及出口政策。
+- [国际商会（ICC）：Incoterms 规则](https://iccwbo.org/business-solutions/incoterms-rules/)：报价中所用贸易术语的官方定义。

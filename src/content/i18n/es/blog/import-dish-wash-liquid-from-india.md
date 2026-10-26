@@ -1,5 +1,5 @@
 ---
-sourceHash: "23d4ef5247c9"
+sourceHash: "6bde713a3f96"
 title: "Cómo importar lavavajillas líquido desde la India: costos, MOQ, documentos y transporte"
 metaTitle: "Cómo importar lavavajillas líquido de India: MOQ y costos"
 description: "Guía práctica para importar lavavajillas líquido desde la India: qué determina el costo, MOQ típico, envases, documentos y transporte paso a paso."
@@ -115,3 +115,11 @@ El pago se acuerda en cada pedido, mediante transferencia telegráfica (T/T) o c
 ## Siguientes pasos
 
 Si piensa tener más de un producto de cocina, una barra lavavajillas también puede funcionar en los mercados donde las barras sólidas siguen siendo populares, y nuestra página de [barra lavavajillas](/products/dish-wash-bar/) enumera los formatos típicos. Cuando esté listo, envíenos su solicitud y le responderemos con una cotización y un plan de envases recomendado.
+
+## Fuentes
+
+Fuentes primarias de los códigos y normas de esta guía. Compruebe la versión vigente antes de basarse en una cifra.
+
+- [Organización Mundial de Aduanas (OMA): Nomenclatura del SA, edición 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): las partidas y subpartidas internacionales de seis dígitos, incluidas 3401 y 3402.
+- [Dirección General de Comercio Exterior de la India (DGFT): listados ITC(HS) de exportación e importación](https://www.dgft.gov.in/CP/?opt=itchs-import-export): las líneas indias de 8 dígitos y la política de exportación.
+- [Cámara de Comercio Internacional (ICC): reglas Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): las definiciones oficiales de los términos comerciales usados en las cotizaciones.

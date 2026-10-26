@@ -1,5 +1,5 @@
 ---
-sourceHash: "81532f93455a"
+sourceHash: "85547357c07f"
 title: "HSN-Code 3401 oder 3402: Ratgeber für Käufer zur Einreihung von Seifen und Waschmitteln"
 metaTitle: "HSN-Code 3401 oder 3402: Seifen und Waschmittel einreihen"
 description: "Unsicher, ob Ihre Seife oder Ihr Waschmittel unter HSN 3401 oder 3402 fällt? Eine klare Erläuterung der Aufteilung mit Tabelle je Produkt und ersten Fragen."
@@ -56,6 +56,10 @@ Dies ist die größere Position für Reinigungschemie ohne Seife. Typische Unter
 - **3402 31 und 3402 39**: Anionische grenzflächenaktive Stoffe, wozu Rohstoffe wie LABSA und SLES gehören.
 - **3402 50**: Wasch- und Reinigungsmittel, die für den Einzelverkauf aufgemacht sind. Waschpulver, Flüssigwaschmittel, Geschirrspülmittel, Bodenreiniger und ähnliche Produkte werden meist hier eingereiht.
 - **3402 90**: Andere Zubereitungen, oft für Reiniger im Großgebinde und für Gewerbekunden, die nicht für den Einzelverkauf aufgemacht sind.
+
+### Hinweis zu HS 2022: aus 3402 20 wurde 3402 50
+
+Das Harmonisierte System wird etwa alle fünf Jahre überarbeitet. In der Ausgabe HS 2022, gültig seit dem 1. Januar 2022, hat die WZO die Position 3402 neu nummeriert: Wasch- und Reinigungsmittel in Aufmachungen für den Einzelverkauf stehen nicht mehr in Unterposition 3402 20, sondern in 3402 50, und die grenzflächenaktiven Stoffe wurden neu gegliedert, mit der neuen Unterposition 3402 31 für lineare Alkylbenzolsulfonsäuren und ihre Salze (LABSA). Ältere Preislisten, Rechnungen und Websites nennen teils noch 3402 20; prüfen Sie daher, aus welcher Ausgabe ein Code stammt. Achtstellige ITC-HS-Codes werden für jeden Auftrag anhand der aktuellen DGFT-Liste bestätigt.
 
 ## Eine Übersicht je Produkt
 
@@ -117,3 +121,11 @@ Hat Ihr Markt besondere Anforderungen, etwa die Vorabregistrierung von Reinigung
 - Gleichen Sie den vorgeschlagenen Code immer mit dem Zolltarif Ihres eigenen Landes ab, bevor Sie zahlen.
 
 Unsicher, wie Ihr Produkt einzureihen ist? Senden Sie uns Produkt, Packungsgröße und Ihr Bestimmungsland, und wir schlagen einen Code vor und klären die Einzelheiten mit dem Hersteller. Sehen Sie sich [Flüssigseife für die Hände](/products/liquid-hand-wash/) oder [Seifennudeln](/products/soap-noodles/) an, zwei Beispiele für Produkte, die in verschiedenen Teilen der Position 3401 liegen.
+
+## Quellen
+
+Primärquellen für die Codes und Normen in diesem Ratgeber. Prüfen Sie die aktuelle Fassung, bevor Sie sich auf eine Zahl verlassen.
+
+- [Weltzollorganisation (WZO): HS-Nomenklatur, Ausgabe 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): die internationalen sechsstelligen Positionen und Unterpositionen, darunter 3401 und 3402.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS)-Listen für Ausfuhr und Einfuhr](https://www.dgft.gov.in/CP/?opt=itchs-import-export): die indischen achtstelligen Codes und die Exportpolitik.
+- [Central Board of Indirect Taxes and Customs (CBIC): Zolltarif Indiens](https://www.cbic.gov.in/): der indische Zolltarif und seine Bekanntmachungen.

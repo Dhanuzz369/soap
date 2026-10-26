@@ -3,6 +3,7 @@ title: "Herbal Phenol vs Chemical Disinfectants: What Retail Buyers Should Know"
 metaTitle: "Herbal Phenol vs Chemical Disinfectants: A Buyer's Guide"
 description: "Comparing herbal phenol with chemical disinfectants for retail ranges: how they differ in use, labelling, classification and what to ask an exporter first."
 date: 2026-09-24
+updated: 2026-10-26
 tags: ["herbal phenol", "disinfectants", "floor cleaner", "retail buying"]
 relatedProducts: ["herbal-phenol", "floor-cleaner", "toilet-bowl-cleaner", "multi-surface-cleaner"]
 faqs:
@@ -113,3 +114,10 @@ We help you shortlist, request specification sheets and test reports from the ma
 - Tell your exporter your intended claims early, so the product, label and paperwork all match.
 
 Planning a floor care or hygiene range? Send us your target market, pack sizes and intended claims, and we will come back with options and the right questions for the manufacturer.
+
+## Sources
+
+Primary sources for the codes and standards in this guide. Check the current version before you rely on a figure.
+
+- [World Customs Organization (WCO): HS Nomenclature 2022 edition](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): the international six-digit headings and subheadings, including 3401 and 3402.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS) export and import schedules](https://www.dgft.gov.in/CP/?opt=itchs-import-export): India’s 8-digit lines and export policy.

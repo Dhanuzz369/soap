@@ -3,6 +3,7 @@ title: "Detergent Powder vs Liquid Detergent: Which Sells Better in Your Market?
 metaTitle: "Detergent Powder vs Liquid Detergent: Which Sells Better?"
 description: "Powder or liquid laundry detergent? Compare climate, washing habits, machines, price and freight cost per wash to choose the right range for your market."
 date: 2026-08-20
+updated: 2026-10-26
 tags: ["detergent powder", "liquid detergent", "market selection"]
 relatedProducts: ["detergent-powder", "liquid-detergent", "labsa", "fabric-softener"]
 faqs:
@@ -102,3 +103,10 @@ We will reply with grades, pack options and a container plan. FOB, CIF and CFR a
 - **Check the label rules.** Some markets require specific wording, language or registration for detergents. Confirm this before artwork is printed.
 - **Think about the second order.** The best first product is one you can restock easily, with packs that fit your warehouse and your distributors' trucks.
 - **Do not copy a neighbour's market.** Two countries next to each other can have very different washing habits, prices and import costs.
+
+## Sources
+
+Primary sources for the codes and standards in this guide. Check the current version before you rely on a figure.
+
+- [World Customs Organization (WCO): HS Nomenclature 2022 edition](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): the international six-digit headings and subheadings, including 3401 and 3402.
+- [International Chamber of Commerce (ICC): Incoterms rules](https://iccwbo.org/business-solutions/incoterms-rules/): the official definitions of the trade terms used in quotations.

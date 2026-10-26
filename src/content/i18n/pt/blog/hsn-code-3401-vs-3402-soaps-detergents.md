@@ -1,5 +1,5 @@
 ---
-sourceHash: "81532f93455a"
+sourceHash: "85547357c07f"
 title: "HSN 3401 ou 3402: guia do comprador para classificar sabonetes e detergentes"
 metaTitle: "HSN 3401 ou 3402: como classificar sabonetes e detergentes"
 description: "Em dúvida se o seu sabonete ou detergente é HSN 3401 ou 3402? Um guia simples sobre a divisão, com tabela por produto e as perguntas a resolver primeiro."
@@ -56,6 +56,10 @@ Esta é a posição mais ampla para a química de limpeza que não é sabão. As
 - **3402 31 e 3402 39**: agentes tensoativos aniônicos, o que inclui matérias-primas como o LABSA e o SLES.
 - **3402 50**: preparações de lavagem e de limpeza acondicionadas para venda a retalho. Sabão em pó, sabão líquido, detergente para louças, limpador de pisos e produtos semelhantes costumam ser colocados aqui.
 - **3402 90**: outras preparações, muitas vezes usadas para limpadores a granel e institucionais que não são acondicionados para venda a retalho.
+
+### Nota sobre o SH 2022: a subposição 3402 20 agora é 3402 50
+
+O Sistema Harmonizado é revisto aproximadamente a cada cinco anos. Na edição SH 2022, em vigor desde 1º de janeiro de 2022, a OMA renumerou a posição 3402: as preparações para lavagem e limpeza acondicionadas para venda a varejo passaram da subposição 3402 20 para a 3402 50, e os agentes de superfície foram reagrupados, com uma nova subposição 3402 31 para os ácidos alquilbenzenossulfônicos lineares e seus sais (LABSA). Listas de preços, faturas e sites antigos ainda podem mostrar 3402 20, por isso verifique de que edição vem um código. Os códigos ITC-HS de 8 dígitos são confirmados a cada pedido com base na tabela vigente da DGFT.
 
 ## Uma visão produto a produto
 
@@ -117,3 +121,11 @@ Se o seu mercado tem exigências especiais, como o pré-registro de produtos de 
 - Confira sempre o código proposto com a tarifa do seu próprio país antes de pagar.
 
 Não tem certeza de como o seu produto deve ser classificado? Envie o produto, o tamanho da embalagem e o seu destino, e proporemos um código e confirmaremos os detalhes com o fabricante. Veja o [sabonete líquido para as mãos](/products/liquid-hand-wash/) ou os [noodles de sabão (base de sabão)](/products/soap-noodles/) como dois exemplos de produtos que se situam em partes diferentes da posição 3401.
+
+## Fontes
+
+Fontes primárias dos códigos e normas deste guia. Confira a versão vigente antes de se basear em um número.
+
+- [Organização Mundial das Aduanas (OMA): Nomenclatura do SH, edição 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): as posições e subposições internacionais de seis dígitos, incluindo 3401 e 3402.
+- [Diretoria-Geral de Comércio Exterior da Índia (DGFT): tabelas ITC(HS) de exportação e importação](https://www.dgft.gov.in/CP/?opt=itchs-import-export): as linhas indianas de 8 dígitos e a política de exportação.
+- [Conselho Central de Impostos Indiretos e Aduanas da Índia (CBIC): Tarifa Aduaneira da Índia](https://www.cbic.gov.in/): a tarifa aduaneira indiana e suas notificações.

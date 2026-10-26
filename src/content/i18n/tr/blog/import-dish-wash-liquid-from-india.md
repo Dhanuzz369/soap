@@ -1,5 +1,5 @@
 ---
-sourceHash: "23d4ef5247c9"
+sourceHash: "6bde713a3f96"
 title: "Hindistan’dan Sıvı Bulaşık Deterjanı Nasıl İthal Edilir: Maliyetler, MOQ, Evraklar ve Sevkiyat"
 metaTitle: "Hindistan’dan Bulaşık Deterjanı İthalatı: MOQ, Maliyet"
 description: "Hindistan’dan sıvı bulaşık deterjanı ithalatına pratik rehber: maliyeti ne belirler, tipik MOQ, ambalaj seçimleri, ihracat evrakları ve sevkiyat adımları."
@@ -115,3 +115,11 @@ Her sevkiyat için standart ihracat evraklarını hazırlarız:
 ## Sonraki adım
 
 Birden fazla mutfak ürünü stoklamayı planlıyorsanız, katı kalıpların hâlâ popüler olduğu pazarlarda katı bulaşık sabunu da işe yarayabilir; [katı bulaşık sabunu](/products/dish-wash-bar/) sayfamız tipik formatları listeler. Hazır olduğunuzda talebinizi bize gönderin; bir teklif ve önerilen bir ambalaj planıyla yanıt verelim.
+
+## Kaynaklar
+
+Bu rehberdeki kodların ve standartların birincil kaynakları. Bir rakama güvenmeden önce güncel sürümü kontrol edin.
+
+- [Dünya Gümrük Örgütü (DGÖ): Armonize Sistem Nomenklatürü, 2022 baskısı](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): 3401 ve 3402 dahil uluslararası altı haneli pozisyonlar ve alt pozisyonlar.
+- [Hindistan Dış Ticaret Genel Müdürlüğü (DGFT): ITC(HS) ihracat ve ithalat listeleri](https://www.dgft.gov.in/CP/?opt=itchs-import-export): Hindistan’ın 8 haneli kodları ve ihracat politikası.
+- [Milletlerarası Ticaret Odası (ICC): Incoterms kuralları](https://iccwbo.org/business-solutions/incoterms-rules/): tekliflerde kullanılan teslim şekillerinin resmi tanımları.

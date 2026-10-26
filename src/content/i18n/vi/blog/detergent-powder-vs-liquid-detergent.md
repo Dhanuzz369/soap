@@ -1,5 +1,5 @@
 ---
-sourceHash: "c1161c07178f"
+sourceHash: "3192292d0bae"
 title: "Bột giặt hay nước giặt: loại nào bán chạy hơn tại thị trường của Quý khách?"
 metaTitle: "Bột giặt hay nước giặt: loại nào bán chạy hơn?"
 description: "Bột giặt hay nước giặt? So sánh khí hậu, thói quen giặt, máy giặt, giá và cước vận chuyển trên mỗi lần giặt để chọn dòng phù hợp với thị trường của Quý khách."
@@ -103,3 +103,10 @@ Chúng tôi sẽ phản hồi với các cấp độ, phương án đóng gói v
 - **Kiểm tra quy định về nhãn.** Một số thị trường yêu cầu câu chữ, ngôn ngữ hoặc đăng ký cụ thể cho chất tẩy rửa. Hãy xác nhận điều này trước khi in thiết kế.
 - **Nghĩ đến đơn hàng thứ hai.** Sản phẩm đầu tiên tốt nhất là sản phẩm Quý khách dễ bổ sung, với quy cách phù hợp với kho của Quý khách và xe tải của nhà phân phối.
 - **Đừng sao chép thị trường của nước láng giềng.** Hai quốc gia cạnh nhau có thể có thói quen giặt, giá cả và chi phí nhập khẩu rất khác nhau.
+
+## Nguồn tham khảo
+
+Nguồn gốc của các mã và tiêu chuẩn trong hướng dẫn này. Hãy kiểm tra phiên bản hiện hành trước khi dựa vào một con số.
+
+- [Tổ chức Hải quan Thế giới (WCO): Danh mục HS phiên bản 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): các nhóm và phân nhóm quốc tế 6 chữ số, gồm cả 3401 và 3402.
+- [Phòng Thương mại Quốc tế (ICC): quy tắc Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): định nghĩa chính thức của các điều kiện thương mại dùng trong báo giá.

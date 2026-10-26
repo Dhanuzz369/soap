@@ -1,5 +1,5 @@
 ---
-sourceHash: "81532f93455a"
+sourceHash: "85547357c07f"
 title: "Code HSN 3401 ou 3402 : guide de l’acheteur pour classer savons et détergents"
 metaTitle: "Code HSN 3401 ou 3402 : classer savons et détergents"
 description: "Votre savon ou votre détergent relève-t-il du code HSN 3401 ou 3402 ? Un guide clair de la distinction, avec un tableau produit par produit."
@@ -56,6 +56,10 @@ C’est la position la plus large pour la chimie de nettoyage hors savon. Les so
 - **3402 31 et 3402 39** : agents de surface anioniques, qui incluent des matières premières comme le LABSA et le SLES.
 - **3402 50** : préparations pour lessives et produits de nettoyage conditionnés pour la vente au détail. Lessive en poudre, lessive liquide, liquide vaisselle, nettoyant sols et produits similaires y sont généralement classés.
 - **3402 90** : autres préparations, souvent utilisées pour les nettoyants en vrac destinés aux collectivités qui ne sont pas conditionnés pour la vente au détail.
+
+### HS 2022 : la sous-position 3402 20 est devenue 3402 50
+
+Le Système harmonisé est révisé environ tous les cinq ans. Dans l’édition 2022 du SH, en vigueur depuis le 1er janvier 2022, l’OMD a renuméroté la position 3402 : les préparations pour lessives et de nettoyage conditionnées pour la vente au détail sont passées de la sous-position 3402 20 à 3402 50, et les agents de surface ont été regroupés, avec une nouvelle sous-position 3402 31 pour les acides alkylbenzènesulfoniques linéaires et leurs sels (LABSA). D’anciennes listes de prix, factures ou sites peuvent encore indiquer 3402 20 : vérifiez donc de quelle édition provient un code. Les codes ITC-HS à 8 chiffres sont confirmés à chaque commande d’après le barème DGFT en vigueur.
 
 ## Une vue produit par produit
 
@@ -117,3 +121,11 @@ Si votre marché a des exigences particulières, comme un pré-enregistrement de
 - Vérifiez toujours le code proposé au regard du tarif de votre pays avant de payer.
 
 Vous ne savez pas comment classer votre produit ? Envoyez-nous le produit, la contenance et votre destination, et nous vous proposerons un code en confirmant les détails avec le fabricant. Consultez les fiches [savon liquide pour les mains](/products/liquid-hand-wash/) ou [noodles de savon](/products/soap-noodles/) pour deux exemples de produits situés dans des parties différentes de la position 3401.
+
+## Sources
+
+Sources primaires des codes et normes cités dans ce guide. Vérifiez la version en vigueur avant de vous fier à un chiffre.
+
+- [Organisation mondiale des douanes (OMD) : Nomenclature du SH, édition 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx) : les positions et sous-positions internationales à six chiffres, dont 3401 et 3402.
+- [Directorate General of Foreign Trade (DGFT) : barèmes ITC(HS) export et import](https://www.dgft.gov.in/CP/?opt=itchs-import-export) : les lignes indiennes à 8 chiffres et la politique d’exportation.
+- [Central Board of Indirect Taxes and Customs (CBIC) : tarif douanier de l’Inde](https://www.cbic.gov.in/) : le tarif douanier indien et ses notifications.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "bd86fef00fbc"
+sourceHash: "7f212b113545"
 title: "Produk Pembersih Private Label: Panduan Langkah demi Langkah untuk Distributor"
 metaTitle: "Produk Pembersih Private Label: Panduan Distributor"
 description: "Cara distributor meluncurkan merek pembersih sendiri dari India: memilih lini, membuat brief produsen, menyetujui sampel, desain, pengemasan, dan pengiriman."
@@ -123,3 +123,10 @@ Lihatlah sampel pra-pengiriman dari batch produksi untuk terakhir kalinya dan si
 ## Langkah berikutnya
 
 Mulailah dengan brief: lini, ukuran kemasan, aroma, dan pelabuhan tujuan Anda. Kirimkan kepada GoodBiz Hygiene dan kami akan kembali dengan lini awal yang direkomendasikan, penawaran, serta rencana untuk sampel dan kontainer pertama yang campuran.
+
+## Sumber
+
+Sumber primer untuk kode dan standar dalam panduan ini. Periksa versi terbaru sebelum mengandalkan suatu angka.
+
+- [Kamar Dagang Internasional (ICC): aturan Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): definisi resmi syarat perdagangan yang digunakan dalam penawaran.
+- [Direktorat Jenderal Perdagangan Luar Negeri India (DGFT): daftar ekspor dan impor ITC(HS)](https://www.dgft.gov.in/CP/?opt=itchs-import-export): kode 8 digit India dan kebijakan ekspor.

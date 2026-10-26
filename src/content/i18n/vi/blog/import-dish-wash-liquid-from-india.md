@@ -1,5 +1,5 @@
 ---
-sourceHash: "23d4ef5247c9"
+sourceHash: "6bde713a3f96"
 title: "Cách nhập khẩu nước rửa chén từ Ấn Độ: chi phí, MOQ, chứng từ và vận chuyển"
 metaTitle: "Nhập khẩu nước rửa chén từ Ấn Độ: MOQ và chi phí"
 description: "Hướng dẫn thực tế về nhập khẩu nước rửa chén từ Ấn Độ: yếu tố quyết định chi phí, MOQ điển hình, lựa chọn quy cách, chứng từ xuất khẩu và vận chuyển từng bước."
@@ -115,3 +115,11 @@ Thanh toán được thỏa thuận theo từng đơn hàng, bằng chuyển kho
 ## Bước tiếp theo
 
 Nếu Quý khách dự định kinh doanh nhiều sản phẩm nhà bếp, xà phòng rửa chén dạng bánh cũng có thể hiệu quả tại những thị trường mà xà phòng rắn vẫn được ưa chuộng, và trang [xà phòng rửa chén dạng bánh](/products/dish-wash-bar/) của chúng tôi liệt kê các dạng điển hình. Khi Quý khách sẵn sàng, hãy gửi yêu cầu cho chúng tôi và chúng tôi sẽ phản hồi với báo giá và kế hoạch đóng gói đề xuất.
+
+## Nguồn tham khảo
+
+Nguồn gốc của các mã và tiêu chuẩn trong hướng dẫn này. Hãy kiểm tra phiên bản hiện hành trước khi dựa vào một con số.
+
+- [Tổ chức Hải quan Thế giới (WCO): Danh mục HS phiên bản 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): các nhóm và phân nhóm quốc tế 6 chữ số, gồm cả 3401 và 3402.
+- [Tổng cục Ngoại thương Ấn Độ (DGFT): danh mục ITC(HS) xuất khẩu và nhập khẩu](https://www.dgft.gov.in/CP/?opt=itchs-import-export): các mã 8 chữ số của Ấn Độ và chính sách xuất khẩu.
+- [Phòng Thương mại Quốc tế (ICC): quy tắc Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): định nghĩa chính thức của các điều kiện thương mại dùng trong báo giá.

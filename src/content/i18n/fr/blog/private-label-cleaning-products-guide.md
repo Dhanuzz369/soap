@@ -1,5 +1,5 @@
 ---
-sourceHash: "bd86fef00fbc"
+sourceHash: "7f212b113545"
 title: "Produits d’entretien en marque de distributeur : le guide étape par étape pour les distributeurs"
 metaTitle: "Produits d’entretien en MDD : le guide des distributeurs"
 description: "Comment lancer votre propre marque de produits d’entretien depuis l’Inde : choix de la gamme, cahier des charges, échantillons, maquettes et expédition."
@@ -123,3 +123,10 @@ Examinez une dernière fois un échantillon avant expédition issu du lot de pro
 ## Prochaines étapes
 
 Commencez par le cahier des charges : la gamme, les formats, les parfums et votre port de destination. Envoyez-le à GoodBiz Hygiene, et nous reviendrons vers vous avec une gamme de départ recommandée, un devis et un plan pour les échantillons et un premier conteneur mixte.
+
+## Sources
+
+Sources primaires des codes et normes cités dans ce guide. Vérifiez la version en vigueur avant de vous fier à un chiffre.
+
+- [Chambre de commerce internationale (ICC) : règles Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/) : les définitions officielles des conditions commerciales utilisées dans les devis.
+- [Directorate General of Foreign Trade (DGFT) : barèmes ITC(HS) export et import](https://www.dgft.gov.in/CP/?opt=itchs-import-export) : les lignes indiennes à 8 chiffres et la politique d’exportation.

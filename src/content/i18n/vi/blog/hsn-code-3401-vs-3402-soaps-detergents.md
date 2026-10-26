@@ -1,5 +1,5 @@
 ---
-sourceHash: "81532f93455a"
+sourceHash: "85547357c07f"
 title: "Mã HSN 3401 và 3402: hướng dẫn phân loại xà phòng và chất tẩy rửa dành cho người mua"
 metaTitle: "Mã HSN 3401 và 3402: phân loại xà phòng, chất tẩy rửa"
 description: "Chưa chắc xà phòng hay chất tẩy rửa của Quý khách thuộc HSN 3401 hay 3402? Hướng dẫn dễ hiểu về cách phân chia, kèm bảng theo từng sản phẩm."
@@ -56,6 +56,10 @@ Các phân nhóm Quý khách sẽ gặp nhiều nhất là:
 - **3402 31 và 3402 39**: chất hoạt động bề mặt anion, bao gồm các nguyên liệu như LABSA và SLES.
 - **3402 50**: các chế phẩm giặt rửa và làm sạch đóng gói để bán lẻ. Bột giặt, nước giặt, nước rửa chén, nước lau sàn và các sản phẩm tương tự thường được xếp vào đây.
 - **3402 90**: các chế phẩm khác, thường dùng cho chất tẩy rửa số lượng lớn và cho tổ chức không đóng gói để bán lẻ.
+
+### Lưu ý về HS 2022: phân nhóm 3402 20 nay là 3402 50
+
+Hệ thống Hài hòa được sửa đổi khoảng năm năm một lần. Trong phiên bản HS 2022, có hiệu lực từ ngày 1 tháng 1 năm 2022, WCO đã đánh số lại nhóm 3402: các chế phẩm giặt rửa và làm sạch đóng gói để bán lẻ chuyển từ phân nhóm 3402 20 sang 3402 50, và các chất hoạt động bề mặt được sắp xếp lại, với phân nhóm mới 3402 31 cho axit alkylbenzen sulfonic mạch thẳng và muối của chúng (LABSA). Bảng giá, hóa đơn và trang web cũ có thể vẫn ghi 3402 20, vì vậy hãy kiểm tra mã thuộc phiên bản nào. Mã ITC-HS 8 chữ số được xác nhận cho từng đơn hàng theo danh mục DGFT hiện hành.
 
 ## Cách nhìn theo từng sản phẩm
 
@@ -117,3 +121,11 @@ Nếu thị trường của Quý khách có yêu cầu đặc biệt, như đăn
 - Luôn đối chiếu mã đề xuất với biểu thuế của chính quốc gia Quý khách trước khi thanh toán.
 
 Quý khách chưa chắc sản phẩm của mình nên được phân loại thế nào? Hãy gửi cho chúng tôi sản phẩm, quy cách đóng gói và điểm đến, chúng tôi sẽ đề xuất một mã và xác nhận chi tiết với nhà sản xuất. Hãy xem [nước rửa tay](/products/liquid-hand-wash/) hoặc [hạt xà phòng (soap noodles)](/products/soap-noodles/) để thấy hai ví dụ về sản phẩm nằm ở các phần khác nhau của nhóm 3401.
+
+## Nguồn tham khảo
+
+Nguồn gốc của các mã và tiêu chuẩn trong hướng dẫn này. Hãy kiểm tra phiên bản hiện hành trước khi dựa vào một con số.
+
+- [Tổ chức Hải quan Thế giới (WCO): Danh mục HS phiên bản 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): các nhóm và phân nhóm quốc tế 6 chữ số, gồm cả 3401 và 3402.
+- [Tổng cục Ngoại thương Ấn Độ (DGFT): danh mục ITC(HS) xuất khẩu và nhập khẩu](https://www.dgft.gov.in/CP/?opt=itchs-import-export): các mã 8 chữ số của Ấn Độ và chính sách xuất khẩu.
+- [Hội đồng Trung ương về Thuế gián thu và Hải quan Ấn Độ (CBIC): Biểu thuế hải quan Ấn Độ](https://www.cbic.gov.in/): biểu thuế hải quan và các thông báo của Ấn Độ.

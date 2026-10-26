@@ -1,5 +1,5 @@
 ---
-sourceHash: "ee2e38612e35"
+sourceHash: "b19904d90d4f"
 title: "Guía de compra de suavizante de ropa para importadores: tipos, fragancias y tamaños de envase"
 metaTitle: "Guía de compra de suavizante para importadores"
 description: "Lo que deben saber los importadores antes de comprar suavizante de ropa a la India: regular o concentrado, fragancias, envases y almacenamiento."
@@ -115,3 +115,10 @@ El suavizante de ropa se clasifica habitualmente en la partida HSN 3402 50, pero
 ## Próximos pasos
 
 Envíenos su mercado objetivo, la lista corta de fragancias, el nivel de concentración y los tamaños de envase. GoodBiz Hygiene le responderá con una cotización, gestionará muestras de fragancia con el fabricante y le sugerirá un contenedor mixto si desea añadir detergente líquido u otras líneas de lavandería.
+
+## Fuentes
+
+Fuentes primarias de los códigos y normas de esta guía. Compruebe la versión vigente antes de basarse en una cifra.
+
+- [Organización Mundial de Aduanas (OMA): Nomenclatura del SA, edición 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): las partidas y subpartidas internacionales de seis dígitos, incluidas 3401 y 3402.
+- [Dirección General de Comercio Exterior de la India (DGFT): listados ITC(HS) de exportación e importación](https://www.dgft.gov.in/CP/?opt=itchs-import-export): las líneas indias de 8 dígitos y la política de exportación.

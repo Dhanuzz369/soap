@@ -1,5 +1,5 @@
 ---
-sourceHash: "f39ee6f3d9e7"
+sourceHash: "d4c87bac15fb"
 title: "Fenoli ya Mitishamba dhidi ya Dawa za Kemikali za Kuua Vijidudu: Wanunuzi wa Rejareja Wanapaswa Kujua Nini"
 metaTitle: "Fenoli ya Mitishamba au Dawa za Kemikali: Mwongozo"
 description: "Fenoli ya mitishamba dhidi ya dawa za kemikali za kuua vijidudu kwa rejareja: matumizi, uwekaji lebo, uainishaji na cha kumwuliza msafirishaji kwanza."
@@ -114,3 +114,10 @@ Tunakusaidia kuchagua orodha fupi, kuomba karatasi za vipimo na ripoti za vipimo
 - Mwambie msafirishaji wako madai unayokusudia mapema, ili bidhaa, lebo na nyaraka vyote vilingane.
 
 Unapanga mstari wa utunzaji wa sakafu au wa usafi? Tutumie soko lako lengwa, ukubwa wa vifungashio na madai unayokusudia, nasi tutarudi na chaguo na maswali sahihi kwa mtengenezaji.
+
+## Vyanzo
+
+Vyanzo vya msingi vya misimbo na viwango vilivyo katika mwongozo huu. Hakikisha toleo la sasa kabla ya kutegemea takwimu yoyote.
+
+- [Shirika la Forodha Duniani (WCO): Nomenklecha ya HS, toleo la 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): vichwa na vifungu vidogo vya kimataifa vya tarakimu sita, ikiwemo 3401 na 3402.
+- [Kurugenzi Kuu ya Biashara ya Nje ya India (DGFT): majedwali ya ITC(HS) ya kusafirisha na kuagiza](https://www.dgft.gov.in/CP/?opt=itchs-import-export): misimbo ya India ya tarakimu 8 na sera ya usafirishaji nje.

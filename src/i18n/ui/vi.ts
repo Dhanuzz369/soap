@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ff1e6f1225e8';
+export const sourceHash = '3056a29d249f';
 
 const vi: UiPartial = {
   meta: {
@@ -359,6 +359,7 @@ const vi: UiPartial = {
 
   post: {
     meta: '{date} · {minutes} · GoodBiz Hygiene',
+    reviewed: 'Lần rà soát gần nhất: {date}',
     quickAnswers: 'Trả lời nhanh',
     relatedH: 'Các sản phẩm được nhắc đến trong cẩm nang này',
     quoteH: 'Quý khách đang lên kế hoạch đặt hàng?',

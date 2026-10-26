@@ -1,5 +1,5 @@
 ---
-sourceHash: "259e3f5f79fb"
+sourceHash: "30b7478cf2a7"
 title: "清洁产品出口单据：COA、MSDS、原产地证书等"
 metaTitle: "清洁产品出口单据：COA、MSDS、原产地证"
 description: "采购商的印度香皂、洗涤剂和清洁剂出口单据清单：商业发票、COA、SDS、原产地证书、危险品单据以及目的国当地注册要求，帮助进口商少走弯路、做出更稳妥的采购决定。"
@@ -120,3 +120,11 @@ COA只有在先约定规格的前提下才有用。在确认订单前，请索�
 ## 下一步
 
 如果您正在比较产品选项，请参阅我们的[洗衣粉](/products/detergent-powder/)页面了解洗衣产品，或查看面向酒店和设施采购商的[大包装及机构用清洁产品](/products/bulk-institutional-cleaners/)系列。发送询价时，请告知我们您的国家、港口以及您所在国家主管部门要求的任何单据，我们会为您的订单确认相关单据。
+
+## 资料来源
+
+本指南所涉编码和标准的原始出处。引用任何数字前，请先核对现行版本。
+
+- [印度对外贸易总局（DGFT）：ITC(HS)进出口目录](https://www.dgft.gov.in/CP/?opt=itchs-import-export)：印度8位编码及出口政策。
+- [印度中央间接税和海关委员会（CBIC）：印度海关税则](https://www.cbic.gov.in/)：印度海关税则及相关公告。
+- [国际商会（ICC）：Incoterms 规则](https://iccwbo.org/business-solutions/incoterms-rules/)：报价中所用贸易术语的官方定义。

@@ -1,5 +1,5 @@
 ---
-sourceHash: "259e3f5f79fb"
+sourceHash: "30b7478cf2a7"
 title: "Documentos de exportación para productos de limpieza: COA, MSDS, certificado de origen y más"
 metaTitle: "Documentos de exportación de productos de limpieza"
 description: "Lista para compradores con los documentos de exportación de jabones, detergentes y limpiadores de la India: factura, COA, SDS, origen y registros."
@@ -120,3 +120,11 @@ FOB, CIF y CFR disponibles; condiciones de pago acordadas en cada pedido (T/T o 
 ## Siguientes pasos
 
 Si está comparando opciones de producto, consulte nuestra página de [detergente en polvo](/products/detergent-powder/) para productos de lavandería, o nuestra gama de [productos de limpieza a granel e institucionales](/products/bulk-institutional-cleaners/) para compradores de hoteles y de instalaciones. Al enviar su consulta, indíquenos su país, su puerto y cualquier documento que exijan sus autoridades, y confirmaremos la documentación de su pedido.
+
+## Fuentes
+
+Fuentes primarias de los códigos y normas de esta guía. Compruebe la versión vigente antes de basarse en una cifra.
+
+- [Dirección General de Comercio Exterior de la India (DGFT): listados ITC(HS) de exportación e importación](https://www.dgft.gov.in/CP/?opt=itchs-import-export): las líneas indias de 8 dígitos y la política de exportación.
+- [Junta Central de Impuestos Indirectos y Aduanas de la India (CBIC): Arancel de Aduanas de la India](https://www.cbic.gov.in/): el arancel aduanero indio y sus notificaciones.
+- [Cámara de Comercio Internacional (ICC): reglas Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): las definiciones oficiales de los términos comerciales usados en las cotizaciones.

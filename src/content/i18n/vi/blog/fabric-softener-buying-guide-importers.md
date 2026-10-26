@@ -1,5 +1,5 @@
 ---
-sourceHash: "ee2e38612e35"
+sourceHash: "b19904d90d4f"
 title: "Cẩm nang mua nước xả vải cho nhà nhập khẩu: chủng loại, hương liệu và quy cách đóng gói"
 metaTitle: "Cẩm nang mua nước xả vải cho nhà nhập khẩu"
 description: "Những điều nhà nhập khẩu nên biết trước khi mua nước xả vải từ Ấn Độ: loại thường và đậm đặc, cấp cho da nhạy cảm, chọn hương liệu, quy cách và bảo quản."
@@ -115,3 +115,10 @@ Nước xả vải thường được phân loại vào HSN 3402 50, nhưng đô
 ## Các bước tiếp theo
 
 Hãy gửi cho chúng tôi thị trường mục tiêu, danh sách rút gọn hương liệu, mức đậm đặc và quy cách đóng gói của Quý khách. GoodBiz Hygiene sẽ gửi báo giá, sắp xếp mẫu hương liệu từ nhà sản xuất và đề xuất container ghép nếu Quý khách muốn bổ sung nước giặt hoặc các dòng giặt giũ khác.
+
+## Nguồn tham khảo
+
+Nguồn gốc của các mã và tiêu chuẩn trong hướng dẫn này. Hãy kiểm tra phiên bản hiện hành trước khi dựa vào một con số.
+
+- [Tổ chức Hải quan Thế giới (WCO): Danh mục HS phiên bản 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): các nhóm và phân nhóm quốc tế 6 chữ số, gồm cả 3401 và 3402.
+- [Tổng cục Ngoại thương Ấn Độ (DGFT): danh mục ITC(HS) xuất khẩu và nhập khẩu](https://www.dgft.gov.in/CP/?opt=itchs-import-export): các mã 8 chữ số của Ấn Độ và chính sách xuất khẩu.

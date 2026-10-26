@@ -1,5 +1,5 @@
 ---
-sourceHash: "23d4ef5247c9"
+sourceHash: "6bde713a3f96"
 title: "Cara Mengimpor Sabun Cuci Piring Cair dari India: Biaya, MOQ, Dokumen, dan Pengiriman"
 metaTitle: "Cara Impor Sabun Cuci Piring dari India: MOQ dan Biaya"
 description: "Panduan praktis mengimpor sabun cuci piring cair dari India: faktor biaya, MOQ tipikal, pilihan kemasan, dokumen ekspor, dan alur pengiriman bertahap."
@@ -115,3 +115,11 @@ Pembayaran disepakati untuk setiap pesanan, lewat transfer telegrafik (T/T) atau
 ## Langkah berikutnya
 
 Bila Anda berencana menyediakan lebih dari satu produk dapur, sabun cuci piring batang juga dapat berfungsi di pasar tempat sabun padat masih populer, dan halaman [sabun cuci piring batang](/products/dish-wash-bar/) kami mencantumkan format tipikalnya. Setelah siap, kirimkan brief Anda dan kami akan membalas dengan penawaran dan rencana kemasan yang direkomendasikan.
+
+## Sumber
+
+Sumber primer untuk kode dan standar dalam panduan ini. Periksa versi terbaru sebelum mengandalkan suatu angka.
+
+- [Organisasi Kepabeanan Dunia (WCO): Nomenklatur HS edisi 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): pos dan subpos internasional enam digit, termasuk 3401 dan 3402.
+- [Direktorat Jenderal Perdagangan Luar Negeri India (DGFT): daftar ekspor dan impor ITC(HS)](https://www.dgft.gov.in/CP/?opt=itchs-import-export): kode 8 digit India dan kebijakan ekspor.
+- [Kamar Dagang Internasional (ICC): aturan Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): definisi resmi syarat perdagangan yang digunakan dalam penawaran.

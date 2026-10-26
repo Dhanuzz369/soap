@@ -1,5 +1,5 @@
 ---
-sourceHash: "23d4ef5247c9"
+sourceHash: "6bde713a3f96"
 title: "Jinsi ya Kuagiza Sabuni ya Maji ya Kuosha Vyombo kutoka India: Gharama, MOQ, Nyaraka na Usafirishaji"
 metaTitle: "Kuagiza Sabuni ya Vyombo kutoka India: MOQ na Gharama"
 description: "Mwongozo wa kuagiza sabuni ya maji ya kuosha vyombo kutoka India: gharama, MOQ ya kawaida, vifungashio, nyaraka za usafirishaji nje na hatua za usafirishaji."
@@ -115,3 +115,11 @@ Malipo hukubaliwa kwa kila oda, kwa uhamisho wa telegrafu (T/T) au barua ya mkop
 ## Hatua inayofuata
 
 Ikiwa unapanga kuuza zaidi ya bidhaa moja ya jikoni, kipande cha sabuni ya kuosha vyombo pia kinaweza kufanya kazi katika masoko ambako vipande vigumu bado vinapendwa, na ukurasa wetu wa [kipande cha sabuni ya kuosha vyombo](/products/dish-wash-bar/) unaorodhesha maumbo ya kawaida. Ukiwa tayari, tutumie maelezo yako nasi tutarudi na nukuu ya bei na mpango unaopendekezwa wa vifungashio.
+
+## Vyanzo
+
+Vyanzo vya msingi vya misimbo na viwango vilivyo katika mwongozo huu. Hakikisha toleo la sasa kabla ya kutegemea takwimu yoyote.
+
+- [Shirika la Forodha Duniani (WCO): Nomenklecha ya HS, toleo la 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): vichwa na vifungu vidogo vya kimataifa vya tarakimu sita, ikiwemo 3401 na 3402.
+- [Kurugenzi Kuu ya Biashara ya Nje ya India (DGFT): majedwali ya ITC(HS) ya kusafirisha na kuagiza](https://www.dgft.gov.in/CP/?opt=itchs-import-export): misimbo ya India ya tarakimu 8 na sera ya usafirishaji nje.
+- [Chemba ya Kimataifa ya Biashara (ICC): kanuni za Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): maana rasmi za masharti ya biashara yanayotumika kwenye nukuu za bei.

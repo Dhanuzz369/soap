@@ -380,6 +380,8 @@ const en = {
 
   post: {
     meta: '{date} · {minutes} · GoodBiz Hygiene',
+    /** Under the meta line when a guide has an `updated` date: when its facts and sources were last checked. */
+    reviewed: 'Last reviewed {date}',
     quickAnswers: 'Quick answers',
     relatedH: 'Products mentioned in this guide',
     quoteH: 'Planning an order?',

@@ -1,5 +1,5 @@
 ---
-sourceHash: "c1161c07178f"
+sourceHash: "3192292d0bae"
 title: "Sabão em pó ou sabão líquido: qual vende mais no seu mercado?"
 metaTitle: "Sabão em pó ou líquido: qual vende mais no seu mercado?"
 description: "Sabão em pó ou líquido para roupas? Compare clima, hábitos de lavagem, máquinas, preço e frete por lavagem para escolher a linha certa para o seu mercado."
@@ -103,3 +103,10 @@ Responderemos com graus, opções de embalagem e um plano de contêiner. FOB, CI
 - **Verifique as regras de rotulagem.** Alguns mercados exigem texto, idioma ou registro específicos para detergentes. Confirme isso antes de imprimir a arte.
 - **Pense no segundo pedido.** O melhor primeiro produto é aquele que você consegue repor com facilidade, com embalagens que caibam no seu armazém e nos caminhões dos seus distribuidores.
 - **Não copie o mercado do vizinho.** Dois países vizinhos podem ter hábitos de lavagem, preços e custos de importação muito diferentes.
+
+## Fontes
+
+Fontes primárias dos códigos e normas deste guia. Confira a versão vigente antes de se basear em um número.
+
+- [Organização Mundial das Aduanas (OMA): Nomenclatura do SH, edição 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): as posições e subposições internacionais de seis dígitos, incluindo 3401 e 3402.
+- [Câmara de Comércio Internacional (ICC): regras Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): as definições oficiais dos termos comerciais usados nas cotações.

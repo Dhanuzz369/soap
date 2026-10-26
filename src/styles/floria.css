@@ -607,6 +607,9 @@
   font-size: var(--step-small);
   color: var(--on-dark-soft);
 }
+.ph-meta.ph-reviewed {
+  margin-top: 6px;
+}
 .ph-actions {
   display: flex;
   flex-wrap: wrap;

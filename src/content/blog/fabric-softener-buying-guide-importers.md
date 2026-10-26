@@ -3,6 +3,7 @@ title: "Fabric Softener Buying Guide for Importers: Types, Fragrances and Pack S
 metaTitle: "Fabric Softener Buying Guide for Importers"
 description: "What importers should know before buying fabric softener from India: regular vs concentrate, sensitive grades, fragrance choice, pack sizes and storage."
 date: 2026-09-17
+updated: 2026-10-26
 tags: ["fabric softener", "buying guide", "fragrance", "pack sizes"]
 relatedProducts: ["fabric-softener", "liquid-detergent", "detergent-powder"]
 faqs:
@@ -114,3 +115,10 @@ Fabric softener is commonly classified under HSN 3402 50, but it is sometimes cl
 ## Next steps
 
 Send us your target market, fragrance shortlist, concentration level and pack sizes. GoodBiz Hygiene will return a quotation, arrange fragrance samples from the manufacturer and suggest a mixed container if you want to add liquid detergent or other laundry lines.
+
+## Sources
+
+Primary sources for the codes and standards in this guide. Check the current version before you rely on a figure.
+
+- [World Customs Organization (WCO): HS Nomenclature 2022 edition](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): the international six-digit headings and subheadings, including 3401 and 3402.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS) export and import schedules](https://www.dgft.gov.in/CP/?opt=itchs-import-export): India’s 8-digit lines and export policy.

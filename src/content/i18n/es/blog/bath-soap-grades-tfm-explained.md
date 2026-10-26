@@ -1,5 +1,5 @@
 ---
-sourceHash: "84702d62b584"
+sourceHash: "af3f3cf90c23"
 title: "Calidades del jabón de baño explicadas: TFM, Grado 1 frente a Grado 2 y por qué importa"
 metaTitle: "Calidades de jabón de baño: TFM, grado 1 o grado 2"
 description: "Qué significa el TFM en la ficha de un jabón de baño, cómo se usan los Grados 1 y 2 en el comercio y cómo elegir la calidad adecuada para su mercado."
@@ -35,7 +35,7 @@ De ello se derivan tres efectos prácticos:
 
 ## Cómo se usan las calidades en el comercio
 
-Muchos compradores de jabón usan las calidades como abreviatura de bandas de TFM. En el comercio indio, la especificación de la Oficina de Normas de la India (BIS) para el jabón de tocador define las calidades por el TFM mínimo, y las cotizaciones suelen tomar prestado ese lenguaje.
+Muchos compradores de jabón usan las calidades como abreviatura de bandas de TFM. En el comercio indio, la especificación de la Oficina de Normas de la India (BIS, IS 2888) para el jabón de tocador define las calidades por el TFM mínimo, y las cotizaciones suelen tomar prestado ese lenguaje.
 
 Los valores siguientes son cifras de referencia de uso habitual para el TFM mínimo, no garantías. Confirme con el fabricante, en cada pedido, la calidad exacta, la versión de la norma y el método de ensayo.
 
@@ -123,3 +123,10 @@ Le preguntamos por su mercado objetivo, el peso de pastilla preferido, la calida
 - Elija la calidad según su cliente y su nivel de precio, en lugar de suponer que la más alta es la mejor.
 
 Indíquenos su mercado objetivo, la calidad y el peso de la pastilla, y le responderemos con opciones, muestras y fichas de especificaciones del fabricante.
+
+## Fuentes
+
+Fuentes primarias de los códigos y normas de esta guía. Compruebe la versión vigente antes de basarse en una cifra.
+
+- [Oficina de Normas de la India (BIS): IS 2888, jabón de tocador — especificación](https://www.bis.gov.in/?lang=en): la norma india que fija las calidades del jabón de tocador por TFM mínimo.
+- [Organización Mundial de Aduanas (OMA): Nomenclatura del SA, edición 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): las partidas y subpartidas internacionales de seis dígitos, incluidas 3401 y 3402.

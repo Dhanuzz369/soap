@@ -1,5 +1,5 @@
 ---
-sourceHash: "f39ee6f3d9e7"
+sourceHash: "d4c87bac15fb"
 title: "Fenol herbal frente a desinfectantes químicos: lo que deben saber los compradores minoristas"
 metaTitle: "Fenol herbal o desinfectantes químicos: guía de compra"
 description: "Fenol herbal frente a desinfectantes químicos en gamas minoristas: diferencias de uso, etiquetado y clasificación, y qué preguntar a un exportador."
@@ -114,3 +114,10 @@ Le ayudamos a preseleccionar, solicitamos fichas de especificaciones e informes 
 - Indique pronto a su exportador las declaraciones que piensa hacer, para que el producto, la etiqueta y la documentación coincidan.
 
 ¿Está planificando una gama de cuidado de pisos o de higiene? Envíenos su mercado objetivo, los tamaños de envase y las declaraciones previstas, y le responderemos con opciones y con las preguntas adecuadas para el fabricante.
+
+## Fuentes
+
+Fuentes primarias de los códigos y normas de esta guía. Compruebe la versión vigente antes de basarse en una cifra.
+
+- [Organización Mundial de Aduanas (OMA): Nomenclatura del SA, edición 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): las partidas y subpartidas internacionales de seis dígitos, incluidas 3401 y 3402.
+- [Dirección General de Comercio Exterior de la India (DGFT): listados ITC(HS) de exportación e importación](https://www.dgft.gov.in/CP/?opt=itchs-import-export): las líneas indias de 8 dígitos y la política de exportación.

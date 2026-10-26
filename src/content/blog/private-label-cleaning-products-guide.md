@@ -3,6 +3,7 @@ title: "Private Label Cleaning Products: A Step-by-Step Guide for Distributors"
 metaTitle: "Private Label Cleaning Products: A Guide for Distributors"
 description: "How distributors can launch their own cleaning brand from India: choosing the range, briefing a manufacturer, approving samples, artwork, packing and shipping."
 date: 2026-09-10
+updated: 2026-10-26
 tags: ["private label", "distributors", "home care", "OEM"]
 relatedProducts: ["liquid-detergent", "dish-wash-liquid", "floor-cleaner", "fabric-softener"]
 faqs:
@@ -122,3 +123,10 @@ Take a final look at a pre-shipment sample from the production batch and keep it
 ## Next steps
 
 Start with the brief: the range, the pack sizes, the fragrances and your destination port. Send it to GoodBiz Hygiene and we will come back with a recommended starting range, a quotation and a plan for samples and a mixed first container.
+
+## Sources
+
+Primary sources for the codes and standards in this guide. Check the current version before you rely on a figure.
+
+- [International Chamber of Commerce (ICC): Incoterms rules](https://iccwbo.org/business-solutions/incoterms-rules/): the official definitions of the trade terms used in quotations.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS) export and import schedules](https://www.dgft.gov.in/CP/?opt=itchs-import-export): India’s 8-digit lines and export policy.

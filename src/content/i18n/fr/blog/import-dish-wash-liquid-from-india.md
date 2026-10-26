@@ -1,5 +1,5 @@
 ---
-sourceHash: "23d4ef5247c9"
+sourceHash: "6bde713a3f96"
 title: "Importer du liquide vaisselle depuis l’Inde : coûts, MOQ, documents et expédition"
 metaTitle: "Importer du liquide vaisselle d’Inde : MOQ et coûts"
 description: "Guide pratique pour importer du liquide vaisselle depuis l’Inde : ce qui fait le coût, la MOQ type, les formats, les documents d’export et l’expédition."
@@ -115,3 +115,11 @@ Le paiement est convenu à chaque commande, par virement télégraphique (T/T) o
 ## Pour aller plus loin
 
 Si vous comptez proposer plusieurs produits pour la cuisine, un pain vaisselle peut aussi bien fonctionner sur les marchés où les pains solides restent populaires, et notre fiche [pain vaisselle](/products/dish-wash-bar/) présente les formats types. Lorsque vous êtes prêt, envoyez-nous votre cahier des charges et nous vous répondrons avec un devis et un plan de conditionnement recommandé.
+
+## Sources
+
+Sources primaires des codes et normes cités dans ce guide. Vérifiez la version en vigueur avant de vous fier à un chiffre.
+
+- [Organisation mondiale des douanes (OMD) : Nomenclature du SH, édition 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx) : les positions et sous-positions internationales à six chiffres, dont 3401 et 3402.
+- [Directorate General of Foreign Trade (DGFT) : barèmes ITC(HS) export et import](https://www.dgft.gov.in/CP/?opt=itchs-import-export) : les lignes indiennes à 8 chiffres et la politique d’exportation.
+- [Chambre de commerce internationale (ICC) : règles Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/) : les définitions officielles des conditions commerciales utilisées dans les devis.

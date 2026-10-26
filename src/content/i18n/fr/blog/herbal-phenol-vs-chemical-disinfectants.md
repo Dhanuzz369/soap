@@ -1,5 +1,5 @@
 ---
-sourceHash: "f39ee6f3d9e7"
+sourceHash: "d4c87bac15fb"
 title: "Phénol aux plantes ou désinfectants chimiques : ce que les acheteurs de la distribution doivent savoir"
 metaTitle: "Phénol aux plantes ou désinfectants chimiques : le guide"
 description: "Phénol aux plantes et désinfectants chimiques comparés pour la distribution : usage, étiquetage, classement douanier et questions à poser à l’exportateur."
@@ -114,3 +114,10 @@ Nous vous aidons à établir une présélection, demandons au fabricant les fich
 - Indiquez tôt à votre exportateur les allégations envisagées, pour que le produit, l’étiquette et les documents concordent.
 
 Vous préparez une gamme d’entretien des sols ou d’hygiène ? Envoyez-nous votre marché cible, vos formats et les allégations envisagées, et nous reviendrons vers vous avec des options et les bonnes questions à poser au fabricant.
+
+## Sources
+
+Sources primaires des codes et normes cités dans ce guide. Vérifiez la version en vigueur avant de vous fier à un chiffre.
+
+- [Organisation mondiale des douanes (OMD) : Nomenclature du SH, édition 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx) : les positions et sous-positions internationales à six chiffres, dont 3401 et 3402.
+- [Directorate General of Foreign Trade (DGFT) : barèmes ITC(HS) export et import](https://www.dgft.gov.in/CP/?opt=itchs-import-export) : les lignes indiennes à 8 chiffres et la politique d’exportation.

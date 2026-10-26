@@ -1,5 +1,5 @@
 ---
-sourceHash: "23d4ef5247c9"
+sourceHash: "6bde713a3f96"
 title: "Como importar detergente líquido para louças da Índia: custos, MOQ, documentos e embarque"
 metaTitle: "Como importar detergente de louça da Índia: MOQ e custos"
 description: "Guia prático para importar detergente para louças da Índia: o que determina o custo, MOQ típico, embalagens, documentos de exportação e embarque passo a passo."
@@ -115,3 +115,11 @@ O pagamento é acordado a cada pedido, por transferência telegráfica (T/T) ou 
 ## Próximos passos
 
 Se você pretende estocar mais de um produto de cozinha, uma barra para lavar louças também pode funcionar em mercados em que as barras sólidas ainda são populares, e a nossa página de [detergente em barra para louças](/products/dish-wash-bar/) lista os formatos típicos. Quando estiver pronto, envie-nos a sua definição e responderemos com uma cotação e um plano de embalagens recomendado.
+
+## Fontes
+
+Fontes primárias dos códigos e normas deste guia. Confira a versão vigente antes de se basear em um número.
+
+- [Organização Mundial das Aduanas (OMA): Nomenclatura do SH, edição 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): as posições e subposições internacionais de seis dígitos, incluindo 3401 e 3402.
+- [Diretoria-Geral de Comércio Exterior da Índia (DGFT): tabelas ITC(HS) de exportação e importação](https://www.dgft.gov.in/CP/?opt=itchs-import-export): as linhas indianas de 8 dígitos e a política de exportação.
+- [Câmara de Comércio Internacional (ICC): regras Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): as definições oficiais dos termos comerciais usados nas cotações.

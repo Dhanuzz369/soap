@@ -1,5 +1,5 @@
 ---
-sourceHash: "259e3f5f79fb"
+sourceHash: "30b7478cf2a7"
 title: "Documents d’export pour les produits d’entretien : COA, FDS, certificat d’origine et plus"
 metaTitle: "Documents d’export des produits d’entretien : COA, FDS"
 description: "Liste de contrôle des documents d’export pour savons, lessives et nettoyants indiens : facture, COA, FDS, certificat d’origine, marchandises dangereuses."
@@ -120,3 +120,11 @@ FOB, CIF et CFR disponibles ; conditions de paiement convenues à chaque comman
 ## Pour aller plus loin
 
 Si vous comparez des options de produits, consultez notre fiche [lessive en poudre](/products/detergent-powder/) pour l’entretien du linge, ou notre gamme de [produits d’entretien en vrac pour collectivités](/products/bulk-institutional-cleaners/) pour les hôtels et les gestionnaires de bâtiments. Dans votre demande, indiquez-nous votre pays, votre port et tout document exigé par vos autorités, et nous confirmerons les documents de votre commande.
+
+## Sources
+
+Sources primaires des codes et normes cités dans ce guide. Vérifiez la version en vigueur avant de vous fier à un chiffre.
+
+- [Directorate General of Foreign Trade (DGFT) : barèmes ITC(HS) export et import](https://www.dgft.gov.in/CP/?opt=itchs-import-export) : les lignes indiennes à 8 chiffres et la politique d’exportation.
+- [Central Board of Indirect Taxes and Customs (CBIC) : tarif douanier de l’Inde](https://www.cbic.gov.in/) : le tarif douanier indien et ses notifications.
+- [Chambre de commerce internationale (ICC) : règles Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/) : les définitions officielles des conditions commerciales utilisées dans les devis.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "ee2e38612e35"
+sourceHash: "b19904d90d4f"
 title: "Panduan Membeli Pelembut Pakaian bagi Importir: Jenis, Aroma, dan Ukuran Kemasan"
 metaTitle: "Panduan Membeli Pelembut Pakaian untuk Importir"
 description: "Yang perlu diketahui importir sebelum membeli pelembut pakaian dari India: reguler vs konsentrat, grade sensitif, pilihan aroma, ukuran kemasan, penyimpanan."
@@ -115,3 +115,10 @@ Pelembut pakaian lazim diklasifikasikan di bawah HSN 3402 50, tetapi kadang dikl
 ## Langkah berikutnya
 
 Kirimkan pasar sasaran, daftar pendek aroma, tingkat konsentrasi, dan ukuran kemasan Anda. GoodBiz Hygiene akan mengirimkan penawaran, mengatur sampel aroma dari produsen, dan menyarankan kontainer campuran bila Anda ingin menambahkan deterjen cair atau lini cuci pakaian lainnya.
+
+## Sumber
+
+Sumber primer untuk kode dan standar dalam panduan ini. Periksa versi terbaru sebelum mengandalkan suatu angka.
+
+- [Organisasi Kepabeanan Dunia (WCO): Nomenklatur HS edisi 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): pos dan subpos internasional enam digit, termasuk 3401 dan 3402.
+- [Direktorat Jenderal Perdagangan Luar Negeri India (DGFT): daftar ekspor dan impor ITC(HS)](https://www.dgft.gov.in/CP/?opt=itchs-import-export): kode 8 digit India dan kebijakan ekspor.

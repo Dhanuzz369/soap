@@ -1,5 +1,5 @@
 ---
-sourceHash: "c1161c07178f"
+sourceHash: "3192292d0bae"
 title: "Waschpulver oder Flüssigwaschmittel: Was verkauft sich in Ihrem Markt besser?"
 metaTitle: "Waschpulver oder Flüssigwaschmittel: Was verkauft sich?"
 description: "Pulver oder Flüssigwaschmittel? Vergleichen Sie Klima, Waschgewohnheiten, Maschinen, Preis und Frachtkosten je Wäsche für das richtige Sortiment in Ihrem Markt."
@@ -103,3 +103,10 @@ Wir antworten mit Qualitäten, Packungsoptionen und einem Containerplan. FOB, CI
 - **Prüfen Sie die Kennzeichnungsvorschriften.** Manche Märkte verlangen für Waschmittel bestimmte Formulierungen, Sprachen oder Registrierungen. Klären Sie das, bevor das Artwork gedruckt wird.
 - **Denken Sie an den zweiten Auftrag.** Das beste erste Produkt ist eines, das sich leicht nachbestellen lässt, mit Packungen, die in Ihr Lager und die Lastwagen Ihrer Händler passen.
 - **Kopieren Sie nicht den Markt eines Nachbarn.** Zwei benachbarte Länder können sehr unterschiedliche Waschgewohnheiten, Preise und Einfuhrkosten haben.
+
+## Quellen
+
+Primärquellen für die Codes und Normen in diesem Ratgeber. Prüfen Sie die aktuelle Fassung, bevor Sie sich auf eine Zahl verlassen.
+
+- [Weltzollorganisation (WZO): HS-Nomenklatur, Ausgabe 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): die internationalen sechsstelligen Positionen und Unterpositionen, darunter 3401 und 3402.
+- [Internationale Handelskammer (ICC): Incoterms-Regeln](https://iccwbo.org/business-solutions/incoterms-rules/): die offiziellen Definitionen der Lieferbedingungen in Angeboten.

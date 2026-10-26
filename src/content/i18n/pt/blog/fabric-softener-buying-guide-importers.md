@@ -1,5 +1,5 @@
 ---
-sourceHash: "ee2e38612e35"
+sourceHash: "b19904d90d4f"
 title: "Guia de compra de amaciante para importadores: tipos, fragrâncias e tamanhos de embalagem"
 metaTitle: "Guia de compra de amaciante para importadores"
 description: "O que importadores devem saber antes de comprar amaciante da Índia: regular ou concentrado, graus sensíveis, fragrância, tamanhos de embalagem e armazenagem."
@@ -115,3 +115,10 @@ O amaciante é comumente classificado no HSN 3402 50, mas às vezes é classific
 ## Próximos passos
 
 Envie-nos o seu mercado-alvo, a sua lista de fragrâncias, o nível de concentração e os tamanhos de embalagem. A GoodBiz Hygiene retornará com uma cotação, providenciará amostras de fragrância do fabricante e sugerirá um contêiner misto, se você quiser acrescentar sabão líquido ou outras linhas para roupas.
+
+## Fontes
+
+Fontes primárias dos códigos e normas deste guia. Confira a versão vigente antes de se basear em um número.
+
+- [Organização Mundial das Aduanas (OMA): Nomenclatura do SH, edição 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): as posições e subposições internacionais de seis dígitos, incluindo 3401 e 3402.
+- [Diretoria-Geral de Comércio Exterior da Índia (DGFT): tabelas ITC(HS) de exportação e importação](https://www.dgft.gov.in/CP/?opt=itchs-import-export): as linhas indianas de 8 dígitos e a política de exportação.

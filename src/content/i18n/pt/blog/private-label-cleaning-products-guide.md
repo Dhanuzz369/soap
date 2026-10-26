@@ -1,5 +1,5 @@
 ---
-sourceHash: "bd86fef00fbc"
+sourceHash: "7f212b113545"
 title: "Produtos de limpeza com marca própria: guia passo a passo para distribuidores"
 metaTitle: "Produtos de limpeza com marca própria: guia completo"
 description: "Como distribuidores lançam a própria marca de limpeza a partir da Índia: escolha da linha, definição ao fabricante, amostras, arte, embalagem e embarque."
@@ -123,3 +123,10 @@ Dê uma última olhada em uma amostra pré-embarque do lote de produção e guar
 ## Próximos passos
 
 Comece pela definição: a linha, os tamanhos de embalagem, as fragrâncias e o seu porto de destino. Envie-a à GoodBiz Hygiene, e retornaremos com uma linha inicial recomendada, uma cotação e um plano de amostras e de um primeiro contêiner misto.
+
+## Fontes
+
+Fontes primárias dos códigos e normas deste guia. Confira a versão vigente antes de se basear em um número.
+
+- [Câmara de Comércio Internacional (ICC): regras Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): as definições oficiais dos termos comerciais usados nas cotações.
+- [Diretoria-Geral de Comércio Exterior da Índia (DGFT): tabelas ITC(HS) de exportação e importação](https://www.dgft.gov.in/CP/?opt=itchs-import-export): as linhas indianas de 8 dígitos e a política de exportação.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "c1161c07178f"
+sourceHash: "3192292d0bae"
 title: "Lessive en poudre ou lessive liquide : laquelle se vend le mieux sur votre marché ?"
 metaTitle: "Lessive en poudre ou liquide : laquelle se vend le mieux ?"
 description: "Poudre ou liquide ? Comparez climat, habitudes de lavage, machines, prix et coût du fret par lavage pour choisir la bonne gamme pour votre marché."
@@ -103,3 +103,10 @@ Nous vous répondrons avec des qualités, des options de conditionnement et un p
 - **Vérifiez les règles d’étiquetage.** Certains marchés exigent des mentions, une langue ou un enregistrement spécifiques pour les détergents. Confirmez-le avant l’impression des maquettes.
 - **Pensez à la deuxième commande.** Le meilleur premier produit est celui que vous pouvez réassortir facilement, avec des conditionnements adaptés à votre entrepôt et aux camions de vos distributeurs.
 - **Ne copiez pas le marché voisin.** Deux pays voisins peuvent avoir des habitudes de lavage, des prix et des coûts d’importation très différents.
+
+## Sources
+
+Sources primaires des codes et normes cités dans ce guide. Vérifiez la version en vigueur avant de vous fier à un chiffre.
+
+- [Organisation mondiale des douanes (OMD) : Nomenclature du SH, édition 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx) : les positions et sous-positions internationales à six chiffres, dont 3401 et 3402.
+- [Chambre de commerce internationale (ICC) : règles Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/) : les définitions officielles des conditions commerciales utilisées dans les devis.

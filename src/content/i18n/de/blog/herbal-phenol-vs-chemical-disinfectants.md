@@ -1,5 +1,5 @@
 ---
-sourceHash: "f39ee6f3d9e7"
+sourceHash: "d4c87bac15fb"
 title: "Pflanzliches Phenol oder chemische Desinfektionsmittel: Was Einkäufer im Handel wissen sollten"
 metaTitle: "Pflanzliches Phenol oder chemisches Desinfektionsmittel?"
 description: "Pflanzliches Phenol und chemische Desinfektionsmittel im Vergleich für Handelssortimente: Anwendung, Kennzeichnung, Einreihung und Fragen an den Exporteur."
@@ -114,3 +114,10 @@ Wir helfen Ihnen bei der Vorauswahl, fordern beim Hersteller Datenblätter und P
 - Nennen Sie Ihrem Exporteur Ihre beabsichtigten Aussagen früh, damit Produkt, Etikett und Papiere zusammenpassen.
 
 Planen Sie ein Sortiment für Bodenpflege oder Hygiene? Senden Sie uns Ihren Zielmarkt, Packungsgrößen und beabsichtigte Aussagen, und wir melden uns mit Optionen und den richtigen Fragen an den Hersteller.
+
+## Quellen
+
+Primärquellen für die Codes und Normen in diesem Ratgeber. Prüfen Sie die aktuelle Fassung, bevor Sie sich auf eine Zahl verlassen.
+
+- [Weltzollorganisation (WZO): HS-Nomenklatur, Ausgabe 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): die internationalen sechsstelligen Positionen und Unterpositionen, darunter 3401 und 3402.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS)-Listen für Ausfuhr und Einfuhr](https://www.dgft.gov.in/CP/?opt=itchs-import-export): die indischen achtstelligen Codes und die Exportpolitik.

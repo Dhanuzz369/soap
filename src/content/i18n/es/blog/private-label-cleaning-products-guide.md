@@ -1,5 +1,5 @@
 ---
-sourceHash: "bd86fef00fbc"
+sourceHash: "7f212b113545"
 title: "Productos de limpieza de marca propia: guía paso a paso para distribuidores"
 metaTitle: "Productos de limpieza de marca propia: guía de compra"
 description: "Cómo lanzar su propia marca de limpieza desde la India: elegir la gama, preparar la solicitud al fabricante, aprobar muestras, diseño y transporte."
@@ -123,3 +123,10 @@ Eche un último vistazo a una muestra previa al embarque del lote de producción
 ## Siguientes pasos
 
 Empiece por la ficha: la gama, los tamaños de envase, las fragancias y su puerto de destino. Envíela a GoodBiz Hygiene y le responderemos con una gama inicial recomendada, una cotización y un plan de muestras y de un primer contenedor mixto.
+
+## Fuentes
+
+Fuentes primarias de los códigos y normas de esta guía. Compruebe la versión vigente antes de basarse en una cifra.
+
+- [Cámara de Comercio Internacional (ICC): reglas Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): las definiciones oficiales de los términos comerciales usados en las cotizaciones.
+- [Dirección General de Comercio Exterior de la India (DGFT): listados ITC(HS) de exportación e importación](https://www.dgft.gov.in/CP/?opt=itchs-import-export): las líneas indias de 8 dígitos y la política de exportación.

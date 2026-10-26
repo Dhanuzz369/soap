@@ -1,5 +1,5 @@
 ---
-sourceHash: "ee2e38612e35"
+sourceHash: "b19904d90d4f"
 title: "Mwongozo wa Kununua Laini ya Nguo kwa Waagizaji: Aina, Harufu na Ukubwa wa Vifungashio"
 metaTitle: "Mwongozo wa Kununua Laini ya Nguo kwa Waagizaji"
 description: "Mambo ya kujua kabla ya kununua laini ya nguo kutoka India: ya kawaida au iliyokolea, ngozi nyeti, harufu, ukubwa wa vifungashio na uhifadhi."
@@ -115,3 +115,10 @@ Laini ya nguo kwa kawaida huainishwa chini ya HSN 3402 50, lakini wakati mwingin
 ## Hatua zinazofuata
 
 Tutumie soko lako lengwa, orodha fupi ya harufu, kiwango cha ukolezi na ukubwa wa vifungashio. GoodBiz Hygiene itarudi na nukuu ya bei, itapanga sampuli za harufu kutoka kwa mtengenezaji na kupendekeza kontena mchanganyiko ikiwa unataka kuongeza sabuni ya maji ya kufulia au mistari mingine ya kufulia.
+
+## Vyanzo
+
+Vyanzo vya msingi vya misimbo na viwango vilivyo katika mwongozo huu. Hakikisha toleo la sasa kabla ya kutegemea takwimu yoyote.
+
+- [Shirika la Forodha Duniani (WCO): Nomenklecha ya HS, toleo la 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): vichwa na vifungu vidogo vya kimataifa vya tarakimu sita, ikiwemo 3401 na 3402.
+- [Kurugenzi Kuu ya Biashara ya Nje ya India (DGFT): majedwali ya ITC(HS) ya kusafirisha na kuagiza](https://www.dgft.gov.in/CP/?opt=itchs-import-export): misimbo ya India ya tarakimu 8 na sera ya usafirishaji nje.

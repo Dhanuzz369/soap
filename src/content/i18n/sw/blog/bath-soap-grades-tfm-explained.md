@@ -1,5 +1,5 @@
 ---
-sourceHash: "84702d62b584"
+sourceHash: "af3f3cf90c23"
 title: "Daraja za Sabuni ya Kuogea Zimeelezwa: TFM, Daraja la 1 dhidi ya la 2, na Kwa Nini Ni Muhimu"
 metaTitle: "Daraja za Sabuni ya Kuogea: TFM, Daraja la 1 na la 2"
 description: "TFM inamaanisha nini kwenye vipimo vya sabuni ya kuogea, jinsi Daraja la 1 na la 2 zinavyotumika, na jinsi ya kuchagua daraja linalofaa soko na bei yako."
@@ -35,7 +35,7 @@ Athari tatu za vitendo hufuata kutokana na hili:
 
 ## Jinsi madaraja yanavyotumika kibiashara
 
-Wanunuzi wengi wa sabuni hutumia madaraja kama njia fupi ya kusema viwango vya TFM. Katika biashara ya India, vipimo vya Bureau of Indian Standards (BIS) kwa sabuni ya kuogea hufafanua madaraja kwa kiwango cha chini cha TFM, na nukuu mara nyingi hukopa lugha hiyo.
+Wanunuzi wengi wa sabuni hutumia madaraja kama njia fupi ya kusema viwango vya TFM. Katika biashara ya India, vipimo vya Bureau of Indian Standards (BIS, IS 2888) kwa sabuni ya kuogea hufafanua madaraja kwa kiwango cha chini cha TFM, na nukuu mara nyingi hukopa lugha hiyo.
 
 Thamani zilizo hapa chini ni takwimu za rejea zinazotumika sana kwa kiwango cha chini cha TFM, si dhamana. Thibitisha daraja kamili, toleo la kiwango na njia ya kupima na mtengenezaji kwa kila oda.
 
@@ -123,3 +123,10 @@ Tunaomba soko lako lengwa, uzito wa kipande unaopendelea, daraja na umbo la kifu
 - Chagua daraja kwa ajili ya mteja wako na kiwango chako cha bei badala ya kudhani la juu zaidi ndilo bora.
 
 Tuambie soko lako lengwa, daraja na uzito wa kipande, nasi tutarudi na chaguo, sampuli na karatasi za vipimo kutoka kwa mtengenezaji.
+
+## Vyanzo
+
+Vyanzo vya msingi vya misimbo na viwango vilivyo katika mwongozo huu. Hakikisha toleo la sasa kabla ya kutegemea takwimu yoyote.
+
+- [Bureau of Indian Standards (BIS): IS 2888, vipimo vya sabuni ya kuogea](https://www.bis.gov.in/?lang=en): kiwango cha India kinachopanga madaraja ya sabuni ya kuogea kwa kiwango cha chini cha TFM.
+- [Shirika la Forodha Duniani (WCO): Nomenklecha ya HS, toleo la 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): vichwa na vifungu vidogo vya kimataifa vya tarakimu sita, ikiwemo 3401 na 3402.

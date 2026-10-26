@@ -1,5 +1,5 @@
 ---
-sourceHash: "c1161c07178f"
+sourceHash: "3192292d0bae"
 title: "Deterjen Bubuk vs Deterjen Cair: Mana yang Lebih Laris di Pasar Anda?"
 metaTitle: "Deterjen Bubuk vs Cair: Mana yang Lebih Laris?"
 description: "Deterjen cucian bubuk atau cair? Bandingkan iklim, kebiasaan mencuci, mesin cuci, harga, dan ongkos kirim per cucian untuk memilih lini bagi pasar Anda."
@@ -103,3 +103,10 @@ Kami akan membalas dengan grade, opsi kemasan, dan rencana kontainer. FOB, CIF d
 - **Periksa aturan label.** Sebagian pasar mensyaratkan redaksi, bahasa, atau registrasi tertentu untuk deterjen. Konfirmasikan sebelum desain dicetak.
 - **Pikirkan pesanan kedua.** Produk pertama terbaik adalah yang dapat Anda isi ulang dengan mudah, dengan kemasan yang cocok untuk gudang Anda dan truk distributor Anda.
 - **Jangan meniru pasar tetangga.** Dua negara yang bersebelahan dapat memiliki kebiasaan mencuci, harga, dan biaya impor yang sangat berbeda.
+
+## Sumber
+
+Sumber primer untuk kode dan standar dalam panduan ini. Periksa versi terbaru sebelum mengandalkan suatu angka.
+
+- [Organisasi Kepabeanan Dunia (WCO): Nomenklatur HS edisi 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): pos dan subpos internasional enam digit, termasuk 3401 dan 3402.
+- [Kamar Dagang Internasional (ICC): aturan Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): definisi resmi syarat perdagangan yang digunakan dalam penawaran.

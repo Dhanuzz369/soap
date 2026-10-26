@@ -1,5 +1,5 @@
 ---
-sourceHash: "f39ee6f3d9e7"
+sourceHash: "d4c87bac15fb"
 title: "Fenol Herbal vs Disinfektan Kimia: Yang Perlu Diketahui Pembeli Ritel"
 metaTitle: "Fenol Herbal vs Disinfektan Kimia: Panduan Pembeli"
 description: "Membandingkan fenol herbal dengan disinfektan kimia untuk lini ritel: perbedaan penggunaan, pelabelan, klasifikasi, dan apa yang perlu ditanyakan ke eksportir."
@@ -114,3 +114,10 @@ Kami membantu Anda menyusun daftar pendek, meminta lembar spesifikasi dan lapora
 - Sampaikan klaim yang Anda maksudkan kepada eksportir sejak dini, agar produk, label, dan dokumen semuanya sesuai.
 
 Merencanakan lini perawatan lantai atau kebersihan? Kirimkan pasar sasaran, ukuran kemasan, dan klaim yang Anda maksudkan, dan kami akan kembali dengan opsi dan pertanyaan yang tepat untuk produsen.
+
+## Sumber
+
+Sumber primer untuk kode dan standar dalam panduan ini. Periksa versi terbaru sebelum mengandalkan suatu angka.
+
+- [Organisasi Kepabeanan Dunia (WCO): Nomenklatur HS edisi 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): pos dan subpos internasional enam digit, termasuk 3401 dan 3402.
+- [Direktorat Jenderal Perdagangan Luar Negeri India (DGFT): daftar ekspor dan impor ITC(HS)](https://www.dgft.gov.in/CP/?opt=itchs-import-export): kode 8 digit India dan kebijakan ekspor.

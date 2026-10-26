@@ -1,5 +1,5 @@
 ---
-sourceHash: "259e3f5f79fb"
+sourceHash: "30b7478cf2a7"
 title: "Dokumen Ekspor untuk Produk Pembersih: COA, MSDS, Surat Keterangan Asal, dan Lainnya"
 metaTitle: "Dokumen Ekspor Produk Pembersih: COA, MSDS, SKA"
 description: "Daftar periksa dokumen ekspor bagi pembeli sabun, deterjen, dan pembersih dari India: faktur, COA, SDS, surat keterangan asal, dokumen DG, dan registrasi lokal."
@@ -120,3 +120,11 @@ FOB, CIF dan CFR tersedia; ketentuan pembayaran disepakati untuk setiap pesanan 
 ## Langkah berikutnya
 
 Bila Anda sedang membandingkan pilihan produk, lihat halaman [deterjen bubuk](/products/detergent-powder/) kami untuk produk cuci pakaian, atau lini [bahan kimia pembersih curah dan institusional](/products/bulk-institutional-cleaners/) kami untuk hotel dan pembeli fasilitas. Saat mengirim permintaan, sampaikan negara, pelabuhan, dan dokumen apa pun yang dipersyaratkan otoritas Anda, dan kami akan mengonfirmasi dokumen untuk pesanan Anda.
+
+## Sumber
+
+Sumber primer untuk kode dan standar dalam panduan ini. Periksa versi terbaru sebelum mengandalkan suatu angka.
+
+- [Direktorat Jenderal Perdagangan Luar Negeri India (DGFT): daftar ekspor dan impor ITC(HS)](https://www.dgft.gov.in/CP/?opt=itchs-import-export): kode 8 digit India dan kebijakan ekspor.
+- [Dewan Pusat Pajak Tidak Langsung dan Bea Cukai India (CBIC): Tarif Bea Cukai India](https://www.cbic.gov.in/): tarif bea cukai India dan notifikasinya.
+- [Kamar Dagang Internasional (ICC): aturan Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): definisi resmi syarat perdagangan yang digunakan dalam penawaran.

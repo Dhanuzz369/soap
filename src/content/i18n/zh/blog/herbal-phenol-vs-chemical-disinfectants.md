@@ -1,5 +1,5 @@
 ---
-sourceHash: "f39ee6f3d9e7"
+sourceHash: "d4c87bac15fb"
 title: "草本酚类消毒液与化学消毒剂：零售采购商须知"
 metaTitle: "草本酚类消毒液与化学消毒剂对比"
 description: "对比草本酚类消毒液与化学消毒剂在零售产品系列中的差异：用途、标签、海关归类，以及向出口商首先应当询问的问题，帮助进口商少走弯路、做出更稳妥的采购决定。"
@@ -114,3 +114,10 @@ faqs:
 - 请尽早告知出口商您预期的宣称，使产品、标签和单据都保持一致。
 
 正在规划地板护理或卫生产品系列？请发送您的目标市场、包装规格和预期宣称，我们会回复方案以及应向制造商提出的恰当问题。
+
+## 资料来源
+
+本指南所涉编码和标准的原始出处。引用任何数字前，请先核对现行版本。
+
+- [世界海关组织（WCO）：《协调制度》2022年版](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx)：国际通用的6位品目和子目，包括3401和3402。
+- [印度对外贸易总局（DGFT）：ITC(HS)进出口目录](https://www.dgft.gov.in/CP/?opt=itchs-import-export)：印度8位编码及出口政策。

@@ -1,5 +1,5 @@
 ---
-sourceHash: "259e3f5f79fb"
+sourceHash: "30b7478cf2a7"
 title: "Temizlik Ürünleri için İhracat Evrakları: COA, MSDS, Menşe Şahadetnamesi ve Daha Fazlası"
 metaTitle: "Temizlik Ürünlerinde İhracat Evrakı: COA, MSDS"
 description: "Hindistan’dan sabun, deterjan ve temizleyici ithal edenler için ihracat evrakları listesi: fatura, COA, SDS, menşe belgesi, DG evrakları ve yerel kayıtlar."
@@ -120,3 +120,11 @@ FOB, CIF ve CFR mevcuttur; ödeme koşulları sipariş başına kararlaştırıl
 ## Sonraki adım
 
 Ürün seçeneklerini karşılaştırıyorsanız çamaşır ürünleri için [toz deterjan](/products/detergent-powder/) sayfamıza veya oteller ve tesis alıcıları için [toplu kurumsal temizleyiciler](/products/bulk-institutional-cleaners/) gamımıza bakın. Talebinizi gönderirken ülkenizi, limanınızı ve yetkililerinizin istediği her belgeyi bize bildirin; siparişiniz için evrakları teyit edelim.
+
+## Kaynaklar
+
+Bu rehberdeki kodların ve standartların birincil kaynakları. Bir rakama güvenmeden önce güncel sürümü kontrol edin.
+
+- [Hindistan Dış Ticaret Genel Müdürlüğü (DGFT): ITC(HS) ihracat ve ithalat listeleri](https://www.dgft.gov.in/CP/?opt=itchs-import-export): Hindistan’ın 8 haneli kodları ve ihracat politikası.
+- [Hindistan Merkezi Dolaylı Vergiler ve Gümrük Kurulu (CBIC): Hindistan Gümrük Tarifesi](https://www.cbic.gov.in/): Hindistan gümrük tarifesi ve duyuruları.
+- [Milletlerarası Ticaret Odası (ICC): Incoterms kuralları](https://iccwbo.org/business-solutions/incoterms-rules/): tekliflerde kullanılan teslim şekillerinin resmi tanımları.

@@ -3,6 +3,7 @@ title: "How to Import Dish Wash Liquid from India: Costs, MOQ, Documents and Shi
 metaTitle: "How to Import Dish Wash Liquid from India: MOQ and Costs"
 description: "A practical guide to importing dish wash liquid from India: what drives cost, typical MOQ, pack choices, export documents and how shipping works step by step."
 date: 2026-10-08
+updated: 2026-10-26
 tags: ["dish wash liquid", "importing", "MOQ", "shipping"]
 relatedProducts: ["dish-wash-liquid", "dish-wash-bar", "floor-cleaner"]
 faqs:
@@ -114,3 +115,11 @@ Payment is agreed per order, by telegraphic transfer (T/T) or letter of credit (
 ## Where to go next
 
 If you plan to stock more than one kitchen product, a dish wash bar can also work in markets where solid bars are still popular, and our [dish wash bar](/products/dish-wash-bar/) page lists the typical formats. When you are ready, send us your brief and we will reply with a quotation and a recommended pack plan.
+
+## Sources
+
+Primary sources for the codes and standards in this guide. Check the current version before you rely on a figure.
+
+- [World Customs Organization (WCO): HS Nomenclature 2022 edition](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): the international six-digit headings and subheadings, including 3401 and 3402.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS) export and import schedules](https://www.dgft.gov.in/CP/?opt=itchs-import-export): India’s 8-digit lines and export policy.
+- [International Chamber of Commerce (ICC): Incoterms rules](https://iccwbo.org/business-solutions/incoterms-rules/): the official definitions of the trade terms used in quotations.

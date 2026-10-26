@@ -1,5 +1,5 @@
 ---
-sourceHash: "bd86fef00fbc"
+sourceHash: "7f212b113545"
 title: "自有品牌清洁产品：经销商分步指南"
 metaTitle: "自有品牌清洁产品：经销商指南"
 description: "经销商如何从印度推出自有清洁品牌：选择产品系列、向制造商提出需求、确认样品、准备设计稿、包装以及运输的分步指南，帮助进口商少走弯路、做出更稳妥的采购决定。"
@@ -123,3 +123,10 @@ GoodBiz Hygiene是一家贸易型出口商。我们自己不经营生产。我�
 ## 下一步
 
 从需求说明开始：产品系列、包装规格、香型和您的目的港。把它发给GoodBiz Hygiene，我们会回复推荐的起步产品系列、报价单，以及样品和首个混装集装箱的计划。
+
+## 资料来源
+
+本指南所涉编码和标准的原始出处。引用任何数字前，请先核对现行版本。
+
+- [国际商会（ICC）：Incoterms 规则](https://iccwbo.org/business-solutions/incoterms-rules/)：报价中所用贸易术语的官方定义。
+- [印度对外贸易总局（DGFT）：ITC(HS)进出口目录](https://www.dgft.gov.in/CP/?opt=itchs-import-export)：印度8位编码及出口政策。

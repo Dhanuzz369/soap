@@ -1,5 +1,5 @@
 ---
-sourceHash: "259e3f5f79fb"
+sourceHash: "30b7478cf2a7"
 title: "Nyaraka za Usafirishaji Nje kwa Bidhaa za Usafi: COA, MSDS, Cheti cha Asili na Zaidi"
 metaTitle: "Nyaraka za Kusafirisha Bidhaa za Usafi: COA, MSDS"
 description: "Orodha ya nyaraka za usafirishaji nje kwa sabuni na visafishaji kutoka India: ankara, COA, SDS, cheti cha asili, nyaraka za DG na usajili wa eneo."
@@ -120,3 +120,11 @@ FOB, CIF na CFR zinapatikana; masharti ya malipo hukubaliwa kwa kila oda (T/T au
 ## Hatua inayofuata
 
 Ikiwa unalinganisha chaguo za bidhaa, tazama ukurasa wetu wa [poda ya kufulia](/products/detergent-powder/) kwa bidhaa za kufulia, au bidhaa zetu za [visafishaji vya jumla vya taasisi](/products/bulk-institutional-cleaners/) kwa hoteli na wanunuzi wa huduma za majengo. Unapotuma ombi lako, tuambie nchi yako, bandari na hati yoyote ambayo mamlaka zako zinahitaji, nasi tutathibitisha nyaraka za oda yako.
+
+## Vyanzo
+
+Vyanzo vya msingi vya misimbo na viwango vilivyo katika mwongozo huu. Hakikisha toleo la sasa kabla ya kutegemea takwimu yoyote.
+
+- [Kurugenzi Kuu ya Biashara ya Nje ya India (DGFT): majedwali ya ITC(HS) ya kusafirisha na kuagiza](https://www.dgft.gov.in/CP/?opt=itchs-import-export): misimbo ya India ya tarakimu 8 na sera ya usafirishaji nje.
+- [Bodi Kuu ya Kodi Zisizo za Moja kwa Moja na Forodha ya India (CBIC): Ushuru wa Forodha wa India](https://www.cbic.gov.in/): ushuru wa forodha wa India na matangazo yake.
+- [Chemba ya Kimataifa ya Biashara (ICC): kanuni za Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): maana rasmi za masharti ya biashara yanayotumika kwenye nukuu za bei.

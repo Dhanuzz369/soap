@@ -3,6 +3,7 @@ title: "Export Documents for Cleaning Products: COA, MSDS, Certificate of Origin
 metaTitle: "Export Documents for Cleaning Products: COA, MSDS, COO"
 description: "A buyer's checklist of export documents for soaps, detergents and cleaners from India: invoice, COA, SDS, origin certificate, DG papers and local registrations."
 date: 2026-10-14
+updated: 2026-10-26
 tags: ["export documents", "COA", "MSDS", "certificate of origin"]
 relatedProducts: ["labsa", "toilet-bowl-cleaner", "detergent-powder", "bulk-institutional-cleaners"]
 faqs:
@@ -119,3 +120,11 @@ FOB, CIF and CFR available; payment terms agreed per order (T/T or LC). The trad
 ## Where to go next
 
 If you are comparing product options, see our [detergent powder](/products/detergent-powder/) page for laundry products, or our range of [bulk institutional cleaners](/products/bulk-institutional-cleaners/) for hotels and facility buyers. When you send your enquiry, tell us your country, port and any document your authorities require, and we will confirm the paperwork for your order.
+
+## Sources
+
+Primary sources for the codes and standards in this guide. Check the current version before you rely on a figure.
+
+- [Directorate General of Foreign Trade (DGFT): ITC(HS) export and import schedules](https://www.dgft.gov.in/CP/?opt=itchs-import-export): India’s 8-digit lines and export policy.
+- [Central Board of Indirect Taxes and Customs (CBIC): Customs Tariff of India](https://www.cbic.gov.in/): India’s customs tariff and notifications.
+- [International Chamber of Commerce (ICC): Incoterms rules](https://iccwbo.org/business-solutions/incoterms-rules/): the official definitions of the trade terms used in quotations.

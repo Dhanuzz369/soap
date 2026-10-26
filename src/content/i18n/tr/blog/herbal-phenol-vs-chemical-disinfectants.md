@@ -1,5 +1,5 @@
 ---
-sourceHash: "f39ee6f3d9e7"
+sourceHash: "d4c87bac15fb"
 title: "Bitkisel Fenol ve Kimyasal Dezenfektanlar: Perakende Alıcıların Bilmesi Gerekenler"
 metaTitle: "Bitkisel Fenol mü Kimyasal Dezenfektan mı? Rehber"
 description: "Perakende gamları için bitkisel fenol ile kimyasal dezenfektanların karşılaştırması: kullanım, etiketleme, sınıflandırma ve bir ihracatçıya önce ne sorulmalı."
@@ -114,3 +114,10 @@ Kısa liste oluşturmanıza yardımcı olur, üreticiden şartname formları ve 
 - Ürünün, etiketin ve evrakların hepsinin uyuşması için amaçladığınız iddiaları ihracatçınıza erkenden bildirin.
 
 Bir zemin bakım veya hijyen gamı mı planlıyorsunuz? Hedef pazarınızı, ambalaj boyutlarınızı ve amaçladığınız iddiaları bize gönderin; seçeneklerle ve üreticiye yöneltilecek doğru sorularla size dönelim.
+
+## Kaynaklar
+
+Bu rehberdeki kodların ve standartların birincil kaynakları. Bir rakama güvenmeden önce güncel sürümü kontrol edin.
+
+- [Dünya Gümrük Örgütü (DGÖ): Armonize Sistem Nomenklatürü, 2022 baskısı](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): 3401 ve 3402 dahil uluslararası altı haneli pozisyonlar ve alt pozisyonlar.
+- [Hindistan Dış Ticaret Genel Müdürlüğü (DGFT): ITC(HS) ihracat ve ithalat listeleri](https://www.dgft.gov.in/CP/?opt=itchs-import-export): Hindistan’ın 8 haneli kodları ve ihracat politikası.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "23d4ef5247c9"
+sourceHash: "6bde713a3f96"
 title: "Geschirrspülmittel aus Indien importieren: Kosten, MOQ, Dokumente und Versand"
 metaTitle: "Spülmittel aus Indien importieren: MOQ und Kosten"
 description: "Praxisleitfaden zum Import von Geschirrspülmittel aus Indien: Kostentreiber, typische MOQ, Packungswahl, Exportdokumente und der Versand Schritt für Schritt."
@@ -115,3 +115,11 @@ Die Zahlung wird je Auftrag vereinbart, per telegrafischer Überweisung (T/T) od
 ## Wie es weitergeht
 
 Wenn Sie mehr als ein Küchenprodukt führen möchten, kann auch eine Spülseife in Märkten funktionieren, in denen feste Stücke noch beliebt sind, und unsere Seite zu [Spülseife](/products/dish-wash-bar/) nennt die typischen Formate. Wenn Sie bereit sind, senden Sie uns Ihr Briefing, und wir antworten mit einem Angebot und einem empfohlenen Packplan.
+
+## Quellen
+
+Primärquellen für die Codes und Normen in diesem Ratgeber. Prüfen Sie die aktuelle Fassung, bevor Sie sich auf eine Zahl verlassen.
+
+- [Weltzollorganisation (WZO): HS-Nomenklatur, Ausgabe 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx): die internationalen sechsstelligen Positionen und Unterpositionen, darunter 3401 und 3402.
+- [Directorate General of Foreign Trade (DGFT): ITC(HS)-Listen für Ausfuhr und Einfuhr](https://www.dgft.gov.in/CP/?opt=itchs-import-export): die indischen achtstelligen Codes und die Exportpolitik.
+- [Internationale Handelskammer (ICC): Incoterms-Regeln](https://iccwbo.org/business-solutions/incoterms-rules/): die offiziellen Definitionen der Lieferbedingungen in Angeboten.

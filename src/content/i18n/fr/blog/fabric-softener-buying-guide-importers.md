@@ -1,5 +1,5 @@
 ---
-sourceHash: "ee2e38612e35"
+sourceHash: "b19904d90d4f"
 title: "Guide d’achat de l’assouplissant pour importateurs : types, parfums et formats"
 metaTitle: "Adoucissant : guide d’achat pour importateurs"
 description: "Ce que l’importateur doit savoir avant d’acheter de l’assouplissant indien : standard ou concentré, peaux sensibles, choix du parfum, formats et stockage."
@@ -115,3 +115,10 @@ L’assouplissant est couramment classé sous le code HSN 3402 50, mais il est p
 ## Prochaines étapes
 
 Envoyez-nous votre marché cible, votre présélection de parfums, le niveau de concentration et les formats. GoodBiz Hygiene vous adressera un devis, organisera l’envoi d’échantillons de parfum par le fabricant et vous proposera un conteneur mixte si vous souhaitez ajouter une lessive liquide ou d’autres produits de lessive.
+
+## Sources
+
+Sources primaires des codes et normes cités dans ce guide. Vérifiez la version en vigueur avant de vous fier à un chiffre.
+
+- [Organisation mondiale des douanes (OMD) : Nomenclature du SH, édition 2022](https://www.wcoomd.org/en/topics/nomenclature/instrument-and-tools/hs-nomenclature-2022-edition.aspx) : les positions et sous-positions internationales à six chiffres, dont 3401 et 3402.
+- [Directorate General of Foreign Trade (DGFT) : barèmes ITC(HS) export et import](https://www.dgft.gov.in/CP/?opt=itchs-import-export) : les lignes indiennes à 8 chiffres et la politique d’exportation.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "259e3f5f79fb"
+sourceHash: "30b7478cf2a7"
 title: "Chứng từ xuất khẩu cho sản phẩm tẩy rửa: COA, MSDS, giấy chứng nhận xuất xứ và hơn thế nữa"
 metaTitle: "Chứng từ xuất khẩu sản phẩm tẩy rửa: COA, MSDS, C/O"
 description: "Danh mục chứng từ xuất khẩu xà phòng, chất tẩy rửa từ Ấn Độ: hóa đơn, COA, SDS, chứng nhận xuất xứ, hồ sơ hàng nguy hiểm và đăng ký địa phương."
@@ -120,3 +120,11 @@ FOB, CIF và CFR; điều khoản thanh toán thỏa thuận theo từng đơn h
 ## Bước tiếp theo
 
 Nếu Quý khách đang so sánh các lựa chọn sản phẩm, hãy xem trang [bột giặt](/products/detergent-powder/) cho sản phẩm giặt giũ, hoặc dòng [hóa chất tẩy rửa số lượng lớn cho tổ chức](/products/bulk-institutional-cleaners/) dành cho khách sạn và người mua là đơn vị dịch vụ cơ sở. Khi gửi yêu cầu, hãy cho chúng tôi biết quốc gia, cảng và mọi chứng từ mà cơ quan chức năng của Quý khách yêu cầu, và chúng tôi sẽ xác nhận bộ chứng từ cho đơn hàng của Quý khách.
+
+## Nguồn tham khảo
+
+Nguồn gốc của các mã và tiêu chuẩn trong hướng dẫn này. Hãy kiểm tra phiên bản hiện hành trước khi dựa vào một con số.
+
+- [Tổng cục Ngoại thương Ấn Độ (DGFT): danh mục ITC(HS) xuất khẩu và nhập khẩu](https://www.dgft.gov.in/CP/?opt=itchs-import-export): các mã 8 chữ số của Ấn Độ và chính sách xuất khẩu.
+- [Hội đồng Trung ương về Thuế gián thu và Hải quan Ấn Độ (CBIC): Biểu thuế hải quan Ấn Độ](https://www.cbic.gov.in/): biểu thuế hải quan và các thông báo của Ấn Độ.
+- [Phòng Thương mại Quốc tế (ICC): quy tắc Incoterms](https://iccwbo.org/business-solutions/incoterms-rules/): định nghĩa chính thức của các điều kiện thương mại dùng trong báo giá.
