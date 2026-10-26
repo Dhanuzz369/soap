@@ -13,7 +13,7 @@ import { useI18n } from '../i18n/page';
 import { productJsonLd, faqJsonLd, absoluteUrl, buildKeywords } from '../lib/seo';
 import { productImagePath, productPicture, ogCard } from '../lib/product-image';
 import { shapeFor } from '../lib/pack-shapes';
-import { splitName } from '../lib/heading';
+import { composeTitle } from '../lib/heading';
 import { HORECA_LINKED } from '../lib/horeca';
 
 interface Props {
@@ -38,7 +38,7 @@ const breadcrumbs = [
   { name: category.data.title, url: lp(`/categories/${category.data.slug}/`) },
   { name: d.title, url: url },
 ];
-const name = splitName(d.title);
+const name = composeTitle(ui.common.titleH1, d.title);
 // The main search term (docs/seo-keywords.md): the product's `keyword`, else its name up to " / " or " (".
 const kw = d.keyword ?? lower(d.title.split(/\s*[/／(]\s*/)[0]);
 const K = ui.seo.keywords;
@@ -77,7 +77,7 @@ const media: HeroMedia | undefined = pic
   jsonLd={[productJsonLd({ ...d, category: category.data.title, image }, absUrl, ui.ld), faqJsonLd(d.faqs, info.hreflang, url)]}
   dark
 >
-  <PageHero breadcrumbs={breadcrumbs} l1={name.l1} sub={name.sub} l2={ui.common.exporterLine} scale={name.scale} lead={d.answer} media={media} size="product">
+  <PageHero breadcrumbs={breadcrumbs} l1={name.l1} sub={name.sub} l2={name.l2} scale={name.scale} lead={d.answer} media={media} size="product">
     <p class="ph-hsn">
       <span class="pill"><abbr title={ui.common.hsnTitle}>{ui.common.hsn}</abbr>&nbsp;{d.hsn}</span>
       {/* A hidden full stop keeps the code apart from the note in extracted text ("3402 50. 8-digit…", not "3402 508-digit…"). */}

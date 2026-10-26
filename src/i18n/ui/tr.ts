@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '0e0921cd929e';
+export const sourceHash = '16023fb245ce';
 
 const tr: UiPartial = {
   meta: {
@@ -141,7 +141,7 @@ const tr: UiPartial = {
     breadcrumb: 'Sayfa yolu',
     requestQuote: 'Teklif İsteyin',
     viewProducts: 'Ürünleri Görüntüleyin',
-    exporterLine: 'Hindistan’dan İhracatçı ve Tedarikçi',
+    titleH1: '{name}:|Hindistan’dan ihracatçı ve tedarikçi',
     hsn: 'HSN',
     hsnTitle: 'Armonize Mal Tanımlama ve Kodlama Sistemi',
     allProducts: 'Tüm ürünler',

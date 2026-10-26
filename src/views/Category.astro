@@ -8,7 +8,7 @@ import AnswerWall from '../components/AnswerWall.astro';
 import QuoteCard from '../components/QuoteCard.astro';
 import { faqJsonLd, itemListJsonLd, buildKeywords, absoluteUrl } from '../lib/seo';
 import { productImagePath } from '../lib/product-image';
-import { splitName } from '../lib/heading';
+import { composeTitle } from '../lib/heading';
 import { useI18n } from '../i18n/page';
 
 interface Props {
@@ -35,7 +35,7 @@ const dims: Record<string, [number, number]> = {
 };
 const [w, h] = dims[c.slug] ?? [1000, 800];
 const cpic = categoryPicture(c.slug);
-const name = splitName(c.title);
+const name = composeTitle(ui.common.titleH1, c.title);
 const keywords = buildKeywords(ui.seo.keywords.category, { ...names, hsn: c.hsnRange }, products.map((p) => p.data.keyword ?? lower(p.data.title)));
 const list = itemListJsonLd(
   url,
@@ -60,7 +60,8 @@ const list = itemListJsonLd(
   <PageHero
     breadcrumbs={breadcrumbs}
     l1={name.l1}
-    l2={ui.common.exporterLine}
+    sub={name.sub}
+    l2={name.l2}
     scale={name.scale}
     lead={c.summary}
     size="product"

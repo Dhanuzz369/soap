@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '0e0921cd929e';
+export const sourceHash = '16023fb245ce';
 
 const es: UiPartial = {
   meta: {
@@ -141,7 +141,7 @@ const es: UiPartial = {
     breadcrumb: 'Ruta de navegación',
     requestQuote: 'Solicitar cotización',
     viewProducts: 'Ver productos',
-    exporterLine: 'Exportador y proveedor desde la India',
+    titleH1: '{name}:|exportador y proveedor desde la India',
     hsn: 'HSN',
     hsnTitle: 'Sistema Armonizado de Nomenclatura',
     allProducts: 'Todos los productos',

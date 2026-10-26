@@ -142,8 +142,13 @@ const en = {
     breadcrumb: 'Breadcrumb',
     requestQuote: 'Request a Quote',
     viewProducts: 'View Products',
-    /** The italic second line of product and category titles, and the end of most <title>s. */
-    exporterLine: 'Exporter & Supplier from India',
+    /**
+     * The h1 of product and category pages, composed per language: `{name}` is the product or range
+     * name (set large, line 1), the text after `|` the italic line 2. Write it as one natural phrase
+     * when read straight through: e.g. French "{name} :|exportateur et fournisseur depuis l’Inde"
+     * (lower case after the colon). The `|` only marks where line 2 starts; it is never shown.
+     */
+    titleH1: '{name}|Exporter & Supplier from India',
     hsn: 'HSN',
     hsnTitle: 'Harmonized System of Nomenclature',
     allProducts: 'All products',

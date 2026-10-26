@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '0e0921cd929e';
+export const sourceHash = '16023fb245ce';
 
 const vi: UiPartial = {
   meta: {
@@ -141,7 +141,7 @@ const vi: UiPartial = {
     breadcrumb: 'Đường dẫn điều hướng',
     requestQuote: 'Yêu cầu báo giá',
     viewProducts: 'Xem sản phẩm',
-    exporterLine: 'Nhà xuất khẩu và nhà cung cấp từ Ấn Độ',
+    titleH1: '{name}:|nhà xuất khẩu và nhà cung cấp từ Ấn Độ',
     hsn: 'HSN',
     hsnTitle: 'Hệ thống danh pháp hài hòa (Harmonized System of Nomenclature)',
     allProducts: 'Tất cả sản phẩm',

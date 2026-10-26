@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '0e0921cd929e';
+export const sourceHash = '16023fb245ce';
 
 const sw: UiPartial = {
   meta: {
@@ -140,7 +140,7 @@ const sw: UiPartial = {
     breadcrumb: 'Njia ya kurasa',
     requestQuote: 'Omba Nukuu ya Bei',
     viewProducts: 'Tazama Bidhaa',
-    exporterLine: 'Msafirishaji Nje na Muuzaji kutoka India',
+    titleH1: '{name}:|msafirishaji nje na muuzaji kutoka India',
     hsn: 'HSN',
     hsnTitle: 'Mfumo Uliooanishwa wa Uainishaji wa Bidhaa (Harmonized System of Nomenclature)',
     allProducts: 'Bidhaa zote',

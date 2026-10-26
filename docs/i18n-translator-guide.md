@@ -144,6 +144,10 @@ The tests check this, so that changing the terms later finds every file to updat
 - `seo.keywords`: short search phrases per page type, written the way buyers in your language search (not word-for-word). Keep the placeholders: `{kw}` (the product's `keyword`), `{name}` / `{nameLower}` (a range name), `{hsn}`. Use your market's terms for "private label", "wholesale", "bulk" and the customs code (HS, ТН ВЭД, GTİP…). `productMarkets` names two markets where your language is spoken. They never appear on the page, only in `<meta name="keywords">`.
 - `quickFacts`: six short facts shown on the home and about pages. Translate exactly; do not add claims.
 
+### 4.2 The product and range h1 (`common.titleH1`)
+
+Product and range pages set their h1 on two lines: the name, large, then an italic line. The template composes both, per language: `{name}` is the name, and a vertical bar `|` marks where the italic line starts (the bar is never shown). Read straight through, the h1 must be one natural phrase, so put the punctuation and capitals your language needs around the name. Examples: English `{name}|Exporter & Supplier from India`, French `{name} :|exportateur et fournisseur depuis l’Inde` (non-breaking space before the colon, lower case after it), German `{name}:|Exporteur und Lieferant aus Indien` (nouns keep their capital), Chinese `{name}|印度出口商与供应商`.
+
 ## 5. Tone and wording
 
 - Audience: professional importers, distributors and wholesalers. Write natural, clear business language, as a trade magazine in your country would. No machine-literal phrasing, no marketing superlatives, no slang.
@@ -160,7 +164,7 @@ The tests check this, so that changing the terms later finds every file to updat
 | merchant exporter | the trade term for an exporter that buys and resells, not a manufacturer | exportateur négociant |
 | vetted Indian manufacturers | "manufacturers we have checked" | fabricants indiens contrôlés |
 | private label | the local trade term for selling under the buyer's brand | marque de distributeur |
-| Exporter & Supplier from India | used in titles and the italic line | Exportateur et fournisseur depuis l’Inde |
+| Exporter & Supplier from India | used in titles, and as the italic second line of the product and range h1 (`common.titleH1`, see 4.2) | Exportateur et fournisseur depuis l’Inde (h1: « {name} : » then « exportateur et fournisseur depuis l’Inde ») |
 | HSN code, ITC-HS | keep the letters; you may add a gloss | code HSN, code ITC-HS |
 | FOB, CIF, CFR, Incoterms | never translated | unchanged |
 | T/T, LC | keep the letters | T/T, LC |

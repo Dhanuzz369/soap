@@ -190,7 +190,7 @@ describe('French pages are in French', () => {
     en.common.requestQuote,
     en.common.skip,
     en.common.straightAnswers,
-    en.common.exporterLine,
+    'Exporter & Supplier from India',
     en.product.factsH,
     en.product.guidesH,
     en.cards.addToEnquiry,
@@ -222,5 +222,42 @@ describe('French pages are in French', () => {
     const links = [...body.matchAll(/href="(\/[^"]*)"/g)].map((m) => m[1]);
     expect(links.length).toBeGreaterThan(0);
     expect(links.filter((l) => !l.startsWith('/fr/'))).toEqual([]);
+  });
+});
+
+describe('product and range h1s read as one phrase in every language (audit B10)', () => {
+  const h1 = (html: string) =>
+    (html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? '')
+      .replace(/<span class="visually-hidden">[\s\S]*?<\/span>/g, '')
+      .replace(/<[^>]+>/g, '')
+      .replace(/&nbsp;/g, ' ')
+      .replace(/&#39;|&#x27;/g, "'")
+      .replace(/&amp;/g, '&')
+      .replace(/[ \t\r\n]+/g, ' ')
+      .trim();
+  const titled = pages.filter((p) => /\/(products|categories)\/[^/]+\/$/.test(p.path));
+
+  it('French floor cleaner: "Nettoyant sols : exportateur et fournisseur depuis l’Inde"', () => {
+    const p = pages.find((x) => x.path === '/fr/products/floor-cleaner/')!;
+    expect(h1(p.html)).toBe('Nettoyant sols : exportateur et fournisseur depuis l’Inde');
+  });
+
+  it('no Romance-language h1 runs a lower-case word into a capitalised "Exportateur/Exportador"', () => {
+    const bad = titled
+      .filter((p) => ['fr', 'es', 'pt'].includes(p.lang))
+      .map((p) => `${p.path}: ${h1(p.html)}`)
+      .filter((s) => /[a-zà-ÿ)] (Exportateur|Exportador)/.test(s));
+    expect(bad).toEqual([]);
+  });
+
+  it('every product and range h1 is built from its language template', () => {
+    const problems: string[] = [];
+    for (const p of titled) {
+      const tpl = getUi(p.lang).common.titleH1;
+      const line2 = tpl.slice(tpl.indexOf('|') + 1);
+      if (!h1(p.html).endsWith(line2)) problems.push(`${p.path}: ${h1(p.html)}`);
+    }
+    expect(problems.slice(0, 10)).toEqual([]);
+    expect(titled.length).toBe(12 * 28);
   });
 });
