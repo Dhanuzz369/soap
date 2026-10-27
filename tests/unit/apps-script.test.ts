@@ -14,14 +14,21 @@ type Ctx = {
 function runtime() {
   const rows: unknown[][] = [];
   const mails: { to: string; subject: string; body: string }[] = [];
-  const lock = { held: false, released: 0 };
+  const lock = { held: false, released: 0, free: true };
+  const calls: string[] = [];
+  const formats: { row: number; col: number; nc: number; format: string }[] = [];
   let clock = Date.parse('2026-10-27T10:00:00Z');
   const sheet = {
     getLastRow: () => rows.length,
-    getDataRange: () => ({ getValues: () => rows.map((r) => [...r]) }),
+    getDataRange: () => ({ getValues: () => rows.map((r) => r.map((v) => (typeof v === 'string' ? v.replace(/^'/, '') : v))) }),
     appendRow: (r: unknown[]) => void rows.push([...r]),
     getRange: (row: number, col: number, nr = 1, nc = 1) => ({
+      setNumberFormat: (format: string) => {
+        formats.push({ row, col, nc, format });
+        return sheet.getRange(row, col, nr, nc);
+      },
       setValues: (v: unknown[][]) => {
+        calls.push('write');
         for (let i = 0; i < nr; i++) for (let j = 0; j < nc; j++) {
           rows[row - 1 + i] ??= [];
           rows[row - 1 + i][col - 1 + j] = v[i][j];
@@ -32,17 +39,26 @@ function runtime() {
   };
   const props: Record<string, string> = { ALERT_EMAIL: 'sales@example.com' };
   const ctx = vm.createContext({
-    SpreadsheetApp: { getActiveSpreadsheet: () => ({ getSheetByName: () => sheet, insertSheet: () => sheet }) },
+    SpreadsheetApp: { getActiveSpreadsheet: () => ({ getSheetByName: () => sheet, insertSheet: () => sheet }), flush: () => void calls.push('flush') },
     LockService: {
       getScriptLock: () => ({
-        waitLock: () => (lock.held = true),
+        waitLock: () => {
+          if (!lock.free) throw new Error('Lock timeout');
+          lock.held = true;
+        },
+        tryLock: () => (lock.free ? (lock.held = true) : false),
         releaseLock: () => {
           lock.held = false;
           lock.released++;
         },
       }),
     },
-    MailApp: { sendEmail: (to: string, subject: string, body: string) => void mails.push({ to, subject, body }) },
+    MailApp: {
+      sendEmail: (to: string, subject: string, body: string) => {
+        calls.push('mail');
+        mails.push({ to, subject, body });
+      },
+    },
     PropertiesService: { getScriptProperties: () => ({ getProperty: (k: string) => props[k] ?? null }) },
     ContentService: {
       MimeType: { JSON: 'json' },
@@ -58,7 +74,7 @@ function runtime() {
     },
   });
   vm.runInContext(SOURCE, ctx);
-  return { ctx: ctx as unknown as Ctx, rows, mails, lock, tick: (ms: number) => (clock += ms) };
+  return { ctx: ctx as unknown as Ctx, rows, mails, lock, calls, formats, tick: (ms: number) => (clock += ms) };
 }
 
 const post = (body: object) => ({ postData: { type: 'text/plain', contents: JSON.stringify(body) }, parameter: {} });
@@ -83,10 +99,48 @@ describe('enquiry.gs', () => {
     expect(rt.rows[1][col('stage')]).toBe('quantity');
     expect(rt.rows[1][col('quantity')]).toBe('1 container');
   });
-  it('never overwrites a filled cell with an empty value', () => {
-    rt.ctx.doPost(post(lead('contact', { name: 'Ali', email: 'ali@example.ae' })));
-    rt.ctx.doPost(post(lead('group', { name: 'Ali', email: '' })));
-    expect(rt.rows[1][col('email')]).toBe('ali@example.ae');
+  it('a key in the post overwrites its cell, even with an empty value; a missing key leaves it', () => {
+    rt.ctx.doPost(post(lead('contact', { name: 'Ali', email: 'ali@example.ae', phone: '971501234567' })));
+    rt.ctx.doPost(post(lead('contact', { name: 'Ali', email: '' })));
+    expect(rt.rows[1][col('email')]).toBe('');
+    expect(rt.rows[1][col('phone')]).toBe('971501234567');
+  });
+  it('clears a stale product when the buyer switches to "something else"', () => {
+    rt.ctx.doPost(post(lead('product', { group: 'Kitchen Care', product: 'Dish Wash Liquid / Gel' })));
+    rt.ctx.doPost(post(lead('group', { group: 'Something else', productOther: 'Gel', product: '' })));
+    expect(rt.rows[1][col('product')]).toBe('');
+    expect(rt.rows[1][col('productOther')]).toBe('Gel');
+  });
+  it('keeps formulas quoted when a row is written again', () => {
+    rt.ctx.doPost(post(lead('contact', { name: '=HYPERLINK("x")', phone: '+447700900123' })));
+    rt.ctx.doPost(post(lead('group', { group: 'Kitchen Care' })));
+    expect(rt.rows[1][col('name')]).toBe('\'=HYPERLINK("x")');
+    expect(rt.rows[1][col('phone')]).toBe("'+447700900123");
+  });
+  it('stores answers as plain text, so a leading zero survives', () => {
+    rt.ctx.doPost(post(lead('contact', { name: 'Ali', phone: '07700900123' })));
+    const text = rt.formats.filter((f) => f.format === '@');
+    expect(text.length).toBeGreaterThan(0);
+    for (const f of text) expect(f.row).toBe(2);
+    const covered = new Set(text.flatMap((f) => Array.from({ length: f.nc }, (_, i) => f.col + i)));
+    for (const name of ['name', 'phone', 'email', 'notes', 'countryCode']) expect(covered.has(col(name) + 1), name).toBe(true);
+    expect(rt.rows[1][col('phone')]).toBe('07700900123');
+  });
+  it('saves the row and flushes before the slow email step', () => {
+    rt.ctx.doPost(post(lead('contact', { name: 'Ali' })));
+    expect(rt.calls).toEqual(['write', 'flush', 'mail']);
+  });
+  it('sends the step-1 alert once, even if step 1 is sent again', () => {
+    rt.ctx.doPost(post(lead('contact', { name: 'Ali' })));
+    rt.ctx.doPost(post(lead('contact', { name: 'Ali Hassan' })));
+    expect(rt.mails).toHaveLength(1);
+  });
+  it('answers {ok:false} when the lock is busy, without throwing or releasing it', () => {
+    rt.lock.free = false;
+    const out = rt.ctx.doPost(post(lead('contact', { name: 'Ali' })));
+    expect(JSON.parse(out.content)).toEqual({ ok: false });
+    expect(rt.lock.released).toBe(0);
+    expect(rt.rows.length).toBeLessThanOrEqual(1);
   });
   it('keeps "submitted" when a late step arrives after it', () => {
     rt.ctx.doPost(post(lead('submitted', { name: 'Ali' })));
@@ -115,7 +169,7 @@ describe('enquiry.gs', () => {
     expect(rt.rows[1][col('name')]).toBe('Ana');
     expect(rt.rows[1][col('leadId')]).toBe('uuid-from-script-0001');
     expect(out.kind).toBe('html');
-    expect(out.content).toMatch(/href="https:\/\/www\.goodbizhygiene\.com\/"/);
+    expect(out.content).toMatch(/href="https:\/\/www\.goodbizhygiene\.com\/" target="_top"/);
   });
   it('answers a JSON post with {"ok":true}', () => {
     const out = rt.ctx.doPost(post(lead('contact', { name: 'Ali' })));

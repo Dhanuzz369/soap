@@ -5,9 +5,10 @@
  * (docs/enquiry-sheet-setup.md). The site posts each step of the enquiry form here:
  *   JSON (text/plain body): { leadId, stage, lang, page, ts, fields: { name, email, … } }
  *   or, without JavaScript, an ordinary form post with the same field names.
- * One row per leadId: the first post appends it, later posts fill it in. A filled cell is never
- * blanked, and "submitted" is never downgraded by a late step. An email alert goes to the
- * ALERT_EMAIL script property when a buyer finishes step 1 (stage "contact") and when they send.
+ * One row per leadId: the first post appends it, later posts fill it in. A key in a post replaces
+ * its cell (even with an empty value, when the buyer changed an answer); a key missing from the
+ * post leaves its cell. "submitted" is never downgraded by a late step. An email alert goes to the
+ * ALERT_EMAIL script property once when a buyer finishes step 1 (stage "contact") and when they send.
  *
  * This file is versioned in the repo (scripts/apps-script/enquiry.gs) and tested in
  * tests/unit/apps-script.test.ts. Edit it there, then paste it again and redeploy.
@@ -38,16 +39,21 @@ function safeCell(v) {
 }
 
 function doPost(e) {
+  var isForm = !!(e && e.postData && e.postData.type === 'application/x-www-form-urlencoded');
   var lock = LockService.getScriptLock();
-  lock.waitLock(10000);
-  var isForm = false;
+  if (!lock.tryLock(10000)) return reply(false, isForm);
   try {
     var req = parseRequest(e);
     isForm = req.isForm;
     if (req.honeypot) return reply(true, isForm);
     if (!req.data || !LEAD_ID.test(String(req.data.leadId || ''))) return reply(false, isForm);
-    var row = upsert(req.data);
-    if (req.data.stage === 'contact' || req.data.stage === 'submitted') alert(req.data, row);
+    var saved = upsert(req.data);
+    // The row is safe before the slow email step: a send that times out on the site may still
+    // have been saved here (docs/enquiry-sheet-setup.md).
+    SpreadsheetApp.flush();
+    var stage = req.data.stage;
+    // One step-1 alert per lead, even if step 1 is sent again.
+    if (stage === 'submitted' || (stage === 'contact' && (saved.isNew || saved.previousStage === ''))) alert(req.data, saved.row);
     return reply(true, isForm);
   } catch (err) {
     return reply(false, isForm);
@@ -99,26 +105,31 @@ function upsert(data) {
       break;
     }
   }
-  var row = rowIndex === -1 ? COLUMNS.map(function () { return ''; }) : values[rowIndex].slice();
+  // The row as plain values (getValues() already drops the ' that marks a quoted cell).
+  var row = rowIndex === -1 ? COLUMNS.map(function () { return ''; }) : values[rowIndex].map(function (v) { return v == null ? '' : String(v); });
   while (row.length < COLUMNS.length) row.push('');
-
-  var set = function (name, value) {
-    var v = value == null ? '' : String(value).trim();
-    if (v === '') return; // never blank a filled cell
-    row[COLUMNS.indexOf(name)] = safeCell(v);
+  var put = function (name, value) {
+    row[COLUMNS.indexOf(name)] = value == null ? '' : String(value).trim();
   };
-  set('leadId', data.leadId);
-  if (rowIndex === -1) set('firstSeen', now);
-  set('updated', now);
-  var current = row[COLUMNS.indexOf('stage')];
-  if (STAGES.indexOf(data.stage) >= STAGES.indexOf(current)) set('stage', data.stage);
-  set('page', data.page);
-  set('language', data.fields.language);
-  for (var i = 0; i < FIELDS.length; i++) set(FIELDS[i], data.fields[FIELDS[i]]);
+  var previousStage = row[COLUMNS.indexOf('stage')];
 
-  if (rowIndex === -1) s.appendRow(row);
-  else s.getRange(rowIndex + 1, 1, 1, COLUMNS.length).setValues([row]);
-  return row;
+  put('leadId', data.leadId);
+  if (rowIndex === -1) put('firstSeen', now);
+  put('updated', now);
+  if (STAGES.indexOf(data.stage) >= STAGES.indexOf(previousStage)) put('stage', data.stage);
+  if (data.page) put('page', data.page);
+  if (data.fields.language) put('language', data.fields.language);
+  // A key in the post replaces its cell, even with an empty value (the buyer changed an answer);
+  // a key that is not in the post leaves the cell as it is.
+  for (var i = 0; i < FIELDS.length; i++) {
+    if (Object.prototype.hasOwnProperty.call(data.fields, FIELDS[i])) put(FIELDS[i], data.fields[FIELDS[i]]);
+  }
+
+  // Every cell is quoted again on every write, and the row is plain text, so =, +, -, @ never run
+  // as a formula and a phone number keeps its leading zero.
+  var rowNumber = rowIndex === -1 ? s.getLastRow() + 1 : rowIndex + 1;
+  s.getRange(rowNumber, 1, 1, COLUMNS.length).setNumberFormat('@').setValues([row.map(safeCell)]);
+  return { row: row, isNew: rowIndex === -1, previousStage: previousStage };
 }
 
 /** The alert lists everything the row holds so far (the whole enquiry, not just this step). */
@@ -132,7 +143,7 @@ function alert(data, row) {
   }
   if (cell('language')) lines.push('Language: ' + cell('language'));
   var subject = data.stage === 'submitted' ? 'Enquiry sent' : 'New enquiry started';
-  var who = cell('name') ? ' - ' + cell('name').replace(/^'/, '') : '';
+  var who = cell('name') ? ' - ' + cell('name') : '';
   MailApp.sendEmail(to, subject + who + ' (GoodBiz Hygiene)', lines.join('\n') + '\n\nLead: ' + data.leadId);
 }
 
@@ -143,7 +154,7 @@ function reply(ok, isForm) {
         '<title>Thank you</title><body style="font-family:system-ui,sans-serif;max-width:36rem;margin:15vh auto;padding:0 16px;color:#12352a">' +
         (ok ? '<h1>Thank you. Your enquiry has reached GoodBiz Hygiene.</h1><p>We will reply by email or WhatsApp.</p>'
             : '<h1>Sorry, your enquiry could not be saved.</h1><p>Please write to us from the contact page.</p>') +
-        '<p><a href="' + SITE_URL + '">Back to goodbizhygiene.com</a></p></body>',
+        '<p><a href="' + SITE_URL + '" target="_top">Back to goodbizhygiene.com</a></p></body>',
     );
   }
   return ContentService.createTextOutput(JSON.stringify({ ok: ok })).setMimeType(ContentService.MimeType.JSON);

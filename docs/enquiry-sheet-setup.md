@@ -67,5 +67,6 @@ Edit `scripts/apps-script/enquiry.gs` in the repository (and run `npx vitest run
 - One row per visitor: the site sends a random `leadId` with every step, and the script finds the row by it. A reload continues the same row.
 - A filled cell is never emptied by a later step, and a row that reached `submitted` stays there.
 - Any value that starts with `=`, `+`, `-` or `@` is stored with a leading `'` so the sheet shows it as text and never runs it as a formula (this is why phone numbers like `+971…` show a `'` in the cell editor).
+- The site waits 15 seconds for the final send. The script saves the row before it sends the email, so on a very slow day a send can be saved even though the site gave up and offered WhatsApp or email instead: the same enquiry may then rarely reach you twice (in the sheet and on WhatsApp).
 - Without JavaScript the form posts straight to the script, which answers with a short "Thank you" page and a link back to the site.
 - A hidden "website_confirm" box catches simple spam bots: anything with it ticked is thrown away.
