@@ -12,6 +12,8 @@ import { createSender, isConfiguredEndpoint, leadIdStore } from '../lib/enquiry-
 import { initCountryCombobox } from './country-combobox';
 
 const CONTACT_KEY = 'goodbiz-enquiry-contact';
+/** The ?product= set the current lead was started with. */
+const PRODUCTS_KEY = 'goodbiz-enquiry-products';
 const CONTACT_FIELDS = ['name', 'company', 'email', 'phone'] as const;
 const ADVANCE_MS = 260;
 const EASE_OUT = 'cubic-bezier(0.23, 1, 0.32, 1)';
@@ -31,7 +33,25 @@ function session(): Storage | null {
   }
 }
 
+/**
+ * Starts the stepper. If anything throws while starting, the form goes back to the long no-JS
+ * form (every step visible, native submit), so a buyer is never left with an empty card.
+ */
 export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
+  try {
+    init(form, deps);
+  } catch (err) {
+    form.classList.remove('is-enhanced');
+    form.noValidate = false;
+    form.querySelectorAll<HTMLElement>('[data-chrome], [data-wa-early]').forEach((el) => (el.hidden = true));
+    form.querySelectorAll<HTMLElement>('[data-other-for], [data-stage]').forEach((el) => (el.hidden = false));
+    form.querySelectorAll<HTMLElement>('section[data-step]').forEach((el) => el.removeAttribute('data-active'));
+    form.querySelectorAll<HTMLImageElement>('img[data-src]').forEach((img) => (img.src = img.dataset.src ?? ''));
+    console.warn('Enquiry form: showing the long form', err);
+  }
+}
+
+function init(form: HTMLFormElement, deps: Deps): void {
   const w = window as unknown as { __ENQ_ENDPOINT__?: string; __ENQ_TIMEOUT__?: number };
   const d = form.dataset;
   const endpoint = typeof w.__ENQ_ENDPOINT__ === 'string' ? w.__ENQ_ENDPOINT__ : (d.endpoint ?? '');
@@ -45,9 +65,22 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     now,
     timeoutMs: typeof w.__ENQ_TIMEOUT__ === 'number' && w.__ENQ_TIMEOUT__ > 0 ? w.__ENQ_TIMEOUT__ : undefined,
   });
+  // Slugs come from the URL: look them up in Maps, never in plain objects ("constructor"…).
+  const english = new Map<string, string>(Object.entries(JSON.parse(d.english || '{}') as Record<string, string>));
+  const variants = new Map<string, string[]>(Object.entries(JSON.parse(d.variants || '{}') as Record<string, string[]>));
+  const params = parseEnquiryParams(location.search);
+  let prefilled = params.products.filter((s) => variants.has(s));
   const lead = leadIdStore(storage, () => crypto.randomUUID());
-  const english: Record<string, string> = JSON.parse(d.english || '{}');
-  const variants: Record<string, string[]> = JSON.parse(d.variants || '{}');
+  // A link with a different set of products is a new enquiry: a new row, not a merge into the last.
+  const productSet = [...prefilled].sort().join(',');
+  try {
+    if (storage && (storage.getItem(PRODUCTS_KEY) ?? '') !== productSet) {
+      if (storage.getItem(PRODUCTS_KEY) !== null) lead.reset();
+      storage.setItem(PRODUCTS_KEY, productSet);
+    }
+  } catch {
+    /* memory only */
+  }
   const lang = d.lang || 'en';
   const languageName = d.languageName || '';
   const rtl = getComputedStyle(form).direction === 'rtl';
@@ -86,9 +119,7 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
   } catch {
     /* nothing saved */
   }
-  const params = parseEnquiryParams(location.search);
-  let prefilled = params.products.filter((s) => s in variants);
-  const variety = prefilled.some((p) => variants[p]?.includes(params.variety)) ? params.variety : '';
+  let variety = prefilled.some((p) => variants.get(p)?.includes(params.variety)) ? params.variety : '';
   const notes = field('notes') as HTMLTextAreaElement;
   if (params.message && !notes.value) notes.value = params.message;
   let source = '';
@@ -120,7 +151,7 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
       notes: v('notes'), variety, source,
     };
   };
-  const nameOf = (slug: string) => english[slug] ?? slug;
+  const nameOf = (slug: string) => english.get(slug) ?? slug;
   const payload = (stage: StepId | 'submitted') =>
     buildPayload({ leadId: lead.get(), stage, lang, page: location.pathname, now: new Date(now()), answers: read(), english: nameOf, languageName });
   const fields = () => toEnquiryFields(read(), nameOf, languageName);
@@ -209,6 +240,10 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     e.field === 'group' || e.field === 'products' || e.field === 'quantity' || e.field === 'terms'
       ? (section(current).querySelector<HTMLInputElement>(`input[name="${e.field === 'products' ? 'product' : e.field}"]:not([hidden])`) ?? null)
       : (field(e.field) as HTMLElement | null);
+  const radiogroupOf = (f: string) =>
+    f === 'products'
+      ? section(current).querySelector<HTMLElement>('[data-products-for][data-current] [role="radiogroup"]')
+      : section(current).querySelector<HTMLElement>(`[role="radiogroup"][data-group="${f}"]`);
   const clearErrors = () => {
     $$('[data-error-for]', section(current)).forEach((p) => {
       p.hidden = true;
@@ -228,11 +263,15 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
         slot.hidden = false;
       }
       const t = errorTarget(e);
-      if (t && slot && t.matches('input:not([type=radio]), textarea')) {
-        t.setAttribute('aria-invalid', 'true');
-        t.setAttribute('aria-describedby', `${t.getAttribute('aria-describedby') ?? ''} ${slot.id}`.trim());
+      // A text field carries its own error; a choice marks its whole radio group.
+      const holder = t?.matches('input[type=radio]') ? radiogroupOf(e.field) : t;
+      if (holder && slot) {
+        holder.setAttribute('aria-invalid', 'true');
+        holder.setAttribute('aria-describedby', `${holder.getAttribute('aria-describedby') ?? ''} ${slot.id}`.trim());
       }
     });
+    // Announced too: focus alone does not read the message of a radio group.
+    status.textContent = errorText[errs[0].code] ?? '';
     const first = errorTarget(errs[0]);
     const visibleRadio = first?.matches('input[type=radio]')
       ? $$<HTMLInputElement>('input[type=radio]', section(current)).find((i) => (i.closest('label') as HTMLElement | null)?.offsetParent)
@@ -299,6 +338,10 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     if (box) box.hidden = keyOf(g) !== 'other';
   }
   let lastKey: string | null = null;
+  let lastKeyAt = 0;
+  // A key counts as the cause of a change only if it was pressed just before it, so an Enter
+  // pressed earlier (e.g. in the phone field) never blocks a later tap from moving on.
+  const recentKey = () => (performance.now() - lastKeyAt < 500 ? lastKey : null);
   let wasChecked = false;
   const picked = (input: HTMLInputElement) => {
     const group = input.name;
@@ -319,6 +362,7 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
   };
   form.addEventListener('keydown', (e) => {
     lastKey = e.key;
+    lastKeyAt = performance.now();
     const t = e.target as HTMLElement;
     if (t instanceof HTMLInputElement && t.type === 'radio' && (e.key === 'Enter' || e.key === ' ')) {
       e.preventDefault();
@@ -338,19 +382,20 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
   form.addEventListener('change', (e) => {
     const t = e.target as HTMLInputElement;
     if (t.type !== 'radio') return;
-    if (lastKey?.startsWith('Arrow')) {
+    const key = recentKey();
+    if (key?.startsWith('Arrow')) {
       cancel();
       const boxField = OTHER_BOX[t.name];
       if (boxField) otherBox(boxField)!.hidden = t.dataset.key !== 'other';
       return;
     }
-    if (lastKey === 'Enter' || lastKey === ' ') return; // handled on keydown
+    if (key === 'Enter' || key === ' ') return; // handled on keydown
     picked(t);
   });
   form.addEventListener('click', (e) => {
     const t = e.target as HTMLInputElement;
     // Re-tapping the option already chosen still moves on (no change event fires for it).
-    if (t instanceof HTMLInputElement && t.type === 'radio' && wasChecked && lastKey === null) {
+    if (t instanceof HTMLInputElement && t.type === 'radio' && wasChecked && recentKey() === null) {
       wasChecked = false;
       picked(t);
     }
@@ -435,11 +480,14 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     );
   }
   function removeProduct(slug: string) {
+    const at = prefilled.indexOf(slug);
     prefilled = prefilled.filter((p) => p !== slug);
+    if (variety && !prefilled.some((p) => variants.get(p)?.includes(variety))) variety = '';
     if (prefilled.length) {
-      buildSummary();
-      ($('[data-summary] .sq-chip button') as HTMLElement | null)?.focus();
       show('send', 0, { focus: false });
+      // Rebuilt first, then focus the chip now in that place (or the last one).
+      const chips = $$<HTMLButtonElement>('[data-summary] .sq-chip button');
+      (chips[Math.min(at, chips.length - 1)] ?? $('.sq-summary-h'))?.focus();
     } else {
       returnTo = 'send';
       show('group', -1);
@@ -469,6 +517,8 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     $<HTMLAnchorElement>('[data-send-whatsapp]').href = buildWhatsAppUrl(d.whatsapp ?? '', f);
     $<HTMLAnchorElement>('[data-send-email]').href = buildMailtoUrl(d.email ?? '', f);
     finish($('[data-fail]'));
+    // The enquiry now leaves by WhatsApp or email; a next one starts its own row.
+    lead.reset();
   };
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -492,11 +542,11 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     } else fail();
   });
 
-  // On phones the floating WhatsApp button sits where Next and Send are: step it aside while the
-  // form's buttons are on screen (the form offers WhatsApp itself).
+  // On phones the floating WhatsApp button sits over the form's buttons and Edit links: step it
+  // aside while any part of the form is on screen (the form offers WhatsApp itself).
   if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => form.toggleAttribute('data-actions-in-view', entries.some((en) => en.isIntersecting)));
-    [$('.sq-foot'), $('.sq-send-row'), $('[data-fail]')].forEach((el) => el && io.observe(el));
+    const io = new IntersectionObserver((entries) => form.toggleAttribute('data-actions-in-view', entries[entries.length - 1].isIntersecting));
+    io.observe(form);
   }
 
   recompute();

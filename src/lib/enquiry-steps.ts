@@ -108,11 +108,27 @@ export function safeCell(v: string): string {
   return /^[=+\-@\t\r]/.test(v) ? `'${v}` : v;
 }
 
-const productNames = (a: Answers, english: (slug: string) => string) =>
-  (a.products ?? []).map((p) => ENGLISH.product[p] ?? english(p));
+/** A lookup that never reaches Object.prototype (a slug such as "constructor" comes from the URL). */
+export function own(map: Record<string, string>, key: string | undefined): string | undefined {
+  return key !== undefined && Object.hasOwn(map, key) ? map[key] : undefined;
+}
 
-/** The answers as English values, keyed by the sheet's column names. Empty values are left out. */
-function englishFields(a: Answers, english: (slug: string) => string, languageName: string): Record<string, string> {
+const productNames = (a: Answers, english: (slug: string) => string) =>
+  (a.products ?? []).map((p) => own(ENGLISH.product, p) ?? english(p));
+
+/** The sheet columns each step answers. A send carries every key of the steps reached so far. */
+export const STEP_KEYS: Record<StepId, readonly string[]> = {
+  contact: ['name', 'company', 'email', 'phone'],
+  group: ['group', 'productOther', 'product'], // a new range (or "something else") clears the product
+  product: ['product', 'variety'],
+  quantity: ['quantity', 'quantityOther'],
+  destination: ['country', 'countryCode', 'port'],
+  terms: ['terms'],
+  send: ['privateLabel', 'notes'],
+};
+
+/** The answers as English values, keyed by the sheet's column names (empty strings included). */
+function allFields(a: Answers, english: (slug: string) => string, languageName: string): Record<string, string> {
   const raw: Record<string, string | undefined> = {
     name: a.name,
     company: a.company,
@@ -121,12 +137,12 @@ function englishFields(a: Answers, english: (slug: string) => string, languageNa
     group: a.group === 'other' ? ENGLISH.groupOther : a.group ? english(a.group) : undefined,
     product: productNames(a, english).join(', '),
     productOther: a.productOther,
-    quantity: a.quantity === 'other' ? undefined : a.quantity ? (ENGLISH.quantity[a.quantity] ?? a.quantity) : undefined,
+    quantity: a.quantity === 'other' ? undefined : a.quantity ? (own(ENGLISH.quantity, a.quantity) ?? a.quantity) : undefined,
     quantityOther: a.quantityOther,
     country: a.country,
     countryCode: a.countryCode,
     port: a.port,
-    terms: a.terms ? ENGLISH.terms[a.terms] : undefined,
+    terms: a.terms ? (own(ENGLISH.terms, a.terms) ?? a.terms) : undefined,
     privateLabel: a.privateLabel,
     notes: a.notes,
     variety: a.variety,
@@ -134,11 +150,13 @@ function englishFields(a: Answers, english: (slug: string) => string, languageNa
     language: languageName,
   };
   const out: Record<string, string> = {};
-  for (const [k, v] of Object.entries(raw)) {
-    const t = v?.trim();
-    if (t) out[k] = t;
-  }
+  for (const [k, v] of Object.entries(raw)) out[k] = v?.trim() ?? '';
   return out;
+}
+
+/** Only the non-empty answers. */
+function englishFields(a: Answers, english: (slug: string) => string, languageName: string): Record<string, string> {
+  return Object.fromEntries(Object.entries(allFields(a, english, languageName)).filter(([, v]) => v));
 }
 
 export type Payload = {
@@ -149,6 +167,17 @@ export type Payload = {
   ts: string;
   fields: Record<string, string>;
 };
+
+/**
+ * Every key of the steps up to `stage` (empty strings included, so a changed answer clears its
+ * cell in the sheet), plus any other non-empty answer. 'submitted' carries every key.
+ */
+function payloadFields(stage: Payload['stage'], a: Answers, english: (slug: string) => string, languageName: string) {
+  const all = allFields(a, english, languageName);
+  const upTo = stage === 'submitted' ? STEP_IDS.length - 1 : STEP_IDS.indexOf(stage);
+  const keys = new Set(STEP_IDS.slice(0, upTo + 1).flatMap((s) => STEP_KEYS[s]));
+  return Object.fromEntries(Object.entries(all).filter(([k, v]) => v || keys.has(k)));
+}
 
 export function buildPayload(o: {
   leadId: string;
@@ -166,7 +195,7 @@ export function buildPayload(o: {
     lang: o.lang,
     page: o.page,
     ts: o.now.toISOString(),
-    fields: englishFields(o.answers, o.english, o.languageName),
+    fields: payloadFields(o.stage, o.answers, o.english, o.languageName),
   };
 }
 

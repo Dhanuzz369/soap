@@ -107,15 +107,37 @@ describe('buildPayload', () => {
   it('carries the lead, stage, language and an ISO time', () => {
     expect(p).toMatchObject({ leadId: 'L1', stage: 'product', lang: 'fr', page: '/fr/contact/', ts: '2026-10-27T10:00:00.000Z' });
   });
-  it('maps slugs to English and keeps only non-empty strings', () => {
+  it('maps slugs to English', () => {
     expect(p.fields.product).toBe('Dish Wash Liquid, Floor Cleaner');
     expect(p.fields.group).toBe('Kitchen Care');
     expect(p.fields.quantity).toBe('2–5 containers');
     expect(p.fields.terms).toBe('Not sure, advise me');
     expect(p.fields.privateLabel).toBe('Maybe');
     expect(p.fields.language).toBe('Français');
-    expect('email' in p.fields).toBe(false);
-    expect(Object.values(p.fields).every((v) => typeof v === 'string' && v.length > 0)).toBe(true);
+  });
+  it('sends every answer of the steps reached so far, empty ones too, so a changed answer clears its cell', () => {
+    expect(p.fields.email).toBe('');
+    expect(p.fields.company).toBe('');
+    expect(p.fields.productOther).toBe('');
+    // later steps are not reached yet: only their non-empty answers travel
+    expect('country' in p.fields).toBe(false);
+    expect('notes' in p.fields).toBe(false);
+    expect(p.fields.quantity).toBe('2–5 containers');
+  });
+  it('clears the counterpart when "other" is picked', () => {
+    const g = buildPayload({ leadId: 'L', stage: 'group', lang: 'en', page: '/contact/', now, english, languageName: 'English', answers: { group: 'other', productOther: 'Gel', products: [] } });
+    expect(g.fields).toMatchObject({ group: 'Something else', productOther: 'Gel', product: '' });
+    const q = buildPayload({ leadId: 'L', stage: 'quantity', lang: 'en', page: '/contact/', now, english, languageName: 'English', answers: { quantity: 'other', quantityOther: '3 pallets' } });
+    expect(q.fields).toMatchObject({ quantity: '', quantityOther: '3 pallets' });
+  });
+  it('sends all keys on the final send', () => {
+    const f = buildPayload({ leadId: 'L', stage: 'submitted', lang: 'en', page: '/contact/', now, english, languageName: 'English', answers: { name: 'A' } }).fields;
+    for (const k of ['name', 'company', 'email', 'phone', 'group', 'productOther', 'product', 'variety', 'quantity', 'quantityOther', 'country', 'countryCode', 'port', 'terms', 'privateLabel', 'notes']) expect(f[k], k).toBe(k === 'name' ? 'A' : '');
+  });
+  it('never reads a slug from the prototype', () => {
+    const q = buildPayload({ leadId: 'L', stage: 'product', lang: 'en', page: '/', now, english: (s) => s, languageName: 'English', answers: { products: ['constructor', 'toString'], quantity: 'constructor', terms: 'valueOf' as never } });
+    expect(q.fields.product).toBe('constructor, toString');
+    expect(q.fields.quantity).toBe('constructor');
   });
   it('writes the special product choices in English', () => {
     const q = buildPayload({ leadId: 'L', stage: 'submitted', lang: 'en', page: '/contact/', now, english, languageName: 'English', answers: { products: ['several'], group: 'other', productOther: 'Gel' } });

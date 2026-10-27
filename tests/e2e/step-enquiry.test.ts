@@ -371,3 +371,147 @@ describe('step enquiry form', () => {
     expect(ENDPOINT).toMatch(/^https:\/\/script\.google\.com\/macros\/s\/[^/]+\/exec$/);
   });
 });
+
+describe('review fixes', () => {
+  for (const slug of ['constructor', '__proto__', 'toString']) {
+    it(`?product=${slug} still gives a working form`, async () => {
+      const { page, bodies, errors } = await open(browser, `/contact/?product=${slug}`);
+      expect(await label(page)).toBe('Step 1 of 7');
+      await fillContact(page);
+      await expect.poll(() => bodies.length).toBe(1);
+      expect(errors).toEqual([]);
+      await page.context().close();
+    });
+  }
+
+  it('if the script fails to start, the long form shows instead of an empty card', async () => {
+    const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const page = await context.newPage();
+    await page.addInitScript(() => {
+      crypto.randomUUID = () => {
+        throw new Error('broken');
+      };
+    });
+    await page.goto('http://localhost:4329/contact/');
+    await page.waitForTimeout(800);
+    expect(await page.$eval('form[data-step-enquiry]', (f) => f.classList.contains('is-enhanced'))).toBe(false);
+    for (const s of await page.$$('section[data-step]')) expect(await s.isVisible()).toBe(true);
+    expect(await page.isVisible('[data-next]')).toBe(false);
+    expect(await page.isVisible('[data-send]')).toBe(true);
+    expect(await page.isVisible('#enq-product-other')).toBe(true);
+    await context.close();
+  });
+
+  it('an Enter pressed earlier in a field never blocks a later tap', async () => {
+    const { page } = await open(browser, '/contact/?product=sles');
+    await page.fill('#enq-name', 'Ali');
+    await page.fill('#enq-phone', '+971 50 123 4567');
+    await page.focus('#enq-phone');
+    await page.keyboard.press('Enter');
+    await waitStep(page, 'quantity');
+    await pick(page, 'enq-quantity-1');
+    await waitStep(page, 'destination');
+    await page.context().close();
+  });
+
+  it('a changed answer is sent with its cleared counterpart', async () => {
+    const { page, bodies } = await open(browser);
+    await fillContact(page);
+    await pick(page, 'enq-group-kitchen-care');
+    await waitStep(page, 'product');
+    await pick(page, 'enq-product-kitchen-care-dish-wash-liquid');
+    await waitStep(page, 'quantity');
+    await page.click('[data-back]');
+    await waitStep(page, 'product');
+    await page.click('[data-back]');
+    await waitStep(page, 'group');
+    await pick(page, 'enq-group-other');
+    await page.keyboard.type('Sanitiser gel');
+    await page.keyboard.press('Enter');
+    await waitStep(page, 'quantity');
+    await expect.poll(() => bodies.length).toBe(4);
+    const last = bodies.at(-1)!;
+    expect(last.stage).toBe('group');
+    expect(last.fields).toMatchObject({ group: 'Something else', productOther: 'Sanitiser gel', product: '' });
+    // a cleared contact field travels as an empty value
+    expect(last.fields.email).toBe('');
+    await page.context().close();
+  });
+
+  it('removing the product its variety belongs to clears the variety', async () => {
+    const { page, bodies } = await open(browser, '/contact/?product=dish-wash-liquid,floor-cleaner&variety=green-apple');
+    await page.fill('#enq-name', 'Ali');
+    await page.fill('#enq-email', 'ali@example.ae');
+    await page.click('[data-next]');
+    for (let i = 0; i < 3; i++) await page.click('[data-skip]');
+    await waitStep(page, 'send');
+    await page.click('[data-summary] .sq-chip button'); // Dish Wash Liquid first
+    // focus stays on the chips
+    expect(await page.evaluate(() => document.activeElement?.closest('.sq-chip') !== null)).toBe(true);
+    await page.click('[data-send]');
+    await page.waitForSelector('[data-success]:not([hidden])');
+    const last = bodies.at(-1)!;
+    expect(last.stage).toBe('submitted');
+    expect(last.fields.variety).toBe('');
+    expect(last.fields.product).toBe('Floor Cleaner');
+    await page.context().close();
+  });
+
+  it('after the fallback panel, a second enquiry starts a new lead', async () => {
+    const { page, bodies } = await open(browser, '/contact/?product=sles', { mock: 500 });
+    await page.fill('#enq-name', 'Ali');
+    await page.fill('#enq-email', 'ali@example.ae');
+    await page.click('[data-next]');
+    for (let i = 0; i < 3; i++) await page.click('[data-skip]');
+    await page.click('[data-send]');
+    await page.waitForSelector('[data-fail]:not([hidden])');
+    const sent = bodies.at(-1)!.leadId;
+    expect(await page.evaluate(() => sessionStorage.getItem('goodbiz-enquiry-lead'))).not.toBe(sent);
+    await page.context().close();
+  });
+
+  it('a link with other products starts a new lead; a reload of the same link does not', async () => {
+    const { page, bodies } = await open(browser, '/contact/?product=sles');
+    await fillContact(page, 'Ali', '+971 50 123 4567', 'quantity');
+    await expect.poll(() => bodies.length).toBe(1);
+    await page.reload();
+    await page.waitForSelector('form.is-enhanced');
+    await page.click('[data-next]');
+    await expect.poll(() => bodies.length).toBe(2);
+    expect(bodies[1].leadId).toBe(bodies[0].leadId);
+    await page.goto('http://localhost:4329/contact/?product=labsa');
+    await page.waitForSelector('form.is-enhanced');
+    await page.click('[data-next]');
+    await expect.poll(() => bodies.length).toBe(3);
+    expect(bodies[2].leadId).not.toBe(bodies[0].leadId);
+    await page.context().close();
+  });
+
+  it('an unanswered choice step marks its radio group and announces the error', async () => {
+    const { page } = await open(browser);
+    await fillContact(page);
+    await page.click('[data-next]');
+    const group = '[role="radiogroup"][data-group="group"]';
+    expect(await page.getAttribute(group, 'aria-invalid')).toBe('true');
+    expect(await page.getAttribute(group, 'aria-describedby')).toContain('enq-err-group');
+    const msg = await page.textContent('[data-error-for="group"]');
+    expect(msg?.trim()).toBeTruthy();
+    expect(await page.textContent('[data-status]')).toBe(msg);
+    await pick(page, 'enq-group-laundry-care');
+    expect(await page.getAttribute(group, 'aria-invalid')).toBeNull();
+    await page.context().close();
+  });
+
+  it('on phones the floating WhatsApp button stays out of the way of the form', async () => {
+    const { page } = await open(browser, '/contact/?product=sles', { context: { viewport: { width: 375, height: 812 } } });
+    await page.fill('#enq-name', 'Ali');
+    await page.fill('#enq-email', 'ali@example.ae');
+    await page.click('[data-next]');
+    for (let i = 0; i < 3; i++) await page.click('[data-skip]');
+    await waitStep(page, 'send');
+    await page.$eval('[data-summary] .sq-edit', (e) => e.scrollIntoView({ block: 'end' }));
+    await page.waitForTimeout(400);
+    expect(await page.$eval('.wa-fab', (e) => getComputedStyle(e).visibility)).toBe('hidden');
+    await page.context().close();
+  });
+});
