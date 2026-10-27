@@ -99,11 +99,14 @@ export const MAX_URL_MESSAGE = 1000;
 /**
  * Reads what other pages pass to the contact form in the query string:
  * - `product`: product slugs to tick, comma-separated or repeated (`?product=a,b&product=c`);
- * - `message`: text to prefill the message box (the home "Request a quote" card sends it).
+ * - `message`: text to prefill the message box (the home "Request a quote" card sends it);
+ * - `variety`: one product variety ("Green apple" or "green-apple"), returned slug-shaped.
  * Slugs are kept only if they look like slugs; the message is trimmed, has control characters
- * (other than line breaks) removed, and is capped at MAX_URL_MESSAGE characters.
+ * (other than line breaks) removed, and is capped at MAX_URL_MESSAGE characters. A variety made of
+ * anything other than letters, digits, spaces and hyphens (or over 60 characters) is dropped.
+ * Whether the variety belongs to the product is checked by the form, which knows the variants.
  */
-export function parseEnquiryParams(search: string): { products: string[]; message: string } {
+export function parseEnquiryParams(search: string): { products: string[]; message: string; variety: string } {
   const params = new URLSearchParams(search);
   const products = [
     ...new Set(
@@ -119,7 +122,19 @@ export function parseEnquiryParams(search: string): { products: string[]; messag
     .replace(/[\u0000-\u0009\u000B\u000C\u000E-\u001F\u007F]/g, '')
     .trim()
     .slice(0, MAX_URL_MESSAGE);
-  return { products, message };
+  const rawVariety = (params.get('variety') ?? '').trim();
+  const variety = /^[\p{L}\p{N} _-]{1,60}$/u.test(rawVariety) ? slugify(rawVariety) : '';
+  return { products, message, variety };
+}
+
+/** "Green apple" → "green-apple": lower case, accents dropped, anything else becomes one hyphen. */
+export function slugify(s: string): string {
+  return s
+    .normalize('NFD')
+    .replace(/\p{M}/gu, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 /**

@@ -1,9 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { parseEnquiryParams, MAX_URL_MESSAGE } from '../../src/lib/enquiry';
+import { parseEnquiryParams, MAX_URL_MESSAGE, slugify } from '../../src/lib/enquiry';
 
 describe('parseEnquiryParams', () => {
   it('returns nothing for an empty query', () => {
-    expect(parseEnquiryParams('')).toEqual({ products: [], message: '' });
+    expect(parseEnquiryParams('')).toEqual({ products: [], message: '', variety: '' });
   });
   it('reads products, comma-separated and repeated, without duplicates', () => {
     expect(parseEnquiryParams('?product=dish-wash-liquid,floor-cleaner&product=sles&product=floor-cleaner').products).toEqual([
@@ -26,6 +26,23 @@ describe('parseEnquiryParams', () => {
     expect(parseEnquiryParams(`?message=${long}`).message).toHaveLength(MAX_URL_MESSAGE);
   });
   it('reads products and message together', () => {
-    expect(parseEnquiryParams('?product=labsa&message=Bulk+drums')).toEqual({ products: ['labsa'], message: 'Bulk drums' });
+    expect(parseEnquiryParams('?product=labsa&message=Bulk+drums')).toEqual({ products: ['labsa'], message: 'Bulk drums', variety: '' });
+  });
+  it('reads a variety as a slug', () => {
+    expect(parseEnquiryParams('?product=dish-wash-liquid&variety=Green Apple').variety).toBe('green-apple');
+    expect(parseEnquiryParams('?variety=green-apple').variety).toBe('green-apple');
+  });
+  it('ignores a hostile variety', () => {
+    expect(parseEnquiryParams('?variety=<script>').variety).toBe('');
+    expect(parseEnquiryParams('?variety=' + 'a'.repeat(200)).variety).toBe('');
+    expect(parseEnquiryParams('?variety=a%22onload%3D').variety).toBe('');
+  });
+});
+
+describe('slugify', () => {
+  it('lower-cases, drops accents and joins words with hyphens', () => {
+    expect(slugify('Green apple')).toBe('green-apple');
+    expect(slugify('  Crème  Brûlée! ')).toBe('creme-brulee');
+    expect(slugify('Antibacterial lemon')).toBe('antibacterial-lemon');
   });
 });
