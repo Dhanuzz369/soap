@@ -67,6 +67,8 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
   const country = initCountryCombobox($<HTMLInputElement>('#enq-country'), $<HTMLUListElement>('#enq-country-list'), $<HTMLInputElement>('[data-country-code]'), lang);
 
   form.classList.add('is-enhanced');
+  // The range photos load only now that the later steps are hidden (lazy, so on first view of step 2).
+  $$<HTMLImageElement>('img[data-src]').forEach((img) => (img.src = img.dataset.src ?? ''));
   form.noValidate = true;
   $$('[data-chrome]').forEach((el) => (el.hidden = false));
   $<HTMLInputElement>('[data-lead]').value = lead.get();
@@ -354,6 +356,9 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     }
   });
   form.addEventListener('input', () => refreshWa());
+  // An answer clears the step's error messages.
+  form.addEventListener('change', () => clearErrors());
+  form.addEventListener('input', (e) => (e.target as HTMLElement).getAttribute('aria-invalid') && clearErrors());
 
   // ---------- summary (last step) ----------
   const labelText = (input: HTMLInputElement | null | undefined) => input?.closest('label')?.querySelector('span:not(.sq-badge):not(.sq-card-media):not(.sq-plus)')?.textContent?.trim() ?? '';
@@ -363,7 +368,20 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     const dl = $('[data-summary]');
     const rows: { step: StepId; label: string; value: string | Node }[] = [];
     const title = (k: string) => summaryText[k] ?? k;
-    rows.push({ step: 'contact', label: title('contact'), value: [a.name, a.company, a.email, a.phone].filter(Boolean).join(' · ') });
+    // Each part isolated (<bdi>) so a phone number keeps its order inside Arabic text.
+    const parts = (vals: (string | undefined)[]) => {
+      const list = vals.filter((x): x is string => !!x);
+      if (!list.length) return '';
+      const span = document.createElement('span');
+      list.forEach((x, i) => {
+        if (i) span.append(' · ');
+        const b = document.createElement('bdi');
+        b.textContent = x;
+        span.append(b);
+      });
+      return span;
+    };
+    rows.push({ step: 'contact', label: title('contact'), value: parts([a.name, a.company, a.email, a.phone]) });
     let product: string | Node;
     if (prefilled.length) {
       const chips = document.createElement('span');
@@ -386,7 +404,7 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     else product = (a.products ?? []).map(productLabel).join(', ');
     rows.push({ step: prefilled.length ? 'send' : 'group', label: title('product'), value: product });
     rows.push({ step: 'quantity', label: title('quantity'), value: a.quantity === 'other' ? (a.quantityOther ?? '') : labelText(checked('quantity')) });
-    rows.push({ step: 'destination', label: title('destination'), value: [country.label(), a.port].filter(Boolean).join(' · ') });
+    rows.push({ step: 'destination', label: title('destination'), value: parts([country.label(), a.port]) });
     rows.push({ step: 'terms', label: title('terms'), value: checked('terms')?.closest('label')?.querySelector('.sq-term-title')?.textContent?.trim() ?? '' });
     dl.replaceChildren(
       ...rows.map((r) => {
@@ -473,6 +491,13 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
       success();
     } else fail();
   });
+
+  // On phones the floating WhatsApp button sits where Next and Send are: step it aside while the
+  // form's buttons are on screen (the form offers WhatsApp itself).
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => form.toggleAttribute('data-actions-in-view', entries.some((en) => en.isIntersecting)));
+    [$('.sq-foot'), $('.sq-send-row'), $('[data-fail]')].forEach((el) => el && io.observe(el));
+  }
 
   recompute();
   show(steps[0], 0, { focus: false });

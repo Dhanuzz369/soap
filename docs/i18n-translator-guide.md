@@ -144,6 +144,18 @@ The tests check this, so that changing the terms later finds every file to updat
 - `seo.keywords`: short search phrases per page type, written the way buyers in your language search (not word-for-word). Keep the placeholders: `{kw}` (the product's `keyword`), `{name}` / `{nameLower}` (a range name), `{hsn}`. Use your market's terms for "private label", "wholesale", "bulk" and the customs code (HS, ТН ВЭД, GTİP…). `productMarkets` names two markets where your language is spoken. They never appear on the page, only in `<meta name="keywords">`.
 - `quickFacts`: six short facts shown on the home and about pages. Translate exactly; do not add claims.
 
+### 4.1b The step-by-step enquiry form (`steps`)
+
+The contact page asks one short question per screen (`src/components/StepEnquiry.astro`). The `steps` block holds every word of it. Write it as a friendly sales assistant would speak, short enough to read at a glance on a phone.
+
+- `stepOf` keeps `{n}` and `{m}` ("Step 2 of 5"). `successH` and `remove` keep `{name}` (the buyer's name, a product name).
+- `titles` and `helpers`: one per step (`contact`, `group`, `product`, `quantity`, `destination`, `terms`, `send`). Titles are questions; helpers are one line.
+- `quantities` (4 items, in this order: samples or trial, 1 container, 2–5 containers, 6+ containers) and `brandOptions` (Yes, No, Maybe): translate the labels only. GoodBiz always receives the English value.
+- `terms`: four objects. **Never translate `key`** (`not-sure`, `FOB`, `CFR`, `CIF`): it is the value sent. Keep FOB, CFR and CIF in Latin letters inside `title`. Each `line` explains the Incoterm in plain words: translate the meaning exactly, with no promise of price, speed or insurance cover beyond what the English says.
+- `privacy` is the form's only privacy statement and must stay literally true: the details are used only to reply, never shared, never added to a mailing list. Do not soften or extend it.
+- `helpers.quantity` says there is no fixed minimum. Do not add a minimum, a price, a certificate or a delivery time anywhere in this block (`tests/unit/enquiry-strings.test.ts` checks the English, and the honesty patterns check every language).
+- `errors`: short and polite, telling the buyer what to do, not what they did wrong.
+
 ### 4.2 The product and range h1 (`common.titleH1`)
 
 Product and range pages set their h1 on two lines: the name, large, then an italic line. The template composes both, per language: `{name}` is the name, and a vertical bar `|` marks where the italic line starts (the bar is never shown). Read straight through, the h1 must be one natural phrase, so put the punctuation and capitals your language needs around the name. Examples: English `{name}|Exporter & Supplier from India`, French `{name} :|exportateur et fournisseur depuis l’Inde` (non-breaking space before the colon, lower case after it), German `{name}:|Exporteur und Lieferant aus Indien` (nouns keep their capital), Chinese `{name}|印度出口商与供应商`.

@@ -308,6 +308,9 @@
   border-radius: calc(var(--sq-r) - 6px);
   background: var(--pv-field);
 }
+.sq-card-media img:not([src]) {
+  display: none; /* before the script sets it; the <noscript> copy shows without JS */
+}
 .sq-card-media img {
   width: calc(100% - 10px);
   height: auto;
@@ -382,8 +385,8 @@
 .sq.is-enhanced .sq-products:not([data-current]) {
   display: none;
 }
-.sq.is-enhanced .sq-products + .sq-products {
-  margin-top: 0;
+.sq.is-enhanced .sq-products[data-current] {
+  margin-top: clamp(20px, 2.2vw, 28px); /* the helper's gap: the hidden ranges before it take none */
 }
 .sq-pills {
   display: flex;
@@ -839,10 +842,34 @@
   flex-wrap: wrap;
   gap: 12px;
 }
+/* The soft pill is the card's own colour here: lift it onto the lighter ground. */
+.sq-fail .btn--soft {
+  background: var(--paper);
+  box-shadow: inset 0 0 0 1px var(--sq-line); /* taste-skill-ignore: soft pill edge on the card */
+}
+.sq-fail .btn--soft:hover {
+  background: var(--accent);
+}
 @media (max-width: 639.98px) {
   .sq-fail-actions .btn,
   .sq-send {
     width: 100%;
+  }
+}
+
+/* The floating WhatsApp button steps aside on phones while the form's own buttons are on screen. */
+@media (max-width: 959.98px) {
+  .wa-fab {
+    transition:
+      opacity 200ms var(--ease-out),
+      transform 200ms var(--ease-out),
+      visibility 200ms;
+  }
+  body:has(.sq[data-actions-in-view]) .wa-fab {
+    visibility: hidden; /* out of the tab order too */
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
   }
 }
 

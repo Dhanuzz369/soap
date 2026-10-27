@@ -138,7 +138,10 @@ const titleId = (id: string) => `enq-h-${id}`;
             <label class="sq-card sq-opt-item" data-cat={g.slug}>
               <input type="radio" name="group" id={`enq-group-${g.slug}`} value={g.en} data-key={g.slug} />
               <span class:list={['sq-card-media', g.isRender && 'is-render']} aria-hidden="true">
-                {g.src && <img src={g.src} alt="" width={g.isRender ? 600 : 800} height={g.isRender ? 750 : 600} loading="lazy" decoding="async" />}
+                {/* data-src: the script sets src once the steps are hidden, so these never compete with the
+                    hero image on load; without JS the <noscript> copy shows. */}
+                {g.src && <img data-src={g.src} alt="" width={g.isRender ? 600 : 800} height={g.isRender ? 750 : 600} loading="lazy" decoding="async" />}
+                {g.src && <noscript><img src={g.src} alt="" width={g.isRender ? 600 : 800} height={g.isRender ? 750 : 600} loading="lazy" decoding="async" /></noscript>}
               </span>
               <span class="sq-card-label">{g.title}</span>
               <span class="sq-badge" aria-hidden="true">

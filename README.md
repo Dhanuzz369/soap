@@ -37,6 +37,7 @@ Other useful commands:
 | `npm run hero:images` | Re-makes the home hero's smaller photo copies and its blurred colour glows in `public/images/hero/`, and the 480px copies of every product photo for the Products page's photo shelf in `public/images/shelf/`. Run it after replacing one of the four hero photos (the list is `FAN_RANGES` in `src/lib/hero-fan.ts`) or after adding or replacing any product photo. |
 | `npm run icons` | Re-makes `favicon.ico`, the apple touch icon, the web-app icons and the square `logo-512.png` (used in Google's company data) from the leaf mark. |
 | `npm run og:cards` | Re-makes the 1200 × 630 share images in `public/og/`: one per main page and language, and one per product and range from its photo (needs Google Chrome). Run it after changing a page headline or adding a product or category photo. |
+| `npm run test:e2e` | Runs the contact form in Chrome (step by step, prefill, sending, fallback, Arabic). Run `npm run build` first; it starts its own preview on port 4329. |
 | `npm run indexnow` | After launch: tells Bing, Yandex and other IndexNow search engines about every page (see the go-live checklist). Does nothing before launch. |
 | `npm run check:types` | Type-checks the site, including the structured data for search engines (an unknown schema.org property is an error). |
 | `npm run vercel:config` | Re-writes `vercel.json` (Vercel's redirects and headers) from `src/config/site.ts`. Run it after changing `url` or `launchReady`, then commit `vercel.json`; `npm test` fails while the two disagree. See section 7. |
@@ -157,6 +158,18 @@ The site is published in 12 languages: English at `/`, and Arabic, French, Spani
 
 ---
 
+## 5b2. Enquiry form (contact page)
+
+The contact page asks one small thing per screen, mostly by tapping: (1) name and email or WhatsApp, (2) the product range, as five photo cards or "Something else", (3) the product, (4) roughly how much, (5) the country and port, (6) the shipping terms ("Not sure, advise me" first, then FOB, CFR and CIF), and (7) notes, own brand or not, a summary with "Edit" links, and **Send enquiry**. A tap moves to the next step by itself; Back and "Skip this step" are always there. Links from product pages, the HoReCa list and the private-label page (`?product=…&message=…`) skip the steps they already answer.
+
+**Where leads go.** Every step is saved, as it is answered, to one row per visitor in a Google Sheet, so a buyer who stops after step 1 is still a lead with a name and a way to reply. You get an email when someone finishes step 1 and again when they press Send. Setting up the sheet takes ten minutes: `docs/enquiry-sheet-setup.md` (the script is `scripts/apps-script/enquiry.gs`, the address goes in `enquiry.endpoint` in `src/config/site.ts`).
+
+**Until the sheet is set up, or if sending fails,** nothing is lost: the form ends with "Send via WhatsApp" and "Send via Email" buttons with the whole enquiry already written in, and from step 2 a line offers to send it on WhatsApp straight away. Without JavaScript the form shows every step on one page and posts to the sheet (or opens the visitor's email app before launch).
+
+The form's text is `steps` in `src/i18n/ui/<language>.ts`; what the team receives is always English, plus the visitor's language. The logic is in `src/lib/enquiry-steps.ts` and `src/lib/enquiry-send.ts`, the browser part in `src/scripts/step-enquiry.ts`. `npm run test:e2e` runs the form in Chrome (after `npm run build`).
+
+---
+
 ## 5c. Registrations ("Registered exporter" strip)
 
 The footer, the About page, the Export Process page and the HoReCa page show the company's four export registrations: **FIEO** (member), **MSME / Udyam** (registered), **CHEMEXCIL** (RCMC holder) and **DGFT** (IEC holder). The list, each body's full name and official website are `registrations` in `src/config/site.ts`; `showRegistrations: false` hides the strip everywhere (and the matching lines in `llms.txt` and the structured data). The status lines ("Member exporter", "RCMC holder"…) are in each language file under `registrations`.
@@ -272,6 +285,7 @@ If you host somewhere other than Vercel, `vercel.json` is ignored: set the same 
 | `src/i18n/` | Languages, interface text per language (`ui/`), language detection |
 | `src/views/` | The page templates (every language uses the same ones) |
 | `src/pages/` | Page addresses (each one shows a template from `src/views/`) |
+| `src/components/StepEnquiry.astro`, `src/scripts/step-enquiry.ts`, `src/lib/enquiry-*.ts` | The step-by-step enquiry form; `scripts/apps-script/enquiry.gs` is its Google Sheet backend (`docs/enquiry-sheet-setup.md`) |
 | `src/components/Registrations.astro`, `src/lib/registrations.ts` | The "Registered exporter" strip (config in `site.ts`, logos in `public/images/registrations/`) |
 | `src/styles/` | Colours, fonts and layout |
 | `public/images/products/` | Product photos (`<slug>.webp`) |
