@@ -1,0 +1,341 @@
+---
+/**
+ * StepEnquiry: the contact page's step-by-step enquiry form (spec 2026-10-27).
+ *
+ * Without JavaScript every step shows at once as one long form with radios, posting to the
+ * Google Sheet endpoint, or to mailto: while the endpoint is still a placeholder. With JavaScript,
+ * src/scripts/step-enquiry.ts turns it into a stepper: one question per screen, tap to advance,
+ * each step saved to the sheet as it is answered (contact details first).
+ *
+ * Labels are in the page's language (ui.steps); every value sent is English (src/lib/enquiry-steps.ts)
+ * and the option ids are prefixed by their group, because product ids repeat across groups.
+ * Styles: src/styles/step-enquiry.css.
+ */
+import site from '../config/site';
+import { getProductsByCategory } from '../lib/products';
+import { productPicture } from '../lib/product-image';
+import { buildWhatsAppUrl, slugify } from '../lib/enquiry';
+import { STEP_IDS, QUANTITY_KEYS, TERMS_KEYS, BRAND_KEYS, ENGLISH } from '../lib/enquiry-steps';
+import { isConfiguredEndpoint } from '../lib/enquiry-send';
+import { useI18n } from '../i18n/page';
+import '../styles/step-enquiry.css';
+
+const { lang, info, ui } = useI18n(Astro.url);
+const s = ui.steps;
+const f = ui.form;
+const groups = await getProductsByCategory(lang);
+const enGroups = await getProductsByCategory('en');
+
+// English names (the values sent) and variant slugs (for ?variety=), by slug.
+const english: Record<string, string> = {};
+const variants: Record<string, string[]> = {};
+for (const g of enGroups) {
+  english[g.category.data.slug] = g.category.data.title;
+  for (const p of g.products) {
+    english[p.data.slug] = p.data.title;
+    variants[p.data.slug] = p.data.variants.map(slugify);
+  }
+}
+
+/** One recognisable product per range for the photo cards (our call, spec §3). */
+const GROUP_PHOTO: Record<string, string> = {
+  'bath-personal-soaps': 'toilet-bath-soap',
+  'laundry-care': 'detergent-powder',
+  'kitchen-care': 'dish-wash-liquid',
+  'surface-home-cleaners': 'floor-cleaner',
+  'industrial-raw-materials': 'soap-noodles',
+};
+const SHAPE: Record<string, string> = { 'soap-noodles': 'sack' };
+const groupCards = groups.map((g) => {
+  const slug = g.category.data.slug;
+  const product = GROUP_PHOTO[slug];
+  const pic = product ? productPicture(product, SHAPE[product] ?? 'bottle', slug) : undefined;
+  // The 800px photo (or the 600px studio render): the cards are never wider than ~180px.
+  const src = pic ? (pic.srcset.split(', ')[0]?.split(' ')[0] ?? pic.src) : undefined;
+  const isRender = pic?.kind === 'render';
+  return { slug, title: g.category.data.title, en: english[slug], src, isRender };
+});
+
+const endpoint = isConfiguredEndpoint(site.enquiry.endpoint) ? site.enquiry.endpoint : '';
+const action = endpoint || `mailto:${site.contact.email}`;
+const waPlain = buildWhatsAppUrl(site.contact.whatsapp, {});
+const total = STEP_IDS.length;
+const titleId = (id: string) => `enq-h-${id}`;
+---
+
+<form
+  class="sq"
+  method="post"
+  action={action}
+  enctype={endpoint ? undefined : 'text/plain'}
+  data-step-enquiry
+  data-endpoint={endpoint}
+  data-lang={lang}
+  data-language-name={info.native}
+  data-whatsapp={site.contact.whatsapp}
+  data-email={site.contact.email}
+  data-english={JSON.stringify(english)}
+  data-variants={JSON.stringify(variants)}
+  data-t-step-of={s.stepOf}
+  data-t-remove={s.remove}
+  data-t-edit={s.edit}
+  data-t-success={s.successH}
+  data-t-sending={s.sending}
+>
+  <input type="hidden" name="leadId" value="" data-lead />
+  <input type="hidden" name="stage" value="submitted" />
+  <input type="hidden" name="language" value={info.native} />
+
+  <div class="sq-head" data-chrome hidden>
+    <p class="sq-count" data-step-label aria-live="off">{s.stepOf.replace('{n}', '1').replace('{m}', String(total))}</p>
+    <div class="sq-progress" aria-hidden="true"><span data-progress></span></div>
+    <p class="sq-wa-early" data-wa-early hidden>
+      <a href={waPlain} target="_blank" rel="noopener" data-wa-early-link>{s.waEarly} <span class="arr" aria-hidden="true">↗</span></a>
+    </p>
+  </div>
+
+  <div class="sq-stage" data-stage>
+    {/* 1. Contact */}
+    <section class="sq-step" data-step="contact" aria-labelledby={titleId('contact')}>
+      <h3 id={titleId('contact')} tabindex="-1">{s.titles.contact}</h3>
+      <p class="sq-helper">{s.helpers.contact}</p>
+      <div class="sq-grid">
+        <div class="sq-field">
+          <label for="enq-name">{f.name}</label>
+          <input id="enq-name" name="name" type="text" autocomplete="name" required enterkeyhint="next" />
+          <p class="sq-error" id="enq-err-name" data-error-for="name" hidden></p>
+        </div>
+        <div class="sq-field">
+          <label for="enq-company">{f.company} <span class="sq-opt">{s.optional}</span></label>
+          <input id="enq-company" name="company" type="text" autocomplete="organization" enterkeyhint="next" />
+        </div>
+        <div class="sq-field">
+          <label for="enq-email">{f.email}</label>
+          <input id="enq-email" name="email" type="email" autocomplete="email" inputmode="email" dir="ltr" enterkeyhint="next" aria-describedby="enq-contact-hint" />
+          <p class="sq-error" id="enq-err-email" data-error-for="email" hidden></p>
+        </div>
+        <div class="sq-field">
+          <label for="enq-phone">{f.phone} <span class="sq-opt">{f.phoneHint}</span></label>
+          <input id="enq-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr" enterkeyhint="next" aria-describedby="enq-contact-hint" />
+        </div>
+      </div>
+      <p class="sq-hint" id="enq-contact-hint">{s.contactHint}</p>
+      <p class="sq-privacy">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M4.5 7V5.5a3.5 3.5 0 0 1 7 0V7M3.5 7h9v6.5h-9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+        <span>{s.privacy}</span>
+      </p>
+    </section>
+
+    {/* 2. Product group */}
+    <section class="sq-step" data-step="group" aria-labelledby={titleId('group')}>
+      <h3 id={titleId('group')} tabindex="-1">{s.titles.group}</h3>
+      <p class="sq-helper">{s.helpers.group}</p>
+      <div class="sq-cards" role="radiogroup" aria-labelledby={titleId('group')} data-group="group">
+        {
+          groupCards.map((g) => (
+            <label class="sq-card sq-opt-item" data-cat={g.slug}>
+              <input type="radio" name="group" id={`enq-group-${g.slug}`} value={g.en} data-key={g.slug} />
+              <span class:list={['sq-card-media', g.isRender && 'is-render']} aria-hidden="true">
+                {g.src && <img src={g.src} alt="" width={g.isRender ? 600 : 800} height={g.isRender ? 750 : 600} loading="lazy" decoding="async" />}
+              </span>
+              <span class="sq-card-label">{g.title}</span>
+              <span class="sq-badge" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="12" height="12"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </span>
+            </label>
+          ))
+        }
+        <label class="sq-card sq-card--other sq-opt-item">
+          <input type="radio" name="group" id="enq-group-other" value={ENGLISH.groupOther} data-key="other" data-other="productOther" />
+          <span class="sq-plus" aria-hidden="true">+</span>
+          <span class="sq-card-label">{s.groupOther}</span>
+          <span class="sq-badge" aria-hidden="true">
+            <svg viewBox="0 0 16 16" width="12" height="12"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </span>
+        </label>
+      </div>
+      <div class="sq-field sq-other" data-other-for="productOther">
+        <label for="enq-product-other" class="visually-hidden">{s.groupOther}</label>
+        <input id="enq-product-other" name="productOther" type="text" placeholder={s.groupOtherPlaceholder} enterkeyhint="next" />
+        <p class="sq-error" id="enq-err-productOther" data-error-for="productOther" hidden></p>
+      </div>
+      <p class="sq-error" id="enq-err-group" data-error-for="group" hidden></p>
+    </section>
+
+    {/* 3. Product (pills of the chosen range) */}
+    <section class="sq-step" data-step="product" aria-labelledby={titleId('product')}>
+      <h3 id={titleId('product')} tabindex="-1">{s.titles.product}</h3>
+      <p class="sq-helper">{s.helpers.product}</p>
+      {
+        groups.map((g) => {
+          const cat = g.category.data.slug;
+          return (
+            <div class="sq-products" data-products-for={cat} data-cat={cat}>
+              <p class="sq-range" id={`enq-range-${cat}`}>{g.category.data.title}</p>
+              <div class="sq-pills" role="radiogroup" aria-labelledby={`${titleId('product')} enq-range-${cat}`} data-group="products">
+                {g.products.map((p) => (
+                  <label class="sq-pill sq-opt-item">
+                    <input type="radio" name="product" id={`enq-product-${cat}-${p.data.slug}`} value={english[p.data.slug]} data-key={p.data.slug} />
+                    <span>{p.data.title}</span>
+                  </label>
+                ))}
+                <label class="sq-pill sq-pill--quiet sq-opt-item">
+                  <input type="radio" name="product" id={`enq-product-${cat}-several`} value={ENGLISH.product.several} data-key="several" data-special />
+                  <span>{s.productSeveral}</span>
+                </label>
+                <label class="sq-pill sq-pill--quiet sq-opt-item">
+                  <input type="radio" name="product" id={`enq-product-${cat}-not-sure`} value={ENGLISH.product['not-sure']} data-key="not-sure" data-special />
+                  <span>{s.productNotSure}</span>
+                </label>
+              </div>
+            </div>
+          );
+        })
+      }
+      <p class="sq-error" id="enq-err-products" data-error-for="products" hidden></p>
+    </section>
+
+    {/* 4. Quantity */}
+    <section class="sq-step" data-step="quantity" aria-labelledby={titleId('quantity')}>
+      <h3 id={titleId('quantity')} tabindex="-1">{s.titles.quantity}</h3>
+      <p class="sq-helper">{s.helpers.quantity}</p>
+      <div class="sq-pills sq-pills--stack" role="radiogroup" aria-labelledby={titleId('quantity')} data-group="quantity">
+        {
+          QUANTITY_KEYS.map((k, i) => (
+            <label class="sq-pill sq-opt-item">
+              <input type="radio" name="quantity" id={`enq-quantity-${k.replace('+', 'plus')}`} value={ENGLISH.quantity[k]} data-key={k} />
+              <span>{s.quantities[i]}</span>
+            </label>
+          ))
+        }
+        <label class="sq-pill sq-pill--quiet sq-opt-item">
+          <input type="radio" name="quantity" id="enq-quantity-other" value="Another amount" data-key="other" data-other="quantityOther" />
+          <span>{s.quantityOther}</span>
+        </label>
+      </div>
+      <div class="sq-field sq-other" data-other-for="quantityOther">
+        <label for="enq-quantity-other-text" class="visually-hidden">{s.quantityOther}</label>
+        <input id="enq-quantity-other-text" name="quantityOther" type="text" placeholder={s.quantityOtherPlaceholder} enterkeyhint="next" />
+        <p class="sq-error" id="enq-err-quantityOther" data-error-for="quantityOther" hidden></p>
+      </div>
+      <p class="sq-error" id="enq-err-quantity" data-error-for="quantity" hidden></p>
+    </section>
+
+    {/* 5. Destination */}
+    <section class="sq-step" data-step="destination" aria-labelledby={titleId('destination')}>
+      <h3 id={titleId('destination')} tabindex="-1">{s.titles.destination}</h3>
+      <p class="sq-helper">{s.helpers.destination}</p>
+      <div class="sq-grid">
+        <div class="sq-field sq-combo" data-combo>
+          <label for="enq-country">{s.country}</label>
+          <input id="enq-country" name="country" type="text" autocomplete="country-name" placeholder={s.countryPlaceholder} enterkeyhint="next" spellcheck="false" />
+          <ul class="sq-listbox" id="enq-country-list" role="listbox" aria-label={s.country} hidden></ul>
+          <input type="hidden" name="countryCode" value="" data-country-code />
+          <p class="sq-error" id="enq-err-country" data-error-for="country" hidden></p>
+        </div>
+        <div class="sq-field">
+          <label for="enq-port">{s.port} <span class="sq-opt">{s.optional}</span></label>
+          <input id="enq-port" name="port" type="text" enterkeyhint="next" />
+        </div>
+      </div>
+    </section>
+
+    {/* 6. Terms */}
+    <section class="sq-step" data-step="terms" aria-labelledby={titleId('terms')}>
+      <h3 id={titleId('terms')} tabindex="-1">{s.titles.terms}</h3>
+      <p class="sq-helper">{s.helpers.terms}</p>
+      <div class="sq-terms" role="radiogroup" aria-labelledby={titleId('terms')} data-group="terms">
+        {
+          TERMS_KEYS.map((k) => {
+            const t = s.terms.find((x) => x.key === k) ?? s.terms[0];
+            return (
+              <label class:list={['sq-term sq-opt-item', k === 'not-sure' && 'sq-term--lead']}>
+                <input type="radio" name="terms" id={`enq-terms-${k.toLowerCase()}`} value={ENGLISH.terms[k]} data-key={k} aria-describedby={`enq-terms-${k.toLowerCase()}-line`} />
+                <span class="sq-term-title">{t.title}</span>
+                <span class="sq-term-line" id={`enq-terms-${k.toLowerCase()}-line`}>{t.line}</span>
+                <span class="sq-badge" aria-hidden="true">
+                  <svg viewBox="0 0 16 16" width="12" height="12"><path d="M3.5 8.5l3 3 6-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </span>
+              </label>
+            );
+          })
+        }
+      </div>
+      <p class="sq-error" id="enq-err-terms" data-error-for="terms" hidden></p>
+    </section>
+
+    {/* 7. Notes, brand, summary, send */}
+    <section class="sq-step" data-step="send" aria-labelledby={titleId('send')}>
+      <h3 id={titleId('send')} tabindex="-1">{s.titles.send}</h3>
+      <p class="sq-helper">{s.helpers.send}</p>
+      <div class="sq-field">
+        <label for="enq-notes">{s.notes} <span class="sq-opt">{s.optional}</span></label>
+        <textarea id="enq-notes" name="notes" rows="4" placeholder={s.notesPlaceholder}></textarea>
+      </div>
+      <fieldset class="sq-brand">
+        <legend>{s.brand} <span class="sq-opt">{s.optional}</span></legend>
+        <div class="sq-pills" data-group="privateLabel">
+          {
+            BRAND_KEYS.map((k, i) => (
+              <label class="sq-pill sq-pill--sm sq-opt-item">
+                <input type="radio" name="privateLabel" id={`enq-brand-${k.toLowerCase()}`} value={k} data-key={k} />
+                <span>{s.brandOptions[i]}</span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+      <div class="sq-summary" data-chrome hidden>
+        <h4 class="sq-summary-h">{s.summaryH}</h4>
+        <dl data-summary></dl>
+      </div>
+      <div class="sq-send-row">
+        <button class="btn sq-send" type="submit" data-send>
+          <span class="sq-send-stack">
+            <span class="sq-send-idle">{s.send}</span>
+            <span class="sq-send-busy" aria-hidden="true"><span class="sq-spin"></span>{s.sending}</span>
+          </span>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <div class="sq-foot" data-chrome hidden>
+    <button type="button" class="sq-back" data-back><span class="sq-back-arr" aria-hidden="true">←</span> {s.back}</button>
+    <div class="sq-foot-end">
+      <button type="button" class="sq-skip" data-skip>{s.skip}</button>
+      <button type="button" class="btn sq-next" data-next>{s.next}</button>
+    </div>
+  </div>
+
+  {/* A box people never see or reach; simple spam bots tick it. */}
+  <div class="sq-hp" aria-hidden="true">
+    <label>Leave this box unticked <input type="checkbox" name="website_confirm" value="1" tabindex="-1" autocomplete="off" /></label>
+  </div>
+
+  <p class="visually-hidden" role="status" aria-live="polite" data-status></p>
+
+  <div class="sq-done" data-success hidden>
+    <svg class="sq-tick" viewBox="0 0 64 64" width="64" height="64" aria-hidden="true">
+      <circle cx="32" cy="32" r="32"></circle>
+      <path d="M20 33l8 8 16-18" pathLength="1" data-tick></path>
+    </svg>
+    <h3 tabindex="-1" data-success-title>{s.successH.replace('{name}', '').replace(/[,،，\s]+$/u, '')}</h3>
+    <p>{s.successLine}</p>
+  </div>
+
+  <div class="sq-fail" data-fail hidden role="region" aria-labelledby="enq-fail-h">
+    <h3 id="enq-fail-h" tabindex="-1">{s.failH}</h3>
+    <div class="sq-fail-actions">
+      <a class="btn" data-send-whatsapp href={waPlain} target="_blank" rel="noopener">{f.sendWa}</a>
+      <a class="btn btn--soft" data-send-email href={`mailto:${site.contact.email}`}>{f.sendEmail}</a>
+    </div>
+    <p class="enq-direct">
+      {f.direct}{' '}
+      <span class="enq-direct-item">{ui.contact.email}: <span dir="ltr" data-direct-email>{site.contact.email}</span>{' '}</span>
+      <span class="enq-direct-item">{ui.contact.phone}: <span dir="ltr" data-direct-phone>{site.contact.phone}</span></span>
+    </p>
+    <p class="note">{f.sendNote}</p>
+  </div>
+</form>
+

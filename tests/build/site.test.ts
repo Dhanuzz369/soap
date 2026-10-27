@@ -198,8 +198,8 @@ describe('enquiry hand-off (audit B13)', () => {
   it('every contact page has a polite status region and the email and phone as plain text beside the send buttons', () => {
     for (const f of contactPages) {
       const html = read(f);
-      expect(html, f).toMatch(/role="status" aria-live="polite" data-enquiry-status/);
-      const panel = html.slice(html.indexOf('data-enquiry-send'), html.indexOf('</form>'));
+      expect(html, f).toMatch(/role="status" aria-live="polite" data-status/);
+      const panel = html.slice(html.indexOf('data-fail'), html.indexOf('</form>'));
       expect(panel, f).toContain(`data-direct-email>${site.contact.email}</span>`);
       expect(panel, f).toContain(`data-direct-phone>${site.contact.phone}</span>`);
     }

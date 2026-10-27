@@ -90,9 +90,6 @@ html:lang(ar) .answer::before {
 [dir='rtl'] .nav-panel {
   transform-origin: top left;
 }
-[dir='rtl'] .enq select {
-  background-position: left 22px center;
-}
 /* the neem leaves slide in from the start edge */
 @media (prefers-reduced-motion: no-preference) {
   [dir='rtl'] .process-leaves[data-reveal].is-pending {

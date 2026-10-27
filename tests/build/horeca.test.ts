@@ -106,7 +106,7 @@ describe.each(LOCALES.map((l) => l.code as Locale))('/horeca/ in %s', (lang) => 
     const cta = html.match(/<a class="btn hc-cta"[^>]*>/)![0];
     const href = decode(attr(cta, 'href')!);
     expect(href.startsWith(`${contact}?`)).toBe(true);
-    expect(parseEnquiryParams(href.slice(href.indexOf('?')))).toEqual({ products: [], message: H.message.general });
+    expect(parseEnquiryParams(href.slice(href.indexOf('?')))).toEqual({ products: [], message: H.message.general, variety: '' });
     expect(attr(cta, 'data-contact')).toBe(contact);
     expect(JSON.parse(decode(attr(cta, 'data-msg')!))).toEqual(H.message);
     expect(decode(cta + between(html, cta, '</a>'))).toContain(H.panel.cta);
