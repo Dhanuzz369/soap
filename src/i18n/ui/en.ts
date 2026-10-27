@@ -446,6 +446,87 @@ const en = {
     direct: 'Or contact us directly:',
   },
 
+  /**
+   * The step-by-step enquiry form on the contact page (src/components/StepEnquiry.astro).
+   * One small question per screen. The values sent to GoodBiz stay English (src/lib/enquiry-steps.ts);
+   * these are only the labels a buyer sees. Keep `terms[].key` exactly as in English (it is the value
+   * sent), keep FOB / CFR / CIF in Latin letters, and keep arrays in the same order and length.
+   * Honesty: no promised minimums, prices, certificates or delivery times. "No fixed minimum" is true.
+   */
+  steps: {
+    stepOf: 'Step {n} of {m}',
+    next: 'Next',
+    back: 'Back',
+    skip: 'Skip this step',
+    optional: '(optional)',
+    titles: {
+      contact: 'How can we reach you?',
+      group: 'What are you looking for?',
+      product: 'Which product?',
+      quantity: 'How much, roughly?',
+      destination: 'Where should it go?',
+      terms: 'How should we quote shipping?',
+      send: 'Anything to add?',
+    },
+    helpers: {
+      contact: 'Your name, and one way to reply to you.',
+      group: 'Tap a range. You can add details at the end.',
+      product: 'Pick one, or several for a mixed container.',
+      quantity: 'A rough idea is fine. There is no fixed minimum.',
+      destination: 'Your country, and the port or city if you know it.',
+      terms: 'If you are not sure, we will suggest one.',
+      send: 'Check your answers, then send.',
+    },
+    contactHint: 'Email or WhatsApp is enough.',
+    privacy: 'We use these details only to reply to your enquiry. Nothing is shared or added to a mailing list.',
+    groupOther: 'Something else',
+    groupOtherPlaceholder: 'Which product? e.g. hand sanitiser gel, toilet cleaner tablets',
+    productSeveral: 'Several from this range (mixed container)',
+    productNotSure: 'Not sure yet',
+    /** Same order as QUANTITY_KEYS in src/lib/enquiry-steps.ts: trial, 1, 2-5, 6+. */
+    quantities: ['Samples / trial order', '1 container', '2–5 containers', '6+ containers'],
+    quantityOther: 'Another amount',
+    quantityOtherPlaceholder: 'e.g. 3 pallets, or 500 cartons a month',
+    country: 'Country',
+    countryPlaceholder: 'Start typing, e.g. Kenya',
+    port: 'Port or city',
+    /** Incoterms® 2020, in plain words. `key` is the value sent: never translate it. */
+    terms: [
+      { key: 'not-sure', title: 'Not sure, advise me', line: 'We’ll suggest the best option for your port and quote it.' },
+      { key: 'FOB', title: 'FOB', line: 'You arrange and pay for the sea freight; we deliver the goods on board at the Indian port.' },
+      { key: 'CFR', title: 'CFR', line: 'We arrange and pay for the sea freight to your port; you insure the cargo.' },
+      { key: 'CIF', title: 'CIF', line: 'We arrange the sea freight and the insurance to your port.' },
+    ],
+    notes: 'Notes',
+    notesPlaceholder: 'Pack sizes, fragrances, labels, timing…',
+    brand: 'Under your own brand?',
+    /** Same order as BRAND_KEYS: Yes, No, Maybe. */
+    brandOptions: ['Yes', 'No', 'Maybe'],
+    summaryH: 'Your enquiry',
+    /** Row names in the summary above the Send button. */
+    summary: {
+      contact: 'Contact',
+      product: 'Product',
+      quantity: 'Quantity',
+      destination: 'Destination',
+      terms: 'Shipping terms',
+    },
+    edit: 'Edit',
+    remove: 'Remove {name}',
+    send: 'Send enquiry',
+    sending: 'Sending…',
+    errors: {
+      required: 'Please fill this in.',
+      contact: 'Add an email or a WhatsApp number so we can reply.',
+      email: 'This email address looks incomplete.',
+      choose: 'Choose one to continue, or skip this step.',
+    },
+    successH: 'Thank you, {name}',
+    successLine: 'Your enquiry has reached our export team. We’ll reply by email or WhatsApp.',
+    waEarly: 'Prefer to talk now? Send this on WhatsApp',
+    failH: 'Almost there: send it in one tap',
+  },
+
   about: {
     title: 'About GoodBiz Hygiene: Soap & Detergent Exporter, India',
     description:

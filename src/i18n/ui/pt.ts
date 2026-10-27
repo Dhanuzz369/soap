@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '3056a29d249f';
+export const sourceHash = '17fbe4dccc51';
 
 const pt: UiPartial = {
   meta: {
@@ -418,6 +418,76 @@ const pt: UiPartial = {
     sendEmail: 'Enviar por e-mail',
     sendNote: 'Cada opção abre o seu próprio aplicativo com a mensagem já escrita, para que você a confira antes de enviar.',
     direct: 'Ou fale conosco diretamente:',
+  },
+
+  steps: {
+    stepOf: 'Etapa {n} de {m}',
+    next: 'Avançar',
+    back: 'Voltar',
+    skip: 'Pular esta etapa',
+    optional: '(opcional)',
+    titles: {
+      contact: 'Como podemos falar com você?',
+      group: 'O que você procura?',
+      product: 'Qual produto?',
+      quantity: 'Qual quantidade, mais ou menos?',
+      destination: 'Para onde vai?',
+      terms: 'Como cotamos o frete?',
+      send: 'Algo a acrescentar?',
+    },
+    helpers: {
+      contact: 'Seu nome e uma forma de responder a você.',
+      group: 'Escolha uma linha. Você pode dar detalhes no final.',
+      product: 'Um, ou vários para um contêiner misto.',
+      quantity: 'Uma ideia aproximada basta. Não há mínimo fixo.',
+      destination: 'Seu país, e o porto ou a cidade, se souber.',
+      terms: 'Se não tiver certeza, sugerimos uma opção.',
+      send: 'Confira suas respostas e envie.',
+    },
+    contactHint: 'Basta um e-mail ou WhatsApp.',
+    privacy: 'Usamos esses dados apenas para responder ao seu pedido. Nada é compartilhado nem incluído em listas de e-mail.',
+    groupOther: 'Outra coisa',
+    groupOtherPlaceholder: 'Qual produto? ex. álcool em gel, pastilhas sanitárias',
+    productSeveral: 'Vários desta linha (contêiner misto)',
+    productNotSure: 'Ainda não sei',
+    quantities: ['Amostras / pedido de teste', '1 contêiner', '2–5 contêineres', '6 ou mais contêineres'],
+    quantityOther: 'Outra quantidade',
+    quantityOtherPlaceholder: 'ex. 3 paletes, ou 500 caixas por mês',
+    country: 'País',
+    countryPlaceholder: 'Comece a digitar, ex. Quênia',
+    port: 'Porto ou cidade',
+    terms: [
+      { key: 'not-sure', title: 'Não sei, me orientem', line: 'Sugerimos a melhor opção para o seu porto e enviamos a cotação.' },
+      { key: 'FOB', title: 'FOB', line: 'Você contrata e paga o frete marítimo; entregamos a mercadoria a bordo no porto indiano.' },
+      { key: 'CFR', title: 'CFR', line: 'Contratamos e pagamos o frete marítimo até o seu porto; você faz o seguro da carga.' },
+      { key: 'CIF', title: 'CIF', line: 'Contratamos o frete marítimo e o seguro até o seu porto.' },
+    ],
+    notes: 'Observações',
+    notesPlaceholder: 'Embalagens, fragrâncias, rótulos, prazos…',
+    brand: 'Com a sua própria marca?',
+    brandOptions: ['Sim', 'Não', 'Talvez'],
+    summaryH: 'Seu pedido',
+    summary: {
+      contact: 'Contato',
+      product: 'Produto',
+      quantity: 'Quantidade',
+      destination: 'Destino',
+      terms: 'Condições de frete',
+    },
+    edit: 'Editar',
+    remove: 'Remover {name}',
+    send: 'Enviar pedido',
+    sending: 'Enviando…',
+    errors: {
+      required: 'Preencha este campo, por favor.',
+      contact: 'Informe um e-mail ou um número de WhatsApp para podermos responder.',
+      email: 'Este e-mail parece incompleto.',
+      choose: 'Escolha uma opção para continuar, ou pule esta etapa.',
+    },
+    successH: 'Obrigado, {name}',
+    successLine: 'Seu pedido chegou à nossa equipe de exportação. Responderemos por e-mail ou WhatsApp.',
+    waEarly: 'Prefere falar agora? Envie pelo WhatsApp',
+    failH: 'Quase lá: envie com um toque',
   },
 
   about: {

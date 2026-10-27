@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '3056a29d249f';
+export const sourceHash = '17fbe4dccc51';
 
 const zh: UiPartial = {
   meta: {
@@ -416,6 +416,76 @@ const zh: UiPartial = {
     sendEmail: '通过电子邮件发送',
     sendNote: '两种方式都会打开您自己的应用并写好信息，您可在发送前检查。',
     direct: '或直接联系我们：',
+  },
+
+  steps: {
+    stepOf: '第 {n} 步，共 {m} 步',
+    next: '下一步',
+    back: '返回',
+    skip: '跳过此步',
+    optional: '（选填）',
+    titles: {
+      contact: '我们如何联系您？',
+      group: '您在找什么产品？',
+      product: '哪种产品？',
+      quantity: '大概需要多少？',
+      destination: '发往哪里？',
+      terms: '运费按哪种条款报价？',
+      send: '还有补充吗？',
+    },
+    helpers: {
+      contact: '您的姓名，以及一种回复您的方式。',
+      group: '选择一个系列，细节可在最后补充。',
+      product: '选一种，或选多种拼一个混装柜。',
+      quantity: '给个大概即可，没有固定起订量。',
+      destination: '您的国家，如知道也请填写港口或城市。',
+      terms: '不确定的话，我们会为您建议。',
+      send: '核对您的回答，然后发送。',
+    },
+    contactHint: '留下邮箱或 WhatsApp 即可。',
+    privacy: '这些信息仅用于回复您的询价，不会被分享，也不会加入任何邮件列表。',
+    groupOther: '其他产品',
+    groupOtherPlaceholder: '哪种产品？例如：免洗洗手凝胶、马桶清洁片',
+    productSeveral: '此系列中的多种（混装柜）',
+    productNotSure: '还不确定',
+    quantities: ['样品 / 试订单', '1 个货柜', '2–5 个货柜', '6 个以上货柜'],
+    quantityOther: '其他数量',
+    quantityOtherPlaceholder: '例如：3 托盘，或每月 500 箱',
+    country: '国家',
+    countryPlaceholder: '开始输入，例如：肯尼亚',
+    port: '港口或城市',
+    terms: [
+      { key: 'not-sure', title: '不确定，请建议', line: '我们会为您的港口推荐最合适的方式并报价。' },
+      { key: 'FOB', title: 'FOB', line: '由您安排并支付海运费；我们在印度港口把货物交到船上。' },
+      { key: 'CFR', title: 'CFR', line: '由我们安排并支付到您港口的海运费；货物保险由您负责。' },
+      { key: 'CIF', title: 'CIF', line: '由我们安排到您港口的海运和保险。' },
+    ],
+    notes: '备注',
+    notesPlaceholder: '包装规格、香型、标签、时间安排……',
+    brand: '使用您自己的品牌吗？',
+    brandOptions: ['是', '否', '也许'],
+    summaryH: '您的询价',
+    summary: {
+      contact: '联系方式',
+      product: '产品',
+      quantity: '数量',
+      destination: '目的地',
+      terms: '运输条款',
+    },
+    edit: '修改',
+    remove: '移除 {name}',
+    send: '发送询价',
+    sending: '正在发送……',
+    errors: {
+      required: '请填写此项。',
+      contact: '请留下邮箱或 WhatsApp 号码，方便我们回复。',
+      email: '此邮箱地址似乎不完整。',
+      choose: '请选择一项继续，或跳过此步。',
+    },
+    successH: '谢谢您，{name}',
+    successLine: '您的询价已送达我们的出口团队。我们会通过邮箱或 WhatsApp 回复您。',
+    waEarly: '想现在就聊？通过 WhatsApp 发送',
+    failH: '就差一步：一键发送',
   },
 
   about: {

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '3056a29d249f';
+export const sourceHash = '17fbe4dccc51';
 
 const vi: UiPartial = {
   meta: {
@@ -418,6 +418,76 @@ const vi: UiPartial = {
     sendEmail: 'Gửi qua Email',
     sendNote: 'Mỗi lựa chọn đều mở ứng dụng của chính Quý khách với nội dung tin nhắn đã soạn sẵn, để Quý khách kiểm tra trước khi gửi.',
     direct: 'Hoặc liên hệ trực tiếp với chúng tôi:',
+  },
+
+  steps: {
+    stepOf: 'Bước {n}/{m}',
+    next: 'Tiếp',
+    back: 'Quay lại',
+    skip: 'Bỏ qua bước này',
+    optional: '(không bắt buộc)',
+    titles: {
+      contact: 'Chúng tôi liên hệ với bạn thế nào?',
+      group: 'Bạn đang tìm gì?',
+      product: 'Sản phẩm nào?',
+      quantity: 'Khoảng bao nhiêu?',
+      destination: 'Giao đến đâu?',
+      terms: 'Báo giá vận chuyển theo điều kiện nào?',
+      send: 'Bạn muốn bổ sung gì không?',
+    },
+    helpers: {
+      contact: 'Tên của bạn, và một cách để chúng tôi trả lời.',
+      group: 'Chọn một dòng hàng. Bạn có thể ghi chi tiết ở cuối.',
+      product: 'Một loại, hoặc nhiều loại cho container ghép.',
+      quantity: 'Ước lượng là đủ. Không có mức tối thiểu cố định.',
+      destination: 'Quốc gia của bạn, và cảng hoặc thành phố nếu biết.',
+      terms: 'Nếu chưa chắc, chúng tôi sẽ gợi ý.',
+      send: 'Kiểm tra câu trả lời rồi gửi.',
+    },
+    contactHint: 'Chỉ cần email hoặc WhatsApp.',
+    privacy: 'Chúng tôi chỉ dùng thông tin này để trả lời yêu cầu của bạn. Không chia sẻ và không thêm vào danh sách gửi thư.',
+    groupOther: 'Sản phẩm khác',
+    groupOtherPlaceholder: 'Sản phẩm nào? vd. gel rửa tay khô, viên tẩy bồn cầu',
+    productSeveral: 'Nhiều loại trong dòng này (container ghép)',
+    productNotSure: 'Chưa chắc',
+    quantities: ['Mẫu / đơn thử', '1 container', '2–5 container', 'Từ 6 container'],
+    quantityOther: 'Số lượng khác',
+    quantityOtherPlaceholder: 'vd. 3 pallet, hoặc 500 thùng mỗi tháng',
+    country: 'Quốc gia',
+    countryPlaceholder: 'Bắt đầu gõ, vd. Kenya',
+    port: 'Cảng hoặc thành phố',
+    terms: [
+      { key: 'not-sure', title: 'Chưa chắc, hãy tư vấn', line: 'Chúng tôi sẽ gợi ý phương án tốt nhất cho cảng của bạn và báo giá.' },
+      { key: 'FOB', title: 'FOB', line: 'Bạn thu xếp và trả cước biển; chúng tôi giao hàng lên tàu tại cảng Ấn Độ.' },
+      { key: 'CFR', title: 'CFR', line: 'Chúng tôi thu xếp và trả cước biển đến cảng của bạn; bạn mua bảo hiểm hàng hóa.' },
+      { key: 'CIF', title: 'CIF', line: 'Chúng tôi thu xếp cước biển và bảo hiểm đến cảng của bạn.' },
+    ],
+    notes: 'Ghi chú',
+    notesPlaceholder: 'Quy cách đóng gói, mùi hương, nhãn, thời gian…',
+    brand: 'Dùng thương hiệu riêng của bạn?',
+    brandOptions: ['Có', 'Không', 'Có thể'],
+    summaryH: 'Yêu cầu của bạn',
+    summary: {
+      contact: 'Liên hệ',
+      product: 'Sản phẩm',
+      quantity: 'Số lượng',
+      destination: 'Điểm đến',
+      terms: 'Điều kiện giao hàng',
+    },
+    edit: 'Sửa',
+    remove: 'Bỏ {name}',
+    send: 'Gửi yêu cầu',
+    sending: 'Đang gửi…',
+    errors: {
+      required: 'Vui lòng điền mục này.',
+      contact: 'Thêm email hoặc số WhatsApp để chúng tôi trả lời.',
+      email: 'Địa chỉ email này có vẻ chưa đầy đủ.',
+      choose: 'Chọn một mục để tiếp tục, hoặc bỏ qua bước này.',
+    },
+    successH: 'Cảm ơn bạn, {name}',
+    successLine: 'Yêu cầu của bạn đã đến đội xuất khẩu của chúng tôi. Chúng tôi sẽ trả lời qua email hoặc WhatsApp.',
+    waEarly: 'Muốn trao đổi ngay? Gửi qua WhatsApp',
+    failH: 'Sắp xong: gửi chỉ với một chạm',
   },
 
   about: {

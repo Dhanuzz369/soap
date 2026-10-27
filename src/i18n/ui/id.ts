@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '3056a29d249f';
+export const sourceHash = '17fbe4dccc51';
 
 const id: UiPartial = {
   meta: {
@@ -418,6 +418,76 @@ const id: UiPartial = {
     sendEmail: 'Kirim via Email',
     sendNote: 'Masing-masing membuka aplikasi Anda sendiri dengan pesan yang sudah tertulis, sehingga Anda dapat memeriksanya sebelum mengirim.',
     direct: 'Atau hubungi kami langsung:',
+  },
+
+  steps: {
+    stepOf: 'Langkah {n} dari {m}',
+    next: 'Lanjut',
+    back: 'Kembali',
+    skip: 'Lewati langkah ini',
+    optional: '(opsional)',
+    titles: {
+      contact: 'Bagaimana kami menghubungi Anda?',
+      group: 'Apa yang Anda cari?',
+      product: 'Produk apa?',
+      quantity: 'Kira-kira berapa banyak?',
+      destination: 'Dikirim ke mana?',
+      terms: 'Bagaimana kami menghitung ongkos kirim?',
+      send: 'Ada tambahan?',
+    },
+    helpers: {
+      contact: 'Nama Anda, dan satu cara untuk membalas Anda.',
+      group: 'Pilih satu lini. Detail bisa ditambahkan di akhir.',
+      product: 'Satu, atau beberapa untuk kontainer campuran.',
+      quantity: 'Perkiraan kasar sudah cukup. Tidak ada minimum tetap.',
+      destination: 'Negara Anda, dan pelabuhan atau kota jika tahu.',
+      terms: 'Jika ragu, kami akan menyarankan pilihan.',
+      send: 'Periksa jawaban Anda, lalu kirim.',
+    },
+    contactHint: 'Cukup email atau WhatsApp.',
+    privacy: 'Kami memakai data ini hanya untuk membalas permintaan Anda. Tidak ada yang dibagikan atau dimasukkan ke milis.',
+    groupOther: 'Yang lain',
+    groupOtherPlaceholder: 'Produk apa? mis. gel pembersih tangan, tablet pembersih kloset',
+    productSeveral: 'Beberapa dari lini ini (kontainer campuran)',
+    productNotSure: 'Belum yakin',
+    quantities: ['Sampel / pesanan uji coba', '1 kontainer', '2–5 kontainer', '6+ kontainer'],
+    quantityOther: 'Jumlah lain',
+    quantityOtherPlaceholder: 'mis. 3 palet, atau 500 karton per bulan',
+    country: 'Negara',
+    countryPlaceholder: 'Mulai mengetik, mis. Kenya',
+    port: 'Pelabuhan atau kota',
+    terms: [
+      { key: 'not-sure', title: 'Belum yakin, beri saran', line: 'Kami akan menyarankan opsi terbaik untuk pelabuhan Anda beserta penawarannya.' },
+      { key: 'FOB', title: 'FOB', line: 'Anda mengatur dan membayar ongkos laut; kami menyerahkan barang di atas kapal di pelabuhan India.' },
+      { key: 'CFR', title: 'CFR', line: 'Kami mengatur dan membayar ongkos laut sampai pelabuhan Anda; Anda mengasuransikan muatan.' },
+      { key: 'CIF', title: 'CIF', line: 'Kami mengatur pengiriman laut dan asuransi sampai pelabuhan Anda.' },
+    ],
+    notes: 'Catatan',
+    notesPlaceholder: 'Ukuran kemasan, aroma, label, waktu…',
+    brand: 'Dengan merek Anda sendiri?',
+    brandOptions: ['Ya', 'Tidak', 'Mungkin'],
+    summaryH: 'Permintaan Anda',
+    summary: {
+      contact: 'Kontak',
+      product: 'Produk',
+      quantity: 'Jumlah',
+      destination: 'Tujuan',
+      terms: 'Syarat pengiriman',
+    },
+    edit: 'Ubah',
+    remove: 'Hapus {name}',
+    send: 'Kirim permintaan',
+    sending: 'Mengirim…',
+    errors: {
+      required: 'Mohon isi bagian ini.',
+      contact: 'Tambahkan email atau nomor WhatsApp agar kami bisa membalas.',
+      email: 'Alamat email ini sepertinya belum lengkap.',
+      choose: 'Pilih salah satu untuk lanjut, atau lewati langkah ini.',
+    },
+    successH: 'Terima kasih, {name}',
+    successLine: 'Permintaan Anda sudah sampai ke tim ekspor kami. Kami akan membalas lewat email atau WhatsApp.',
+    waEarly: 'Ingin bicara sekarang? Kirim lewat WhatsApp',
+    failH: 'Hampir selesai: kirim dengan satu ketukan',
   },
 
   about: {

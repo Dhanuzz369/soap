@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '3056a29d249f';
+export const sourceHash = '17fbe4dccc51';
 
 const es: UiPartial = {
   meta: {
@@ -418,6 +418,76 @@ const es: UiPartial = {
     sendEmail: 'Enviar por correo',
     sendNote: 'Cada opción abre su propia aplicación con el mensaje ya redactado, para que pueda revisarlo antes de enviarlo.',
     direct: 'O contáctenos directamente:',
+  },
+
+  steps: {
+    stepOf: 'Paso {n} de {m}',
+    next: 'Siguiente',
+    back: 'Atrás',
+    skip: 'Saltar este paso',
+    optional: '(opcional)',
+    titles: {
+      contact: '¿Cómo podemos contactarle?',
+      group: '¿Qué está buscando?',
+      product: '¿Qué producto?',
+      quantity: '¿Qué cantidad, más o menos?',
+      destination: '¿A dónde hay que enviarlo?',
+      terms: '¿Cómo cotizamos el envío?',
+      send: '¿Algo que añadir?',
+    },
+    helpers: {
+      contact: 'Su nombre y una forma de responderle.',
+      group: 'Elija una gama. Al final puede añadir detalles.',
+      product: 'Uno, o varios para un contenedor mixto.',
+      quantity: 'Basta una idea aproximada. No hay un mínimo fijo.',
+      destination: 'Su país, y el puerto o la ciudad si los conoce.',
+      terms: 'Si no está seguro, le sugeriremos una opción.',
+      send: 'Revise sus respuestas y envíe.',
+    },
+    contactHint: 'Basta con un email o un WhatsApp.',
+    privacy: 'Usamos estos datos solo para responder a su consulta. No se comparten ni se añaden a ninguna lista de correo.',
+    groupOther: 'Otra cosa',
+    groupOtherPlaceholder: '¿Qué producto? p. ej. gel desinfectante de manos, pastillas para inodoro',
+    productSeveral: 'Varios de esta gama (contenedor mixto)',
+    productNotSure: 'Aún no lo sé',
+    quantities: ['Muestras / pedido de prueba', '1 contenedor', '2–5 contenedores', '6 o más contenedores'],
+    quantityOther: 'Otra cantidad',
+    quantityOtherPlaceholder: 'p. ej. 3 palés, o 500 cajas al mes',
+    country: 'País',
+    countryPlaceholder: 'Empiece a escribir, p. ej. Kenia',
+    port: 'Puerto o ciudad',
+    terms: [
+      { key: 'not-sure', title: 'No estoy seguro, aconséjenme', line: 'Le sugeriremos la mejor opción para su puerto y se la cotizaremos.' },
+      { key: 'FOB', title: 'FOB', line: 'Usted organiza y paga el flete marítimo; entregamos la mercancía a bordo en el puerto indio.' },
+      { key: 'CFR', title: 'CFR', line: 'Organizamos y pagamos el flete marítimo hasta su puerto; usted asegura la carga.' },
+      { key: 'CIF', title: 'CIF', line: 'Organizamos el flete marítimo y el seguro hasta su puerto.' },
+    ],
+    notes: 'Notas',
+    notesPlaceholder: 'Formatos, fragancias, etiquetas, plazos…',
+    brand: '¿Con su propia marca?',
+    brandOptions: ['Sí', 'No', 'Quizás'],
+    summaryH: 'Su consulta',
+    summary: {
+      contact: 'Contacto',
+      product: 'Producto',
+      quantity: 'Cantidad',
+      destination: 'Destino',
+      terms: 'Condiciones de envío',
+    },
+    edit: 'Editar',
+    remove: 'Quitar {name}',
+    send: 'Enviar consulta',
+    sending: 'Enviando…',
+    errors: {
+      required: 'Rellene este campo, por favor.',
+      contact: 'Añada un email o un número de WhatsApp para que podamos responder.',
+      email: 'Esta dirección de email parece incompleta.',
+      choose: 'Elija una opción para continuar, o salte este paso.',
+    },
+    successH: 'Gracias, {name}',
+    successLine: 'Su consulta ha llegado a nuestro equipo de exportación. Le responderemos por email o WhatsApp.',
+    waEarly: '¿Prefiere hablar ahora? Envíelo por WhatsApp',
+    failH: 'Casi listo: envíela con un toque',
   },
 
   about: {

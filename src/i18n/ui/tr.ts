@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '3056a29d249f';
+export const sourceHash = '17fbe4dccc51';
 
 const tr: UiPartial = {
   meta: {
@@ -418,6 +418,76 @@ const tr: UiPartial = {
     sendEmail: 'E-posta ile gönderin',
     sendNote: 'Her biri kendi uygulamanızı mesaj yazılı olarak açar; göndermeden önce kontrol edebilirsiniz.',
     direct: 'Ya da bize doğrudan ulaşın:',
+  },
+
+  steps: {
+    stepOf: 'Adım {n} / {m}',
+    next: 'İleri',
+    back: 'Geri',
+    skip: 'Bu adımı atla',
+    optional: '(isteğe bağlı)',
+    titles: {
+      contact: 'Size nasıl ulaşalım?',
+      group: 'Ne arıyorsunuz?',
+      product: 'Hangi ürün?',
+      quantity: 'Yaklaşık ne kadar?',
+      destination: 'Nereye gidecek?',
+      terms: 'Navlunu nasıl fiyatlayalım?',
+      send: 'Eklemek istediğiniz bir şey var mı?',
+    },
+    helpers: {
+      contact: 'Adınız ve size yanıt verebileceğimiz bir yol.',
+      group: 'Bir ürün grubu seçin. Ayrıntıları sonda ekleyebilirsiniz.',
+      product: 'Bir tane, ya da karışık konteyner için birkaç tane.',
+      quantity: 'Kabaca bir fikir yeterli. Sabit bir alt sınır yok.',
+      destination: 'Ülkeniz, biliyorsanız liman veya şehir.',
+      terms: 'Emin değilseniz biz bir seçenek öneririz.',
+      send: 'Yanıtlarınızı kontrol edin, sonra gönderin.',
+    },
+    contactHint: 'E-posta veya WhatsApp yeterli.',
+    privacy: 'Bu bilgileri yalnızca talebinize yanıt vermek için kullanırız. Hiçbir şey paylaşılmaz veya bir e-posta listesine eklenmez.',
+    groupOther: 'Başka bir şey',
+    groupOtherPlaceholder: 'Hangi ürün? ör. el dezenfektan jeli, klozet temizleme tableti',
+    productSeveral: 'Bu gruptan birkaç ürün (karışık konteyner)',
+    productNotSure: 'Henüz emin değilim',
+    quantities: ['Numune / deneme siparişi', '1 konteyner', '2–5 konteyner', '6+ konteyner'],
+    quantityOther: 'Başka bir miktar',
+    quantityOtherPlaceholder: 'ör. 3 palet ya da ayda 500 koli',
+    country: 'Ülke',
+    countryPlaceholder: 'Yazmaya başlayın, ör. Kenya',
+    port: 'Liman veya şehir',
+    terms: [
+      { key: 'not-sure', title: 'Emin değilim, önerin', line: 'Limanınız için en uygun seçeneği önerir ve fiyatlandırırız.' },
+      { key: 'FOB', title: 'FOB', line: 'Deniz navlununu siz ayarlar ve ödersiniz; biz malı Hindistan limanında gemiye teslim ederiz.' },
+      { key: 'CFR', title: 'CFR', line: 'Limanınıza kadar deniz navlununu biz ayarlar ve öderiz; yükü siz sigortalarsınız.' },
+      { key: 'CIF', title: 'CIF', line: 'Limanınıza kadar deniz navlununu ve sigortayı biz ayarlarız.' },
+    ],
+    notes: 'Notlar',
+    notesPlaceholder: 'Ambalaj boyutları, kokular, etiketler, zamanlama…',
+    brand: 'Kendi markanızla mı?',
+    brandOptions: ['Evet', 'Hayır', 'Belki'],
+    summaryH: 'Talebiniz',
+    summary: {
+      contact: 'İletişim',
+      product: 'Ürün',
+      quantity: 'Miktar',
+      destination: 'Varış yeri',
+      terms: 'Teslim şekli',
+    },
+    edit: 'Düzenle',
+    remove: '{name} kaldır',
+    send: 'Talebi gönder',
+    sending: 'Gönderiliyor…',
+    errors: {
+      required: 'Lütfen bu alanı doldurun.',
+      contact: 'Size yanıt verebilmemiz için bir e-posta veya WhatsApp numarası ekleyin.',
+      email: 'Bu e-posta adresi eksik görünüyor.',
+      choose: 'Devam etmek için birini seçin veya bu adımı atlayın.',
+    },
+    successH: 'Teşekkürler, {name}',
+    successLine: 'Talebiniz ihracat ekibimize ulaştı. E-posta veya WhatsApp ile yanıt vereceğiz.',
+    waEarly: 'Hemen konuşmak mı istersiniz? WhatsApp ile gönderin',
+    failH: 'Neredeyse tamam: tek dokunuşla gönderin',
   },
 
   about: {

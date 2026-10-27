@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '3056a29d249f';
+export const sourceHash = '17fbe4dccc51';
 
 const sw: UiPartial = {
   meta: {
@@ -417,6 +417,76 @@ const sw: UiPartial = {
     sendEmail: 'Tuma kupitia Barua pepe',
     sendNote: 'Kila njia hufungua programu yako mwenyewe ikiwa na ujumbe umeandikwa, ili uweze kuukagua kabla ya kutuma.',
     direct: 'Au wasiliana nasi moja kwa moja:',
+  },
+
+  steps: {
+    stepOf: 'Hatua {n} kati ya {m}',
+    next: 'Endelea',
+    back: 'Rudi',
+    skip: 'Ruka hatua hii',
+    optional: '(si lazima)',
+    titles: {
+      contact: 'Tukufikie vipi?',
+      group: 'Unatafuta nini?',
+      product: 'Bidhaa gani?',
+      quantity: 'Kiasi gani, takriban?',
+      destination: 'Ipelekwe wapi?',
+      terms: 'Tukadirie usafirishaji vipi?',
+      send: 'Kuna la kuongeza?',
+    },
+    helpers: {
+      contact: 'Jina lako, na njia moja ya kukujibu.',
+      group: 'Chagua kundi. Unaweza kuongeza maelezo mwishoni.',
+      product: 'Moja, au kadhaa kwa kontena mchanganyiko.',
+      quantity: 'Makadirio tu yanatosha. Hakuna kiwango cha chini kilichowekwa.',
+      destination: 'Nchi yako, na bandari au mji ukiijua.',
+      terms: 'Ukiwa huna uhakika, tutakupendekezea.',
+      send: 'Kagua majibu yako, kisha tuma.',
+    },
+    contactHint: 'Barua pepe au WhatsApp inatosha.',
+    privacy: 'Tunatumia taarifa hizi kujibu ombi lako tu. Hazishirikiwi wala kuongezwa kwenye orodha ya barua pepe.',
+    groupOther: 'Kitu kingine',
+    groupOtherPlaceholder: 'Bidhaa gani? k.m. jeli ya kusafisha mikono, vidonge vya kusafisha choo',
+    productSeveral: 'Kadhaa kutoka kundi hili (kontena mchanganyiko)',
+    productNotSure: 'Bado sina uhakika',
+    quantities: ['Sampuli / oda ya majaribio', 'Kontena 1', 'Kontena 2–5', 'Kontena 6 au zaidi'],
+    quantityOther: 'Kiasi kingine',
+    quantityOtherPlaceholder: 'k.m. paleti 3, au katoni 500 kwa mwezi',
+    country: 'Nchi',
+    countryPlaceholder: 'Anza kuandika, k.m. Kenya',
+    port: 'Bandari au mji',
+    terms: [
+      { key: 'not-sure', title: 'Sina uhakika, nishauri', line: 'Tutapendekeza chaguo bora kwa bandari yako na kukupa bei.' },
+      { key: 'FOB', title: 'FOB', line: 'Wewe unapanga na kulipia usafiri wa baharini; sisi tunakabidhi mzigo melini katika bandari ya India.' },
+      { key: 'CFR', title: 'CFR', line: 'Sisi tunapanga na kulipia usafiri wa baharini hadi bandari yako; wewe unakatia mzigo bima.' },
+      { key: 'CIF', title: 'CIF', line: 'Sisi tunapanga usafiri wa baharini na bima hadi bandari yako.' },
+    ],
+    notes: 'Maelezo',
+    notesPlaceholder: 'Ukubwa wa vifungashio, harufu, lebo, muda…',
+    brand: 'Kwa chapa yako mwenyewe?',
+    brandOptions: ['Ndiyo', 'Hapana', 'Labda'],
+    summaryH: 'Ombi lako',
+    summary: {
+      contact: 'Mawasiliano',
+      product: 'Bidhaa',
+      quantity: 'Kiasi',
+      destination: 'Unakoenda',
+      terms: 'Masharti ya usafirishaji',
+    },
+    edit: 'Badilisha',
+    remove: 'Ondoa {name}',
+    send: 'Tuma ombi',
+    sending: 'Inatuma…',
+    errors: {
+      required: 'Tafadhali jaza hapa.',
+      contact: 'Ongeza barua pepe au namba ya WhatsApp ili tukujibu.',
+      email: 'Anwani hii ya barua pepe inaonekana haijakamilika.',
+      choose: 'Chagua moja ili kuendelea, au ruka hatua hii.',
+    },
+    successH: 'Asante, {name}',
+    successLine: 'Ombi lako limefika kwa timu yetu ya mauzo ya nje. Tutakujibu kwa barua pepe au WhatsApp.',
+    waEarly: 'Ungependa kuzungumza sasa? Tuma kwa WhatsApp',
+    failH: 'Karibu umemaliza: tuma kwa mguso mmoja',
   },
 
   about: {
