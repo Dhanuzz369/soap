@@ -99,6 +99,13 @@
 .sq.is-enhanced .sq-step:not([data-active]) {
   display: none;
 }
+/* The outgoing step fades out on top, out of the flow (positioned by the script). */
+.sq.is-enhanced .sq-stage {
+  position: relative;
+}
+.sq.is-enhanced .sq-step[data-leaving] {
+  display: block;
+}
 @media (min-width: 960px) {
   .sq.is-enhanced .sq-stage {
     min-height: 440px;

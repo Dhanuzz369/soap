@@ -81,6 +81,8 @@ const titleId = (id: string) => `enq-h-${id}`;
   data-t-edit={s.edit}
   data-t-success={s.successH}
   data-t-sending={s.sending}
+  data-t-errors={JSON.stringify(s.errors)}
+  data-t-summary={JSON.stringify(s.summary)}
 >
   <input type="hidden" name="leadId" value="" data-lead />
   <input type="hidden" name="stage" value="submitted" />
@@ -339,3 +341,7 @@ const titleId = (id: string) => `enq-h-${id}`;
   </div>
 </form>
 
+<script>
+  import { initStepEnquiry } from '../scripts/step-enquiry';
+  document.querySelectorAll<HTMLFormElement>('form[data-step-enquiry]').forEach((form) => initStepEnquiry(form));
+</script>
