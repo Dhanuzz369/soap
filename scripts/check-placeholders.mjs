@@ -34,6 +34,7 @@ for (const f of files) {
 const problems = placeholderProblems({
   contactIsPlaceholder: site.contactIsPlaceholder,
   whatsapp: site.contact?.whatsapp,
+  endpoint: site.enquiry?.endpoint ?? '',
   tokenHits,
 });
 

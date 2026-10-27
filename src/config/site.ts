@@ -26,6 +26,14 @@ const site = {
     whatsapp: '910000000000',
     address: 'PLACEHOLDER, India',
   },
+  /**
+   * Where the enquiry form saves leads: the Google Apps Script web app URL ending in /exec.
+   * Setup: docs/enquiry-sheet-setup.md. While this is the placeholder, the form offers WhatsApp and
+   * email instead, and `npm run check:placeholders` reports it.
+   */
+  enquiry: {
+    endpoint: 'PLACEHOLDER_ENQUIRY_ENDPOINT',
+  },
   exportTerms: {
     incoterms: 'FOB, CIF and CFR available; payment terms agreed per order (T/T or LC)',
     payment: 'Agreed per order (T/T or LC)',
