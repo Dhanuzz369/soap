@@ -50,7 +50,7 @@ describe.each(LANGS)('contacts in %s', (lang) => {
   });
 
   it('the footer contact column, the WhatsApp button and the contact page use the real details', () => {
-    expect(footer).toContain('>hygiene@goodbizglobal.com</a>');
+    expect(footer).toMatch(/>hygiene@(<wbr>)?goodbizglobal\.com<\/a>/);
     expect(footer).toContain('>+91 88847 99369</a>');
     expect(footer).toContain('Bengaluru, Karnataka, India');
     expect(home).toMatch(/class="wa-fab" href="https:\/\/wa\.me\/918884799369[?"]/);

@@ -21,6 +21,7 @@ const company = [
 const year = new Date().getFullYear();
 const tel = site.contact.phone.replace(/[^+\d]/g, '');
 const t = ui.terms;
+const [emailUser, emailDomain] = site.contact.email.split('@');
 // "{name} is a unit of {parent}, {place}.": {parent} is a link to the GoodBiz Global website.
 const [legalBefore, legalAfter = ''] = ui.footer.legal.split('{parent}');
 const legalVars = { name: site.name, place: site.contact.address };
@@ -58,7 +59,8 @@ const parentUrl = site.facts.parentUrl;
         <div>
           <h2>{ui.footer.contact}</h2>
           <ul>
-            <li><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></li>
+            {/* a line break may fall after the @ in a narrow column, never inside the domain */}
+            <li><a href={`mailto:${site.contact.email}`}>{emailUser}@<wbr />{emailDomain}</a></li>
             <li><a href={buildWhatsAppUrl(site.contact.whatsapp, {})} rel="noopener" target="_blank">{ui.footer.whatsapp}</a></li>
             <li><a href={`tel:${tel}`} dir="ltr">{site.contact.phone}</a></li>
             <li>{site.contact.address}</li>
