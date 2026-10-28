@@ -13,7 +13,7 @@ import { getUi } from '../../src/i18n/ui';
 import { FIXED_FIELDS, mergeEntryData } from '../../src/i18n/merge';
 
 const root = process.cwd();
-const COLLS = ['products', 'categories', 'blog'] as const;
+const COLLS = ['products', 'categories', 'blog', 'legal'] as const;
 const slugsOf = (coll: string) =>
   new Set(readdirSync(join(root, 'src/content', coll)).filter((f) => f.endsWith('.md')).map((f) => f.replace(/\.md$/, '')));
 const SLUGS = Object.fromEntries(COLLS.map((c) => [c, slugsOf(c)])) as Record<(typeof COLLS)[number], Set<string>>;

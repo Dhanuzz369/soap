@@ -62,3 +62,37 @@ describe('legal content', () => {
     }
   });
 });
+
+describe('legal translations', () => {
+  const LANGS = ['ar', 'fr', 'es', 'pt', 'ru', 'zh', 'de', 'tr', 'id', 'sw', 'vi'];
+  const shape = (body: string) => ({
+    headings: body.split('\n').filter((l) => /^## /.test(l)).length,
+    bullets: body.split('\n').filter((l) => /^- /.test(l)).length,
+    subBullets: body.split('\n').filter((l) => /^ {2}- /.test(l)).length,
+    tableRows: body.split('\n').filter((l) => /^\|/.test(l)).length,
+    links: [...body.matchAll(/\]\(([^)]+)\)/g)].map((m) => m[1]),
+  });
+  for (const slug of ['privacy', 'cookies']) {
+    const en = read(`src/content/legal/${slug}.md`);
+    for (const lang of LANGS) {
+      it(`${lang}/legal/${slug}.md mirrors the English structure and keeps the fixed facts`, () => {
+        const path = `src/content/i18n/${lang}/legal/${slug}.md`;
+        expect(existsSync(join(ROOT, path)), path).toBe(true);
+        const tr = read(path);
+        expect(tr.data.title, 'title').toBeTruthy();
+        expect(tr.data.title).not.toBe(en.data.title);
+        const n = [...String(tr.data.description)].length;
+        if (lang === 'zh') expect(n >= 70 && n <= 100, `description ${n}`).toBe(true);
+        else expect(n >= 120 && n <= 160, `description ${n}`).toBe(true);
+        expect(shape(tr.content)).toEqual(shape(en.content));
+        expect(tr.content).toContain('hygiene@goodbizglobal.com');
+        if (slug === 'privacy') {
+          for (const s of ['+91 88847 99369', 'Digital Personal Data Protection Act, 2023', '7(a)', '6(1)(b)', '6(1)(f)', '6(1)(c)', 'Privacy request', 'Google Workspace', 'Vercel Inc.', 'HTTPS'])
+            expect(tr.content, s).toContain(s);
+          for (const num of ['24', '30', '90', '18']) expect(tr.content, num).toMatch(new RegExp(`(^|\\D)${num}(\\D|$)`));
+          expect(tr.content).not.toMatch(/\bDPDP\b(?! Act)/); // the Act is cited by its full name
+        }
+      });
+    }
+  }
+});

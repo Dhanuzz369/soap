@@ -124,12 +124,19 @@ describe.each(LOCALES.map((l) => l.code as Locale))('pages in %s', (lang) => {
     expect(problems).toEqual([]);
   });
 
-  it('internal links stay in this language (the language menu excepted)', () => {
+  it('internal links stay in this language (the language menu and declared links to another language excepted)', () => {
     const problems: string[] = [];
     for (const p of list) {
       for (const m of p.html.matchAll(/<(a|form)\s[^>]*>/g)) {
         const tag = m[0];
         if (/\sdata-lang-link=/.test(tag)) continue;
+        // A link that says which language it opens (hreflang), e.g. "Read the English version" on a
+        // translated legal page, may leave this language on purpose; it must point to that language.
+        const hl = attr(tag, 'hreflang');
+        if (hl) {
+          if (splitLocale((attr(tag, 'href') ?? '').split(/[?#]/)[0]).lang !== hl) problems.push(`${p.path} → ${attr(tag, 'href')} (hreflang ${hl})`);
+          continue;
+        }
         const href = attr(tag, m[1] === 'a' ? 'href' : 'action');
         if (!href || !href.startsWith('/') || href.startsWith('//')) continue;
         const clean = href.split(/[?#]/)[0];

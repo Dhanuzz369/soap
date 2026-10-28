@@ -67,6 +67,13 @@
   text-decoration: underline;
   overflow-wrap: anywhere;
 }
+/* Phone numbers, email addresses and storage keys read left to right inside Arabic text too. */
+.legal-body a[href^='tel:'],
+.legal-body a[href^='mailto:'],
+.legal-body code {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
 .legal-body em {
   font-style: normal;
   font-weight: 600;
