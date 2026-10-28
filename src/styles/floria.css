@@ -921,6 +921,51 @@
   }
 }
 
+/* Business details (About): label / value rows divided by hairlines, like a letterhead. */
+.biz-rows {
+  display: grid;
+  min-width: 0;
+  border-top: 1px solid var(--paper-3);
+}
+.biz-rows > div {
+  display: grid;
+  grid-template-columns: minmax(8rem, 13rem) minmax(0, 1fr);
+  gap: 6px var(--gap);
+  padding-block: 18px;
+  border-bottom: 1px solid var(--paper-3);
+}
+.biz-rows dt {
+  font-size: var(--step-small);
+  font-weight: 500;
+  color: var(--ink-soft);
+  padding-top: 0.2em;
+}
+.biz-rows dd {
+  min-width: 0;
+  font-size: var(--step-body);
+  overflow-wrap: anywhere;
+}
+.biz-rows dd > a {
+  color: var(--action);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+.biz-sep {
+  margin-inline: 0.5em;
+  color: var(--ink-soft);
+}
+.biz-regs dd p {
+  max-width: 60ch;
+  margin-bottom: 20px;
+  color: var(--ink-soft);
+}
+@media (max-width: 599.98px) {
+  .biz-rows > div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* pill chips */
 .chips--lg {
   gap: 8px;

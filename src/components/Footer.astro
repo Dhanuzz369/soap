@@ -21,6 +21,10 @@ const company = [
 const year = new Date().getFullYear();
 const tel = site.contact.phone.replace(/[^+\d]/g, '');
 const t = ui.terms;
+// "{name} is a unit of {parent}, {place}.": {parent} is a link to the GoodBiz Global website.
+const [legalBefore, legalAfter = ''] = ui.footer.legal.split('{parent}');
+const legalVars = { name: site.name, place: site.contact.address };
+const parentUrl = site.facts.parentUrl;
 ---
 
 <footer class="site-footer">
@@ -66,7 +70,17 @@ const t = ui.terms;
     <Registrations variant="compact" />
 
     <div class="footer-legal">
-      <p>{fmt(ui.footer.legal, { year, name: site.name, parent: site.parentName })}</p>
+      <p class="footer-unit">
+        <span>© {year} {site.name}.</span>{' '}
+        <span>
+          {fmt(legalBefore, legalVars)}{parentUrl ? <a href={parentUrl} rel="noopener">{site.parentName}</a> : site.parentName}{fmt(legalAfter, legalVars)}
+        </span>{' '}
+        <span class="footer-unit-contact">
+          <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
+          <span aria-hidden="true">·</span>
+          <a href={`tel:${tel}`} dir="ltr">{site.contact.phone}</a>
+        </span>
+      </p>
       <a href="#top">{ui.footer.backToTop}</a>
     </div>
   </div>

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '17fbe4dccc51';
+export const sourceHash = '6c248ec5c8ac';
 
 const vi: UiPartial = {
   meta: {
@@ -187,7 +187,7 @@ const vi: UiPartial = {
     company: 'Công ty',
     contact: 'Liên hệ',
     whatsapp: 'WhatsApp',
-    legal: '© {year} {name}, một công ty thuộc {parent}. Nhà xuất khẩu thương mại từ Ấn Độ.',
+    legal: '{name} là một đơn vị trực thuộc {parent}, {place}.',
     backToTop: 'Lên đầu trang',
     vetting: 'Cách chúng tôi thẩm định nhà sản xuất',
   },
@@ -508,6 +508,12 @@ const vi: UiPartial = {
     basedIn: 'Trụ sở tại',
     founded: 'Thành lập',
     iec: 'Mã số nhà nhập khẩu - xuất khẩu (IEC)',
+    bizH: 'Thông tin doanh nghiệp',
+    bizBusiness: 'Doanh nghiệp',
+    bizBusinessValue: '{name}, đơn vị trực thuộc {parent}',
+    bizPhone: 'Điện thoại / WhatsApp',
+    bizParentSite: 'Trang web của công ty mẹ',
+    bizRegistered: 'Đã đăng ký với',
     vetH: 'Cách chúng tôi thẩm định nhà sản xuất và kiểm tra đơn hàng',
     vetLead: 'GoodBiz Hygiene không tự sản xuất, vì vậy đây là những bước kiểm tra đằng sau mỗi đơn hàng chúng tôi giao. Chỉ những bước chúng tôi thực sự làm mới được liệt kê.',
     vetSteps: [

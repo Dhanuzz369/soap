@@ -198,7 +198,12 @@ const en = {
     company: 'Company',
     contact: 'Contact',
     whatsapp: 'WhatsApp',
-    legal: '© {year} {name}, a {parent} company. Merchant exporter from India.',
+    /**
+     * The legal line at the foot of every page (the owner's wording: "a unit of", no legal form).
+     * {parent} becomes a link to the GoodBiz Global website; {place} is the city, state and country.
+     * The email and phone follow it. "© {year} GoodBiz Hygiene." is printed before it, untranslated.
+     */
+    legal: '{name} is a unit of {parent}, {place}.',
     backToTop: 'Back to top',
     /** Footer link to the vetting section on the About page (/about/#how-we-vet). */
     vetting: 'How we vet manufacturers',
@@ -546,6 +551,13 @@ const en = {
     basedIn: 'Based in',
     founded: 'Founded',
     iec: 'Importer Exporter Code (IEC)',
+    /** "Business details" (About page, #business-details): who the business is and how to reach it. */
+    bizH: 'Business details',
+    bizBusiness: 'Business',
+    bizBusinessValue: '{name}, a unit of {parent}',
+    bizPhone: 'Phone / WhatsApp',
+    bizParentSite: 'Parent company website',
+    bizRegistered: 'Registered with',
     /**
      * "How we vet manufacturers and check orders" (About page, #how-we-vet; linked from the home page and
      * the footer). Only checks GoodBiz Hygiene really makes: never add a step that does not happen.

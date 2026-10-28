@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '17fbe4dccc51';
+export const sourceHash = '6c248ec5c8ac';
 
 const pt: UiPartial = {
   meta: {
@@ -187,7 +187,7 @@ const pt: UiPartial = {
     company: 'Empresa',
     contact: 'Contato',
     whatsapp: 'WhatsApp',
-    legal: '© {year} {name}, uma empresa {parent}. Exportador comercial da Índia.',
+    legal: '{name} é uma unidade da {parent}, {place}.',
     backToTop: 'Voltar ao topo',
     vetting: 'Como verificamos os fabricantes',
   },
@@ -508,6 +508,12 @@ const pt: UiPartial = {
     basedIn: 'Sede em',
     founded: 'Fundação',
     iec: 'Código de Importador e Exportador (IEC)',
+    bizH: 'Dados da empresa',
+    bizBusiness: 'Empresa',
+    bizBusinessValue: '{name}, uma unidade da {parent}',
+    bizPhone: 'Telefone / WhatsApp',
+    bizParentSite: 'Site da empresa-mãe',
+    bizRegistered: 'Registrada em',
     vetH: 'Como verificamos os fabricantes e conferimos os pedidos',
     vetLead: 'A GoodBiz Hygiene não fabrica, por isso estas são as verificações por trás de cada pedido que embarcamos. Só listamos as etapas que de fato realizamos.',
     vetSteps: [

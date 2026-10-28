@@ -51,19 +51,21 @@ Other useful commands:
 
 ```ts
 contact: {
-  email: 'PLACEHOLDER@goodbizhygiene.com',   // your sales email
-  phone: '+91 PLACEHOLDER',                  // shown as text, e.g. '+91 98765 43210'
-  whatsapp: '910000000000',                  // digits only: country code + number, no + or spaces
-  address: 'PLACEHOLDER, India',             // e.g. 'Ahmedabad, Gujarat, India'
+  email: 'hygiene@goodbizglobal.com',   // the sales email
+  phone: '+91 88847 99369',             // shown as text; the structured data uses +918884799369
+  whatsapp: '918884799369',             // digits only: country code + number, no + or spaces
+  address: 'Bengaluru, Karnataka, India',
 },
 ```
+
+These are the real details (set 28 October 2026). The footer's legal line ("GoodBiz Hygiene is a unit of GoodBiz Global, Bengaluru, Karnataka, India", with the email and phone), the About page's "Business details" block, the contact page, the enquiry form's fallback, the WhatsApp button, the structured data and `llms.txt` all read them from here.
 
 In the same file:
 
 - `url`: your website address (see the launch checklist).
 - `exportTerms`: the export terms text shown in the footer, contact, FAQ, export-process and private-label pages. See the note below: some product and blog texts repeat these terms in their own words.
-- `facts`: optional extras (`city`, `iec`, `founded`, `parentUrl`, `agroUrl`). Only fill these in with **true, checkable** information. Leave them out rather than guess.
-- `contactIsPlaceholder`: a safety switch. It is `true` while the contact details above are dummies; **set it to `false` once real details are in.** While it is `true`, `npm run check:placeholders` will not pass at launch.
+- `facts`: optional extras (`city`, `region`, `iec`, `founded`, `parentUrl`, `agroUrl`). Only fill these in with **true, checkable** information. Leave them out rather than guess. Filled in: `city` (Bengaluru), `region` (Karnataka) and `parentUrl` (https://goodbizglobal.com).
+- `contactIsPlaceholder`: a safety switch. It was `true` while the contact details above were dummies and is now `false`. If it is ever `true` again, `npm run check:placeholders` will not pass at launch.
 
 **Note on export terms.** Most pages read the terms from `site.ts`, but the product files and buyer guides also mention them inside normal sentences (for example "FOB, CIF and CFR available; payment terms agreed per order (T/T or LC)" and "3–5 weeks after order confirmation"). If you change `incoterms` or `leadTime`, run `npm test`. The check called "export terms repeated in content files" fails and lists every file in `src/content/` that still has the old wording. Edit those sentences, run `npm test` again, and it passes. (It ignores capital letters, the dash style and small words like "are", and for the lead time it only compares the figure, such as "3–5 weeks after order confirmation".)
 
@@ -199,7 +201,7 @@ Do these **in order**. Steps 1-5 happen before anyone can find the site; steps 6
 ### Before launch
 
 1. **Fill in `src/config/site.ts`:**
-   - `contact`: real email, phone, WhatsApp (digits only, with country code) and address; then set `contactIsPlaceholder: false`.
+   - `contact`: real email, phone, WhatsApp (digits only, with country code) and address, with `contactIsPlaceholder: false`. (Done: the real details are in.)
    - `url`: your real domain, for example `'https://www.goodbizhygiene.com'` (with `https://`, no slash at the end). Canonical links, hreflang, share images, the sitemap, `llms.txt` and IndexNow all use it.
    - `facts`: only true, checkable facts (`city`, `iec`, `founded`, `parentUrl`, `agroUrl`). Leave out anything you cannot prove.
    - `profiles`: the full `https://` addresses of company profiles you own (LinkedIn, IndiaMART, TradeIndia, Alibaba…). Add them as you create them (step 11). They tell Google and AI assistants these profiles are the same company.

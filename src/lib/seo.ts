@@ -32,6 +32,7 @@ import type {
   WithContext,
 } from 'schema-dts';
 import site from '../config/site';
+import { LOCALES } from '../i18n/locales';
 import { memberOfJsonLd } from './registrations';
 import type { ProductData } from './types';
 
@@ -41,6 +42,11 @@ const BASE = () => site.url.replace(/\/$/, '');
 export function absoluteUrl(path: string): string {
   if (/^https?:\/\//.test(path)) return path;
   return BASE() + (path.startsWith('/') ? path : `/${path}`);
+}
+
+/** A phone number as written on the site ("+91 88847 99369") in E.164 form ("+918884799369"). */
+export function telephoneE164(phone: string): string {
+  return phone.replace(/[^+\d]/g, '');
 }
 
 export function pageTitle(title: string): string {
@@ -115,25 +121,25 @@ export function organizationJsonLd(description: string = site.tagline): WithCont
     parentOrganization: { '@type': 'Organization', name: site.parentName, ...(f.parentUrl ? { url: f.parentUrl } : {}) },
     ...(f.founded ? { foundingDate: f.founded } : {}),
     ...(f.iec ? { identifier: { '@type': 'PropertyValue', propertyID: 'IEC (Importer Exporter Code, India)', value: f.iec } } : {}),
-    // The country is a public fact now; the city once `facts.city` is filled in, the street once
-    // the contact details are real.
+    // City, state and country only: the business has no public street address.
     address: {
       '@type': 'PostalAddress',
-      addressCountry: 'IN',
       ...(f.city ? { addressLocality: f.city } : {}),
-      ...(real ? { streetAddress: site.contact.address } : {}),
+      ...(f.region ? { addressRegion: f.region } : {}),
+      addressCountry: 'IN',
     },
     ...(real
       ? {
           email: site.contact.email,
-          telephone: site.contact.phone,
+          telephone: telephoneE164(site.contact.phone),
           contactPoint: {
             '@type': 'ContactPoint',
             contactType: 'sales',
             email: site.contact.email,
-            telephone: site.contact.phone,
+            telephone: telephoneE164(site.contact.phone),
             areaServed: 'Worldwide',
-            availableLanguage: ['English'],
+            // The site's 12 languages: enquiries arrive in each of them (the form sends the language).
+            availableLanguage: LOCALES.map((l) => l.english),
           },
         }
       : {}),

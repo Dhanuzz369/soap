@@ -910,6 +910,20 @@ main {
 .footer-legal a {
   color: var(--on-dark);
 }
+/* "© 2026 GoodBiz Hygiene. GoodBiz Hygiene is a unit of GoodBiz Global, … · email · phone" */
+.footer-unit {
+  max-width: 76ch;
+  color: var(--on-dark-soft);
+  line-height: 1.6;
+}
+.footer-unit-contact {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0 8px;
+}
+.footer-unit-contact a {
+  overflow-wrap: anywhere;
+}
 @media (max-width: 959.98px) {
   .footer-top {
     grid-template-columns: 1fr;

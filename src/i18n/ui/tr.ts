@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '17fbe4dccc51';
+export const sourceHash = '6c248ec5c8ac';
 
 const tr: UiPartial = {
   meta: {
@@ -187,7 +187,7 @@ const tr: UiPartial = {
     company: 'Şirket',
     contact: 'İletişim',
     whatsapp: 'WhatsApp',
-    legal: '© {year} {name}, bir {parent} şirketi. Hindistan’dan ticari ihracatçı.',
+    legal: '{name}, {place} merkezli {parent} bünyesinde bir birimdir.',
     backToTop: 'Başa dön',
     vetting: 'Üreticileri nasıl denetliyoruz',
   },
@@ -508,6 +508,12 @@ const tr: UiPartial = {
     basedIn: 'Merkez',
     founded: 'Kuruluş',
     iec: 'İthalatçı İhracatçı Kodu (IEC)',
+    bizH: 'İşletme bilgileri',
+    bizBusiness: 'İşletme',
+    bizBusinessValue: '{name}, {parent} bünyesinde bir birim',
+    bizPhone: 'Telefon / WhatsApp',
+    bizParentSite: 'Ana şirketin web sitesi',
+    bizRegistered: 'Kayıtlı olduğu kuruluşlar',
     vetH: 'Üreticileri nasıl denetliyor, siparişleri nasıl kontrol ediyoruz',
     vetLead: 'GoodBiz Hygiene üretim yapmaz; bu yüzden gönderdiğimiz her siparişin arkasında aşağıdaki kontroller vardır. Yalnızca gerçekten uyguladığımız adımlar listelenmiştir.',
     vetSteps: [

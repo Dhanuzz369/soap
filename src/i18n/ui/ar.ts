@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '17fbe4dccc51';
+export const sourceHash = '6c248ec5c8ac';
 
 const ar: UiPartial = {
   meta: {
@@ -187,7 +187,7 @@ const ar: UiPartial = {
     company: 'الشركة',
     contact: 'اتصل بنا',
     whatsapp: 'واتساب',
-    legal: '© {year} {name}، إحدى شركات {parent}. مصدّر تاجر من الهند.',
+    legal: '{name} وحدة تابعة لـ {parent}، {place}.',
     backToTop: 'العودة إلى الأعلى',
     vetting: 'كيف نتحقق من المصنّعين',
   },
@@ -508,6 +508,12 @@ const ar: UiPartial = {
     basedIn: 'المقر في',
     founded: 'تأسست',
     iec: 'رمز المستورد والمصدّر (IEC)',
+    bizH: 'بيانات النشاط التجاري',
+    bizBusiness: 'النشاط التجاري',
+    bizBusinessValue: '{name}، وحدة تابعة لـ {parent}',
+    bizPhone: 'الهاتف / واتساب',
+    bizParentSite: 'موقع الشركة الأم',
+    bizRegistered: 'مسجّلة لدى',
     vetH: 'كيف نتحقق من المصنّعين ونفحص الطلبات',
     vetLead: 'لا تُصنّع GoodBiz Hygiene المنتجات بنفسها، لذا هذه هي الفحوص التي تقف وراء كل طلب نشحنه. لا نذكر إلا الخطوات التي نقوم بها فعلاً.',
     vetSteps: [

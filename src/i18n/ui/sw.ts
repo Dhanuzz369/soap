@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '17fbe4dccc51';
+export const sourceHash = '6c248ec5c8ac';
 
 const sw: UiPartial = {
   meta: {
@@ -186,7 +186,7 @@ const sw: UiPartial = {
     company: 'Kampuni',
     contact: 'Mawasiliano',
     whatsapp: 'WhatsApp',
-    legal: '© {year} {name}, kampuni ya {parent}. Msafirishaji nje wa kibiashara kutoka India.',
+    legal: '{name} ni kitengo cha {parent}, {place}.',
     backToTop: 'Rudi juu',
     vetting: 'Jinsi tunavyowakagua watengenezaji',
   },
@@ -507,6 +507,12 @@ const sw: UiPartial = {
     basedIn: 'Makao yake',
     founded: 'Ilianzishwa',
     iec: 'Msimbo wa Mwagizaji na Msafirishaji Nje (IEC)',
+    bizH: 'Maelezo ya biashara',
+    bizBusiness: 'Biashara',
+    bizBusinessValue: '{name}, kitengo cha {parent}',
+    bizPhone: 'Simu / WhatsApp',
+    bizParentSite: 'Tovuti ya kampuni mama',
+    bizRegistered: 'Imesajiliwa na',
     vetH: 'Jinsi tunavyowakagua watengenezaji na kukagua oda',
     vetLead: 'GoodBiz Hygiene haitengenezi bidhaa yenyewe, kwa hiyo hizi ndizo ukaguzi nyuma ya kila oda tunayosafirisha. Ni hatua tunazozichukua kweli pekee ndizo zimeorodheshwa.',
     vetSteps: [

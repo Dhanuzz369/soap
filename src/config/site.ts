@@ -19,12 +19,12 @@ const site = {
   parentName: 'GoodBiz Global' as const,
   url: 'https://www.goodbizhygiene.com',
   launchReady: false,
-  contactIsPlaceholder: true,
+  contactIsPlaceholder: false,
   contact: {
-    email: 'PLACEHOLDER@goodbizhygiene.com',
-    phone: '+91 PLACEHOLDER',
-    whatsapp: '910000000000',
-    address: 'PLACEHOLDER, India',
+    email: 'hygiene@goodbizglobal.com',
+    phone: '+91 88847 99369',
+    whatsapp: '918884799369',
+    address: 'Bengaluru, Karnataka, India',
   },
   /**
    * Where the enquiry form saves leads: the Google Apps Script web app URL ending in /exec.
@@ -40,8 +40,15 @@ const site = {
     port: 'Shipped from major Indian ports',
     leadTime: 'Typically 3–5 weeks after order confirmation, depending on private-label requirements',
   },
-  facts: {} as {
+  /** Only true, checkable facts (README section 2). parentUrl: the GoodBiz Global website. */
+  facts: {
+    city: 'Bengaluru',
+    region: 'Karnataka',
+    parentUrl: 'https://goodbizglobal.com',
+  } as {
     city?: string;
+    /** The Indian state, used in the postal address of the structured data. */
+    region?: string;
     iec?: string;
     founded?: string;
     parentUrl?: string;
