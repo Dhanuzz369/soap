@@ -45,7 +45,10 @@ export function initStepEnquiry(form: HTMLFormElement, deps: Deps = {}): void {
     form.noValidate = false;
     form.querySelectorAll<HTMLElement>('[data-chrome], [data-wa-early]').forEach((el) => (el.hidden = true));
     form.querySelectorAll<HTMLElement>('[data-other-for], [data-stage]').forEach((el) => (el.hidden = false));
-    form.querySelectorAll<HTMLElement>('section[data-step]').forEach((el) => el.removeAttribute('data-active'));
+    form.querySelectorAll<HTMLElement>('section[data-step]').forEach((el) => {
+      el.removeAttribute('data-active');
+      el.inert = false;
+    });
     form.querySelectorAll<HTMLImageElement>('img[data-src]').forEach((img) => (img.src = img.dataset.src ?? ''));
     console.warn('Enquiry form: showing the long form', err);
   }
@@ -160,6 +163,8 @@ function init(form: HTMLFormElement, deps: Deps): void {
   let steps: StepId[] = [];
   let current: StepId = 'contact';
   let returnTo: StepId | null = null;
+  /** The step whose summary row's Edit button was used: focus returns to that button. */
+  let editedRow: StepId | null = null;
   let timer: ReturnType<typeof setTimeout> | undefined;
   const cancel = () => clearTimeout(timer);
   const recompute = () => (steps = visibleSteps(read(), { products: prefilled.length > 0 }));
@@ -207,6 +212,8 @@ function init(form: HTMLFormElement, deps: Deps): void {
       }
     }
     el.setAttribute('data-active', '');
+    // Only the current step can take focus: the others (and the one fading out) are inert.
+    $$('section[data-step]').forEach((sec) => (sec.inert = sec !== el));
     if (dir !== 0 && prev !== el) {
       const dx = 16 * dir * (rtl ? -1 : 1);
       const frames = reduce()
@@ -230,7 +237,11 @@ function init(form: HTMLFormElement, deps: Deps): void {
     if ('on' in waEarly.dataset) waEarly.hidden = next === 'contact';
     refreshWa();
     if (opts.focus !== false) {
-      el.querySelector<HTMLElement>('h3')?.focus({ preventScroll: true });
+      const edit = next === 'send' && editedRow ? form.querySelector<HTMLElement>(`[data-summary] .sq-edit[data-edit-step="${editedRow}"]`) : null;
+      if (next === 'send') editedRow = null;
+      (edit ?? el.querySelector<HTMLElement>('h3'))?.focus({ preventScroll: true });
+      // The heading is read on focus; the live region adds where the buyer is ("Step 3 of 7").
+      if (dir !== 0) status.textContent = $('[data-step-label]').textContent ?? '';
       scrollIntoView();
     }
   };
@@ -282,12 +293,13 @@ function init(form: HTMLFormElement, deps: Deps): void {
   // ---------- moving ----------
   const after = (from: StepId) => {
     recompute();
-    let i = steps.indexOf(from) + 1;
+    const i = steps.indexOf(from) + 1;
+    let next = steps[Math.min(i, steps.length - 1)];
     if (returnTo) {
-      // Back from an Edit: skip ahead over steps that are already answered.
-      while (i < steps.length - 1 && validateStep(steps[i], read()).length === 0) i++;
+      // Back from an Edit: straight to the summary, unless a new range still needs its product.
+      const needsProduct = from === 'group' && steps.includes('product') && validateStep('product', read()).length > 0;
+      next = needsProduct ? 'product' : 'send';
     }
-    const next = steps[Math.min(i, steps.length - 1)];
     if (next === 'send') returnTo = null;
     return next;
   };
@@ -360,11 +372,34 @@ function init(form: HTMLFormElement, deps: Deps): void {
     cancel();
     timer = setTimeout(next, ADVANCE_MS);
   };
+  /**
+   * Option groups as WAI-ARIA radio groups: one tab stop (native), Arrow keys move the choice and
+   * wrap around (Left and Right mirrored in RTL), Home and End go to the first and last option.
+   * None of these advances; Space or Enter chooses and moves on.
+   */
+  const MOVE_KEYS = new Set(['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Home', 'End']);
+  const moveInGroup = (t: HTMLInputElement, key: string) => {
+    const box = t.closest('[data-group]') ?? form;
+    const items = [...box.querySelectorAll<HTMLInputElement>(`input[type=radio][name="${t.name}"]`)].filter((r) => !r.disabled && (r.closest('label') as HTMLElement | null)?.offsetParent !== null);
+    if (!items.length) return;
+    const i = items.indexOf(t);
+    const forward = key === 'ArrowDown' || key === (rtl ? 'ArrowLeft' : 'ArrowRight');
+    const n = items.length;
+    const to = key === 'Home' ? 0 : key === 'End' ? n - 1 : (i + (forward ? 1 : -1) + n) % n;
+    const target = items[to];
+    target.checked = true;
+    target.focus();
+    target.dispatchEvent(new Event('input', { bubbles: true }));
+    target.dispatchEvent(new Event('change', { bubbles: true }));
+  };
   form.addEventListener('keydown', (e) => {
     lastKey = e.key;
     lastKeyAt = performance.now();
     const t = e.target as HTMLElement;
-    if (t instanceof HTMLInputElement && t.type === 'radio' && (e.key === 'Enter' || e.key === ' ')) {
+    if (t instanceof HTMLInputElement && t.type === 'radio' && MOVE_KEYS.has(e.key) && !e.altKey && !e.ctrlKey && !e.metaKey) {
+      e.preventDefault();
+      moveInGroup(t, e.key);
+    } else if (t instanceof HTMLInputElement && t.type === 'radio' && (e.key === 'Enter' || e.key === ' ')) {
       e.preventDefault();
       t.checked = true;
       picked(t);
@@ -383,7 +418,7 @@ function init(form: HTMLFormElement, deps: Deps): void {
     const t = e.target as HTMLInputElement;
     if (t.type !== 'radio') return;
     const key = recentKey();
-    if (key?.startsWith('Arrow')) {
+    if (key && MOVE_KEYS.has(key)) {
       cancel();
       const boxField = OTHER_BOX[t.name];
       if (boxField) otherBox(boxField)!.hidden = t.dataset.key !== 'other';
@@ -469,8 +504,10 @@ function init(form: HTMLFormElement, deps: Deps): void {
           edit.className = 'sq-edit';
           edit.textContent = d.tEdit ?? 'Edit';
           edit.setAttribute('aria-label', `${d.tEdit ?? 'Edit'}: ${r.label}`);
+          edit.dataset.editStep = r.step;
           edit.addEventListener('click', () => {
             returnTo = 'send';
+            editedRow = r.step;
             show(r.step, -1);
           });
           row.append(edit);

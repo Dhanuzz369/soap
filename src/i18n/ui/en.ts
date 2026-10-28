@@ -417,6 +417,8 @@ const en = {
     terms: 'Export terms',
     oftenH: 'Often quoted together',
     oftenText: 'Tap “Add to enquiry” on a card to tick that product in the form above.',
+    /** A skip link at the top of the contact page (keyboard users), after "Skip to content". */
+    skipToForm: 'Skip to the enquiry form',
   },
 
   /** The enquiry form. The message sent to GoodBiz always uses English field names. */

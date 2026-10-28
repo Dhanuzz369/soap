@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '503d02bdd6fc';
+export const sourceHash = '76c1367bd100';
 
 const vi: UiPartial = {
   meta: {
@@ -387,6 +387,7 @@ const vi: UiPartial = {
     terms: 'Điều khoản xuất khẩu',
     oftenH: 'Thường được báo giá cùng nhau',
     oftenText: 'Nhấn “Thêm vào yêu cầu” trên một thẻ sản phẩm để đánh dấu sản phẩm đó trong biểu mẫu phía trên.',
+    skipToForm: 'Chuyển đến biểu mẫu yêu cầu',
   },
 
   form: {

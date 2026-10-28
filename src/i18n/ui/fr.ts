@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '503d02bdd6fc';
+export const sourceHash = '76c1367bd100';
 
 const fr: UiPartial = {
   meta: {
@@ -389,6 +389,7 @@ const fr: UiPartial = {
     terms: 'Conditions export',
     oftenH: 'Souvent demandés ensemble',
     oftenText: 'Touchez « Ajouter à la demande » sur une carte pour cocher ce produit dans le formulaire ci-dessus.',
+    skipToForm: 'Aller au formulaire de demande',
   },
 
   form: {

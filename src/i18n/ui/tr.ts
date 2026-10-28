@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '503d02bdd6fc';
+export const sourceHash = '76c1367bd100';
 
 const tr: UiPartial = {
   meta: {
@@ -387,6 +387,7 @@ const tr: UiPartial = {
     terms: 'İhracat koşulları',
     oftenH: 'Sıklıkla birlikte teklif alınanlar',
     oftenText: 'Yukarıdaki formda o ürünü işaretlemek için bir karttaki “Talebe ekle” düğmesine dokunun.',
+    skipToForm: 'Talep formuna geç',
   },
 
   form: {

@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '503d02bdd6fc';
+export const sourceHash = '76c1367bd100';
 
 const id: UiPartial = {
   meta: {
@@ -387,6 +387,7 @@ const id: UiPartial = {
     terms: 'Ketentuan ekspor',
     oftenH: 'Sering dimintakan penawaran bersamaan',
     oftenText: 'Ketuk “Tambah ke permintaan” pada kartu untuk mencentang produk tersebut di formulir di atas.',
+    skipToForm: 'Langsung ke formulir permintaan',
   },
 
   form: {

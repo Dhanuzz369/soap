@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '503d02bdd6fc';
+export const sourceHash = '76c1367bd100';
 
 const zh: UiPartial = {
   meta: {
@@ -385,6 +385,7 @@ const zh: UiPartial = {
     terms: '出口条款',
     oftenH: '常一并报价的产品',
     oftenText: '点击产品卡片上的“加入询价”，即可在上方表单中勾选该产品。',
+    skipToForm: '跳到询价表单',
   },
 
   form: {

@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '503d02bdd6fc';
+export const sourceHash = '76c1367bd100';
 
 const sw: UiPartial = {
   meta: {
@@ -386,6 +386,7 @@ const sw: UiPartial = {
     terms: 'Masharti ya usafirishaji nje',
     oftenH: 'Mara nyingi huombewa nukuu pamoja',
     oftenText: 'Gusa “Ongeza kwenye ombi” kwenye kadi ili kuchagua bidhaa hiyo kwenye fomu iliyo hapo juu.',
+    skipToForm: 'Ruka hadi fomu ya maulizo',
   },
 
   form: {

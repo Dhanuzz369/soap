@@ -47,6 +47,8 @@ interface Props {
   dark?: boolean;
   /** Extra <link rel="preload"> for the first screen's image (the LCP element). */
   preloadImage?: { href: string; type?: string; srcset?: string; sizes?: string };
+  /** A second skip link after "Skip to content", to the page's main task (e.g. the enquiry form). */
+  skipTo?: { href: string; label: string };
 }
 
 const {
@@ -65,6 +67,7 @@ const {
   noindex = false,
   dark = false,
   preloadImage,
+  skipTo,
 } = Astro.props;
 const { lang, info, ui } = useI18n(Astro.url);
 
@@ -208,6 +211,7 @@ const ar = lang === 'ar';
   </head>
   <body id="top" class:list={{ 'page-dark': dark }}>
     <a class="skip" href="#main">{ui.common.skip}</a>
+    {skipTo && <a class="skip" href={skipTo.href}>{skipTo.label}</a>}
     <Header path={path} tone={dark ? 'dark' : 'light'} />
     <main id="main">
       {!dark && breadcrumbs && breadcrumbs.length > 1 && (
