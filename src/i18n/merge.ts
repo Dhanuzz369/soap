@@ -8,6 +8,7 @@ export const FIXED_FIELDS = {
   products: ['slug', 'category', 'order', 'reviewed', 'hsn', 'related', 'image'],
   categories: ['slug', 'order', 'hsnRange'],
   blog: ['date', 'updated', 'relatedProducts'],
+  legal: ['updated'],
 } as const;
 
 /** Bookkeeping fields that only exist in translation files. */

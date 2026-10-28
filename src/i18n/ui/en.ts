@@ -105,6 +105,9 @@ const en = {
         'café cleaning supplies wholesale',
         'hospitality cleaning products India',
       ],
+      /** The Privacy Policy and Cookie Policy pages. */
+      privacy: ['GoodBiz Hygiene privacy policy', 'privacy policy', 'personal data', 'DPDP Act 2023', 'GDPR'],
+      cookies: ['GoodBiz Hygiene cookie policy', 'cookie policy', 'no cookies', 'browser storage'],
     },
   },
 
@@ -205,6 +208,9 @@ const en = {
      */
     legal: '{name} is a unit of {parent}, {place}.',
     backToTop: 'Back to top',
+    /** Links to the Privacy Policy (/privacy/) and Cookie Policy (/cookies/), beside "Back to top". */
+    privacy: 'Privacy',
+    cookies: 'Cookies',
     /** Footer link to the vetting section on the About page (/about/#how-we-vet). */
     vetting: 'How we vet manufacturers',
   },
@@ -981,6 +987,17 @@ const en = {
     serviceType: 'Wholesale supply of hotel soaps, guest amenities (soap, body wash, hand wash) and housekeeping, kitchen and laundry chemicals for hotels, restaurants and cafés',
     audience: 'Hotels, restaurants, cafés and caterers',
     llms: 'Hotel soaps, guest amenities (soap, body wash, hand wash) and housekeeping, kitchen and laundry chemicals for hotels, restaurants, cafés and caterers, organised by space (guest rooms, kitchen, washrooms, floors, laundry, back-of-house), in catering and housekeeping packs, with private label on guest amenities, mixed containers, no fixed minimum and free samples confirmed per enquiry.',
+  },
+
+  /**
+   * The Privacy Policy and Cookie Policy pages (src/views/Legal.astro). Their text is in
+   * src/content/legal/ and src/content/i18n/<lang>/legal/; these are only the frame around it.
+   * `translationNote` appears on every translated legal page: translate it exactly.
+   */
+  legal: {
+    updated: 'Last updated: {date}',
+    translationNote: 'This translation is provided for convenience. If it differs from the English version, the English version applies.',
+    englishLink: 'Read the English version',
   },
 
   notFound: {

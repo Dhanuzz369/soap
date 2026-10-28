@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6c248ec5c8ac';
+export const sourceHash = 'ebe862927bce';
 
 const zh: UiPartial = {
   meta: {
@@ -110,6 +110,8 @@ const zh: UiPartial = {
         '酒店洗衣房洗衣粉批发',
         '咖啡馆清洁用品',
       ],
+      privacy: ['GoodBiz Hygiene隐私政策', '隐私政策', '个人数据', 'DPDP Act 2023', 'GDPR'],
+      cookies: ['GoodBiz Hygiene Cookie政策', 'Cookie政策', '不使用Cookie', '浏览器存储'],
     },
   },
 
@@ -189,6 +191,8 @@ const zh: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '{name}是{parent}旗下的业务单位，位于{place}。',
     backToTop: '返回顶部',
+    privacy: '隐私',
+    cookies: 'Cookie',
     vetting: '我们如何审核制造商',
   },
 
@@ -854,6 +858,12 @@ const zh: UiPartial = {
     serviceType: '为酒店、餐厅和咖啡馆批量供应酒店香皂、客用洗护品（香皂、沐浴露、洗手液）以及客房、厨房和洗衣清洁剂',
     audience: '酒店、餐厅、咖啡馆和餐饮服务企业',
     llms: '面向酒店、餐厅、咖啡馆和餐饮服务企业的酒店香皂、客用洗护品（香皂、沐浴露、洗手液）以及客房、厨房和洗衣清洁剂，按空间分类（客房、厨房、洗手间、地面、洗衣房、后勤仓库），提供厨房与客房部大包装，客用品可做自有品牌，可混装集装箱，无固定起订量，免费样品按每次询价确认。',
+  },
+
+  legal: {
+    updated: '最后更新：{date}',
+    translationNote: '本译文仅为方便阅读而提供。如与英文版本有任何不一致，以英文版本为准。',
+    englishLink: '阅读英文版本',
   },
 
   notFound: {

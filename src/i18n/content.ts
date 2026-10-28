@@ -12,8 +12,8 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import { DEFAULT_LOCALE, type Locale } from './locales';
 import { mergeEntryData } from './merge';
 
-export type BaseCollection = 'products' | 'categories' | 'blog';
-type I18nCollection = 'productsI18n' | 'categoriesI18n' | 'blogI18n';
+export type BaseCollection = 'products' | 'categories' | 'blog' | 'legal';
+type I18nCollection = 'productsI18n' | 'categoriesI18n' | 'blogI18n' | 'legalI18n';
 type SourceEntry = CollectionEntry<BaseCollection> | CollectionEntry<I18nCollection>;
 
 export type Localized<C extends BaseCollection> = CollectionEntry<C> & {
@@ -29,11 +29,12 @@ const I18N: Record<BaseCollection, I18nCollection> = {
   products: 'productsI18n',
   categories: 'categoriesI18n',
   blog: 'blogI18n',
+  legal: 'legalI18n',
 };
 
-/** The slug used in URLs and translation file names: data.slug, or the file name for posts. */
+/** The slug used in URLs and translation file names: data.slug, or the file name for posts and legal pages. */
 export function slugOf(coll: BaseCollection, entry: { id: string; data: Record<string, unknown> }): string {
-  return coll === 'blog' ? entry.id : String(entry.data.slug ?? entry.id);
+  return coll === 'blog' || coll === 'legal' ? entry.id : String(entry.data.slug ?? entry.id);
 }
 
 const maps = new Map<I18nCollection, Promise<Map<string, CollectionEntry<I18nCollection>>>>();

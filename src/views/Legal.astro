@@ -1,0 +1,60 @@
+---
+/**
+ * The Privacy Policy (/privacy/) and Cookie Policy (/cookies/), in every language.
+ *
+ * A plain reading page on the light ground: breadcrumbs, the title, the date it was last updated
+ * and the text (src/content/legal/<slug>.md, translated in src/content/i18n/<lang>/legal/). A
+ * translated page also says that the English version applies, with a link to it. No PageHero:
+ * these pages are read, not browsed. Styles: src/styles/legal.css.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import EntryBody from '../components/EntryBody.astro';
+import { getLocalized } from '../i18n/content';
+import { localizePath } from '../i18n/locales';
+import { useI18n } from '../i18n/page';
+import { fmtDate } from '../lib/blog';
+import { buildKeywords } from '../lib/seo';
+import '../styles/legal.css';
+
+interface Props {
+  slug: 'privacy' | 'cookies';
+}
+const { slug } = Astro.props;
+const { lang, ui, lp, fmt } = useI18n(Astro.url);
+const entry = (await getLocalized('legal', slug, lang))!;
+const d = entry.data as { title: string; description: string; updated: Date };
+const path = `/${slug}/`;
+const breadcrumbs = [
+  { name: ui.common.home, url: lp('/') },
+  { name: d.title, url: lp(path) },
+];
+const translated = lang !== 'en' && !entry.fallback;
+const [updBefore, updAfter = ''] = ui.legal.updated.split('{date}');
+// On phones a table row becomes a card; its cells are labelled with the column headings
+// (read from the Markdown table's first row, so they follow the page's language).
+const head = (entry.body ?? '').split('\n').find((l) => /^\s*\|/.test(l));
+const columns = head ? head.split('|').slice(1, -1).map((s) => s.trim()) : [];
+const style = columns.map((c, i) => `--th${i + 1}: ${JSON.stringify(c)}`).join('; ');
+---
+
+<BaseLayout title={d.title} description={d.description} path={path} breadcrumbs={breadcrumbs} dateModified={d.updated} keywords={buildKeywords(ui.seo.keywords[slug])}>
+  <article class="wrap legal" aria-labelledby="legal-h">
+    <header class="legal-head">
+      <h1 id="legal-h">{d.title}</h1>
+      <p class="legal-updated">
+        {fmt(updBefore, {})}<time datetime={d.updated.toISOString().slice(0, 10)}>{fmtDate(d.updated, lang)}</time>{fmt(updAfter, {})}
+      </p>
+      {
+        translated && (
+          <p class="legal-note">
+            {ui.legal.translationNote}{' '}
+            <a href={localizePath(path, 'en')} hreflang="en">{ui.legal.englishLink}</a>
+          </p>
+        )
+      }
+    </header>
+    <div class="prose legal-body" style={style || undefined}>
+      <EntryBody entry={entry} />
+    </div>
+  </article>
+</BaseLayout>

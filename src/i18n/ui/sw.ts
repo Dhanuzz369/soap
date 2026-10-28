@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6c248ec5c8ac';
+export const sourceHash = 'ebe862927bce';
 
 const sw: UiPartial = {
   meta: {
@@ -109,6 +109,8 @@ const sw: UiPartial = {
         'sabuni ya kufulia ya hoteli kwa jumla',
         'vifaa vya usafi vya mikahawa',
       ],
+      privacy: ['sera ya faragha GoodBiz Hygiene', 'sera ya faragha', 'data binafsi', 'DPDP Act 2023', 'GDPR'],
+      cookies: ['sera ya vidakuzi GoodBiz Hygiene', 'sera ya vidakuzi', 'bila vidakuzi', 'hifadhi ya kivinjari'],
     },
   },
 
@@ -188,6 +190,8 @@ const sw: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '{name} ni kitengo cha {parent}, {place}.',
     backToTop: 'Rudi juu',
+    privacy: 'Faragha',
+    cookies: 'Vidakuzi',
     vetting: 'Jinsi tunavyowakagua watengenezaji',
   },
 
@@ -921,6 +925,12 @@ const sw: UiPartial = {
     serviceType: 'Usambazaji wa jumla wa sabuni za hoteli, vifaa vya wageni (sabuni, jeli ya kuogea, sabuni ya mikono) na kemikali za usafi kwa hoteli, migahawa na mikahawa',
     audience: 'Hoteli, migahawa, mikahawa na watoa huduma za chakula',
     llms: 'Sabuni za hoteli, vifaa vya wageni (sabuni, jeli ya kuogea, sabuni ya mikono) na kemikali za usafi wa vyumba, jikoni na ufuaji kwa hoteli, migahawa, mikahawa na watoa huduma za chakula, vilivyopangwa kwa eneo (vyumba vya wageni, jikoni, vyoo, sakafu, kufulia, stoo), kwa vifungashio vya jikoni na usafi, pamoja na chapa ya mnunuzi kwenye vifaa vya wageni, kontena mchanganyiko, bila kiwango cha chini maalum, na sampuli za bure zinazothibitishwa kwa kila ulizo.',
+  },
+
+  legal: {
+    updated: 'Ilisasishwa mwisho: {date}',
+    translationNote: 'Tafsiri hii imetolewa kwa urahisi wako. Ikitofautiana na toleo la Kiingereza, toleo la Kiingereza ndilo linalotumika.',
+    englishLink: 'Soma toleo la Kiingereza',
   },
 
   notFound: {

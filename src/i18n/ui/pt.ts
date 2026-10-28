@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6c248ec5c8ac';
+export const sourceHash = 'ebe862927bce';
 
 const pt: UiPartial = {
   meta: {
@@ -110,6 +110,8 @@ const pt: UiPartial = {
         'sabão para lavanderia hoteleira atacado',
         'produtos de limpeza para cafeterias',
       ],
+      privacy: ['política de privacidade GoodBiz Hygiene', 'política de privacidade', 'dados pessoais', 'DPDP Act 2023', 'RGPD'],
+      cookies: ['política de cookies GoodBiz Hygiene', 'política de cookies', 'sem cookies', 'armazenamento do navegador'],
     },
   },
 
@@ -189,6 +191,8 @@ const pt: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '{name} é uma unidade da {parent}, {place}.',
     backToTop: 'Voltar ao topo',
+    privacy: 'Privacidade',
+    cookies: 'Cookies',
     vetting: 'Como verificamos os fabricantes',
   },
 
@@ -916,6 +920,12 @@ const pt: UiPartial = {
     serviceType: 'Fornecimento em atacado de sabonetes de hotel, amenities (sabonete, gel de banho, sabonete líquido) e produtos de limpeza para hotéis, restaurantes e cafés',
     audience: 'Hotéis, restaurantes, cafés e empresas de catering',
     llms: 'Sabonetes de hotel, amenities (sabonete, gel de banho, sabonete líquido) e produtos de limpeza para governança, cozinha e lavanderia, para hotéis, restaurantes, cafés e catering, organizados por espaço (quartos, cozinha, banheiros, pisos, lavanderia, almoxarifado), em embalagens para cozinha e governança, com marca própria nos amenities, contêineres mistos, sem mínimo fixo e amostras grátis confirmadas a cada consulta.',
+  },
+
+  legal: {
+    updated: 'Última atualização: {date}',
+    translationNote: 'Esta tradução é fornecida para sua conveniência. Se houver diferença em relação à versão em inglês, aplica-se a versão em inglês.',
+    englishLink: 'Ler a versão em inglês',
   },
 
   notFound: {

@@ -38,7 +38,7 @@ Do all of these. Nothing else needs to change.
 3. Translate every string **from the English source `src/i18n/ui/en.ts`**, not from the French. Use French only to see the structure.
 4. Do not rename, add or remove keys. Arrays (lists in `[ ]`) must keep exactly the same number of items in the same order.
 
-### 2.2 The content (36 files, create)
+### 2.2 The content (38 files, create)
 
 Create these folders:
 
@@ -46,6 +46,7 @@ Create these folders:
 src/content/i18n/<lang>/products/
 src/content/i18n/<lang>/categories/
 src/content/i18n/<lang>/blog/
+src/content/i18n/<lang>/legal/
 ```
 
 Then, for every English file, create a file with **the same file name**:
@@ -55,6 +56,7 @@ Then, for every English file, create a file with **the same file name**:
 | `src/content/products/<slug>.md` (23 files) | `src/content/i18n/<lang>/products/<slug>.md` |
 | `src/content/categories/<slug>.md` (5 files) | `src/content/i18n/<lang>/categories/<slug>.md` |
 | `src/content/blog/<slug>.md` (8 files) | `src/content/i18n/<lang>/blog/<slug>.md` |
+| `src/content/legal/<slug>.md` (2 files: `privacy`, `cookies`) | `src/content/i18n/<lang>/legal/<slug>.md` |
 
 The easiest way: copy the English file into your folder, then translate it in place. Never rename a file. `npm run i18n:check -- --lang <lang>` lists every file still missing.
 
@@ -122,6 +124,18 @@ The tests check this, so that changing the terms later finds every file to updat
 - Keep the indentation exactly as in the English file (two spaces).
 
 ---
+
+### 3.8 The Privacy Policy and Cookie Policy (`legal/`)
+
+These are legal texts. The English version applies; every translated page automatically shows the line in `legal.translationNote` of your UI file ("This translation is provided for convenience. If it differs from the English version, the English version applies.") with a link to the English page. Translate faithfully and completely:
+
+- Translate `title` and `description` (120 to 160 characters; 70 to 100 for Chinese). Keep `updated` exactly as in English.
+- Keep every heading, paragraph, list item and table row, in the same order. Add nothing, leave nothing out, soften nothing.
+- Keep the names of laws and bodies in English, the way they are cited: **Digital Personal Data Protection Act, 2023** (you may add a translation in brackets after it), **General Data Protection Regulation (GDPR)** may use your language's official name with "GDPR", **Data Protection Board of India** (translation in brackets allowed). Keep "section 7(a)" and "Article 6(1)(b)", "6(1)(f)", "6(1)(c)" with their numbers. Use your language's established legal terms for "Data Fiduciary" (keep the English term in brackets), "controller", "legitimate interest", "Standard Contractual Clauses", "data portability".
+- Keep the email address, phone number, the subject line "Privacy request" (in English, in quotes: it is what the team filters on), and every number (24 months, 30 days, 90 days, 18).
+- Keep Google, Google Workspace, Google Sheets, Gmail, Vercel Inc., WhatsApp (Meta), Google Translate, HTTPS, HoReCa.
+- Cookie table: translate the three column headings and the cells; keep each storage key in backticks exactly (`gb-lang`, `gb-horeca`, `goodbiz-enquiry-lead`, `goodbiz-enquiry-contact`, `goodbiz-enquiry-products`). Name buttons as they appear on your language's pages (Next, Send, Clear).
+- Links: keep `(/cookies/)` and the `mailto:` links as in English.
 
 ## 4. Rules for the interface file (`src/i18n/ui/<lang>.ts`)
 

@@ -81,7 +81,11 @@ const parentUrl = site.facts.parentUrl;
           <a href={`tel:${tel}`} dir="ltr">{site.contact.phone}</a>
         </span>
       </p>
-      <a href="#top">{ui.footer.backToTop}</a>
+      <ul class="footer-legal-links">
+        <li><a href={lp('/privacy/')}>{ui.footer.privacy}</a></li>
+        <li><a href={lp('/cookies/')}>{ui.footer.cookies}</a></li>
+        <li><a href="#top">{ui.footer.backToTop}</a></li>
+      </ul>
     </div>
   </div>
 </footer>

@@ -15,13 +15,14 @@ export const ROOT = resolve(process.cwd());
 export const CONTENT = join(ROOT, 'src/content');
 export const I18N_CONTENT = join(CONTENT, 'i18n');
 export const UI_DIR = join(ROOT, 'src/i18n/ui');
-export const COLLECTIONS = ['products', 'categories', 'blog'];
+export const COLLECTIONS = ['products', 'categories', 'blog', 'legal'];
 
 /** Fields that are never translated (they always come from English; src/i18n/merge.ts). */
 export const FIXED_FIELDS = {
   products: ['slug', 'category', 'order', 'reviewed', 'hsn', 'related', 'image'],
   categories: ['slug', 'order', 'hsnRange'],
   blog: ['date', 'updated', 'relatedProducts'],
+  legal: ['updated'],
 };
 
 export const shortHash = (text) => createHash('sha256').update(text.replace(/\r\n/g, '\n').trim()).digest('hex').slice(0, 12);

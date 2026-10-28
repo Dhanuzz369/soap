@@ -64,9 +64,20 @@ const blog = defineCollection({
   }),
 });
 
+/** The Privacy Policy and Cookie Policy (/privacy/, /cookies/): src/content/legal/<slug>.md. */
+const legal = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/legal' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string().min(120).max(160),
+    /** "Last updated" on the page; change it whenever the text changes. */
+    updated: z.coerce.date(),
+  }),
+});
+
 /*
  * Translations (docs/i18n-translator-guide.md). One file per language and entry, mirroring the
- * English file: src/content/i18n/<lang>/{products,categories,blog}/<slug>.md. Every field is
+ * English file: src/content/i18n/<lang>/{products,categories,blog,legal}/<slug>.md. Every field is
  * optional here: a field that is missing falls back to the English value, and fixed fields
  * (slug, category, order, hsn, related, image, gallery src, dates, relatedProducts) always come
  * from the English file. `npm run i18n:check` reports missing and stale files.
@@ -136,4 +147,14 @@ const blogI18n = defineCollection({
   }),
 });
 
-export const collections = { categories, products, blog, productsI18n, categoriesI18n, blogI18n };
+const legalI18n = defineCollection({
+  loader: glob({ pattern: '*/legal/*.md', base: './src/content/i18n', generateId: i18nId }),
+  schema: z.object({
+    ...stamp,
+    title: z.string().optional(),
+    description: z.string().optional(),
+    updated: z.coerce.date().optional(),
+  }),
+});
+
+export const collections = { categories, products, blog, legal, productsI18n, categoriesI18n, blogI18n, legalI18n };

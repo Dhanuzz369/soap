@@ -41,7 +41,7 @@ if (langArg && targets.length === 0) {
 
 const rel = (p) => relative(ROOT, p);
 const read = (p) => matter(readFileSync(p, 'utf8'));
-const LIST_FIELDS = { products: ['variants', 'packSizes', 'packaging', 'specs', 'privateLabel.options', 'faqs', 'gallery'], categories: [], blog: ['faqs'] };
+const LIST_FIELDS = { products: ['variants', 'packSizes', 'packaging', 'specs', 'privateLabel.options', 'faqs', 'gallery'], categories: [], blog: ['faqs'], legal: [] };
 const get = (o, path) => path.split('.').reduce((v, k) => (v == null ? v : v[k]), o);
 const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 
@@ -123,7 +123,7 @@ for (const lang of targets) {
     items.slice(0, limit).forEach((i) => out(`     - ${i}`));
     if (items.length > limit) out(`     … and ${items.length - limit} more (add --verbose to list all)`);
   };
-  if (missing.length === total) out(`   missing: all ${total} content files (create src/content/i18n/${lang}/{products,categories,blog}/)`);
+  if (missing.length === total) out(`   missing: all ${total} content files (create src/content/i18n/${lang}/{products,categories,blog,legal}/)`);
   else list(`missing content files (create in src/content/i18n/${lang}/)`, missing);
   list('stale (update the translation, then: npm run i18n:stamp -- <file>)', stale);
   list('field issues', fieldIssues);

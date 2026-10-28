@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6c248ec5c8ac';
+export const sourceHash = 'ebe862927bce';
 
 const tr: UiPartial = {
   meta: {
@@ -110,6 +110,8 @@ const tr: UiPartial = {
         'otel çamaşırhanesi deterjanı toptan',
         'kafe temizlik malzemeleri',
       ],
+      privacy: ['GoodBiz Hygiene gizlilik politikası', 'gizlilik politikası', 'kişisel veriler', 'DPDP Act 2023', 'GDPR'],
+      cookies: ['GoodBiz Hygiene çerez politikası', 'çerez politikası', 'çerez yok', 'tarayıcı depolama alanı'],
     },
   },
 
@@ -189,6 +191,8 @@ const tr: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '{name}, {place} merkezli {parent} bünyesinde bir birimdir.',
     backToTop: 'Başa dön',
+    privacy: 'Gizlilik',
+    cookies: 'Çerezler',
     vetting: 'Üreticileri nasıl denetliyoruz',
   },
 
@@ -916,6 +920,12 @@ const tr: UiPartial = {
     serviceType: 'Oteller, restoranlar ve kafeler için otel sabunu, misafir ürünleri (sabun, duş jeli, sıvı sabun) ve temizlik kimyasallarının toptan tedariki',
     audience: 'Oteller, restoranlar, kafeler ve catering firmaları',
     llms: 'Oteller, restoranlar, kafeler ve catering firmaları için otel sabunu, misafir ürünleri (sabun, duş jeli, sıvı sabun) ile kat hizmetleri, mutfak ve çamaşırhane temizlik kimyasalları; alana göre düzenlenmiş (misafir odaları, mutfak, tuvaletler, zeminler, çamaşırhane, depo), mutfak ve kat hizmetleri ambalajlarında, buklet ürünlerinde özel marka, karışık konteyner, sabit asgari sipariş olmadan ve her talepte teyit edilen ücretsiz numunelerle.',
+  },
+
+  legal: {
+    updated: 'Son güncelleme: {date}',
+    translationNote: 'Bu çeviri kolaylık sağlamak amacıyla sunulmuştur. İngilizce sürümden farklı olması durumunda İngilizce sürüm geçerlidir.',
+    englishLink: 'İngilizce sürümü okuyun',
   },
 
   notFound: {

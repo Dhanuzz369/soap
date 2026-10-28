@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6c248ec5c8ac';
+export const sourceHash = 'ebe862927bce';
 
 const es: UiPartial = {
   meta: {
@@ -110,6 +110,8 @@ const es: UiPartial = {
         'detergente para lavandería de hotel al por mayor',
         'productos de limpieza para cafeterías',
       ],
+      privacy: ['política de privacidad GoodBiz Hygiene', 'política de privacidad', 'datos personales', 'DPDP Act 2023', 'RGPD'],
+      cookies: ['política de cookies GoodBiz Hygiene', 'política de cookies', 'sin cookies', 'almacenamiento del navegador'],
     },
   },
 
@@ -189,6 +191,8 @@ const es: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '{name} es una unidad de {parent}, {place}.',
     backToTop: 'Volver arriba',
+    privacy: 'Privacidad',
+    cookies: 'Cookies',
     vetting: 'Cómo verificamos a los fabricantes',
   },
 
@@ -916,6 +920,12 @@ const es: UiPartial = {
     serviceType: 'Suministro al por mayor de jabones de hotel, amenities (jabón, gel de ducha, jabón de manos) y químicos de limpieza para hoteles, restaurantes y cafeterías',
     audience: 'Hoteles, restaurantes, cafeterías y empresas de catering',
     llms: 'Jabones de hotel, amenities (jabón, gel de ducha, jabón de manos) y químicos de limpieza para habitaciones, cocina y lavandería, para hoteles, restaurantes, cafeterías y catering, organizados por espacio (habitaciones, cocina, aseos, suelos, lavandería, almacén), en envases para cocina y limpieza, con marca propia en amenities, contenedores mixtos, sin mínimo fijo y muestras gratuitas confirmadas en cada consulta.',
+  },
+
+  legal: {
+    updated: 'Última actualización: {date}',
+    translationNote: 'Esta traducción se ofrece para su comodidad. Si difiere de la versión en inglés, se aplica la versión en inglés.',
+    englishLink: 'Leer la versión en inglés',
   },
 
   notFound: {

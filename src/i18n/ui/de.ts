@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6c248ec5c8ac';
+export const sourceHash = 'ebe862927bce';
 
 const de: UiPartial = {
   meta: {
@@ -110,6 +110,8 @@ const de: UiPartial = {
         'Waschmittel Hotelwäscherei Großgebinde',
         'Reinigungsmittel für Cafés',
       ],
+      privacy: ['GoodBiz Hygiene Datenschutzerklärung', 'Datenschutzerklärung', 'personenbezogene Daten', 'DPDP Act 2023', 'DSGVO'],
+      cookies: ['GoodBiz Hygiene Cookie-Richtlinie', 'Cookie-Richtlinie', 'keine Cookies', 'Browserspeicher'],
     },
   },
 
@@ -189,6 +191,8 @@ const de: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '{name} ist ein Geschäftsbereich von {parent}, {place}.',
     backToTop: 'Nach oben',
+    privacy: 'Datenschutz',
+    cookies: 'Cookies',
     vetting: 'Wie wir Hersteller prüfen',
   },
 
@@ -916,6 +920,12 @@ const de: UiPartial = {
     serviceType: 'Großhandelsbelieferung mit Hotelseife, Gästeartikeln (Seife, Duschgel, Flüssigseife) und Reinigungsmitteln für Hotels, Restaurants und Cafés',
     audience: 'Hotels, Restaurants, Cafés und Caterer',
     llms: 'Hotelseife, Gästeartikel (Seife, Duschgel, Flüssigseife) und Reinigungsmittel für Housekeeping, Küche und Wäscherei, für Hotels, Restaurants, Cafés und Caterer, nach Bereich geordnet (Gästezimmer, Küche, Sanitär, Böden, Wäscherei, Lager), in Gebinden für Küche und Housekeeping, mit Eigenmarke auf Gästeartikeln, Mischcontainern, ohne feste Mindestmenge und mit Gratismustern, die je Anfrage bestätigt werden.',
+  },
+
+  legal: {
+    updated: 'Zuletzt aktualisiert: {date}',
+    translationNote: 'Diese Übersetzung wird zu Ihrer Erleichterung bereitgestellt. Weicht sie von der englischen Fassung ab, gilt die englische Fassung.',
+    englishLink: 'Englische Fassung lesen',
   },
 
   notFound: {

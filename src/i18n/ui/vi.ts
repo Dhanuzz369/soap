@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6c248ec5c8ac';
+export const sourceHash = 'ebe862927bce';
 
 const vi: UiPartial = {
   meta: {
@@ -110,6 +110,8 @@ const vi: UiPartial = {
         'bột giặt cho giặt là khách sạn',
         'đồ vệ sinh cho quán cà phê',
       ],
+      privacy: ['chính sách quyền riêng tư GoodBiz Hygiene', 'chính sách quyền riêng tư', 'dữ liệu cá nhân', 'DPDP Act 2023', 'GDPR'],
+      cookies: ['chính sách cookie GoodBiz Hygiene', 'chính sách cookie', 'không dùng cookie', 'bộ nhớ trình duyệt'],
     },
   },
 
@@ -189,6 +191,8 @@ const vi: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '{name} là một đơn vị trực thuộc {parent}, {place}.',
     backToTop: 'Lên đầu trang',
+    privacy: 'Quyền riêng tư',
+    cookies: 'Cookie',
     vetting: 'Cách chúng tôi thẩm định nhà sản xuất',
   },
 
@@ -916,6 +920,12 @@ const vi: UiPartial = {
     serviceType: 'Cung ứng sỉ xà phòng khách sạn, amenities (xà phòng, sữa tắm, nước rửa tay) và hóa chất vệ sinh cho khách sạn, nhà hàng và quán cà phê',
     audience: 'Khách sạn, nhà hàng, quán cà phê và đơn vị suất ăn',
     llms: 'Xà phòng khách sạn, amenities (xà phòng, sữa tắm, nước rửa tay) và hóa chất vệ sinh buồng phòng, bếp, giặt là cho khách sạn, nhà hàng, quán cà phê và đơn vị suất ăn, sắp xếp theo không gian (phòng khách, bếp, nhà vệ sinh, sàn, giặt là, kho), trong bao bì cho bếp và buồng phòng, có nhãn riêng cho amenities, container ghép, không có đơn tối thiểu cố định và mẫu miễn phí xác nhận theo từng yêu cầu.',
+  },
+
+  legal: {
+    updated: 'Cập nhật lần cuối: {date}',
+    translationNote: 'Bản dịch này được cung cấp để quý khách tiện theo dõi. Nếu có khác biệt so với bản tiếng Anh, bản tiếng Anh được áp dụng.',
+    englishLink: 'Đọc bản tiếng Anh',
   },
 
   notFound: {

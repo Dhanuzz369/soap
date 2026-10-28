@@ -1,0 +1,8 @@
+---
+/* Route only: the page is src/views/Legal.astro. */
+import View from '../../views/Legal.astro';
+import { localeParams } from '../../views/paths';
+export const getStaticPaths = localeParams;
+---
+
+<View slug="privacy" />

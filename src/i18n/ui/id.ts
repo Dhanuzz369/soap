@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6c248ec5c8ac';
+export const sourceHash = 'ebe862927bce';
 
 const id: UiPartial = {
   meta: {
@@ -110,6 +110,8 @@ const id: UiPartial = {
         'deterjen laundry hotel grosir',
         'perlengkapan kebersihan kafe',
       ],
+      privacy: ['kebijakan privasi GoodBiz Hygiene', 'kebijakan privasi', 'data pribadi', 'DPDP Act 2023', 'GDPR'],
+      cookies: ['kebijakan cookie GoodBiz Hygiene', 'kebijakan cookie', 'tanpa cookie', 'penyimpanan browser'],
     },
   },
 
@@ -189,6 +191,8 @@ const id: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '{name} adalah unit dari {parent}, {place}.',
     backToTop: 'Kembali ke atas',
+    privacy: 'Privasi',
+    cookies: 'Cookie',
     vetting: 'Cara kami memeriksa produsen',
   },
 
@@ -916,6 +920,12 @@ const id: UiPartial = {
     serviceType: 'Pasokan grosir sabun hotel, amenities tamu (sabun, sabun mandi cair, sabun cuci tangan), dan bahan kebersihan untuk hotel, restoran, dan kafe',
     audience: 'Hotel, restoran, kafe, dan katering',
     llms: 'Sabun hotel, amenities tamu (sabun, sabun mandi cair, sabun cuci tangan) serta bahan kebersihan housekeeping, dapur, dan laundry untuk hotel, restoran, kafe, dan katering, disusun per ruang (kamar tamu, dapur, toilet, lantai, laundry, gudang), dalam kemasan dapur dan housekeeping, dengan private label untuk amenities, kontainer campuran, tanpa minimum tetap, dan sampel gratis yang dikonfirmasi per permintaan.',
+  },
+
+  legal: {
+    updated: 'Terakhir diperbarui: {date}',
+    translationNote: 'Terjemahan ini disediakan untuk kemudahan Anda. Jika berbeda dari versi bahasa Inggris, yang berlaku adalah versi bahasa Inggris.',
+    englishLink: 'Baca versi bahasa Inggris',
   },
 
   notFound: {

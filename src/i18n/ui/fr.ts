@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '6c248ec5c8ac';
+export const sourceHash = 'ebe862927bce';
 
 const fr: UiPartial = {
   meta: {
@@ -111,6 +111,8 @@ const fr: UiPartial = {
         'lessive professionnelle hôtel en gros',
         'produits d’hygiène pour cafés et restaurants',
       ],
+      privacy: ['politique de confidentialité GoodBiz Hygiene', 'politique de confidentialité', 'données personnelles', 'DPDP Act 2023', 'RGPD'],
+      cookies: ['politique en matière de cookies GoodBiz Hygiene', 'politique cookies', 'sans cookies', 'stockage du navigateur'],
     },
   },
 
@@ -190,6 +192,8 @@ const fr: UiPartial = {
     whatsapp: 'WhatsApp',
     legal: '{name} est une unité de {parent}, {place}.',
     backToTop: 'Haut de page',
+    privacy: 'Confidentialité',
+    cookies: 'Cookies',
     vetting: 'Comment nous contrôlons les fabricants',
   },
 
@@ -918,6 +922,12 @@ const fr: UiPartial = {
     serviceType: 'Fourniture en gros de savons d’hôtel, produits d’accueil (savon, gel douche, savon liquide) et produits d’entretien ménage, cuisine et linge pour hôtels, restaurants et cafés',
     audience: 'Hôtels, restaurants, cafés et traiteurs',
     llms: 'Savons d’hôtel, produits d’accueil (savon, gel douche, savon liquide) et produits d’entretien ménage, cuisine et linge pour hôtels, restaurants, cafés et traiteurs, classés par espace (chambres, cuisine, sanitaires, sols, blanchisserie, réserve), en formats cuisine et ménage, avec marque propre sur les produits d’accueil, conteneurs mixtes, sans minimum fixe et échantillons gratuits confirmés à chaque demande.',
+  },
+
+  legal: {
+    updated: 'Dernière mise à jour : {date}',
+    translationNote: 'Cette traduction est fournie pour votre commodité. En cas de différence avec la version anglaise, c’est la version anglaise qui s’applique.',
+    englishLink: 'Lire la version anglaise',
   },
 
   notFound: {

@@ -47,6 +47,8 @@ export function sourcesFor(pathname: string): string[] {
     const view = coll === 'products' ? 'Product' : coll === 'categories' ? 'Category' : 'Post';
     return [`src/content/${coll}/${slug}.md`, `src/content/i18n/${lang}/${coll}/${slug}.md`, `src/views/${view}.astro`, ui];
   }
+  const legal = path.match(/^\/(privacy|cookies)\/$/);
+  if (legal) return [`src/content/legal/${legal[1]}.md`, `src/content/i18n/${lang}/legal/${legal[1]}.md`, 'src/views/Legal.astro', ui];
   const view = VIEWS[path];
   return view ? [`src/views/${view}.astro`, ui] : [ui];
 }

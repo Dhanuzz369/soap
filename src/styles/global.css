@@ -924,6 +924,12 @@ main {
 .footer-unit-contact a {
   overflow-wrap: anywhere;
 }
+.footer-legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  align-self: flex-start;
+}
 @media (max-width: 959.98px) {
   .footer-top {
     grid-template-columns: 1fr;
