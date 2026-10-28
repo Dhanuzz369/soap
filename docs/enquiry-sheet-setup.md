@@ -20,11 +20,13 @@ It takes about ten minutes. You need a Google account (the one whose Gmail shoul
 2. Delete everything in `Code.gs` and paste the whole of `scripts/apps-script/enquiry.gs` from this repository.
 3. Click **Save** (the disk icon).
 
-## 3. Set the alert email
+## 3. The alert email (optional)
+
+Alerts go to **hygiene@goodbizglobal.com** (`ALERT_TO` at the top of the script), so you can skip this step. To send them somewhere else without editing the script:
 
 1. In the Apps Script editor: **Project Settings** (the gear) → **Script Properties** → **Add script property**.
-2. Property: `ALERT_EMAIL`. Value: the address that should get the alerts, for example `sales@goodbizhygiene.com`.
-3. **Save script properties.** (No property, no alerts; the sheet still fills in.)
+2. Property: `ALERT_EMAIL`. Value: the address that should get the alerts.
+3. **Save script properties.**
 
 ## 4. Deploy as a web app
 

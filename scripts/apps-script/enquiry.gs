@@ -8,7 +8,8 @@
  * One row per leadId: the first post appends it, later posts fill it in. A key in a post replaces
  * its cell (even with an empty value, when the buyer changed an answer); a key missing from the
  * post leaves its cell. "submitted" is never downgraded by a late step. An email alert goes to the
- * ALERT_EMAIL script property once when a buyer finishes step 1 (stage "contact") and when they send.
+ * ALERT_EMAIL script property (default ALERT_TO below) once when a buyer finishes step 1 (stage
+ * "contact") and when they send.
  *
  * This file is versioned in the repo (scripts/apps-script/enquiry.gs) and tested in
  * tests/unit/apps-script.test.ts. Edit it there, then paste it again and redeploy.
@@ -16,6 +17,8 @@
 
 var SHEET_NAME = 'Leads';
 var SITE_URL = 'https://www.goodbizhygiene.com/';
+/** Where alerts go unless the ALERT_EMAIL script property says otherwise. */
+var ALERT_TO = 'hygiene@goodbizglobal.com';
 var COLUMNS = [
   'leadId', 'firstSeen', 'updated', 'stage', 'language', 'page',
   'name', 'company', 'email', 'phone',
@@ -134,8 +137,7 @@ function upsert(data) {
 
 /** The alert lists everything the row holds so far (the whole enquiry, not just this step). */
 function alert(data, row) {
-  var to = PropertiesService.getScriptProperties().getProperty('ALERT_EMAIL');
-  if (!to) return;
+  var to = PropertiesService.getScriptProperties().getProperty('ALERT_EMAIL') || ALERT_TO;
   var cell = function (name) { return String(row[COLUMNS.indexOf(name)] || ''); };
   var lines = [];
   for (var i = 0; i < FIELDS.length; i++) {

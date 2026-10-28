@@ -74,7 +74,7 @@ function runtime() {
     },
   });
   vm.runInContext(SOURCE, ctx);
-  return { ctx: ctx as unknown as Ctx, rows, mails, lock, calls, formats, tick: (ms: number) => (clock += ms) };
+  return { ctx: ctx as unknown as Ctx, rows, mails, lock, calls, formats, props, tick: (ms: number) => (clock += ms) };
 }
 
 const post = (body: object) => ({ postData: { type: 'text/plain', contents: JSON.stringify(body) }, parameter: {} });
@@ -87,6 +87,12 @@ beforeEach(() => {
 });
 
 describe('enquiry.gs', () => {
+  it('sends alerts to the contact email when no ALERT_EMAIL property is set', () => {
+    delete rt.props.ALERT_EMAIL;
+    rt.ctx.doPost(post(lead('contact', { name: 'Ali', email: 'ali@example.ae' })));
+    expect(rt.mails).toHaveLength(1);
+    expect(rt.mails[0].to).toBe('hygiene@goodbizglobal.com');
+  });
   it('creates the header row and upserts one row per leadId', () => {
     rt.ctx.doPost(post(lead('contact', { name: 'Ali', email: 'ali@example.ae' })));
     const first = rt.rows[1][col('firstSeen')];
