@@ -9,6 +9,7 @@ import site from '../../src/config/site';
 import { LOCALE_CODES, localizePath, type Locale } from '../../src/i18n/locales';
 import { getUi } from '../../src/i18n/ui';
 import { STEP_IDS } from '../../src/lib/enquiry-steps';
+import { isConfiguredEndpoint } from '../../src/lib/enquiry-send';
 
 const DIST = resolve(process.cwd(), 'dist');
 const page = (lang: Locale) => readFileSync(join(DIST, localizePath('/contact/', lang), 'index.html'), 'utf8');
@@ -68,12 +69,18 @@ describe('step enquiry form markup', () => {
     expect(hp).toContain('autocomplete="off"');
     expect(form).toMatch(/aria-hidden="true"[^>]*>\s*<label[^>]*>[^<]*<input[^>]*name="website_confirm"/);
   });
-  it('falls back to mailto: while the endpoint is a placeholder', () => {
-    expect(attr(formTag, 'action')).toBe(`mailto:${site.contact.email}`);
-    expect(attr(formTag, 'enctype')).toBe('text/plain');
+  it('posts to the Sheet endpoint, or to mailto: while the endpoint is a placeholder', () => {
     expect(attr(formTag, 'method')).toBe('post');
-    expect(formTag).toMatch(/\sdata-endpoint[\s>]/);
-    expect(formTag).not.toMatch(/data-endpoint="[^"]+"/);
+    if (isConfiguredEndpoint(site.enquiry.endpoint)) {
+      expect(attr(formTag, 'action')).toBe(site.enquiry.endpoint);
+      expect(attr(formTag, 'enctype')).toBeUndefined();
+      expect(attr(formTag, 'data-endpoint')).toBe(site.enquiry.endpoint);
+    } else {
+      expect(attr(formTag, 'action')).toBe(`mailto:${site.contact.email}`);
+      expect(attr(formTag, 'enctype')).toBe('text/plain');
+      expect(formTag).toMatch(/\sdata-endpoint[\s>]/);
+      expect(formTag).not.toMatch(/data-endpoint="[^"]+"/);
+    }
   });
   it('posts the lead id, stage and language with the answers', () => {
     expect(form).toMatch(/<input[^>]*type="hidden"[^>]*name="leadId"/);

@@ -32,7 +32,7 @@ const site = {
    * email instead, and `npm run check:placeholders` reports it.
    */
   enquiry: {
-    endpoint: 'PLACEHOLDER_ENQUIRY_ENDPOINT',
+    endpoint: 'https://script.google.com/macros/s/AKfycbzSRRxtO77FAz9vpzYs4vS_cBWOdJe-aaV36FE2AwSXdT0DHt6R4X540GBM4I8YR0dGGg/exec',
   },
   exportTerms: {
     incoterms: 'FOB, CIF and CFR available; payment terms agreed per order (T/T or LC)',

@@ -13,7 +13,7 @@ export type Body = { leadId: string; stage: string; lang: string; page: string; 
 export type Mock = 'ok' | 500 | 'hang' | 'none';
 
 /**
- * A page with the enquiry endpoint pointed at ENDPOINT (unless mock is 'none') and every request
+ * A page with the enquiry endpoint pointed at ENDPOINT (none at all for mock 'none') and every request
  * to it recorded. `opts.timeout` shortens the final send's timeout.
  */
 export async function open(
@@ -28,14 +28,17 @@ export async function open(
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(String(e)));
   page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
+  // Tests never reach the real Google Sheet in site.ts: every Apps Script request is blocked, and
+  // the page's endpoint is always set here ('' = no endpoint for mock 'none').
+  await context.route('https://script.google.com/**', (route: Route) => route.abort());
+  await page.addInitScript(
+    ([endpoint, timeout]) => {
+      (window as unknown as Record<string, unknown>).__ENQ_ENDPOINT__ = endpoint;
+      if (timeout) (window as unknown as Record<string, unknown>).__ENQ_TIMEOUT__ = timeout;
+    },
+    [mock === 'none' ? '' : ENDPOINT, o.timeout ?? 0] as const,
+  );
   if (mock !== 'none') {
-    await page.addInitScript(
-      ([endpoint, timeout]) => {
-        (window as unknown as Record<string, unknown>).__ENQ_ENDPOINT__ = endpoint;
-        if (timeout) (window as unknown as Record<string, unknown>).__ENQ_TIMEOUT__ = timeout;
-      },
-      [ENDPOINT, o.timeout ?? 0] as const,
-    );
     await page.route(ENDPOINT, async (route: Route) => {
       const raw = route.request().postData() ?? '{}';
       bodies.push(JSON.parse(raw));

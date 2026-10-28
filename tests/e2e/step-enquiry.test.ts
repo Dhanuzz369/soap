@@ -4,6 +4,8 @@
  */
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import type { Browser } from 'playwright-core';
+import site from '../../src/config/site';
+import { isConfiguredEndpoint } from '../../src/lib/enquiry-send';
 import { launch, open, active, label, waitStep, stages, fillContact, pick, ENDPOINT } from './helpers';
 
 let browser: Browser;
@@ -310,14 +312,15 @@ describe('step enquiry form', () => {
     await page.context().close();
   });
 
-  it('no-js: every step shows and the form posts to mailto:', async () => {
+  it('no-js: every step shows and the form posts to the Sheet endpoint (mailto: while there is none)', async () => {
     const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
     const page = await context.newPage();
     await page.goto('http://localhost:4329/contact/');
     const sections = await page.$$('section[data-step]');
     expect(sections).toHaveLength(7);
     for (const s of sections) expect(await s.isVisible()).toBe(true);
-    expect(await page.getAttribute('form[data-step-enquiry]', 'action')).toMatch(/^mailto:/);
+    const endpoint = isConfiguredEndpoint(site.enquiry.endpoint) ? site.enquiry.endpoint : '';
+    expect(await page.getAttribute('form[data-step-enquiry]', 'action')).toBe(endpoint || `mailto:${site.contact.email}`);
     expect(await page.isVisible('[data-next]')).toBe(false);
     expect(await page.isVisible('[data-send]')).toBe(true);
     expect(await page.isVisible('#enq-product-other')).toBe(true);
