@@ -3,6 +3,9 @@
 
 export const TOKEN = 'PLACEHOLDER';
 
+/** How the enquiry endpoint problem line starts (blockingProblems leaves it out). */
+const ENDPOINT_PROBLEM = 'enquiry.endpoint ';
+
 /** A WhatsApp number that is a country code followed only by zeros, e.g. 910000000000. */
 export function isPlaceholderWhatsApp(number) {
   return /^\d{1,3}0{6,}$/.test(String(number ?? '').trim());
@@ -29,7 +32,7 @@ export function placeholderProblems({ contactIsPlaceholder, whatsapp, endpoint, 
   }
   const endpointMissing = endpoint !== undefined && !isConfiguredEnquiryEndpoint(endpoint);
   if (endpointMissing) {
-    problems.push(`enquiry.endpoint "${endpoint}" is not set: enquiries only reach you by WhatsApp or email (docs/enquiry-sheet-setup.md)`);
+    problems.push(`${ENDPOINT_PROBLEM}"${endpoint}" is not set: enquiries only reach you by WhatsApp or email (docs/enquiry-sheet-setup.md)`);
   }
   for (const hit of tokenHits) {
     // The endpoint line is already reported above.
@@ -39,7 +42,16 @@ export function placeholderProblems({ contactIsPlaceholder, whatsapp, endpoint, 
   return problems;
 }
 
-/** The check fails only when the site claims to be launch ready and problems remain. */
+/**
+ * The problems that stop a launch. A missing enquiry endpoint is only a warning: without it the
+ * form offers WhatsApp and email instead, so visitors can still reach you.
+ * @param {string[]} problems lines from placeholderProblems
+ */
+export function blockingProblems(problems) {
+  return problems.filter((p) => !p.startsWith(ENDPOINT_PROBLEM));
+}
+
+/** The check fails only when the site claims to be launch ready and blocking problems remain. */
 export function shouldFail(launchReady, problems) {
   return Boolean(launchReady) && problems.length > 0;
 }

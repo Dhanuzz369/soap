@@ -4,7 +4,7 @@ This is the website for **GoodBiz Hygiene**, a GoodBiz Global company and mercha
 
 The site is "static": it is a folder of ready-made web pages. There is no database, no server and no monthly hosting bill. You edit a few text files, run one command to rebuild, and upload the result.
 
-> **The site is not live yet.** Until you finish the launch checklist below, every page tells search engines "do not index me" (`noindex`). This is deliberate. It stops Google from showing placeholder contact details.
+> **The site is live** at <https://www.goodbizhygiene.com> (launched 28 October 2026, `launchReady: true`). Search engines and AI assistants may crawl and index every page. Preview deployments and `*.vercel.app` addresses stay hidden from search engines. Next: the "After launch" steps of the go-live checklist below.
 
 ---
 
@@ -214,7 +214,7 @@ Do these **in order**. Steps 1-5 happen before anyone can find the site; steps 6
    ```bash
    npm run build && npm test && npm run test:build && npm run check:placeholders && npm run i18n:check -- --strict
    ```
-   `check:placeholders` must say **"No PLACEHOLDER values found."**
+   `check:placeholders` must not fail. A missing `enquiry.endpoint` is only a warning: until it is set, the form offers WhatsApp and email instead, so it does not block launch. Everything else it reports does.
 5. **Deploy** (section 7). Then open these on the live domain and check they load: `/robots.txt` (says `Allow: /`), `/sitemap-index.xml`, `/llms.txt`, `/llms-full.txt`, and `/1ea134f5e8470b6f56bd1766bc62c1b1.txt` (the IndexNow key, `indexNowKey` in `site.ts`).
 
 ### After launch

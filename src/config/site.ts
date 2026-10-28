@@ -18,7 +18,7 @@ const site = {
   tagline: 'Soaps & home-care products, exported from India',
   parentName: 'GoodBiz Global' as const,
   url: 'https://www.goodbizhygiene.com',
-  launchReady: false,
+  launchReady: true,
   contactIsPlaceholder: false,
   contact: {
     email: 'hygiene@goodbizglobal.com',

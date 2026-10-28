@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 // @ts-ignore plain ESM module shared with scripts/check-placeholders.mjs
-import { isPlaceholderWhatsApp, placeholderProblems, shouldFail } from '../../scripts/placeholder-rules.mjs';
+import { blockingProblems, isPlaceholderWhatsApp, placeholderProblems, shouldFail } from '../../scripts/placeholder-rules.mjs';
 
 const real = { contactIsPlaceholder: false, whatsapp: '919876543210', endpoint: 'https://script.google.com/macros/s/AKfy_1/exec', tokenHits: [] as string[] };
 
@@ -36,5 +36,17 @@ describe('placeholder rules', () => {
   it('does not count the endpoint placeholder twice through the token scan', () => {
     const hit = 'src/config/site.ts:20: enquiry: { endpoint: \'PLACEHOLDER_ENQUIRY_ENDPOINT\' },';
     expect(placeholderProblems({ ...real, endpoint: 'PLACEHOLDER_ENQUIRY_ENDPOINT', tokenHits: [hit] })).toHaveLength(1);
+  });
+
+  it('does not block launch on a missing enquiry endpoint: the form falls back to WhatsApp and email', () => {
+    const p = placeholderProblems({ ...real, endpoint: 'PLACEHOLDER_ENQUIRY_ENDPOINT' });
+    expect(blockingProblems(p)).toEqual([]);
+    expect(shouldFail(true, blockingProblems(p))).toBe(false);
+  });
+
+  it('still blocks launch on placeholder contact details', () => {
+    const p = placeholderProblems({ ...real, endpoint: 'PLACEHOLDER_ENQUIRY_ENDPOINT', contactIsPlaceholder: true });
+    expect(blockingProblems(p)).toHaveLength(1);
+    expect(blockingProblems(p)[0]).toContain('contactIsPlaceholder');
   });
 });

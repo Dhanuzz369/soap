@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, resolve, relative } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { TOKEN, placeholderProblems, shouldFail } from './placeholder-rules.mjs';
+import { TOKEN, blockingProblems, placeholderProblems, shouldFail } from './placeholder-rules.mjs';
 
 const root = resolve(process.cwd());
 const configPath = join(root, 'src/config/site.ts');
@@ -42,9 +42,10 @@ if (problems.length) {
   console.log(`${problems.length} placeholder problem(s):`);
   for (const p of problems) console.log(`  ${p}`);
 }
-if (shouldFail(site.launchReady, problems)) {
+if (shouldFail(site.launchReady, blockingProblems(problems))) {
   console.error('\nFAIL: launchReady is true but placeholder contact details remain. Fix them in src/config/site.ts.');
   process.exit(1);
 }
-if (problems.length) console.warn('\nWARNING: launchReady is false, so this is allowed. Fix these before launch.');
+if (site.launchReady && problems.length) console.warn('\nWARNING: the site is launched, but set these as soon as you can.');
+else if (problems.length) console.warn('\nWARNING: launchReady is false, so this is allowed. Fix these before launch.');
 else console.log(`No ${TOKEN} values found.`);

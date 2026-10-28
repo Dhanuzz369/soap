@@ -6,7 +6,7 @@ import { describe, it, expect } from 'vitest';
 import site from '../../src/config/site';
 import { organizationJsonLd, telephoneE164 } from '../../src/lib/seo';
 import { LOCALES } from '../../src/i18n/locales';
-import { placeholderProblems } from '../../scripts/placeholder-rules.mjs';
+import { blockingProblems, placeholderProblems } from '../../scripts/placeholder-rules.mjs';
 
 describe('contact details (site.ts)', () => {
   it('are the owner’s real details', () => {
@@ -25,16 +25,14 @@ describe('contact details (site.ts)', () => {
     expect(site.facts.parentUrl).toBe('https://goodbizglobal.com');
   });
 
-  it('leaves the launch switch, the domain and the enquiry endpoint alone', () => {
-    expect(site.launchReady).toBe(false);
+  it('is launched on the real domain', () => {
+    expect(site.launchReady).toBe(true);
     expect(site.url).toBe('https://www.goodbizhygiene.com');
-    expect(site.enquiry.endpoint).toBe('PLACEHOLDER_ENQUIRY_ENDPOINT');
   });
 
-  it('only the enquiry endpoint is still a placeholder', () => {
+  it('has no placeholder that blocks launch', () => {
     const problems = placeholderProblems({ contactIsPlaceholder: site.contactIsPlaceholder, whatsapp: site.contact.whatsapp, endpoint: site.enquiry.endpoint, tokenHits: [] });
-    expect(problems).toHaveLength(1);
-    expect(problems[0]).toMatch(/^enquiry\.endpoint/);
+    expect(blockingProblems(problems)).toEqual([]);
   });
 });
 
