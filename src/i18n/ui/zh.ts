@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ebe862927bce';
+export const sourceHash = '503d02bdd6fc';
 
 const zh: UiPartial = {
   meta: {
@@ -447,7 +447,8 @@ const zh: UiPartial = {
       send: '核对您的回答，然后发送。',
     },
     contactHint: '留下邮箱或 WhatsApp 即可。',
-    privacy: '这些信息仅用于回复您的询价，不会被分享，也不会加入任何邮件列表。',
+    privacy: '您点击“下一步”时，我们会保存这些信息，仅用于回复您的询价。我们绝不出售这些信息，也不会将其加入邮件列表。',
+    privacyLink: '隐私政策',
     groupOther: '其他产品',
     groupOtherPlaceholder: '哪种产品？例如：免洗洗手凝胶、马桶清洁片',
     productSeveral: '此系列中的多种（混装柜）',

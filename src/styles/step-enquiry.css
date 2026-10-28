@@ -190,6 +190,13 @@
   color: var(--ink-soft);
   max-width: 60ch;
 }
+.sq-privacy a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--sq-field-edge);
+  text-underline-offset: 0.2em;
+  white-space: nowrap;
+}
 .sq-privacy svg {
   flex: none;
   margin-top: 2px;

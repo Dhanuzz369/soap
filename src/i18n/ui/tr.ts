@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ebe862927bce';
+export const sourceHash = '503d02bdd6fc';
 
 const tr: UiPartial = {
   meta: {
@@ -449,7 +449,8 @@ const tr: UiPartial = {
       send: 'Yanıtlarınızı kontrol edin, sonra gönderin.',
     },
     contactHint: 'E-posta veya WhatsApp yeterli.',
-    privacy: 'Bu bilgileri yalnızca talebinize yanıt vermek için kullanırız. Hiçbir şey paylaşılmaz veya bir e-posta listesine eklenmez.',
+    privacy: 'Bu bilgileri İleri’ye dokunduğunuzda, yalnızca talebinize yanıt vermek için kaydederiz. Bunları asla satmayız ve bir e-posta listesine eklemeyiz.',
+    privacyLink: 'Gizlilik Politikası',
     groupOther: 'Başka bir şey',
     groupOtherPlaceholder: 'Hangi ürün? ör. el dezenfektan jeli, klozet temizleme tableti',
     productSeveral: 'Bu gruptan birkaç ürün (karışık konteyner)',

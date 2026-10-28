@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ebe862927bce';
+export const sourceHash = '503d02bdd6fc';
 
 const sw: UiPartial = {
   meta: {
@@ -448,7 +448,8 @@ const sw: UiPartial = {
       send: 'Kagua majibu yako, kisha tuma.',
     },
     contactHint: 'Barua pepe au WhatsApp inatosha.',
-    privacy: 'Tunatumia taarifa hizi kujibu ombi lako tu. Hazishirikiwi wala kuongezwa kwenye orodha ya barua pepe.',
+    privacy: 'Tunahifadhi taarifa hizi unapogusa Endelea, kwa ajili ya kujibu ombi lako tu. Hatuziuzi kamwe wala kuziongeza kwenye orodha ya barua pepe.',
+    privacyLink: 'Sera ya Faragha',
     groupOther: 'Kitu kingine',
     groupOtherPlaceholder: 'Bidhaa gani? k.m. jeli ya kusafisha mikono, vidonge vya kusafisha choo',
     productSeveral: 'Kadhaa kutoka kundi hili (kontena mchanganyiko)',

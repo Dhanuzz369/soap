@@ -47,8 +47,9 @@ describe('ui.steps (step-by-step enquiry form)', () => {
       });
     });
   }
-  it('says the privacy line exactly as the spec wrote it', () => {
-    expect(en.steps.privacy).toBe('We use these details only to reply to your enquiry. Nothing is shared or added to a mailing list.');
+  it('says the privacy line exactly as the spec wrote it (spec 2026-10-28 §4)', () => {
+    expect(en.steps.privacy).toBe('We save these details when you tap Next, only to reply to your enquiry. We never sell them or add them to a mailing list.');
+    expect(en.steps.privacyLink).toBe('Privacy Policy');
     expect(en.steps.contactHint).toBe('Email or WhatsApp is enough.');
   });
 });

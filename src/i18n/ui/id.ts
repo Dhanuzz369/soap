@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ebe862927bce';
+export const sourceHash = '503d02bdd6fc';
 
 const id: UiPartial = {
   meta: {
@@ -449,7 +449,8 @@ const id: UiPartial = {
       send: 'Periksa jawaban Anda, lalu kirim.',
     },
     contactHint: 'Cukup email atau WhatsApp.',
-    privacy: 'Kami memakai data ini hanya untuk membalas permintaan Anda. Tidak ada yang dibagikan atau dimasukkan ke milis.',
+    privacy: 'Kami menyimpan data ini saat Anda mengetuk Lanjut, hanya untuk membalas permintaan Anda. Kami tidak pernah menjualnya atau memasukkannya ke milis.',
+    privacyLink: 'Kebijakan Privasi',
     groupOther: 'Yang lain',
     groupOtherPlaceholder: 'Produk apa? mis. gel pembersih tangan, tablet pembersih kloset',
     productSeveral: 'Beberapa dari lini ini (kontainer campuran)',

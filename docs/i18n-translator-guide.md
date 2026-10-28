@@ -166,7 +166,7 @@ The contact page asks one short question per screen (`src/components/StepEnquiry
 - `titles` and `helpers`: one per step (`contact`, `group`, `product`, `quantity`, `destination`, `terms`, `send`). Titles are questions; helpers are one line.
 - `quantities` (4 items, in this order: samples or trial, 1 container, 2–5 containers, 6+ containers) and `brandOptions` (Yes, No, Maybe): translate the labels only. GoodBiz always receives the English value.
 - `terms`: four objects. **Never translate `key`** (`not-sure`, `FOB`, `CFR`, `CIF`): it is the value sent. Keep FOB, CFR and CIF in Latin letters inside `title`. Each `line` explains the Incoterm in plain words: translate the meaning exactly, with no promise of price, speed or insurance cover beyond what the English says.
-- `privacy` is the form's only privacy statement and must stay literally true: the details are used only to reply, never shared, never added to a mailing list. Do not soften or extend it.
+- `privacy` is the notice under step 1, followed by a link `privacyLink` (the title of your Privacy Policy page). It must stay literally true: the details are saved when the buyer taps Next (write the button exactly as your `next` says), used only to reply, never sold, never added to a mailing list. Do not say they are never shared (Google stores them for us). Do not soften or extend it.
 - `helpers.quantity` says there is no fixed minimum. Do not add a minimum, a price, a certificate or a delivery time anywhere in this block (`tests/unit/enquiry-strings.test.ts` checks the English, and the honesty patterns check every language).
 - `errors`: short and polite, telling the buyer what to do, not what they did wrong.
 

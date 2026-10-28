@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ebe862927bce';
+export const sourceHash = '503d02bdd6fc';
 
 const vi: UiPartial = {
   meta: {
@@ -449,7 +449,8 @@ const vi: UiPartial = {
       send: 'Kiểm tra câu trả lời rồi gửi.',
     },
     contactHint: 'Chỉ cần email hoặc WhatsApp.',
-    privacy: 'Chúng tôi chỉ dùng thông tin này để trả lời yêu cầu của bạn. Không chia sẻ và không thêm vào danh sách gửi thư.',
+    privacy: 'Chúng tôi lưu thông tin này khi bạn chạm vào Tiếp, chỉ để trả lời yêu cầu của bạn. Chúng tôi không bao giờ bán hay thêm thông tin này vào danh sách gửi thư.',
+    privacyLink: 'Chính sách quyền riêng tư',
     groupOther: 'Sản phẩm khác',
     groupOtherPlaceholder: 'Sản phẩm nào? vd. gel rửa tay khô, viên tẩy bồn cầu',
     productSeveral: 'Nhiều loại trong dòng này (container ghép)',

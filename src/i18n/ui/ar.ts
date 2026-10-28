@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ebe862927bce';
+export const sourceHash = '503d02bdd6fc';
 
 const ar: UiPartial = {
   meta: {
@@ -449,7 +449,8 @@ const ar: UiPartial = {
       send: 'راجع إجاباتك، ثم أرسل.',
     },
     contactHint: 'يكفي البريد الإلكتروني أو واتساب.',
-    privacy: 'نستخدم هذه البيانات فقط للرد على استفسارك. لا نشاركها مع أحد ولا نضيفها إلى أي قائمة بريدية.',
+    privacy: 'نحفظ هذه البيانات عندما تضغط «التالي»، ولا نستخدمها إلا للرد على استفسارك. لا نبيعها أبدًا ولا نضيفها إلى أي قائمة بريدية.',
+    privacyLink: 'سياسة الخصوصية',
     groupOther: 'شيء آخر',
     groupOtherPlaceholder: 'أي منتج؟ مثل: جل معقم لليدين، أقراص تنظيف المرحاض',
     productSeveral: 'عدة منتجات من هذه الفئة (حاوية مختلطة)',

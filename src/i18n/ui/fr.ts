@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ebe862927bce';
+export const sourceHash = '503d02bdd6fc';
 
 const fr: UiPartial = {
   meta: {
@@ -451,7 +451,8 @@ const fr: UiPartial = {
       send: 'Vérifiez vos réponses, puis envoyez.',
     },
     contactHint: 'Un e-mail ou un numéro WhatsApp suffit.',
-    privacy: 'Nous utilisons ces coordonnées uniquement pour répondre à votre demande. Rien n’est partagé ni ajouté à une liste de diffusion.',
+    privacy: 'Nous enregistrons ces coordonnées lorsque vous appuyez sur Suivant, uniquement pour répondre à votre demande. Nous ne les vendons jamais et ne les ajoutons à aucune liste de diffusion.',
+    privacyLink: 'Politique de confidentialité',
     groupOther: 'Autre chose',
     groupOtherPlaceholder: 'Quel produit ? ex. gel hydroalcoolique, pastilles pour WC',
     productSeveral: 'Plusieurs de cette gamme (conteneur mixte)',

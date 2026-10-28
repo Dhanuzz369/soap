@@ -489,7 +489,13 @@ const en = {
       send: 'Check your answers, then send.',
     },
     contactHint: 'Email or WhatsApp is enough.',
-    privacy: 'We use these details only to reply to your enquiry. Nothing is shared or added to a mailing list.',
+    /**
+     * The notice under step 1, followed by a link (`privacyLink`) to the Privacy Policy. It must stay
+     * literally true: the details are saved (Google Sheets) when Next is tapped, used only to reply,
+     * never sold, never added to a mailing list. Name the Next button exactly as `next` says.
+     */
+    privacy: 'We save these details when you tap Next, only to reply to your enquiry. We never sell them or add them to a mailing list.',
+    privacyLink: 'Privacy Policy',
     groupOther: 'Something else',
     groupOtherPlaceholder: 'Which product? e.g. hand sanitiser gel, toilet cleaner tablets',
     productSeveral: 'Several from this range (mixed container)',

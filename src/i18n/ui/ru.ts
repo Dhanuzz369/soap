@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = 'ebe862927bce';
+export const sourceHash = '503d02bdd6fc';
 
 const ru: UiPartial = {
   meta: {
@@ -449,7 +449,8 @@ const ru: UiPartial = {
       send: 'Проверьте ответы и отправьте.',
     },
     contactHint: 'Достаточно email или WhatsApp.',
-    privacy: 'Мы используем эти данные только для ответа на ваш запрос. Мы никому их не передаём и не добавляем в рассылки.',
+    privacy: 'Мы сохраняем эти данные, когда вы нажимаете «Далее», и используем их только для ответа на ваш запрос. Мы никогда не продаём их и не добавляем в рассылки.',
+    privacyLink: 'Политика конфиденциальности',
     groupOther: 'Другое',
     groupOtherPlaceholder: 'Какой продукт? например, антисептик-гель для рук, таблетки для унитаза',
     productSeveral: 'Несколько из этого ассортимента (сборный контейнер)',

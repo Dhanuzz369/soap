@@ -141,3 +141,30 @@ describe('footer links', () => {
     expect(getUi('en').footer.cookies).toBe('Cookies');
   });
 });
+
+describe('enquiry form notice (step 1)', () => {
+  it('English: the spec wording, with "Privacy Policy" linking to /privacy/', () => {
+    const html = page('/contact/');
+    const notice = html.slice(html.indexOf('class="sq-privacy"'), html.indexOf('</p>', html.indexOf('class="sq-privacy"')));
+    expect(norm(notice.slice(notice.indexOf('>') + 1).replace(/<[^>]+>/g, ' '))).toBe(norm('We save these details when you tap Next, only to reply to your enquiry. We never sell them or add them to a mailing list. Privacy Policy'));
+    expect(notice).toContain('<a href="/privacy/">Privacy Policy</a>');
+    expect(html).not.toContain('Nothing is shared');
+  });
+  it.each(LANGS)('%s: the translated notice links to its own Privacy Policy, inside step 1', (l) => {
+    const ui = getUi(l);
+    const html = page('/contact/', l);
+    const step1 = html.slice(html.indexOf('data-step="contact"'), html.indexOf('data-step="group"'));
+    expect(step1, l).toContain(ui.steps.privacy.replace(/'/g, '&#39;'));
+    expect(step1, l).toContain(`<a href="${localizePath('/privacy/', l)}">${ui.steps.privacyLink}</a>`);
+  });
+  it('every language has its own notice (no English fallback)', () => {
+    const en = getUi('en').steps;
+    expect(en.privacy).toBe('We save these details when you tap Next, only to reply to your enquiry. We never sell them or add them to a mailing list.');
+    for (const l of LANGS.filter((x) => x !== 'en')) {
+      expect(getUi(l).steps.privacy, l).not.toBe(en.privacy);
+      expect(getUi(l).steps.privacyLink, l).not.toBe(en.privacyLink);
+      // it names the step-1 button by its label in that language
+      expect(getUi(l).steps.privacy, l).toContain(getUi(l).steps.next);
+    }
+  });
+});

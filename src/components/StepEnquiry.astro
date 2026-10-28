@@ -20,7 +20,7 @@ import { isConfiguredEndpoint } from '../lib/enquiry-send';
 import { useI18n } from '../i18n/page';
 import '../styles/step-enquiry.css';
 
-const { lang, info, ui } = useI18n(Astro.url);
+const { lang, info, ui, lp } = useI18n(Astro.url);
 const s = ui.steps;
 const f = ui.form;
 const groups = await getProductsByCategory(lang);
@@ -124,7 +124,7 @@ const titleId = (id: string) => `enq-h-${id}`;
       <p class="sq-hint" id="enq-contact-hint">{s.contactHint}</p>
       <p class="sq-privacy">
         <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M4.5 7V5.5a3.5 3.5 0 0 1 7 0V7M3.5 7h9v6.5h-9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg>
-        <span>{s.privacy}</span>
+        <span>{s.privacy} <a href={lp('/privacy/')}>{s.privacyLink}</a></span>
       </p>
     </section>
 
