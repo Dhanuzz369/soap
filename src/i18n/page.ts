@@ -8,6 +8,15 @@
 import { langFromUrl, localeInfo, localizePath, type Locale } from './locales';
 import { getUi, fmt } from './ui';
 
+/**
+ * A name in lower case for "{nameLower}" placeholders, using the locale's casing rules. Words written
+ * in capitals (abbreviations such as LABSA, SLES or HSN) keep their capitals.
+ */
+export function lowerName(s: string, lang: Locale): string {
+  const tag = localeInfo(lang).hreflang;
+  return s.replace(/[\p{L}\p{N}]+/gu, (w) => (/^\p{Lu}{2,}[\p{Lu}\p{N}]*$/u.test(w) ? w : w.toLocaleLowerCase(tag)));
+}
+
 export function useI18n(url: URL) {
   const lang: Locale = langFromUrl(url);
   return {
@@ -16,7 +25,7 @@ export function useI18n(url: URL) {
     ui: getUi(lang),
     lp: (path: string) => localizePath(path, lang),
     fmt,
-    /** A name in lower case for "{nameLower}" placeholders, using the locale's casing rules. */
-    lower: (s: string) => s.toLocaleLowerCase(localeInfo(lang).hreflang),
+    /** A name in lower case for "{nameLower}" placeholders (lowerName). */
+    lower: (s: string) => lowerName(s, lang),
   };
 }
