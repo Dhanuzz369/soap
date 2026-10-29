@@ -39,7 +39,7 @@ const COMMON = ['@context', '@type', '@id'];
 const VOCAB: Record<string, string[]> = {
   Organization: ['name', 'alternateName', 'url', 'logo', 'image', 'description', 'slogan', 'areaServed', 'knowsAbout', 'parentOrganization', 'foundingDate', 'memberOf', 'identifier', 'email', 'telephone', 'address', 'contactPoint', 'sameAs'],
   WebSite: ['name', 'alternateName', 'url', 'description', 'inLanguage', 'publisher'],
-  WebPage: ['url', 'name', 'description', 'inLanguage', 'isPartOf', 'publisher', 'about', 'primaryImageOfPage', 'breadcrumb', 'mainEntity', 'dateModified'],
+  WebPage: ['url', 'name', 'description', 'inLanguage', 'isPartOf', 'publisher', 'author', 'about', 'primaryImageOfPage', 'breadcrumb', 'mainEntity', 'dateModified'],
   BreadcrumbList: ['itemListElement'],
   FAQPage: ['url', 'inLanguage', 'mainEntity'],
   ItemList: ['name', 'numberOfItems', 'itemListOrder', 'itemListElement'],
@@ -113,6 +113,18 @@ describe('structured data on every page', () => {
 describe.each([...new Set(pages.map((p) => p.lang))])('required fields per type, %s pages', (lang) => {
   const list = pages.filter((p) => p.lang === lang);
   const tag = localeInfo(lang).hreflang;
+
+  it('every indexable page names the company as author and has a valid last-change date', () => {
+    const problems: string[] = [];
+    for (const p of pages) {
+      const page = p.blocks.find((b) => PAGE_TYPES.includes(b['@type']));
+      if (!page) continue;
+      if (page.author?.name !== site.name || page.author?.['@id'] !== `${BASE}/#organization`) problems.push(`${p.path}: author ${JSON.stringify(page.author)}`);
+      const d = new Date(page.dateModified ?? '');
+      if (Number.isNaN(d.getTime()) || d.getTime() > Date.now() + 86_400_000) problems.push(`${p.path}: dateModified ${page.dateModified}`);
+    }
+    expect(problems.slice(0, 20)).toEqual([]);
+  });
 
   it('Organization and WebSite on every page; WebPage, matching the canonical URL', () => {
     const problems: string[] = [];

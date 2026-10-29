@@ -6,7 +6,8 @@ import '../styles/floria.css';
 import '../styles/i18n.css';
 import site from '../config/site';
 import { launched } from '../lib/launch';
-import { absoluteUrl, pageTitle, organizationJsonLd, websiteJsonLd, breadcrumbJsonLd, webPageJsonLd, MAX_KEYWORDS, type PageType } from '../lib/seo';
+import { lastmodFor } from '../lib/lastmod';
+import { absoluteUrl, pageTitle, homeTitle, organizationJsonLd, websiteJsonLd, breadcrumbJsonLd, webPageJsonLd, MAX_KEYWORDS, type PageType } from '../lib/seo';
 import { publicImageSize } from '../lib/product-image';
 import { LOCALES, LOCALE_CODES, DEFAULT_LOCALE, alternates, localizePath } from '../i18n/locales';
 import { pickLocale, isBot } from '../i18n/detect';
@@ -71,8 +72,13 @@ const {
 } = Astro.props;
 const { lang, info, ui } = useI18n(Astro.url);
 
-const fullTitle = pageTitle(title);
+const fullTitle = path === '/' ? homeTitle(title) : pageTitle(title);
 const canonical = absoluteUrl(localizePath(path, lang));
+// When the page last changed: the article's dates, the facts' review date, else the last commit
+// that touched the page's sources (the same date as its sitemap <lastmod>, src/lib/lastmod.ts).
+const fromGit = lastmodFor(canonical);
+const modified = article?.modified ?? article?.published ?? dateModified ?? (fromGit ? new Date(fromGit) : undefined);
+const feed = absoluteUrl(lang === DEFAULT_LOCALE ? '/rss.xml' : `/${lang}/rss.xml`);
 const home = localizePath('/', lang);
 const alts = alternates(path).map((a) => ({ ...a, href: absoluteUrl(a.path) }));
 const ogUrl = absoluteUrl(ogImage);
@@ -97,7 +103,7 @@ const schemas: object[] = [
           image: ogImage,
           breadcrumb: hasCrumbs,
           mainEntity,
-          dateModified: article?.modified ?? article?.published ?? dateModified,
+          dateModified: modified,
         }),
       ]),
   ...(hasCrumbs ? [breadcrumbJsonLd(breadcrumbs!)] : []),
@@ -154,6 +160,8 @@ const ar = lang === 'ar';
     <meta name="application-name" content={site.name} />
     <meta name="apple-mobile-web-app-title" content={site.name} />
     <link rel="alternate" type="text/plain" title="llms.txt" href={absoluteUrl(lang === DEFAULT_LOCALE ? '/llms.txt' : `/${lang}/llms.txt`)} />
+    <link rel="alternate" type="application/rss+xml" title={`${site.name}: ${ui.blogIndex.title}`} href={feed} />
+    <meta name="author" content={site.name} />
 
     <meta property="og:type" content={article ? 'article' : 'website'} />
     <meta property="og:site_name" content={site.name} />
@@ -177,6 +185,7 @@ const ar = lang === 'ar';
         </>
       )
     }
+    {!article && modified && <meta property="article:modified_time" content={modified.toISOString()} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />

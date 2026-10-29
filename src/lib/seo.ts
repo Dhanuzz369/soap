@@ -57,6 +57,11 @@ const titleWidth = (t: string) => [...t].reduce((w, c) => w + (/[\p{Script=Han}\
  * The page title with the brand after it, unless the title already names the brand or the brand
  * would only be cut off in search results (Google shows the site name above the title anyway).
  */
+/** The home page title: the brand first, so brand searches and AI answers name the company. */
+export function homeTitle(title: string): string {
+  return title.includes(site.name) ? title : `${site.name} | ${title}`;
+}
+
 export function pageTitle(title: string): string {
   const suffix = ` | ${site.name}`;
   if (title.includes(site.name) || titleWidth(title + suffix) > TITLE_WIDTH) return title;
@@ -199,6 +204,8 @@ export function webPageJsonLd(p: {
     inLanguage: p.inLanguage,
     isPartOf: { '@id': `${absoluteUrl(p.homeUrl)}#website` },
     publisher: { '@id': ORG_ID() },
+    // Who wrote the page: the company (Google asks "who created the content").
+    author: { '@type': 'Organization', '@id': ORG_ID(), name: site.name },
     ...(p.type === 'AboutPage' || p.type === 'ContactPage' ? { about: { '@id': ORG_ID() } } : {}),
     ...(p.image ? { primaryImageOfPage: { '@type': 'ImageObject', url: absoluteUrl(p.image) } } : {}),
     ...(p.breadcrumb ? { breadcrumb: { '@id': `${url}#breadcrumb` } } : {}),

@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import {
   organizationJsonLd, websiteJsonLd, breadcrumbJsonLd, faqJsonLd,
-  productJsonLd, articleJsonLd, pageTitle, absoluteUrl,
+  productJsonLd, articleJsonLd, pageTitle, homeTitle, absoluteUrl, webPageJsonLd,
   buildKeywords, MAX_KEYWORDS, itemListJsonLd, howToJsonLd,
 } from '../../src/lib/seo';
 import type { ProductData } from '../../src/lib/types';
@@ -85,6 +85,16 @@ describe('seo', () => {
     expect(a.datePublished).toBe('2026-01-02T00:00:00.000Z');
     expect(a).not.toHaveProperty('image');
   });
+  it('webPageJsonLd names the company as author', () => {
+    const w: any = webPageJsonLd({ url: '/', name: 'N', description: 'D', inLanguage: 'en', homeUrl: '/' });
+    expect(w.author).toEqual({ '@type': 'Organization', '@id': `${BASE}/#organization`, name: 'GoodBiz Hygiene' });
+  });
+
+  it('homeTitle: the brand leads the home page title', () => {
+    expect(homeTitle('Soap, Detergent & Cleaner Exporter & Supplier from India')).toBe('GoodBiz Hygiene | Soap, Detergent & Cleaner Exporter & Supplier from India');
+    expect(homeTitle('GoodBiz Hygiene: soaps from India')).toBe('GoodBiz Hygiene: soaps from India');
+  });
+
   it('pageTitle', () => {
     expect(pageTitle('Floor Cleaner Exporter & Supplier from India')).toBe('Floor Cleaner Exporter & Supplier from India | GoodBiz Hygiene');
     expect(pageTitle('Contact | GoodBiz Hygiene')).toBe('Contact | GoodBiz Hygiene');
