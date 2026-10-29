@@ -12,6 +12,21 @@
       ],
       "destination": "https://www.goodbizhygiene.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap-index.xml",
+      "permanent": true
+    },
+    {
+      "source": "/categories/",
+      "destination": "/products/",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(ar|fr|es|pt|ru|zh|de|tr|id|sw|vi)/categories/",
+      "destination": "/:lang/products/",
+      "permanent": true
     }
   ],
   "headers": [

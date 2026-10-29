@@ -1,12 +1,12 @@
 ---
-sourceHash: "f7335a2c4b58"
+sourceHash: "0e389d931665"
 title: "LABSA (Lineer Alkil Benzen Sülfonik Asit)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
 metaTitle: "LABSA %90 ve %96: Hindistan’dan İhracatçı ve Tedarikçi"
-metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden LABSA %90 ve %96 (lineer alkil benzen sülfonik asit); HDPE varil, IBC ve flexitank. HSN 3402 31, FOB/CIF teklif."
+metaDescription: "Kontrol edilmiş Hindistanlı üreticilerden LABSA %90 ve %96 (lineer alkil benzen sülfonik asit); UN onaylı HDPE varil ve IBC. HSN 3402 31, FOB/CIF teklif."
 keyword: "LABSA"
 answer: "LABSA (Lineer Alkil Benzen Sülfonik Asit), toz deterjanlarda, sıvı deterjanlarda ve temizleyicilerde kullanılan başlıca anyonik yüzey aktif maddedir. Etken temizleme maddesini oluşturmak için kostik soda veya soda külü ile nötrleştirilen koyu renkli, viskoz bir asittir. GoodBiz Hygiene, LABSA’yı deterjan üreticilerine ve distribütörlere ihracat için kontrol edilmiş Hindistanlı üreticilerden tedarik eder."
 variants:
@@ -17,11 +17,10 @@ variants:
 packSizes:
   - "200 ila 235 kg HDPE varil"
   - "1.000 L IBC"
-  - "Flexitank (yaklaşık 20 ton)"
+  - "Talep üzerine ISO tank"
 packaging:
   - "Paletlenmiş 200 ila 235 kg HDPE varil"
   - "Çelik kafesli 1.000 L IBC tank"
-  - "Dökme yükler için 20 ft konteynerde flexitank"
   - "Talep üzerine ISO tank"
 specs:
   - label: "Görünüm"
@@ -41,7 +40,7 @@ privateLabel:
   available: false
   options: []
 containerLoad:
-  ft20: "Varillerde yaklaşık 16 ila 18 ton veya flexitankta yaklaşık 20 ton"
+  ft20: "Varillerde yaklaşık 16 ila 18 ton"
   ft40: "Normalde kullanılmaz; yoğun sıvılar için 20 ft konteynerler tercih edilir"
 uses:
   - "Toz deterjan ve yıkama tozu bulamacı"
@@ -57,11 +56,11 @@ faqs:
   - q: "LABSA %90 ile %96 arasındaki fark nedir?"
     a: "Rakam, asgari aktif maddedir. LABSA %96 daha konsantredir; daha az sülfonlanmamış madde ve sülfürik asit içerir ve daha yüksek verimlilik veya daha açık renk isteyen formülatörlere uygundur. LABSA %90, tozlarda yaygın olarak kullanılan daha ekonomik standart kalitedir."
   - q: "LABSA sevkiyat için tehlikeli madde midir?"
-    a: "Evet. LABSA aşındırıcıdır ve normalde IMDG Kodu uyarınca tehlikeli (DG) yük olarak sevk edilir; bu nedenle varillerin, IBC’lerin veya flexitankların sınıf için onaylı olması ve denizcilik hattına beyan edilmesi gerekir. Her sipariş için DG evraklarını ve bunu kabul eden denizcilik hatlarını organize ederiz."
+    a: "Evet. LABSA aşındırıcıdır ve normalde IMDG Kodu uyarınca tehlikeli (DG) yük olarak sevk edilir; bu nedenle varillerin ve IBC’lerin sınıf için UN onaylı olması ve denizcilik hattına beyan edilmesi gerekir. Flexitank kullanılmaz, çünkü flexitanklar yalnızca tehlikesiz sıvılar içindir. Her sipariş için DG evraklarını ve bunu kabul eden denizcilik hatlarını organize ederiz."
   - q: "MSDS sağlıyor musunuz?"
     a: "Evet. Malzeme Güvenlik Bilgi Formu (MSDS), ürün şartnamesiyle birlikte talep üzerine mevcuttur. Parti başına analiz sertifikası (COA) talep edilebilir."
   - q: "LABSA için en iyi ambalaj hangisidir?"
-    a: "200 ila 235 kg’lık HDPE variller daha küçük veya karışık siparişlere uygundur ve kolay taşınır. 1.000 L’lik IBC’ler varil maliyetinden tasarruf sağlar; flexitanklar ise tank depolaması ve pompalaması olan dökme alıcılara ton başına en düşük maliyeti verir."
+    a: "200 ila 235 kg’lık HDPE variller daha küçük veya karışık siparişlere uygundur ve kolay taşınır. 1.000 L’lik IBC’ler varil maliyetinden tasarruf sağlar; ISO tanklar (talep üzerine) ise tank depolaması ve pompalaması olan düzenli dökme alıcılara uygundur."
   - q: "LABSA nasıl taşınmalı ve saklanmalı?"
     a: "Orijinal kapalı kapta, ısıdan ve uyumsuz malzemelerden uzakta saklayın. Aside dayanıklı eldiven, gözlük ve koruyucu giysi kullanın; iyi karıştırma ve soğutma ile kostik soda veya soda külüyle yavaşça nötrleştirin."
 related:
@@ -84,7 +83,7 @@ Bir GoodBiz Global şirketi olan GoodBiz Hygiene, LABSA’yı kontrol edilmiş k
 
 ## Ambalaj ve sevkiyat
 
-LABSA, 200 ila 235 kg’lık HDPE varillerde, 1.000 L’lik IBC’lerde veya yaklaşık 20 tonluk flexitanklarda paketlenir. 20 ft konteyner tipik olarak varillerde yaklaşık 16 ila 18 ton alır. Asit aşındırıcı olduğundan, doğru UN işaretlemesi ve beyanlarla tehlikeli madde olarak taşınır. Bunu biz koordine ederiz; MSDS talep üzerine mevcuttur.
+LABSA, 200 ila 235 kg’lık HDPE varillerde veya 1.000 L’lik IBC’lerde paketlenir; dökme yükler için talep üzerine ISO tank da kullanılır. 20 ft konteyner tipik olarak varillerde yaklaşık 16 ila 18 ton alır. Asit aşındırıcı olduğundan, doğru UN işaretlemesi ve beyanlarla tehlikeli madde olarak taşınır. Bunu biz koordine ederiz; MSDS talep üzerine mevcuttur.
 
 ## Taşıma ve depolama
 

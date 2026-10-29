@@ -30,7 +30,8 @@ const path = `/products/${d.slug}/`;
 const url = lp(path);
 const names = { name: d.title, nameLower: lower(d.title) };
 const catId = d.category.id;
-// A photo in public/images/products/<slug>.webp is used for social previews and JSON-LD.
+// A photo in public/images/products/<slug>.webp is used for social previews and JSON-LD; without
+// one, the Product JSON-LD takes the pack illustration shown on the page.
 const image = d.image ?? productImagePath(d.slug);
 const breadcrumbs = [
   { name: ui.common.home, url: lp('/') },
@@ -77,7 +78,7 @@ const media: HeroMedia | undefined = pic
   mainEntity={`${absUrl}#product`}
   breadcrumbs={breadcrumbs}
   dateModified={d.reviewed}
-  jsonLd={[productJsonLd({ ...d, category: category.data.title, image }, absUrl, ui.ld), faqJsonLd(d.faqs, info.hreflang, url)]}
+  jsonLd={[productJsonLd({ ...d, category: category.data.title, image: image ?? pic?.src }, absUrl, ui.ld), faqJsonLd(d.faqs, info.hreflang, url)]}
   dark
 >
   <PageHero breadcrumbs={breadcrumbs} l1={name.l1} sub={name.sub} l2={name.l2} scale={name.scale} lead={d.answer} media={media} size="product">

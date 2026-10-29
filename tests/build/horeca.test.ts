@@ -10,7 +10,7 @@ import { LOCALES, localizePath, type Locale } from '../../src/i18n/locales';
 import { getUi } from '../../src/i18n/ui';
 import { parseEnquiryParams } from '../../src/lib/enquiry';
 import { SPACES, HORECA_LINKED, horecaSlugs } from '../../src/lib/horeca';
-import { MAX_KEYWORDS } from '../../src/lib/seo';
+import { MAX_KEYWORDS, pageTitle } from '../../src/lib/seo';
 
 const DIST = resolve(process.cwd(), 'dist');
 const BASE = site.url.replace(/\/$/, '');
@@ -54,7 +54,7 @@ describe.each(LOCALES.map((l) => l.code as Locale))('/horeca/ in %s', (lang) => 
     expect(hero).toMatch(/<h1 id="page-h"/);
     expect(decode(hero)).toContain(H.h1a);
     expect(decode(hero)).toContain(H.h1b);
-    expect(decode(html.match(/<title>([^<]*)<\/title>/)![1])).toBe(`${H.title} | ${site.name}`);
+    expect(decode(html.match(/<title>([^<]*)<\/title>/)![1])).toBe(pageTitle(H.title));
     expect(decode(attr(html.match(/<meta name="description"[^>]*>/)![0], 'content')!)).toBe(H.description);
     expect(decode(hero)).toContain(H.lead);
   });

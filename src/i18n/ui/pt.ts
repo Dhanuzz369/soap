@@ -330,7 +330,7 @@ const pt: UiPartial = {
     packSizes: 'Tamanhos de embalagem',
     packaging: 'Opções de acondicionamento',
     galleryH: 'Mais fragrâncias, em fotos',
-    specH: 'Quais são as especificações típicas: {nameLower}?',
+    specH: '{name}: quais são as especificações típicas?',
     specNote: '{name}: valores típicos para os graus de exportação. Os valores finais são confirmados com o fabricante a cada pedido.',
     aboutAria: 'Sobre {name}',
     loadH: 'Carregamento do contêiner (aprox.)',

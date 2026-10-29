@@ -1,5 +1,5 @@
 ---
-sourceHash: "3192292d0bae"
+sourceHash: "37a372337cdf"
 title: "Detergente en polvo o detergente líquido: ¿cuál se vende mejor en su mercado?"
 metaTitle: "Detergente en polvo o líquido: ¿cuál se vende mejor?"
 description: "¿Detergente para ropa en polvo o líquido? Compare clima, hábitos de lavado, lavadoras, precio y flete por lavado para elegir la gama de su mercado."
@@ -83,7 +83,7 @@ Mantenga corta la selección de fragancias al principio. Dos o tres fragancias b
 
 ## Una nota para fabricantes y formuladores de detergentes
 
-Algunos compradores no quieren productos terminados en absoluto. Si ya dispone de una unidad de formulación o de envasado, las materias primas pueden ser el mejor camino. El [LABSA](/products/labsa/) es el principal tensioactivo aniónico de los polvos y de los líquidos, y lo adquirimos a fabricantes indios seleccionados en tambores, IBC y flexitanks. Es un modelo de negocio distinto, con su propio control de calidad, así que hable con nosotros sobre sus necesidades de formulación antes de decidir.
+Algunos compradores no quieren productos terminados en absoluto. Si ya dispone de una unidad de formulación o de envasado, las materias primas pueden ser el mejor camino. El [LABSA](/products/labsa/) es el principal tensioactivo aniónico de los polvos y de los líquidos, y lo adquirimos a fabricantes indios seleccionados en tambores e IBC. Es un modelo de negocio distinto, con su propio control de calidad, así que hable con nosotros sobre sus necesidades de formulación antes de decidir.
 
 ## Qué enviarnos para una cotización útil
 

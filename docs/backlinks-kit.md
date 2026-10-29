@@ -55,8 +55,10 @@ The full list of product pages is in https://www.goodbizhygiene.com/llms.txt.
 
 ### First: your own websites (strongest, and free)
 
-1. **goodbizglobal.com.** Add GoodBiz Hygiene to the home page or an "Our companies" / "Divisions" section: a short paragraph and a link with the text **"GoodBiz Hygiene: soaps and home care exporter"** to https://www.goodbizhygiene.com/. A link from the parent company is the clearest signal that the two belong together.
-2. **GoodBiz Agro's website** (if it has one). The same kind of link in its footer or "Group companies" section. Then send its address so it can go into `facts.agroUrl`.
+1. **goodbizglobal.com. The links are already there** (checked 29 October 2026): the home page links to https://www.goodbizhygiene.com/ three times, and its hygiene page links to individual product pages. Two small fixes remain on that site:
+   - **Its structured data says the companies are the same.** The home page's Organization lists goodbizhygiene.com (and goodbizagro, goodbizpower, goodbizchemicals) under `sameAs`, which means "this is the same organisation". For units, the right property is `subOrganization`: replace the `sameAs` list with `"subOrganization": [{"@id": "https://www.goodbizhygiene.com/#organization"}, …]` (one entry per unit). This site already declares GoodBiz Global as its `parentOrganization`, so the two then agree.
+   - **Link text.** The links read only "goodbizhygiene.com". Where it reads naturally, use words that say what the unit does, for example **"GoodBiz Hygiene: soaps and home care exporter"**.
+2. **The sister companies' websites** (goodbizagro.com, goodbizchemicals.com, goodbizpower.com). A plain "Group companies" mention with a link is enough. Keep it natural: a heavy site-wide footer exchange between all group sites can look like a link scheme. Send GoodBiz Agro's address so it can go into `facts.agroUrl`.
 
 ### Second: B2B marketplaces where importers search
 

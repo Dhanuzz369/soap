@@ -1,12 +1,12 @@
 ---
-sourceHash: "f7335a2c4b58"
+sourceHash: "0e389d931665"
 title: "LABSA (acide alkylbenzène sulfonique linéaire)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
 metaTitle: "LABSA 90 % et 96 % : exportateur et fournisseur en Inde"
-metaDescription: "LABSA 90 % et 96 % (acide alkylbenzène sulfonique linéaire) de fabricants indiens contrôlés, en fûts PEHD, IBC et flexitanks. HSN 3402 31, devis FOB/CIF."
+metaDescription: "LABSA 90 % et 96 % (acide alkylbenzène sulfonique linéaire) de fabricants indiens contrôlés, en fûts PEHD et GRV homologués ONU. HSN 3402 31, devis FOB/CIF."
 keyword: "LABSA"
 answer: "Le LABSA (acide alkylbenzène sulfonique linéaire) est le principal tensioactif anionique utilisé dans les lessives en poudre, les lessives liquides et les nettoyants. C’est un acide foncé et visqueux, neutralisé à la soude caustique ou au carbonate de sodium pour former l’agent lavant actif. GoodBiz Hygiene sélectionne le LABSA auprès de fabricants indiens contrôlés pour l’export vers les fabricants de détergents et les distributeurs."
 variants:
@@ -17,11 +17,10 @@ variants:
 packSizes:
   - "Fût PEHD de 200 à 235 kg"
   - "GRV de 1 000 L"
-  - "Flexitank (environ 20 tonnes)"
+  - "Conteneur-citerne ISO sur demande"
 packaging:
   - "Fûts PEHD de 200 à 235 kg, palettisés"
   - "Cuves GRV de 1 000 L en cage acier"
-  - "Flexitank dans un conteneur de 20 pieds pour le vrac"
   - "Conteneur-citerne ISO sur demande"
 specs:
   - label: "Aspect"
@@ -41,7 +40,7 @@ privateLabel:
   available: false
   options: []
 containerLoad:
-  ft20: "Environ 16 à 18 tonnes en fûts, ou environ 20 tonnes en flexitank"
+  ft20: "Environ 16 à 18 tonnes en fûts"
   ft40: "Peu utilisé ; les conteneurs de 20 pieds sont préférés pour les liquides denses"
 uses:
   - "Bouillie pour lessive en poudre"
@@ -57,11 +56,11 @@ faqs:
   - q: "Quelle différence entre le LABSA 90 % et 96 % ?"
     a: "Le chiffre correspond à la matière active minimale. Le LABSA 96 % est plus concentré, avec moins de matière non sulfonée et d’acide sulfurique, et convient aux formulateurs qui recherchent une meilleure efficacité ou une couleur plus claire. Le LABSA 90 % est la qualité standard, plus économique, très utilisée dans les poudres."
   - q: "Le LABSA est-il une marchandise dangereuse au transport ?"
-    a: "Oui. Le LABSA est corrosif et s’expédie normalement comme marchandise dangereuse selon le code IMDG : fûts, GRV ou flexitanks doivent être homologués pour la classe concernée et déclarés à la compagnie maritime. Nous organisons pour chaque commande les documents marchandises dangereuses et les compagnies qui les acceptent."
+    a: "Oui. Le LABSA est corrosif et s’expédie normalement comme marchandise dangereuse selon le code IMDG : fûts et GRV doivent être homologués ONU pour la classe concernée et déclarés à la compagnie maritime. Les flexitanks ne sont pas utilisés, car ils sont réservés aux liquides non dangereux. Nous organisons pour chaque commande les documents marchandises dangereuses et les compagnies qui les acceptent."
   - q: "Fournissez-vous une FDS ?"
     a: "Oui. Une fiche de données de sécurité (FDS, ou MSDS) est disponible sur demande, avec la fiche de spécifications du produit. Un certificat d’analyse (COA) par lot peut être demandé."
   - q: "Quel conditionnement est le mieux adapté au LABSA ?"
-    a: "Les fûts PEHD de 200 à 235 kg conviennent aux commandes plus petites ou mixtes et se manipulent facilement. Les GRV de 1 000 L économisent le coût des fûts, et les flexitanks offrent le coût à la tonne le plus bas aux acheteurs de vrac équipés de cuves de stockage et de pompage."
+    a: "Les fûts PEHD de 200 à 235 kg conviennent aux commandes plus petites ou mixtes et se manipulent facilement. Les GRV de 1 000 L économisent le coût des fûts, et les conteneurs-citernes ISO (sur demande) conviennent aux acheteurs réguliers de vrac équipés de cuves de stockage et de pompage."
   - q: "Comment manipuler et stocker le LABSA ?"
     a: "Stockez-le dans son contenant d’origine fermé, à l’abri de la chaleur et des matières incompatibles. Utilisez des gants résistants aux acides, des lunettes et des vêtements de protection, et neutralisez lentement à la soude caustique ou au carbonate de sodium, avec un bon brassage et un bon refroidissement."
 related:
@@ -84,7 +83,7 @@ Deux qualités sont courantes. Le LABSA 90 % est la qualité standard pour les 
 
 ## Conditionnement et transport
 
-Le LABSA est conditionné en fûts PEHD de 200 à 235 kg, en GRV de 1 000 L ou en flexitanks d’environ 20 tonnes. Un conteneur de 20 pieds contient généralement environ 16 à 18 tonnes en fûts. L’acide étant corrosif, il voyage comme marchandise dangereuse, avec le marquage ONU et les déclarations appropriés. Nous coordonnons ces formalités, et une FDS est disponible sur demande.
+Le LABSA est conditionné en fûts PEHD de 200 à 235 kg ou en GRV de 1 000 L, avec des conteneurs-citernes ISO sur demande pour le vrac. Un conteneur de 20 pieds contient généralement environ 16 à 18 tonnes en fûts. L’acide étant corrosif, il voyage comme marchandise dangereuse, avec le marquage ONU et les déclarations appropriés. Nous coordonnons ces formalités, et une FDS est disponible sur demande.
 
 ## Manipulation et stockage
 

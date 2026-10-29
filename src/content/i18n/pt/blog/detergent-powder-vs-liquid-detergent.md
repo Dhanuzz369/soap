@@ -1,5 +1,5 @@
 ---
-sourceHash: "3192292d0bae"
+sourceHash: "37a372337cdf"
 title: "Sabão em pó ou sabão líquido: qual vende mais no seu mercado?"
 metaTitle: "Sabão em pó ou líquido: qual vende mais no seu mercado?"
 description: "Sabão em pó ou líquido para roupas? Compare clima, hábitos de lavagem, máquinas, preço e frete por lavagem para escolher a linha certa para o seu mercado."
@@ -83,7 +83,7 @@ Mantenha curta a lista de fragrâncias no começo. Duas ou três fragrâncias be
 
 ## Uma nota para fabricantes e formuladores de detergentes
 
-Alguns compradores não querem produtos acabados. Se você já opera uma unidade de formulação ou de embalagem, as matérias-primas podem ser o melhor caminho. O [LABSA (ácido alquilbenzeno sulfônico linear)](/products/labsa/) é o principal tensoativo aniônico por trás de pós e de líquidos, e o adquirimos de fabricantes indianos selecionados, em tambores, IBCs e flexitanks. É um modelo de negócio diferente, com controle de qualidade próprio; por isso, converse conosco sobre as suas necessidades de formulação antes de decidir.
+Alguns compradores não querem produtos acabados. Se você já opera uma unidade de formulação ou de embalagem, as matérias-primas podem ser o melhor caminho. O [LABSA (ácido alquilbenzeno sulfônico linear)](/products/labsa/) é o principal tensoativo aniônico por trás de pós e de líquidos, e o adquirimos de fabricantes indianos selecionados, em tambores e IBCs. É um modelo de negócio diferente, com controle de qualidade próprio; por isso, converse conosco sobre as suas necessidades de formulação antes de decidir.
 
 ## O que nos enviar para uma cotação útil
 

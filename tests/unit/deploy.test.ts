@@ -97,9 +97,20 @@ describe('vercel.json', () => {
   });
 
   it('redirects *.vercel.app (308) to the real domain only once launchReady is true', () => {
-    expect(buildVercelConfig({ url: 'https://www.goodbizhygiene.com', launchReady: false }).redirects).toEqual([]);
-    expect(buildVercelConfig({ url: 'https://soap-gules.vercel.app', launchReady: true }).redirects).toEqual([]);
+    const toDomain = (r: { has?: unknown }[]) => r.filter((x) => x.has);
+    expect(toDomain(buildVercelConfig({ url: 'https://www.goodbizhygiene.com', launchReady: false }).redirects)).toEqual([]);
+    expect(toDomain(buildVercelConfig({ url: 'https://soap-gules.vercel.app', launchReady: true }).redirects)).toEqual([]);
     const r = buildVercelConfig({ url: 'https://www.goodbizhygiene.com/', launchReady: true }).redirects;
-    expect(r).toEqual([{ source: '/:path*', has: [{ type: 'host', value: VERCEL_APP_HOST }], destination: 'https://www.goodbizhygiene.com/:path*', permanent: true }]);
+    expect(r[0]).toEqual({ source: '/:path*', has: [{ type: 'host', value: VERCEL_APP_HOST }], destination: 'https://www.goodbizhygiene.com/:path*', permanent: true });
+  });
+
+  it('redirects addresses people and tools guess: /sitemap.xml and the range index in every language', () => {
+    const r = buildVercelConfig({ url: 'https://www.goodbizhygiene.com', launchReady: true }).redirects.filter((x) => !('has' in x));
+    expect(r).toContainEqual({ source: '/sitemap.xml', destination: '/sitemap-index.xml', permanent: true });
+    expect(r).toContainEqual({ source: '/categories/', destination: '/products/', permanent: true });
+    const lang = r.find((x) => x.destination === '/:lang/products/')!;
+    expect(lang.source).toMatch(/^\/:lang\(([a-z]{2}\|)+[a-z]{2}\)\/categories\/$/);
+    expect(lang.source).toContain('ar|');
+    expect(lang.source).not.toContain('en|');
   });
 });

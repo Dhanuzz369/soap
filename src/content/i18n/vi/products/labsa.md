@@ -1,12 +1,12 @@
 ---
-sourceHash: "f7335a2c4b58"
+sourceHash: "0e389d931665"
 title: "LABSA (axit alkylbenzen sulfonic mạch thẳng)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
 metaTitle: "LABSA 90% và 96%: nhà xuất khẩu, cung cấp từ Ấn Độ"
-metaDescription: "LABSA 90% và 96% (axit alkyl benzen sulfonic mạch thẳng) từ nhà sản xuất Ấn Độ đã thẩm định, đóng phuy HDPE, IBC và flexitank. HSN 3402 31, báo giá FOB/CIF."
+metaDescription: "LABSA 90% và 96% (axit alkyl benzen sulfonic mạch thẳng) từ nhà sản xuất Ấn Độ đã thẩm định, đóng phuy HDPE và IBC đạt chuẩn UN. HSN 3402 31, báo giá FOB/CIF."
 keyword: "LABSA"
 answer: "LABSA (axit alkylbenzen sulfonic mạch thẳng) là chất hoạt động bề mặt anion chính dùng trong bột giặt, nước giặt và chất tẩy rửa. Đây là một axit sệt, màu sẫm, được trung hòa bằng xút hoặc soda để tạo thành tác nhân làm sạch hoạt tính. GoodBiz Hygiene cung ứng LABSA từ các nhà sản xuất Ấn Độ đã được thẩm định để xuất khẩu cho cơ sở sản xuất chất tẩy rửa và nhà phân phối."
 variants:
@@ -17,11 +17,10 @@ variants:
 packSizes:
   - "Thùng HDPE 200 đến 235 kg"
   - "IBC 1.000 L"
-  - "Flexitank (khoảng 20 tấn)"
+  - "ISO tank theo yêu cầu"
 packaging:
   - "Thùng HDPE 200 đến 235 kg, xếp pallet"
   - "Bồn IBC 1.000 L trong khung thép"
-  - "Flexitank trong container 20 ft cho lô hàng số lượng lớn"
   - "ISO tank theo yêu cầu"
 specs:
   - label: "Ngoại quan"
@@ -41,7 +40,7 @@ privateLabel:
   available: false
   options: []
 containerLoad:
-  ft20: "Xấp xỉ 16 đến 18 tấn trong thùng phuy, hoặc xấp xỉ 20 tấn trong flexitank"
+  ft20: "Xấp xỉ 16 đến 18 tấn trong thùng phuy"
   ft40: "Thường không sử dụng; container 20 ft được ưu tiên cho chất lỏng có tỷ trọng cao"
 uses:
   - "Bột giặt và hỗn hợp sệt cho bột giặt"
@@ -57,11 +56,11 @@ faqs:
   - q: "LABSA 90% khác 96% như thế nào?"
     a: "Con số là hàm lượng hoạt chất tối thiểu. LABSA 96% đậm đặc hơn, ít chất chưa sulfon hóa và axit sulfuric hơn, phù hợp với đơn vị pha chế cần hiệu suất cao hơn hoặc màu sáng hơn. LABSA 90% là cấp tiêu chuẩn tiết kiệm hơn, được dùng rộng rãi trong bột giặt."
   - q: "LABSA có phải là hàng nguy hiểm khi vận chuyển không?"
-    a: "Có. LABSA có tính ăn mòn và thường được vận chuyển như hàng nguy hiểm (DG) theo Bộ luật IMDG, nên thùng phuy, IBC hoặc flexitank phải được phê duyệt cho nhóm hàng này và khai báo với hãng tàu. Chúng tôi sắp xếp chứng từ DG và các hãng tàu chấp nhận hàng cho từng đơn hàng."
+    a: "Có. LABSA có tính ăn mòn và thường được vận chuyển như hàng nguy hiểm (DG) theo Bộ luật IMDG, nên thùng phuy và IBC phải đạt chứng nhận UN cho nhóm hàng này và được khai báo với hãng tàu. Chúng tôi không dùng flexitank, vì flexitank chỉ dành cho chất lỏng không nguy hiểm. Chúng tôi sắp xếp chứng từ DG và các hãng tàu chấp nhận hàng cho từng đơn hàng."
   - q: "Quý công ty có cung cấp MSDS không?"
     a: "Có. Bảng dữ liệu an toàn hóa chất (MSDS) có sẵn theo yêu cầu, cùng bảng thông số sản phẩm. Có thể yêu cầu giấy chứng nhận phân tích (COA) cho từng lô."
   - q: "Loại bao bì nào tốt nhất cho LABSA?"
-    a: "Thùng HDPE 200 đến 235 kg phù hợp với đơn hàng nhỏ hoặc ghép và dễ xử lý. IBC 1.000 L tiết kiệm chi phí thùng phuy, và flexitank cho chi phí mỗi tấn thấp nhất đối với người mua số lượng lớn có bồn chứa và hệ thống bơm."
+    a: "Thùng HDPE 200 đến 235 kg phù hợp với đơn hàng nhỏ hoặc ghép và dễ xử lý. IBC 1.000 L tiết kiệm chi phí thùng phuy, và ISO tank (theo yêu cầu) phù hợp với người mua số lượng lớn thường xuyên có bồn chứa và hệ thống bơm."
   - q: "Nên xử lý và bảo quản LABSA như thế nào?"
     a: "Bảo quản trong thùng chứa nguyên bản đã đóng kín, tránh nhiệt và các vật liệu không tương thích. Sử dụng găng tay chống axit, kính bảo hộ và quần áo bảo hộ, và trung hòa từ từ bằng xút hoặc soda với khuấy trộn tốt và làm mát."
 related:
@@ -84,7 +83,7 @@ Có hai cấp phổ biến. LABSA 90% là cấp tiêu chuẩn cho hỗn hợp s�
 
 ## Đóng gói và vận chuyển
 
-LABSA được đóng trong thùng HDPE 200 đến 235 kg, IBC 1.000 L, hoặc flexitank khoảng 20 tấn. Một container 20 ft thường chứa khoảng 16 đến 18 tấn trong thùng phuy. Vì axit có tính ăn mòn, hàng được vận chuyển như hàng nguy hiểm, với ký hiệu UN và khai báo đúng quy định. Chúng tôi điều phối việc này, và MSDS có sẵn theo yêu cầu.
+LABSA được đóng trong thùng HDPE 200 đến 235 kg hoặc IBC 1.000 L, có ISO tank theo yêu cầu cho lô hàng số lượng lớn. Một container 20 ft thường chứa khoảng 16 đến 18 tấn trong thùng phuy. Vì axit có tính ăn mòn, hàng được vận chuyển như hàng nguy hiểm, với ký hiệu UN và khai báo đúng quy định. Chúng tôi điều phối việc này, và MSDS có sẵn theo yêu cầu.
 
 ## Xử lý và bảo quản
 

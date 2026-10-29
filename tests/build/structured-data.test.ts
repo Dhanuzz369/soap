@@ -163,6 +163,8 @@ describe.each([...new Set(pages.map((p) => p.lang))])('required fields per type,
       if (!/^\d{4} \d{2}$/.test(hsn?.value ?? '')) problems.push(`${p.path}: HSN ${hsn?.value}`);
       const photo = `/images/products/${slug}.webp`;
       if (existsSync(resolve(process.cwd(), 'public' + photo)) && pr.image !== BASE + photo) problems.push(`${p.path}: image ${pr.image}`);
+      // Without its own photo, a product still has an image: the pack illustration on the page.
+      if (typeof pr.image !== 'string' || !existsSync(resolve(process.cwd(), 'public' + pr.image.replace(BASE, '')))) problems.push(`${p.path}: no image file (${pr.image})`);
       const page = p.blocks.find((b) => b['@type'] === 'ItemPage');
       if (page?.mainEntity?.['@id'] !== pr['@id']) problems.push(`${p.path}: ItemPage.mainEntity`);
     }

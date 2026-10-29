@@ -38,9 +38,10 @@ export default defineConfig({
           // x-default alternate (the English page), matching the hreflang links in each page's head.
           serialize: (item) => {
             const en = item.links?.find((l) => l.lang === 'en');
+            const lastmod = lastmodFor(item.url);
             return {
               ...item,
-              lastmod: lastmodFor(item.url),
+              ...(lastmod ? { lastmod } : {}),
               ...(en ? { links: [...item.links, { lang: 'x-default', url: en.url }] } : {}),
             };
           },

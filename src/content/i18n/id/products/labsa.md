@@ -1,12 +1,12 @@
 ---
-sourceHash: "f7335a2c4b58"
+sourceHash: "0e389d931665"
 title: "LABSA (Asam Alkilbenzena Sulfonat Linier)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
 metaTitle: "LABSA 90% dan 96%: Eksportir & Pemasok dari India"
-metaDescription: "LABSA 90% dan 96% (asam sulfonat alkil benzena linear) dari produsen India terseleksi dalam drum HDPE, IBC, dan flexitank. HSN 3402 31, penawaran FOB/CIF."
+metaDescription: "LABSA 90% dan 96% (asam sulfonat alkil benzena linear) dari produsen India terseleksi dalam drum HDPE dan IBC bersertifikat UN. HSN 3402 31, penawaran FOB/CIF."
 keyword: "LABSA"
 answer: "LABSA (Linear Alkyl Benzene Sulphonic Acid, asam alkilbenzena sulfonat linier) adalah surfaktan anionik utama yang dipakai dalam deterjen bubuk, deterjen cair, dan pembersih. LABSA berupa asam kental berwarna gelap yang dinetralkan dengan soda api atau abu soda untuk membentuk bahan pembersih aktif. GoodBiz Hygiene mencarikan LABSA dari produsen India yang telah diseleksi untuk diekspor kepada pembuat deterjen dan distributor."
 variants:
@@ -17,11 +17,10 @@ variants:
 packSizes:
   - "Drum HDPE 200 hingga 235 kg"
   - "IBC 1.000 L"
-  - "Flexitank (sekitar 20 ton)"
+  - "ISO tank atas permintaan"
 packaging:
   - "Drum HDPE 200 hingga 235 kg, dipalet"
   - "Tangki IBC 1.000 L dalam rangka baja"
-  - "Flexitank dalam kontainer 20 kaki untuk muatan curah"
   - "ISO tank atas permintaan"
 specs:
   - label: "Penampilan"
@@ -41,7 +40,7 @@ privateLabel:
   available: false
   options: []
 containerLoad:
-  ft20: "Sekitar 16 hingga 18 ton dalam drum, atau sekitar 20 ton dalam flexitank"
+  ft20: "Sekitar 16 hingga 18 ton dalam drum"
   ft40: "Biasanya tidak dipakai; kontainer 20 kaki lebih disukai untuk cairan padat"
 uses:
   - "Deterjen bubuk dan bubur (slurry) bubuk pencuci"
@@ -57,11 +56,11 @@ faqs:
   - q: "Apa perbedaan LABSA 90% dan 96%?"
     a: "Angka tersebut adalah bahan aktif minimum. LABSA 96% lebih pekat, dengan lebih sedikit bahan yang tidak tersulfonasi dan asam sulfat, serta cocok bagi peracik yang membutuhkan efisiensi lebih tinggi atau warna lebih terang. LABSA 90% adalah grade standar yang lebih ekonomis dan banyak dipakai dalam bubuk."
   - q: "Apakah LABSA tergolong barang berbahaya untuk pengiriman?"
-    a: "Ya. LABSA bersifat korosif dan biasanya dikirim sebagai kargo berbahaya (DG) berdasarkan IMDG Code, sehingga drum, IBC, atau flexitank harus disetujui untuk kelasnya dan dideklarasikan kepada perusahaan pelayaran. Kami mengatur dokumen DG dan perusahaan pelayaran yang menerimanya untuk setiap pesanan."
+    a: "Ya. LABSA bersifat korosif dan biasanya dikirim sebagai kargo berbahaya (DG) berdasarkan IMDG Code, sehingga drum dan IBC harus bersertifikat UN untuk kelasnya dan dideklarasikan kepada perusahaan pelayaran. Flexitank tidak digunakan, karena hanya untuk cairan yang tidak berbahaya. Kami mengatur dokumen DG dan perusahaan pelayaran yang menerimanya untuk setiap pesanan."
   - q: "Apakah Anda menyediakan MSDS?"
     a: "Ya. Lembar data keselamatan bahan (MSDS) tersedia atas permintaan, bersama spesifikasi produk. Sertifikat analisis (COA) per batch dapat diminta."
   - q: "Pengemasan mana yang terbaik untuk LABSA?"
-    a: "Drum HDPE 200 hingga 235 kg cocok untuk pesanan yang lebih kecil atau campuran dan mudah ditangani. IBC 1.000 L menghemat biaya drum, dan flexitank memberi biaya per ton terendah bagi pembeli curah yang memiliki penyimpanan tangki dan pemompaan."
+    a: "Drum HDPE 200 hingga 235 kg cocok untuk pesanan yang lebih kecil atau campuran dan mudah ditangani. IBC 1.000 L menghemat biaya drum, dan ISO tank (atas permintaan) cocok bagi pembeli curah rutin yang memiliki penyimpanan tangki dan pemompaan."
   - q: "Bagaimana LABSA sebaiknya ditangani dan disimpan?"
     a: "Simpan dalam wadah asli yang tertutup, jauh dari panas dan bahan yang tidak kompatibel. Gunakan sarung tangan tahan asam, kacamata pelindung, dan pakaian pelindung, dan netralkan perlahan dengan soda api atau abu soda disertai pengadukan dan pendinginan yang baik."
 related:
@@ -84,7 +83,7 @@ Dua grade yang umum. LABSA 90% adalah grade standar untuk bubur (slurry) deterje
 
 ## Pengemasan dan pengiriman
 
-LABSA dikemas dalam drum HDPE 200 hingga 235 kg, IBC 1.000 L, atau flexitank sekitar 20 ton. Kontainer 20 kaki umumnya memuat sekitar 16 hingga 18 ton dalam drum. Karena asam ini korosif, pengirimannya diperlakukan sebagai barang berbahaya, dengan penandaan UN dan deklarasi yang benar. Kami mengoordinasikan hal ini, dan MSDS tersedia atas permintaan.
+LABSA dikemas dalam drum HDPE 200 hingga 235 kg atau IBC 1.000 L, dengan ISO tank atas permintaan untuk muatan curah. Kontainer 20 kaki umumnya memuat sekitar 16 hingga 18 ton dalam drum. Karena asam ini korosif, pengirimannya diperlakukan sebagai barang berbahaya, dengan penandaan UN dan deklarasi yang benar. Kami mengoordinasikan hal ini, dan MSDS tersedia atas permintaan.
 
 ## Penanganan dan penyimpanan
 

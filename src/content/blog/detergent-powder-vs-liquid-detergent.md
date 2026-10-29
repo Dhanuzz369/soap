@@ -83,7 +83,7 @@ Keep fragrance choices short at the start. Two or three well-chosen fragrances a
 
 ## A note for detergent makers and blenders
 
-Some buyers do not want finished goods at all. If you already run a blending or packing unit, the raw materials may be the better route. [LABSA](/products/labsa/) is the main anionic surfactant behind both powders and liquids, and we source it from vetted Indian manufacturers in drums, IBCs and flexitanks. This is a different business model with its own quality control, so talk to us about your formulation needs before deciding.
+Some buyers do not want finished goods at all. If you already run a blending or packing unit, the raw materials may be the better route. [LABSA](/products/labsa/) is the main anionic surfactant behind both powders and liquids, and we source it from vetted Indian manufacturers in drums and IBCs. This is a different business model with its own quality control, so talk to us about your formulation needs before deciding.
 
 ## What to send us for a useful quotation
 

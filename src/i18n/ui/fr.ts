@@ -332,7 +332,7 @@ const fr: UiPartial = {
     packSizes: 'Contenances',
     packaging: 'Options de conditionnement',
     galleryH: 'D’autres parfums, en photos',
-    specH: 'Quelles sont les spécifications types : {nameLower} ?',
+    specH: '{name} : quelles sont les spécifications types ?',
     specNote: '{name} : valeurs types pour les qualités export. Les valeurs définitives sont confirmées avec le fabricant à chaque commande.',
     aboutAria: 'À propos : {name}',
     loadH: 'Chargement conteneur (approx.)',

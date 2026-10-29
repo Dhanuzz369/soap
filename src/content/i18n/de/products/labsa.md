@@ -1,12 +1,12 @@
 ---
-sourceHash: "f7335a2c4b58"
+sourceHash: "0e389d931665"
 title: "LABSA (lineare Alkylbenzolsulfonsäure)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
 metaTitle: "LABSA 90 % und 96 % – Exporteur & Lieferant aus Indien"
-metaDescription: "LABSA 90 % und 96 % (lineare Alkylbenzolsulfonsäure) von geprüften indischen Herstellern in HDPE-Fässern, IBCs und Flexitanks. HSN 3402 31, FOB/CIF-Angebote."
+metaDescription: "LABSA 90 % und 96 % (lineare Alkylbenzolsulfonsäure) von geprüften indischen Herstellern in UN-zugelassenen HDPE-Fässern und IBC. HSN 3402 31, FOB/CIF-Angebote."
 keyword: "LABSA"
 answer: "LABSA (lineare Alkylbenzolsulfonsäure) ist das wichtigste anionische Tensid in Waschpulvern, Flüssigwaschmitteln und Reinigern. Es ist eine dunkle, zähflüssige Säure, die mit Natronlauge oder Soda neutralisiert wird und so den eigentlichen Reinigungswirkstoff bildet. GoodBiz Hygiene bezieht LABSA von geprüften indischen Herstellern für den Export an Waschmittelhersteller und Händler."
 variants:
@@ -17,11 +17,10 @@ variants:
 packSizes:
   - "200 bis 235 kg HDPE-Fass"
   - "1.000 L IBC"
-  - "Flexitank (ca. 20 Tonnen)"
+  - "ISO-Tank auf Anfrage"
 packaging:
   - "200- bis 235-kg-HDPE-Fässer, palettiert"
   - "1.000-L-IBC-Tanks im Stahlkäfig"
-  - "Flexitank in einem 20-ft-Container für Großladungen"
   - "ISO-Tank auf Anfrage"
 specs:
   - label: "Aussehen"
@@ -41,7 +40,7 @@ privateLabel:
   available: false
   options: []
 containerLoad:
-  ft20: "Ca. 16 bis 18 Tonnen in Fässern oder ca. 20 Tonnen in einem Flexitank"
+  ft20: "Ca. 16 bis 18 Tonnen in Fässern"
   ft40: "Üblicherweise nicht verwendet; für dichte Flüssigkeiten werden 20-ft-Container bevorzugt"
 uses:
   - "Waschpulver und Slurry für Waschpulver"
@@ -57,11 +56,11 @@ faqs:
   - q: "Worin unterscheiden sich LABSA 90 % und 96 %?"
     a: "Die Zahl gibt die Mindest-Aktivsubstanz an. LABSA 96 % ist konzentrierter, mit weniger nicht sulfoniertem Anteil und weniger Schwefelsäure, und eignet sich für Formulierer, die höhere Effizienz oder hellere Farbe benötigen. LABSA 90 % ist die wirtschaftlichere Standardqualität, die in Pulvern weit verbreitet ist."
   - q: "Ist LABSA beim Versand ein Gefahrgut?"
-    a: "Ja. LABSA ist ätzend und wird normalerweise nach dem IMDG-Code als Gefahrgut (DG) verschifft, daher müssen Fässer, IBC oder Flexitanks für die Klasse zugelassen und der Reederei deklariert werden. Wir kümmern uns bei jedem Auftrag um die DG-Papiere und um die Reedereien, die diese Ladung annehmen."
+    a: "Ja. LABSA ist ätzend und wird normalerweise nach dem IMDG-Code als Gefahrgut (DG) verschifft, daher müssen Fässer und IBC für die Klasse UN-zugelassen sein und der Reederei deklariert werden. Flexitanks werden nicht verwendet, da sie nur für nicht gefährliche Flüssigkeiten bestimmt sind. Wir kümmern uns bei jedem Auftrag um die DG-Papiere und um die Reedereien, die diese Ladung annehmen."
   - q: "Stellen Sie ein MSDS bereit?"
     a: "Ja. Ein Sicherheitsdatenblatt (MSDS) ist zusammen mit der Produktspezifikation auf Anfrage erhältlich. Ein Analysezertifikat (COA) je Charge kann angefordert werden."
   - q: "Welche Verpackung ist für LABSA am besten?"
-    a: "HDPE-Fässer mit 200 bis 235 kg eignen sich für kleinere oder gemischte Aufträge und sind einfach zu handhaben. IBC mit 1.000 L sparen Fasskosten, und Flexitanks bieten die niedrigsten Kosten je Tonne für Großabnehmer mit Tanklager und Pumpanlage."
+    a: "HDPE-Fässer mit 200 bis 235 kg eignen sich für kleinere oder gemischte Aufträge und sind einfach zu handhaben. IBC mit 1.000 L sparen Fasskosten, und ISO-Tanks (auf Anfrage) eignen sich für regelmäßige Großabnehmer mit Tanklager und Pumpanlage."
   - q: "Wie sollte LABSA gehandhabt und gelagert werden?"
     a: "Im ursprünglichen, verschlossenen Behälter lagern, vor Hitze und unverträglichen Stoffen geschützt. Säurebeständige Handschuhe, Schutzbrille und Schutzkleidung verwenden und langsam mit Natronlauge oder Soda neutralisieren, bei guter Durchmischung und Kühlung."
 related:
@@ -84,7 +83,7 @@ Zwei Qualitäten sind üblich. LABSA 90 % ist die Standardqualität für Slurry 
 
 ## Verpackung und Versand
 
-LABSA wird in 200- bis 235-kg-HDPE-Fässern, 1.000-L-IBC oder Flexitanks mit etwa 20 Tonnen verpackt. Ein 20-ft-Container fasst in Fässern typischerweise etwa 16 bis 18 Tonnen. Da die Säure ätzend ist, wird sie als Gefahrgut mit der richtigen UN-Kennzeichnung und den nötigen Deklarationen befördert. Wir koordinieren dies, und ein MSDS ist auf Anfrage erhältlich.
+LABSA wird in 200- bis 235-kg-HDPE-Fässern oder 1.000-L-IBC verpackt, für Großladungen auf Anfrage auch in ISO-Tanks. Ein 20-ft-Container fasst in Fässern typischerweise etwa 16 bis 18 Tonnen. Da die Säure ätzend ist, wird sie als Gefahrgut mit der richtigen UN-Kennzeichnung und den nötigen Deklarationen befördert. Wir koordinieren dies, und ein MSDS ist auf Anfrage erhältlich.
 
 ## Handhabung und Lagerung
 

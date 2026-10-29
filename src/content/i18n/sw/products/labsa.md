@@ -1,12 +1,12 @@
 ---
-sourceHash: "f7335a2c4b58"
+sourceHash: "0e389d931665"
 title: "LABSA (Asidi ya Alkilibenzini Salfoniki ya Mnyororo Ulionyooka)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
 metaTitle: "LABSA 90% na 96%: Msafirishaji Nje na Muuzaji kutoka India"
-metaDescription: "LABSA 90% na 96% (asidi ya linear alkyl benzene sulphonic) kutoka viwanda vya India vilivyokaguliwa, kwa mapipa ya HDPE, IBC na flexitank. HSN 3402 31, FOB/CIF."
+metaDescription: "LABSA 90% na 96% (asidi ya linear alkyl benzene sulphonic) kutoka viwanda vya India vilivyokaguliwa, kwa mapipa ya HDPE na IBC zenye idhini ya UN. HSN 3402 31."
 keyword: "LABSA"
 answer: "LABSA (Linear Alkyl Benzene Sulphonic Acid, asidi ya alkilibenzini salfoniki ya mnyororo ulionyooka) ni kiambato kikuu cha kusafisha cha anionic kinachotumika katika sabuni za unga, sabuni za maji za kufulia na visafishaji. Ni asidi nzito yenye rangi nyeusi inayopunguzwa makali kwa soda ya caustic au soda ash ili kuunda kiambato hai cha kusafisha. GoodBiz Hygiene hupata LABSA kutoka kwa watengenezaji wa India tuliowakagua kwa ajili ya usafirishaji nje kwa watengenezaji wa sabuni za kufulia na wasambazaji."
 variants:
@@ -17,11 +17,10 @@ variants:
 packSizes:
   - "Pipa la HDPE la 200 hadi 235 kg"
   - "IBC ya 1,000 L"
-  - "Flexitank (takriban tani 20)"
+  - "Tanki la ISO kwa ombi"
 packaging:
   - "Mapipa ya HDPE ya 200 hadi 235 kg, yaliyopangwa kwenye pallet"
   - "Matanki ya IBC ya 1,000 L kwenye ngome ya chuma"
-  - "Flexitank ndani ya kontena la futi 20 kwa mizigo ya jumla"
   - "Tanki la ISO kwa ombi"
 specs:
   - label: "Mwonekano"
@@ -41,7 +40,7 @@ privateLabel:
   available: false
   options: []
 containerLoad:
-  ft20: "Takriban tani 16 hadi 18 katika mapipa, au takriban tani 20 katika flexitank"
+  ft20: "Takriban tani 16 hadi 18 katika mapipa"
   ft40: "Kwa kawaida halitumiki; makontena ya futi 20 hupendelewa kwa vimiminika vizito"
 uses:
   - "Tope la sabuni ya unga na poda ya kufulia"
@@ -57,11 +56,11 @@ faqs:
   - q: "Kuna tofauti gani kati ya LABSA 90% na 96%?"
     a: "Namba ni kiwango cha chini cha viambato hai. LABSA 96% imekolea zaidi, ikiwa na vitu vichache visivyo na salfoni na asidi ya salfuriki, na inafaa watengenezaji wa fomula wanaohitaji ufanisi wa juu zaidi au rangi nyepesi. LABSA 90% ni daraja la kawaida la gharama nafuu zaidi linalotumika sana kwenye poda."
   - q: "Je, LABSA ni bidhaa hatari kwa usafirishaji?"
-    a: "Ndiyo. LABSA inaunguza (corrosive) na kwa kawaida husafirishwa kama shehena hatari (DG) chini ya Kanuni za IMDG, kwa hivyo mapipa, IBC au flexitank lazima ziidhinishwe kwa daraja hilo na kutangazwa kwa kampuni ya meli. Tunapanga nyaraka za DG na kampuni za meli zinazokubali kwa kila oda."
+    a: "Ndiyo. LABSA inaunguza (corrosive) na kwa kawaida husafirishwa kama shehena hatari (DG) chini ya Kanuni za IMDG, kwa hivyo mapipa na IBC lazima ziidhinishwe na UN kwa daraja hilo na kutangazwa kwa kampuni ya meli. Flexitank hazitumiki, kwa sababu ni kwa ajili ya vimiminika visivyo hatari pekee. Tunapanga nyaraka za DG na kampuni za meli zinazokubali kwa kila oda."
   - q: "Je, mnatoa MSDS?"
     a: "Ndiyo. Karatasi ya Data za Usalama wa Nyenzo (MSDS) inapatikana kwa ombi, pamoja na vipimo vya bidhaa. Cheti cha uchambuzi (COA) kwa kila kundi la uzalishaji kinaweza kuombwa."
   - q: "Ni ufungashaji gani bora kwa LABSA?"
-    a: "Mapipa ya HDPE ya 200 hadi 235 kg yanafaa oda ndogo au mchanganyiko na ni rahisi kushughulikia. IBC za 1,000 L huokoa gharama ya mapipa, na flexitank hutoa gharama ya chini zaidi kwa tani kwa wanunuzi wa jumla wenye hifadhi ya matanki na pampu."
+    a: "Mapipa ya HDPE ya 200 hadi 235 kg yanafaa oda ndogo au mchanganyiko na ni rahisi kushughulikia. IBC za 1,000 L huokoa gharama ya mapipa, na matanki ya ISO (kwa ombi) yanafaa wanunuzi wa jumla wa mara kwa mara wenye hifadhi ya matanki na pampu."
   - q: "LABSA inapaswa kushughulikiwa na kuhifadhiwaje?"
     a: "Hifadhi kwenye chombo asilia kilichofungwa, mbali na joto na vifaa visivyooana. Tumia glovu zinazostahimili asidi, miwani na mavazi ya kinga, na punguza makali polepole kwa soda ya caustic au soda ash kwa kuchanganya vizuri na kupoza."
 related:
@@ -84,7 +83,7 @@ Daraja mbili ni za kawaida. LABSA 90% ni daraja la kawaida kwa matope ya sabuni 
 
 ## Ufungashaji na usafirishaji
 
-LABSA hupakiwa katika mapipa ya HDPE ya 200 hadi 235 kg, IBC za 1,000 L, au flexitank za takriban tani 20. Kontena la futi 20 kwa kawaida hubeba takriban tani 16 hadi 18 katika mapipa. Kwa kuwa asidi inaunguza, husafirishwa kama bidhaa hatari, ikiwa na alama sahihi za UN na matamko. Sisi huratibu hili, na MSDS inapatikana kwa ombi.
+LABSA hupakiwa katika mapipa ya HDPE ya 200 hadi 235 kg au IBC za 1,000 L, na matanki ya ISO kwa ombi kwa mizigo ya jumla. Kontena la futi 20 kwa kawaida hubeba takriban tani 16 hadi 18 katika mapipa. Kwa kuwa asidi inaunguza, husafirishwa kama bidhaa hatari, ikiwa na alama sahihi za UN na matamko. Sisi huratibu hili, na MSDS inapatikana kwa ombi.
 
 ## Ushughulikiaji na uhifadhi
 

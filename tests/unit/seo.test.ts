@@ -88,6 +88,14 @@ describe('seo', () => {
   it('pageTitle', () => {
     expect(pageTitle('Floor Cleaner Exporter & Supplier from India')).toBe('Floor Cleaner Exporter & Supplier from India | GoodBiz Hygiene');
     expect(pageTitle('Contact | GoodBiz Hygiene')).toBe('Contact | GoodBiz Hygiene');
+    // The brand is not repeated, and is left off when it would only be cut off in search results
+    // (Google shows the site name above the title anyway).
+    expect(pageTitle('About GoodBiz Hygiene: Soap & Detergent Exporter, India')).toBe('About GoodBiz Hygiene: Soap & Detergent Exporter, India');
+    const long = 'Hotel & Guest Soap (Mini Bars): Exporter & Supplier, India';
+    expect(pageTitle(long)).toBe(long);
+    // Chinese characters are about twice as wide in a result.
+    expect(pageTitle('洗碗液出口商和供应商（印度）')).toBe('洗碗液出口商和供应商（印度） | GoodBiz Hygiene');
+    expect(pageTitle('浴皂和香皂出口商和供应商：来自印度的商人出口商和贸易公司')).toBe('浴皂和香皂出口商和供应商：来自印度的商人出口商和贸易公司');
   });
   it('absoluteUrl', () => {
     expect(absoluteUrl('/products/')).toBe(`${BASE}/products/`);

@@ -1,12 +1,12 @@
 ---
-sourceHash: "f7335a2c4b58"
+sourceHash: "0e389d931665"
 title: "LABSA (ácido alquilbenzeno sulfônico linear)"
 slug: labsa
 category: industrial-raw-materials
 order: 2
 hsn: "3402 31"
 metaTitle: "LABSA 90% e 96%: exportador e fornecedor da Índia"
-metaDescription: "LABSA 90% e 96% (ácido sulfônico de alquilbenzeno linear) de fabricantes indianos selecionados, em tambores, IBC e flexitanques. HSN 3402 31, FOB/CIF."
+metaDescription: "LABSA 90% e 96% (ácido sulfônico de alquilbenzeno linear) de fabricantes indianos selecionados, em tambores de HDPE e IBCs homologados UN. HSN 3402 31, FOB/CIF."
 keyword: "LABSA"
 answer: "O LABSA (ácido alquilbenzeno sulfônico linear) é o principal tensoativo aniônico usado em detergentes em pó, detergentes líquidos e limpadores. É um ácido escuro e viscoso, neutralizado com soda cáustica ou barrilha para formar o agente de limpeza ativo. A GoodBiz Hygiene adquire LABSA de fabricantes indianos selecionados, para exportação a fabricantes e distribuidores de detergentes."
 variants:
@@ -17,11 +17,10 @@ variants:
 packSizes:
   - "Tambor de HDPE de 200 a 235 kg"
   - "IBC de 1.000 L"
-  - "Flexitank (cerca de 20 toneladas)"
+  - "Tanque ISO, sob solicitação"
 packaging:
   - "Tambores de HDPE de 200 a 235 kg, paletizados"
   - "Tanques IBC de 1.000 L em gaiola de aço"
-  - "Flexitank em contêiner de 20 pés para cargas a granel"
   - "Tanque ISO, sob solicitação"
 specs:
   - label: "Aspecto"
@@ -41,7 +40,7 @@ privateLabel:
   available: false
   options: []
 containerLoad:
-  ft20: "Aprox. 16 a 18 toneladas em tambores, ou aprox. 20 toneladas em um flexitank"
+  ft20: "Aprox. 16 a 18 toneladas em tambores"
   ft40: "Normalmente não utilizado; os contêineres de 20 pés são preferidos para líquidos densos"
 uses:
   - "Detergente em pó e pasta (slurry) de sabão em pó"
@@ -57,11 +56,11 @@ faqs:
   - q: "Qual é a diferença entre o LABSA 90% e o 96%?"
     a: "O número indica a matéria ativa mínima. O LABSA 96% é mais concentrado, com menos matéria não sulfonada e menos ácido sulfúrico, e convém a formuladores que precisam de maior eficiência ou de cor mais clara. O LABSA 90% é o grau padrão mais econômico, muito usado em pós."
   - q: "O LABSA é carga perigosa para o transporte?"
-    a: "Sim. O LABSA é corrosivo e normalmente é embarcado como carga perigosa (DG) conforme o Código IMDG; por isso, tambores, IBCs ou flexitanks devem ser aprovados para a classe e declarados à companhia de navegação. Providenciamos a documentação DG e as companhias de navegação que a aceitam, a cada pedido."
+    a: "Sim. O LABSA é corrosivo e normalmente é embarcado como carga perigosa (DG) conforme o Código IMDG; por isso, tambores e IBCs devem ter homologação UN para a classe e ser declarados à companhia de navegação. Não se usam flexitanks, pois eles servem apenas para líquidos não perigosos. Providenciamos a documentação DG e as companhias de navegação que a aceitam, a cada pedido."
   - q: "Vocês fornecem MSDS?"
     a: "Sim. Uma ficha de dados de segurança (MSDS) está disponível sob solicitação, junto com a especificação do produto. Pode-se solicitar um certificado de análise (COA) por lote."
   - q: "Qual é a melhor embalagem para o LABSA?"
-    a: "Os tambores de HDPE de 200 a 235 kg convêm a pedidos menores ou mistos e são fáceis de manusear. Os IBCs de 1.000 L economizam o custo dos tambores, e os flexitanks dão o menor custo por tonelada para compradores a granel que têm tanque de armazenagem e bombeamento."
+    a: "Os tambores de HDPE de 200 a 235 kg convêm a pedidos menores ou mistos e são fáceis de manusear. Os IBCs de 1.000 L economizam o custo dos tambores, e os tanques ISO (sob solicitação) convêm a compradores regulares a granel que têm tanque de armazenagem e bombeamento."
   - q: "Como o LABSA deve ser manuseado e armazenado?"
     a: "Armazene no recipiente original fechado, longe do calor e de materiais incompatíveis. Use luvas resistentes a ácido, óculos de proteção e roupa de proteção, e neutralize lentamente com soda cáustica ou barrilha, com boa mistura e resfriamento."
 related:
@@ -84,7 +83,7 @@ Dois graus são comuns. O LABSA 90% é o grau padrão para pastas (slurries) de 
 
 ## Embalagem e embarque
 
-O LABSA é embalado em tambores de HDPE de 200 a 235 kg, IBCs de 1.000 L ou flexitanks de cerca de 20 toneladas. Um contêiner de 20 pés comporta normalmente cerca de 16 a 18 toneladas em tambores. Como o ácido é corrosivo, ele é transportado como carga perigosa, com a marcação UN e as declarações corretas. Nós coordenamos isso, e uma MSDS está disponível sob solicitação.
+O LABSA é embalado em tambores de HDPE de 200 a 235 kg ou IBCs de 1.000 L, com tanques ISO sob solicitação para cargas a granel. Um contêiner de 20 pés comporta normalmente cerca de 16 a 18 toneladas em tambores. Como o ácido é corrosivo, ele é transportado como carga perigosa, com a marcação UN e as declarações corretas. Nós coordenamos isso, e uma MSDS está disponível sob solicitação.
 
 ## Manuseio e armazenagem
 

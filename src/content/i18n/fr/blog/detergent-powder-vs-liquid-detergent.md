@@ -1,5 +1,5 @@
 ---
-sourceHash: "3192292d0bae"
+sourceHash: "37a372337cdf"
 title: "Lessive en poudre ou lessive liquide : laquelle se vend le mieux sur votre marché ?"
 metaTitle: "Lessive en poudre ou liquide : laquelle se vend le mieux ?"
 description: "Poudre ou liquide ? Comparez climat, habitudes de lavage, machines, prix et coût du fret par lavage pour choisir la bonne gamme pour votre marché."
@@ -83,7 +83,7 @@ Limitez le choix de parfums au départ. Deux ou trois parfums bien choisis sont 
 
 ## Une note pour les fabricants et formulateurs de détergents
 
-Certains acheteurs ne veulent pas du tout de produits finis. Si vous exploitez déjà une unité de mélange ou de conditionnement, les matières premières peuvent être la meilleure voie. Le [LABSA](/products/labsa/) est le principal tensioactif anionique des poudres comme des liquides, et nous le sélectionnons auprès de fabricants indiens contrôlés en fûts, GRV et flexitanks. C’est un autre modèle économique, avec son propre contrôle qualité : parlez-nous de vos besoins de formulation avant de décider.
+Certains acheteurs ne veulent pas du tout de produits finis. Si vous exploitez déjà une unité de mélange ou de conditionnement, les matières premières peuvent être la meilleure voie. Le [LABSA](/products/labsa/) est le principal tensioactif anionique des poudres comme des liquides, et nous le sélectionnons auprès de fabricants indiens contrôlés en fûts et GRV. C’est un autre modèle économique, avec son propre contrôle qualité : parlez-nous de vos besoins de formulation avant de décider.
 
 ## Ce qu’il faut nous envoyer pour un devis utile
 

@@ -49,9 +49,18 @@ export function telephoneE164(phone: string): string {
   return phone.replace(/[^+\d]/g, '');
 }
 
+/** Roughly how many characters wide a title shows in a search result (Chinese and full-width count double). */
+const TITLE_WIDTH = 65;
+const titleWidth = (t: string) => [...t].reduce((w, c) => w + (/[\p{Script=Han}\u3000-\u303F\uFF00-\uFFEF]/u.test(c) ? 2 : 1), 0);
+
+/**
+ * The page title with the brand after it, unless the title already names the brand or the brand
+ * would only be cut off in search results (Google shows the site name above the title anyway).
+ */
 export function pageTitle(title: string): string {
   const suffix = ` | ${site.name}`;
-  return title.endsWith(suffix) ? title : title + suffix;
+  if (title.includes(site.name) || titleWidth(title + suffix) > TITLE_WIDTH) return title;
+  return title + suffix;
 }
 
 /** The longest meta keywords list a page gets (Google ignores the tag; Bing, Yandex, Baidu and Naver may read it). */

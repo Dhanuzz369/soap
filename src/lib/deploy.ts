@@ -17,7 +17,10 @@
  *      own vercel.app alias), always.
  *    - Once `launchReady` is true AND `site.url` is a real domain: a 308 redirect from every
  *      *.vercel.app host to the same path on site.url. Previews on *.vercel.app then redirect too.
+ *    - 308 redirects for addresses people and tools guess: /sitemap.xml to /sitemap-index.xml, and
+ *      the range index /categories/ (each language's too) to the products page that lists the ranges.
  */
+import { DEFAULT_LOCALE, LOCALE_CODES } from '../i18n/locales.ts';
 export interface DeployConfig {
   url: string;
   launchReady: boolean;
@@ -67,12 +70,19 @@ export const SECURITY_HEADERS = [
   { key: 'Content-Security-Policy', value: "frame-ancestors 'none'" },
 ] as const;
 
+const prefixed = LOCALE_CODES.filter((l) => l !== DEFAULT_LOCALE).join('|');
+const GUESSED_PATHS = [
+  { source: '/sitemap.xml', destination: '/sitemap-index.xml', permanent: true },
+  { source: '/categories/', destination: '/products/', permanent: true },
+  { source: `/:lang(${prefixed})/categories/`, destination: '/:lang/products/', permanent: true },
+];
+
 type Header = { key: string; value: string };
 type HostCondition = { type: 'host'; value: string };
 export interface VercelConfig {
   $schema: string;
   trailingSlash: boolean;
-  redirects: { source: string; has: HostCondition[]; destination: string; permanent: boolean }[];
+  redirects: { source: string; has?: HostCondition[]; destination: string; permanent: boolean }[];
   headers: { source: string; has?: HostCondition[]; headers: Header[] }[];
 }
 
@@ -84,7 +94,10 @@ export function buildVercelConfig(site: DeployConfig): VercelConfig {
   return {
     $schema: 'https://openapi.vercel.sh/vercel.json',
     trailingSlash: true,
-    redirects: redirect ? [{ source: '/:path*', has: onVercelApp, destination: `${base}/:path*`, permanent: true }] : [],
+    redirects: [
+      ...(redirect ? [{ source: '/:path*', has: onVercelApp, destination: `${base}/:path*`, permanent: true }] : []),
+      ...GUESSED_PATHS,
+    ],
     headers: [
       { source: '/(.*)', headers: [...SECURITY_HEADERS] },
       { source: '/(.*)', has: onVercelApp, headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }] },
