@@ -85,7 +85,7 @@ related:
 
 Dish wash liquid is one of the fastest-moving household cleaning products, because it is bought again and again and used every day. A good product produces stable foam, removes cooking oil without long scrubbing, rinses cleanly and stays gentle on hands. Buyers also judge it by look and feel: the colour, the fragrance on the sponge and how far a small squeeze goes.
 
-A GoodBiz Global company and merchant exporter from India, GoodBiz Hygiene sources dish wash liquid from vetted Indian blenders. We do not run blending plants ourselves. Instead we source dish wash liquid and gel from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+We don't run a blending plant. GoodBiz Hygiene sources dish wash liquid and gel from vetted Indian blenders, checks the specification against what you asked for, and handles the export paperwork and shipping as your single contact.
 
 ## Grades and formulations
 
@@ -99,7 +99,7 @@ Dish wash liquid ships in PET or HDPE bottles of 250 ml to 1 L, refill pouches, 
 
 ## Private label options
 
-Retail dish wash brands usually choose a bottle shape from stock, a shrink sleeve or label, and a lemon or lime scent, then decide between a liquid or gel texture and active-matter level. Refill pouches under the same label cut your packaging cost. Label proofs and a liquid sample are approved first. Lead time is typically 3-5 weeks after confirmation.
+Retail dish wash brands usually choose a bottle shape from stock, a shrink sleeve or label, and a lemon or lime scent, then decide between a liquid or gel texture and active-matter level. Refill pouches under the same label cut your packaging cost. Label proofs and a liquid sample are approved first. Lead time is typically 3-5 weeks after confirmation. The [private label page](/private-label/#dish-wash) walks through a dish wash order step by step.
 
 ## Why source through GoodBiz Hygiene
 

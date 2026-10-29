@@ -1,5 +1,5 @@
 ---
-sourceHash: "91416f83e94e"
+sourceHash: "55ed525afc52"
 title: "Limpiador multisuperficies"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
@@ -82,7 +82,7 @@ related:
 
 El limpiador multisuperficies es el caballo de batalla de uso general del armario de limpieza. Una sola botella se usa en encimeras de cocina, mesas, exterior de electrodomésticos, paredes pintadas, muebles de plástico y muchas otras superficies duras, lo que lo convierte en un producto fácil de entender para los consumidores y de incluir en la gama para los importadores. Elimina la grasa cotidiana, las huellas, los derrames y el polvo, y una buena formulación se enjuaga o se limpia sin dejar una película pegajosa.
 
-GoodBiz Hygiene, exportador comercial de la India dentro de GoodBiz Global, adquiere limpiadores multiusos a formuladores seleccionados. No operamos líneas de producción propias. En su lugar, adquirimos limpiador multisuperficies a fabricantes indios seleccionados, verificamos la especificación según sus requisitos y nos encargamos de la documentación de exportación y del transporte como único interlocutor.
+GoodBiz Hygiene no cuenta con líneas de producción propias. Adquirimos el limpiador multiusos a formuladores indios seleccionados, lo verificamos según sus indicaciones y nos ocupamos de los documentos y del embarque.
 
 ## Formulaciones y fragancias
 

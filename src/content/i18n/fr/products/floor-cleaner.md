@@ -1,5 +1,5 @@
 ---
-sourceHash: "ace444adc458"
+sourceHash: "b2f19daf5a87"
 title: "Nettoyant sols"
 slug: floor-cleaner
 category: surface-home-cleaners
@@ -85,7 +85,7 @@ related:
 
 Le nettoyant sols est l’un des produits d’entretien ménager les plus vendus en volume sur de nombreux marchés d’importation, car les sols durs, comme le carrelage, le marbre et le vinyle, sont la norme dans les logements, les commerces et les hôtels. Un bon nettoyant sols enlève la saleté du quotidien et les graisses légères en un seul passage de serpillière, sèche sans traces marquées et laisse un parfum frais qui dure un moment dans la pièce. Les acheteurs le jugent généralement sur trois points : l’efficacité du nettoyage, l’agrément du parfum et le nombre de lavages par flacon.
 
-GoodBiz Hygiene, société du groupe GoodBiz Global et exportateur négociant indien, sélectionne ses nettoyants sols auprès de fabricants contrôlés. Nous n’exploitons pas nous-mêmes de lignes de production. Nous sélectionnons le nettoyant sols auprès de fabricants indiens contrôlés, vérifions les spécifications au regard de vos exigences et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+GoodBiz Hygiene ne dispose d’aucune ligne de production en propre. Nous sélectionnons le nettoyant sols auprès de fabricants indiens contrôlés, vérifions les spécifications au regard de vos exigences, et vous avez un seul interlocuteur pour les documents et l’expédition.
 
 ## Parfums et qualités
 

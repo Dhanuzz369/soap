@@ -1,5 +1,5 @@
 ---
-sourceHash: "fab6a5425e7d"
+sourceHash: "ae48636bc8a0"
 title: "Gel de ducha / jabón líquido corporal"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -85,7 +85,7 @@ related:
 
 El jabón líquido corporal y el gel de ducha han ganado una gran cuota del mercado de aseo personal al jabón en pastilla, sobre todo en hogares urbanos, hoteles y centros de fitness. A los consumidores les gustan la espuma abundante, la amplia variedad de fragancias y el dosificador de bomba higiénico. Para los importadores, la categoría ofrece un buen margen en marca propia y un fuerte vínculo con el suministro a la hostelería, donde una misma fragancia puede venderse en botellas minoristas y en formatos de recarga para hoteles.
 
-GoodBiz Hygiene, empresa de GoodBiz Global y exportador comercial de la India, adquiere geles de ducha a fabricantes que los formulan y los envasan. No formulamos ni envasamos los productos nosotros mismos. El jabón líquido corporal se adquiere a fabricantes indios seleccionados, y nosotros gestionamos la especificación, la documentación y el embarque.
+No mezclamos ni envasamos gel de ducha. GoodBiz Hygiene trabaja con fabricantes indios seleccionados que sí lo hacen, y nosotros nos encargamos de la especificación, la documentación y el envío hasta su puerto.
 
 ## Calidades y formulaciones
 

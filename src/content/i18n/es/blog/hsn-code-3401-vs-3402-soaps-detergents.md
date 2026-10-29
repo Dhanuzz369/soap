@@ -1,5 +1,5 @@
 ---
-sourceHash: "dc20e0fa7d5e"
+sourceHash: "c986b9bebf21"
 title: "Código HSN 3401 frente a 3402: guía del comprador para clasificar jabones y detergentes"
 metaTitle: "Código HSN 3401 o 3402: clasificar jabones y detergentes"
 description: "¿No sabe si su jabón o detergente es HSN 3401 o 3402? Guía clara de la división, con tabla por producto y las preguntas que conviene resolver antes."
@@ -16,6 +16,8 @@ faqs:
   - q: "¿Cambia el código HSN el arancel que pago?"
     a: "Puede hacerlo, porque el arancel de importación lo fija el arancel de su propio país para el código declarado. Pida a su agente de aduanas que compruebe el código con su arancel nacional antes de hacer un pedido."
 ---
+
+**En resumen:** el jabón se clasifica en la partida HSN 3401 y los detergentes en la 3402. La partida 3401 abarca el jabón en pastillas, escamas, fideos o en forma líquida, además de los líquidos y cremas para el lavado de la piel acondicionados para la venta al por menor, como el jabón líquido para manos y el gel de ducha. La partida 3402 abarca los agentes de superficie activa distintos del jabón, como el LABSA y el SLES, y las preparaciones para lavar y limpiar a base de ellos: detergente en polvo, detergente líquido, lavavajillas líquido y la mayoría de los limpiadores del hogar. El resto de esta guía trata los casos dudosos y cómo confirmar el código completo de su pedido.
 
 Cuando pide a tres proveedores una cotización de «jabón y detergente», puede recibir tres códigos HSN distintos. No siempre es un error. El Sistema Armonizado (SA) reparte los productos de lavado en dos partidas contiguas, la 3401 y la 3402, y algunos productos quedan en una zona incómoda entre ambas. Esta guía explica la división en términos sencillos para que pueda leer una cotización, comprobar una factura e informar a su agente de aduanas con seguridad.
 

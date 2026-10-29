@@ -1,5 +1,5 @@
 ---
-sourceHash: "9bdf91bdfe1b"
+sourceHash: "edaede7d4259"
 title: "Toz Deterjan"
 slug: detergent-powder
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 Toz deterjan, Afrika, Güney Asya ve Orta Doğu’da en yaygın satılan çamaşır ürünü formu olmaya devam etmektedir. Üretimi ucuzdur, sevkiyatı kolaydır, küçük evlerde saklaması basittir ve 20 g’lık bir saşeden 25 kg’lık bir çuvala kadar her boyutta satılabilir. İthalatçılar için, kalite, koku ve fiyat kademesinin raf konumunu belirlediği bir hacim hattıdır.
 
-GoodBiz Hygiene, bir GoodBiz Global şirketi ve Hindistan’dan bir ticari ihracatçıdır; çamaşır tozunu kontrol edilmiş sprey kurutma ve kuru karışım tesislerinden tedarik eder. Kendi deterjan tesislerimizi işletmiyoruz. Bunun yerine toz deterjanı kontrol edilmiş Hindistanlı üreticilerden tedarik eder, formülasyonu taleplerinize göre eşleştirir, ihracat evraklarını ve sevkiyatı tek muhatap olarak yürütürüz.
+GoodBiz Hygiene deterjan üretmez. Kontrol edilmiş Hindistanlı sprey kurutma ve kuru karışım tesisleriyle çalışıyor, formülasyonu pazarınıza göre eşleştiriyor, evrakları ve sevkiyatı tek bir muhatap üzerinden yürütüyoruz.
 
 ## Kaliteler ve formülasyonlar
 

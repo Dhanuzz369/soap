@@ -1,5 +1,5 @@
 ---
-sourceHash: "30c0f836be53"
+sourceHash: "1b6515cabf90"
 title: "Limpa-vidros"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -78,7 +78,7 @@ related:
 
 O limpa-vidros é uma linha pequena, mas constante, no corredor de limpeza doméstica. Os consumidores o compram para janelas, espelhos, mesas de vidro, boxes de banheiro e vidros de carro, e esperam acima de tudo uma única coisa: um acabamento transparente, sem marcas nem película. Como o produto é leve e composto sobretudo de água, precisa ser formulado com cuidado, com o equilíbrio certo entre solvente e tensoativo, para limpar impressões digitais e poeira e depois secar de forma uniforme.
 
-A GoodBiz Hygiene, empresa do grupo GoodBiz Global, é um exportador comercial da Índia que adquire limpa-vidros de formuladores indianos selecionados. Nós mesmos não operamos linhas de produção. Em vez disso, adquirimos limpa-vidros de fabricantes indianos selecionados, conferimos a especificação com as suas exigências e cuidamos da documentação de exportação e do embarque como ponto único de contato.
+Não operamos linhas de produção. A GoodBiz Hygiene adquire limpa-vidros de misturadores indianos selecionados, confere a especificação com as suas exigências e é o seu único contato para a papelada de exportação e o embarque.
 
 ## Tipos e formulações
 

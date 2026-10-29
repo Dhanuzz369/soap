@@ -1,5 +1,5 @@
 ---
-sourceHash: "a7d6ca47c781"
+sourceHash: "2c5f0e4f12c9"
 title: "Phénol aux plantes / phényl"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -84,7 +84,7 @@ related:
 
 Le phénol aux plantes, couramment appelé phényl en Asie du Sud, est un nettoyant de base pour les sols et les évacuations dans les foyers, les écoles et les lieux de travail de nombreux marchés d’importation. Il se vend sous forme de concentré que l’utilisateur dilue dans un seau ; il devient alors blanc laiteux et dégage un parfum puissant et net que beaucoup associent à une pièce fraîchement lavée. Comme il se dilue fortement, un seul flacon dure longtemps, ce qui le rend intéressant pour la distribution axée sur le prix et pour l’approvisionnement des collectivités.
 
-GoodBiz Hygiene, société du groupe GoodBiz Global, est un exportateur négociant indien qui sélectionne son phényl auprès de fabricants de désinfectants établis. Nous n’exploitons pas nous-mêmes de lignes de production. Nous sélectionnons le phénol aux plantes auprès de fabricants indiens contrôlés, vérifions les spécifications au regard de vos exigences et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+GoodBiz Hygiene n’a pas de lignes de production à elle. Nous nous procurons le phénol aux plantes auprès de fabricants indiens de désinfectants reconnus, le vérifions au regard de vos exigences et nous occupons pour vous des documents et de l’expédition.
 
 ## Profils végétaux et qualités
 

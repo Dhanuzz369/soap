@@ -1,5 +1,5 @@
 ---
-sourceHash: "82edc50d27ca"
+sourceHash: "a1f5b38ce8aa"
 title: "Liquide vaisselle / gel vaisselle"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -85,7 +85,7 @@ related:
 
 Le liquide vaisselle est l’un des produits d’entretien ménager qui tournent le plus vite, parce qu’on le rachète sans cesse et qu’on l’utilise tous les jours. Un bon produit donne une mousse stable, élimine l’huile de cuisson sans frotter longtemps, se rince proprement et reste doux pour les mains. Les acheteurs le jugent aussi à son aspect et à son toucher : la couleur, le parfum sur l’éponge et le rendement d’une petite pression.
 
-Société du groupe GoodBiz Global et exportateur négociant indien, GoodBiz Hygiene sélectionne son liquide vaisselle auprès de formulateurs indiens contrôlés. Nous n’exploitons pas nous-mêmes d’unités de mélange. Nous sélectionnons liquide et gel vaisselle auprès de fabricants indiens contrôlés, vérifions les spécifications au regard de vos exigences et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+Nous n’exploitons pas d’atelier de mélange. GoodBiz Hygiene sélectionne le liquide et le gel vaisselle auprès de mélangeurs indiens contrôlés, vérifie les spécifications au regard de votre demande et gère les formalités d’export et l’expédition, en interlocuteur unique.
 
 ## Qualités et formules
 
@@ -99,7 +99,7 @@ Le liquide vaisselle est expédié en flacons PET ou PEHD de 250 ml à 1 L, en r
 
 ## Options de marque de distributeur
 
-Les marques de liquide vaisselle choisissent généralement une forme de flacon standard, un manchon ou une étiquette et un parfum citron ou citron vert, puis tranchent entre texture liquide ou gel et niveau de matière active. Des recharges souples sous la même étiquette réduisent votre coût d’emballage. Les épreuves d’étiquette et un échantillon de liquide sont validés en premier. Le délai est généralement de 3 à 5 semaines après confirmation de la commande.
+Les marques de liquide vaisselle choisissent généralement une forme de flacon standard, un manchon ou une étiquette et un parfum citron ou citron vert, puis tranchent entre texture liquide ou gel et niveau de matière active. Des recharges souples sous la même étiquette réduisent votre coût d’emballage. Les épreuves d’étiquette et un échantillon de liquide sont validés en premier. Le délai est généralement de 3 à 5 semaines après confirmation de la commande. La [page marque de distributeur](/private-label/#dish-wash) détaille pas à pas une commande de liquide vaisselle.
 
 ## Pourquoi passer par GoodBiz Hygiene
 

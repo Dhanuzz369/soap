@@ -1,5 +1,5 @@
 ---
-sourceHash: "e4e01699d6d9"
+sourceHash: "4dd5e7823a24"
 title: "Lavavajillas sólido en barra"
 slug: dish-wash-bar
 category: kitchen-care
@@ -84,7 +84,7 @@ related:
 
 La barra lavavajillas es un artículo básico en muchos mercados donde los consumidores compran por unidad y cada centavo cuenta. Una barra es fácil de almacenar y de manejar, y una sola pastilla puede durar varias semanas de uso diario. En comparación con una botella de líquido, usa menos envase y un flete más ligero, lo que conviene a los distribuidores que venden en zonas rurales o en tiendas pequeñas.
 
-GoodBiz Hygiene, parte de GoodBiz Global, es un exportador comercial de la India que adquiere barras lavavajillas a fabricantes seleccionados de jabón en barra. No operamos líneas de detergente propias. En su lugar, adquirimos barras lavavajillas a fabricantes indios seleccionados, verificamos la especificación según sus requisitos y nos encargamos de la documentación de exportación y del transporte como único interlocutor.
+GoodBiz Hygiene no opera líneas de detergente. Adquirimos el lavavajillas en barra a fabricantes indios de jabón en pastilla seleccionados, comprobamos cada pedido con su especificación y nos encargamos de los documentos de exportación y del transporte como su único interlocutor.
 
 ## Calidades y formulaciones
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "29ee9c2a1b83"
+sourceHash: "220bcad97fd7"
 title: "Sabuni ya Kuua Bakteria / ya Matibabu"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -80,7 +80,7 @@ related:
 
 Sabuni za kuua bakteria na za matibabu zinaendelea kuwa na mahitaji thabiti popote kaya na taasisi zinapothamini sana usafi. Shule, mabweni, maeneo ya kazi na nyumba huzitumia kwa kuosha kila siku, na wanunuzi mara nyingi huzichagua badala ya sabuni ya kawaida ya kuogea katika hali ya hewa ya joto. Kundi hili linajumuisha bidhaa mbalimbali, kuanzia kipande cha kawaida cha kuua bakteria chenye harufu mpya hadi vipande vya mtindo wa karboliki na vya salfa vyenye mwelekeo wa matibabu.
 
-GoodBiz Hygiene, msafirishaji nje wa kibiashara (merchant exporter) kutoka India na kampuni ya GoodBiz Global, hupata vipande vya matibabu kutoka kwa watengenezaji wa sabuni wa India tuliowakagua. Hatuendeshi mistari ya kutengeneza sabuni. Vipande hivi hupatikana kutoka kwa watengenezaji wa India tuliowakagua, na sisi tunashughulikia ukaguzi wa vipimo, nyaraka na usafirishaji.
+GoodBiz Hygiene haiendeshi mistari ya kutengeneza sabuni. Tunanunua vipande vya sabuni ya matibabu kutoka kwa watengenezaji wa sabuni wa India tuliowakagua, tunakagua kila oda dhidi ya vipimo vyako, na tunashughulikia nyaraka na usafirishaji.
 
 ## Daraja na fomula
 

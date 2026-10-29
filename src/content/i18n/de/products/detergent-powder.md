@@ -1,5 +1,5 @@
 ---
-sourceHash: "9bdf91bdfe1b"
+sourceHash: "edaede7d4259"
 title: "Waschpulver"
 slug: detergent-powder
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 Waschpulver ist in Afrika, Südasien und im Nahen Osten weiterhin die am weitesten verbreitete Form von Wäschepflegeprodukten. Es ist günstig herzustellen, leicht zu versenden, in kleinen Wohnungen einfach zu lagern und lässt sich vom 20-g-Sachet bis zum 25-kg-Sack verkaufen. Für Importeure ist es eine Mengenlinie, bei der Qualität, Duft und Preisstufe die Platzierung im Regal bestimmen.
 
-GoodBiz Hygiene ist ein Unternehmen von GoodBiz Global und ein Handelsexporteur aus Indien und bezieht Waschpulver aus geprüften Sprühtrocknungs- und Trockenmischwerken. Wir betreiben keine eigenen Waschmittelwerke. Stattdessen beziehen wir Waschpulver von geprüften indischen Herstellern, stimmen die Rezeptur auf Ihre Anforderungen ab und übernehmen Exportdokumente und Versand als zentraler Ansprechpartner.
+GoodBiz Hygiene produziert selbst kein Waschpulver. Wir arbeiten mit geprüften indischen Sprühtrocknungs- und Trockenmischanlagen zusammen, passen die Rezeptur an Ihren Markt an und übernehmen Dokumente und Verschiffung aus einer Hand.
 
 ## Qualitäten und Rezepturen
 

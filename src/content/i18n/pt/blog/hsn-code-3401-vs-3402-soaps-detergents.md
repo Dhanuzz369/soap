@@ -1,5 +1,5 @@
 ---
-sourceHash: "dc20e0fa7d5e"
+sourceHash: "c986b9bebf21"
 title: "HSN 3401 ou 3402: guia do comprador para classificar sabonetes e detergentes"
 metaTitle: "HSN 3401 ou 3402: como classificar sabonetes e detergentes"
 description: "Em dúvida se o seu sabonete ou detergente é HSN 3401 ou 3402? Um guia simples sobre a divisão, com tabela por produto e as perguntas a resolver primeiro."
@@ -16,6 +16,8 @@ faqs:
   - q: "O código HSN altera os tributos que pago?"
     a: "Pode alterar, pois o imposto de importação é definido pela tarifa do seu próprio país para o código declarado. Peça ao seu despachante aduaneiro que confira o código com a tarifa nacional antes de você fazer um pedido."
 ---
+
+**Resposta curta:** o sabão fica no HSN 3401, e os detergentes ficam no 3402. A posição 3401 abrange o sabão em barras, flocos, noodles ou na forma líquida, além de líquidos e cremes para lavagem da pele acondicionados para venda a varejo, como o sabonete líquido para as mãos e o gel de banho. A posição 3402 abrange os agentes tensoativos que não são sabão, como o LABSA e o SLES, e as preparações para lavagem e limpeza feitas a partir deles: sabão em pó, sabão líquido para roupas, detergente para louças e a maioria dos produtos de limpeza doméstica. O restante deste guia trata dos casos de fronteira e de como confirmar o código completo do seu pedido.
 
 Quando você pede a três fornecedores uma cotação de “sabonete e detergente”, pode receber três códigos HSN diferentes. Isso nem sempre é um erro. O Sistema Harmonizado (SH) divide os produtos de lavagem entre duas posições vizinhas, 3401 e 3402, e alguns produtos ficam em uma zona de fronteira entre elas. Este guia explica a divisão em termos simples, para que você leia uma cotação, confira uma fatura e oriente o seu despachante aduaneiro com segurança.
 

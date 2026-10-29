@@ -80,7 +80,7 @@ related:
 
 Antibacterial and medicated soaps remain in steady demand wherever households and institutions place a high value on hygiene. Schools, hostels, workplaces and homes use them for daily washing, and buyers often choose them over standard toilet soap in warm climates. The category covers a range of products, from a general antibacterial bar with a fresh scent to carbolic-style and sulphur bars with a medicated profile.
 
-GoodBiz Hygiene, a merchant exporter from India and a GoodBiz Global company, sources medicated bars from vetted Indian soap manufacturers. We do not run soap lines. These bars are sourced from vetted Indian manufacturers, and we handle the specification check, documentation and shipment.
+GoodBiz Hygiene doesn't run soap lines. We buy medicated bars from vetted Indian soap makers, check each order against your specification, and look after the documents and the shipment.
 
 ## Grades and formulations
 

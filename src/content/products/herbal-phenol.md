@@ -84,7 +84,7 @@ related:
 
 Herbal phenol, widely called phenyl in South Asia, is a staple floor and drain cleaner in homes, schools and workplaces across many import markets. It is sold as a concentrate that the user dilutes in a bucket, turning milky white and releasing a strong, clean scent that many buyers associate with a freshly mopped room. Because it is diluted heavily, a single bottle goes a long way, which makes it attractive for value-driven retail and for institutional supply.
 
-GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter from India that sources phenyl from established disinfectant manufacturers. We do not run production lines ourselves. Instead we source herbal phenol from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene has no production lines of its own. We source herbal phenol from established Indian disinfectant manufacturers, check it against your requirements, and handle the documents and the shipping for you.
 
 ## Herbal profiles and grades
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "367702ea5e76"
+sourceHash: "6cf914fe762e"
 title: "Fideos de jabón (base de jabón)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 Los fideos de jabón son el material de partida de la mayor parte del jabón sólido que se fabrica en el mundo. Las grasas y los aceites se saponifican, se secan y se extruyen en fideos, que los fabricantes de jabón mezclan después con fragancia, color, dióxido de titanio y otros aditivos, y a continuación los muelen, los refinan y los estampan hasta obtener las pastillas terminadas. Comprar fideos permite al fabricante de jabón evitar la etapa de saponificación, que requiere mucho capital, y centrarse en el acabado y en la marca.
 
-GoodBiz Hygiene, exportador comercial de la India y empresa de GoodBiz Global, adquiere fideos de jabón a productores oleoquímicos indios seleccionados. GoodBiz Hygiene no elabora los fideos. Los adquirimos a fabricantes indios seleccionados, confirmamos la calidad según su requerimiento y gestionamos la documentación y el embarque como único interlocutor.
+No fabricamos fideos de jabón. GoodBiz Hygiene los adquiere a productores oleoquímicos indios seleccionados, confirma el grado según sus necesidades y gestiona los documentos y el transporte como su único interlocutor.
 
 ## Calidades y especificaciones
 

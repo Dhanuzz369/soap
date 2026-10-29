@@ -1,5 +1,5 @@
 ---
-sourceHash: "e4e01699d6d9"
+sourceHash: "4dd5e7823a24"
 title: "Pain vaisselle solide"
 slug: dish-wash-bar
 category: kitchen-care
@@ -84,7 +84,7 @@ related:
 
 Le pain vaisselle est un produit de base sur de nombreux marchés où l’on achète à l’unité et où chaque centime compte. Un pain se range et se manipule facilement, et un seul bloc peut durer plusieurs semaines d’usage quotidien. Comparé à un flacon de liquide, il demande moins d’emballage et un fret plus léger, ce qui convient aux distributeurs qui desservent les zones rurales ou les petits commerces.
 
-GoodBiz Hygiene, membre du groupe GoodBiz Global, est un exportateur négociant indien qui sélectionne ses pains vaisselle auprès de fabricants de pains contrôlés. Nous n’exploitons pas nous-mêmes de lignes de détergents. Nous sélectionnons les pains vaisselle auprès de fabricants indiens contrôlés, vérifions les spécifications au regard de vos exigences et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+GoodBiz Hygiene n’exploite pas de lignes de détergents. Nous sélectionnons les pains vaisselle auprès de savonniers indiens contrôlés, vérifions chaque commande au regard de vos spécifications et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
 
 ## Qualités et formules
 

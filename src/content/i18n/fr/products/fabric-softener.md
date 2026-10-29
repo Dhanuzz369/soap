@@ -1,5 +1,5 @@
 ---
-sourceHash: "421e81d90f2e"
+sourceHash: "a3ed93fe8e87"
 title: "Adoucissant / assouplissant textile"
 slug: fabric-softener
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 L’assouplissant est un achat complémentaire qui progresse à mesure que les foyers s’équipent de machines à laver et recherchent un linge plus doux et mieux parfumé. Il assouplit les fibres, réduit l’électricité statique et les plis, facilite le repassage et laisse un parfum durable. Pour un importateur, c’est un produit compagnon de la lessive à meilleure marge, et les consommateurs restent souvent fidèles à leur parfum préféré.
 
-GoodBiz Hygiene, exportateur négociant indien et société du groupe GoodBiz Global, sélectionne ses assouplissants auprès de formulateurs indiens établis. Nous n’exploitons pas nous-mêmes d’unités de mélange. Nous sélectionnons l’assouplissant auprès de fabricants indiens contrôlés, adaptons la formule à vos exigences et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+Nous ne mélangeons pas nous-mêmes l’adoucissant textile. GoodBiz Hygiene se le procure auprès de mélangeurs indiens reconnus, adapte la formule à votre cahier des charges et s’occupe pour vous des formalités d’export et de l’expédition.
 
 ## Qualités et formules
 

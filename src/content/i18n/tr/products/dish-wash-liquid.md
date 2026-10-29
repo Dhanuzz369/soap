@@ -1,5 +1,5 @@
 ---
-sourceHash: "82edc50d27ca"
+sourceHash: "a1f5b38ce8aa"
 title: "Sıvı Bulaşık Deterjanı / Jel"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -85,7 +85,7 @@ related:
 
 Sıvı bulaşık deterjanı, tekrar tekrar satın alındığı ve her gün kullanıldığı için en hızlı hareket eden ev temizlik ürünlerinden biridir. İyi bir ürün kararlı köpük üretir, uzun ovalamaya gerek kalmadan yemek yağını giderir, temiz durulanır ve ellere karşı nazik kalır. Alıcılar ürünü ayrıca görünümü ve hissiyle de değerlendirir: rengi, süngerdeki kokusu ve küçük bir sıkımın ne kadar yol aldığı.
 
-Hindistan’dan bir GoodBiz Global şirketi ve ticari ihracatçı olan GoodBiz Hygiene, sıvı bulaşık deterjanını kontrol edilmiş Hindistanlı karıştırıcılardan tedarik eder. Kendi karıştırma tesislerimizi işletmiyoruz. Bunun yerine sıvı bulaşık deterjanı ve jeli kontrol edilmiş Hindistanlı üreticilerden tedarik eder, şartnameyi taleplerinize göre kontrol eder, ihracat evraklarını ve sevkiyatı tek muhatap olarak yürütürüz.
+Bir karıştırma tesisi işletmiyoruz. GoodBiz Hygiene, sıvı bulaşık deterjanını ve jelini kontrol edilmiş Hindistanlı karıştırıcılardan tedarik eder, şartnameyi talebinize göre kontrol eder ve ihracat evraklarıyla sevkiyatı tek muhatabınız olarak yürütür.
 
 ## Kaliteler ve formülasyonlar
 
@@ -99,7 +99,7 @@ Sıvı bulaşık deterjanı, 250 ml ila 1 L PET veya HDPE şişelerde, yedek dol
 
 ## Özel marka seçenekleri
 
-Perakende bulaşık deterjanı markaları genellikle stoktan bir şişe şekli, bir shrink kılıf veya etiket ve bir limon ya da misket limonu kokusu seçer; ardından sıvı veya jel dokusu ile aktif madde seviyesi arasında karar verir. Aynı etiket altındaki yedek dolum poşetleri ambalaj maliyetinizi düşürür. Önce etiket provaları ve bir sıvı numune onaylanır. Teslim süresi genellikle onaydan sonra 3-5 haftadır.
+Perakende bulaşık deterjanı markaları genellikle stoktan bir şişe şekli, bir shrink kılıf veya etiket ve bir limon ya da misket limonu kokusu seçer; ardından sıvı veya jel dokusu ile aktif madde seviyesi arasında karar verir. Aynı etiket altındaki yedek dolum poşetleri ambalaj maliyetinizi düşürür. Önce etiket provaları ve bir sıvı numune onaylanır. Teslim süresi genellikle onaydan sonra 3-5 haftadır. [Özel marka sayfası](/private-label/#dish-wash), bir bulaşık deterjanı siparişini adım adım anlatır.
 
 ## Neden GoodBiz Hygiene üzerinden tedarik etmelisiniz
 

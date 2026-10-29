@@ -1,5 +1,5 @@
 ---
-sourceHash: "29ee9c2a1b83"
+sourceHash: "220bcad97fd7"
 title: "Jabón antibacteriano / medicinal"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -80,7 +80,7 @@ related:
 
 Los jabones antibacterianos y medicinales mantienen una demanda estable allí donde los hogares y las instituciones dan gran valor a la higiene. Escuelas, albergues, lugares de trabajo y hogares los usan para el lavado diario, y los compradores suelen elegirlos en lugar del jabón de tocador estándar en los climas cálidos. La categoría abarca una gama de productos, desde una pastilla antibacteriana general con aroma fresco hasta pastillas de estilo carbólico y de azufre con un perfil medicinal.
 
-GoodBiz Hygiene, exportador comercial de la India y empresa de GoodBiz Global, adquiere pastillas medicinales a fabricantes de jabón indios seleccionados. No operamos líneas de jabón. Estas pastillas se adquieren a fabricantes indios seleccionados, y nosotros nos encargamos de la verificación de la especificación, de la documentación y del embarque.
+GoodBiz Hygiene no opera líneas de jabón. Compramos pastillas medicinales a fabricantes de jabón indios seleccionados, comprobamos cada pedido con su especificación y nos ocupamos de los documentos y del embarque.
 
 ## Calidades y formulaciones
 

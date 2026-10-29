@@ -1,5 +1,5 @@
 ---
-sourceHash: "91416f83e94e"
+sourceHash: "55ed525afc52"
 title: "Limpador multiuso"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
@@ -82,7 +82,7 @@ related:
 
 O limpador multiuso é o item de uso geral do armário de limpeza. Um único frasco é usado em bancadas de cozinha, mesas, exterior de eletrodomésticos, paredes pintadas, móveis de plástico e muitas outras superfícies duras, o que o torna um produto fácil de o consumidor entender e de o importador incluir na linha. Remove gordura do dia a dia, impressões digitais, derramamentos e poeira, e uma boa formulação sai com enxágue ou com pano sem deixar película pegajosa.
 
-A GoodBiz Hygiene, exportador comercial da Índia pertencente à GoodBiz Global, adquire limpadores de uso geral de formuladores selecionados. Nós mesmos não operamos linhas de produção. Em vez disso, adquirimos limpador multiuso de fabricantes indianos selecionados, conferimos a especificação com as suas exigências e cuidamos da documentação de exportação e do embarque como ponto único de contato.
+A GoodBiz Hygiene não tem linhas de produção próprias. Adquirimos limpador multiuso de formuladores indianos selecionados, conferimos o produto com o seu briefing e cuidamos dos documentos e do embarque.
 
 ## Formulações e fragrâncias
 

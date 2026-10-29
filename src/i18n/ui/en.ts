@@ -273,7 +273,7 @@ const en = {
     eyebrow: 'Soaps · Detergents · Home care',
     h1a: 'Soap & Home Care',
     h1b: 'Exported from India.',
-    text: 'GoodBiz Hygiene is a merchant exporter: we source soaps, detergents and cleaners from vetted Indian manufacturers, with private label and mixed containers.',
+    text: 'GoodBiz Hygiene, a unit of GoodBiz Global in Bengaluru, is a merchant exporter: we source soaps, detergents and cleaners from vetted Indian manufacturers, with private label and mixed containers.',
     rangeH: 'The Range.',
     rangeIntro: 'Three of {n} products. Each has its own page with typical specifications, pack sizes and private-label options.',
     rangeAll: 'View all {n} products',
@@ -839,6 +839,26 @@ const en = {
     rangeText: 'Private label is available on {n} products. Each product page lists its varieties, typical pack sizes and private-label options.',
     rangeNone: 'Supplied without private label: {list}.',
     /** For people searching "manufacturer": what a merchant exporter adds. Keep it in line with the export terms and the product pages. */
+    /** The private-label dish wash section (a self-contained answer for "private label dish wash liquid"). {leadTime} is filled in. */
+    dishWash: {
+      h: 'Private label dish wash liquid',
+      text: 'Dish wash liquid is one of the easiest products to launch under your own name. People buy it every week, and a few clear choices shape the whole range. This is how a private-label dish wash order usually comes together.',
+      items: [
+        {
+          title: 'Bottles, refills and bulk',
+          text: 'Retail bottles of 250 ml to 1 L in PET or HDPE, with a flip-top or screw cap and your sleeve or label. Refill pouches under the same brand cut packaging cost, and 5 L cans and 20 L carboys cover restaurants and caterers.',
+        },
+        {
+          title: 'Scent, texture and strength',
+          text: 'Lemon and lime are the usual starting points, with orange, green apple, antibacterial lemon and unscented also common. You choose a thin liquid or a thicker gel, and an active-matter level that suits your price point.',
+        },
+        {
+          title: 'Proof and sample first',
+          text: 'Your label proof and a liquid sample are approved before anything is made. There is no fixed minimum order, though printed labels can carry their own minimum. {leadTime}.',
+        },
+      ],
+      link: 'Dish wash liquid: specifications and pack sizes',
+    },
     whyH: 'Why source private label through a merchant exporter',
     whyText: 'Looking for a manufacturer? GoodBiz Hygiene is a merchant exporter, not a factory. This is what that adds to a private-label range.',
     why: [

@@ -1,5 +1,5 @@
 ---
-sourceHash: "a7d6ca47c781"
+sourceHash: "2c5f0e4f12c9"
 title: "Fenol Herbal / Fenil (Karbol)"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -84,7 +84,7 @@ related:
 
 Fenol herbal, yang di Asia Selatan dikenal luas sebagai fenil, adalah pembersih lantai dan saluran pembuangan andalan di rumah, sekolah, dan tempat kerja di banyak pasar impor. Produk ini dijual sebagai konsentrat yang diencerkan pengguna dalam ember, berubah menjadi putih susu dan melepaskan aroma kuat yang bersih, yang oleh banyak pembeli diasosiasikan dengan ruangan yang baru dipel. Karena diencerkan dengan pekat, satu botol bertahan lama, sehingga menarik untuk ritel yang mengutamakan nilai dan untuk pasokan institusional.
 
-GoodBiz Hygiene, perusahaan GoodBiz Global, adalah merchant exporter dari India yang mencarikan fenil dari produsen disinfektan yang sudah mapan. Kami tidak menjalankan lini produksi sendiri. Sebagai gantinya, kami mencarikan fenol herbal dari produsen India yang telah kami seleksi, memeriksa spesifikasi terhadap kebutuhan Anda, dan menangani dokumen ekspor serta pengiriman sebagai satu titik kontak.
+GoodBiz Hygiene tidak memiliki lini produksi sendiri. Kami memasok fenol herbal dari produsen disinfektan India yang sudah mapan, memeriksanya terhadap kebutuhan Anda, serta mengurus dokumen dan pengirimannya untuk Anda.
 
 ## Profil herbal dan grade
 

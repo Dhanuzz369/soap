@@ -1,5 +1,5 @@
 ---
-sourceHash: "44d84f27fc48"
+sourceHash: "85c2b1d20a93"
 title: "SLES (lauril éter sulfato de sodio)"
 slug: sles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 El SLES es uno de los tensioactivos más utilizados en el cuidado personal y en la limpieza del hogar. Hace buena espuma, se enjuaga con claridad y es más suave con la piel que muchas alternativas, por lo que constituye la base espumante de champús, jabones líquidos corporales, jabones líquidos para manos y lavavajillas líquidos. En productos de uso más intensivo trabaja junto con el LABSA para aportar poder de limpieza y espuma.
 
-GoodBiz Hygiene es un exportador comercial de la India y una empresa de GoodBiz Global que adquiere SLES a fabricantes seleccionados de tensioactivos. GoodBiz Hygiene no elabora el SLES. Lo adquirimos a fabricantes indios seleccionados, confirmamos la calidad según su formulación y gestionamos la documentación y el embarque como único interlocutor.
+No fabricamos SLES. GoodBiz Hygiene lo adquiere a fabricantes indios de tensioactivos seleccionados, confirma el grado según su formulación y gestiona los documentos y el transporte como su único interlocutor.
 
 ## Calidades y especificaciones
 

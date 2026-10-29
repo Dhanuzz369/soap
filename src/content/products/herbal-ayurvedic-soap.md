@@ -82,7 +82,7 @@ related:
 
 Herbal and Ayurvedic soaps combine an ordinary soap base with plant ingredients that carry a long tradition of use in Indian personal care. Neem, turmeric and sandalwood are the best known, and consumers abroad often recognise them as markers of a natural, heritage-driven product. For importers this makes herbal soap a useful way to stand apart from standard toilet soap on the shelf and to reach customers who look for plant-based cues.
 
-As a merchant exporter from India and a GoodBiz Global company, GoodBiz Hygiene sources herbal soaps from manufacturers with dedicated herbal ranges. These soaps are sourced from vetted Indian manufacturers who run herbal ranges, and we handle the specification check, documentation and shipment for you.
+We don't make soap ourselves. GoodBiz Hygiene works with vetted Indian manufacturers who run dedicated herbal ranges, and we handle the specification check, the documents and the shipment for you.
 
 ## Grades and formulations
 

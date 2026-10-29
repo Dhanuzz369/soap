@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '76c1367bd100';
+export const sourceHash = '310480412515';
 
 const id: UiPartial = {
   meta: {
@@ -251,7 +251,7 @@ const id: UiPartial = {
     eyebrow: 'Sabun · Deterjen · Perawatan rumah',
     h1a: 'Sabun & Perawatan Rumah',
     h1b: 'Diekspor dari India.',
-    text: 'GoodBiz Hygiene adalah merchant exporter: kami mencarikan sabun, deterjen, dan pembersih dari produsen India yang telah kami seleksi, dengan private label dan kontainer campuran.',
+    text: 'GoodBiz Hygiene, unit usaha GoodBiz Global di Bengaluru, adalah merchant exporter: kami mencarikan sabun, deterjen, dan pembersih dari produsen India yang telah kami seleksi, dengan private label dan kontainer campuran.',
     rangeH: 'Lini Produk.',
     rangeIntro: 'Tiga dari {n} produk. Masing-masing memiliki halaman sendiri berisi spesifikasi tipikal, ukuran kemasan, dan opsi private label.',
     rangeAll: 'Lihat semua {n} produk',
@@ -761,6 +761,25 @@ const id: UiPartial = {
     rangeH: 'Produk mana yang bisa memakai merek Anda?',
     rangeText: 'Private label tersedia untuk {n} produk. Setiap halaman produk mencantumkan varian, ukuran kemasan tipikal, dan pilihan private label-nya.',
     rangeNone: 'Dipasok tanpa private label: {list}.',
+    dishWash: {
+      h: 'Sabun cuci piring cair private label',
+      text: 'Sabun cuci piring cair termasuk produk yang paling mudah diluncurkan dengan merek sendiri. Orang membelinya setiap minggu, dan cukup beberapa keputusan yang jelas untuk membentuk seluruh lininya. Beginilah biasanya pesanan sabun cuci piring private label disusun.',
+      items: [
+        {
+          title: 'Botol, isi ulang, dan curah',
+          text: 'Botol ritel 250 ml hingga 1 L dari PET atau HDPE, dengan tutup flip-top atau ulir serta sleeve atau label Anda. Kemasan isi ulang dengan merek yang sama menekan biaya kemasan, sedangkan jeriken 5 L dan 20 L melayani restoran dan katering.',
+        },
+        {
+          title: 'Aroma, tekstur, dan kekuatan',
+          text: 'Lemon dan jeruk nipis biasanya jadi titik awal; jeruk, apel hijau, lemon antibakteri, dan tanpa pewangi juga umum. Anda memilih cairan encer atau gel yang lebih kental, serta kadar bahan aktif yang sesuai dengan titik harga Anda.',
+        },
+        {
+          title: 'Proof dan sampel lebih dulu',
+          text: 'Proof label dan sampel cairan Anda setujui sebelum apa pun dibuat. Tidak ada pesanan minimum yang tetap, meskipun label cetak bisa memiliki minimum tersendiri. {leadTime}.',
+        },
+      ],
+      link: 'Sabun cuci piring cair: spesifikasi dan ukuran kemasan',
+    },
     whyH: 'Mengapa memesan private label melalui eksportir pedagang',
     whyText: 'Mencari produsen? GoodBiz Hygiene adalah eksportir pedagang, bukan pabrik. Inilah nilai tambahnya bagi lini private label Anda.',
     why: [

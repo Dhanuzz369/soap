@@ -1,5 +1,5 @@
 ---
-sourceHash: "9bdf91bdfe1b"
+sourceHash: "edaede7d4259"
 title: "Lessive en poudre"
 slug: detergent-powder
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 La lessive en poudre reste la forme de produit lessiviel la plus vendue en Afrique, en Asie du Sud et au Moyen-Orient. Elle est peu coûteuse à produire, facile à expédier, simple à stocker dans de petits logements, et se vend aussi bien en dosette de 20 g qu’en sac de 25 kg. Pour un importateur, c’est une référence de volume, où la qualité, le parfum et le niveau de prix déterminent la place en rayon.
 
-GoodBiz Hygiene, société du groupe GoodBiz Global et exportateur négociant indien, sélectionne sa lessive en poudre auprès d’usines contrôlées d’atomisation et de mélange à sec. Nous n’exploitons pas nous-mêmes d’usines de détergents. Nous sélectionnons la lessive en poudre auprès de fabricants indiens contrôlés, adaptons la formule à vos exigences et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+GoodBiz Hygiene ne fabrique pas de lessive. Nous travaillons avec des sites indiens contrôlés d’atomisation et de mélange à sec, adaptons la formule à votre marché et gérons les documents et l’expédition avec un interlocuteur unique.
 
 ## Qualités et formules
 

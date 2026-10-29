@@ -1,5 +1,5 @@
 ---
-sourceHash: "367702ea5e76"
+sourceHash: "6cf914fe762e"
 title: "Soap Noodles (Bahan Dasar Sabun)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 Soap noodles adalah bahan awal bagi sebagian besar sabun padat yang dibuat di seluruh dunia. Lemak dan minyak disaponifikasi, dikeringkan, dan diekstrusi menjadi noodles, yang kemudian dicampur pembuat sabun dengan pewangi, pewarna, titanium dioksida, dan aditif lain, lalu digiling, di-plod, dan dicetak menjadi sabun jadi. Dengan membeli noodles, pembuat sabun dapat melewati tahap saponifikasi yang padat modal dan berfokus pada penyelesaian dan branding.
 
-GoodBiz Hygiene, merchant exporter dari India dan perusahaan GoodBiz Global, mencarikan soap noodles dari produsen oleokimia India yang telah diseleksi. Kami tidak membuat noodles sendiri. Kami mencarikannya dari produsen India yang telah kami seleksi, mengonfirmasi grade terhadap kebutuhan Anda, dan mengelola dokumen serta pengiriman sebagai satu titik kontak.
+Kami tidak membuat soap noodles. GoodBiz Hygiene memasoknya dari produsen oleokimia India yang telah diseleksi, mengonfirmasi grade-nya terhadap kebutuhan Anda, serta menangani dokumen dan pengiriman sebagai satu-satunya kontak Anda.
 
 ## Grade dan spesifikasi
 

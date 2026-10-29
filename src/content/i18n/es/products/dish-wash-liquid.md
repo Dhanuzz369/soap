@@ -1,5 +1,5 @@
 ---
-sourceHash: "82edc50d27ca"
+sourceHash: "a1f5b38ce8aa"
 title: "Lavavajillas líquido / en gel"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -85,7 +85,7 @@ related:
 
 El lavavajillas líquido es uno de los productos de limpieza del hogar de más rápida rotación, porque se compra una y otra vez y se usa todos los días. Un buen producto genera una espuma estable, elimina el aceite de cocina sin frotar mucho, se enjuaga limpiamente y es suave con las manos. Los compradores también lo juzgan por su aspecto y su tacto: el color, la fragancia en la esponja y hasta dónde llega un pequeño apretón.
 
-GoodBiz Hygiene, empresa de GoodBiz Global y exportador comercial de la India, adquiere lavavajillas líquido a formuladores indios seleccionados. No operamos plantas de formulación propias. En su lugar, adquirimos lavavajillas líquido y en gel a fabricantes indios seleccionados, verificamos la especificación según sus requisitos y nos encargamos de la documentación de exportación y del transporte como único interlocutor.
+No operamos ninguna planta de mezcla. GoodBiz Hygiene adquiere el lavavajillas líquido y en gel a mezcladores indios seleccionados, comprueba la especificación con lo que usted pidió y gestiona los trámites de exportación y el transporte como su único interlocutor.
 
 ## Calidades y formulaciones
 
@@ -99,7 +99,7 @@ El lavavajillas líquido se envía en botellas de PET o HDPE de 250 ml a 1 L, bo
 
 ## Opciones de marca propia
 
-Las marcas minoristas de lavavajillas suelen elegir una forma de botella de stock, una manga termorretráctil o una etiqueta y un aroma de limón o de lima, y después deciden entre una textura líquida o en gel y el nivel de materia activa. Las bolsas de recarga con la misma etiqueta reducen su costo de embalaje. Primero se aprueban las pruebas de etiqueta y una muestra del líquido. El plazo de entrega es normalmente de 3 a 5 semanas tras la confirmación del pedido.
+Las marcas minoristas de lavavajillas suelen elegir una forma de botella de stock, una manga termorretráctil o una etiqueta y un aroma de limón o de lima, y después deciden entre una textura líquida o en gel y el nivel de materia activa. Las bolsas de recarga con la misma etiqueta reducen su costo de embalaje. Primero se aprueban las pruebas de etiqueta y una muestra del líquido. El plazo de entrega es normalmente de 3 a 5 semanas tras la confirmación del pedido. La [página de marca propia](/private-label/#dish-wash) explica paso a paso un pedido de lavavajillas.
 
 ## Por qué abastecerse a través de GoodBiz Hygiene
 

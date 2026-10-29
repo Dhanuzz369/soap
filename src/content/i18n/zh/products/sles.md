@@ -1,5 +1,5 @@
 ---
-sourceHash: "44d84f27fc48"
+sourceHash: "85c2b1d20a93"
 title: "SLES（脂肪醇聚氧乙烯醚硫酸钠）"
 slug: sles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 SLES是个人护理和家居护理中应用最广泛的表面活性剂之一。它起泡好、冲洗干净，对皮肤比许多替代品更温和，因此成为洗发水、沐浴露、洗手液和洗洁精的起泡基料。在更强力的产品中，它与LABSA配合，共同构建清洁力和泡沫。
 
-GoodBiz Hygiene是GoodBiz Global旗下的一家印度贸易型出口商，从经我们考察的表面活性剂制造商采购SLES。SLES并非由我们自己加工。我们从经我们考察的印度制造商采购，对照您的配方确认等级，并作为单一联系窗口管理单据和运输。
+我们不生产SLES。GoodBiz Hygiene从经考察的印度表面活性剂制造商采购，对照您的配方确认等级，并作为您的唯一联系窗口办理单据和运输。
 
 ## 等级与规格
 

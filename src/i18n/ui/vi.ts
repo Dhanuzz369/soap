@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '76c1367bd100';
+export const sourceHash = '310480412515';
 
 const vi: UiPartial = {
   meta: {
@@ -251,7 +251,7 @@ const vi: UiPartial = {
     eyebrow: 'Xà phòng · Chất tẩy rửa · Vệ sinh gia dụng',
     h1a: 'Xà phòng và vệ sinh gia dụng',
     h1b: 'Xuất khẩu từ Ấn Độ.',
-    text: 'GoodBiz Hygiene là nhà xuất khẩu thương mại: chúng tôi cung ứng xà phòng, chất tẩy rửa và nước vệ sinh từ các nhà sản xuất Ấn Độ đã được thẩm định, có nhãn riêng và ghép container.',
+    text: 'GoodBiz Hygiene, một đơn vị của GoodBiz Global tại Bengaluru, là nhà xuất khẩu thương mại: chúng tôi cung ứng xà phòng, chất tẩy rửa và nước vệ sinh từ các nhà sản xuất Ấn Độ đã được thẩm định, có nhãn riêng và ghép container.',
     rangeH: 'Dòng sản phẩm.',
     rangeIntro: 'Ba trong tổng số {n} sản phẩm. Mỗi sản phẩm có trang riêng với thông số kỹ thuật điển hình, quy cách đóng gói và các tùy chọn nhãn riêng.',
     rangeAll: 'Xem tất cả {n} sản phẩm',
@@ -761,6 +761,25 @@ const vi: UiPartial = {
     rangeH: 'Những sản phẩm nào có thể mang thương hiệu của Quý khách?',
     rangeText: 'Nhãn riêng có cho {n} sản phẩm. Trang của mỗi sản phẩm liệt kê các loại, quy cách đóng gói điển hình và các lựa chọn nhãn riêng.',
     rangeNone: 'Cung cấp không kèm nhãn riêng: {list}.',
+    dishWash: {
+      h: 'Nước rửa chén nhãn riêng',
+      text: 'Nước rửa chén là một trong những sản phẩm dễ ra mắt nhất dưới thương hiệu riêng. Người tiêu dùng mua hằng tuần, và chỉ vài lựa chọn rõ ràng là đủ định hình cả dòng sản phẩm. Một đơn hàng nước rửa chén nhãn riêng thường được hình thành như sau.',
+      items: [
+        {
+          title: 'Chai, túi refill và hàng bồn',
+          text: 'Chai bán lẻ từ 250 ml đến 1 L bằng PET hoặc HDPE, nắp bật hoặc nắp vặn, kèm ống bọc hoặc nhãn của Quý khách. Túi refill cùng thương hiệu giúp giảm chi phí bao bì, còn can 5 L và can 20 L phục vụ nhà hàng và đơn vị suất ăn.',
+        },
+        {
+          title: 'Mùi hương, độ đặc và độ mạnh',
+          text: 'Chanh vàng và chanh xanh là lựa chọn khởi đầu quen thuộc; cam, táo xanh, chanh kháng khuẩn và không mùi cũng khá phổ biến. Quý khách chọn dạng lỏng loãng hoặc gel đặc hơn, cùng hàm lượng hoạt chất phù hợp với phân khúc giá.',
+        },
+        {
+          title: 'Duyệt bản in thử và mẫu trước',
+          text: 'Bản in thử nhãn và mẫu nước rửa được Quý khách duyệt trước khi bắt đầu làm hàng. Không có số lượng tối thiểu cố định, dù nhãn in có thể có mức tối thiểu riêng. {leadTime}.',
+        },
+      ],
+      link: 'Nước rửa chén: thông số kỹ thuật và quy cách đóng gói',
+    },
     whyH: 'Vì sao nên đặt hàng nhãn riêng qua một nhà xuất khẩu thương mại',
     whyText: 'Quý khách đang tìm nhà sản xuất? GoodBiz Hygiene là nhà xuất khẩu thương mại, không phải nhà máy. Đây là những gì điều đó mang lại cho dòng sản phẩm nhãn riêng.',
     why: [

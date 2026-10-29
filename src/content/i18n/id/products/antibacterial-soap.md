@@ -1,5 +1,5 @@
 ---
-sourceHash: "29ee9c2a1b83"
+sourceHash: "220bcad97fd7"
 title: "Sabun Antibakteri / Sabun Medis"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -80,7 +80,7 @@ related:
 
 Sabun antibakteri dan sabun medis tetap diminati di mana pun rumah tangga dan institusi sangat mementingkan kebersihan. Sekolah, asrama, tempat kerja, dan rumah memakainya untuk mencuci sehari-hari, dan pembeli sering memilihnya daripada sabun mandi standar di iklim hangat. Kategori ini mencakup beragam produk, dari sabun antibakteri umum beraroma segar hingga sabun bergaya karbol dan sabun sulfur dengan profil medis.
 
-GoodBiz Hygiene, merchant exporter dari India dan perusahaan GoodBiz Global, mencarikan sabun medis dari produsen sabun India yang telah diseleksi. Kami tidak menjalankan lini produksi sabun sendiri. Sabun ini bersumber dari produsen India yang telah kami seleksi, dan kami menangani pemeriksaan spesifikasi, dokumen, dan pengiriman.
+GoodBiz Hygiene tidak menjalankan lini produksi sabun. Kami membeli sabun medis dari pembuat sabun India yang telah kami seleksi, mencocokkan setiap pesanan dengan spesifikasi Anda, lalu mengurus dokumen dan pengirimannya.
 
 ## Grade dan formulasi
 

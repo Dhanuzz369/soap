@@ -1,5 +1,5 @@
 ---
-sourceHash: "a7d6ca47c781"
+sourceHash: "2c5f0e4f12c9"
 title: "Fenoli ya Mitishamba (Dawa ya Kusafishia Sakafu)"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -84,7 +84,7 @@ related:
 
 Fenoli ya mitishamba, inayoitwa phenyl kwa wingi katika Asia ya Kusini, ni kisafishaji cha msingi cha sakafu na mifereji katika nyumba, shule na maeneo ya kazi katika masoko mengi ya uagizaji. Huuzwa kama kimiminika kilichokolea ambacho mtumiaji huchanganya na maji kwenye ndoo, kikigeuka kuwa cheupe kama maziwa na kutoa harufu kali na safi ambayo wanunuzi wengi huihusisha na chumba kilichopigwa deki hivi punde. Kwa sababu huchanganywa na maji mengi, chupa moja hudumu muda mrefu, jambo linaloifanya ivutie rejareja inayozingatia thamani na usambazaji wa taasisi.
 
-GoodBiz Hygiene, kampuni ya GoodBiz Global, ni msafirishaji nje wa kibiashara (merchant exporter) kutoka India anayepata phenyl kutoka kwa watengenezaji wa dawa za kuua vijidudu wenye uzoefu. Hatuendeshi mistari ya uzalishaji wenyewe. Badala yake tunapata fenoli ya mitishamba kutoka kwa watengenezaji wa India tuliowakagua, tunakagua vipimo dhidi ya mahitaji yako na kushughulikia nyaraka za usafirishaji nje na usafirishaji kama mtu mmoja wa mawasiliano.
+GoodBiz Hygiene haina mistari yake ya uzalishaji. Tunapata fenoli ya mitishamba kutoka kwa watengenezaji wa India wa dawa za kuua vijidudu wenye uzoefu, tunaikagua dhidi ya mahitaji yako, na tunashughulikia nyaraka na usafirishaji kwa niaba yako.
 
 ## Aina za mitishamba na daraja
 

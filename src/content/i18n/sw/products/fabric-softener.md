@@ -1,5 +1,5 @@
 ---
-sourceHash: "421e81d90f2e"
+sourceHash: "a3ed93fe8e87"
 title: "Laini ya Nguo (Dawa ya Kulainisha Nguo)"
 slug: fabric-softener
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 Laini ya nguo ni ununuzi wa ziada unaokua kadiri kaya zinavyotumia mashine za kufulia na kutaka nguo zenye hisia na harufu nzuri zaidi. Hulainisha nyuzi, hupunguza umeme tuli na mikunjo, hurahisisha kupiga pasi na huacha harufu inayodumu. Kwa waagizaji, ni bidhaa mshirika ya sabuni ya kufulia yenye faida kubwa zaidi, na wanunuzi huwa waaminifu kwa harufu wanayoipenda.
 
-GoodBiz Hygiene ni msafirishaji nje wa kibiashara (merchant exporter) kutoka India, kampuni ya GoodBiz Global, na hupata viyoyozi vya nguo kutoka kwa wachanganyaji wa India wenye uzoefu. Hatuendeshi viwanda vya kuchanganya wenyewe. Badala yake tunapata laini ya nguo kutoka kwa watengenezaji wa India tuliowakagua, tunalinganisha fomula na mahitaji yako na kushughulikia nyaraka za usafirishaji nje na usafirishaji kupitia mtu mmoja wa mawasiliano.
+Hatuchanganyi laini ya nguo sisi wenyewe. GoodBiz Hygiene huipata kutoka kwa wachanganyaji wa India wenye uzoefu, hulinganisha fomula na maelezo yako, na hushughulikia makaratasi ya usafirishaji nje na usafirishaji kwa niaba yako.
 
 ## Daraja na fomula
 

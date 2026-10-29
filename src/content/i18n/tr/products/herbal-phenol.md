@@ -1,5 +1,5 @@
 ---
-sourceHash: "a7d6ca47c781"
+sourceHash: "2c5f0e4f12c9"
 title: "Bitkisel Fenol / Fenil"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -84,7 +84,7 @@ related:
 
 Güney Asya’da yaygın olarak fenil denen bitkisel fenol, birçok ithalatçı pazarda evlerde, okullarda ve işyerlerinde temel bir zemin ve gider temizleyicisidir. Kullanıcının bir kovada seyrelttiği, sütlü beyaza dönen ve birçok alıcının yeni paspaslanmış bir odayla ilişkilendirdiği güçlü, temiz bir koku yayan bir konsantre olarak satılır. Çok seyreltildiği için tek bir şişe uzun yol gider; bu da onu değer odaklı perakende ve kurumsal tedarik için çekici kılar.
 
-Bir GoodBiz Global şirketi olan GoodBiz Hygiene, fenili köklü dezenfektan üreticilerinden tedarik eden, Hindistan’dan bir ticari ihracatçıdır. Kendi üretim hatlarımızı işletmiyoruz. Bunun yerine bitkisel fenolü kontrol edilmiş Hindistanlı üreticilerden tedarik eder, şartnameyi taleplerinize göre kontrol eder, ihracat evraklarını ve sevkiyatı tek muhatap olarak yürütürüz.
+GoodBiz Hygiene’in kendine ait bir üretim hattı yoktur. Bitkisel fenolü köklü Hindistanlı dezenfektan üreticilerinden tedarik ediyor, taleplerinize göre kontrol ediyor, evrakları ve sevkiyatı sizin için yürütüyoruz.
 
 ## Bitkisel profiller ve kaliteler
 

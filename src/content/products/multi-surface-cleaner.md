@@ -82,7 +82,7 @@ related:
 
 Multi-surface cleaner is the general-purpose workhorse of the cleaning cupboard. One bottle is used on kitchen counters, tables, appliance exteriors, painted walls, plastic furniture and many other hard surfaces, which makes it an easy product for shoppers to understand and for importers to range. It removes everyday grease, fingerprints, spills and dust, and a good formulation rinses or wipes off without leaving a sticky film.
 
-GoodBiz Hygiene, a merchant exporter from India within GoodBiz Global, sources all-purpose cleaners from vetted formulators. We do not run production lines ourselves. Instead we source multi-surface cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene has no production lines of its own. We source all-purpose cleaner from vetted Indian formulators, check it against your brief, and look after the documents and the shipment.
 
 ## Formulations and fragrances
 

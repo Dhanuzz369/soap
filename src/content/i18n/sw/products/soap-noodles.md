@@ -1,5 +1,5 @@
 ---
-sourceHash: "367702ea5e76"
+sourceHash: "6cf914fe762e"
 title: "Soap Noodles (Msingi wa Sabuni wa Chembechembe)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 Soap noodles ni malighafi ya kuanzia ya sabuni nyingi ngumu zinazotengenezwa duniani kote. Mafuta na shahamu huchemshwa kuwa sabuni (saponified), hukaushwa na kusukumwa kuwa noodles, ambazo watengenezaji wa sabuni kisha huchanganya na harufu, rangi, titanium dioxide na viongezeo vingine, husaga, hubonyeza na kupiga chapa kuwa vipande vilivyokamilika. Kununua noodles humruhusu mtengenezaji wa sabuni kuruka hatua ya saponification inayohitaji mtaji mkubwa na kuzingatia umaliziaji na uwekaji chapa.
 
-GoodBiz Hygiene, msafirishaji nje wa kibiashara (merchant exporter) kutoka India na kampuni ya GoodBiz Global, hupata soap noodles kutoka kwa wazalishaji wa kemikali za mafuta (oleochemical) wa India tuliowakagua. Hatutengenezi noodles wenyewe. Tunazipata kutoka kwa watengenezaji wa India tuliowakagua, tunathibitisha daraja dhidi ya mahitaji yako na kusimamia nyaraka na usafirishaji kama mtu mmoja wa mawasiliano.
+Hatutengenezi soap noodles. GoodBiz Hygiene huzipata kutoka kwa wazalishaji wa kemikali za mafuta (oleochemical) wa India tuliowakagua, huthibitisha daraja dhidi ya mahitaji yako, na hushughulikia nyaraka na usafirishaji kama mtu wako mmoja wa mawasiliano.
 
 ## Daraja na vipimo
 

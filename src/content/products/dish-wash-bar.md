@@ -84,7 +84,7 @@ related:
 
 The dish wash bar is a staple in many markets where shoppers buy by the unit and every cent counts. A bar is easy to store and handle, and a single cake can last for several weeks of daily use. Compared with a bottle of liquid, it uses less packaging and lighter freight, which suits distributors who sell into rural areas or smaller shops.
 
-GoodBiz Hygiene, part of GoodBiz Global, is a merchant exporter from India that sources dish bars from vetted bar-soap manufacturers. We do not run detergent lines ourselves. Instead we source dish wash bars from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene doesn't run detergent lines. We source dish wash bars from vetted Indian bar-soap makers, check each order against your specification, and handle the export documents and shipping as your single contact.
 
 ## Grades and formulations
 

@@ -76,7 +76,7 @@ related:
 
 SLES is one of the most widely used surfactants in personal care and home care. It lathers well, rinses clearly and is gentler on skin than many alternatives, which is why it forms the foaming base of shampoos, body washes, liquid hand washes and dish wash liquids. In heavier-duty products it works alongside LABSA to build cleaning power and foam.
 
-GoodBiz Hygiene is a merchant exporter from India and GoodBiz Global company that sources SLES from vetted surfactant manufacturers. We do not make SLES ourselves. We source it from vetted Indian manufacturers, confirm the grade against your formulation and manage documentation and shipping as a single point of contact.
+We don't make SLES. GoodBiz Hygiene sources it from vetted Indian surfactant manufacturers, confirms the grade against your formulation, and handles the documents and the shipping as your single contact.
 
 ## Grades and specifications
 

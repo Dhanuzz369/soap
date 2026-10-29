@@ -1,5 +1,5 @@
 ---
-sourceHash: "367702ea5e76"
+sourceHash: "6cf914fe762e"
 title: "Noodles de sabão (base de sabão)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 Os noodles de sabão são a matéria-prima inicial da maior parte do sabão sólido produzido no mundo. Gorduras e óleos são saponificados, secos e extrudados em noodles, que os fabricantes de sabão misturam com fragrância, cor, dióxido de titânio e outros aditivos, para depois moer, refinar (plodar) e estampar em barras acabadas. Comprar noodles permite ao fabricante de sabão dispensar a etapa de saponificação, que exige muito capital, e se concentrar no acabamento e na marca.
 
-A GoodBiz Hygiene, exportador comercial da Índia e empresa do grupo GoodBiz Global, adquire noodles de sabão de produtores oleoquímicos indianos selecionados. Nós mesmos não fabricamos os noodles. Nós os adquirimos de fabricantes indianos selecionados, confirmamos o grau de acordo com a sua necessidade e cuidamos da documentação e do embarque como ponto único de contato.
+Não fabricamos noodles de sabão. A GoodBiz Hygiene os adquire de produtores oleoquímicos indianos selecionados, confirma o grau conforme a sua necessidade e cuida dos documentos e do embarque como seu único contato.
 
 ## Graus e especificações
 

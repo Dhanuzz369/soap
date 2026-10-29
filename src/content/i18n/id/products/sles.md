@@ -1,5 +1,5 @@
 ---
-sourceHash: "44d84f27fc48"
+sourceHash: "85c2b1d20a93"
 title: "SLES (Natrium Lauril Eter Sulfat)"
 slug: sles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 SLES adalah salah satu surfaktan yang paling banyak dipakai dalam perawatan diri dan perawatan rumah. SLES berbusa baik, terbilas jernih, dan lebih lembut di kulit dibanding banyak alternatif, itulah sebabnya SLES menjadi basis pembusa pada sampo, sabun mandi cair, sabun cuci tangan cair, dan sabun cuci piring cair. Pada produk yang lebih berat, SLES bekerja bersama LABSA untuk membangun daya bersih dan busa.
 
-GoodBiz Hygiene adalah merchant exporter dari India dan perusahaan GoodBiz Global yang mencarikan SLES dari produsen surfaktan yang telah diseleksi. Kami tidak membuat SLES sendiri. Kami mencarikannya dari produsen India yang telah kami seleksi, mengonfirmasi grade terhadap formulasi Anda, dan mengelola dokumen serta pengiriman sebagai satu titik kontak.
+Kami tidak membuat SLES. GoodBiz Hygiene memasoknya dari produsen surfaktan India yang telah diseleksi, mengonfirmasi grade-nya terhadap formulasi Anda, serta menangani dokumen dan pengiriman sebagai satu-satunya kontak Anda.
 
 ## Grade dan spesifikasi
 

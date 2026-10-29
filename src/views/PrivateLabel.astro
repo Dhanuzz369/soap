@@ -99,6 +99,24 @@ const breadcrumbs = [
     {withoutPl.length > 0 && <p class="note pl-range-none">{fmt(L.rangeNone, { list: withoutPl.join(ui.horeca.message.separator) })}</p>}
   </section>
 
+  <section class="wrap sec split" id="dish-wash" aria-labelledby="pl-dish-h">
+    <div class="split-head" data-reveal>
+      <h2 id="pl-dish-h">{L.dishWash.h}</h2>
+      <p>{L.dishWash.text}</p>
+      <p><a href={lp('/products/dish-wash-liquid/')}>{L.dishWash.link} <span class="arr" aria-hidden="true">→</span></a></p>
+    </div>
+    <ul class="rows">
+      {
+        L.dishWash.items.map((w, i) => (
+          <li class="row" data-reveal style={`--i: ${i % 3}`}>
+            <h3>{w.title}</h3>
+            <p>{fmt(w.text, t)}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
   <section class="wrap sec split" aria-labelledby="pl-why-h">
     <div class="split-head" data-reveal>
       <h2 id="pl-why-h">{L.whyH}</h2>

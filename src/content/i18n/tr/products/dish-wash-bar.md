@@ -1,5 +1,5 @@
 ---
-sourceHash: "e4e01699d6d9"
+sourceHash: "4dd5e7823a24"
 title: "Katı Bulaşık Sabunu (Bulaşık Kalıbı)"
 slug: dish-wash-bar
 category: kitchen-care
@@ -84,7 +84,7 @@ related:
 
 Katı bulaşık sabunu, alıcıların adet adet satın aldığı ve her kuruşun önemli olduğu birçok pazarda temel üründür. Kalıbın saklanması ve kullanılması kolaydır; tek bir kalıp günlük kullanımla birkaç hafta dayanabilir. Bir şişe sıvıya kıyasla daha az ambalaj ve daha hafif nakliye kullanır; bu da kırsal bölgelere veya daha küçük dükkânlara satış yapan distribütörlere uygundur.
 
-GoodBiz Global’in bir parçası olan GoodBiz Hygiene, bulaşık kalıplarını kontrol edilmiş kalıp sabun üreticilerinden tedarik eden, Hindistan’dan bir ticari ihracatçıdır. Kendi deterjan hatlarımızı işletmiyoruz. Bunun yerine katı bulaşık sabunlarını kontrol edilmiş Hindistanlı üreticilerden tedarik eder, şartnameyi taleplerinize göre kontrol eder, ihracat evraklarını ve sevkiyatı tek muhatap olarak yürütürüz.
+GoodBiz Hygiene deterjan hattı işletmez. Katı bulaşık sabunlarını kontrol edilmiş Hindistanlı kalıp sabun üreticilerinden tedarik ediyor, her siparişi şartnamenize göre kontrol ediyor, ihracat evraklarını ve sevkiyatı tek muhatabınız olarak yürütüyoruz.
 
 ## Kaliteler ve formülasyonlar
 

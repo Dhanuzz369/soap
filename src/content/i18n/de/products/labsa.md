@@ -1,5 +1,5 @@
 ---
-sourceHash: "0e389d931665"
+sourceHash: "67d1a4c0e81e"
 title: "LABSA (lineare Alkylbenzolsulfonsäure)"
 slug: labsa
 category: industrial-raw-materials
@@ -75,7 +75,7 @@ related:
 
 LABSA ist das Arbeitspferd unter den Tensiden der Waschmittelindustrie. Es ist ein sulfoniertes lineares Alkylbenzol, das nach der Neutralisation zu Natrium-Alkylbenzolsulfonat wird, dem Wirkstoff hinter Schaum und Reinigungskraft der meisten Waschpulver, Flüssigwaschmittel und Haushaltsreiniger. Niedrige Kosten, starke Reinigungsleistung und Verträglichkeit mit Gerüststoffen machen es zur Standardwahl unter den anionischen Tensiden für die Herstellung von Waschmitteln in großen Mengen.
 
-GoodBiz Hygiene, ein Unternehmen von GoodBiz Global, ist ein Handelsexporteur aus Indien, der LABSA von geprüften Chemieherstellern bezieht. Wir stellen LABSA nicht selbst her. Wir beziehen es von geprüften indischen Herstellern, bestätigen Qualität und Verpackung anhand Ihrer Rezeptur und übernehmen Exportdokumente und Versand als zentraler Ansprechpartner.
+LABSA stellen wir nicht selbst her. GoodBiz Hygiene bezieht es von geprüften indischen Chemieherstellern, bestätigt Qualität und Verpackung anhand Ihrer Rezeptur und übernimmt Exportdokumente und Versand als Ihr einziger Ansprechpartner.
 
 ## Qualitäten und Spezifikationen
 

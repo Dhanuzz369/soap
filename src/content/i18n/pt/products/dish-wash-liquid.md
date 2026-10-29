@@ -1,5 +1,5 @@
 ---
-sourceHash: "82edc50d27ca"
+sourceHash: "a1f5b38ce8aa"
 title: "Detergente líquido / gel para louças"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -85,7 +85,7 @@ related:
 
 O detergente líquido para louças é um dos produtos de limpeza doméstica de maior giro, pois é comprado repetidamente e usado todos os dias. Um bom produto forma espuma estável, remove o óleo de cozinha sem muito esfregar, enxágua bem e é suave para as mãos. Os compradores também o avaliam pelo aspecto e pela sensação: a cor, a fragrância na esponja e o quanto rende um pequeno jato.
 
-Empresa do grupo GoodBiz Global e exportador comercial da Índia, a GoodBiz Hygiene adquire detergente líquido para louças de formuladores indianos selecionados. Nós mesmos não operamos unidades de mistura. Em vez disso, adquirimos detergente líquido e gel para louças de fabricantes indianos selecionados, conferimos a especificação com as suas exigências e cuidamos da documentação de exportação e do embarque como ponto único de contato.
+Não operamos nenhuma unidade de mistura. A GoodBiz Hygiene adquire detergente líquido e em gel para louças de misturadores indianos selecionados, confere a especificação com o que você pediu e cuida da papelada de exportação e do embarque como seu único contato.
 
 ## Graus e formulações
 
@@ -99,7 +99,7 @@ O detergente líquido para louças é embarcado em frascos de PET ou HDPE de 250
 
 ## Opções de marca própria
 
-As marcas de detergente para louças no varejo costumam escolher um formato de frasco do estoque, uma cinta termorretrátil ou rótulo e um aroma de limão ou lima, e depois decidem entre a textura líquida ou em gel e o teor de matéria ativa. Sachês de refil com o mesmo rótulo reduzem o seu custo de embalagem. As provas do rótulo e uma amostra do líquido são aprovadas primeiro. O prazo é normalmente de 3 a 5 semanas após a confirmação do pedido.
+As marcas de detergente para louças no varejo costumam escolher um formato de frasco do estoque, uma cinta termorretrátil ou rótulo e um aroma de limão ou lima, e depois decidem entre a textura líquida ou em gel e o teor de matéria ativa. Sachês de refil com o mesmo rótulo reduzem o seu custo de embalagem. As provas do rótulo e uma amostra do líquido são aprovadas primeiro. O prazo é normalmente de 3 a 5 semanas após a confirmação do pedido. A [página de marca própria](/private-label/#dish-wash) mostra passo a passo como funciona um pedido de detergente para louças.
 
 ## Por que comprar pela GoodBiz Hygiene
 

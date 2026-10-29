@@ -1,5 +1,5 @@
 ---
-sourceHash: "30c0f836be53"
+sourceHash: "1b6515cabf90"
 title: "Kisafishaji cha Vioo"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -78,7 +78,7 @@ related:
 
 Kisafishaji cha vioo ni bidhaa ndogo lakini thabiti katika mstari wa visafishaji vya nyumbani. Wanunuzi hukinunua kwa madirisha, vioo vya kujitazama, meza za vioo, skrini za bafu na vioo vya magari, na hutarajia jambo moja zaidi ya yote: umaliziaji safi usio na michirizi au utando. Kwa kuwa bidhaa ni nyepesi na kwa kiasi kikubwa ni maji, lazima itengenezwe kwa uangalifu, kwa uwiano sahihi wa kiyeyusho na kiambato cha kusafisha, ili isafishe alama za vidole na vumbi kisha ikauke sawasawa.
 
-GoodBiz Hygiene, kampuni ya GoodBiz Global, ni msafirishaji nje wa kibiashara (merchant exporter) kutoka India anayepata visafishaji vya vioo kutoka kwa wachanganyaji wa India tuliowakagua. Hatuendeshi mistari ya uzalishaji wenyewe. Badala yake tunapata kisafishaji cha vioo kutoka kwa watengenezaji wa India tuliowakagua, tunakagua vipimo dhidi ya mahitaji yako na kushughulikia nyaraka za usafirishaji nje na usafirishaji kama mtu mmoja wa mawasiliano.
+Hatuendeshi mistari ya uzalishaji. GoodBiz Hygiene hupata kisafishaji cha vioo kutoka kwa wachanganyaji wa India tuliowakagua, hukagua vipimo dhidi ya mahitaji yako, na ndiye mtu wako mmoja wa mawasiliano kwa makaratasi ya usafirishaji nje na usafirishaji.
 
 ## Aina na fomula
 

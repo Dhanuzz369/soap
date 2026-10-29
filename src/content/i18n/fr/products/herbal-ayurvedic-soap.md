@@ -1,5 +1,5 @@
 ---
-sourceHash: "e0d1945ad630"
+sourceHash: "8ec8d6b71f61"
 title: "Savon aux plantes et ayurvédique"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -82,7 +82,7 @@ related:
 
 Les savons aux plantes et ayurvédiques associent une base savon classique à des ingrédients végétaux qui ont une longue tradition d’usage dans les soins corporels indiens. Le neem, le curcuma et le santal sont les plus connus, et les consommateurs étrangers y voient souvent le signe d’un produit naturel, ancré dans un savoir-faire. Pour un importateur, le savon aux plantes est donc un bon moyen de se démarquer du savon de toilette standard en rayon et de toucher une clientèle attentive aux repères végétaux.
 
-En tant qu’exportateur négociant indien et société du groupe GoodBiz Global, GoodBiz Hygiene sélectionne ses savons aux plantes auprès de fabricants dotés de gammes végétales dédiées. Ces savons proviennent de fabricants indiens contrôlés qui exploitent de telles gammes, et nous nous chargeons pour vous de la vérification des spécifications, des documents et de l’expédition.
+Nous ne fabriquons pas de savon nous-mêmes. GoodBiz Hygiene travaille avec des fabricants indiens contrôlés qui ont des gammes dédiées aux plantes, et nous nous chargeons pour vous de la vérification des spécifications, des documents et de l’expédition.
 
 ## Qualités et formules
 

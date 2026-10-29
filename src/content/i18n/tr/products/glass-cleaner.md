@@ -1,5 +1,5 @@
 ---
-sourceHash: "30c0f836be53"
+sourceHash: "1b6515cabf90"
 title: "Cam Temizleyici"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -78,7 +78,7 @@ related:
 
 Cam temizleyici, ev temizlik reyonunda küçük ama istikrarlı bir hattır. Alıcılar onu pencereler, aynalar, cam masalar, duş kabinleri ve araç camları için satın alır ve her şeyden önce bir şey bekler: iz veya film bırakmayan berrak bir yüzey. Ürün hafif ve çoğunlukla su olduğundan, parmak izlerini ve tozu temizleyip eşit şekilde kuruması için doğru çözücü ve yüzey aktif madde dengesiyle dikkatle formüle edilmelidir.
 
-Bir GoodBiz Global şirketi olan GoodBiz Hygiene, cam temizleyicileri kontrol edilmiş Hindistanlı karıştırıcılardan tedarik eden, Hindistan’dan bir ticari ihracatçıdır. Kendi üretim hatlarımızı işletmiyoruz. Bunun yerine cam temizleyiciyi kontrol edilmiş Hindistanlı üreticilerden tedarik eder, şartnameyi taleplerinize göre kontrol eder, ihracat evraklarını ve sevkiyatı tek muhatap olarak yürütürüz.
+Üretim hattı işletmiyoruz. GoodBiz Hygiene, cam temizleyiciyi kontrol edilmiş Hindistanlı karıştırıcılardan tedarik eder, şartnameyi taleplerinize göre kontrol eder ve ihracat evrakları ile sevkiyatta tek muhatabınızdır.
 
 ## Türler ve formülasyonlar
 

@@ -82,7 +82,7 @@ related:
 
 Toilet bowl cleaner is a core product in the household and facility cleaning range because limescale, rust rings and urine stains are a daily problem in regions with hard water. The product is designed to be thick enough to cling to the porcelain under the rim, giving the active ingredients time to loosen deposits before the toilet is brushed and flushed. Buyers compare brands on thickness, cleaning power, fragrance and the design of the angled bottle neck.
 
-As a GoodBiz Global company and merchant exporter from India, GoodBiz Hygiene sources toilet cleaners from vetted Indian manufacturers. We do not run production lines ourselves. Instead we source toilet bowl cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene doesn't run production lines. We source toilet bowl cleaner from vetted Indian manufacturers, check the specification against your requirements, and you have one contact for the export paperwork and shipping.
 
 ## Grades and fragrances
 

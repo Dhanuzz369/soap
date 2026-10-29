@@ -1,5 +1,5 @@
 ---
-sourceHash: "0e389d931665"
+sourceHash: "67d1a4c0e81e"
 title: "LABSA (Asidi ya Alkilibenzini Salfoniki ya Mnyororo Ulionyooka)"
 slug: labsa
 category: industrial-raw-materials
@@ -75,7 +75,7 @@ related:
 
 LABSA ni kiambato cha kusafisha cha kazi nzito cha tasnia ya sabuni za kufulia. Ni alkilibenzini ya mnyororo ulionyooka iliyopitishwa katika salfoni (sulphonated) ambayo, ikishapunguzwa makali, huwa sodiamu alkilibenzini salfoneti ya mnyororo ulionyooka, kiambato hai kilicho nyuma ya povu na nguvu ya kusafisha katika poda nyingi za kufulia, sabuni za maji za kufulia na visafishaji vya nyumbani. Gharama yake ya chini, utendaji imara wa kusafisha na utangamano na viimarishaji (builders) huifanya kuwa chaguo la kawaida la anionic kwa utengenezaji wa sabuni za kufulia wa kiasi kikubwa.
 
-GoodBiz Hygiene, kampuni ya GoodBiz Global, ni msafirishaji nje wa kibiashara (merchant exporter) kutoka India anayepata LABSA kutoka kwa watengenezaji wa kemikali tuliowakagua. Hatutengenezi LABSA wenyewe. Tunaipata kutoka kwa watengenezaji wa India tuliowakagua, tunathibitisha daraja na ufungashaji dhidi ya fomula yako na kushughulikia nyaraka za usafirishaji nje na usafirishaji kama mtu mmoja wa mawasiliano.
+Hatutengenezi LABSA. GoodBiz Hygiene huipata kutoka kwa watengenezaji wa kemikali wa India tuliowakagua, huthibitisha daraja na ufungashaji dhidi ya fomula yako, na hushughulikia nyaraka za usafirishaji nje na usafirishaji kama mtu wako mmoja wa mawasiliano.
 
 ## Daraja na vipimo
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "82edc50d27ca"
+sourceHash: "a1f5b38ce8aa"
 title: "Geschirrspülmittel (flüssig / Gel)"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -85,7 +85,7 @@ related:
 
 Geschirrspülmittel gehört zu den am schnellsten drehenden Haushaltsreinigern, weil es immer wieder gekauft und täglich verwendet wird. Ein gutes Produkt erzeugt stabilen Schaum, entfernt Speiseöl ohne langes Schrubben, lässt sich sauber abspülen und bleibt hautschonend. Käufer beurteilen es auch nach Optik und Gefühl: Farbe, Duft auf dem Schwamm und wie weit ein kleiner Spritzer reicht.
 
-Als Unternehmen von GoodBiz Global und Handelsexporteur aus Indien bezieht GoodBiz Hygiene Geschirrspülmittel von geprüften indischen Mischbetrieben. Wir betreiben selbst keine Mischanlagen. Stattdessen beziehen wir Geschirrspülmittel als Flüssigkeit und Gel von geprüften indischen Herstellern, gleichen die Spezifikation mit Ihren Anforderungen ab und übernehmen Exportdokumente und Versand als zentraler Ansprechpartner.
+Eine eigene Mischanlage haben wir nicht. GoodBiz Hygiene bezieht flüssiges Geschirrspülmittel und Gel von geprüften indischen Mischbetrieben, prüft die Spezifikation gegen Ihre Vorgaben und übernimmt Exportpapiere und Versand als Ihr einziger Ansprechpartner.
 
 ## Qualitäten und Rezepturen
 
@@ -99,7 +99,7 @@ Geschirrspülmittel wird in PET- oder HDPE-Flaschen von 250 ml bis 1 L, in Nachf
 
 ## Optionen für Handelsmarken
 
-Marken für Geschirrspülmittel im Handel wählen meist eine Standardflaschenform, eine Schrumpfhülse oder ein Etikett und einen Zitronen- oder Limettenduft und entscheiden dann zwischen flüssiger oder Gel-Textur und Gehalt an Aktivsubstanz. Nachfüllbeutel unter demselben Etikett senken Ihre Verpackungskosten. Etiketten-Proofs und ein Flüssigkeitsmuster werden zuerst freigegeben. Die Lieferzeit beträgt in der Regel 3 bis 5 Wochen nach Auftragsbestätigung.
+Marken für Geschirrspülmittel im Handel wählen meist eine Standardflaschenform, eine Schrumpfhülse oder ein Etikett und einen Zitronen- oder Limettenduft und entscheiden dann zwischen flüssiger oder Gel-Textur und Gehalt an Aktivsubstanz. Nachfüllbeutel unter demselben Etikett senken Ihre Verpackungskosten. Etiketten-Proofs und ein Flüssigkeitsmuster werden zuerst freigegeben. Die Lieferzeit beträgt in der Regel 3 bis 5 Wochen nach Auftragsbestätigung. Auf der [Seite zu Handelsmarken](/private-label/#dish-wash) wird ein Auftrag für Geschirrspülmittel Schritt für Schritt erläutert.
 
 ## Warum der Bezug über GoodBiz Hygiene
 

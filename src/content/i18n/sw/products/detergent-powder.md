@@ -1,5 +1,5 @@
 ---
-sourceHash: "9bdf91bdfe1b"
+sourceHash: "edaede7d4259"
 title: "Poda ya Kufulia (Sabuni ya Unga)"
 slug: detergent-powder
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 Poda ya kufulia bado ndiyo aina ya bidhaa ya kufulia inayouzwa zaidi barani Afrika, Asia ya Kusini na Mashariki ya Kati. Ni ya bei nafuu kutengeneza, rahisi kusafirisha, rahisi kuhifadhi katika nyumba ndogo na inaweza kuuzwa kuanzia pakiti ndogo ya 20 g hadi gunia la 25 kg. Kwa waagizaji, ni bidhaa ya kiasi kikubwa ambapo daraja, harufu na kiwango cha bei huamua nafasi rafuni.
 
-GoodBiz Hygiene ni kampuni ya GoodBiz Global na msafirishaji nje wa kibiashara (merchant exporter) kutoka India, inayopata poda ya kufulia kutoka kwa viwanda vya kukausha kwa kunyunyiza na vya mchanganyiko kavu tulivyovikagua. Hatuendeshi viwanda vya sabuni za kufulia wenyewe. Badala yake tunapata poda ya kufulia kutoka kwa watengenezaji wa India tuliowakagua, tunalinganisha fomula na mahitaji yako na kushughulikia nyaraka za usafirishaji nje na usafirishaji kupitia mtu mmoja wa mawasiliano.
+GoodBiz Hygiene haitengenezi sabuni za kufulia. Tunafanya kazi na viwanda vya India vya kukausha kwa kunyunyiza na vya mchanganyiko kavu tulivyovikagua, tunalinganisha fomula na soko lako, na tunashughulikia nyaraka na usafirishaji kupitia mtu mmoja wa mawasiliano.
 
 ## Daraja na fomula
 

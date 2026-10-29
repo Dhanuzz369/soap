@@ -1,5 +1,5 @@
 ---
-sourceHash: "82edc50d27ca"
+sourceHash: "a1f5b38ce8aa"
 title: "Sabun Cuci Piring Cair / Gel"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -85,7 +85,7 @@ related:
 
 Sabun cuci piring cair adalah salah satu produk pembersih rumah tangga yang paling cepat laku, karena dibeli berulang kali dan dipakai setiap hari. Produk yang baik menghasilkan busa stabil, menghilangkan minyak masak tanpa menyikat lama, terbilas bersih, dan tetap lembut di tangan. Pembeli juga menilainya dari tampilan dan rasa: warna, aroma pada spons, dan seberapa jauh sedikit tekanan botol mencukupi.
 
-Sebagai perusahaan GoodBiz Global dan merchant exporter dari India, GoodBiz Hygiene mencarikan sabun cuci piring cair dari peracik India yang telah diseleksi. Kami tidak menjalankan pabrik peracikan sendiri. Sebagai gantinya, kami mencarikan sabun cuci piring cair dan gel dari produsen India yang telah kami seleksi, memeriksa spesifikasi terhadap kebutuhan Anda, dan menangani dokumen ekspor serta pengiriman sebagai satu titik kontak.
+Kami tidak menjalankan pabrik peracikan. GoodBiz Hygiene memasok sabun cuci piring cair dan gel dari peracik India yang telah diseleksi, memeriksa spesifikasinya terhadap permintaan Anda, dan mengurus dokumen ekspor serta pengiriman sebagai satu-satunya kontak Anda.
 
 ## Grade dan formulasi
 
@@ -99,7 +99,7 @@ Sabun cuci piring cair dikirim dalam botol PET atau HDPE 250 ml hingga 1 L, kant
 
 ## Opsi private label
 
-Merek sabun cuci piring ritel biasanya memilih bentuk botol dari stok, shrink sleeve atau label, dan aroma lemon atau jeruk nipis, lalu memutuskan antara tekstur cair atau gel dan kadar bahan aktif. Kantong isi ulang dengan label yang sama menekan biaya kemasan Anda. Contoh cetak label dan sampel cairan disetujui lebih dahulu. Lead time umumnya 3–5 minggu setelah konfirmasi pesanan.
+Merek sabun cuci piring ritel biasanya memilih bentuk botol dari stok, shrink sleeve atau label, dan aroma lemon atau jeruk nipis, lalu memutuskan antara tekstur cair atau gel dan kadar bahan aktif. Kantong isi ulang dengan label yang sama menekan biaya kemasan Anda. Contoh cetak label dan sampel cairan disetujui lebih dahulu. Lead time umumnya 3–5 minggu setelah konfirmasi pesanan. [Halaman private label](/private-label/#dish-wash) menjelaskan pesanan sabun cuci piring langkah demi langkah.
 
 ## Mengapa membeli melalui GoodBiz Hygiene
 

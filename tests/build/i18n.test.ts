@@ -169,6 +169,13 @@ describe.each(LOCALES.map((l) => l.code as Locale))('pages in %s', (lang) => {
   });
 });
 
+describe('Markdown renders in every language', () => {
+  it('no page shows raw ** (bold that did not close, e.g. "**…。**" before Chinese text)', () => {
+    const bad = pages.filter((p) => visibleText(p.html).includes('**')).map((p) => p.path);
+    expect(bad).toEqual([]);
+  });
+});
+
 describe('auto-detect script', () => {
   it('is on English pages only, and never on the 404', () => {
     for (const p of pages) {

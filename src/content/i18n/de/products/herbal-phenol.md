@@ -1,5 +1,5 @@
 ---
-sourceHash: "a7d6ca47c781"
+sourceHash: "2c5f0e4f12c9"
 title: "Pflanzliches Phenol / Phenyl"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -84,7 +84,7 @@ related:
 
 Pflanzliches Phenol, in Südasien weithin als Phenyl bezeichnet, ist in vielen Importmärkten ein Standardreiniger für Böden und Abflüsse in Wohnungen, Schulen und Betrieben. Es wird als Konzentrat verkauft, das der Anwender im Eimer verdünnt, wobei es milchig weiß wird und einen starken, sauberen Duft freisetzt, den viele Käufer mit einem frisch gewischten Raum verbinden. Da es stark verdünnt wird, reicht eine Flasche lange, was es für wertorientierten Einzelhandel und für die Belieferung von Einrichtungen attraktiv macht.
 
-GoodBiz Hygiene, ein Unternehmen von GoodBiz Global, ist ein Handelsexporteur aus Indien, der Phenyl von etablierten Herstellern von Desinfektionsmitteln bezieht. Wir betreiben keine eigenen Produktionslinien. Stattdessen beziehen wir pflanzliches Phenol von geprüften indischen Herstellern, gleichen die Spezifikation mit Ihren Anforderungen ab und übernehmen Exportdokumente und Versand als zentraler Ansprechpartner.
+GoodBiz Hygiene verfügt über keine eigenen Produktionslinien. Wir beziehen pflanzliches Phenol von etablierten indischen Desinfektionsmittelherstellern, gleichen es mit Ihren Anforderungen ab und kümmern uns für Sie um Dokumente und Versand.
 
 ## Pflanzliche Profile und Qualitäten
 

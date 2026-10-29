@@ -1,5 +1,5 @@
 ---
-sourceHash: "367702ea5e76"
+sourceHash: "6cf914fe762e"
 title: "Hạt xà phòng (soap noodles, nguyên liệu nền xà phòng)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 Hạt xà phòng là nguyên liệu khởi đầu của hầu hết xà phòng rắn trên thế giới. Chất béo và dầu được xà phòng hóa, sấy khô và đùn thành hạt, sau đó các cơ sở sản xuất xà phòng trộn với hương liệu, màu sắc, titan dioxit và các phụ gia khác, rồi nghiền, ép đùn và dập thành bánh thành phẩm. Mua hạt giúp cơ sở sản xuất xà phòng bỏ qua công đoạn xà phòng hóa đòi hỏi nhiều vốn và tập trung vào hoàn thiện và xây dựng thương hiệu.
 
-GoodBiz Hygiene, nhà xuất khẩu thương mại từ Ấn Độ và là một công ty thuộc GoodBiz Global, cung ứng hạt xà phòng từ các nhà sản xuất hóa dầu thực vật (oleochemical) Ấn Độ đã được thẩm định. Chúng tôi không tự sản xuất hạt xà phòng. Chúng tôi cung ứng từ các nhà sản xuất Ấn Độ đã được thẩm định, xác nhận cấp độ so với yêu cầu của Quý khách và quản lý chứng từ cùng vận chuyển với vai trò đầu mối duy nhất.
+Chúng tôi không sản xuất hạt xà phòng. GoodBiz Hygiene cung ứng hạt xà phòng từ các nhà sản xuất hóa dầu thực vật (oleochemical) Ấn Độ đã được thẩm định, xác nhận cấp độ theo yêu cầu của Quý khách, và lo chứng từ cùng vận chuyển với vai trò đầu mối duy nhất.
 
 ## Cấp độ và thông số kỹ thuật
 

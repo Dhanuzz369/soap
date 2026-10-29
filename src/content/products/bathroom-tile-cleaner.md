@@ -81,7 +81,7 @@ related:
 
 Bathroom and tile cleaner is bought for one reason: bathrooms collect soap scum, limescale and water marks faster than any other room, and ordinary all-purpose cleaners often struggle with them. A dedicated bathroom product uses mild acids and surfactants together, so it dissolves mineral deposits and lifts soapy residue from tiles, taps, sinks and shower glass with little scrubbing. In hard-water regions it is a strong repeat purchase, and buyers often keep it alongside a toilet bowl cleaner in the same range.
 
-A merchant exporter from India and GoodBiz Global company, GoodBiz Hygiene sources bathroom cleaners from vetted Indian formulators. We do not run production lines ourselves. Instead we source bathroom and tile cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene has no production lines of its own. We source bathroom and tile cleaner from vetted Indian formulators, check it against your requirements, and you deal with one contact for the documents and the shipping.
 
 ## Types and formulations
 

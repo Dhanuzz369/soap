@@ -1,5 +1,5 @@
 ---
-sourceHash: "9bdf91bdfe1b"
+sourceHash: "edaede7d4259"
 title: "Detergente en polvo"
 slug: detergent-powder
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 El detergente en polvo sigue siendo la forma de producto de lavandería más vendida en África, Asia Meridional y Oriente Medio. Es barato de fabricar, fácil de enviar y sencillo de guardar en viviendas pequeñas, y puede venderse desde un sobre de 20 g hasta un saco de 25 kg. Para los importadores, es una línea de volumen en la que la calidad, la fragancia y el nivel de precio determinan la posición en el estante.
 
-GoodBiz Hygiene es una empresa de GoodBiz Global y un exportador comercial de la India, y adquiere detergente en polvo a plantas seleccionadas de secado por atomización y de mezcla en seco. No operamos plantas de detergente propias. En su lugar, adquirimos detergente en polvo a fabricantes indios seleccionados, ajustamos la formulación a sus requisitos y nos encargamos de la documentación de exportación y del transporte a través de un único interlocutor.
+GoodBiz Hygiene no fabrica detergente. Trabajamos con plantas indias seleccionadas de secado por atomización y de mezcla en seco, adaptamos la formulación a su mercado y gestionamos los documentos y el embarque desde un único punto de contacto.
 
 ## Calidades y formulaciones
 

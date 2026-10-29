@@ -1,5 +1,5 @@
 ---
-sourceHash: "421e81d90f2e"
+sourceHash: "a3ed93fe8e87"
 title: "Amaciante de roupas"
 slug: fabric-softener
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 O amaciante de roupas é uma compra complementar que cresce à medida que as famílias adotam máquinas de lavar e querem roupas mais macias e mais cheirosas. Ele amacia as fibras, reduz a estática e os amassados, facilita o passar a ferro e deixa uma fragrância duradoura. Para os importadores, é um produto parceiro do detergente com margem maior, e os consumidores tendem a ser fiéis ao aroma preferido.
 
-A GoodBiz Hygiene é um exportador comercial da Índia, uma empresa do grupo GoodBiz Global, e adquire amaciantes de formuladores indianos estabelecidos. Nós mesmos não operamos unidades de mistura. Em vez disso, adquirimos amaciante de fabricantes indianos selecionados, ajustamos a formulação às suas exigências e cuidamos da documentação de exportação e do embarque por meio de um único ponto de contato.
+Não misturamos amaciante por conta própria. A GoodBiz Hygiene o adquire de misturadores indianos consolidados, ajusta a formulação ao seu briefing e cuida para você da papelada de exportação e do embarque.
 
 ## Graus e formulações
 

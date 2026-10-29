@@ -1,5 +1,5 @@
 ---
-sourceHash: "dc20e0fa7d5e"
+sourceHash: "c986b9bebf21"
 title: "Msimbo wa HSN 3401 dhidi ya 3402: Mwongozo wa Mnunuzi wa Kuainisha Sabuni na Sabuni za Kufulia"
 metaTitle: "HSN 3401 dhidi ya 3402: Kuainisha Sabuni"
 description: "Huna uhakika kama bidhaa yako ni HSN 3401 au 3402? Mwongozo rahisi wa mgawanyo huo, jedwali la bidhaa kwa bidhaa na maswali ya kutatua kwanza."
@@ -16,6 +16,8 @@ faqs:
   - q: "Je, msimbo wa HSN unabadilisha ushuru ninaolipa?"
     a: "Unaweza, kwa sababu ushuru wa uagizaji huwekwa na ushuru wa nchi yako mwenyewe kwa msimbo uliotangazwa. Mwombe wakala wako wa forodha akague msimbo dhidi ya ushuru wa nchi yako kabla ya kuweka oda."
 ---
+
+**Jibu fupi:** sabuni huwekwa chini ya HSN 3401, na sabuni za kufulia na visafishaji (detergents) chini ya 3402. Kichwa cha 3401 kinashughulikia sabuni ya vipande, vibanzi, noodles au ya maji, pamoja na vimiminika na krimu za kuosha ngozi zilizofungashwa kwa rejareja, kama sabuni ya maji ya mikono na jeli ya kuogea. Kichwa cha 3402 kinashughulikia viambato hai vya kusafisha visivyo sabuni, kama LABSA na SLES, na maandalizi ya kuosha na kusafisha yanayotengenezwa kutokana navyo: poda ya kufulia, sabuni ya maji ya kufulia, sabuni ya maji ya kuosha vyombo na visafishaji vingi vya nyumbani. Sehemu iliyobaki ya mwongozo huu inaeleza hali za mpakani na jinsi ya kuthibitisha msimbo kamili wa oda yako.
 
 Ukiomba nukuu kutoka kwa wasambazaji watatu kuhusu "sabuni na sabuni za kufulia", unaweza kupata misimbo mitatu tofauti ya HSN. Hilo si kosa kila wakati. Mfumo Uliooanishwa (Harmonized System, HS) hugawanya bidhaa za kuosha katika vichwa viwili vilivyo jirani, 3401 na 3402, na bidhaa chache hukaa kwa shida kati yake. Mwongozo huu unaeleza mgawanyo huo kwa maneno rahisi ili uweze kusoma nukuu, kukagua ankara na kumweleza wakala wako wa forodha kwa ujasiri.
 

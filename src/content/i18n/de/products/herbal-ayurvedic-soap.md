@@ -1,5 +1,5 @@
 ---
-sourceHash: "e0d1945ad630"
+sourceHash: "8ec8d6b71f61"
 title: "Kräuter- und Ayurveda-Seife"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -82,7 +82,7 @@ related:
 
 Kräuter- und Ayurveda-Seifen verbinden eine gewöhnliche Seifenbasis mit pflanzlichen Zutaten, die in der indischen Körperpflege eine lange Tradition haben. Neem, Kurkuma und Sandelholz sind die bekanntesten, und Verbraucher im Ausland erkennen sie oft als Merkmale eines natürlichen, traditionsbewussten Produkts. Für Importeure ist Kräuterseife damit ein nützliches Mittel, sich im Regal von der Standard-Toilettenseife abzuheben und Kunden zu erreichen, die auf pflanzliche Signale achten.
 
-Als Handelsexporteur aus Indien und Unternehmen von GoodBiz Global bezieht GoodBiz Hygiene Kräuterseifen von Herstellern mit eigenen Kräutersortimenten. Diese Seifen stammen von geprüften indischen Herstellern, die Kräuterlinien betreiben, und wir übernehmen für Sie Spezifikationsprüfung, Dokumente und Versand.
+Seife stellen wir nicht selbst her. GoodBiz Hygiene arbeitet mit geprüften indischen Herstellern zusammen, die eigene Kräuterlinien führen, und wir übernehmen für Sie Spezifikationsprüfung, Dokumente und Versand.
 
 ## Qualitäten und Rezepturen
 

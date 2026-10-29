@@ -1,5 +1,5 @@
 ---
-sourceHash: "30c0f836be53"
+sourceHash: "1b6515cabf90"
 title: "Nước lau kính"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -78,7 +78,7 @@ related:
 
 Nước lau kính là dòng hàng nhỏ nhưng ổn định trong gian hàng tẩy rửa gia dụng. Người mua dùng cho cửa sổ, gương, bàn kính, vách kính phòng tắm và kính xe hơi, và họ mong đợi trên hết một điều: bề mặt trong suốt, không vệt hay màng. Vì sản phẩm nhẹ và chủ yếu là nước, nó phải được pha chế cẩn thận, với sự cân bằng đúng giữa dung môi và chất hoạt động bề mặt, để làm sạch dấu vân tay và bụi rồi khô đều.
 
-GoodBiz Hygiene, một công ty thuộc GoodBiz Global, là nhà xuất khẩu thương mại từ Ấn Độ, cung ứng nước lau kính từ các đơn vị pha chế Ấn Độ đã được thẩm định. Chúng tôi không tự vận hành dây chuyền sản xuất. Thay vào đó, chúng tôi cung ứng nước lau kính từ các nhà sản xuất Ấn Độ đã được thẩm định, đối chiếu thông số kỹ thuật với yêu cầu của Quý khách và đảm nhiệm chứng từ xuất khẩu cùng vận chuyển với vai trò đầu mối duy nhất.
+Chúng tôi không vận hành dây chuyền sản xuất. GoodBiz Hygiene cung ứng nước lau kính từ các đơn vị pha chế Ấn Độ đã được thẩm định, kiểm tra thông số theo yêu cầu của Quý khách, và là đầu mối duy nhất cho giấy tờ xuất khẩu và vận chuyển.
 
 ## Chủng loại và công thức
 

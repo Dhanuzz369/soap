@@ -1,5 +1,5 @@
 ---
-sourceHash: "a7d6ca47c781"
+sourceHash: "2c5f0e4f12c9"
 title: "Fenol de ervas / fenil"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -84,7 +84,7 @@ related:
 
 O fenol de ervas, amplamente chamado de fenil no Sul da Ásia, é um limpador básico de pisos e ralos em residências, escolas e locais de trabalho de muitos mercados importadores. É vendido como concentrado que o usuário dilui em um balde, ficando branco-leitoso e liberando um aroma forte e limpo que muitos compradores associam a um ambiente recém-limpo. Por ser muito diluído, um único frasco rende bastante, o que o torna atraente para o varejo orientado por valor e para o fornecimento institucional.
 
-A GoodBiz Hygiene, empresa do grupo GoodBiz Global, é um exportador comercial da Índia que adquire fenil de fabricantes de desinfetantes estabelecidos. Nós mesmos não operamos linhas de produção. Em vez disso, adquirimos fenol de ervas de fabricantes indianos selecionados, conferimos a especificação com as suas exigências e cuidamos da documentação de exportação e do embarque como ponto único de contato.
+A GoodBiz Hygiene não tem linhas de produção próprias. Adquirimos fenol de ervas de fabricantes indianos de desinfetantes consolidados, conferimos o produto com as suas exigências e cuidamos para você dos documentos e do embarque.
 
 ## Perfis de ervas e graus
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "29ee9c2a1b83"
+sourceHash: "220bcad97fd7"
 title: "Sabonete antibacteriano / medicinal"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -80,7 +80,7 @@ related:
 
 Os sabonetes antibacterianos e medicinais mantêm uma demanda estável onde residências e instituições dão grande valor à higiene. Escolas, alojamentos, locais de trabalho e lares os usam na lavagem diária, e os compradores muitas vezes os preferem ao sabonete comum em climas quentes. A categoria abrange diversos produtos, desde uma barra antibacteriana geral com perfume fresco até barras de estilo carbólico e de enxofre, com perfil medicinal.
 
-A GoodBiz Hygiene, exportador comercial da Índia e empresa do grupo GoodBiz Global, adquire barras medicinais de fabricantes indianos de sabonete selecionados. Não operamos linhas de sabonete. Essas barras são adquiridas de fabricantes indianos selecionados, e nós cuidamos da conferência da especificação, da documentação e do embarque.
+A GoodBiz Hygiene não opera linhas de sabonete. Compramos barras medicinais de fabricantes indianos de sabonete selecionados, conferimos cada pedido com a sua especificação e cuidamos dos documentos e do embarque.
 
 ## Graus e formulações
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "9bdf91bdfe1b"
+sourceHash: "edaede7d4259"
 title: "Sabão em pó / detergente em pó"
 slug: detergent-powder
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 O sabão em pó continua sendo a forma mais vendida de produto para lavar roupa na África, no Sul da Ásia e no Oriente Médio. É barato de produzir, fácil de embarcar, simples de guardar em casas pequenas e pode ser vendido desde um sachê de 20 g até um saco de 25 kg. Para os importadores, é uma linha de volume em que o grau, a fragrância e a faixa de preço definem a posição na prateleira.
 
-A GoodBiz Hygiene é uma empresa do grupo GoodBiz Global e um exportador comercial da Índia, que adquire sabão em pó de unidades selecionadas de atomização (spray-drying) e de mistura a seco. Nós mesmos não operamos fábricas de detergente. Em vez disso, adquirimos sabão em pó de fabricantes indianos selecionados, ajustamos a formulação às suas exigências e cuidamos da documentação de exportação e do embarque por meio de um único ponto de contato.
+A GoodBiz Hygiene não fabrica detergente. Trabalhamos com plantas indianas selecionadas de secagem por atomização e de mistura a seco, ajustamos a formulação ao seu mercado e cuidamos dos documentos e do embarque a partir de um único ponto de contato.
 
 ## Graus e formulações
 

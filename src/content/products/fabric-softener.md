@@ -86,7 +86,7 @@ related:
 
 Fabric softener is an add-on purchase that grows as households adopt washing machines and want better-feeling, better-smelling laundry. It softens fibres, reduces static and creases, makes ironing easier and leaves lasting fragrance. For importers, it is a higher-margin partner product to detergent, and shoppers tend to be loyal to a favourite scent.
 
-GoodBiz Hygiene is a merchant exporter from India, a GoodBiz Global company, and sources conditioners from established Indian blenders. We do not run blending plants ourselves. Instead we source fabric softener from vetted Indian manufacturers, match the formulation to your requirements and handle export documentation and shipping through a single point of contact.
+We don't blend fabric conditioner ourselves. GoodBiz Hygiene sources it from established Indian blenders, matches the formulation to your brief, and looks after the export paperwork and shipping for you.
 
 ## Grades and formulations
 

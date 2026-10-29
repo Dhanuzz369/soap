@@ -1,5 +1,5 @@
 ---
-sourceHash: "e0d1945ad630"
+sourceHash: "8ec8d6b71f61"
 title: "Sabonete de ervas e ayurvédico"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -82,7 +82,7 @@ related:
 
 Os sabonetes de ervas e ayurvédicos combinam uma base de sabão comum com ingredientes vegetais de longa tradição de uso nos cuidados pessoais indianos. Nim, cúrcuma e sândalo são os mais conhecidos, e os consumidores no exterior muitas vezes os reconhecem como marcas de um produto natural e de herança cultural. Para os importadores, isso faz do sabonete de ervas uma forma útil de se diferenciar do sabonete comum na prateleira e de alcançar clientes que procuram sinais de produto de origem vegetal.
 
-Como exportador comercial da Índia e empresa do grupo GoodBiz Global, a GoodBiz Hygiene adquire sabonetes de ervas de fabricantes com linhas dedicadas ao produto. Esses sabonetes são adquiridos de fabricantes indianos selecionados que operam linhas de ervas, e nós cuidamos da conferência da especificação, da documentação e do embarque para você.
+Não fabricamos sabonete. A GoodBiz Hygiene trabalha com fabricantes indianos selecionados que mantêm linhas dedicadas de produtos de ervas, e nós cuidamos para você da conferência da especificação, dos documentos e do embarque.
 
 ## Graus e formulações
 

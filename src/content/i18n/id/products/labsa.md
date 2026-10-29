@@ -1,5 +1,5 @@
 ---
-sourceHash: "0e389d931665"
+sourceHash: "67d1a4c0e81e"
 title: "LABSA (Asam Alkilbenzena Sulfonat Linier)"
 slug: labsa
 category: industrial-raw-materials
@@ -75,7 +75,7 @@ related:
 
 LABSA adalah surfaktan andalan industri deterjen. LABSA adalah alkilbenzena linier tersulfonasi yang, setelah dinetralkan, menjadi natrium alkilbenzena sulfonat linier, bahan aktif di balik busa dan daya bersih pada sebagian besar bubuk pencuci, deterjen cair, dan pembersih rumah tangga. Biayanya yang rendah, kinerja pembersihan yang kuat, dan kompatibilitasnya dengan builder menjadikannya pilihan anionik standar untuk pembuatan deterjen bervolume tinggi.
 
-GoodBiz Hygiene, perusahaan GoodBiz Global, adalah merchant exporter dari India yang mencarikan LABSA dari produsen bahan kimia yang telah diseleksi. Kami tidak membuat LABSA sendiri. Kami mencarikannya dari produsen India yang telah kami seleksi, mengonfirmasi grade dan pengemasan terhadap formulasi Anda, dan menangani dokumen ekspor serta pengiriman sebagai satu titik kontak.
+Kami tidak membuat LABSA. GoodBiz Hygiene memasoknya dari produsen bahan kimia India yang telah diseleksi, mengonfirmasi grade dan kemasannya terhadap formulasi Anda, dan menangani dokumen ekspor serta pengiriman sebagai satu-satunya kontak Anda.
 
 ## Grade dan spesifikasi
 

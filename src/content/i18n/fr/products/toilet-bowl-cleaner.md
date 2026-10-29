@@ -1,5 +1,5 @@
 ---
-sourceHash: "c8da3d442a73"
+sourceHash: "4eaf16a273ee"
 title: "Nettoyant WC"
 slug: toilet-bowl-cleaner
 category: surface-home-cleaners
@@ -82,7 +82,7 @@ related:
 
 Le nettoyant WC est un produit central de la gamme d’entretien ménager et professionnel, car le tartre, les cernes de rouille et les taches d’urine sont un problème quotidien dans les régions à eau dure. Le produit est assez épais pour adhérer à la porcelaine sous le rebord, laissant aux actifs le temps de décoller les dépôts avant le brossage et la chasse d’eau. Les acheteurs comparent les marques sur l’épaisseur, l’efficacité, le parfum et la forme du col incliné.
 
-Société du groupe GoodBiz Global et exportateur négociant indien, GoodBiz Hygiene sélectionne ses nettoyants WC auprès de fabricants indiens contrôlés. Nous n’exploitons pas nous-mêmes de lignes de production. Nous sélectionnons le nettoyant WC auprès de fabricants indiens contrôlés, vérifions les spécifications au regard de vos exigences et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+GoodBiz Hygiene n’exploite pas de lignes de production. Nous sélectionnons le nettoyant WC auprès de fabricants indiens contrôlés, vérifions les spécifications au regard de vos exigences, et vous n’avez qu’un interlocuteur pour les formalités d’export et l’expédition.
 
 ## Qualités et parfums
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "82edc50d27ca"
+sourceHash: "a1f5b38ce8aa"
 title: "Sabuni ya Maji ya Kuosha Vyombo / Jeli"
 slug: dish-wash-liquid
 category: kitchen-care
@@ -85,7 +85,7 @@ related:
 
 Sabuni ya maji ya kuosha vyombo ni mojawapo ya bidhaa za kusafisha za nyumbani zinazouzwa kwa kasi zaidi, kwa sababu hununuliwa tena na tena na hutumika kila siku. Bidhaa nzuri hutoa povu thabiti, huondoa mafuta ya kupikia bila kusugua kwa muda mrefu, huoshwa safi na hubaki laini kwa mikono. Wanunuzi pia huipima kwa mwonekano na hisia: rangi, harufu kwenye sponji na umbali ambao mkamuo mdogo unafika.
 
-Kampuni ya GoodBiz Global na msafirishaji nje wa kibiashara (merchant exporter) kutoka India, GoodBiz Hygiene hupata sabuni ya maji ya kuosha vyombo kutoka kwa wachanganyaji wa India tuliowakagua. Hatuendeshi viwanda vya kuchanganya wenyewe. Badala yake tunapata sabuni ya maji na jeli ya kuosha vyombo kutoka kwa watengenezaji wa India tuliowakagua, tunakagua vipimo dhidi ya mahitaji yako na kushughulikia nyaraka za usafirishaji nje na usafirishaji kama mtu mmoja wa mawasiliano.
+Hatuendeshi kiwanda cha kuchanganya. GoodBiz Hygiene hupata sabuni ya maji na jeli ya kuosha vyombo kutoka kwa wachanganyaji wa India tuliowakagua, hukagua vipimo dhidi ya ulichoomba, na hushughulikia makaratasi ya usafirishaji nje na usafirishaji kama mtu wako mmoja wa mawasiliano.
 
 ## Daraja na fomula
 
@@ -99,7 +99,7 @@ Sabuni ya maji ya kuosha vyombo husafirishwa katika chupa za PET au HDPE za 250 
 
 ## Chaguo za chapa ya mnunuzi
 
-Chapa za rejareja za kuosha vyombo kwa kawaida huchagua umbo la chupa kutoka kwa akiba, mkono wa plastiki au lebo, na harufu ya ndimu au limau, kisha huamua kati ya umbile la kimiminika au jeli na kiwango cha viambato hai. Mifuko ya kujazia upya chini ya lebo ileile hupunguza gharama yako ya ufungashaji. Mifano ya lebo na sampuli ya kimiminika huidhinishwa kwanza. Muda wa maandalizi kwa kawaida ni wiki 3 hadi 5 baada ya oda kuthibitishwa.
+Chapa za rejareja za kuosha vyombo kwa kawaida huchagua umbo la chupa kutoka kwa akiba, mkono wa plastiki au lebo, na harufu ya ndimu au limau, kisha huamua kati ya umbile la kimiminika au jeli na kiwango cha viambato hai. Mifuko ya kujazia upya chini ya lebo ileile hupunguza gharama yako ya ufungashaji. Mifano ya lebo na sampuli ya kimiminika huidhinishwa kwanza. Muda wa maandalizi kwa kawaida ni wiki 3 hadi 5 baada ya oda kuthibitishwa. [Ukurasa wa chapa ya mnunuzi](/private-label/#dish-wash) unaeleza oda ya sabuni ya kuosha vyombo hatua kwa hatua.
 
 ## Kwa nini kupata bidhaa kupitia GoodBiz Hygiene
 

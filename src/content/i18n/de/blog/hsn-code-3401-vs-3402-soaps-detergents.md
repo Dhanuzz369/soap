@@ -1,5 +1,5 @@
 ---
-sourceHash: "dc20e0fa7d5e"
+sourceHash: "c986b9bebf21"
 title: "HSN-Code 3401 oder 3402: Ratgeber für Käufer zur Einreihung von Seifen und Waschmitteln"
 metaTitle: "HSN-Code 3401 oder 3402: Seifen und Waschmittel einreihen"
 description: "Unsicher, ob Ihre Seife oder Ihr Waschmittel unter HSN 3401 oder 3402 fällt? Eine klare Erläuterung der Aufteilung mit Tabelle je Produkt und ersten Fragen."
@@ -16,6 +16,8 @@ faqs:
   - q: "Ändert der HSN-Code den Zoll, den ich zahle?"
     a: "Das kann sein, denn der Einfuhrzoll richtet sich nach dem Zolltarif Ihres eigenen Landes für den angemeldeten Code. Bitten Sie Ihren Zollagenten, den Code vor der Bestellung mit Ihrem nationalen Zolltarif abzugleichen."
 ---
+
+**Kurz gesagt:** Seife gehört zu HSN 3401, Waschmittel zu 3402. Position 3401 umfasst Seife in Stücken, Flocken, Nudeln oder in flüssiger Form sowie Flüssigkeiten und Cremes zur Hautreinigung in Aufmachungen für den Einzelverkauf, etwa Flüssigseife für die Hände und Duschgel. Position 3402 umfasst grenzflächenaktive Stoffe außer Seife, etwa LABSA und SLES, sowie die darauf basierenden Wasch- und Reinigungsmittel: Waschpulver, Flüssigwaschmittel, Geschirrspülmittel und die meisten Haushaltsreiniger. Der Rest dieses Ratgebers behandelt Grenzfälle und erklärt, wie Sie den vollständigen Code für Ihre Bestellung bestätigen.
 
 Wenn Sie drei Lieferanten um ein Angebot für „Seife und Waschmittel“ bitten, erhalten Sie möglicherweise drei verschiedene HSN-Codes zurück. Das ist nicht immer ein Fehler. Das Harmonisierte System (HS) teilt Waschprodukte auf zwei benachbarte Positionen auf, 3401 und 3402, und einige Produkte liegen ungünstig dazwischen. Dieser Ratgeber erklärt die Aufteilung in einfachen Worten, damit Sie ein Angebot lesen, eine Rechnung prüfen und Ihren Zollagenten sicher einweisen können.
 

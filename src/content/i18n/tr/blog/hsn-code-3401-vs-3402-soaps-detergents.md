@@ -1,5 +1,5 @@
 ---
-sourceHash: "dc20e0fa7d5e"
+sourceHash: "c986b9bebf21"
 title: "HSN Kodu 3401 ve 3402: Sabun ve Deterjanları Sınıflandırmak için Alıcı Rehberi"
 metaTitle: "HSN 3401 ve 3402: Sabun ve Deterjan Sınıflandırması"
 description: "Sabununuzun veya deterjanınızın HSN 3401 mi 3402 mi olduğundan emin değil misiniz? Ayrımın sade bir rehberi; ürün bazında tablo ve önce netleştirilecek sorular."
@@ -16,6 +16,8 @@ faqs:
   - q: "HSN kodu ödediğim vergiyi değiştirir mi?"
     a: "Değiştirebilir; çünkü ithalat vergisi, beyan edilen kod üzerindeki kendi ülkenizin tarifesine göre belirlenir. Sipariş vermeden önce gümrük müşavirinizden kodu ulusal tarifenize göre kontrol etmesini isteyin."
 ---
+
+**Kısa cevap:** sabun HSN 3401’e, deterjanlar ise 3402’ye girer. 3401 başlığı kalıp, pul, noodle veya sıvı haldeki sabunu ve sıvı el sabunu ile duş jeli gibi perakende satışa hazırlanmış cilt yıkama sıvılarını ve kremlerini kapsar. 3402 başlığı ise LABSA ve SLES gibi sabun dışındaki yüzey aktif maddeleri ve bunlardan yapılan yıkama ve temizlik müstahzarlarını kapsar: toz deterjan, sıvı deterjan, sıvı bulaşık deterjanı ve ev temizleyicilerinin çoğu. Bu rehberin geri kalanında sınırda kalan durumları ve siparişinizin tam kodunu nasıl teyit edeceğinizi bulacaksınız.
 
 Üç tedarikçiden “sabun ve deterjan” için teklif istediğinizde, üç farklı HSN kodu alabilirsiniz. Bu her zaman bir hata değildir. Armonize Sistem (HS), yıkama ürünlerini birbirine komşu iki başlığa, 3401 ve 3402’ye böler ve birkaç ürün ikisinin arasında rahatsız bir şekilde durur. Bu rehber, bir teklifi okuyabilmeniz, bir faturayı kontrol edebilmeniz ve gümrük müşavirinizi güvenle bilgilendirebilmeniz için ayrımı sade terimlerle açıklar.
 

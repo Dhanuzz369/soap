@@ -1,5 +1,5 @@
 ---
-sourceHash: "ace444adc458"
+sourceHash: "b2f19daf5a87"
 title: "Limpador de pisos"
 slug: floor-cleaner
 category: surface-home-cleaners
@@ -85,7 +85,7 @@ related:
 
 O limpador de pisos é um dos produtos de limpeza doméstica de maior volume em muitos mercados importadores, pois pisos duros, como cerâmica, mármore e vinílico, são padrão em residências, lojas e hotéis. Um bom limpador de pisos remove a sujeira do dia a dia e a gordura leve em uma única passada de esfregão, seca sem marcas fortes e deixa um aroma fresco que dura um tempo no ambiente. Os compradores costumam julgá-lo por três critérios: o quanto limpa, o quanto a fragrância é agradável e quantas passadas de esfregão um frasco rende.
 
-A GoodBiz Hygiene é uma empresa do grupo GoodBiz Global e um exportador comercial da Índia que adquire limpadores de pisos de fabricantes selecionados. Nós mesmos não operamos linhas de produção. Em vez disso, adquirimos limpador de pisos de fabricantes indianos selecionados, conferimos a especificação com as suas exigências e cuidamos da documentação de exportação e do embarque como ponto único de contato.
+A GoodBiz Hygiene não tem linhas de produção próprias. Adquirimos limpador de pisos de fabricantes indianos selecionados, conferimos a especificação com as suas exigências, e você tem um único contato para os documentos e o embarque.
 
 ## Fragrâncias e graus
 

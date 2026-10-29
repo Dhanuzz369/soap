@@ -1,5 +1,5 @@
 ---
-sourceHash: "44d84f27fc48"
+sourceHash: "85c2b1d20a93"
 title: "SLES (Sodyum Lauril Eter Sülfat)"
 slug: sles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 SLES, kişisel bakımda ve ev bakımında en yaygın kullanılan yüzey aktif maddelerden biridir. İyi köpürür, berrak durulanır ve birçok alternatiften cilde daha naziktir; bu nedenle şampuanların, vücut şampuanlarının, sıvı el sabunlarının ve sıvı bulaşık deterjanlarının köpüren bazını oluşturur. Daha ağır hizmet ürünlerinde temizleme gücü ve köpük oluşturmak için LABSA ile birlikte çalışır.
 
-GoodBiz Hygiene, SLES’i kontrol edilmiş yüzey aktif madde üreticilerinden tedarik eden, Hindistan’dan bir ticari ihracatçı ve GoodBiz Global şirketidir. SLES’i kendimiz üretmiyoruz. Onu kontrol edilmiş Hindistanlı üreticilerden tedarik eder, kaliteyi formülasyonunuza göre teyit eder, evrakları ve sevkiyatı tek muhatap olarak yönetiriz.
+SLES üretmiyoruz. GoodBiz Hygiene onu kontrol edilmiş Hindistanlı yüzey aktif madde üreticilerinden tedarik eder, kaliteyi formülasyonunuza göre teyit eder, evrakları ve sevkiyatı tek muhatabınız olarak yönetir.
 
 ## Kaliteler ve özellikler
 

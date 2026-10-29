@@ -1,5 +1,5 @@
 ---
-sourceHash: "91416f83e94e"
+sourceHash: "55ed525afc52"
 title: "Nettoyant multi-surfaces"
 slug: multi-surface-cleaner
 category: surface-home-cleaners
@@ -82,7 +82,7 @@ related:
 
 Le nettoyant multi-surfaces est le produit polyvalent par excellence du placard d’entretien. Un seul flacon sert pour les plans de travail, les tables, l’extérieur des appareils, les murs peints, le mobilier en plastique et bien d’autres surfaces dures : c’est un produit facile à comprendre pour les consommateurs et facile à référencer pour les importateurs. Il élimine les graisses du quotidien, les traces de doigts, les éclaboussures et la poussière, et une bonne formule se rince ou s’essuie sans laisser de film collant.
 
-GoodBiz Hygiene, exportateur négociant indien du groupe GoodBiz Global, sélectionne ses nettoyants multi-usages auprès de formulateurs contrôlés. Nous n’exploitons pas nous-mêmes de lignes de production. Nous sélectionnons le nettoyant multi-surfaces auprès de fabricants indiens contrôlés, vérifions les spécifications au regard de vos exigences et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+GoodBiz Hygiene ne possède aucune ligne de production. Nous sélectionnons le nettoyant multi-usages auprès de formulateurs indiens contrôlés, le vérifions au regard de votre cahier des charges et prenons en charge les documents et l’expédition.
 
 ## Formules et parfums
 

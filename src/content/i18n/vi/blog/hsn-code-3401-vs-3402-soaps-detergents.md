@@ -1,5 +1,5 @@
 ---
-sourceHash: "dc20e0fa7d5e"
+sourceHash: "c986b9bebf21"
 title: "Mã HSN 3401 và 3402: hướng dẫn phân loại xà phòng và chất tẩy rửa dành cho người mua"
 metaTitle: "Mã HSN 3401 và 3402: phân loại xà phòng, chất tẩy rửa"
 description: "Chưa chắc xà phòng hay chất tẩy rửa của Quý khách thuộc HSN 3401 hay 3402? Hướng dẫn dễ hiểu về cách phân chia, kèm bảng theo từng sản phẩm."
@@ -16,6 +16,8 @@ faqs:
   - q: "Mã HSN có làm thay đổi mức thuế tôi phải trả không?"
     a: "Có thể, vì thuế nhập khẩu được ấn định theo biểu thuế của chính quốc gia Quý khách đối với mã được khai báo. Hãy nhờ đại lý hải quan của Quý khách kiểm tra mã so với biểu thuế quốc gia trước khi đặt hàng."
 ---
+
+**Trả lời ngắn gọn:** xà phòng thuộc HSN 3401, còn chất tẩy rửa thuộc 3402. Nhóm 3401 bao gồm xà phòng dạng bánh, vảy, hạt (noodles) hoặc dạng lỏng, cùng các loại nước và kem rửa da đóng gói để bán lẻ, như nước rửa tay và sữa tắm. Nhóm 3402 bao gồm các chất hoạt động bề mặt không phải xà phòng, như LABSA và SLES, cùng các chế phẩm giặt rửa và làm sạch được tạo từ chúng: bột giặt, nước giặt, nước rửa chén và phần lớn sản phẩm tẩy rửa gia dụng. Phần còn lại của hướng dẫn này đề cập các trường hợp ranh giới và cách xác nhận mã đầy đủ cho đơn hàng của Quý khách.
 
 Khi Quý khách đề nghị ba nhà cung cấp báo giá cho «xà phòng và chất tẩy rửa», Quý khách có thể nhận lại ba mã HSN khác nhau. Điều đó không phải lúc nào cũng là sai sót. Hệ thống Hài hòa (HS) chia các sản phẩm giặt rửa vào hai nhóm liền kề, 3401 và 3402, và một vài sản phẩm nằm ở vị trí khó xếp giữa hai nhóm. Hướng dẫn này giải thích cách phân chia bằng ngôn ngữ dễ hiểu để Quý khách có thể đọc bản báo giá, kiểm tra hóa đơn và trao đổi với đại lý hải quan một cách tự tin.
 

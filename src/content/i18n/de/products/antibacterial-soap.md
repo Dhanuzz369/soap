@@ -1,5 +1,5 @@
 ---
-sourceHash: "29ee9c2a1b83"
+sourceHash: "220bcad97fd7"
 title: "Antibakterielle Seife / medizinische Seife"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -80,7 +80,7 @@ related:
 
 Antibakterielle und medizinische Seifen bleiben überall gefragt, wo Haushalte und Einrichtungen großen Wert auf Hygiene legen. Schulen, Herbergen, Arbeitsplätze und Privathaushalte nutzen sie zum täglichen Waschen, und Käufer wählen sie in warmen Klimazonen oft statt der Standard-Toilettenseife. Die Kategorie umfasst eine Reihe von Produkten, vom allgemeinen antibakteriellen Stück mit frischem Duft bis zu Stücken im Karbol-Stil und Schwefelseifen mit medizinischem Profil.
 
-GoodBiz Hygiene, ein Handelsexporteur aus Indien und Unternehmen von GoodBiz Global, bezieht medizinische Seifenstücke von geprüften indischen Seifenherstellern. Wir betreiben keine eigenen Seifenlinien. Diese Stücke stammen von geprüften indischen Herstellern, und wir übernehmen Spezifikationsprüfung, Dokumente und Versand.
+GoodBiz Hygiene betreibt keine Seifenlinien. Wir kaufen medizinische Seifenstücke bei geprüften indischen Seifenherstellern ein, prüfen jeden Auftrag gegen Ihre Spezifikation und kümmern uns um Dokumente und Versand.
 
 ## Qualitäten und Rezepturen
 

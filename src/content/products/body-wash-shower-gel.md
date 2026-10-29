@@ -85,7 +85,7 @@ related:
 
 Body wash and shower gel have taken a large share of the personal wash market from bar soap, particularly in urban households, hotels and fitness centres. Consumers like the rich lather, the wide choice of fragrances and the hygienic pump dispenser. For importers, the category offers a good margin on private label and a strong link to hospitality supply, where the same fragrance can be sold in retail bottles and hotel refill formats.
 
-GoodBiz Hygiene, a GoodBiz Global company and merchant exporter from India, sources shower gels from manufacturers that blend and fill them. We do not blend or fill products ourselves. Body wash is sourced from vetted Indian manufacturers, and we manage specification, documentation and shipment.
+We don't blend or fill shower gel ourselves. GoodBiz Hygiene works with vetted Indian manufacturers who do, and we take care of the specification, the paperwork and the shipment to your port.
 
 ## Grades and formulations
 

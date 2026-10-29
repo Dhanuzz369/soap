@@ -75,7 +75,7 @@ related:
 
 LABSA is the workhorse surfactant of the detergent industry. It is a sulphonated linear alkylbenzene that, once neutralised, becomes sodium linear alkylbenzene sulphonate, the active ingredient behind the foam and cleaning power in most washing powders, liquid detergents and household cleaners. Its low cost, strong cleaning performance and compatibility with builders make it the default anionic choice for high-volume detergent making.
 
-GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter from India that sources LABSA from vetted chemical manufacturers. We do not make LABSA ourselves. We source it from vetted Indian manufacturers, confirm the grade and packing against your formulation and handle export documentation and shipping as a single point of contact.
+We don't make LABSA. GoodBiz Hygiene sources it from vetted Indian chemical manufacturers, confirms the grade and packing against your formulation, and handles the export documents and shipping as your single contact.
 
 ## Grades and specifications
 

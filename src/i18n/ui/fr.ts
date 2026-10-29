@@ -6,7 +6,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '76c1367bd100';
+export const sourceHash = '310480412515';
 
 const fr: UiPartial = {
   meta: {
@@ -252,7 +252,7 @@ const fr: UiPartial = {
     eyebrow: 'Savons · Lessives · Entretien',
     h1a: 'Savons et entretien',
     h1b: 'Exportés depuis l’Inde.',
-    text: 'GoodBiz Hygiene est un exportateur négociant : nous sélectionnons savons, lessives et nettoyants auprès de fabricants indiens contrôlés, en marque de distributeur et en conteneurs mixtes.',
+    text: 'GoodBiz Hygiene, unité de GoodBiz Global basée à Bengaluru, est un exportateur négociant : nous sélectionnons savons, lessives et nettoyants auprès de fabricants indiens contrôlés, en marque de distributeur et en conteneurs mixtes.',
     rangeH: 'La gamme.',
     rangeIntro:
       'Trois produits sur {n}. Chacun a sa propre page avec ses spécifications types, ses contenances et ses options de marque de distributeur.',
@@ -763,6 +763,25 @@ const fr: UiPartial = {
     rangeH: 'Quels produits peuvent porter votre marque ?',
     rangeText: 'La marque de distributeur (marque blanche) est proposée sur {n} produits. Chaque fiche produit indique ses variantes, ses contenances types et ses options de personnalisation.',
     rangeNone: 'Fournis sans marque de distributeur : {list}.',
+    dishWash: {
+      h: 'Liquide vaisselle en marque de distributeur',
+      text: 'Le liquide vaisselle est l’un des produits les plus simples à lancer sous votre propre marque. Il se rachète chaque semaine, et quelques choix clairs suffisent à définir toute la gamme. Voici comment se déroule en général une commande de liquide vaisselle en marque de distributeur.',
+      items: [
+        {
+          title: 'Flacons, recharges et vrac',
+          text: 'Flacons de 250 ml à 1 L en PET ou PEHD pour la grande distribution, avec bouchon à clapet ou à vis et votre manchon ou étiquette. Des recharges souples sous la même marque réduisent le coût d’emballage, et les bidons de 5 L et jerricans de 20 L servent les restaurants et traiteurs.',
+        },
+        {
+          title: 'Parfum, texture et concentration',
+          text: 'Le citron et le citron vert sont les points de départ habituels ; l’orange, la pomme verte, le citron antibactérien et la version sans parfum sont aussi courants. Vous choisissez un liquide fluide ou un gel plus épais, et un taux de matière active adapté à votre positionnement prix.',
+        },
+        {
+          title: 'D’abord l’épreuve et l’échantillon',
+          text: 'Votre épreuve d’étiquette et un échantillon de liquide sont validés avant toute mise en fabrication. Il n’y a pas de minimum de commande fixe, mais les étiquettes imprimées peuvent avoir leur propre minimum. {leadTime}.',
+        },
+      ],
+      link: 'Liquide vaisselle : spécifications et contenances',
+    },
     whyH: 'Pourquoi passer par un exportateur négociant pour votre marque de distributeur',
     whyText: 'Vous cherchez un fabricant ? GoodBiz Hygiene est un exportateur négociant, pas une usine. Voici ce que cela apporte à une gamme en marque de distributeur.',
     why: [

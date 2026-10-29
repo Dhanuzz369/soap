@@ -1,5 +1,5 @@
 ---
-sourceHash: "367702ea5e76"
+sourceHash: "6cf914fe762e"
 title: "Noodles de savon (base savon)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 Les noodles de savon sont la matière première de la plupart des savons solides fabriqués dans le monde. Les graisses et huiles sont saponifiées, séchées et extrudées en noodles, que les savonniers mélangent ensuite à du parfum, des colorants, du dioxyde de titane et d’autres additifs, puis broient, boudinent et frappent en pains finis. Acheter des noodles permet à un savonnier de se passer de l’étape de saponification, très consommatrice de capital, et de se concentrer sur la finition et la marque.
 
-GoodBiz Hygiene, exportateur négociant indien et société du groupe GoodBiz Global, sélectionne ses noodles de savon auprès de producteurs oléochimiques indiens contrôlés. Nous ne fabriquons pas les noodles nous-mêmes. Nous les sélectionnons auprès de fabricants indiens contrôlés, confirmons la qualité au regard de votre besoin et gérons les documents et l’expédition, en interlocuteur unique.
+Nous ne fabriquons pas de noodles de savon. GoodBiz Hygiene les achète auprès de producteurs oléochimiques indiens contrôlés, confirme la qualité au regard de votre besoin et gère les documents et l’expédition, en interlocuteur unique.
 
 ## Qualités et spécifications
 

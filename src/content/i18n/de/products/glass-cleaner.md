@@ -1,5 +1,5 @@
 ---
-sourceHash: "30c0f836be53"
+sourceHash: "1b6515cabf90"
 title: "Glasreiniger"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -78,7 +78,7 @@ related:
 
 Glasreiniger ist eine kleine, aber stetige Linie im Regal für Haushaltsreiniger. Käufer nehmen ihn für Fenster, Spiegel, Glastische, Duschwände und Autoscheiben und erwarten vor allem eines: ein klares Ergebnis ohne Streifen oder Film. Da das Produkt leicht ist und überwiegend aus Wasser besteht, muss es sorgfältig mit dem richtigen Verhältnis von Lösungsmittel und Tensid formuliert werden, damit es Fingerabdrücke und Staub entfernt und dann gleichmäßig trocknet.
 
-GoodBiz Hygiene, ein Unternehmen von GoodBiz Global, ist ein Handelsexporteur aus Indien, der Glasreiniger von geprüften indischen Mischbetrieben bezieht. Wir betreiben keine eigenen Produktionslinien. Stattdessen beziehen wir Glasreiniger von geprüften indischen Herstellern, gleichen die Spezifikation mit Ihren Anforderungen ab und übernehmen Exportdokumente und Versand als zentraler Ansprechpartner.
+Wir betreiben keine Produktionslinien. GoodBiz Hygiene bezieht Glasreiniger von geprüften indischen Mischbetrieben, prüft die Spezifikation gegen Ihre Anforderungen und ist Ihr einziger Ansprechpartner für Exportpapiere und Versand.
 
 ## Typen und Rezepturen
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "dc20e0fa7d5e"
+sourceHash: "c986b9bebf21"
 title: "Code HSN 3401 ou 3402 : guide de l’acheteur pour classer savons et détergents"
 metaTitle: "Code HSN 3401 ou 3402 : classer savons et détergents"
 description: "Votre savon ou votre détergent relève-t-il du code HSN 3401 ou 3402 ? Un guide clair de la distinction, avec un tableau produit par produit."
@@ -16,6 +16,8 @@ faqs:
   - q: "Le code HSN modifie-t-il les droits que je paie ?"
     a: "Il le peut, car les droits d’importation sont fixés par le tarif de votre pays sur le code déclaré. Demandez à votre commissionnaire en douane de vérifier le code au regard de votre tarif national avant de passer commande."
 ---
+
+**En bref :** le savon relève du code HSN 3401, les détergents du 3402. La position 3401 couvre le savon en pains, en paillettes, en noodles ou sous forme liquide, ainsi que les liquides et crèmes pour la toilette de la peau conditionnés pour la vente au détail, comme le savon liquide pour les mains et le gel douche. La position 3402 couvre les agents de surface autres que le savon, comme le LABSA et le SLES, et les préparations de lavage et de nettoyage qui en sont issues : lessive en poudre, lessive liquide, liquide vaisselle et la plupart des produits d’entretien ménagers. La suite de ce guide traite des cas limites et explique comment confirmer le code complet de votre commande.
 
 Lorsque vous demandez à trois fournisseurs un devis pour « savon et détergent », vous pouvez recevoir trois codes HSN différents. Ce n’est pas toujours une erreur. Le Système harmonisé (SH) répartit les produits de lavage entre deux positions voisines, 3401 et 3402, et quelques produits se situent à la frontière entre les deux. Ce guide explique cette distinction simplement, pour que vous puissiez lire un devis, vérifier une facture et briefer votre commissionnaire en douane en toute confiance.
 

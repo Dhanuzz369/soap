@@ -1,5 +1,5 @@
 ---
-sourceHash: "e4e01699d6d9"
+sourceHash: "4dd5e7823a24"
 title: "Detergente em barra para louças"
 slug: dish-wash-bar
 category: kitchen-care
@@ -84,7 +84,7 @@ related:
 
 A barra para lavar louças é um item básico em muitos mercados em que o consumidor compra por unidade e cada centavo conta. A barra é fácil de guardar e de manusear, e um único bloco pode durar várias semanas de uso diário. Em comparação com um frasco de líquido, usa menos embalagem e um frete mais leve, o que convém aos distribuidores que vendem para áreas rurais ou lojas menores.
 
-A GoodBiz Hygiene, parte da GoodBiz Global, é um exportador comercial da Índia que adquire barras para louças de fabricantes de sabão em barra selecionados. Nós mesmos não operamos linhas de detergente. Em vez disso, adquirimos barras para lavar louças de fabricantes indianos selecionados, conferimos a especificação com as suas exigências e cuidamos da documentação de exportação e do embarque como ponto único de contato.
+A GoodBiz Hygiene não opera linhas de detergente. Adquirimos detergente em barra para louças de fabricantes indianos de sabão em barra selecionados, conferimos cada pedido com a sua especificação e cuidamos dos documentos de exportação e do embarque como seu único contato.
 
 ## Graus e formulações
 

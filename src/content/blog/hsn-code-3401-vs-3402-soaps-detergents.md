@@ -3,7 +3,7 @@ title: "HSN Code 3401 vs 3402: A Buyer's Guide to Classifying Soaps and Detergen
 metaTitle: "HSN Code 3401 vs 3402: Classifying Soaps and Detergents"
 description: "Not sure whether your soap or detergent is HSN 3401 or 3402? A plain guide to the split, with a product-by-product table and the questions to settle first."
 date: 2026-10-01
-updated: 2026-10-26
+updated: 2026-10-29
 tags: ["HSN code", "classification", "export documents"]
 relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]
 faqs:
@@ -16,6 +16,8 @@ faqs:
   - q: "Does the HSN code change the duty I pay?"
     a: "It can, because import duty is set by your own country's tariff on the code declared. Ask your customs broker to check the code against your national tariff before you place an order."
 ---
+
+**The short answer:** soap goes under HSN 3401, and detergents go under 3402. Heading 3401 covers soap in bars, flakes, noodles or liquid form, plus skin-washing liquids and creams put up for retail sale, such as liquid hand wash and shower gel. Heading 3402 covers surface-active agents other than soap, such as LABSA and SLES, and the washing and cleaning preparations made from them: detergent powder, liquid detergent, dish wash liquid and most household cleaners. The rest of this guide covers the borderline cases and how to confirm the full code for your order.
 
 When you ask three suppliers for a quotation on "soap and detergent", you may get three different HSN codes back. That is not always a mistake. The Harmonized System (HS) splits washing products across two neighbouring headings, 3401 and 3402, and a few products sit awkwardly between them. This guide explains the split in plain terms so you can read a quotation, check an invoice and brief your customs broker with confidence.
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "30c0f836be53"
+sourceHash: "1b6515cabf90"
 title: "Limpiavidrios"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -78,7 +78,7 @@ related:
 
 El limpiavidrios es una línea pequeña pero constante en el pasillo de limpieza del hogar. Los consumidores lo compran para ventanas, espejos, mesas de vidrio, mamparas de ducha y cristales de automóvil, y esperan una cosa por encima de todo: un acabado limpio, sin marcas ni película. Como el producto es ligero y en su mayor parte agua, debe formularse con cuidado, con el equilibrio adecuado de disolvente y tensioactivo, para que limpie huellas y polvo y después se seque de manera uniforme.
 
-GoodBiz Hygiene, empresa de GoodBiz Global, es un exportador comercial de la India que adquiere limpiavidrios a formuladores indios seleccionados. No operamos líneas de producción propias. En su lugar, adquirimos limpiavidrios a fabricantes indios seleccionados, verificamos la especificación según sus requisitos y nos encargamos de la documentación de exportación y del transporte como único interlocutor.
+No operamos líneas de producción. GoodBiz Hygiene adquiere el limpiavidrios a mezcladores indios seleccionados, verifica la especificación según sus requisitos y es su único interlocutor para los trámites de exportación y el transporte.
 
 ## Tipos y formulaciones
 

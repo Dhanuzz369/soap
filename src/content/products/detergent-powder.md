@@ -86,7 +86,7 @@ related:
 
 Detergent powder remains the most widely sold form of laundry product across Africa, South Asia and the Middle East. It is cheap to make, easy to ship, simple to store in small homes and can be sold in anything from a 20 g sachet to a 25 kg sack. For importers, it is a volume line where the grade, fragrance and price tier decide the shelf position.
 
-GoodBiz Hygiene is a GoodBiz Global company and a merchant exporter from India, sourcing washing powder from vetted spray-drying and dry-mix plants. We do not run detergent plants ourselves. Instead we source detergent powder from vetted Indian manufacturers, match the formulation to your requirements and handle export documentation and shipping through a single point of contact.
+GoodBiz Hygiene doesn't make detergent. We work with vetted Indian spray-drying and dry-mix plants, match the formulation to your market, and handle the documents and the shipment from one point of contact.
 
 ## Grades and formulations
 

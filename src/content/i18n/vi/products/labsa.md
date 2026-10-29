@@ -1,5 +1,5 @@
 ---
-sourceHash: "0e389d931665"
+sourceHash: "67d1a4c0e81e"
 title: "LABSA (axit alkylbenzen sulfonic mạch thẳng)"
 slug: labsa
 category: industrial-raw-materials
@@ -75,7 +75,7 @@ related:
 
 LABSA là chất hoạt động bề mặt chủ lực của ngành chất tẩy rửa. Đây là alkylbenzen mạch thẳng đã sulfon hóa, sau khi trung hòa trở thành natri alkylbenzen sulfonat mạch thẳng, hoạt chất tạo bọt và sức làm sạch trong hầu hết bột giặt, nước giặt và chất tẩy rửa gia dụng. Chi phí thấp, hiệu quả làm sạch mạnh và khả năng tương thích với phụ gia trợ giặt khiến LABSA là lựa chọn anion mặc định cho sản xuất chất tẩy rửa khối lượng lớn.
 
-GoodBiz Hygiene, một công ty thuộc GoodBiz Global, là nhà xuất khẩu thương mại từ Ấn Độ, cung ứng LABSA từ các nhà sản xuất hóa chất đã được thẩm định. Chúng tôi không tự sản xuất LABSA. Chúng tôi cung ứng từ các nhà sản xuất Ấn Độ đã được thẩm định, xác nhận cấp độ và quy cách đóng gói theo công thức của Quý khách và đảm nhiệm chứng từ xuất khẩu cùng vận chuyển với vai trò đầu mối duy nhất.
+Chúng tôi không sản xuất LABSA. GoodBiz Hygiene cung ứng LABSA từ các nhà sản xuất hóa chất Ấn Độ đã được thẩm định, xác nhận cấp độ và quy cách đóng gói theo công thức của Quý khách, và lo chứng từ xuất khẩu cùng vận chuyển với vai trò đầu mối duy nhất.
 
 ## Cấp độ và thông số kỹ thuật
 

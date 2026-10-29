@@ -1,5 +1,5 @@
 ---
-sourceHash: "44d84f27fc48"
+sourceHash: "85c2b1d20a93"
 title: "SLES (natri lauryl ether sulfat)"
 slug: sles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 SLES là một trong những chất hoạt động bề mặt được sử dụng rộng rãi nhất trong chăm sóc cá nhân và chăm sóc gia đình. Chất này tạo bọt tốt, xả sạch trong và dịu với da hơn nhiều lựa chọn thay thế, đó là lý do nó là nền tạo bọt của dầu gội, sữa tắm, nước rửa tay và nước rửa chén. Trong các sản phẩm làm sạch mạnh hơn, SLES phối hợp với LABSA để xây dựng sức làm sạch và bọt.
 
-GoodBiz Hygiene là nhà xuất khẩu thương mại từ Ấn Độ và là một công ty thuộc GoodBiz Global, cung ứng SLES từ các nhà sản xuất chất hoạt động bề mặt đã được thẩm định. Chúng tôi không tự sản xuất SLES. Chúng tôi cung ứng từ các nhà sản xuất Ấn Độ đã được thẩm định, xác nhận cấp độ theo công thức của Quý khách và quản lý chứng từ cùng vận chuyển với vai trò đầu mối duy nhất.
+Chúng tôi không sản xuất SLES. GoodBiz Hygiene cung ứng SLES từ các nhà sản xuất chất hoạt động bề mặt Ấn Độ đã được thẩm định, xác nhận cấp độ theo công thức của Quý khách, và lo chứng từ cùng vận chuyển với vai trò đầu mối duy nhất.
 
 ## Cấp độ và thông số kỹ thuật
 

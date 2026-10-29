@@ -1,5 +1,5 @@
 ---
-sourceHash: "29ee9c2a1b83"
+sourceHash: "220bcad97fd7"
 title: "Xà phòng kháng khuẩn / xà phòng dược tính"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -80,7 +80,7 @@ related:
 
 Xà phòng kháng khuẩn và xà phòng dược tính vẫn có nhu cầu ổn định ở bất cứ nơi nào hộ gia đình và tổ chức coi trọng vệ sinh. Trường học, ký túc xá, nơi làm việc và gia đình dùng chúng để rửa hằng ngày, và người mua thường chọn chúng thay cho xà phòng tắm thông thường ở vùng khí hậu nóng. Nhóm này gồm nhiều sản phẩm, từ bánh kháng khuẩn thông thường có hương tươi mát đến các bánh kiểu carbolic và lưu huỳnh mang đặc tính dược tính.
 
-GoodBiz Hygiene, nhà xuất khẩu thương mại từ Ấn Độ và là một công ty thuộc GoodBiz Global, cung ứng xà phòng dược tính từ các nhà sản xuất xà phòng Ấn Độ đã được thẩm định. Chúng tôi không vận hành dây chuyền xà phòng. Các bánh xà phòng này được cung ứng từ các nhà sản xuất Ấn Độ đã được thẩm định, còn chúng tôi đảm nhiệm việc kiểm tra thông số kỹ thuật, chứng từ và lô hàng.
+GoodBiz Hygiene không vận hành dây chuyền xà phòng. Chúng tôi mua xà phòng dược tính từ các nhà làm xà phòng Ấn Độ đã được thẩm định, đối chiếu từng đơn hàng với thông số của Quý khách và lo liệu chứng từ cùng việc giao hàng.
 
 ## Cấp độ và công thức
 

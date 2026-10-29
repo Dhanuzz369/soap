@@ -1,5 +1,5 @@
 ---
-sourceHash: "421e81d90f2e"
+sourceHash: "a3ed93fe8e87"
 title: "Suavizante de ropa / acondicionador textil"
 slug: fabric-softener
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 El suavizante de ropa es una compra complementaria que crece a medida que los hogares adoptan lavadoras y desean una ropa de mejor tacto y mejor olor. Suaviza las fibras, reduce la electricidad estática y las arrugas, facilita el planchado y deja una fragancia duradera. Para los importadores, es un producto de mayor margen que acompaña al detergente, y los consumidores tienden a ser fieles a su aroma favorito.
 
-GoodBiz Hygiene es un exportador comercial de la India, una empresa de GoodBiz Global, y adquiere acondicionadores a formuladores indios consolidados. No operamos plantas de formulación propias. En su lugar, adquirimos suavizante de ropa a fabricantes indios seleccionados, ajustamos la formulación a sus requisitos y nos encargamos de la documentación de exportación y del transporte a través de un único interlocutor.
+No mezclamos el suavizante nosotros mismos. GoodBiz Hygiene lo adquiere a mezcladores indios consolidados, ajusta la formulación a sus indicaciones y se ocupa por usted de los trámites de exportación y del transporte.
 
 ## Calidades y formulaciones
 

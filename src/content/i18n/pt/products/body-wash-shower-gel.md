@@ -1,5 +1,5 @@
 ---
-sourceHash: "fab6a5425e7d"
+sourceHash: "ae48636bc8a0"
 title: "Gel de banho / sabonete líquido corporal"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -85,7 +85,7 @@ related:
 
 O gel de banho e o sabonete líquido corporal conquistaram uma grande fatia do mercado de higiene pessoal que era do sabonete em barra, em especial em residências urbanas, hotéis e academias. Os consumidores gostam da espuma rica, da grande variedade de fragrâncias e do dosador com bomba, mais higiênico. Para os importadores, a categoria oferece boa margem na marca própria e forte ligação com o fornecimento à hotelaria, em que a mesma fragrância pode ser vendida em frascos de varejo e em refis para hotéis.
 
-A GoodBiz Hygiene, empresa do grupo GoodBiz Global e exportador comercial da Índia, adquire géis de banho de fabricantes que os formulam e envasam. Nós mesmos não formulamos nem envasamos produtos. O gel de banho é adquirido de fabricantes indianos selecionados, e nós cuidamos da especificação, da documentação e do embarque.
+Não misturamos nem envasamos gel de banho. A GoodBiz Hygiene trabalha com fabricantes indianos selecionados que fazem isso, e nós cuidamos da especificação, da papelada e do embarque até o seu porto.
 
 ## Graus e formulações
 

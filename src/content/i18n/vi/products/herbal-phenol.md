@@ -1,5 +1,5 @@
 ---
-sourceHash: "a7d6ca47c781"
+sourceHash: "2c5f0e4f12c9"
 title: "Phenol thảo dược / phenyl"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -84,7 +84,7 @@ related:
 
 Phenol thảo dược, được gọi rộng rãi là phenyl ở Nam Á, là chất tẩy rửa sàn và cống thiết yếu trong nhà ở, trường học và nơi làm việc tại nhiều thị trường nhập khẩu. Sản phẩm được bán dạng đậm đặc để người dùng pha loãng trong xô, chuyển sang trắng đục như sữa và tỏa mùi hương mạnh, sạch sẽ mà nhiều người mua liên tưởng đến một căn phòng vừa được lau. Vì được pha loãng nhiều, một chai dùng được rất lâu, khiến sản phẩm hấp dẫn cho bán lẻ hướng đến giá trị và cho nguồn cung dành cho tổ chức.
 
-GoodBiz Hygiene, một công ty thuộc GoodBiz Global, là nhà xuất khẩu thương mại từ Ấn Độ, cung ứng phenyl từ các nhà sản xuất chất khử trùng lâu năm. Chúng tôi không tự vận hành dây chuyền sản xuất. Thay vào đó, chúng tôi cung ứng phenol thảo dược từ các nhà sản xuất Ấn Độ đã được thẩm định, đối chiếu thông số kỹ thuật với yêu cầu của Quý khách và đảm nhiệm chứng từ xuất khẩu cùng vận chuyển với vai trò đầu mối duy nhất.
+GoodBiz Hygiene không có dây chuyền sản xuất riêng. Chúng tôi cung ứng phenol thảo dược từ các nhà sản xuất chất khử trùng lâu năm tại Ấn Độ, kiểm tra theo yêu cầu của Quý khách, và lo chứng từ cùng vận chuyển thay Quý khách.
 
 ## Hương thảo dược và cấp độ
 

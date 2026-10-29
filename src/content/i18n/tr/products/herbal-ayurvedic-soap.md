@@ -1,5 +1,5 @@
 ---
-sourceHash: "e0d1945ad630"
+sourceHash: "8ec8d6b71f61"
 title: "Bitkisel ve Ayurvedik Sabun"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -82,7 +82,7 @@ related:
 
 Bitkisel ve Ayurvedik sabunlar, sıradan bir sabun bazını Hint kişisel bakımında uzun bir kullanım geleneği olan bitkisel içeriklerle birleştirir. Neem, zerdeçal ve sandal ağacı en bilinenleridir; yurt dışındaki tüketiciler bunları çoğunlukla doğal, geleneğe dayalı bir ürünün işareti olarak tanır. İthalatçılar için bitkisel sabun, rafta standart tuvalet sabunundan sıyrılmanın ve bitkisel ipuçları arayan müşterilere ulaşmanın yararlı bir yoludur.
 
-Hindistan’dan bir ticari ihracatçı ve GoodBiz Global şirketi olarak GoodBiz Hygiene, bitkisel sabunları özel bitkisel gamları olan üreticilerden tedarik eder. Bu sabunlar, bitkisel gamlar işleten, kontrol edilmiş Hindistanlı üreticilerden tedarik edilir; şartname kontrolünü, evrakları ve sevkiyatı sizin için biz yürütürüz.
+Sabunu kendimiz üretmiyoruz. GoodBiz Hygiene, özel bitkisel gamlar işleten kontrol edilmiş Hindistanlı üreticilerle çalışır; şartname kontrolünü, evrakları ve sevkiyatı sizin için biz yürütürüz.
 
 ## Kaliteler ve formülasyonlar
 

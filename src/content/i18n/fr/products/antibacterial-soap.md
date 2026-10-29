@@ -1,5 +1,5 @@
 ---
-sourceHash: "29ee9c2a1b83"
+sourceHash: "220bcad97fd7"
 title: "Savon antibactérien / traitant"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -80,7 +80,7 @@ related:
 
 Les savons antibactériens et traitants restent très demandés partout où les ménages et les collectivités accordent une grande importance à l’hygiène. Écoles, internats, lieux de travail et foyers les utilisent pour la toilette quotidienne, et les acheteurs les préfèrent souvent au savon de toilette standard sous les climats chauds. La catégorie couvre une large palette de produits, du pain antibactérien généraliste au parfum frais jusqu’aux pains de style phéniqué ou au soufre, au profil plus médicinal.
 
-GoodBiz Hygiene, exportateur négociant indien et société du groupe GoodBiz Global, sélectionne ses savons traitants auprès de savonneries indiennes contrôlées. Nous n’exploitons pas de lignes de savonnerie. Ces pains proviennent de fabricants indiens contrôlés, et nous nous chargeons de la vérification des spécifications, des documents et de l’expédition.
+GoodBiz Hygiene n’exploite pas de lignes de savonnerie. Nous achetons des savons traitants auprès de savonneries indiennes contrôlées, vérifions chaque commande au regard de votre cahier des charges et nous occupons des documents et de l’expédition.
 
 ## Qualités et formules
 

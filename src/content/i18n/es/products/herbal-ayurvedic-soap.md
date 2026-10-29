@@ -1,5 +1,5 @@
 ---
-sourceHash: "e0d1945ad630"
+sourceHash: "8ec8d6b71f61"
 title: "Jabón herbal y ayurvédico"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -82,7 +82,7 @@ related:
 
 Los jabones herbales y ayurvédicos combinan una base de jabón corriente con ingredientes vegetales de larga tradición en el cuidado personal indio. El neem, la cúrcuma y el sándalo son los más conocidos, y los consumidores de otros países suelen reconocerlos como señales de un producto natural y con raíces tradicionales. Para los importadores, el jabón herbal es una forma útil de diferenciarse del jabón de tocador estándar en el punto de venta y de llegar a clientes que buscan indicios de un producto de origen vegetal.
 
-Como exportador comercial de la India y empresa de GoodBiz Global, GoodBiz Hygiene adquiere jabones herbales a fabricantes con gamas herbales específicas. Estos jabones proceden de fabricantes indios seleccionados que trabajan con gamas herbales, y nosotros nos encargamos de la verificación de la especificación, de la documentación y del embarque.
+No fabricamos jabón. GoodBiz Hygiene trabaja con fabricantes indios seleccionados que tienen gamas herbales específicas, y nosotros nos encargamos por usted de verificar la especificación, los documentos y el embarque.
 
 ## Calidades y formulaciones
 

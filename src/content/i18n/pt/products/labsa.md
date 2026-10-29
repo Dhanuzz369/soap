@@ -1,5 +1,5 @@
 ---
-sourceHash: "0e389d931665"
+sourceHash: "67d1a4c0e81e"
 title: "LABSA (ácido alquilbenzeno sulfônico linear)"
 slug: labsa
 category: industrial-raw-materials
@@ -75,7 +75,7 @@ related:
 
 O LABSA é o tensoativo de trabalho pesado da indústria de detergentes. É um alquilbenzeno linear sulfonado que, depois de neutralizado, se torna alquilbenzeno sulfonato de sódio linear, o ingrediente ativo responsável pela espuma e pelo poder de limpeza da maioria dos sabões em pó, detergentes líquidos e limpadores domésticos. O baixo custo, o forte desempenho de limpeza e a compatibilidade com coadjuvantes fazem dele a escolha aniônica padrão na fabricação de detergentes em grande volume.
 
-A GoodBiz Hygiene, empresa do grupo GoodBiz Global, é um exportador comercial da Índia que adquire LABSA de fabricantes de produtos químicos selecionados. Nós mesmos não fabricamos LABSA. Nós o adquirimos de fabricantes indianos selecionados, confirmamos o grau e a embalagem de acordo com a sua formulação e cuidamos da documentação de exportação e do embarque como ponto único de contato.
+Não fabricamos LABSA. A GoodBiz Hygiene o adquire de fabricantes químicos indianos selecionados, confirma o grau e a embalagem conforme a sua formulação e cuida dos documentos de exportação e do embarque como seu único contato.
 
 ## Graus e especificações
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "ace444adc458"
+sourceHash: "b2f19daf5a87"
 title: "Nước lau sàn"
 slug: floor-cleaner
 category: surface-home-cleaners
@@ -85,7 +85,7 @@ related:
 
 Nước lau sàn là một trong những sản phẩm tẩy rửa gia dụng có khối lượng lớn nhất tại nhiều thị trường nhập khẩu, vì sàn cứng như gạch men, đá cẩm thạch và vinyl là tiêu chuẩn trong nhà ở, cửa hàng và khách sạn. Một loại nước lau sàn tốt loại bỏ bụi bẩn thường ngày và dầu mỡ nhẹ chỉ với một lượt lau, khô mà không để lại vệt đậm và để lại mùi thơm tươi mát lưu lại trong phòng một thời gian. Người mua thường đánh giá dựa trên ba điều: khả năng làm sạch, độ dễ chịu của hương liệu và một chai cho bao nhiêu lượt lau.
 
-GoodBiz Hygiene là một công ty thuộc GoodBiz Global và là nhà xuất khẩu thương mại từ Ấn Độ, cung ứng nước lau sàn từ các nhà sản xuất đã được thẩm định. Chúng tôi không tự vận hành dây chuyền sản xuất. Thay vào đó, chúng tôi cung ứng nước lau sàn từ các nhà sản xuất Ấn Độ đã được thẩm định, đối chiếu thông số kỹ thuật với yêu cầu của Quý khách và đảm nhiệm chứng từ xuất khẩu cùng vận chuyển với vai trò đầu mối duy nhất.
+GoodBiz Hygiene không có dây chuyền sản xuất riêng. Chúng tôi cung ứng nước lau sàn từ các nhà sản xuất Ấn Độ đã được thẩm định, đối chiếu thông số kỹ thuật với yêu cầu của Quý khách, và Quý khách chỉ làm việc với một đầu mối cho chứng từ và vận chuyển.
 
 ## Hương liệu và cấp độ
 

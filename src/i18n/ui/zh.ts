@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '76c1367bd100';
+export const sourceHash = '310480412515';
 
 const zh: UiPartial = {
   meta: {
@@ -251,7 +251,7 @@ const zh: UiPartial = {
     eyebrow: '香皂 · 洗涤剂 · 家居清洁',
     h1a: '香皂与家居清洁产品',
     h1b: '从印度出口。',
-    text: 'GoodBiz Hygiene是一家贸易型出口商：我们从经考察的印度制造商采购香皂、洗涤剂和清洁剂，支持自有品牌与混装集装箱。',
+    text: 'GoodBiz Hygiene是GoodBiz Global在班加罗尔的业务单元，也是一家贸易型出口商：我们从经考察的印度制造商采购香皂、洗涤剂和清洁剂，支持自有品牌与混装集装箱。',
     rangeH: '产品系列。',
     rangeIntro: '以下展示{n}种产品中的三种。每种产品均有独立页面，列出典型规格、包装规格和自有品牌选项。',
     rangeAll: '查看全部{n}种产品',
@@ -759,6 +759,25 @@ const zh: UiPartial = {
     rangeH: '哪些产品可以使用您的品牌？',
     rangeText: '共有{n}种产品可做自有品牌。每个产品页面都列出其品种、典型包装规格和自有品牌选项。',
     rangeNone: '以下产品不提供自有品牌：{list}。',
+    dishWash: {
+      h: '自有品牌洗洁精',
+      text: '洗洁精是最容易以自有品牌推出的产品之一。消费者每周都会购买，几个明确的选择就能决定整个产品线。自有品牌洗洁精订单通常按以下方式推进。',
+      items: [
+        {
+          title: '瓶装、补充装和大包装',
+          text: '零售瓶规格250 ml至1 L，PET或HDPE材质，配翻盖或螺旋盖，使用您的套标或标签。同一品牌的补充装袋可降低包装成本，5 L桶和20 L大桶则面向餐厅和餐饮服务商。',
+        },
+        {
+          title: '香型、质地和浓度',
+          text: '柠檬和青柠是常见的起点，橙子、青苹果、抗菌柠檬和无香型也很常见。您可以选择较稀的液体或较稠的凝胶，并确定与您价位相符的有效物含量。',
+        },
+        {
+          title: '先确认打样和样品',
+          text: '在开始任何生产之前，先由您确认标签打样和液体样品。没有固定的最低起订量，但印刷标签可能有自己的起订量。{leadTime}。',
+        },
+      ],
+      link: '洗洁精：规格参数与包装尺寸',
+    },
     whyH: '为什么通过贸易出口商采购自有品牌产品',
     whyText: '在找制造商？GoodBiz Hygiene是贸易出口商，不是工厂。以下是这为自有品牌产品线带来的好处。',
     why: [

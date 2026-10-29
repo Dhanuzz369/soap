@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '76c1367bd100';
+export const sourceHash = '310480412515';
 
 const tr: UiPartial = {
   meta: {
@@ -251,7 +251,7 @@ const tr: UiPartial = {
     eyebrow: 'Sabun · Deterjan · Ev bakımı',
     h1a: 'Sabun ve Ev Bakımı',
     h1b: 'Hindistan’dan ihracat.',
-    text: 'GoodBiz Hygiene bir ticari ihracatçıdır: sabun, deterjan ve temizlik ürünlerini kontrol ettiğimiz Hindistanlı üreticilerden tedarik eder; özel marka ve karışık konteyner sunarız.',
+    text: 'GoodBiz Global’in Bengaluru’daki birimi olan GoodBiz Hygiene bir ticari ihracatçıdır: sabun, deterjan ve temizlik ürünlerini kontrol ettiğimiz Hindistanlı üreticilerden tedarik eder; özel marka ve karışık konteyner sunarız.',
     rangeH: 'Ürün gamı.',
     rangeIntro: '{n} ürünün üçü. Her ürünün kendi sayfasında tipik özellikler, ambalaj boyutları ve özel marka seçenekleri yer alır.',
     rangeAll: '{n} ürünün tamamını görüntüleyin',
@@ -761,6 +761,25 @@ const tr: UiPartial = {
     rangeH: 'Hangi ürünler sizin markanızı taşıyabilir?',
     rangeText: 'Özel marka {n} üründe mevcuttur. Her ürün sayfası çeşitleri, tipik ambalaj boyutlarını ve özel marka seçeneklerini listeler.',
     rangeNone: 'Özel marka olmadan tedarik edilenler: {list}.',
+    dishWash: {
+      h: 'Özel marka sıvı bulaşık deterjanı',
+      text: 'Sıvı bulaşık deterjanı, kendi markanızla piyasaya sürmesi en kolay ürünlerden biridir. Tüketiciler onu her hafta satın alır ve birkaç net tercih tüm ürün gamını belirler. Özel marka bir bulaşık deterjanı siparişi genellikle şöyle şekillenir.',
+      items: [
+        {
+          title: 'Şişeler, yedek dolumlar ve dökme',
+          text: 'PET veya HDPE’den 250 ml ile 1 L arası perakende şişeler; flip-top ya da vidalı kapak ve sizin kılıfınız veya etiketinizle. Aynı markalı yedek dolum poşetleri ambalaj maliyetini düşürür; 5 L bidonlar ve 20 L damacanalar ise restoranlara ve catering firmalarına hitap eder.',
+        },
+        {
+          title: 'Koku, kıvam ve konsantrasyon',
+          text: 'Limon ve misket limonu olağan başlangıç noktalarıdır; portakal, yeşil elma, antibakteriyel limon ve kokusuz seçenekler de yaygındır. İnce bir sıvı ya da daha koyu bir jel ile fiyat seviyenize uygun bir aktif madde oranı seçersiniz.',
+        },
+        {
+          title: 'Önce prova ve numune',
+          text: 'Herhangi bir üretim başlamadan önce etiket provanız ve bir sıvı numune onaylanır. Sabit bir minimum sipariş yoktur, ancak baskılı etiketlerin kendi minimum adedi olabilir. {leadTime}.',
+        },
+      ],
+      link: 'Sıvı bulaşık deterjanı: özellikler ve ambalaj boyutları',
+    },
     whyH: 'Özel markayı neden bir dış ticaret şirketi üzerinden almalı',
     whyText: 'Üretici mi arıyorsunuz? GoodBiz Hygiene bir fabrika değil, ihracatçı bir dış ticaret şirketidir. Bunun özel marka ürün gamınıza kattıkları şunlardır.',
     why: [

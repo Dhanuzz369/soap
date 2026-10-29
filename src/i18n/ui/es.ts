@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '76c1367bd100';
+export const sourceHash = '310480412515';
 
 const es: UiPartial = {
   meta: {
@@ -251,7 +251,7 @@ const es: UiPartial = {
     eyebrow: 'Jabones · Detergentes · Limpieza del hogar',
     h1a: 'Jabones y limpieza del hogar',
     h1b: 'Exportados desde la India.',
-    text: 'GoodBiz Hygiene es un exportador comercial: adquirimos jabones, detergentes y limpiadores de fabricantes indios seleccionados, con marca propia y contenedores mixtos.',
+    text: 'GoodBiz Hygiene, una unidad de GoodBiz Global con sede en Bengaluru, es un exportador comercial: adquirimos jabones, detergentes y limpiadores de fabricantes indios seleccionados, con marca propia y contenedores mixtos.',
     rangeH: 'La gama.',
     rangeIntro: 'Tres de {n} productos. Cada uno tiene su propia página con especificaciones típicas, tamaños de envase y opciones de marca propia.',
     rangeAll: 'Ver los {n} productos',
@@ -761,6 +761,25 @@ const es: UiPartial = {
     rangeH: '¿Qué productos pueden llevar su marca?',
     rangeText: 'La marca propia está disponible en {n} productos. Cada página de producto indica sus variedades, tamaños de envase típicos y opciones de marca propia.',
     rangeNone: 'Se suministran sin marca propia: {list}.',
+    dishWash: {
+      h: 'Lavavajillas líquido con marca propia',
+      text: 'El lavavajillas líquido es uno de los productos más fáciles de lanzar con su propia marca. Se compra cada semana, y unas pocas decisiones claras definen toda la gama. Así suele organizarse un pedido de lavavajillas con marca propia.',
+      items: [
+        {
+          title: 'Botellas, recargas y granel',
+          text: 'Botellas para la venta al público de 250 ml a 1 L en PET o HDPE, con tapa abatible o de rosca y su manga o etiqueta. Las bolsas de recarga con la misma marca reducen el costo de envase, y las garrafas de 5 L y los bidones de 20 L cubren restaurantes y servicios de catering.',
+        },
+        {
+          title: 'Aroma, textura y concentración',
+          text: 'El limón y la lima son el punto de partida habitual, y también son frecuentes la naranja, la manzana verde, el limón antibacteriano y la versión sin perfume. Usted elige un líquido fluido o un gel más espeso, y un nivel de materia activa acorde con su precio de venta.',
+        },
+        {
+          title: 'Primero, prueba y muestra',
+          text: 'La prueba de su etiqueta y una muestra del líquido se aprueban antes de producir nada. No hay un pedido mínimo fijo, aunque las etiquetas impresas pueden tener su propio mínimo. {leadTime}.',
+        },
+      ],
+      link: 'Lavavajillas líquido: especificaciones y tamaños de envase',
+    },
     whyH: 'Por qué comprar marca propia a través de un exportador comercializador',
     whyText: '¿Busca un fabricante? GoodBiz Hygiene es un exportador comercializador, no una fábrica. Esto es lo que aporta a una gama de marca propia.',
     why: [

@@ -1,5 +1,5 @@
 ---
-sourceHash: "421e81d90f2e"
+sourceHash: "a3ed93fe8e87"
 title: "Weichspüler"
 slug: fabric-softener
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 Weichspüler ist ein Zusatzkauf, der wächst, wenn Haushalte Waschmaschinen anschaffen und sich besser anfühlende, besser duftende Wäsche wünschen. Er macht die Fasern weich, verringert statische Aufladung und Knitterfalten, erleichtert das Bügeln und hinterlässt einen anhaltenden Duft. Für Importeure ist er ein margenstärkeres Partnerprodukt zum Waschmittel, und Käufer bleiben ihrem Lieblingsduft meist treu.
 
-GoodBiz Hygiene ist ein Handelsexporteur aus Indien, ein Unternehmen von GoodBiz Global, und bezieht Weichspüler von etablierten indischen Mischbetrieben. Wir betreiben selbst keine Mischanlagen. Stattdessen beziehen wir Weichspüler von geprüften indischen Herstellern, gleichen die Rezeptur mit Ihren Anforderungen ab und übernehmen Exportdokumente und Versand als zentraler Ansprechpartner.
+Weichspüler mischen wir nicht selbst. GoodBiz Hygiene bezieht ihn von etablierten indischen Mischbetrieben, passt die Rezeptur an Ihre Vorgaben an und kümmert sich für Sie um Exportpapiere und Versand.
 
 ## Qualitäten und Rezepturen
 

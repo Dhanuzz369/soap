@@ -1,5 +1,5 @@
 ---
-sourceHash: "fab6a5425e7d"
+sourceHash: "ae48636bc8a0"
 title: "Gel douche / nettoyant corps"
 slug: body-wash-shower-gel
 category: bath-personal-soaps
@@ -85,7 +85,7 @@ related:
 
 Le gel douche a pris une large part du marché de l’hygiène corporelle au pain de savon, en particulier dans les foyers urbains, les hôtels et les centres de remise en forme. Les consommateurs apprécient sa mousse généreuse, le large choix de parfums et la pompe hygiénique. Pour un importateur, la catégorie offre une bonne marge en marque de distributeur et un lien fort avec l’approvisionnement hôtelier, où un même parfum peut être vendu en flacons de grande consommation et en recharges pour hôtels.
 
-GoodBiz Hygiene, société du groupe GoodBiz Global et exportateur négociant indien, sélectionne ses gels douche auprès de fabricants qui les formulent et les conditionnent. Nous ne formulons ni ne conditionnons nous-mêmes de produits. Le gel douche provient de fabricants indiens contrôlés, et nous gérons les spécifications, les documents et l’expédition.
+Nous ne mélangeons ni ne conditionnons nous-mêmes le gel douche. GoodBiz Hygiene travaille avec des fabricants indiens contrôlés qui s’en chargent, et nous nous occupons des spécifications, des formalités et de l’expédition jusqu’à votre port.
 
 ## Qualités et formules
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "367702ea5e76"
+sourceHash: "6cf914fe762e"
 title: "Seifennudeln (Seifenbasis)"
 slug: soap-noodles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 Seifennudeln sind das Ausgangsmaterial für die meisten Stückseifen weltweit. Fette und Öle werden verseift, getrocknet und zu Nudeln extrudiert, die Seifenhersteller dann mit Duft, Farbe, Titandioxid und weiteren Zusätzen mischen, vermahlen, zu Strängen pressen und zu fertigen Stücken stanzen. Der Einkauf von Nudeln erlaubt es einem Seifenhersteller, den kapitalintensiven Verseifungsschritt zu überspringen und sich auf Veredelung und Markenaufbau zu konzentrieren.
 
-GoodBiz Hygiene, ein Handelsexporteur aus Indien und Unternehmen von GoodBiz Global, bezieht Seifennudeln von geprüften indischen Oleochemie-Herstellern. Wir stellen die Nudeln nicht selbst her. Wir beziehen sie von geprüften indischen Herstellern, bestätigen die Qualität anhand Ihres Bedarfs und übernehmen Dokumente und Versand als zentraler Ansprechpartner.
+Seifennudeln stellen wir nicht selbst her. GoodBiz Hygiene bezieht sie von geprüften indischen Oleochemie-Produzenten, bestätigt die Qualität anhand Ihrer Anforderung und übernimmt Dokumente und Versand als Ihr einziger Ansprechpartner.
 
 ## Qualitäten und Spezifikationen
 

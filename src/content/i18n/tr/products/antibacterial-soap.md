@@ -1,5 +1,5 @@
 ---
-sourceHash: "29ee9c2a1b83"
+sourceHash: "220bcad97fd7"
 title: "Antibakteriyel / Medikal Sabun"
 slug: antibacterial-soap
 category: bath-personal-soaps
@@ -80,7 +80,7 @@ related:
 
 Antibakteriyel ve medikal sabunlara, evlerin ve kurumların hijyene yüksek değer verdiği her yerde istikrarlı talep vardır. Okullar, yurtlar, işyerleri ve evler günlük yıkamada bunları kullanır; sıcak iklimlerde alıcılar çoğunlukla standart tuvalet sabunu yerine bunları tercih eder. Kategori, ferah kokulu genel bir antibakteriyel kalıptan medikal profile sahip karbolik tarzı ve kükürtlü kalıplara uzanan bir ürün yelpazesini kapsar.
 
-Hindistan’dan bir ticari ihracatçı ve GoodBiz Global şirketi olan GoodBiz Hygiene, medikal kalıpları kontrol edilmiş Hindistanlı sabun üreticilerinden tedarik eder. Sabun hatlarımızı kendimiz işletmiyoruz. Bu kalıplar kontrol edilmiş Hindistanlı üreticilerden tedarik edilir; şartname kontrolünü, evrakları ve sevkiyatı biz yürütürüz.
+GoodBiz Hygiene olarak sabun hattı işletmiyoruz. Medikal kalıp sabunları kontrol edilmiş Hindistanlı sabun üreticilerinden satın alıyor, her siparişi şartnamenize göre kontrol ediyor, evrakları ve sevkiyatı üstleniyoruz.
 
 ## Kaliteler ve formülasyonlar
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "30c0f836be53"
+sourceHash: "1b6515cabf90"
 title: "Nettoyant vitres"
 slug: glass-cleaner
 category: surface-home-cleaners
@@ -78,7 +78,7 @@ related:
 
 Le nettoyant vitres est une référence modeste mais régulière du rayon entretien. Les consommateurs l’achètent pour les fenêtres, les miroirs, les tables en verre, les parois de douche et les vitres de voiture, et ils attendent avant tout un résultat net, sans traces ni voile. Le produit étant léger et composé surtout d’eau, il doit être formulé avec soin, avec le bon équilibre entre solvant et tensioactif, pour enlever traces de doigts et poussière puis sécher uniformément.
 
-GoodBiz Hygiene, société du groupe GoodBiz Global, est un exportateur négociant indien qui sélectionne ses nettoyants vitres auprès de formulateurs indiens contrôlés. Nous n’exploitons pas nous-mêmes de lignes de production. Nous sélectionnons le nettoyant vitres auprès de fabricants indiens contrôlés, vérifions les spécifications au regard de vos exigences et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+Nous n’exploitons pas de lignes de production. GoodBiz Hygiene sélectionne le nettoyant vitres auprès de mélangeurs indiens contrôlés, vérifie les spécifications au regard de vos exigences et reste votre unique interlocuteur pour les formalités d’export et l’expédition.
 
 ## Types et formules
 

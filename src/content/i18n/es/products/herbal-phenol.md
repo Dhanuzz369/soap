@@ -1,5 +1,5 @@
 ---
-sourceHash: "a7d6ca47c781"
+sourceHash: "2c5f0e4f12c9"
 title: "Fenol herbal / fenil"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -84,7 +84,7 @@ related:
 
 El fenol herbal, ampliamente conocido como fenil en Asia Meridional, es un limpiador básico de pisos y desagües en hogares, escuelas y lugares de trabajo de muchos mercados importadores. Se vende como un concentrado que el usuario diluye en un cubo, volviéndose blanco lechoso y liberando un aroma intenso y limpio que muchos compradores asocian con una habitación recién fregada. Como se diluye mucho, una sola botella rinde bastante, lo que lo hace atractivo para el comercio minorista orientado al valor y para el suministro institucional.
 
-GoodBiz Hygiene, empresa de GoodBiz Global, es un exportador comercial de la India que adquiere fenil a fabricantes consolidados de desinfectantes. No operamos líneas de producción propias. En su lugar, adquirimos fenol herbal a fabricantes indios seleccionados, verificamos la especificación según sus requisitos y nos encargamos de la documentación de exportación y del transporte como único interlocutor.
+GoodBiz Hygiene no tiene líneas de producción propias. Adquirimos el fenol herbal a fabricantes indios de desinfectantes con trayectoria, lo verificamos según sus requisitos y nos ocupamos por usted de los documentos y del transporte.
 
 ## Perfiles herbales y calidades
 

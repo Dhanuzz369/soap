@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '76c1367bd100';
+export const sourceHash = '310480412515';
 
 const pt: UiPartial = {
   meta: {
@@ -251,7 +251,7 @@ const pt: UiPartial = {
     eyebrow: 'Sabonetes · Detergentes · Limpeza doméstica',
     h1a: 'Sabonetes e limpeza doméstica',
     h1b: 'Exportados da Índia.',
-    text: 'A GoodBiz Hygiene é um exportador comercial: adquirimos sabonetes, detergentes e produtos de limpeza de fabricantes indianos selecionados, com marca própria e contêineres mistos.',
+    text: 'A GoodBiz Hygiene, unidade da GoodBiz Global em Bengaluru, é um exportador comercial: adquirimos sabonetes, detergentes e produtos de limpeza de fabricantes indianos selecionados, com marca própria e contêineres mistos.',
     rangeH: 'A linha de produtos.',
     rangeIntro: 'Três de {n} produtos. Cada um tem página própria, com especificações típicas, tamanhos de embalagem e opções de marca própria.',
     rangeAll: 'Ver todos os {n} produtos',
@@ -761,6 +761,25 @@ const pt: UiPartial = {
     rangeH: 'Quais produtos podem levar a sua marca?',
     rangeText: 'A marca própria está disponível em {n} produtos. Cada página de produto informa as variedades, os tamanhos de embalagem típicos e as opções de marca própria.',
     rangeNone: 'Fornecidos sem marca própria: {list}.',
+    dishWash: {
+      h: 'Detergente para louças com marca própria',
+      text: 'O detergente para louças é um dos produtos mais fáceis de lançar com a sua própria marca. As pessoas compram toda semana, e poucas escolhas claras definem a linha inteira. É assim que um pedido de detergente para louças com marca própria costuma ser montado.',
+      items: [
+        {
+          title: 'Frascos, refis e granel',
+          text: 'Frascos de varejo de 250 ml a 1 L em PET ou HDPE, com tampa flip-top ou de rosca e a sua cinta ou rótulo. Refis em sachê com a mesma marca reduzem o custo de embalagem, e galões de 5 L e bombonas de 20 L atendem restaurantes e serviços de buffet.',
+        },
+        {
+          title: 'Aroma, textura e concentração',
+          text: 'Limão e lima são os pontos de partida habituais, e laranja, maçã verde, limão antibacteriano e sem perfume também são comuns. Você escolhe um líquido fluido ou um gel mais espesso, e um teor de matéria ativa adequado ao seu preço de venda.',
+        },
+        {
+          title: 'Prova e amostra primeiro',
+          text: 'A prova do seu rótulo e uma amostra do líquido são aprovadas antes de qualquer produção. Não há pedido mínimo fixo, mas rótulos impressos podem ter um mínimo próprio. {leadTime}.',
+        },
+      ],
+      link: 'Detergente para louças: especificações e embalagens',
+    },
     whyH: 'Por que comprar marca própria por meio de uma trading exportadora',
     whyText: 'Procurando um fabricante? A GoodBiz Hygiene é uma trading exportadora, não uma fábrica. Veja o que isso acrescenta a uma linha de marca própria.',
     why: [

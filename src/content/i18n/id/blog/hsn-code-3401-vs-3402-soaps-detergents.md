@@ -1,5 +1,5 @@
 ---
-sourceHash: "dc20e0fa7d5e"
+sourceHash: "c986b9bebf21"
 title: "Kode HSN 3401 vs 3402: Panduan Pembeli untuk Mengklasifikasikan Sabun dan Deterjen"
 metaTitle: "Kode HSN 3401 vs 3402: Klasifikasi Sabun dan Deterjen"
 description: "Ragu sabun atau deterjen Anda masuk HSN 3401 atau 3402? Panduan lugas tentang pembagiannya, dengan tabel per produk dan pertanyaan yang perlu diselesaikan."
@@ -16,6 +16,8 @@ faqs:
   - q: "Apakah kode HSN mengubah bea yang saya bayar?"
     a: "Bisa, karena bea impor ditetapkan oleh tarif negara Anda sendiri atas kode yang dideklarasikan. Minta agen bea cukai Anda memeriksa kode terhadap tarif nasional Anda sebelum Anda melakukan pemesanan."
 ---
+
+**Jawaban singkatnya:** sabun masuk HSN 3401, sedangkan deterjen masuk 3402. Pos 3401 mencakup sabun dalam bentuk batang, serpih, noodles, atau cair, ditambah cairan dan krim pencuci kulit yang dikemas untuk eceran, seperti sabun cuci tangan cair dan gel mandi. Pos 3402 mencakup zat aktif permukaan selain sabun, seperti LABSA dan SLES, serta sediaan pencuci dan pembersih yang dibuat darinya: deterjen bubuk, deterjen cair, sabun cuci piring cair, dan sebagian besar pembersih rumah tangga. Bagian selanjutnya dari panduan ini membahas kasus perbatasan dan cara memastikan kode lengkap untuk pesanan Anda.
 
 Ketika Anda meminta penawaran "sabun dan deterjen" dari tiga pemasok, Anda mungkin mendapat tiga kode HSN yang berbeda. Itu tidak selalu kesalahan. Harmonized System (HS) membagi produk pencuci ke dalam dua pos yang bersebelahan, 3401 dan 3402, dan beberapa produk berada canggung di antaranya. Panduan ini menjelaskan pembagiannya dengan bahasa lugas agar Anda dapat membaca penawaran, memeriksa faktur, dan memberi arahan kepada agen bea cukai dengan percaya diri.
 

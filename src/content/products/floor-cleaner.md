@@ -85,7 +85,7 @@ related:
 
 Floor cleaner is one of the highest-volume household cleaning products in many import markets, because hard floors such as ceramic tile, marble and vinyl are standard in homes, shops and hotels. A good floor cleaner lifts everyday dirt and light grease in a single mop pass, dries without heavy streaks and leaves a fresh scent that lasts for a while in the room. Buyers usually judge it on three things: how well it cleans, how pleasant the fragrance is, and how many mopping rounds a bottle gives.
 
-GoodBiz Hygiene is a GoodBiz Global company and a merchant exporter from India that sources floor cleaners from vetted manufacturers. We do not run production lines ourselves. Instead we source floor cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+GoodBiz Hygiene has no production lines of its own. We source floor cleaner from vetted Indian manufacturers, check the specification against your requirements, and you have one contact for the documents and the shipping.
 
 ## Fragrances and grades
 

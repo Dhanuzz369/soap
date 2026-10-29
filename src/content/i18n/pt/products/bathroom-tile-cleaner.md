@@ -1,5 +1,5 @@
 ---
-sourceHash: "cf73f343c941"
+sourceHash: "b9ae2d2c63ee"
 title: "Limpador de banheiros e azulejos"
 slug: bathroom-tile-cleaner
 category: surface-home-cleaners
@@ -81,7 +81,7 @@ related:
 
 O limpador de banheiros e azulejos é comprado por um motivo: o banheiro acumula resíduos de sabão, calcário e marcas de água mais depressa do que qualquer outro cômodo, e os limpadores multiuso comuns muitas vezes têm dificuldade com eles. Um produto específico para banheiros combina ácidos suaves e tensoativos, de modo que dissolve depósitos minerais e remove resíduos de sabão de azulejos, torneiras, pias e vidros de box com pouca fricção. Em regiões de água dura, é uma compra recorrente forte, e os compradores costumam mantê-lo ao lado de um limpador de vaso sanitário na mesma linha.
 
-Exportador comercial da Índia e empresa do grupo GoodBiz Global, a GoodBiz Hygiene adquire limpadores de banheiro de formuladores indianos selecionados. Não operamos linhas de produção próprias. Em vez disso, adquirimos limpadores de banheiros e azulejos de fabricantes indianos selecionados, conferimos a especificação com as suas exigências e cuidamos da documentação de exportação e do embarque como ponto único de contato.
+A GoodBiz Hygiene não tem linhas de produção próprias. Adquirimos limpador de banheiros e azulejos de formuladores indianos selecionados, conferimos o produto com as suas exigências, e você trata com um único contato para os documentos e o embarque.
 
 ## Tipos e formulações
 

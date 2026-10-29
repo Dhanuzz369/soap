@@ -1,5 +1,5 @@
 ---
-sourceHash: "44d84f27fc48"
+sourceHash: "85c2b1d20a93"
 title: "SLES (lauryl éther sulfate de sodium)"
 slug: sles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 Le SLES est l’un des tensioactifs les plus utilisés en hygiène corporelle et en entretien ménager. Il mousse bien, se rince nettement et est plus doux pour la peau que de nombreuses alternatives : c’est pourquoi il forme la base moussante des shampoings, gels douche, savons liquides pour les mains et liquides vaisselle. Dans les produits plus puissants, il s’associe au LABSA pour renforcer le pouvoir lavant et la mousse.
 
-GoodBiz Hygiene, exportateur négociant indien et société du groupe GoodBiz Global, sélectionne le SLES auprès de fabricants de tensioactifs contrôlés. Nous ne fabriquons pas le SLES nous-mêmes. Nous le sélectionnons auprès de fabricants indiens contrôlés, confirmons la qualité au regard de votre formule et gérons les documents et l’expédition, en interlocuteur unique.
+Nous ne fabriquons pas de SLES. GoodBiz Hygiene se le procure auprès de fabricants indiens de tensioactifs contrôlés, confirme la qualité au regard de votre formule et gère les documents et l’expédition, en interlocuteur unique.
 
 ## Qualités et spécifications
 

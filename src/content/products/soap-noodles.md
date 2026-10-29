@@ -76,7 +76,7 @@ related:
 
 Soap noodles are the starting material for most solid soap made around the world. Fats and oils are saponified, dried and extruded into noodles, which soap makers then mix with fragrance, colour, titanium dioxide and other additives, mill, plod and stamp into finished bars. Buying noodles lets a soap maker skip the capital-heavy saponification step and focus on finishing and branding.
 
-GoodBiz Hygiene, a merchant exporter from India and a GoodBiz Global company, sources soap noodles from vetted Indian oleochemical producers. We do not make the noodles ourselves. We source them from vetted Indian manufacturers, confirm the grade against your requirement and manage documentation and shipping as a single point of contact.
+We don't make soap noodles. GoodBiz Hygiene sources them from vetted Indian oleochemical producers, confirms the grade against your requirement, and handles the documents and the shipping as your single contact.
 
 ## Grades and specifications
 

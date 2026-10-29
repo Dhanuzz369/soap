@@ -1,5 +1,5 @@
 ---
-sourceHash: "44d84f27fc48"
+sourceHash: "85c2b1d20a93"
 title: "SLES (Laurili Eta Salfeti ya Sodiamu)"
 slug: sles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 SLES ni mojawapo ya viambato vya kusafisha vinavyotumika sana katika utunzaji wa mwili na usafi wa nyumbani. Hutoa povu vizuri, huoshwa kwa uwazi na ni laini zaidi kwa ngozi kuliko mbadala nyingi, ndiyo maana huunda msingi wa povu wa shampoo, sabuni za maji za mwili, sabuni za maji za mikono na sabuni za maji za kuosha vyombo. Katika bidhaa za kazi nzito hufanya kazi pamoja na LABSA kujenga nguvu ya kusafisha na povu.
 
-GoodBiz Hygiene ni msafirishaji nje wa kibiashara (merchant exporter) kutoka India na kampuni ya GoodBiz Global inayopata SLES kutoka kwa watengenezaji wa viambato vya kusafisha tuliowakagua. Hatutengenezi SLES wenyewe. Tunaipata kutoka kwa watengenezaji wa India tuliowakagua, tunathibitisha daraja dhidi ya fomula yako na kusimamia nyaraka na usafirishaji kama mtu mmoja wa mawasiliano.
+Hatutengenezi SLES. GoodBiz Hygiene huipata kutoka kwa watengenezaji wa India wa viambato vya kusafisha tuliowakagua, huthibitisha daraja dhidi ya fomula yako, na hushughulikia nyaraka na usafirishaji kama mtu wako mmoja wa mawasiliano.
 
 ## Daraja na vipimo
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "9bdf91bdfe1b"
+sourceHash: "edaede7d4259"
 title: "Bột giặt"
 slug: detergent-powder
 category: laundry-care
@@ -86,7 +86,7 @@ related:
 
 Bột giặt vẫn là dạng sản phẩm giặt giũ được bán rộng rãi nhất ở châu Phi, Nam Á và Trung Đông. Sản phẩm sản xuất rẻ, dễ vận chuyển, dễ cất giữ trong những ngôi nhà nhỏ và có thể được bán từ gói nhỏ 20 g đến bao 25 kg. Với nhà nhập khẩu, đây là dòng hàng khối lượng lớn, nơi cấp độ, hương liệu và phân khúc giá quyết định vị trí trên kệ.
 
-GoodBiz Hygiene là một công ty thuộc GoodBiz Global và là nhà xuất khẩu thương mại từ Ấn Độ, cung ứng bột giặt từ các nhà máy phun sấy và trộn khô đã được thẩm định. Chúng tôi không tự vận hành nhà máy chất tẩy rửa. Thay vào đó, chúng tôi cung ứng bột giặt từ các nhà sản xuất Ấn Độ đã được thẩm định, phối hợp công thức với yêu cầu của Quý khách và đảm nhiệm chứng từ xuất khẩu cùng vận chuyển qua một đầu mối duy nhất.
+GoodBiz Hygiene không sản xuất chất tẩy rửa. Chúng tôi hợp tác với các nhà máy phun sấy và trộn khô tại Ấn Độ đã được thẩm định, điều chỉnh công thức cho phù hợp với thị trường của Quý khách, và xử lý chứng từ cùng lô hàng qua một đầu mối duy nhất.
 
 ## Cấp độ và công thức
 

@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '76c1367bd100';
+export const sourceHash = '310480412515';
 
 const sw: UiPartial = {
   meta: {
@@ -250,7 +250,7 @@ const sw: UiPartial = {
     eyebrow: 'Sabuni · Sabuni za kufulia · Usafi wa nyumbani',
     h1a: 'Sabuni na Usafi wa Nyumbani',
     h1b: 'Zinasafirishwa kutoka India.',
-    text: 'GoodBiz Hygiene ni msafirishaji nje wa kibiashara (merchant exporter): tunanunua sabuni, sabuni za kufulia na visafishaji kutoka kwa watengenezaji wa India tuliowakagua, pamoja na chapa ya mnunuzi na makontena mchanganyiko.',
+    text: 'GoodBiz Hygiene, kitengo cha GoodBiz Global kilichopo Bengaluru, ni msafirishaji nje wa kibiashara (merchant exporter): tunanunua sabuni, sabuni za kufulia na visafishaji kutoka kwa watengenezaji wa India tuliowakagua, pamoja na chapa ya mnunuzi na makontena mchanganyiko.',
     rangeH: 'Bidhaa Zetu.',
     rangeIntro: 'Bidhaa tatu kati ya {n}. Kila moja ina ukurasa wake wenye vipimo vya kawaida, ukubwa wa vifungashio na chaguo za chapa ya mnunuzi.',
     rangeAll: 'Tazama bidhaa zote {n}',
@@ -760,6 +760,25 @@ const sw: UiPartial = {
     rangeH: 'Bidhaa zipi zinaweza kubeba chapa yako?',
     rangeText: 'Chapa ya mnunuzi inapatikana kwa bidhaa {n}. Ukurasa wa kila bidhaa unaorodhesha aina zake, ukubwa wa kawaida wa vifungashio na chaguo za chapa ya mnunuzi.',
     rangeNone: 'Hutolewa bila chapa ya mnunuzi: {list}.',
+    dishWash: {
+      h: 'Sabuni ya maji ya kuosha vyombo kwa chapa yako',
+      text: 'Sabuni ya maji ya kuosha vyombo ni mojawapo ya bidhaa rahisi zaidi kuzindua kwa jina lako mwenyewe. Watu huinunua kila wiki, na maamuzi machache yaliyo wazi ndiyo huunda bidhaa zote. Hivi ndivyo oda ya sabuni ya vyombo kwa chapa ya mnunuzi huandaliwa kwa kawaida.',
+      items: [
+        {
+          title: 'Chupa, vifungashio vya kujazia upya na jumla',
+          text: 'Chupa za rejareja za 250 ml hadi 1 L za PET au HDPE, zenye kifuniko cha kufungua juu au cha kuzungusha, na kifuniko-kanga au lebo yako. Vifungashio vya kujazia upya vya chapa hiyo hiyo hupunguza gharama ya vifungashio, na makopo ya 5 L na madumu ya 20 L huhudumia migahawa na wahudumu wa vyakula.',
+        },
+        {
+          title: 'Harufu, uzito na nguvu',
+          text: 'Ndimu na limau ndizo chaguo za kawaida za kuanzia; chungwa, tufaha la kijani, ndimu ya kuua bakteria na isiyo na harufu pia ni za kawaida. Unachagua maji mepesi au jeli nzito zaidi, na kiwango cha viambato hai kinachoendana na bei unayolenga.',
+        },
+        {
+          title: 'Rasimu ya lebo na sampuli kwanza',
+          text: 'Rasimu ya lebo yako na sampuli ya sabuni huidhinishwa kabla ya chochote kutengenezwa. Hakuna kiwango cha chini cha oda kilichowekwa, ingawa lebo zilizochapishwa zinaweza kuwa na kiwango chake cha chini. {leadTime}.',
+        },
+      ],
+      link: 'Sabuni ya maji ya kuosha vyombo: vipimo na ukubwa wa vifungashio',
+    },
     whyH: 'Kwa nini upate chapa ya mnunuzi kupitia msafirishaji mfanyabiashara',
     whyText: 'Unatafuta mtengenezaji? GoodBiz Hygiene ni msafirishaji mfanyabiashara, si kiwanda. Haya ndiyo inayoongeza kwenye bidhaa za chapa yako.',
     why: [

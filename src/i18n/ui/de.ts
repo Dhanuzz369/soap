@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '76c1367bd100';
+export const sourceHash = '310480412515';
 
 const de: UiPartial = {
   meta: {
@@ -251,7 +251,7 @@ const de: UiPartial = {
     eyebrow: 'Seifen · Waschmittel · Haushaltspflege',
     h1a: 'Seifen und Haushaltspflege',
     h1b: 'Exportiert aus Indien.',
-    text: 'GoodBiz Hygiene ist ein Handelsexporteur: Wir beziehen Seifen, Waschmittel und Reiniger von geprüften indischen Herstellern, mit Handelsmarke und gemischten Containern.',
+    text: 'GoodBiz Hygiene, ein Unternehmensbereich von GoodBiz Global mit Sitz in Bengaluru, ist ein Handelsexporteur: Wir beziehen Seifen, Waschmittel und Reiniger von geprüften indischen Herstellern, mit Handelsmarke und gemischten Containern.',
     rangeH: 'Das Sortiment.',
     rangeIntro: 'Drei von {n} Produkten. Jedes hat eine eigene Seite mit typischen Spezifikationen, Packungsgrößen und Optionen für Handelsmarken.',
     rangeAll: 'Alle {n} Produkte ansehen',
@@ -761,6 +761,25 @@ const de: UiPartial = {
     rangeH: 'Welche Produkte können Ihre Marke tragen?',
     rangeText: 'Eine Handelsmarke ist bei {n} Produkten möglich. Jede Produktseite nennt Sorten, typische Packungsgrößen und Optionen für die Handelsmarke.',
     rangeNone: 'Ohne Handelsmarke geliefert: {list}.',
+    dishWash: {
+      h: 'Geschirrspülmittel als Handelsmarke',
+      text: 'Geschirrspülmittel gehört zu den Produkten, die sich am leichtesten unter eigenem Namen einführen lassen. Es wird jede Woche nachgekauft, und wenige klare Entscheidungen bestimmen das ganze Sortiment. So kommt ein Auftrag für Geschirrspülmittel als Handelsmarke in der Regel zustande.',
+      items: [
+        {
+          title: 'Flaschen, Nachfüllbeutel und Großgebinde',
+          text: 'Verkaufsflaschen von 250 ml bis 1 L aus PET oder HDPE, mit Klapp- oder Schraubverschluss und Ihrer Schrumpfhülse oder Ihrem Etikett. Nachfüllbeutel unter derselben Marke senken die Verpackungskosten, und 5-L-Kanister sowie 20-L-Ballons decken Gastronomie und Catering ab.',
+        },
+        {
+          title: 'Duft, Konsistenz und Konzentration',
+          text: 'Zitrone und Limette sind die üblichen Ausgangspunkte; Orange, grüner Apfel, antibakterielle Zitrone und parfümfrei sind ebenfalls verbreitet. Sie wählen eine dünnflüssige Variante oder ein dickeres Gel und einen Aktivsubstanzgehalt, der zu Ihrem Preisniveau passt.',
+        },
+        {
+          title: 'Zuerst Proof und Muster',
+          text: 'Ihr Etiketten-Proof und ein Flüssigkeitsmuster werden freigegeben, bevor irgendetwas gefertigt wird. Eine feste Mindestbestellmenge gibt es nicht, bedruckte Etiketten können jedoch eigene Mindestmengen haben. {leadTime}.',
+        },
+      ],
+      link: 'Geschirrspülmittel: Spezifikationen und Packungsgrößen',
+    },
     whyH: 'Warum Handelsmarken über einen Handelsexporteur beziehen',
     whyText: 'Sie suchen einen Hersteller? GoodBiz Hygiene ist ein Handelsexporteur, keine Fabrik. Das bringt es Ihrem Handelsmarken-Sortiment.',
     why: [

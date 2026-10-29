@@ -1,5 +1,5 @@
 ---
-sourceHash: "0e389d931665"
+sourceHash: "67d1a4c0e81e"
 title: "LABSA (Lineer Alkil Benzen Sülfonik Asit)"
 slug: labsa
 category: industrial-raw-materials
@@ -75,7 +75,7 @@ related:
 
 LABSA, deterjan endüstrisinin iş atı yüzey aktif maddesidir. Nötrleştirildiğinde sodyum lineer alkilbenzen sülfonata dönüşen, sülfonlanmış lineer bir alkilbenzendir; çoğu yıkama tozunda, sıvı deterjanda ve ev temizleyicisinde köpüğün ve temizleme gücünün arkasındaki etken maddedir. Düşük maliyeti, güçlü temizleme performansı ve yardımcı maddelerle uyumu, yüksek hacimli deterjan üretiminde onu varsayılan anyonik seçim yapar.
 
-Bir GoodBiz Global şirketi olan GoodBiz Hygiene, LABSA’yı kontrol edilmiş kimya üreticilerinden tedarik eden, Hindistan’dan bir ticari ihracatçıdır. LABSA’yı kendimiz üretmiyoruz. Onu kontrol edilmiş Hindistanlı üreticilerden tedarik eder, kaliteyi ve paketlemeyi formülasyonunuza göre teyit eder, ihracat evraklarını ve sevkiyatı tek muhatap olarak yürütürüz.
+LABSA’yı biz üretmiyoruz. GoodBiz Hygiene onu kontrol edilmiş Hindistanlı kimya üreticilerinden tedarik eder, kaliteyi ve paketlemeyi formülasyonunuza göre teyit eder, ihracat evraklarını ve sevkiyatı tek muhatabınız olarak yürütür.
 
 ## Kaliteler ve özellikler
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "e0d1945ad630"
+sourceHash: "8ec8d6b71f61"
 title: "Sabuni ya Mitishamba na ya Ayurveda"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -82,7 +82,7 @@ related:
 
 Sabuni za mitishamba na za Ayurveda huunganisha msingi wa kawaida wa sabuni na viambato vya mimea vyenye mila ndefu ya matumizi katika utunzaji wa mwili wa India. Mwarobaini, manjano na sandali ndivyo vinavyojulikana zaidi, na wateja nje ya India mara nyingi huvitambua kama alama za bidhaa ya asili yenye urithi wa kitamaduni. Kwa waagizaji hii hufanya sabuni ya mitishamba kuwa njia nzuri ya kujitofautisha na sabuni ya kawaida ya kuogea rafuni na kuwafikia wateja wanaotafuta dalili za mimea.
 
-Kama msafirishaji nje wa kibiashara (merchant exporter) kutoka India na kampuni ya GoodBiz Global, GoodBiz Hygiene hupata sabuni za mitishamba kutoka kwa watengenezaji wenye bidhaa mahususi za mitishamba. Sabuni hizi hupatikana kutoka kwa watengenezaji wa India tuliowakagua wanaoendesha mistari ya mitishamba, na sisi tunashughulikia ukaguzi wa vipimo, nyaraka na usafirishaji kwa niaba yako.
+Hatutengenezi sabuni sisi wenyewe. GoodBiz Hygiene hufanya kazi na watengenezaji wa India tuliowakagua wenye mistari mahususi ya mitishamba, nasi tunashughulikia ukaguzi wa vipimo, nyaraka na usafirishaji kwa niaba yako.
 
 ## Daraja na fomula
 

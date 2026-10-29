@@ -78,7 +78,7 @@ related:
 
 Glass cleaner is a small but steady line in the household cleaning aisle. Shoppers buy it for windows, mirrors, glass tables, shower screens and car windows, and they expect one thing above all: a clear finish with no streaks or film. Because the product is light and mostly water, it must be formulated carefully, with the right solvent and surfactant balance, so that it cleans fingerprints and dust, then dries evenly.
 
-GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter from India that sources glass cleaners from vetted Indian blenders. We do not run production lines ourselves. Instead we source glass cleaner from vetted Indian manufacturers, check the specification against your requirements and handle export documentation and shipping as a single point of contact.
+We don't run production lines. GoodBiz Hygiene sources glass cleaner from vetted Indian blenders, checks the specification against your requirements, and is your one contact for the export paperwork and shipping.
 
 ## Types and formulations
 

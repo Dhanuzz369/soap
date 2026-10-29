@@ -1,5 +1,5 @@
 ---
-sourceHash: "0e389d931665"
+sourceHash: "67d1a4c0e81e"
 title: "LABSA (acide alkylbenzène sulfonique linéaire)"
 slug: labsa
 category: industrial-raw-materials
@@ -75,7 +75,7 @@ related:
 
 Le LABSA est le tensioactif de référence de l’industrie des détergents. C’est un alkylbenzène linéaire sulfoné qui, une fois neutralisé, devient l’alkylbenzène sulfonate linéaire de sodium, l’ingrédient actif à l’origine de la mousse et du pouvoir lavant de la plupart des lessives en poudre, lessives liquides et nettoyants ménagers. Son faible coût, ses bonnes performances de lavage et sa compatibilité avec les adjuvants en font le choix anionique par défaut pour la fabrication de détergents en grand volume.
 
-GoodBiz Hygiene, société du groupe GoodBiz Global, est un exportateur négociant indien qui sélectionne le LABSA auprès de fabricants chimiques contrôlés. Nous ne fabriquons pas le LABSA nous-mêmes. Nous le sélectionnons auprès de fabricants indiens contrôlés, confirmons la qualité et le conditionnement au regard de votre formule et prenons en charge les documents d’export et l’expédition, en interlocuteur unique.
+Nous ne fabriquons pas de LABSA. GoodBiz Hygiene le sélectionne auprès de fabricants chimiques indiens contrôlés, confirme la qualité et le conditionnement au regard de votre formule et gère les documents d’export et l’expédition, en interlocuteur unique.
 
 ## Qualités et spécifications
 

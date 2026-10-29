@@ -1,5 +1,5 @@
 ---
-sourceHash: "e0d1945ad630"
+sourceHash: "8ec8d6b71f61"
 title: "Sabun Herbal dan Ayurveda"
 slug: herbal-ayurvedic-soap
 category: bath-personal-soaps
@@ -82,7 +82,7 @@ related:
 
 Sabun herbal dan Ayurveda memadukan basis sabun biasa dengan bahan tumbuhan yang telah lama digunakan dalam perawatan diri di India. Mimba, kunyit, dan cendana adalah yang paling dikenal, dan konsumen di luar negeri sering mengenalinya sebagai penanda produk alami dan berakar pada warisan tradisi. Bagi importir, hal ini menjadikan sabun herbal cara yang berguna untuk tampil berbeda dari sabun mandi standar di rak dan menjangkau pelanggan yang mencari kesan berbasis tumbuhan.
 
-Sebagai merchant exporter dari India dan perusahaan GoodBiz Global, GoodBiz Hygiene mencarikan sabun herbal dari produsen yang memiliki lini herbal tersendiri. Sabun ini bersumber dari produsen India yang telah kami seleksi dan menjalankan lini herbal, dan kami menangani pemeriksaan spesifikasi, dokumen, dan pengiriman untuk Anda.
+Kami tidak membuat sabun sendiri. GoodBiz Hygiene bekerja sama dengan produsen India terseleksi yang memiliki lini herbal tersendiri, dan kami menangani pemeriksaan spesifikasi, dokumen, serta pengirimannya untuk Anda.
 
 ## Grade dan formulasi
 

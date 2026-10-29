@@ -1,5 +1,5 @@
 ---
-sourceHash: "44d84f27fc48"
+sourceHash: "85c2b1d20a93"
 title: "SLES (Natriumlaurylethersulfat)"
 slug: sles
 category: industrial-raw-materials
@@ -76,7 +76,7 @@ related:
 
 SLES gehört zu den am häufigsten verwendeten Tensiden in Körperpflege und Haushaltspflege. Es schäumt gut, lässt sich klar abspülen und ist hautschonender als viele Alternativen, weshalb es die schäumende Basis von Shampoos, Körperwaschlotionen, Flüssigseifen und Geschirrspülmitteln bildet. In Produkten für stärkere Beanspruchung arbeitet es zusammen mit LABSA, um Reinigungskraft und Schaum aufzubauen.
 
-GoodBiz Hygiene ist ein Handelsexporteur aus Indien und Unternehmen von GoodBiz Global, das SLES von geprüften Tensidherstellern bezieht. Wir stellen SLES nicht selbst her. Wir beziehen es von geprüften indischen Herstellern, bestätigen die Qualität anhand Ihrer Rezeptur und übernehmen Dokumente und Versand als zentraler Ansprechpartner.
+SLES stellen wir nicht her. GoodBiz Hygiene bezieht es von geprüften indischen Tensidherstellern, bestätigt die Qualität anhand Ihrer Rezeptur und übernimmt Dokumente und Versand als Ihr einziger Ansprechpartner.
 
 ## Qualitäten und Spezifikationen
 
