@@ -17,17 +17,35 @@ let cache: Map<string, string> | null | undefined;
 
 const git = (args: string[]) => execFileSync('git', args, { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] });
 
+/** Where to fetch the full history from: the `origin` remote, then the GitHub repository Vercel names. */
+function remotes(env: Record<string, string | undefined> = process.env): string[] {
+  const list = ['origin'];
+  if (env.VERCEL_GIT_PROVIDER === 'github' && env.VERCEL_GIT_REPO_OWNER && env.VERCEL_GIT_REPO_SLUG) {
+    list.push(`https://github.com/${env.VERCEL_GIT_REPO_OWNER}/${env.VERCEL_GIT_REPO_SLUG}.git`);
+  }
+  return list;
+}
+
 /** A shallow clone, deepened if possible. True when the history is still incomplete. */
 function shallowHistory(): boolean {
   const shallow = () => git(['rev-parse', '--is-shallow-repository']).trim() === 'true';
   if (!shallow()) return false;
-  try {
-    // The commit being built, not a branch: a deploy may have a detached HEAD or a one-branch remote.
-    git(['fetch', '--unshallow', '--quiet', 'origin', git(['rev-parse', 'HEAD']).trim()]);
-  } catch {
-    // no network or no remote: checked again below
+  // The commit being built, not a branch: a deploy may have a detached HEAD or a one-branch remote.
+  const head = git(['rev-parse', 'HEAD']).trim();
+  const errors: string[] = [];
+  for (const remote of remotes()) {
+    try {
+      execFileSync('git', ['fetch', '--unshallow', '--quiet', remote, head], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+      if (!shallow()) {
+        console.log(`[lastmod] fetched the full git history from ${remote}`);
+        return false;
+      }
+    } catch (e) {
+      errors.push(`${remote}: ${String((e as { stderr?: string }).stderr ?? e).trim().split('\n')[0]}`);
+    }
   }
-  return shallow();
+  console.warn(`[lastmod] shallow clone and the full history could not be fetched, so the sitemap has no <lastmod> (${errors.join('; ')})`);
+  return true;
 }
 
 /** Latest commit date (ISO) per repository file, from one `git log` call; null when the history is incomplete. */
