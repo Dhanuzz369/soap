@@ -81,13 +81,13 @@ describe('sender.submit', () => {
       expect(await sender.submit(payload('submitted'))).toBe('failed');
     }
   });
-  it('fails after the timeout when the request never answers, and aborts it', async () => {
+  it('times out when the request never answers, and aborts it (a timeout is its own result, for analytics)', async () => {
     let signal: AbortSignal | undefined;
     const { sender } = setup((_u, init) => {
       signal = (init as RequestInit).signal ?? undefined;
       return new Promise(() => {});
     }, { timeoutMs: 20 });
-    expect(await sender.submit(payload('submitted'))).toBe('failed');
+    expect(await sender.submit(payload('submitted'))).toBe('timeout');
     expect(signal?.aborted).toBe(true);
   });
   it('fails at once without a configured endpoint', async () => {
@@ -104,7 +104,7 @@ describe('sender.submit', () => {
       await vi.advanceTimersByTimeAsync(14_900);
       expect(result).toBeUndefined();
       await vi.advanceTimersByTimeAsync(200);
-      expect(result).toBe('failed');
+      expect(result).toBe('timeout');
     } finally {
       vi.useRealTimers();
     }

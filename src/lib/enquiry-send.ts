@@ -4,7 +4,7 @@
  *   leaves if the buyer closes the tab. It resolves (never rejects) with the result.
  * - submit(): the final send. Awaited, sent once however often it is called while in flight, held
  *   until `minMs` after page load (a spam check that delays, never drops) and abandoned after
- *   `timeoutMs`, so the WhatsApp / email fallback can take over.
+ *   `timeoutMs` (result 'timeout'), so the WhatsApp / email fallback can take over.
  * The body is JSON sent as text/plain, which is a "simple" request: no CORS preflight.
  */
 import type { Payload } from './enquiry-steps';
@@ -16,9 +16,11 @@ export function isConfiguredEndpoint(url: string): boolean {
 }
 
 export type SendResult = 'ok' | 'failed';
+/** The final send also says when it gave up waiting (the analytics fallback reason, spec 2026-11-01 §4). */
+export type SubmitResult = SendResult | 'timeout';
 export type Sender = {
   step(p: Payload): Promise<SendResult>;
-  submit(p: Payload): Promise<SendResult>;
+  submit(p: Payload): Promise<SubmitResult>;
 };
 
 const HEADERS = { 'Content-Type': 'text/plain;charset=utf-8' };
@@ -47,7 +49,7 @@ export function createSender(o: {
   const sleep = o.sleep ?? ((ms: number) => new Promise<void>((r) => setTimeout(r, ms)));
   const timeoutMs = o.timeoutMs ?? 15_000;
   const minMs = o.minMs ?? 3_000;
-  let inFlight: Promise<SendResult> | null = null;
+  let inFlight: Promise<SubmitResult> | null = null;
 
   const step = async (p: Payload): Promise<SendResult> => {
     if (!configured) return 'failed';
@@ -58,16 +60,16 @@ export function createSender(o: {
     }
   };
 
-  const send = async (p: Payload): Promise<SendResult> => {
+  const send = async (p: Payload): Promise<SubmitResult> => {
     if (!configured) return 'failed';
     const wait = o.loadedAt + minMs - now();
     if (wait > 0) await sleep(wait);
     const ctrl = new AbortController();
     let timer: ReturnType<typeof setTimeout> | undefined;
-    const timeout = new Promise<SendResult>((resolve) => {
+    const timeout = new Promise<SubmitResult>((resolve) => {
       timer = setTimeout(() => {
         ctrl.abort();
-        resolve('failed');
+        resolve('timeout');
       }, timeoutMs);
     });
     const request = (async (): Promise<SendResult> => {
@@ -84,7 +86,7 @@ export function createSender(o: {
     }
   };
 
-  const submit = (p: Payload): Promise<SendResult> => {
+  const submit = (p: Payload): Promise<SubmitResult> => {
     if (!inFlight) inFlight = send(p).finally(() => (inFlight = null));
     return inFlight;
   };
