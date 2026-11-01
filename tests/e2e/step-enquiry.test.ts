@@ -6,7 +6,7 @@ import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import type { Browser } from 'playwright-core';
 import site from '../../src/config/site';
 import { isConfiguredEndpoint } from '../../src/lib/enquiry-send';
-import { launch, open, active, label, waitStep, stages, fillContact, pick, ENDPOINT } from './helpers';
+import { launch, open, active, label, waitStep, stages, fillContact, pick, blockAnalytics, ENDPOINT } from './helpers';
 
 let browser: Browser;
 beforeAll(async () => {
@@ -317,6 +317,7 @@ describe('step enquiry form', () => {
 
   it('no-js: every step shows and the form posts to the Sheet endpoint (mailto: while there is none)', async () => {
     const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
+    const ga = await blockAnalytics(context);
     const page = await context.newPage();
     await page.goto('http://localhost:4329/contact/');
     const sections = await page.$$('section[data-step]');
@@ -327,6 +328,7 @@ describe('step enquiry form', () => {
     expect(await page.isVisible('[data-next]')).toBe(false);
     expect(await page.isVisible('[data-send]')).toBe(true);
     expect(await page.isVisible('#enq-product-other')).toBe(true);
+    expect(ga).toEqual([]);
     await context.close();
   });
 
@@ -392,6 +394,7 @@ describe('review fixes', () => {
 
   it('if the script fails to start, the long form shows instead of an empty card', async () => {
     const context = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const ga = await blockAnalytics(context);
     const page = await context.newPage();
     await page.addInitScript(() => {
       crypto.randomUUID = () => {
@@ -405,6 +408,7 @@ describe('review fixes', () => {
     expect(await page.isVisible('[data-next]')).toBe(false);
     expect(await page.isVisible('[data-send]')).toBe(true);
     expect(await page.isVisible('#enq-product-other')).toBe(true);
+    expect(ga).toEqual([]);
     await context.close();
   });
 

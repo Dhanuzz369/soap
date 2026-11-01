@@ -34,6 +34,15 @@ const site = {
   enquiry: {
     endpoint: 'https://script.google.com/macros/s/AKfycbzSRRxtO77FAz9vpzYs4vS_cBWOdJe-aaV36FE2AwSXdT0DHt6R4X540GBM4I8YR0dGGg/exec',
   },
+  /**
+   * Google Analytics 4 (spec 2026-11-01; owner guide: docs/analytics.md). The measurement ID from
+   * GA4 (Admin → Data streams). gtag.js loads only after a visitor accepts the cookie banner, and only
+   * on the live domain of a launched build (src/lib/analytics.ts). Empty string = no analytics and no
+   * cookie banner at all; then update the Cookie and Privacy Policies too.
+   */
+  analytics: {
+    ga4: 'G-FWEG9Y5FVS',
+  },
   exportTerms: {
     incoterms: 'FOB, CIF and CFR available; payment terms agreed per order (T/T or LC)',
     payment: 'Agreed per order (T/T or LC)',

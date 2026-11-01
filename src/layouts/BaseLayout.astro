@@ -17,6 +17,7 @@ import Footer from '../components/Footer.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import WhatsAppFab from '../components/WhatsAppFab.astro';
 import LangSwitch from '../components/LangSwitch.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
 
 interface Props {
   title: string;
@@ -221,6 +222,8 @@ const ar = lang === 'ar';
   <body id="top" class:list={{ 'page-dark': dark }}>
     <a class="skip" href="#main">{ui.common.skip}</a>
     {skipTo && <a class="skip" href={skipTo.href}>{skipTo.label}</a>}
+    {/* The cookie banner: early in the DOM so Tab reaches it right after the skip links. Not on the 404. */}
+    {!noindex && <ConsentBanner />}
     <Header path={path} tone={dark ? 'dark' : 'light'} />
     <main id="main">
       {!dark && breadcrumbs && breadcrumbs.length > 1 && (
@@ -228,7 +231,7 @@ const ar = lang === 'ar';
       )}
       <slot />
     </main>
-    <Footer />
+    <Footer noConsent={noindex} />
     <WhatsAppFab />
     <LangSwitch path={path} homesOnly={noindex} />
     <script is:inline>

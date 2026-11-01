@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '310480412515';
+export const sourceHash = '1dd8935a6a83';
 
 const ru: UiPartial = {
   meta: {
@@ -111,7 +111,7 @@ const ru: UiPartial = {
         'моющие средства для кафе оптом',
       ],
       privacy: ['политика конфиденциальности GoodBiz Hygiene', 'политика конфиденциальности', 'персональные данные', 'DPDP Act 2023', 'GDPR'],
-      cookies: ['политика в отношении файлов cookie GoodBiz Hygiene', 'политика cookie', 'без файлов cookie', 'хранилище браузера'],
+      cookies: ['политика в отношении файлов cookie GoodBiz Hygiene', 'политика cookie', 'согласие на cookie', 'хранилище браузера'],
     },
   },
 
@@ -222,6 +222,17 @@ const ru: UiPartial = {
   whatsapp: {
     aria: 'Написать GoodBiz Hygiene в WhatsApp',
     label: 'WhatsApp',
+  },
+
+  consent: {
+    aria: 'Выбор файлов cookie',
+    text: 'Мы хотели бы использовать файлы cookie Google Analytics, чтобы видеть, какие страницы и товары смотрят покупатели, и улучшать сайт. Никакой рекламы, и никакие данные о вас не продаются.',
+    policy: 'Политика в отношении файлов cookie',
+    accept: 'Принять',
+    reject: 'Отклонить',
+    settings: 'Настройки cookie',
+    currentGranted: 'Ваш текущий выбор: приняты.',
+    currentDenied: 'Ваш текущий выбор: отклонены.',
   },
 
   cards: {

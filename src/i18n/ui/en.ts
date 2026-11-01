@@ -107,7 +107,7 @@ const en = {
       ],
       /** The Privacy Policy and Cookie Policy pages. */
       privacy: ['GoodBiz Hygiene privacy policy', 'privacy policy', 'personal data', 'DPDP Act 2023', 'GDPR'],
-      cookies: ['GoodBiz Hygiene cookie policy', 'cookie policy', 'no cookies', 'browser storage'],
+      cookies: ['GoodBiz Hygiene cookie policy', 'cookie policy', 'cookie consent', 'browser storage'],
     },
   },
 
@@ -242,6 +242,25 @@ const en = {
   whatsapp: {
     aria: 'Chat with GoodBiz Hygiene on WhatsApp',
     label: 'WhatsApp',
+  },
+
+  /**
+   * The cookie banner (src/components/ConsentBanner.astro, spec 2026-11-01 §3) and the footer's
+   * "Cookie settings" button that reopens it. Accept and Reject are equal, plain choices: never a
+   * "by browsing you agree", nothing that pushes one answer. `text` must stay literally true:
+   * Google Analytics cookies only, to see which pages and products buyers look at; no advertising;
+   * nothing about the visitor is sold. `policy` is the title of the Cookie Policy page (a link).
+   * `currentGranted` / `currentDenied` show the choice when the banner is reopened.
+   */
+  consent: {
+    aria: 'Cookie choice',
+    text: 'We’d like to use Google Analytics cookies to see which pages and products buyers look at, so we can improve the site. No advertising, and nothing about you is sold.',
+    policy: 'Cookie Policy',
+    accept: 'Accept',
+    reject: 'Reject',
+    settings: 'Cookie settings',
+    currentGranted: 'Your current choice: accepted.',
+    currentDenied: 'Your current choice: rejected.',
   },
 
   cards: {

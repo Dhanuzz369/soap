@@ -1,0 +1,161 @@
+/*
+  The cookie banner (src/components/ConsentBanner.astro, spec 2026-11-01 §3).
+
+  A forest card at the bottom of the viewport, like the footer it sits above: centred and at most
+  680px wide on large screens, full width (12px margins) on phones, clear of the safe areas.
+  Accept and Reject are one button style, equal in size, side by side (mirrored in Arabic).
+
+  Motion (emil-design-eng): enters from 16px below with opacity, 240ms on the strong ease-out; leaves
+  faster, 160ms. Reduced motion: opacity only. Buttons scale(0.97) on press; hover colour only with
+  a fine pointer. While it is open (html[data-consent-open], --consent-h = its height, set by
+  src/scripts/analytics.ts) the floating WhatsApp and language buttons and the HoReCa sheet ride
+  above it, and the page gains room at its end so nothing stays hidden underneath.
+*/
+.consent {
+  position: fixed;
+  z-index: 65;
+  inset-inline: max(12px, env(safe-area-inset-left)) max(12px, env(safe-area-inset-right));
+  bottom: max(12px, env(safe-area-inset-bottom));
+  max-width: 680px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px 24px;
+  padding-block: 16px;
+  padding-inline: 24px 16px;
+  border-radius: 24px;
+  background: var(--forest-950);
+  color: var(--on-dark);
+  box-shadow: /* taste-skill-ignore: the card floats over any field */
+    0 0 0 1px rgb(191 227 207 / 0.14),
+    0 20px 40px -16px rgb(2 10 7 / 0.6);
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 160ms var(--ease-out),
+    transform 160ms var(--ease-out);
+}
+.consent[data-state='open'] {
+  opacity: 1;
+  transform: none;
+  transition-duration: 240ms;
+}
+.consent-text {
+  grid-column: 1;
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--on-dark-2);
+}
+.consent-text a {
+  color: var(--on-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.consent-current {
+  grid-column: 1;
+  margin: 0;
+  font-size: var(--step-small);
+  font-weight: 600;
+  color: var(--mint);
+}
+.consent-actions {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.consent-btn {
+  min-height: var(--tap);
+  min-width: 112px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: var(--pill);
+  background: var(--paper);
+  color: var(--forest-950);
+  font-family: var(--font-text);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.1;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform var(--dur-press) var(--ease-out),
+    background-color var(--dur-fast) ease;
+}
+.consent-btn:active {
+  transform: scale(0.97);
+}
+@media (hover: hover) and (pointer: fine) {
+  .consent-btn:hover {
+    background: var(--mint);
+  }
+}
+/* reopened from "Cookie settings": the current choice wears a mint ring */
+.consent-btn[aria-pressed='true'] {
+  box-shadow: /* taste-skill-ignore: selected-state ring */
+    0 0 0 2px var(--forest-950),
+    0 0 0 4px var(--mint);
+}
+.consent :focus-visible {
+  outline: 3px solid var(--mint);
+  outline-offset: 3px;
+}
+
+/* Phones: text above, the two buttons below, sharing the width equally. */
+@media (max-width: 639.98px) {
+  .consent {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+  .consent-text {
+    font-size: 0.875rem;
+  }
+  .consent-actions {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .consent-btn {
+    min-width: 0;
+  }
+}
+
+/* ---------- room for the banner while it is open ---------- */
+html[data-consent-open] {
+  scroll-padding-bottom: calc(var(--consent-h, 0px) + 24px);
+}
+html[data-consent-open] body {
+  padding-bottom: calc(var(--consent-h, 0px) + 12px);
+}
+.lang,
+.hc-panel {
+  transition: translate 240ms var(--ease-out);
+}
+/* Up to 1280px the card would reach the corners: the floating buttons move up above it. */
+@media (max-width: 1279.98px) {
+  html[data-consent-open] .wa-fab,
+  html[data-consent-open] .hc-panel {
+    translate: 0 calc(-1 * (var(--consent-h, 0px) + 12px));
+  }
+}
+/* The language menu holds the bottom corner from 760px; on phones it sits at the top. */
+@media (min-width: 760px) and (max-width: 1279.98px) {
+  html[data-consent-open] .lang {
+    translate: 0 calc(-1 * (var(--consent-h, 0px) + 12px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .consent,
+  .consent[data-state='open'] {
+    transform: none;
+  }
+  .consent-btn:active {
+    transform: none;
+  }
+}

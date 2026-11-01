@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '310480412515';
+export const sourceHash = '1dd8935a6a83';
 
 const ar: UiPartial = {
   meta: {
@@ -111,7 +111,7 @@ const ar: UiPartial = {
         'مستلزمات تنظيف المقاهي',
       ],
       privacy: ['سياسة الخصوصية GoodBiz Hygiene', 'سياسة الخصوصية', 'البيانات الشخصية', 'DPDP Act 2023', 'GDPR'],
-      cookies: ['سياسة ملفات تعريف الارتباط GoodBiz Hygiene', 'سياسة ملفات تعريف الارتباط', 'بدون ملفات تعريف الارتباط', 'تخزين المتصفح'],
+      cookies: ['سياسة ملفات تعريف الارتباط GoodBiz Hygiene', 'سياسة ملفات تعريف الارتباط', 'الموافقة على ملفات تعريف الارتباط', 'تخزين المتصفح'],
     },
   },
 
@@ -222,6 +222,17 @@ const ar: UiPartial = {
   whatsapp: {
     aria: 'تواصل مع GoodBiz Hygiene عبر واتساب',
     label: 'واتساب',
+  },
+
+  consent: {
+    aria: 'اختيار ملفات تعريف الارتباط',
+    text: 'نودّ استخدام ملفات تعريف الارتباط الخاصة بـ Google Analytics لمعرفة الصفحات والمنتجات التي يطّلع عليها المشترون، حتى نحسّن الموقع. لا إعلانات، ولا نبيع أي شيء عنك.',
+    policy: 'سياسة ملفات تعريف الارتباط',
+    accept: 'قبول',
+    reject: 'رفض',
+    settings: 'إعدادات ملفات تعريف الارتباط',
+    currentGranted: 'اختيارك الحالي: القبول.',
+    currentDenied: 'اختيارك الحالي: الرفض.',
   },
 
   cards: {

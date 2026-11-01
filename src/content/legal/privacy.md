@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy"
 description: "How GoodBiz Hygiene, a unit of GoodBiz Global, collects, uses and protects personal data from this website and enquiries, and how to use your rights."
-updated: 2026-10-28
+updated: 2026-11-01
 ---
 
 ## Who we are
@@ -31,13 +31,15 @@ This website, and enquiries you send us through its form, by email, on WhatsApp 
 - *When it is saved:* your contact details are saved when you tap Next on the first step, so that we can reply even if you do not finish. Each later step adds your answers, and Send completes the enquiry.
 - *By email, WhatsApp or phone:* what you choose to send us.
 - *Technical data:* our hosting provider processes your IP address, browser type and the pages requested, to deliver the website and keep it secure. We do not use this to identify you.
+- *If you accept analytics cookies:* Google Analytics records how the website is used: the pages you visit, the products and ranges you look at or enquire about, which steps of the enquiry form you complete, the contact links you click (WhatsApp, email, phone), the language you switch to, the website you came from, your device and browser type, and your approximate location (country and city), which Google works out from your IP address. Google Analytics does not log or store IP addresses. It never receives your name, company, email address, phone number or notes.
 
-We do not collect payment card details or identity documents through this website. We do not use analytics, advertising or tracking tools, and we do not use cookies.
+We do not collect payment card details or identity documents through this website. We do not use advertising or social media trackers. We use cookies only for Google Analytics, and only if you accept them.
 
 ## Why we use it
 
 - To reply to your enquiry, prepare quotations and samples, and follow up on that enquiry.
 - If you become a customer, to carry out your orders and keep the business, tax and export records the law requires.
+- If you accept analytics cookies, to see which pages and products buyers look at, and to improve the website.
 
 We do not sell your personal data, add you to a mailing list, or use it for profiling or automated decisions.
 
@@ -45,6 +47,7 @@ We do not sell your personal data, add you to a mailing list, or use it for prof
 
 - *India:* you give us your personal data voluntarily for a specified purpose (replying to your enquiry), and we use it only for that purpose (section 7(a) of the Digital Personal Data Protection Act, 2023). If you tell us you no longer want us to use it, we will stop and delete it, except where the law requires us to keep it.
 - *EU and UK:* taking steps at your request before entering into a contract (Article 6(1)(b) GDPR), our legitimate interest in answering business enquiries (Article 6(1)(f)), and, for business records, our legal obligations (Article 6(1)(c)).
+- *Google Analytics, everywhere:* your consent (section 6 of the Digital Personal Data Protection Act, 2023; Article 6(1)(a) GDPR). You give it with Accept in the cookie banner and can withdraw it just as easily, at any time, with Cookie settings at the foot of every page. Withdrawing does not affect what was processed before.
 
 ## Who processes it for us
 
@@ -52,18 +55,20 @@ We do not sell your personal data, add you to a mailing list, or use it for prof
 - *Vercel Inc.* hosts this website.
 - *WhatsApp (Meta)* is used only if you choose to message us on WhatsApp; WhatsApp's own privacy policy applies to that chat.
 - *Google Translate* is used only if you choose the "translate" option in the language menu; the address of the page is then sent to Google.
+- *Google Analytics* (Google LLC; for visitors in the EU and UK, Google Ireland Limited) measures how the website is used, only if you accept analytics cookies. Google signals and advertising features are off.
 
 If you place an order, we share only the details needed to complete it (for example your company name and delivery details) with the manufacturer, freight forwarder, customs broker, inspection agency or bank involved in that order. We also disclose data where the law requires it.
 
 ## Where it is stored
 
-Our service providers may store data on servers outside India, for example in the United States or the European Union. Indian law allows such transfers except to countries the Government of India restricts. For visitors in the EU and UK, these providers offer recognised safeguards such as Standard Contractual Clauses.
+Our service providers may store data on servers outside India, for example in the United States or the European Union. Indian law allows such transfers except to countries the Government of India restricts. For visitors in the EU and UK, these providers offer recognised safeguards such as Standard Contractual Clauses. Google Analytics data is processed in the United States; Google LLC is certified under the EU–US Data Privacy Framework.
 
 ## How long we keep it
 
 - *Enquiries that do not lead to business:* deleted within 24 months of our last contact with you.
 - *Customers:* we keep personal data for as long as the business relationship lasts and, after that, for as long as Indian tax, customs and foreign trade laws require us to keep records.
 - *Hosting logs:* kept by our hosting provider for a short period.
+- *Google Analytics:* kept for 14 months (the retention period set in our Google Analytics account), then deleted automatically. The cookies on your device are listed in the Cookie Policy.
 
 ## How we protect it
 
@@ -91,7 +96,7 @@ This website is for businesses. It is not intended for anyone under 18, and we d
 
 ## Cookies
 
-We do not use cookies. See our [Cookie Policy](/cookies/).
+We use cookies only for Google Analytics, and only if you accept them in the cookie banner. See our [Cookie Policy](/cookies/).
 
 ## Changes
 

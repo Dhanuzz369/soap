@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '310480412515';
+export const sourceHash = '1dd8935a6a83';
 
 const id: UiPartial = {
   meta: {
@@ -111,7 +111,7 @@ const id: UiPartial = {
         'perlengkapan kebersihan kafe',
       ],
       privacy: ['kebijakan privasi GoodBiz Hygiene', 'kebijakan privasi', 'data pribadi', 'DPDP Act 2023', 'GDPR'],
-      cookies: ['kebijakan cookie GoodBiz Hygiene', 'kebijakan cookie', 'tanpa cookie', 'penyimpanan browser'],
+      cookies: ['kebijakan cookie GoodBiz Hygiene', 'kebijakan cookie', 'persetujuan cookie', 'penyimpanan browser'],
     },
   },
 
@@ -222,6 +222,17 @@ const id: UiPartial = {
   whatsapp: {
     aria: 'Chat dengan GoodBiz Hygiene di WhatsApp',
     label: 'WhatsApp',
+  },
+
+  consent: {
+    aria: 'Pilihan cookie',
+    text: 'Kami ingin menggunakan cookie Google Analytics untuk melihat halaman dan produk mana yang dilihat pembeli, agar kami dapat memperbaiki situs ini. Tanpa iklan, dan tidak ada data tentang Anda yang dijual.',
+    policy: 'Kebijakan Cookie',
+    accept: 'Terima',
+    reject: 'Tolak',
+    settings: 'Pengaturan cookie',
+    currentGranted: 'Pilihan Anda saat ini: diterima.',
+    currentDenied: 'Pilihan Anda saat ini: ditolak.',
   },
 
   cards: {

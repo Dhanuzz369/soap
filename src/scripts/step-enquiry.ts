@@ -3,13 +3,17 @@
  * - One step at a time; tapping an option selects it and moves on after 260 ms.
  * - Each Next saves that step to the Google Sheet (fire-and-forget); step 1 is the lead.
  * - Send is awaited; on failure, or with no endpoint, the WhatsApp / email panel takes over.
+ * - Analytics events (spec 2026-11-01 §4) go through track(), a no-op without consent: keys only,
+ *   never what the buyer types (src/lib/analytics.ts).
  * The rules live in src/lib/enquiry-steps.ts and src/lib/enquiry-send.ts (unit-tested);
  * the browser tests are tests/e2e/step-enquiry.test.ts.
  */
 import { buildMailtoUrl, buildWhatsAppUrl, parseEnquiryParams } from '../lib/enquiry';
 import { buildPayload, toEnquiryFields, validateStep, visibleSteps, type Answers, type FieldError, type StepId } from '../lib/enquiry-steps';
-import { createSender, isConfiguredEndpoint, leadIdStore } from '../lib/enquiry-send';
+import { createSender, isConfiguredEndpoint, leadIdStore, LEAD_KEY } from '../lib/enquiry-send';
+import { enquirySentParams, fallbackReason, leadParams, stepEvent } from '../lib/analytics';
 import { initCountryCombobox } from './country-combobox';
+import { track } from './analytics';
 
 const CONTACT_KEY = 'goodbiz-enquiry-contact';
 /** The ?product= set the current lead was started with. */
@@ -73,6 +77,13 @@ function init(form: HTMLFormElement, deps: Deps): void {
   const variants = new Map<string, string[]>(Object.entries(JSON.parse(d.variants || '{}') as Record<string, string[]>));
   const params = parseEnquiryParams(location.search);
   let prefilled = params.products.filter((s) => variants.has(s));
+  // A reload of a lead whose step 1 was already saved must not count it again (generate_lead).
+  let resumed: string | null = null;
+  try {
+    resumed = storage && storage.getItem(CONTACT_KEY) !== null ? storage.getItem(LEAD_KEY) : null;
+  } catch {
+    /* nothing stored */
+  }
   const lead = leadIdStore(storage, () => crypto.randomUUID());
   // A link with a different set of products is a new enquiry: a new row, not a merge into the last.
   const productSet = [...prefilled].sort().join(',');
@@ -85,6 +96,8 @@ function init(form: HTMLFormElement, deps: Deps): void {
     /* memory only */
   }
   const lang = d.lang || 'en';
+  /** Leads already reported to analytics as generate_lead (this page, plus a resumed one). */
+  const reported = new Set<string>(resumed && resumed === lead.get() ? [resumed] : []);
   const languageName = d.languageName || '';
   const rtl = getComputedStyle(form).direction === 'rtl';
   const reduce = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -155,6 +168,8 @@ function init(form: HTMLFormElement, deps: Deps): void {
     };
   };
   const nameOf = (slug: string) => english.get(slug) ?? slug;
+  /** The range a product belongs to (its box of options), for analytics. */
+  const groupOf = (slug: string) => form.querySelector<HTMLInputElement>(`input[name="product"][data-key="${CSS.escape(slug)}"]`)?.closest<HTMLElement>('[data-products-for]')?.dataset.productsFor;
   const payload = (stage: StepId | 'submitted') =>
     buildPayload({ leadId: lead.get(), stage, lang, page: location.pathname, now: new Date(now()), answers: read(), english: nameOf, languageName });
   const fields = () => toEnquiryFields(read(), nameOf, languageName);
@@ -313,8 +328,16 @@ function init(form: HTMLFormElement, deps: Deps): void {
       } catch {
         /* memory only */
       }
+      const id = lead.get();
       if (!configured) showWaEarly();
-      else void sent.then((r) => r === 'failed' && showWaEarly());
+      else
+        void sent.then((r) => {
+          if (r === 'failed') return showWaEarly();
+          // The first step-1 save the sheet confirms for this lead.
+          if (reported.has(id)) return;
+          reported.add(id);
+          track('generate_lead', leadParams({ products: prefilled, lang }));
+        });
     }
   };
   const next = () => {
@@ -323,6 +346,8 @@ function init(form: HTMLFormElement, deps: Deps): void {
     const errs = validateStep(current, read());
     if (errs.length) return showErrors(errs);
     saveStep(current);
+    const ev = stepEvent(current, lang);
+    if (ev) track('enquiry_step', ev);
     show(after(current), 1);
   };
   const skip = () => {
@@ -569,6 +594,7 @@ function init(form: HTMLFormElement, deps: Deps): void {
     const result = await sender.submit(payload('submitted'));
     sendBtn.removeAttribute('aria-busy');
     if (result === 'ok') {
+      track('enquiry_sent', enquirySentParams(read(), groupOf, lang));
       lead.reset();
       try {
         storage?.removeItem(CONTACT_KEY);
@@ -576,7 +602,10 @@ function init(form: HTMLFormElement, deps: Deps): void {
         /* memory only */
       }
       success();
-    } else fail();
+    } else {
+      track('enquiry_fallback', { reason: fallbackReason(configured, result) });
+      fail();
+    }
   });
 
   // On phones the floating WhatsApp button sits over the form's buttons and Edit links: step it

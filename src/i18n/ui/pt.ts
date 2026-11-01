@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '310480412515';
+export const sourceHash = '1dd8935a6a83';
 
 const pt: UiPartial = {
   meta: {
@@ -111,7 +111,7 @@ const pt: UiPartial = {
         'produtos de limpeza para cafeterias',
       ],
       privacy: ['política de privacidade GoodBiz Hygiene', 'política de privacidade', 'dados pessoais', 'DPDP Act 2023', 'RGPD'],
-      cookies: ['política de cookies GoodBiz Hygiene', 'política de cookies', 'sem cookies', 'armazenamento do navegador'],
+      cookies: ['política de cookies GoodBiz Hygiene', 'política de cookies', 'consentimento de cookies', 'armazenamento do navegador'],
     },
   },
 
@@ -222,6 +222,17 @@ const pt: UiPartial = {
   whatsapp: {
     aria: 'Conversar com a GoodBiz Hygiene pelo WhatsApp',
     label: 'WhatsApp',
+  },
+
+  consent: {
+    aria: 'Escolha de cookies',
+    text: 'Gostaríamos de usar cookies do Google Analytics para ver quais páginas e produtos os compradores consultam e, assim, melhorar o site. Sem publicidade, e nada sobre você é vendido.',
+    policy: 'Política de cookies',
+    accept: 'Aceitar',
+    reject: 'Recusar',
+    settings: 'Configurações de cookies',
+    currentGranted: 'Sua escolha atual: aceitos.',
+    currentDenied: 'Sua escolha atual: recusados.',
   },
 
   cards: {

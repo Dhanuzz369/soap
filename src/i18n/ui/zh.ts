@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '310480412515';
+export const sourceHash = '1dd8935a6a83';
 
 const zh: UiPartial = {
   meta: {
@@ -111,7 +111,7 @@ const zh: UiPartial = {
         '咖啡馆清洁用品',
       ],
       privacy: ['GoodBiz Hygiene隐私政策', '隐私政策', '个人数据', 'DPDP Act 2023', 'GDPR'],
-      cookies: ['GoodBiz Hygiene Cookie政策', 'Cookie政策', '不使用Cookie', '浏览器存储'],
+      cookies: ['GoodBiz Hygiene Cookie政策', 'Cookie政策', 'Cookie同意', '浏览器存储'],
     },
   },
 
@@ -222,6 +222,17 @@ const zh: UiPartial = {
   whatsapp: {
     aria: '通过WhatsApp联系GoodBiz Hygiene',
     label: 'WhatsApp',
+  },
+
+  consent: {
+    aria: 'Cookie选择',
+    text: '我们希望使用Google Analytics的Cookie，了解采购商浏览了哪些页面和产品，以便改进网站。不用于广告，也不会出售任何关于您的信息。',
+    policy: 'Cookie政策',
+    accept: '接受',
+    reject: '拒绝',
+    settings: 'Cookie设置',
+    currentGranted: '您当前的选择：已接受。',
+    currentDenied: '您当前的选择：已拒绝。',
   },
 
   cards: {

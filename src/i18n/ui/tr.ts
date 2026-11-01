@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '310480412515';
+export const sourceHash = '1dd8935a6a83';
 
 const tr: UiPartial = {
   meta: {
@@ -111,7 +111,7 @@ const tr: UiPartial = {
         'kafe temizlik malzemeleri',
       ],
       privacy: ['GoodBiz Hygiene gizlilik politikası', 'gizlilik politikası', 'kişisel veriler', 'DPDP Act 2023', 'GDPR'],
-      cookies: ['GoodBiz Hygiene çerez politikası', 'çerez politikası', 'çerez yok', 'tarayıcı depolama alanı'],
+      cookies: ['GoodBiz Hygiene çerez politikası', 'çerez politikası', 'çerez onayı', 'tarayıcı depolama alanı'],
     },
   },
 
@@ -222,6 +222,17 @@ const tr: UiPartial = {
   whatsapp: {
     aria: 'GoodBiz Hygiene ile WhatsApp’tan yazışın',
     label: 'WhatsApp',
+  },
+
+  consent: {
+    aria: 'Çerez tercihi',
+    text: 'Alıcıların hangi sayfalara ve ürünlere baktığını görüp siteyi geliştirebilmek için Google Analytics çerezlerini kullanmak istiyoruz. Reklam yok ve sizinle ilgili hiçbir bilgi satılmaz.',
+    policy: 'Çerez Politikası',
+    accept: 'Kabul et',
+    reject: 'Reddet',
+    settings: 'Çerez ayarları',
+    currentGranted: 'Şu anki tercihiniz: kabul edildi.',
+    currentDenied: 'Şu anki tercihiniz: reddedildi.',
   },
 
   cards: {

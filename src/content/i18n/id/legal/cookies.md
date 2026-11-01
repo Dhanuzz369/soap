@@ -1,17 +1,17 @@
 ---
-sourceHash: "687fbede5e45"
+sourceHash: "6f66747a78ca"
 title: "Kebijakan Cookie"
-description: "Situs web ini tidak memakai cookie atau pelacakan. Apa yang disimpan beberapa fitur di penyimpanan browser Anda, mengapa, berapa lama, dan cara menghapusnya."
-updated: 2026-10-28
+description: "Cookie Google Analytics hanya jika Anda menerimanya, tanpa pelacak iklan. Apa yang disimpan situs di browser Anda, untuk apa, berapa lama, dan cara mengubahnya."
+updated: 2026-11-01
 ---
 
-## Tanpa cookie, tanpa pelacakan
+## Cookie analitik, hanya jika Anda menerima
 
-Situs web ini tidak menggunakan cookie. Situs ini tidak memiliki analitik, pelacak iklan atau media sosial, dan tidak ada konten tersemat dari situs web lain, seperti video atau peta. Font dan gambar disajikan dari situs web kami sendiri.
+Situs web ini menggunakan cookie hanya untuk Google Analytics, dan hanya jika Anda menerimanya di banner cookie. Cookie ini menunjukkan kepada kami halaman dan produk mana yang dilihat pembeli, agar kami dapat memperbaiki situs. Sebelum Anda menerima, kode Google Analytics sama sekali tidak dimuat dan tidak ada cookie yang dipasang. Kami tidak menggunakan pelacak iklan atau media sosial, dan tidak ada konten tersemat dari situs web lain, seperti video atau peta. Font dan gambar disajikan dari situs web kami sendiri.
 
 ## Yang kami simpan di browser Anda
 
-Beberapa fitur menyimpan informasi di penyimpanan bawaan browser Anda. Informasi itu tetap berada di perangkat Anda: tidak ada yang dikirim kepada kami atau siapa pun, kecuali Anda mengirim permintaan.
+Beberapa fitur menyimpan informasi di penyimpanan bawaan browser Anda. Informasi itu tetap berada di perangkat Anda: tidak ada yang dikirim kepada kami atau siapa pun, kecuali Anda mengirim permintaan. Jika Anda menerima cookie analitik, Google Analytics juga memasang dua cookie di baris terakhir tabel pada domain kami, dan browser Anda mengirimkannya ke Google Analytics di setiap halaman yang Anda kunjungi.
 
 | Yang diingat | Mengapa | Berapa lama |
 | --- | --- | --- |
@@ -20,14 +20,17 @@ Beberapa fitur menyimpan informasi di penyimpanan bawaan browser Anda. Informasi
 | Nomor permintaan acak (`goodbiz-enquiry-lead`). Dibuat saat Anda membuka halaman kontak. | Agar langkah-langkah satu permintaan, termasuk setelah halaman dimuat ulang, tetap menyatu sebagai satu permintaan. | Sampai Anda menutup tab. Nomor baru dibuat setelah Anda mengirim permintaan, atau saat Anda membuka formulir dari tautan dengan produk yang berbeda. |
 | Jawaban Anda pada langkah pertama formulir permintaan: nama, perusahaan, email, dan telepon (`goodbiz-enquiry-contact`). Disimpan saat Anda mengetuk Lanjut. | Agar tetap ada saat halaman dimuat ulang sehingga Anda tidak perlu mengetiknya lagi. | Sampai Anda menutup tab. Dihapus setelah permintaan Anda berhasil terkirim. |
 | Produk yang menjadi awal permintaan, saat Anda membuka formulir dari tautan produk (`goodbiz-enquiry-products`). | Agar tautan dengan produk yang berbeda memulai permintaan baru, bukan mengubah permintaan sebelumnya. | Sampai Anda menutup tab. |
+| Jawaban Anda di banner cookie, Terima atau Tolak, dan kapan Anda memberikannya (`gb-consent`). Disimpan saat Anda memilih. | Agar banner tidak bertanya di setiap halaman, dan agar Google Analytics hanya berjalan jika Anda menerima. | 12 bulan, lalu banner bertanya lagi. Anda dapat mengubahnya kapan saja melalui Pengaturan cookie. |
+| Nomor acak yang membedakan browser Anda dari browser lain (`_ga`), cookie Google Analytics di domain kami. Dipasang hanya setelah Anda menerima. | Agar Google Analytics dapat menghitung pengunjung dan kunjungan berulang tanpa mengetahui siapa Anda. | Hingga 2 tahun (pengaturan Google). Dihapus jika Anda kemudian menolak melalui Pengaturan cookie. |
+| Status kunjungan Anda saat ini (`_ga_FWEG9Y5FVS`), cookie Google Analytics di domain kami. Dipasang hanya setelah Anda menerima. | Agar halaman yang Anda lihat dalam satu kunjungan dihitung sebagai satu kunjungan. | Hingga 2 tahun (pengaturan Google). Dihapus jika Anda kemudian menolak melalui Pengaturan cookie. |
 
-## Mengapa tidak ada spanduk cookie
+## Pilihan Anda, dan cara mengubahnya
 
-Kami hanya menyimpan apa yang benar-benar diperlukan untuk fitur yang Anda pilih untuk digunakan, dan tidak ada yang digunakan untuk melacak Anda, sehingga kami tidak perlu meminta persetujuan Anda. Jika suatu saat kami menambahkan analitik atau alat lain yang memerlukan persetujuan Anda, kami akan memperbarui halaman ini dan meminta persetujuan Anda terlebih dahulu.
+Saat Anda pertama kali berkunjung, sebuah banner menanyakan apakah Anda menerima cookie Google Analytics. Terima dan Tolak adalah pilihan yang setara, dan menolak tidak mengubah apa pun lainnya di situs: semua halaman dan formulir permintaan berfungsi sama. Anda dapat berubah pikiran kapan saja melalui Pengaturan cookie di bagian bawah setiap halaman. Jika Anda menarik persetujuan, Google Analytics langsung berhenti dan kami menghapus cookie-nya di domain kami. Kami bertanya lagi setelah 12 bulan. Google Analytics diatur tanpa fitur iklan: sinyal Google dan personalisasi iklan dinonaktifkan, dan tidak ada data tentang Anda yang dijual. Apa yang diterima Google Analytics, dan berapa lama disimpan, dijelaskan dalam [Kebijakan Privasi](/privacy/) kami.
 
 ## Menghapusnya
 
-Anda dapat menghapus informasi ini kapan saja di pengaturan browser Anda ("hapus data situs"). Daftar HoReCa juga memiliki tombol untuk mengosongkannya.
+Anda dapat menghapus informasi ini kapan saja di pengaturan browser Anda ("hapus data situs"). Daftar HoReCa juga memiliki tombol untuk mengosongkannya. Menghapus data situs juga menghapus pilihan cookie Anda, sehingga banner akan bertanya lagi.
 
 ## Tautan ke situs web lain
 

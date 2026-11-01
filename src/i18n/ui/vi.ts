@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '310480412515';
+export const sourceHash = '1dd8935a6a83';
 
 const vi: UiPartial = {
   meta: {
@@ -111,7 +111,7 @@ const vi: UiPartial = {
         'đồ vệ sinh cho quán cà phê',
       ],
       privacy: ['chính sách quyền riêng tư GoodBiz Hygiene', 'chính sách quyền riêng tư', 'dữ liệu cá nhân', 'DPDP Act 2023', 'GDPR'],
-      cookies: ['chính sách cookie GoodBiz Hygiene', 'chính sách cookie', 'không dùng cookie', 'bộ nhớ trình duyệt'],
+      cookies: ['chính sách cookie GoodBiz Hygiene', 'chính sách cookie', 'đồng ý cookie', 'bộ nhớ trình duyệt'],
     },
   },
 
@@ -222,6 +222,17 @@ const vi: UiPartial = {
   whatsapp: {
     aria: 'Trò chuyện với GoodBiz Hygiene qua WhatsApp',
     label: 'WhatsApp',
+  },
+
+  consent: {
+    aria: 'Lựa chọn cookie',
+    text: 'Chúng tôi muốn dùng cookie của Google Analytics để biết người mua xem những trang và sản phẩm nào, nhằm cải thiện trang web. Không quảng cáo, và không bán bất kỳ thông tin nào về bạn.',
+    policy: 'Chính sách cookie',
+    accept: 'Đồng ý',
+    reject: 'Từ chối',
+    settings: 'Cài đặt cookie',
+    currentGranted: 'Lựa chọn hiện tại của bạn: đồng ý.',
+    currentDenied: 'Lựa chọn hiện tại của bạn: từ chối.',
   },
 
   cards: {

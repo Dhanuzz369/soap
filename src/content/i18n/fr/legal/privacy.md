@@ -1,8 +1,8 @@
 ---
-sourceHash: "d4f40d2ebd5a"
+sourceHash: "93035003296f"
 title: "Politique de confidentialité"
 description: "Comment GoodBiz Hygiene, une unité de GoodBiz Global, collecte, utilise et protège les données personnelles du site et des demandes, et vos droits."
-updated: 2026-10-28
+updated: 2026-11-01
 ---
 
 ## Qui nous sommes
@@ -32,13 +32,15 @@ Ce site web, et les demandes que vous nous envoyez via son formulaire, par e-mai
 - *Quand c’est enregistré :* vos coordonnées sont enregistrées lorsque vous appuyez sur Suivant à la première étape, afin que nous puissions vous répondre même si vous n’allez pas jusqu’au bout. Chaque étape suivante ajoute vos réponses, et Envoyer finalise la demande.
 - *Par e-mail, WhatsApp ou téléphone :* ce que vous choisissez de nous envoyer.
 - *Données techniques :* notre hébergeur traite votre adresse IP, le type de votre navigateur et les pages demandées, afin de fournir le site web et d’en assurer la sécurité. Nous ne les utilisons pas pour vous identifier.
+- *Si vous acceptez les cookies d’analyse :* Google Analytics enregistre la façon dont le site est utilisé : les pages que vous consultez, les produits et les gammes que vous regardez ou qui font l’objet de votre demande, les étapes du formulaire de demande que vous terminez, les liens de contact sur lesquels vous cliquez (WhatsApp, e-mail, téléphone), la langue que vous choisissez, le site d’où vous venez, le type de votre appareil et de votre navigateur, et votre localisation approximative (pays et ville), que Google déduit de votre adresse IP. Google Analytics n’enregistre ni ne conserve les adresses IP. Il ne reçoit jamais votre nom, votre société, votre adresse e-mail, votre numéro de téléphone ni vos remarques.
 
-Nous ne collectons ni données de carte de paiement ni pièces d’identité via ce site web. Nous n’utilisons aucun outil d’analyse d’audience, de publicité ou de pistage, et nous n’utilisons pas de cookies.
+Nous ne collectons ni données de carte de paiement ni pièces d’identité via ce site web. Nous n’utilisons aucun traceur publicitaire ou de réseaux sociaux. Nous n’utilisons des cookies que pour Google Analytics, et seulement si vous les acceptez.
 
 ## Pourquoi nous les utilisons
 
 - Pour répondre à votre demande, préparer des devis et des échantillons, et assurer le suivi de cette demande.
 - Si vous devenez client, pour exécuter vos commandes et tenir les registres commerciaux, fiscaux et d’exportation exigés par la loi.
+- Si vous acceptez les cookies d’analyse, pour voir quelles pages et quels produits les acheteurs consultent, et pour améliorer le site.
 
 Nous ne vendons pas vos données personnelles, nous ne vous inscrivons à aucune liste de diffusion et nous ne les utilisons ni pour du profilage ni pour des décisions automatisées.
 
@@ -46,6 +48,7 @@ Nous ne vendons pas vos données personnelles, nous ne vous inscrivons à aucune
 
 - *Inde :* vous nous communiquez volontairement vos données personnelles dans un but précis (répondre à votre demande), et nous les utilisons uniquement à cette fin (section 7(a) du Digital Personal Data Protection Act, 2023). Si vous nous indiquez que vous ne souhaitez plus que nous les utilisions, nous cesserons de les utiliser et les supprimerons, sauf lorsque la loi nous oblige à les conserver.
 - *UE et Royaume-Uni :* l’exécution de mesures précontractuelles prises à votre demande (article 6(1)(b) du RGPD), notre intérêt légitime à répondre aux demandes commerciales (article 6(1)(f)) et, pour les registres commerciaux, nos obligations légales (article 6(1)(c)).
+- *Google Analytics, partout :* votre consentement (section 6 du Digital Personal Data Protection Act, 2023 ; article 6(1)(a) du RGPD). Vous le donnez avec Accepter dans le bandeau cookies et pouvez le retirer tout aussi facilement, à tout moment, avec Paramètres des cookies en bas de chaque page. Le retrait ne remet pas en cause les traitements effectués auparavant.
 
 ## Qui les traite pour notre compte
 
@@ -53,18 +56,20 @@ Nous ne vendons pas vos données personnelles, nous ne vous inscrivons à aucune
 - *Vercel Inc.* héberge ce site web.
 - *WhatsApp (Meta)* n’intervient que si vous choisissez de nous écrire sur WhatsApp ; la politique de confidentialité de WhatsApp s’applique alors à cette conversation.
 - *Google Traduction* n’intervient que si vous choisissez l’option de traduction dans le menu des langues ; l’adresse de la page est alors transmise à Google.
+- *Google Analytics* (Google LLC ; pour les visiteurs de l’UE et du Royaume-Uni, Google Ireland Limited) mesure l’utilisation du site, uniquement si vous acceptez les cookies d’analyse. Les signaux Google et les fonctions publicitaires sont désactivés.
 
 Si vous passez commande, nous ne communiquons que les informations nécessaires à son exécution (par exemple le nom de votre société et les informations de livraison) au fabricant, au transitaire, au commissionnaire en douane, à l’organisme d’inspection ou à la banque intervenant dans cette commande. Nous communiquons également des données lorsque la loi l’exige.
 
 ## Où elles sont conservées
 
-Nos prestataires peuvent conserver des données sur des serveurs situés hors d’Inde, par exemple aux États-Unis ou dans l’Union européenne. La loi indienne autorise ces transferts, sauf vers les pays faisant l’objet de restrictions du gouvernement indien. Pour les visiteurs de l’UE et du Royaume-Uni, ces prestataires offrent des garanties reconnues, telles que les clauses contractuelles types.
+Nos prestataires peuvent conserver des données sur des serveurs situés hors d’Inde, par exemple aux États-Unis ou dans l’Union européenne. La loi indienne autorise ces transferts, sauf vers les pays faisant l’objet de restrictions du gouvernement indien. Pour les visiteurs de l’UE et du Royaume-Uni, ces prestataires offrent des garanties reconnues, telles que les clauses contractuelles types. Les données de Google Analytics sont traitées aux États-Unis ; Google LLC est certifiée au titre de l’EU–US Data Privacy Framework (cadre de protection des données UE–États-Unis).
 
 ## Combien de temps nous les conservons
 
 - *Demandes qui n’aboutissent pas à une relation commerciale :* supprimées dans un délai de 24 mois après notre dernier contact avec vous.
 - *Clients :* nous conservons les données personnelles pendant toute la durée de la relation commerciale puis, au-delà, aussi longtemps que les lois indiennes en matière fiscale, douanière et de commerce extérieur nous imposent de conserver des registres.
 - *Journaux d’hébergement :* conservés par notre hébergeur pendant une courte durée.
+- *Google Analytics :* conservées 14 mois (la durée de conservation réglée dans notre compte Google Analytics), puis supprimées automatiquement. Les cookies déposés sur votre appareil sont décrits dans la politique en matière de cookies.
 
 ## Comment nous les protégeons
 
@@ -92,7 +97,7 @@ Ce site web s’adresse aux entreprises. Il n’est pas destiné aux personnes d
 
 ## Cookies
 
-Nous n’utilisons pas de cookies. Consultez notre [politique en matière de cookies](/cookies/).
+Nous n’utilisons des cookies que pour Google Analytics, et seulement si vous les acceptez dans le bandeau cookies. Consultez notre [politique en matière de cookies](/cookies/).
 
 ## Modifications
 

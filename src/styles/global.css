@@ -910,6 +910,21 @@ main {
 .footer-legal a {
   color: var(--on-dark);
 }
+/* "Cookie settings" reopens the cookie banner: a button that reads like the links beside it */
+.footer-linkbtn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--on-dark);
+  font: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+.footer-linkbtn:hover {
+  text-decoration-thickness: 2px;
+}
 /* "© 2026 GoodBiz Hygiene. GoodBiz Hygiene is a unit of GoodBiz Global, … · email · phone" */
 .footer-unit {
   max-width: 76ch;
@@ -968,7 +983,8 @@ main {
   border: 3px solid var(--paper);
   transition:
     transform var(--dur-fast) var(--ease-out),
-    background-color var(--dur-fast) ease;
+    background-color var(--dur-fast) ease,
+    translate 240ms var(--ease-out); /* rides above the cookie banner (consent.css) */
 }
 .wa-fab:hover {
   background: var(--action-hover);

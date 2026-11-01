@@ -1,0 +1,41 @@
+---
+/**
+ * The cookie banner (spec 2026-11-01 §3): asks once whether Google Analytics may set its cookies.
+ * In every page's markup right after the skip links (so Tab reaches it first), but `hidden`: the
+ * script (src/scripts/analytics.ts) shows it only when the visitor has not chosen yet. Without JS
+ * it never shows, and no analytics can load anyway. Nothing at all is rendered when
+ * site.analytics.ga4 is empty, and BaseLayout leaves it out of the 404 page.
+ *
+ * A card at the bottom of the viewport, not a wall: the page stays usable, Escape does nothing, and
+ * the choice is required only to dismiss it. Accept and Reject are the same button, side by side.
+ * The floating WhatsApp and language buttons ride above it (src/styles/consent.css).
+ */
+import '../styles/consent.css';
+import site from '../config/site';
+import { launched } from '../lib/launch';
+import { useI18n } from '../i18n/page';
+
+const { ui, lp } = useI18n(Astro.url);
+const c = ui.consent;
+const id = site.analytics.ga4;
+---
+
+{
+  id && (
+    <div class="consent" role="region" aria-label={c.aria} data-consent data-ga={id} data-site={site.url} data-launched={String(launched)} hidden>
+      <p class="consent-text">
+        {c.text} <a href={lp('/cookies/')}>{c.policy}</a>
+      </p>
+      <p class="consent-current" data-consent-current data-granted={c.currentGranted} data-denied={c.currentDenied} hidden />
+      <div class="consent-actions">
+        <button type="button" class="consent-btn" data-consent-choice="granted">{c.accept}</button>
+        <button type="button" class="consent-btn" data-consent-choice="denied">{c.reject}</button>
+      </div>
+    </div>
+  )
+}
+
+<script>
+  import { initConsent } from '../scripts/analytics';
+  initConsent();
+</script>

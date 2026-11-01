@@ -874,7 +874,8 @@
     transition:
       opacity 200ms var(--ease-out),
       transform 200ms var(--ease-out),
-      visibility 200ms;
+      visibility 200ms,
+      translate 240ms var(--ease-out);
   }
   body:has(.sq[data-actions-in-view]) .wa-fab {
     visibility: hidden; /* out of the tab order too */

@@ -1,7 +1,8 @@
 /**
  * The Privacy Policy and Cookie Policy pages (spec 2026-10-28 §3) on the built site. Run
  * `npm run build` first. The English text is final copy: every sentence of the spec's English
- * text must appear on the English page, word for word.
+ * text must appear on the English page, word for word, except the sentences that said there were
+ * no cookies and no analytics, which Google Analytics with consent (spec 2026-11-01 §5) replaced.
  */
 import { describe, it, expect } from 'vitest';
 import { readFileSync, existsSync } from 'node:fs';
@@ -27,6 +28,24 @@ const decode = (s: string) =>
 const norm = (s: string) => decode(s).replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, ' ').trim();
 const mainText = (html: string) => norm(html.slice(html.indexOf('<main'), html.indexOf('</main>')).replace(/<[^>]+>/g, ' ')).replace(/ ([.,;:)])/g, '$1').replace(/\( /g, '(');
 
+/**
+ * Sentences of the 2026-10-28 copy that are no longer true since Google Analytics with consent
+ * (spec 2026-11-01 §5). The new text is checked in tests/unit/legal.test.ts and below.
+ */
+const SUPERSEDED = new Set(
+  [
+    'Last updated: 28 October 2026',
+    'We do not use analytics, advertising or tracking tools, and we do not use cookies.',
+    'We do not use cookies.',
+    'No cookies, no tracking',
+    'This website does not use cookies.',
+    'It has no analytics, advertising or social media trackers, and no embedded content from other websites, such as videos or maps.',
+    'Why there is no cookie banner',
+    'We store only what is strictly necessary for features you choose to use, and nothing is used to track you, so we do not need to ask for consent.',
+    'If we ever add analytics or other tools that need your consent, we will update this page and ask you first.',
+  ].map((s) => norm(s)),
+);
+
 /** The spec's English final copy, as plain sentences. */
 function specSentences(heading: string): string[] {
   const spec = readFileSync(join(ROOT, 'docs/superpowers/specs/2026-10-28-privacy-contacts-design.md'), 'utf8');
@@ -41,7 +60,7 @@ function specSentences(heading: string): string[] {
     .map((l) => l.replace(/^\s*-\s+/, '').replace(/\*\*?/g, '').replace(/ \(link \/cookies\/\)/, ''))
     .flatMap((l) => l.split(/(?<=[.;:])\s+(?=[A-Z"(])/))
     .map((s) => norm(s))
-    .filter(Boolean);
+    .filter((s) => s && !SUPERSEDED.has(s));
 }
 
 describe.each([
@@ -78,14 +97,14 @@ describe.each([
   });
 
   it('shows the last-updated date', () => {
-    expect(mainText(page(path))).toContain('Last updated: 28 October 2026');
-    expect(page(path)).toContain('<time datetime="2026-10-28">');
+    expect(mainText(page(path))).toContain('Last updated: 1 November 2026');
+    expect(page(path)).toContain('<time datetime="2026-11-01">');
   });
 
   it('keeps every sentence of the English final copy', () => {
     const text = mainText(page(path));
     const sentences = specSentences(heading);
-    expect(sentences.length).toBeGreaterThan(path === '/privacy/' ? 60 : 12);
+    expect(sentences.length).toBeGreaterThan(path === '/privacy/' ? 60 : 8);
     const missing = sentences.filter((s) => !text.includes(s));
     expect(missing).toEqual([]);
   });
@@ -106,18 +125,20 @@ describe('privacy page facts in every language', () => {
   it.each(LANGS.filter((l) => l === 'en' || translated(l, 'privacy')))('%s keeps the contacts, the Act, the GDPR articles and the cookie link', (l) => {
     const html = page('/privacy/', l);
     const text = mainText(html);
-    for (const s of ['hygiene@goodbizglobal.com', '+91 88847 99369', 'Digital Personal Data Protection Act, 2023', '7(a)', '6(1)(b)', '6(1)(f)', '6(1)(c)', '24', '30', '90', '18']) expect(text, `${l}: ${s}`).toContain(s);
+    for (const s of ['hygiene@goodbizglobal.com', '+91 88847 99369', 'Digital Personal Data Protection Act, 2023', '7(a)', '6(1)(a)', '6(1)(b)', '6(1)(f)', '6(1)(c)', '24', '30', '90', '18', '14', 'Google Analytics', 'Google LLC', 'Google Ireland Limited', 'Data Privacy Framework']) expect(text, `${l}: ${s}`).toContain(s);
     expect(html, l).toContain(`href="${localizePath('/cookies/', l)}"`);
   });
 });
 
 describe('cookie page', () => {
-  it.each(LANGS)('%s lists every browser storage key in a three-column table', (l) => {
+  it.each(LANGS)('%s lists every browser storage key and the Google Analytics cookies in a three-column table', (l) => {
     const html = page('/cookies/', l);
     const table = html.slice(html.indexOf('<table'), html.indexOf('</table>'));
     expect(table.match(/<th\b/g)?.length, l).toBe(3);
-    for (const key of ['gb-lang', 'gb-horeca', 'goodbiz-enquiry-lead', 'goodbiz-enquiry-contact', 'goodbiz-enquiry-products']) expect(table, `${l}: ${key}`).toContain(`<code>${key}</code>`);
-    expect(table.match(/<tr\b/g)?.length, l).toBe(6);
+    for (const key of ['gb-lang', 'gb-horeca', 'goodbiz-enquiry-lead', 'goodbiz-enquiry-contact', 'goodbiz-enquiry-products', 'gb-consent', '_ga', '_ga_FWEG9Y5FVS']) expect(table, `${l}: ${key}`).toContain(`<code>${key}</code>`);
+    expect(table.match(/<tr\b/g)?.length, l).toBe(9);
+    // the way to change your mind, and the link to the Privacy Policy
+    expect(html, l).toContain(`href="${localizePath('/privacy/', l)}"`);
   });
   it('English column headings: What it remembers, Why, How long', () => {
     const html = page('/cookies/');

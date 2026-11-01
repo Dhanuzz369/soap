@@ -5,7 +5,7 @@
  */
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import type { Browser, Page } from 'playwright-core';
-import { launch, open, active, waitStep, BASE } from './helpers';
+import { launch, open, active, waitStep, blockAnalytics, BASE } from './helpers';
 
 let browser: Browser;
 beforeAll(async () => {
@@ -456,6 +456,7 @@ describe('focus is always visible', () => {
 describe('page-level keyboard', () => {
   it('the contact page has a "Skip to the enquiry form" link right after the main skip link', async () => {
     const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const ga = await blockAnalytics(context);
     const page = await context.newPage();
     await page.goto(BASE + '/contact/');
     const skips = await page.$$eval('a.skip', (a) => a.map((x) => [x.getAttribute('href'), x.textContent?.trim()]));
@@ -464,6 +465,7 @@ describe('page-level keyboard', () => {
       ['#enquiry', 'Skip to the enquiry form'],
     ]);
     expect(await page.$('main#main')).not.toBeNull();
+    expect(ga).toEqual([]);
     await context.close();
   });
 
@@ -504,6 +506,7 @@ describe('page-level keyboard', () => {
 describe('HoReCa list with the keyboard', () => {
   it('tick with Space, remove a chip with Enter, Clear with Enter; focus stays in the list', async () => {
     const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const ga = await blockAnalytics(context);
     const page = await context.newPage();
     await page.goto(BASE + '/horeca/');
     await page.evaluate(() => localStorage.removeItem('gb-horeca'));
@@ -529,6 +532,7 @@ describe('HoReCa list with the keyboard', () => {
     await page.keyboard.press('Enter');
     expect(await page.$$eval('[data-picked] li', (l) => l.length)).toBe(0);
     expect(await page.evaluate(() => document.activeElement?.matches('[data-type]'))).toBe(true);
+    expect(ga).toEqual([]);
     await context.close();
   });
 });

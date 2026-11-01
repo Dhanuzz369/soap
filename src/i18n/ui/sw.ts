@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '310480412515';
+export const sourceHash = '1dd8935a6a83';
 
 const sw: UiPartial = {
   meta: {
@@ -110,7 +110,7 @@ const sw: UiPartial = {
         'vifaa vya usafi vya mikahawa',
       ],
       privacy: ['sera ya faragha GoodBiz Hygiene', 'sera ya faragha', 'data binafsi', 'DPDP Act 2023', 'GDPR'],
-      cookies: ['sera ya vidakuzi GoodBiz Hygiene', 'sera ya vidakuzi', 'bila vidakuzi', 'hifadhi ya kivinjari'],
+      cookies: ['sera ya vidakuzi GoodBiz Hygiene', 'sera ya vidakuzi', 'idhini ya vidakuzi', 'hifadhi ya kivinjari'],
     },
   },
 
@@ -221,6 +221,17 @@ const sw: UiPartial = {
   whatsapp: {
     aria: 'Ongea na GoodBiz Hygiene kupitia WhatsApp',
     label: 'WhatsApp',
+  },
+
+  consent: {
+    aria: 'Chaguo la vidakuzi',
+    text: 'Tungependa kutumia vidakuzi vya Google Analytics ili kuona ni kurasa na bidhaa zipi wanunuzi wanaangalia, ili tuboreshe tovuti. Hakuna matangazo, na hakuna taarifa zako zinazouzwa.',
+    policy: 'Sera ya Vidakuzi',
+    accept: 'Kubali',
+    reject: 'Kataa',
+    settings: 'Mipangilio ya vidakuzi',
+    currentGranted: 'Chaguo lako la sasa: umekubali.',
+    currentDenied: 'Chaguo lako la sasa: umekataa.',
   },
 
   cards: {
