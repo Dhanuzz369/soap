@@ -49,6 +49,14 @@ Toilet Soap · Bath Soap · Herbal Soap · Ayurvedic Soap · Glycerin Soap · Tr
 
 The full list of product pages is in https://www.goodbizhygiene.com/llms.txt.
 
+**Tag the links you place on listings** so Google Analytics can tell which listing brings enquiries (`docs/analytics.md` §4). Add `?utm_source=<site>&utm_medium=listing&utm_campaign=<profile or product_listing>` to the website and product links, for example:
+
+- IndiaMART profile → https://www.goodbizhygiene.com/?utm_source=indiamart&utm_medium=listing&utm_campaign=profile
+- IndiaMART LABSA listing → https://www.goodbizhygiene.com/products/labsa/?utm_source=indiamart&utm_medium=listing&utm_campaign=product_listing
+- TradeIndia profile → https://www.goodbizhygiene.com/?utm_source=tradeindia&utm_medium=listing&utm_campaign=profile
+
+Use the same lower-case `utm_source` for a site every time (`indiamart`, `tradeindia`, `exportersindia`, `alibaba`, `go4worldbusiness`, `tradekey`, `linkedin`, `fieo`, `chemexcil`). The tags do not change where the link goes or how search engines count it. Keep the plain address in the table above for fields that show the website as text (company profile "Website" fields), and use the tagged address wherever the field is a clickable link.
+
 ---
 
 ## 2. Where to list, in order of value

@@ -134,7 +134,8 @@ These are legal texts. The English version applies; every translated page automa
 - Keep the names of laws and bodies in English, the way they are cited: **Digital Personal Data Protection Act, 2023** (you may add a translation in brackets after it), **General Data Protection Regulation (GDPR)** may use your language's official name with "GDPR", **Data Protection Board of India** (translation in brackets allowed). Keep "section 7(a)" and "Article 6(1)(b)", "6(1)(f)", "6(1)(c)" with their numbers. Use your language's established legal terms for "Data Fiduciary" (keep the English term in brackets), "controller", "legitimate interest", "Standard Contractual Clauses", "data portability".
 - Keep the email address, phone number, the subject line "Privacy request" (in English, in quotes: it is what the team filters on), and every number (24 months, 30 days, 90 days, 18).
 - Keep Google, Google Workspace, Google Sheets, Gmail, Vercel Inc., WhatsApp (Meta), Google Translate, HTTPS, HoReCa.
-- Cookie table: translate the three column headings and the cells; keep each storage key in backticks exactly (`gb-lang`, `gb-horeca`, `goodbiz-enquiry-lead`, `goodbiz-enquiry-contact`, `goodbiz-enquiry-products`). Name buttons as they appear on your language's pages (Next, Send, Clear).
+- Cookie table: translate the three column headings and the cells; keep each storage key and cookie name in backticks exactly (`gb-lang`, `gb-horeca`, `goodbiz-enquiry-lead`, `goodbiz-enquiry-contact`, `goodbiz-enquiry-products`, `gb-consent`, `_ga`, `_ga_FWEG9Y5FVS`). Name buttons as they appear on your language's pages (Next, Send, Clear, and the cookie banner's Accept, Reject and Cookie settings from your `consent` strings).
+- Google Analytics: keep "Google Analytics", "Google LLC", "Google Ireland Limited" and "EU–US Data Privacy Framework" (a translation in brackets is allowed), "section 6" and "Article 6(1)(a)", and the numbers 12 (months), 2 (years) and 14 (months). Never soften "only if you accept" or "nothing about you is sold".
 - Links: keep `(/cookies/)` and the `mailto:` links as in English.
 
 ## 4. Rules for the interface file (`src/i18n/ui/<lang>.ts`)
@@ -169,6 +170,15 @@ The contact page asks one short question per screen (`src/components/StepEnquiry
 - `privacy` is the notice under step 1, followed by a link `privacyLink` (the title of your Privacy Policy page). It must stay literally true: the details are saved when the buyer taps Next (write the button exactly as your `next` says), used only to reply, never sold, never added to a mailing list. Do not say they are never shared (Google stores them for us). Do not soften or extend it.
 - `helpers.quantity` says there is no fixed minimum. Do not add a minimum, a price, a certificate or a delivery time anywhere in this block (`tests/unit/enquiry-strings.test.ts` checks the English, and the honesty patterns check every language).
 - `errors`: short and polite, telling the buyer what to do, not what they did wrong.
+
+### 4.1c The cookie banner (`consent`)
+
+The banner at the bottom of the page on a first visit, and the footer's "Cookie settings" button (`src/components/ConsentBanner.astro`).
+
+- `text` must stay literally true: Google Analytics cookies only, to see which pages and products buyers look at, to improve the site; no advertising; nothing about the visitor is sold. Write it as a polite request, not a notice ("we'd like to…").
+- `accept` and `reject` are equal, plain verbs of the same weight (no "OK, got it", no "Maybe later", nothing that pushes one answer).
+- `policy` is exactly the `title` of your Cookie Policy page (it is the link to it). `settings` is the footer button's name; the Cookie Policy text refers to it by this name.
+- `currentGranted` / `currentDenied` say which choice is stored when the banner is reopened.
 
 ### 4.2 The product and range h1 (`common.titleH1`)
 
