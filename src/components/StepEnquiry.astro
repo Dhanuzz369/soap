@@ -14,7 +14,7 @@
 import site from '../config/site';
 import { getProductsByCategory } from '../lib/products';
 import { productPicture } from '../lib/product-image';
-import { buildWhatsAppUrl, slugify } from '../lib/enquiry';
+import { slugify } from '../lib/enquiry';
 import { STEP_IDS, QUANTITY_KEYS, TERMS_KEYS, BRAND_KEYS, ENGLISH } from '../lib/enquiry-steps';
 import { isConfiguredEndpoint } from '../lib/enquiry-send';
 import { useI18n } from '../i18n/page';
@@ -58,7 +58,8 @@ const groupCards = groups.map((g) => {
 
 const endpoint = isConfiguredEndpoint(site.enquiry.endpoint) ? site.enquiry.endpoint : '';
 const action = endpoint || `mailto:${site.contact.email}`;
-const waPlain = buildWhatsAppUrl(site.contact.whatsapp, {});
+// The plain address; the message with the buyer's answers is added on click (src/scripts/step-enquiry.ts).
+const waPlain = `https://wa.me/${site.contact.whatsapp}`;
 const total = STEP_IDS.length;
 const titleId = (id: string) => `enq-h-${id}`;
 ---

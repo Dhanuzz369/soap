@@ -275,10 +275,22 @@ describe('step enquiry form', () => {
       await page.click('[data-send]');
       await page.waitForSelector('[data-fail]:not([hidden])', { timeout: 10_000 });
       expect(await page.isVisible('[data-success]')).toBe(false);
-      const wa = await page.getAttribute('[data-send-whatsapp]', 'href');
+      // href stays the plain address (analytics may read hrefs); the message is in data-full.
+      expect(await page.getAttribute('[data-send-whatsapp]', 'href')).toMatch(/^https:\/\/wa\.me\/\d+$/);
+      expect(await page.getAttribute('[data-send-email]', 'href')).toMatch(/^mailto:[^?]+$/);
+      const wa = await page.getAttribute('[data-send-whatsapp]', 'data-full');
       expect(decodeURIComponent(wa ?? '')).toContain('Name: Fatima');
       expect(decodeURIComponent(wa ?? '')).toContain('SLES');
-      expect(await page.getAttribute('[data-send-email]', 'href')).toMatch(/^mailto:.*body=.*Fatima/);
+      expect(await page.getAttribute('[data-send-email]', 'data-full')).toMatch(/^mailto:.*body=.*Fatima/);
+      // A click opens the full message.
+      const opened = new Promise<string>((done) =>
+        page.context().route('https://wa.me/**', (r) => {
+          done(r.request().url());
+          return r.abort();
+        }),
+      );
+      await page.click('[data-send-whatsapp]');
+      expect(decodeURIComponent(await opened)).toContain('Name: Fatima');
       await page.context().close();
     });
   }
@@ -290,7 +302,8 @@ describe('step enquiry form', () => {
     expect(await page.isVisible('[data-wa-early]')).toBe(false);
     await fillContact(page, 'Omar', '+20 100 000 0000');
     expect(await page.isVisible('[data-wa-early]')).toBe(true);
-    expect(decodeURIComponent((await page.getAttribute('[data-wa-early] a', 'href')) ?? '')).toContain('Name: Omar');
+    expect(await page.getAttribute('[data-wa-early] a', 'href')).toMatch(/^https:\/\/wa\.me\/\d+$/);
+    expect(decodeURIComponent((await page.getAttribute('[data-wa-early] a', 'data-full')) ?? '')).toContain('Name: Omar');
     for (let i = 0; i < 5; i++) await page.click('[data-skip]');
     await waitStep(page, 'send');
     await page.click('[data-send]');

@@ -39,6 +39,17 @@ const overlap = (a: DOMRect, b: DOMRect) => a.left < b.right && b.left < a.right
 /** Nothing of Google's tag ran: no dataLayer, no gtag, no _ga cookies. */
 const noTag = (page: Page) => page.evaluate(() => ({ dataLayer: 'dataLayer' in window, gtag: 'gtag' in window, cookies: document.cookie }));
 const settle = (page: Page) => page.waitForTimeout(400);
+/** Waits until the page has stopped scrolling (the form scrolls itself smoothly between steps). */
+const scrollSettled = (page: Page) =>
+  page.waitForFunction(
+    () =>
+      new Promise<boolean>((done) => {
+        const y = scrollY;
+        setTimeout(() => done(scrollY === y), 300);
+      }),
+    undefined,
+    { timeout: 10_000, polling: 100 },
+  );
 
 describe('cookie banner', () => {
   it('shows on a first visit, as a labelled region with two equal buttons, and nothing is loaded', async () => {
@@ -276,8 +287,9 @@ describe('cookie banner on a phone', () => {
     await page.click('[data-next]');
     for (let i = 0; i < 3; i++) await page.click('[data-skip]');
     await waitStep(page, 'send');
+    await scrollSettled(page);
     await page.$eval('[data-send]', (e) => e.scrollIntoView({ block: 'nearest' }));
-    await settle(page);
+    await scrollSettled(page);
     const send = await box(page, '[data-send]');
     expect(overlap(send, await box(page, BANNER))).toBe(false);
     expect(await page.evaluate(([x, y]) => !!document.elementFromPoint(x, y)?.closest('[data-send]'), [send.left + send.width / 2, send.top + send.height / 2])).toBe(true);

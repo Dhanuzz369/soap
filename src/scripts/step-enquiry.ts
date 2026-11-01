@@ -184,9 +184,28 @@ function init(form: HTMLFormElement, deps: Deps): void {
   const cancel = () => clearTimeout(timer);
   const recompute = () => (steps = visibleSteps(read(), { products: prefilled.length > 0 }));
 
+  // The WhatsApp and email links keep their plain address (wa.me/<number>, mailto:<address>) in
+  // href; the message with the buyer's answers sits in data-full and is opened only on click. So
+  // analytics that reads link addresses (GA4's outbound-click measurement) never sees the answers.
+  const openFull = (e: MouseEvent) => {
+    const url = (e.currentTarget as HTMLAnchorElement).dataset.full;
+    if (!url) return;
+    e.preventDefault();
+    if (url.startsWith('mailto:')) {
+      location.href = url;
+      return;
+    }
+    const w = window.open(url, '_blank');
+    if (w) w.opener = null;
+    else location.href = url;
+  };
+  const setFull = (a: HTMLAnchorElement, url: string) => {
+    if (a.dataset.full === undefined) a.addEventListener('click', openFull);
+    a.dataset.full = url;
+  };
   const waEarly = $('[data-wa-early]');
   const refreshWa = () => {
-    if (!waEarly.hidden) $<HTMLAnchorElement>('[data-wa-early-link]').href = buildWhatsAppUrl(d.whatsapp ?? '', fields());
+    if (!waEarly.hidden) setFull($<HTMLAnchorElement>('[data-wa-early-link]'), buildWhatsAppUrl(d.whatsapp ?? '', fields()));
   };
   const showWaEarly = () => {
     waEarly.hidden = current === 'contact';
@@ -576,8 +595,8 @@ function init(form: HTMLFormElement, deps: Deps): void {
   };
   const fail = () => {
     const f = fields();
-    $<HTMLAnchorElement>('[data-send-whatsapp]').href = buildWhatsAppUrl(d.whatsapp ?? '', f);
-    $<HTMLAnchorElement>('[data-send-email]').href = buildMailtoUrl(d.email ?? '', f);
+    setFull($<HTMLAnchorElement>('[data-send-whatsapp]'), buildWhatsAppUrl(d.whatsapp ?? '', f));
+    setFull($<HTMLAnchorElement>('[data-send-email]'), buildMailtoUrl(d.email ?? '', f));
     finish($('[data-fail]'));
     // The enquiry now leaves by WhatsApp or email; a next one starts its own row.
     lead.reset();
