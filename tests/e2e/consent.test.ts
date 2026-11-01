@@ -93,6 +93,21 @@ describe('cookie banner', () => {
     await page.context().close();
   });
 
+  it('a quote message in the address never reaches Google: after Accept on the test host no tag is configured at all', async () => {
+    const { page, ga, errors } = await visit('/contact/?message=Call%20Ali%20ali%40example.ae%20%2B971501234567&product=labsa');
+    await page.click(ACCEPT);
+    await settle(page);
+    await page.reload();
+    await settle(page);
+    const seen = await page.evaluate(() => JSON.stringify((window as unknown as { dataLayer?: unknown[] }).dataLayer ?? null));
+    expect(seen).toBe('null');
+    expect(seen).not.toContain('message=');
+    expect(ga.filter((u) => u.includes('message'))).toEqual([]);
+    expect(ga).toEqual([]);
+    expect(errors).toEqual([]);
+    await page.context().close();
+  });
+
   it('Reject is stored and kept across a reload', async () => {
     const { page, ga } = await visit('/products/');
     await page.click(REJECT);

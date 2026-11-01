@@ -12,6 +12,7 @@ import {
   CONSENT_DEFAULTS,
   GTAG_CONFIG,
   analyticsEnabled,
+  cleanUrl,
   consentRecord,
   contactMethod,
   createTracker,
@@ -22,6 +23,7 @@ import {
   gtagSrc,
   isAnalyticsHost,
   leadParams,
+  pageConfig,
   parseConsent,
   sanitizeParams,
   stepEvent,
@@ -271,5 +273,42 @@ describe('enquiry form events', () => {
     expect(fallbackReason(false, 'failed')).toBe('no_endpoint');
     expect(fallbackReason(true, 'timeout')).toBe('timeout');
     expect(fallbackReason(true, 'failed')).toBe('error');
+  });
+});
+
+describe('page URLs sent to Google carry no free text', () => {
+  const BASE = 'https://www.goodbizhygiene.com';
+  it('drops ?message=, ?variety= and anything unknown, and the hash', () => {
+    expect(cleanUrl(`${BASE}/contact/?message=Call%20Ali%20on%20%2B971501234567%20ali%40example.ae&variety=lemon&x=1#enquiry`)).toBe(`${BASE}/contact/`);
+    expect(cleanUrl(`${BASE}/fr/contact/?message=ali@example.ae`)).toBe(`${BASE}/fr/contact/`);
+  });
+  it('keeps product slugs and campaign tags (utm_*, gclid)', () => {
+    expect(cleanUrl(`${BASE}/contact/?product=labsa,sles&message=hi&utm_source=indiamart&utm_medium=listing&utm_campaign=profile&utm_term=labsa&utm_content=logo&gclid=abc123`)).toBe(
+      `${BASE}/contact/?product=labsa%2Csles&utm_source=indiamart&utm_medium=listing&utm_campaign=profile&utm_term=labsa&utm_content=logo&gclid=abc123`,
+    );
+  });
+  it('drops a product value that is not a list of slugs', () => {
+    expect(cleanUrl(`${BASE}/contact/?product=ali@example.ae`)).toBe(`${BASE}/contact/`);
+    expect(cleanUrl(`${BASE}/contact/?product=Call me`)).toBe(`${BASE}/contact/`);
+  });
+  it('returns nothing for something that is not a URL', () => {
+    expect(cleanUrl('not a url')).toBe('');
+  });
+  it('the config sends the cleaned page; a same-site referrer cleaned the same way, another site as its origin only', () => {
+    const c = pageConfig({ href: `${BASE}/contact/?message=ali%40example.ae&product=labsa`, referrer: `${BASE}/contact/?message=%2B971501234567` });
+    expect(c).toEqual({ ...GTAG_CONFIG, page_location: `${BASE}/contact/?product=labsa`, page_referrer: `${BASE}/contact/` });
+    expect(JSON.stringify(c)).not.toMatch(/message=|%40|@|971/);
+    expect(pageConfig({ href: `${BASE}/`, referrer: 'https://www.google.com/search?q=ali+hassan+phone' }).page_referrer).toBe('https://www.google.com/');
+    expect(pageConfig({ href: `${BASE}/`, referrer: '' })).not.toHaveProperty('page_referrer');
+  });
+  it('events cannot carry a URL: page_location and other URL parameters are not on any allow-list', () => {
+    for (const ev of ['generate_lead', 'enquiry_step', 'enquiry_sent', 'enquiry_fallback', 'contact_click', 'quote_start', 'language_change'])
+      expect(sanitizeParams(ev, { page_location: `${BASE}/contact/?message=x`, page_referrer: 'x', link_url: 'https://wa.me/1?text=Ali' }), ev).toEqual({});
+  });
+  it('the Google tag is configured only through pageConfig (never the raw URL)', () => {
+    const src = readFileSync(join(process.cwd(), 'src/scripts/analytics.ts'), 'utf8');
+    const calls = src.split('\n').filter((l) => l.includes("gtag('config'")).map((l) => l.trim());
+    expect(calls).toEqual(["w.gtag('config', id, pageConfig({ href: location.href, referrer: document.referrer }));"]);
+    expect(src).not.toMatch(/page_location|location\.search/);
   });
 });

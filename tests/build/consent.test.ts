@@ -69,6 +69,20 @@ describe('cookie banner markup', () => {
   });
 });
 
+describe('the shipped Google tag set-up', () => {
+  it('configures gtag with a cleaned page_location (only product and campaign tags, never ?message=)', () => {
+    const js = walk(join(DIST, '_astro')).filter((f) => f.endsWith('.js') && readFileSync(f, 'utf8').includes('googletagmanager'));
+    expect(js).toHaveLength(1);
+    const src = readFileSync(js[0], 'utf8');
+    expect(src).toMatch(/[`"']config[`"']/);
+    expect(src).toContain('page_location');
+    expect(src).toContain('page_referrer');
+    for (const k of ['product', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid']) expect(src, k).toContain(k);
+    expect(src).not.toMatch(/[`"']message[`"']/);
+    expect(src).not.toMatch(/location\.search/);
+  });
+});
+
 describe('footer: Cookie settings', () => {
   it.each(LANGS)('%s: a button beside the Cookies link, hidden until the script runs', (l) => {
     const ui = getUi(l);

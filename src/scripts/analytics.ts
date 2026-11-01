@@ -16,7 +16,6 @@
 import {
   CONSENT_DEFAULTS,
   CONSENT_KEY,
-  GTAG_CONFIG,
   analyticsEnabled,
   consentRecord,
   contactMethod,
@@ -24,6 +23,7 @@ import {
   expireCookies,
   gaCookieNames,
   gtagSrc,
+  pageConfig,
   parseConsent,
   type Choice,
   type EventParams,
@@ -88,7 +88,8 @@ function loadGtag(id: string): void {
   };
   w.gtag('consent', 'default', { ...CONSENT_DEFAULTS });
   w.gtag('js', new Date());
-  w.gtag('config', id, { ...GTAG_CONFIG });
+  // A cleaned page address (no ?message= or other free text); events inherit it.
+  w.gtag('config', id, pageConfig({ href: location.href, referrer: document.referrer }));
   const add = () => {
     const s = document.createElement('script');
     s.async = true;

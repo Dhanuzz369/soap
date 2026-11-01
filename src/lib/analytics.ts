@@ -11,6 +11,8 @@
  * - No personal data: every event's parameters pass an allow-list of names and values (known keys
  *   or plain slugs). Names, emails, phones, companies, notes and the lead id can never get through.
  * - Basic consent mode: gtag.js is not requested at all before Accept; advertising is always denied.
+ * - Page addresses are cleaned before Google sees them (cleanUrl): only product slugs and campaign
+ *   tags stay in the query, so ?message= from the quote card never leaves the page.
  */
 import { LOCALE_CODES } from '../i18n/locales.ts';
 
@@ -152,6 +154,51 @@ export const GTAG_CONFIG = {
   allow_google_signals: false,
   allow_ad_personalization_signals: false,
 } as const;
+
+/**
+ * The page addresses Google may see. Query strings can carry the visitor's own words (the quote
+ * card's ?message=, ?variety=), so only these parameters survive: product slugs and campaign tags.
+ */
+const URL_PARAMS: Record<string, (v: string) => boolean> = {
+  product: (v) => v.length <= 200 && /^[a-z0-9]+(?:-[a-z0-9]+)*(?:,[a-z0-9]+(?:-[a-z0-9]+)*)*$/.test(v),
+  utm_source: () => true,
+  utm_medium: () => true,
+  utm_campaign: () => true,
+  utm_term: () => true,
+  utm_content: () => true,
+  gclid: () => true,
+};
+
+/** The URL without its hash and without any query parameter not on the list above ('' if not a URL). */
+export function cleanUrl(href: string): string {
+  let u: URL;
+  try {
+    u = new URL(href);
+  } catch {
+    return '';
+  }
+  const out = new URL(u.origin + u.pathname);
+  for (const [k, ok] of Object.entries(URL_PARAMS)) for (const v of u.searchParams.getAll(k)) if (ok(v)) out.searchParams.append(k, v);
+  return out.href;
+}
+
+/**
+ * gtag('config', id, …) for this page: GTAG_CONFIG plus a cleaned page_location, so the automatic
+ * page view never sends free text from the address, and events inherit the same clean page. The
+ * referrer: our own pages cleaned the same way, another site as its origin only.
+ */
+export function pageConfig(o: { href: string; referrer: string }): Record<string, unknown> {
+  const config: Record<string, unknown> = { ...GTAG_CONFIG, page_location: cleanUrl(o.href) };
+  if (o.referrer) {
+    try {
+      const r = new URL(o.referrer);
+      config.page_referrer = r.origin === new URL(o.href).origin ? cleanUrl(o.referrer) : `${r.origin}/`;
+    } catch {
+      /* no usable referrer */
+    }
+  }
+  return config;
+}
 
 /** The only place the site names Google's tag server (a unit test checks). */
 export function gtagSrc(id: string): string {
