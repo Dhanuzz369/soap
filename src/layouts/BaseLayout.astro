@@ -222,8 +222,9 @@ const ar = lang === 'ar';
   <body id="top" class:list={{ 'page-dark': dark }}>
     <a class="skip" href="#main">{ui.common.skip}</a>
     {skipTo && <a class="skip" href={skipTo.href}>{skipTo.label}</a>}
-    {/* The cookie banner: early in the DOM so Tab reaches it right after the skip links. Not on the 404. */}
-    {!noindex && <ConsentBanner />}
+    {/* The cookie banner: early in the DOM so Tab reaches it right after the skip links. Also on the
+        404, so GA records which broken addresses visitors land on. */}
+    <ConsentBanner />
     <Header path={path} tone={dark ? 'dark' : 'light'} />
     <main id="main">
       {!dark && breadcrumbs && breadcrumbs.length > 1 && (
@@ -231,7 +232,7 @@ const ar = lang === 'ar';
       )}
       <slot />
     </main>
-    <Footer noConsent={noindex} />
+    <Footer />
     <WhatsAppFab />
     <LangSwitch path={path} homesOnly={noindex} />
     <script is:inline>

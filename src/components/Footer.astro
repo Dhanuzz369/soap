@@ -5,11 +5,6 @@ import { getProductsByCategory } from '../lib/products';
 import Registrations from './Registrations.astro';
 import { useI18n } from '../i18n/page';
 
-interface Props {
-  /** Leave out "Cookie settings" (the 404 page has no cookie banner). */
-  noConsent?: boolean;
-}
-const { noConsent = false } = Astro.props;
 const { lang, ui, lp, fmt } = useI18n(Astro.url);
 const categories = (await getProductsByCategory(lang)).map((g) => g.category);
 const n = ui.header.nav;
@@ -92,7 +87,7 @@ const parentUrl = site.facts.parentUrl;
         <li><a href={lp('/privacy/')}>{ui.footer.privacy}</a></li>
         <li><a href={lp('/cookies/')}>{ui.footer.cookies}</a></li>
         {/* Reopens the cookie banner (src/scripts/analytics.ts shows it; useless without JS, so hidden until then). */}
-        {site.analytics.ga4 && !noConsent && <li hidden data-consent-settings><button type="button" class="footer-linkbtn" data-consent-open>{ui.consent.settings}</button></li>}
+        {site.analytics.ga4 && <li hidden data-consent-settings><button type="button" class="footer-linkbtn" data-consent-open>{ui.consent.settings}</button></li>}
         <li><a href="#top">{ui.footer.backToTop}</a></li>
       </ul>
     </div>

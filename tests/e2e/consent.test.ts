@@ -244,10 +244,9 @@ describe('cookie banner', () => {
     await ctx.close();
   });
 
-  it('the 404 page has no banner', async () => {
+  it('the 404 page shows the banner too', async () => {
     const { page } = await visit('/no-such-page/');
-    await settle(page);
-    expect(await page.$(BANNER)).toBeNull();
+    await page.waitForSelector(`${BANNER}:not([hidden])`);
     await page.context().close();
   });
 });

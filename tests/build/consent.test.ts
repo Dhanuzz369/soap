@@ -54,9 +54,10 @@ describe('cookie banner markup', () => {
     expect(cls[0]).toBe(cls[1]);
   });
 
-  it('the 404 page has no banner and no Cookie settings button', () => {
+  it('the 404 page has the banner and the Cookie settings button too (GA then records broken addresses)', () => {
     const html = readFileSync(join(DIST, '404.html'), 'utf8');
-    expect(html).not.toContain('data-consent');
+    expect(html).toContain('data-consent-choice="granted"');
+    expect(html).toContain('data-consent-open');
   });
 
   it('no page loads Google’s tag in its HTML (gtag.js comes only from the script, after Accept)', () => {
