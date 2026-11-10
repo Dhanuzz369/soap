@@ -62,8 +62,12 @@ export function currentChoice(): Choice | null {
   }
 }
 
-/** The site asks before analytics in this browser's time zone (src/lib/consent-regions.ts). */
+/**
+ * The site asks before analytics in this browser's time zone (src/lib/consent-regions.ts), and also
+ * wherever the browser cannot keep a choice: a Reject there would be forgotten on the next page.
+ */
 function askFirst(): boolean {
+  if (!storage()) return true;
   try {
     return asksFirst(Intl.DateTimeFormat().resolvedOptions().timeZone);
   } catch {
@@ -71,8 +75,17 @@ function askFirst(): boolean {
   }
 }
 
+/** A choice was stored at some point, even one that has since expired or cannot be read. */
+function hadRecord(): boolean {
+  try {
+    return storage()?.getItem(CONSENT_KEY) != null;
+  } catch {
+    return false;
+  }
+}
+
 /** The choice in effect: the visitor's own, or analytics by default where the site does not ask first. */
-const inEffect = (): Choice | null => effectiveChoice(currentChoice(), askFirst());
+const inEffect = (): Choice | null => effectiveChoice(currentChoice(), askFirst(), hadRecord());
 
 /** An ID is set (the banner exists), the build is launched, and this is the live domain. */
 function enabled(): boolean {
@@ -230,7 +243,7 @@ export function initConsent(): void {
   );
   listen();
   const stored = currentChoice();
-  const choice = effectiveChoice(stored, askFirst());
+  const choice = effectiveChoice(stored, askFirst(), hadRecord());
   if (choice === null) show(el);
   else if (choice === 'granted' && enabled()) loadGtag(el.dataset.ga ?? '', stored === null);
 }

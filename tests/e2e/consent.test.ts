@@ -278,6 +278,24 @@ describe('analytics by default outside the ask-first countries (src/lib/consent-
     await page.context().close();
   });
 
+  it('India, a rejection older than 12 months: the banner asks again instead of turning analytics back on', async () => {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, timezoneId: 'Asia/Kolkata' });
+    const ga = await blockAnalytics(ctx);
+    const page = await ctx.newPage();
+    const old = new Date(Date.now() - 400 * 24 * 3600 * 1000).toISOString();
+    await page.addInitScript((at) => localStorage.setItem('gb-consent', JSON.stringify({ v: 1, analytics: 'denied', at })), old);
+    await page.goto(BASE + '/');
+    await page.waitForSelector(`${BANNER}:not([hidden])`);
+    expect(ga).toEqual([]);
+    await ctx.close();
+  });
+
+  it('a time zone that hides the place (UTC) is asked first', async () => {
+    const { page } = await visit('/', { timezoneId: 'UTC' });
+    await page.waitForSelector(`${BANNER}:not([hidden])`);
+    await page.context().close();
+  });
+
   it('the countries of the site’s other languages are asked first: Brazil, Saudi Arabia, Kenya, Vietnam', async () => {
     for (const timezoneId of ['America/Sao_Paulo', 'Asia/Riyadh', 'Africa/Nairobi', 'Asia/Ho_Chi_Minh']) {
       const { page } = await visit('/', { timezoneId });

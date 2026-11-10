@@ -152,9 +152,8 @@ describe('where the site asks first (src/lib/consent-regions.ts)', () => {
       expect(asksFirst(tz), tz).toBe(false);
     }
   });
-  it('asks when the browser gives no time zone', () => {
-    expect(asksFirst(undefined)).toBe(true);
-    expect(asksFirst('')).toBe(true);
+  it('asks when the browser gives no time zone, or one that hides the place (privacy browsers say UTC)', () => {
+    for (const tz of [undefined, '', 'UTC', 'Etc/UTC', 'Etc/GMT', 'Etc/GMT+3', 'GMT', 'Universal', 'Zulu']) expect(asksFirst(tz), String(tz)).toBe(true);
   });
   it('lists plain ISO country codes, each once; the generated time zones cover every country language', () => {
     expect(CONSENT_COUNTRIES.every((c) => /^[A-Z]{2}$/.test(c))).toBe(true);
@@ -170,6 +169,10 @@ describe('where the site asks first (src/lib/consent-regions.ts)', () => {
     expect(effectiveChoice('granted', true)).toBe('granted');
     expect(effectiveChoice(null, true)).toBeNull();
     expect(effectiveChoice(null, false)).toBe('granted');
+  });
+  it('never by default once a choice was recorded, even an expired one: the banner asks again', () => {
+    expect(effectiveChoice(null, false, true)).toBeNull();
+    expect(effectiveChoice('denied', false, true)).toBe('denied');
   });
   it('by default, Google still keeps analytics storage denied for every ask-first country (by address)', () => {
     const [region, rest] = consentDefaults(true);

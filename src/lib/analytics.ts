@@ -56,15 +56,20 @@ export function parseConsent(raw: string | null | undefined, now: Date): Choice 
 const ASK_ZONES = new Set(CONSENT_TIMEZONES);
 /**
  * The site asks before analytics for a browser in this time zone: Europe/* and every zone of an
- * ask-first country. No time zone at all also asks (the safe side).
+ * ask-first country. No time zone, or one that hides the place (UTC, GMT, Etc/*, as privacy
+ * browsers report), also asks: the safe side.
  */
 export function asksFirst(timeZone: string | undefined): boolean {
-  return !timeZone || timeZone.startsWith('Europe/') || ASK_ZONES.has(timeZone);
+  return !timeZone || /^(UTC|GMT|UCT|Zulu|Universal|Greenwich|Etc\/)/.test(timeZone) || timeZone.startsWith('Europe/') || ASK_ZONES.has(timeZone);
 }
 
-/** The choice in effect: the visitor's own, else "granted" by default where the site does not ask first. */
-export function effectiveChoice(stored: Choice | null, askFirst: boolean): Choice | null {
-  return stored ?? (askFirst ? null : 'granted');
+/**
+ * The choice in effect: the visitor's own, else "granted" by default where the site does not ask
+ * first. Never by default once a choice was recorded, even an expired or unreadable one (a
+ * rejection from 13 months ago must not turn analytics back on silently: the banner asks again).
+ */
+export function effectiveChoice(stored: Choice | null, askFirst: boolean, hadRecord = false): Choice | null {
+  return stored ?? (askFirst || hadRecord ? null : 'granted');
 }
 
 /** The page is served from the site's own domain (site.url), not a preview or a local server. */
