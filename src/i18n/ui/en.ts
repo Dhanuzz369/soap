@@ -250,7 +250,8 @@ const en = {
    * "by browsing you agree", nothing that pushes one answer. `text` must stay literally true:
    * Google Analytics cookies only, to see which pages and products buyers look at; no advertising;
    * nothing about the visitor is sold. `policy` is the title of the Cookie Policy page (a link).
-   * `currentGranted` / `currentDenied` show the choice when the banner is reopened.
+   * `currentGranted` / `currentDenied` show the choice when the banner is reopened; `currentDefault`
+   * when the visitor has not chosen and analytics runs by default where they are.
    */
   consent: {
     aria: 'Cookie choice',
@@ -261,6 +262,7 @@ const en = {
     settings: 'Cookie settings',
     currentGranted: 'Your current choice: accepted.',
     currentDenied: 'Your current choice: rejected.',
+    currentDefault: 'Analytics is on by default where you are. Reject turns it off and deletes its cookies.',
   },
 
   cards: {

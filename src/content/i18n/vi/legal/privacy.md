@@ -1,8 +1,8 @@
 ---
-sourceHash: "93035003296f"
+sourceHash: "e34c3c82e1ca"
 title: "Chính sách quyền riêng tư"
 description: "Cách GoodBiz Hygiene, đơn vị trực thuộc GoodBiz Global, thu thập, sử dụng và bảo vệ dữ liệu cá nhân từ trang web và yêu cầu, và cách thực hiện quyền của bạn."
-updated: 2026-11-01
+updated: 2026-11-10
 ---
 
 ## Chúng tôi là ai
@@ -32,15 +32,15 @@ Trang web này, và các yêu cầu bạn gửi cho chúng tôi qua biểu mẫu
 - *Khi nào được lưu:* thông tin liên hệ của bạn được lưu khi bạn chạm vào Tiếp ở bước đầu tiên, để chúng tôi có thể trả lời ngay cả khi bạn không hoàn tất. Mỗi bước tiếp theo bổ sung câu trả lời của bạn, và nút gửi sẽ hoàn tất yêu cầu.
 - *Qua email, WhatsApp hoặc điện thoại:* những gì bạn chọn gửi cho chúng tôi.
 - *Dữ liệu kỹ thuật:* nhà cung cấp dịch vụ lưu trữ của chúng tôi xử lý địa chỉ IP, loại trình duyệt và các trang được yêu cầu, để cung cấp trang web và giữ an toàn cho trang. Chúng tôi không dùng dữ liệu này để nhận diện bạn.
-- *Nếu bạn đồng ý cookie phân tích:* Google Analytics ghi nhận cách trang web được sử dụng: các trang bạn xem, các sản phẩm và dòng sản phẩm bạn xem hoặc hỏi giá, các bước của biểu mẫu yêu cầu bạn hoàn thành, các liên kết liên hệ bạn nhấp vào (WhatsApp, email, điện thoại), ngôn ngữ bạn chuyển sang, trang web bạn đến từ đó, loại thiết bị và trình duyệt, và vị trí gần đúng của bạn (quốc gia và thành phố) mà Google suy ra từ địa chỉ IP. Google Analytics không ghi lại hay lưu trữ địa chỉ IP. Google Analytics không bao giờ nhận tên, công ty, địa chỉ email, số điện thoại hay ghi chú của bạn.
+- *Google Analytics (sau khi bạn đồng ý, hoặc theo mặc định ở những nơi chúng tôi không hỏi trước; xem [Chính sách cookie](/cookies/) của chúng tôi):* Google Analytics ghi nhận cách trang web được sử dụng: các trang bạn xem, các sản phẩm và dòng sản phẩm bạn xem hoặc hỏi giá, các bước của biểu mẫu yêu cầu bạn hoàn thành, các liên kết liên hệ bạn nhấp vào (WhatsApp, email, điện thoại), ngôn ngữ bạn chuyển sang, trang web bạn đến từ đó, loại thiết bị và trình duyệt, và vị trí gần đúng của bạn (quốc gia và thành phố) mà Google suy ra từ địa chỉ IP. Google Analytics không ghi lại hay lưu trữ địa chỉ IP. Google Analytics không bao giờ nhận tên, công ty, địa chỉ email, số điện thoại hay ghi chú của bạn.
 
-Chúng tôi không thu thập thông tin thẻ thanh toán hay giấy tờ tùy thân qua trang web này. Chúng tôi không dùng trình theo dõi quảng cáo hay mạng xã hội. Chúng tôi chỉ dùng cookie cho Google Analytics, và chỉ khi bạn đồng ý.
+Chúng tôi không thu thập thông tin thẻ thanh toán hay giấy tờ tùy thân qua trang web này. Chúng tôi không dùng trình theo dõi quảng cáo hay mạng xã hội. Chúng tôi chỉ dùng cookie cho Google Analytics.
 
 ## Vì sao chúng tôi sử dụng
 
 - Để trả lời yêu cầu của bạn, chuẩn bị báo giá và hàng mẫu, và theo dõi yêu cầu đó.
 - Nếu bạn trở thành khách hàng, để thực hiện đơn hàng của bạn và lưu giữ hồ sơ kinh doanh, thuế và xuất khẩu theo quy định của pháp luật.
-- Nếu bạn đồng ý cookie phân tích, để biết người mua xem những trang và sản phẩm nào, và để cải thiện trang web.
+- Thông qua Google Analytics, để biết người mua xem những trang và sản phẩm nào, và để cải thiện trang web.
 
 Chúng tôi không bán dữ liệu cá nhân của bạn, không thêm bạn vào danh sách gửi thư, và không dùng dữ liệu để lập hồ sơ hay ra quyết định tự động.
 
@@ -48,7 +48,8 @@ Chúng tôi không bán dữ liệu cá nhân của bạn, không thêm bạn v�
 
 - *Ấn Độ:* bạn tự nguyện cung cấp dữ liệu cá nhân cho chúng tôi vì một mục đích cụ thể (trả lời yêu cầu của bạn), và chúng tôi chỉ dùng dữ liệu cho mục đích đó (section 7(a) của Digital Personal Data Protection Act, 2023). Nếu bạn cho chúng tôi biết bạn không muốn chúng tôi sử dụng dữ liệu nữa, chúng tôi sẽ ngừng sử dụng và xóa dữ liệu, trừ trường hợp pháp luật yêu cầu chúng tôi lưu giữ.
 - *EU và Vương quốc Anh:* thực hiện các bước theo yêu cầu của bạn trước khi giao kết hợp đồng (Điều 6(1)(b) GDPR), lợi ích hợp pháp của chúng tôi trong việc trả lời các yêu cầu kinh doanh (Điều 6(1)(f)), và, đối với hồ sơ kinh doanh, nghĩa vụ pháp lý của chúng tôi (Điều 6(1)(c)).
-- *Google Analytics, ở mọi nơi:* sự đồng ý của bạn (section 6 của Digital Personal Data Protection Act, 2023; Điều 6(1)(a) GDPR). Bạn đồng ý bằng nút Đồng ý trong biểu ngữ cookie và có thể rút lại dễ dàng như vậy, bất cứ lúc nào, bằng Cài đặt cookie ở cuối mỗi trang. Việc rút lại không ảnh hưởng đến việc xử lý đã thực hiện trước đó.
+- *Google Analytics, tại EU, EEA, Vương quốc Anh, Thụy Sĩ và các quốc gia khác nơi chúng tôi hỏi trước (liệt kê trong [Chính sách cookie](/cookies/) của chúng tôi):* sự đồng ý của bạn (Điều 6(1)(a) GDPR và các luật tương đương tại địa phương). Bạn đồng ý bằng nút Đồng ý trong biểu ngữ cookie và có thể rút lại dễ dàng như vậy, bất cứ lúc nào, bằng Cài đặt cookie ở cuối mỗi trang. Việc rút lại không ảnh hưởng đến việc xử lý đã thực hiện trước đó.
+- *Google Analytics, tại các quốc gia khác, bao gồm Ấn Độ:* lợi ích của chúng tôi trong việc biết người mua sử dụng trang web như thế nào, giới hạn ở việc đo lường được mô tả ở trên, kèm theo thông báo này và cách tắt nó bất cứ lúc nào (Cài đặt cookie ở cuối mỗi trang), sau đó chúng tôi xóa các cookie của nó trên tên miền của chúng tôi.
 
 ## Ai xử lý dữ liệu thay mặt chúng tôi
 
@@ -56,7 +57,7 @@ Chúng tôi không bán dữ liệu cá nhân của bạn, không thêm bạn v�
 - *Vercel Inc.* lưu trữ (hosting) trang web này.
 - *WhatsApp (Meta)* chỉ được sử dụng nếu bạn chọn nhắn tin cho chúng tôi trên WhatsApp; chính sách quyền riêng tư của chính WhatsApp áp dụng cho cuộc trò chuyện đó.
 - *Google Dịch* chỉ được sử dụng nếu bạn chọn tùy chọn dịch trong menu ngôn ngữ; khi đó địa chỉ của trang được gửi đến Google.
-- *Google Analytics* (Google LLC; với khách truy cập từ EU và Vương quốc Anh là Google Ireland Limited) đo lường cách trang web được sử dụng, chỉ khi bạn đồng ý cookie phân tích. Tín hiệu Google và các tính năng quảng cáo đều tắt.
+- *Google Analytics* (Google LLC; với khách truy cập từ EU và Vương quốc Anh là Google Ireland Limited) đo lường cách trang web được sử dụng: ở những nơi chúng tôi hỏi trước, chỉ khi bạn đồng ý cookie phân tích. Tín hiệu Google và các tính năng quảng cáo đều tắt.
 
 Nếu bạn đặt hàng, chúng tôi chỉ chia sẻ những thông tin cần thiết để hoàn tất đơn hàng (ví dụ tên công ty và thông tin giao hàng của bạn) với nhà sản xuất, công ty giao nhận, đại lý hải quan, tổ chức giám định hoặc ngân hàng liên quan đến đơn hàng đó. Chúng tôi cũng công bố dữ liệu khi pháp luật yêu cầu.
 
@@ -97,7 +98,7 @@ Trang web này dành cho doanh nghiệp. Trang không dành cho người dưới
 
 ## Cookie
 
-Chúng tôi chỉ dùng cookie cho Google Analytics, và chỉ khi bạn đồng ý trong biểu ngữ cookie. Xem [Chính sách cookie](/cookies/) của chúng tôi.
+Chúng tôi chỉ dùng cookie cho Google Analytics: ở những nơi chúng tôi hỏi trước, chỉ khi bạn đồng ý trong biểu ngữ cookie; ở những nơi khác, Google Analytics chạy theo mặc định và bạn có thể tắt nó bằng Cài đặt cookie. Xem [Chính sách cookie](/cookies/) của chúng tôi.
 
 ## Thay đổi
 

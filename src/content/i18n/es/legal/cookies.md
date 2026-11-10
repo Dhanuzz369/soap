@@ -1,17 +1,17 @@
 ---
-sourceHash: "6f66747a78ca"
+sourceHash: "180bf9761d85"
 title: "Política de cookies"
-description: "Cookies de Google Analytics solo si las acepta, sin rastreadores publicitarios. Qué guarda el sitio en su navegador, para qué, cuánto tiempo y cómo cambiarlo."
-updated: 2026-11-01
+description: "Cookies de Google Analytics, con consulta previa si la ley lo exige; sin rastreadores de anuncios. Qué guarda el sitio, para qué, cuánto tiempo, cómo cambiarlo."
+updated: 2026-11-10
 ---
 
-## Cookies de analítica, solo si las acepta
+## Cookies de analítica, y dónde preguntamos primero
 
-Este sitio web usa cookies solo para Google Analytics, y solo si usted las acepta en el aviso de cookies. Nos muestran qué páginas y productos consultan los compradores, para que podamos mejorar el sitio. Mientras no las acepte, el código de Google Analytics no se carga en absoluto y no se instala ninguna cookie. No usamos rastreadores publicitarios ni de redes sociales, ni contenido incrustado de otros sitios web, como vídeos o mapas. Las fuentes y las imágenes se sirven desde nuestro propio sitio web.
+Este sitio web usa cookies solo para Google Analytics. Nos muestran qué páginas y productos consultan los compradores, para que podamos mejorar el sitio. En la UE, el EEE, el Reino Unido y Suiza, y en los países donde se habla alguno de los otros idiomas de este sitio web (por ejemplo, los países árabes, los países francófonos, hispanohablantes y lusófonos, Rusia, China, Turquía, Indonesia, Kenia, Tanzania, Uganda y Vietnam), preguntamos primero: mientras no las acepte, el código de Google Analytics no se carga en absoluto y no se instala ninguna cookie. En otros países, como la India y los Estados Unidos, Google Analytics funciona por defecto, y puede desactivarlo en cualquier momento. Sabemos dónde se encuentra por la zona horaria de su navegador, y Google también comprueba su ubicación aproximada, de modo que a un visitante de un país donde preguntamos primero no se le mide sin que haya elegido. No usamos rastreadores publicitarios ni de redes sociales, ni contenido incrustado de otros sitios web, como vídeos o mapas. Las fuentes y las imágenes se sirven desde nuestro propio sitio web.
 
 ## Qué guardamos en su navegador
 
-Algunas funciones guardan información en el almacenamiento propio de su navegador. Se queda en su dispositivo: no se envía nada ni a nosotros ni a nadie, salvo que usted envíe una consulta. Si acepta las cookies de analítica, Google Analytics instala además en nuestro dominio las dos cookies de las últimas filas de la tabla, y su navegador se las envía con cada página que visita.
+Algunas funciones guardan información en el almacenamiento propio de su navegador. Se queda en su dispositivo: no se envía nada ni a nosotros ni a nadie, salvo que usted envíe una consulta. Mientras Google Analytics funciona (después de que usted acepte, o por defecto donde no preguntamos primero), instala además en nuestro dominio las dos cookies de las últimas filas de la tabla, y su navegador se las envía con cada página que visita.
 
 | Qué recuerda | Para qué | Cuánto tiempo |
 | --- | --- | --- |
@@ -20,13 +20,13 @@ Algunas funciones guardan información en el almacenamiento propio de su navegad
 | Un número de consulta aleatorio (`goodbiz-enquiry-lead`). Se crea al abrir la página de contacto. | Para que los pasos de una misma consulta, y una recarga de la página, se mantengan juntos como una sola consulta. | Hasta que cierre la pestaña. Se crea un número nuevo después de enviar una consulta, o cuando abre el formulario desde un enlace con otros productos. |
 | Sus respuestas del primer paso del formulario de consulta: nombre, empresa, correo electrónico y teléfono (`goodbiz-enquiry-contact`). Se guardan cuando pulsa Siguiente. | Para que una recarga de la página las conserve y no tenga que escribirlas de nuevo. | Hasta que cierre la pestaña. Se eliminan cuando su consulta se envía correctamente. |
 | Los productos con los que empezó la consulta, cuando abrió el formulario desde el enlace de un producto (`goodbiz-enquiry-products`). | Para que un enlace con otros productos inicie una consulta nueva en lugar de modificar la anterior. | Hasta que cierre la pestaña. |
-| Su respuesta en el aviso de cookies, Aceptar o Rechazar, y cuándo la dio (`gb-consent`). Se guarda cuando usted elige. | Para que el aviso no le pregunte en cada página, y para que Google Analytics solo funcione si usted aceptó. | 12 meses; después el aviso vuelve a preguntar. Puede cambiarla en cualquier momento con Configuración de cookies. |
-| Un número aleatorio que distingue su navegador de los demás (`_ga`), una cookie de Google Analytics en nuestro dominio. Solo se instala después de que usted acepte. | Para que Google Analytics pueda contar visitantes y visitas repetidas sin saber quién es usted. | Hasta 2 años (ajuste de Google). Se borra si más tarde rechaza con Configuración de cookies. |
-| El estado de su visita actual (`_ga_FWEG9Y5FVS`), una cookie de Google Analytics en nuestro dominio. Solo se instala después de que usted acepte. | Para que las páginas que ve en una visita cuenten como una sola visita. | Hasta 2 años (ajuste de Google). Se borra si más tarde rechaza con Configuración de cookies. |
+| Su respuesta en el aviso de cookies, Aceptar o Rechazar, y cuándo la dio (`gb-consent`). Se guarda cuando usted elige. | Para que el aviso no le pregunte en cada página, y para que Google Analytics siga su elección. | 12 meses; después el aviso vuelve a preguntar. Puede cambiarla en cualquier momento con Configuración de cookies. |
+| Un número aleatorio que distingue su navegador de los demás (`_ga`), una cookie de Google Analytics en nuestro dominio. Se instala después de que usted acepte, o por defecto donde no preguntamos primero. | Para que Google Analytics pueda contar visitantes y visitas repetidas sin saber quién es usted. | Hasta 2 años (ajuste de Google). Se borra si más tarde rechaza con Configuración de cookies. |
+| El estado de su visita actual (`_ga_FWEG9Y5FVS`), una cookie de Google Analytics en nuestro dominio. Se instala después de que usted acepte, o por defecto donde no preguntamos primero. | Para que las páginas que ve en una visita cuenten como una sola visita. | Hasta 2 años (ajuste de Google). Se borra si más tarde rechaza con Configuración de cookies. |
 
 ## Su elección, y cómo cambiarla
 
-En su primera visita, un aviso le pregunta si acepta las cookies de Google Analytics. Aceptar y Rechazar son opciones equivalentes, y rechazar no cambia nada más en el sitio: todas las páginas y el formulario de consulta funcionan igual. Puede cambiar de opinión en cualquier momento con Configuración de cookies, al pie de cada página. Si retira su consentimiento, Google Analytics se detiene de inmediato y borramos sus cookies en nuestro dominio. Volvemos a preguntarle al cabo de 12 meses. Google Analytics está configurado sin funciones publicitarias: las señales de Google y la personalización de anuncios están desactivadas, y no se vende nada sobre usted. Qué recibe Google Analytics y cuánto tiempo se conserva se explica en nuestra [Política de privacidad](/privacy/).
+Donde preguntamos primero, en su primera visita un aviso le pregunta si acepta las cookies de Google Analytics, y vuelve a preguntarle al cabo de 12 meses. Aceptar y Rechazar son opciones equivalentes, y rechazar no cambia nada más en el sitio: todas las páginas y el formulario de consulta funcionan igual. Donde Google Analytics funciona por defecto, no aparece ningún aviso. En todos los casos, puede cambiar de opinión en cualquier momento con Configuración de cookies, al pie de cada página. Si rechaza, Google Analytics se detiene de inmediato y borramos sus cookies en nuestro dominio. Google Analytics está configurado sin funciones publicitarias: las señales de Google y la personalización de anuncios están desactivadas, y no se vende nada sobre usted. Qué recibe Google Analytics y cuánto tiempo se conserva se explica en nuestra [Política de privacidad](/privacy/).
 
 ## Cómo borrarlo
 

@@ -10,11 +10,17 @@
  *   equal to the hostname of site.url. Previews, *.vercel.app, local builds and tests never send.
  * - No personal data: every event's parameters pass an allow-list of names and values (known keys
  *   or plain slugs). Names, emails, phones, companies, notes and the lead id can never get through.
- * - Basic consent mode: gtag.js is not requested at all before Accept; advertising is always denied.
+ * - Where the site asks first (src/lib/consent-regions.ts: Europe and the countries of the site's
+ *   other languages, told apart by the browser's time zone): gtag.js is not requested at all before
+ *   Accept. Everywhere else analytics runs by default, with Google also keeping storage denied for
+ *   visitors whose address is in an ask-first country (its `region` check), and "Cookie settings"
+ *   turns it off. Advertising is always denied.
  * - Page addresses are cleaned before Google sees them (cleanUrl): only product slugs and campaign
  *   tags stay in the query, so ?message= from the quote card never leaves the page.
  */
 import { LOCALE_CODES } from '../i18n/locales.ts';
+import { CONSENT_COUNTRIES } from './consent-regions.ts';
+import { CONSENT_TIMEZONES } from './consent-timezones.ts';
 
 export const CONSENT_KEY = 'gb-consent';
 export const CONSENT_VERSION = 1;
@@ -45,6 +51,20 @@ export function parseConsent(raw: string | null | undefined, now: Date): Choice 
   const expires = new Date(made);
   expires.setUTCMonth(expires.getUTCMonth() + CONSENT_MONTHS);
   return now.getTime() <= expires.getTime() ? analytics : null;
+}
+
+const ASK_ZONES = new Set(CONSENT_TIMEZONES);
+/**
+ * The site asks before analytics for a browser in this time zone: Europe/* and every zone of an
+ * ask-first country. No time zone at all also asks (the safe side).
+ */
+export function asksFirst(timeZone: string | undefined): boolean {
+  return !timeZone || timeZone.startsWith('Europe/') || ASK_ZONES.has(timeZone);
+}
+
+/** The choice in effect: the visitor's own, else "granted" by default where the site does not ask first. */
+export function effectiveChoice(stored: Choice | null, askFirst: boolean): Choice | null {
+  return stored ?? (askFirst ? null : 'granted');
 }
 
 /** The page is served from the site's own domain (site.url), not a preview or a local server. */
@@ -140,13 +160,25 @@ export function fallbackReason(configured: boolean, result: string): 'no_endpoin
 }
 
 // ---------- the Google tag ----------
-/** Consent Mode v2, set before gtag.js loads (which happens only after Accept). */
+/** Consent Mode v2 for a visitor who accepted: advertising always denied, analytics granted. */
 export const CONSENT_DEFAULTS = {
   ad_storage: 'denied',
   ad_user_data: 'denied',
   ad_personalization: 'denied',
   analytics_storage: 'granted',
 } as const;
+
+/**
+ * The gtag('consent', 'default', …) calls, set before gtag.js loads. After Accept: CONSENT_DEFAULTS.
+ * Analytics by default (no choice, not an ask-first time zone): also analytics denied for every
+ * ask-first country, which Google applies by the visitor's address, so a visitor from those
+ * countries is never measured without a choice even if their time zone says otherwise.
+ */
+export function consentDefaults(byDefault: boolean): Record<string, unknown>[] {
+  return byDefault
+    ? [{ ...CONSENT_DEFAULTS, analytics_storage: 'denied', region: [...CONSENT_COUNTRIES] }, { ...CONSENT_DEFAULTS }]
+    : [{ ...CONSENT_DEFAULTS }];
+}
 
 /** gtag('config', id, …): page views on; Google signals and ad personalisation off. */
 export const GTAG_CONFIG = {
@@ -208,8 +240,9 @@ export function gtagSrc(id: string): string {
 export type Gtag = (...args: unknown[]) => void;
 
 /**
- * track(name, params): sends an event only when analytics is enabled on this host AND the visitor
- * has accepted, with the parameters cleaned. Never throws. Each check is read at call time, so a
+ * track(name, params): sends an event only when analytics is enabled on this host AND consent is in
+ * effect (the visitor accepted, or analytics runs by default where they are), with the parameters
+ * cleaned. Never throws. Each check is read at call time, so a
  * withdrawal stops sending at once.
  */
 export function createTracker(o: { enabled: () => boolean; consent: () => Choice | null; gtag: () => Gtag | undefined }) {

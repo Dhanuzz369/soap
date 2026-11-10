@@ -97,8 +97,8 @@ describe.each([
   });
 
   it('shows the last-updated date', () => {
-    expect(mainText(page(path))).toContain('Last updated: 1 November 2026');
-    expect(page(path)).toContain('<time datetime="2026-11-01">');
+    expect(mainText(page(path))).toContain('Last updated: 10 November 2026');
+    expect(page(path)).toContain('<time datetime="2026-11-10">');
   });
 
   it('keeps every sentence of the English final copy', () => {

@@ -12,10 +12,13 @@ import {
   CONSENT_DEFAULTS,
   GTAG_CONFIG,
   analyticsEnabled,
+  asksFirst,
   cleanUrl,
+  consentDefaults,
   consentRecord,
   contactMethod,
   createTracker,
+  effectiveChoice,
   enquirySentParams,
   expireCookies,
   fallbackReason,
@@ -28,6 +31,8 @@ import {
   sanitizeParams,
   stepEvent,
 } from '../../src/lib/analytics';
+import { CONSENT_COUNTRIES, CONSENT_COUNTRIES_BY_REASON } from '../../src/lib/consent-regions';
+import { CONSENT_TIMEZONES } from '../../src/lib/consent-timezones';
 
 const NOW = new Date('2026-11-01T10:00:00.000Z');
 const LIVE = 'www.goodbizhygiene.com';
@@ -136,8 +141,46 @@ describe('contact links', () => {
   });
 });
 
+describe('where the site asks first (src/lib/consent-regions.ts)', () => {
+  it('asks in Europe and in the countries of the other languages, by time zone', () => {
+    for (const tz of ['Europe/Berlin', 'Europe/London', 'Europe/Istanbul', 'Europe/Moscow', 'Atlantic/Canary', 'Asia/Nicosia', 'Asia/Riyadh', 'Asia/Dubai', 'Africa/Cairo', 'Africa/Casablanca', 'Africa/Dakar', 'America/Toronto', 'America/Mexico_City', 'America/Sao_Paulo', 'America/Buenos_Aires', 'America/Argentina/Buenos_Aires', 'Asia/Shanghai', 'Asia/Singapore', 'Asia/Almaty', 'Asia/Jakarta', 'Africa/Nairobi', 'Africa/Dar_es_Salaam', 'Africa/Kampala', 'Asia/Saigon', 'Asia/Ho_Chi_Minh', 'Indian/Reunion']) {
+      expect(asksFirst(tz), tz).toBe(true);
+    }
+  });
+  it('runs by default elsewhere: India, the USA, Australia, …', () => {
+    for (const tz of ['Asia/Calcutta', 'Asia/Kolkata', 'America/New_York', 'America/Los_Angeles', 'Australia/Sydney', 'Asia/Tokyo', 'Africa/Lagos', 'Asia/Karachi', 'Asia/Dhaka']) {
+      expect(asksFirst(tz), tz).toBe(false);
+    }
+  });
+  it('asks when the browser gives no time zone', () => {
+    expect(asksFirst(undefined)).toBe(true);
+    expect(asksFirst('')).toBe(true);
+  });
+  it('lists plain ISO country codes, each once; the generated time zones cover every country language', () => {
+    expect(CONSENT_COUNTRIES.every((c) => /^[A-Z]{2}$/.test(c))).toBe(true);
+    expect(new Set(CONSENT_COUNTRIES).size).toBe(CONSENT_COUNTRIES.length);
+    expect(CONSENT_COUNTRIES).not.toContain('IN');
+    expect(CONSENT_COUNTRIES).not.toContain('US');
+    for (const c of ['DE', 'GB', 'CH', 'TR', 'SA', 'AE', 'BR', 'KE', 'VN', 'CN', 'ID', 'RU', 'CA']) expect(CONSENT_COUNTRIES, c).toContain(c);
+    expect(Object.keys(CONSENT_COUNTRIES_BY_REASON).sort()).toEqual(['ar', 'de', 'es', 'europe', 'fr', 'id', 'pt', 'ru', 'sw', 'tr', 'vi', 'zh']);
+    expect(CONSENT_TIMEZONES.some((z) => z.startsWith('Europe/'))).toBe(false);
+  });
+  it('the choice in effect: the visitor’s own first, else granted only where the site does not ask first', () => {
+    expect(effectiveChoice('denied', false)).toBe('denied');
+    expect(effectiveChoice('granted', true)).toBe('granted');
+    expect(effectiveChoice(null, true)).toBeNull();
+    expect(effectiveChoice(null, false)).toBe('granted');
+  });
+  it('by default, Google still keeps analytics storage denied for every ask-first country (by address)', () => {
+    const [region, rest] = consentDefaults(true);
+    expect(region).toEqual({ ...CONSENT_DEFAULTS, analytics_storage: 'denied', region: [...CONSENT_COUNTRIES] });
+    expect(rest).toEqual(CONSENT_DEFAULTS);
+    expect(consentDefaults(false)).toEqual([CONSENT_DEFAULTS]);
+  });
+});
+
 describe('Google tag settings', () => {
-  it('denies every advertising purpose and grants analytics storage only after Accept', () => {
+  it('denies every advertising purpose, and grants analytics storage after Accept', () => {
     expect(CONSENT_DEFAULTS).toEqual({ ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'granted' });
   });
   it('sends page views, with Google signals and ad personalisation off', () => {
@@ -235,7 +278,7 @@ describe('gtag.js loads only on the consent path', () => {
     const hits = walk(join(process.cwd(), 'src')).filter((f) => /googletagmanager/.test(readFileSync(f, 'utf8')));
     expect(hits.map((f) => f.slice(process.cwd().length + 1))).toEqual(['src/lib/analytics.ts']);
   });
-  it('gtagSrc is used only by loadGtag in src/scripts/analytics.ts, which runs only after consent is granted', () => {
+  it('gtagSrc is used only by loadGtag in src/scripts/analytics.ts, which runs only when consent is granted (by Accept or by default)', () => {
     const users = walk(join(process.cwd(), 'src')).filter((f) => !f.endsWith('src/lib/analytics.ts') && /\bgtagSrc\b/.test(readFileSync(f, 'utf8')));
     expect(users.map((f) => f.slice(process.cwd().length + 1))).toEqual(['src/scripts/analytics.ts']);
     const src = readFileSync(join(process.cwd(), 'src/scripts/analytics.ts'), 'utf8');

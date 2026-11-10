@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1dd8935a6a83';
+export const sourceHash = '799507f391ac';
 
 const id: UiPartial = {
   meta: {
@@ -233,6 +233,7 @@ const id: UiPartial = {
     settings: 'Pengaturan cookie',
     currentGranted: 'Pilihan Anda saat ini: diterima.',
     currentDenied: 'Pilihan Anda saat ini: ditolak.',
+    currentDefault: 'Di lokasi Anda, analitik aktif secara bawaan. Pilih Tolak untuk mematikannya dan menghapus cookie-nya.',
   },
 
   cards: {

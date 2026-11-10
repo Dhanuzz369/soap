@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1dd8935a6a83';
+export const sourceHash = '799507f391ac';
 
 const ru: UiPartial = {
   meta: {
@@ -233,6 +233,7 @@ const ru: UiPartial = {
     settings: 'Настройки cookie',
     currentGranted: 'Ваш текущий выбор: приняты.',
     currentDenied: 'Ваш текущий выбор: отклонены.',
+    currentDefault: 'В вашем регионе аналитика включена по умолчанию. «Отклонить» отключает её и удаляет её cookie.',
   },
 
   cards: {

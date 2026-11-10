@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy"
 description: "How GoodBiz Hygiene, a unit of GoodBiz Global, collects, uses and protects personal data from this website and enquiries, and how to use your rights."
-updated: 2026-11-01
+updated: 2026-11-10
 ---
 
 ## Who we are
@@ -31,15 +31,15 @@ This website, and enquiries you send us through its form, by email, on WhatsApp 
 - *When it is saved:* your contact details are saved when you tap Next on the first step, so that we can reply even if you do not finish. Each later step adds your answers, and Send completes the enquiry.
 - *By email, WhatsApp or phone:* what you choose to send us.
 - *Technical data:* our hosting provider processes your IP address, browser type and the pages requested, to deliver the website and keep it secure. We do not use this to identify you.
-- *If you accept analytics cookies:* Google Analytics records how the website is used: the pages you visit, the products and ranges you look at or enquire about, which steps of the enquiry form you complete, the contact links you click (WhatsApp, email, phone), the language you switch to, the website you came from, your device and browser type, and your approximate location (country and city), which Google works out from your IP address. Google Analytics does not log or store IP addresses. It never receives your name, company, email address, phone number or notes.
+- *Google Analytics (after you accept, or by default where we do not ask first; see our [Cookie Policy](/cookies/)):* it records how the website is used: the pages you visit, the products and ranges you look at or enquire about, which steps of the enquiry form you complete, the contact links you click (WhatsApp, email, phone), the language you switch to, the website you came from, your device and browser type, and your approximate location (country and city), which Google works out from your IP address. Google Analytics does not log or store IP addresses. It never receives your name, company, email address, phone number or notes.
 
-We do not collect payment card details or identity documents through this website. We do not use advertising or social media trackers. We use cookies only for Google Analytics, and only if you accept them.
+We do not collect payment card details or identity documents through this website. We do not use advertising or social media trackers. We use cookies only for Google Analytics.
 
 ## Why we use it
 
 - To reply to your enquiry, prepare quotations and samples, and follow up on that enquiry.
 - If you become a customer, to carry out your orders and keep the business, tax and export records the law requires.
-- If you accept analytics cookies, to see which pages and products buyers look at, and to improve the website.
+- Through Google Analytics, to see which pages and products buyers look at, and to improve the website.
 
 We do not sell your personal data, add you to a mailing list, or use it for profiling or automated decisions.
 
@@ -47,7 +47,8 @@ We do not sell your personal data, add you to a mailing list, or use it for prof
 
 - *India:* you give us your personal data voluntarily for a specified purpose (replying to your enquiry), and we use it only for that purpose (section 7(a) of the Digital Personal Data Protection Act, 2023). If you tell us you no longer want us to use it, we will stop and delete it, except where the law requires us to keep it.
 - *EU and UK:* taking steps at your request before entering into a contract (Article 6(1)(b) GDPR), our legitimate interest in answering business enquiries (Article 6(1)(f)), and, for business records, our legal obligations (Article 6(1)(c)).
-- *Google Analytics, everywhere:* your consent (section 6 of the Digital Personal Data Protection Act, 2023; Article 6(1)(a) GDPR). You give it with Accept in the cookie banner and can withdraw it just as easily, at any time, with Cookie settings at the foot of every page. Withdrawing does not affect what was processed before.
+- *Google Analytics, in the EU, the EEA, the UK, Switzerland and the other countries where we ask first (listed in our [Cookie Policy](/cookies/)):* your consent (Article 6(1)(a) GDPR and the equivalent local laws). You give it with Accept in the cookie banner and can withdraw it just as easily, at any time, with Cookie settings at the foot of every page. Withdrawing does not affect what was processed before.
+- *Google Analytics, in other countries, including India:* our interest in knowing how buyers use the website, limited to the measurement described above, with this notice and a way to switch it off at any time (Cookie settings at the foot of every page), after which we delete its cookies on our domain.
 
 ## Who processes it for us
 
@@ -55,7 +56,7 @@ We do not sell your personal data, add you to a mailing list, or use it for prof
 - *Vercel Inc.* hosts this website.
 - *WhatsApp (Meta)* is used only if you choose to message us on WhatsApp; WhatsApp's own privacy policy applies to that chat.
 - *Google Translate* is used only if you choose the "translate" option in the language menu; the address of the page is then sent to Google.
-- *Google Analytics* (Google LLC; for visitors in the EU and UK, Google Ireland Limited) measures how the website is used, only if you accept analytics cookies. Google signals and advertising features are off.
+- *Google Analytics* (Google LLC; for visitors in the EU and UK, Google Ireland Limited) measures how the website is used: where we ask first, only if you accept analytics cookies. Google signals and advertising features are off.
 
 If you place an order, we share only the details needed to complete it (for example your company name and delivery details) with the manufacturer, freight forwarder, customs broker, inspection agency or bank involved in that order. We also disclose data where the law requires it.
 
@@ -96,7 +97,7 @@ This website is for businesses. It is not intended for anyone under 18, and we d
 
 ## Cookies
 
-We use cookies only for Google Analytics, and only if you accept them in the cookie banner. See our [Cookie Policy](/cookies/).
+We use cookies only for Google Analytics: where we ask first, only if you accept them in the cookie banner; elsewhere by default, and you can switch them off with Cookie settings. See our [Cookie Policy](/cookies/).
 
 ## Changes
 

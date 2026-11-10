@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1dd8935a6a83';
+export const sourceHash = '799507f391ac';
 
 const ar: UiPartial = {
   meta: {
@@ -233,6 +233,7 @@ const ar: UiPartial = {
     settings: 'إعدادات ملفات تعريف الارتباط',
     currentGranted: 'اختيارك الحالي: القبول.',
     currentDenied: 'اختيارك الحالي: الرفض.',
+    currentDefault: 'التحليلات مفعّلة افتراضيًا في منطقتك. اختر «رفض» لإيقافها وحذف ملفات تعريف الارتباط الخاصة بها.',
   },
 
   cards: {

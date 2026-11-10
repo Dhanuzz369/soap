@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1dd8935a6a83';
+export const sourceHash = '799507f391ac';
 
 const vi: UiPartial = {
   meta: {
@@ -233,6 +233,7 @@ const vi: UiPartial = {
     settings: 'Cài đặt cookie',
     currentGranted: 'Lựa chọn hiện tại của bạn: đồng ý.',
     currentDenied: 'Lựa chọn hiện tại của bạn: từ chối.',
+    currentDefault: 'Tại nơi bạn ở, phân tích được bật mặc định. Chọn Từ chối để tắt và xóa cookie của nó.',
   },
 
   cards: {

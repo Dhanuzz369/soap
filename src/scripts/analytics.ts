@@ -2,24 +2,28 @@
  * Google Analytics 4 with consent, in the browser (spec 2026-11-01). The rules are pure and
  * unit-tested in src/lib/analytics.ts; the browser tests are tests/e2e/consent.test.ts.
  *
- * - The banner (ConsentBanner.astro) is in every page's markup, hidden; this script shows it when
- *   the visitor has not chosen yet (or chose more than 12 months ago). The footer's "Cookie
- *   settings" button reopens it with the current choice marked.
- * - Accept: the choice is stored, then gtag.js loads once the page is idle, but only on the live
- *   domain of a launched build. Reject, or a later withdrawal: the choice is stored, sending stops
- *   at once, and the _ga cookies on our domain are deleted.
+ * - Where the site asks first (the browser's time zone is in Europe or in a country of one of the
+ *   site's other languages: src/lib/consent-regions.ts), the banner (ConsentBanner.astro, in every
+ *   page's markup, hidden) shows until the visitor chooses, and asks again after 12 months.
+ *   Everywhere else no banner shows and analytics runs by default. The footer's "Cookie settings"
+ *   button opens the banner anywhere, with the choice in effect marked.
+ * - gtag.js loads once the page is idle, only on the live domain of a launched build, and only with
+ *   consent in effect (Accept, or by default). Reject, or a later withdrawal: the choice is stored,
+ *   sending stops at once, and the _ga cookies on our domain are deleted.
  * - track(name, params) is what the other scripts call. It does nothing unless analytics is on for
- *   this host and the visitor accepted, and it sends only allow-listed parameters.
+ *   this host and consent is in effect, and it sends only allow-listed parameters.
  * - Without storage (private mode, blocked) the choice lives for this page only: the banner asks
  *   again on the next page, and nothing breaks.
  */
 import {
-  CONSENT_DEFAULTS,
   CONSENT_KEY,
   analyticsEnabled,
+  asksFirst,
+  consentDefaults,
   consentRecord,
   contactMethod,
   createTracker,
+  effectiveChoice,
   expireCookies,
   gaCookieNames,
   gtagSrc,
@@ -58,13 +62,25 @@ export function currentChoice(): Choice | null {
   }
 }
 
+/** The site asks before analytics in this browser's time zone (src/lib/consent-regions.ts). */
+function askFirst(): boolean {
+  try {
+    return asksFirst(Intl.DateTimeFormat().resolvedOptions().timeZone);
+  } catch {
+    return true;
+  }
+}
+
+/** The choice in effect: the visitor's own, or analytics by default where the site does not ask first. */
+const inEffect = (): Choice | null => effectiveChoice(currentChoice(), askFirst());
+
 /** An ID is set (the banner exists), the build is launched, and this is the live domain. */
 function enabled(): boolean {
   const d = banner()?.dataset;
   return !!d && analyticsEnabled({ id: d.ga ?? '', launched: d.launched === 'true', hostname: location.hostname, siteUrl: d.site ?? '' });
 }
 
-const tracker = createTracker({ enabled, consent: currentChoice, gtag: () => w.gtag });
+const tracker = createTracker({ enabled, consent: inEffect, gtag: () => w.gtag });
 
 /** Sends a GA4 event: a no-op without consent, off the live domain, or for unknown parameters. */
 export function track(name: string, params: EventParams = {}): void {
@@ -72,8 +88,11 @@ export function track(name: string, params: EventParams = {}): void {
 }
 
 let loaded = false;
-/** The Google tag, set up for consent mode before gtag.js is requested once the page is idle. */
-function loadGtag(id: string): void {
+/**
+ * The Google tag, set up for consent mode before gtag.js is requested once the page is idle.
+ * `byDefault`: no choice made, where analytics runs by default (consentDefaults).
+ */
+function loadGtag(id: string, byDefault: boolean): void {
   w[`ga-disable-${id}`] = false;
   if (loaded) {
     w.gtag?.('consent', 'update', { analytics_storage: 'granted' });
@@ -86,7 +105,7 @@ function loadGtag(id: string): void {
     // eslint-disable-next-line prefer-rest-params
     w.dataLayer!.push(arguments);
   };
-  w.gtag('consent', 'default', { ...CONSENT_DEFAULTS });
+  for (const d of consentDefaults(byDefault)) w.gtag('consent', 'default', d);
   w.gtag('js', new Date());
   // A cleaned page address (no ?message= or other free text); events inherit it.
   w.gtag('config', id, pageConfig({ href: location.href, referrer: document.referrer }));
@@ -113,14 +132,15 @@ const CLOSE_MS = 160;
 let opener: HTMLElement | null = null;
 
 function show(el: HTMLElement, opts: { focus?: boolean } = {}): void {
-  const choice = currentChoice();
+  const choice = inEffect();
   el.querySelectorAll<HTMLButtonElement>('[data-consent-choice]').forEach((b) => {
     if (choice) b.setAttribute('aria-pressed', String(b.dataset.consentChoice === choice));
     else b.removeAttribute('aria-pressed');
   });
   const current = el.querySelector<HTMLElement>('[data-consent-current]');
   if (current) {
-    current.textContent = choice ? ((choice === 'granted' ? current.dataset.granted : current.dataset.denied) ?? '') : '';
+    const text = currentChoice() === null ? current.dataset.default : choice === 'granted' ? current.dataset.granted : current.dataset.denied;
+    current.textContent = choice ? (text ?? '') : '';
     current.hidden = !choice;
   }
   el.hidden = false;
@@ -163,7 +183,7 @@ function choose(el: HTMLElement, choice: Choice): void {
     /* this page only */
   }
   const id = el.dataset.ga ?? '';
-  if (choice === 'granted' && enabled()) loadGtag(id);
+  if (choice === 'granted' && enabled()) loadGtag(id, false);
   if (choice === 'denied') withdraw(id);
   hide(el);
 }
@@ -209,7 +229,8 @@ export function initConsent(): void {
     }),
   );
   listen();
-  const choice = currentChoice();
+  const stored = currentChoice();
+  const choice = effectiveChoice(stored, askFirst());
   if (choice === null) show(el);
-  else if (choice === 'granted' && enabled()) loadGtag(el.dataset.ga ?? '');
+  else if (choice === 'granted' && enabled()) loadGtag(el.dataset.ga ?? '', stored === null);
 }

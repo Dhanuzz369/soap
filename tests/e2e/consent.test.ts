@@ -1,8 +1,9 @@
 /**
  * The cookie banner and Google Analytics consent in a real browser (spec 2026-11-01 §3, §7).
  * Run `npm run build` first. Every request to Google's tag and collection servers is blocked and
- * recorded: none may happen before consent, and none after Accept either, because the test host
- * (localhost) is not the site's domain, so the host check keeps analytics off.
+ * recorded: none may happen before consent, and none after Accept or by default either, because the
+ * test host (localhost) is not the site's domain, so the host check keeps analytics off. Browsers
+ * run in Europe/Berlin (the site asks first) unless a test sets another time zone.
  */
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import type { Browser, BrowserContextOptions, Page } from 'playwright-core';
@@ -22,7 +23,8 @@ const REJECT = '[data-consent-choice="denied"]';
 const SETTINGS = '[data-consent-open]';
 
 async function visit(path = '/', context: BrowserContextOptions = {}) {
-  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, ...context });
+  // Europe by default (the site asks first); tests of analytics by default pass another time zone.
+  const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, timezoneId: 'Europe/Berlin', ...context });
   const ga = await blockAnalytics(ctx);
   const page = await ctx.newPage();
   const errors: string[] = [];
@@ -134,7 +136,7 @@ describe('cookie banner', () => {
   });
 
   it('asks again when the stored choice is older than 12 months', async () => {
-    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, timezoneId: 'Europe/Berlin' });
     const ga = await blockAnalytics(ctx);
     const page = await ctx.newPage();
     const old = new Date(Date.now() - 400 * 24 * 3600 * 1000).toISOString();
@@ -248,6 +250,41 @@ describe('cookie banner', () => {
     const { page } = await visit('/no-such-page/');
     await page.waitForSelector(`${BANNER}:not([hidden])`);
     await page.context().close();
+  });
+});
+
+describe('analytics by default outside the ask-first countries (src/lib/consent-regions.ts)', () => {
+  it('India: no banner, nothing stored; Cookie settings shows analytics on by default, and Reject turns it off', async () => {
+    const { page, ga, errors } = await visit('/products/', { timezoneId: 'Asia/Kolkata' });
+    await settle(page);
+    expect(await shown(page)).toBe(false);
+    expect(await stored(page)).toBeNull();
+    const settings = page.locator(`footer ${SETTINGS}`);
+    expect(await settings.isVisible()).toBe(true);
+    await settings.click();
+    await page.waitForSelector(`${BANNER}:not([hidden])`);
+    expect(await page.getAttribute(ACCEPT, 'aria-pressed')).toBe('true');
+    expect((await page.textContent('[data-consent-current]'))!.trim()).toBe('Analytics is on by default where you are. Reject turns it off and deletes its cookies.');
+    await page.click(REJECT);
+    await settle(page);
+    expect(await shown(page)).toBe(false);
+    expect(await stored(page)).toMatchObject({ analytics: 'denied' });
+    await page.reload();
+    await settle(page);
+    expect(await shown(page)).toBe(false);
+    // The test host is not the site's domain: nothing is ever sent from here (host check).
+    expect(ga).toEqual([]);
+    expect(errors).toEqual([]);
+    await page.context().close();
+  });
+
+  it('the countries of the site’s other languages are asked first: Brazil, Saudi Arabia, Kenya, Vietnam', async () => {
+    for (const timezoneId of ['America/Sao_Paulo', 'Asia/Riyadh', 'Africa/Nairobi', 'Asia/Ho_Chi_Minh']) {
+      const { page } = await visit('/', { timezoneId });
+      await page.waitForSelector(`${BANNER}:not([hidden])`);
+      expect(await stored(page), timezoneId).toBeNull();
+      await page.context().close();
+    }
   });
 });
 

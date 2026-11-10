@@ -1,8 +1,8 @@
 ---
-sourceHash: "93035003296f"
+sourceHash: "e34c3c82e1ca"
 title: "隐私政策"
 description: "GoodBiz Hygiene（GoodBiz Global旗下业务单位）如何收集、使用和保护来自本网站及询价的个人数据，以及您如何行使权利。"
-updated: 2026-11-01
+updated: 2026-11-10
 ---
 
 ## 我们是谁
@@ -32,15 +32,15 @@ GoodBiz Hygiene是GoodBiz Global旗下的业务单位。GoodBiz Global是一家�
 - *何时保存*：您在第一步点击“下一步”时，您的联系方式即被保存，这样即使您没有填完，我们也能回复您。之后每一步都会添加您的回答，点击发送即完成询价。
 - *通过电子邮件、WhatsApp或电话*：您选择发送给我们的内容。
 - *技术数据*：我们的托管服务商会处理您的IP地址、浏览器类型和所请求的页面，以提供网站服务并保障网站安全。我们不会用这些数据识别您的身份。
-- *如您接受分析Cookie*：Google Analytics会记录网站的使用情况：您访问的页面，您浏览或询价的产品和产品系列，您完成了询价表单的哪些步骤，您点击的联系链接（WhatsApp、电子邮件、电话），您切换到的语言，您来自哪个网站，您的设备和浏览器类型，以及Google根据您的IP地址推断的大致位置（国家和城市）。Google Analytics不会记录或存储IP地址。它绝不会收到您的姓名、公司、电子邮件地址、电话号码或备注。
+- *Google Analytics（在您同意后，或在我们不先征求同意的地区默认运行；参见我们的[Cookie政策](/cookies/)）*：它会记录网站的使用情况：您访问的页面，您浏览或询价的产品和产品系列，您完成了询价表单的哪些步骤，您点击的联系链接（WhatsApp、电子邮件、电话），您切换到的语言，您来自哪个网站，您的设备和浏览器类型，以及Google根据您的IP地址推断的大致位置（国家和城市）。Google Analytics不会记录或存储IP地址。它绝不会收到您的姓名、公司、电子邮件地址、电话号码或备注。
 
-我们不通过本网站收集支付卡信息或身份证件。我们不使用广告或社交媒体追踪器。我们仅为Google Analytics使用Cookie，且仅在您同意后使用。
+我们不通过本网站收集支付卡信息或身份证件。我们不使用广告或社交媒体追踪器。我们仅为Google Analytics使用Cookie。
 
 ## 我们为何使用这些数据
 
 - 回复您的询价，准备报价和样品，并跟进该询价。
 - 如您成为客户，用于履行您的订单，并保存法律要求的商业、税务和出口记录。
-- 如您接受分析Cookie，用于了解采购商浏览了哪些页面和产品，并改进网站。
+- 通过Google Analytics，用于了解采购商浏览了哪些页面和产品，并改进网站。
 
 我们不出售您的个人数据，不会将您加入邮件列表，也不会将其用于用户画像或自动化决策。
 
@@ -48,7 +48,8 @@ GoodBiz Hygiene是GoodBiz Global旗下的业务单位。GoodBiz Global是一家�
 
 - *印度*：您为特定目的（回复您的询价）自愿向我们提供个人数据，我们仅将其用于该目的（《Digital Personal Data Protection Act, 2023》第7(a)条）。如您告知我们不再希望我们使用这些数据，我们将停止使用并予以删除，但法律要求我们保留的除外。
 - *欧盟和英国*：应您的要求在订立合同前采取措施（GDPR第6(1)(b)条）、我们回复商业询价的正当利益（第6(1)(f)条），以及就商业记录而言，我们的法定义务（第6(1)(c)条）。
-- *Google Analytics（适用于所有访客）*：您的同意（《Digital Personal Data Protection Act, 2023》第6条；GDPR第6(1)(a)条）。您通过Cookie横幅中的“接受”作出同意，并可随时通过每个页面底部的“Cookie设置”同样方便地撤回。撤回不影响撤回前已进行的处理。
+- *Google Analytics（在欧盟、欧洲经济区、英国、瑞士以及我们先征求同意的其他国家，详见我们的[Cookie政策](/cookies/)）*：您的同意（GDPR第6(1)(a)条及当地的同等法律）。您通过Cookie横幅中的“接受”作出同意，并可随时通过每个页面底部的“Cookie设置”同样方便地撤回。撤回不影响撤回前已进行的处理。
+- *Google Analytics（在包括印度在内的其他国家）*：我们在了解采购商如何使用本网站方面的利益，仅限于上文所述的衡量；我们提供本说明，并让您可随时将其关闭（通过每个页面底部的“Cookie设置”），关闭后我们会删除其在我们域名上的Cookie。
 
 ## 谁代表我们处理数据
 
@@ -56,7 +57,7 @@ GoodBiz Hygiene是GoodBiz Global旗下的业务单位。GoodBiz Global是一家�
 - *Vercel Inc.* 托管本网站。
 - *WhatsApp*（Meta）仅在您选择通过WhatsApp联系我们时使用；该聊天适用WhatsApp自身的隐私政策。
 - *Google翻译*仅在您选择语言菜单中的翻译选项时使用；此时页面地址会发送给Google。
-- *Google Analytics*（Google LLC；对欧盟和英国的访客为Google Ireland Limited）仅在您接受分析Cookie时衡量网站的使用情况。Google信号和广告功能均已关闭。
+- *Google Analytics*（Google LLC；对欧盟和英国的访客为Google Ireland Limited）衡量网站的使用情况：在我们先征求同意的地区，仅在您接受分析Cookie时进行。Google信号和广告功能均已关闭。
 
 如您下单，我们仅向参与该订单的生产商、货运代理、报关行、检验机构或银行提供完成订单所需的信息（例如您的公司名称和收货信息）。在法律要求时，我们也会披露数据。
 
@@ -97,7 +98,7 @@ GoodBiz Hygiene是GoodBiz Global旗下的业务单位。GoodBiz Global是一家�
 
 ## Cookie
 
-我们仅为Google Analytics使用Cookie，且仅在您于Cookie横幅中同意后使用。请参阅我们的[Cookie政策](/cookies/)。
+我们仅为Google Analytics使用Cookie：在我们先征求同意的地区，仅在您于Cookie横幅中同意后使用；在其他地区默认使用，您可通过“Cookie设置”将其关闭。请参阅我们的[Cookie政策](/cookies/)。
 
 ## 变更
 

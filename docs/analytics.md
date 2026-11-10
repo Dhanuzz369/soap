@@ -2,7 +2,14 @@
 
 The site sends visits and a few events to Google Analytics 4 (property measurement ID `G-FWEG9Y5FVS`, set in `src/config/site.ts` → `analytics.ga4`). Design: `docs/superpowers/specs/2026-11-01-analytics-consent-design.md`.
 
-**It only runs for visitors who click Accept** in the cookie banner, and only on the live domain (www.goodbizhygiene.com). Before a choice, after Reject, on Vercel previews, on `*.vercel.app` and on your own computer, Google's code is not even loaded. So expect fewer visitors in GA4 than really come: everyone who rejects or ignores the banner is invisible, by design. Search Console still counts search clicks for everyone.
+**Where it runs** (the same approach as goodbizagro.com and goodbizpower.com, with a wider list):
+
+- **Asked first:** the EU, the EEA, the UK, Switzerland, and every country where one of the site's other languages is spoken (the Arab countries, French-, Spanish- and Portuguese-speaking countries, Russia, China, Turkey, Indonesia, Kenya, Tanzania, Uganda, Vietnam…; the full list is `src/lib/consent-regions.ts`). Visitors there see the cookie banner, and Google's code is not loaded until they click Accept.
+- **By default everywhere else** (India, the USA, …): no banner; GA4 counts the visit straight away. "Cookie settings" in every footer turns it off.
+- The browser's time zone tells the site which case applies; Google also checks the visitor's approximate location and keeps cookies off for anyone from an ask-first country who has not accepted.
+- Only on the live domain (www.goodbizhygiene.com): never on Vercel previews, `*.vercel.app` or your own computer.
+
+GA4 still shows fewer visitors than really come (ask-first visitors who reject or ignore the banner, and ad blockers), so Search Console's click counts will stay a little higher. To change the list, edit `src/lib/consent-regions.ts`, run `npm run consent:zones`, and update the country wording in the Cookie Policy (all 12 languages).
 
 To switch analytics and the banner off completely, set `analytics.ga4` to `''`, then update the Cookie and Privacy Policies (and their 11 translations) before you deploy.
 

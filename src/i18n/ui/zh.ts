@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1dd8935a6a83';
+export const sourceHash = '799507f391ac';
 
 const zh: UiPartial = {
   meta: {
@@ -233,6 +233,7 @@ const zh: UiPartial = {
     settings: 'Cookie设置',
     currentGranted: '您当前的选择：已接受。',
     currentDenied: '您当前的选择：已拒绝。',
+    currentDefault: '在您所在的地区，分析功能默认开启。选择“拒绝”即可关闭并删除其 Cookie。',
   },
 
   cards: {

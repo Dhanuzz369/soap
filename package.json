@@ -22,7 +22,8 @@
     "og:cards": "node scripts/make-og-cards.mjs",
     "check:types": "astro check",
     "vercel:config": "node scripts/vercel-config.mjs",
-    "test:e2e": "vitest run --config vitest.e2e.config.ts"
+    "test:e2e": "vitest run --config vitest.e2e.config.ts",
+    "consent:zones": "node scripts/consent-timezones.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.4",

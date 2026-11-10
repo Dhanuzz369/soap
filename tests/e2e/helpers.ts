@@ -44,7 +44,8 @@ export async function open(
   o: { mock?: Mock; timeout?: number; context?: BrowserContextOptions; consent?: 'granted' | 'denied' } = {},
 ): Promise<{ page: Page; bodies: Body[]; errors: string[]; ga: string[] }> {
   const mock = o.mock ?? 'ok';
-  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, ...o.context });
+  // A European time zone: the site asks before analytics, so the banner shows on a first visit.
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, timezoneId: 'Europe/Berlin', ...o.context });
   const page = await context.newPage();
   const bodies: Body[] = [];
   const errors: string[] = [];

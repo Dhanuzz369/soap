@@ -36,7 +36,8 @@ const site = {
   },
   /**
    * Google Analytics 4 (spec 2026-11-01; owner guide: docs/analytics.md). The measurement ID from
-   * GA4 (Admin → Data streams). gtag.js loads only after a visitor accepts the cookie banner, and only
+   * GA4 (Admin → Data streams). Where the site asks first (src/lib/consent-regions.ts), gtag.js loads only
+   * after a visitor accepts the cookie banner; elsewhere it runs by default (opt-out in Cookie settings). Only
    * on the live domain of a launched build (src/lib/analytics.ts). Empty string = no analytics and no
    * cookie banner at all; then update the Cookie and Privacy Policies too.
    */

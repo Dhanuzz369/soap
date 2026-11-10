@@ -35,12 +35,12 @@ function storageKeysInCode(): Set<string> {
 
 describe('legal content', () => {
   for (const slug of ['privacy', 'cookies']) {
-    it(`${slug}.md has a title, a 120-160 character description and the 1 November 2026 date`, () => {
+    it(`${slug}.md has a title, a 120-160 character description and the 10 November 2026 date`, () => {
       const { data } = read(`src/content/legal/${slug}.md`);
       expect(data.title).toBe(slug === 'privacy' ? 'Privacy Policy' : 'Cookie Policy');
       expect(data.description.length).toBeGreaterThanOrEqual(120);
       expect(data.description.length).toBeLessThanOrEqual(160);
-      expect(new Date(data.updated).toISOString().slice(0, 10)).toBe('2026-11-01');
+      expect(new Date(data.updated).toISOString().slice(0, 10)).toBe('2026-11-10');
     });
   }
 
@@ -121,16 +121,18 @@ describe('legal pages tell the new truth (spec 2026-11-01 §5)', () => {
         expect(text, `${slug}: ${re}`).not.toMatch(re);
     }
   });
-  it('the cookie page: analytics only after Accept, how to change your mind, nothing else changes, still no ad trackers or embeds', () => {
+  it('the cookie page: where it asks first and where analytics runs by default, how to change your mind, nothing else changes, still no ad trackers or embeds', () => {
     const c = en('cookies').content;
     for (const s of [
-      'This website uses cookies only for Google Analytics, and only if you accept them in the cookie banner.',
-      'Until you accept, the Google Analytics code is not loaded at all and no cookies are set.',
+      'This website uses cookies only for Google Analytics.',
+      'In the EU, the EEA, the UK and Switzerland, and in the countries where one of this website\'s other languages is spoken',
+      'we ask first: until you accept, the Google Analytics code is not loaded at all and no cookies are set.',
+      'In other countries, such as India and the USA, Google Analytics runs by default, and you can switch it off at any time.',
       'We use no advertising or social media trackers, and no embedded content from other websites, such as videos or maps.',
       'Accept and Reject are equal choices, and rejecting changes nothing else on the website',
-      'You can change your mind at any time with Cookie settings at the foot of every page.',
-      'If you withdraw your consent, Google Analytics stops at once and we delete its cookies on our domain.',
-      'We ask again after 12 months.',
+      'Everywhere, you can change your mind at any time with Cookie settings at the foot of every page.',
+      'If you reject, Google Analytics stops at once and we delete its cookies on our domain.',
+      'asks again after 12 months',
       'Up to 2 years',
     ])
       expect(c, s).toContain(s);
@@ -141,14 +143,15 @@ describe('legal pages tell the new truth (spec 2026-11-01 §5)', () => {
       '*Google Analytics* (Google LLC; for visitors in the EU and UK, Google Ireland Limited)',
       'Google Analytics does not log or store IP addresses.',
       'It never receives your name, company, email address, phone number or notes.',
-      'your consent (section 6 of the Digital Personal Data Protection Act, 2023; Article 6(1)(a) GDPR)',
+      'your consent (Article 6(1)(a) GDPR and the equivalent local laws)',
+      '*Google Analytics, in other countries, including India:*',
       '14 months',
       'EU–US Data Privacy Framework',
-      'We use cookies only for Google Analytics, and only if you accept them.',
+      'We use cookies only for Google Analytics.',
     ])
       expect(c, s).toContain(s);
   });
-  it('every translation is updated to the 1 November 2026 version', () => {
-    for (const slug of ['privacy', 'cookies']) for (const f of all(slug)) expect(new Date(read(f).data.updated).toISOString().slice(0, 10), f).toBe('2026-11-01');
+  it('every translation is updated to the 10 November 2026 version', () => {
+    for (const slug of ['privacy', 'cookies']) for (const f of all(slug)) expect(new Date(read(f).data.updated).toISOString().slice(0, 10), f).toBe('2026-11-10');
   });
 });

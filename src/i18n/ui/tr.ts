@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1dd8935a6a83';
+export const sourceHash = '799507f391ac';
 
 const tr: UiPartial = {
   meta: {
@@ -233,6 +233,7 @@ const tr: UiPartial = {
     settings: 'Çerez ayarları',
     currentGranted: 'Şu anki tercihiniz: kabul edildi.',
     currentDenied: 'Şu anki tercihiniz: reddedildi.',
+    currentDefault: 'Bulunduğunuz yerde analiz varsayılan olarak açıktır. “Reddet” onu kapatır ve çerezlerini siler.',
   },
 
   cards: {

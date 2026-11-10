@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '1dd8935a6a83';
+export const sourceHash = '799507f391ac';
 
 const sw: UiPartial = {
   meta: {
@@ -232,6 +232,7 @@ const sw: UiPartial = {
     settings: 'Mipangilio ya vidakuzi',
     currentGranted: 'Chaguo lako la sasa: umekubali.',
     currentDenied: 'Chaguo lako la sasa: umekataa.',
+    currentDefault: 'Mahali ulipo, takwimu za tovuti zimewashwa kwa chaguo-msingi. Kataa huzizima na kufuta vidakuzi vyake.',
   },
 
   cards: {

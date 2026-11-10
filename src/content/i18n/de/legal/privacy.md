@@ -1,8 +1,8 @@
 ---
-sourceHash: "93035003296f"
+sourceHash: "e34c3c82e1ca"
 title: "Datenschutzerklärung"
 description: "Wie GoodBiz Hygiene, ein Geschäftsbereich von GoodBiz Global, personenbezogene Daten aus Website und Anfragen erhebt, nutzt und schützt, und Ihre Rechte."
-updated: 2026-11-01
+updated: 2026-11-10
 ---
 
 ## Wer wir sind
@@ -32,15 +32,15 @@ Diese Website sowie Anfragen, die Sie uns über ihr Formular, per E-Mail, über 
 - *Wann gespeichert wird:* Ihre Kontaktdaten werden gespeichert, wenn Sie im ersten Schritt auf Weiter tippen, damit wir Ihnen antworten können, auch wenn Sie die Anfrage nicht abschließen. Jeder weitere Schritt ergänzt Ihre Antworten, und mit Senden wird die Anfrage abgeschlossen.
 - *Per E-Mail, WhatsApp oder Telefon:* was Sie uns senden möchten.
 - *Technische Daten:* Unser Hosting-Anbieter verarbeitet Ihre IP-Adresse, Ihren Browsertyp und die aufgerufenen Seiten, um die Website bereitzustellen und sicher zu halten. Wir nutzen diese Daten nicht, um Sie zu identifizieren.
-- *Wenn Sie Analyse-Cookies akzeptieren:* Google Analytics erfasst, wie die Website genutzt wird: die Seiten, die Sie aufrufen, die Produkte und Sortimente, die Sie ansehen oder anfragen, die Schritte des Anfrageformulars, die Sie abschließen, die Kontaktlinks, die Sie anklicken (WhatsApp, E-Mail, Telefon), die Sprache, zu der Sie wechseln, die Website, von der Sie kommen, Ihren Geräte- und Browsertyp sowie Ihren ungefähren Standort (Land und Stadt), den Google aus Ihrer IP-Adresse ableitet. Google Analytics protokolliert oder speichert keine IP-Adressen. Es erhält nie Ihren Namen, Ihr Unternehmen, Ihre E-Mail-Adresse, Telefonnummer oder Anmerkungen.
+- *Google Analytics (nach Ihrer Zustimmung oder standardmäßig dort, wo wir nicht zuerst fragen; siehe unsere [Cookie-Richtlinie](/cookies/)):* Es erfasst, wie die Website genutzt wird: die Seiten, die Sie aufrufen, die Produkte und Sortimente, die Sie ansehen oder anfragen, die Schritte des Anfrageformulars, die Sie abschließen, die Kontaktlinks, die Sie anklicken (WhatsApp, E-Mail, Telefon), die Sprache, zu der Sie wechseln, die Website, von der Sie kommen, Ihren Geräte- und Browsertyp sowie Ihren ungefähren Standort (Land und Stadt), den Google aus Ihrer IP-Adresse ableitet. Google Analytics protokolliert oder speichert keine IP-Adressen. Es erhält nie Ihren Namen, Ihr Unternehmen, Ihre E-Mail-Adresse, Telefonnummer oder Anmerkungen.
 
-Über diese Website erheben wir weder Zahlungskartendaten noch Ausweisdokumente. Wir verwenden keine Werbe- oder Social-Media-Tracker. Cookies verwenden wir nur für Google Analytics, und nur, wenn Sie zustimmen.
+Über diese Website erheben wir weder Zahlungskartendaten noch Ausweisdokumente. Wir verwenden keine Werbe- oder Social-Media-Tracker. Cookies verwenden wir nur für Google Analytics.
 
 ## Wozu wir sie verwenden
 
 - Um Ihre Anfrage zu beantworten, Angebote und Muster vorzubereiten und diese Anfrage weiterzuverfolgen.
 - Wenn Sie Kunde werden: um Ihre Bestellungen auszuführen und die gesetzlich vorgeschriebenen Geschäfts-, Steuer- und Exportunterlagen zu führen.
-- Wenn Sie Analyse-Cookies akzeptieren: um zu sehen, welche Seiten und Produkte sich Einkäufer ansehen, und die Website zu verbessern.
+- Mit Google Analytics: um zu sehen, welche Seiten und Produkte sich Einkäufer ansehen, und die Website zu verbessern.
 
 Wir verkaufen Ihre personenbezogenen Daten nicht, nehmen Sie in keinen Verteiler auf und verwenden sie weder für Profiling noch für automatisierte Entscheidungen.
 
@@ -48,7 +48,8 @@ Wir verkaufen Ihre personenbezogenen Daten nicht, nehmen Sie in keinen Verteiler
 
 - *Indien:* Sie stellen uns Ihre personenbezogenen Daten freiwillig für einen bestimmten Zweck zur Verfügung (die Beantwortung Ihrer Anfrage), und wir verwenden sie nur für diesen Zweck (Section 7(a) des Digital Personal Data Protection Act, 2023). Wenn Sie uns mitteilen, dass wir sie nicht mehr verwenden sollen, stellen wir die Verwendung ein und löschen sie, es sei denn, das Gesetz verpflichtet uns zur Aufbewahrung.
 - *EU und Vereinigtes Königreich:* die Durchführung vorvertraglicher Maßnahmen auf Ihre Anfrage (Art. 6(1)(b) DSGVO), unser berechtigtes Interesse an der Beantwortung geschäftlicher Anfragen (Art. 6(1)(f)) und, für Geschäftsunterlagen, unsere rechtlichen Verpflichtungen (Art. 6(1)(c)).
-- *Google Analytics, überall:* Ihre Einwilligung (Section 6 des Digital Personal Data Protection Act, 2023; Art. 6(1)(a) DSGVO). Sie erteilen sie mit Akzeptieren im Cookie-Banner und können sie jederzeit genauso einfach über Cookie-Einstellungen am Fuß jeder Seite widerrufen. Der Widerruf berührt nicht die Verarbeitung, die zuvor stattgefunden hat.
+- *Google Analytics in der EU, im EWR, im Vereinigten Königreich, in der Schweiz und in den anderen Ländern, in denen wir zuerst fragen (aufgeführt in unserer [Cookie-Richtlinie](/cookies/)):* Ihre Einwilligung (Art. 6(1)(a) DSGVO und die entsprechenden Gesetze vor Ort). Sie erteilen sie mit Akzeptieren im Cookie-Banner und können sie jederzeit genauso einfach über Cookie-Einstellungen am Fuß jeder Seite widerrufen. Der Widerruf berührt nicht die Verarbeitung, die zuvor stattgefunden hat.
+- *Google Analytics in anderen Ländern, einschließlich Indien:* unser Interesse daran, zu wissen, wie Einkäufer die Website nutzen, beschränkt auf die oben beschriebene Messung, mit diesem Hinweis und einer Möglichkeit, es jederzeit auszuschalten (Cookie-Einstellungen am Fuß jeder Seite), wonach wir seine Cookies auf unserer Domain löschen.
 
 ## Wer sie für uns verarbeitet
 
@@ -56,7 +57,7 @@ Wir verkaufen Ihre personenbezogenen Daten nicht, nehmen Sie in keinen Verteiler
 - *Vercel Inc.* hostet diese Website.
 - *WhatsApp (Meta)* wird nur genutzt, wenn Sie uns über WhatsApp schreiben; für diesen Chat gilt die Datenschutzrichtlinie von WhatsApp.
 - *Google Übersetzer* wird nur genutzt, wenn Sie im Sprachmenü die Übersetzungsoption wählen; dann wird die Adresse der Seite an Google übermittelt.
-- *Google Analytics* (Google LLC; für Besucher aus der EU und dem Vereinigten Königreich Google Ireland Limited) misst, wie die Website genutzt wird, nur wenn Sie Analyse-Cookies akzeptieren. Google Signale und Werbefunktionen sind ausgeschaltet.
+- *Google Analytics* (Google LLC; für Besucher aus der EU und dem Vereinigten Königreich Google Ireland Limited) misst, wie die Website genutzt wird: wo wir zuerst fragen, nur wenn Sie Analyse-Cookies akzeptieren. Google Signale und Werbefunktionen sind ausgeschaltet.
 
 Wenn Sie eine Bestellung aufgeben, geben wir nur die für ihre Abwicklung nötigen Angaben (zum Beispiel Ihren Firmennamen und die Lieferdaten) an den Hersteller, den Spediteur, den Zollagenten, die Prüfstelle oder die Bank weiter, die an dieser Bestellung beteiligt sind. Außerdem legen wir Daten offen, wenn das Gesetz es verlangt.
 
@@ -97,7 +98,7 @@ Diese Website richtet sich an Unternehmen. Sie ist nicht für Personen unter 18 
 
 ## Cookies
 
-Cookies verwenden wir nur für Google Analytics, und nur, wenn Sie im Cookie-Banner zustimmen. Siehe unsere [Cookie-Richtlinie](/cookies/).
+Cookies verwenden wir nur für Google Analytics: wo wir zuerst fragen, nur wenn Sie im Cookie-Banner zustimmen; anderswo standardmäßig, und Sie können sie über Cookie-Einstellungen ausschalten. Siehe unsere [Cookie-Richtlinie](/cookies/).
 
 ## Änderungen
 

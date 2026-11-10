@@ -1,8 +1,8 @@
 ---
-sourceHash: "93035003296f"
+sourceHash: "e34c3c82e1ca"
 title: "Sera ya Faragha"
 description: "Jinsi GoodBiz Hygiene, kitengo cha GoodBiz Global, inavyokusanya, kutumia na kulinda data binafsi ya tovuti na maulizo, na jinsi ya kutumia haki zako."
-updated: 2026-11-01
+updated: 2026-11-10
 ---
 
 ## Sisi ni nani
@@ -32,15 +32,15 @@ Tovuti hii, na maulizo unayotutumia kupitia fomu yake, kwa barua pepe, kwenye Wh
 - *Inapohifadhiwa:* maelezo yako ya mawasiliano huhifadhiwa unapogusa Endelea katika hatua ya kwanza, ili tuweze kukujibu hata usipomaliza. Kila hatua inayofuata huongeza majibu yako, na kitufe cha kutuma hukamilisha ombi.
 - *Kwa barua pepe, WhatsApp au simu:* unachochagua kututumia.
 - *Data ya kiufundi:* mtoa huduma wetu wa uhifadhi wa tovuti huchakata anwani yako ya IP, aina ya kivinjari na kurasa zilizoombwa, ili kuwasilisha tovuti na kuiweka salama. Hatuitumii kukutambua.
-- *Ukikubali vidakuzi vya takwimu:* Google Analytics hurekodi jinsi tovuti inavyotumika: kurasa unazotembelea, bidhaa na makundi ya bidhaa unayoangalia au kuulizia, hatua za fomu ya ombi unazokamilisha, viungo vya mawasiliano unavyobofya (WhatsApp, barua pepe, simu), lugha unayobadilisha kwenda, tovuti uliyotoka, aina ya kifaa na kivinjari chako, na mahali ulipo kwa makadirio (nchi na mji), ambapo Google hukadiria kutokana na anwani yako ya IP. Google Analytics hairekodi wala haihifadhi anwani za IP. Haipokei kamwe jina lako, kampuni, anwani ya barua pepe, namba ya simu wala maelezo yako.
+- *Google Analytics (baada ya kukubali, au moja kwa moja pale ambapo hatuulizi kwanza; tazama [Sera yetu ya Vidakuzi](/cookies/)):* hurekodi jinsi tovuti inavyotumika: kurasa unazotembelea, bidhaa na makundi ya bidhaa unayoangalia au kuulizia, hatua za fomu ya ombi unazokamilisha, viungo vya mawasiliano unavyobofya (WhatsApp, barua pepe, simu), lugha unayobadilisha kwenda, tovuti uliyotoka, aina ya kifaa na kivinjari chako, na mahali ulipo kwa makadirio (nchi na mji), ambapo Google hukadiria kutokana na anwani yako ya IP. Google Analytics hairekodi wala haihifadhi anwani za IP. Haipokei kamwe jina lako, kampuni, anwani ya barua pepe, namba ya simu wala maelezo yako.
 
-Hatukusanyi maelezo ya kadi za malipo wala hati za utambulisho kupitia tovuti hii. Hatutumii vifuatiliaji vya matangazo wala vya mitandao ya kijamii. Tunatumia vidakuzi kwa ajili ya Google Analytics tu, na tu ukivikubali.
+Hatukusanyi maelezo ya kadi za malipo wala hati za utambulisho kupitia tovuti hii. Hatutumii vifuatiliaji vya matangazo wala vya mitandao ya kijamii. Tunatumia vidakuzi kwa ajili ya Google Analytics tu.
 
 ## Kwa nini tunaitumia
 
 - Kujibu ombi lako, kuandaa nukuu za bei na sampuli, na kufuatilia ombi hilo.
 - Ukiwa mteja, kutekeleza maagizo yako na kutunza kumbukumbu za biashara, kodi na usafirishaji nje zinazotakiwa na sheria.
-- Ukikubali vidakuzi vya takwimu, kuona ni kurasa na bidhaa zipi wanunuzi wanaangalia, na kuboresha tovuti.
+- Kupitia Google Analytics, kuona ni kurasa na bidhaa zipi wanunuzi wanaangalia, na kuboresha tovuti.
 
 Hatuuzi data yako binafsi, hatukuongezi kwenye orodha ya barua pepe, na hatuitumii kwa uwekaji wasifu au maamuzi ya kiotomatiki.
 
@@ -48,7 +48,8 @@ Hatuuzi data yako binafsi, hatukuongezi kwenye orodha ya barua pepe, na hatuitum
 
 - *India:* unatupa data yako binafsi kwa hiari kwa madhumuni maalum (kujibu ombi lako), nasi tunaitumia kwa madhumuni hayo tu (section 7(a) ya Digital Personal Data Protection Act, 2023). Ukituambia kwamba hutaki tena tuitumie, tutaacha kuitumia na kuifuta, isipokuwa pale sheria inapotutaka tuihifadhi.
 - *Umoja wa Ulaya na Uingereza:* kuchukua hatua kwa ombi lako kabla ya kuingia mkataba (Kifungu 6(1)(b) cha GDPR), maslahi yetu halali katika kujibu maulizo ya kibiashara (Kifungu 6(1)(f)), na, kwa kumbukumbu za biashara, wajibu wetu wa kisheria (Kifungu 6(1)(c)).
-- *Google Analytics, kila mahali:* idhini yako (section 6 ya Digital Personal Data Protection Act, 2023; Kifungu 6(1)(a) cha GDPR). Unaitoa kwa kubofya Kubali kwenye bango la vidakuzi na unaweza kuiondoa kwa urahisi uleule, wakati wowote, kupitia Mipangilio ya vidakuzi chini ya kila ukurasa. Kuiondoa hakuathiri uchakataji uliofanyika kabla.
+- *Google Analytics, katika Umoja wa Ulaya, EEA, Uingereza, Uswisi na nchi nyingine ambako tunauliza kwanza (zimeorodheshwa katika [Sera yetu ya Vidakuzi](/cookies/)):* idhini yako (Kifungu 6(1)(a) cha GDPR na sheria za ndani zinazolingana nacho). Unaitoa kwa kubofya Kubali kwenye bango la vidakuzi na unaweza kuiondoa kwa urahisi uleule, wakati wowote, kupitia Mipangilio ya vidakuzi chini ya kila ukurasa. Kuiondoa hakuathiri uchakataji uliofanyika kabla.
+- *Google Analytics, katika nchi nyingine, ikiwemo India:* maslahi yetu katika kujua jinsi wanunuzi wanavyotumia tovuti, kwa upimaji ulioelezwa hapo juu tu, pamoja na taarifa hii na njia ya kuizima wakati wowote (Mipangilio ya vidakuzi chini ya kila ukurasa), na baada ya hapo tunafuta vidakuzi vyake kwenye kikoa chetu.
 
 ## Nani anaichakata kwa niaba yetu
 
@@ -56,7 +57,7 @@ Hatuuzi data yako binafsi, hatukuongezi kwenye orodha ya barua pepe, na hatuitum
 - *Vercel Inc.* huhifadhi (hosting) tovuti hii.
 - *WhatsApp (Meta)* hutumika tu ukichagua kututumia ujumbe kwenye WhatsApp; sera ya faragha ya WhatsApp yenyewe inahusu mazungumzo hayo.
 - *Google Translate* hutumika tu ukichagua chaguo la kutafsiri kwenye menyu ya lugha; anwani ya ukurasa hutumwa kwa Google wakati huo.
-- *Google Analytics* (Google LLC; kwa wageni kutoka Umoja wa Ulaya na Uingereza, Google Ireland Limited) hupima jinsi tovuti inavyotumika, tu ukikubali vidakuzi vya takwimu. Ishara za Google na vipengele vya matangazo vimezimwa.
+- *Google Analytics* (Google LLC; kwa wageni kutoka Umoja wa Ulaya na Uingereza, Google Ireland Limited) hupima jinsi tovuti inavyotumika: pale tunapouliza kwanza, tu ukikubali vidakuzi vya takwimu. Ishara za Google na vipengele vya matangazo vimezimwa.
 
 Ukiweka agizo, tunashiriki tu maelezo yanayohitajika kulikamilisha (kwa mfano jina la kampuni yako na maelezo ya uwasilishaji) na mtengenezaji, wakala wa usafirishaji, wakala wa forodha, wakala wa ukaguzi au benki inayohusika na agizo hilo. Pia tunafichua data pale sheria inapotaka.
 
@@ -97,7 +98,7 @@ Tovuti hii ni kwa ajili ya biashara. Haikusudiwi kwa mtu yeyote aliye chini ya m
 
 ## Vidakuzi
 
-Tunatumia vidakuzi kwa ajili ya Google Analytics tu, na tu ukivikubali kwenye bango la vidakuzi. Tazama [Sera yetu ya Vidakuzi](/cookies/) yetu.
+Tunatumia vidakuzi kwa ajili ya Google Analytics tu: pale tunapouliza kwanza, tu ukivikubali kwenye bango la vidakuzi; kwingineko moja kwa moja, na unaweza kuvizima kupitia Mipangilio ya vidakuzi. Tazama [Sera yetu ya Vidakuzi](/cookies/).
 
 ## Mabadiliko
 

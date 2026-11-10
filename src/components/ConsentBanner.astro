@@ -26,7 +26,7 @@ const id = site.analytics.ga4;
       <p class="consent-text">
         {c.text} <a href={lp('/cookies/')}>{c.policy}</a>
       </p>
-      <p class="consent-current" data-consent-current data-granted={c.currentGranted} data-denied={c.currentDenied} hidden />
+      <p class="consent-current" data-consent-current data-granted={c.currentGranted} data-denied={c.currentDenied} data-default={c.currentDefault} hidden />
       <div class="consent-actions">
         <button type="button" class="consent-btn" data-consent-choice="granted">{c.accept}</button>
         <button type="button" class="consent-btn" data-consent-choice="denied">{c.reject}</button>

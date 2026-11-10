@@ -1,8 +1,8 @@
 ---
-sourceHash: "93035003296f"
+sourceHash: "e34c3c82e1ca"
 title: "Política de privacidade"
 description: "Como a GoodBiz Hygiene, uma unidade da GoodBiz Global, coleta, usa e protege dados pessoais do site e dos pedidos, e como exercer os seus direitos."
-updated: 2026-11-01
+updated: 2026-11-10
 ---
 
 ## Quem somos
@@ -32,15 +32,15 @@ Este site e os pedidos que você nos envia pelo formulário, por e-mail, pelo Wh
 - *Quando é salvo:* os seus dados de contato são salvos quando você toca em Avançar na primeira etapa, para que possamos responder mesmo que você não conclua. Cada etapa seguinte acrescenta as suas respostas, e Enviar conclui o pedido.
 - *Por e-mail, WhatsApp ou telefone:* o que você decidir nos enviar.
 - *Dados técnicos:* o nosso provedor de hospedagem trata o seu endereço IP, o tipo de navegador e as páginas solicitadas, para entregar o site e mantê-lo seguro. Não usamos esses dados para identificar você.
-- *Se você aceitar os cookies de análise:* o Google Analytics registra como o site é usado: as páginas que você visita, os produtos e linhas que você consulta ou inclui no pedido, as etapas do formulário de pedido que você conclui, os links de contato em que você clica (WhatsApp, e-mail, telefone), o idioma para o qual você muda, o site de onde você veio, o tipo de dispositivo e de navegador, e a sua localização aproximada (país e cidade), que o Google deduz do seu endereço IP. O Google Analytics não registra nem armazena endereços IP. Ele nunca recebe o seu nome, empresa, endereço de e-mail, número de telefone ou observações.
+- *Google Analytics (depois que você aceita, ou por padrão onde não perguntamos antes; veja a nossa [política de cookies](/cookies/)):* ele registra como o site é usado: as páginas que você visita, os produtos e linhas que você consulta ou inclui no pedido, as etapas do formulário de pedido que você conclui, os links de contato em que você clica (WhatsApp, e-mail, telefone), o idioma para o qual você muda, o site de onde você veio, o tipo de dispositivo e de navegador, e a sua localização aproximada (país e cidade), que o Google deduz do seu endereço IP. O Google Analytics não registra nem armazena endereços IP. Ele nunca recebe o seu nome, empresa, endereço de e-mail, número de telefone ou observações.
 
-Não coletamos dados de cartão de pagamento nem documentos de identidade por este site. Não usamos rastreadores de publicidade ou de redes sociais. Usamos cookies apenas para o Google Analytics, e apenas se você os aceitar.
+Não coletamos dados de cartão de pagamento nem documentos de identidade por este site. Não usamos rastreadores de publicidade ou de redes sociais. Usamos cookies apenas para o Google Analytics.
 
 ## Para que usamos
 
 - Para responder ao seu pedido, preparar cotações e amostras e acompanhar esse pedido.
 - Se você se tornar cliente, para executar os seus pedidos de compra e manter os registros comerciais, fiscais e de exportação exigidos por lei.
-- Se você aceitar os cookies de análise, para ver quais páginas e produtos os compradores consultam, e para melhorar o site.
+- Por meio do Google Analytics, para ver quais páginas e produtos os compradores consultam, e para melhorar o site.
 
 Não vendemos os seus dados pessoais, não incluímos você em nenhuma lista de e-mails e não os usamos para criação de perfis nem para decisões automatizadas.
 
@@ -48,7 +48,8 @@ Não vendemos os seus dados pessoais, não incluímos você em nenhuma lista de 
 
 - *Índia:* você nos fornece os seus dados pessoais voluntariamente para uma finalidade específica (responder ao seu pedido), e só os usamos para essa finalidade (seção 7(a) da Digital Personal Data Protection Act, 2023). Se você nos disser que não quer mais que os usemos, deixaremos de usá-los e os excluiremos, exceto quando a lei nos obrigar a mantê-los.
 - *UE e Reino Unido:* diligências pré-contratuais tomadas a seu pedido (artigo 6(1)(b) do RGPD), o nosso interesse legítimo em responder a pedidos comerciais (artigo 6(1)(f)) e, para os registros comerciais, as nossas obrigações legais (artigo 6(1)(c)).
-- *Google Analytics, em todos os casos:* o seu consentimento (seção 6 da Digital Personal Data Protection Act, 2023; artigo 6(1)(a) do RGPD). Você o dá com Aceitar no aviso de cookies e pode retirá-lo com a mesma facilidade, a qualquer momento, em Configurações de cookies no rodapé de cada página. Retirá-lo não afeta o que foi tratado antes.
+- *Google Analytics, na UE, no EEE, no Reino Unido, na Suíça e nos outros países onde perguntamos antes (listados na nossa [política de cookies](/cookies/)):* o seu consentimento (artigo 6(1)(a) do RGPD e as leis locais equivalentes). Você o dá com Aceitar no aviso de cookies e pode retirá-lo com a mesma facilidade, a qualquer momento, em Configurações de cookies no rodapé de cada página. Retirá-lo não afeta o que foi tratado antes.
+- *Google Analytics, nos outros países, incluindo a Índia:* o nosso interesse em saber como os compradores usam o site, limitado à medição descrita acima, com este aviso e uma forma de desativá-lo a qualquer momento (Configurações de cookies no rodapé de cada página), depois do que apagamos os cookies dele no nosso domínio.
 
 ## Quem trata os dados por nós
 
@@ -56,7 +57,7 @@ Não vendemos os seus dados pessoais, não incluímos você em nenhuma lista de 
 - *Vercel Inc.* hospeda este site.
 - *WhatsApp (Meta)* só é usado se você decidir nos escrever pelo WhatsApp; a política de privacidade do próprio WhatsApp se aplica a essa conversa.
 - *Google Tradutor* só é usado se você escolher a opção de tradução no menu de idiomas; nesse caso, o endereço da página é enviado ao Google.
-- *Google Analytics* (Google LLC; para visitantes da UE e do Reino Unido, Google Ireland Limited) mede como o site é usado, apenas se você aceitar os cookies de análise. Os sinais do Google e os recursos de publicidade estão desativados.
+- *Google Analytics* (Google LLC; para visitantes da UE e do Reino Unido, Google Ireland Limited) mede como o site é usado: onde perguntamos antes, apenas se você aceitar os cookies de análise. Os sinais do Google e os recursos de publicidade estão desativados.
 
 Se você fizer um pedido de compra, compartilhamos apenas os dados necessários para concluí-lo (por exemplo, o nome da sua empresa e os dados de entrega) com o fabricante, o agente de cargas, o despachante aduaneiro, a empresa de inspeção ou o banco envolvidos nesse pedido. Também divulgamos dados quando a lei exige.
 
@@ -97,7 +98,7 @@ Este site é destinado a empresas. Não se destina a menores de 18 anos, e não 
 
 ## Cookies
 
-Usamos cookies apenas para o Google Analytics, e apenas se você os aceitar no aviso de cookies. Veja a nossa [política de cookies](/cookies/).
+Usamos cookies apenas para o Google Analytics: onde perguntamos antes, apenas se você os aceitar no aviso de cookies; nos demais lugares, por padrão, e você pode desativá-los em Configurações de cookies. Veja a nossa [política de cookies](/cookies/).
 
 ## Alterações
 

@@ -1,8 +1,8 @@
 ---
-sourceHash: "93035003296f"
+sourceHash: "e34c3c82e1ca"
 title: "Kebijakan Privasi"
 description: "Cara GoodBiz Hygiene, unit dari GoodBiz Global, mengumpulkan, menggunakan, dan melindungi data pribadi dari situs dan permintaan, serta cara memakai hak Anda."
-updated: 2026-11-01
+updated: 2026-11-10
 ---
 
 ## Siapa kami
@@ -32,15 +32,15 @@ Situs web ini, serta permintaan yang Anda kirim kepada kami melalui formulirnya,
 - *Kapan disimpan:* data kontak Anda disimpan saat Anda mengetuk Lanjut pada langkah pertama, agar kami dapat membalas meskipun Anda tidak menyelesaikannya. Setiap langkah berikutnya menambahkan jawaban Anda, dan tombol kirim menyelesaikan permintaan.
 - *Melalui email, WhatsApp, atau telepon:* apa pun yang Anda pilih untuk dikirim kepada kami.
 - *Data teknis:* penyedia hosting kami memproses alamat IP, jenis browser, dan halaman yang diminta, untuk menyajikan situs web dan menjaga keamanannya. Kami tidak menggunakannya untuk mengidentifikasi Anda.
-- *Jika Anda menerima cookie analitik:* Google Analytics mencatat cara situs web digunakan: halaman yang Anda kunjungi, produk dan lini produk yang Anda lihat atau tanyakan, langkah formulir permintaan yang Anda selesaikan, tautan kontak yang Anda klik (WhatsApp, email, telepon), bahasa yang Anda pilih, situs web asal Anda, jenis perangkat dan browser, serta perkiraan lokasi Anda (negara dan kota), yang diperkirakan Google dari alamat IP Anda. Google Analytics tidak mencatat atau menyimpan alamat IP. Google Analytics tidak pernah menerima nama, perusahaan, alamat email, nomor telepon, atau catatan Anda.
+- *Google Analytics (setelah Anda menerima, atau secara bawaan di negara tempat kami tidak bertanya lebih dulu; lihat [Kebijakan Cookie](/cookies/) kami):* Google Analytics mencatat cara situs web digunakan: halaman yang Anda kunjungi, produk dan lini produk yang Anda lihat atau tanyakan, langkah formulir permintaan yang Anda selesaikan, tautan kontak yang Anda klik (WhatsApp, email, telepon), bahasa yang Anda pilih, situs web asal Anda, jenis perangkat dan browser, serta perkiraan lokasi Anda (negara dan kota), yang diperkirakan Google dari alamat IP Anda. Google Analytics tidak mencatat atau menyimpan alamat IP. Google Analytics tidak pernah menerima nama, perusahaan, alamat email, nomor telepon, atau catatan Anda.
 
-Kami tidak mengumpulkan data kartu pembayaran atau dokumen identitas melalui situs web ini. Kami tidak menggunakan pelacak iklan atau media sosial. Kami menggunakan cookie hanya untuk Google Analytics, dan hanya jika Anda menerimanya.
+Kami tidak mengumpulkan data kartu pembayaran atau dokumen identitas melalui situs web ini. Kami tidak menggunakan pelacak iklan atau media sosial. Kami menggunakan cookie hanya untuk Google Analytics.
 
 ## Mengapa kami menggunakannya
 
 - Untuk membalas permintaan Anda, menyiapkan penawaran harga dan sampel, serta menindaklanjuti permintaan tersebut.
 - Jika Anda menjadi pelanggan, untuk melaksanakan pesanan Anda dan menyimpan catatan bisnis, pajak, dan ekspor yang diwajibkan oleh hukum.
-- Jika Anda menerima cookie analitik, untuk melihat halaman dan produk mana yang dilihat pembeli, dan untuk memperbaiki situs web.
+- Melalui Google Analytics, untuk melihat halaman dan produk mana yang dilihat pembeli, dan untuk memperbaiki situs web.
 
 Kami tidak menjual data pribadi Anda, tidak memasukkan Anda ke milis, dan tidak menggunakannya untuk pembuatan profil atau keputusan otomatis.
 
@@ -48,7 +48,8 @@ Kami tidak menjual data pribadi Anda, tidak memasukkan Anda ke milis, dan tidak 
 
 - *India:* Anda memberikan data pribadi Anda kepada kami secara sukarela untuk tujuan tertentu (membalas permintaan Anda), dan kami hanya menggunakannya untuk tujuan tersebut (section 7(a) Digital Personal Data Protection Act, 2023). Jika Anda memberi tahu kami bahwa Anda tidak lagi ingin kami menggunakannya, kami akan berhenti menggunakannya dan menghapusnya, kecuali jika hukum mewajibkan kami menyimpannya.
 - *Uni Eropa dan Inggris:* mengambil langkah atas permintaan Anda sebelum membuat kontrak (Pasal 6(1)(b) GDPR), kepentingan sah kami dalam menjawab permintaan bisnis (Pasal 6(1)(f)), dan, untuk catatan bisnis, kewajiban hukum kami (Pasal 6(1)(c)).
-- *Google Analytics, di mana pun:* persetujuan Anda (section 6 Digital Personal Data Protection Act, 2023; Pasal 6(1)(a) GDPR). Anda memberikannya dengan Terima di banner cookie dan dapat menariknya sama mudahnya, kapan saja, melalui Pengaturan cookie di bagian bawah setiap halaman. Penarikan tidak memengaruhi pemrosesan yang telah dilakukan sebelumnya.
+- *Google Analytics, di Uni Eropa, EEA, Inggris, Swiss, dan negara lain tempat kami bertanya lebih dulu (tercantum dalam [Kebijakan Cookie](/cookies/) kami):* persetujuan Anda (Pasal 6(1)(a) GDPR dan undang-undang setempat yang setara). Anda memberikannya dengan Terima di banner cookie dan dapat menariknya sama mudahnya, kapan saja, melalui Pengaturan cookie di bagian bawah setiap halaman. Penarikan tidak memengaruhi pemrosesan yang telah dilakukan sebelumnya.
+- *Google Analytics, di negara lain, termasuk India:* kepentingan kami untuk mengetahui cara pembeli menggunakan situs web, terbatas pada pengukuran yang dijelaskan di atas, disertai pemberitahuan ini dan cara untuk menonaktifkannya kapan saja (Pengaturan cookie di bagian bawah setiap halaman), dan setelah itu kami menghapus cookie-nya di domain kami.
 
 ## Siapa yang memprosesnya untuk kami
 
@@ -56,7 +57,7 @@ Kami tidak menjual data pribadi Anda, tidak memasukkan Anda ke milis, dan tidak 
 - *Vercel Inc.* menghosting situs web ini.
 - *WhatsApp (Meta)* hanya digunakan jika Anda memilih mengirim pesan kepada kami melalui WhatsApp; kebijakan privasi WhatsApp sendiri berlaku untuk percakapan tersebut.
 - *Google Terjemahan* hanya digunakan jika Anda memilih opsi terjemahan di menu bahasa; alamat halaman kemudian dikirim ke Google.
-- *Google Analytics* (Google LLC; untuk pengunjung dari Uni Eropa dan Inggris, Google Ireland Limited) mengukur cara situs web digunakan, hanya jika Anda menerima cookie analitik. Sinyal Google dan fitur iklan dinonaktifkan.
+- *Google Analytics* (Google LLC; untuk pengunjung dari Uni Eropa dan Inggris, Google Ireland Limited) mengukur cara situs web digunakan: di negara tempat kami bertanya lebih dulu, hanya jika Anda menerima cookie analitik. Sinyal Google dan fitur iklan dinonaktifkan.
 
 Jika Anda melakukan pemesanan, kami hanya membagikan data yang diperlukan untuk menyelesaikannya (misalnya nama perusahaan dan data pengiriman Anda) kepada produsen, forwarder, agen kepabeanan, lembaga inspeksi, atau bank yang terlibat dalam pesanan tersebut. Kami juga mengungkapkan data jika diwajibkan oleh hukum.
 
@@ -97,7 +98,7 @@ Situs web ini ditujukan untuk bisnis. Situs ini tidak ditujukan bagi siapa pun y
 
 ## Cookie
 
-Kami menggunakan cookie hanya untuk Google Analytics, dan hanya jika Anda menerimanya di banner cookie. Lihat [Kebijakan Cookie](/cookies/) kami.
+Kami menggunakan cookie hanya untuk Google Analytics: di negara tempat kami bertanya lebih dulu, hanya jika Anda menerimanya di banner cookie; di negara lain secara bawaan, dan Anda dapat menonaktifkannya melalui Pengaturan cookie. Lihat [Kebijakan Cookie](/cookies/) kami.
 
 ## Perubahan
 
