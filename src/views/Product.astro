@@ -45,6 +45,9 @@ const [reviewedBefore, reviewedAfter = ''] = ui.post.reviewed.split('{date}');
 // The main search term (docs/seo-keywords.md): the product's `keyword`, else its name up to " / " or " (".
 const kw = d.keyword ?? lower(d.title.split(/\s*[/／(]\s*/)[0]);
 const K = ui.seo.keywords;
+// The <title>: search term first, then the HSN code (buyers search "<product> HSN code"). Title Case in English.
+const Kw = lang === 'en' ? kw.replace(/(^|[\s-])\p{Ll}/gu, (m) => m.toUpperCase()) : kw.charAt(0).toLocaleUpperCase(info.hreflang) + kw.slice(1);
+const title = fmt(ui.seo.productTitle, { kw: Kw, hsn: d.hsn });
 const keywords = buildKeywords(
   [...K.product, ...(d.privateLabel.available ? K.productPrivateLabel : []), ...K.productMarkets],
   { kw, name: d.title, nameLower: lower(d.title), hsn: d.hsn, hsn4: d.hsn.slice(0, 4) },
@@ -68,7 +71,7 @@ const media: HeroMedia | undefined = pic
 ---
 
 <BaseLayout
-  title={d.metaTitle}
+  title={title}
   description={d.metaDescription}
   path={path}
   ogImage={ogCard(`products/${d.slug}.jpg`) ?? image}

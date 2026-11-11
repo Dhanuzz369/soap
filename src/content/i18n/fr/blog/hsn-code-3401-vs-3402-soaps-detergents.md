@@ -1,8 +1,8 @@
 ---
-sourceHash: "c986b9bebf21"
+sourceHash: "4db42d279e9e"
 title: "Code HSN 3401 ou 3402 : guide de l’acheteur pour classer savons et détergents"
-metaTitle: "Code HSN 3401 ou 3402 : classer savons et détergents"
-description: "Votre savon ou votre détergent relève-t-il du code HSN 3401 ou 3402 ? Un guide clair de la distinction, avec un tableau produit par produit."
+metaTitle: "Code HS du savon 3401, des détergents 3402 : guide HSN"
+description: "Position tarifaire : savon, savon liquide pour les mains et gel douche en HSN 3401 ; lessives, liquide vaisselle et nettoyants en 3402. Tableau par produit."
 date: 2026-10-01
 tags: ["code HSN", "classement douanier", "documents d’export"]
 relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]

@@ -6,7 +6,7 @@ order: 7
 reviewed: 2026-10-26
 hsn: "3401 30"
 metaTitle: "Shower Gel & Body Wash Exporter & Supplier from India"
-metaDescription: "Shower gel and body wash from vetted Indian manufacturers: 100 ml to 5 L in fresh, floral and herbal variants. Private label for importers and hotels, FOB/CIF."
+metaDescription: "Shower gel and body wash, HSN 3401 30: 100 ml to 5 L in fresh, floral and herbal variants from vetted Indian manufacturers. Private label for importers."
 keyword: "shower gel"
 answer: "Body wash, also called shower gel, is a liquid cleanser for the body made from mild surfactants, conditioners and fragrance, applied with the hands or a sponge. It lathers richly and suits daily use. GoodBiz Hygiene sources body wash and shower gel from vetted Indian manufacturers for retail and hotel buyers."
 variants:

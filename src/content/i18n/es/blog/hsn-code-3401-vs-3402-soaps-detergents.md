@@ -1,8 +1,8 @@
 ---
-sourceHash: "c986b9bebf21"
+sourceHash: "4db42d279e9e"
 title: "Código HSN 3401 frente a 3402: guía del comprador para clasificar jabones y detergentes"
-metaTitle: "Código HSN 3401 o 3402: clasificar jabones y detergentes"
-description: "¿No sabe si su jabón o detergente es HSN 3401 o 3402? Guía clara de la división, con tabla por producto y las preguntas que conviene resolver antes."
+metaTitle: "Código HSN 3401 (jabones) o 3402 (detergentes y limpiadores)"
+description: "La partida HSN 3401 abarca el jabón, el jabón líquido para manos y el gel de ducha; la 3402, detergentes, lavavajillas y limpiadores. Con tabla por producto."
 date: 2026-10-01
 tags: ["código HSN", "clasificación", "documentos de exportación"]
 relatedProducts: ["toilet-bath-soap", "detergent-powder", "liquid-hand-wash", "soap-noodles", "sles", "laundry-soap-bar", "body-wash-shower-gel"]

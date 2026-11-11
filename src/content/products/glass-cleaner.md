@@ -6,7 +6,7 @@ order: 3
 reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Bulk Glass Cleaner Exporter & Supplier from India"
-metaDescription: "Streak-free glass cleaner in trigger sprays and 1–20 L refills from vetted Indian manufacturers. Private label, mixed containers and FOB/CIF quotes per order."
+metaDescription: "Streak-free glass cleaner, HSN 3402 50, in trigger sprays and 1–20 L refills from vetted Indian manufacturers. Private label, mixed containers, FOB/CIF quotes."
 keyword: "glass cleaner"
 answer: "Glass cleaner is a low-foam liquid, usually containing water, a mild solvent and a small amount of surfactant, designed to clean windows, mirrors and other glass without leaving streaks. It is normally sold in trigger spray bottles and dries quickly. GoodBiz Hygiene sources glass cleaner from vetted Indian manufacturers for export."
 variants:

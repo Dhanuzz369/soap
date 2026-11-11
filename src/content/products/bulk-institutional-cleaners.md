@@ -6,7 +6,7 @@ order: 4
 reviewed: 2026-10-26
 hsn: "3402 90"
 metaTitle: "Bulk Cleaning Chemicals Exporter & Supplier from India"
-metaDescription: "Bulk cleaning chemicals for hotels, facility services and distributors: concentrates in 5 L to 1,000 L IBCs from vetted Indian manufacturers. FOB/CIF quotes."
+metaDescription: "Bulk cleaning chemicals, HSN 3402 90, for hotels, facility services and distributors: concentrates in 5 L to 1,000 L IBCs from vetted Indian manufacturers."
 keyword: "bulk cleaning chemicals"
 answer: "Bulk and institutional cleaning chemicals are concentrated cleaners, such as floor cleaners, degreasers, hand washes and laundry liquids, supplied in large packs for professional use. They are bought by hotels, hospitals, cleaning contractors and distributors who need low cost per litre and consistent quality. GoodBiz Hygiene sources them from vetted Indian manufacturers for export."
 variants:

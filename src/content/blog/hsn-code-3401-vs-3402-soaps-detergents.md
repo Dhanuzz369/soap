@@ -1,7 +1,7 @@
 ---
 title: "HSN Code 3401 vs 3402: A Buyer's Guide to Classifying Soaps and Detergents"
-metaTitle: "HSN Code 3401 vs 3402: Classifying Soaps and Detergents"
-description: "Not sure whether your soap or detergent is HSN 3401 or 3402? A plain guide to the split, with a product-by-product table and the questions to settle first."
+metaTitle: "HSN Code 3401 (Soap, Hand Wash) vs 3402 (Detergents)"
+description: "HSN 3401 covers soap, liquid hand wash and shower gel; 3402 covers detergents, dish wash liquid, most cleaners, LABSA and SLES. With a product-by-product table."
 date: 2026-10-01
 updated: 2026-10-29
 tags: ["HSN code", "classification", "export documents"]

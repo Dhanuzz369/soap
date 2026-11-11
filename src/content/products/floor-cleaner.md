@@ -6,7 +6,7 @@ order: 1
 reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Private Label Floor Cleaner Exporter & Supplier from India"
-metaDescription: "Floor cleaner in lavender, rose, jasmine, lemon and pine from vetted Indian manufacturers, 500 ml to 20 L. Private label, mixed containers and FOB/CIF quotes."
+metaDescription: "Floor cleaner, HSN 3402 50: lavender, rose, jasmine, lemon and pine, 500 ml to 20 L, from vetted Indian manufacturers. Private label, mixed containers, FOB/CIF."
 keyword: "floor cleaner"
 answer: "Floor cleaner is a liquid surfactant-based product diluted in water or used neat to remove dust, grease and footprints from hard floors such as tile, marble, vinyl and sealed stone. It is usually perfumed and leaves a light fragrance after mopping. GoodBiz Hygiene sources floor cleaner in retail and bulk packs from vetted Indian manufacturers for export."
 variants:

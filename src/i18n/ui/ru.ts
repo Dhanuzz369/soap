@@ -5,7 +5,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '799507f391ac';
+export const sourceHash = '21472260a79e';
 
 const ru: UiPartial = {
   meta: {
@@ -13,6 +13,7 @@ const ru: UiPartial = {
   },
 
   seo: {
+    productTitle: '{kw}: код HSN {hsn}',
     entity: 'GoodBiz Hygiene, компания GoodBiz Global, — торговый экспортёр мыла и бытовой химии из Индии. Компания закупает продукцию у проверенных индийских производителей и сама не производит.',
     keywords: {
       home: [

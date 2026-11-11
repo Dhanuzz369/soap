@@ -6,7 +6,7 @@ order: 1
 reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Dish Wash Liquid & Gel Exporter & Supplier from India"
-metaDescription: "Dish wash liquid and gel from vetted Indian manufacturers: lemon, lime and more, 250 ml to 200 L drums. Private label, mixed containers, FOB/CIF quotes."
+metaDescription: "Dish wash liquid and gel, HSN code 3402 50: lemon, lime and more, 250 ml to 200 L drums, from vetted Indian manufacturers. Private label, FOB/CIF quotes."
 keyword: "dish wash liquid"
 answer: "Dish wash liquid is a concentrated detergent for cleaning plates, pans and cutlery by hand, available as a thin liquid or a thicker gel. It cuts grease, foams well in cool water and rinses without leaving a film. GoodBiz Hygiene sources dish wash liquid and gel in retail and bulk packs from vetted Indian manufacturers for export."
 variants:

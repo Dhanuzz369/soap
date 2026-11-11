@@ -4,7 +4,7 @@
 import type { UiPartial } from './types.ts';
 
 /** Set by `npm run i18n:stamp`: the English dictionary this file was translated from. */
-export const sourceHash = '799507f391ac';
+export const sourceHash = '21472260a79e';
 
 const sw: UiPartial = {
   meta: {
@@ -12,6 +12,7 @@ const sw: UiPartial = {
   },
 
   seo: {
+    productTitle: '{kw}: msimbo wa HSN {hsn}',
     entity: 'GoodBiz Hygiene, kampuni ya GoodBiz Global, ni msafirishaji nje wa kibiashara wa sabuni na bidhaa za usafi wa nyumbani kutoka India. Hununua kutoka kwa watengenezaji wa India waliokaguliwa na haitengenezi bidhaa yenyewe.',
     keywords: {
       home: [

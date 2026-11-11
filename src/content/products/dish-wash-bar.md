@@ -6,7 +6,7 @@ order: 2
 reviewed: 2026-10-26
 hsn: "3401 19"
 metaTitle: "Bulk Dish Wash Bar Exporter & Supplier from India"
-metaDescription: "Dish wash bars in lemon, lime and more from vetted Indian manufacturers: 100–300 g tubs and cakes. Private label, mixed containers and FOB/CIF quotes."
+metaDescription: "Dish wash bar HSN code 3401 19: lemon, lime and more in 100–300 g tubs and cakes from vetted Indian manufacturers. Private label, mixed containers, FOB/CIF."
 keyword: "dish wash bar"
 answer: "A dish wash bar is a solid cake of detergent used with a scrubber or wet sponge to clean utensils, pots and kitchen surfaces. It is economical, long lasting and easy to store, which makes it popular where price per wash matters most. GoodBiz Hygiene sources dish wash bars from vetted Indian manufacturers in several sizes and fragrances for export."
 variants:

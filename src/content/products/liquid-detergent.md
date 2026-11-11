@@ -6,7 +6,7 @@ order: 3
 reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Liquid Laundry Detergent Exporter & Supplier from India"
-metaDescription: "Liquid laundry detergent from vetted Indian manufacturers: 500 ml to 20 L, hand-wash and machine grades. Private label, mixed containers, FOB/CIF quotes."
+metaDescription: "Liquid detergent HSN code 3402 50: laundry liquid in 500 ml to 20 L, hand-wash and machine grades, from vetted Indian manufacturers. Private label, FOB/CIF."
 keyword: "liquid detergent"
 answer: "Liquid detergent is a pourable laundry cleaner that combines surfactants, water and additives and dissolves easily in cold or warm water. It suits both hand washing and washing machines, and is sold as a more convenient, premium alternative to powder. GoodBiz Hygiene sources liquid detergent from vetted Indian manufacturers in retail and bulk packs for export."
 variants:

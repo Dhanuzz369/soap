@@ -1,5 +1,5 @@
 ---
-sourceHash: "2c5f0e4f12c9"
+sourceHash: "532ebe66fbec"
 title: "Phénol aux plantes / phényl"
 slug: herbal-phenol
 category: surface-home-cleaners
@@ -7,7 +7,7 @@ order: 2
 hsn: "3402 50"
 hsnNote: "Le phénol aux plantes et le phényl sont souvent classés sous le code HSN 3808 94 comme désinfectants, selon la formule et les allégations de l’étiquette. Nous indiquons le code 3402 50 au titre des nettoyants de surfaces ; le classement exact est confirmé à chaque commande avec le fabricant et votre commissionnaire en douane."
 metaTitle: "Phénol aux plantes / phényl : exportateur en Inde"
-metaDescription: "Phénol aux plantes (phényl) neem, pin, eucalyptus ou citronnelle, de 500 ml au fût de 200 L, de fabricants indiens contrôlés. Marque de distributeur, FOB/CIF."
+metaDescription: "Code HSN du phényl : 3402 50 comme nettoyant de surfaces, souvent 3808 94 comme désinfectant. Neem, pin, eucalyptus ou citronnelle, de 500 ml au fût de 200 L."
 keyword: "phénol aux plantes"
 answer: "Le phénol aux plantes, aussi vendu sous le nom de phényl, est un nettoyant liquide concentré à base d’huiles d’origine végétale comme le pin, le neem ou l’eucalyptus, qui forme une émulsion blanc laiteux une fois mélangé à l’eau. On l’utilise pour laver les sols et autour des évacuations et des toilettes, pour son parfum puissant et durable. GoodBiz Hygiene sélectionne le phénol aux plantes auprès de fabricants indiens contrôlés pour l’export."
 variants:

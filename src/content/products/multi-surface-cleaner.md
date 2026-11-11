@@ -6,7 +6,7 @@ order: 6
 reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Multi-Surface Cleaner Exporter & Supplier from India"
-metaDescription: "All-purpose multi-surface cleaner in trigger sprays, refills and bulk packs from vetted Indian manufacturers. Private label, mixed containers, FOB/CIF quotes."
+metaDescription: "Multi-surface cleaner, HSN 3402 50: all-purpose sprays, refills and bulk packs from vetted Indian manufacturers. Private label, mixed containers, FOB/CIF."
 keyword: "multi-surface cleaner"
 answer: "Multi-surface cleaner, also called all-purpose cleaner, is a general liquid cleaner used on countertops, tables, appliances, painted walls and many hard surfaces. It is usually near neutral to mildly alkaline and sold as a ready-to-use spray or a concentrate. GoodBiz Hygiene sources multi-surface cleaner from vetted Indian manufacturers for export."
 variants:

@@ -6,7 +6,7 @@ order: 2
 reviewed: 2026-10-26
 hsn: "3401 11"
 metaTitle: "Herbal & Ayurvedic Soap Exporter & Supplier from India"
-metaDescription: "Herbal and Ayurvedic soap from vetted Indian manufacturers: neem, turmeric, sandalwood and aloe bars, 75–125 g. Private label, mixed containers, FOB/CIF."
+metaDescription: "Herbal and Ayurvedic soap, HSN 3401 11: neem, turmeric, sandalwood and aloe bars, 75–125 g, from vetted Indian manufacturers. Private label, mixed containers."
 keyword: "herbal soap"
 answer: "Herbal or Ayurvedic soap is a bath bar that includes plant ingredients such as neem, turmeric, sandalwood or aloe vera in a soap base, positioned around traditional Indian skin-care practice. It is used for daily bathing. GoodBiz Hygiene sources these bars from vetted Indian manufacturers and exports them with private label options."
 variants:

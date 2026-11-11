@@ -31,8 +31,12 @@ const en = {
    * {kw} the product's main search term (its `keyword` field), {hsn} its HSN code (e.g. 3402 50),
    * {hsn4} the 4-digit heading (3402). `productMarkets` names markets where your language is
    * spoken. A page never shows more than 12. See docs/seo-keywords.md.
+   *
+   * `productTitle`: a product page's <title>: the search term ({kw}, capitalised) and its HSN code
+   * first, because buyers search "<product> HSN code". Keep it short (about 60 characters).
    */
   seo: {
+    productTitle: '{kw} HSN Code {hsn} | Bulk Exporter India',
     entity:
       'GoodBiz Hygiene, a GoodBiz Global company, is a merchant exporter of soaps and home-care products from India. It sources from vetted Indian manufacturers and does not manufacture.',
     keywords: {

@@ -7,7 +7,7 @@ reviewed: 2026-10-26
 hsn: "3402 50"
 hsnNote: "Fabric softener is commonly classified under 3402 50 as a surface-active preparation, but it is often also classified under 3809 91 (finishing agents for textiles). The correct code depends on the formulation and customs practice in the destination country, so we confirm the full 8-digit code for each order."
 metaTitle: "Private Label Fabric Softener Exporter & Supplier from India"
-metaDescription: "Fabric softener and conditioner from vetted Indian manufacturers: 500 ml to 20 L, regular and concentrate. Private label, mixed containers, FOB/CIF quotes."
+metaDescription: "Fabric softener HSN code: 3402 50, or 3809 91 in some customs practice; the 8-digit code is confirmed per order. 500 ml to 20 L, private label, FOB/CIF."
 keyword: "fabric softener"
 answer: "Fabric softener, also called fabric conditioner, is a liquid added during the final rinse of a wash to leave clothes soft, smooth and fragrant. It works through cationic softening agents that coat the fibres and reduce static. GoodBiz Hygiene sources fabric softener in regular and concentrated grades from vetted Indian manufacturers for export."
 variants:

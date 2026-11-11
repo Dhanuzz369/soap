@@ -6,7 +6,7 @@ order: 2
 reviewed: 2026-10-26
 hsn: "3402 50"
 metaTitle: "Bulk Detergent Powder Exporter & Supplier from India"
-metaDescription: "Bulk detergent powder from vetted Indian manufacturers: 500 g to 25 kg, hand-wash and machine grades. Private label, mixed containers, FOB/CIF/CFR quotes."
+metaDescription: "Detergent powder HSN code 3402 50, with the 8-digit code confirmed per order. 500 g to 25 kg, hand-wash and machine grades, from vetted Indian manufacturers."
 keyword: "detergent powder"
 answer: "Detergent powder is a dry blend of surfactants, builders and other additives used to wash clothes by hand or in a washing machine. Formulations vary in active matter and filler content, which sets both cleaning power and price. GoodBiz Hygiene sources detergent powder in hand-wash and machine grades from vetted Indian manufacturers for export."
 variants:

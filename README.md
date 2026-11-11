@@ -103,7 +103,7 @@ Each product is one text file in `src/content/products/`, named after its slug (
 
 The top of the file, between the two `---` lines, holds the facts in a simple `label: value` format:
 
-- `title`, `metaTitle`, `metaDescription`: the name, the browser-tab title and the Google snippet. Keep `metaTitle` to about 60 characters (" | GoodBiz Hygiene" is added automatically) and `metaDescription` between 120 and 160 characters: say what the product is, one or two facts, and what the buyer gets (private label, mixed containers, FOB/CIF).
+- `title`, `metaTitle`, `metaDescription`: the name, a short exporter title and the Google snippet. The page's browser-tab title is built from `keyword` and `hsn` ("Liquid Hand Wash HSN Code 3401 30 | Bulk Exporter India", template `seo.productTitle` in `src/i18n/ui/<language>.ts`), because buyers search "<product> HSN code". Keep `metaDescription` between 120 and 160 characters and start it with the product and its HSN code: then one or two facts and what the buyer gets (private label, mixed containers, FOB/CIF).
 - `keyword`: the main search term buyers type for this product, for example `"dish wash liquid"`. It feeds the page's search keywords, headings and image text. See `docs/seo-keywords.md`.
 - `answer`: the short summary under the heading.
 - `variants`, `packSizes`, `packaging`: lists, one item per line starting with `- `.

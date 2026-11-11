@@ -6,7 +6,7 @@ order: 1
 reviewed: 2026-10-26
 hsn: "3401 19"
 metaTitle: "Laundry Soap Bar Exporter & Supplier from India"
-metaDescription: "Laundry soap and detergent bars from vetted Indian manufacturers: 100–250 g, TFM 54–72% grades. Private label, mixed containers and FOB/CIF quotes."
+metaDescription: "Laundry soap and detergent bars, HSN 3401 19: 100–250 g, TFM 54–72% grades, from vetted Indian manufacturers. Private label, mixed containers, FOB/CIF quotes."
 keyword: "laundry soap"
 answer: "A laundry soap bar is a solid cake of soap or soap-detergent blend made for scrubbing and washing clothes by hand. Bars range from true soap with high Total Fatty Matter (TFM) to lower-cost detergent bars with fillers and builders. GoodBiz Hygiene sources laundry bars in several grades from vetted Indian manufacturers for export."
 variants:

@@ -1,7 +1,7 @@
 ---
 title: "Bath Soap Grades Explained: TFM, Grade 1 vs Grade 2, and Why It Matters"
-metaTitle: "Bath Soap Grades: TFM, Grade 1 vs Grade 2 Explained"
-description: "What TFM means on a bath soap specification, how Grade 1 and Grade 2 are used in trade, and how to choose the right grade for your market and price."
+metaTitle: "Toilet Soap Grade 1 Meaning: 76% TFM Min vs Grade 2 (70%)"
+description: "Toilet soap Grade 1 means a minimum TFM (Total Fatty Matter) of 76%; Grade 2 is 70% and Grade 3 is 60% (IS 2888 reference values). How to choose a grade."
 date: 2026-08-27
 updated: 2026-10-26
 tags: ["bath soap", "TFM", "soap grades", "specifications"]
@@ -16,6 +16,8 @@ faqs:
   - q: "Can I order a custom TFM for private label soap?"
     a: "Often yes, within the range the manufacturer works to. Tell us your target TFM, bar weight and market, and we will check feasibility and test data availability with the manufacturer before quoting."
 ---
+
+**The short answer:** toilet soap Grade 1 means a bar with at least 76% TFM (Total Fatty Matter), the top grade in the BIS IS 2888 convention used in Indian trade. Grade 2 is 70% min and Grade 3 is 60% min. These are reference values, so confirm the exact TFM on the specification sheet for each order.
 
 Open any soap quotation and you will see the letters TFM, often next to "Grade 1" or "Grade 2". For a first-time buyer these can look like technical jargon. They are in fact the quickest way to compare two bars that look identical on a photo and sell at very different prices. Understanding them helps you choose the right quality for your market, avoid paying for a grade you do not need and avoid disappointment when the first container arrives.
 
